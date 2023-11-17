@@ -1,0 +1,12 @@
+
+[general]
+	#True if citadel tracks entity properties(freezing, stone mobs, etc) on server. Turn this to false to solve some server lag, may break some stuff.
+	"Track Entities" = true
+	#True to skip warnings about using datapacks.
+	"Skip Datapack Warnings" = true
+	#Multiplies the count of entities spawned by this number. 0 = no entites added on chunk gen, 2 = twice as many entities added on chunk gen. Useful for many mods that add a lot of creatures, namely animals, to the spawn lists.
+	#Range: 0.0 ~ 100000.0
+	chunkGenSpawnModifier = 1.0
+	#True to if april fools content can display on april fools.
+	"April Fools Content" = true
+

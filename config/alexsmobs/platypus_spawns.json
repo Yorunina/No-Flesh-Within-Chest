@@ -1,0 +1,35 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_overworld"
+      },
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_river"
+      },
+      {
+        "type": "BIOME_TAG",
+        "negate": true,
+        "value": "forge:is_cold/overworld"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "biomesoplenty:tundra_bog"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:warm_river"
+      }
+    ]
+  ]
+}

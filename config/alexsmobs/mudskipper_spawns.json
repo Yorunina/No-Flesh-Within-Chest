@@ -1,0 +1,18 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "minecraft:mangrove_swamp"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "terralith:cave/underground_jungle"
+      }
+    ]
+  ]
+}

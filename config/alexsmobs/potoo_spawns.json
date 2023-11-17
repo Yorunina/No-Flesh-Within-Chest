@@ -1,0 +1,11 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "minecraft:dark_forest"
+      }
+    ]
+  ]
+}

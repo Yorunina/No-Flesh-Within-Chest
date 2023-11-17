@@ -1,0 +1,50 @@
+
+["Herb Jar Settings"]
+	#Disabling allows jars to hold any item
+	jars_only_hold_herbs = true
+
+["Sage Burning Plate Settings"]
+	#Range of the Sage Burning Plate, setting to 0 will disable completely
+	spawn_disable_range = 48
+
+["Crow Pickpocket Cooldown"]
+	#time (in ticks) for crow being able to pickpocket again (base 1 minute 30 seconds)
+	crow_pickpocket_cooldown = 1800
+
+["Broom Brush Durability"]
+	#broom brush durability
+	broom_brush_durability = 100
+
+["Herb Enhanced Brush Durability"]
+	#Herb Enhanced brush durability
+	herb_enhanced_brush_durability = 200
+
+["Moon Dust Brush Durability"]
+	#Moon Dust brush durability
+	moon_dust_brush_durability = 200
+
+["Thruster Brush Durability"]
+	#thruster brush durability
+	thruster_brush_durability = 400
+
+["Broom Waterproof Tip Durability"]
+	#Broom Waterproof Tip Durability
+	broom_waterproof_tip_durability = 800
+
+["Broom Netherite Tip Durability"]
+	#Broom Netherite Tip Durability
+	broom_netherite_tip_durability = 200
+
+["Sage Bundle Durability"]
+	#time (in ticks) for the sage bundle to burn out (default 3600 - 1 hour)
+	sage_bundle_durability = 3600
+
+["Coffer Item Blacklist"]
+	#blacklists items from being placed inside of coffers
+	coffer_blacklist = ["minecraft:shulker_box", "minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box", "hexerei:coffer"]
+
+["Biome Generation"]
+	#rarity of the willow swamp biome, 0 to disable
+	#Range: > 0
+	willow_swamp_rarity = 2
+

@@ -1,0 +1,12 @@
+naturallyCharging = true
+damageAcceleration = 1.0
+interruptedOnHurt = false
+playChargeCompleteSound = true
+playerCustomizable = true
+
+[modules]
+slot_unlock_recipe = true
+
+[slots]
+maxSlots = 3
+beginnerSlots = 0

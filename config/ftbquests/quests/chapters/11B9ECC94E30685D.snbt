@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "11B9ECC94E30685D"
+	group: ""
+	id: "11B9ECC94E30685D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "70410C4A67FD2912"
+		tasks: [{
+			id: "380FA7892359FFAA"
+			item: "chestcavity:heart"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "简介"
+}

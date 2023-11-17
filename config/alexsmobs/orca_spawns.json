@@ -1,0 +1,16 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_ocean"
+      },
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "forge:is_cold/overworld"
+      }
+    ]
+  ]
+}

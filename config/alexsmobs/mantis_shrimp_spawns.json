@@ -1,0 +1,23 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_ocean"
+      },
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "forge:is_hot/overworld"
+      }
+    ],
+    [
+      {
+        "type": "REGISTRY_NAME",
+        "negate": false,
+        "value": "minecraft:mangrove_swamp"
+      }
+    ]
+  ]
+}

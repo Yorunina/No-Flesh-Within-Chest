@@ -1,0 +1,13 @@
+#Dynamic light toggle
+dynamic_light_toggle = false
+#Light level an entity should emit when dynamic lights are on
+#Example entry: minecraft:blaze=15
+entity_lights = ["minecraft:blaze=10", "minecraft:magma_cube=8", "minecraft:spectral_arrow=8"]
+#Light level an item should emit when held when dynamic lights are on
+#Example entry: minecraft:stick=15
+item_lights = ["hexerei:moon_dust=8", "minecraft:redstone_torch=10", "minecraft:soul_lantern=12", "minecraft:glow_ink_sac=10", "minecraft:verdant_froglight=15", "minecraft:blaze_rod=10", "minecraft:shroomlight=10", "minecraft:lantern=14", "minecraft:soul_torch=10", "minecraft:glow_berries=8", "minecraft:glowstone_dust=8", "minecraft:pearlescent_froglight=15", "minecraft:nether_star=14", "minecraft:glowstone=15", "minecraft:torch=14", "minecraft:ochre_froglight=15", "minecraft:lava_bucket=15"]
+
+["List of Extra Fonts"]
+	#list of fonts that can be used, mainly for the book of shadows
+	font_list = ["minecraft:default", "hexerei:fancy", "hexerei:bloody", "hexerei:earth", "hexerei:seattle", "hexerei:medieval", "hexerei:augusta"]
+

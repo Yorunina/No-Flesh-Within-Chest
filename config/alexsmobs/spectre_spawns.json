@@ -1,0 +1,16 @@
+{
+  "biomes": [
+    [
+      {
+        "type": "BIOME_TAG",
+        "negate": false,
+        "value": "minecraft:is_end"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "minecraft:the_end"
+      }
+    ]
+  ]
+}

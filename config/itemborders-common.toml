@@ -1,0 +1,49 @@
+
+#Client Configuration
+[client]
+
+	[client.options]
+		# If the hotbar should display item borders.
+		hotbar = true
+		# If item borders should show for common items.
+		show_for_common = false
+		# If the borders should have square corners.
+		square_corners = true
+		# If the borders should fully envelop item slots (otherwise they will only show on the bottom portion of the slot).
+		full_border = false
+		# If the borders draw over items instead of under.
+		over_items = false
+		# If the borders should have a more prominent glow.
+		extra_glow = false
+		# If automatic borders (based on item rarity) should be enabled.
+		auto_borders = true
+		# If enabled and Legendary Tooltips is installed, borders will sync with tooltip border colors.
+		legendary_tooltips_sync = false
+		# Custom border colors for specific items. Format: { <color> = ["list of selectors"] }.
+		# Color formats supported:
+		#   Hex color code - A hex color code is preceded by # or 0x and must be quoted.  Supports 3, 4, 6, or 8 digit codes in the formats RGB, ARGB, RRGGBB, or AARRGGBB.  Examples: "#F4C", "0xFEE0", "#40FF2E", "#CC00E2EE"
+		#   Decimal color code - A decimal color code, which is just a hex color code converted to decimal.  May or may not be quoted.  Examples: 15614720, "4278251143"
+		#   Minecraft color name - One of the standard 16 Minecraft color names.  May or may not be quoted.  Examples: "red", "dark_purple", "gold"
+		#   Web color name - One of the standard 140 web/HTML color names or "transparent".  May or may not be quoted.  Examples: "chartreuse", "darkorange", "deeppink", "deepskyblue"
+		#   Modifiers - Colors specified in any of the above formats can be modified by using modifiers.
+		#     Modifiers are specified after any color in the format "<+, -, or =><h, s, v, r, g, b, or a><amount>".
+		#     The letters represent h - hue, s - saturation, v - value, r - red, g - green, b - blue, a - alpha.
+		#     Valid amounts are 0 to 255 for all types except hue, which accepts 0 to 359.
+		#     Using any modifiers will REQUIRE the key to be quoted.
+		#       Examples: "red+h15", "#saddlebrown-v20+s5", "10_aqua_aqua+v15-h5", "#F4C-r15-v10=a40"
+		#   Animated color - An animated color that fades from one to another in sequence.
+		#     A string in the format "<duration in seconds>_<list of color definitions separated by underscores>".  May or may not be quoted.  Examples: "10_black_#7FFF00", "5.5_gold_orange_orangered", "20_red_orange_yellow_green_blue_purple"
+		# Selectors supported:
+		#   Match all - Specifying just an asterisk (*) will match all items.  Examples: "*"
+		#   Item ID - Use item ID to match single items.  Must include mod name for modded items.  Examples: "minecraft:stick", "iron_ore", "spoiledeggs:spoiled_egg"
+		#   Tag - $ followed by tag name to match all items with that tag.  Examples: "$forge:stone", "$planks"
+		#   Mod name - @ followed by mod identifier to match all items from that mod.  Examples: "@spoiledeggs"
+		#   Rarity - ! followed by item's rarity to match all items with that rarity.  This is ONLY vanilla rarities.  Examples: "!uncommon", "!rare", "!epic"
+		#   Item name color - # followed by color hex code, to match all items with that exact color item name.  Examples: "#23F632"
+		#   Display name - % followed by any text.  Will match any item with this text (case-sensitive) in its tooltip display name.  Examples: "%Netherite", "%Uncommon"
+		#   Tooltip text - ^ followed by any text.  Will match any item with this text (case-sensitive) anywhere in the tooltip text (besides the name).  Examples: "^Legendary"
+		#   NBT tag - & followed by tag name and optional comparator (=, >, <, or !=) and value, in the format <tag><comparator><value> or just <tag>.  Examples: "&Damage=0", "&Tier>1", "&map!=128", "&Enchantments"
+		#   Negation - ~ followed by any selector above.  This selector will be negated, matching every item that does NOT match the selector.  Examples: "~minecraft:stick", "~!uncommon", "~@minecraft"
+		#   Combining selectors - Any number of selectors can be combined by separating them with a plus sign.  Examples: "minecraft:diamond_sword+&Enchantments", "minecraft:stick+~!common+&Damage=0"
+		manual_borders = {}
+
