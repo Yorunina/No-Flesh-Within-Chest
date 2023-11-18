@@ -4,7 +4,8 @@
 			"{id:\"ftbteams:my_team\",json:'{\"group\":\"ftblibrary:info\",\"icon\":\"ftbteams:textures/teams.png\",\"x\":0,\"click\":\"ftbteams:open_gui\",\"loading_screen\":true}',type:\"ftblibrary:sidebar_button\"}",
 			"{id:\"ftbquests:quests\",json:'{\"group\":\"ftblibrary:info\",\"icon\":\"ftbquests:item/book\",\"x\":610,\"click\":\"ftbquests:open_gui\",\"required_server_mods\":[\"ftbquests\"],\"custom_text\":true}',type:\"ftblibrary:sidebar_button\"}",
 			"{mode:\"SURVIVAL\",type:\"roughlyenoughitems:gamemode\"}",
-			"{mode:\"CREATIVE\",type:\"roughlyenoughitems:gamemode\"}"
+			"{mode:\"CREATIVE\",type:\"roughlyenoughitems:gamemode\"}",
+			"{mode:\"NOON\",type:\"roughlyenoughitems:time\"}"
 		],
 		"hiddenFavorites": [],
 		"displayHistory": [],

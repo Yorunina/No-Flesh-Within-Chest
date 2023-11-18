@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 5
 
 function addForTextLines(text, textLines, initNum) {
     for (let i = 0; i < textLines.length; i++) {
@@ -27,6 +27,21 @@ ItemEvents.tooltip((tooltip) => {
                     break;
                 default:
                     let lineNum = 1;
+                    let tagList = item.getTags().toArray()
+                    let typeLine = []
+                    for (let i = 0; i < tagList.length; i++) {
+                        let tag = tagList[i].location()
+                        if (tag.getNamespace() != 'kubejs') {
+                            continue
+                        }
+                        tag = String(tag)
+                        typeLine.push(global.TYPE_MAP[tag])
+                    }
+                    if (typeLine.length > 0) {
+                        text.add(lineNum++, [Text.gold('○ '), Text.aqua(typeLine.join(' ')).bold()])
+                        text.add(lineNum++, [])
+                    }
+
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);
                     if (organ.shiftTextLines && organ.shiftTextLines.length != 0) {
                         text.add(lineNum++, [
@@ -53,7 +68,7 @@ ItemEvents.tooltip((tooltip) => {
         });
     }
 
-    global.organList.forEach(organ => {
+    global.ORGAN_LIST.forEach(organ => {
         registerOrganTooltips(organ)
     })
 });

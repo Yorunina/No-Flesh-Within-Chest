@@ -1,7 +1,4 @@
 // priority: 0
-
-global.organList = [];
-
 function Organ(itemID) {
     this.itemID = itemID
     this.pseudoOrgan = false
@@ -11,12 +8,17 @@ function Organ(itemID) {
     this.ctrlTextLines = []
     this.altTextLines = []
     this.maxStackSize = 1
-    this.texture = ""
+    this.organActiveScores = []
 }
 
 Organ.prototype = {
     addScore: function (score, value) {
         this.organScores.push({ 'id': `chestcavity:${score}`, 'value': value })
+        return this
+    },
+
+    addActivedScore: function (organActiveScore) {
+        this.organActiveScores.push(organActiveScore)
         return this
     },
 
@@ -38,17 +40,10 @@ Organ.prototype = {
         return this
     },
 
-    setTexture: function (path) {
-        this.texture = path
-        return this
-    },
-
     pseudo: function () {
         this.pseudoOrgan = true;
         return this
     },
-
-
 
     maxStack: function (maxStackSize) {
         this.maxStackSize = maxStackSize
@@ -62,15 +57,6 @@ Organ.prototype = {
         return this
     },
 }
-
-StartupEvents.registry('item', event => {
-    function registerOrgan(organ) {
-        global.organList.push(organ)
-        event.create(organ.itemID).texture(organ.texture).maxStackSize(organ.maxStackSize);
-    }
-
-    registerOrgan(new Organ('kubejs:lucky_appendix').setTexture('kubejs:item/organs/common/appendix').addScore('luck', 1.25).addScore('health', 1).build())
-});
 
 function convertScoreToTextLine(organ, score) {
     let value = score.value
@@ -120,7 +106,20 @@ function convertScoreToTextLine(organ, score) {
             typeName = '新陈代谢效率'
             break;
     }
-    return [Text.gold("● "), Text.gray("每 "), Text.yellow(String(stack)), Text.gray(" 个该器官提供 "), Text.yellow(String(value)), Text.gray(" 点"), Text.yellow(typeName)]
+    return [Text.gold('● '), Text.gray('每 '), Text.yellow(String(stack)), Text.gray(' 个该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)]
 }
 
 
+function OrganActiveScore(activeTag, valueString, attribute) {
+    this.activeTag = activeTag
+    this.valueString = valueString // '${this}'
+    this.attribute = attribute
+    this.operation = global.OPERATION_ADD
+}
+
+OrganActiveScore.prototype = {
+    setOperation: function (operation) {
+        this.operation = operation
+        return this
+    }
+}

@@ -3,22 +3,10 @@
 const playerChestCavityHashMap = new Map();
 const playerChestCavityPosMap = new Map();
 const playerChestCavityItemMap = new Map();
+const playerChestCavityTypeMap = new Map();
 
 PlayerEvents.loggedIn((event) => {
     insertChestCavityIntoMap(event.player);
-});
-
-ItemEvents.rightClicked((event) => {
-    let item = event.player.getHeldItem(event.hand);
-    let player = event.player;
-    if (item == 'minecraft:arrow') {
-        if (checkPlayerHasChestCavityMap(player)) {
-            let itemMap = getPlayerChestCavityItemMap(player);
-            if (itemMap.has('chestcavity:muscle')) {
-                player.modifyAttribute('minecraft:generic.max_health', 'kubejsMaxHealth', 4.0, 'addition');
-            }
-        }
-    }
 });
 
 PlayerEvents.inventoryClosed((event) => {
@@ -43,24 +31,41 @@ function insertChestCavityIntoMap(player) {
     }
     let chestInventoryPosMap = new Map();
     let chestInventoryItemMap = new Map();
-    for (let i = 0; i < chestInventory.length; i++) {
-        chestInventoryPosMap.set(chestInventory[i].getInt('Slot'), chestInventory[i]);
+    let chestInventoryTypeMap = new Map();
 
-        let itemId = String(chestInventory[i].getString('id'));
+    for (let i = 0; i < chestInventory.length; i++) {
+        let organ = chestInventory[i];
+        chestInventoryPosMap.set(organ.getInt('Slot'), organ);
+        let itemId = String(organ.getString('id'));
         if (chestInventoryItemMap.has(itemId)) {
             let itemList = chestInventoryItemMap.get(itemId);
-            itemList.push(chestInventory[i]);
+            itemList.push(organ);
             chestInventoryItemMap.set(itemId, itemList);
         } else {
-            chestInventoryItemMap.set(itemId, [chestInventory[i]]);
+            chestInventoryItemMap.set(itemId, [organ]);
         }
-
+        let tagList = Item.of(itemId).getTags().toArray();
+        for (let i = 0; i < tagList.length; i++) {
+            let tag = tagList[i].location()
+            if (tag.getNamespace() != 'kubejs') {
+                continue
+            }
+            tag = String(tag)
+            if (chestInventoryTypeMap.has(tag)) {
+                chestInventoryTypeMap.set(tag, chestInventoryTypeMap.get(tag) + organ.getInt('Count'));
+            } else {
+                chestInventoryTypeMap.set(tag, 1);
+            }
+        }
     }
+    // 将常用信息map载入到内存中，提高性能
     playerChestCavityPosMap.set(uuid, chestInventoryPosMap);
     playerChestCavityItemMap.set(uuid, chestInventoryItemMap);
+    playerChestCavityTypeMap.set(uuid, chestInventoryTypeMap);
     playerChestCavityHashMap.set(uuid, newHash);
     player.tell('完成初始化');
-    return chestInventoryPosMap;
+    clearAllActivedModify(player);
+    return;
 }
 
 function getPlayerChestCavityPosMap(player) {
@@ -81,6 +86,15 @@ function getPlayerChestCavityItemMap(player) {
     return playerChestCavityItemMap.get(uuid);
 }
 
+function getPlayerChestCavityTypeMap(player) {
+    let uuid = String(player.getUuid());
+    if (playerChestCavityTypeMap.has(uuid)) {
+        return playerChestCavityTypeMap.get(uuid);
+    }
+    insertChestCavityIntoMap(player);
+    return playerChestCavityTypeMap.get(uuid);
+}
+
 function checkPlayerHasChestCavityMap(player) {
     let uuid = String(player.getUuid());
     if (playerChestCavityHashMap.has(uuid)) {
@@ -90,6 +104,6 @@ function checkPlayerHasChestCavityMap(player) {
 }
 
 
-function clearAllModify(player) {
-    player.removeAttribute('minecraft:generic.max_health', 'kubejsMaxHealth');
+function clearAllActivedModify(player) {
+    player.removeAttribute(global.HEALTH_UP.key, global.HEALTH_UP.name);
 }
