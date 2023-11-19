@@ -1,0 +1,135 @@
+
+[xpCost]
+	#Set to true if experience cost should be inverted, meaning the shorter the distance, the more expensive. Can be used to encourage other methods for short-distance travel.
+	inverseXpCost = false
+	#The amount of blocks per xp level requirement. If set to 500, the base xp cost for travelling 1000 blocks will be 2 levels.
+	#Range: > -2147483648
+	blocksPerXpLevel = 1000
+	#The minimum base xp cost (may be subceeded by multipliers defined below)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	minimumBaseXpCost = 0.0
+	#The maximum base xp cost (may be exceeded by multipliers defined below), set to 0 to disable all distance-based XP costs
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	maximumBaseXpCost = 3.0
+	#How much xp is needed per leashed animal to travel with you
+	#Range: > -2147483648
+	xpCostPerLeashed = 1
+	#The base xp level cost when travelling between dimensions. Ignores block distance.
+	#Range: > -2147483648
+	dimensionalWarpXpCost = 3
+	#The multiplier applied to the base xp cost when teleporting to a global waystone through any method.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	globalWaystoneXpCostMultiplier = 1.0
+	#The multiplier applied to the base xp cost when teleporting using a Warp Stone item (not the Waystone block, Konstantin)
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	warpStoneXpCostMultiplier = 0.0
+	#The multiplier applied to the base xp cost when teleporting from one waystone to another.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	waystoneXpCostMultiplier = 1.0
+	#The multiplier applied to the base xp cost when teleporting from one sharestone to another.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	sharestoneXpCostMultiplier = 1.0
+	#The multiplier applied to the base xp cost when teleporting from a portstone.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	portstoneXpCostMultiplier = 0.0
+	#The multiplier applied to the base xp cost when teleporting from one warp plate to another.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	warpPlateXpCostMultiplier = 0.0
+	#The multiplier applied to the base xp cost when teleporting via the inventory button.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	inventoryButtonXpCostMultiplier = 0.0
+
+[restrictions]
+	#If enabled, only creative players can place, edit or break waystones. This does NOT disable the crafting recipe.
+	restrictToCreative = false
+	#If enabled, only the owner of a waystone (the one who placed it) can rename it.
+	restrictRenameToOwner = false
+	#If enabled, waystones generated in worldgen are unbreakable.
+	generatedWaystonesUnbreakable = false
+	#If enabled, leashed mobs will be teleported with you
+	transportLeashed = true
+	#Whether to take leashed mobs with you when teleporting between dimensions
+	transportLeashedDimensional = true
+	#List of leashed mobs that cannot be taken with you when teleporting
+	leashedDenyList = ["minecraft:wither"]
+	#Set to 'ALLOW' to allow dimensional warp in general. Set to 'GLOBAL_ONLY' to restrict dimensional warp to global waystones. Set to 'DENY' to disallow all dimensional warps.
+	#Allowed Values: ALLOW, GLOBAL_ONLY, DENY
+	dimensionalWarp = "ALLOW"
+	#List of dimensions that players are allowed to warp cross-dimension from and to. If left empty, all dimensions except those in dimensionalWarpDenyList are allowed.
+	dimensionalWarpAllowList = []
+	#List of dimensions that players are not allowed to warp cross-dimension from and to. Only used if dimensionalWarpAllowList is empty.
+	dimensionalWarpDenyList = []
+	#Set to true if players should be able to teleport between waystones by simply right-clicking a waystone.
+	allowWaystoneToWaystoneTeleport = true
+	#Set to false to allow non-creative players to make waystones globally activated for all players.
+	globalWaystoneSetupRequiresCreativeMode = true
+
+[cooldowns]
+	#The multiplier applied to the cooldown when teleporting to a global waystone via inventory button or warp stone.
+	#Range: -1.7976931348623157E308 ~ 1.7976931348623157E308
+	globalWaystoneCooldownMultiplier = 1.0
+	#The cooldown between usages of the warp stone in seconds. This is bound to the player, not the item, so multiple warp stones share the same cooldown.
+	#Range: > -2147483648
+	warpStoneCooldown = 300
+	#The time in ticks that it takes to use a warp stone. This is the charge-up time when holding right-click.
+	#Range: > -2147483648
+	warpStoneUseTime = 32
+	#The time in ticks that it takes to use a warp plate. This is the time the player has to stand on top for.
+	#Range: > -2147483648
+	warpPlateUseTime = 20
+	#The time in ticks it takes to use a scroll. This is the charge-up time when holding right-click.
+	#Range: > -2147483648
+	scrollUseTime = 32
+	#The cooldown between usages of the inventory button in seconds.
+	#Range: > -2147483648
+	inventoryButtonCooldown = 300
+
+[inventoryButton]
+	#Set to 'NONE' for no inventory button. Set to 'NEAREST' for an inventory button that teleports to the nearest waystone. Set to 'ANY' for an inventory button that opens the waystone selection menu. Set to a waystone name for an inventory button that teleports to a specifically named waystone.
+	inventoryButton = ""
+	#The x position of the warp button in the inventory.
+	#Range: > -2147483648
+	warpButtonX = 58
+	#The y position of the warp button in the inventory.
+	#Range: > -2147483648
+	warpButtonY = 60
+	#The y position of the warp button in the creative menu.
+	#Range: > -2147483648
+	creativeWarpButtonX = 88
+	#The y position of the warp button in the creative menu.
+	#Range: > -2147483648
+	creativeWarpButtonY = 33
+
+[worldGen]
+	#Set to 'DEFAULT' to only generate the normally textured waystones. Set to 'MOSSY' or 'SANDY' to generate all as that variant. Set to 'BIOME' to make the style depend on the biome it is generated in.
+	#Allowed Values: DEFAULT, MOSSY, SANDY, BIOME
+	worldGenStyle = "BIOME"
+	#Approximate chunk distance between waystones generated freely in world generation. Set to 0 to disable generation.
+	#Range: > -2147483648
+	frequency = 25
+	#List of dimensions that waystones are allowed to spawn in through world gen. If left empty, all dimensions except those in worldGenDimensionDenyList are used.
+	dimensionAllowList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
+	#List of dimensions that waystones are not allowed to spawn in through world gen. Only used if worldGenDimensionAllowList is empty.
+	dimensionDenyList = []
+	#Set to 'PRESET_FIRST' to first use names from the custom names list. Set to 'PRESET_ONLY' to use only those custom names. Set to 'MIXED' to have some waystones use custom names, and others random names.
+	#Allowed Values: PRESET_FIRST, RANDOM_ONLY, PRESET_ONLY, MIXED
+	nameGenerationMode = "PRESET_FIRST"
+	#These names will be used for the PRESET name generation mode. See the nameGenerationMode option for more info.
+	customWaystoneNames = []
+	#Set to true if waystones should be added to the generation of villages. Some villages may still spawn without a waystone.
+	spawnInVillages = true
+	#Ensures that pretty much every village will have a waystone, by spawning it as early as possible. In addition, this means waystones will generally be located in the center of the village.
+	forceSpawnInVillages = false
+
+[client]
+	#If enabled, the text overlay on waystones will no longer always render at full brightness.
+	disableTextGlow = false
+	#If enabled, activated waystones will not emit particles.
+	disableParticles = false
+
+[compatibility]
+	#If enabled, JourneyMap waypoints will be created for each activated waystone.
+	displayWaystonesOnJourneyMap = true
+	#If enabled, JourneyMap waypoints will only be created if the mod 'JourneyMap Integration' is not installed
+	preferJourneyMapIntegration = true
+

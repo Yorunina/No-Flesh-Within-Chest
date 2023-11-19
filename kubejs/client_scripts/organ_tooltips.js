@@ -38,7 +38,7 @@ ItemEvents.tooltip((tooltip) => {
                         typeLine.push(global.TYPE_MAP[tag])
                     }
                     if (typeLine.length > 0) {
-                        text.add(lineNum++, [Text.gold('○ '), Text.aqua(typeLine.join(' ')).bold()])
+                        text.add(lineNum++, [Text.gold('● '), Text.aqua(typeLine.join(' ')).bold()])
                         text.add(lineNum++, [])
                     }
 
@@ -52,9 +52,9 @@ ItemEvents.tooltip((tooltip) => {
                     }
                     if (organ.ctrlTextLines && organ.ctrlTextLines.length != 0) {
                         text.add(lineNum++, [
-                            Text.of('按住 ').blue(),
+                            Text.of('按住 ').aqua(),
                             Text.of('[ Ctrl ] ').yellow().bold(),
-                            Text.of('查看激活效果').blue(),
+                            Text.of('查看激活效果').aqua(),
                         ]);
                     }
                     if (organ.altTextLines && organ.altTextLines.length != 0) {

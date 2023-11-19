@@ -1,0 +1,77 @@
+
+# Check out the wiki pages at https://github.com/Lythom/capsule/wiki for full documentation.
+#
+#Loot settings
+[loot]
+	#List of loot tables that will eventually reward a capsule.
+	# Example of valid loot tables : gameplay/fishing/treasure, chests/spawn_bonus_chest, entities/villager (killing a villager).
+	#Also see https://minecraft.gamepedia.com/Loot_table#List_of_loot_tables.
+	lootTablesList = ["minecraft:chests/abandoned_mineshaft", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_other", "minecraft:chests/bastion_treasure", "minecraft:chests/shipwreck_treasure", "minecraft:chests/desert_pyramid", "minecraft:chests/end_city_treasure", "minecraft:chests/igloo_chest", "minecraft:chests/jungle_temple", "minecraft:chests/simple_dungeon", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_library", "minecraft:chests/village/village_toolsmith", "minecraft:chests/village/village_armorer", "minecraft:chests/village/village_temple", "minecraft:chests/village/village_weaponsmith", "minecraft:chests/buried_treasure", "minecraft:chests/jungle_temple_dispenser", "minecraft:chests/pillager_outpost", "minecraft:chests/shipwreck_treasure", "minecraft:chests/underwater_ruin_big", "minecraft:chests/underwater_ruin_small", "minecraft:chests/woodland_mansion"]
+	#Players can be given one or several starter structures on their first arrival.
+	#Those structures nbt files can be placed in the folder defined at starterTemplatesPath below.
+	#Possible values : "all", "random", or "none".
+	#Default value: "random"
+	starterMode = "random"
+	#Each structure in this folder will be given to the player as standard reusable capsule on game start.
+	#Empty the folder or the value to disable starter capsules.
+	#Default value: "config/capsule/starters"
+	starterTemplatesPath = "config/capsule/starters"
+	#Each structure in this folder will auto-generate a blueprint recipe that player will be able to craft.
+	#Remove/Add structure in the folder to disable/enable the recipe.
+	#Default value: "config/capsule/prefabs"
+	prefabsTemplatesPath = "config/capsule/prefabs"
+	#Paths where the mod will look for structureBlock files when invoking command /capsule fromExistingRewards <structureName> [playerName].
+	rewardTemplatesPath = "config/capsule/rewards"
+	#If true, loot rewards will be pre-charged blueprint when possible (if the content contains no entity).
+	#If false loot reward will always be one-use capsules.
+	#Default value: true
+	allowBlueprintReward = true
+	#If true, sneak+left click in air allow mirroring of the capsule content. Can be disabled for multiblock compatibility. 
+	#Default value: true
+	allowMirror = true
+
+	#List of paths and weights where the mod will look for structureBlock files. Each .nbt or .schematic in those folders have a chance to appear as a reward capsule in a dungeon chest.
+	#Higher weight means more common. Default weights : 2 (rare), 6 (uncommon) or 10 (common)
+	#To Lower the chance of getting a capsule at all, insert an empty folder here and configure its weight accordingly.
+	[[loot.lootTemplatesPaths]]
+		path = "config/capsule/loot/common"
+		weight = 10
+
+	[[loot.lootTemplatesPaths]]
+		path = "config/capsule/loot/uncommon"
+		weight = 6
+
+	[[loot.lootTemplatesPaths]]
+		path = "config/capsule/loot/rare"
+		weight = 2
+
+#enchants settings
+[enchants]
+	#Rarity of the enchantmant. Possible values : COMMON, UNCOMMON, RARE, VERY_RARE. Default: RARE.
+	recallEnchantRarity = "RARE"
+	#Possible targets for the enchantment. By default : null.
+	#Possible values are ALL, ARMOR, ARMOR_FEET, ARMOR_LEGS, ARMOR_TORSO, ARMOR_HEAD, WEAPON, DIGGER, FISHING_ROD, BREAKABLE, BOW, null.
+	#If null or empty, Capsules will be the only items to be able to get this Enchantment.
+	recallEnchantType = "null"
+
+#Balancing settings
+[balance]
+	#Duration in ticks for an undeployed capsule to remain activated (preview displayed) when right clicking. 20 ticks = 1 second.
+	#Default value: 120.
+	#Range: > 0
+	previewDisplayDuration = 120
+	#Number of upgrades an empty capsule can get to improve capacity. If <= 0, the capsule won't be able to upgrade.
+	#Range: > 0
+	capsuleUpgradesLimit = 10
+	#List of block ids or tags that will never be captured by a non overpowered capsule. While capturing, the blocks will stay in place.
+	# Ex block: minecraft:spawner
+	# Ex tag: minecraft:beds
+	excludedBlocks = ["minecraft:spawner", "minecraft:end_portal", "minecraft:end_portal_frame", "minecraft:air", "minecraft:structure_void", "minecraft:bedrock", "ic2:", "refinedstorage:", "superfactorymanager:", "gregtech:machine", "gtadditions:", "bloodmagic:alchemy_table", "mekanism:machineblock", "mekanism:boundingblock", "tombstone:player_graves"]
+	#List of block ids or tags that will never be captured even with an overpowered capsule. While capturing, the blocks will stay in place.
+	#Mod prefix usually indicate an incompatibility, remove at your own risk. See https://github.com/Lythom/capsule/wiki/Known-incompatibilities. 
+	# Ex: minecraft:spawner
+	opExcludedBlocks = ["minecraft:air", "minecraft:structure_void", "minecraft:bedrock", "ic2:", "refinedstorage:", "superfactorymanager:", "gregtech:machine", "gtadditions:", "bloodmagic:alchemy_table", "mekanism:machineblock", "mekanism:boundingblock", "tombstone:player_graves"]
+	#List of block ids that can be overriden while teleporting blocks.
+	#Put there blocks that the player don't care about (grass, leaves) so they don't prevent the capsule from deploying.
+	overridableBlocks = ["minecraft:air", "minecraft:water", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "minecraft:mangrove_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:grass", "minecraft:fern", "minecraft:dead_bush", "minecraft:snow_block", "minecraft:vine", "minecraft:glow_lichen", "minecraft:light", "minecraft:sunflower", "minecraft:lilac", "minecraft:rose_bush", "minecraft:peony", "minecraft:tall_grass", "minecraft:large_fern", "minecraft:void_air", "minecraft:cave_air", "minecraft:hanging_roots"]
+

@@ -12,11 +12,13 @@ function Organ(itemID) {
 }
 
 Organ.prototype = {
+    // 注册常规效果
     addScore: function (score, value) {
         this.organScores.push({ 'id': `chestcavity:${score}`, 'value': value })
         return this
     },
 
+    // 注册激活效果
     addActivedScore: function (organActiveScore) {
         this.organActiveScores.push(organActiveScore)
         return this
@@ -110,14 +112,18 @@ function convertScoreToTextLine(organ, score) {
 }
 
 
-function OrganActiveScore(activeTag, valueString, attribute) {
-    this.activeTag = activeTag
-    this.valueString = valueString // '${this}'
-    this.attribute = attribute
+// 激活效果定义类
+function OrganActiveScore() {
     this.operation = global.OPERATION_ADD
 }
 
 OrganActiveScore.prototype = {
+    setTypeScore: function (activeTag, valueString, attribute) {
+        this.activeTag = activeTag
+        this.valueString = valueString // '${this}'
+        this.attribute = attribute
+        return this
+    },
     setOperation: function (operation) {
         this.operation = operation
         return this

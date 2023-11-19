@@ -1,0 +1,31 @@
+
+#lots of cosmetic stuff in here
+[visuals]
+	#How much the dummy swings in degrees with respect to the damage dealt. default=0.75
+	#Range: 0.0 ~ 2.0
+	animation_intensity = 0.75
+	#Show hearths instead of damage dealt? (1 hearth = two damage)
+	show_hearths = false
+	#Show damage numbers on entity
+	damage_numbers = true
+	#Display particles fullbright
+	full_bright_damage_numbers = true
+	#Skin used by the dummy
+	#Allowed Values: DEFAULT, ORIGINAL, DUNGEONS, ALTERNATIVE
+	texture = "DEFAULT"
+
+	[visuals.damage_number_colors]
+		#hex color for various damage sources
+		genetic = "ffffff"
+		crit = "ff0000"
+		dragon_breath = "e600ff"
+		wither = "666666"
+		explosion = "ffbb29"
+		magic_indirect = "844ce7"
+		magic = "33b1ff"
+		trident = "ff9d"
+		fire = "ff7700"
+		lightning = "fff200"
+		cactus = "fa209"
+		true_damage = "910038"
+

@@ -1,0 +1,45 @@
+#Item nbt-tags will be transferred to the newly created Delivery Agreement item when Sealed Delivery Agreement is opened. 
+#Useful when you want to keep custom item name, etc.
+KeepNBTWhenOpeningAgreement = true
+#Wandering Trader will sell Sealed Delivery Agreements.
+WanderingTraderSellsAgreements = true
+
+[Delivery]
+	#Time in ticks that deliveries take. Agreement can override this value. Default: 200 ticks (10 seconds)
+	#Range: > 1
+	DefaultDeliveryTime = 200
+	#Each delivery requires (and consumes) a packaging. ('wares:delivery_boxes' tag)
+	#A slot for boxes will be added to delivery table. Default: true
+	DeliveriesRequireBoxes = true
+
+	[Delivery.Packager]
+		#Packager worker is required for Delivery Table to work.
+		#For a Packager to be considered a 'worker' he should have current table as a 'job_site' and have 'last_worked_at_poi' less than 40 seconds ago.
+		#Default: true
+		PackagerRequiredForDelivery = true
+		#Packager should have 'last_worked_at_poi' less than 40 seconds ago to be considered a worker.
+		#Requires 'PackagerRequiredForDelivery'. Default: true
+		PackagerShouldHaveWorkedRecently = true
+		#Number of packages that Packager can pack for one delivery based on Packager's level.
+		#Should have 5 values corresponding to each villager level. Default: [1,2,4,6,8]
+		PackagerBatchSizePerLevel = [1, 2, 4, 6, 8]
+		#How many xp points Packager levels require. Each delivered package counts as 1xp. 
+		#This works the same as with regular villagers. 
+		#Villager XP points do not reset to 0 on level up - so each consecutive value should be larger than previous.
+		#Default: [0,40,110,250,500]
+		PackagerXpPerLevel = [0, 40, 110, 250, 500]
+		#Players can manually deliver a package if Packager is not currently working at table.
+		#Requires 'PackagerRequiredForDelivery'. Default: true
+		PlayerCanDeliverManually = true
+		#Time modifier when delivering manually.
+		#Default: 3x
+		#Range: 1.0 ~ 999.0
+		ManualDeliveryTimeModifier = 3.0
+
+[Structures]
+	#Warehouses will generate in villages.
+	GenerateWarehouses = true
+	#Warehouse structure weight. Larger number = more chances to spawn.
+	#Range: > 1
+	WarehouseWeight = 10
+

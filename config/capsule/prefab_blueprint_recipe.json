@@ -1,0 +1,34 @@
+{
+  "__comment": "recipe template used to generate all prefab recipes. You can change ingredients and move around 1, 2, and 3. Don't add 1,2,3 keys, they are handled by capsule automatically. If a mod is required and might be missing, put your template nbt file under a folder named with the mod required, the recipe won't be load if the mod is missing.",
+  "type": "capsule:blueprint_prefabs",
+  "conditions": [],
+  "result": {
+    "item": "capsule:capsule",
+    "nbt": {
+      "state": 3,
+      "display": {
+        "color": 2963801
+      },
+      "sourceInventory": {},
+      "structureName": "",
+      "label": "",
+      "size": 1
+    }
+  },
+  "pattern": [
+    "2b3",
+    "l1l",
+    " p "
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:stone_button"
+    },
+    "p": {
+      "item": "minecraft:paper"
+    },
+    "l": {
+      "item": "minecraft:blue_dye"
+    }
+  }
+}

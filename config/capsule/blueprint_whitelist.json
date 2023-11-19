@@ -1,0 +1,276 @@
+[
+  "minecraft:beacon",
+  "minecraft:bed",
+  "minecraft:red_bed",
+  "minecraft:black_bed",
+  "minecraft:blue_bed",
+  "minecraft:brown_bed",
+  "minecraft:cyan_bed",
+  "minecraft:gray_bed",
+  "minecraft:green_bed",
+  "minecraft:light_blue_bed",
+  "minecraft:light_gray_bed",
+  "minecraft:lime_bed",
+  "minecraft:magenta_bed",
+  "minecraft:orange_bed",
+  "minecraft:pink_bed",
+  "minecraft:purple_bed",
+  "minecraft:white_bed",
+  "minecraft:yellow_bed",
+  "minecraft:black_shulker_box",
+  "minecraft:blue_shulker_box",
+  "minecraft:brewing_stand",
+  "minecraft:brown_shulker_box",
+  {
+    "block": "minecraft:chain_command_block",
+    "keepNBT": {
+      "Command": null,
+      "CustomName": null,
+      "SuccessCount": null,
+      "TrackOutput": null,
+      "auto": null,
+      "conditionMet": null,
+      "powered": null
+    }
+  },
+  "minecraft:crafting_table",
+  "minecraft:chest",
+  {
+    "block": "minecraft:command_block",
+    "keepNBT": {
+      "Command": null,
+      "CustomName": null,
+      "SuccessCount": null,
+      "TrackOutput": null,
+      "auto": null,
+      "conditionMet": null,
+      "powered": null
+    }
+  },
+  "minecraft:cyan_shulker_box",
+  "minecraft:daylight_detector",
+  "minecraft:daylight_detector_inverted",
+  "minecraft:dispenser",
+  "minecraft:dropper",
+  "minecraft:enchanting_table",
+  "minecraft:flower_pot",
+  "minecraft:furnace",
+  "minecraft:blast_furnace",
+  "minecraft:gray_shulker_box",
+  "minecraft:green_shulker_box",
+  "minecraft:hopper",
+  "minecraft:jukebox",
+  "minecraft:light_blue_shulker_box",
+  "minecraft:lime_shulker_box",
+  "minecraft:lit_furnace",
+  "minecraft:magenta_shulker_box",
+  {
+    "block": "minecraft:noteblock",
+    "keepNBT": {
+      "note": null
+    }
+  },
+  "minecraft:orange_shulker_box",
+  "minecraft:pink_shulker_box",
+  "minecraft:piston",
+  "minecraft:purple_shulker_box",
+  "minecraft:red_shulker_box",
+  {
+    "block": "minecraft:repeating_command_block",
+    "keepNBT": {
+      "Command": null,
+      "CustomName": null,
+      "SuccessCount": null,
+      "TrackOutput": null,
+      "auto": null,
+      "conditionMet": null,
+      "powered": null
+    }
+  },
+  "minecraft:silver_shulker_box",
+  {
+    "block": "minecraft:skull",
+    "keepNBT": {
+      "Rot": null,
+      "SkullType": null
+    }
+  },
+  {
+    "block": "minecraft:standing_sign",
+    "keepNBT": {
+      "Text1": null,
+      "Text2": null,
+      "Text3": null,
+      "Text4": null
+    }
+  },
+  "minecraft:sticky_piston",
+  {
+    "block": "minecraft:structure_block",
+    "keepNBT": {
+      "author": null,
+      "ignoreEntities": null,
+      "integrity": null,
+      "metadata": null,
+      "mirror": null,
+      "mode": null,
+      "name": null,
+      "posX": null,
+      "posY": null,
+      "posZ": null,
+      "powered": null,
+      "rotation": null,
+      "seed": "LONG",
+      "showair": null,
+      "showboundingbox": null,
+      "sizeX": null,
+      "sizeY": null,
+      "sizeZ": null
+    }
+  },
+  "minecraft:trapped_chest",
+  "minecraft:unpowered_comparator",
+  "minecraft:comparator",
+  {
+    "block": "minecraft:wall_sign",
+    "keepNBT": {
+      "Text1": null,
+      "Text2": null,
+      "Text3": null,
+      "Text4": null
+    }
+  },
+  "minecraft:white_shulker_box",
+  "minecraft:yellow_shulker_box",
+  "minecraft:anvil",
+  "minecraft:chipped_anvil",
+  "minecraft:damaged_anvil",
+  "minecraft:lectern",
+  "minecraft:barrel",
+  "minecraft:smoker",
+  "minecraft:bee_nest",
+  "minecraft:beehive",
+  "minecraft:bell",
+  {
+    "block": "immersiveengineering:stone_decoration_slab",
+    "keepNBT": {
+      "slabType": null
+    }
+  },
+  {
+    "block": "immersiveengineering:storage_slab",
+    "keepNBT": {
+      "slabType": null
+    }
+  },
+  {
+    "block": "immersiveengineering:cloth_device",
+    "keepNBT": {
+      "dummy": null,
+      "ceilingAttached": null,
+      "colour": null,
+      "colour0": null,
+      "colour1": null,
+      "facing": null,
+      "rotation": null,
+      "shader": null,
+      "style": null
+    }
+  },
+  {
+    "block": "immersiveengineering:connector",
+    "keepNBT": {
+      "active": null,
+      "facing": null,
+      "inverted": null,
+      "rotation": null
+    }
+  },
+  {
+    "block": "immersiveengineering:metal_device0",
+    "keepNBT": {
+      "dummy": null,
+      "placeCobble": null,
+      "sideConfig": null
+    }
+  },
+  {
+    "block": "immersiveengineering:metal_device1",
+    "keepNBT": {
+      "dummy": null,
+      "attackAnimals": null,
+      "attackNeutrals": null,
+      "attackPlayers": null,
+      "expelCasings": null,
+      "facing": null,
+      "lowPower": null,
+      "owner": null,
+      "redstoneInverted": null,
+      "rotX": null,
+      "rotY": null,
+      "side": null,
+      "sideConfig": null,
+      "whitelist": null
+    }
+  },
+  {
+    "block": "immersiveengineering:conveyor",
+    "keepNBT": {
+      "conveyorType": null,
+      "conveyorBeltSubtype": "conveyorType",
+      "conveyorBeltSubtypeNBT": null,
+      "facing": null
+    }
+  },
+  {
+    "block": "immersiveengineering:sheetmetal_slab",
+    "keepNBT": {
+      "slabType": null
+    }
+  },
+  {
+    "block": "immersiveengineering:treated_wood_slab",
+    "keepNBT": {
+      "slabType": null
+    }
+  },
+  {
+    "block": "immersiveengineering:metal_decoration2",
+    "keepNBT": {
+      "dummy": null,
+      "facing": null,
+      "orientation": null
+    }
+  },
+  {
+    "block": "immersiveengineering:wooden_device0",
+    "keepNBT": {
+      "dummy": null,
+      "facing": null,
+      "filter": null,
+      "invert": null,
+      "redstone": null,
+      "sideConfig": null,
+      "sideFilter": null
+    }
+  },
+  {
+    "block": "immersiveengineering:wooden_device1",
+    "keepNBT": {
+      "dummy": null,
+      "facing": null,
+      "orientation": null,
+      "rotation": null,
+      "offset": null,
+      "prevRotation": null
+    }
+  },
+  "betterboiler:controller",
+  "betterboiler:boiler",
+  "betterboiler:firebox",
+  "betterboiler:firebox_hatch",
+  "betterboiler:boiler_valve",
+  "betterboiler:boiler_vent",
+  "betterboiler:boiler_pump",
+  "betterboiler:boiler_pump"
+]

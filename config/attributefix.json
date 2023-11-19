@@ -55,6 +55,17 @@
         "value": 1024
       }
     },
+    "tetra:draw_strength": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
     "forge:nametag_distance": {
       "enabled": false,
       "min": {
@@ -86,6 +97,17 @@
       "max": {
         "default": 8,
         "value": 8
+      }
+    },
+    "tetra:ability_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     },
     "minecraft:generic.max_health": {
@@ -207,6 +229,28 @@
       "max": {
         "default": 20,
         "value": 1000000
+      }
+    },
+    "tetra:draw_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
+      }
+    },
+    "tetra:ability_cooldown": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 2048
       }
     }
   }

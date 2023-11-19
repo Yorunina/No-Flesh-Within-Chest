@@ -1,0 +1,13 @@
+
+#General settings
+[general]
+	#The speed value refers to the percentage of the default maximum speed.The default value is 100%
+	#Range: > 0
+	max_speed = 100
+	#When this value equals false, you don't need experience to get on and fly the broom.
+	advanced_mode = true
+	#When this value equals false, perspective will not be changed automatically when you get on the broom.
+	auto_perspective = true
+	#When this value equals false, you can bind the key 'shift' to descend the broom
+	shift_key_to_dismount = true
+

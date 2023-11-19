@@ -1,0 +1,8 @@
+
+[AgreementGUI]
+	#Delivery Agreement and Sealed Agreement view screens will close on Right Click.
+	AgreementScreenCloseWithRMB = true
+	#Buyer Name and Buyer Address will be appended (if provided) to the end of the message in the Delivery Agreement View Screen.
+	#(Buyer info can also be seen by hovering over the Wax Seal)
+	AgreementScreenAppendBuyerInfo = true
+

@@ -1,0 +1,84 @@
+
+[misc]
+	#Enable modular bows
+	bow = true
+	#Enable modular single headed implements
+	single_headed = true
+	#Enable modular shields
+	shield = true
+	#Enables the enchantment glint rendering on modular items
+	glint = true
+	#Enables commands & data reloading functionality useful for development, has a negative impact on performance
+	development = false
+	#If enabled and Curios is installed, Toolbelts will only work in the Curio belt slot
+	toolbelt_curio_only = false
+	#Multiplier for magic capacity gains, increasing this may be useful when having a large set enchantments added by other mods
+	#Range: 0.0 ~ 1.7976931348623157E308
+	magic_cap_multiplier = 1.0
+
+#World generation settings
+[worldgen]
+	#Generates features in the world, further configuration available in "tetra/data/structures/"
+	features = true
+	#Used to limit how deep the feature generator will recurse into feature children, helps to avoid recursive loops and cascading worldgen in 3d-party generation features
+	#Range: 0 ~ 64
+	feature_depth = 8
+
+#Allows tetra items to "level up" after being used a certain amount of times, allowing the player to choose from different ways to "hone" 1 module on the item. Major modules also settle after some time, increasing its integrity
+[module_progression]
+	enabled = true
+	#The base value for number of uses required for a module to settle
+	#Range: > -2147483648
+	settle_base = 270
+	#Level multiplier for settling limit, a value of 3 would cause a module that has settled once to require 3x as many uses before it settles again
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	settle_level_multiplier = 3.0
+	#Durability multiplier for settling limit, a value of 1 would cause a module with 75 durability to require an additional 75 uses before it settles
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	settle_durability_multiplier = 0.5
+	#The base value for number of uses required before a sword can be honed
+	#Range: > -2147483648
+	hone_sword_base = 110
+	#Integrity multiplier for sword honing, a value of 2 would cause a sword which uses 3 integrity to require 2*3 times as many uses before it can be honed
+	#Range: > -2147483648
+	hone_sword_integrity_multiplier = 65
+	#The base value for number of uses required before a tool can be honed
+	#Range: > -2147483648
+	hone_double_base = 140
+	#Integrity multiplier for tool honing, a value of 2 would cause a sword which uses 3 integrity to require 2*3 times as many uses before it can be honed
+	#Range: > -2147483648
+	hone_double_integrity_multiplier = 75
+	#The base value for number of uses required before a bow can be honed
+	#Range: > -2147483648
+	hone_bow_base = 48
+	#Integrity multiplier for bow honing, a value of 2 would cause a bow which uses 3 integrity to require 2*3 times as many uses before it can be honed
+	#Range: > -2147483648
+	hone_bow_integrity_multiplier = 32
+	#The base value for number of uses required before a shield can be honed
+	#Range: > -2147483648
+	hone_shield_base = 48
+	#Integrity multiplier for shield honing, a value of 2 would cause a shield which uses 3 integrity to require 2*3 times as many uses before it can be honed
+	#Range: > -2147483648
+	hone_shield_integrity_multiplier = 32
+	#The base value for number of uses required before a crossbow can be honed
+	#Range: > -2147483648
+	hone_crossbow_base = 48
+	#Integrity multiplier for crossbow honing, a value of 2 would cause a crossbow which uses 3 integrity to require 2*3 times as many uses before it can be honed
+	#Range: > -2147483648
+	hone_crossbow_integrity_multiplier = 32
+	#The base value for number of uses required before a single headed implement can be honed
+	#Range: > -2147483648
+	hone_single_headed_base = 120
+	#Integrity multiplier for single headed implement honing, a value of 2 would cause an implement which uses 3 integrity to require 2*3 times as many uses before it can be honed
+	#Range: > -2147483648
+	hone_single_headed_integrity_multiplier = 60
+
+#Toggles & config for experimental features
+[experimental]
+	#Enable the stonecutter module for swords, the stonecutter has to be removed from loot tables if this is disabled
+	stonecutter = true
+	#Enable the extractor bedrock functionality
+	extractor = true
+	#Enable modular crossbows
+	crossbow = true
+
