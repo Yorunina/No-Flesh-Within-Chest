@@ -1,0 +1,81 @@
+
+#Common config settings
+[common]
+	#Max level of weapons.
+	#Range: > 1
+	maxLevel = 10
+	#Should weapons remain in inventory on death.
+	keepOnDeath = true
+	#Base Damage of sword weapons.
+	#Range: > 1
+	swordDamageMin = 7
+	#Max Damage of sword weapons.
+	#Range: > 1
+	swordDamageMax = 16
+	#Base Attack Speed of sword weapons.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	swordSpeedMin = 1.6
+	#Max Attack Speed of sword weapons.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	swordSpeedMax = 3.0
+	#Base Durability of sword weapons.
+	#Range: > 1
+	swordDurabilityMin = 250
+	#Max Durability of sword weapons.
+	#Range: > 1
+	swordDurabilityMax = 2000
+	#Base Damage of rapier weapons.
+	#Range: > 1
+	rapierDamageMin = 7
+	#Max Damage of rapier weapons.
+	#Range: > 1
+	rapierDamageMax = 16
+	#Base Attack Speed of rapier weapons.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	rapierSpeedMin = 1.8
+	#Max Attack Speed of rapier weapons.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	rapierSpeedMax = 4.0
+	#Base Durability of rapier weapons.
+	#Range: > 1
+	rapierDurabilityMin = 300
+	#Max Durability of rapier weapons.
+	#Range: > 1
+	rapierDurabilityMax = 2500
+	#Base Damage of scythe weapons.
+	#Range: > 1
+	scytheDamageMin = 9
+	#Max Damage of scythe weapons.
+	#Range: > 1
+	scytheDamageMax = 22
+	#Base Attack Speed of scythe weapons.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	scytheSpeedMin = 0.8
+	#Max Attack Speed of scythe weapons.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	scytheSpeedMax = 1.6
+	#Base Durability of scythe weapons.
+	#Range: > 1
+	scytheDurabilityMin = 250
+	#Max Durability of scythe weapons.
+	#Range: > 1
+	scytheDurabilityMax = 2000
+	#Base Damage of polearm weapons.
+	#Range: > 1
+	polearmDamageMin = 9
+	#Max Damage of polearm weapons.
+	#Range: > 1
+	polearmDamageMax = 28
+	#Base Attack Speed of polearm weapons.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	polearmSpeedMin = 0.8
+	#Max Attack Speed of polearm weapons.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	polearmSpeedMax = 1.6
+	#Base Durability of polearm weapons.
+	#Range: > 1
+	polearmDurabilityMin = 300
+	#Max Durability of polearm weapons.
+	#Range: > 1
+	polearmDurabilityMax = 2500
+

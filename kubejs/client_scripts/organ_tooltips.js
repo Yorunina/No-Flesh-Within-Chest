@@ -15,6 +15,7 @@ ItemEvents.tooltip((tooltip) => {
                     text.remove(1)
                 }
             }
+            // text.removeIf(e => e != item.displayName)
             switch (true) {
                 case tooltip.shift:
                     addForTextLines(text, organ.shiftTextLines, 1);
@@ -38,8 +39,7 @@ ItemEvents.tooltip((tooltip) => {
                         typeLine.push(global.TYPE_MAP[tag])
                     }
                     if (typeLine.length > 0) {
-                        text.add(lineNum++, [Text.gold('● '), Text.aqua(typeLine.join(' ')).bold()])
-                        text.add(lineNum++, [])
+                        text.add(lineNum++, [Text.gold('●'), Text.aqua(typeLine.join(' '))])
                     }
 
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);

@@ -3,18 +3,90 @@
 	default_quest_shape: ""
 	filename: "11B9ECC94E30685D"
 	group: ""
+	icon: "minecraft:book"
 	id: "11B9ECC94E30685D"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "70410C4A67FD2912"
-		tasks: [{
-			id: "380FA7892359FFAA"
-			item: "chestcavity:heart"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: [
+				"No Flesh Within Chest (译名：胸无成物) 是一款围绕&5生物器官&r的&2主题&r整合包。通过和谐的融入冒险与科技内容，引导玩家体验了解&2胸腔mod&r的游戏内容，以及其延伸的魔改玩法。"
+				""
+				"整合包内通过大量&2新奇的游戏模式&r，引领玩家体验从未体验过的游戏历程；同时又通过和谐、合理的游戏内容设计，让玩家能够有充足的机会去了解绝大部分作者所设计的游戏内容。"
+				""
+				""
+				"{@pagebreak}"
+				"最后，本整合包也希望通过这种方式，向现行大量的整合包作者证明："
+				""
+				"即便不通过&5mod堆料&r的方式，仍旧能够塑造出人意料且趣味横生的游戏模式。"
+			]
+			icon: "chestcavity:kidney"
+			id: "72D090FF4C44DAAD"
+			subtitle: "一切开始的介绍"
+			tasks: [{
+				id: "6BB639ACDD430937"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "引言"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72D090FF4C44DAAD"]
+			description: [
+				"整个整合包的内容都是围绕着生物器官而展开的。为了能够修改自身的器官以及窃取其他生物的器官，&2开胸器&r成了不得不使用的一个重要道具。"
+				""
+				"当生物的血量低于一定阈值之后，你就可以使用开胸器右键生物，以打开他们的胸膛。"
+				""
+				"值得注意的是，打开胸膛的操作会造成一定的伤害，这意味着某些中立生物会因此与你为敌。"
+				""
+				"如果需要打开自己的胸膛，则需要右键空气。"
+			]
+			icon: "chestcavity:chest_opener"
+			id: "223B674D5878BF14"
+			subtitle: "使用开胸器，修改自己的器官吧"
+			tasks: [{
+				id: "374D70042AFB2C64"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "胸腔"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["72D090FF4C44DAAD"]
+			description: [
+				"为了符合整体整合包的风格，几乎所有的内容都是与类如巫术、魔法之类的东西进行关联。"
+				""
+				"比如为了获得更高级的器官，你需要使用巫术里的炼金内容以强化他们。为了获得罕见的生物，你可能需要举行一些仪式以召唤它们。"
+			]
+			icon: "hexerei:mixing_cauldron"
+			id: "4F3935E1F6952D24"
+			subtitle: "不得不讨论的巫术话题"
+			tasks: [{
+				id: "31847ABE24F228A2"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "巫术与魔法"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["72D090FF4C44DAAD"]
+			icon: "create:wrench"
+			id: "2A21CFD22EBD8054"
+			tasks: [{
+				id: "1CD36220FD49676E"
+				item: "create:wrench"
+				type: "item"
+			}]
+			title: "机械与蒸汽"
+			x: -2.5d
+			y: -1.0d
+		}
+	]
 	title: "简介"
 }

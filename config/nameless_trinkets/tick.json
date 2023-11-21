@@ -1,0 +1,9 @@
+{
+  "config": {
+    "rangeToActivate": 25.0,
+    "entityDamagePercentage": 1.0,
+    "playerDamagePercentage": 5.0,
+    "playerHungerPercentage": 10.0,
+    "isEnable": true
+  }
+}

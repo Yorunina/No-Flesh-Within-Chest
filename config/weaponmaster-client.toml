@@ -1,0 +1,31 @@
+
+#Common config settings
+[client]
+	#X offset of the ability cooldown bar. Positive values move it to the right of the reticle, and negative to the left. For example, ~40 either way moves it fully out of the reticle's way.
+	#Range: > -2147483648
+	abilityBarXOffs = 0
+	#Y offset of the ability cooldown bar. Positive values move it downward, while negative moves it upwards. For example, ~50 will place it roughly where the attack indicator is by default.
+	#Range: > -2147483648
+	abilityBarYOffs = 0
+	#X offset of the attack cooldown bar. Positive values move it to the right of the reticle, and negative to the left. For example, ~40 either way moves it fully out of the reticle's way.
+	#Range: > -2147483648
+	attackBarXOffs = 0
+	#Y offset of the attack cooldown bar. Positive values move it downward, while negative moves it upwards. For example, ~-50 will place it roughly where the ability cooldown bar is by default.
+	#Range: > -2147483648
+	attackBarYOffs = 0
+	#Enable cutom tooltips for weapon master weapons.
+	useCustomTooltips = true
+	#Enable weapon windup animations.
+	useWeaponWindupAnimation = true
+	#Should weapons use a specalised version of the item model builder (fixes z-fighting and incorrect stitching at a minor performance cost).
+	useCustomModelBuilder = true
+	#Should weapons use entirely non artist approved procedurally generated 3d models (MAJOR performance cost).
+	useThreeDeeModels = false
+	#Should the phantool ability use an animated texture.
+	useAnimatedPhantool = true
+	#Should a custom third person camera be used while a weapon is active.
+	useCustomThirdPersonCamera = true
+	#What third person camera should be used while a weapon is active.
+	#Allowed Values: shoulder_surf, mansion
+	customThirdPersonCameraType = "shoulder_surf"
+

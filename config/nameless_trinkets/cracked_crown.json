@@ -1,0 +1,11 @@
+{
+  "config": {
+    "percentageExtraAttack": 50.0,
+    "percentageExtraArmor": 50.0,
+    "percentageExtraAttackSpeed": 50.0,
+    "percentageExtraArmorThougness": 50.0,
+    "percentageExtraAttackKnockback": 50.0,
+    "percentageExtraKnockbackResistance": 50.0,
+    "isEnable": true
+  }
+}

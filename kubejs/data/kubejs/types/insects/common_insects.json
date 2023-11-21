@@ -15,7 +15,7 @@
     {"item": "chestcavity:insect_intestine","position": 12},
     {"item": "chestcavity:insect_intestine","position": 13},
     {"item": "minecraft:diamond","position": 14, "count": 1},
-    {"item": "chestcavity:insect_intestine","position": 15},
+    {"item": "minecraft:oxidized_copper","position": 15, "count": 1},
     {"item": "chestcavity:insect_intestine","position": 16},
     {"item": "chestcavity:insect_muscle","position": 17},
     {"item": "chestcavity:insect_muscle","position": 18},
@@ -25,12 +25,5 @@
     {"item": "chestcavity:insect_lung","position": 22},
     {"item": "chestcavity:insect_muscle","position": 23},
     {"item": "chestcavity:insect_muscle","position": 26}
-  ],
-  "exceptionalOrgans": [
-    { "ingredient": {"item": "minecraft:diamond"},
-      "value": [
-        {"id":"chestcavity:defense","value": "1"}
-      ]
-    }
   ]
 }
