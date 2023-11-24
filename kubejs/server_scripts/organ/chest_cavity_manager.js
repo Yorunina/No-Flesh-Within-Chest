@@ -6,7 +6,7 @@ const playerChestCavityItemMap = new Map();
 const playerChestCavityTypeMap = new Map();
 
 PlayerEvents.loggedIn((event) => {
-    insertChestCavityIntoMap(event.player, false);
+    initChestCavityIntoMap(event.player, false);
     if (event.player.stages.has('organ_actived')) {
         global.updatePlayerActiveStatus(event.player)
     }
@@ -17,11 +17,17 @@ PlayerEvents.inventoryClosed((event) => {
     if (player.mainHandItem != 'chestcavity:chest_opener') {
         return;
     }
-    insertChestCavityIntoMap(player, true);
+    initChestCavityIntoMap(player, true);
 });
 
 
-function insertChestCavityIntoMap(player, removeFlag) {
+/**
+ * 将玩家信息插入到器官表中（初始化器官表
+ * @param {Internal.player} player 
+ * @param {Boolean} removeFlag 
+ * @returns 
+ */
+function initChestCavityIntoMap(player, removeFlag) {
     let playerNbt = player.getNbt();
     let chestInventory = playerNbt.ChestCavity.Inventory;
     let newHash = chestInventory.hashCode();
@@ -69,36 +75,61 @@ function insertChestCavityIntoMap(player, removeFlag) {
     player.tell('完成初始化');
     if (player.stages.has('organ_actived') && removeFlag) {
         player.stages.remove('organ_actived')
+        clearAllActivedModify(player)
     }
     return;
 }
+
+/**
+ * 获取玩家器官位置表
+ * @param {Internal.Player} player 
+ * @returns {Map}
+ */
 
 function getPlayerChestCavityPosMap(player) {
     let uuid = String(player.getUuid());
     if (playerChestCavityHashMap.has(uuid)) {
         return playerChestCavityPosMap.get(uuid);
     }
-    insertChestCavityIntoMap(player);
+    initChestCavityIntoMap(player);
     return playerChestCavityPosMap.get(uuid);
 }
+
+/**
+ * 获取玩家器官物品表
+ * @param {Internal.Player} player 
+ * @returns {Map}
+ */
 
 function getPlayerChestCavityItemMap(player) {
     let uuid = String(player.getUuid());
     if (playerChestCavityHashMap.has(uuid)) {
         return playerChestCavityItemMap.get(uuid);
     }
-    insertChestCavityIntoMap(player);
+    initChestCavityIntoMap(player);
     return playerChestCavityItemMap.get(uuid);
 }
+
+/**
+ * 获取玩家器官类型表
+ * @param {Internal.Player} player 
+ * @returns {Map}
+ */
 
 function getPlayerChestCavityTypeMap(player) {
     let uuid = String(player.getUuid());
     if (playerChestCavityTypeMap.has(uuid)) {
         return playerChestCavityTypeMap.get(uuid);
     }
-    insertChestCavityIntoMap(player);
+    initChestCavityIntoMap(player);
     return playerChestCavityTypeMap.get(uuid);
 }
+
+/**
+ * 校验玩家是否初始化器官
+ * @param {Internal.Player} player 
+ * @returns {Boolean}
+ */
 
 function checkPlayerHasChestCavityMap(player) {
     let uuid = String(player.getUuid());
@@ -106,9 +137,4 @@ function checkPlayerHasChestCavityMap(player) {
         return true;
     }
     return false;
-}
-
-
-function clearAllActivedModify(player) {
-    player.removeAttribute(global.HEALTH_UP.key, global.HEALTH_UP.name);
 }

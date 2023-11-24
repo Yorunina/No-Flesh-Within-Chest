@@ -60,6 +60,13 @@ Organ.prototype = {
     },
 }
 
+/**
+ * 转换为描述文本
+ * @param {Organ} organ 
+ * @param {*} score 
+ * @returns 
+ */
+
 function convertScoreToTextLine(organ, score) {
     let value = score.value
     let typeName = ''
@@ -113,19 +120,10 @@ function convertScoreToTextLine(organ, score) {
 
 
 // 激活效果定义类
-function OrganActiveScore() {
-    this.operation = global.OPERATION_ADD
-}
-
-OrganActiveScore.prototype = {
-    setTypeScore: function (activeTag, valueString, attribute) {
-        this.activeTag = activeTag
-        this.valueString = valueString // '${this}'
-        this.attribute = attribute
-        return this
-    },
-    setOperation: function (operation) {
-        this.operation = operation
-        return this
-    }
+function OrganActiveScore(activeTag, valueString, attribute) {
+    this.activeTag = activeTag
+    this.valueString = valueString // '${this}'
+    this.attributeName = attribute.name
+    this.attributeKey = attribute.key
+    this.attributeOperation = attribute.operation
 }

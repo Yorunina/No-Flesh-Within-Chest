@@ -7,7 +7,7 @@ StartupEvents.registry('item', event => {
     // 注册器官
     registerOrgan(new Organ('kubejs:health_appendix')
         .addScore('luck', 1.25)
-        .addActivedScore(new OrganActiveScore().setTypeScore('kubejs:appendix', '${this} * 1', global.HEALTH_UP))
+        .addActivedScore(new OrganActiveScore('kubejs:appendix', '${this} * 1', global.HEALTH_UP))
         .addTextLines('ctrl', [Text.gold('● '), Text.gray('每存在一种类为 '), Text.yellow('阑尾'), Text.gray(' 的器官，会为你添加额外 '), Text.yellow(1), Text.gray(' 点'), Text.yellow('生命值')])
         .build())
         .texture('kubejs:item/organs/common/appendix')
@@ -34,4 +34,15 @@ StartupEvents.registry('item', event => {
     .build())
     .texture('kubejs:item/organs/common/stomach')
     .tag('kubejs:stomach')
+
+
+    registerOrgan(new Organ('kubejs:infinite_beats')
+    .addScore('health', -3)
+    .addScore('defense', -3)
+    .addScore('speed', -1)
+
+    .build())
+    .texture('kubejs:item/organs/common/heart')
+    .tag('kubejs:heart')
+    .tag('kubejs:infinite')
 });

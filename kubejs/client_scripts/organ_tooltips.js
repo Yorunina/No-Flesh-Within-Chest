@@ -39,7 +39,7 @@ ItemEvents.tooltip((tooltip) => {
                         typeLine.push(global.TYPE_MAP[tag])
                     }
                     if (typeLine.length > 0) {
-                        text.add(lineNum++, [Text.gold('●'), Text.aqua(typeLine.join(' '))])
+                        text.add(lineNum++, [Text.gold('●'), typeLine.join(' ')])
                     }
 
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);
