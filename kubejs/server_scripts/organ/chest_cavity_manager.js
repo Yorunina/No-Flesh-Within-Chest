@@ -42,6 +42,7 @@ function initChestCavityIntoMap(player, removeFlag) {
     let chestInventoryItemMap = new Map();
     let chestInventoryTypeMap = new Map();
 
+    // 遍历器官并初始化玩家Map
     for (let i = 0; i < chestInventory.length; i++) {
         let organ = chestInventory[i];
         chestInventoryPosMap.set(organ.getInt('Slot'), organ);
@@ -61,9 +62,11 @@ function initChestCavityIntoMap(player, removeFlag) {
             }
             tag = String(tag)
             if (chestInventoryTypeMap.has(tag)) {
-                chestInventoryTypeMap.set(tag, chestInventoryTypeMap.get(tag) + organ.getInt('Count'));
+                let itemList = chestInventoryTypeMap.get(tag);
+                itemList.push(organ);
+                chestInventoryTypeMap.set(tag, itemList);
             } else {
-                chestInventoryTypeMap.set(tag, 1);
+                chestInventoryTypeMap.set(tag, [organ]);
             }
         }
     }

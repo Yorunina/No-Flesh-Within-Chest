@@ -9,36 +9,13 @@ global.updatePlayerActiveStatus = player => {
     let typeMap = getPlayerChestCavityTypeMap(player);
     let uuid = String(player.getUuid());
     let attributeMap = new Map();
-    global.ORGAN_LIST.forEach(organ => {
-        if (organ.organActiveScores.length != 0) {
-            organ.organActiveScores.forEach(activeScore => {
-                let value = calActiveScoreValue(typeMap, activeScore)
-                if (attributeMap.has(activeScore.attributeName)) {
-                    value = value + attributeMap.get(activeScore.attributeName)
-                } 
-                attributeMap.set(activeScore.attributeName, value)
-            })
-        }
+    typeMap.get('kubejs:active').forEach(organ => {
+        organActiveScoreStrategies[organ.id](typeMap, attributeMap)
     })
     playerAttributeMap.set(uuid, attributeMap);
     attributeMap.forEach((value, key, map) => {
         player.modifyAttribute(global.ATTRIBUTE_MAP[key].key, key, value, global.ATTRIBUTE_MAP[key].operation);
     })
-}
-
-/**
- * 计算玩家属性数值
- * @param {Map} typeMap 
- * @param {OrganActiveScore} activeScore 
- * @returns 
- */
-
-function calActiveScoreValue(typeMap, activeScore) {
-    let value = 0;
-    if (typeMap.has(activeScore.activeTag)) {
-        value = eval(activeScore.valueString.replace('${this}', typeMap.get(activeScore.activeTag)))
-    }
-    return value;
 }
 
 /**
@@ -75,3 +52,15 @@ function clearAllActivedModify(player) {
     player.removeAttribute(global.HEALTH_UP.key, global.HEALTH_UP.name);
     player.removeAttribute(global.ATTACK_UP.key, global.ATTACK_UP.name);
 }
+
+
+// 简单策略
+let organActiveScoreStrategies = {
+    "kubejs:health_appendix": function (typeMap, attributeMap) {
+        let value = typeMap.get('kubejs:appendix').length * 1.5
+        if (attributeMap.has(global.HEALTH_UP.name)) {
+            value = value + attributeMap.get(global.HEALTH_UP.name)
+        }
+        attributeMap.set(global.HEALTH_UP.name, value)
+    },
+};

@@ -36,10 +36,13 @@ ItemEvents.tooltip((tooltip) => {
                             continue
                         }
                         tag = String(tag)
+                        if(!global.TYPE_MAP[tag]) {
+                            continue
+                        }
                         typeLine.push(global.TYPE_MAP[tag])
                     }
                     if (typeLine.length > 0) {
-                        text.add(lineNum++, [Text.gold('●'), typeLine.join(' ')])
+                        text.add(lineNum++, [Text.gold('●'), Text.join(typeLine)])
                     }
 
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);

@@ -8,7 +8,6 @@ function Organ(itemID) {
     this.ctrlTextLines = []
     this.altTextLines = []
     this.maxStackSize = 1
-    this.organActiveScores = []
 }
 
 Organ.prototype = {
@@ -18,11 +17,6 @@ Organ.prototype = {
         return this
     },
 
-    // 注册激活效果
-    addActivedScore: function (organActiveScore) {
-        this.organActiveScores.push(organActiveScore)
-        return this
-    },
 
     addTextLines: function (type, textLines) {
         switch (type) {
@@ -118,12 +112,3 @@ function convertScoreToTextLine(organ, score) {
     return [Text.gold('● '), Text.gray('每 '), Text.yellow(String(stack)), Text.gray(' 个该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)]
 }
 
-
-// 激活效果定义类
-function OrganActiveScore(activeTag, valueString, attribute) {
-    this.activeTag = activeTag
-    this.valueString = valueString // '${this}'
-    this.attributeName = attribute.name
-    this.attributeKey = attribute.key
-    this.attributeOperation = attribute.operation
-}
