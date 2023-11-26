@@ -10,12 +10,12 @@ function addForTextLines(text, textLines, initNum) {
 ItemEvents.tooltip((tooltip) => {
     function registerOrganTooltips(organ) {
         tooltip.addAdvanced(organ.itemID, (item, advanced, text) => {
-            for (let i = 0;i < text.size();i++) {
-                if (text.size() > 1) {
-                    text.remove(1)
-                }
-            }
-            // text.removeIf(e => e != item.displayName)
+            // for (let i = 1;i < text.size();i++) {
+            //     if (text.size() > 1) {
+            //         text.remove(1)
+            //     }
+            // }
+            // text.removeIf(e => e != item.name)
             switch (true) {
                 case tooltip.shift:
                     addForTextLines(text, organ.shiftTextLines, 1);
@@ -39,7 +39,7 @@ ItemEvents.tooltip((tooltip) => {
                         if(!global.TYPE_MAP[tag]) {
                             continue
                         }
-                        typeLine.push(global.TYPE_MAP[tag])
+                        typeLine.push(global.TYPE_MAP[tag], ' ')
                     }
                     if (typeLine.length > 0) {
                         text.add(lineNum++, [Text.gold('●'), Text.join(typeLine)])
@@ -64,7 +64,7 @@ ItemEvents.tooltip((tooltip) => {
                         text.add(lineNum++, [
                             Text.of('按住 ').red(),
                             Text.of('[ Alt ] ').yellow().bold(),
-                            Text.of('查看连携效果').red(),
+                            Text.of('查看特殊效果').red(),
                         ]);
                     }
             }

@@ -24,5 +24,7 @@ global.TYPE_MAP = {
     'kubejs:spleen': Text.aqua('脾'),
     'kubejs:stomach': Text.aqua('胃'),
     'kubejs:infinite': Text.lightPurple('永恒'),
-    'kubejs:active': Text.darkBlue('可激活'),
+    'kubejs:active': Text.gold('可激活'),
+    'kubejs:machine': Text.gray('机械'),
+    'kubejs:rose': Text.darkRed('玫瑰')
 }
