@@ -1,6 +1,7 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:kubejs:health_appendix",
     "item:minecraft:stone",
     "item:minecraft:dripstone_block",
     "item:weaponmaster:wm_rapier{Ability:\"none\",AicData:{AgressiveAbility:25.0f,AttackHostile:100.0f,AttackPassive:25.0f,LowDurability:5.0f,LowHealth:5.0f,NearHostile:5.0f,PassiveAbility:25.0f,TakeDamage:100.0f,VersionNumber:1},AicMood:\"\",AicPersonality:\"\",BonusDucks:0,CoreWeaponUUID:[I;1025465366,1846363382,-1612937280,-1826504596],CoreWeaponlevels:{f29bc625-66b3-4252-863f-c66cd87d1380:{AttackLevel:784,DefenseLevel:0,MobilityLevel:0,UtilityLevel:0}},CoreWeaponlevelsPlayerless:{AttackLevel:784},Damage:4,LastAicMessageTime:0L,PartList:{blade:\"signalum1\",guard:\"iron1\",handle:\"solarium1\"},PassiveTrait:\"utala_moli\",PhanToolStatus:0b,PreviousPlayerUUID:\"f29bc625-66b3-4252-863f-c66cd87d1380\",Rerolls:0,SelectedLevel:\"AttackLevel\",UnlockedAICs:{},UnlockedAbilities:\"none\",UnlockedPassives:\"nonep,utala_moli\",WeaponID:\"rapier\",display:{Name:\u0027{\"color\":\"white\",\"text\":\"Rapier\"}\u0027}}",

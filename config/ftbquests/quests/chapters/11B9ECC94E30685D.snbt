@@ -76,8 +76,10 @@
 		}
 		{
 			dependencies: ["72D090FF4C44DAAD"]
+			description: ["虽然器官都是源于生物，但可以通过模仿的方式，用科技制品来模拟器官的工作，进而生产出&2机械器官&r。"]
 			icon: "create:wrench"
 			id: "2A21CFD22EBD8054"
+			subtitle: "机械、蒸汽、爱、与生命"
 			tasks: [{
 				id: "1CD36220FD49676E"
 				item: "create:wrench"

@@ -55,7 +55,6 @@ StartupEvents.registry('item', event => {
     // 玫瑰石英肌束
     registerOrgan(new Organ('kubejs:rose_quartz_muscle')
         .addScore('endurance', 1)
-        .addScore('defense', 1)
         .addScore('strength', 2)
         .build())
         .texture('kubejs:item/organs/common/muscle')
@@ -71,8 +70,26 @@ StartupEvents.registry('item', event => {
         .addTextLines('ctrl', [Text.gold('●'), Text.gray('每存在一种类为'), Text.yellow('玫瑰'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('攻击力')])
         .build())
         .texture('kubejs:item/organs/common/heart')
-        .tag('kubejs:muscle')
+        .tag('kubejs:heart')
         .tag('kubejs:machine')
         .tag('kubejs:rose')
         .tag('kubejs:active');
+    // 玫瑰石英肝脏
+    registerOrgan(new Organ('kubejs:rose_quartz_liver')
+        .addScore('strength', 1)
+        .addScore('detoxification', 2)
+        .build())
+        .texture('kubejs:item/organs/common/liver')
+        .tag('kubejs:liver')
+        .tag('kubejs:machine')
+        .tag('kubejs:rose');
+
+    // 熔炉核心
+    registerOrgan(new Organ('kubejs:furnace_core')
+        .addScore('speed', -5)
+        .addScore('defend', 3)
+        .build())
+        .texture('kubejs:item/organs/common/heart')
+        .tag('kubejs:liver')
+        .tag('kubejs:machine');
 });
