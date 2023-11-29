@@ -69,7 +69,7 @@ StartupEvents.registry('item', event => {
         .addTextLines('ctrl', [Text.gold('●'), Text.gray('每存在一种类为'), Text.yellow('机械'), Text.gray('的器官，会为你添加额外'), Text.yellow(2), Text.gray('点'), Text.yellow('生命值')])
         .addTextLines('ctrl', [Text.gold('●'), Text.gray('每存在一种类为'), Text.yellow('玫瑰'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('攻击力')])
         .build())
-        .texture('kubejs:item/organs/common/heart')
+        .texture('kubejs:item/organs/rose_quartz/heart')
         .tag('kubejs:heart')
         .tag('kubejs:machine')
         .tag('kubejs:rose')
