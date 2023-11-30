@@ -15,4 +15,11 @@ StartupEvents.registry('item', event => {
                 }
             });
     })
+
+    event.create('candy').texture('kubejs:item/candy').tag('kubejs:eatable_candy').food(food => {
+        food
+            .hunger(1)
+            .saturation(1)
+            .alwaysEdible()
+    })
 })

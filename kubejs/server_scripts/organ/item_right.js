@@ -1,7 +1,7 @@
 ItemEvents.rightClicked(event => {
     let player = event.player;
     let item = event.item;
-    if (item.getBurnTime() > 100) {
+    if (item.hasTag('kubejs:eatable_fuel')) {
         let itemMap = getPlayerChestCavityItemMap(player)
         if (itemMap.has('kubejs:furnace_core')) {
             if (item.getBurnTime() < 20 * 60) {

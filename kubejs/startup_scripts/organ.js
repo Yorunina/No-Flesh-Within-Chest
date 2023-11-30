@@ -92,4 +92,61 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/common/heart')
         .tag('kubejs:liver')
         .tag('kubejs:machine');
+
+
+    // 糖果心与魔法使系列物品
+    // 糖果系列器官
+    registerOrgan(new Organ('kubejs:candy_heart')
+        .addScore('health', 2)
+        .addTextLines('default', [Text.gray('魔法使的糖果心，流动的是'), Text.red('血'), Text.gray('还是'), Text.of('糖').color('#e8a0dc'), Text.gray('？')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('存在糖果心的情况下，“甜蜜之梦”才会正常发挥效果。')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('在你受到伤害时，若拥有“甜蜜之梦”的效果，则会减少该效果的持续时间用以抵消伤害事件。')])
+        .build())
+        .texture('kubejs:item/organs/candy/candy_heart')
+        .tag('kubejs:heart')
+        .tag('kubejs:candy');
+
+    registerOrgan(new Organ('kubejs:candy_stomach')
+        .addScore('nutrition', 2)
+        .addScore('digestion', 2)
+        .addTextLines('default', [Text.gray('因为体温在体内'), Text.of('缓缓融化').color('#e8a0dc')])
+        .addTextLines('default', [Text.gray('但融化的糖液又被其充分吸收')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('当食用糖类食品时，会获得'), Text.of('“甜蜜之梦”').color('#e8a0dc'), Text.gray('效果')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('如果身上存在该效果，则无法通过食用刷新效果。')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('每种糖类物品存在独立的食用间隔'), Text.gold('300s')])
+        .build())
+        .texture('kubejs:item/organs/candy/candy_stomach')
+        .tag('kubejs:heart')
+        .tag('kubejs:candy');
+
+    registerOrgan(new Organ('kubejs:candy_pancreas')
+        .addScore('endurance', 1)
+        .addScore('health', 1)
+        .addTextLines('default', [Text.gray('想让人有吃下去的冲动。')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('当“甜蜜之梦”的效果因为抵消伤害而消失时，给予'), Text.gold('伤害吸收 V'), Text.gray('效果。')])
+        .build())
+        .texture('kubejs:item/organs/candy/candy_pancreas')
+        .tag('kubejs:pancreas')
+        .tag('kubejs:candy');
+
+    // 魔法使系列
+    registerOrgan(new Organ('kubejs:magic_hippocampus')
+        .addScore('nerves', 1)
+        .addScore('luck', 1)
+        .build())
+        .texture('kubejs:item/organs/magic/magic_hippocampus')
+        .tag('kubejs:magic');
+
+    registerOrgan(new Organ('kubejs:magic_muscle')
+        .addScore('strength', 1)
+        .build())
+        .texture('kubejs:item/organs/magic/magic_muscle')
+        .tag('kubejs:magic');
+
+    registerOrgan(new Organ('kubejs:magic_spine')
+        .addScore('nerves', 2)
+        .addScore('defense', 1)
+        .build())
+        .texture('kubejs:item/organs/magic/magic_spine')
+        .tag('kubejs:magic');
 });

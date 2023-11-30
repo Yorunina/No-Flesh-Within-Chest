@@ -1,0 +1,22 @@
+
+[Animations]
+	#What to render in first person while casting.
+	showFirstPersonArms = true
+	showFirstPersonItems = true
+
+[UI]
+	#By default (Contextual), the mana bar only appears when you are holding a magic item or are not at max mana.
+	#Allowed Values: Never, Always, Contextual
+	manaBarDisplay = "Contextual"
+	#Use to adjust if the mana bar conflicts with other mod's ui elements (11 is one full hunger bar up).
+	manaBarYOffset = 0
+	manaBarXOffset = 0
+	manaBarTextVisible = true
+	#Allowed Values: Hunger, XP, Center, TopLeft, TopRight, BottomLeft, BottomRight
+	manaBarAnchor = "Hunger"
+
+[Renderers]
+	#By default, both fireballs are replaced with an enhanced model used by fire spells.
+	replaceGhastFireballs = true
+	replaceBlazeFireballs = true
+
