@@ -22,4 +22,19 @@ StartupEvents.registry('item', event => {
             .saturation(1)
             .alwaysEdible()
     })
+
+    event.create('ceremonial_knife').texture('kubejs:item/ceremonial_knife').maxStackSize(1)
+        .useAnimation('bow')
+        .useDuration(itemStack => 40)
+        .use((level, player, hand) => {
+            if(player.getHealth() > 10) {
+                return true;
+            }
+            return false;
+        })
+        .finishUsing((itemstack, level, entity) => {
+            if(entity.getHealth() > 10) {
+                entity.attack(10);
+            }
+        })
 })

@@ -98,7 +98,7 @@ StartupEvents.registry('item', event => {
     // 糖果系列器官
     registerOrgan(new Organ('kubejs:candy_heart')
         .addScore('health', 2)
-        .addTextLines('default', [Text.gray('魔法使的糖果心，流动的是'), Text.red('血'), Text.gray('还是'), Text.of('糖').color('#e8a0dc'), Text.gray('？')])
+        .addTextLines('default', [Text.gray('魔法使`的糖果心，流动的是'), Text.red('血'), Text.gray('还是'), Text.of('糖').color('#e8a0dc'), Text.gray('？')])
         .addTextLines('alt', [Text.gold('●'), Text.gray('存在糖果心的情况下，“甜蜜之梦”才会正常发挥效果。')])
         .addTextLines('alt', [Text.gold('●'), Text.gray('在你受到伤害时，若拥有“甜蜜之梦”的效果，则会减少该效果的持续时间用以抵消伤害事件。')])
         .build())

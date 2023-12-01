@@ -1,3 +1,4 @@
+// priority: 5
 EntityEvents.hurt('minecraft:player', event => {
     if (!event.entity.isPlayer()) {
         return;
