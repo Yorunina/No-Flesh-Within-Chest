@@ -59,20 +59,20 @@ function clearAllActivedModify(player) {
 // 简单策略
 let organActiveScoreStrategies = {
     'kubejs:health_appendix': function (player, typeMap, attributeMap) {
-        let value = typeMap.get('kubejs:appendix').length * 0.5
+        let value = typeMap.get('kubejs:appendix').length * 1
         if (attributeMap.has(global.HEALTH_UP.name)) {
             value = value + attributeMap.get(global.HEALTH_UP.name)
         }
         attributeMap.set(global.HEALTH_UP.name, value)
     },
     'kubejs:rose_quartz_heart': function (player, typeMap, attributeMap) {
-        let healthValue = typeMap.get('kubejs:machine').length * 2
+        let healthValue = typeMap.get('kubejs:machine').length * 1
         if (attributeMap.has(global.HEALTH_UP.name)) {
             healthValue = healthValue + attributeMap.get(global.HEALTH_UP.name)
         }
         attributeMap.set(global.HEALTH_UP.name, healthValue)
 
-        let attackValue = typeMap.get('kubejs:rose').length * 1
+        let attackValue = typeMap.get('kubejs:rose').length * 0.5
         if (attributeMap.has(global.ATTACK_UP.name)) {
             attackValue = attackValue + attributeMap.get(global.ATTACK_UP.name)
         }

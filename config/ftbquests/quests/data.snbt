@@ -4,11 +4,12 @@
 	default_quest_disable_jei: false
 	default_quest_shape: "circle"
 	default_reward_team: false
-	detection_delay: 20
+	detection_delay: 80
 	disable_gui: false
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
+	icon: "kubejs:candy_heart"
 	lock_message: ""
 	loot_crate_no_drop: {
 		boss: 0
@@ -17,5 +18,6 @@
 	}
 	pause_game: false
 	progression_mode: "linear"
+	title: "No Flesh Within Chest"
 	version: 13
 }

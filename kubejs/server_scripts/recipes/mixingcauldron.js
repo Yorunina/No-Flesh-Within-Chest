@@ -16,7 +16,10 @@ MixingCauldronRecipe.prototype = {
     setFluid: function (fluid, amount) {
         this.liquid = { 'fluid': fluid }
         this.fluidLevelsConsumed = amount
-        this.liquidOutput.fluid = { 'liquidOutput': fluid }
+        return this
+    },
+    setFluidOutput: function (fluid) {
+        this.liquidOutput = { 'fluid': fluid }
         return this
     },
     addHeatRequirement: function () {
@@ -37,5 +40,9 @@ ServerEvents.recipes(event => {
     registeCustomRecipe(new MixingCauldronRecipe(
         [Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('kubejs:lucky_appendix'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone')],
         Item.of('kubejs:health_appendix')))
+
+    registeCustomRecipe(new MixingCauldronRecipe(
+        [Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar')],
+        Item.of('kubejs:scrap')).setFluid('minecraft:water', 100).setFluidOutput('kubejs:syrup'))
 })
 

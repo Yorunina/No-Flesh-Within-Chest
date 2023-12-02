@@ -10,14 +10,6 @@ EntityEvents.hurt(event => {
 })
 
 
-EntityEvents.hurt('minecraft:player', event => {
-    let itemMap = getPlayerChestCavityItemMap(damageSourcePlayer);
-    if (event.getDamage() > 10 && itemMap.has('kubejs:magic_hippocampus')) {
-        organEntityHurtStrategies['kubejs:magic_hippocampus'](event)
-    }
-})
-
-
 
 let organEntityHurtStrategies = {
     'kubejs:infinite_beats': function (event) {
@@ -39,14 +31,4 @@ let organEntityHurtStrategies = {
             setPlayerAttributeMap(damageSourcePlayer, attriMap);
         }
     },
-    'kubejs:magic_hippocampus': function (event) {
-        let durationMuti = 1;
-        let itemMap = getPlayerChestCavityItemMap(damageSourcePlayer);
-        if (itemMap.has('kubejs:magic_muscle')) {
-            durationMuti = durationMuti + itemMap.get('kubejs:magic_muscle').length
-        }
-        if (!event.player.hasEffect('kubejs:sweet_dream')) {
-            event.player.potionEffects.add('kubejs:sweet_dream', 20 * 5 * durationMuti, 0);
-        }
-    }
 };

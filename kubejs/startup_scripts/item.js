@@ -23,6 +23,10 @@ StartupEvents.registry('item', event => {
             .alwaysEdible()
     })
 
+    event.create('scrap').texture('kubejs:item/scrap')
+    event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
+    event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
+    
     event.create('ceremonial_knife').texture('kubejs:item/ceremonial_knife').maxStackSize(1)
         .useAnimation('bow')
         .useDuration(itemStack => 40)
@@ -36,5 +40,8 @@ StartupEvents.registry('item', event => {
             if(entity.getHealth() > 10) {
                 entity.attack(10);
             }
+            entity.potionEffects.add('irons_spellbooks:instant_mana', 1, 2)
+            entity.addItemCooldown(itemstack, 20 * 10)
+            return itemstack;
         })
 })

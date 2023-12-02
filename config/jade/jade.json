@@ -1,0 +1,73 @@
+{
+  "general": {
+    "displayTooltip": true,
+    "displayBlocks": true,
+    "displayEntities": true,
+    "displayMode": "TOGGLE",
+    "hideFromDebug": true,
+    "hideFromTabList": true,
+    "enableTextToSpeech": false,
+    "ttsMode": "PRESS",
+    "fluidMode": "ANY",
+    "reachDistance": 0.0,
+    "debug": false,
+    "itemModNameTooltip": true,
+    "bossBarOverlapMode": "PUSH_DOWN",
+    "hintOverlayToggle": true
+  },
+  "overlay": {
+    "overlayPosX": 0.5,
+    "overlayPosY": 1.0,
+    "overlayScale": 1.0,
+    "overlayAnchorX": 0.5,
+    "overlayAnchorY": 0.0,
+    "overlaySquare": false,
+    "flipMainHand": false,
+    "autoScaleThreshold": 0.5,
+    "alpha": 0.7,
+    "themes": {
+      "jade:waila": {
+        "id": "jade:waila",
+        "backgroundColor": "#100010",
+        "gradientStart": "#5000ff",
+        "gradientEnd": "#28007f",
+        "titleColor": "#fff",
+        "textColor": "#a0a0a0",
+        "textShadow": true
+      },
+      "jade:dark": {
+        "id": "jade:dark",
+        "backgroundColor": "#131313",
+        "gradientStart": "#383838",
+        "gradientEnd": "#242424",
+        "titleColor": "#fff",
+        "textColor": "#a0a0a0",
+        "textShadow": true
+      },
+      "jade:create": {
+        "id": "jade:create",
+        "backgroundColor": "#000",
+        "gradientStart": "#2a2626",
+        "gradientEnd": "#1a1717",
+        "titleColor": "#fff",
+        "textColor": "#a0a0a0",
+        "textShadow": true
+      },
+      "jade:top": {
+        "id": "jade:top",
+        "backgroundColor": "#0695",
+        "gradientStart": "#999f",
+        "gradientEnd": "#999f",
+        "titleColor": "#fff",
+        "textColor": "#a0a0a0",
+        "textShadow": true
+      }
+    },
+    "activeTheme": "jade:dark",
+    "iconMode": "TOP",
+    "animation": true
+  },
+  "formatting": {
+    "modName": "§9§o%s"
+  }
+}

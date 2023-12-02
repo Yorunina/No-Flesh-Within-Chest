@@ -1,0 +1,215 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1"
+	group: "4E02CBDD9D86D249"
+	icon: "minecraft:oak_sapling"
+	id: "6903E1989FA10D92"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["顺便，你可以不必制作木镐了。"]
+			icon: "minecraft:oak_sapling"
+			id: "3FED9C9227FC9CD5"
+			rewards: [
+				{
+					count: 3
+					id: "1CB3EF4A945C84FD"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+				{
+					id: "4FDF2E7901B14988"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:bronze_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "砍下第一棵树"
+			tasks: [{
+				consume_items: false
+				count: 3L
+				id: "58D53C77056E6A51"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "第一棵树"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FED9C9227FC9CD5"]
+			description: [
+				"看起来你已经获得了第一枚铜币，你可以手持它右键，将其存储在背包界面的钱包内。"
+				""
+				"当你需要它时，通过点击背包&2合成界面右侧的小钱包&r图标，便可以根据你的需求提取出来对应的货币。"
+				""
+				"货币可以用于村民交易、玩家交易、以及后面会出现的wares打包交易。"
+				""
+				"千万保存好你的钱！"
+			]
+			icon: {
+				Count: 1
+				id: "numismaticoverhaul:bronze_coin"
+				tag: { }
+			}
+			id: "17F501A9B3D8B5BA"
+			rewards: [{
+				id: "54219AC6A5460D10"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "通货与价值"
+			tasks: [{
+				id: "533AD6A08AED2570"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:bronze_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "钱币"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3FED9C9227FC9CD5"]
+			description: [
+				"当你获得石镐的时候，往往意味着要开始千篇一律的挖矿过程。"
+				""
+				"但是暂且可以别心急！不妨看看后面的任务？也许在本整合里，有各种&5意想不到&r的方法来获取原本你心心念念的各种资源！"
+			]
+			id: "0721AF9D7D5E4A7C"
+			rewards: [{
+				id: "5EB1FD1478739052"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "依旧是寻找铁. . .不过，这次略有不同？"
+			tasks: [{
+				id: "514D2AD3265021ED"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "完美的开始"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0721AF9D7D5E4A7C"]
+			description: [
+				"本整合包的第一个&5重要道具&r登场，从现在起，你可能需要时时刻刻的携带&2开胸器&r。"
+				""
+				"对着空气右键使用开胸器，可以打开自己的胸腔，对内部的器官进行更改。"
+				""
+				"同时，你也可以对着其他生物右键以打开他们的胸膛——但请注意，开胸是需要对方&2血量足够低&r才可以，并不代表任何生物一开始就可以被你开胸！"
+				""
+				"请不要随意更改你胸腔内的器官，后果自负！"
+			]
+			id: "50CE3ADF8E4D6426"
+			rewards: [{
+				id: "243324C3D642D9D8"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "敞开心扉，了解自我"
+			tasks: [{
+				id: "368F2531CF74A900"
+				item: "chestcavity:chest_opener"
+				type: "item"
+			}]
+			title: "了解自我"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"&2矿石肺&r可能是你前期能接触的唯一一个&5高级器官&r。"
+				""
+				"所谓高级器官，即是有着&5特殊效果&r的系列器官。"
+				""
+				"&2矿石肺&r的能力是可以在你开掘&2石头&r时，积累矿石灰尘，在积累到一定程度后，根据当前拥有的幸运值，给予你矿物碎块。"
+				""
+				"请注意，矿石积累的条件必须为&2石头&r。"
+			]
+			icon: "kubejs:ore_lung"
+			id: "2DD73A2CCC0054D8"
+			rewards: [{
+				id: "74EE7A78BD288110"
+				item: "kubejs:ore_lung"
+				type: "item"
+			}]
+			subtitle: "吸入矿尘，积累矿物"
+			tasks: [{
+				id: "4C4E1D25C42AC024"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "矿石肺"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"你可以试着往自己的胸腔内添加新的器官。不同的器官具有不同的初始属性。"
+				""
+				"比如心脏，越多的心脏往往会给予你越多的血量。"
+				""
+				"但并不是所有器官都会为你提供&2正面效果&r，某些器官——尤其是某些具有特殊效果的器官，往往会有着为负数的基本属性。"
+				""
+				"请注意！类如&2健康、神经效率、解毒效率&r等属性会影响到玩家是否能够正常存活！在摘除相关器官的时候请一定做好&4应急准备&r！防止陷入&4无限死亡&r的循环！"
+			]
+			icon: "chestcavity:heart"
+			id: "6069FC5CA00481CE"
+			rewards: [{
+				id: "02FFBC5A74481DDF"
+				item: "chestcavity:heart"
+				type: "item"
+			}]
+			subtitle: "尝试向自己的胸腔里添加新的器官"
+			tasks: [{
+				id: "020624CBE3D724FC"
+				title: "试试看"
+				type: "checkmark"
+			}]
+			title: "重定义自己的内在"
+			x: 6.5d
+			y: 0.0d
+		}
+	]
+	title: "章节1：如常"
+}
