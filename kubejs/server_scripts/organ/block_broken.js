@@ -17,7 +17,6 @@ let organBlockBrokenStrategies = {
         }
         if (count >= 64) {
             let luck = Math.max(player.getLuck(), 1)
-            player.tell(luck)
             if (luck > 5) {
                 player.give(Item.of('kubejs:rare_mineral_cluster').withCount(Math.max(Math.floor(5 - 30 / luck), 1) * itemMap.get('kubejs:ore_lung').length))
             }
