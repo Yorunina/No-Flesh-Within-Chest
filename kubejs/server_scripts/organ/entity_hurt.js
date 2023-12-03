@@ -2,9 +2,9 @@
 EntityEvents.hurt(event => {
     let damageSourcePlayer = event.source.player;
     if (damageSourcePlayer) {
-        let itemMap = getPlayerChestCavityItemMap(event);
-        if (itemMap.has('kubejs:infinite_beats')) {
-            organEntityHurtStrategies['kubejs:infinite_beats'](event)
+        let itemMap = getPlayerChestCavityItemMap(damageSourcePlayer);
+        if (itemMap.has('kubejs:infinity_beats')) {
+            organEntityHurtStrategies['kubejs:infinity_beats'](event)
         }
     }
 })
@@ -12,7 +12,7 @@ EntityEvents.hurt(event => {
 
 
 let organEntityHurtStrategies = {
-    'kubejs:infinite_beats': function (event) {
+    'kubejs:infinity_beats': function (event) {
         let damageSourcePlayer = event.source.player;
         let attriMap = getPlayerAttributeMap(damageSourcePlayer);
         if (!damageSourcePlayer.hasItemInSlot('mainhand') && !damageSourcePlayer.hasItemInSlot('offhand') &&

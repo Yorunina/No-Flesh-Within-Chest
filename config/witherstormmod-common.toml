@@ -1,0 +1,18 @@
+
+#Common options
+[common]
+	#DEFAULT=true. This feature makes the Wither Storm more likely to choose nearby players as targets instead of other mobs. Reload Type: NONE
+	playerFavorability = true
+	#DEFAULT=false. Toggle to enable/disable drops from Block Clusters. NOTE: Enabling this feature can cause world lag. Reload Type: WORLD
+	blockClustersDropItems = false
+	#DEFAULT=true. Specifies if the current entity the Wither Storm is picking up has a vehicle, that it should pick it up as well. Ex: Should pick up a player riding a boat. Reload Type: NONE
+	shouldPickUpVehicles = true
+	#DEFAULT=true. Specifies if phantoms AI should be overriden to allow circling above any nearby Wither Storms. Disable if you wish for default behaviour and/or if issues arise. Reload Type: WORLD
+	phantomsOrbitWitherStorm = true
+	#DEFAULT=true. Specifies if crossbows should be able to also shoot ender pearls. Disable if facing compatibility issues. Reload Type: NONE
+	crossbowsSupportEnderPearls = true
+	#DEFAULT=true. Specifies if players should not be able to dismount a tentacle entity. Disable if facing compatibility issues. Reload Type: NONE
+	playerCannotDismountTentacles = true
+	#DEFAULT=true. Specifies if custom AI behavior should be injected into certain entities (such as mobs running away from the Wither Storm). Disable if facing compatibility issues. Reload Type: WORLD
+	injectCustomAiBehavior = true
+

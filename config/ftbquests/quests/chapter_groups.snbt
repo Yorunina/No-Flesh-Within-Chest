@@ -1,6 +1,8 @@
 {
 	chapter_groups: [
 		{ id: "2358ECA720E3F23E", title: "关于本包" }
-		{ id: "4E02CBDD9D86D249", title: "入门：了解自我" }
+		{ id: "4E02CBDD9D86D249", title: "主线：本我、自我、超我" }
+		{ id: "0241B51B931E1ED2", title: "教学：如何使用某Mod" }
+		{ id: "4F4F4EA8CE67985B", title: "收集：并非无意义的努力" }
 	]
 }

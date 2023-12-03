@@ -151,7 +151,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["50CE3ADF8E4D6426"]
+			dependencies: ["6069FC5CA00481CE"]
 			description: [
 				"&2矿石肺&r可能是你前期能接触的唯一一个&5高级器官&r。"
 				""
@@ -179,8 +179,8 @@
 				type: "item"
 			}]
 			title: "矿石肺"
-			x: 5.5d
-			y: -1.5d
+			x: 7.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -207,8 +207,468 @@
 				type: "checkmark"
 			}]
 			title: "重定义自己的内在"
+			x: 5.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6069FC5CA00481CE"]
+			description: [
+				"&2血液过滤效率&r：影响身体对毒素的解毒效率，过低的血液过滤效率会导致中毒。"
+				""
+				"&2呼吸效率&r：影响气泡的恢复效率，过低的呼吸效率将导致无时无刻的窒息。"
+				""
+				"&2肺活量&r：影响你的气泡上限，即可以在水下憋气的时间。"
+				""
+				"&2营养获取效率&r：越高的营养获取效率将会使你在更少的食物中获取更多的饱和度。"
+				""
+				"&2消化效率&r：越高的消化效率将会使你从更少的食物中获得更多的饥饿值（更容易吃饱）。"
+				""
+				"&2健康&r：影响你的生命值上限，过低的健康将会导致你的死亡！"
+				""
+				"&2神经效率&r：越高的神经效率意味着越高的攻击速度和挖掘速度，过低的神经效率将会导致无法移动。"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"&2力量&r：影响你的攻击伤害。"
+				""
+				"&2速度&r：影响你的移动速度。"
+				""
+				"&2耐力&r：影响饥饿值的损失速度。"
+				""
+				"&2新陈代谢效率&r：影响通过饥饿值回复生命值的速度。"
+				""
+				"&2防御&r：影响你的抗性。"
+				""
+				"&2幸运&r：影响你的幸运，间接影响部分器官的效果。"
+			]
+			icon: "chestcavity:golem_cable"
+			id: "5BC3743958DA4B16"
+			rewards: [{
+				id: "68FEB532C449F1F0"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "关于器官的属性"
+			tasks: [{
+				id: "14B5F67D7EC788BD"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "属性的定义"
+			x: 7.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"如果你真的不小心丢掉了你的一些器官，可以通过完成该任务，来重置你的器官。"
+				""
+				"同时，该任务也用于保证你并不会死档，请灵活运用。"
+				""
+				"请注意，如果你仍有一些&5稀有器官&r，请确保点击前已将其取出以避免损失！"
+			]
+			icon: "irons_spellbooks:greater_healing_potion"
+			id: "279037F0BA837179"
+			rewards: [{
+				command: "/chestcavity resetChestCavity"
+				icon: "irons_spellbooks:greater_healing_potion"
+				id: "7637EA70C0B4B64C"
+				title: "重置你的器官！"
+				type: "command"
+			}]
+			shape: "gear"
+			subtitle: "当你想要重新开始时"
+			tasks: [{
+				id: "5ACC257A80DD0FF8"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:bronze_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "重置器官！"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"虽然本整合包并不要求玩家收集大量的资源用于无意义的堆料工作，但基本的资源仍旧是需要玩家积累出来的。"
+				""
+				"获取一定量的铁，为后续的各种工作积累基本的条件。"
+			]
+			id: "3E9DD0B78886A183"
+			rewards: [{
+				count: 3
+				id: "062C34A3636D85AA"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "为了发展，你需要一些常见的基础物资"
+			tasks: [{
+				consume_items: false
+				count: 16L
+				id: "0E89D0774EF165ED"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "足够多的铁"
 			x: 6.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["0721AF9D7D5E4A7C"]
+			description: [
+				"Tetra是一款新兴的工具类Mod，其允许玩家使用名为&2加工台&r的工具台，对各种工具进行改装和升级，以期达到预期的效果。"
+				""
+				"为了开启你的Tetra之旅，你需要先制作一个锤子。虽然任务检测的是木锤，但实际上石锤仍旧可以正常的完成任务。"
+				""
+				"如果你足够了解本Mod，则可以通过选择&5快捷模式&r，直接&2获得所有后续任务线的奖励&r；或者，你可以选择解锁Tetra的任务页，随着任务一点点完成Tetra探索之旅。"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					"double/basic_hammer_left_material": "basic_hammer/oak"
+					"double/basic_hammer_right_material": "basic_hammer/oak"
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					id: "d28113b6-1cb8-4adc-b03b-0260820f3327"
+				}
+			}
+			id: "538FC6DDC204DBFA"
+			rewards: [{
+				id: "7B5547080E9AA974"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "制作一个锤子以开启你的旅途"
+			tasks: [{
+				consume_items: false
+				id: "1844B4BCBC6B4602"
+				item: {
+					Count: 1
+					id: "tetra:modular_double"
+					tag: {
+						Damage: 0
+						"double/basic_hammer_left_material": "basic_hammer/oak"
+						"double/basic_hammer_right_material": "basic_hammer/oak"
+						"double/basic_handle_material": "basic_handle/stick"
+						"double/handle": "double/basic_handle"
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						id: "d28113b6-1cb8-4adc-b03b-0260820f3327"
+					}
+				}
+				match_nbt: false
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Tetra与工具"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			description: [
+				"下界是在所有游玩历程中都需要探索的一个维度，其包含了大量的新生物以及前往末地必须要探索的&2下界要塞&r。"
+				""
+				"可以说，去往下界的主要目的就是为了寻找&2下界要塞&r，以获得奖励箱中的&5丰富物品&r，及击杀烈焰人获取&5烈焰棒&r。"
+			]
+			icon: "minecraft:netherrack"
+			id: "51FA796A91E94C4D"
+			rewards: [
+				{
+					count: 5
+					id: "28E32DF01884CD57"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0D7AF2932E525B2A"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "如平常一般，前往下界"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "398A3506EAC58765"
+				title: "下界"
+				type: "dimension"
+			}]
+			title: "前往下界"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51FA796A91E94C4D"]
+			description: [
+				"寻找各种结构的时候，你往往要根据各种生成规则来进行排查。但在Mod众多的情况下，自然生成变得极其复杂且难以捉摸，此时，你可能就需要使用&2自然指南针&r或&2探险指南针&r来辅助对于群系或结构的寻找。"
+				""
+				"通过右键指南针，你可以使用其搜索框来定向的搜索对应的群系或结构。"
+			]
+			icon: {
+				Count: 1
+				id: "naturescompass:naturescompass"
+				tag: { }
+			}
+			id: "37897967041E6CBB"
+			rewards: [{
+				count: 5
+				id: "547AB928E06DB438"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "指向你所需要的"
+			tasks: [
+				{
+					id: "6B95171F482E713B"
+					item: {
+						Count: 1
+						id: "naturescompass:naturescompass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "4218C63920D650EB"
+					item: {
+						Count: 1
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "指南针"
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["51FA796A91E94C4D"]
+			description: [
+				"前往下界堡垒的主要目的就是为了获取烈焰棒，以期制作烈焰粉来到达末地。"
+				""
+				"当然，除了这种方法之外你也可以使用猪灵交易的方案来获取烈焰粉，不过这并不被推荐。"
+				""
+				"到达下界堡垒后，你也可以顺带收集一些地狱疣，以供后期炼药使用。"
+			]
+			icon: "minecraft:nether_bricks"
+			id: "3FF06F6F309FAEC3"
+			rewards: [{
+				count: 5
+				id: "2396A39A3AAC9C0C"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "获取烈焰人的烈焰棒"
+			tasks: [{
+				id: "0C2F1BC896F47A5F"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			title: "下界堡垒与烈焰人"
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FF06F6F309FAEC3"]
+			description: ["为了前往末地，你需要获取一定数量的末影珍珠，用于开启前往末地的大门。"]
+			id: "2311CA3EEABF0250"
+			rewards: [{
+				count: 5
+				id: "0136B712C04F49E9"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "前往末地的必需品"
+			tasks: [{
+				id: "355748BEB59386AF"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			title: "与末影人相遇"
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2311CA3EEABF0250"]
+			description: ["进入末地时，Minecraft原版的游戏体验便到达了尾声——但是对于本整合来说，到达末地只是一个小小的里程碑。在这个世界上仍旧存在着大量的&5不可思议&r等待着你去探索。"]
+			icon: "minecraft:end_portal_frame"
+			id: "1D8929E0CE7CE0AB"
+			rewards: [{
+				id: "2AF64ED78935D661"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "很快，你的Minecraft原版体验就接近尾声"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				id: "2AF9850C10D5391F"
+				type: "dimension"
+			}]
+			title: "前往末地"
+			x: 14.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51FA796A91E94C4D"]
+			description: [
+				"倘若你还在纠结于使用什么武器，不妨试试&5武器大师&r中的几款独特武器。"
+				""
+				"为了能够正确的保养和升级武器，首先你需要一款&2武器工作台&r。"
+			]
+			icon: "weaponmaster:workstation"
+			id: "4C370F7BB4E56798"
+			rewards: [
+				{
+					count: 5
+					id: "5CC9E29E1B0EF54F"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "52EC14A63D41191E"
+					item: "weaponmaster:tutorialbook"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			subtitle: "陪伴你一生的武器"
+			tasks: [{
+				id: "0C6F1832BF59D8A7"
+				item: "weaponmaster:workstation"
+				type: "item"
+			}]
+			title: "成为武器大师"
+			x: 10.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			description: [
+				"&2机械动力&r会为你带来什么："
+				""
+				"1.一些比较方便的机器，可以大量自动的获取一些自然资源。"
+				""
+				"2.一些比较炫酷的机器，可以非常酷炫的完成某些没啥意义的功能。"
+				""
+				"3.某些流程必须机械动力的机器完成。"
+				""
+				"考虑到部分玩家完全不会/不想搞明白机械动力的具体内容，本整合包的设计上也并没有过于倾向于自动化。排除掉几个挑战性质的器官外，机械动力也是&2选择性的一环&r。"
+				""
+				"因此，你完全没必要为了机械动力而精进某些东西，仅需要跟着教程，一步一步完成即可。在这个过程中，你可能突然&5领悟&r某些机器的用法——但就算没有领悟也没关系，可以完全通过人工的方式来获取整合中所需要的资源。"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"如果你又菜又爱玩，则可以考虑用&2钱币&r购买商店页面里的&2胶囊&r，快捷的部署我们提前预设好的机器。"
+			]
+			icon: "create:wrench"
+			id: "0861DDE9767A3E9D"
+			rewards: [{
+				count: 5
+				id: "01EC19571C8B58EF"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "机械动力是一款非常冗长且费劲的科技模组"
+			tasks: [{
+				id: "45C2644514843204"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "机械动力？人工动力！"
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"你会注意到，本整合包如同其他的各类冒险包、水槽包一样，添加了Alex生物用以丰富世界——但仅仅是这样吗？"
+				""
+				"所有的生物都具有着其独特的&5器官&r，保证他们在世界上的正常生活和繁衍，而我们——玩家，自然也可以从动物的身上学习到他们的特点并加以运用。"
+				""
+				"通过寻找不同的生物，摘取他们身上的器官并进行加工，玩家以变得更强。后期大量的高级器官都是基于这些生物的低级器官变化加工而成。"
+			]
+			icon: "alexsmobs:lobster_bucket"
+			id: "523490881F8317C7"
+			rewards: [
+				{
+					count: 5
+					id: "6A7406D6BBB8960E"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "524661C46CD6AAD1"
+					item: "alexsmobs:animal_dictionary"
+					type: "item"
+				}
+			]
+			subtitle: "新鲜的器官来源"
+			tasks: [{
+				id: "76CE109C8B7FF8CD"
+				title: "寻找Alex生物"
+				type: "checkmark"
+			}]
+			title: "寻找Alex生物"
+			x: 5.5d
+			y: 1.5d
 		}
 	]
 	title: "章节1：如常"

@@ -1,0 +1,130 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "52B82AC988B2DA95"
+	group: "0241B51B931E1ED2"
+	icon: "weaponmaster:workstation"
+	id: "52B82AC988B2DA95"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4C370F7BB4E56798"]
+			description: [
+				"相对于其他装备Mod，武器大师能够提供&5长久的成长&r，给予玩家养成的成就感。"
+				""
+				"除此之外，武器大师拥有着其他装备Mod难以企及的贴图以及装备的高自定义。任何游玩过武器大师武器的玩家都会对该Mod内的物品印象深刻。"
+			]
+			icon: "weaponmaster:workstation"
+			id: "1C3CABF6FA4DBB44"
+			incompatible: ["5A2FBD3260EAA17A"]
+			rewards: [{
+				count: 5
+				id: "2319A4D71F76480F"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "为什么要成为武器大师"
+			tasks: [{
+				id: "3D01795BE150312C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "引言：何为武器大师"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C3CABF6FA4DBB44"]
+			description: [
+				"通过完成该任务，你可以获取该章节所有任务的奖励。"
+				""
+				"但是，这意味着你&4不能&r游玩该章节的所有教学任务！"
+				""
+				"请慎重！"
+			]
+			hide_dependency_lines: true
+			icon: "kubejs:exclamation_mark"
+			id: "5A2FBD3260EAA17A"
+			incompatible: ["1C3CABF6FA4DBB44"]
+			rewards: [
+				{
+					id: "1042CEF7833487F9"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					title: "还给你的银币"
+					type: "item"
+				}
+				{
+					id: "19AFEF778BCA0ADB"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:gold_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			subtitle: "如果你已经足够了解，且需要该章节的奖励"
+			tasks: [
+				{
+					id: "2E9C4AC3C43B53E7"
+					title: "快捷，启动！"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					id: "61269F785AE2CB64"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					title: "防止手贱因此消耗银币"
+					type: "item"
+				}
+			]
+			title: "武器大师：快捷模式"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C3CABF6FA4DBB44"]
+			description: [
+				"为了开启武器大师的游玩历程，仅仅有武器工作台可不行，你需要制作一个&5武器套件&r，来选择你的武器。"
+				""
+				"&2右键&r使用武器套件，可以弹出包含四种武器的选择页面。根据你的喜好，你可以选择不同的武器作为你的伙伴。当然，你也完全可以直接制作四个武器套件，每种各来一个！"
+			]
+			hide: true
+			id: "4B92B6F9C9EDC46E"
+			rewards: [{
+				id: "20A85C308C640405"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "选择陪伴你一生的武器"
+			tasks: [{
+				id: "4408346A4E2B3C20"
+				item: "weaponmaster:weaponkit"
+				type: "item"
+			}]
+			title: "选择你的武器！"
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	title: "武器大师：陪伴一生的伙伴"
+}

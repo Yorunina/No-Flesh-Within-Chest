@@ -1,0 +1,6 @@
+
+[Configs]
+	#Set to true to have the zoom centered on your mouse position
+	#instead of the center of the screen.
+	mouse_zoom = false
+

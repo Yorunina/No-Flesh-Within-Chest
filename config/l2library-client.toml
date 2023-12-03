@@ -1,0 +1,14 @@
+#Info background transparency. 1 means opaque.
+#Range: 0.0 ~ 1.0
+infoAlpha = 0.5
+#Info alignment. 0 means top. 1 means middle. 2 means bottom.
+#Range: 0 ~ 2
+infoAnchor = 1
+#Info max with. 0.5 means half screen. default: 0.3
+#Range: 0.0 ~ 0.5
+infoMaxWidth = 0.3
+#Show inventory tabs
+showTabs = true
+#Show inventory tabs only in curio page. Only works when showTabs is true and curio is installed.
+showTabsOnlyCurio = false
+

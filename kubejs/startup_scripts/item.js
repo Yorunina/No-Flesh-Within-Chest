@@ -26,6 +26,8 @@ StartupEvents.registry('item', event => {
     event.create('scrap').texture('kubejs:item/scrap')
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
     event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
+    event.create('exclamation_mark').texture('kubejs:item/exclamation_mark')
+    event.create('full_mark').texture('kubejs:item/full_mark')
     
     event.create('ceremonial_knife').texture('kubejs:item/ceremonial_knife').maxStackSize(1)
         .useAnimation('bow')

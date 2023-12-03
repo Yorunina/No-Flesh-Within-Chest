@@ -11,7 +11,7 @@
     "fluidMode": "ANY",
     "reachDistance": 0.0,
     "debug": false,
-    "itemModNameTooltip": true,
+    "itemModNameTooltip": false,
     "bossBarOverlapMode": "PUSH_DOWN",
     "hintOverlayToggle": true
   },

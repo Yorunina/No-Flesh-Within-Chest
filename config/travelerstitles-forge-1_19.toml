@@ -1,0 +1,216 @@
+
+["Traveler's Titles"]
+
+	###########################################################################################################
+	## Biome Title settings.
+	###########################################################################################################
+	["Traveler's Titles"."Biome Titles"]
+		"Enable Biome Titles" = true
+		# How long the fade-in text effect lasts, in ticks.
+		# 20 ticks = 1 second.
+		# Default: 10
+		"Text Fade-In Time" = 10
+		# How long the text displays, in ticks.
+		# 20 ticks = 1 second.
+		# Default: 50
+		"Text Display Time" = 50
+		# How long the fade-out text effect lasts, in ticks.
+		# 20 ticks = 1 second.
+		# Default: 10
+		"Text Fade-Out Time" = 10
+		# The minimum amount of time in ticks that must pass after a biome title is displayed before
+		# another can be displayed.
+		# Useful for preventing the player from being spammed if they are traveling quickly.
+		# 20 ticks = 1 second.
+		# Default: 80
+		"Text Cooldown Time" = 80
+		# The text's default RGB color.
+		# Default: "ffffff"
+		"Default Text Color" = "ffffff"
+		# The text's scale.
+		# Default: 2.1
+		"Text Size" = 2.1
+		# If enabled, will render a shadow below the text making it easier to read.
+		# Default: true
+		"Display Text Shadow" = true
+		# The text's vertical position on the screen.
+		# If Horizontally Center Title is enabled, this number is relative to the center of the screen.
+		# If Horizontally Center Title is disabled, this number is relative to the top of the screen.
+		# Default: -33.0
+		"Text Y Offset" = -33.0
+		# The text's horizontal position on the screen.
+		# If Horizontally Center Title is enabled, this number is relative to the center of the screen.
+		# If Horizontally Center Title is disabled, this number is relative to the left side of the screen.
+		# Default: 0.0
+		"Text X Offset" = 0.0
+		# Biomes that should not have any title displayed when the player enters them.
+		# Example: "[minecraft:plains, minecraft:desert]"
+		# Default: "[minecraft:the_end, minecraft:river, minecraft:frozen_river]"
+		"Blacklisted Biomes" = "[minecraft:the_end, minecraft:river, minecraft:frozen_river]"
+		# Traveler's Titles tracks a list of biomes the player most recently visited in order to
+		# prevent the player from being spammed with titles when they move between the same few biomes.
+		# This is the size of that list.
+		# For example, if this value is 5, then your 5 most recent biomes will be saved.
+		# Default: 5
+		"Number of Most Recent Biomes Saved" = 0
+		# Whether or not the biome text should be centered on the screen.
+		# The Text X Offset and Text Y Offset options are relative to the center of the screen if this is enabled.
+		# Default: true
+		"Center Title" = true
+		# Traveler's Titles tracks a list of biomes the player most recently visited in order to
+		# prevent the player from being spammed with titles when they move between the same few biomes.
+		# This option determines whether or not that list should be cleared every time
+		# the player changes dimensions.
+		# Default: true
+		"Reset Biome Cache When Changing Dimensions" = true
+		# If enabled, dimensions without ceilings (like the Overworld) will only display biome titles when the player is exposed to the skylight.
+		# This prevents biome titles from showing while the player is underground.
+		# Default: true
+		"Only Show Biome Titles When Exposed To Skylight" = true
+
+	###########################################################################################################
+	## Dimension Title settings.
+	###########################################################################################################
+	["Traveler's Titles"."Dimension Titles"]
+		"Enable Dimension Titles" = true
+		# How long the fade-in text effect lasts, in ticks.
+		# 20 ticks = 1 second.
+		# Default: 10
+		"Text Fade-In Time" = 10
+		# How long the text displays, in ticks.
+		# 20 ticks = 1 second.
+		# Default: 70
+		"Text Display Time" = 70
+		# How long the fade-out text effect lasts, in ticks.
+		# 20 ticks = 1 second.
+		# Default: 20
+		"Text Fade-Out Time" = 20
+		# The text's default RGB color.
+		# Default: "ffffff"
+		"Default Text Color" = "ffffff"
+		# The text's scale.
+		# Default: 3.0
+		"Text Size" = 3.0
+		# If enabled, will render a shadow below the text making it easier to read.
+		# Default: true
+		"Display Text Shadow" = true
+		# The text's vertical position on the screen.
+		# If Horizontally Center Title is enabled, this number is relative to the center of the screen.
+		# If Horizontally Center Title is disabled, this number is relative to the top of the screen.
+		# Default: -32.0
+		"Text Y Offset" = -32.0
+		# The text's horizontal position on the screen.
+		# If Horizontally Center Title is enabled, this number is relative to the center of the screen.
+		# If Horizontally Center Title is disabled, this number is relative to the left side of the screen.
+		# Default: 0.0
+		"Text X Offset" = 0.0
+		# Dimensions that should not have any title displayed when the player enters them.
+		# Example: "[minecraft:overworld, minecraft:the_nether]"
+		# Default: "[]"
+		"Blacklisted Dimensions" = "[]"
+		# Whether or not the dimension text should be centered on the screen.
+		# The Text X Offset and Text Y Offset options are relative to the center of the screen if this is enabled.
+		# Default: true
+		"Center Title" = true
+		# If enabled, dimensions without ceilings (like the Overworld) will only display dimension titles when the player is exposed to the skylight.
+		# This prevents dimension titles from showing while the player is underground.
+		# Default: false
+		"Only Show Dimension Titles When Exposed To Skylight" = false
+
+	###########################################################################################################
+	## Waystone title settings. Only used if the Waystones mod is installed.
+	###########################################################################################################
+	["Traveler's Titles"."Waystone Titles"]
+		"Enable Waystone Titles" = true
+		# How long the fade-in text effect lasts, in ticks.
+		# 20 ticks = 1 second.
+		# Default: 10
+		"Text Fade-In Time" = 10
+		# How long the text displays, in ticks.
+		# 20 ticks = 1 second.
+		# Default: 50
+		"Text Display Time" = 50
+		# How long the fade-out text effect lasts, in ticks.
+		# 20 ticks = 1 second.
+		# Default: 10
+		"Text Fade-Out Time" = 10
+		# The minimum amount of time in ticks that must pass after a Waystone title is displayed before
+		# another can be displayed.
+		# Useful for preventing the player from being spammed if they are traveling quickly.
+		# 20 ticks = 1 second.
+		# Default: 80
+		"Text Cooldown Time" = 80
+		# The text's default RGB color.
+		# Default: "c2b740"
+		"Default Text Color" = "c2b740"
+		# The text's scale.
+		# Default: 2.1
+		"Text Size" = 2.1
+		# If enabled, will render a shadow below the text making it easier to read.
+		# Default: true
+		"Display Text Shadow" = true
+		# The text's vertical position on the screen.
+		# If Horizontally Center Title is enabled, this number is relative to the center of the screen.
+		# If Horizontally Center Title is disabled, this number is relative to the top of the screen.
+		# Default: -33.0
+		"Text Y Offset" = -33.0
+		# The text's horizontal position on the screen.
+		# If Horizontally Center Title is enabled, this number is relative to the center of the screen.
+		# If Horizontally Center Title is disabled, this number is relative to the left side of the screen.
+		# Default: 0.0
+		"Text X Offset" = 0.0
+		# Traveler's Titles tracks a list of Waystones the player most recently visited in order to
+		# prevent the player from being spammed with titles when they move between the same few Waystones.
+		# This is the size of that list.
+		# For example, if this value is 5, then your 5 most recent Waystones will be saved.
+		# Default: 3
+		"Number of Most Recent Waystones Saved" = 3
+		# Whether or not the Waystone text should be centered on the screen.
+		# The Text X Offset and Text Y Offset options are relative to the center of the screen if this is enabled.
+		# Default: true
+		"Center Title" = true
+		# Traveler's Titles tracks a list of Waystones the player most recently visited in order to
+		# prevent the player from being spammed with titles when they move between the same few Waystones.
+		# This option determines whether or not that list should be cleared every time
+		# the player changes dimensions.
+		# Default: true
+		"Reset Waystone Cache When Changing Dimensions" = true
+		# The distance from a Waystone (in blocks) at which the Waystone's title will trigger.
+		# Default: 30
+		"Waystone Title Range" = 30
+		# Whether or not Waystone titles should override Biome titles.
+		# That is, if a player enters the area for a Waystone while also entering a new biome,
+		# the Waystone title will take precedence.
+		# Default: true
+		"Waystone Titles Override Biome Titles" = true
+		# If enabled, dimensions without ceilings (like the Overworld) will only display Waystone titles when the player is exposed to the skylight.
+		# This prevents Waystone titles from showing while the player is underground.
+		# Default: false
+		"Only Show Waystone Titles When Exposed To Skylight" = false
+
+	###########################################################################################################
+	## Sound settings. These will only be used if you add custom sounds via a resource pack.
+	## For information on how to do this, visit the CurseForge page.
+	###########################################################################################################
+	["Traveler's Titles"."Custom Sound Settings"]
+		# The volume of the sound that plays when a biome title displays.
+		# Default: 1.0
+		"Biome Sound Effect Volume" = 1.0
+		# The pitch of the sound that plays when a biome title displays.
+		# Default: 1.0
+		"Biome Sound Effect Pitch" = 1.0
+		# The volume of the sound that plays when a dimension title displays.
+		# Default: 1.0
+		"Dimension Sound Effect Volume" = 1.0
+		# The pitch of the sound that plays when a dimension title displays.
+		# Default: 1.0
+		"Dimension Sound Effect Pitch" = 1.0
+		# The volume of the sound that plays when a Waystone title displays.
+		# The Waystones mod must be installed for this to have any effect.
+		# Default: 1.0
+		"Waystone Sound Effect Volume" = 1.0
+		# The pitch of the sound that plays when a Waystone title displays.
+		# The Waystones mod must be installed for this to have any effect.
+		# Default: 1.0
+		"Waystone Sound Effect Pitch" = 1.0
+

@@ -22,6 +22,7 @@
 			]
 			icon: "chestcavity:kidney"
 			id: "72D090FF4C44DAAD"
+			shape: "rsquare"
 			subtitle: "一切开始的介绍"
 			tasks: [{
 				id: "6BB639ACDD430937"
@@ -53,7 +54,7 @@
 			}]
 			title: "胸腔"
 			x: 0.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["72D090FF4C44DAAD"]
@@ -71,7 +72,7 @@
 				type: "checkmark"
 			}]
 			title: "巫术与魔法"
-			x: 2.0d
+			x: 2.5d
 			y: -1.0d
 		}
 		{
@@ -88,6 +89,33 @@
 			title: "机械与蒸汽"
 			x: -2.5d
 			y: -1.0d
+		}
+		{
+			dependencies: ["72D090FF4C44DAAD"]
+			description: [
+				"不同形状的任务代表不同的功能。"
+				""
+				"&2圆形&r：常规任务，可以无脑完成，不阅读介绍"
+				""
+				"&2圆角方形&r：代表该任务较为重要，推荐玩家阅读简介内容"
+				""
+				"&2齿轮形&r：任务会刷新，往往代表着这个任务有着相对特殊的功能"
+				""
+				"&2五边形&r：目标性任务，不推荐玩家短期内完成"
+				""
+				"&2八边形&r：&5快捷模式&r，可以直接获取该章节所有任务奖励而不需要完成任务。通常出现在教学任务章节。"
+			]
+			icon: "minecraft:writable_book"
+			id: "55A4D2A38D0297E8"
+			subtitle: "不同形状的任务代表不同的功能"
+			tasks: [{
+				id: "1B37BAC762FD8D2F"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "任务形状"
+			x: -2.0d
+			y: 2.0d
 		}
 	]
 	title: "简介"

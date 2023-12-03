@@ -1,0 +1,60 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2"
+	group: "4E02CBDD9D86D249"
+	icon: "cataclysm:burning_ashes"
+	id: "074AE67620B22558"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["040207B33E2FEBFF"]
+			description: ["最先推荐的，则是能够让你骑着扫帚飞行的&5魔法巫师&r。"]
+			icon: "irons_spellbooks:alchemist_cauldron"
+			id: "00E3E147FC750C90"
+			shape: "rsquare"
+			subtitle: "咒术？魔法？还是科学？"
+			tasks: [{
+				id: "3342C5E8A28DC165"
+				title: "探寻魔法的秘密"
+				type: "checkmark"
+			}]
+			title: "探寻魔法的秘密"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			description: [
+				"当你有了一些铁之后，就可以开始考虑步入&2各种Mod&r的殿堂了。"
+				""
+				"这些Mod往往会给你带来很多的便利，并且并不需要你付出过多的努力。"
+				""
+				"因此请多多尝试！"
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "040207B33E2FEBFF"
+			rewards: [{
+				id: "29EB90ADA285930A"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			subtitle: "制作一些超出常理的东西！"
+			tasks: [{
+				consume_items: true
+				id: "377272B3F01FA298"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "开启探索之旅！"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "章节2：觉醒"
+}

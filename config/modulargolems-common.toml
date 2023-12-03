@@ -1,0 +1,76 @@
+#Allow players to retrieve the golems by bare hand
+barehandRetrieve = true
+#Percentage modifiers stack exponentially
+exponentialStat = false
+
+[modifiers]
+	#Percentage damage reflection per level of thorn
+	#Range: 0.0 ~ 100.0
+	thorn = 0.2
+	#Percentage damage reduction per level of magic resistance
+	#Range: 0.0 ~ 1.0
+	magicResistance = 0.2
+	#Percentage damage reduction per level of explosion resistance
+	#Range: 0.0 ~ 1.0
+	explosionResistance = 0.2
+	#Damage Cap at max level
+	#Range: 0.0 ~ 1.0
+	damageCap = 0.1
+	#Healing when thunder immune golems are striked
+	#Range: 1 ~ 10000
+	thunderHeal = 10
+
+["twilight forest compat"]
+	#Percentage damage addition per level of fiery
+	#Range: 0.0 ~ 100.0
+	fiery = 0.5
+	#Percentage healing bonus per level of twilight healing
+	#Range: 0.0 ~ 100.0
+	compatTFHealing = 0.5
+	#Percentage damage bonus per level of twilight damage
+	#Range: 0.0 ~ 100.0
+	compatTFDamage = 0.2
+	#Time for the golem to be invincible (in ticks) per level of carminite
+	#Range: 1 ~ 100000
+	carminiteTime = 20
+
+["create compat"]
+	#Damage absorbed per level of coating
+	#Range: 0.0 ~ 10000.0
+	coating = 1.0
+
+["l2complements compat"]
+	#Conduit cooldown
+	#Range: 0 ~ 10000
+	conduitCooldown = 120
+	#Conduit damage
+	#Range: 0 ~ 10000
+	conduitDamage = 2
+	#Conduit modifier boosts attack (percentage) when golem is in water
+	#Range: 0.0 ~ 100.0
+	conduitBoostAttack = 0.2
+	#Conduit modifier boosts armor when golem is in water
+	#Range: 0 ~ 100
+	conduitBoostArmor = 5
+	#Conduit modifier boosts toughness when golem is in water
+	#Range: 0 ~ 100
+	conduitBoostToughness = 2
+	#Conduit modifier boosts speed (percentage) when golem is in water
+	#Range: 0.0 ~ 100.0
+	conduitBoostSpeed = 0.2
+	#Conduit modifier reduce damage taken when golem is in water (multiplicative)
+	#Range: 0.0 ~ 100.0
+	conduitBoostReduction = 0.2
+	#Teleport max radius
+	#Range: 1 ~ 32
+	teleportRadius = 6
+	#Damage bonus for attacking specific type of enemy
+	#Range: 0.0 ~ 100.0
+	targetDamageBonus = 0.5
+	#Pickup range per level for pickup upgrade
+	#Range: 1 ~ 16
+	basePickupRange = 6
+	#Mending Xp Cost per health point
+	#Range: 1 ~ 10000
+	mendingXpCost = 2
+

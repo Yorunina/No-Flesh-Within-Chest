@@ -7,6 +7,18 @@
 	id: "65555BE14CFC58FD"
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		description: ["制作团队：GoCamping！（去露营！）"]
+		icon: "minecraft:campfire"
+		id: "0E3B5BC6A471679E"
+		subtitle: "制作团队：GoCamping！"
+		tasks: [{
+			id: "517BC679DC3C0E6C"
+			title: "制作团队"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "制作人名单"
 }

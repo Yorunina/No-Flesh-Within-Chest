@@ -1,0 +1,61 @@
+
+#Client options
+[client]
+	#DEFAULT=true. Toggles the rendering of the debris cloud surrounding the Wither Storm. Reload Type: NONE
+	renderDebrisCloud = true
+	#DEFAULT=true. Toggles the rendering of debris rings that surround the Wither Storm (much more performant than the debris cloud). Reload Type: NONE
+	renderDebrisRings = true
+	#DEFAULT=false. Renders the debris in the debris cloud as 2D objects instead of 3D. Reload Type: NONE
+	renderDebrisTwoDimensional = false
+	#DEFAULT=true. Setting this value to false will disable the debris cloud when rendering the Wither Storm from large distances. Reload Type: NONE
+	renderDistantDebris = true
+	#DEFAULT=false. Specifies if the debris particles orbiting segments should be rendered. Reload Type: NONE
+	renderSegmentDebris = false
+	#DEFAULT=true. Specifies if debris should render as 2D objects during phase 6 and above. Reload Type: NONE
+	lowerDebrisResWithPhase = true
+	#DEFAULT=false. Specifies if the low res models should be used when being rendered via the distant renderer. Reload Type: NONE
+	witherStormLOD = false
+	#DEFAULT=false. Uses larger cubes to make up the the phase 4 and up models. Should result in a performance increase. Reload Type: NONE
+	lowResModels = true
+	#DEFAULT=true. Toggles the rendering of the tractor beams. Reload Type: NONE
+	renderTractorBeams = true
+	#DEFAULT=true. Specifies if a pulsating effect, mimicking endermen pulling the Wither Storm apart, should be rendered once its evolution is complete. Reload Type: NONE
+	renderPulse = true
+	#DEFAULT=true. The distant renderer allows for the Wither Storm to be rendered from much greater distances than what vanilla allows. Disable if you're facing issues with it. Reload Type: NONE
+	distantRenderer = true
+	#DEFAULT=true. Toggles the rendering of Block Clusters. Reload Type: NONE
+	blockClusterRendering = true
+	#DEFAULT=true. Specifies if an overlay should be applied to entities that renders wither sickness. Reload Type: GAME
+	witherSicknessLayer = true
+	#DEFAULT=false. Specifies if the boss themes should be played. Useful if you want to disable only the themes without also turning off music discs. Reload Type: NONE
+	playBossThemes = false
+	#DEFAULT=true. Toggle to enable/disable the chromatic aberration effect. Reload Type: NONE
+	chromaticAberration = true
+	#DEFAULT=true. Specifies whether or not a white overlay should cover the screen during certain events. Reload Type: NONE
+	blindingEffects = true
+	#DEFAULT=true. Specifies whether or not camera shake effects should be used. Reload Type: NONE
+	cameraShakeEffects = true
+	#DEFAULT=true. Specifies if fog should be applied to Wither Storms being rendered from a distance. Reload Type: NONE
+	distantFog = true
+	#DEFAULT=true. Specifies if block clusters should be able to have special colouring and alpha applied to them. NOTE: DISABLE IF FACING CRASHES WHEN USING SHADERS WITH OPTIFINE. Reload Type: NONE
+	blockClusterColouring = true
+	#DEFAULT=true. Turn off to disable the ear ringing effects used in the mod. Reload Type: NONE
+	earRingingEffects = true
+	#DEFAULT=true. Turn off to disable the overlay that appears when inside a tractor beam. Reload Type: NONE
+	renderTractorBeamOverlay = true
+	#DEFAULT=true. Specifies if sky ambience affects (sky darkening) should render when a Wither Storm is nearby. Reload Type: NONE
+	renderSkyAmbienceEffects = true
+	#DEFAULT=true. Specifies if particles inside the tractor beams of the Wither Storm should render. Reload Type: NONE
+	tractorBeamParticles = true
+
+	#Flywheel compat
+	[client."flywheel compat"]
+		#DEFAULT=true. Specifies if CWSM compat with Flywheel should be enabled or not. NOTE: disabling will prevent the performance boosts from taking effect. Only disable if facing issues. Reload Type: GAME
+		flywheelCompatEnabled = true
+		#DEFAULT=false. Specifies if block clusters should be instanced. NOTE: Block biome colors do not work with block clusters (e.x. leaves/grass will be white). Reload Type: GAME
+		blockClusterInstancing = false
+		#DEFAULT=false. Specifies if the Wither Storm's death animation should be instanced. NOTE: The fade away animation will NOT work with this option enabled. Reload Type: NONE
+		witherStormDeathInstancing = false
+		#DEFAULT=false. Specifies if the distant renderer should be instanced. NOTE: The distant renderer does not render properly with this option enabled. Reload Type: WORLD
+		distantRendererInstancing = false
+

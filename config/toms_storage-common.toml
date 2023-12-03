@@ -1,0 +1,10 @@
+#IMPORTANT NOTICE:
+#THIS IS ONLY THE COMMON CONFIG. It does not contain all the values adjustable for Tom's Simple Storage
+#The settings have been moved to toms_storage-server.toml
+#That file is PER WORLD, meaning you have to go into 'saves/<world name>/serverconfig' to adjust it. Those changes will then only apply for THAT WORLD.
+#You can then take that config file and put it in the 'defaultconfigs' folder to make it apply automatically to all NEW worlds you generate FROM THERE ON.
+#This may appear confusing to many of you, but it is a new sensible way to handle configuration, because the server configuration is synced when playing multiplayer.
+importantInfo = true
+#List of multiblock inventory blocks
+multiblockInv = [""]
+

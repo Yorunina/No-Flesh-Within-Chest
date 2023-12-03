@@ -40,7 +40,7 @@ StartupEvents.registry('item', event => {
 
 
     // 无尽节律之心
-    registerOrgan(new Organ('kubejs:infinite_beats')
+    registerOrgan(new Organ('kubejs:infinity_beats')
         .addScore('health', -3)
         .addScore('defense', -3)
         .addScore('speed', -1)
@@ -49,9 +49,9 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [Text.gold('●'), Text.gray('直到条件不符时重置，重置会影响所有当前已有的攻击加成效果。')])
         .addTextLines('alt', [Text.gold('●'), Text.gray('此效果唯一')])
         .build())
-        .texture('kubejs:item/organs/common/heart')
+        .texture('kubejs:item/organs/infinity/infinity_beats')
         .tag('kubejs:heart')
-        .tag('kubejs:infinite');
+        .tag('kubejs:infinity');
 
     // 玫瑰石英肌束
     registerOrgan(new Organ('kubejs:rose_quartz_muscle')
@@ -92,9 +92,10 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:furnace_core')
         .addScore('speed', -1)
         .addScore('defense', 3)
+        .addScore('health', 1)
         .build())
-        .texture('kubejs:item/organs/common/heart')
-        .tag('kubejs:liver')
+        .texture('kubejs:item/organs/machine/furnace_core')
+        .tag('kubejs:heart')
         .tag('kubejs:machine');
 
 
@@ -171,6 +172,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:ore_lung')
         .addScore('health', -0.5)
         .addScore('nerves', -1)
+        .addScore('breath_recovery', 1)
         .addTextLines('alt', [Text.gold('●'), Text.gray('每次挖掘石头后，便会积累'), Text.gold(1), Text.gray('资源点数')])
         .addTextLines('alt', [Text.gold('●'), Text.gray('每积累到'), Text.gold(64), Text.gray('点，会根据幸运给予矿物')])
         .addTextLines('alt', [Text.gold('●'), Text.gray('资源点积累效果唯一')])

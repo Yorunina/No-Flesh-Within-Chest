@@ -1,0 +1,173 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tetra"
+	group: "0241B51B931E1ED2"
+	icon: {
+		Count: 1
+		id: "tetra:modular_double"
+		tag: {
+			Damage: 0
+			"double/basic_hammer_left_material": "basic_hammer/oak"
+			"double/basic_hammer_right_material": "basic_hammer/oak"
+			"double/basic_handle_material": "basic_handle/stick"
+			"double/handle": "double/basic_handle"
+			"double/head_left": "double/basic_hammer_left"
+			"double/head_right": "double/basic_hammer_right"
+			id: "d28113b6-1cb8-4adc-b03b-0260820f3327"
+		}
+	}
+	id: "69A9CF68FED068D9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["538FC6DDC204DBFA"]
+			description: [
+				"欢迎来到Tetra系列教程！如果该任务无法正常提交，大概率是因为你已经选择了&4快捷模式&r。选择快捷模式后，本任务并不会隐藏。"
+				""
+				"你可能已经注意到——本整合包中并没有使用连锁挖矿等便于玩家使用的各种Mod。其主要原因类似于TPA跟传送石碑的关系——可以使用Mod增强沉浸感的地方，就不要通过更直白的方式来实现。"
+				""
+				"Tetra允许你对工具进行&5随心所欲&r（一定程度上）的更改，使得你可以获得类如&9匠魂&r一样的工具组装体验。同时其包含的各种&2古代图纸&r，也赋予你制作古代部件，来获得类如3X3挖掘之类的强力效果。"
+				""
+				"可以说，能够良好的使用Tetra，可以极大地增强你的工作效率和战斗效率，并且Tetra本身的流程并不复杂，因此强烈推荐在开局就进行Tetra内容的探索。"
+			]
+			icon: {
+				Count: 1
+				id: "tetra:modular_double"
+				tag: {
+					Damage: 0
+					"double/basic_hammer_left_material": "basic_hammer/oak"
+					"double/basic_hammer_right_material": "basic_hammer/oak"
+					"double/basic_handle_material": "basic_handle/stick"
+					"double/handle": "double/basic_handle"
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					id: "939840db-7443-43fc-a98c-3ef255263d48"
+				}
+			}
+			id: "674E912F6FFC7F67"
+			incompatible: ["0656A2B2A84D3DE3"]
+			rewards: [{
+				count: 5
+				id: "34A91804EA15901C"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "为什么要使用Tetra工具"
+			tasks: [{
+				id: "25AD86CC24B524AA"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "引言：Tetra的存在意义"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["538FC6DDC204DBFA"]
+			description: [
+				"通过完成该任务，你可以获取该章节所有任务的奖励。"
+				""
+				"但是，这意味着你&4不能&r游玩该章节的所有教学任务！"
+				""
+				"请慎重！"
+			]
+			hide_dependency_lines: true
+			icon: "kubejs:exclamation_mark"
+			id: "0656A2B2A84D3DE3"
+			incompatible: ["674E912F6FFC7F67"]
+			rewards: [
+				{
+					id: "4F522D766964E4A7"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					title: "这是还给你的一个银币"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "3F15994B08531A33"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:gold_coin"
+						tag: { }
+					}
+					title: "这是合计奖励"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			subtitle: "如果你已经足够了解，且需要该章节的奖励"
+			tasks: [
+				{
+					id: "20363B49C8B65B2B"
+					title: "快捷，启动！"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					id: "5A4E6247BFB16552"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					title: "防止手贱因此消耗银币"
+					type: "item"
+				}
+			]
+			title: "Tetra：快捷模式"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["674E912F6FFC7F67"]
+			description: [
+				"为了后续Tetra的发展，你需要使用&2锤子&r右键&2工作台&r，以获取本模组的核心道具——&2加工台&r。"
+				""
+				"在大部分情况下，你都需要在加工台上完成对工具的改造过程。具体如何改造以及改造的内容包含哪些，在后文中会慢慢道来。"
+			]
+			hide: true
+			id: "1EB4A366E3CB7C2C"
+			rewards: [{
+				count: 5
+				id: "06ADDD76AF853F46"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "Tetra的一切，从加工台开始"
+			tasks: [{
+				id: "43224284FC3C208B"
+				item: "tetra:basic_workbench"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1EB4A366E3CB7C2C"]
+			id: "312A09022249980F"
+			tasks: [{
+				id: "0507DA817FAC5A12"
+				item: "minecraft:spruce_planks"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+	]
+	title: "Tetra：模块化与工具"
+}

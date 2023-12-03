@@ -1,0 +1,94 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "68FC9ADE605CB4D9"
+	group: "0241B51B931E1ED2"
+	icon: "create:wrench"
+	id: "68FC9ADE605CB4D9"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0861DDE9767A3E9D"]
+			description: [
+				"答案很简单：方便"
+				""
+				"机械动力等一系列科技Mod存在的意义便是为了自动化——亦或是说方便的&2大量重复获取某种资源&r。因此在游戏的后期，机械动力等一众科技Mod会成为你资源获取的主力。"
+				""
+				"但正如前文所说，机械动力等科技Mod&2学习成本较高&r，且对游戏体验的影响很大，所以本篇章中除了介绍机械动力的机器相关内容外，包含了一些&2实践教学&r。尽可能的真正教会玩家如何去使用机械动力。（虽然整合包作者本身也非常反感机械动力中的复杂设计）"
+				""
+				"如果你对内容实在是感到困惑，也可以选择在商店页面直接&5购买胶囊&r，通过右键使用后，可以直接构建起来完整的&2成品/半成品&r的机器。"
+			]
+			icon: "create:wrench"
+			id: "4EB8FE041AB6DA8E"
+			incompatible: ["1C784E8FBDB3DBC2"]
+			rewards: [{
+				count: 5
+				id: "48512F3696E650D8"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "机械动力的意义是什么"
+			tasks: [{
+				id: "17AACB586D5E3EB9"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "引言：为什么要发展机械动力"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0861DDE9767A3E9D"]
+			description: [
+				"通过完成该任务，你可以获取该章节所有任务的奖励。"
+				""
+				"但是，这意味着你&4不能&r游玩该章节的所有教学任务！"
+				""
+				"请慎重！"
+			]
+			icon: "kubejs:exclamation_mark"
+			id: "1C784E8FBDB3DBC2"
+			incompatible: ["4EB8FE041AB6DA8E"]
+			rewards: [{
+				id: "6C82F5206588920D"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				title: "还给你的"
+				type: "item"
+			}]
+			shape: "octagon"
+			subtitle: "如果你已经足够了解，且需要该章节的奖励"
+			tasks: [
+				{
+					id: "75891085F2AAA66E"
+					title: "快捷，启动！"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					id: "65382BF83F2D8F2E"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					title: "防止手贱因此消耗银币"
+					type: "item"
+				}
+			]
+			title: "机械动力：快捷模式"
+			x: -5.0d
+			y: 0.0d
+		}
+	]
+	title: "机械动力：让万物旋转"
+}

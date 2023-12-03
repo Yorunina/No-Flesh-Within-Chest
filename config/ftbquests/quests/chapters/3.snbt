@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3"
+	group: "4E02CBDD9D86D249"
+	icon: "witherstormmod:withered_bone"
+	id: "37DC06F829B60ADC"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "章节3：秘密"
+}

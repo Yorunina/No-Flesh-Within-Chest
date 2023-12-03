@@ -79,7 +79,7 @@ function convertScoreToTextLine(organ, score) {
             typeName = '神经效率'
             break;
         case 'chestcavity:strength':
-            typeName = '肌肉效率'
+            typeName = '力量'
             break;
         case 'chestcavity:health':
             typeName = '健康'
@@ -107,6 +107,21 @@ function convertScoreToTextLine(organ, score) {
             break;
         case 'chestcavity:metabolism':
             typeName = '新陈代谢效率'
+            break;
+        case 'chestcavity:fire_resistant':
+            typeName = '火焰抗性'
+            break;
+        case 'chestcavity:buoyant':
+            typeName = '漂浮'
+            break;
+        case 'chestcavity:glowing':
+            typeName = '荧光'
+            break;
+        case 'chestcavity:knockback_resistant':
+            typeName = '击退抗性'
+            break;
+        case 'chestcavity:water_breath':
+            typeName = '水下呼吸'
             break;
     }
     return [Text.gold('● '), Text.gray('每 '), Text.yellow(String(stack)), Text.gray(' 个该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)]
