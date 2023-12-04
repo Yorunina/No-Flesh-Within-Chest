@@ -1,0 +1,6 @@
+#Whether to spawn particles after using the bag of yurting. Set to false to disable.
+enable_particles = true
+#If false, holding sprint will allow you to ignore the block whitelist/blacklist if you are permitted to do so.
+#If true, you will always ignore the block whitelist/blacklist if permitted to do so; holding sprint enables the safety lists.
+invert_safety_override = false
+

@@ -92,7 +92,9 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:furnace_core')
         .addScore('speed', -1)
         .addScore('defense', 3)
+        .addScore('knockback_resistant', 3)
         .addScore('health', 1)
+        .addTextLines('alt', [Text.gold('●'), Text.gray('')])
         .build())
         .texture('kubejs:item/organs/machine/furnace_core')
         .tag('kubejs:heart')
@@ -177,7 +179,7 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [Text.gold('●'), Text.gray('每积累到'), Text.gold(64), Text.gray('点，会根据幸运给予矿物')])
         .addTextLines('alt', [Text.gold('●'), Text.gray('资源点积累效果唯一')])
         .build())
-        .texture('kubejs:item/organs/common/lung')
+        .texture('kubejs:item/organs/others/ore_lung')
         .tag('kubejs:lung')
         .tag('kubejs:resource');
 });

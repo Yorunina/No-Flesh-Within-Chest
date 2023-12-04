@@ -1,15 +1,14 @@
 ItemEvents.rightClicked(event => {
     let player = event.player;
     let item = event.item;
-    if (item.hasTag('kubejs:eatable_fuel')) {
+    if (item.hasTag('minecraft:coals')) {
         let itemMap = getPlayerChestCavityItemMap(player)
         if (itemMap.has('kubejs:furnace_core')) {
-            if (item.getBurnTime() < 20 * 60) {
-                player.potionEffects.add('kubejs:burning_heart', item.getBurnTime() / 2, 0);
+            if (Math.random() > 0.05) {
+                player.potionEffects.add('kubejs:burning_heart', 16 * 20, 0);
             } else {
-                player.potionEffects.add('kubejs:flaring_heart', item.getBurnTime() / 6, 0);
+                player.potionEffects.add('kubejs:flaring_heart', 16 * 20, 0);
             }
-            player.addFood(item.getBurnTime() / 240, 1);
             item.shrink(1);
         }
     }
