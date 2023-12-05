@@ -56,7 +56,7 @@ StartupEvents.registry('item', event => {
     // 玫瑰石英肌束
     registerOrgan(new Organ('kubejs:rose_quartz_muscle')
         .addScore('endurance', 1)
-        .addScore('strength', 2)
+        .addScore('strength', 1)
         .addScore('nerves', -0.5)
         .build())
         .texture('kubejs:item/organs/rose_quartz/rose_quartz_muscle')
@@ -66,8 +66,7 @@ StartupEvents.registry('item', event => {
     // 玫瑰石英心脏
     registerOrgan(new Organ('kubejs:rose_quartz_heart')
         .addScore('health', 1)
-        .addScore('strength', 1)
-        .addScore('nerves', -1)
+        .addScore('nerves', -5)
         .addTextLines('default', [Text.gray('它曾经是无生命的——现在也是。但正是从'), Text.red('无'), Text.gray('之上，你被赋予了生命')])
         .addTextLines('ctrl', [Text.gold('●'), Text.gray('每存在一种类为'), Text.yellow('机械'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('生命值')])
         .addTextLines('ctrl', [Text.gold('●'), Text.gray('每存在一种类为'), Text.yellow('玫瑰'), Text.gray('的器官，会为你添加额外'), Text.yellow(0.5), Text.gray('点'), Text.yellow('攻击力')])
@@ -88,18 +87,59 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine')
         .tag('kubejs:rose');
 
+    // 革命机械系列
     // 熔炉核心
     registerOrgan(new Organ('kubejs:furnace_core')
         .addScore('speed', -1)
         .addScore('defense', 3)
         .addScore('knockback_resistant', 3)
         .addScore('health', 1)
-        .addTextLines('alt', [Text.gold('●'), Text.gray('')])
+        .addTextLines('default', [Text.gray('蕴含着革命之力，但未被完全解放')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('手持煤炭右键以获得'), Text.gold('20s'), Text.red('熔火燃烧')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('熔火燃烧状态下，攻击会额外附加当前buff等级的固定伤害')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('与心火状态不兼容')])
         .build())
         .texture('kubejs:item/organs/machine/furnace_core')
         .tag('kubejs:heart')
+        .tag('kubejs:revolution')
         .tag('kubejs:machine');
-
+    // 心火核心
+    registerOrgan(new Organ('kubejs:burning_heart')
+        .addScore('speed', -1)
+        .addScore('defense', 3)
+        .addScore('knockback_resistant', 3)
+        .addScore('health', 1)
+        .addTextLines('default', [Text.gray('被完全解放的革命之力')])
+        .addTextLines('default', [Text.gray('心火を燃やして、ぶっ潰す！')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('手持煤炭右键以获得'), Text.gold('20s'), Text.red('心火燃烧')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('在心火燃烧buff仅剩的最后'), Text.gold('5s'), Text.gray('，会根据状态等级提供必定暴击效果')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('与熔火状态不兼容')])
+        .build())
+        .texture('kubejs:item/organs/machine/burning_heart')
+        .tag('kubejs:heart')
+        .tag('kubejs:revolution')
+        .tag('kubejs:machine');
+    // 革命线缆
+    registerOrgan(new Organ('kubejs:revolution_cable')
+        .addScore('defense', 1)
+        .addScore('nerves', 1)
+        .addScore('strength', -2)
+        .addTextLines('ctrl', [Text.gold('●'), Text.gray('每存在一种类为'), Text.of('革命').color('#deaa00'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('生命值')])
+        .build())
+        .texture('kubejs:item/organs/machine/revolution_cable')
+        .tag('kubejs:revolution')
+        .tag('kubejs:machine')
+        .tag('kubejs:active');
+        // 革命线缆
+    registerOrgan(new Organ('kubejs:revolution_gear')
+        .addScore('defense', 1)
+        .addScore('nerves', 1)
+        .addTextLines('alt', [Text.gold('●'), Text.gray('每'), Text.gold(1), Text.gray('个该器官提供额外的1级'), Text.red('熔火'), Text.gray('等级')])
+        .addTextLines('alt', [Text.gold('●'), Text.gray('每'), Text.gold(2), Text.gray('个该器官提供额外的1级'), Text.red('心火'), Text.gray('等级')])
+        .build())
+        .texture('kubejs:item/organs/machine/revolution_gear')
+        .tag('kubejs:revolution')
+        .tag('kubejs:machine');
 
     // 糖果心与魔法使系列物品
     // 糖果系列器官

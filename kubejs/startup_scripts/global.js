@@ -30,5 +30,6 @@ global.TYPE_MAP = {
     'kubejs:magic': Text.of('魔法').color('#00eded'),
     'kubejs:candy': Text.of('糖果').color('#e8a0dc'),
     'kubejs:rose': Text.darkRed('玫瑰'),
-    'kubejs:resource': Text.gold('资源')
+    'kubejs:resource': Text.gold('资源'),
+    'kubejs:revolution': Text.of('革命').color('#deaa00'),
 }

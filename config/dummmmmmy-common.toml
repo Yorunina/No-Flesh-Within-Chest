@@ -1,6 +1,6 @@
 #Does dps message update dynamically or will it only appear after each parse? 
 #Allowed Values: DYNAMIC, STATIC, OFF
-DPS_mode = "DYNAMIC"
+DPS_mode = "STATIC"
 #Enable this to prevent your equipment from getting damaged when attacking the dummy
 disable_equipment_damage = true
 #Time in ticks that it takes for a dummy to be considered out of combat after having recieved damage

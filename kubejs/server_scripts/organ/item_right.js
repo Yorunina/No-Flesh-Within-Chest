@@ -4,12 +4,32 @@ ItemEvents.rightClicked(event => {
     if (item.hasTag('minecraft:coals')) {
         let itemMap = getPlayerChestCavityItemMap(player)
         if (itemMap.has('kubejs:furnace_core')) {
-            if (Math.random() > 0.05) {
-                player.potionEffects.add('kubejs:burning_heart', 16 * 20, 0);
-            } else {
-                player.potionEffects.add('kubejs:flaring_heart', 16 * 20, 0);
-            }
-            item.shrink(1);
+            organRightClickedStrategies['kubejs:furnace_core'](event, itemMap)
+            return;
+        }
+        if (itemMap.has('kubejs:burning_heart')) {
+            organRightClickedStrategies['kubejs:burning_heart'](event, itemMap)
+            return;
         }
     }
 })
+
+let organRightClickedStrategies = {
+    'kubejs:furnace_core': function (event, itemMap) {
+        let amplifier = 0
+        if (itemMap.has('kubejs:revolution_gear')) {
+            amplifier = itemMap.get('kubejs:revolution_gear').length
+        }
+
+        event.player.potionEffects.add('kubejs:burning_heart', 20 * 20, amplifier);
+        event.item.shrink(1);
+    },
+    'kubejs:burning_heart': function (event, itemMap) {
+        let amplifier = 0
+        if (itemMap.has('kubejs:revolution_gear')) {
+            amplifier = Math.floor(itemMap.get('kubejs:revolution_gear').length / 2)
+        }
+        event.player.potionEffects.add('kubejs:flaring_heart', 20 * 20, amplifier);
+        event.item.shrink(1);
+    },
+};
