@@ -10,7 +10,13 @@
 	quests: [
 		{
 			dependencies: ["040207B33E2FEBFF"]
-			description: ["最先推荐的，则是能够让你骑着扫帚飞行的&5魔法巫师&r。"]
+			description: [
+				"最先推荐的，则是能够让你骑着扫帚飞行的&5魔法巫师&r。"
+				""
+				"核心原因是因为后续部分配方需要使用混合锅进行制作，因此推荐优先进行发展。"
+				""
+				"魔法巫师的线路并不长，更多的是用于增添沉浸感而产生的一些可选的发展内容，因此大可不必担心。"
+			]
 			icon: "irons_spellbooks:alchemist_cauldron"
 			id: "00E3E147FC750C90"
 			shape: "rsquare"
@@ -53,6 +59,86 @@
 			}]
 			title: "开启探索之旅！"
 			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7F0C1FA54DD6E9BC"]
+			description: [
+				"当你能够自由使用他人的器官之后，各种各样的高级器官就变成了你的新目标。"
+				""
+				"你可以在&5收集：胸腔收集指南&r章节中，了解到当前已经加入的各种高级器官以及其相关系列的效果。"
+				""
+				"在制作高级器官的过程中，你会发现两个奇怪的属性："
+				""
+				"1.&2激活属性(ctrl)&r：当拥有该器官的情况下，吃下激活药即可以获得额外的属性。"
+				""
+				"2.&2特殊效果(alt)&r：当拥有该器官的情况下，在特定条件下可以触发特殊效果，如前期的矿物肺就是含有特殊效果的器官。"
+				""
+				"为了能够稳定触发激活属性，因此你需要&2批量生产激活胶囊&r。"
+			]
+			icon: "kubejs:active_pill"
+			id: "658FEA8E308D741C"
+			rewards: [{
+				id: "042CB92A1CFDA391"
+				item: "kubejs:active_pill"
+				type: "item"
+			}]
+			subtitle: "部分器官的必要成分"
+			tasks: [{
+				id: "04459F4683BD414F"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "激活药丸"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["040207B33E2FEBFF"]
+			description: [
+				"到现在，你应该发现了——绝大多数生物身上直接取得的器官是无法使用的。"
+				""
+				"当你装备其他生物的器官时，会因为&2排异反应&r，而在一定的时间间隔后受到排异反应的伤害。"
+				""
+				"为了解决排异反应，你有三种解决方法："
+				""
+				"1.使用&5O-阴性附魔&r给器官附魔，使其排异反应消失，2级甚至可以防止器官缺失导致的症状。"
+				""
+				"2.使用抗排异药物，比如&5治愈性原液&r来解除器官的绑定。"
+				""
+				"3.直接放弃使用低级器官，换用制作而成的&5高级器官&r。"
+			]
+			icon: "biomancy:healing_additive"
+			id: "7F0C1FA54DD6E9BC"
+			rewards: [
+				{
+					id: "4423AE850CC5D15B"
+					item: "biomancy:healing_additive"
+					type: "item"
+				}
+				{
+					id: "3B5B97406D293CA5"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "chestcavity:o_negative"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "让你能够自如使用野生怪物的器官"
+			tasks: [{
+				id: "50F3304F77E735FF"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "器官抗排异"
+			x: 2.0d
 			y: 0.0d
 		}
 	]

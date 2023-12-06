@@ -4,6 +4,10 @@ ItemEvents.tooltip((tooltip) => {
     })
 
     tooltip.addAdvanced('kubejs:ceremonial_knife', (item, advanced, text) => {
-        addForTextLines(text, [[Text.gold('●'), Text.gray('恢复部分法力')], [Text.gold('●'), Text.gray('对使用者造成'), Text.gold('10'), Text.gray('点伤害')]], 1);
+        addForTextLines(text, [[Text.gold('● '), Text.gray('恢复部分法力')], [Text.gold('● '), Text.gray('对使用者造成'), Text.gold('10'), Text.gray('点伤害')]], 1);
+    })
+
+    tooltip.addAdvanced('#kubejs:anti_rejection', (item, advanced, text) => {
+        text.add(Text.gray("可用于抗排异（物品置于副手，器官置于主手）"));
     })
 })

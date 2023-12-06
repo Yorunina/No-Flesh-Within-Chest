@@ -1,0 +1,24 @@
+
+[client]
+	#If true, shows the hunger and saturation values of food in its tooltip while holding SHIFT
+	showFoodValuesInTooltip = true
+	#If true, shows the hunger and saturation values of food in its tooltip automatically (without needing to hold SHIFT)
+	showFoodValuesInTooltipAlways = true
+	#If true, shows your current saturation level overlayed on the hunger bar
+	showSaturationHudOverlay = true
+	#If true, shows the hunger (and saturation if showSaturationHudOverlay is true) that would be restored by food you are currently holding
+	showFoodValuesHudOverlay = true
+	#If true, enables the hunger/saturation/health overlays for food in your off-hand
+	showFoodValuesHudOverlayWhenOffhand = true
+	#If true, shows your food exhaustion as a progress bar behind the hunger bars
+	showFoodExhaustionHudUnderlay = true
+	#If true, adds a line that shows your hunger, saturation, and exhaustion level in the F3 debug overlay
+	showFoodStatsInDebugOverlay = true
+	#If true, shows estimated health restored by food on the health bar
+	showFoodHealthHudOverlay = true
+	#If true, health/hunger overlay will shake to match Minecraft's icon animations
+	showVanillaAnimationsOverlay = true
+	#Alpha value of the flashing icons at their most visible point (1.0 = fully opaque, 0.0 = fully transparent)
+	#Range: 0.0 ~ 1.0
+	maxHudOverlayFlashAlpha = 0.65
+

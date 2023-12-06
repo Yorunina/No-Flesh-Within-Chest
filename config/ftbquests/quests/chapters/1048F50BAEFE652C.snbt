@@ -7,37 +7,84 @@
 	id: "1048F50BAEFE652C"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["50CE3ADF8E4D6426"]
-		description: [
-			"为什么需要本章指南？"
-			""
-			"因为本整合中部分器官的来源相对比较复杂，如果不加以指引，制作&5高级器官&r对于单独游玩的玩家而言会变得&4学习成本较高&r。因此本指南主要用于向玩家介绍部分高级器官的获取流程。"
-			""
-			"除此之外，本整合也会推荐几个整合中较为经典的&2器官build&r，以供玩家参考。"
-		]
-		icon: "chestcavity:chest_opener"
-		id: "6794388AA5357126"
-		rewards: [{
-			count: 5
-			id: "097FD920C0C1B7B5"
-			item: {
-				Count: 1
-				id: "numismaticoverhaul:silver_coin"
-				tag: { }
-			}
-			type: "item"
-		}]
-		shape: "rsquare"
-		subtitle: "为什么需要该指南"
-		tasks: [{
-			id: "255647E12D0F44DC"
-			title: "我已了解"
-			type: "checkmark"
-		}]
-		title: "引言：器官收集指南"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"为什么需要本章指南？"
+				""
+				"因为本整合中部分器官的来源相对比较复杂，如果不加以指引，制作&5高级器官&r对于单独游玩的玩家而言会变得&4学习成本较高&r。因此本指南主要用于向玩家介绍部分高级器官的获取流程。"
+				""
+				"除此之外，本整合也会推荐几个整合中较为经典的&2器官build&r，以供玩家参考。"
+			]
+			icon: "chestcavity:chest_opener"
+			id: "6794388AA5357126"
+			rewards: [{
+				count: 5
+				id: "097FD920C0C1B7B5"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "为什么需要该指南"
+			tasks: [{
+				id: "255647E12D0F44DC"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "引言：器官收集指南"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["795DE8D8EF4D3A01"]
+			description: ["一切的基石，该系列的核心器官。"]
+			id: "7C6A372F5D824085"
+			rewards: [{
+				id: "43F99A327E4ACF07"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "糖心满溢"
+			tasks: [{
+				id: "19951308476CE6BD"
+				item: "kubejs:candy_heart"
+				type: "item"
+			}]
+			title: "糖果心"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"&d魔法使与糖果心&r是围绕&6\"甜蜜之梦\"&r展开的器官系列。"
+				""
+				"其主要通过各种方式来维持&6\"甜蜜之梦\"&rbuff的持续时间，来保证自己不会受到来自外界的伤害。"
+				""
+				"同时，该系列高度兼容\"仪式匕首\"，可以通过使用仪式匕首时的自伤效果触发&6\"甜蜜之梦\"&r，并且回复Iron的魔法书的魔力。"
+			]
+			hide_dependent_lines: true
+			icon: "kubejs:candy"
+			id: "795DE8D8EF4D3A01"
+			subtitle: "魔法使的心是糖果做的"
+			tasks: [{
+				id: "35D77B1435E1B7BC"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "魔法使与糖果心"
+			x: -4.0d
+			y: 1.0d
+		}
+	]
 	title: "胸腔：器官收集指南"
 }

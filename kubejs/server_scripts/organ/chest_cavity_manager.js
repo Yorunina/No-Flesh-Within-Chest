@@ -7,10 +7,21 @@ const playerChestCavityTypeMap = new Map();
 
 PlayerEvents.loggedIn((event) => {
     initChestCavityIntoMap(event.player, false);
-    if (event.player.stages.has('organ_actived')) {
+    
+    if (event.player.persistentData.contains('organ_actived') && 
+    event.player.persistentData.getInt('organ_actived') == 1) {
         global.updatePlayerActiveStatus(event.player)
     }
 });
+
+PlayerEvents.loggedOut((event) => {
+    let uuid = String(event.player.getUuid());
+    playerChestCavityHashMap.delete(uuid)
+    playerChestCavityPosMap.delete(uuid)
+    playerChestCavityItemMap.delete(uuid)
+    playerChestCavityTypeMap.delete(uuid)
+});
+
 
 PlayerEvents.inventoryClosed((event) => {
     let player = event.player;
@@ -76,8 +87,8 @@ function initChestCavityIntoMap(player, removeFlag) {
     playerChestCavityTypeMap.set(uuid, chestInventoryTypeMap);
     playerChestCavityHashMap.set(uuid, newHash);
     player.tell('完成初始化');
-    if (player.stages.has('organ_actived') && removeFlag) {
-        player.stages.remove('organ_actived')
+    if (removeFlag) {
+        player.persistentData.putInt('organ_actived', 0)
         clearAllActivedModify(player)
     }
     return;
