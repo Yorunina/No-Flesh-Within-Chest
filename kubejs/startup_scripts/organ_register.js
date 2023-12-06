@@ -63,67 +63,8 @@ Organ.prototype = {
 
 function convertScoreToTextLine(organ, score) {
     let value = score.value
-    let typeName = ''
+    let typeName = global.SCORE_MAP[score.id]
     let stack = organ.maxStackSize
-    switch (score.id) {
-        case 'chestcavity:filtration':
-            typeName = '血液过滤效率'
-            break;
-        case 'chestcavity:breath_recovery':
-            typeName = '呼吸效率'
-            break;
-        case 'chestcavity:nutrition':
-            typeName = '营养获取效率'
-            break;
-        case 'chestcavity:nerves':
-            typeName = '神经效率'
-            break;
-        case 'chestcavity:strength':
-            typeName = '力量'
-            break;
-        case 'chestcavity:health':
-            typeName = '健康'
-            break;
-        case 'chestcavity:breath_capacity':
-            typeName = '肺活量'
-            break;
-        case 'chestcavity:detoxification':
-            typeName = '解毒效率'
-            break;
-        case 'chestcavity:speed':
-            typeName = '速度'
-            break;
-        case 'chestcavity:endurance':
-            typeName = '耐力'
-            break;
-        case 'chestcavity:luck':
-            typeName = '幸运'
-            break;
-        case 'chestcavity:defense':
-            typeName = '防御'
-            break;
-        case 'chestcavity:digestion':
-            typeName = '消化效率'
-            break;
-        case 'chestcavity:metabolism':
-            typeName = '新陈代谢效率'
-            break;
-        case 'chestcavity:fire_resistant':
-            typeName = '火焰抗性'
-            break;
-        case 'chestcavity:buoyant':
-            typeName = '漂浮'
-            break;
-        case 'chestcavity:glowing':
-            typeName = '荧光'
-            break;
-        case 'chestcavity:knockback_resistant':
-            typeName = '击退抗性'
-            break;
-        case 'chestcavity:water_breath':
-            typeName = '水下呼吸'
-            break;
-    }
     return [Text.gold('● '), Text.gray('每 '), Text.yellow(String(stack)), Text.gray(' 个该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)]
 }
 

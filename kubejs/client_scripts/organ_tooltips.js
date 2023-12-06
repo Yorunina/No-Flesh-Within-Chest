@@ -7,6 +7,7 @@ function addForTextLines(text, textLines, initNum) {
     return initNum;
 }
 
+
 ItemEvents.tooltip((tooltip) => {
     function registerOrganTooltips(organ) {
         tooltip.addAdvanced(organ.itemID, (item, advanced, text) => {
@@ -42,7 +43,7 @@ ItemEvents.tooltip((tooltip) => {
                         typeLine.push(global.TYPE_MAP[tag], ' ')
                     }
                     if (typeLine.length > 0) {
-                        text.add(lineNum++, [Text.gold('●'), Text.join(typeLine)])
+                        text.add(lineNum++, [Text.gold('● '), Text.join(typeLine)])
                     }
 
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);
@@ -76,15 +77,3 @@ ItemEvents.tooltip((tooltip) => {
         registerOrganTooltips(organ)
     })
 });
-
-
-ItemEvents.tooltip((tooltip) => {
-    tooltip.addAdvanced("@chestcavity", (item, advanced, text) => {
-        text.removeIf(e => {
-            if (e.getString() == "removeFlag") {
-                return true;
-            }
-            return false;
-        })
-    })
-})
