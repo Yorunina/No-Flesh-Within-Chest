@@ -141,6 +141,26 @@
 			x: 2.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["7F0C1FA54DD6E9BC"]
+			description: [
+				"&c血肉重铸&r并没有过多的发展价值，但其中部分物品仍具有特色，值得一试。"
+				""
+				"除此之外，该Mod中培育而成的&d肉块&r具有极其特殊的胸腔构造，其提供的器官具有极高的&d可塑性&r，广泛的用于高级器官的制作之中。可以说，这些器官是高级器官的&d通用模板&r。"
+			]
+			icon: "biomancy:bile"
+			id: "5EE1B9D46DFF796E"
+			shape: "rsquare"
+			subtitle: "血肉重铸的入口"
+			tasks: [{
+				id: "6C61CAF765F03EA9"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "铸成红肉身"
+			x: 4.0d
+			y: 1.5d
+		}
 	]
 	title: "章节2：觉醒"
 }

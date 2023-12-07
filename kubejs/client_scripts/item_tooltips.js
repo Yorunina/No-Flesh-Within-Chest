@@ -8,6 +8,18 @@ ItemEvents.tooltip((tooltip) => {
     })
 
     tooltip.addAdvanced('#kubejs:anti_rejection', (item, advanced, text) => {
-        text.add(Text.gray("可用于抗排异（物品置于副手，器官置于主手）"));
+        text.add(Text.gray('可用于抗排异（物品置于副手，器官置于主手）'));
+    })
+
+    tooltip.addAdvanced('kubejs:eye_of_fortress', (item, advanced, text) => {
+        text.add(Text.darkRed('灼热之眼将指引你前往要塞的道路'));
+    })
+
+    tooltip.addAdvanced('kubejs:secret_of_rain', (item, advanced, text) => {
+        if (tooltip.shift) {
+            text.add([Text.gray('雨的秘密').italic(), Text.gray('存在于'), Text.blue('暴雨天气').bold(), Text.gray('和'), Text.gold('发光状态').bold(), Text.gray('之中')]);
+        } else {
+            text.add([Text.gray('雨的秘密').italic(), Text.gray('存在于'), Text.blue('极致风暴').bold(), Text.gray('和'), Text.gold('闪耀光芒').bold(), Text.gray('之中')]);
+        }
     })
 })

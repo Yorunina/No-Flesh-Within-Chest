@@ -26,6 +26,10 @@
     "item.kubejs.exclamation_mark": "感叹号",
     "item.kubejs.full_mark": "满分",
     "item.kubejs.ceremonial_knife": "仪式匕首",
+    "item.kubejs.eye_of_fortress": "要塞之眼",
+    "item.kubejs.ritual_catalyst": "仪式催化剂",
+    "item.kubejs.secret_of_rain": "秘密:雨",
+    
     "effect.kubejs.sweet_dream": "甜蜜之梦",
     "travelerstitles.kubejs.lost_memory": "回忆之地"
 }

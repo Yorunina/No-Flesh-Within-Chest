@@ -274,6 +274,7 @@
 				""
 				"请注意，如果你仍有一些&5稀有器官&r，请确保点击前已将其取出以避免损失！"
 			]
+			hide_dependency_lines: true
 			icon: "irons_spellbooks:greater_healing_potion"
 			id: "279037F0BA837179"
 			rewards: [{
@@ -295,8 +296,8 @@
 				type: "item"
 			}]
 			title: "重置器官！"
-			x: 4.0d
-			y: -1.5d
+			x: 5.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -394,6 +395,8 @@
 				"下界是在所有游玩历程中都需要探索的一个维度，其包含了大量的新生物以及前往末地必须要探索的&2下界要塞&r。"
 				""
 				"可以说，去往下界的主要目的就是为了寻找&2下界要塞&r，以获得奖励箱中的&5丰富物品&r，及击杀烈焰人获取&5烈焰棒&r。"
+				""
+				"如果你在寻找要塞的过程中遇到了麻烦，可以使用&2探险家指南针&r。如果它对你来说个过于昂贵，则可以使用本整合专供的&2要塞之眼&r。"
 			]
 			icon: "minecraft:netherrack"
 			id: "51FA796A91E94C4D"
@@ -411,6 +414,12 @@
 				{
 					id: "0D7AF2932E525B2A"
 					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "01D94F7B86154DE8"
+					item: "kubejs:eye_of_fortress"
 					type: "item"
 				}
 			]
@@ -669,6 +678,42 @@
 			title: "寻找Alex生物"
 			x: 5.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["0721AF9D7D5E4A7C"]
+			description: [
+				"在背包界面的&2饰品栏&r内（点击人物右上的按钮打开），可以将&2灯笼挂载在腰上&r。以提供随时的动态光源效果。"
+				""
+				"除此之外，饰品栏内可以装备大量能够高效提高你的能力的饰品，且&2造价并不昂贵&r（因为本整合包并没有修改它们的配方），因此请多多查找并制作所需要的饰品或许可以使后面的旅程事半功倍。"
+			]
+			icon: "minecraft:lantern"
+			id: "636CE66FFE0F6A51"
+			rewards: [
+				{
+					count: 5
+					id: "34287DAC9D5122CD"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "22D6AE5F27C1B601"
+					item: "nameless_trinkets:experience_magnet"
+					type: "item"
+				}
+			]
+			subtitle: "随身携带光源"
+			tasks: [{
+				id: "0C62AE114877E21D"
+				item: "minecraft:lantern"
+				type: "item"
+			}]
+			title: "将光源挂在腰上"
+			x: 3.0d
+			y: -1.5d
 		}
 	]
 	title: "章节1：如常"

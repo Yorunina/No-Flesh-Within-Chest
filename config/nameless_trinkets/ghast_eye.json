@@ -1,6 +1,6 @@
 {
   "config": {
-    "extraHearts": 20.0,
+    "extraHearts": 10.0,
     "regenerationTime": 200,
     "regenerationExtraTime": 60,
     "regenerationLevel": 0,

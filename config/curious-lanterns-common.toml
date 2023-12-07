@@ -1,0 +1,7 @@
+
+["Common Configs for Curious Lanterns"]
+	#Determines the max number of belt slots.
+	#NOTE: ONLY ADDS SLOTS, DOES NOT REMOVE SLOTS. Other mods can overwrite if too low.
+	#Default: 1
+	Slots = 1
+

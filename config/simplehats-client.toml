@@ -1,0 +1,8 @@
+
+[Client]
+	#Y Offset for hats to match skin's features if desired.
+	#Range: -1.0 ~ 1.0
+	hatYOffset = 0.0
+	#Force hats to not render on self when in first person. (For compatability with First-Person-Model mods, normally not needed)
+	forceFirstPersonNoRender = false
+
