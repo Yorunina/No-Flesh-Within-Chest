@@ -6,12 +6,12 @@
 	#List of loot tables that will eventually reward a capsule.
 	# Example of valid loot tables : gameplay/fishing/treasure, chests/spawn_bonus_chest, entities/villager (killing a villager).
 	#Also see https://minecraft.gamepedia.com/Loot_table#List_of_loot_tables.
-	lootTablesList = ["minecraft:chests/abandoned_mineshaft", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_other", "minecraft:chests/bastion_treasure", "minecraft:chests/shipwreck_treasure", "minecraft:chests/desert_pyramid", "minecraft:chests/end_city_treasure", "minecraft:chests/igloo_chest", "minecraft:chests/jungle_temple", "minecraft:chests/simple_dungeon", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_library", "minecraft:chests/village/village_toolsmith", "minecraft:chests/village/village_armorer", "minecraft:chests/village/village_temple", "minecraft:chests/village/village_weaponsmith", "minecraft:chests/buried_treasure", "minecraft:chests/jungle_temple_dispenser", "minecraft:chests/pillager_outpost", "minecraft:chests/shipwreck_treasure", "minecraft:chests/underwater_ruin_big", "minecraft:chests/underwater_ruin_small", "minecraft:chests/woodland_mansion"]
+	lootTablesList = []
 	#Players can be given one or several starter structures on their first arrival.
 	#Those structures nbt files can be placed in the folder defined at starterTemplatesPath below.
 	#Possible values : "all", "random", or "none".
 	#Default value: "random"
-	starterMode = "random"
+	starterMode = "none"
 	#Each structure in this folder will be given to the player as standard reusable capsule on game start.
 	#Empty the folder or the value to disable starter capsules.
 	#Default value: "config/capsule/starters"
@@ -25,7 +25,7 @@
 	#If true, loot rewards will be pre-charged blueprint when possible (if the content contains no entity).
 	#If false loot reward will always be one-use capsules.
 	#Default value: true
-	allowBlueprintReward = true
+	allowBlueprintReward = false
 	#If true, sneak+left click in air allow mirroring of the capsule content. Can be disabled for multiblock compatibility. 
 	#Default value: true
 	allowMirror = true

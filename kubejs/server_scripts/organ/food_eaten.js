@@ -1,5 +1,6 @@
 ItemEvents.foodEaten(event => {
     let player = event.player;
+    if (!player) return;
     let food = event.item;
     let itemMap = getPlayerChestCavityItemMap(player);
     if (itemMap.has('kubejs:greedy_stomach')) {

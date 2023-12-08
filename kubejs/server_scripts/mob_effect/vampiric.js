@@ -1,7 +1,8 @@
 // priority: 4
 EntityEvents.hurt(event => {
     let damageSourcePlayer = event.source.player;
-    if (damageSourcePlayer && damageSourcePlayer.hasEffect('kubejs:vampiric')) {
+    if (!damageSourcePlayer) return;
+    if (damageSourcePlayer.hasEffect('kubejs:vampiric')) {
         let damage = event.getDamage();
         let vampiricEffect = damageSourcePlayer.getEffect('kubejs:vampiric')
         let amplifier = vampiricEffect.getAmplifier();

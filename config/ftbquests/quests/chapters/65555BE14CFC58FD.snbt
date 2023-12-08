@@ -8,7 +8,7 @@
 	order_index: 1
 	quest_links: [ ]
 	quests: [{
-		description: ["制作团队：GoCamping！（去露营！）"]
+		description: ["&2制作团队：GoCamping！（译名：去露营！）&r"]
 		icon: "minecraft:campfire"
 		id: "0E3B5BC6A471679E"
 		subtitle: "制作团队：GoCamping！"

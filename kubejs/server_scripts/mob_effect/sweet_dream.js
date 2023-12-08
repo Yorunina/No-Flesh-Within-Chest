@@ -1,8 +1,6 @@
 // priority: 5
 EntityEvents.hurt('minecraft:player', event => {
-    if (!event.entity.isPlayer()) {
-        return;
-    }
+    if (!event.entity.isPlayer()) return;
     let player = event.player;
     if (player.hasEffect('kubejs:sweet_dream')) {
         let itemMap = getPlayerChestCavityItemMap(player);

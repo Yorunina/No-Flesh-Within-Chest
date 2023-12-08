@@ -86,7 +86,6 @@ function initChestCavityIntoMap(player, removeFlag) {
     playerChestCavityItemMap.set(uuid, chestInventoryItemMap);
     playerChestCavityTypeMap.set(uuid, chestInventoryTypeMap);
     playerChestCavityHashMap.set(uuid, newHash);
-    player.tell('完成初始化');
     if (removeFlag) {
         player.persistentData.putInt('organ_actived', 0)
         clearAllActivedModify(player)

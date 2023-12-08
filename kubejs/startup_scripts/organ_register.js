@@ -209,6 +209,14 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/magic/magic_spine')
         .tag('kubejs:magic');
 
+    registerOrgan(new Organ('kubejs:magic_vision')
+        .addScore('nerves', 1)
+        .build())
+        .texture('kubejs:item/organs/magic/magic_spine')
+        .tag('kubejs:magic')
+        .tag('kubejs:active');
+
+
 
     // 矿石肺
     registerOrgan(new Organ('kubejs:ore_lung')

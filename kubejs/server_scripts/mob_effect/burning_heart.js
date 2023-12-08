@@ -1,14 +1,15 @@
 // priority: 3
 EntityEvents.hurt(event => {
     let damageSourcePlayer = event.source.player;
-    if (damageSourcePlayer && damageSourcePlayer.hasEffect('kubejs:burning_heart')) {
+    if (!damageSourcePlayer) return;
+    if (damageSourcePlayer.hasEffect('kubejs:burning_heart')) {
         let burningHeartEffect = damageSourcePlayer.getEffect('kubejs:burning_heart')
         let burningHeartAmplifier = burningHeartEffect.getAmplifier();
         event.entity.attack(event.damage + burningHeartAmplifier + 1);
         event.cancel();
         return;
     }
-    if (damageSourcePlayer && damageSourcePlayer.hasEffect('kubejs:flaring_heart')) {
+    if (damageSourcePlayer.hasEffect('kubejs:flaring_heart')) {
         let damage = event.getDamage();
         let flaringHeartEffect = damageSourcePlayer.getEffect('kubejs:flaring_heart')
         let flaringHeartAmplifier = flaringHeartEffect.getAmplifier();

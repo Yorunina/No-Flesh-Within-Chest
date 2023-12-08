@@ -91,7 +91,7 @@
 			}]
 			title: "激活药丸"
 			x: 4.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["040207B33E2FEBFF"]
@@ -160,6 +160,53 @@
 			title: "铸成红肉身"
 			x: 4.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["7F0C1FA54DD6E9BC"]
+			description: [
+				"召唤祭坛主要用于召唤生物的场景——当然这并不意味着它仅可以召唤生物，实际上也可以用于一些&5特殊配方&r的加工，获得一些&2物品&r的乃至&2效果类&r的奖励。"
+				""
+				"召唤仪式在后续的旅程中会被反复使用，如果你在&2寻找并击杀某些boss&r的话，在寻找之前，不妨查看一下祭坛的配方，或许会有更简单的方法。"
+			]
+			id: "49BD99DDA8F8454A"
+			rewards: [{
+				id: "0DD6F90701F5DBCC"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "召唤祭坛将会指引你新的道路"
+			tasks: [{
+				id: "3B5DBF68920C4ED0"
+				item: "summoningrituals:altar"
+				type: "item"
+			}]
+			title: "召唤你想要的"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49BD99DDA8F8454A"]
+			description: [
+				"到这里为止，本整合包内绝大部分的Mod内容都已经&2完成了引入&r，本条任务线的在整合包内的“任务”也算&d大功告成&r了。"
+				""
+				"尝试击败&2各种各样的boss&r，收集&2更多种类的器官&r吧，只有这样，你才能够"
+				""
+				"&8揭开潜藏在回忆中的秘密。&r"
+			]
+			icon: "minecraft:oak_sapling"
+			id: "2EBB4C697D81D42A"
+			subtitle: "一切应当是自由的"
+			tasks: [{
+				id: "5C7476AF066BA1E3"
+				title: "开始你的旅途吧！"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 0.0d
 		}
 	]
 	title: "章节2：觉醒"

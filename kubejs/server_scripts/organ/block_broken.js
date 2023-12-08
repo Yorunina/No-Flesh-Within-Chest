@@ -1,5 +1,6 @@
 BlockEvents.broken('minecraft:stone', event => {
     let player = event.player;
+    if (!player) return;
     let itemMap = getPlayerChestCavityItemMap(player);
     if (itemMap.has('kubejs:ore_lung')) {
         organBlockBrokenStrategies['kubejs:ore_lung'](event, itemMap);

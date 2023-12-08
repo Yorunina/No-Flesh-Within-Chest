@@ -27,7 +27,10 @@ StartupEvents.registry('item', event => {
     event.create('exclamation_mark').texture('kubejs:item/exclamation_mark')
     event.create('full_mark').texture('kubejs:item/full_mark')
     event.create('ritual_catalyst').texture('kubejs:item/ritual_catalyst')
-    event.create('secret_of_rain').texture('kubejs:item/secret_of_rain')
+    event.create('secret_of_origin').texture('kubejs:item/secret_of_origin').maxStackSize(1)
+    event.create('secret_of_rain').texture('kubejs:item/secret_of_rain').maxStackSize(1)
+    event.create('secret_of_heart').texture('kubejs:item/secret_of_heart').maxStackSize(1)
+    event.create('secret_of_bloom').texture('kubejs:item/secret_of_bloom').maxStackSize(1)
 
     event.create('ceremonial_knife').texture('kubejs:item/ceremonial_knife').maxStackSize(1)
         .useAnimation('bow')

@@ -7,10 +7,17 @@ global.OPERATION_MUTI_BASE = 'multiply_base'
 
 global.HEALTH_UP = { key: 'minecraft:generic.max_health', name: 'kubejsMaxHealth', operation: 'addition' }
 global.ATTACK_UP = { key: 'minecraft:generic.attack_damage', name: 'kubejsAttackDamage', operation: 'addition' }
+global.TEMP_ATTACK_UP = { key: 'minecraft:generic.attack_damage', name: 'kubejsTempAttackDamage', operation: 'addition' }
+global.COOLDOWN_REDUCTION = { key: 'irons_spellbooks:cooldown_reduction', name: 'kubejsCooldownReduction', operation: 'addition' }
+global.SPELL_POWER = { key: 'irons_spellbooks:spell_power', name: 'kubejsSpellPower', operation: 'addition' }
+
 
 global.ATTRIBUTE_MAP = {
     'kubejsAttackDamage': global.ATTACK_UP,
-    'kubejsMaxHealth': global.HEALTH_UP
+    'kubejsMaxHealth': global.HEALTH_UP,
+    'kubejsTempAttackDamage': global.TEMP_ATTACK_UP,
+    'kubejsCooldownReduction': global.COOLDOWN_REDUCTION,
+    'kubejsSpellPower': global.SPELL_POWER,
 }
 
 global.TYPE_MAP = {

@@ -53,6 +53,9 @@ function setPlayerAttributeMap(player, attriMap) {
 function clearAllActivedModify(player) {
     player.removeAttribute(global.HEALTH_UP.key, global.HEALTH_UP.name);
     player.removeAttribute(global.ATTACK_UP.key, global.ATTACK_UP.name);
+    player.removeAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name);
+    player.removeAttribute(global.COOLDOWN_REDUCTION.key, global.COOLDOWN_REDUCTION.name);
+    player.removeAttribute(global.SPELL_POWER.key, global.SPELL_POWER.name);
 }
 
 
@@ -61,37 +64,36 @@ let organActiveScoreStrategies = {
     'kubejs:health_appendix': function (player, typeMap, attributeMap) {
         if (typeMap.has('kubejs:appendix')) {
             let value = typeMap.get('kubejs:appendix').length * 1
-            if (attributeMap.has(global.HEALTH_UP.name)) {
-                value = value + attributeMap.get(global.HEALTH_UP.name)
-            }
-            attributeMap.set(global.HEALTH_UP.name, value)
+            attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
     },
     'kubejs:rose_quartz_heart': function (player, typeMap, attributeMap) {
         if (typeMap.has('kubejs:machine')) {
-            let healthValue = typeMap.get('kubejs:machine').length * 1
-            if (attributeMap.has(global.HEALTH_UP.name)) {
-                healthValue = healthValue + attributeMap.get(global.HEALTH_UP.name)
-            }
-            attributeMap.set(global.HEALTH_UP.name, healthValue)
+            let value = typeMap.get('kubejs:machine').length * 1
+            attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
 
         if (typeMap.has('kubejs:rose')) {
-            let attackValue = typeMap.get('kubejs:rose').length * 0.5
-            if (attributeMap.has(global.ATTACK_UP.name)) {
-                attackValue = attackValue + attributeMap.get(global.ATTACK_UP.name)
-            }
-            attributeMap.set(global.ATTACK_UP.name, attackValue)
+            let value = typeMap.get('kubejs:rose').length * 0.5
+            attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
         }
     },
-    
+
     'kubejs:revolution_cable': function (player, typeMap, attributeMap) {
         if (typeMap.has('kubejs:revolution')) {
-            let healthValue = typeMap.get('kubejs:revolution').length * 1
-            if (attributeMap.has(global.HEALTH_UP.name)) {
-                healthValue = healthValue + attributeMap.get(global.HEALTH_UP.name)
-            }
-            attributeMap.set(global.HEALTH_UP.name, healthValue)
+            let value = typeMap.get('kubejs:revolution').length * 1
+            attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
-    }
+    },
+    'kubejs:magic_vision': function (player, typeMap, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.2)
+    },
 };
+
+
+function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
+    if (attributeMap.has(attribute.name)) {
+        modifyValue = modifyValue + attributeMap.get(attribute.name)
+    }
+    attributeMap.set(attribute.name, modifyValue)
+}

@@ -1,6 +1,6 @@
 {
   "config": {
-    "damageMultiplierPercentage": 150.0,
+    "damageMultiplierPercentage": 50.0,
     "healingPercentage": 10.0,
     "sunDamage": 2.0,
     "isEnable": true

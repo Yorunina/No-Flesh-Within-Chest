@@ -1,5 +1,6 @@
 ItemEvents.rightClicked(event => {
     let player = event.player;
+    if (!player) return;
     let item = event.item;
     if (item.hasTag('minecraft:coals')) {
         let itemMap = getPlayerChestCavityItemMap(player)

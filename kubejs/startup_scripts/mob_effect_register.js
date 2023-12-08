@@ -14,4 +14,8 @@ StartupEvents.registry('mob_effect', event => {
     event.create('vampiric')
         .beneficial()
         .color(Color.DARK_RED)
+
+    event.create('curse_of_fragility')
+        .harmful()
+        .color(Color.DARK_GRAY)
 })

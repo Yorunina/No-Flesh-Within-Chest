@@ -1,6 +1,6 @@
 {
   "config": {
-    "explosionLevel": 15.0,
+    "explosionLevel": 1.0,
     "isEnable": true
   }
 }

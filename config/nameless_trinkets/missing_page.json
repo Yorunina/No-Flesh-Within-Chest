@@ -1,8 +1,8 @@
 {
   "config": {
-    "activationPercentage": 25,
-    "radiusInBlocks": 25.0,
-    "percentageOfDamage": 20.0,
+    "activationPercentage": 3,
+    "radiusInBlocks": 5.0,
+    "percentageOfDamage": 10.0,
     "isEnable": true
   }
 }

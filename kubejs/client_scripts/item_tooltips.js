@@ -17,7 +17,7 @@ ItemEvents.tooltip((tooltip) => {
 
     tooltip.addAdvanced('kubejs:secret_of_rain', (item, advanced, text) => {
         if (tooltip.shift) {
-            text.add([Text.gray('雨的秘密').italic(), Text.gray('存在于'), Text.blue('暴雨天气').bold(), Text.gray('和'), Text.gold('发光状态').bold(), Text.gray('之中')]);
+            text.add([Text.gray('雨的秘密').italic(), Text.gray('存在于'), Text.blue('雷暴天气').bold(), Text.gray('和'), Text.gold('发光状态').bold(), Text.gray('之中')]);
         } else {
             text.add([Text.gray('雨的秘密').italic(), Text.gray('存在于'), Text.blue('极致风暴').bold(), Text.gray('和'), Text.gold('闪耀光芒').bold(), Text.gray('之中')]);
         }
