@@ -43,14 +43,4 @@ StartupEvents.registry('item', event => {
             entity.addItemCooldown(itemstack, 20 * 10)
             return itemstack;
         })
-
-    event.create('scrap').texture('kubejs:item/scrap')
-    event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
-    event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
-    event.create('exclamation_mark').texture('kubejs:item/exclamation_mark')
-    event.create('full_mark').texture('kubejs:item/full_mark')
-    event.create('ritual_catalyst').texture('kubejs:item/ritual_catalyst')
-    event.create('secret_of_rain').texture('kubejs:item/secret_of_rain')
-
-
 })
