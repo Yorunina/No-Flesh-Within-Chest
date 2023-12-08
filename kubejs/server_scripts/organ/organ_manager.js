@@ -1,5 +1,8 @@
 // priority: 0
 
+/**
+ * 数据包高优先级加载器官初始属性
+ */
 ServerEvents.highPriorityData(event => {
     function registerOrganScore(organ) {
         let item = organ.itemID.split(':')[1]

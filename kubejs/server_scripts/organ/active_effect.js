@@ -9,6 +9,7 @@ global.updatePlayerActiveStatus = player => {
     let typeMap = getPlayerChestCavityTypeMap(player);
     let uuid = String(player.getUuid());
     let attributeMap = new Map();
+    // 激活状态根据Tag区分并遍历可以用于激活的器官方法
     if (typeMap.has('kubejs:active')) {
         typeMap.get('kubejs:active').forEach(organ => {
             organActiveScoreStrategies[organ.id](player, typeMap, attributeMap)
@@ -59,7 +60,9 @@ function clearAllActivedModify(player) {
 }
 
 
-// 简单策略
+/**
+ * 器官简单策略模式
+ */
 let organActiveScoreStrategies = {
     'kubejs:health_appendix': function (player, typeMap, attributeMap) {
         if (typeMap.has('kubejs:appendix')) {
@@ -67,6 +70,7 @@ let organActiveScoreStrategies = {
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
     },
+
     'kubejs:rose_quartz_heart': function (player, typeMap, attributeMap) {
         if (typeMap.has('kubejs:machine')) {
             let value = typeMap.get('kubejs:machine').length * 1

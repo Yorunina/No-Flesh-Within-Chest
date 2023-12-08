@@ -1,5 +1,9 @@
 /* 
   Author: Discord @E...
+  Modifier: Neha YoruNina
+
+  原作者: Discord用户 @E...
+  修改者: Neha YoruNina 本整合包作者
 */
 
 const $EyeofEnder = Java.loadClass('net.minecraft.world.entity.projectile.EyeOfEnder')

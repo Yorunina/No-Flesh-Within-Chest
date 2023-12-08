@@ -41,5 +41,5 @@ WanderingTraderSellsAgreements = true
 	GenerateWarehouses = true
 	#Warehouse structure weight. Larger number = more chances to spawn.
 	#Range: > 1
-	WarehouseWeight = 10
+	WarehouseWeight = 20
 

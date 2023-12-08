@@ -15,7 +15,7 @@ EntityEvents.hurt(event => {
         let flaringHeartAmplifier = flaringHeartEffect.getAmplifier();
         let flaringHeartDuration = flaringHeartEffect.getDuration();
         if (flaringHeartDuration <= 20 * 5) {
-            event.server.runCommandSilent(`title ${damageSourcePlayer.name.getString()} actionbar {"text": "§4心火状态：§7${flaringHeartDuration} / 100  §3倍率：§e${flaringHeartAmplifier * 0.5 + 1.5}倍"}`);
+            event.server.runCommandSilent(`title ${damageSourcePlayer.name.getString()} actionbar {"text": "§4心火状态: §7${flaringHeartDuration} / 100  §3倍率: §e${flaringHeartAmplifier * 0.5 + 1.5}倍"}`);
             damage = damage * (flaringHeartAmplifier * 0.5 + 1.5);
             event.entity.attack(damage);
             event.cancel();

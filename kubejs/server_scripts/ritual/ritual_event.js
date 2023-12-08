@@ -1,7 +1,23 @@
 SummoningRituals.complete(event => {
     if (!event.player) return;
+    // 雨之仪式
+    if (event.recipe.getId() == 'kubejs:ritual_of_rain') {
+        ritualsCompleteStrategies['kubejs:ritual_of_rain'](event)
+    }
+});
+
+
+SummoningRituals.start(event => {
+    if (!event.player) return;
 
     if (event.recipe.getId() == 'kubejs:ritual_of_rain') {
+        ritualsStartStrategies['kubejs:ritual_of_rain'](event)
+    }
+});
+
+
+let ritualsCompleteStrategies = {
+    'kubejs:ritual_of_rain': function (event) {
         if (event.level.isThundering() && event.player.hasEffect('minecraft:glowing')) {
             event.level.runCommandSilent('/weather clear');
             event.player.notify(Notification.make((notification) => {
@@ -16,15 +32,12 @@ SummoningRituals.complete(event => {
             }));
         }
     }
-});
+};
 
-
-SummoningRituals.start(event => {
-    if (!event.player) return;
-
-    if (event.recipe.getId() == 'kubejs:ritual_of_rain') {
+let ritualsStartStrategies = {
+    'kubejs:ritual_of_rain': function (event) {
         if (!(event.level.isThundering() && event.player.hasEffect('minecraft:glowing'))) {
             event.cancel();
         }
     }
-});
+};

@@ -6,7 +6,7 @@ EntityEvents.hurt(event => {
         let damage = event.getDamage();
         let vampiricEffect = damageSourcePlayer.getEffect('kubejs:vampiric')
         let amplifier = vampiricEffect.getAmplifier();
-        // 有效范围最高5级
+        // 有效等级最高为5
         let vampiricRate = 0.2 + Math.min(amplifier * 0.2, 0.8);
         damageSourcePlayer.heal(Math.floor(vampiricRate * damage));
         return;

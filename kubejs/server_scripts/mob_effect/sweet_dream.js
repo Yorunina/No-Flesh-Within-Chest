@@ -1,4 +1,14 @@
 // priority: 5
+/**
+ * 1. 优先判断是否是玩家受到伤害
+ * 2. 甜蜜之梦如果存在，优先结算甜蜜之梦的抵消效果
+ *  2.1. 如果没有糖果心则不判断后续所有逻辑
+ *  2.2. 如果来源于火焰，那么
+ *  2.3. 如果甜蜜之梦的效果消失，那么就判断是否通过胰腺的效果
+ *  2.4. 扣减状态持续时间，删除状态强刷buff时间
+ * 3. 检测魔法海马体效果赋予甜蜜之梦状态
+ *  3.1. 根据已有器官获取等级
+ */
 EntityEvents.hurt('minecraft:player', event => {
     if (!event.entity.isPlayer()) return;
     let player = event.player;
@@ -8,11 +18,12 @@ EntityEvents.hurt('minecraft:player', event => {
             return;
         }
         let sweetDreamPotion = player.getEffect('kubejs:sweet_dream')
-        let damage = event.getDamage();
         if (event.source.isFire()) {
             player.removeEffect('kubejs:sweet_dream');
             return;
         }
+
+        let damage = event.getDamage();
         if (sweetDreamPotion.getDuration() * (sweetDreamPotion.getAmplifier() + 1) < damage * 20) {
             player.removeEffect('kubejs:sweet_dream');
             if (itemMap.has('kubejs:candy_pancreas')) {
