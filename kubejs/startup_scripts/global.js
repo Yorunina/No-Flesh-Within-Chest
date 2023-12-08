@@ -85,8 +85,6 @@ global.SCORE_MAP = {
     'chestcavity:arrow_dodging': '箭矢闪避', 
     'chestcavity:impact_resistant': '冲击抗性', 
     'chestcavity:rotgut': '嗜腐', 
-    
-    
 }
 
 

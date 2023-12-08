@@ -21,7 +21,7 @@
 
 [health]
 	#Show colorful icons on the front row, not just on all subsequent rows.
-	colorize_first_row = false
+	colorize_first_row = true
 	#Add layers to this bar. When disabled any modifications to the bar from this mod will be turned off.
 	allow_layers = true
 	#Render row count to indicate total amount of rows since not all may be visible at once due to the stacked rendering.
@@ -31,7 +31,7 @@
 
 [armor]
 	#Show colorful icons on the front row, not just on all subsequent rows.
-	colorize_first_row = false
+	colorize_first_row = true
 	#Add layers to this bar. When disabled any modifications to the bar from this mod will be turned off.
 	allow_layers = true
 	#Don't draw empty armor points, this will make the armor bar potentially shorter.

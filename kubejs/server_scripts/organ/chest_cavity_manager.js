@@ -5,6 +5,10 @@ const playerChestCavityPosMap = new Map();
 const playerChestCavityItemMap = new Map();
 const playerChestCavityTypeMap = new Map();
 
+/**
+ * 玩家登入时初始化它的胸腔内容并插入到表内
+ * 如果之前服用过激活药则进行初始化激活
+ */
 PlayerEvents.loggedIn((event) => {
     initChestCavityIntoMap(event.player, false);
     
@@ -14,6 +18,9 @@ PlayerEvents.loggedIn((event) => {
     }
 });
 
+/**
+ * 玩家登出时释放该部分Map数据
+ */
 PlayerEvents.loggedOut((event) => {
     let uuid = String(event.player.getUuid());
     playerChestCavityHashMap.delete(uuid)
@@ -25,7 +32,8 @@ PlayerEvents.loggedOut((event) => {
 
 PlayerEvents.inventoryClosed((event) => {
     let player = event.player;
-    if (player.mainHandItem != 'chestcavity:chest_opener') {
+    // 只有当玩家手持开胸器并打开gui界面的时候才触发初始化效果
+    if (player.mainHandItem != 'chestcavity:chest_opener' && player.offHandItem != 'chestcavity:chest_opener') {
         return;
     }
     initChestCavityIntoMap(player, true);

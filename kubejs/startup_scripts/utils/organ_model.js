@@ -16,8 +16,6 @@ Organ.prototype = {
         this.organScores.push({ 'id': `chestcavity:${score}`, 'value': value })
         return this
     },
-
-
     addTextLines: function (type, textLines) {
         switch (type) {
             case 'default':

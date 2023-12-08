@@ -3,7 +3,7 @@
 [common]
 	#Max level of weapons.
 	#Range: > 1
-	maxLevel = 10
+	maxLevel = 20
 	#Should weapons remain in inventory on death.
 	keepOnDeath = true
 	#Base Damage of sword weapons.
