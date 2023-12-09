@@ -11,9 +11,11 @@ StartupEvents.registry('item', event => {
             });
     })
 
-    event.create('candy').texture('kubejs:item/candy').tag('kubejs:eatable_candy').food(food => {
-        food.hunger(1).saturation(1).alwaysEdible()
-    }).tag('supplementaries:cookies')
+    event.create('candy').texture('kubejs:item/candy').tag('kubejs:eatable_candy').food(food => {food.hunger(1).saturation(1).alwaysEdible()}).tag('supplementaries:cookies')
+    event.create('ice_candy').texture('kubejs:item/ice_candy').tag('kubejs:eatable_candy').food(food => {food.hunger(1).saturation(1).alwaysEdible()}).tag('supplementaries:cookies')
+    event.create('water_candy').texture('kubejs:item/water_candy').tag('kubejs:eatable_candy').food(food => {food.hunger(1).saturation(1).alwaysEdible()}).tag('supplementaries:cookies')
+    event.create('fire_candy').texture('kubejs:item/fire_candy').tag('kubejs:eatable_candy').food(food => {food.hunger(1).saturation(1).alwaysEdible()}).tag('supplementaries:cookies')
+    event.create('wind_candy').texture('kubejs:item/wind_candy').tag('kubejs:eatable_candy').food(food => {food.hunger(1).saturation(1).alwaysEdible()}).tag('supplementaries:cookies')
 
     event.create('scrap').texture('kubejs:item/scrap')
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')

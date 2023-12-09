@@ -10,6 +10,17 @@ EntityEvents.hurt(event => {
 
 })
 
+EntityEvents.hurt('minecraft:player', event => {
+    if (!event.player) return;
+    let player = event.player
+
+    let itemMap = getPlayerChestCavityItemMap(damageSourcePlayer);
+    if (itemMap.has('kubejs:infinity_beats')) {
+        organEntityHurtStrategies['kubejs:infinity_beats'](event)
+    }
+
+})
+
 
 
 let organEntityHurtStrategies = {
