@@ -13,7 +13,7 @@ StartupEvents.registry('item', event => {
 
     event.create('candy').texture('kubejs:item/candy').tag('kubejs:eatable_candy').food(food => {
         food.hunger(1).saturation(1).alwaysEdible()
-    })
+    }).tag('supplementaries:cookies')
 
     event.create('scrap').texture('kubejs:item/scrap')
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
@@ -22,9 +22,9 @@ StartupEvents.registry('item', event => {
     event.create('full_mark').texture('kubejs:item/full_mark')
     event.create('ritual_catalyst').texture('kubejs:item/ritual_catalyst')
     event.create('secret_of_origin').texture('kubejs:item/secret_of_origin').maxStackSize(1)
-    event.create('secret_of_rain').texture('kubejs:item/secret_of_rain').maxStackSize(1)
-    event.create('secret_of_heart').texture('kubejs:item/secret_of_heart').maxStackSize(1)
-    event.create('secret_of_bloom').texture('kubejs:item/secret_of_bloom').maxStackSize(1)
+    event.create('secret_of_rain').texture('kubejs:item/secret_of_rain').tag('kubejs:secret').maxStackSize(1)
+    event.create('secret_of_heart').texture('kubejs:item/secret_of_heart').tag('kubejs:secret').maxStackSize(1)
+    event.create('secret_of_bloom').texture('kubejs:item/secret_of_bloom').tag('kubejs:secret').maxStackSize(1)
 
     event.create('ceremonial_knife').texture('kubejs:item/ceremonial_knife').maxStackSize(1)
         .useAnimation('bow')

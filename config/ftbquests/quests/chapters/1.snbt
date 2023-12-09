@@ -278,7 +278,7 @@
 			icon: "irons_spellbooks:greater_healing_potion"
 			id: "279037F0BA837179"
 			rewards: [{
-				command: "/chestcavity resetChestCavity"
+				command: "/chestcavity resetChestCavity @p"
 				icon: "irons_spellbooks:greater_healing_potion"
 				id: "7637EA70C0B4B64C"
 				title: "重置你的器官！"
@@ -286,15 +286,24 @@
 			}]
 			shape: "gear"
 			subtitle: "当你想要重新开始时"
-			tasks: [{
-				id: "5ACC257A80DD0FF8"
-				item: {
-					Count: 1
-					id: "numismaticoverhaul:bronze_coin"
-					tag: { }
+			tasks: [
+				{
+					elapsedTime: 180L
+					id: "72C28C47201E8854"
+					title: "等待180秒"
+					type: "questsadditions:time"
 				}
-				type: "item"
-			}]
+				{
+					consume_items: true
+					id: "4C45421D05A45596"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:bronze_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			title: "重置器官！"
 			x: 5.5d
 			y: -3.0d
@@ -712,7 +721,69 @@
 				type: "item"
 			}]
 			title: "将光源挂在腰上"
-			x: 3.0d
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["51FA796A91E94C4D"]
+			description: ["如果你在寻找虚空之花，也可以通过对应的&2虚空之眼&r来进行搜寻。"]
+			id: "6B7FD39A8093248D"
+			rewards: [{
+				count: 5
+				id: "5C94F0AEA4B05C08"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "虚空之花定位器"
+			tasks: [{
+				id: "5B7A2B7500F6B914"
+				item: "kubejs:eye_of_void_blossom"
+				type: "item"
+			}]
+			title: "特殊的眼睛"
+			x: 10.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			description: [
+				"在游戏中会经常遇到存储大量同种物品的情况。这时候就可以考虑使用&2储物抽屉&r进行批量的物品存储。"
+				""
+				"储物抽屉在游戏的各个时期都是非常好用的，在后面你可以通过添加&2抽屉管理器&r的方式来扩展抽屉的存储便利程度。"
+				""
+				"后续也可以采用Tom's的简易存储来接入抽屉，免去物品搬运的问题。"
+			]
+			icon: "storagedrawers:oak_full_drawers_1"
+			id: "5E8F821F42C92E8A"
+			rewards: [{
+				count: 5
+				id: "36B521E50A8670A3"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "储存大量的同种类物品"
+			tasks: [{
+				id: "258D2089515F93C9"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+				title: "Any #storagedrawers:drawers"
+				type: "item"
+			}]
+			title: "储物抽屉"
+			x: 8.0d
 			y: -1.5d
 		}
 	]

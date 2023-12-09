@@ -17,6 +17,13 @@ StartupEvents.registry('item', event => {
       return eyeFinder(level, player, interactionHand, 'kubejs:fortress_locator');
     })
     .fireResistant();
+
+  event.create('eye_of_void_blossom')
+    .texture('kubejs:item/eye_of_void_blossom')
+    .use((level, player, interactionHand) => {
+      return eyeFinder(level, player, interactionHand, 'kubejs:void_blossom_locator');
+    })
+    .fireResistant();
 })
 
 

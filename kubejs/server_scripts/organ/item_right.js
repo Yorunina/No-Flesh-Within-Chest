@@ -19,7 +19,7 @@ let organRightClickedStrategies = {
     'kubejs:furnace_core': function (event, itemMap) {
         let amplifier = 0
         if (itemMap.has('kubejs:revolution_gear')) {
-            amplifier = itemMap.get('kubejs:revolution_gear').length
+            amplifier = Math.min(itemMap.get('kubejs:revolution_gear').length, 9)
         }
 
         event.player.potionEffects.add('kubejs:burning_heart', 20 * 20, amplifier);

@@ -27,7 +27,7 @@
 				type: "checkmark"
 			}]
 			title: "探寻魔法的秘密"
-			x: 2.0d
+			x: 1.0d
 			y: -1.5d
 		}
 		{
@@ -90,7 +90,7 @@
 				type: "checkmark"
 			}]
 			title: "激活药丸"
-			x: 4.0d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
@@ -158,7 +158,7 @@
 				type: "checkmark"
 			}]
 			title: "铸成红肉身"
-			x: 4.0d
+			x: 3.0d
 			y: 1.5d
 		}
 		{
@@ -197,6 +197,7 @@
 				""
 				"&8揭开潜藏在回忆中的秘密。&r"
 			]
+			hide_dependent_lines: true
 			icon: "minecraft:oak_sapling"
 			id: "2EBB4C697D81D42A"
 			subtitle: "一切应当是自由的"
@@ -207,6 +208,32 @@
 			}]
 			x: 6.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["49BD99DDA8F8454A"]
+			description: [
+				"在本整合包中，所有的召唤仪式，都要以&5仪式催化剂&r作为结尾，放置在召唤祭坛上，以开启一场召唤仪式。"
+				""
+				"因此，在制作召唤催化剂的时候可以考虑&2一次制作较多的量&r，以满足长期的召唤仪式的需求。"
+			]
+			id: "2E04900BA7E16DF0"
+			rewards: [{
+				id: "6AC6FB9DC22CD220"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "一切召唤仪式的基础"
+			tasks: [{
+				id: "0A9E7D934E060F6E"
+				item: "kubejs:ritual_catalyst"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.5d
 		}
 	]
 	title: "章节2：觉醒"

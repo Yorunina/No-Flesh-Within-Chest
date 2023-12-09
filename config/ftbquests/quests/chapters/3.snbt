@@ -7,6 +7,334 @@
 	id: "37DC06F829B60ADC"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["2EBB4C697D81D42A"]
+			description: [
+				"当你身处&5雷暴交加之夜&r，并且在&5怀有发光状态&r时，可以通过&6雨之召唤仪式&r，获得该秘密。"
+				""
+				"手持该秘密右键便可以领略其中的奥秘。"
+				""
+				"&7你可以将该秘密提供给其他正在为此而苦恼的人。&r"
+			]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			id: "70762EF9F974FA05"
+			rewards: [{
+				id: "4AD6BA78F14C67C3"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "雨的秘密隐藏在极致风暴和闪耀光芒之中"
+			tasks: [{
+				id: "4B7BA57BBCD4247D"
+				item: "kubejs:secret_of_rain"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2EBB4C697D81D42A"]
+			description: [
+				"在获得了&9雨的秘密&r、&b绽放的秘密&r、&d心的秘密&r后，你在偶然一瞥间，了解到了存在于这个世界上的，罕有的三大&6世界改造魔法&r之一。"
+				""
+				"&6世界改造魔法&r，顾名思义，是对整个维度级别乃至世界级别进行改造的宏伟魔法。相比于各种复杂的仪式，世界改造魔法的施展更多的像是一连贯&5巧合事件&r的发生。当一切处在恰当的时候，世界改造魔法就会发生。"
+				""
+				"如今，你领悟到的则是一种被称作&6曲水润丰图&r的世界改造魔法。它的施展条件尤为苛刻，在完成之时，将会给予你&5潜入世界的记忆&r的能力。"
+				""
+				"&7(Flos solum sub pluvia efflorescit，直译为：花只在雨水中盛开)&r"
+				""
+				"&7(Dies clarus corruent etiam petala，直译为：晴朗之日花瓣仍会凋落)&r"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"&6曲水润丰图&r的施展条件如下："
+				""
+				"1.挖掘煤炭时获得&6稀有的宝物&r"
+				""
+				"2.对草方块使用骨粉时遇到&6黑暗中盛开的花&r"
+				""
+				"3.雨夜垂钓时&6雨水突然停止&r"
+				""
+				"4.在满足以上条件之后，&6用对话框咏唱咒语&r"
+				""
+				"&6Flos solum sub pluvia efflorescit&r"
+			]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:diamond_spell_book"
+				tag: {
+					ISB_spellbook: {
+						activeSpellIndex: -1
+						spellSlots: 8
+						spells: [ ]
+					}
+				}
+			}
+			id: "2F700F7D0269B839"
+			invisible: true
+			rewards: [
+				{
+					auto: "enabled"
+					icon: "alexsmobs:acacia_blossom"
+					id: "1A4268A9DB9C427E"
+					ignore_reward_blocking: true
+					stage: "flos_magic_stage_0"
+					title: "曲水润丰图：准备阶段"
+					type: "gamestage"
+				}
+				{
+					count: 3
+					id: "0B686B55AA201E0A"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:gold_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			secret: true
+			shape: "hexagon"
+			subtitle: "在这个世界上，似乎存在有难以知晓的秘密"
+			tasks: [
+				{
+					icon: "kubejs:secret_of_rain"
+					id: "732AACBCB1FA8085"
+					stage: "secret_of_rain"
+					title: "雨的秘密"
+					type: "gamestage"
+				}
+				{
+					icon: "kubejs:secret_of_bloom"
+					id: "1FB1E9A0C65CE2FB"
+					stage: "secret_of_bloom"
+					title: "绽放的秘密"
+					type: "gamestage"
+				}
+				{
+					icon: "kubejs:secret_of_heart"
+					id: "1BD89D5031615E8D"
+					stage: "secret_of_heart"
+					title: "心的秘密"
+					type: "gamestage"
+				}
+			]
+			title: "三大世界改变魔法"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2EBB4C697D81D42A"]
+			description: [
+				"寻找&5虚空之花&r的藏匿地点，击败它，将会获得&b绽放的秘密&r。"
+				""
+				"手持该秘密右键便可以领略其中的奥秘。"
+				""
+				"&7你可以将该秘密提供给其他正在为此而苦恼的人。&r"
+			]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			id: "7FA1D3EB4B2FDC95"
+			shape: "hexagon"
+			subtitle: "绽放的秘密存在于残暴花卉之中"
+			tasks: [{
+				id: "5249768715F6657B"
+				item: "kubejs:secret_of_bloom"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2EBB4C697D81D42A"]
+			description: [
+				"当你通过各种手段，使你的&5生命值上限超过50&r（不包含激活效果提供的临时生命），并且在&5下界复活时&r（使用重生锚），便会获得&d心的秘密&r。"
+				""
+				"手持该秘密右键便可以领略其中的奥秘。"
+				""
+				"&7你可以将该秘密提供给其他正在为此而苦恼的人。&r"
+			]
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			id: "7F46087AE069353B"
+			shape: "hexagon"
+			subtitle: "心的秘密存在于无穷尽的活力与死亡之中"
+			tasks: [{
+				id: "1DC4E4012DD1AD67"
+				item: "kubejs:secret_of_heart"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2F700F7D0269B839"]
+			description: [
+				"在具有&2准备阶段&r的情况下，挖掘煤矿石有10%的概率能够掉落&5幸运石&r。"
+				""
+				"当触发这一条件时，将会移除你的准备阶段，添加第一阶段的标识。"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			icon: "nameless_trinkets:lucky_rock"
+			id: "6910E549F8D4A9A0"
+			rewards: [{
+				id: "73449E1E09781EFF"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "挖掘煤炭时获得稀有的宝物"
+			tasks: [{
+				icon: "nameless_trinkets:lucky_rock"
+				id: "29B68CBFC7CC7186"
+				stage: "flos_magic_stage_1"
+				title: "曲水丰润图:第一阶段"
+				type: "gamestage"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6910E549F8D4A9A0"]
+			description: [
+				"在具有&2第一阶段&r的情况下，对草方块使用骨粉有20%将会在周围生成&5凋零玫瑰&r。"
+				""
+				"当触发这一条件时，将会移除你的第一阶段，添加第二阶段的标识。"
+			]
+			hide_dependency_lines: true
+			hide_details_until_startable: true
+			hide_text_until_complete: true
+			icon: "minecraft:wither_rose"
+			id: "65427C12F230F5DC"
+			rewards: [{
+				id: "0AF73554B8C6612D"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "对草方块使用骨粉时遇到黑暗中盛开的花"
+			tasks: [{
+				icon: "minecraft:wither_rose"
+				id: "4E9AC193D00D112C"
+				stage: "flos_magic_stage_2"
+				title: "曲水丰润图:第二阶段"
+				type: "gamestage"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65427C12F230F5DC"]
+			description: [
+				"在具有&2第二阶段&r的情况下，在下雨的夜晚执行抛竿动作时，有10%的概率会使&b雨水停息&r。"
+				""
+				"当触发这一条件时，将会移除你的第二阶段，添加第三阶段的标识。"
+			]
+			hide_dependency_lines: true
+			hide_text_until_complete: true
+			id: "2E03433F8ED6CA99"
+			shape: "hexagon"
+			subtitle: "雨夜垂钓时雨水突然停止"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:fishing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "4B749F3396CA626B"
+				stage: "flos_magic_stage_3"
+				title: "曲水丰润图:第三阶段"
+				type: "gamestage"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2E03433F8ED6CA99"]
+			description: [
+				"&o&6Flos solum sub pluvia efflorescit&r&r"
+				""
+				"请注意，该维度&4难度极高&r，前往前可以根据情况开启死亡不掉落或者卸下部分贵重装备。"
+				""
+				"在预期中首次前往该维度的死亡几乎是&4必定&r的结局。"
+				""
+				"如果需要返回主世界，则需要咏唱该魔咒的下半句。"
+				""
+				"&o&6Dies clarus corruent etiam petala&r&r"
+			]
+			hide_dependency_lines: true
+			icon: "alexsmobs:acacia_blossom"
+			id: "789A88270498ED92"
+			rewards: [{
+				count: 5
+				id: "0A286171B2B1A138"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "咏唱咒语，以前往世界的回忆"
+			tasks: [{
+				dimension: "kubejs:lost_memory"
+				icon: "alexsmobs:acacia_blossom"
+				id: "13047C708C716A92"
+				title: "访问记忆中的世界"
+				type: "dimension"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["789A88270498ED92"]
+			description: [
+				"你大概已经猜到了——毕竟，在曾经的主世界中，&2维度的原点&r处也有相同的&5遗迹&r，但是召唤&2凋零风暴&r时会被神秘的力量阻止。"
+				""
+				"但在这个维度，神秘的力量似乎失去了效果。通过将凋零骷髅头颅放置在位于(0,0)的建筑结构中命令方块的顶部，便会召唤&5凋零风暴&r。"
+				""
+				"但&5凋零风暴&r的力量异常强大，再辅以该维度各种&5神秘的诅咒&r，想要战胜它似乎是完全不可能的事情。"
+				""
+				"如果你是在服务器中，&2请提前向服主确认召唤凋零风暴是可行的&r，因为其具有一定潜在的卡顿风险，需要周知服主。"
+				""
+				""
+				"{@pagebreak}"
+				"如果在你的服务器中，凋零风暴已经被其他玩家击败，则可以通过&2召唤仪式&r在回忆维度进行凋零风暴的召唤。"
+			]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "22A8C953424C8FD9"
+			shape: "hexagon"
+			subtitle: "凋零风暴！"
+			tasks: [{
+				id: "7F43E3AB7C03300B"
+				title: "凋零风暴！"
+				type: "checkmark"
+			}]
+			title: "发现隐秘遗迹"
+			x: 6.5d
+			y: 0.0d
+		}
+	]
 	title: "章节3：秘密"
 }
