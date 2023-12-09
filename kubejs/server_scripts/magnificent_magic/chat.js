@@ -27,6 +27,4 @@ PlayerEvents.chat(event => {
                 event.player.potionEffects.add('minecraft:slow_falling', 60 * 20, 0)
             })
     }
-
-    
 })

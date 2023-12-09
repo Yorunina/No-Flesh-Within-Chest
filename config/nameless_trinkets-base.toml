@@ -11,7 +11,7 @@
 
 ["Amount of Trinket Slot Obtainable:"]
 	#Range: 0 ~ 99
-	"How many trinket slots?" = 2
+	"How many trinket slots?" = 0
 
 ["Disable FOV disable"]
 	"Disable FOV disable?" = false

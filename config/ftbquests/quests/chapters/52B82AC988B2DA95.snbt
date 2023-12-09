@@ -19,7 +19,7 @@
 			id: "1C3CABF6FA4DBB44"
 			incompatible: ["5A2FBD3260EAA17A"]
 			rewards: [{
-				count: 5
+				count: 4
 				id: "2319A4D71F76480F"
 				item: {
 					Count: 1
@@ -64,12 +64,18 @@
 					type: "item"
 				}
 				{
+					count: 2
 					id: "19AFEF778BCA0ADB"
 					item: {
 						Count: 1
 						id: "numismaticoverhaul:gold_coin"
 						tag: { }
 					}
+					type: "item"
+				}
+				{
+					id: "1C90DB9E9DB53733"
+					item: "simplehats:hatbag_epic"
 					type: "item"
 				}
 			]
@@ -122,8 +128,105 @@
 				type: "item"
 			}]
 			title: "选择你的武器！"
-			x: 0.0d
-			y: 2.0d
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4B92B6F9C9EDC46E"]
+			description: [
+				"当你选择好你的武器之后，你会发现武器的默认耐久是0点。为了恢复武器的耐久，你需要使用前文提到的武器工作室保养你的武器。"
+				""
+				"右键武器工作室，将你所选择的武器放置进入GUI界面的凹槽内，选择正下方的按钮，便可以进入武器&2保养模式&r。"
+				""
+				"在该模式下，首先使用&2武器修补泥&r对武器的整体进行涂抹，而后使用&2抹布&r(砂纸?)对武器进行擦拭。完成后，武器会发出&6闪光效果&r。"
+				""
+				"当你保养了一面之后，需要点击&2右侧的按钮&r，将其翻面，再次进行保养。全部完成之后，武器的耐久便会恢复到最大值。"
+				"{image:kubejs:textures/task/weapon_master_1.png width:160 height:90 align:1}"
+			]
+			icon: "hexerei:cloth"
+			id: "2C8054AE6C57197F"
+			rewards: [{
+				count: 3
+				id: "361C99A0FA76F713"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "第一次武器保养"
+			tasks: [{
+				id: "4D956F29048CE985"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "擦拭你的武器"
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2C8054AE6C57197F"]
+			description: [
+				"当你修复好你的武器之后，可以在武器工作室的右侧按钮，查看武器的四样属性，分别对应武器&2伤害、攻速、耐久以及抢夺&r。鼠标&2选中不同的右侧属性条&r，就会使得接下来使用时的经验积累到该项之中。"
+				""
+				"比如，如果我需要提高武器的伤害，那么我就需要选择伤害的一行。"
+				"{image:kubejs:textures/task/weapon_master_2.png width:160 height:90 align:1}"
+				"{@pagebreak}"
+				"当武器的经验条积累满时，其对应的属性等级会提升。此时，将武器重新放置到武器工作室中，便会弹出升级页面。在该页面内可以在上方选择自己想要的&2三种武器样式&r以及在下方选择&2一种技能&r。"
+				""
+				"武器样式和技能会在每次升级中出现，直到你获取了所有的样式和技能。"
+				""
+				"当你获得了样式和技能之后，在正上方的按钮内可以配置样式，左侧按钮内则可以配置技能。"
+				"{image:kubejs:textures/task/weapon_master_3.png width:160 height:90 align:1}"
+			]
+			icon: "modulargolems:quartz"
+			id: "09F28AC07C32FAB3"
+			rewards: [{
+				count: 3
+				id: "01F5CA3B2A4C633C"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "武器的升级、样式、技能"
+			tasks: [{
+				id: "229906B9C02325A9"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "武器升级"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["09F28AC07C32FAB3"]
+			description: [
+				"到此，武器大师几乎所有的游戏内容就已经介绍完毕了。作为一款轻量级的武器类Mod，武器大师无疑做到了&5短小精悍&r。"
+				""
+				"在本整合中，武器的最大等级上限由默认的&610&r提升到了&620&r，这意味着玩家有着更大的成长空间和更高的可操作性。"
+				""
+				"武器大师本身提供了相当全面的配置文件，且材质精美，武器属性成长的设置也满足了玩家的多方面需求，同时其本身武器的多功能性使得就算在数据膨胀的后期也有用武之地，&2希望在本次介绍之后能够使你对该Mod燃起兴趣&r！"
+			]
+			icon: "weaponmaster:workstation"
+			id: "1E13C34A1DBB2224"
+			rewards: [{
+				id: "218893B2BCD2628A"
+				item: "simplehats:hatbag_epic"
+				type: "item"
+			}]
+			subtitle: "武器大师的极限"
+			tasks: [{
+				id: "50517FD1B3BF2E2C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "武器大师！"
+			x: 2.5d
+			y: 1.5d
 		}
 	]
 	title: "武器大师：陪伴一生的伙伴"

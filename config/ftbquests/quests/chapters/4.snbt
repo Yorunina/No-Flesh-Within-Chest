@@ -7,6 +7,253 @@
 	id: "33634F4FE0060BF7"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["22A8C953424C8FD9"]
+			description: [
+				"为了战胜凋零风暴，推荐&4解除掉所有的诅咒&r，并且为此做出&2器官、装备、饰品&r等多方面的准备。尽管凋零风暴是一个原版难度下就可以击败的boss，但对于没有足够经验的玩家来说，击败凋零风暴仍旧是一件非常困难的事。"
+				""
+				"接下来的几条任务，会围绕如何击败凋零风暴进行流程化的介绍，如果没有任何凋零风暴相关的经验，&2推荐仔细进行阅读&r。"
+				""
+				"顺便一提，该任务的完成条件是注视凋零风暴实体一段时间。"
+			]
+			hide_dependency_lines: true
+			id: "757727A969C7BA1E"
+			rewards: [{
+				id: "3CD928A479F44FB2"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "凋零风暴，现在，我是你的对手"
+			tasks: [{
+				icon: "witherstormmod:withered_bone"
+				id: "17FAE125D3524D24"
+				observe_type: 5
+				timer: 20L
+				title: "开始风暴之战！"
+				to_observe: "witherstormmod:wither_storm"
+				type: "observation"
+			}]
+			x: -2.75d
+			y: -1.0d
+		}
+		{
+			dependencies: ["757727A969C7BA1E"]
+			description: [
+				"初始状态下的凋零风暴默认拥有400的生命值，并且附带8的护甲值。"
+				""
+				"在被召唤的初期，会待在原地进行充能，此时，其处于&6无敌状态&r。"
+				""
+				"在完成了充能之后，凋零风暴会正式进入第一阶段。这个阶段下，凋零风暴会使用凋零之首进行轰炸，并且无差别的吸收周围的方块和小型生物。没被吸收一个物品、方块，凋零风暴便会&2回复10点生命值&r。"
+				"{@pagebreak}"
+				"对于原版游戏来说，在此时想要击杀凋零风暴非常困难，甚至可以说是绝无可能。但在各种buff的加持下，由于凋零风暴一阶段的攻击性不高，且玩家可以堆叠非常高的属性，因此存在第一阶段击败它的可能。"
+				""
+				"但为了这场战斗更加华丽，为何不等着一切演变到&4无可挽救&r的地步呢？"
+				""
+				"注:尽管你可以在任何阶段击败凋零风暴，但有可能会导致&2无法正常获得风暴之星&r，为了能够查看最后的任务，请仔细权衡。"
+			]
+			hide_dependency_lines: true
+			icon: "geodes:small_echo_bud"
+			id: "63C88B93760D098D"
+			subtitle: "凋零风暴第一形态"
+			tasks: [{
+				id: "27121D4DC4F1113C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "凋零风暴:第一乐章"
+			x: -2.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["63C88B93760D098D"]
+			description: [
+				"经过一段时间的吸收之后，凋零风暴会积攒一些保护层包裹在命令方块的外部。此时，凋零风暴便进入了第二形态。"
+				""
+				"这个阶段下，凋零会开始释放牵引光束，并且吸收更多的方块和更大型的生物。此时凋零风暴的声音会有所改变，且主首发射的并非是蓝色凋零之首而是&6强化风暴首&r。"
+			]
+			hide_dependency_lines: true
+			icon: "geodes:medium_echo_bud"
+			id: "176844176E2F7129"
+			subtitle: "凋零风暴第二形态"
+			tasks: [{
+				id: "4D1F8A2399E6CC91"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "凋零风暴:第二乐章"
+			x: -1.25d
+			y: 2.5d
+		}
+		{
+			dependencies: ["176844176E2F7129"]
+			description: [
+				"收集到足够的方块后，命令方块会被完全包围，此时，其顶部和底部会生长出&6风暴之触&r。此时，凋零风暴便进入了第三形态，在此形态下，其防御力提升至16点。"
+				""
+				"凋零风暴会在此阶段停留较长时间。"
+			]
+			hide_dependency_lines: true
+			icon: "geodes:large_echo_bud"
+			id: "2D07CA70665772DB"
+			subtitle: "凋零风暴第三形态"
+			tasks: [{
+				id: "4E051D69261A7616"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "凋零风暴:第三乐章"
+			x: 1.25d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2D07CA70665772DB"]
+			description: [
+				"进一步的增生之后，凋零风暴会缓慢上升，此时其生命值会暴涨到&21024&r点，防御上升为24点。"
+				""
+				"此时，凋零风暴会保持在一个高度飞行，免疫一切可能的攻击造成的伤害。绝大多数的生物都会因为恐惧而远离凋零风暴，凋零风暴会&2持续的追踪玩家&r并且进行攻击。"
+				""
+				"如果你被凋零风暴的牵引光束吸引，只有攻击凋零风暴的眼睛才能够获得到脱身的机会。如果被牵引光束照射的时间过长，会受到&5凋零腐败&r的效果影响，只能被金苹果炖菜所解除。"
+			]
+			hide_dependency_lines: true
+			icon: "geodes:echo_cluster"
+			id: "26BFD0F2225A8074"
+			subtitle: "凋零风暴第四形态"
+			tasks: [{
+				id: "38CD38C548CD975D"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "凋零风暴:第四乐章"
+			x: 2.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["26BFD0F2225A8074"]
+			description: [
+				"完全体形态后，并不意味着凋零风暴不会继续进行成长。它仍会吸收大量的方块以不断生长。"
+				""
+				"此时，因为其达到了增生的极限，凋零风暴会向外部释放&5凋零共生体&r。这些共生体拥有着部分凋零风暴的能量。当你消灭它们时，会掉落&6指令附魔书&r。"
+				""
+				"通过指令附魔书，可以升级你的钻石工具（虽然大概率你不会使用），并且制造&6恐怖炸弹&r。使用恐怖炸弹，即可摧毁处于完全体的凋零风暴。"
+			]
+			hide_dependency_lines: true
+			icon: "geodes:budding_echo_block"
+			id: "1EE271993AC21C6D"
+			subtitle: "凋零风暴第五形态"
+			tasks: [{
+				id: "527AC95F6BB81FEC"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "凋零风暴：完全体"
+			x: 2.75d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1EE271993AC21C6D"]
+			description: [
+				"当你靠近凋零风暴的残骸时，&2休眠的命令方块就会被激活&r。此时，凋零风暴将会&6重生&r，但并不如之前那么强大。"
+				""
+				"此刻的凋零风暴由三个分开的实体组成，每一部分都具有着生命。"
+				""
+				"凋零风暴之后会进化到第六阶段，从原本的三个头生长为九个头——这使得它能力大涨。"
+				""
+				"此时，你需要一把&6命令工具&r，前往凋零风暴的内部。"
+			]
+			hide_dependency_lines: true
+			icon: "witherstormmod:command_block_book"
+			id: "3423699A415F1840"
+			subtitle: "凋零风暴第六形态"
+			tasks: [{
+				id: "4D6E1658C34453E8"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "凋零风暴:重奏"
+			x: 1.25d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3423699A415F1840"]
+			description: [
+				"在它进化的巅峰时，它的头上方会打开一个&6醒目的洞&r，里面发出紫色的光芒。这个入口的出现可能需要一个小时左右，因此需要做好长线作战的准备。"
+				""
+				"当入口显现时，使用末影珍珠，或者使用弩发射一个末影珍珠，或者单纯的爬进去。就可以&2来到凋零风暴的内部&r。"
+				""
+				"&2内部空间非常黑暗，遍布腐败和感染&r。但只有在这里，你才有与其核心——命令方块，决斗的可能性。使用&6命令工具攻击命令方块&r，不停解决掉阻挡你的敌人，最终，你会破坏掉它的&6核心&r。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:ender_pearl"
+			id: "7326DD67C54CE97C"
+			subtitle: "凋零风暴最终形态"
+			tasks: [{
+				id: "090B71A2FB4AF530"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "凋零风暴:终章"
+			x: -1.25d
+			y: -2.5d
+		}
+		{
+			dependencies: ["22A8C953424C8FD9"]
+			description: [
+				"&o&6致以敬意。&r&r"
+				""
+				"到这里，凋零风暴的旅途也就此结束了。虽然难度不高，但作为终点的辉煌壮丽感，正适合于成为一段&6旅程的终点&r。"
+				""
+				"或许&6世界改造魔法&r的目的就是为了送你回来解决掉凋零风暴？又或者所谓的改造魔法根本不存在，只是梦中的自我感动？但无疑，这段旅程令人惊讶又钦佩。"
+				""
+				"能够忍受本整合枯燥内容的玩家本就少之又少，而能够达成本一成就的则更是&6凤毛麟角&r。"
+				""
+				"&o&6再次向完成的玩家致以敬意。&r&r"
+				"{@pagebreak}"
+				"不过也千万不要误会，&6旅途的终点不代表旅路的消失&r。各种器官的收集，更多Mod内容的体验，打造自己的基地，以及挑战更高的难度，更多的胜利方法——仍旧有很多事情值得你去尝试。"
+				""
+				"本整合包的制作预期，主线的流程寿命约为&680h&r，全任务流程约&6100~150h&r。请合理分配你的游戏时间，不要将时间过多的浪费在&2重复的内容&r上。"
+			]
+			hide_text_until_complete: true
+			icon: "witherstormmod:withered_nether_star"
+			id: "50E74D6934C5B5D8"
+			rewards: [
+				{
+					count: 30
+					id: "3F650248A434E87E"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:gold_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					count: 16
+					id: "23D3F86EF8BE78A0"
+					item: "nameless_trinkets:mysterious_trinket"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "758CBDD66DCEF3B0"
+					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+			]
+			subtitle: "守护我们的未来"
+			tasks: [{
+				id: "5DDDBA1F0DE43D6C"
+				item: "witherstormmod:withered_nether_star"
+				type: "item"
+			}]
+			title: "回忆中的过去"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
 	title: "章节4：解放"
 }

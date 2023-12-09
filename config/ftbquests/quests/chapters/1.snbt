@@ -305,8 +305,8 @@
 				}
 			]
 			title: "重置器官！"
-			x: 5.5d
-			y: -3.0d
+			x: 4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -693,7 +693,7 @@
 			description: [
 				"在背包界面的&2饰品栏&r内（点击人物右上的按钮打开），可以将&2灯笼挂载在腰上&r。以提供随时的动态光源效果。"
 				""
-				"除此之外，饰品栏内可以装备大量能够高效提高你的能力的饰品，且&2造价并不昂贵&r（因为本整合包并没有修改它们的配方），因此请多多查找并制作所需要的饰品或许可以使后面的旅程事半功倍。"
+				"除此之外，饰品栏内可以装备大量能够高效提高你的能力的饰品，为了寻找更多有用的饰品，你可以制作&5神秘饰品&r以随机获得饰品。"
 			]
 			icon: "minecraft:lantern"
 			id: "636CE66FFE0F6A51"
@@ -709,8 +709,8 @@
 					type: "item"
 				}
 				{
-					id: "22D6AE5F27C1B601"
-					item: "nameless_trinkets:experience_magnet"
+					id: "11CE9C63C34BD241"
+					item: "nameless_trinkets:mysterious_trinket"
 					type: "item"
 				}
 			]

@@ -8,7 +8,7 @@
 	disable_gui: false
 	drop_loot_crates: false
 	emergency_items_cooldown: 300
-	grid_scale: 0.5d
+	grid_scale: 0.25d
 	icon: "kubejs:candy_heart"
 	lock_message: ""
 	loot_crate_no_drop: {
