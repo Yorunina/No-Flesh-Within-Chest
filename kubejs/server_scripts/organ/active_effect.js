@@ -57,6 +57,8 @@ function clearAllActivedModify(player) {
     player.removeAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name);
     player.removeAttribute(global.COOLDOWN_REDUCTION.key, global.COOLDOWN_REDUCTION.name);
     player.removeAttribute(global.SPELL_POWER.key, global.SPELL_POWER.name);
+    player.removeAttribute(global.ICE_SPELL_POWER.key, global.ICE_SPELL_POWER.name);
+    player.removeAttribute(global.FIRE_SPELL_POWER.key, global.FIRE_SPELL_POWER.name);
 }
 
 
@@ -66,7 +68,7 @@ function clearAllActivedModify(player) {
 let organActiveScoreStrategies = {
     'kubejs:health_appendix': function (player, typeMap, attributeMap) {
         if (typeMap.has('kubejs:appendix')) {
-            let value = typeMap.get('kubejs:appendix').length * 1
+            let value = typeMap.get('kubejs:stomach').length * 1
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
     },
@@ -91,6 +93,17 @@ let organActiveScoreStrategies = {
     },
     'kubejs:magic_vision': function (player, typeMap, attributeMap) {
         attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.2)
+    },
+    'kubejs:love_between_lava_and_ice': function (player, typeMap, attributeMap) {
+        let itemMap = getPlayerChestCavityItemMap(player);
+        if (itemMap.has('minecraft:blue_ice')) {
+            let iceMuti = itemMap.get('minecraft:blue_ice').length * 0.1
+            attributeMapValueAddition(attributeMap, global.ICE_SPELL_POWER, iceMuti)
+        }
+        if (itemMap.has('minecraft:magma')) {
+            let fireMuti = itemMap.get('minecraft:magma').length * 0.1
+            attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMuti)
+        }
     },
 };
 

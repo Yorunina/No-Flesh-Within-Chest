@@ -7,32 +7,46 @@
 	id: "65555BE14CFC58FD"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"&2制作团队：GoCamping！（译名：去露营！）&r"
-			""
-			"&6主线设计：YoruNina&r"
-			""
-			"&6任务设计：YoruNina&r"
-			""
-			"&6美术设计：Louis&r"
-			""
-			"&6器官设计：Khepri、YoruNina&r"
-			""
-			"&6代码设计：YoruNina、Khepri&r"
-			""
-			"&6产物宣发：Chris&r"
-		]
-		icon: "minecraft:campfire"
-		id: "0E3B5BC6A471679E"
-		subtitle: "制作团队：GoCamping！"
-		tasks: [{
-			id: "517BC679DC3C0E6C"
-			title: "制作团队"
-			type: "checkmark"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: [
+				"&2制作团队：GoCamping！（译名：去露营！）&r"
+				""
+				"&6主线设计：YoruNina&r"
+				""
+				"&6任务设计：YoruNina&r"
+				""
+				"&6美术设计：Louis&r"
+				""
+				"&6器官设计：Khepri、YoruNina&r"
+				""
+				"&6代码设计：YoruNina、Khepri&r"
+				""
+				"&6产物宣发：Chris&r"
+			]
+			icon: "minecraft:campfire"
+			id: "0E3B5BC6A471679E"
+			subtitle: "制作团队：GoCamping！"
+			tasks: [{
+				id: "517BC679DC3C0E6C"
+				title: "制作团队"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["本整合包中的教程大量参考了中文McMod站点中各位先驱者的资料和文章。"]
+			id: "64EA255C062BB895"
+			subtitle: "额外鸣谢"
+			tasks: [{
+				id: "1B62C7838335B033"
+				title: "额外鸣谢"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+	]
 	title: "制作人名单"
 }

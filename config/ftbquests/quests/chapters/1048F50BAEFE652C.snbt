@@ -85,6 +85,47 @@
 			x: -4.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["0A80B9C8A9529301"]
+			description: ["击败&6霜冻岩浆怪&r获得。"]
+			id: "1EEB166103F7058F"
+			rewards: [{
+				id: "49B6BBD79E03243D"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "强大的Boss遗物器官"
+			tasks: [{
+				id: "7FF280AF66489CB9"
+				item: "kubejs:love_between_lava_and_ice"
+				type: "item"
+			}]
+			x: -5.75d
+			y: 2.5d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"在某些Boss的&2生命垂危之际&r，你可以使用&2开胸器&r打开它们的胸膛，获取极为罕见的&6Boss遗物器官&r。"
+				""
+				"这些器官往往具有着&2极强的单体器官性能&r，能够为玩家带来相当大的能力提升，甚至可以单个器官形成一套&2独特的Build&r。"
+			]
+			icon: "minecraft:nether_star"
+			id: "6662469DC72EA384"
+			subtitle: "Boss遗物器官往往具有强大的单体性能"
+			tasks: [{
+				id: "21C2FA1C32FC15A5"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "Boss遗物器官"
+			x: -5.75d
+			y: 1.0d
+		}
 	]
 	title: "胸腔：器官收集指南"
 }

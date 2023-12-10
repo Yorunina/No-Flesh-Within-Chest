@@ -9,7 +9,7 @@ StartupEvents.registry('item', event => {
      */
     registerOrgan(new Organ('kubejs:health_appendix')
         .addScore('luck', 0.5)
-        .addTextLines('ctrl', [Text.gold('● '), Text.gray('每存在一种类为'), Text.yellow('阑尾'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('生命值')])
+        .addTextLines('ctrl', [Text.gold('● '), Text.gray('每存在一种类为'), Text.yellow('胃'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('生命值')])
         .build())
         .texture('kubejs:item/organs/common/appendix')
         .tag('kubejs:appendix')
@@ -130,7 +130,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:revolution')
         .tag('kubejs:machine')
         .tag('kubejs:active');
-        // 革命线缆
+    // 革命线缆
     registerOrgan(new Organ('kubejs:revolution_gear')
         .addScore('defense', 1)
         .addScore('nerves', 1)
@@ -230,4 +230,30 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/others/ore_lung')
         .tag('kubejs:lung')
         .tag('kubejs:resource');
+
+    registerOrgan(new Organ('kubejs:doppelganger')
+        .addScore('health', -1)
+        .addScore('breath_recovery', 1)
+        .addTextLines('default', [Text.gray('二重身会吸收走本体的能量')])
+        .addTextLines('default', [Text.gray('但又会在生命濒危之际帮助你')])
+        .addTextLines('alt', [Text.gold('● '), Text.gray('受到致命伤害时，有低概率会获得伤害吸收Ⅲ效果')])
+        .addTextLines('alt', [Text.gold('● '), Text.gray('概率取决于其他'),Text.gold('都市传说'), Text.gray('器官种类的数量')])
+        .build())
+        .texture('kubejs:item/organs/legends/doppelganger')
+        .tag('kubejs:legends');
+
+
+    // boss遗物器官
+    registerOrgan(new Organ('kubejs:love_between_lava_and_ice')
+        .addScore('health', 1)
+        .addScore('fire_resistant', 1)
+        .addScore('detoxification', -5)
+        .addTextLines('ctrl', [Text.gold('● '), Text.gray('每存在一格'), Text.blue('蓝冰'), Text.gray('，会为你添加额外'), Text.yellow(0.1), Text.aqua('冰系魔法伤害倍率')])
+        .addTextLines('ctrl', [Text.gold('● '), Text.gray('每存在一格'), Text.darkRed('岩浆块'), Text.gray('，会为你添加额外'), Text.yellow(0.1), Text.red('火系魔法伤害倍率')])
+        .addTextLines('ctrl', [Text.gold('● '), Text.gray('一格内存在任意数量即被视作一格')])
+        .build())
+        .texture('kubejs:item/organs/boss/love_between_lava_and_ice')
+        .tag('kubejs:heart')
+        .tag('kubejs:active')
+        .tag('kubejs:boss');
 });

@@ -155,18 +155,67 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: 2.0d
+			y: 1.75d
 		}
 		{
 			dependencies: ["1EB4A366E3CB7C2C"]
 			id: "312A09022249980F"
+			subtitle: "了解加工台，理解加工台，成为 . . ."
 			tasks: [{
 				id: "0507DA817FAC5A12"
 				item: "minecraft:spruce_planks"
 				type: "item"
 			}]
+			title: "了解加工台"
 			x: -1.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["674E912F6FFC7F67"]
+			description: [
+				"请不要随意丢弃你的&6全息球&r，在你第一次制作加工台的时候就会免费送给你一个。"
+				""
+				"手持全息球右键可以打开专用界面查看各种工具、模块以及材料的属性，可以说，第一个全息球的意义就是给予你一个不是很容易理解的模组说明书。"
+				""
+				"全息球也拥有着两个&6升级槽位&r，在后续可以安装扫描器升级用于在&2地下寻找锻造遗迹&r。"
+				""
+				"除此之外，也可以用于寻找远古残骸。"
+				""
+				"因此一定要珍惜！"
+			]
+			id: "4632D20D50741511"
+			rewards: [{
+				count: 5
+				id: "037566F6FB6F211C"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "全息球的大用途"
+			tasks: [{
+				id: "48AC0E74C64294E0"
+				item: {
+					Count: 1
+					id: "tetra:holo"
+					tag: {
+						"holo/core": "holo/core"
+						"holo/core_material": "core/dim"
+						"holo/frame": "holo/frame"
+						"holo/frame_material": "frame/ancient"
+						"holo/repo": "holo/repo"
+						"holo/repo_material": "repo/default"
+						"holo/scanner": "holo/scanner"
+						"holo/scanner_material": "scanner/default"
+						id: "9503de92-046c-4d61-8afe-8c0d71c6afae"
+					}
+				}
+				type: "item"
+			}]
+			x: -1.75d
+			y: 1.5d
 		}
 	]
 	title: "Tetra：模块化与工具"

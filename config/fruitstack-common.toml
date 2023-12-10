@@ -1,0 +1,154 @@
+
+#World generation
+[world]
+
+	#Wild Blueberries generation
+	[world.wild_blueberries]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Hamimelon generation
+	[world.wild_hamimelon]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Beating melons generation
+	[world.wild_beating_melons]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Ground cucumber generation
+	[world.wild_ground_cucumber]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Holboellia latifolia generation
+	[world.wild_holboellia_latifolia]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Huoshen fruit generation
+	[world.wild_huoshen_fruit]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild September melon generation
+	[world.wild_september_melon]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Pitaya generation
+	[world.wild_pitaya]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Golden pure sheep horn honey generation
+	[world.wild_golden_pure_sheep_horn_honey]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Grape generation
+	[world.wild_grape]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Glutinous rice generation
+	[world.wild_glutinous_rice]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Zong zi leaves generation
+	[world.wild_zong_zi_leaves]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Black tea leaves generation
+	[world.wild_black_tea_leaves]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Apple tree generation
+	[world.wild_apple_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Apricot tree generation
+	[world.wild_apricot_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Green plum tree generation
+	[world.wild_green_plum_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Jujube tree generation
+	[world.wild_jujube_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Maythorn tree generation
+	[world.wild_maythorn_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Pear tree generation
+	[world.wild_pear_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Plum tree generation
+	[world.wild_plum_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Red bayberry tree generation
+	[world.wild_red_bayberry_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Chinese pear leaved tree generation
+	[world.wild_chinese_pear_leaved_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Litchi tree generation
+	[world.wild_litchi_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Mango tree generation
+	[world.wild_mango_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Peach tree generation
+	[world.wild_peach_tree]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+

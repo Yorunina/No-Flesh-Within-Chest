@@ -10,6 +10,8 @@ global.ATTACK_UP = { key: 'minecraft:generic.attack_damage', name: 'kubejsAttack
 global.TEMP_ATTACK_UP = { key: 'minecraft:generic.attack_damage', name: 'kubejsTempAttackDamage', operation: 'addition' }
 global.COOLDOWN_REDUCTION = { key: 'irons_spellbooks:cooldown_reduction', name: 'kubejsCooldownReduction', operation: 'addition' }
 global.SPELL_POWER = { key: 'irons_spellbooks:spell_power', name: 'kubejsSpellPower', operation: 'addition' }
+global.ICE_SPELL_POWER = { key: 'irons_spellbooks:ice_spell_power', name: 'kubejsIceSpellPower', operation: 'addition' }
+global.FIRE_SPELL_POWER = { key: 'irons_spellbooks:fire_spell_power', name: 'kubejsFireSpellPower', operation: 'addition' }
 
 
 global.ATTRIBUTE_MAP = {
@@ -18,6 +20,8 @@ global.ATTRIBUTE_MAP = {
     'kubejsTempAttackDamage': global.TEMP_ATTACK_UP,
     'kubejsCooldownReduction': global.COOLDOWN_REDUCTION,
     'kubejsSpellPower': global.SPELL_POWER,
+    'kubejsIceSpellPower': global.ICE_SPELL_POWER,
+    'kubejsFireSpellPower': global.FIRE_SPELL_POWER,
 }
 
 global.TYPE_MAP = {
@@ -39,6 +43,8 @@ global.TYPE_MAP = {
     'kubejs:rose': Text.darkRed('玫瑰'),
     'kubejs:resource': Text.gold('资源'),
     'kubejs:revolution': Text.of('革命').color('#deaa00'),
+    'kubejs:boss': Text.of('遗物').color('#ffe100'),
+    'kubejs:legends': Text.of('传说').color('#d6e5ff'),
 }
 
 

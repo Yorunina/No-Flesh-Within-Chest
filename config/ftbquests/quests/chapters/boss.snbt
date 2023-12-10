@@ -3,6 +3,13 @@
 	default_quest_shape: ""
 	filename: "boss"
 	group: "4F4F4EA8CE67985B"
+	icon: {
+		Count: 1
+		id: "irons_spellbooks:magehunter"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "626962539098C803"
 	order_index: 1
 	quest_links: [ ]
@@ -20,7 +27,7 @@
 			}]
 			title: "立场欺诈者，击破！"
 			x: 0.0d
-			y: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -35,7 +42,7 @@
 			}]
 			title: "海晶监视者，击破！"
 			x: 0.0d
-			y: 1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -80,7 +87,7 @@
 			}]
 			title: "冷血杀手，击破！"
 			x: 2.0d
-			y: 1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -125,7 +132,7 @@
 			}]
 			title: "火神，击破！"
 			x: 3.0d
-			y: 1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -140,7 +147,7 @@
 			}]
 			title: "远古巫师，击破！"
 			x: 1.0d
-			y: 1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -170,7 +177,7 @@
 			}]
 			title: "烈焰狂战士，击破！"
 			x: 4.0d
-			y: 1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -200,7 +207,7 @@
 			}]
 			title: "霜冻岩浆怪，击破！"
 			x: 5.0d
-			y: 1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -230,7 +237,7 @@
 			}]
 			title: "吸血鬼恶魔，击破！"
 			x: 6.0d
-			y: 1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -260,7 +267,7 @@
 			}]
 			title: "独眼骷髅，击破！"
 			x: 7.0d
-			y: 1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -290,7 +297,7 @@
 			}]
 			title: "末影军械，击破！"
 			x: 8.0d
-			y: 1.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -320,7 +327,7 @@
 			}]
 			title: "聚沙巨魔，击破！"
 			x: 9.0d
-			y: 1.25d
+			y: 2.5d
 		}
 	]
 	title: "挑战：击败所有的Boss"

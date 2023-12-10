@@ -11,12 +11,11 @@ EntityEvents.hurt(event => {
 })
 
 EntityEvents.hurt('minecraft:player', event => {
-    if (!event.player) return;
-    let player = event.player
-
-    let itemMap = getPlayerChestCavityItemMap(damageSourcePlayer);
-    if (itemMap.has('kubejs:infinity_beats')) {
-        organEntityHurtStrategies['kubejs:infinity_beats'](event)
+    let player = event.player;
+    if (!player) return;
+    let itemMap = getPlayerChestCavityItemMap(player);
+    if (event.getDamage() > player.getHealth() && itemMap.has('kubejs:doppelganger')) {
+        organEntityHurtStrategies['kubejs:doppelganger'](event)
     }
 
 })
@@ -43,4 +42,15 @@ let organEntityHurtStrategies = {
             setPlayerAttributeMap(damageSourcePlayer, attriMap);
         }
     },
+
+    'kubejs:doppelganger': function (event) {
+        let typeMap = getPlayerChestCavityTypeMap(event.player)
+        if (typeMap.has('kubejs:legends')) {
+            let player = event.player;
+            let amount = typeMap.get('kubejs:legends').length
+            if (Math.random() < Math.min(0.25 + 0.05 * amount, 0.8)) {
+                player.potionEffects.add('minecraft:absorption', 60, 2)
+            }
+        }
+    }
 };
