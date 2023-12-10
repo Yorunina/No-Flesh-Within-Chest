@@ -143,6 +143,15 @@
 			hide_details_until_startable: true
 			hide_text_until_complete: true
 			id: "7FA1D3EB4B2FDC95"
+			rewards: [{
+				id: "74A3259C68265E7D"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "绽放的秘密存在于残暴花卉之中"
 			tasks: [{
@@ -165,8 +174,17 @@
 			hide_details_until_startable: true
 			hide_text_until_complete: true
 			id: "7F46087AE069353B"
+			rewards: [{
+				id: "603236169079A3C3"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
-			subtitle: "心的秘密存在于无穷尽的活力与死亡之中"
+			subtitle: "心的秘密存在于无穷尽的活力与异界重生之中"
 			tasks: [{
 				id: "1DC4E4012DD1AD67"
 				item: "kubejs:secret_of_heart"

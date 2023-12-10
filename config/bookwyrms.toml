@@ -1,0 +1,109 @@
+
+#Book recycling config
+[enchanting]
+	#Allow gold-eyed wyrms to also produce undiscoverable treasure enchants (in vanilla it's just Soul Speed and Swift Sneak)
+	allowUndiscoverable = false
+	#Makes the warning on Suspicious Chad Bolus less intrusive and don't tell people to report it to the modpack
+	#It appears when a given color and enchantment level have zero valid enchantments, which shouldn't happen in vanilla but may happen with configured values or unlucky mod compat
+	#For example I know it happens if the Alex's Mobs Straddleboard is the only item in the purple pool and the level is below 12
+	disableSusWarning = false
+	#Makes all Book Wyrms have all enchantments in their pool, making color purely cosmetic
+	#Same behavior as emptying all the pool tags
+	disableColoredPools = false
+	#Fall back on the global/gray enchantment pool if a colored wyrm has no matching enchantment (and would make suspicious bolus)
+	fallbackOnGlobal = false
+	#Ignore upper level caps on enchantments, allowing wyrms to always make enchantments if they clear the lower cap
+	#For example Feather Falling IV has level range 23-29, meaning a lvl 30+ wyrm can never get it, enabling this would treat it as 23-9999999999 basically
+	ignoreMaxCost = false
+
+#Wyrm stats config
+[genes]
+
+	#Absolute caps for the wyrm genes
+	[genes.caps]
+		#Minimum enchanting level a wyrm can have
+		#Very low values can allow getting massive quantities of Sharpness/Efficiency/Power I
+		#Range: 1 ~ 32767
+		enchLvlMin = 3
+		#Maximum enchanting level a wyrm can have
+		#Very high values will result in no enchantments being available (unless Apotheosis or you enable ignoreMaxCost)
+		#Range: 1 ~ 32767
+		enchLvlMax = 50
+		#Fastest digesting speed (in ticks per level) a wyrm can have
+		#Range: 1 ~ 32767
+		digestSpeedMin = 1
+		#Slowest digesting speed (in ticks per level) a wyrm can have
+		#Range: 1 ~ 32767
+		digestSpeedMax = 600
+		#Lowest indigestion chance (0 = 0%, 1 = 100%) a wyrm can have
+		#Range: 0.0 ~ 1.0
+		indigestMin = 0.0
+		#Highest indigestion chance (0 = 0%, 1 = 100%) a wyrm can have
+		#Range: 0.0 ~ 1.0
+		indigestMax = 1.0
+
+	#Genes wild wyrms can have
+	[genes.wild]
+		#Minimum enchanting level for wild wyrms
+		#Range: 1 ~ 32767
+		enchLvlWildMin = 3
+		#Maximum enchanting level for wild wyrms
+		#Range: 1 ~ 32767
+		enchLvlWildMax = 7
+		#Minimum enchanting level for rare wild wyrms (1/3 chance)
+		#Range: 1 ~ 32767
+		enchLvlWildRareMin = 8
+		#Maximum enchanting level for rare wild wyrms (1/3 chance)
+		#Range: 1 ~ 32767
+		enchLvlWildRareMax = 12
+		#Fastest digesting speed for wild wyrms
+		#Range: 1 ~ 32767
+		digestSpeedWildMin = 200
+		#Slowest digesting speed for wild wyrms
+		#Range: 1 ~ 32767
+		digestSpeedWildMax = 300
+		#Fastest digesting speed for rare wild wyrms (1/3 chance)
+		#Range: 1 ~ 32767
+		digestSpeedWildRareMin = 140
+		#Slowest digesting speed for rare wild wyrms (1/3 chance)
+		#Range: 1 ~ 32767
+		digestSpeedWildRareMax = 200
+		#Lowest indigestion chance for wild wyrms
+		#Range: 0.0 ~ 1.0
+		indigestWildMin = 0.01
+		#Highest indigestion chance for wild wyrms
+		#Range: 0.0 ~ 1.0
+		indigestWildMax = 0.09
+		#Lowest indigestion chance for rare wild wyrms (1/3 chance)
+		#Yes by default the rare wild for indigestion have a very high chance
+		#Range: 0.0 ~ 1.0
+		indigestWildRareMin = 0.5
+		#Highest indigestion chance for rare wild wyrms (1/3 chance)
+		#Yes by default the rare wild for indigestion have a very high chance
+		#Range: 0.0 ~ 1.0
+		indigestWildRareMax = 0.7
+
+	#How do genes vary with breeding
+	[genes.breeding]
+		#Maximum amount enchanting level can deviate for offsprings (up and down)
+		#Range: 0 ~ 32767
+		enchLvlBreedVariance = 3
+		#Maximum amount digesting speed can deviate for offsprings (up and down)
+		#Range: 0 ~ 32767
+		digestBreedVariance = 20
+		#Maximum amount indigestion chance can deviate for offsprings (up and down)
+		#Range: 0.0 ~ 1.0
+		indigestBreedVariance = 0.03
+
+	#How much do stat wyrmutagen changes stats
+	[genes.mutagen]
+		#How much does Level Up/Down Wyrmutagen changes enchanting level for the next offspring
+		#Range: 0 ~ 32767
+		enchLvlMutagen = 8
+		#How much does Speed Up/Down Wyrmutagen changes digesting speed for the next offspring
+		#Range: 0 ~ 32767
+		digestMutagen = 60
+		#How much does Digestion Up/Down Wyrmutagen changes indigestion chance for the next offspring
+		#Range: 0.0 ~ 1.0
+		indigestMutagen = 0.1
+

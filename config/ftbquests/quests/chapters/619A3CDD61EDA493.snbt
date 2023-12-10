@@ -1,0 +1,73 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "619A3CDD61EDA493"
+	group: "2358ECA720E3F23E"
+	icon: "minecraft:crimson_fungus"
+	id: "619A3CDD61EDA493"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["0C769BB94D282CC6"]
+			icon: "chestcavity:blaze_core"
+			id: "2570D3742314EDC8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5707D6D0BC9D0170"
+				table_id: 5590566882060648814L
+				type: "choice"
+			}]
+			subtitle: "可以动态设置个人死亡掉落"
+			tasks: [{
+				id: "1A147F6E5822F5A1"
+				title: "死亡掉落？"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0C769BB94D282CC6"]
+			description: ["隐形怪物仅会出现在自然生成的怪物身上，概率为10%"]
+			icon: "irons_spellbooks:greater_invisibility_elixir"
+			id: "18831FA279B55A25"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3C39988D4D7E3F7D"
+				table_id: 2903220076224414016L
+				type: "choice"
+			}]
+			subtitle: "隐形怪物会永久隐身，但生命值只有1/5"
+			tasks: [{
+				id: "08AE81014468A970"
+				title: "启用隐形怪物？"
+				type: "checkmark"
+			}]
+			x: 2.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C769BB94D282CC6"]
+			description: [
+				"由于本整合的发布较为&2匆忙&r(很惭愧，为了流量)，对于&5额外难度&r的设计也仅仅是只有一小部分。"
+				""
+				"在&2后续的更新&r中，会逐渐为各位带来更多的难度选项，并且逐步丰富游戏内容。"
+			]
+			icon: "kubejs:secret_of_origin"
+			id: "1CBCFF5EB305F9CD"
+			subtitle: "正在制作中"
+			tasks: [{
+				id: "18751C8315E9B424"
+				title: "WIP"
+				type: "checkmark"
+			}]
+			title: "正在开发中. . ."
+			x: -2.75d
+			y: 0.0d
+		}
+	]
+	title: "独立难度设置"
+}

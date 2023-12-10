@@ -725,7 +725,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["51FA796A91E94C4D"]
+			dependencies: ["2311CA3EEABF0250"]
 			description: ["如果你在寻找虚空之花，也可以通过对应的&2虚空之眼&r来进行搜寻。"]
 			id: "6B7FD39A8093248D"
 			rewards: [{
@@ -745,8 +745,8 @@
 				type: "item"
 			}]
 			title: "特殊的眼睛"
-			x: 10.5d
-			y: -3.0d
+			x: 14.0d
+			y: -1.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -785,6 +785,97 @@
 			title: "储物抽屉"
 			x: 8.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["1D8929E0CE7CE0AB"]
+			description: ["作为原版的最终boss，击败它仍旧具有着非常特殊的意义。"]
+			icon: "minecraft:dragon_head"
+			id: "15A36D9385499A77"
+			rewards: [{
+				count: 5
+				id: "68E182F2D59A4C2B"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "收官之作！"
+			tasks: [{
+				entity: "minecraft:ender_dragon"
+				icon: "minecraft:dragon_egg"
+				id: "7F3DBDA404445DC7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "击败末影龙！"
+			x: 16.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D8929E0CE7CE0AB"]
+			description: [
+				"如果周围的末地船已经被完全搜刮完毕了，你可以使用幻翼膜和香蕉蛞蝓的黏液&2自行制作鞘翅&r。"
+				""
+				"香蕉蛞蝓只会出现在寒冷的原始松木针叶林群系。"
+			]
+			id: "7936F1A8DE4AF2E8"
+			rewards: [{
+				id: "443AEBF90B9CD82C"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "前往末地城，你可以寻得鞘翅"
+			tasks: [{
+				id: "4EC33C7DB69FF161"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "追寻鞘翅"
+			x: 16.0d
+			y: -1.25d
+		}
+		{
+			dependencies: ["5E8F821F42C92E8A"]
+			description: [
+				"随着你的基底规模逐渐扩大，箱子的数量也会急剧变多，此时，你急需一个类如AE、RS的Mod来&2统一管理你的存储容器&r。"
+				""
+				"这个时候，你便可以使用&2Tom的简易存储&r来解决问题。Tom的简易存储可以方便的整合周围的容器，并且提供一个统一的接口用于玩家互动。"
+				""
+				"它不仅简单易用，最重要的是，它完全不耗电！"
+			]
+			id: "26FE76DDA11E0026"
+			rewards: [{
+				count: 5
+				id: "4225FDCA2824DF55"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "Tom的简易存储入门"
+			tasks: [{
+				id: "0318199998D5096F"
+				item: "toms_storage:ts.inventory_connector"
+				type: "item"
+			}]
+			title: "简易、存储、整合"
+			x: 9.5d
+			y: -3.0d
 		}
 	]
 	title: "章节1：如常"

@@ -3,7 +3,7 @@
 	#Keep equipped hat on death.
 	keepHatOnDeath = false
 	#Allow automatic updating of player-specific hats.
-	allowUpdates = true
+	allowUpdates = false
 	#Chance for a seasonal bag to drop when using a bag during a seasonal event. (0 effectively disables seasons)
 	#Range: 0.0 ~ 1.0
 	seasonalBagChance = 0.05

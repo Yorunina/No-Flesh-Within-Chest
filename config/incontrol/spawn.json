@@ -1,11 +1,22 @@
 [
   {
+    "dimension": "kubejs:lost_memory",
     "onjoin": true,
     "hostile": true,
     "gamestage": "curse_monster_ability_bonus",
     "result": "allow",
     "healthmultiply": 5,
     "damagemultiply": 2,
-    "speedmultiply": 1.5
+    "speedmultiply": 1.5,
+    "continue": true
+  },
+  {
+    "random": 0.1,
+    "gamestage": "setting_monster_invisibility_bonus",
+    "hostile": true,
+    "result": "allow",
+    "healthmultiply": 0.2,
+    "potion": "minecraft:invisibility,10000,1",
+    "continue": true
   }
 ]

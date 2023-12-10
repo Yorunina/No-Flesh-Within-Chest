@@ -60,6 +60,7 @@
 			hide_dependency_lines: true
 			icon: "geodes:small_echo_bud"
 			id: "63C88B93760D098D"
+			shape: "hexagon"
 			subtitle: "凋零风暴第一形态"
 			tasks: [{
 				id: "27121D4DC4F1113C"
@@ -80,6 +81,7 @@
 			hide_dependency_lines: true
 			icon: "geodes:medium_echo_bud"
 			id: "176844176E2F7129"
+			shape: "hexagon"
 			subtitle: "凋零风暴第二形态"
 			tasks: [{
 				id: "4D1F8A2399E6CC91"
@@ -100,6 +102,7 @@
 			hide_dependency_lines: true
 			icon: "geodes:large_echo_bud"
 			id: "2D07CA70665772DB"
+			shape: "hexagon"
 			subtitle: "凋零风暴第三形态"
 			tasks: [{
 				id: "4E051D69261A7616"
@@ -122,6 +125,7 @@
 			hide_dependency_lines: true
 			icon: "geodes:echo_cluster"
 			id: "26BFD0F2225A8074"
+			shape: "hexagon"
 			subtitle: "凋零风暴第四形态"
 			tasks: [{
 				id: "38CD38C548CD975D"
@@ -144,6 +148,7 @@
 			hide_dependency_lines: true
 			icon: "geodes:budding_echo_block"
 			id: "1EE271993AC21C6D"
+			shape: "hexagon"
 			subtitle: "凋零风暴第五形态"
 			tasks: [{
 				id: "527AC95F6BB81FEC"
@@ -168,6 +173,7 @@
 			hide_dependency_lines: true
 			icon: "witherstormmod:command_block_book"
 			id: "3423699A415F1840"
+			shape: "hexagon"
 			subtitle: "凋零风暴第六形态"
 			tasks: [{
 				id: "4D6E1658C34453E8"
@@ -190,6 +196,7 @@
 			hide_dependency_lines: true
 			icon: "minecraft:ender_pearl"
 			id: "7326DD67C54CE97C"
+			shape: "hexagon"
 			subtitle: "凋零风暴最终形态"
 			tasks: [{
 				id: "090B71A2FB4AF530"
@@ -244,6 +251,7 @@
 					type: "item"
 				}
 			]
+			shape: "hexagon"
 			subtitle: "守护我们的未来"
 			tasks: [{
 				id: "5DDDBA1F0DE43D6C"

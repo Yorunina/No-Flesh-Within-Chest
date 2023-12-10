@@ -1,0 +1,42 @@
+{
+  "DiamondBow": {
+    "confBowDurability": 1016,
+    "confBowDamageMult": 1.75,
+    "confBowDrawbackDiv": 10.0
+  },
+  "EnderBow": {
+    "confBowDurability": 215,
+    "confBowDamageMult": 1.0,
+    "confBowDrawbackDiv": 22.0
+  },
+  "FlameBow": {
+    "confBowDurability": 576,
+    "confBowDamageMult": 1.5,
+    "confBowDrawbackDiv": 15.0
+  },
+  "FrostBow": {
+    "confBowDurability": 550,
+    "confBowDamageMult": 1.0,
+    "confBowDrawbackDiv": 26.0
+  },
+  "GoldBow": {
+    "confBowDurability": 32,
+    "confBowDamageMult": 2.0,
+    "confBowDrawbackDiv": 6.0
+  },
+  "IronBow": {
+    "confBowDurability": 550,
+    "confBowDamageMult": 1.25,
+    "confBowDrawbackDiv": 17.0
+  },
+  "MultiBow": {
+    "confBowDurability": 550,
+    "confBowDamageMult": 1.0,
+    "confBowDrawbackDiv": 13.0
+  },
+  "StoneBow": {
+    "confBowDurability": 484,
+    "confBowDamageMult": 1.15,
+    "confBowDrawbackDiv": 20.0
+  }
+}
