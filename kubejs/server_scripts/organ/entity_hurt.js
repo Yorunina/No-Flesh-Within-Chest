@@ -17,7 +17,6 @@ EntityEvents.hurt('minecraft:player', event => {
     if (event.getDamage() > player.getHealth() && itemMap.has('kubejs:doppelganger')) {
         organEntityHurtStrategies['kubejs:doppelganger'](event)
     }
-
 })
 
 

@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    // 秘密：雨
     event.recipes.summoningrituals
         .altar('kubejs:ritual_catalyst')
         .id('kubejs:ritual_of_rain')
@@ -9,6 +10,7 @@ ServerEvents.recipes(event => {
         .dayTime('night')
         .recipeTime(200);
 
+    // 凋零风暴召唤
     event.recipes.summoningrituals
         .altar('kubejs:ritual_catalyst')
         .id('kubejs:wither_strom_summon')
