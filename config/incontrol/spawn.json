@@ -18,5 +18,37 @@
     "healthmultiply": 0.2,
     "potion": "minecraft:invisibility,10000,1",
     "continue": true
+  },
+  {
+    "gamestage": "setting_monster_health_bonus_2",
+    "onjoin": true,
+    "hostile": true,
+    "result": "allow",
+    "healthmultiply": 2,
+    "continue": true
+  },
+  {
+    "gamestage": "setting_monster_health_bonus_3",
+    "onjoin": true,
+    "hostile": true,
+    "result": "allow",
+    "healthmultiply": 3,
+    "continue": true
+  },
+  {
+    "gamestage": "setting_monster_health_bonus_5",
+    "onjoin": true,
+    "hostile": true,
+    "result": "allow",
+    "healthmultiply": 5,
+    "continue": true
+  },
+  {
+    "gamestage": "setting_monster_health_bonus_10",
+    "onjoin": true,
+    "hostile": true,
+    "result": "allow",
+    "healthmultiply": 10,
+    "continue": true
   }
 ]

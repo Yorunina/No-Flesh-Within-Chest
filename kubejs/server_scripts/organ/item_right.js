@@ -18,19 +18,28 @@ ItemEvents.rightClicked(event => {
 let organRightClickedStrategies = {
     'kubejs:furnace_core': function (event, itemMap) {
         let amplifier = 0
+        let duration = 20 * 20
         if (itemMap.has('kubejs:revolution_gear')) {
             amplifier = Math.min(itemMap.get('kubejs:revolution_gear').length, 9)
         }
-
-        event.player.potionEffects.add('kubejs:burning_heart', 20 * 20, amplifier);
+        if (itemMap.has('kubejs:revolution_relay')) {
+            duration = duration + itemMap.get('kubejs:revolution_relay').length * 100
+        }
+        event.player.swing()
+        event.player.potionEffects.add('kubejs:burning_heart', duration, amplifier);
         event.item.shrink(1);
     },
     'kubejs:burning_heart': function (event, itemMap) {
         let amplifier = 0
+        let duration = 20 * 20
         if (itemMap.has('kubejs:revolution_gear')) {
             amplifier = Math.floor(itemMap.get('kubejs:revolution_gear').length / 2)
         }
-        event.player.potionEffects.add('kubejs:flaring_heart', 20 * 20, amplifier);
+        if (itemMap.has('kubejs:revolution_relay')) {
+            duration = duration + itemMap.get('kubejs:revolution_relay').length * 100
+        }
+        event.player.swing()
+        event.player.potionEffects.add('kubejs:flaring_heart', duration, amplifier);
         event.item.shrink(1);
     },
 };

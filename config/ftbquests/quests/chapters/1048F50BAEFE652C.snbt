@@ -42,7 +42,13 @@
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
-			description: ["一切的基石，该系列的核心器官。"]
+			description: [
+				"&5一切的基石，该系列的核心器官。&r"
+				""
+				"&d甜蜜之梦&r的效果在拥有&5糖果心&r的情况下才能够正常起效。"
+				""
+				"&d甜蜜之梦&r的效果为：当玩家受到来自于非火焰的伤害时，甜蜜之梦将会将玩家所受的伤害值抵消，转变为扣减自身的buff时长。"
+			]
 			id: "7C6A372F5D824085"
 			rewards: [{
 				id: "43F99A327E4ACF07"
@@ -75,6 +81,12 @@
 			hide_dependent_lines: true
 			icon: "kubejs:candy"
 			id: "795DE8D8EF4D3A01"
+			rewards: [{
+				count: 8
+				id: "6B412A595AC7357B"
+				item: "kubejs:candy"
+				type: "item"
+			}]
 			subtitle: "魔法使的心是糖果做的"
 			tasks: [{
 				id: "35D77B1435E1B7BC"
@@ -87,7 +99,11 @@
 		}
 		{
 			dependencies: ["0A80B9C8A9529301"]
-			description: ["击败&6霜冻岩浆怪&r获得。"]
+			description: [
+				"击败&6霜冻岩浆怪&r获得。"
+				""
+				"能够大幅度的提高&b冰属性&r/&4火属性&r的法术伤害。"
+			]
 			id: "1EEB166103F7058F"
 			rewards: [{
 				id: "49B6BBD79E03243D"
@@ -125,6 +141,174 @@
 			title: "Boss遗物器官"
 			x: -5.75d
 			y: 1.0d
+		}
+		{
+			dependencies: ["795DE8D8EF4D3A01"]
+			description: [
+				"&5糖果胰&r能够在&d甜蜜之梦&r效果因为受伤抵消消失时，给予你&6伤害吸收 Ⅴ&r 效果。"
+				""
+				"这往往会为你争取到宝贵的生存时间。"
+			]
+			id: "0AA6C02B13BD7CEC"
+			rewards: [{
+				id: "22C2328AF0E97312"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "让人有想吃下去的冲动"
+			tasks: [{
+				id: "56D90117F0A8DF2D"
+				item: "kubejs:candy_pancreas"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["795DE8D8EF4D3A01"]
+			description: ["&5糖果胃&r能够通过食用&2糖果&r提供较长时间的&d甜蜜之梦&r状态。"]
+			id: "45CD78BAE9F4B186"
+			rewards: [{
+				id: "1189918799852F1C"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "糖液如注"
+			tasks: [{
+				id: "25F7ABA59BEA11AB"
+				item: "kubejs:candy_stomach"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["795DE8D8EF4D3A01"]
+			description: ["每&42&r个&5魔法脊柱&r会提高一级魔法海马体提供的&d甜蜜之梦&r的效果"]
+			id: "6E3A0891841A4603"
+			rewards: [{
+				id: "08B7D5C3D726FD6F"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "粗壮的魔法传导装置？"
+			tasks: [{
+				id: "2B9DFCAEF94FFDA4"
+				item: "kubejs:magic_spine"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.75d
+		}
+		{
+			dependencies: ["795DE8D8EF4D3A01"]
+			description: [
+				"&5魔法海马体&r在受到&410&r点及其以上伤害时会根据其他器官的拥有情况，获得对应的&d甜蜜之梦&r效果。"
+				""
+				"&5仪式匕首&r刚好能够满足10点伤害的阈值，同时又能为你恢复一定量的魔法值。"
+			]
+			icon: "kubejs:magic_hippocampus"
+			id: "0B70995B04FD8E9A"
+			rewards: [{
+				id: "6CA1F903669BF0E3"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "魔法使的第二大脑"
+			tasks: [
+				{
+					id: "4A1C1EBE7527CAD9"
+					item: "kubejs:magic_hippocampus"
+					type: "item"
+				}
+				{
+					id: "3E92B6DE3F6C03B0"
+					item: "kubejs:ceremonial_knife"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 7.25d
+		}
+		{
+			dependencies: ["795DE8D8EF4D3A01"]
+			description: ["每&41&r个&5魔法束&r会提高&45&rs魔法海马体提供的&d甜蜜之梦&r的效果"]
+			id: "2C985498D77F62E4"
+			rewards: [{
+				id: "7C9E76EF605EA50E"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "魔力传导纤维！"
+			tasks: [{
+				id: "1C6FCC1FA600BE65"
+				item: "kubejs:magic_muscle"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 10.25d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"&5穷奇无尽&r系列器官围绕着强大的单体能力，提供了&2几乎无穷无尽&r的能力加成。但同时，这类器官也往往需要付出极其惨烈的代价以实现其积累能力所需的环境。"
+				""
+				"穷奇无尽本身被设计为整合包最后阶段会获得的系列器官，在效果上更注重于单体的能力而非整个系列的配合。"
+			]
+			hide_dependent_lines: true
+			icon: "minecraft:amethyst_shard"
+			id: "24E73A64F055728A"
+			subtitle: "强大但又危险的器官效果"
+			tasks: [{
+				id: "586110AC47445585"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "穷奇无尽"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["24E73A64F055728A"]
+			description: ["无尽节律在你没有手持物品、没有装备胸甲时，攻击会"]
+			id: "57A1BF07E4937852"
+			rewards: [{
+				id: "17F97723C16683CB"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "无尽节律之心"
+			tasks: [{
+				id: "2988F6623DF4874E"
+				item: "kubejs:infinity_beats"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.5d
 		}
 	]
 	title: "胸腔：器官收集指南"

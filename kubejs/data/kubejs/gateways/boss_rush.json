@@ -371,5 +371,7 @@
             "command": "/kill @p",
             "desc": "即效性死亡"
         }
-    ]
+    ],
+    "completion_xp": 20000,
+	"spawn_range": 5
 }

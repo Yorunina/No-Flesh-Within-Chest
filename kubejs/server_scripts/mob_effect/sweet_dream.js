@@ -3,7 +3,7 @@
  * 1. 优先判断是否是玩家受到伤害
  * 2. 甜蜜之梦如果存在，优先结算甜蜜之梦的抵消效果
  *  2.1. 如果没有糖果心则不判断后续所有逻辑
- *  2.2. 如果来源于火焰，那么
+ *  2.2. 如果来源于火焰，那么取消甜蜜之梦状态
  *  2.3. 如果甜蜜之梦的效果消失，那么就判断是否通过胰腺的效果
  *  2.4. 扣减状态持续时间，删除状态强刷buff时间
  * 3. 检测魔法海马体效果赋予甜蜜之梦状态
@@ -57,6 +57,4 @@ EntityEvents.hurt('minecraft:player', event => {
             event.player.potionEffects.add('kubejs:sweet_dream', 20 * 5 * durationMuti,amplifierMuti);
         }
     }
-
-
 })

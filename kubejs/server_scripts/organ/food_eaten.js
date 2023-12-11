@@ -19,7 +19,7 @@ let organFoodEatenStrategies = {
         event.player.addItemCooldown(event.item, 20 * 300)
         if (!event.player.hasEffect('kubejs:sweet_dream')) {
             event.player.potionEffects.add('kubejs:sweet_dream',
-                event.item.getFoodProperties(event.player).getNutrition() * 20 * 20, 0)
+                event.item.getFoodProperties(event.player).getNutrition() * 30 * 20, 0)
         }
     },
 };

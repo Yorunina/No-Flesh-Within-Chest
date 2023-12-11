@@ -141,6 +141,17 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:revolution')
         .tag('kubejs:machine');
 
+    // 革命继电器
+    registerOrgan(new Organ('kubejs:revolution_relay')
+        .addScore('speed', -0.5)
+        .addScore('nerves', 0.5)
+        .addTextLines('default', [Text.gold('● '), Text.gray('革命之力将会被重新转述')])
+        .addTextLines('alt', [Text.gold('● '), Text.gray('每'), Text.gold(1), Text.gray('个该器官将会为'), Text.red('心火状态/熔火状态'), Text.gray('提供额外'), Text.gold('5s'), Text.gray('的状态时长')])
+        .build())
+        .texture('kubejs:item/organs/machine/revolution_relay')
+        .tag('kubejs:revolution')
+        .tag('kubejs:machine');
+
     // 糖果心与魔法使系列物品
     // 糖果系列器官
     registerOrgan(new Organ('kubejs:candy_heart')
@@ -237,7 +248,7 @@ StartupEvents.registry('item', event => {
         .addTextLines('default', [Text.gray('二重身会吸收走本体的能量')])
         .addTextLines('default', [Text.gray('但又会在生命濒危之际帮助你')])
         .addTextLines('alt', [Text.gold('● '), Text.gray('受到致命伤害时，有低概率会获得伤害吸收Ⅲ效果')])
-        .addTextLines('alt', [Text.gold('● '), Text.gray('概率取决于其他'),Text.gold('都市传说'), Text.gray('器官种类的数量')])
+        .addTextLines('alt', [Text.gold('● '), Text.gray('概率取决于其他'), Text.gold('都市传说'), Text.gray('器官种类的数量')])
         .build())
         .texture('kubejs:item/organs/legends/doppelganger')
         .tag('kubejs:legends');
@@ -255,5 +266,21 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/boss/love_between_lava_and_ice')
         .tag('kubejs:heart')
         .tag('kubejs:active')
+        .tag('kubejs:boss');
+
+    registerOrgan(new Organ('kubejs:leviathan_spine')
+        .addScore('nerves', 2)
+        .addScore('swim_speed', 1.5)
+        .addScore('breath_recovery', 1)
+        .build())
+        .texture('kubejs:item/organs/boss/leviathan_spine')
+        .tag('kubejs:spine')
+        .tag('kubejs:boss');
+
+    registerOrgan(new Organ('kubejs:leviathan_rib')
+        .addScore('defense', 1.5)
+        .build())
+        .texture('kubejs:item/organs/boss/leviathan_rib')
+        .tag('kubejs:rib')
         .tag('kubejs:boss');
 });

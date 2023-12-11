@@ -159,6 +159,11 @@
 		}
 		{
 			dependencies: ["1EB4A366E3CB7C2C"]
+			description: [
+				"123"
+				""
+				"{image:kubejs:textures/task/tetra_1.png width:160 height:90 align:1}"
+			]
 			id: "312A09022249980F"
 			subtitle: "了解加工台，理解加工台，成为 . . ."
 			tasks: [{

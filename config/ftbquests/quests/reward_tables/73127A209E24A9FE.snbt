@@ -1,0 +1,39 @@
+{
+	icon: "hexerei:blood_bottle"
+	id: "73127A209E24A9FE"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			command: "/nfwc stages @p {removeStages:[setting_monster_health_bonus_2, setting_monster_health_bonus_3,setting_monster_health_bonus_5,setting_monster_health_bonus_10]}"
+			icon: "hexerei:blood_bottle"
+			title: "血量乘数 1x"
+			type: "command"
+		}
+		{
+			command: "/nfwc stages @p {addStages:[setting_monster_health_bonus_2], removeStages:[setting_monster_health_bonus_3,setting_monster_health_bonus_5,setting_monster_health_bonus_10]}"
+			icon: "hexerei:blood_bottle"
+			title: "血量乘数 2x"
+			type: "command"
+		}
+		{
+			command: "/nfwc stages @p {addStages:[setting_monster_health_bonus_3], removeStages:[setting_monster_health_bonus_2,setting_monster_health_bonus_5,setting_monster_health_bonus_10]}"
+			icon: "hexerei:blood_bottle"
+			title: "血量乘数 3x"
+			type: "command"
+		}
+		{
+			command: "/nfwc stages @p {addStages:[setting_monster_health_bonus_5], removeStages:[setting_monster_health_bonus_2,setting_monster_health_bonus_3,setting_monster_health_bonus_10]}"
+			icon: "hexerei:blood_bottle"
+			title: "血量乘数 5x"
+			type: "command"
+		}
+		{
+			command: "/nfwc stages @p {addStages:[setting_monster_health_bonus_10], removeStages:[setting_monster_health_bonus_2,setting_monster_health_bonus_3,setting_monster_health_bonus_5]}"
+			icon: "hexerei:blood_bottle"
+			title: "血量乘数 10x"
+			type: "command"
+		}
+	]
+	title: "血量乘数"
+}

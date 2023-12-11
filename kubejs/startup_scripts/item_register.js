@@ -43,7 +43,7 @@ StartupEvents.registry('item', event => {
                 entity.attack(10);
             }
             entity.potionEffects.add('irons_spellbooks:instant_mana', 1, 2)
-            entity.addItemCooldown(itemstack, 20 * 10)
+            entity.addItemCooldown(itemstack, 20 * 15)
             return itemstack;
         })
 })

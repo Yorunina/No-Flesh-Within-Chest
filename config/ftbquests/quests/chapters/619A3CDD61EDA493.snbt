@@ -68,6 +68,26 @@
 			x: -2.75d
 			y: 0.0d
 		}
+		{
+			can_repeat: true
+			dependencies: ["0C769BB94D282CC6"]
+			icon: "hexerei:blood_bottle"
+			id: "1BC925EA72F56311"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A0CC10F5B3F2B31"
+				table_id: 8291824144453249534L
+				type: "choice"
+			}]
+			subtitle: "追求更肉的怪物？可以。"
+			tasks: [{
+				id: "4BE3CB917D3E168A"
+				title: "血量乘数"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
 	]
 	title: "独立难度设置"
 }

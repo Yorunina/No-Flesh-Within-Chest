@@ -126,10 +126,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"72D090FF4C44DAAD"
-				"2EBB4C697D81D42A"
-			]
+			dependencies: ["72D090FF4C44DAAD"]
 			description: [
 				"在某些服务器中，游戏难度可能对你来说&5较低&r（本整合本身难度不高），此时可以通过一系列&2定制化的选项&r来调整对于你个人的难度。"
 				""

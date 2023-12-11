@@ -32,6 +32,8 @@ global.TYPE_MAP = {
     'kubejs:liver': Text.aqua('肝脏'),
     'kubejs:lung': Text.aqua('肺'),
     'kubejs:muscle': Text.aqua('肌肉'),
+    'kubejs:rib': Text.gray('肋骨'),
+    'kubejs:spine': Text.of('肌肉').color('#cff9ff'),
     'kubejs:spleen': Text.aqua('脾'),
     'kubejs:pancreas': Text.aqua('胰'),
     'kubejs:stomach': Text.aqua('胃'),
