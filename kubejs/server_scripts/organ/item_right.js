@@ -25,6 +25,9 @@ let organRightClickedStrategies = {
         if (itemMap.has('kubejs:revolution_relay')) {
             duration = duration + itemMap.get('kubejs:revolution_relay').length * 100
         }
+        if (itemMap.has('kubejs:revolution_relay')) {
+            duration = Math.max(duration - itemMap.get('kubejs:revolution_delay').length * 40, 20 * 8)
+        }
         event.player.swing()
         event.player.potionEffects.add('kubejs:burning_heart', duration, amplifier);
         event.item.shrink(1);
@@ -37,6 +40,9 @@ let organRightClickedStrategies = {
         }
         if (itemMap.has('kubejs:revolution_relay')) {
             duration = duration + itemMap.get('kubejs:revolution_relay').length * 100
+        }
+        if (itemMap.has('kubejs:revolution_delay')) {
+            duration = Math.max(duration - itemMap.get('kubejs:revolution_delay').length * 40, 20 * 8)
         }
         event.player.swing()
         event.player.potionEffects.add('kubejs:flaring_heart', duration, amplifier);

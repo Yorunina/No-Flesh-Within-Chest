@@ -145,10 +145,21 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:revolution_relay')
         .addScore('speed', -0.5)
         .addScore('nerves', 0.5)
-        .addTextLines('default', [Text.gold('● '), Text.gray('革命之力将会被重新转述')])
+        .addTextLines('default', [Text.gold('● '), Text.gray('革命之力将会被稍稍延后')])
         .addTextLines('alt', [Text.gold('● '), Text.gray('每'), Text.gold(1), Text.gray('个该器官将会为'), Text.red('心火状态/熔火状态'), Text.gray('提供额外'), Text.gold('5s'), Text.gray('的状态时长')])
         .build())
         .texture('kubejs:item/organs/machine/revolution_relay')
+        .tag('kubejs:revolution')
+        .tag('kubejs:machine');
+
+    // 革命断路器
+    registerOrgan(new Organ('kubejs:revolution_delay')
+        .addScore('speed', -0.5)
+        .addScore('nerves', 0.5)
+        .addTextLines('default', [Text.gold('● '), Text.gray('革命之力将会被重新转述')])
+        .addTextLines('alt', [Text.gold('● '), Text.gray('每'), Text.gold(1), Text.gray('个该器官将会减少'), Text.red('心火状态/熔火状态'),Text.gold('2s'), Text.gray('的状态时长')])
+        .build())
+        .texture('kubejs:item/organs/machine/revolution_delay')
         .tag('kubejs:revolution')
         .tag('kubejs:machine');
 
