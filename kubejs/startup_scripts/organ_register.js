@@ -91,7 +91,7 @@ StartupEvents.registry('item', event => {
     // 熔炉核心
     registerOrgan(new Organ('kubejs:furnace_core')
         .addScore('speed', -1)
-        .addScore('defense', 3)
+        .addScore('defense', 1)
         .addScore('knockback_resistant', 3)
         .addScore('health', 1)
         .addTextLines('default', [Text.gray('蕴含着革命之力，但未被完全解放')])
@@ -106,7 +106,7 @@ StartupEvents.registry('item', event => {
     // 心火核心
     registerOrgan(new Organ('kubejs:burning_heart')
         .addScore('speed', -1)
-        .addScore('defense', 3)
+        .addScore('defense', 1)
         .addScore('knockback_resistant', 3)
         .addScore('health', 1)
         .addTextLines('default', [Text.gray('被完全解放的革命之力')])
@@ -121,7 +121,6 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine');
     // 革命线缆
     registerOrgan(new Organ('kubejs:revolution_cable')
-        .addScore('defense', 1)
         .addScore('nerves', 1)
         .addScore('strength', -2)
         .addTextLines('ctrl', [Text.gold('● '), Text.gray('每存在一种类为'), Text.of('革命').color('#deaa00'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('生命值')])
@@ -130,10 +129,9 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:revolution')
         .tag('kubejs:machine')
         .tag('kubejs:active');
-    // 革命线缆
+    // 革命齿轮
     registerOrgan(new Organ('kubejs:revolution_gear')
-        .addScore('defense', 1)
-        .addScore('nerves', 1)
+        .addScore('defense', 0.5)
         .addTextLines('alt', [Text.gold('● '), Text.gray('每'), Text.gold(1), Text.gray('个该器官提供额外的1级'), Text.red('熔火'), Text.gray('等级')])
         .addTextLines('alt', [Text.gold('● '), Text.gray('每'), Text.gold(2), Text.gray('个该器官提供额外的1级'), Text.red('心火'), Text.gray('等级')])
         .build())
@@ -203,7 +201,7 @@ StartupEvents.registry('item', event => {
 
     // 魔法使系列
     registerOrgan(new Organ('kubejs:magic_hippocampus')
-        .addScore('nerves', 1)
+        .addScore('nerves', 0.75)
         .addScore('luck', 1)
         .addTextLines('default', [Text.gray('散发着强大的魔力')])
         .addTextLines('default', [Text.gray('被称之为魔法使的第二心脏')])
@@ -232,9 +230,12 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:magic');
 
     registerOrgan(new Organ('kubejs:magic_vision')
-        .addScore('nerves', 1)
+        .addScore('nerves', -1)
+        .addScore('metabolism', -1)
+        .addTextLines('default', [Text.gray('你现在能够发现敌人的弱点')])
+        .addTextLines('ctrl', [Text.gold('● '), Text.gray('激活后提高'), Text.yellow(0.1), Text.yellow('咒文伤害倍率')])
         .build())
-        .texture('kubejs:item/organs/magic/magic_spine')
+        .texture('kubejs:item/organs/magic/magic_vision')
         .tag('kubejs:magic')
         .tag('kubejs:active');
 
@@ -253,6 +254,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:lung')
         .tag('kubejs:resource');
 
+    // 都市传说系列
+    // 二重身
     registerOrgan(new Organ('kubejs:doppelganger')
         .addScore('health', -1)
         .addScore('breath_recovery', 1)
@@ -277,21 +280,21 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/boss/love_between_lava_and_ice')
         .tag('kubejs:heart')
         .tag('kubejs:active')
-        .tag('kubejs:boss');
+        .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:leviathan_spine')
-        .addScore('nerves', 2)
-        .addScore('swim_speed', 1.5)
+        .addScore('nerves', 1.5)
+        .addScore('swim_speed', 2)
         .addScore('breath_recovery', 1)
         .build())
         .texture('kubejs:item/organs/boss/leviathan_spine')
         .tag('kubejs:spine')
-        .tag('kubejs:boss');
+        .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:leviathan_rib')
         .addScore('defense', 1.5)
         .build())
         .texture('kubejs:item/organs/boss/leviathan_rib')
         .tag('kubejs:rib')
-        .tag('kubejs:boss');
+        .tag('kubejs:relics');
 });

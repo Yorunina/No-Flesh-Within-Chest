@@ -92,7 +92,7 @@ let organActiveScoreStrategies = {
         }
     },
     'kubejs:magic_vision': function (player, typeMap, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.2)
+        attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.1)
     },
     'kubejs:love_between_lava_and_ice': function (player, typeMap, attributeMap) {
         let itemMap = getPlayerChestCavityItemMap(player);

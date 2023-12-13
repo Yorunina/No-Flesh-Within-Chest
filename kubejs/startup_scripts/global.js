@@ -45,7 +45,7 @@ global.TYPE_MAP = {
     'kubejs:rose': Text.darkRed('玫瑰'),
     'kubejs:resource': Text.gold('资源'),
     'kubejs:revolution': Text.of('革命').color('#deaa00'),
-    'kubejs:boss': Text.of('遗物').color('#ffe100'),
+    'kubejs:relics': Text.of('遗物').color('#ffe100'),
     'kubejs:legends': Text.of('传说').color('#d6e5ff'),
 }
 
