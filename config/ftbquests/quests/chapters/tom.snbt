@@ -7,6 +7,242 @@
 	id: "05ADC2E0A7649AC7"
 	order_index: 3
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["26FE76DDA11E0026"]
+			description: [
+				"是不是时常在各箱子翻找东西无迹可寻？"
+				"是不是整理箱子发现种类太多焦头烂额？"
+				""
+				"来试试&6tom的简易存储&r吧！"
+				"无需电力，即可轻松解决存储的难题"
+			]
+			id: "4806938A4DAB5634"
+			incompatible: ["32539850EF8C3CA8"]
+			rewards: [{
+				id: "52165A3A71ADB569"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C6577D17B5B135D"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "简易的简易存储"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4806938A4DAB5634"]
+			description: [
+				"用来与&6存储终端&r组合使用，用以整合大量相邻的容器的完整方块。"
+				""
+				"放在一个容器旁（六个面皆可）（甚至漏斗都算一个容器），它就可以自动识别并链接这个容器，形成&d存储网络&r，此时右击&6存储驱动器&r，将显示它链接到的容器所拥有的总空间和剩余空间格数。"
+				""
+				"如果这个容器和其他容器相邻，&6存储整合器&r会将这些容器一并视为一个整体链接，其极限连接距离为&516格&r（理论上可以连接以储存整合器为中心的32*32*32范围内所有容器）。"
+			]
+			id: "7843988CB0F906B3"
+			rewards: [{
+				count: 2
+				id: "12943E2801918C6E"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			subtitle: "链接存储网络"
+			tasks: [{
+				id: "5B673BB7287B4024"
+				item: "toms_storage:ts.inventory_connector"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7843988CB0F906B3"]
+			description: ["将它放在&6存储整合器&r上，即可访问整合存储网络"]
+			id: "7EA63EFEECF4628D"
+			rewards: [{
+				count: 2
+				id: "1738CDEA03C94A74"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			subtitle: "操作存储网络"
+			tasks: [{
+				id: "02DD6FA9DC43CB97"
+				item: "toms_storage:ts.storage_terminal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7EA63EFEECF4628D"]
+			description: ["&6存储终端&r的升级版，拥有一个工作台的面板"]
+			id: "06CFAD62C6DC65CA"
+			rewards: [{
+				count: 2
+				id: "1940621E06924A7C"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			subtitle: "获得升级"
+			tasks: [{
+				id: "0DA3B74A7AD87B88"
+				item: "toms_storage:ts.crafting_terminal"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06CFAD62C6DC65CA"]
+			description: [
+				"用来搭建&d存储网络&r，可合成为&6框架存储线缆&r。"
+				""
+				"用于连接&6存储终端、合成终端&r或其他容器时必须与&6存储线缆&r连接器搭配使用（例如长距离）"
+			]
+			id: "17D8CDADACFB7134"
+			rewards: [{
+				count: 2
+				id: "5A2C147659F191D6"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:bronze_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7DBD3D95D6FE5315"
+				item: "toms_storage:ts.inventory_cable"
+				type: "item"
+			}]
+			x: 6.75d
+			y: -2.0d
+		}
+		{
+			dependencies: ["06CFAD62C6DC65CA"]
+			description: [
+				"&6存储代理器&r可以使用箱子内物品来作为&b白名单&r。"
+				""
+				"用钻石右击可以设定&b白名单&r面，&b白名单&r面上的储存容器将作为&b白名单&r。"
+				""
+				"也可作为&6存储整合器&r扩展接触的容器"
+			]
+			id: "3A4DBF039CE9A9E9"
+			rewards: [{
+				count: 2
+				id: "119F13A99B9881EB"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:bronze_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "746A3841940970D5"
+				item: "toms_storage:ts.inventory_proxy"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["06CFAD62C6DC65CA"]
+			description: ["持握时，可从更远处（&516格&r）右击终端并打开其界面。（无线终端使用前需要先绑定对应的终端）"]
+			id: "0E870625DCF57C7A"
+			rewards: [{
+				count: 2
+				id: "6893AAE68DC82CBD"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:bronze_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "手机（误）"
+			tasks: [{
+				id: "0E0AAB585801DDF7"
+				item: "toms_storage:ts.wireless_terminal"
+				type: "item"
+			}]
+			x: 6.75d
+			y: 2.0d
+		}
+		{
+			dependencies: ["06CFAD62C6DC65CA"]
+			description: [
+				"在&6存储整合器&r旁摆放一个一层的信标即可让先进&6无线终端&r在本世界内任何地方打开终端。"
+				""
+				"在驱动器旁摆放一个满级信标即可用先进无线终端跨世界打开终端。"
+				""
+				"此外一座信标可对多个&6存储整合器&r发挥作用。"
+			]
+			id: "0004C045EF8274F8"
+			rewards: [{
+				count: 2
+				id: "0C3DA6CCB9368B15"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:bronze_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "信标的额外用途"
+			tasks: [{
+				id: "48F050F00412D77C"
+				item: "minecraft:beacon"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["26FE76DDA11E0026"]
+			icon: "kubejs:exclamation_mark"
+			id: "32539850EF8C3CA8"
+			incompatible: ["4806938A4DAB5634"]
+			rewards: [{
+				id: "2FBAC004E5FC9C0A"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				title: "这是还给你的"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "59044A90A537E525"
+					title: "快捷，启动！"
+					type: "checkmark"
+				}
+				{
+					consume_items: true
+					id: "087ACFC21485DF17"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					title: "防止点错提交1币"
+					type: "item"
+				}
+			]
+			title: "Tom的简易存储：快捷模式"
+			x: 0.0d
+			y: -2.5d
+		}
+	]
 	title: "Tom简易存储：整合一切"
 }

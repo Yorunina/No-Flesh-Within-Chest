@@ -7,4 +7,6 @@ ServerEvents.recipes(event => {
         ['minecraft:phantom_membrane', 'createaddition:gold_wire', 'minecraft:phantom_membrane'],
         ['', 'alexsmobs:banana_slug_slime', '']
     ])
+
+    event.shapeless('summoningrituals:altar', ['minecraft:wither_skeleton_skull', '#hexerei:candles','#hexerei:candles', '#hexerei:candles', 'createaddition:electrum_sheet', 'minecraft:lectern'])
 })

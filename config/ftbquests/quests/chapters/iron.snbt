@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iron"
+	group: "0241B51B931E1ED2"
+	icon: {
+		Count: 1
+		id: "irons_spellbooks:diamond_spell_book"
+		tag: {
+			ISB_spellbook: {
+				activeSpellIndex: -1
+				spellSlots: 8
+				spells: [ ]
+			}
+		}
+	}
+	id: "71788747161A7134"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "Iron的魔法书：重要攻击手段"
+}

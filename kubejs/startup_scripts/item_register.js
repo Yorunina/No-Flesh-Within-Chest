@@ -46,4 +46,34 @@ StartupEvents.registry('item', event => {
             entity.addItemCooldown(itemstack, 20 * 15)
             return itemstack;
         })
+
+
+    event.create('friend_to_the_end').texture('kubejs:item/friend_to_the_end').maxStackSize(1)
+        .tag('curios:ring')
+        .useAnimation('bow')
+        .useDuration(itemStack => 40)
+        .use((level, player, hand) => {
+            return true;
+        })
+        .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) {
+                return itemstack;
+            }
+            
+            if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
+                let friend = level.server.getPlayer(itemstack.nbt.friendName)
+                if (friend && friend.isAlive()) {
+                    entity.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, 0, 0)
+                    entity.addItemCooldown(itemstack, 20 * 10)
+                } else {
+                    entity.tell('无法传送，对方可能不在线/处于死亡状态。')
+                }
+            } else {
+                entity.tell('已将该戒指绑定到你的身上！')
+                entity.tell(entity.getUsername())
+                itemstack.setNbt({ friendName : entity.getUsername()})
+                return itemstack;
+            }
+            return itemstack;
+        })
 })

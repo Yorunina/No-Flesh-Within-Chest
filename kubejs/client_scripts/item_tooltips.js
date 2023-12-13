@@ -42,4 +42,13 @@ ItemEvents.tooltip((tooltip) => {
             text.add([Text.gray('绽放的秘密').italic(), Text.gray('存在于'), Text.aqua('残暴花卉').bold(), Text.gray('之中')]);
         }
     })
+
+
+    tooltip.addAdvanced('kubejs:friend_to_the_end', (item, advanced, text) => {
+        if (item.nbt && item.nbt.friendName) {
+            text.add([Text.gray('誓约者：'), Text.gold(item.nbt.friendName)]);
+        } else {
+            text.add([Text.gray('手持长按右键以铭刻誓约。')]);
+        }
+    })
 })

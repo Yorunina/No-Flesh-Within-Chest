@@ -483,6 +483,32 @@
 			x: 9.75d
 			y: 1.5d
 		}
+		{
+			dependencies: ["2EBB4C697D81D42A"]
+			description: [
+				"如果你对你的实力有足够的自信，则可以尝试挑战由29个Boss组成的Boss Rush。"
+				""
+				"相比于直接召唤出来的Boss，Boss Rush的Boss血量较低，但击杀时间被限制在了2分钟内。"
+				""
+				"如果挑战失败，你将会迎来&c死亡&r。"
+			]
+			id: "755E4A472C9A7A0A"
+			subtitle: "艰苦卓绝"
+			tasks: [{
+				id: "1E9415A2CEBA9C27"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "kubejs:boss_rush"
+					}
+				}
+				type: "item"
+			}]
+			title: "挑战Boss Rush！"
+			x: -2.0d
+			y: 4.5d
+		}
 	]
 	title: "章节3：秘密"
 }

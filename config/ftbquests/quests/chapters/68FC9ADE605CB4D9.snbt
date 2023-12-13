@@ -23,7 +23,7 @@
 			id: "4EB8FE041AB6DA8E"
 			incompatible: ["1C784E8FBDB3DBC2"]
 			rewards: [{
-				count: 5
+				count: 3
 				id: "48512F3696E650D8"
 				item: {
 					Count: 1
@@ -41,7 +41,7 @@
 			}]
 			title: "引言：为什么要发展机械动力"
 			x: 0.0d
-			y: 0.0d
+			y: -1.25d
 		}
 		{
 			dependencies: ["0861DDE9767A3E9D"]
@@ -86,8 +86,689 @@
 				}
 			]
 			title: "机械动力：快捷模式"
+			x: -8.25d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6C7A1C7252229459"]
+			description: [
+				"更大程度实现自动化：&2砍树，收割农作物&r"
+				""
+				"&9动力锯&r也可竖放置于流水线用于切割物品"
+			]
+			id: "10A1552945CF569F"
+			rewards: [{
+				id: "49A9BD3EE97EA2C0"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "农场自动化"
+			tasks: [
+				{
+					id: "7DA71588255C688C"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+				{
+					id: "4B28C918C686BF91"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+			]
+			title: "更多的自动化"
+			x: 3.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["10A1552945CF569F"]
+			description: [
+				"当你应有尽有，可以尝试制作更复杂的的系统"
+				"比如&9列车&r"
+			]
+			id: "10E8E39F44A11EC0"
+			rewards: [
+				{
+					count: 16
+					id: "37007CB7E64B1E77"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "7A6490BC104F622F"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "列车"
+			tasks: [{
+				id: "6EEABD728E810079"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			title: "新的挑战"
+			x: 2.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["3A98FA709F0DEA42"]
+			description: [
+				"如你所见，Create作为一款科技类Mod，其也有着属于自己的能源。但区别于其他各种用电用热量的Mod，机械动力使用的是一种被称作&6应力&r的“能源”。&2它不可以被存储，只能在被产生的时候实时消耗&r。"
+				""
+				"如同电压、电流的概念一样，&2扭矩&r和&2转速&r则是用于描述应力的概念。所谓扭矩可以理解为旋转的动力，而转速则是旋转的速度。不同的机器会对这些参数有不同的需求，因此当机器无法正常运行时，可以从动力源的角度进行排查是否是应力本身供应不足。"
+				"{@pagebreak}"
+				"为了生产应力，最简单的方式便是使用&6手摇曲柄&r来人工产生应力。当然，这只是一个临时的方案。"
+				""
+				"通过驱动&6水车&r来生产应力是最常用的方法，并且它占地较小，可以单元化的放在自动化流程的任何一个角落。"
+				""
+				"当你需要更大的应力时，&6风车&r就会成为你的另一选项。"
+				""
+				"如果这些都无法满足你庞大机器的需求，那么，使用&6锅炉&r或许是唯一的方案。（或者使用Create扩展中的一些动力源）"
+			]
+			id: "24EEB667413FCADC"
+			rewards: [{
+				id: "1E095763EC83A366"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "最常见的动力源"
+			tasks: [{
+				id: "24C67EC8810E98BB"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "水车、风车与动力源"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4EB8FE041AB6DA8E"]
+			description: [
+				"Create主要使用的矿物为铜矿、铁矿以及该模组自己添加的&6锌矿&r。他们在整个Create的发展阶段中都起到非常重要的作用。"
+				""
+				"不过你不必囤积过多的这类矿物，因为Create并不会消耗掉大量的矿物资源（除非你要建造一些特别巨大的结构）。前文提到的&2安山岩&r反而是本模组前期最稀缺的东西（其实还有铁）。"
+				""
+				"有了这些，你就可以合成前期使用量最大的一种金属——&6安山合金&r。"
+			]
+			icon: "create:zinc_ingot"
+			id: "3A98FA709F0DEA42"
+			rewards: [{
+				count: 3
+				id: "6D9415D934A5ECBE"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "有时，你会在地下发现一些特殊的资源"
+			tasks: [
+				{
+					count: 16L
+					id: "41B90ADEBBD5C50A"
+					item: "create:raw_zinc"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "22E30FBE0EDB536D"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+			]
+			title: "特殊的矿物？"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1112F6121BC5A1E5"]
+			description: [
+				"不管是锟压还是搅拌，手动操作难免麻烦"
+				""
+				"所以我们选择自动化，解放双手，释放浪漫"
+				""
+				"用&6传动杆&r给&6传送带&r带来动力，让它们滚动起来"
+				""
+				"属于create的&2流水线工厂&r就此诞生！"
+			]
+			id: "0C5511D51B5FF508"
+			rewards: [
+				{
+					count: 16
+					id: "0D3884127515F3BE"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "0F999BC21146C6CB"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:bronze_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "浪漫"
+			tasks: [{
+				id: "40BF67FF7A40E7F8"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			title: "自动化"
+			x: 0.0d
+			y: -3.75d
+		}
+		{
+			dependencies: ["0FC81607771D0F71"]
+			description: [
+				"为了进一步发展Create，你需要一些基础机械，用以制作常见于各种配方中的材料。"
+				""
+				"其中最重要的则是&5动力辊压机&r，他可以用于各种&6压制&r工作，比如生产铁片。"
+			]
+			icon: "create:mechanical_press"
+			id: "1112F6121BC5A1E5"
+			rewards: [{
+				count: 3
+				id: "6FD0B745E9EA9D96"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "制作更多材料"
+			tasks: [{
+				id: "66321679712B0464"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			title: "基础机械"
+			x: -1.25d
+			y: -3.25d
+		}
+		{
+			dependencies: ["0C5511D51B5FF508"]
+			description: [
+				"&6动力合成器&r能合成大于4×4的物品，部分机器（如粉碎轮）需要专门使用动力合成器来合成。"
+				""
+				"驱动动力合成器时，需要注意物品的组合顺序，这将影响它的工作效率。如果配方存在空位置，则需要使用&6合成槽盖板&r作为占位符。"
+			]
+			id: "6C7A1C7252229459"
+			rewards: [{
+				count: 3
+				id: "4E981F248B0DD603"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "合成"
+			tasks: [{
+				id: "0F7653EE36653D62"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			title: "更复杂的装置"
+			x: 2.25d
+			y: -2.75d
+		}
+		{
+			dependencies: ["10E8E39F44A11EC0"]
+			description: [
+				"你搭建了一套列车系统！"
+				""
+				"搭配&b光影&r，尽情欣赏沿途风景吧"
+				""
+				"&6至此，create简单的教程结束，它仍拥有的无限肯恩由你自己去探索吧！&r"
+			]
+			id: "7A4FBB4ACFA8D7A9"
+			rewards: [
+				{
+					count: 16
+					id: "10B9AA36D940B988"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "0249E062FC6F31CA"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:gold_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "系统"
+			tasks: [
+				{
+					id: "5E544490A7B7B353"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "37E5711B262A41B9"
+					item: "create:controls"
+					type: "item"
+				}
+			]
+			title: "大工程"
+			x: 3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["10A1552945CF569F"]
+			description: [
+				"&9动力犁&r可清除不具有&c物理碰撞箱&r的物体（如火把），同时也可起到收割机的作用，也能将实体无伤害推远"
+				""
+				"&9动力钻&r可以用于挖掘方块，效果同于玩家挖掘"
+			]
+			id: "379527B5B5A9C653"
+			rewards: [{
+				id: "66BB8629BCD2B9A8"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "+1"
+			tasks: [
+				{
+					id: "1AE4BDE2B715142E"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+				{
+					id: "3F17B0347A3C20A6"
+					item: "create:mechanical_plough"
+					type: "item"
+				}
+			]
+			title: "更多的自动化+1"
+			x: 4.75d
+			y: -0.75d
+		}
+		{
+			dependencies: ["6C7A1C7252229459"]
+			description: [
+				"粉碎轮在粉碎&1矿物方块&r时能获得更多单位的矿物"
+				"在粉碎矿物时能额外获得&a经验&r（相比&9鼓风机&r）"
+				""
+				"除了速度比&9鼓风机&r稍慢，但能获得更多~"
+			]
+			id: "0677F6E36035E869"
+			rewards: [{
+				id: "1FD834BF071FF75B"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "碾碎它们"
+			tasks: [{
+				id: "7B002EA517C35438"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "更多选择"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0C5511D51B5FF508"]
+			description: [
+				"制作物流式的分拣系统"
+				""
+				"&6传送带&r上的物品可能有很多种，根据你的需求将不同的物品分入不同的流水线（或者扔掉？）"
+				"使用两类&6过滤器&r添加标签，实现分拣"
+			]
+			id: "55FAA1463318A7BA"
+			rewards: [
+				{
+					id: "62266B941F196194"
+					item: "create:filter"
+					type: "item"
+				}
+				{
+					id: "68565AFB2093D37C"
+					item: "create:attribute_filter"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "01A81D336E06A490"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:bronze_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "隧道"
+			tasks: [{
+				id: "59F53789EB97294A"
+				item: "create:andesite_tunnel"
+				type: "item"
+			}]
+			title: "分拣"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1112F6121BC5A1E5"]
+			description: [
+				"&6鼓风机&r结合&c岩浆&r可进行熔炼；结合&9水&r可进行洗涤；也能结合&c营火&r熏制食物；结合&9灵魂营火&r将物品进行缠魂。"
+				""
+				"在实际生产中，往往使用传送带来进行物品洗涤/冶炼的操作。此时需要注意的是，&2更高的转速能够提供更长的鼓风距离&r，但并不会加速处理过程。只有在&2多个鼓风机同时对物品进行操作时&r，效率才会叠加。"
+			]
+			id: "379139EF81A5A1E1"
+			rewards: [
+				{
+					id: "13BFABF67545F640"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "4A3BC30BAAE3962B"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "67D4E0FAA86A08E0"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:bronze_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "吹起来"
+			tasks: [{
+				id: "4A86569940D0D4A6"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			title: "冶炼矿物"
+			x: -2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["44E0A5B43FB1506F"]
+			description: [
+				"制作一个&6应力表&r观察剩余的应力"
+				"同时，制作一个&6工程师护目镜&r能让你观察的得更详细"
+				""
+				"&6水车&r可产生&2256su&r的应力，最大为&2320su&r"
+				"&6风车&r一个风帆可产生&2512su&r的应力，128个时输出为最大，即&28192su&r"
+			]
+			icon: "create:goggles"
+			id: "47B5B3FBC91E73D7"
+			rewards: [{
+				id: "601207478EFFD3B5"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "注意你的应力"
+			tasks: [
+				{
+					id: "7A60A76B6DFCD5B2"
+					item: "create:stressometer"
+					type: "item"
+				}
+				{
+					id: "459373F37572317D"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			title: "应力检测员"
 			x: -5.0d
-			y: 0.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["24EEB667413FCADC"]
+			description: [
+				"跟其他Mod中的机械方块的地位相同，制作Create的机械往往会需要使用到不同等级的机壳。"
+				""
+				"最低级版本的机壳被称作&6安山机壳&r，在没有其他加工手段的情况下，你可以通过&2手持安山合金，右键去皮原木以获得&r。"
+			]
+			id: "44E0A5B43FB1506F"
+			rewards: [{
+				count: 4
+				id: "1A7151E5CD3818F0"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "制作速度表"
+			tasks: [{
+				id: "5D8E66420272179A"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			title: "安山机壳"
+			x: -2.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["0D9604AADEFFED29"]
+			description: ["工作之余，也该休息一下（虽然这也是工作）"]
+			id: "2A1490F82D8F6F10"
+			subtitle: "下午三点了，饮茶先啦"
+			tasks: [{
+				id: "00EF8D55EEF4806E"
+				item: "create:builders_tea"
+				type: "item"
+			}]
+			title: "小憩一番"
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["2A1490F82D8F6F10"]
+			description: ["&5烈焰人&r表示煤炭不好吃，务必换个蛋糕"]
+			id: "194EA398E0D794B4"
+			rewards: [{
+				id: "51DF2BCF581B8B4E"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			subtitle: "烈焰人的最爱"
+			tasks: [{
+				id: "534140A6B0DD97C0"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			title: "烈焰蛋糕"
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0861DDE9767A3E9D"]
+			description: [
+				"手持&9空的烈焰人燃烧室&r对烈焰人右键可捕捉&4烈焰人&r"
+				"也可直接右键&5烈焰人刷怪笼&r"
+				""
+				"放至&9搅拌机&r下可提供更高的温度"
+				""
+				"&9烈焰人燃烧室&r需要喂食燃料才能工作"
+			]
+			id: "75EA9654A6522F50"
+			rewards: [{
+				count: 16
+				id: "0B0AD734D96D55E8"
+				item: "minecraft:coal_block"
+				type: "item"
+			}]
+			subtitle: "更高的温度"
+			tasks: [{
+				id: "77A262CC27D75967"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			title: "更好的搅拌"
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["75EA9654A6522F50"]
+			description: ["干活怎么少得了补充淀粉和糖"]
+			id: "0D9604AADEFFED29"
+			rewards: [{
+				count: 16
+				id: "2781CD3DCE208356"
+				item: "minecraft:milk_bucket"
+				type: "item"
+			}]
+			subtitle: "牛奶面包，味道不错"
+			tasks: [{
+				id: "48727862FFDD61E6"
+				item: "create:sweet_roll"
+				type: "item"
+			}]
+			title: "工人们的食物"
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["24EEB667413FCADC"]
+			description: [
+				"机械动力配备了名为&6思索&r的教学模式。你可以在某些机器和物品上发现它的痕迹。"
+				""
+				"按照提示将&2鼠标放在物品上长按[w]&r，你便可以看到一个非常详细的&2互动式讲解&r。在绝大多数情况下，你的问题会通过思索得到解决。"
+				""
+				"如果还没有解决——请不要担心，本整合的&6胶囊示例&r或许在最后关头能帮助到你。"
+				"{image:kubejs:textures/task/create_1.png width:160 height:90 align:1}"
+			]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:pumpkin_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "16AC61A6416FD6E0"
+			rewards: [
+				{
+					count: 3
+					id: "06990D6C075B3A81"
+					item: {
+						Count: 1
+						id: "numismaticoverhaul:silver_coin"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "6465E2C4034B2CFF"
+					item: "simplehats:hatbag_rare"
+					type: "item"
+				}
+			]
+			subtitle: "史上最强的互动式教学系统"
+			tasks: [{
+				id: "084898E67FC7EAD0"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "思索"
+			x: -2.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["44E0A5B43FB1506F"]
+			description: [
+				"通过使用&6小齿轮+大齿轮&r的组合，可以将转速&2降低/提高&r。你可以在齿轮的&2思索&r中学习到具体的摆放方法。"
+				""
+				"这是前期最常用的一种转速变换方式，值得注意的是，如果转速之间发生冲突，齿轮会直接炸掉！"
+				""
+				"在有了黄铜之后，则可以使用&6转速控制器&r随意的变换转速，这也是你后面主要的目标之一。"
+			]
+			icon: "create:cogwheel"
+			id: "0FC81607771D0F71"
+			rewards: [{
+				count: 3
+				id: "11C35EEE96EACBCC"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			subtitle: "从齿轮开始，变换你的转速吧"
+			tasks: [
+				{
+					id: "2F02EF0447479539"
+					item: "create:cogwheel"
+					type: "item"
+				}
+				{
+					id: "09C57E7AB2D4FB3A"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+			]
+			title: "变速原理"
+			x: -2.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["0FC81607771D0F71"]
+			description: [
+				"&6动力搅拌器&r至少需要&530RPM（30转每分钟）&r才能够正常驱动。这意味着你需要&2至少一组大小齿轮&r的变速装置才能够满足这个需求。"
+				""
+				"除此之外，为了进行各种搅拌配方，你需要使用&6工作盆&r承装原材料。在某某些搅拌配方中，可能需要额外的加热。这就意味着你需要在工作盆下面放置&6烈焰人燃烧室&r并且为其填装对应的燃料。"
+				""
+				"当然，现在你可能无法做出燃烧室，不过在之后的旅程里，做出它几乎是必然。"
+			]
+			id: "79DE01B778B14C0E"
+			rewards: [{
+				count: 3
+				id: "45B4ACF639BBC879"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "达到动力搅拌器所需求的转速"
+			tasks: [{
+				id: "66CEA69C2C1AAE68"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			title: "加速！使用动力搅拌器！"
+			x: -4.25d
+			y: -3.5d
 		}
 	]
 	title: "机械动力：让万物旋转"

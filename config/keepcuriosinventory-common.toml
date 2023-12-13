@@ -1,0 +1,5 @@
+
+[KeepCuriosInventory]
+	#Items here will always drop.
+	curiosBlacklist = []
+
