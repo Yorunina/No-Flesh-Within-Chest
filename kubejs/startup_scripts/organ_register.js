@@ -155,7 +155,7 @@ StartupEvents.registry('item', event => {
         .addScore('speed', -0.5)
         .addScore('nerves', 0.5)
         .addTextLines('default', [Text.gold('● '), Text.gray('革命之力将会被重新转述')])
-        .addTextLines('alt', [Text.gold('● '), Text.gray('每'), Text.gold(1), Text.gray('个该器官将会减少'), Text.red('心火状态/熔火状态'),Text.gold('2s'), Text.gray('的状态时长')])
+        .addTextLines('alt', [Text.gold('● '), Text.gray('每'), Text.gold(1), Text.gray('个该器官将会减少'), Text.red('心火状态/熔火状态'), Text.gold('2s'), Text.gray('的状态时长')])
         .build())
         .texture('kubejs:item/organs/machine/revolution_delay')
         .tag('kubejs:revolution')
@@ -239,8 +239,6 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:magic')
         .tag('kubejs:active');
 
-
-
     // 矿石肺
     registerOrgan(new Organ('kubejs:ore_lung')
         .addScore('health', -0.5)
@@ -253,6 +251,21 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/others/ore_lung')
         .tag('kubejs:lung')
         .tag('kubejs:resource');
+
+    registerOrgan(new Organ('kubejs:silk_for_cutting')
+        .addScore('knockback_resistant', -0.5)
+        .addTextLines('alt', [Text.gold('● '), Text.gray('能够精确采集玻璃')])
+        .build())
+        .texture('kubejs:item/organs/others/silk_for_cutting')
+        .tag('kubejs:muscle');
+
+    // todo
+    registerOrgan(new Organ('kubejs:holy_eyeball')
+        .addScore('knockback_resistant', -0.5)
+        .build())
+        .texture('kubejs:item/organs/others/holy_eyeball')
+        .tag('kubejs:muscle');
+
 
     // 都市传说系列
     // 二重身
@@ -297,4 +310,18 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/boss/leviathan_rib')
         .tag('kubejs:rib')
         .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:lamellar_armor_piece')
+        .addScore('defense', 1.5)
+        .addScore('speed', -0.25)
+        .build())
+        .texture('kubejs:item/organs/machine/lamellar_armor_piece')
+        .tag('kubejs:machine');
+
+    registerOrgan(new Organ('kubejs:chain_armor_piece')
+        .addScore('defense', 1.25)
+        .addScore('speed', -0.05)
+        .build())
+        .texture('kubejs:item/organs/machine/chain_armor_piece')
+        .tag('kubejs:machine');
 });

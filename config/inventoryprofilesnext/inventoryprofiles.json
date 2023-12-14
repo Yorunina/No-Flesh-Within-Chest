@@ -1,8 +1,96 @@
 {
     "ModSettings": {
+        "include_hotbar_modifier": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "highlight_foused_items": {
+            "value": false
+        },
+        "highlight_foused_items_foreground": false,
+        "enable_profiles": {
+            "value": false
+        },
+        "enable_lock_slots": {
+            "value": false
+        },
+        "enable_lock_slots_per_server": false,
+        "enable_auto_refill": {
+            "value": false
+        },
+        "enable_updates_check": false,
         "first_run": false
     },
     "GuiSettings": {
-        "continuous_crafting_saved_value": false
+        "enable_inventory_editor_button": {
+            "value": false
+        },
+        "enable_inventory_settings_button": {
+            "value": false
+        },
+        "enable_profiles_ui": {
+            "value": false
+        },
+        "enable_profiles_announcement": false,
+        "enable_inventory_buttons": {
+            "value": false
+        },
+        "show_continuous_crafting_checkbox": {
+            "value": false
+        },
+        "continuous_crafting_checkbox_value": "UNCHECKED",
+        "continuous_crafting_saved_value": false,
+        "show_regular_sort_button": {
+            "value": false
+        }
+    },
+    "LockedSlotsSettings": {
+        "lock_slots_switch_config_modifier": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "lock_slots_config_key": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "show_locked_slots_background": {
+            "value": false
+        },
+        "show_locked_slots_foreground": {
+            "value": false
+        },
+        "also_show_locked_slots_in_hotbar": {
+            "value": false
+        }
+    },
+    "AutoRefillSettings": {
+        "ignore_locked_slots": false,
+        "refill_armor": {
+            "value": false
+        },
+        "refill_before_tool_break": {
+            "value": false
+        },
+        "visual_durability_notification": {
+            "value": false
+        },
+        "audio_durability_notification": {
+            "value": false
+        },
+        "visual_replace_success_notification": {
+            "value": false
+        },
+        "audio_replace_success_notification": {
+            "value": false
+        },
+        "visual_replace_failed_notification": {
+            "value": false
+        },
+        "audio_replace_failed_notification": {
+            "value": false
+        }
     }
 }

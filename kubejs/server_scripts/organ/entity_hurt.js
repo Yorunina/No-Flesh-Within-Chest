@@ -1,4 +1,12 @@
 // priority: 10
+const ISBAttribute = Java.loadClass("io.redspace.ironsspellbooks.api.registry.AttributeRegistry");
+const MagicData = Java.loadClass("io.redspace.ironsspellbooks.api.magic.MagicData");
+
+// let manaConsume = 50;
+// let playerMagicData = MagicData.getPlayerMagicData(player)
+// let currentMana = playerMagicData.getMana();
+// playerMagicData.setMana(currentMana - manaConsume)
+
 EntityEvents.hurt(event => {
     let damageSourcePlayer = event.source.player;
     if (!damageSourcePlayer) return;
@@ -14,6 +22,7 @@ EntityEvents.hurt('minecraft:player', event => {
     let player = event.player;
     if (!player) return;
     let itemMap = getPlayerChestCavityItemMap(player);
+
     if (event.getDamage() > player.getHealth() && itemMap.has('kubejs:doppelganger')) {
         organEntityHurtStrategies['kubejs:doppelganger'](event)
     }
