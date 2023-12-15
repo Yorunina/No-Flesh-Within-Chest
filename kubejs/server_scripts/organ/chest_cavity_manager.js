@@ -29,10 +29,9 @@ PlayerEvents.loggedOut((event) => {
     playerChestCavityTypeMap.delete(uuid)
 });
 
-
+    // 只有当玩家手持开胸器并打开gui界面的时候才触发初始化效果
 PlayerEvents.inventoryClosed((event) => {
     let player = event.player;
-    // 只有当玩家手持开胸器并打开gui界面的时候才触发初始化效果
     if (player.mainHandItem != 'chestcavity:chest_opener' && player.offHandItem != 'chestcavity:chest_opener') {
         return;
     }

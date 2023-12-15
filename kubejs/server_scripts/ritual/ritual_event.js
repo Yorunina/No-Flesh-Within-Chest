@@ -1,20 +1,15 @@
 SummoningRituals.complete(event => {
     if (!event.player) return;
-    // 雨之仪式
-    if (event.recipe.getId() == 'kubejs:ritual_of_rain') {
-        ritualsCompleteStrategies['kubejs:ritual_of_rain'](event)
+    if (ritualsCompleteStrategies[event.recipe.getId()]) {
+        ritualsCompleteStrategies[event.recipe.getId()](event)
     }
 });
 
 
 SummoningRituals.start(event => {
     if (!event.player) return;
-
-    if (event.recipe.getId() == 'kubejs:ritual_of_rain') {
-        ritualsStartStrategies['kubejs:ritual_of_rain'](event)
-    }
-    if (event.recipe.getId() == 'kubejs:wither_strom_summon') {
-        ritualsStartStrategies['kubejs:wither_strom_summon'](event)
+    if (ritualsStartStrategies[event.recipe.getId()]) {
+        ritualsStartStrategies[event.recipe.getId()](event)
     }
 });
 
@@ -34,7 +29,7 @@ let ritualsCompleteStrategies = {
                 });
             }));
         }
-    }
+    },
 };
 
 let ritualsStartStrategies = {
