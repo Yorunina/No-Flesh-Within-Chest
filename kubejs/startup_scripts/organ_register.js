@@ -103,6 +103,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:heart')
         .tag('kubejs:revolution')
         .tag('kubejs:machine');
+
     // 心火核心
     registerOrgan(new Organ('kubejs:burning_heart')
         .addScore('speed', -1)
@@ -119,6 +120,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:heart')
         .tag('kubejs:revolution')
         .tag('kubejs:machine');
+
     // 革命线缆
     registerOrgan(new Organ('kubejs:revolution_cable')
         .addScore('nerves', 1)
@@ -320,8 +322,20 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:chain_armor_piece')
         .addScore('defense', 1.25)
-        .addScore('speed', -0.05)
+        .addScore('speed', -0.125)
         .build())
         .texture('kubejs:item/organs/machine/chain_armor_piece')
         .tag('kubejs:machine');
+
+    // 模板器官
+    registerOrgan(new Organ('kubejs:lung_template').addScore('breath_recovery', 0.75).addScore('breath_capacity', 0.75).addScore('endurance', 0.75).build()).texture('kubejs:item/organs/machine/lung_template').tag('kubejs:lung')
+    registerOrgan(new Organ('kubejs:muscle_template').addScore('strength', 0.75).addScore('speed', 0.75).build()).texture('kubejs:item/organs/template/muscle_template').tag('kubejs:muscle')
+    registerOrgan(new Organ('kubejs:heart_template').addScore('health', 0.75).build()).texture('kubejs:item/organs/template/heart_template').tag('kubejs:heart')
+    registerOrgan(new Organ('kubejs:intestine_template').addScore('nutrition', 0.75).build()).texture('kubejs:item/organs/template/intestine_template').tag('kubejs:intestine')
+    registerOrgan(new Organ('kubejs:rib_template').addScore('defense', 0.75).build()).texture('kubejs:item/organs/template/rib_template').tag('kubejs:rib')
+    registerOrgan(new Organ('kubejs:spine_template').addScore('defense', 0.375).addScore('nerves', 0.75).build()).texture('kubejs:item/organs/template/spine_template').tag('kubejs:spine')
+    registerOrgan(new Organ('kubejs:spleen_template').addScore('metabolism', 0.75).build()).texture('kubejs:item/organs/template/spleen_template').tag('kubejs:spleen')
+    registerOrgan(new Organ('kubejs:stomach_template').addScore('digestion', 0.75).build()).texture('kubejs:item/organs/template/stomach_template').tag('kubejs:stomach')
+    registerOrgan(new Organ('kubejs:kidney_template').addScore('filtration', 0.75).build()).texture('kubejs:item/organs/template/kidney_template').tag('kubejs:kidney')
+    registerOrgan(new Organ('kubejs:liver_template').addScore('detoxification', 0.75).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver')
 });
