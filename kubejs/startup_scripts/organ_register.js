@@ -171,7 +171,7 @@ StartupEvents.registry('item', event => {
     // 糖果心与魔法使系列物品
     // 糖果系列器官
     registerOrgan(new Organ('kubejs:candy_heart')
-        .addScore('health', 2)
+        .addScore('health', 1)
         .addTextLines('default', [Text.gray('魔法使的糖果心，流动的是'), Text.red('血'), Text.gray('还是'), Text.of('糖').color('#e8a0dc'), Text.gray('？')])
         .addTextLines('alt', [Text.gold('● '), Text.gray('存在糖果心的情况下，“甜蜜之梦”才会正常发挥效果。')])
         .addTextLines('alt', [Text.gold('● '), Text.gray('在你受到伤害时，若拥有“甜蜜之梦”的效果，则会减少该效果的持续时间用以抵消伤害事件。')])
@@ -181,8 +181,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:candy');
 
     registerOrgan(new Organ('kubejs:candy_stomach')
-        .addScore('nutrition', 2)
-        .addScore('digestion', 2)
+        .addScore('nutrition', 1)
+        .addScore('digestion', 1)
         .addScore('health', -1)
         .addTextLines('default', [Text.gray('因为体温在体内'), Text.of('缓缓融化').color('#e8a0dc')])
         .addTextLines('default', [Text.gray('但融化的糖液又被其充分吸收')])
@@ -196,7 +196,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:candy');
 
     registerOrgan(new Organ('kubejs:candy_pancreas')
-        .addScore('endurance', 1)
+        .addScore('endurance', -1)
         .addScore('health', -1)
         .addTextLines('default', [Text.gray('让人有吃下去的冲动。')])
         .addTextLines('alt', [Text.gold('● '), Text.gray('当“甜蜜之梦”的效果因为抵消伤害而消失时，给予'), Text.gold('伤害吸收 V'), Text.gray('效果。')])
