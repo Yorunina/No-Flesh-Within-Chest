@@ -1,0 +1,108 @@
+{
+  "defaultChestCavity": [
+    {
+      "item": "小型动物肌肉",
+      "position": 0
+    },
+    {
+      "item": "动物肋骨",
+      "position": 1
+    },
+    {
+      "item": "小型动物阑尾",
+      "position": 2
+    },
+    {
+      "item": "小型动物肺",
+      "position": 3
+    },
+    {
+      "item": "小型动物心脏",
+      "position": 4
+    },
+    {
+      "item": "小型动物肺",
+      "position": 5
+    },
+    {
+      "item": "动物肋骨",
+      "position": 7
+    },
+    {
+      "item": "小型动物肌肉",
+      "position": 8
+    },
+    {
+      "item": "小型动物肌肉",
+      "position": 9
+    },
+    {
+      "item": "动物肋骨",
+      "position": 10
+    },
+    {
+      "item": "小型动物脾脏",
+      "position": 11
+    },
+    {
+      "item": "小型动物肾脏",
+      "position": 12
+    },
+    {
+      "item": "小型动物脊椎",
+      "position": 13
+    },
+    {
+      "item": "小型动物肾脏",
+      "position": 14
+    },
+    {
+      "item": "小型动物肝脏",
+      "position": 15
+    },
+    {
+      "item": "动物肋骨",
+      "position": 16
+    },
+    {
+      "item": "小型动物肌肉",
+      "position": 17
+    },
+    {
+      "item": "小型动物肌肉",
+      "position": 18
+    },
+    {
+      "item": "小型动物肌肉",
+      "position": 19
+    },
+    {
+      "item": "肠道",
+      "position": 20
+    },
+    {
+      "item": "肠道",
+      "position": 21
+    },
+    {
+      "item": "动物胃",
+      "position": 22
+    },
+    {
+      "item": "肠道",
+      "position": 23
+    },
+    {
+      "item": "肠道",
+      "position": 24
+    },
+    {
+      "item": "小型动物肌肉",
+      "position": 25
+    },
+    {
+      "item": "小型动物肌肉",
+      "position": 26
+    }
+  ]
+}
