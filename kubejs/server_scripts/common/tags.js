@@ -1,6 +1,5 @@
 ServerEvents.tags('worldgen/structure', event => {
   event.add('kubejs:fortress_locator', 'minecraft:fortress')
-  event.add('kubejs:void_blossom_locator', 'bosses_of_mass_destruction:void_blossom')
 })
 
 ServerEvents.tags('item', event => {

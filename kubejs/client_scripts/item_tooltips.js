@@ -15,9 +15,6 @@ ItemEvents.tooltip((tooltip) => {
         text.add(Text.darkRed('灼热之眼将指引你前往要塞的道路'));
     })
 
-    tooltip.addAdvanced('kubejs:eye_of_void_blossom', (item, advanced, text) => {
-        text.add(Text.green('虚空之眼将会指引你前往虚空之花巢穴的道路'));
-    })
 
     tooltip.addAdvanced('kubejs:secret_of_rain', (item, advanced, text) => {
         if (tooltip.shift) {

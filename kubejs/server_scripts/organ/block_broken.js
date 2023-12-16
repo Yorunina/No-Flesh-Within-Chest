@@ -1,21 +1,12 @@
-BlockEvents.broken('#forge:stone', event => {
+BlockEvents.broken(event => {
     let player = event.player;
     if (!player) return;
     let itemMap = getPlayerChestCavityItemMap(player);
-    if (itemMap.has('kubejs:ore_lung')) {
+    if (event.block.item.hasTag('forge:stone') && itemMap.has('kubejs:ore_lung')) {
         organBlockBrokenStrategies['kubejs:ore_lung'](event, itemMap);
     }
-})
-
-
-BlockEvents.broken('#forge:glass', event => {
-    let player = event.player;
-    if (!player) return;
-    let itemMap = getPlayerChestCavityItemMap(player);
-    
-    if (itemMap.has('kubejs:silk_for_cutting')) {
+    if (event.block.item.hasTag('forge:glass') && itemMap.has('kubejs:silk_for_cutting')) {
         organBlockBrokenStrategies['kubejs:silk_for_cutting'](event, itemMap);
-
     }
 })
 
@@ -36,7 +27,7 @@ let organBlockBrokenStrategies = {
             count = 0
         }
         player.persistentData.putInt(resourceCount, count)
-    },    
+    },
     'kubejs:silk_for_cutting': function (event, itemMap) {
         if (event.block > 0) {
             return

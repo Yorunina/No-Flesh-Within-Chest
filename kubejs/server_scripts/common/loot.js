@@ -2,6 +2,9 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('bosses_of_mass_destruction:void_blossom')
         .addLoot('kubejs:secret_of_bloom');
 
+    event.addLootTypeModifier(LootType.ENTITY)
+        .removeLoot('@simplehats');
+
     addBossLoot(event, 'somebosses:aesegull')
     addBossLoot(event, 'somebosses:prismarine_watcher')
     addBossLoot(event, 'somebosses:froverlord')

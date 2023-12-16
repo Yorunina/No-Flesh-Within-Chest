@@ -1,0 +1,30 @@
+#unusualprehistory Config
+#All screen shakes
+screen_shake = true
+#Screen shake brachi
+screen_shake_brachi = true
+#Screen shake brachi range
+screen_shake_brachi_range = 10.0
+#Screen shake brachi teen range
+screen_shake_brachi_teen_range = 5.0
+#Screen shake brachi amplifier
+screen_shake_brachi_amplifier = 1
+#Screen shake brachi teen amplifier
+screen_shake_brachi_teen_amplifier = 0
+#Brachi sound volume
+brachi_sound_volume = 3.0
+#Brachi teen sound volume
+brachi_teen_sound_volume = 1.5
+#Brachi footprints
+brachi_experimental_footprints = false
+#Screen shake rex
+screen_shake_rex = true
+#Screen shake rex range
+screen_shake_rex_range = 10.0
+#Screen shake rex amplifier
+screen_shake_rex_amplifier = 1
+#Rex sound volume
+rex_sound_volume = 0.5
+#Turn natural dino spawning on or off
+dino_natural_spawn = false
+

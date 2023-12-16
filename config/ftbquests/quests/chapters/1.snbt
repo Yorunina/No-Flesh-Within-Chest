@@ -187,8 +187,8 @@
 				type: "item"
 			}]
 			title: "矿石肺"
-			x: 7.0d
-			y: -3.0d
+			x: 6.25d
+			y: -2.75d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -215,7 +215,7 @@
 				type: "checkmark"
 			}]
 			title: "重定义自己的内在"
-			x: 5.5d
+			x: 5.25d
 			y: -1.5d
 		}
 		{
@@ -269,7 +269,7 @@
 				type: "checkmark"
 			}]
 			title: "属性的定义"
-			x: 7.0d
+			x: 6.5d
 			y: -1.5d
 		}
 		{
@@ -496,8 +496,8 @@
 				}
 			]
 			title: "指南针"
-			x: 10.5d
-			y: 1.5d
+			x: 9.75d
+			y: 1.75d
 		}
 		{
 			dependencies: ["51FA796A91E94C4D"]
@@ -612,7 +612,7 @@
 				type: "item"
 			}]
 			title: "成为武器大师"
-			x: 10.5d
+			x: 9.75d
 			y: -1.5d
 		}
 		{
@@ -655,8 +655,8 @@
 				type: "item"
 			}]
 			title: "机械动力？人工动力！"
-			x: 8.0d
-			y: 1.5d
+			x: 7.5d
+			y: 1.75d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -693,8 +693,8 @@
 				type: "checkmark"
 			}]
 			title: "寻找Alex生物"
-			x: 5.5d
-			y: 1.5d
+			x: 4.75d
+			y: 1.25d
 		}
 		{
 			dependencies: ["0721AF9D7D5E4A7C"]
@@ -749,11 +749,11 @@
 			subtitle: "虚空之花定位器"
 			tasks: [{
 				id: "5B7A2B7500F6B914"
-				item: "kubejs:eye_of_void_blossom"
+				item: "kubejs:eye_of_dnl"
 				type: "item"
 			}]
 			title: "特殊的眼睛"
-			x: 14.0d
+			x: 13.5d
 			y: -1.25d
 		}
 		{
@@ -791,7 +791,7 @@
 				type: "item"
 			}]
 			title: "储物抽屉"
-			x: 8.0d
+			x: 7.75d
 			y: -1.5d
 		}
 		{
@@ -851,7 +851,7 @@
 				type: "item"
 			}]
 			title: "追寻鞘翅"
-			x: 16.0d
+			x: 15.5d
 			y: -1.25d
 		}
 		{
@@ -882,8 +882,49 @@
 				type: "item"
 			}]
 			title: "简易、存储、整合"
-			x: 9.5d
-			y: -3.0d
+			x: 8.75d
+			y: -2.75d
+		}
+		{
+			dependencies: ["523490881F8317C7"]
+			description: [
+				"在海边垂钓时，偶尔你会遇上一些奇特而美丽的小生物，它们被称作为&5搏鱼&r。"
+				""
+				"搏鱼生性好斗，如果和同类所处在同一片区域，会互相争斗直到一方死亡。"
+				""
+				"因此，在泛泛大陆之上，存在着一种名为&6搏鱼决斗&r的娱乐形式，双方使用自己的搏鱼进行互斗。"
+				""
+				"而在如此脆弱不堪的世界里，你可以&2为搏鱼进行器官改造&r，进而在决斗中获取到巨大的优势。"
+			]
+			id: "02BDED7D337512CD"
+			rewards: [
+				{
+					id: "1AE5EAB766BA6059"
+					item: "bettas:betta_fish_bucket"
+					type: "item"
+				}
+				{
+					id: "7BF1406AD48001D1"
+					item: "mob_catcher:diamond_mob_catcher"
+					type: "item"
+				}
+			]
+			subtitle: "生性好斗的水下生物"
+			tasks: [{
+				id: "18A7A72907F6D36C"
+				item: "bettas:betta_fish"
+				type: "item"
+			}]
+			title: "斗鱼能手"
+			x: 5.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3FF06F6F309FAEC3"]
+			id: "2100FE65C252D712"
+			title: "书龙、化石、考古"
+			x: 11.75d
+			y: 1.75d
 		}
 	]
 	title: "章节1：如常"

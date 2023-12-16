@@ -88,6 +88,32 @@
 			x: 5.5d
 			y: 0.0d
 		}
+		{
+			can_repeat: true
+			dependencies: ["0C769BB94D282CC6"]
+			icon: {
+				Count: 1
+				id: "fruitstack:iron_fruit_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "059ADB7B9BDD1D1D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B0916EAE2C375C6"
+				table_id: 6572847824199434371L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "2E00AF27DDC89766"
+				title: "伤害乘数"
+				type: "checkmark"
+			}]
+			title: "伤害乘数"
+			x: 5.5d
+			y: 2.25d
+		}
 	]
 	title: "独立难度设置"
 }
