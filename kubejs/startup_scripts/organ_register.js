@@ -1,4 +1,9 @@
 StartupEvents.registry('item', event => {
+    /**
+     * 
+     * @param {Organ} organ 
+     * @returns 
+     */
     function registerOrgan(organ) {
         global.ORGAN_LIST.push(organ)
         return event.create(organ.itemID).maxStackSize(organ.maxStackSize).tag('kubejs:organ')
@@ -328,14 +333,15 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine');
 
     // 模板器官
-    registerOrgan(new Organ('kubejs:lung_template').addScore('breath_recovery', 0.75).addScore('breath_capacity', 0.75).addScore('endurance', 0.75).build()).texture('kubejs:item/organs/machine/lung_template').tag('kubejs:lung')
-    registerOrgan(new Organ('kubejs:muscle_template').addScore('strength', 0.75).addScore('speed', 0.75).build()).texture('kubejs:item/organs/template/muscle_template').tag('kubejs:muscle')
-    registerOrgan(new Organ('kubejs:heart_template').addScore('health', 0.75).build()).texture('kubejs:item/organs/template/heart_template').tag('kubejs:heart')
-    registerOrgan(new Organ('kubejs:intestine_template').addScore('nutrition', 0.75).build()).texture('kubejs:item/organs/template/intestine_template').tag('kubejs:intestine')
-    registerOrgan(new Organ('kubejs:rib_template').addScore('defense', 0.75).build()).texture('kubejs:item/organs/template/rib_template').tag('kubejs:rib')
-    registerOrgan(new Organ('kubejs:spine_template').addScore('defense', 0.375).addScore('nerves', 0.75).build()).texture('kubejs:item/organs/template/spine_template').tag('kubejs:spine')
-    registerOrgan(new Organ('kubejs:spleen_template').addScore('metabolism', 0.75).build()).texture('kubejs:item/organs/template/spleen_template').tag('kubejs:spleen')
-    registerOrgan(new Organ('kubejs:stomach_template').addScore('digestion', 0.75).build()).texture('kubejs:item/organs/template/stomach_template').tag('kubejs:stomach')
-    registerOrgan(new Organ('kubejs:kidney_template').addScore('filtration', 0.75).build()).texture('kubejs:item/organs/template/kidney_template').tag('kubejs:kidney')
-    registerOrgan(new Organ('kubejs:liver_template').addScore('detoxification', 0.75).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver')
+    registerOrgan(new Organ('kubejs:lung_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('breath_recovery', 0.75).addScore('breath_capacity', 0.75).addScore('endurance', 0.75).build()).texture('kubejs:item/organs/template/lung_template').tag('kubejs:lung')
+    registerOrgan(new Organ('kubejs:muscle_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('strength', 0.75).addScore('speed', 0.75).build()).texture('kubejs:item/organs/template/muscle_template').tag('kubejs:muscle')
+    registerOrgan(new Organ('kubejs:heart_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('health', 0.75).build()).texture('kubejs:item/organs/template/heart_template').tag('kubejs:heart')
+    registerOrgan(new Organ('kubejs:intestine_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('nutrition', 0.75).build()).texture('kubejs:item/organs/template/intestine_template').tag('kubejs:intestine')
+    registerOrgan(new Organ('kubejs:rib_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('defense', 0.75).build()).texture('kubejs:item/organs/template/rib_template').tag('kubejs:rib')
+    registerOrgan(new Organ('kubejs:spine_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('defense', 0.375).addScore('nerves', 0.75).build()).texture('kubejs:item/organs/template/spine_template').tag('kubejs:spine')
+    registerOrgan(new Organ('kubejs:spleen_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('metabolism', 0.75).build()).texture('kubejs:item/organs/template/spleen_template').tag('kubejs:spleen')
+    registerOrgan(new Organ('kubejs:stomach_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('digestion', 0.75).build()).texture('kubejs:item/organs/template/stomach_template').tag('kubejs:stomach')
+    registerOrgan(new Organ('kubejs:kidney_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('filtration', 0.75).build()).texture('kubejs:item/organs/template/kidney_template').tag('kubejs:kidney')
+    registerOrgan(new Organ('kubejs:liver_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('detoxification', 0.75).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver')
+    registerOrgan(new Organ('kubejs:appendix_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('luck', 0.75).build()).texture('kubejs:item/organs/template/appendix_template').tag('kubejs:appendix')
 });
