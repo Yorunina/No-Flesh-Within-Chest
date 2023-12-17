@@ -55,9 +55,16 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [Text.gold('● '), Text.gray('此效果唯一')])
         .build())
         .texture('kubejs:item/organs/infinity/infinity_beats')
-        .tag('kubejs:heart')
         .tag('kubejs:infinity');
 
+    registerOrgan(new Organ('kubejs:infinity_force')
+        .addScore('speed', -1)
+        .addTextLines('ctrl', [Text.gold('● '), Text.gray('根据激活时该物品的强化次数决定伤害加成')])
+        .build())
+        .texture('kubejs:item/organs/infinity/infinity_force')
+        .tag('kubejs:infinity')
+        .tag('kubejs:active');
+    
     // 玫瑰石英肌束
     registerOrgan(new Organ('kubejs:rose_quartz_muscle')
         .addScore('endurance', 1)

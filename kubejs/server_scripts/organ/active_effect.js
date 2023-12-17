@@ -12,7 +12,7 @@ global.updatePlayerActiveStatus = player => {
     // 激活状态根据Tag区分并遍历可以用于激活的器官方法
     if (typeMap.has('kubejs:active')) {
         typeMap.get('kubejs:active').forEach(organ => {
-            organActiveScoreStrategies[organ.id](player, typeMap, attributeMap)
+            organActiveScoreStrategies[organ.id](player, typeMap, attributeMap, organ)
         })
     }
     playerAttributeMap.set(uuid, attributeMap);
@@ -66,14 +66,14 @@ function clearAllActivedModify(player) {
  * 器官简单策略模式
  */
 let organActiveScoreStrategies = {
-    'kubejs:health_appendix': function (player, typeMap, attributeMap) {
+    'kubejs:health_appendix': function (player, typeMap, attributeMap, organ) {
         if (typeMap.has('kubejs:appendix')) {
             let value = typeMap.get('kubejs:stomach').length * 1
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
     },
 
-    'kubejs:rose_quartz_heart': function (player, typeMap, attributeMap) {
+    'kubejs:rose_quartz_heart': function (player, typeMap, attributeMap, organ) {
         if (typeMap.has('kubejs:machine')) {
             let value = typeMap.get('kubejs:machine').length * 1
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
@@ -85,7 +85,7 @@ let organActiveScoreStrategies = {
         }
     },
 
-    'kubejs:revolution_cable': function (player, typeMap, attributeMap) {
+    'kubejs:revolution_cable': function (player, typeMap, attributeMap, organ) {
         if (typeMap.has('kubejs:revolution')) {
             let value = typeMap.get('kubejs:revolution').length * 1
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
@@ -94,7 +94,7 @@ let organActiveScoreStrategies = {
     'kubejs:magic_vision': function (player, typeMap, attributeMap) {
         attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.1)
     },
-    'kubejs:love_between_lava_and_ice': function (player, typeMap, attributeMap) {
+    'kubejs:love_between_lava_and_ice': function (player, typeMap, attributeMap, organ) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (itemMap.has('minecraft:blue_ice')) {
             let iceMuti = itemMap.get('minecraft:blue_ice').length * 0.1
@@ -103,6 +103,12 @@ let organActiveScoreStrategies = {
         if (itemMap.has('minecraft:magma')) {
             let fireMuti = itemMap.get('minecraft:magma').length * 0.1
             attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMuti)
+        }
+    },
+    'kubejs:infinity_force': function (player, typeMap, attributeMap, organ) {
+        if(organ.tag && organ.tag.healthUp){
+            let value = organ.tag.healthUp * 1
+            attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
     },
 };

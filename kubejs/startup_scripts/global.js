@@ -12,6 +12,15 @@ global.COOLDOWN_REDUCTION = { key: 'irons_spellbooks:cooldown_reduction', name: 
 global.SPELL_POWER = { key: 'irons_spellbooks:spell_power', name: 'kubejsSpellPower', operation: 'addition' }
 global.ICE_SPELL_POWER = { key: 'irons_spellbooks:ice_spell_power', name: 'kubejsIceSpellPower', operation: 'addition' }
 global.FIRE_SPELL_POWER = { key: 'irons_spellbooks:fire_spell_power', name: 'kubejsFireSpellPower', operation: 'addition' }
+global.ARMOR_TOUGHNESS = { key: 'minecraft:generic.armor_toughness', name: 'kubejsArmorToughness', operation: 'addition' }
+global.ARMOR = { key: 'minecraft:generic.armor', name: 'kubejsArmor', operation: 'addition' }
+global.ATTACK_SPEED = { key: 'minecraft:generic.attack_speed', name: 'kubejsAttackSpeed', operation: 'addition' }
+global.MOVEMENT_SPEED = { key: 'minecraft:generic.movement_speed', name: 'kubejsMovementSpeed', operation: 'addition' }
+global.MANA_REGEN = { key: 'irons_spellbooks:mana_regen', name: 'kubejsManaRegen', operation: 'addition' }
+global.MAX_MANA = { key: 'irons_spellbooks:max_mana', name: 'kubejsMaxMana', operation: 'addition' }
+global.KNOCKBACK_RESISTANCE = { key: 'minecraft:generic.knockback_resistance', name: 'kubejsKnockbackResistance', operation: 'addition' }
+global.ATTACK_RANGE = { key: 'forge:attack_range', name: 'kubejsAttackRange', operation: 'addition' }
+global.REACH_DISTANCE = { key: 'forge:reach_distance', name: 'kubejsReachRange', operation: 'addition' }
 
 
 global.ATTRIBUTE_MAP = {
@@ -22,6 +31,15 @@ global.ATTRIBUTE_MAP = {
     'kubejsSpellPower': global.SPELL_POWER,
     'kubejsIceSpellPower': global.ICE_SPELL_POWER,
     'kubejsFireSpellPower': global.FIRE_SPELL_POWER,
+    'kubejsArmorToughness': global.ARMOR_TOUGHNESS,
+    'kubejsArmor': global.ARMOR,
+    'kubejsAttackSpeed': global.ATTACK_SPEED,
+    'kubejsMovementSpeed': global.MOVEMENT_SPEED,
+    'kubejsManaRegen': global.MANA_REGEN,
+    'kubejsMaxMana': global.MAX_MANA,
+    'kubejsKnockbackResistance': global.KNOCKBACK_RESISTANCE,
+    'kubejsAttackRange': global.ATTACK_RANGE,
+    'kubejsReachRange': global.REACH_DISTANCE,
 }
 
 global.TYPE_MAP = {
@@ -95,11 +113,11 @@ global.SCORE_MAP = {
     'chestcavity:hydrophobia': '恐水',
     'chestcavity:dragon_breath': '龙息',
     'chestcavity:creepy': '怪异',
-    'chestcavity:shulker_bullets': '子弹', 
-    'chestcavity:grazing': '放牧', 
-    'chestcavity:arrow_dodging': '箭矢闪避', 
-    'chestcavity:impact_resistant': '冲击抗性', 
-    'chestcavity:rotgut': '嗜腐', 
+    'chestcavity:shulker_bullets': '子弹',
+    'chestcavity:grazing': '放牧',
+    'chestcavity:arrow_dodging': '箭矢闪避',
+    'chestcavity:impact_resistant': '冲击抗性',
+    'chestcavity:rotgut': '嗜腐',
 }
 
 
