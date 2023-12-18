@@ -11,7 +11,6 @@ const playerChestCavityTypeMap = new Map();
  */
 PlayerEvents.loggedIn((event) => {
     initChestCavityIntoMap(event.player, false);
-    
     if (event.player.persistentData.contains('organ_actived') && 
     event.player.persistentData.getInt('organ_actived') == 1) {
         global.updatePlayerActiveStatus(event.player)
@@ -36,6 +35,11 @@ PlayerEvents.inventoryClosed((event) => {
         return;
     }
     initChestCavityIntoMap(player, true);
+    let itemMap = getPlayerChestCavityItemMap(player)
+    if (itemMap.has('kubejs:long_lasting_pill') || itemMap.has('kubejs:long_lasting_pill_gold')) {
+        global.updatePlayerActiveStatus(event.player)
+        player.persistentData.putInt('organ_actived', 1)
+    }
 });
 
 

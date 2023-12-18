@@ -16,7 +16,7 @@ DefaultOrgan.prototype = {
         this.organScores.forEach(score => {
             let value = score.value
             let typeName = global.SCORE_MAP[score.id]
-            this.shiftTextLines.push([Text.gold('● '), Text.gray('每组该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)])
+            this.shiftTextLines.push([LEADING_SYMBOL, Text.gray('每组该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)])
         })
         return this
     },
@@ -58,7 +58,7 @@ ItemEvents.tooltip((tooltip) => {
                         typeLine.push(global.TYPE_MAP[tag], ' ')
                     }
                     if (typeLine.length > 0) {
-                        text.add(lineNum++, [Text.gold('● '), Text.join(typeLine)])
+                        text.add(lineNum++, [LEADING_SYMBOL, Text.join(typeLine)])
                     }
 
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);

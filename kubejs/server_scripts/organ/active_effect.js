@@ -75,12 +75,12 @@ let organActiveScoreStrategies = {
 
     'kubejs:rose_quartz_heart': function (player, typeMap, attributeMap, organ) {
         if (typeMap.has('kubejs:machine')) {
-            let value = typeMap.get('kubejs:machine').length * 1
+            let value = typeMap.get('kubejs:machine').length * 2
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
 
         if (typeMap.has('kubejs:rose')) {
-            let value = typeMap.get('kubejs:rose').length * 0.5
+            let value = typeMap.get('kubejs:rose').length * 1
             attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
         }
     },

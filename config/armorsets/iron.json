@@ -1,0 +1,44 @@
+{
+  "armorSetName": "iron",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "minecraft:iron_helmet",
+    "mixAndMatch": [
+      "minecraft:chainmail_helmet"
+    ],
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "minecraft:iron_chestplate",
+    "mixAndMatch": [
+      "minecraft:chainmail_chestplate"
+    ],
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "minecraft:iron_leggings",
+    "mixAndMatch": [
+      "minecraft:chainmail_leggings"
+    ],
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "minecraft:iron_boots",
+    "mixAndMatch": [
+      "minecraft:chainmail_boots"
+    ],
+    "mustBeEmpty": false
+  },
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:strength",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "hideGeneratedTooltip": false
+}

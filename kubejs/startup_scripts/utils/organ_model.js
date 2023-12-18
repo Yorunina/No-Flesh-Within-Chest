@@ -1,4 +1,6 @@
 // priority: 0
+const LEADING_SYMBOL = Text.gold('● ')
+
 function Organ(itemID) {
     this.itemID = itemID
     this.pseudoOrgan = false
@@ -63,6 +65,12 @@ function convertScoreToTextLine(organ, score) {
     let value = score.value
     let typeName = global.SCORE_MAP[score.id]
     let stack = organ.maxStackSize
-    return [Text.gold('● '), Text.gray('每 '), Text.yellow(String(stack)), Text.gray(' 个该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)]
+    return [LEADING_SYMBOL, Text.gray('每 '), Text.yellow(String(stack)), Text.gray(' 个该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)]
 }
 
+const IRON_OVERLAY = 'kubejs:item/overlay/iron_overlay'
+const GOLD_OVERLAY = 'kubejs:item/overlay/gold_overlay'
+const DIAMOND_OVERLAY = 'kubejs:item/overlay/diamond_overlay'
+function modelOverlay(texture, overlay) {
+    return { "parent": "minecraft:item/generated", "textures": { "layer0": texture, "layer1": overlay }}
+}

@@ -1,0 +1,76 @@
+
+#Extra Armor Config - Requires Client Restart!
+["Enable or Disable Set Bonuses (true = enabled, false = disabled)"]
+	#Enable or Disable Cactus Armor Effects
+	enableCactus = true
+	#Enable or Disable Obsidian Armor Effects
+	enableObsidian = true
+	#Enable or Disable Molten Armor Effects
+	enableMolten = true
+	#Enable or Disable Phantom Armor Effects
+	enablePhantom = true
+	#Enable or Disable Ghost Armor Effects
+	enableGhost = true
+	#Enable or Disable Crying Obsidian Armor Effects
+	enableCryingObsidian = true
+	#Enable or Disable Ice Armor Effects
+	enableIce = true
+	#Enable or Disable Glowstone Armor Effects
+	enableGlowstone = true
+	#Enable or Disable Prismarine Shard Armor Effects
+	enablePrismarineShard = true
+	#Enable or Disable Prismarine Crystal Armor Effects
+	enablePrismarineCrystal = true
+	#Enable or Disable Emerald Armor Effects
+	enableEmerald = true
+	#Enable or Disable Ender Armor Effects
+	enableEnder = true
+	#Enable or Disable Feather Armor Effects
+	enableFeather = true
+	#Enable or Disable Slime Armor Effects
+	enableSlime = true
+	#Enable or Disable Lapis Armor Effects
+	enableLapis = true
+	#Enable or Disable Crimson Wood Armor Effects
+	enableCrimsonWood = true
+	#Enable or Disable Warped Wood Armor Effects
+	enableWarpedWood = true
+	#Enable or Disable Reinforced Iron Armor Effects
+	enableReinforcedIron = true
+	#Enable or Disable Glowing Obsidian Armor Effects
+	enableGlowingObsidian = true
+	#Enable or Disable Echo Shard Armor Effects
+	enableEchoShard = true
+
+["Set Effect/Enchantment Levels"]
+	#The Level of Thorns Given by the Cactus Set (Default: 1)
+	#Range: 1 ~ 4
+	cactusLevel = 1
+	#The Level of Blast Protection Given by the Crying Obsidian Set (Default: 4)
+	#Range: 1 ~ 4
+	cryingObsidianLevel = 4
+	#The Level of Luck Given by the Emerald Set (Default: 2)
+	#Range: 1 ~ 5
+	emeraldLevel = 2
+	#The Level of Speed Given by the Ender Set (Default: 2) NOTE: Also affects combined armors
+	#Range: 1 ~ 5
+	enderLevel = 2
+	#The Level of Jump Boost Given by the Feather Set (Default: 2)
+	#Range: 1 ~ 5
+	featherLevel = 2
+	#The Level of Soul Speed Given by the Ghost Set (Default: 2) NOTE: Also affects combined armors
+	#Range: 1 ~ 3
+	ghostLevel = 2
+	#The Level of Frost Walker Given by the Ice Set (Default: 2)
+	#Range: 1 ~ 2
+	iceLevel = 2
+	#The Level of Blast Protection Given by the Obsidian Set (Default: 4). NOTE: Also affects combined armors
+	#Range: 1 ~ 4
+	obsidianLevel = 4
+	#The Level of Dolphins Grace Given by the Prismarine Crystal Set (Default: 2)
+	#Range: 1 ~ 5
+	prismarineCrystalLevel = 2
+	#The Level of Swift Sneak Given by the Slime Set (Default: 2)
+	#Range: 1 ~ 4
+	slimeLevel = 2
+
