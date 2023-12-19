@@ -1,5 +1,5 @@
 {
-  "armorSetName": "leather",
+  "armorSetName": "Æ¤¸ï",
   "performanceMode": true,
   "head": {
     "itemKey": "minecraft:leather_helmet",
@@ -23,7 +23,7 @@
       "name": "minecraft:generic.armor",
       "value": 3.0,
       "modifierUUID": "d5a7dc88-9405-4398-b1e5-250b4c6dd218",
-      "description": "+3 armor",
+      "description": "+3 »¤¼×Öµ",
       "interactionType": "self",
       "interactionDuration": 300,
       "hideBonusDescription": false,

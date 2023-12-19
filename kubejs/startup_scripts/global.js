@@ -1,4 +1,4 @@
-
+Platform.mods.kubejs.name = 'No Flesh Within Chest'
 global.ORGAN_LIST = [];
 
 global.OPERATION_ADD = 'addition'
@@ -115,7 +115,7 @@ global.SCORE_MAP = {
     'chestcavity:dragon_breath': '龙息',
     'chestcavity:creepy': '怪异',
     'chestcavity:shulker_bullets': '子弹',
-    'chestcavity:grazing': '放牧',
+    'chestcavity:grazing': '食草',
     'chestcavity:arrow_dodging': '箭矢闪避',
     'chestcavity:impact_resistant': '冲击抗性',
     'chestcavity:rotgut': '嗜腐',

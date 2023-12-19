@@ -17,6 +17,621 @@
 	id: "71788747161A7134"
 	order_index: 5
 	quest_links: [ ]
-	quests: [ ]
-	title: "Iron的魔法书：魔法与现实"
+	quests: [
+		{
+			dependencies: ["48EAD277DFC740E9"]
+			description: [
+				"&b任意拥有法术槽的书籍都可以用于容纳法术&r"
+				""
+				"终于发现墨水和卷轴的存在了吗？卷轴具有强大的能力和易逝性。但你&e可以使用获得的任意一本&r&6书籍&r将卷轴上的法术保存下来。"
+				""
+				"更高品质的书籍，可以记载更强大和高端的法术，&e低等级的书籍无法记载高等级法术&r。同时，想要长久的使用法术需要付出时间的代价——等待&b冷却&r"
+				""
+				""
+				"&b//&r第一个发现新魔法的梅林对这个世界想要涉及魔法的后来者做出了重要指示。"
+				"‘&e卷轴易逝，知识永恒&r。’梅林在做出指导的过程中总是掺杂一些他对魔法的个人理解。&b//&r"
+			]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:copper_spell_book"
+				tag: {
+					ISB_spellbook: {
+						activeSpellIndex: -1
+						spellSlots: 4
+						spells: [ ]
+					}
+				}
+			}
+			id: "3F531FE03C454203"
+			min_required_tasks: 1
+			optional: true
+			rewards: [{
+				count: 5
+				id: "3C8CEE1968A166EE"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "是伤害，是便捷。"
+			tasks: [{
+				id: "4D2ADDB5D0ADA7DF"
+				title: "获得任意一本书籍"
+				type: "checkmark"
+			}]
+			title: "魔法，还是魔法书？(need改"
+			x: -1.0d
+			y: -2.75d
+		}
+		{
+			dependencies: ["3F531FE03C454203"]
+			description: [
+				"将卷轴&e塞入&r到书籍中吧，这可以让你的书籍变成强大的法器"
+				""
+				"需要用到&6法术抄写台&r，通过它可以随时以卷轴的形式摘下来你不想要的法术，以此为书籍不多的法术槽腾出空间"
+				""
+				""
+				""
+				"&b//&r‘我还是觉得把卷轴&e塞入&r书籍更加形象，如何对书籍进行翻页？你的意思是&e切换法术&r吗，&e按住&r你们世界中的&eR键&r，就可以选择不同的法术了；好像&e撅着屁股，滑动你们的鼠标滚轮&r也可以。’梅林对着空气不知道在碎碎念些什么&b//&r"
+			]
+			icon: "irons_spellbooks:inscription_table"
+			id: "1229C324168E8FB5"
+			min_required_dependencies: 1
+			rewards: [{
+				count: 5
+				id: "27969AA9AACAB44B"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "知识就是力量"
+			tasks: [{
+				consume_items: false
+				id: "1A63E8174F685893"
+				item: "irons_spellbooks:inscription_table"
+				type: "item"
+			}]
+			title: "誊抄"
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			description: [
+				"一处&6貌似无害的&r，常见于雪原和高山地形的塔楼，沿着塔楼的楼梯进入房间，攀着梯子上楼后，里面有装有卷轴和材料的战利品箱子，房间的大小与其占地面积严重不符，是公摊面积，还是...？"
+				""
+				""
+				"&b//&r‘这里真的无害吗，我总觉得这里令我感觉恶心，难不成某个邪恶的家伙还能躲到&e屋子正中心下方铺有薄薄的一层雪的活板门下面&r吗？好了伙计，我看到你了。’其实梅林才懒得挖开雪，他总是这样说给不知道谁听。&b//&r"
+			]
+			hide_text_until_complete: true
+			id: "0E913369A61280DD"
+			subtitle: "三大建筑之一"
+			tasks: [{
+				icon: "minecraft:gilded_blackstone"
+				id: "0FEBD5AAC73A0F0B"
+				structure: "irons_spellbooks:mountain_tower"
+				type: "structure"
+			}]
+			title: "高山之塔"
+			x: -3.0d
+			y: -9.0d
+		}
+		{
+			description: [
+				"一座位于沼泽中的塔楼，里面住的&6不是女巫&r，是一位炼金术士。"
+				""
+				"&b//&r‘在沼泽中杂耍&e火焰&r魔法真的不怕爆炸吗？’梅林摇了摇他刚出炉的爆炸头。&b//&r"
+			]
+			hide_text_until_complete: true
+			id: "0E1D6AD89CE0E602"
+			subtitle: "三大建筑之一"
+			tasks: [{
+				icon: "minecraft:gilded_blackstone"
+				id: "1213DCDA6C128E57"
+				structure: "irons_spellbooks:mangrove_hut"
+				type: "structure"
+			}]
+			title: "沼泽之塔"
+			x: -3.0d
+			y: -11.0d
+		}
+		{
+			description: [
+				"一个巨大的废弃传送门，周围有着大量&6散落的盔甲&r，那应该是旧魔法时代最精锐的盔甲了。"
+				""
+				"&b//&r‘一些盔甲？’梅林没有放下他手中的&e矿镐&r，‘我试试能不能把这些盔甲给他回收咯，积攒点家底可不容易。’梅林向来以节俭自居，至于是不是真的，谁知道呢&b//&r"
+			]
+			hide_text_until_complete: true
+			id: "5CA59930352C2FF4"
+			subtitle: "它们还活着"
+			tasks: [{
+				icon: "minecraft:gilded_blackstone"
+				id: "7D8C228690D90D25"
+				structure: "irons_spellbooks:ancient_battleground"
+				type: "structure"
+			}]
+			title: "传送门遗迹"
+			x: -0.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["72EED33A3A6858F8"]
+			description: [
+				"一位&6伟大存在&r的沉眠之所，怪物遍布这座坟墓，或许这些敌人根本就是这位设置的入门考验。&6机遇与危机&r并存，助你好运。"
+				""
+				"&b//&r‘像是一座坟墓。’梅林用大拇指和食指摩挲着他的下巴。没有时间思考了，因为大魔法师现在需要解决冲过来的怪物&b//&r"
+			]
+			hide_text_until_complete: true
+			id: "118DAD0E98AEBF9D"
+			subtitle: "是机遇，也是危机"
+			tasks: [{
+				id: "445B9C9DACACE14B"
+				structure: "irons_spellbooks:catacombs"
+				type: "structure"
+			}]
+			title: "沉睡之所"
+			x: 2.25d
+			y: -11.0d
+		}
+		{
+			description: [
+				"最常见的位于平原的，被一群恶棍占据的塔楼。偶尔还可以看到有几位无辜的&6俘虏&r被关在了铁栏杆中。当然，清理完恶棍之后，战利品箱子就是最好的回报。"
+				""
+				""
+				"&b//&r‘有时候你不得不承认，一个&e傻子&r未必不会干点聪明事’梅林看着他随手&e救出来&r的绿袍人，嫌恶的说‘也就聪明一点点而已，喂喂喂，别靠近我啊，擦擦你的鼻涕！’"
+				"‘以为楼顶这样摆放战利品，我就找不到&e被藏起来的箱子&r了吗，可真是把我这个天才魔法师看扁了啊！’梅林拒绝承认他对着战利品搓手的模样像随处可见的某种飞虫&b//&r"
+			]
+			hide_text_until_complete: true
+			icon: "minecraft:gilded_blackstone"
+			id: "480149442D0907EF"
+			subtitle: "三大建筑之一"
+			tasks: [{
+				id: "7C793D2624709D3D"
+				structure: "irons_spellbooks:evoker_fort"
+				type: "structure"
+			}]
+			title: "掠夺者之塔"
+			x: -3.0d
+			y: -6.75d
+		}
+		{
+			dependencies: ["3F531FE03C454203"]
+			description: [
+				"就像原始魔法中的铁砧可以用于&e升级&r原始附魔，在新魔法中，&6奥术铁砧&r是一种新型的&e强化&r装置，同等级的卷轴可以通过它实现等级的强化。同样，一些自带法术位的武器现在也可以通过它打上法术，这无疑是划时代的发明。"
+				""
+				"&b//&r无愧于天才的称号，在发现新魔法并且加以运用的梅林认识到了基础法术这些最容易被利用的魔法的重要性，并以此不断发明出&e更加强力&r的魔法。"
+				"‘一加一有时候是可以大于二的！’梅林一本正经的对着一位美丽的小姐解释他的理论。至于脸上通红的手掌印，那不重要。&b//&r"
+			]
+			icon: "irons_spellbooks:arcane_anvil"
+			id: "31B5C1D0FEBE2D26"
+			subtitle: "像附魔书一样强化"
+			tasks: [{
+				consume_items: false
+				id: "48B3EE169CD24E53"
+				item: "irons_spellbooks:arcane_anvil"
+				type: "item"
+			}]
+			title: "飞跃的升级"
+			x: 2.5d
+			y: -2.75d
+		}
+		{
+			dependencies: ["1229C324168E8FB5"]
+			description: [
+				"卷轴来源于各种&e遗迹&r或者各位&e炼金术士&r的家产老底，那些无疑是不可持续发展的。学习然后创造，这就是魔法！使用&6卷轴撰写台&r制作你想要的卷轴，制作属于你的法术。"
+				""
+				"&b//&r从自然中发掘卷轴已经不足以满足梅林对知识的渴望，他迫切的想要得到更多效果的法术。‘&e魔法墨水&r加上&e各种元素&r，再偷偷模仿一下从遗迹中挖掘出来的卷轴的绘画形状，’梅林俯首工作，‘先模仿再超越！’&b//&r"
+			]
+			icon: "irons_spellbooks:scroll_forge"
+			id: "5F3EF9114907CBE9"
+			rewards: [{
+				count: 5
+				id: "034BE97AFE1BB692"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "创造，永远的动力"
+			tasks: [{
+				consume_items: false
+				id: "5A64F7A711A137AD"
+				item: "irons_spellbooks:scroll_forge"
+				type: "item"
+			}]
+			title: "创造自己的卷轴"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3F531FE03C454203"]
+			description: [
+				"与旧魔法中的炼药锅不同，&6炼金锅&r是用于制作&e魔法墨水&r的，同时，&e回收卷轴&r，让他们回归原本的墨水形式也是它的工作，或者&e萃取血液&r。"
+				""
+				"//梅林对着&e装满水的炼金锅和在炼金锅下面放上的营火&r沉思，‘想要制作可以&e造成伤害&r的魔法，难道需要&e鲜血&r吗？’‘或许可以...&e算了用自己&r的吧。’"
+				"‘我没有在泡澡’梅林看着旁边瞠目结舌的学徒义正言辞，‘我再说一遍，我没有那么喜欢泡澡。’//"
+			]
+			id: "4269F9053A9837CE"
+			rewards: [{
+				count: 5
+				id: "7688575E108D773B"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "又是一口锅"
+			tasks: [{
+				consume_items: false
+				id: "1AF67C8AD8741E27"
+				item: "irons_spellbooks:alchemist_cauldron"
+				type: "item"
+			}]
+			title: "炼金的大锅"
+			x: 2.5d
+			y: 0.75d
+		}
+		{
+			dependencies: ["31B5C1D0FEBE2D26"]
+			description: [
+				"不仅仅是书籍，武器也是可以&e嵌上&r法术的。就在&6奥术铁砧&r上，像旧魔法中的&e附魔&r一样，左边放上武器，右边塞上卷轴，甚至&e不需要消耗经验&r，武器就截然不同了。但是武器上的法术不能如书籍中塞入的卷轴一样随意取下，他们只能打上新的法术，&e覆盖&r旧的法术"
+				""
+				"&b//&r梅林对此表示理解，‘书本是&e灵活&r的，它允许你将知识剥离；武夫不懂书籍的美妙，于是他们使用的刀剑也变得&e死板&r。’&b//&r"
+			]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:magehunter"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "78DB2A07CD7B5401"
+			subtitle: "这不是附魔！"
+			tasks: [{
+				id: "1CC6EAAD85224B22"
+				title: "做好准备了吗"
+				type: "checkmark"
+			}]
+			title: "新型附魔"
+			x: 5.25d
+			y: -2.75d
+		}
+		{
+			description: [
+				"在发现新魔法之后，梅林就踏上了他的冒险旅途，他在旅途中搜索魔法材料，创造新的魔法，一边访问那些&e塔楼和废墟&r，试图找到以前新魔法存在的痕迹。"
+				"‘郊游踏青永远比读书写字来的简单啊！’梅林在出发前对自己的旅程十分期待，并且打算写下他的旅行游记。"
+				""
+				"//如果你想知道它们究竟是什么样子，可以用&6探险家指南针&r来寻找，&e右键探险家指南针，输入每个建筑的英文名字，点击寻找&r，即可指明方向。结构名字在你将鼠标移动到那个任务的图像上时显示//"
+			]
+			id: "174E76B644D9AE0F"
+			optional: true
+			subtitle: "发现结构，而不是寻找结构"
+			tasks: [{
+				id: "1B9125D6B6867811"
+				title: "我已知晓"
+				type: "checkmark"
+			}]
+			title: "时代的残骸"
+			x: -0.5d
+			y: -9.0d
+		}
+		{
+			description: [
+				"空白符文与各种其他具有原始魔法要素的物品合成在一起获得&e相应属性的符文&r，当然这些符文也只不过是中间材料罢了。在&e遗迹和战利品箱子&r中或许可以找到它们。"
+				""
+				"//‘或许它也是未来的一种装饰。’//"
+			]
+			id: "7E24A166DC9447FA"
+			subtitle: "强化，锻造"
+			tasks: [{
+				consume_items: false
+				id: "1D6F36C104C4430F"
+				item: "irons_spellbooks:blank_rune"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.25d
+		}
+		{
+			description: [
+				"哦？你获得了墨水吗？现在你有另一种魔法可以使用了。"
+				""
+				"这是用于制作魔法卷轴的必须要素，根据&6墨水的等级&r可以制作出&6与之对应等级&r的卷轴。"
+				"&b获得方式&r：在各种&e遗迹&r中搜刮得来；通过&e回收卷轴&r获得。"
+			]
+			id: "48EAD277DFC740E9"
+			rewards: [{
+				count: 5
+				id: "3BBBD6F7EBBF51C3"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "卷轴构成的基础元素"
+			tasks: [{
+				consume_items: false
+				id: "6EA201263E0A78EF"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			title: "墨水"
+			x: -3.25d
+			y: -2.75d
+		}
+		{
+			description: [
+				"新魔法的迸发让人们在&e主世界中的深处&r发现了一种类似远古残骸的存在，它们强大而稀有。人们习惯性的将这稀有的存在命名为&6奥术残骸&r.可遇不可求，可以在探险时注意发掘。可用于合成&6升级法球&r。&b注：没有大规模破坏方式不建议寻找&r。"
+				""
+				"‘这个玩意真的是在这个岩层附近吗？’梅林在&e地下-50多层&r挥舞着手中的矿镐‘太难找了吧，就该雇佣矿工干这个活的，天杀的情报贩子，还说这是一手资料！’"
+			]
+			id: "61A74C5A2E05EAB6"
+			subtitle: "它也是残骸？"
+			tasks: [{
+				consume_items: false
+				id: "30CE177D01D995B5"
+				item: "irons_spellbooks:arcane_debris"
+				type: "item"
+			}]
+			x: 3.75d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4269F9053A9837CE"]
+			description: [
+				"将炼金锅放到地上，这样子的炼金锅是&e无害&r的，不会对生物造成伤害。"
+				""
+				"炼金锅的机制："
+				"①手拿水桶右键&e空的炼金锅&r，可以将炼金锅注入清水，一桶清水最多可以用于炼制&6四瓶&r你可能希望获得目的药剂。"
+				""
+				"②&b提升墨水等级&r，对着&e空的炼金锅&r，右键放入4瓶低等级墨水，然后再消耗点金属锭，1瓶提高过的等级的墨水就出炉了，用水瓶右键将它舀出来"
+				""
+				"③&b回收卷轴&r，将任意等级你不想要的卷轴放入&e注水后的炼金锅&r中，每一张卷轴都有50%的概率得以返璞归真，获得同等级的墨水，用水瓶右键将它舀出来"
+				""
+				"④&b获得鲜血精华&r：只需要在&e注水后的炼金锅&r的正下方放上营火，然后将动物或者自身放在炼金锅上烤一会就好。"
+			]
+			icon: "irons_spellbooks:alchemist_cauldron"
+			id: "70911F68305887DE"
+			rewards: [{
+				count: 5
+				id: "31BB2DA3D8C8297F"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "只是入门"
+			tasks: [{
+				id: "6C2C33557F2EDE26"
+				title: "我会了"
+				type: "checkmark"
+			}]
+			title: "入门的炼金术师"
+			x: 5.25d
+			y: -0.5d
+		}
+		{
+			description: [
+				"极难的获取方式与用其后续制作的各种属性的升级法球所提供的微薄属性来看，&e另一种强化自身属性&r的方式或许更加实用。"
+				""
+				"//梅林期待着&e在奥术铁砧上使用&r升级法球强化过的法器能有什么毁天灭地的效果，但是实测下来好像并没有提升多少。‘我的心血，我的青春！’//"
+			]
+			id: "4369572305816A83"
+			subtitle: "强化你的法器"
+			tasks: [{
+				consume_items: false
+				id: "7D80139AE8E4B9CA"
+				item: "irons_spellbooks:upgrade_orb"
+				type: "item"
+			}]
+			title: "升级"
+			x: 2.5d
+			y: -1.25d
+		}
+		{
+			description: [
+				"法术值上限过低无法使用更高级的魔法？制作装备吧，他们都具有&e很好的功能性&r。防御性吗？凑合用用吧，终归比不了旧魔法世界中最优秀的那套装备。不同的新魔法装备可以提供的效果也不同，根据你自己的需求选择吧。不过好像那几套成体系的装备需要&e某些术士&r做出牺牲啊。"
+				""
+				"‘我们是&e法师&r，需要更适合我们身份的装备不是吗？打打杀杀、近战肉搏未免太有失体统了，’梅林指了指自己身上完全&e不成体系&r的衣服，‘我没有在玩奇迹暖暖！再说了你们那个世界的人不是总讲究什么“穿搭”吗，我这就是穿搭。’"
+			]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:priest_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "239E1D7FBB22A47F"
+			rewards: [{
+				count: 5
+				id: "1167A7EFFF565060"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "有效性比防御性更好"
+			tasks: [{
+				id: "724650F93AC1AF63"
+				title: "我知道了"
+				type: "checkmark"
+			}]
+			title: "装备"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"这些充满了魔法气息的物质是组成新魔法世界中诸多强大物品的&e基础&r，它们&e广泛而重要&r。总是在各种遗迹和宝箱中可以发现它们的身影。是它们选择了他们。"
+				""
+				"‘奇怪，在曾经的大陆中并未有这种物质的出现，’梅林把玩着一片奥术源质，‘它对于新魔法竟然有着&e良好的相性&r。这是一种赐福吗？’"
+			]
+			id: "1D626357219ADF98"
+			subtitle: "存储了魔力的物体"
+			tasks: [{
+				consume_items: false
+				id: "10A39B7F5CAE9A6B"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			description: [
+				"制作这个奇怪的&6指南针&r，然后发掘‘Ta’的秘密。"
+				""
+				"//在意外得到这个指南针后，梅林发现不论如何它的指针指向&e同一个方向&r，这足以勾动一个自诩为冒险者内心对于未知的渴望。‘让我看看那里到底有什么。’    //"
+			]
+			id: "72EED33A3A6858F8"
+			subtitle: "它指引何方？"
+			tasks: [{
+				consume_items: false
+				id: "40E66337080EE389"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:wayward_compass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "‘回家’"
+			x: 2.25d
+			y: -9.0d
+		}
+		{
+			dependencies: ["118DAD0E98AEBF9D"]
+			description: [
+				"你发现了吗，每个建筑都有一些可以称之为宝藏的存在，那伟大存在会没有给你留下财宝吗？所以如果实在没有找到，那么我就告诉你答案，照抄吧。"
+				""
+				"沿着王座两侧的台阶上到二楼，走到底部，打开王座正对面的&e磨制安山岩&r，里面是属于你的财宝。"
+			]
+			hide_text_until_complete: true
+			icon: "minecraft:chest"
+			id: "4E42637914EDE9ED"
+			subtitle: "真的存在吗 "
+			tasks: [{
+				id: "19953D95C817F21D"
+				title: "揭晓答案"
+				type: "checkmark"
+			}]
+			title: "隐藏的财宝"
+			x: 2.25d
+			y: -12.75d
+		}
+		{
+			dependencies: ["0E1D6AD89CE0E602"]
+			description: [
+				"‘如果你看前面的任务描述还是不知所云，那就直接告诉你们好了。’"
+				""
+				"&e二楼&r有个相对隐蔽的战利品箱子，如果找不到，把二楼拆了一定能发现，&e火焰&r之所以高亮是因为那个术士叫&e炽炎术士&r。"
+			]
+			hide_text_until_complete: true
+			icon: "minecraft:chest"
+			id: "5A7D16EEA8B7B937"
+			subtitle: "不多，但也许有用"
+			tasks: [{
+				id: "3EE5C28685E310ED"
+				title: "揭晓答案"
+				type: "checkmark"
+			}]
+			title: "隐藏的财宝"
+			x: -5.25d
+			y: -11.0d
+		}
+		{
+			dependencies: ["480149442D0907EF"]
+			description: [
+				"‘如果你看前面的任务描述还是不知所云，那就直接告诉你们好了。’"
+				""
+				"①在这个塔楼的顶部其实有&e四个战利品箱子&r。"
+				"②塔楼周围有可能是有被关押着的村民。有时候村民是个傻子，或者说他是个天才，因为他可以交易，获得一本&e特殊的书籍法器&r——&6村民圣经&r。"
+			]
+			hide_text_until_complete: true
+			icon: "minecraft:chest"
+			id: "43EAFA96486874D3"
+			subtitle: "人口也是财产的一部分"
+			tasks: [{
+				id: "53C1F3E7ED878C7C"
+				title: "揭晓答案"
+				type: "checkmark"
+			}]
+			title: "隐藏的财宝"
+			x: -5.25d
+			y: -6.75d
+		}
+		{
+			dependencies: ["0E913369A61280DD"]
+			description: [
+				"‘如果你看前面任务描述还是理解不了，那就直接告诉你们好了。’"
+				""
+				"沿着环绕着塔楼的上楼楼梯上去，进入房间内部，正中间的&e被薄薄的一层雪覆盖&r的是一个活板门，下面有个也不是多强的精英怪，可以爆一波装备。"
+			]
+			hide_text_until_complete: true
+			icon: "minecraft:chest"
+			id: "605BFAC1978077B6"
+			subtitle: "聊胜于无吧"
+			tasks: [{
+				id: "4849F047E2386C7E"
+				title: "揭晓答案"
+				type: "checkmark"
+			}]
+			title: "隐藏的财宝"
+			x: -5.25d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5CA59930352C2FF4"]
+			description: [
+				"‘如果你看前面的任务描述还是不知所云，那就直接告诉你们好了。’"
+				""
+				"用镐子挖掉周围的&6散落的盔甲&r，会掉落一个下界合金碎片并且生成一个精英怪，杀掉精英怪可以掉落一个物品，这个物品是用于制作强化材料的。"
+			]
+			hide_text_until_complete: true
+			icon: "minecraft:chest"
+			id: "2249CC40783FB24F"
+			subtitle: "不要白不要"
+			tasks: [{
+				id: "34B82D5E0CF33B5A"
+				title: "揭晓答案"
+				type: "checkmark"
+			}]
+			title: "隐藏的宝藏"
+			x: -0.5d
+			y: -12.75d
+		}
+		{
+			description: [
+				"&e洗掉&r你对武器附加的法术。在&6奥术铁砧&r上使用。或许你会在遗迹和战利品箱子找到它，当然让某些老不死的&e炼金术士&r爆金币也有几率获得。"
+				""
+				"//‘我不会后悔，我也不想近战武器。’梅林的头颅永远那么高昂，要是他的身上没有在矿洞中沾染的灰尘就更加好了。//"
+			]
+			id: "00FC7EF0C0791E91"
+			subtitle: "世界上没有后悔药，也许"
+			tasks: [{
+				consume_items: false
+				id: "2326E29B3561325F"
+				item: "irons_spellbooks:shriving_stone"
+				type: "item"
+			}]
+			title: "反悔"
+			x: 3.75d
+			y: -2.0d
+		}
+	]
+	title: "Iron的魔法书：世界的边界"
 }

@@ -162,3 +162,16 @@ function checkPlayerHasChestCavityMap(player) {
     }
     return false;
 }
+
+/**
+ * 校验某个位置是否有某个器官
+ * @param {Map} playerPosMap 
+ * @param {string} itemId 
+ * @param {number} pos 
+ */
+function checkPlayerHasItemWithPos(playerPosMap, itemId, pos) {
+    if (playerPosMap.has(pos) && playerPosMap.get(pos) == itemId) {
+        return playerPosMap.get(pos)
+    }
+    return null
+}

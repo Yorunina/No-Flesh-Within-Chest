@@ -19,6 +19,7 @@
 		auto_borders = true
 		# If enabled and Legendary Tooltips is installed, borders will sync with tooltip border colors.
 		legendary_tooltips_sync = false
+
 		# Custom border colors for specific items. Format: { <color> = ["list of selectors"] }.
 		# Color formats supported:
 		#   Hex color code - A hex color code is preceded by # or 0x and must be quoted.  Supports 3, 4, 6, or 8 digit codes in the formats RGB, ARGB, RRGGBB, or AARRGGBB.  Examples: "#F4C", "0xFEE0", "#40FF2E", "#CC00E2EE"
@@ -45,5 +46,12 @@
 		#   NBT tag - & followed by tag name and optional comparator (=, >, <, or !=) and value, in the format <tag><comparator><value> or just <tag>.  Examples: "&Damage=0", "&Tier>1", "&map!=128", "&Enchantments"
 		#   Negation - ~ followed by any selector above.  This selector will be negated, matching every item that does NOT match the selector.  Examples: "~minecraft:stick", "~!uncommon", "~@minecraft"
 		#   Combining selectors - Any number of selectors can be combined by separating them with a plus sign.  Examples: "minecraft:diamond_sword+&Enchantments", "minecraft:stick+~!common+&Damage=0"
-		manual_borders = {}
+		[client.options.manual_borders]
+			"#CBD1CF" = ["$itemborders:iron"]
+			"#FDF55F" = ["$itemborders:gold"]
+			"#4AEDD9" = ["$itemborders:diamond"]
+			green = ["$itemborders:green"]
+			blue = ["$itemborders:blue"]
+			dark_purple = ["$itemborders:dark_purple"]
+			yellow = ["$itemborders:yellow"]
 

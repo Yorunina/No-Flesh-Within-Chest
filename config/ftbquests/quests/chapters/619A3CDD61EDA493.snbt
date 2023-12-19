@@ -105,6 +105,7 @@
 				table_id: 6572847824199434371L
 				type: "choice"
 			}]
+			subtitle: "追求更痛的伤害？没问题"
 			tasks: [{
 				id: "2E00AF27DDC89766"
 				title: "伤害乘数"
