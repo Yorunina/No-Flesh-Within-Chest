@@ -21,7 +21,7 @@
 	ArmorDamage = true
 	#Hide if durability is above this (in percentage):
 	#Range: 0 ~ 100
-	armAbove = 100
+	armAbove = 20
 	#Show/Hide armor
 	showArmor = true
 	#Show/Hide armor
@@ -40,7 +40,7 @@
 	#Move all items at once or each one
 	moveAll = true
 	#Show/Hide empty slot icon
-	showEmpty = true
+	showEmpty = false
 	#Show overall count of items in main/off hand
 	showCount = false
 	#ArmorHUD scale in persentage from 50 to 150
@@ -99,10 +99,10 @@
 	potHalign = "LEFT"
 	#Potion HUD position (X)
 	#Range: -9999 ~ 9999
-	xPotionPos = 20
+	xPotionPos = 10
 	#Potion HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPotionPos = 20
+	yPotionPos = 12
 	#Helmet position (X)
 	#Range: -9999 ~ 9999
 	helmPosX = 103

@@ -11,8 +11,8 @@ const playerChestCavityTypeMap = new Map();
  */
 PlayerEvents.loggedIn((event) => {
     initChestCavityIntoMap(event.player, false);
-    if (event.player.persistentData.contains('organ_actived') && 
-    event.player.persistentData.getInt('organ_actived') == 1) {
+    if (event.player.persistentData.contains('organ_actived') &&
+        event.player.persistentData.getInt('organ_actived') == 1) {
         global.updatePlayerActiveStatus(event.player)
     }
 });
@@ -28,7 +28,7 @@ PlayerEvents.loggedOut((event) => {
     playerChestCavityTypeMap.delete(uuid)
 });
 
-    // 只有当玩家手持开胸器并打开gui界面的时候才触发初始化效果
+// 只有当玩家手持开胸器并打开gui界面的时候才触发初始化效果
 PlayerEvents.inventoryClosed((event) => {
     let player = event.player;
     if (player.mainHandItem != 'chestcavity:chest_opener' && player.offHandItem != 'chestcavity:chest_opener') {
@@ -163,15 +163,27 @@ function checkPlayerHasChestCavityMap(player) {
     return false;
 }
 
-/**
- * 校验某个位置是否有某个器官
- * @param {Map} playerPosMap 
- * @param {string} itemId 
- * @param {number} pos 
- */
-function checkPlayerHasItemWithPos(playerPosMap, itemId, pos) {
-    if (playerPosMap.has(pos) && playerPosMap.get(pos) == itemId) {
-        return playerPosMap.get(pos)
+const fourDirectionList = ['up', 'down', 'left', 'right']
+const eightDirectionList = ['up', 'down', 'left', 'right', 'rightUp', 'rightDown', 'leftUp', 'leftDown']
+function lookPos(direction, pos) {
+    switch (direction) {
+        case 'up':
+            return (pos - 9 >= 0) ? (pos - 9) : -1
+        case 'down':
+            return (pos + 9 < 27) ? (pos + 9) : -1
+        case 'left':
+            return (pos - 1 >= 0) ? (pos - 1) : -1
+        case 'right':
+            return (pos + 1 < 27) ? (pos + 1) : -1
+        case 'rightUp':
+            return (pos - 8 >= 0) ? (pos - 8) : -1
+        case 'rightDown':
+            return (pos + 10 < 27) ? (pos + 10) : -1
+        case 'leftUp':
+            return (pos - 10 >= 0) ? (pos - 10) : -1
+        case 'leftDown':
+            return (pos + 8 < 27) ? (pos + 8) : -1
+        default:
+            return -1
     }
-    return null
 }

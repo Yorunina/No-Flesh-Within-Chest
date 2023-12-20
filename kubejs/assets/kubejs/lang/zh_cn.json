@@ -74,12 +74,17 @@
     "effect.kubejs.burning_heart": "熔火燃烧",
     "effect.kubejs.vampiric": "吸血",
     "effect.kubejs.body_weakness": "身体虚弱",
+    "effect.kubejs.magic_forbiden": "魔力空虚",
     "travelerstitles.kubejs.lost_memory": "回忆之地",
 
     "kubejs.tip.secret_hint": "对着秘密物品按下shift或许会有额外的发现！",
     "kubejs.tip.wares_useage": "使用交货台在村庄里快速提交交货协议",
+    "kubejs.tip.magic_forbiden": "魔力空虚状态会扣减10000点魔力上限",
 
     "golem_material.biomancy.living_flesh": "鲜活肉块",
 
-    "kubejs.boss_rush": "Boss Rush"
+    "kubejs.boss_rush": "Boss Rush",
+
+    "tetra.material.alex_shark_tooth": "鲨鱼尖牙",
+    "tetra.material.alex_shark_tooth.prefix": "鲨鱼尖牙"
 }

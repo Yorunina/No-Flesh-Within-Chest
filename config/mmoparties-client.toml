@@ -1,0 +1,24 @@
+
+[display-options]
+	#Whether or not to display absorption hearts
+	"Show Absorption" = true
+	#Whether or not to display armor
+	"Show Armor" = true
+	#Whether or not to display hunger
+	"Show Hunger" = true
+	#The vertical offset at which to display the party list at.
+	"Y Offset" = 2
+	#Whether or not to use the simple UI
+	"Use Simple UI" = false
+	#The point to anchor the UI to.
+	"UI Anchor" = "top-left"
+	#Whether or not to hide yourself in the party list
+	"Hide Self" = false
+	#Whether or not to hide your own GUI.
+	"Hide GUI" = false
+	#Whether or not to render all HUD elements as percentages instead.
+	"Numbers As Percentages" = false
+	#How to handle health beyond the maximum. Will do nothing if Numbers As Percentage is disabled.
+	#Valid values: none, percentage, additional, compare
+	"Extra Number Type" = "additional"
+

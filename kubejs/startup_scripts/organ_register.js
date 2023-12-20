@@ -73,19 +73,18 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/rose_quartz/rose_quartz_muscle')
         .tag('kubejs:muscle')
-        .tag('kubejs:machine')
         .tag('kubejs:rose');
+
     // 玫瑰石英心脏
     registeOrgan(new Organ('kubejs:rose_quartz_heart')
         .addScore('health', 1)
-        .addScore('nerves', -5)
+        .addScore('nerves', -3)
         .addTextLines('default', [Text.gray('它曾经是无生命的——现在也是。但正是从'), Text.red('无'), Text.gray('之上，你被赋予了生命')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一种类为'), Text.yellow('机械'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('生命值')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一种类为'), Text.yellow('玫瑰'), Text.gray('的器官，会为你添加额外'), Text.yellow(0.5), Text.gray('点'), Text.yellow('攻击力')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一种类为'), Text.yellow('机械'), Text.gray('的器官，会为你添加额外'), Text.yellow(2), Text.gray('点'), Text.yellow('生命值')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一种类为'), Text.yellow('玫瑰'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('攻击力')])
         .build())
         .texture('kubejs:item/organs/rose_quartz/rose_quartz_heart')
         .tag('kubejs:heart')
-        .tag('kubejs:machine')
         .tag('kubejs:rose')
         .tag('kubejs:active');
     // 玫瑰石英肝脏
@@ -96,7 +95,6 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/rose_quartz/rose_quartz_liver')
         .tag('kubejs:liver')
-        .tag('kubejs:machine')
         .tag('kubejs:rose');
 
     // 革命机械系列
@@ -366,6 +364,15 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold')
         .tag('kubejs:evolution');
 
+        registeOrgan(new Organ('kubejs:stomach_tumor')
+        .addScore('endurance', 0.5)
+        .addScore('digestion', 1)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('如果在周围存在最少'), Text.gold(3), Text.gray('个胃瘤，会为你提供额外的'), Text.gold(6), Text.gray('生命值上限')])
+        .build())
+        .texture('kubejs:item/organs/others/stomach_tumor')
+        .tag('kubejs:stomach')
+        .tag('kubejs:active');
+
 
     // 模板器官
     registeOrgan(new Organ('kubejs:lung_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('breath_recovery', 0.75).addScore('breath_capacity', 0.75).addScore('endurance', 0.75).build()).texture('kubejs:item/organs/template/lung_template').tag('kubejs:lung')
@@ -379,7 +386,7 @@ StartupEvents.registry('item', event => {
     registeOrgan(new Organ('kubejs:kidney_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('filtration', 0.75).build()).texture('kubejs:item/organs/template/kidney_template').tag('kubejs:kidney')
     registeOrgan(new Organ('kubejs:liver_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('detoxification', 0.75).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver')
     registeOrgan(new Organ('kubejs:appendix_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('luck', 0.75).build()).texture('kubejs:item/organs/template/appendix_template').tag('kubejs:appendix')
-        .texture('kubejs:item/organs/others/long_lasting_pill')
+
     // 基本器官
     registeOrgan(new Organ('kubejs:muscle_iron').addScore('strength', 1.25).addScore('speed', 1.25).build()).texture('kubejs:item/organs/common/muscle').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:muscle')
     registeOrgan(new Organ('kubejs:spleen_iron').addScore('metabolism', 1.25).build()).texture('kubejs:item/organs/common/spleen').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:spleen')

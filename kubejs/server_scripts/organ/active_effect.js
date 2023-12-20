@@ -12,13 +12,14 @@ global.updatePlayerActiveStatus = player => {
     // 激活状态根据Tag区分并遍历可以用于激活的器官方法
     if (typeMap.has('kubejs:active')) {
         typeMap.get('kubejs:active').forEach(organ => {
-            organActiveScoreStrategies[organ.id](player, typeMap, attributeMap, organ)
+            organActiveScoreStrategies[organ.id](player, organ, attributeMap)
         })
     }
     playerAttributeMap.set(uuid, attributeMap);
     attributeMap.forEach((value, key, map) => {
         player.modifyAttribute(global.ATTRIBUTE_MAP[key].key, key, value, global.ATTRIBUTE_MAP[key].operation);
     })
+
 }
 
 /**
@@ -62,18 +63,28 @@ function clearAllActivedModify(player) {
 }
 
 
+
+function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
+    if (attributeMap.has(attribute.name)) {
+        modifyValue = modifyValue + attributeMap.get(attribute.name)
+    }
+    attributeMap.set(attribute.name, modifyValue)
+}
+
+
 /**
  * 器官简单策略模式
  */
 let organActiveScoreStrategies = {
-    'kubejs:health_appendix': function (player, typeMap, attributeMap, organ) {
+    'kubejs:health_appendix': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player);
         if (typeMap.has('kubejs:appendix')) {
-            let value = typeMap.get('kubejs:stomach').length * 1
+            let value = typeMap.get('kubejs:appendix').length * 1
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
     },
-
-    'kubejs:rose_quartz_heart': function (player, typeMap, attributeMap, organ) {
+    'kubejs:rose_quartz_heart': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player);
         if (typeMap.has('kubejs:machine')) {
             let value = typeMap.get('kubejs:machine').length * 2
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
@@ -84,17 +95,17 @@ let organActiveScoreStrategies = {
             attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
         }
     },
-
-    'kubejs:revolution_cable': function (player, typeMap, attributeMap, organ) {
+    'kubejs:revolution_cable': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player);
         if (typeMap.has('kubejs:revolution')) {
             let value = typeMap.get('kubejs:revolution').length * 1
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
     },
-    'kubejs:magic_vision': function (player, typeMap, attributeMap) {
+    'kubejs:magic_vision': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.1)
     },
-    'kubejs:love_between_lava_and_ice': function (player, typeMap, attributeMap, organ) {
+    'kubejs:love_between_lava_and_ice': function (player, organ, attributeMap) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (itemMap.has('minecraft:blue_ice')) {
             let iceMuti = itemMap.get('minecraft:blue_ice').length * 0.1
@@ -105,18 +116,27 @@ let organActiveScoreStrategies = {
             attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMuti)
         }
     },
-    'kubejs:infinity_force': function (player, typeMap, attributeMap, organ) {
-        if(organ.tag && organ.tag.healthUp){
+    'kubejs:infinity_force': function (player, organ, attributeMap) {
+        if (organ.tag && organ.tag.healthUp) {
             let value = organ.tag.healthUp * 1
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
     },
+    'kubejs:stomach_tumor': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.getInt('Slot')
+        if (posMap.has(pos)) {
+            posMap.get(pos)
+        }
+        let count = 0
+        eightDirectionList.forEach(direction => {
+            let currentPos = lookPos(direction, pos)
+            if (posMap.has(currentPos) && posMap.get(currentPos).id == organ.id) {
+                count++
+            }
+        })
+        if (count > 2) {
+            attributeMapValueAddition(attributeMap, global.HEALTH_UP, 6)
+        }
+    },
 };
-
-
-function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
-    if (attributeMap.has(attribute.name)) {
-        modifyValue = modifyValue + attributeMap.get(attribute.name)
-    }
-    attributeMap.set(attribute.name, modifyValue)
-}
