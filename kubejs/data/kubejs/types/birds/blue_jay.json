@@ -1,7 +1,7 @@
 {
   "defaultChestCavity": [
     {
-      "item": "chestcavity:small_animal_muscle",
+      "item": "kubejs:feather",
       "position": 0
     },
     {
@@ -29,11 +29,11 @@
       "position": 7
     },
     {
-      "item": "chestcavity:small_animal_muscle",
+      "item": "kubejs:feather",
       "position": 8
     },
     {
-      "item": "chestcavity:small_animal_muscle",
+      "item": "kubejs:feather",
       "position": 9
     },
     {
@@ -41,7 +41,7 @@
       "position": 10
     },
     {
-      "item": "chestcavity:small_animal_liver",
+      "item": "chestcavity:small_animal_spleen",
       "position": 11
     },
     {
@@ -57,7 +57,7 @@
       "position": 14
     },
     {
-      "item": "chestcavity:small_animal_spleen",
+      "item": "chestcavity:animal_liver",
       "position": 15
     },
     {
@@ -65,7 +65,7 @@
       "position": 16
     },
     {
-      "item": "chestcavity:small_animal_muscle",
+      "item": "kubejs:feather",
       "position": 17
     },
     {
@@ -77,11 +77,11 @@
       "position": 19
     },
     {
-      "item": "chestcavity:small_carnivore",
+      "item": "chestcavity:small_carnivore_intestine",
       "position": 20
     },
     {
-      "item": "chestcavity:small_carnivore",
+      "item": "chestcavity:small_carnivore_intestine",
       "position": 21
     },
     {
@@ -89,11 +89,11 @@
       "position": 22
     },
     {
-      "item": "chestcavity:small_carnivore",
+      "item": "chestcavity:small_carnivore_intestine",
       "position": 23
     },
     {
-      "item": "chestcavity:small_carnivore",
+      "item": "chestcavity:small_carnivore_intestine",
       "position": 24
     },
     {

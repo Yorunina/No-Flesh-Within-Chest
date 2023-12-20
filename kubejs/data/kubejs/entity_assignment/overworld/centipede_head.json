@@ -1,0 +1,7 @@
+{
+    "chestcavity": "kubejs:types/overworld/centipede_head.json",
+    "entities": [
+      "alexsmobs:centipede_head"
+      
+    ]
+  }

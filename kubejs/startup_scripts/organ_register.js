@@ -344,75 +344,192 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:kidney_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('filtration', 0.75).build()).texture('kubejs:item/organs/template/kidney_template').tag('kubejs:kidney')
     registerOrgan(new Organ('kubejs:liver_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('detoxification', 0.75).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver')
     registerOrgan(new Organ('kubejs:appendix_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('luck', 0.75).build()).texture('kubejs:item/organs/template/appendix_template').tag('kubejs:appendix')
-});
 
     registerOrgan(new Organ('kubejs:lower_bound_muscle')
         .addScore('strength', 2)
         .addScore('speed', 1)
-        .addScore('fire_resistant',1)
+        .addScore('fire_resistant', 1)
         .build())
-        .texture('kubejs:item/organs/alex')
+        .texture('kubejs:item/organs')
         .tag('kubejs:alex');
 
-        registerOrgan(new Organ('kubejs:lower_bound_rib')
+    registerOrgan(new Organ('kubejs:lower_bound_rib')
         .addScore('defense', 1)
         .addScore('fire_resistant', 1)
         .build())
-        .texture('kubejs:item/organs/alex')
+        .texture('kubejs:item/organs')
         .tag('kubejs:alex');
 
-        registerOrgan(new Organ('kubejs:crimson_heart')
+    registerOrgan(new Organ('kubejs:crimson_heart')
         .addScore('health', 1)
         .addScore('fire_resistant', 1)
         .build())
-        .texture('kubejs:item/organs/alex')
+        .texture('kubejs:item/organs')
         .tag('kubejs:alex');
 
-        registerOrgan(new Organ('kubejs:crimson_spine')
-        .addScore('', )
-        .addScore('', )
+    registerOrgan(new Organ('kubejs:crimson_spine')
         .build())
-        .texture('kubejs:item/organs/alex')
+        .texture('kubejs:item/organs')
         .tag('kubejs:alex');
 
-        registerOrgan(new Organ('kubejs:warped_heart')
-        .addScore('', )
-        .addScore('', )
+    registerOrgan(new Organ('kubejs:warped_heart')
         .build())
-        .texture('kubejs:item/organs/alex')
+        .texture('kubejs:item/organs')
         .tag('kubejs:alex');
 
-        registerOrgan(new Organ('kubejs:warped_spine')
-        .addScore('', )
-        .addScore('', )
+    registerOrgan(new Organ('kubejs:warped_spine')
         .build())
-        .texture('kubejs:item/organs/alex')
+        .texture('kubejs:item/organs')
         .tag('kubejs:alex');
 
-        registerOrgan(new Organ('kubejs:crimson_mosquito_ ')
-        .addScore('', )
-        .addScore('', )
+    registerOrgan(new Organ('kubejs:crimson_mosquito_mouthparts')
         .build())
-        .texture('kubejs:item/organs/alex')
+        .texture('kubejs:item/organs')
         .tag('kubejs:alex');
 
-        registerOrgan(new Organ('kubejs:')
-        .addScore('', )
-        .addScore('', )
+    registerOrgan(new Organ('kubejs:feather')
+        .addScore('speed', 2)
+        .addScore('defense', -1)
         .build())
-        .texture('kubejs:item/organs/alex')
+        .texture('kubejs:item/organs')
         .tag('kubejs:alex');
 
-        registerOrgan(new Organ('kubejs:')
-        .addScore('', )
-        .addScore('', )
+    registerOrgan(new Organ('kubejs:mollusk_muscle')
         .build())
-        .texture('kubejs:item/organs/alex')
+        .texture('kubejs:item/organs')
         .tag('kubejs:alex');
 
-        registerOrgan(new Organ('kubejs: ')
-        .addScore('', )
-        .addScore('', )
+    registerOrgan(new Organ('kubejs:giant_squid_whisker')
         .build())
-        .texture('kubejs:item/organs/alex')
+        .texture('kubejs:item/organs')
         .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:mimic_octopus_skin')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:fish_spine')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:fishbone')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:fish_intestine')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:element_spine_sandwind')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+
+    registerOrgan(new Organ('kubejs:element_spine_botany')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+
+    registerOrgan(new Organ('kubejs:deep_dark_spine')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+
+    registerOrgan(new Organ('kubejs:deep_dark_rib')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:deep_dark_muscle')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:deep_dark_heart')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:deep_dark_stomach')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:deep_dark_intestine')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:deep_dark_pancreas')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:deep_dark_kidney')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:deep_dark_appendix')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:bone_serpent_spine')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:bone_serpent_heart')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+    registerOrgan(new Organ('kubejs:lower_bound_stomach')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+        registerOrgan(new Organ('kubejs:lower_bound_intestine')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+        registerOrgan(new Organ('kubejs:lower_bound_kidney')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+        registerOrgan(new Organ('kubejs:lower_bound_appendix')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+        registerOrgan(new Organ('kubejs:lower_bound_lung')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+        registerOrgan(new Organ('kubejs:deep_dark_lung')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+        registerOrgan(new Organ('kubejs:mollusk_heart')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+        registerOrgan(new Organ('kubejs:mollusk_stomach')
+        .build())
+        .texture('kubejs:item/organs')
+        .tag('kubejs:alex');
+
+});

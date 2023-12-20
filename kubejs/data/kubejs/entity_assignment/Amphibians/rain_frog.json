@@ -1,7 +1,7 @@
 {
-    "chestcavity": "kubejs:types/Amphibians/rain_frog",
+    "chestcavity": "kubejs:types/Amphibians/rain_frog.json",
     "entities": [
-      "alexsmobs:"
+      "alexsmobs:rain_frog.json"
       
     ]
   }
