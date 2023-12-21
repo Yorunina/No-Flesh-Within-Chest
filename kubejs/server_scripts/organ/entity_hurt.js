@@ -42,7 +42,6 @@ let organEntityHurtStrategies = {
             setPlayerAttributeMap(damageSourcePlayer, attriMap);
         }
     },
-
     'kubejs:doppelganger': function (event) {
         let typeMap = getPlayerChestCavityTypeMap(event.player)
         if (typeMap.has('kubejs:legends')) {

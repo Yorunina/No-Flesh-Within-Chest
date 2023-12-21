@@ -48,4 +48,18 @@ ItemEvents.tooltip((tooltip) => {
             text.add([Text.gray('手持长按右键以铭刻誓约。')]);
         }
     })
+
+    tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
+        let lineNum = 1
+
+        if (item.nbt?.organ?.id) {
+            text.add(lineNum++, [Text.gold('储存物: '), Text.yellow(Text.translate(Item.of(item.nbt.organ.id).descriptionId))]);
+        }
+        if (item.nbt?.type == 'kill') {
+            text.add(lineNum++, [Text.gray(`向容器内填充${item.nbt.killTask.counter}/${item.nbt.killTask.killAmount}个${Text.translate(item.nbt.killTask.mobName).string}灵魂才能够使其进化`)]);
+        }
+        if (item.nbt?.status == 1) {
+            text.add(lineNum++, [Text.red(`进化已完成`)]);
+        }
+    })
 })

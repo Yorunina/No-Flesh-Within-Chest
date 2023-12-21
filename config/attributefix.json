@@ -11,6 +11,17 @@
         "value": 1024
       }
     },
+    "obscure_api:penetration": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "forge:step_height_addition": {
       "enabled": false,
       "min": {
@@ -44,6 +55,17 @@
         "value": 1024
       }
     },
+    "obscure_api:dodge": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "irons_spellbooks:nature_spell_power": {
       "enabled": false,
       "min": {
@@ -64,6 +86,17 @@
       "max": {
         "default": 8,
         "value": 8
+      }
+    },
+    "obscure_api:resilience": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "tetra:ability_damage": {
@@ -121,6 +154,17 @@
         "value": 10
       }
     },
+    "obscure_api:regeneration": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100000,
+        "value": 100000
+      }
+    },
     "minecraft:generic.luck": {
       "enabled": true,
       "min": {
@@ -165,6 +209,17 @@
         "value": 2048
       }
     },
+    "obscure_api:magic_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "irons_spellbooks:summon_damage": {
       "enabled": false,
       "min": {
@@ -174,6 +229,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "obscure_api:magic_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100000,
+        "value": 100000
       }
     },
     "forge:reach_distance": {
@@ -207,6 +273,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "obscure_api:healing_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "irons_spellbooks:cooldown_reduction": {
@@ -308,6 +385,17 @@
         "value": 10
       }
     },
+    "obscure_api:accuracy": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "tetra:ability_cooldown": {
       "enabled": false,
       "min": {
@@ -385,6 +473,17 @@
         "value": 10
       }
     },
+    "obscure_api:parry": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "minecraft:generic.attack_speed": {
       "enabled": true,
       "min": {
@@ -451,6 +550,17 @@
         "value": 10
       }
     },
+    "obscure_api:critical_hit": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "modulargolems:golem_regen": {
       "enabled": false,
       "min": {
@@ -515,6 +625,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "obscure_api:critical_damage": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "minecraft:generic.max_health": {

@@ -1,11 +1,11 @@
 // priority: 100
-const CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi");
+const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi");
 
 EntityEvents.hurt('minecraft:player', event => {
     let player = event.player;
     if (!player) return;
 
-    const api = new CuriosApi();
+    const api = new $CuriosApi();
     const curios = api
         .getCuriosHelper()
         .getEquippedCurios(player)
@@ -15,9 +15,8 @@ EntityEvents.hurt('minecraft:player', event => {
     for (let slot = 0; slot < curios.getSlots(); slot++) {
         if (player.getHealth() - event.getDamage() <= 4) {
             let item = curios.getStackInSlot(slot);
-            if (item == 'kubejs:friend_to_the_end') {
-                curiosStrategies['kubejs:friend_to_the_end'](event, curios, slot, item)
-                return
+            if (curiosStrategies[item]) {
+                curiosStrategies[item](event, curios, slot, item)
             }
         }
     }
