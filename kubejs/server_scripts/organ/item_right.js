@@ -15,7 +15,7 @@ ItemEvents.rightClicked(event => {
     }
 })
 
-let organRightClickedStrategies = {
+const organRightClickedStrategies = {
     'kubejs:furnace_core': function (event, itemMap) {
         let amplifier = 0
         let duration = 20 * 20

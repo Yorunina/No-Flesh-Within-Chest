@@ -317,10 +317,12 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:relics');
 
     registeOrgan(new Organ('kubejs:leviathan_rib')
-        .addScore('defense', 1.5)
+        .addScore('defense', 1.75)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后会额外提供'), Text.gold(2), Text.gray('护甲韧性')])
         .build())
         .texture('kubejs:item/organs/boss/leviathan_rib')
         .tag('kubejs:rib')
+        .tag('kubejs:active')
         .tag('kubejs:relics');
 
     registeOrgan(new Organ('kubejs:flower_heart')
@@ -334,6 +336,33 @@ StartupEvents.registry('item', event => {
 
 
     // 杂项
+    registeOrgan(new Organ('kubejs:telescopic_arm')
+        .addScore('speed', -0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(1), Text.gray('触及距离')])
+        .build())
+        .texture('kubejs:item/organs/others/telescopic_arm')
+        .tag('itemborders:iron')
+        .tag('kubejs:machine')
+        .tag('kubejs:active_only')
+        .tag('kubejs:evolution');
+
+        registeOrgan(new Organ('kubejs:telescopic_tool_arm')
+        .addScore('fire_resistant', 0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(2), Text.gray('触及距离')])
+        .build())
+        .texture('kubejs:item/organs/others/telescopic_arm')
+        .tag('itemborders:gold')
+        .tag('kubejs:machine')
+        .tag('kubejs:active_only');
+
+        registeOrgan(new Organ('kubejs:telescopic_attack_arm')
+        .addScore('fire_resistant', 0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(1), Text.gray('攻击距离')])
+        .build())
+        .texture('kubejs:item/organs/others/telescopic_attack_arm')
+        .tag('itemborders:gold')
+        .tag('kubejs:machine')
+        .tag('kubejs:active_only');
 
     registeOrgan(new Organ('kubejs:lamellar_armor_piece')
         .addScore('defense', 1.5)
@@ -354,6 +383,7 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在关闭器官时会自动触发激活效果')])
         .build())
         .texture('kubejs:item/organs/others/long_lasting_pill')
+        .tag('itemborders:iron')
         .tag('kubejs:evolution');
 
     registeOrgan(new Organ('kubejs:long_lasting_pill_gold')
@@ -361,10 +391,9 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在关闭器官时会自动触发激活效果')])
         .build())
         .texture('kubejs:item/organs/others/long_lasting_pill')
-        .tag('itemborders:gold')
-        .tag('kubejs:evolution');
+        .tag('itemborders:gold');
 
-        registeOrgan(new Organ('kubejs:stomach_tumor')
+    registeOrgan(new Organ('kubejs:stomach_tumor')
         .addScore('endurance', 0.5)
         .addScore('digestion', 1)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('如果在周围存在最少'), Text.gold(3), Text.gray('个胃瘤，会为你提供额外的'), Text.gold(6), Text.gray('生命值上限')])
@@ -410,15 +439,15 @@ StartupEvents.registry('item', event => {
     registeOrgan(new Organ('kubejs:stomach_gold').addScore('digestion', 1.5).build()).texture('kubejs:item/organs/common/stomach').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:stomach')
     registeOrgan(new Organ('kubejs:heart_gold').addScore('health', 1.5).build()).texture('kubejs:item/organs/common/heart').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:heart')
     registeOrgan(new Organ('kubejs:spine_gold').addScore('defense', 0.75).addScore('nerves', 1.5).build()).texture('kubejs:item/organs/common/spine').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:spine')
-    registeOrgan(new Organ('kubejs:muscle_diamond').addScore('strength', 2).addScore('speed', 2).build()).texture('kubejs:item/organs/common/muscle').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:muscle')
-    registeOrgan(new Organ('kubejs:spleen_diamond').addScore('metabolism', 2).build()).texture('kubejs:item/organs/common/spleen').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:spleen')
-    registeOrgan(new Organ('kubejs:appendix_diamond').addScore('luck', 2).build()).texture('kubejs:item/organs/common/appendix').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:appendix')
-    registeOrgan(new Organ('kubejs:kidney_diamond').addScore('filtration', 2).build()).texture('kubejs:item/organs/common/kidney').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:kidney')
-    registeOrgan(new Organ('kubejs:liver_diamond').addScore('detoxification', 2).build()).texture('kubejs:item/organs/common/liver').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:liver')
-    registeOrgan(new Organ('kubejs:rib_diamond').addScore('defense', 2).build()).texture('kubejs:item/organs/common/rib').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:rib')
-    registeOrgan(new Organ('kubejs:intestine_diamond').addScore('nutrition', 2).build()).texture('kubejs:item/organs/common/intestine').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:intestine')
-    registeOrgan(new Organ('kubejs:lung_diamond').addScore('breath_recovery', 2).addScore('breath_capacity', 2).addScore('endurance', 2).build()).texture('kubejs:item/organs/common/lung').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:lung')
-    registeOrgan(new Organ('kubejs:stomach_diamond').addScore('digestion', 2).build()).texture('kubejs:item/organs/common/stomach').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:stomach')
-    registeOrgan(new Organ('kubejs:heart_diamond').addScore('health', 2).build()).texture('kubejs:item/organs/common/heart').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:heart')
-    registeOrgan(new Organ('kubejs:spine_diamond').addScore('defense', 1).addScore('nerves', 2).build()).texture('kubejs:item/organs/common/spine').tag('itemborders:diamond').tag('kubejs:evolution').tag('kubejs:spine')
+    registeOrgan(new Organ('kubejs:muscle_diamond').addScore('strength', 2).addScore('speed', 2).build()).texture('kubejs:item/organs/common/muscle').tag('itemborders:diamond').tag('kubejs:muscle')
+    registeOrgan(new Organ('kubejs:spleen_diamond').addScore('metabolism', 2).build()).texture('kubejs:item/organs/common/spleen').tag('itemborders:diamond').tag('kubejs:spleen')
+    registeOrgan(new Organ('kubejs:appendix_diamond').addScore('luck', 2).build()).texture('kubejs:item/organs/common/appendix').tag('itemborders:diamond').tag('kubejs:appendix')
+    registeOrgan(new Organ('kubejs:kidney_diamond').addScore('filtration', 2).build()).texture('kubejs:item/organs/common/kidney').tag('itemborders:diamond').tag('kubejs:kidney')
+    registeOrgan(new Organ('kubejs:liver_diamond').addScore('detoxification', 2).build()).texture('kubejs:item/organs/common/liver').tag('itemborders:diamond').tag('kubejs:liver')
+    registeOrgan(new Organ('kubejs:rib_diamond').addScore('defense', 2).build()).texture('kubejs:item/organs/common/rib').tag('itemborders:diamond').tag('kubejs:rib')
+    registeOrgan(new Organ('kubejs:intestine_diamond').addScore('nutrition', 2).build()).texture('kubejs:item/organs/common/intestine').tag('itemborders:diamond').tag('kubejs:intestine')
+    registeOrgan(new Organ('kubejs:lung_diamond').addScore('breath_recovery', 2).addScore('breath_capacity', 2).addScore('endurance', 2).build()).texture('kubejs:item/organs/common/lung').tag('itemborders:diamond').tag('kubejs:lung')
+    registeOrgan(new Organ('kubejs:stomach_diamond').addScore('digestion', 2).build()).texture('kubejs:item/organs/common/stomach').tag('itemborders:diamond').tag('kubejs:stomach')
+    registeOrgan(new Organ('kubejs:heart_diamond').addScore('health', 2).build()).texture('kubejs:item/organs/common/heart').tag('itemborders:diamond').tag('kubejs:heart')
+    registeOrgan(new Organ('kubejs:spine_diamond').addScore('defense', 1).addScore('nerves', 2).build()).texture('kubejs:item/organs/common/spine').tag('itemborders:diamond').tag('kubejs:spine')
 });

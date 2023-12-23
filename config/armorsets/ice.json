@@ -1,0 +1,36 @@
+{
+  "armorSetName": "冰霜",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:ice_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:ice_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:ice_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:ice_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "能够强化冰系魔法的威力"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:ice_spell_power",
+      "modifierUUID": "FBC76A67-F380-42B8-92A9-7DD818EE0366",
+      "description": "+50% 冰系魔法伤害",
+      "value": 0.5
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:fire_spell_power",
+      "modifierUUID": "2F9A5996-7AEE-48F1-BA70-129F577349CA",
+      "description": "-80% 烈焰魔法伤害",
+      "value": -0.8
+    }
+  ]
+}

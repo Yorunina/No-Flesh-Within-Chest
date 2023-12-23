@@ -24,6 +24,13 @@
       "modifierUUID": "C8C383ED-51DC-45E8-85AB-304A393B299A",
       "description": "+50% ÁÒÑæÄ§·¨ÉËº¦",
       "value": 0.5
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:ice_spell_power",
+      "modifierUUID": "C8EC63CD-2270-4DD0-B3DF-B7543F66F82D",
+      "description": "-80% ±ùÏµÄ§·¨ÉËº¦",
+      "value": -0.8
     }
   ]
 }

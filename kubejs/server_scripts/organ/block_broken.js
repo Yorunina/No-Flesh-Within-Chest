@@ -11,7 +11,7 @@ BlockEvents.broken(event => {
 })
 
 
-let organBlockBrokenStrategies = {
+const organBlockBrokenStrategies = {
     'kubejs:ore_lung': function (event, itemMap) {
         let player = event.player
         let count = 1;

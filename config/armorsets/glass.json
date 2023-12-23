@@ -1,0 +1,57 @@
+{
+  "armorSetName": "玻璃",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:glass_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:glass_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:glass_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:glass_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "能够强化攻击能力，但血量会大幅下降"
+  ],
+  "partialBonusRequiredAmount": 3,
+  "partialSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.attack_damage",
+      "modifierUUID": "74F82A79-9CBE-4DC8-AC0C-CABF4128C0C1",
+      "attributeOperation": 2,
+      "description": "+20% 攻击力",
+      "value": 0.2
+    },
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "modifierUUID": "B85D09CA-F32D-4DA4-AA01-C6C65143926B",
+      "attributeOperation": 2,
+      "description": "-50% 血量上限",
+      "value": -0.5
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.attack_damage",
+      "modifierUUID": "77D6C025-090B-4D55-8148-F875D90A6D48",
+      "attributeOperation": 2,
+      "description": "+50% 攻击力",
+      "value": 0.5
+    },
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "modifierUUID": "14DC5AD8-C4CB-46F7-A83A-162E057C965F",
+      "attributeOperation": 2,
+      "description": "-50% 血量上限",
+      "value": -0.5
+    }
+  ]
+}

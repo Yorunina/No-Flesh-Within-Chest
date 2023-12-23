@@ -21,8 +21,7 @@ EntityEvents.hurt('minecraft:player', event => {
 })
 
 
-
-let organEntityHurtStrategies = {
+const organEntityHurtStrategies = {
     'kubejs:infinity_beats': function (event) {
         let damageSourcePlayer = event.source.player;
         let attriMap = getPlayerAttributeMap(damageSourcePlayer);

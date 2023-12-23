@@ -25,7 +25,7 @@ EntityEvents.hurt('minecraft:player', event => {
 
 
 
-let curiosStrategies = {
+const curiosStrategies = {
     'kubejs:friend_to_the_end': function (event, curios, slot, item) {
         if (item.hasNBT() && item.nbt.friendName) {
             let friend = event.server.getPlayer(item.nbt.friendName)

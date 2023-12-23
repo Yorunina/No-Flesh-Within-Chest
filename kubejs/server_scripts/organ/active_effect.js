@@ -12,7 +12,16 @@ global.updatePlayerActiveStatus = player => {
     // 激活状态根据Tag区分并遍历可以用于激活的器官方法
     if (typeMap.has('kubejs:active')) {
         typeMap.get('kubejs:active').forEach(organ => {
-            organActiveScoreStrategies[organ.id](player, organ, attributeMap)
+            organActiveStrategies[organ.id](player, organ, attributeMap)
+        })
+    }
+    let activeOrganSet = new Set()
+    if (typeMap.has('kubejs:active_only')) {
+        typeMap.get('kubejs:active_only').forEach(organ => {
+            if (!activeOrganSet.has(organ.id)) {
+                activeOrganSet.add(organ.id)
+                organActiveOnlyStrategies[organ.id](player, organ, attributeMap)
+            }
         })
     }
     playerAttributeMap.set(uuid, attributeMap);
@@ -60,8 +69,10 @@ function clearAllActivedModify(player) {
     player.removeAttribute(global.SPELL_POWER.key, global.SPELL_POWER.name);
     player.removeAttribute(global.ICE_SPELL_POWER.key, global.ICE_SPELL_POWER.name);
     player.removeAttribute(global.FIRE_SPELL_POWER.key, global.FIRE_SPELL_POWER.name);
+    player.removeAttribute(global.REACH_DISTANCE.key, global.REACH_DISTANCE.name)
+    player.removeAttribute(global.ATTACK_RANGE.key, global.ATTACK_RANGE.name)
+    player.removeAttribute(global.ARMOR_TOUGHNESS.key, global.ARMOR_TOUGHNESS.name)
 }
-
 
 
 function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
@@ -75,7 +86,7 @@ function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
 /**
  * 器官简单策略模式
  */
-let organActiveScoreStrategies = {
+const organActiveStrategies = {
     'kubejs:health_appendix': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player);
         if (typeMap.has('kubejs:appendix')) {
@@ -139,4 +150,19 @@ let organActiveScoreStrategies = {
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, 6)
         }
     },
+    'kubejs:leviathan_rib': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.ARMOR_TOUGHNESS, 2)
+    },
 };
+
+const organActiveOnlyStrategies = {
+    'kubejs:telescopic_arm': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 1)
+    },
+    'kubejs:telescopic_tool_arm': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 2)
+    },
+    'kubejs:telescopic_attack_arm': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.ATTACK_RANGE, 1)
+    },
+}

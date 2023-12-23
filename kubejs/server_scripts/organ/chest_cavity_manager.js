@@ -17,6 +17,13 @@ PlayerEvents.loggedIn((event) => {
     }
 });
 
+PlayerEvents.respawned((event) => {
+    if (event.player.persistentData.contains('organ_actived') &&
+        event.player.persistentData.getInt('organ_actived') == 1) {
+        global.updatePlayerActiveStatus(event.player)
+    }
+});
+
 /**
  * 玩家登出时释放该部分Map数据
  */

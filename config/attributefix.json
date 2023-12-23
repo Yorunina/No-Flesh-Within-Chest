@@ -1,16 +1,5 @@
 {
   "attributes": {
-    "forge:attack_range": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "obscure_api:penetration": {
       "enabled": false,
       "min": {
@@ -20,6 +9,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "forge:attack_range": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "forge:step_height_addition": {
@@ -77,17 +77,6 @@
         "value": 10
       }
     },
-    "forge:entity_gravity": {
-      "enabled": false,
-      "min": {
-        "default": -8,
-        "value": -8
-      },
-      "max": {
-        "default": 8,
-        "value": 8
-      }
-    },
     "obscure_api:resilience": {
       "enabled": false,
       "min": {
@@ -97,6 +86,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "forge:entity_gravity": {
+      "enabled": false,
+      "min": {
+        "default": -8,
+        "value": -8
+      },
+      "max": {
+        "default": 8,
+        "value": 8
       }
     },
     "tetra:ability_damage": {
@@ -132,6 +132,17 @@
         "value": 10
       }
     },
+    "obscure_api:regeneration": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 100000,
+        "value": 100000
+      }
+    },
     "irons_spellbooks:lightning_magic_resist": {
       "enabled": false,
       "min": {
@@ -152,17 +163,6 @@
       "max": {
         "default": 10,
         "value": 10
-      }
-    },
-    "obscure_api:regeneration": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 100000,
-        "value": 100000
       }
     },
     "minecraft:generic.luck": {
@@ -264,17 +264,6 @@
         "value": 2048
       }
     },
-    "irons_spellbooks:cast_time_reduction": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "obscure_api:healing_power": {
       "enabled": false,
       "min": {
@@ -284,6 +273,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "irons_spellbooks:cast_time_reduction": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "irons_spellbooks:cooldown_reduction": {
@@ -374,17 +374,6 @@
         "value": 2048
       }
     },
-    "irons_spellbooks:fire_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "obscure_api:accuracy": {
       "enabled": false,
       "min": {
@@ -394,6 +383,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "irons_spellbooks:fire_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "tetra:ability_cooldown": {
@@ -616,17 +616,6 @@
         "value": 1
       }
     },
-    "irons_spellbooks:spell_resist": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "obscure_api:critical_damage": {
       "enabled": false,
       "min": {
@@ -636,6 +625,17 @@
       "max": {
         "default": 100,
         "value": 100
+      }
+    },
+    "irons_spellbooks:spell_resist": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "minecraft:generic.max_health": {

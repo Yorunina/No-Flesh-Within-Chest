@@ -11,7 +11,7 @@ ItemEvents.foodEaten(event => {
     }
 })
 
-let organFoodEatenStrategies = {
+const organFoodEatenStrategies = {
     'kubejs:greedy_stomach': function (event, itemMap) {
         event.player.giveExperiencePoints(10 * itemMap.get('kubejs:greedy_stomach').length)
     },
