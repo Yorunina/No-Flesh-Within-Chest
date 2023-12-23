@@ -16,6 +16,3 @@ ItemEvents.rightClicked(event => {
     }
 })
 
-ServerEvents.tags('item', event => {
-    event.add('kubejs:anti_rejection', ['biomancy:healing_additive'])
-})

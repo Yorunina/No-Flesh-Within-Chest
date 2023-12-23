@@ -71,7 +71,6 @@ StartupEvents.registry('item', event => {
                 }
             } else {
                 entity.tell('已将该戒指绑定到你的身上！')
-                entity.tell(entity.getUsername())
                 itemstack.setNbt({ friendName: entity.getUsername() })
                 return itemstack;
             }
@@ -80,4 +79,5 @@ StartupEvents.registry('item', event => {
 
     event.create('empty_organ_charm').texture('kubejs:item/empty_organ_charm').maxStackSize(1).tag('curios:charm')
     event.create('organ_charm').texture('kubejs:item/organ_charm').maxStackSize(1).tag('curios:charm')
+    event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
 })

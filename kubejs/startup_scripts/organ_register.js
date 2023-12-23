@@ -350,7 +350,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine');
 
     registeOrgan(new Organ('kubejs:long_lasting_pill')
-        .addScore('speed', 0.5)
+        .addScore('strength', -1)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在关闭器官时会自动触发激活效果')])
         .build())
         .texture('kubejs:item/organs/others/long_lasting_pill')

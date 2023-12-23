@@ -26,10 +26,11 @@
 					type: "item"
 				}
 				{
-					id: "4FDF2E7901B14988"
+					count: 2
+					id: "68F68EEA900B54B3"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:bronze_coin"
+						id: "numismaticoverhaul:silver_coin"
 						tag: { }
 					}
 					type: "item"
@@ -729,7 +730,7 @@
 				type: "item"
 			}]
 			title: "将光源挂在腰上"
-			x: 3.5d
+			x: 3.0d
 			y: -1.5d
 		}
 		{
@@ -925,6 +926,38 @@
 			title: "书龙、化石、考古"
 			x: 11.75d
 			y: 1.75d
+		}
+		{
+			dependencies: ["3FED9C9227FC9CD5"]
+			description: [
+				"如果你要和你的朋友开始旅程，却苦于没有互相传送的方式，不如试试&6约定誓约&r。"
+				""
+				"手持没有铭刻的&6誓约戒指&r长按右键，可以将你的姓名铭刻在上面。将戒指给予另一人，其就&2可以手持戒指长按以传送到你的身边&r。"
+				""
+				"除此之外，如果将该戒指佩戴在饰品栏，&2在遭遇生命危险时，会将你传送到铭刻目标的身旁&r，同时誓约戒指会退化为普通戒指。"
+			]
+			icon: "kubejs:friend_to_the_end"
+			id: "5067AA0335B2B396"
+			rewards: [{
+				id: "436C599B425F4E86"
+				item: "kubejs:friend_to_the_end"
+				type: "item"
+			}]
+			subtitle: "从此处开始誓约"
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "7D4A0E6968338355"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "和朋友一起远征"
+			x: 1.0d
+			y: -1.5d
 		}
 	]
 	title: "章节1：如常"

@@ -49,14 +49,22 @@ ItemEvents.tooltip((tooltip) => {
         }
     })
 
+    tooltip.addAdvanced('kubejs:empty_organ_charm', (item, advanced, text) => {
+        text.add(1, Text.gray('用于承装器官'));
+    })
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1
-
         if (item.nbt?.organ?.id) {
             text.add(lineNum++, [Text.gold('储存物: '), Text.yellow(Text.translate(Item.of(item.nbt.organ.id).descriptionId))]);
         }
         if (item.nbt?.type == 'kill') {
             text.add(lineNum++, [Text.gray(`向容器内填充${item.nbt.killTask.counter}/${item.nbt.killTask.killAmount}个${Text.translate(item.nbt.killTask.mobName).string}灵魂才能够使其进化`)]);
+        }
+        if (item.nbt?.type == 'diet') {
+            text.add(lineNum++, [Text.gray(`需要进食${item.nbt.dietTask.foodTypeList.length}/${item.nbt.dietTask.foodTypeAmount}种饥饿值大于${item.nbt.dietTask.minHunger}的食物才能进化`)]);
+        }
+        if (item.nbt?.type == 'bear') {
+            text.add(lineNum++, [Text.gray(`需要承受原伤害最低大于${item.nbt.bearTask.minDamage}的伤害，累积${item.nbt.bearTask.counter}/${item.nbt.bearTask.bearAmount}才能进化`)]);
         }
         if (item.nbt?.status == 1) {
             text.add(lineNum++, [Text.red(`进化已完成`)]);
