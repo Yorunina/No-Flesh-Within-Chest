@@ -1,0 +1,16 @@
+QualityModes = "NORMAL"
+RenderWeather = "NORMAL"
+AutoQuality = false
+MaxRunValue = 6
+Max_Rendered_LivingEntities = 64
+Render_Entities_Distance = 32
+Max_Rendered_EntityEntities = 128
+FPS_Expectant = 120
+TestTimes = 30
+FastItemRender = false
+RenderTNTExplosions = true
+RenderLighting = true
+RenderDisplayItem = false
+isAlwaysShowItemCount = true
+blackListedEntities = []
+whiteListedEntities = []
