@@ -1,0 +1,41 @@
+{
+  "armorSetName": "石英",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:quartz_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:quartz_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:quartz_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:quartz_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "能够提供一定的法术抵抗效果"
+  ],
+  "partialBonusRequiredAmount": 3,
+  "partialSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:spell_resist",
+      "modifierUUID": "799D74B5-365E-479B-958C-6DDC4EEF599C",
+      "attributeOperation": 0,
+      "description": "+10% 法术抵抗",
+      "value": 0.1
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:spell_resist",
+      "modifierUUID": "42A46280-C955-459C-BC19-AD5CE1EC7AB7",
+      "attributeOperation": 0,
+      "description": "+10% 法术抵抗",
+      "value": 0.1
+    }
+  ]
+}

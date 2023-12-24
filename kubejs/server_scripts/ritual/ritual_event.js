@@ -14,7 +14,7 @@ SummoningRituals.start(event => {
 });
 
 
-let ritualsCompleteStrategies = {
+const ritualsCompleteStrategies = {
     'kubejs:ritual_of_rain': function (event) {
         if (event.level.isThundering() && event.player.hasEffect('minecraft:glowing')) {
             event.level.runCommandSilent('/weather clear');
@@ -32,7 +32,7 @@ let ritualsCompleteStrategies = {
     },
 };
 
-let ritualsStartStrategies = {
+const ritualsStartStrategies = {
     'kubejs:ritual_of_rain': function (event) {
         if (!(event.level.isThundering() && event.player.hasEffect('minecraft:glowing'))) {
             event.cancel();

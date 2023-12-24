@@ -1,0 +1,28 @@
+
+[General]
+	#Keyboard for the checker to use
+	#Allowed Values: QUANPIN, DAQIAN, XIAOHE, ZIRANMA, SOUGOU, GUOBIAO, MICROSOFT, PINYINPP, ZIGUANG
+	enumKeyboard = "QUANPIN"
+	#Set to true to enable fuzzy spelling zh <=> z
+	enableFZh2z = true
+	#Set to true to enable fuzzy spelling sh <=> s
+	enableFSh2s = true
+	#Set to true to enable fuzzy spelling ch <=> c
+	enableFCh2c = true
+	#Set to true to enable fuzzy spelling ang <=> an
+	enableFAng2an = true
+	#Set to true to enable fuzzy spelling ing <=> in
+	enableFIng2in = true
+	#Set to true to enable fuzzy spelling eng <=> en
+	enableFEng2en = true
+	#Set to true to enable fuzzy spelling u <=> v
+	enableFU2v = true
+	#Set to false to disable chat message when entering world
+	enableChat = false
+	#Set to true to disable JEI's split for search tokens
+	enableQuote = false
+
+[Utilities]
+	#Set true to print verbose debug message
+	enableVerbose = false
+

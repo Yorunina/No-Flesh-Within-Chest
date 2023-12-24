@@ -237,6 +237,87 @@
 			x: 5.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["658FEA8E308D741C"]
+			description: [
+				"由于激活效果的器官非常广泛的存在，每次修改后都复用一次激活药明显不够经济。"
+				""
+				"因此，你可以在确定需要激活状态的情况下，制作&6长效性药丸&r。长效性药丸能够在你每次修改器官之后&2自动的触发激活状态&r。"
+				""
+				"但值得注意的是，并不是所有器官的激活效果都是正面，并且长效药丸本身并不是一个有正面效果的器官。"
+				""
+				"在后续，你可以通过进一步的加工来扭转这种有害性。"
+			]
+			id: "50D70D990312BC70"
+			rewards: [{
+				id: "476ED982F630080F"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "自动激活装置"
+			tasks: [{
+				id: "16FB24D333511B3C"
+				item: "kubejs:long_lasting_pill"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["50D70D990312BC70"]
+			description: [
+				"随着能力的不断增长，你发现大部分的特殊器官和激活器官都有着相当劣质的基本面板，并且绝大多数并不能在后续的制作中进行改造。"
+				""
+				"为此，你需要不断提高其他器官的质量。使用&6器官容器&r，可以将任意的器官装入其中，&2少部分器官会显现成长任务&r。"
+				""
+				"将该饰品装备在饰品栏，完成对应任务后，承装在器官容器中的器官便会发生变化，此时通过合成取出后，就可以获得更高级的器官。"
+			]
+			id: "52C54E42818F03EB"
+			rewards: [{
+				id: "1C2DCD63D9AEE80B"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "装载未来"
+			tasks: [{
+				id: "0108F3FD5779C18B"
+				item: "kubejs:empty_organ_charm"
+				type: "item"
+			}]
+			title: "器官容器"
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["50D70D990312BC70"]
+			description: ["在经过处理后，长效化药物可以被&2完全无害&r——尽管相对于其他的器官来说提供的属性并不多，但其能够提供的方便程度也是其他器官所难以比拟的。"]
+			id: "6E7491F86379BEAC"
+			rewards: [{
+				id: "7A26A00DECB193D1"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "无害药物"
+			tasks: [{
+				id: "3226602CB5D6A05D"
+				item: "kubejs:long_lasting_pill_gold"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
 	]
 	title: "章节2：觉醒"
 }

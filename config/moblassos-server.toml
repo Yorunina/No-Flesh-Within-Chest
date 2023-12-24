@@ -1,0 +1,38 @@
+#Time in seconds for which a golden lasso is able to hold a mob.
+#Set to -1 to disable the timer.
+#Range: > -1
+golden_lasso_time = 120
+#Time in seconds for which a creative lasso is able to hold a mob.
+#Set to -1 to disable the timer.
+#Range: > -1
+creative_lasso_time = -1
+#Time interval in seconds after which the player is hurt by half a heart for carrying any hostile lasso containing a monster.
+#Set to -1 to disable.
+#Range: > -1
+hostile_damage_rate = 5
+#Time in seconds for which a diamond lasso is able to hold a mob.
+#Set to -1 to disable the timer.
+#Range: > -1
+diamond_lasso_time = -1
+#Time in seconds for which an emerald lasso is able to hold a mob.
+#Set to -1 to disable the timer.
+#Range: > -1
+emerald_lasso_time = 300
+#Percentage of its total health or less a hostile mob must have in order for a hostile lasso to be able to pick it up.
+#Range: 0.0 ~ 1.0
+hostile_mob_health = 0.5
+#The percentage each level of the holding enchantment will increase a lasso's holding time by.
+#Range: 0.0 ~ 1.7976931348623157E308
+holding_multiplier = 0.2
+#Time in seconds for which an aqua lasso is able to hold a mob.
+#Set to -1 to disable the timer.
+#Range: > -1
+aqua_lasso_time = 240
+#Time in seconds for which a hostile lasso is able to hold a mob.
+#Set to -1 to disable the timer.
+#Range: > -1
+hostile_lasso_time = 180
+#The chance for a villager to accept a contract allowing it to be captured by an emerald lasso.
+#Range: 0.0 ~ 1.0
+villager_accepts_contract_chance = 0.2
+

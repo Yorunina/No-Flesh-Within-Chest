@@ -1,0 +1,36 @@
+{
+  "armorSetName": "熔岩",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:magma_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:magma_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:magma_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:magma_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "能够强化烈焰魔法的威力"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:fire_spell_power",
+      "modifierUUID": "C8C383ED-51DC-45E8-85AB-304A393B299A",
+      "description": "+50% 烈焰魔法伤害",
+      "value": 0.5
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:ice_spell_power",
+      "modifierUUID": "C8EC63CD-2270-4DD0-B3DF-B7543F66F82D",
+      "description": "-80% 冰系魔法伤害",
+      "value": -0.8
+    }
+  ]
+}

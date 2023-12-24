@@ -1,5 +1,3 @@
-
-
 ItemEvents.rightClicked(event => {
     let player = event.player;
     if (!player) return;

@@ -18,10 +18,10 @@ StartupEvents.registry('item', event => {
     })
     .fireResistant();
 
-  event.create('eye_of_void_blossom')
-    .texture('kubejs:item/eye_of_void_blossom')
+  event.create('eye_of_dnl')
+    .texture('kubejs:item/eye_of_dnl')
     .use((level, player, interactionHand) => {
-      return eyeFinder(level, player, interactionHand, 'kubejs:void_blossom_locator');
+      return eyeFinder(level, player, interactionHand, 'dnl:all_structure');
     })
     .fireResistant();
 })

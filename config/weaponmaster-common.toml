@@ -11,7 +11,7 @@
 	swordDamageMin = 7
 	#Max Damage of sword weapons.
 	#Range: > 1
-	swordDamageMax = 16
+	swordDamageMax = 24
 	#Base Attack Speed of sword weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	swordSpeedMin = 1.6
@@ -29,7 +29,7 @@
 	rapierDamageMin = 7
 	#Max Damage of rapier weapons.
 	#Range: > 1
-	rapierDamageMax = 16
+	rapierDamageMax = 24
 	#Base Attack Speed of rapier weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	rapierSpeedMin = 1.8
@@ -47,7 +47,7 @@
 	scytheDamageMin = 9
 	#Max Damage of scythe weapons.
 	#Range: > 1
-	scytheDamageMax = 22
+	scytheDamageMax = 30
 	#Base Attack Speed of scythe weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	scytheSpeedMin = 0.8
@@ -65,7 +65,7 @@
 	polearmDamageMin = 9
 	#Max Damage of polearm weapons.
 	#Range: > 1
-	polearmDamageMax = 28
+	polearmDamageMax = 36
 	#Base Attack Speed of polearm weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	polearmSpeedMin = 0.8

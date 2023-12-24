@@ -1,0 +1,13 @@
+
+[PickupNotifier]
+	#Allowed Values: COMMON, WITHOUT_BACKGROUND
+	Style = "COMMON"
+	#Range: 0 ~ 20
+	Lifetime = 5
+	#Range: 0 ~ 1080
+	Offset = 0
+	#If false, the item's rarity color will be used
+	UseCustomColor = false
+	#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE, OBFUSCATED, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET
+	CustomColor = "WHITE"
+

@@ -11,11 +11,15 @@ ServerEvents.commandRegistry(event => {
                             let player = ctx.source.server.getPlayer(Arguments.PLAYER.getResult(ctx, 'player'))
                             let addStages = nbtCompound.addStages
                             let removeStages = nbtCompound.removeStages
-                            for (let i = 0; i < addStages.length; i++) {
-                                player.stages.add(addStages[i])
+                            if (addStages) {
+                                for (let i = 0; i < addStages.length; i++) {
+                                    player.stages.add(addStages[i])
+                                }
                             }
-                            for (let i = 0; i < removeStages.length; i++) {
-                                player.stages.remove(removeStages[i])
+                            if (removeStages) {
+                                for (let i = 0; i < removeStages.length; i++) {
+                                    player.stages.remove(removeStages[i])
+                                }
                             }
                             return 1
                         }

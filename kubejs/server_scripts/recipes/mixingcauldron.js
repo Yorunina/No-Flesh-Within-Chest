@@ -43,6 +43,6 @@ ServerEvents.recipes(event => {
 
     registeCustomRecipe(new MixingCauldronRecipe(
         [Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar')],
-        Item.of('kubejs:scrap')).setFluid('minecraft:water', 100).setFluidOutput('kubejs:syrup'))
+        Item.of('kubejs:scrap')).setFluid('minecraft:water', 20).setFluidOutput('kubejs:syrup'))
 })
 

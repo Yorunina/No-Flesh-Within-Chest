@@ -11,9 +11,15 @@ const playerChestCavityTypeMap = new Map();
  */
 PlayerEvents.loggedIn((event) => {
     initChestCavityIntoMap(event.player, false);
-    
-    if (event.player.persistentData.contains('organ_actived') && 
-    event.player.persistentData.getInt('organ_actived') == 1) {
+    if (event.player.persistentData.contains('organ_actived') &&
+        event.player.persistentData.getInt('organ_actived') == 1) {
+        global.updatePlayerActiveStatus(event.player)
+    }
+});
+
+PlayerEvents.respawned((event) => {
+    if (event.player.persistentData.contains('organ_actived') &&
+        event.player.persistentData.getInt('organ_actived') == 1) {
         global.updatePlayerActiveStatus(event.player)
     }
 });
@@ -29,13 +35,18 @@ PlayerEvents.loggedOut((event) => {
     playerChestCavityTypeMap.delete(uuid)
 });
 
-    // 只有当玩家手持开胸器并打开gui界面的时候才触发初始化效果
+// 只有当玩家手持开胸器并打开gui界面的时候才触发初始化效果
 PlayerEvents.inventoryClosed((event) => {
     let player = event.player;
     if (player.mainHandItem != 'chestcavity:chest_opener' && player.offHandItem != 'chestcavity:chest_opener') {
         return;
     }
     initChestCavityIntoMap(player, true);
+    let itemMap = getPlayerChestCavityItemMap(player)
+    if (itemMap.has('kubejs:long_lasting_pill') || itemMap.has('kubejs:long_lasting_pill_gold')) {
+        global.updatePlayerActiveStatus(event.player)
+        player.persistentData.putInt('organ_actived', 1)
+    }
 });
 
 
@@ -157,4 +168,29 @@ function checkPlayerHasChestCavityMap(player) {
         return true;
     }
     return false;
+}
+
+const fourDirectionList = ['up', 'down', 'left', 'right']
+const eightDirectionList = ['up', 'down', 'left', 'right', 'rightUp', 'rightDown', 'leftUp', 'leftDown']
+function lookPos(direction, pos) {
+    switch (direction) {
+        case 'up':
+            return (pos - 9 >= 0) ? (pos - 9) : -1
+        case 'down':
+            return (pos + 9 < 27) ? (pos + 9) : -1
+        case 'left':
+            return (pos - 1 >= 0) ? (pos - 1) : -1
+        case 'right':
+            return (pos + 1 < 27) ? (pos + 1) : -1
+        case 'rightUp':
+            return (pos - 8 >= 0) ? (pos - 8) : -1
+        case 'rightDown':
+            return (pos + 10 < 27) ? (pos + 10) : -1
+        case 'leftUp':
+            return (pos - 10 >= 0) ? (pos - 10) : -1
+        case 'leftDown':
+            return (pos + 8 < 27) ? (pos + 8) : -1
+        default:
+            return -1
+    }
 }

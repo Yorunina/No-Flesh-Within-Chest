@@ -1,4 +1,5 @@
 // priority: 5
+const LEADING_SYMBOL = Text.gold('● ')
 
 function addForTextLines(text, textLines, initNum) {
     for (let i = 0; i < textLines.length; i++) {
@@ -43,7 +44,7 @@ ItemEvents.tooltip((tooltip) => {
                         typeLine.push(global.TYPE_MAP[tag], ' ')
                     }
                     if (typeLine.length > 0) {
-                        text.add(lineNum++, [Text.gold('● '), Text.join(typeLine)])
+                        text.add(lineNum++, [LEADING_SYMBOL, Text.join(typeLine)])
                     }
 
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);

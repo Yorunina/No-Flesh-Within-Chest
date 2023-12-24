@@ -14,3 +14,60 @@
 The modpack includes various elements such as technology, magic, and adventure, but it is not just a collection of unrelated mods like tank modpack. The modpack ensures thematic consistency through organ effects without excessively increasing game difficulty, providing players with an enjoyable gaming experience.
 
 If you have any suggestions or want to report bugs related to this modpack, please provide detailed descriptions in the issue section. If you have any requirements for customization or further development, feel free to communicate directly with our development team. We look forward to engaging with any players who have better ideas.
+
+---
+
+## 当前进度总览
+- [x] 实现基本器官功能
+    - [x] 快速注册器官
+- [ ] 实现高级器官效果
+    - [x] 实现激活效果
+    - [x] 实现独立激活效果
+    - [x] 实现激活连携效果
+    - [x] 实现动态激活效果
+    - [x] 实现特殊效果
+    - [x] 实现部分特殊效果联动
+    - [x] 实现槽位映射
+    - [x] 实现成长效果
+    - [x] 实现器官饰品
+    - [ ] Iron n spell book 器官联动
+    - [ ] 实现动态基本属性
+    - [ ] 实现扩展胸腔槽位
+    - [ ] Tetra联动器官效果
+- [ ] 模组联动器官补充
+    - [ ] Alex生物器官联动
+    - [ ] 史前生物器官联动
+    - [ ] World of Bosses器官联动
+    - [ ] 灾变器官联动
+    - [ ] 搏鱼/傀儡等电子蛐蛐定制器官
+- [ ] 模组联动内容扩充
+    - [x] L2属性显示
+    - [ ] Tetra平衡性部件材料
+    - [ ] 模块化傀儡平衡性改造
+    - [ ] Create配方融合
+- [ ] 主线设计
+    - [x] 三宏伟魔法之一:世界的再生产
+    - [ ] 其余的宏伟魔法
+    - [ ] Boss内容与主线融合
+- [ ] 平衡性设计
+    - [x] 动态难度基本思路
+    - [ ] 器官联动平衡性修改
+    - [ ] 器官属性平衡性修改
+    - [ ] 器官获取方式平衡性修改
+    - [ ] Tetra平衡性修改
+    - [ ] Weapon Master平衡性修改
+    - [ ] Boss召唤条件平衡性更改
+    - [ ] 增添更多动态难度选项
+    - [ ] 饰品属性平衡
+- [ ] UI设计
+    - [x] 胸腔界面修改
+    - [ ] 主界面修改
+    - [ ] 载入页面修改
+    - [ ] 部分UI美化
+    - [ ] ToolTips美化
+- [x] 优化
+    - [x] 模组数量控制
+    - [x] 启动时间优化
+    - [x] 存档进入时间优化
+    - [x] 区块载入延迟
+

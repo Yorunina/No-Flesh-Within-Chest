@@ -15,7 +15,7 @@ ItemEvents.rightClicked(event => {
     }
 })
 
-let organRightClickedStrategies = {
+const organRightClickedStrategies = {
     'kubejs:furnace_core': function (event, itemMap) {
         let amplifier = 0
         let duration = 20 * 20
@@ -25,7 +25,7 @@ let organRightClickedStrategies = {
         if (itemMap.has('kubejs:revolution_relay')) {
             duration = duration + itemMap.get('kubejs:revolution_relay').length * 100
         }
-        if (itemMap.has('kubejs:revolution_relay')) {
+        if (itemMap.has('kubejs:revolution_delay')) {
             duration = Math.max(duration - itemMap.get('kubejs:revolution_delay').length * 40, 20 * 8)
         }
         event.player.swing()

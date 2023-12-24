@@ -148,6 +148,8 @@
 				"&5糖果胰&r能够在&d甜蜜之梦&r效果因为受伤抵消消失时，给予你&6伤害吸收 Ⅴ&r 效果。"
 				""
 				"这往往会为你争取到宝贵的生存时间。"
+				""
+				"糖果胰被喜爱甜食的&2无名巫师&r视为珍宝，或许可以从它身上找到这个器官的蛛丝马迹。"
 			]
 			id: "0AA6C02B13BD7CEC"
 			rewards: [{
@@ -210,7 +212,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 8.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -244,7 +246,7 @@
 				}
 			]
 			x: -4.0d
-			y: 7.25d
+			y: 7.0d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -266,7 +268,7 @@
 				type: "item"
 			}]
 			x: -4.0d
-			y: 10.25d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -309,6 +311,86 @@
 			}]
 			x: -2.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			hide_dependent_lines: true
+			icon: "somebosses:burning_volcanic_rock"
+			id: "7CFE03E2610EA31B"
+			tasks: [{
+				id: "5EB6899990975685"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "革命机械"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			id: "55C12BA0AF6395BA"
+			tasks: [{
+				id: "0A06133224D37B30"
+				item: "kubejs:furnace_core"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			id: "5A21F4A601331B62"
+			tasks: [{
+				id: "370448F04E7517CB"
+				item: "kubejs:burning_heart"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			id: "7C75261D5B3850A1"
+			tasks: [{
+				id: "4E8DA24D4EEE3859"
+				item: "kubejs:revolution_gear"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			id: "2B68E92732922528"
+			tasks: [{
+				id: "22E7533783E26139"
+				item: "kubejs:revolution_cable"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			id: "0D1CC41165B1B371"
+			tasks: [{
+				id: "424673065E35B4CD"
+				item: "kubejs:revolution_relay"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			id: "407F877FE481FDB5"
+			tasks: [{
+				id: "59DBDD2FBCCD8B21"
+				item: "kubejs:revolution_delay"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
 		}
 	]
 	title: "胸腔：器官收集指南"

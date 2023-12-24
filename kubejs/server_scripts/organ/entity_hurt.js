@@ -21,8 +21,7 @@ EntityEvents.hurt('minecraft:player', event => {
 })
 
 
-
-let organEntityHurtStrategies = {
+const organEntityHurtStrategies = {
     'kubejs:infinity_beats': function (event) {
         let damageSourcePlayer = event.source.player;
         let attriMap = getPlayerAttributeMap(damageSourcePlayer);
@@ -42,7 +41,6 @@ let organEntityHurtStrategies = {
             setPlayerAttributeMap(damageSourcePlayer, attriMap);
         }
     },
-
     'kubejs:doppelganger': function (event) {
         let typeMap = getPlayerChestCavityTypeMap(event.player)
         if (typeMap.has('kubejs:legends')) {

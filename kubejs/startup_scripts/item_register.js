@@ -60,7 +60,7 @@ StartupEvents.registry('item', event => {
             if (level.isClientSide()) {
                 return itemstack;
             }
-            
+
             if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
                 let friend = level.server.getPlayer(itemstack.nbt.friendName)
                 if (friend && friend.isAlive()) {
@@ -71,10 +71,13 @@ StartupEvents.registry('item', event => {
                 }
             } else {
                 entity.tell('已将该戒指绑定到你的身上！')
-                entity.tell(entity.getUsername())
-                itemstack.setNbt({ friendName : entity.getUsername()})
+                itemstack.setNbt({ friendName: entity.getUsername() })
                 return itemstack;
             }
             return itemstack;
         })
+
+    event.create('empty_organ_charm').texture('kubejs:item/empty_organ_charm').maxStackSize(1).tag('curios:charm')
+    event.create('organ_charm').texture('kubejs:item/organ_charm').maxStackSize(1).tag('curios:charm')
+    event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
 })

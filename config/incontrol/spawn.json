@@ -50,5 +50,173 @@
     "result": "allow",
     "healthmultiply": 10,
     "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_damage_bonus_2",
+    "onjoin": true,
+    "result": "allow",
+    "damagemultiply": 2,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_damage_bonus_3",
+    "onjoin": true,
+    "result": "allow",
+    "damagemultiply": 3,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_damage_bonus_5",
+    "onjoin": true,
+    "result": "allow",
+    "damagemultiply": 5,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_damage_bonus_10",
+    "onjoin": true,
+    "result": "allow",
+    "damagemultiply": 10,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_health_bonus_2",
+    "onjoin": true,
+    "result": "allow",
+    "healthmultiply": 2,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_health_bonus_3",
+    "onjoin": true,
+    "result": "allow",
+    "healthmultiply": 3,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_health_bonus_5",
+    "onjoin": true,
+    "result": "allow",
+    "healthmultiply": 5,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_health_bonus_10",
+    "onjoin": true,
+    "result": "allow",
+    "healthmultiply": 10,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_damage_bonus_2",
+    "onjoin": true,
+    "result": "allow",
+    "damagemultiply": 2,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_damage_bonus_3",
+    "onjoin": true,
+    "result": "allow",
+    "damagemultiply": 3,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_damage_bonus_5",
+    "onjoin": true,
+    "result": "allow",
+    "damagemultiply": 5,
+    "continue": true
+  },
+  {
+    "mob": [
+      "bosses_of_mass_destruction:void_blossom",
+      "bosses_of_mass_destruction:lich",
+      "bosses_of_mass_destruction:gauntlet",
+      "bosses_of_mass_destruction:obsidilith",
+      "irons_spellbooks:priest"
+    ],
+    "gamestage": "setting_monster_damage_bonus_10",
+    "onjoin": true,
+    "result": "allow",
+    "damagemultiply": 10,
+    "continue": true
   }
 ]

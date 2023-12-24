@@ -4,7 +4,7 @@ ItemEvents.tooltip((tooltip) => {
     })
 
     tooltip.addAdvanced('kubejs:ceremonial_knife', (item, advanced, text) => {
-        addForTextLines(text, [[Text.gold('● '), Text.gray('恢复部分法力')], [Text.gold('● '), Text.gray('对使用者造成'), Text.gold('10'), Text.gray('点伤害')]], 1);
+        addForTextLines(text, [[LEADING_SYMBOL, Text.gray('恢复部分法力')], [LEADING_SYMBOL, Text.gray('对使用者造成'), Text.gold('10'), Text.gray('点伤害')]], 1);
     })
 
     tooltip.addAdvanced('#kubejs:anti_rejection', (item, advanced, text) => {
@@ -15,9 +15,6 @@ ItemEvents.tooltip((tooltip) => {
         text.add(Text.darkRed('灼热之眼将指引你前往要塞的道路'));
     })
 
-    tooltip.addAdvanced('kubejs:eye_of_void_blossom', (item, advanced, text) => {
-        text.add(Text.green('虚空之眼将会指引你前往虚空之花巢穴的道路'));
-    })
 
     tooltip.addAdvanced('kubejs:secret_of_rain', (item, advanced, text) => {
         if (tooltip.shift) {
@@ -49,6 +46,28 @@ ItemEvents.tooltip((tooltip) => {
             text.add([Text.gray('誓约者：'), Text.gold(item.nbt.friendName)]);
         } else {
             text.add([Text.gray('手持长按右键以铭刻誓约。')]);
+        }
+    })
+
+    tooltip.addAdvanced('kubejs:empty_organ_charm', (item, advanced, text) => {
+        text.add(1, Text.gray('用于承装器官'));
+    })
+    tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
+        let lineNum = 1
+        if (item.nbt?.organ?.id) {
+            text.add(lineNum++, [Text.gold('储存物: '), Text.yellow(Text.translate(Item.of(item.nbt.organ.id).descriptionId))]);
+        }
+        if (item.nbt?.type == 'kill') {
+            text.add(lineNum++, [Text.gray(`向容器内填充${item.nbt.killTask.counter}/${item.nbt.killTask.killAmount}个${Text.translate(item.nbt.killTask.mobName).string}灵魂才能够使其进化`)]);
+        }
+        if (item.nbt?.type == 'diet') {
+            text.add(lineNum++, [Text.gray(`需要进食${item.nbt.dietTask.foodTypeList.length}/${item.nbt.dietTask.foodTypeAmount}种饥饿值大于${item.nbt.dietTask.minHunger}的食物才能进化`)]);
+        }
+        if (item.nbt?.type == 'bear') {
+            text.add(lineNum++, [Text.gray(`需要承受原伤害最低大于${item.nbt.bearTask.minDamage}的伤害，累积${item.nbt.bearTask.counter}/${item.nbt.bearTask.bearAmount}才能进化`)]);
+        }
+        if (item.nbt?.status == 1) {
+            text.add(lineNum++, [Text.red(`进化已完成`)]);
         }
     })
 })
