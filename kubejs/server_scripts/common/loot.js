@@ -19,7 +19,32 @@ LootJS.modifiers(event => {
         .addLoot('kubejs:secret_of_bloom');
 
     event.addLootTypeModifier(LootType.ENTITY)
-        .removeLoot('@simplehats');
+        .removeLoot('@simplehats')
+        .apply(event => {
+            if (!(event.killerEntity && event.killerEntity.isPlayer())) {
+                return
+            }
+            let player = event.killerEntity
+            let typeMap = getPlayerChestCavityTypeMap(player)
+            if (typeMap.has('kubejs:loot')) {
+                typeMap.get('kubejs:loot').forEach(organ => {
+                    if (entityLootStrategies[organ.id]) {
+                        entityLootStrategies[organ.id](event, organ)
+                    }
+                })
+            }
+            let lootOrganSet = new Set()
+            if (typeMap.has('kubejs:loot_only')) {
+                typeMap.get('kubejs:loot_only').forEach(organ => {
+                    if (!lootOrganSet.has(organ.id)) {
+                        lootOrganSet.add(organ.id)
+                        if (entityLootStrategies[organ.id]) {
+                            entityLootStrategies[organ.id](event, organ)
+                        }
+                    }
+                })
+            }
+        });
 
     addBossLoot('somebosses:aesegull')
     addBossLoot('somebosses:prismarine_watcher')
@@ -29,10 +54,8 @@ LootJS.modifiers(event => {
     addBossLoot('somebosses:dark_mask')
     addBossLoot('somebosses:knight_garent')
     addBossLoot('somebosses:vulcan')
-
     addBossLoot('somebosses:ancient_wizard')
         .addLoot(LootEntry.of('kubejs:candy_pancreas').when((c) => c.randomChance(0.2)));
-
     addBossLoot('somebosses:man_of_water')
     addBossLoot('somebosses:flaming_berserker')
     addBossLoot('somebosses:electric_head')
@@ -61,3 +84,20 @@ LootJS.modifiers(event => {
 
 
 
+const entityLootStrategies = {
+    'kubejs:greed_shard': function (event, organ) {
+        event.addLoot('numismaticoverhaul:bronze_coin')
+    },
+    'kubejs:infinity_force': function (event, organ) {
+        if (Math.random() < Math.max(0.05 * event.killerEntity.getLuck(), 0.05)) {
+            return
+        }
+        if (bossTypeList.some(ele => ele == event.entity.getType())) {
+            let forgeTimes = 0
+            if (organ.tag?.forgeTimes) {
+                forgeTimes = organ.tag.forgeTimes
+            }
+            event.addLoot(Item.of('kubejs:infinity_force', { forgeTimes: Math.floor(Math.random() * forgeTimes) }))
+        }
+    },
+}

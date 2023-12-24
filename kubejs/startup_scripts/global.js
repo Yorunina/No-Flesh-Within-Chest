@@ -27,6 +27,7 @@ global.PARRY = { key: 'obscure_api:parry', name: 'kubejsParry', operation: 'addi
 global.DODGE = { key: 'obscure_api:dodge', name: 'kubejsDodge', operation: 'addition' }
 global.REGENERATION = { key: 'obscure_api:regeneration', name: 'kubejsRegeneration', operation: 'addition' }
 global.PENETRATION = { key: 'obscure_api:penetration', name: 'kubejsPenetration', operation: 'addition' }
+global.SUMMON_DAMAGE = { key: 'irons_spellbooks:summon_damage', name: 'kubejsSummonDamage', operation: 'addition' }
 
 global.ATTRIBUTE_MAP = {
     'kubejsAttackDamage': global.ATTACK_UP,
@@ -50,6 +51,7 @@ global.ATTRIBUTE_MAP = {
     'kubejsDodge': global.DODGE,
     'kubejsRegeneration': global.REGENERATION,
     'kubejsPenetration': global.PENETRATION,
+    'kubejsSummonDamage': global.SUMMON_DAMAGE,
 }
 
 global.TYPE_MAP = {
@@ -78,6 +80,8 @@ global.TYPE_MAP = {
     'kubejs:alex':Text.of('Alex生物').color('#b2d821'),
     'kubejs:evolution': Text.green('进化'),
     'kubejs:active_only': Text.gold('唯一化激活'),
+    'kubejs:loot': Text.gold('战利品'),
+    'kubejs:loot_only': Text.gold('唯一化战利品'),
 }
 
 
@@ -93,7 +97,7 @@ global.SCORE_MAP = {
     'chestcavity:speed': '速度',
     'chestcavity:endurance': '耐力',
     'chestcavity:luck': '幸运',
-    'chestcavity:': '防御',
+    'chestcavity:defense': '防御',
     'chestcavity:digestion': '消化效率',
     'chestcavity:metabolism': '新陈代谢效率',
     'chestcavity:fire_resistant': '火焰抗性',

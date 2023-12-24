@@ -121,12 +121,6 @@ const organActiveStrategies = {
             attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMuti)
         }
     },
-    'kubejs:infinity_force': function (player, organ, attributeMap) {
-        if (organ.tag && organ.tag.healthUp) {
-            let value = organ.tag.healthUp * 1
-            attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
-        }
-    },
     'kubejs:stomach_tumor': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
         let pos = organ.getInt('Slot')
@@ -146,6 +140,9 @@ const organActiveStrategies = {
     },
     'kubejs:leviathan_rib': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.ARMOR_TOUGHNESS, 2)
+    },
+    'kubejs:holy_eyeball': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.03)
     },
 };
 
@@ -168,5 +165,23 @@ const organActiveOnlyStrategies = {
     },
     'kubejs:sloth_shard': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.KNOCKBACK_RESISTANCE, 0.8)
+    },
+    'kubejs:envy_shard': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 1)
+    },
+    'kubejs:gluttony_shard': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.REGENERATION, 0.5)
+    },
+    'kubejs:lust_shard': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.MAX_MANA, 100)
+    },
+    'kubejs:pride_shard': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.SUMMON_DAMAGE, 0.3)
+    },
+    'kubejs:infinity_force': function (player, organ, attributeMap) {
+        if (organ.tag?.forgeTimes) {
+            let value = organ.tag.forgeTimes * 0.5
+            attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
+        }
     },
 }

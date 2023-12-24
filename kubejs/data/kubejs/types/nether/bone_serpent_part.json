@@ -1,11 +1,11 @@
 {
   "defaultChestCavity": [
     {
-      "item": "kubejs:lower_bound_muscle",
+      "item": "kubejs:nether_muscle",
       "position": 0
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 1
     },
     {
@@ -13,27 +13,27 @@
       "position": 4
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 7
     },
     {
-      "item": "kubejs:lower_bound_muscle",
+      "item": "kubejs:nether_muscle",
       "position": 8
     },
     {
-      "item": "kubejs:lower_bound_muscle",
+      "item": "kubejs:nether_muscle",
       "position": 9
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 10
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 11
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 12
     },
     {
@@ -41,31 +41,31 @@
       "position": 13
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 14
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 15
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 16
     },
     {
-      "item": "kubejs:lower_bound_muscle",
+      "item": "kubejs:nether_muscle",
       "position": 17
     },
     {
-      "item": "kubejs:lower_bound_muscle",
+      "item": "kubejs:nether_muscle",
       "position": 18
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 19
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 20
     },
     {
@@ -73,15 +73,15 @@
       "position": 22
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 24
     },
     {
-      "item": "kubejs:lower_bound_rib",
+      "item": "kubejs:nether_rib",
       "position": 25
     },
     {
-      "item": "kubejs:lower_bound_muscle",
+      "item": "kubejs:nether_muscle",
       "position": 26
     }
   ]

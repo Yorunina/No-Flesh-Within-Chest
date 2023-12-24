@@ -77,4 +77,8 @@ ItemEvents.tooltip((tooltip) => {
     global.ORGAN_LIST.forEach(organ => {
         registerOrganTooltips(organ)
     })
+
+    tooltip.addAdvanced('kubejs:infinity_force', (item, advanced, text) => {
+        text.add(1, [Text.gold('无尽之力'), Text.yellow(` +${item.nbt?.forgeTimes ? item.nbt.forgeTimes : 0}`)]);
+    })
 });

@@ -1,5 +1,5 @@
 {
-    "chestcavity": "kubejs:types/lower_bound/bone_serpent_part.json",
+    "chestcavity": "kubejs:types/nether/bone_serpent_part.json",
     "entities": [
       "alexsmobs:bone_serpent_part"
       

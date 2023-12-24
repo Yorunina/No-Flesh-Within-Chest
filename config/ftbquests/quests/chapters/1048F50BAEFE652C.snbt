@@ -392,6 +392,97 @@
 			x: 0.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"&6一开始的并不是最好的。"
+				"&r"
+				"通过&2配方的加工&r或者&2器官容器的任务&r进化，你可以让器官进化成更高级的模样。并且，某些器官通过不同的路径其强化的目的地也有所不同。在升级器官时，不妨参考此页面中器官的具体路线来进行抉择。"
+			]
+			hide_dependent_lines: true
+			icon: "kubejs:telescopic_attack_arm"
+			id: "437705D28D92B135"
+			subtitle: "成长为我所想"
+			tasks: [{
+				id: "2901FD4568C245E6"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "进化器官"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["437705D28D92B135"]
+			description: [
+				"&2将模板器官装载在器官容器中&r，就可以发现其普遍存在的进化可能性——"
+				""
+				"所有的模板器官都可以通过器官容器进化到&6T1&r阶段。在进化完成之后，其基本属性会得到一定的提升。"
+				""
+				"这样的升级总共可以&2进行3次&r，直到器官升级到&6T3&r为止，其&a进化&r特性将会消除。"
+			]
+			id: "4898BEAD775D98A1"
+			rewards: [{
+				id: "18D04D2BC9470552"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "容器的可能性"
+			tasks: [{
+				id: "4E93989EA4B4A1C2"
+				item: "kubejs:muscle_iron"
+				type: "item"
+			}]
+			title: "模板器官进化"
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["437705D28D92B135"]
+			description: [
+				"伸缩臂可以通过容器提升为&4伸缩攻击臂&r"
+				""
+				"同时，你也可以通过机械手的配方将其升级为&6伸缩工具臂&r"
+			]
+			id: "4C0C8599A1FA78DB"
+			rewards: [{
+				id: "3D9759FFDEF7926B"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "进攻？强化？"
+			tasks: [{
+				id: "284A2D61D2179AAA"
+				item: "kubejs:telescopic_arm"
+				type: "item"
+			}]
+			title: "伸缩臂"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: ["碎片系列器官以&4七宗罪&r为契机，如果将其&6收集完全&r，或许可以触发意想不到的效果. . ."]
+			icon: "minecraft:amethyst_shard"
+			id: "235753780EE3782C"
+			subtitle: "碎片与七宗罪"
+			tasks: [{
+				id: "1410D2144D11B1A6"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "碎片"
+			x: 4.0d
+			y: 1.0d
+		}
 	]
 	title: "胸腔：器官收集指南"
 }

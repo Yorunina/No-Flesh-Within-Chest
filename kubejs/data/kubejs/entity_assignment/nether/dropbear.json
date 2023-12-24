@@ -1,5 +1,5 @@
 {
-    "chestcavity": "kubejs:types/lower_bound/dropbear.json",
+    "chestcavity": "kubejs:types/nether/dropbear.json",
     "entities": [
       "alexsmobs:dropbear"
       

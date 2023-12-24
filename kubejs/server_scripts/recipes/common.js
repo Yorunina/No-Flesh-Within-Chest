@@ -35,4 +35,16 @@ ServerEvents.recipes(event => {
             stack = spellBook
             return stack;
         });
+
+    event.shapeless('kubejs:infinity_force', ['kubejs:infinity_force', 'kubejs:infinity_force'])
+        .modifyResult((grid, stack) => {
+            let item_1 = grid.find('kubejs:infinity_force', 0)
+            let item_2 = grid.find('kubejs:infinity_force', 1)
+            if ((item_1.nbt?.forgeTimes ?? 0) == (item_2.nbt?.forgeTimes ?? 0)) {
+                let forgeTimes = item_1.nbt?.forgeTimes ?? 0
+                stack = Item.of('kubejs:infinity_force', { forgeTimes: forgeTimes + 1 })
+                return stack;
+            }
+            return null;
+        });
 })

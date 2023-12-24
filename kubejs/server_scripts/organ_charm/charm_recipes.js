@@ -15,15 +15,14 @@ ServerEvents.recipes(event => {
         .replaceIngredient('kubejs:organ_charm', 'kubejs:empty_organ_charm')
         .modifyResult((grid, stack) => {
             let charm = grid.find('kubejs:organ_charm', 0)
-            if (charm.nbt && charm.nbt.organ) {
+            if (charm.nbt?.organ) {
                 stack = Item.of(charm.nbt.organ.id, charm.nbt.organ.tag)
             }
             return stack;
         });
-        Item.of('chestcavity:muscle')
 })
 
-let organCharmNbtMap = {
+const organCharmNbtMap = {
     'kubejs:muscle_template': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 3, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:muscle_iron' },
     'kubejs:muscle_iron': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 10, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:muscle_gold' },
     'kubejs:muscle_gold': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 30, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:muscle_diamond' },
