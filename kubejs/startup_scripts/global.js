@@ -23,6 +23,10 @@ global.ATTACK_RANGE = { key: 'forge:attack_range', name: 'kubejsAttackRange', op
 global.REACH_DISTANCE = { key: 'forge:reach_distance', name: 'kubejsReachRange', operation: 'addition' }
 global.CRITICAL_HIT = { key: 'obscure_api:critical_hit', name: 'kubejsCriticalHit', operation: 'addition' }
 global.CRITICAL_DAMAGE = { key: 'obscure_api:critical_damage', name: 'kubejsCriticalDamage', operation: 'addition' }
+global.PARRY = { key: 'obscure_api:parry', name: 'kubejsParry', operation: 'addition' }
+global.DODGE = { key: 'obscure_api:dodge', name: 'kubejsDodge', operation: 'addition' }
+global.REGENERATION = { key: 'obscure_api:regeneration', name: 'kubejsRegeneration', operation: 'addition' }
+global.PENETRATION = { key: 'obscure_api:penetration', name: 'kubejsPenetration', operation: 'addition' }
 
 global.ATTRIBUTE_MAP = {
     'kubejsAttackDamage': global.ATTACK_UP,
@@ -42,7 +46,10 @@ global.ATTRIBUTE_MAP = {
     'kubejsAttackRange': global.ATTACK_RANGE,
     'kubejsReachRange': global.REACH_DISTANCE,
     'kubejsCriticalHit': global.CRITICAL_HIT,
-    'kubejsCriticalDamage': global.CRITICAL_DAMAGE,
+    'kubejsParry': global.PARRY,
+    'kubejsDodge': global.DODGE,
+    'kubejsRegeneration': global.REGENERATION,
+    'kubejsPenetration': global.PENETRATION,
 }
 
 global.TYPE_MAP = {

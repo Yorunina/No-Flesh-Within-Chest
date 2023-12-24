@@ -286,14 +286,37 @@
 				}
 				type: "item"
 			}]
+			subtitle: "装载未来"
 			tasks: [{
 				id: "0108F3FD5779C18B"
 				item: "kubejs:empty_organ_charm"
 				type: "item"
 			}]
 			title: "器官容器"
-			x: 6.0d
+			x: 5.5d
 			y: -3.0d
+		}
+		{
+			dependencies: ["50D70D990312BC70"]
+			description: ["在经过处理后，长效化药物可以被&2完全无害&r——尽管相对于其他的器官来说提供的属性并不多，但其能够提供的方便程度也是其他器官所难以比拟的。"]
+			id: "6E7491F86379BEAC"
+			rewards: [{
+				id: "7A26A00DECB193D1"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "无害药物"
+			tasks: [{
+				id: "3226602CB5D6A05D"
+				item: "kubejs:long_lasting_pill_gold"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.5d
 		}
 	]
 	title: "章节2：觉醒"

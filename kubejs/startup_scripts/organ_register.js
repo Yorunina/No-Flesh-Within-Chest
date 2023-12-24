@@ -334,6 +334,32 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:heart')
         .tag('kubejs:relics');
 
+    // 碎片
+    registeOrgan(new Organ('kubejs:nether_star_shard')
+        .addScore('fire_resistant', 0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('20%'), Text.gray('暴击概率')])
+        .build())
+        .texture('kubejs:item/organs/shard/nether_star_shard')
+        .tag('itemborders:gold')
+        .tag('kubejs:active_only');
+
+    registeOrgan(new Organ('kubejs:sloth_shard')
+        .addScore('fire_resistant', 0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('80%'), Text.gray('击退抗性')])
+        .build())
+        .texture('kubejs:item/organs/shard/sloth_shard')
+        .tag('itemborders:gold')
+        .tag('kubejs:active_only');
+
+    registeOrgan(new Organ('kubejs:wrath_shard')
+        .addScore('fire_resistant', 0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('300%'), Text.gray('暴击伤害')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('但会降低'), Text.gold('80%'), Text.gray('暴击概率')])
+        .build())
+        .texture('kubejs:item/organs/shard/wrath_shard')
+        .tag('itemborders:gold')
+        .tag('kubejs:active_only');
+
 
     // 杂项
     registeOrgan(new Organ('kubejs:telescopic_arm')
@@ -362,23 +388,6 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/others/telescopic_attack_arm')
         .tag('itemborders:gold')
         .tag('kubejs:machine')
-        .tag('kubejs:active_only');
-
-    registeOrgan(new Organ('kubejs:nether_star_shard')
-        .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('20%'), Text.gray('暴击概率')])
-        .build())
-        .texture('kubejs:item/organs/others/nether_star_shard')
-        .tag('itemborders:gold')
-        .tag('kubejs:active_only');
-
-    registeOrgan(new Organ('kubejs:wrath_shard')
-        .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('300%'), Text.gray('暴击伤害')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('但会降低'), Text.gold('80%'), Text.gray('暴击概率')])
-        .build())
-        .texture('kubejs:item/organs/others/wrath_shard')
-        .tag('itemborders:gold')
         .tag('kubejs:active_only');
 
     registeOrgan(new Organ('kubejs:lamellar_armor_piece')
