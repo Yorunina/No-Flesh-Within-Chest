@@ -4,9 +4,8 @@ EntityEvents.death(event => {
     let entity = event.entity;
     let player = event.source.player;
     if (!player) { return }
-
     let curiosItem = getCuriosItem(player)
-    if (curiosItem.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'kill') {
+    if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'kill') {
         if (curiosItem.nbt.status == 1) {
             return
         }
@@ -31,9 +30,8 @@ ItemEvents.foodEaten(event => {
     let player = event.player;
     if (!player) return;
     let food = event.item;
-    
     let curiosItem = getCuriosItem(player)
-    if (curiosItem.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'diet') {
+    if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'diet') {
         if (curiosItem.nbt.status == 1) {
             return
         }
@@ -56,7 +54,7 @@ EntityEvents.hurt(event => {
     if (event.entity.isPlayer()) {
         let player = event.player
         let curiosItem = getCuriosItem(player)
-        if (curiosItem.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'bear') {
+        if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'bear') {
             if (curiosItem.nbt.status == 1) {
                 return
             }
@@ -75,6 +73,9 @@ EntityEvents.hurt(event => {
 
 
 function getCuriosItem(player) {
-    let slotResult = new $CuriosApi().getCuriosHelper().findEquippedCurio(Item.of('kubejs:organ_charm'), player).get();
-    return slotResult.getRight()
+    let slotResult = new $CuriosApi().getCuriosHelper().findEquippedCurio(Item.of('kubejs:organ_charm'), player);
+    if (slotResult.isPresent()) {
+        return slotResult.get().getRight()
+    }
+    return null
 }

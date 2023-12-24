@@ -21,7 +21,8 @@ global.MAX_MANA = { key: 'irons_spellbooks:max_mana', name: 'kubejsMaxMana', ope
 global.KNOCKBACK_RESISTANCE = { key: 'minecraft:generic.knockback_resistance', name: 'kubejsKnockbackResistance', operation: 'addition' }
 global.ATTACK_RANGE = { key: 'forge:attack_range', name: 'kubejsAttackRange', operation: 'addition' }
 global.REACH_DISTANCE = { key: 'forge:reach_distance', name: 'kubejsReachRange', operation: 'addition' }
-
+global.CRITICAL_HIT = { key: 'obscure_api:critical_hit', name: 'kubejsCriticalHit', operation: 'addition' }
+global.CRITICAL_DAMAGE = { key: 'obscure_api:critical_damage', name: 'kubejsCriticalDamage', operation: 'addition' }
 
 global.ATTRIBUTE_MAP = {
     'kubejsAttackDamage': global.ATTACK_UP,
@@ -40,6 +41,8 @@ global.ATTRIBUTE_MAP = {
     'kubejsKnockbackResistance': global.KNOCKBACK_RESISTANCE,
     'kubejsAttackRange': global.ATTACK_RANGE,
     'kubejsReachRange': global.REACH_DISTANCE,
+    'kubejsCriticalHit': global.CRITICAL_HIT,
+    'kubejsCriticalDamage': global.CRITICAL_DAMAGE,
 }
 
 global.TYPE_MAP = {

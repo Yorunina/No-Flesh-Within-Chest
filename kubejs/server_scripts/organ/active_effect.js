@@ -62,16 +62,22 @@ function setPlayerAttributeMap(player, attriMap) {
  * @returns
  */
 function clearAllActivedModify(player) {
-    player.removeAttribute(global.HEALTH_UP.key, global.HEALTH_UP.name);
-    player.removeAttribute(global.ATTACK_UP.key, global.ATTACK_UP.name);
-    player.removeAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name);
-    player.removeAttribute(global.COOLDOWN_REDUCTION.key, global.COOLDOWN_REDUCTION.name);
-    player.removeAttribute(global.SPELL_POWER.key, global.SPELL_POWER.name);
-    player.removeAttribute(global.ICE_SPELL_POWER.key, global.ICE_SPELL_POWER.name);
-    player.removeAttribute(global.FIRE_SPELL_POWER.key, global.FIRE_SPELL_POWER.name);
-    player.removeAttribute(global.REACH_DISTANCE.key, global.REACH_DISTANCE.name)
-    player.removeAttribute(global.ATTACK_RANGE.key, global.ATTACK_RANGE.name)
-    player.removeAttribute(global.ARMOR_TOUGHNESS.key, global.ARMOR_TOUGHNESS.name)
+    let attributeMap = getPlayerAttributeMap(player)
+    attributeMap.forEach((value, key, map) => {
+        player.removeAttribute(global.ATTRIBUTE_MAP[key].key, global.ATTRIBUTE_MAP[key].name);
+    })
+    // player.removeAttribute(global.HEALTH_UP.key, global.HEALTH_UP.name);
+    // player.removeAttribute(global.ATTACK_UP.key, global.ATTACK_UP.name);
+    // player.removeAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name);
+    // player.removeAttribute(global.COOLDOWN_REDUCTION.key, global.COOLDOWN_REDUCTION.name);
+    // player.removeAttribute(global.SPELL_POWER.key, global.SPELL_POWER.name);
+    // player.removeAttribute(global.ICE_SPELL_POWER.key, global.ICE_SPELL_POWER.name);
+    // player.removeAttribute(global.FIRE_SPELL_POWER.key, global.FIRE_SPELL_POWER.name);
+    // player.removeAttribute(global.REACH_DISTANCE.key, global.REACH_DISTANCE.name);
+    // player.removeAttribute(global.ATTACK_RANGE.key, global.ATTACK_RANGE.name);
+    // player.removeAttribute(global.ARMOR_TOUGHNESS.key, global.ARMOR_TOUGHNESS.name);
+    // player.removeAttribute(global.CRITICAL_HIT.key, global.CRITICAL_HIT.name);
+    // player.removeAttribute(global.CRITICAL_DAMAGE.key, global.CRITICAL_DAMAGE.name);
 }
 
 
@@ -164,5 +170,12 @@ const organActiveOnlyStrategies = {
     },
     'kubejs:telescopic_attack_arm': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.ATTACK_RANGE, 1)
+    },
+    'kubejs:nether_star_shard': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.2)
+    },
+    'kubejs:wrath_shard': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, -0.8)
+        attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 3)
     },
 }

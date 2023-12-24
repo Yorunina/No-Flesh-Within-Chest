@@ -123,7 +123,7 @@ StartupEvents.registry('item', event => {
         .addTextLines('default', [Text.gray('被完全解放的革命之力')])
         .addTextLines('default', [Text.gray('心火を燃やして、ぶっ潰す！')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('手持煤炭右键以获得'), Text.gold('20s'), Text.red('心火燃烧')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在心火燃烧buff仅剩的最后'), Text.gold('5s'), Text.gray('，会根据状态等级提供必定暴击效果')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在心火燃烧buff仅剩的最后'), Text.gold('5s'), Text.gray('，会根据状态等级提供心火暴击效果')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('与熔火状态不兼容')])
         .build())
         .texture('kubejs:item/organs/machine/burning_heart')
@@ -346,7 +346,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only')
         .tag('kubejs:evolution');
 
-        registeOrgan(new Organ('kubejs:telescopic_tool_arm')
+    registeOrgan(new Organ('kubejs:telescopic_tool_arm')
         .addScore('fire_resistant', 0.5)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(2), Text.gray('触及距离')])
         .build())
@@ -355,13 +355,30 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine')
         .tag('kubejs:active_only');
 
-        registeOrgan(new Organ('kubejs:telescopic_attack_arm')
+    registeOrgan(new Organ('kubejs:telescopic_attack_arm')
         .addScore('fire_resistant', 0.5)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(1), Text.gray('攻击距离')])
         .build())
         .texture('kubejs:item/organs/others/telescopic_attack_arm')
         .tag('itemborders:gold')
         .tag('kubejs:machine')
+        .tag('kubejs:active_only');
+
+    registeOrgan(new Organ('kubejs:nether_star_shard')
+        .addScore('fire_resistant', 0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('20%'), Text.gray('暴击概率')])
+        .build())
+        .texture('kubejs:item/organs/others/nether_star_shard')
+        .tag('itemborders:gold')
+        .tag('kubejs:active_only');
+
+    registeOrgan(new Organ('kubejs:wrath_shard')
+        .addScore('fire_resistant', 0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('300%'), Text.gray('暴击伤害')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('但会降低'), Text.gold('80%'), Text.gray('暴击概率')])
+        .build())
+        .texture('kubejs:item/organs/others/wrath_shard')
+        .tag('itemborders:gold')
         .tag('kubejs:active_only');
 
     registeOrgan(new Organ('kubejs:lamellar_armor_piece')

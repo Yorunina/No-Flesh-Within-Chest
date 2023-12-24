@@ -3,7 +3,7 @@ const $AttributeRegistry = Java.loadClass('io.redspace.ironsspellbooks.api.regis
 
 StartupEvents.postInit(event => {
     $AttributeEntry.add($AttributeRegistry.MAX_MANA, false, 1500);
-    $AttributeEntry.add($AttributeRegistry.MANA_REGEN, false, 1600);
+    $AttributeEntry.add($AttributeRegistry.MANA_REGEN, true, 1600);
 
     $AttributeEntry.add($AttributeRegistry.SPELL_POWER, true, 1700);
     $AttributeEntry.add($AttributeRegistry.SPELL_RESIST, true, 1800);
