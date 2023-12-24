@@ -28,6 +28,8 @@ let organCharmNbtMap = {
     'kubejs:muscle_iron': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 10, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:muscle_gold' },
     'kubejs:muscle_gold': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 30, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:muscle_diamond' },
 
+    'kubejs:telescopic_arm': { type: 'kill', killTask: { mobType: 'somebosses:hand_head', killAmount: 1, mobName: 'entity.somebosses.hand_head', counter: 0 }, targetOrgan: 'kubejs:telescopic_attack_arm' },
+
     'kubejs:lung_template': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 3, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:lung_iron' },
     'kubejs:lung_iron': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 10, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:lung_gold' },
     'kubejs:lung_gold': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 30, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:lung_diamond' },

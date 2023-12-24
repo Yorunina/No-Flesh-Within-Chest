@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     event.recipes.create.mixing(Fluid.of('kubejs:syrup').withAmount(50), [Fluid.water(50), 'minecraft:sugar', 'hexerei:dried_mugwort_flowers', 'hexerei:dried_belladonna_flowers']).heated()
 
-    
+	event.recipes.create.deploying('kubejs:telescopic_tool_arm', ['kubejs:telescopic_arm', 'nameless_trinkets:light_gloves'])
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:candy_heart')

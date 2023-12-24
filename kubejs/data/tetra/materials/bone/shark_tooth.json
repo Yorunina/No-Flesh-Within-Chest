@@ -8,21 +8,16 @@
   "integrityCost": 2,
   "integrityGain": 5,
   "magicCapacity": 250,
-  "toolLevel": "minecraft:diamond",
+  "toolLevel": "minecraft:iron",
   "toolEfficiency": 5,
   "tints": {
     "glyph": "caeced",
     "texture": "caeced"
   },
-  "textures": [
-    "bone",
-    "crude"
-  ],
+  "textures": ["bone", "crude"],
 
   "material": {
-    "items": [
-      "alexsmobs:shark_tooth"
-    ]
+    "items": ["alexsmobs:shark_tooth"]
   },
   "requiredTools": {
     "hammer_dig": "minecraft:stone"

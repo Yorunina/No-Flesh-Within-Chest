@@ -428,26 +428,26 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:crimson_spine')
-    .addScore('nerves', 2)		
+        .addScore('nerves', 2)
         .build())
         .texture('kubejs:item/organs/alex/crimson_spine')
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:warped_heart')
-    .addScore('health', 4)
+        .addScore('health', 4)
         .build())
         .texture('kubejs:item/organs/alex/warped_heart')
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:warped_spine')
-    .addScore('nerves', 2)		
+        .addScore('nerves', 2)
         .build())
         .texture('kubejs:item/organs/alex/warped_spine')
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:crimson_mosquito_mouthparts')
-    .addScore('strength',40)
-    .addScore('defense',-4)		
+        .addScore('strength', 40)
+        .addScore('defense', -4)
         .build())
         .texture('kubejs:item/organs/alex/crimson_mosquito')
         .tag('kubejs:alex');
@@ -460,8 +460,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:mollusk_muscle')
-    .addScore('strength',12)
-    .addScore('speed',20)		
+        .addScore('strength', 12)
+        .addScore('speed', 20)
         .build())
         .texture('kubejs:item/organs/alex')
         .tag('kubejs:alex');
@@ -472,21 +472,21 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:mimic_octopus_skin')
-    .addScore('defense',4)	
-    .addScore('speed',16)		
+        .addScore('defense', 4)
+        .addScore('speed', 16)
         .build())
         .texture('kubejs:item/organs/alex/mimic_octopus')
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:fish_spine')
-    .addScore('nerves',2)		
+        .addScore('nerves', 2)
         .build())
         .texture('kubejs:item/organs/alex/fish_spine')
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:fishbone')
-    .addScore('defense',2)		
-    .addScore('speed',2)		
+        .addScore('defense', 2)
+        .addScore('speed', 2)
         .build())
         .texture('kubejs:item/organs/alex/fish_bone')
         .tag('kubejs:alex');
@@ -509,27 +509,27 @@ StartupEvents.registry('item', event => {
 
 
     registeOrgan(new Organ('kubejs:deep_dark_spine')
-    .addScore('nerves',2)		
+        .addScore('nerves', 2)
         .build())
         .texture('kubejs:item/organs/alex')
         .tag('kubejs:alex');
 
 
     registeOrgan(new Organ('kubejs:deep_dark_rib')
-    .addScore('defense',30)		
+        .addScore('defense', 30)
         .build())
         .texture('kubejs:item/organs/alex')
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:deep_dark_muscle')
-    .addScore('strength',30)	
-    .addScore('speed',30)		
+        .addScore('strength', 30)
+        .addScore('speed', 30)
         .build())
         .texture('kubejs:item/organs/alex')
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:deep_dark_heart')
-    .addScore('health',6)		
+        .addScore('health', 6)
         .build())
         .texture('kubejs:item/organs/alex')
         .tag('kubejs:alex');
@@ -560,7 +560,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:alex');
 
     registeOrgan(new Organ('kubejs:bone_serpent_spine')
-    .addScore('nerves',2)		
+        .addScore('nerves', 2)
         .build())
         .texture('kubejs:item/organs/alex')
         .tag('kubejs:alex');
