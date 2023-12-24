@@ -1,0 +1,7 @@
+{
+    "chestcavity": "kubejs:types/overworld/bunfungus.json",
+    "entities": [
+      "alexsmobs:bunfungus"
+      
+    ]
+  }

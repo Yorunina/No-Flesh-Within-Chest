@@ -1,0 +1,7 @@
+{
+    "chestcavity": "kubejs:types/aquatic_animal/orca.json",
+    "entities": [
+      "alexsmobs:orca"
+      
+    ]
+  }

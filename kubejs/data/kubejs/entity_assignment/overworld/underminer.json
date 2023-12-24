@@ -1,0 +1,7 @@
+{
+    "chestcavity": "kubejs:types/overworld/underminers.json",
+    "entities": [
+      "alexsmobs:underminer"
+      
+    ]
+  }

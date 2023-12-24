@@ -77,7 +77,7 @@
 	zoom = true
 	#Control the window mode, normal mode does nothing.
 	#Allowed Values: NORMAL, FULLSCREEN, FULLSCREEN_BORDERLESS, MAXIMIZED, MAXIMIZED_BORDERLESS, WINDOWED, WINDOWED_BORDERLESS
-	windowMode = "NORMAL"
+	windowMode = "WINDOWED"
 	#Whether to replace vanilla GUI scale button to slider with tips.
 	useNewGuiScale = true
 	#Remove signature of chat messages and commands.
