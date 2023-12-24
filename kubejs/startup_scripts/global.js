@@ -75,7 +75,7 @@ global.TYPE_MAP = {
     'kubejs:revolution': Text.of('革命').color('#deaa00'),
     'kubejs:relics': Text.of('遗物').color('#ffe100'),
     'kubejs:legends': Text.of('传说').color('#d6e5ff'),
-    'kubejs:alex':Text.of('Alex生物')
+    'kubejs:alex':Text.of('Alex生物').color('#b2d821'),
     'kubejs:evolution': Text.green('进化'),
     'kubejs:active_only': Text.gold('唯一化激活'),
 }
