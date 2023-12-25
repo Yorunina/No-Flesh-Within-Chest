@@ -1,0 +1,25 @@
+{
+  "key": "alex_shark_tooth",
+  "category": "bone",
+  "primary": 8,
+  "secondary": 2.3,
+  "tertiary": 4,
+  "durability": 300,
+  "integrityCost": 2,
+  "integrityGain": 5,
+  "magicCapacity": 250,
+  "toolLevel": "minecraft:iron",
+  "toolEfficiency": 5,
+  "tints": {
+    "glyph": "caeced",
+    "texture": "caeced"
+  },
+  "textures": ["bone", "crude"],
+
+  "material": {
+    "items": ["alexsmobs:shark_tooth"]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:stone"
+  }
+}

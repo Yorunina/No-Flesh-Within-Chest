@@ -1,0 +1,7 @@
+{
+    "chestcavity": "kubejs:types/reptile/alligator_snapping_turtle.json",
+    "entities": [
+      "alexsmobs:alligator_snapping_turtle"
+      
+    ]
+  }

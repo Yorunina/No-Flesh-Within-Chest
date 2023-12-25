@@ -1,0 +1,7 @@
+{
+    "chestcavity": "kubejs:types/overworld/skelewag.json",
+    "entities": [
+      "alexsmobs:skelewag"
+      
+    ]
+  }

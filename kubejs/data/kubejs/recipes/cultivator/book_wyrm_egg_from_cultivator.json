@@ -1,0 +1,11 @@
+{
+  "type": "unusualprehistory:cultivator",
+  "ingredients": [
+    {
+      "tag": "bookwyrms:scale"
+    }
+  ],
+  "output": {
+    "item": "bookwyrms:book_wyrm_spawn_egg"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "defaultChestCavity": [
+    {
+      "item": "kubejs:mimic_octopus_skin",
+      "position": 0
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 2
+    },
+    {
+      "item": "kubejs:mollusk_heart",
+      "position": 4
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 6
+    },
+    {
+      "item": "kubejs:mimic_octopus_skin",
+      "position": 8
+    },
+    {
+      "item": "kubejs:mimic_octopus_skin",
+      "position": 9
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 10
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 11
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 12
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 13
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 14
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 15
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 16
+    },
+    {
+      "item": "kubejs:mimic_octopus_skin",
+      "position": 17
+    },
+    {
+      "item": "kubejs:mimic_octopus_skin",
+      "position": 18
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 20
+    },
+    {
+      "item": "kubejs:mollusk_stomach",
+      "position": 22
+    },
+    {
+      "item": "kubejs:mollusk_muscle",
+      "position": 24
+    },
+    {
+      "item": "kubejs:mimic_octopus_skin",
+      "position": 26
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "chestcavity": "kubejs:types/nether/warped_mosco.json",
+    "entities": [
+      "alexsmobs:warped_mosco"
+      
+    ]
+  }

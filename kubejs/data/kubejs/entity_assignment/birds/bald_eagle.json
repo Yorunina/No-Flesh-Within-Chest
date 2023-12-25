@@ -1,0 +1,7 @@
+{
+    "chestcavity": "kubejs:types/birds/bald_eagle.json",
+    "entities": [
+      "alexsmobs::bald_eagle"
+      
+    ]
+  }

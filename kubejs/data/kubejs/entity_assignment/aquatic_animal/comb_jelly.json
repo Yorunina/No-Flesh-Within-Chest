@@ -1,0 +1,7 @@
+{
+    "chestcavity": "kubejs:types/aquatic_animal/comb_jelly.json",
+    "entities": [
+      "alexsmobs:comb_jelly"
+      
+    ]
+  }
