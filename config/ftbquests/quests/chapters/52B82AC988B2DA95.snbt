@@ -129,8 +129,8 @@
 				type: "item"
 			}]
 			title: "选择你的武器！"
-			x: -1.0d
-			y: 1.5d
+			x: 0.0d
+			y: 1.25d
 		}
 		{
 			dependencies: ["4B92B6F9C9EDC46E"]
@@ -163,8 +163,8 @@
 				type: "checkmark"
 			}]
 			title: "擦拭你的武器"
-			x: -0.5d
-			y: 3.5d
+			x: 0.0d
+			y: 2.75d
 		}
 		{
 			dependencies: ["2C8054AE6C57197F"]
@@ -200,8 +200,8 @@
 				type: "checkmark"
 			}]
 			title: "武器升级"
-			x: 2.0d
-			y: 3.5d
+			x: 0.0d
+			y: 4.25d
 		}
 		{
 			dependencies: ["09F28AC07C32FAB3"]
@@ -226,8 +226,8 @@
 				type: "checkmark"
 			}]
 			title: "武器大师！"
-			x: 2.5d
-			y: 1.5d
+			x: 0.0d
+			y: 5.75d
 		}
 	]
 	title: "武器大师：陪伴一生的伙伴"

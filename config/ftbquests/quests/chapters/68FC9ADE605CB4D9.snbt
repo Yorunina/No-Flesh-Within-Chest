@@ -120,8 +120,8 @@
 				}
 			]
 			title: "更多的自动化"
-			x: 3.0d
-			y: -0.75d
+			x: 2.5d
+			y: -1.25d
 		}
 		{
 			dependencies: ["10A1552945CF569F"]
@@ -154,8 +154,8 @@
 				type: "item"
 			}]
 			title: "新的挑战"
-			x: 2.0d
-			y: 1.25d
+			x: 1.5d
+			y: 0.75d
 		}
 		{
 			dependencies: ["3A98FA709F0DEA42"]
@@ -326,8 +326,8 @@
 				type: "item"
 			}]
 			title: "更复杂的装置"
-			x: 2.25d
-			y: -2.75d
+			x: 1.75d
+			y: -3.25d
 		}
 		{
 			dependencies: ["10E8E39F44A11EC0"]
@@ -370,8 +370,8 @@
 				}
 			]
 			title: "大工程"
-			x: 3.5d
-			y: 2.5d
+			x: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["10A1552945CF569F"]
@@ -404,8 +404,8 @@
 				}
 			]
 			title: "更多的自动化+1"
-			x: 4.75d
-			y: -0.75d
+			x: 4.25d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6C7A1C7252229459"]
@@ -432,8 +432,8 @@
 				type: "item"
 			}]
 			title: "更多选择"
-			x: 3.5d
-			y: -4.0d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["0C5511D51B5FF508"]
@@ -669,7 +669,7 @@
 				"按照提示将&2鼠标放在物品上长按[w]&r，你便可以看到一个非常详细的&2互动式讲解&r。在绝大多数情况下，你的问题会通过思索得到解决。"
 				""
 				"如果还没有解决——请不要担心，本整合的&6胶囊示例&r或许在最后关头能帮助到你。"
-				"{image:kubejs:textures/task/create_1.png width:160 height:90 align:1}"
+				"{image:kubejs:textures/task/create_1.png width:80 height:45 align:1}"
 			]
 			icon: {
 				Count: 1

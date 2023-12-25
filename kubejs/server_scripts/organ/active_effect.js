@@ -116,8 +116,8 @@ const organActiveStrategies = {
             let iceMuti = itemMap.get('minecraft:blue_ice').length * 0.1
             attributeMapValueAddition(attributeMap, global.ICE_SPELL_POWER, iceMuti)
         }
-        if (itemMap.has('minecraft:magma')) {
-            let fireMuti = itemMap.get('minecraft:magma').length * 0.1
+        if (itemMap.has('minecraft:magma_block')) {
+            let fireMuti = itemMap.get('minecraft:magma_block').length * 0.1
             attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMuti)
         }
     },

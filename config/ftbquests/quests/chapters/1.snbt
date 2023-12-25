@@ -735,7 +735,7 @@
 		}
 		{
 			dependencies: ["2311CA3EEABF0250"]
-			description: ["如果你在寻找虚空之花，也可以通过对应的&2虚空之眼&r来进行搜寻。"]
+			description: ["除了要塞之眼之外，你也可以使用&2地牢加载之眼&r来搜索地牢加载之时的建筑。"]
 			id: "6B7FD39A8093248D"
 			rewards: [{
 				count: 5
