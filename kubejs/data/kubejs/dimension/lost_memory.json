@@ -1,9 +1,7 @@
 {
   "type": "minecraft:overworld",
-  "generator":
-  {
-    "biome_source":
-    {
+  "generator": {
+    "biome_source": {
       "biome": "minecraft:snowy_taiga",
       "type": "minecraft:fixed"
     },

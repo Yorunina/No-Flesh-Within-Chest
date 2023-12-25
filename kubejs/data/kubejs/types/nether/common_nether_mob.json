@@ -9,24 +9,20 @@
       "position": 1
     },
     {
-      "item": "kubejs:nether_appendix",
+      "item": "chestcavity:animal_appendix",
       "position": 2
     },
     {
-      "item": "kubejs:nether_lung",
+      "item": "chestcavity:animal_lung",
       "position": 3
     },
     {
-      "item": "kubejs:crimson_heart",
+      "item": "chestcavity:animal_heart",
       "position": 4
     },
     {
-      "item": "kubejs:nether_lung",
+      "item": "chestcavity:animal_lung",
       "position": 5
-    },
-    {
-      "item": "kubejs:crimson_mosquito_mouthparts",
-      "position": 6
     },
     {
       "item": "kubejs:nether_rib",
@@ -45,16 +41,24 @@
       "position": 10
     },
     {
-      "item": "kubejs:nether_kidney",
+      "item": "chestcavity:animal_spleen",
+      "position": 11
+    },
+    {
+      "item": "chestcavity:animal_kidney",
       "position": 12
     },
     {
-      "item": "kubejs:crimson_spine",
+      "item": "chestcavity:animal_spine",
       "position": 13
     },
     {
-      "item": "kubejs:nether_kidney",
+      "item": "chestcavity:animal_kidney",
       "position": 14
+    },
+    {
+      "item": "chestcavity:animal_liver",
+      "position": 15
     },
     {
       "item": "kubejs:nether_rib",
@@ -73,23 +77,23 @@
       "position": 19
     },
     {
-      "item": "kubejs:nether_intestine",
+      "item": "chestcavity:animal_intestine",
       "position": 20
     },
     {
-      "item": "kubejs:nether_intestine",
+      "item": "chestcavity:animal_intestine",
       "position": 21
     },
     {
-      "item": "kubejs:nether_stomach",
+      "item": "chestcavity:animal_stomach",
       "position": 22
     },
     {
-      "item": "kubejs:nether_intestine",
+      "item": "chestcavity:animal_intestine",
       "position": 23
     },
     {
-      "item": "kubejs:nether_intestine",
+      "item": "chestcavity:animal_intestine",
       "position": 24
     },
     {

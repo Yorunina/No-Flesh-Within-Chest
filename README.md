@@ -35,7 +35,7 @@ If you have any suggestions or want to report bugs related to this modpack, plea
     - [ ] 实现扩展胸腔槽位
     - [ ] Tetra联动器官效果
 - [ ] 模组联动器官补充
-    - [x] Alex生物器官联动
+    - [ ] Alex生物器官联动
     - [ ] 史前生物器官联动
     - [ ] World of Bosses器官联动
     - [ ] 灾变器官联动

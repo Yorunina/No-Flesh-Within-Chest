@@ -301,6 +301,25 @@ StartupEvents.registry('item', event => {
 
 
     // boss遗物器官
+    registeOrgan(new Organ('kubejs:relic_metal_plate')
+        .addScore('health', 0.125)
+        .addScore('nerves', 0.125)
+        .addScore('breath_recovery', 0.125)
+        .addScore('strength', 0.125)
+        .addScore('filtration', 0.125)
+        .addScore('detoxification', 0.125)
+        .addScore('defense', 0.125)
+        .addScore('nutrition', 0.125)
+        .addScore('endurance', 0.125)
+        .addScore('digestion', 0.125)
+        .addScore('metabolism', 0.125)
+        .addScore('speed', 0.25)
+        .addTextLines('default', [LEADING_SYMBOL, Text.gray('在久远的岁月中，它的器官彼此融合')])
+        .addTextLines('default', [LEADING_SYMBOL, Text.gray('最终铸造成为了这块殷红的金属板')])
+        .build())
+        .texture('kubejs:item/organs/relics/relic_metal_plate')
+        .tag('kubejs:relics');
+
     registeOrgan(new Organ('kubejs:love_between_lava_and_ice')
         .addScore('health', 1)
         .addScore('fire_resistant', 1)
@@ -309,7 +328,7 @@ StartupEvents.registry('item', event => {
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一格'), Text.darkRed('岩浆块'), Text.gray('，会为你添加额外'), Text.yellow(0.1), Text.red('火系魔法伤害倍率')])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('一格内存在任意数量即被视作一格')])
         .build())
-        .texture('kubejs:item/organs/boss/love_between_lava_and_ice')
+        .texture('kubejs:item/organs/relics/love_between_lava_and_ice')
         .tag('kubejs:heart')
         .tag('kubejs:active')
         .tag('kubejs:relics');
@@ -319,7 +338,7 @@ StartupEvents.registry('item', event => {
         .addScore('swim_speed', 2)
         .addScore('breath_recovery', 1)
         .build())
-        .texture('kubejs:item/organs/boss/leviathan_spine')
+        .texture('kubejs:item/organs/relics/leviathan_spine')
         .tag('kubejs:spine')
         .tag('kubejs:relics');
 
@@ -327,7 +346,7 @@ StartupEvents.registry('item', event => {
         .addScore('defense', 1.75)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后会额外提供'), Text.gold(2), Text.gray('护甲韧性')])
         .build())
-        .texture('kubejs:item/organs/boss/leviathan_rib')
+        .texture('kubejs:item/organs/relics/leviathan_rib')
         .tag('kubejs:rib')
         .tag('kubejs:active')
         .tag('kubejs:relics');
@@ -337,7 +356,7 @@ StartupEvents.registry('item', event => {
         .addScore('photosynthesis', 4)
         .addScore('metabolism', 4)
         .build())
-        .texture('kubejs:item/organs/boss/flower_heart')
+        .texture('kubejs:item/organs/relics/flower_heart')
         .tag('kubejs:heart')
         .tag('kubejs:relics');
 
@@ -407,6 +426,16 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold')
         .tag('kubejs:active_only');
 
+    // 位置器官
+    registeOrgan(new Organ('kubejs:stomach_tumor')
+        .addScore('endurance', 0.5)
+        .addScore('digestion', 1)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('如果在周围存在最少'), Text.gold(3), Text.gray('个胃瘤，会为你提供额外的'), Text.gold(6), Text.gray('生命值上限')])
+        .build())
+        .texture('kubejs:item/organs/others/stomach_tumor')
+        .tag('kubejs:stomach')
+        .tag('kubejs:active');
+
 
     // 杂项
     registeOrgan(new Organ('kubejs:telescopic_arm')
@@ -467,32 +496,22 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold');
 
     // alex
-    registeOrgan(new Organ('kubejs:crimson_heart').addScore('health', 0.75).addScore('fire_resistant', 1).build()).texture('kubejs:item/organs/alex/crimson_heart').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:crimson_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/alex/crimson_spine').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:warped_heart').addScore('health', 1.5).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:warped_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/alex/warped_spine').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:crimson_mosquito_mouthparts').addScore('strength', 0.5).addScore('defense', -1).build()).texture('kubejs:item/organs/alex/crimson_mosquito').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:feather').addScore('speed', 1).addScore('defense', -1).build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:mollusk_muscle').addScore('strength', 1.25).addScore('speed', 0.375).build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:giant_squid_whisker').build()).texture('kubejs:item/organs/alex/giant_squid').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:mimic_octopus_skin').addScore('defense', 1.25).addScore('speed', 0.25).build()).texture('kubejs:item/organs/alex/mimic_octopus').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:fish_spine').addScore('nerves', 1).build()).texture('kubejs:item/organs/alex/fish_spine').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:fishbone').addScore('defense', 0.75).addScore('speed', 0.75).build()).texture('kubejs:item/organs/alex/fish_bone').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:fish_intestine').build()).texture('kubejs:item/organs/alex/fish_intestines').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:element_spine_sandwind').build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:element_spine_botany').build()).texture('kubejs:item/organs/alex/').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:deep_dark_spine').addScore('nerves', 1.5).build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:deep_dark_rib').addScore('defense', 1.5).build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:deep_dark_muscle').addScore('strength', 1.5).addScore('speed', 0.75).build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:deep_dark_heart').addScore('health', 1.5).build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:deep_dark_stomach').build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:deep_dark_intestine').build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:deep_dark_pancreas').build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:deep_dark_kidney').build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:deep_dark_appendix').build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:bone_serpent_spine').addScore('nerves', 1.5).build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:bone_serpent_heart').build()).texture('kubejs:item/organs/alex').tag('kubejs:alex');
-    registeOrgan(new Organ('kubejs:nether_stomach').build()).texture('kubejs:item/organs/others/stomach_tumor').tag('kubejs:stomach');
+    registeOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart')
+    registeOrgan(new Organ('kubejs:warped_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/alex/warped_spine').tag('kubejs:spine')
+
+    registeOrgan(new Organ('kubejs:feather').addScore('speed', 1).addScore('defense', -1).build()).texture('kubejs:item/organs/alex/feather')
+    registeOrgan(new Organ('kubejs:mollusk_muscle').addScore('strength', 1.25).addScore('speed', 0.375).build()).texture('kubejs:item/organs/alex/mollusk_muscle').tag('kubejs:muscle')
+    registeOrgan(new Organ('kubejs:giant_squid_whisker').addScore('strength', 0.5).addScore('speed', 1.25).build()).texture('kubejs:item/organs/alex/giant_squid_whisker').tag('kubejs:muscle')
+    registeOrgan(new Organ('kubejs:mimic_octopus_skin').addScore('defense', 1.25).addScore('speed', 0.25).build()).texture('kubejs:item/organs/alex/mimic_octopus_skin')
+    registeOrgan(new Organ('kubejs:fish_spine').addScore('nerves', 1).build()).texture('kubejs:item/organs/alex/fish_spine').tag('kubejs:spine')
+    registeOrgan(new Organ('kubejs:fish_bone').addScore('defense', 0.75).addScore('speed', 0.75).build()).texture('kubejs:item/organs/alex/fish_bone').tag('kubejs:rib')
+    registeOrgan(new Organ('kubejs:fish_intestine').addScore('digestion', 1.25).build()).texture('kubejs:item/organs/alex/fish_intestines').tag('kubejs:intestine')
+
+    registeOrgan(new Organ('kubejs:nether_rib').addScore('defense', 1.25).addScore('fire_resistant', 0.5).build()).texture('kubejs:item/organs/nether/nether_rib').tag('kubejs:rib')
+    registeOrgan(new Organ('kubejs:nether_muscle').addScore('strength', 1.25).addScore('fire_resistant', 0.5).build()).texture('kubejs:item/organs/nether/nether_muscle').tag('kubejs:muscle')
+    registeOrgan(new Organ('kubejs:nether_heart').addScore('health', 0.75).addScore('fire_resistant', 1).build()).texture('kubejs:item/organs/nether/nether_heart').tag('kubejs:heart')
+    registeOrgan(new Organ('kubejs:nether_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/nether/nether_spine').tag('kubejs:spine')
+    registeOrgan(new Organ('kubejs:crimson_mosquito_mouthparts').addScore('strength', 0.5).addScore('defense', -1).build()).texture('kubejs:item/organs/nether/crimson_mosquito_mouthparts')
 
 
     // 模板器官
