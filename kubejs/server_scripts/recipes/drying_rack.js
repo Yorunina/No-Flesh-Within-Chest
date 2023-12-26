@@ -11,5 +11,6 @@ ServerEvents.recipes(event => {
     }
 
     registeCustomRecipe(new DryingRackRecipe([Ingredient.of('minecraft:redstone')], Item.of('minecraft:dirt'), 20 * 120))
+    registeCustomRecipe(new DryingRackRecipe(['kubejs:magic_spine'], Item.of('kubejs:magic_muscle'), 20 * 600))
 })
 

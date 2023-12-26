@@ -1,0 +1,4 @@
+{
+  "chestcavity": "kubejs:types/boss/the_leviathan.json",
+  "entities": ["cataclysm:the_leviathan"]
+}

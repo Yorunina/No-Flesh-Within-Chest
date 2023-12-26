@@ -173,7 +173,7 @@ StartupEvents.registry('item', event => {
         .addScore('speed', -0.5)
         .addScore('nerves', 0.5)
         .addTextLines('default', [Text.gray('革命之力将会被稍稍延后')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每'), Text.gold(1), Text.gray('个该器官将会减少'), Text.red('心火状态/熔火状态'), Text.gold('2s'), Text.gray('的状态时长')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每'), Text.gold(1), Text.gray('个该器官将会减少'), Text.red('心火状态/熔火状态'), Text.gold('3s'), Text.gray('的状态时长')])
         .build())
         .texture('kubejs:item/organs/machine/revolution_delay')
         .tag('kubejs:revolution')
@@ -302,12 +302,12 @@ StartupEvents.registry('item', event => {
 
     // boss遗物器官
     registeOrgan(new Organ('kubejs:relic_metal_plate')
-        .addScore('health', 0.125)
-        .addScore('nerves', 0.125)
-        .addScore('breath_recovery', 0.125)
+        .addScore('health', 0.25)
+        .addScore('nerves', 0.25)
+        .addScore('breath_recovery', 0.25)
         .addScore('strength', 0.125)
-        .addScore('filtration', 0.125)
-        .addScore('detoxification', 0.125)
+        .addScore('filtration', 0.25)
+        .addScore('detoxification', 0.25)
         .addScore('defense', 0.125)
         .addScore('nutrition', 0.125)
         .addScore('endurance', 0.125)
@@ -494,6 +494,46 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/others/long_lasting_pill')
         .tag('itemborders:gold');
+
+    // 食物系列
+    registeOrgan(new Organ('kubejs:hamimelon_organ')
+        .addScore('health', -1)
+        .addScore('endurance', 1.5)
+        .addScore('luck', 1)
+        .addTextLines('default', [Text.gray('被整齐切下的哈密瓜')])
+        .addTextLines('default', [Text.gray('它是怎么来到这里的？')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('周围每存在一个'), Text.of('食物').color('#f1b500'), Text.gray('器官，会额外增加'), Text.gold(2), Text.gray('生命值上限')])
+        .build())
+        .texture('kubejs:item/organs/food/hamimelon_organ')
+        .tag('itemborders:gold')
+        .tag('kubejs:food')
+        .tag('kubejs:active');
+
+    registeOrgan(new Organ('kubejs:watermelon_organ')
+        .addScore('health', 0.5)
+        .addScore('speed', 0.5)
+        .addTextLines('default', [Text.gray('被整齐切下的西瓜')])
+        .build())
+        .texture('kubejs:item/organs/food/watermelon_organ')
+        .tag('itemborders:iron')
+        .tag('kubejs:food');
+
+    registeOrgan(new Organ('kubejs:lucky_cookie_organ')
+        .addScore('luck', 3)
+        .addTextLines('default', [Text.gray('今日运势为:大吉')])
+        .build())
+        .texture('kubejs:item/organs/food/lucky_cookie')
+        .tag('itemborders:gold')
+        .tag('kubejs:food');
+
+    registeOrgan(new Organ('kubejs:cream_cookie_heart')
+        .addScore('health', 1.5)
+        .addScore('endurance', 1)
+        .addScore('luck', 1.5)
+        .build())
+        .texture('kubejs:item/organs/food/cream_cookie_heart')
+        .tag('itemborders:gold')
+        .tag('kubejs:food');
 
     // alex
     registeOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart')

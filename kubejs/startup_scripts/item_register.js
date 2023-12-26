@@ -16,9 +16,15 @@ StartupEvents.registry('item', event => {
     event.create('water_candy').texture('kubejs:item/water_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('fire_candy').texture('kubejs:item/fire_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('wind_candy').texture('kubejs:item/wind_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
+
+    event.create('lucky_cookie').texture('kubejs:item/lucky_cookie').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
+
+
     event.create('mr_and_mrs_smith').texture('kubejs:item/mr_and_mrs_smith').tag('kubejs:eatable_candy').food(food => { food.hunger(4).saturation(1).alwaysEdible(); food.effect('minecraft:regeneration', 20 * 30, 1, 1) })
 
     event.create('scrap').texture('kubejs:item/scrap')
+    event.create('fire_gem').texture('kubejs:item/fire_gem')
+
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
     event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
     event.create('stardust_fragment').texture('kubejs:item/stardust_fragment')
@@ -80,4 +86,16 @@ StartupEvents.registry('item', event => {
     event.create('empty_organ_charm').texture('kubejs:item/empty_organ_charm').maxStackSize(1).tag('curios:charm')
     event.create('organ_charm').texture('kubejs:item/organ_charm').maxStackSize(1).tag('curios:charm')
     event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
+
+    event.create('flora_wand').texture('kubejs:item/flora_wand')
+        .maxStackSize(1)
+        .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellBoost', 3, 'addition')
+        .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerBoost', -0.5, 'addition')
+        .rarity('epic')
+
+    event.create('holy_wooden_wand').texture('kubejs:item/holy_wooden_wand')
+        .maxStackSize(1)
+        .modifyAttribute('irons_spellbooks:holy_spell_power', 'kubejsHolySpellBoost', 0.3, 'addition')
+        .rarity('rare')
 })
+

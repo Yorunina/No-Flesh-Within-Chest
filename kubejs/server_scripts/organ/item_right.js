@@ -42,7 +42,7 @@ const organRightClickedStrategies = {
             duration = duration + itemMap.get('kubejs:revolution_relay').length * 100
         }
         if (itemMap.has('kubejs:revolution_delay')) {
-            duration = Math.max(duration - itemMap.get('kubejs:revolution_delay').length * 40, 20 * 8)
+            duration = Math.max(duration - itemMap.get('kubejs:revolution_delay').length * 60, 20 * 8)
         }
         event.player.swing()
         event.player.potionEffects.add('kubejs:flaring_heart', duration, amplifier);

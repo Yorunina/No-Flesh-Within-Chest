@@ -9,6 +9,7 @@
     "allow_direct_memory_access": true,
     "enable_memory_tracing": false,
     "use_advanced_staging_buffers": true,
+    "disable_incompatible_mod_warnings": false,
     "cpu_render_ahead_limit": 3
   },
   "performance": {

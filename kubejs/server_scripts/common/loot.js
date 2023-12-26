@@ -15,8 +15,9 @@ LootJS.modifiers(event => {
                 LootEntry.of('simplehats:hatbag_halloween').when((c) => c.randomChance(0.2)),
             )
     }
-    event.addEntityLootModifier('bosses_of_mass_destruction:void_blossom')
-        .addLoot('kubejs:secret_of_bloom');
+
+    event.addEntityLootModifier('minecraft:witch')
+        .addLoot(LootEntry.of('kubejs:magic_spine').when((c) => c.randomChance(0.02)));
 
     event.addLootTypeModifier(LootType.ENTITY)
         .removeLoot('@simplehats')
@@ -57,7 +58,9 @@ LootJS.modifiers(event => {
     addBossLoot('somebosses:ancient_wizard')
         .addLoot(LootEntry.of('kubejs:candy_pancreas').when((c) => c.randomChance(0.2)));
     addBossLoot('somebosses:man_of_water')
+        .addLoot(LootEntry.of('kubejs:magic_vision').when((c) => c.randomChance(0.2)));
     addBossLoot('somebosses:flaming_berserker')
+        .addLoot(LootEntry.of('kubejs:fire_gem').when((c) => c.randomChance(0.8)));
     addBossLoot('somebosses:electric_head')
     addBossLoot('somebosses:frost_magma')
     addBossLoot('somebosses:stone_guard')
@@ -74,6 +77,7 @@ LootJS.modifiers(event => {
     addBossLoot('cataclysm:the_harbinger')
     addBossLoot('cataclysm:the_leviathan')
     addBossLoot('bosses_of_mass_destruction:void_blossom')
+        .addLoot('kubejs:secret_of_bloom');
     addBossLoot('bosses_of_mass_destruction:lich')
     addBossLoot('bosses_of_mass_destruction:gauntlet')
     addBossLoot('meetyourfight:bellringer')

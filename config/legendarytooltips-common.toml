@@ -33,7 +33,7 @@
 		compact_tooltips = true
 		# Which items should have a 3D model rendered in the tooltip.  If set to "equipment", the model will only be rendered for items with durability.
 		#Allowed Values: NONE, EQUIPMENT, ALL
-		render_item_model = "ALL"
+		render_item_model = "EQUIPMENT"
 
 	# Entry types:
 	#    Match all - Specifying just an asterisk (*) will match all items.  Examples: "*"

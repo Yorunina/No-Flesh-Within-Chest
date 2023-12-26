@@ -78,6 +78,7 @@ global.TYPE_MAP = {
     'kubejs:relics': Text.of('遗物').color('#ffe100'),
     'kubejs:legends': Text.of('传说').color('#d6e5ff'),
     'kubejs:evolution': Text.green('进化'),
+    'kubejs:food': Text.of('食物').color('#f1b500'),
     'kubejs:active_only': Text.gold('唯一化激活'),
     'kubejs:loot': Text.gold('战利品'),
     'kubejs:loot_only': Text.gold('唯一化战利品'),

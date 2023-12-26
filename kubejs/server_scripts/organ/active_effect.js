@@ -124,9 +124,6 @@ const organActiveStrategies = {
     'kubejs:stomach_tumor': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
         let pos = organ.getInt('Slot')
-        if (posMap.has(pos)) {
-            posMap.get(pos)
-        }
         let count = 0
         eightDirectionList.forEach(direction => {
             let currentPos = lookPos(direction, pos)
@@ -144,6 +141,21 @@ const organActiveStrategies = {
     'kubejs:holy_eyeball': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.03)
     },
+    'kubejs:hamimelon_organ': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.getInt('Slot')
+        let count = 0
+        eightDirectionList.forEach(direction => {
+            let currentPos = lookPos(direction, pos)
+            if (posMap.has(currentPos) && Item.of(posMap.get(currentPos).id).hasTag('kubejs:food')) {
+                count++
+            }
+        })
+        if (count > 0) {
+            attributeMapValueAddition(attributeMap, global.HEALTH_UP, 2 * count)
+        }
+    },
+
 };
 
 const organActiveOnlyStrategies = {

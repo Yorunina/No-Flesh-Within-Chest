@@ -1,0 +1,115 @@
+
+#Game settings
+[settings]
+	#Farmer's Delight adds crates (3x3) for vanilla crops, similar to Quark and Thermal Cultivation. Should they be craftable?
+	enableVanillaCropCrates = true
+	#Should Novice and Apprentice Farmers buy this mod's crops? (May reduce chances of other trades appearing)
+	farmersBuyFDCrops = true
+	#Should the Wandering Trader sell some of this mod's items? (Currently includes crop seeds and onions)
+	wanderingTraderSellsFDItems = true
+	#How often (in percentage) should Rich Soil succeed in boosting a plant's growth at each random tick? Set it to 0.0 to disable this.
+	#Range: 0.0 ~ 1.0
+	richSoilBoostChance = 0.2
+	#How much of a bonus (in percentage) should each level of Fortune grant to Cutting Board chances? Set it to 0.0 to disable this.
+	#Range: 0.0 ~ 1.0
+	cuttingBoardFortuneBonus = 0.1
+	#Should players be able to reel back rope, bottom to top, when sneak-using with an empty hand on them?
+	enableRopeReeling = true
+	#A list of dye colors that, when used as the background of a Canvas Sign, should default to white text when placed.
+	#Dyes: ["white", "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray", "cyan", "purple", "blue", "brown", "green", "red", "black"]
+	canvasSignDarkBackgroundList = ["gray", "purple", "blue", "brown", "green", "red", "black"]
+
+#Farming
+[farming]
+	#Which rope should Tomato Vines leave behind when mined by hand?
+	defaultTomatoVineRope = "farmersdelight:rope"
+	#Should tomato vines be able to climb any rope tagged as farmersdelight:ropes?
+	#Beware: this will convert these blocks into the block specified in defaultTomatoVineRope.
+	enableTomatoVineClimbingTaggedRopes = true
+
+#Recipe book
+[recipe_book]
+	#Should the Cooking Pot have a Recipe Book available on its interface?
+	enableRecipeBookCookingPot = true
+
+#Vanilla item overrides
+[overrides]
+	#Should soups and stews from vanilla Minecraft grant additional effects, like meals from this mod?
+	vanillaSoupExtraEffects = true
+	#Should Rabbit Stew grant users the jumping prowess of a rabbit when eaten?
+	rabbitStewJumpBoost = true
+	#Should the Dispenser be able to operate a Cutting Board in front of it?
+	dispenserUsesToolsOnCuttingBoard = true
+
+	#Stack size overrides
+	[overrides.stack_size]
+		#Should BowlFoodItems in the following list become stackable to 16, much like Farmer's Delight's meals?
+		enableStackableSoupItems = true
+		#List of BowlFoodItems. They must extend this class to be affected. Default: vanilla soups and stews.
+		soupItemList = ["minecraft:mushroom_stew", "minecraft:beetroot_soup", "minecraft:rabbit_stew"]
+
+#World generation
+[world]
+	#Should this mod add some of its items (ropes, seeds, knives, meals etc.) as extra chest loot across Minecraft?
+	generateFDChestLoot = true
+	#Generate Compost Heaps across all village biomes
+	genVillageCompostHeaps = true
+
+	#Wild Cabbage generation
+	[world.wild_cabbages]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Sea Beet generation
+	[world.wild_beetroots]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 30
+
+	#Wild Potato generation
+	[world.wild_potatoes]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 100
+
+	#Wild Carrot generation
+	[world.wild_carrots]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 120
+
+	#Wild Onion generation
+	[world.wild_onions]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 120
+
+	#Tomato Vines generation
+	[world.wild_tomatoes]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 100
+
+	#Wild Rice generation
+	[world.wild_rice]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 20
+
+	#Brown Mushroom Colony generation
+	[world.brown_mushroom_colonies]
+		#Generate brown mushroom colonies on mushroom fields
+		genBrownMushroomColony = true
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 15
+
+	#Red Mushroom Colony generation
+	[world.red_mushroom_colonies]
+		#Generate red mushroom colonies on mushroom fields
+		genRedMushroomColony = true
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 15
+
