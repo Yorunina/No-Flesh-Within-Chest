@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
 	event.recipes.create.mixing(Fluid.of('kubejs:syrup').withAmount(50), [Fluid.water(50), 'minecraft:sugar', 'hexerei:dried_mugwort_flowers', 'hexerei:dried_belladonna_flowers']).heated()
 
-	event.recipes.create.filling('kubejs:hamimelon_organ', ['fruitstack:hamimelon', Fluid.of('kubejs:syrup').withAmount(3000)])
+	event.recipes.create.filling('kubejs:hamimelon_organ', ['fruitsdelight:hamimelon', Fluid.of('kubejs:syrup').withAmount(3000)])
 
 	event.recipes.create.deploying('kubejs:telescopic_tool_arm', ['kubejs:telescopic_arm', 'nameless_trinkets:light_gloves'])
 

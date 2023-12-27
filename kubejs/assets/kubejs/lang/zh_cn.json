@@ -138,7 +138,11 @@
     "item.kubejs.fire_gem": "烈焰宝石",
     "item.kubejs.lucky_cookie": "幸运饼干",
     "item.kubejs.holy_wooden_wand": "神圣木魔杖",
+    "item.kubejs.nature_wooden_wand": "自然木魔杖",
+    "item.kubejs.ice_wooden_wand": "寒冰木魔杖",
     "item.kubejs.flora_wand": "花之魔杖",
+    "item.kubejs.candy_canes_wand": "拐杖糖",
+    "item.kubejs.cream": "奶油",
     
     "fluid.kubejs.syrup": "糖浆",
 

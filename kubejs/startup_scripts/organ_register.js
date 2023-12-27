@@ -14,7 +14,7 @@ StartupEvents.registry('item', event => {
      */
     registeOrgan(new Organ('kubejs:health_appendix')
         .addScore('luck', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一种类为'), Text.yellow('胃'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('生命值')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一种类为'), Text.yellow('阑尾'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('生命值')])
         .build())
         .texture('kubejs:item/organs/common/appendix')
         .tag('kubejs:appendix')
@@ -34,7 +34,8 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当你进食时，每个'), Text.yellow('贪婪之胃'), Text.gray('会给予你'), Text.yellow(10), Text.gray('点'), Text.yellow('经验')])
         .build())
         .texture('kubejs:item/organs/common/stomach')
-        .tag('kubejs:stomach');
+        .tag('kubejs:stomach')
+        .tag('kubejs:eat_effect');
 
     // 幸运之胃
     registeOrgan(new Organ('kubejs:lucky_stomach')
@@ -204,7 +205,8 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/candy/candy_stomach')
         .tag('kubejs:stomach')
-        .tag('kubejs:candy');
+        .tag('kubejs:candy')
+        .tag('kubejs:eat_effect_only');
 
     registeOrgan(new Organ('kubejs:candy_pancreas')
         .addScore('endurance', -1)
@@ -528,12 +530,16 @@ StartupEvents.registry('item', event => {
 
     registeOrgan(new Organ('kubejs:cream_cookie_heart')
         .addScore('health', 1.5)
-        .addScore('endurance', 1)
+        .addScore('defense', -1)
         .addScore('luck', 1.5)
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('食用曲奇时会获得'), Text.gold('3600s力量Ⅰ'), Text.gray('效果')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('食用奶油时会获得'), Text.gold('3600s速度Ⅰ'), Text.gray('效果')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('效果互斥')])
         .build())
         .texture('kubejs:item/organs/food/cream_cookie_heart')
         .tag('itemborders:gold')
-        .tag('kubejs:food');
+        .tag('kubejs:food')
+        .tag('kubejs:eat_effect_only');
 
     // alex
     registeOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart')

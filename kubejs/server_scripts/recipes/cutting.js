@@ -17,6 +17,7 @@ ServerEvents.recipes(event => {
         event.custom(recipeModel)
     }
     event.remove({ output: 'minecraft:melon_slice', mod: 'farmersdelight' })
+    
     registeCustomRecipe(new CuttingRecipe([Item.of('minecraft:melon')], [{ "count": 7, "item": "minecraft:melon_slice" }, { "chance": 0.05, "item": "kubejs:watermelon_organ" }]))
 })
 

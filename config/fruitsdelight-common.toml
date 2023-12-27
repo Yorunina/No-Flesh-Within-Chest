@@ -1,0 +1,16 @@
+#Chance for fruits to grow per random tick
+#Range: 0.0 ~ 1.0
+fruitsGrowChance = 0.1
+#Chance for fruits to drop per random tick
+#Range: 0.0 ~ 1.0
+fruitsDropChance = 0.1
+#Chance for flower to decay when fruits are picked up / dropped
+#Range: 0.0 ~ 1.0
+flowerDecayChance = 0.1
+#Effect application range for Rage Aura effect
+#Range: 0 ~ 64
+rageEffectRange = 24
+#Effect application range for Heal Aura effect
+#Range: 0 ~ 64
+healEffectRange = 6
+

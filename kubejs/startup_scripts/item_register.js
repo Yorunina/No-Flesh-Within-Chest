@@ -17,8 +17,8 @@ StartupEvents.registry('item', event => {
     event.create('fire_candy').texture('kubejs:item/fire_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('wind_candy').texture('kubejs:item/wind_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
 
-    event.create('lucky_cookie').texture('kubejs:item/lucky_cookie').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
-
+    event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
+    event.create('cream').texture('kubejs:item/cream').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
 
     event.create('mr_and_mrs_smith').texture('kubejs:item/mr_and_mrs_smith').tag('kubejs:eatable_candy').food(food => { food.hunger(4).saturation(1).alwaysEdible(); food.effect('minecraft:regeneration', 20 * 30, 1, 1) })
 
@@ -89,13 +89,39 @@ StartupEvents.registry('item', event => {
 
     event.create('flora_wand').texture('kubejs:item/flora_wand')
         .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellBoost', 3, 'addition')
-        .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerBoost', -0.5, 'addition')
+        .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellWeaponBoost', 3, 'addition')
+        .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', -0.5, 'addition')
         .rarity('epic')
 
     event.create('holy_wooden_wand').texture('kubejs:item/holy_wooden_wand')
         .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:holy_spell_power', 'kubejsHolySpellBoost', 0.3, 'addition')
+        .modifyAttribute('irons_spellbooks:holy_spell_power', 'kubejsHolySpellWeaponBoost', 0.3, 'addition')
         .rarity('rare')
+
+    event.create('ice_wooden_wand').texture('kubejs:item/ice_wooden_wand')
+        .maxStackSize(1)
+        .modifyAttribute('irons_spellbooks:ice_spell_power', 'kubejsIceSpellWeaponBoost', 0.3, 'addition')
+        .rarity('rare')
+
+    event.create('nature_wooden_wand').texture('kubejs:item/nature_wooden_wand')
+        .maxStackSize(1)
+        .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellWeaponBoost', 0.3, 'addition')
+        .rarity('rare')
+
+    event.create('candy_canes_wand').texture('kubejs:item/candy_canes_wand')
+        .maxStackSize(1)
+        .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', 0.1, 'addition')
+        .rarity('epic')
+        .useAnimation('eat')
+        .use((level, player, hand) => {
+            return true;
+        })
+        .useDuration(itemStack => 20)
+        .finishUsing((itemstack, level, entity) => {
+            entity.playSound('entity.player.burp')
+            entity.eat(level, Item.of('kubejs:candy'))
+            entity.addItemCooldown(itemstack, 20 * 30)
+            return itemstack;
+        })
 })
 

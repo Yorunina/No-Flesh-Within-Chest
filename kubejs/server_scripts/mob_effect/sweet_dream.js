@@ -33,6 +33,7 @@ EntityEvents.hurt('minecraft:player', event => {
             return;
         }
         let duration = Math.floor(sweetDreamPotion.getDuration() - damage * 20 * 2 / (sweetDreamPotion.getAmplifier() + 1));
+        duration = Math.min(duration, 600 * 20)
         let amplifier = sweetDreamPotion.getAmplifier();
         player.removeEffect('kubejs:sweet_dream')
         player.potionEffects.add('kubejs:sweet_dream', duration, amplifier);
@@ -54,7 +55,7 @@ EntityEvents.hurt('minecraft:player', event => {
             amplifierMuti = amplifierMuti + Math.floor(itemMap.get('kubejs:magic_spine').length / 2)
         }
         if (!event.player.hasEffect('kubejs:sweet_dream')) {
-            event.player.potionEffects.add('kubejs:sweet_dream', 20 * 5 * durationMuti,amplifierMuti);
+            event.player.potionEffects.add('kubejs:sweet_dream', 20 * 5 * durationMuti, amplifierMuti);
         }
     }
 })

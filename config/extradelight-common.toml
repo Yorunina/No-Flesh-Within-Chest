@@ -1,0 +1,14 @@
+
+#Recipe book
+[recipe_book]
+	#Should the Oven have a Recipe Book available on its interface?
+	enableRecipeBookOven = false
+
+#Mint
+[mint_spread]
+	#Should mint spread?
+	shouldMintSpread = true
+	#How fast should mint spread? (Higher number = Slower)
+	#Range: 1 ~ 100
+	mintSpreadRate = 6
+

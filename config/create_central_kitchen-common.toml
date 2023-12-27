@@ -1,0 +1,33 @@
+
+#.
+#Config for Automation related components
+[automation]
+	#.
+	#.
+	#Whether allowing Deployers to perform Cutting Board Recipes
+	enableCuttingBoardDeploying = true
+	#.
+	#List of Block Entities that can be boosted when placed on Blaze Stove
+	boostingCookerList = ["farmersdelight:cooking_pot", "farmersdelight:skillet"]
+
+#.
+#Config for Integration with other mods
+[integration]
+	#.
+	#.
+	#Whether replacing vanilla and modded pies into Farmer's Delight style
+	#[@cui:RequiresReload:both]
+	enablePieOverhaul = true
+	#.
+	#Pie items in this list will not be included in pie overhaul
+	#[@cui:RequiresReload:both]
+	pieOverhaulBlackList = []
+	#.
+	#For harvester to function properly, turning on this support will cause the collision shape of the overweight crop block to disappear.
+	#[@cui:RequiresReload:server]
+	enableHarvesterSupportForOverweightFarming = true
+	#.
+	#For harvester to function properly, turning on this support will cause the collision shape of Coffee Bush and Tea Bush block to disappear.
+	#[@cui:RequiresReload:server]
+	enableHarvesterSupportForFarmersRespite = true
+
