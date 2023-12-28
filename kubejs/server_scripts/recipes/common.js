@@ -47,4 +47,10 @@ ServerEvents.recipes(event => {
             }
             return null;
         });
+
+    event.shaped('kubejs:empty_organ_charm', [
+        ['#forge:glass', '#minecraft:logs', '#forge:glass'],
+        ['#forge:glass', 'minecraft:ghast_tear', '#forge:glass'],
+        ['#forge:glass', '#forge:glass', '#forge:glass']]);
+
 })

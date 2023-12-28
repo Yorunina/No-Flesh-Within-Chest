@@ -1,3 +1,4 @@
+// priority: 0
 const playerAttributeMap = new Map();
 
 /**
@@ -15,11 +16,11 @@ global.updatePlayerActiveStatus = player => {
             organActiveStrategies[organ.id](player, organ, attributeMap)
         })
     }
-    let activeOrganSet = new Set()
+    let onlySet = new Set()
     if (typeMap.has('kubejs:active_only')) {
         typeMap.get('kubejs:active_only').forEach(organ => {
-            if (!activeOrganSet.has(organ.id)) {
-                activeOrganSet.add(organ.id)
+            if (!onlySet.has(organ.id)) {
+                onlySet.add(organ.id)
                 organActiveOnlyStrategies[organ.id](player, organ, attributeMap)
             }
         })
@@ -139,7 +140,7 @@ const organActiveStrategies = {
         attributeMapValueAddition(attributeMap, global.ARMOR_TOUGHNESS, 2)
     },
     'kubejs:holy_eyeball': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.03)
+        attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.05)
     },
     'kubejs:hamimelon_organ': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);

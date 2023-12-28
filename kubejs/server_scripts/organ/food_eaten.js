@@ -1,3 +1,4 @@
+// priority: 10
 ItemEvents.foodEaten(event => {
     let player = event.player;
     if (!player) return;
@@ -7,11 +8,11 @@ ItemEvents.foodEaten(event => {
             organFoodEatenStrategies[organ.id](event)
         })
     }
-    let eatEffectOrganSet = new Set()
+    let onlySet = new Set()
     if (typeMap.has('kubejs:eat_effect_only')) {
         typeMap.get('kubejs:eat_effect_only').forEach(organ => {
-            if (!eatEffectOrganSet.has(organ.id)) {
-                eatEffectOrganSet.add(organ.id)
+            if (!onlySet.has(organ.id)) {
+                onlySet.add(organ.id)
                 organFoodEatenOnlyStrategies[organ.id](event)
             }
         })

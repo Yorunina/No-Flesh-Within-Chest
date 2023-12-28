@@ -1,22 +1,36 @@
+// priority: 10
 ItemEvents.rightClicked(event => {
     let player = event.player;
     if (!player) return;
-    let item = event.item;
-    if (item.hasTag('minecraft:coals')) {
-        let itemMap = getPlayerChestCavityItemMap(player)
-        if (itemMap.has('kubejs:furnace_core')) {
-            organRightClickedStrategies['kubejs:furnace_core'](event, itemMap)
-            return;
-        }
-        if (itemMap.has('kubejs:burning_heart')) {
-            organRightClickedStrategies['kubejs:burning_heart'](event, itemMap)
-            return;
-        }
+
+    let typeMap = getPlayerChestCavityTypeMap(player);
+    if (typeMap.has('kubejs:rclick')) {
+        typeMap.get('kubejs:rclick').forEach(organ => {
+            organRightClickedStrategies[organ.id](event)
+        })
+    }
+    let onlySet = new Set()
+    if (typeMap.has('kubejs:rclick_only')) {
+        typeMap.get('kubejs:rclick_only').forEach(organ => {
+            if (!onlySet.has(organ.id)) {
+                onlySet.add(organ.id)
+                organRightClickedOnlyStrategies[organ.id](event)
+            }
+        })
     }
 })
 
+
 const organRightClickedStrategies = {
-    'kubejs:furnace_core': function (event, itemMap) {
+
+}
+
+const organRightClickedOnlyStrategies = {
+    'kubejs:furnace_core': function (event) {
+        if (!event.item.hasTag('minecraft:coals')) {
+            return
+        }
+        let itemMap = getPlayerChestCavityItemMap(event.player)
         let amplifier = 0
         let duration = 20 * 20
         if (itemMap.has('kubejs:revolution_gear')) {
@@ -30,9 +44,14 @@ const organRightClickedStrategies = {
         }
         event.player.swing()
         event.player.potionEffects.add('kubejs:burning_heart', duration, amplifier);
+        event.player.removeEffect('kubejs:flaring_heart')
         event.item.shrink(1);
     },
-    'kubejs:burning_heart': function (event, itemMap) {
+    'kubejs:burning_heart': function (event) {
+        if (!event.item.hasTag('minecraft:coals')) {
+            return
+        }
+        let itemMap = getPlayerChestCavityItemMap(event.player)
         let amplifier = 0
         let duration = 20 * 20
         if (itemMap.has('kubejs:revolution_gear')) {
@@ -46,6 +65,7 @@ const organRightClickedStrategies = {
         }
         event.player.swing()
         event.player.potionEffects.add('kubejs:flaring_heart', duration, amplifier);
+        event.player.removeEffect('kubejs:burning_heart')
         event.item.shrink(1);
     },
 };

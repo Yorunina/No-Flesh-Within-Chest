@@ -1,19 +1,45 @@
+// priority: 10
 BlockEvents.broken(event => {
     let player = event.player;
     if (!player) return;
-    let itemMap = getPlayerChestCavityItemMap(player);
-    if (event.block.item.hasTag('forge:stone') && itemMap.has('kubejs:ore_lung')) {
-        organBlockBrokenStrategies['kubejs:ore_lung'](event, itemMap);
+
+    let typeMap = getPlayerChestCavityTypeMap(player);
+    if (typeMap.has('kubejs:break')) {
+        typeMap.get('kubejs:break').forEach(organ => {
+            organBlockBrokenStrategies[organ.id](event)
+        })
     }
-    if (event.block.item.hasTag('forge:glass') && itemMap.has('kubejs:silk_for_cutting')) {
-        organBlockBrokenStrategies['kubejs:silk_for_cutting'](event, itemMap);
+    let onlySet = new Set()
+    if (typeMap.has('kubejs:break_only')) {
+        typeMap.get('kubejs:break_only').forEach(organ => {
+            if (!onlySet.has(organ.id)) {
+                onlySet.add(organ.id)
+                organBlockBrokenOnlyStrategies[organ.id](event)
+            }
+        })
     }
 })
 
 
 const organBlockBrokenStrategies = {
-    'kubejs:ore_lung': function (event, itemMap) {
+
+};
+
+const organBlockBrokenOnlyStrategies = {
+    'kubejs:silk_for_cutting': function (event) {
+        if (!event.block.item.hasTag('forge:glass')) {
+            return
+        }
+        event.block.popItem(event.block.getItem())
+        event.block.set('minecraft:air')
+        event.cancel()
+    },
+    'kubejs:ore_lung': function (event) {
+        if (!event.block.item.hasTag('forge:stone')) {
+            return
+        }
         let player = event.player
+        let itemMap = getPlayerChestCavityItemMap(player)
         let count = 1;
         if (player.persistentData.contains(resourceCount)) {
             count = player.persistentData.getInt(resourceCount) + count;
@@ -28,12 +54,4 @@ const organBlockBrokenStrategies = {
         }
         player.persistentData.putInt(resourceCount, count)
     },
-    'kubejs:silk_for_cutting': function (event, itemMap) {
-        if (event.block > 0) {
-            return
-        }
-        event.block.popItem(event.block.getItem())
-        event.block.set('minecraft:air')
-        event.cancel()
-    },
-};
+}

@@ -64,7 +64,10 @@ ItemEvents.tooltip((tooltip) => {
             text.add(lineNum++, [Text.gray(`需要进食${item.nbt.dietTask.foodTypeList.length}/${item.nbt.dietTask.foodTypeAmount}种饥饿值大于${item.nbt.dietTask.minHunger}的食物才能进化`)]);
         }
         if (item.nbt?.type == 'bear') {
-            text.add(lineNum++, [Text.gray(`需要承受原伤害最低大于${item.nbt.bearTask.minDamage}的伤害，累积${item.nbt.bearTask.counter}/${item.nbt.bearTask.bearAmount}才能进化`)]);
+            text.add(lineNum++, [Text.gray(`需要承受原伤害最低大于${item.nbt.bearTask.minDamage}的伤害，累积${item.nbt.bearTask.counter.toFixed(2)}/${item.nbt.bearTask.bearAmount}才能进化`)]);
+        }
+        if (item.nbt?.type == 'damage') {
+            text.add(lineNum++, [Text.gray(`需要造成原伤害最低大于${item.nbt.damageTask.minDamage}的伤害，累积${item.nbt.damageTask.counter.toFixed(2)}/${item.nbt.damageTask.damageAmount}才能进化`)]);
         }
         if (item.nbt?.status == 1) {
             text.add(lineNum++, [Text.red(`进化已完成`)]);

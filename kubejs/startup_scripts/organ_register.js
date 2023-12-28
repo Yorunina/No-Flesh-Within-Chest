@@ -56,7 +56,8 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('此效果唯一')])
         .build())
         .texture('kubejs:item/organs/infinity/infinity_beats')
-        .tag('kubejs:infinity');
+        .tag('kubejs:infinity')
+        .tag('kubejs:damage_only');
 
     registeOrgan(new Organ('kubejs:infinity_force')
         .addScore('health', -3)
@@ -119,7 +120,8 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/machine/furnace_core')
         .tag('kubejs:heart')
         .tag('kubejs:revolution')
-        .tag('kubejs:machine');
+        .tag('kubejs:machine')
+        .tag('kubejs:rclick_only');
 
     // 心火核心
     registeOrgan(new Organ('kubejs:burning_heart')
@@ -136,7 +138,8 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/machine/burning_heart')
         .tag('kubejs:heart')
         .tag('kubejs:revolution')
-        .tag('kubejs:machine');
+        .tag('kubejs:machine')
+        .tag('kubejs:rclick_only');
 
     // 革命线缆
     registeOrgan(new Organ('kubejs:revolution_cable')
@@ -270,18 +273,20 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/others/ore_lung')
         .tag('kubejs:lung')
-        .tag('kubejs:resource');
+        .tag('kubejs:resource')
+        .tag('kubejs:break_only');
 
     registeOrgan(new Organ('kubejs:silk_for_cutting')
         .addScore('knockback_resistant', -0.5)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('能够精确采集玻璃')])
         .build())
         .texture('kubejs:item/organs/others/silk_for_cutting')
-        .tag('kubejs:muscle');
+        .tag('kubejs:muscle')
+        .tag('kubejs:break_only');
 
     registeOrgan(new Organ('kubejs:holy_eyeball')
         .addScore('filtration', -0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后提高'), Text.yellow('3%'), Text.yellow('暴击概率')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后提高'), Text.yellow('5%'), Text.yellow('暴击概率')])
         .build())
         .texture('kubejs:item/organs/others/holy_eyeball')
         .tag('kubejs:muscle')
@@ -299,7 +304,8 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('概率取决于其他'), Text.gold('都市传说'), Text.gray('器官种类的数量')])
         .build())
         .texture('kubejs:item/organs/legends/doppelganger')
-        .tag('kubejs:legends');
+        .tag('kubejs:legends')
+        .tag('kubejs:bear_only');
 
 
     // boss遗物器官

@@ -49,24 +49,43 @@ ItemEvents.foodEaten(event => {
     }
 })
 
+// 忍受任务
+EntityEvents.hurt('minecraft:player', event => {
+    let player = event.player
+    let curiosItem = getCuriosItem(player)
+    if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'bear') {
+        if (curiosItem.nbt.status == 1) {
+            return
+        }
+        if (event.damage < curiosItem.nbt.bearTask?.minDamage) {
+            return
+        }
+        curiosItem.nbt.bearTask.counter = curiosItem.nbt.bearTask.counter + event.damage
+        if (curiosItem.nbt.bearTask?.counter >= curiosItem.nbt.bearTask?.bearAmount) {
+            curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
+            curiosItem.nbt.status = 1
+            return
+        }
+    }
+})
+
 // 伤害任务
 EntityEvents.hurt(event => {
-    if (event.entity.isPlayer()) {
-        let player = event.player
-        let curiosItem = getCuriosItem(player)
-        if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'bear') {
-            if (curiosItem.nbt.status == 1) {
-                return
-            }
-            if (event.damage < curiosItem.nbt.bearTask?.minDamage) {
-                return
-            }
-            curiosItem.nbt.bearTask.counter = curiosItem.nbt.bearTask.counter + event.damage
-            if (curiosItem.nbt.bearTask?.counter >= curiosItem.nbt.bearTask?.bearAmount) {
-                curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
-                curiosItem.nbt.status = 1
-                return
-            }
+    if (!event.source.player) return;
+    let player = event.source.player
+    let curiosItem = getCuriosItem(player)
+    if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'damage') {
+        if (curiosItem.nbt.status == 1) {
+            return
+        }
+        if (event.damage < curiosItem.nbt.damageTask?.minDamage) {
+            return
+        }
+        curiosItem.nbt.damageTask.counter = curiosItem.nbt.damageTask.counter + event.damage
+        if (curiosItem.nbt.damageTask?.counter >= curiosItem.nbt.damageTask?.damageAmount) {
+            curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
+            curiosItem.nbt.status = 1
+            return
         }
     }
 })
