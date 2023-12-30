@@ -1,6 +1,8 @@
 const resourceCount = 'resourceCount'
-const killCount = 'killCount'
-const fishingCount = 'fishingCount'
+const resourceCountMax = 'resourceCountMax'
+const defaultResourceMax = 100
+
+const organActive = 'organActive'
 
 const bossTypeList = [
     'somebosses:aesegull',

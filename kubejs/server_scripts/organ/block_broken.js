@@ -22,7 +22,16 @@ BlockEvents.broken(event => {
 
 
 const organBlockBrokenStrategies = {
-
+    'kubejs:diamond_bottle': function (event) {
+        let player = event.player
+        if (!player.persistentData.contains(resourceCount)) {
+            return
+        }
+        let count = player.persistentData.getInt(resourceCount) ?? 0;
+        if (Math.random() < 0.5) {
+            updateResourceCount(player, count + 1)
+        }
+    },
 };
 
 const organBlockBrokenOnlyStrategies = {
@@ -44,14 +53,27 @@ const organBlockBrokenOnlyStrategies = {
         if (player.persistentData.contains(resourceCount)) {
             count = player.persistentData.getInt(resourceCount) + count;
         }
-        if (count >= 64) {
+        if (count >= 64 && Math.random() <= 0.03) {
             let luck = Math.max(player.getLuck(), 1)
             if (luck > 5) {
                 player.give(Item.of('kubejs:rare_mineral_cluster').withCount(Math.max(Math.floor(5 - 30 / luck), 1) * itemMap.get('kubejs:ore_lung').length))
             }
             player.give(Item.of('kubejs:common_mineral_cluster').withCount(Math.max(Math.floor(5 - 5 / luck), 1) * itemMap.get('kubejs:ore_lung').length))
-            count = 0
+            count = count - 64
         }
-        player.persistentData.putInt(resourceCount, count)
+        updateResourceCount(player, count)
+    },
+    'kubejs:desire_of_midas': function (event) {
+        let player = event.player
+        if (!player.persistentData.contains(resourceCount)) {
+            return
+        }
+        let count = player.persistentData.getInt(resourceCount);
+        if (count > 150 && Math.random() < 0.02) {
+            event.block.popItem('minecraft:gold_block')
+            event.block.set('minecraft:air')
+            updateResourceCount(player, count - 100)
+            event.cancel()
+        }
     },
 }

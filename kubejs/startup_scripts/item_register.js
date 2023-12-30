@@ -7,7 +7,7 @@ StartupEvents.registry('item', event => {
             .eaten(ctx => {
                 if (ctx.level.isClientSide()) return;
                 global.updatePlayerActiveStatus(ctx.player)
-                ctx.player.persistentData.putInt('organ_actived', 1)
+                ctx.player.persistentData.putInt('organActive', 1)
             });
     })
 
@@ -24,6 +24,7 @@ StartupEvents.registry('item', event => {
 
     event.create('scrap').texture('kubejs:item/scrap')
     event.create('fire_gem').texture('kubejs:item/fire_gem')
+
 
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
     event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')

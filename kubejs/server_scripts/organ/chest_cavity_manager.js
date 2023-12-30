@@ -10,16 +10,17 @@ const playerChestCavityTypeMap = new Map();
  * 如果之前服用过激活药则进行初始化激活
  */
 PlayerEvents.loggedIn((event) => {
+    initResourceBar(event.player)
     initChestCavityIntoMap(event.player, false);
-    if (event.player.persistentData.contains('organ_actived') &&
-        event.player.persistentData.getInt('organ_actived') == 1) {
+    if (event.player.persistentData.contains(organActive) &&
+        event.player.persistentData.getInt(organActive) == 1) {
         global.updatePlayerActiveStatus(event.player)
     }
 });
 
 PlayerEvents.respawned((event) => {
-    if (event.player.persistentData.contains('organ_actived') &&
-        event.player.persistentData.getInt('organ_actived') == 1) {
+    if (event.player.persistentData.contains(organActive) &&
+        event.player.persistentData.getInt(organActive) == 1) {
         global.updatePlayerActiveStatus(event.player)
     }
 });
@@ -45,7 +46,7 @@ PlayerEvents.inventoryClosed((event) => {
     let itemMap = getPlayerChestCavityItemMap(player)
     if (itemMap.has('kubejs:long_lasting_pill') || itemMap.has('kubejs:long_lasting_pill_gold')) {
         global.updatePlayerActiveStatus(event.player)
-        player.persistentData.putInt('organ_actived', 1)
+        player.persistentData.putInt(organActive, 1)
     }
 });
 
@@ -105,7 +106,7 @@ function initChestCavityIntoMap(player, removeFlag) {
     playerChestCavityTypeMap.set(uuid, chestInventoryTypeMap);
     playerChestCavityHashMap.set(uuid, newHash);
     if (removeFlag) {
-        player.persistentData.putInt('organ_actived', 0)
+        player.persistentData.putInt(organActive, 0)
         clearAllActivedModify(player)
     }
     return;

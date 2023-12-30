@@ -10,6 +10,7 @@ global.updatePlayerActiveStatus = player => {
     let typeMap = getPlayerChestCavityTypeMap(player);
     let uuid = String(player.getUuid());
     let attributeMap = new Map();
+    player.persistentData.putInt(resourceCountMax, defaultResourceMax)
     // 激活状态根据Tag区分并遍历可以用于激活的器官方法
     if (typeMap.has('kubejs:active')) {
         typeMap.get('kubejs:active').forEach(organ => {
@@ -29,7 +30,8 @@ global.updatePlayerActiveStatus = player => {
     attributeMap.forEach((value, key, map) => {
         player.modifyAttribute(global.ATTRIBUTE_MAP[key].key, key, value, global.ATTRIBUTE_MAP[key].operation);
     })
-
+    let maxResourceCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
+    updateResourceMaxCount(player, maxResourceCount)
 }
 
 /**
@@ -67,6 +69,7 @@ function clearAllActivedModify(player) {
     attributeMap.forEach((value, key, map) => {
         player.removeAttribute(global.ATTRIBUTE_MAP[key].key, global.ATTRIBUTE_MAP[key].name);
     })
+    player.persistentData.putInt(resourceCountMax, defaultResourceMax)
 }
 
 
@@ -156,7 +159,10 @@ const organActiveStrategies = {
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, 2 * count)
         }
     },
-
+    'kubejs:desire_of_midas': function (player, organ, attributeMap) {
+        let maxCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
+        player.persistentData.putInt(resourceCountMax, maxCount + 100)
+    }
 };
 
 const organActiveOnlyStrategies = {

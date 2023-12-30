@@ -262,19 +262,43 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:magic')
         .tag('kubejs:active');
 
-    // 矿石肺
+    // 资源系列
     registeOrgan(new Organ('kubejs:ore_lung')
         .addScore('health', -0.5)
         .addScore('nerves', -1)
         .addScore('breath_recovery', 1)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次挖掘石头后，便会积累'), Text.gold(1), Text.gray('资源点数')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每积累到'), Text.gold(64), Text.gray('点，会根据幸运给予矿物')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('资源点积累效果唯一')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次挖掘石头后，便会积累'), Text.gold('1'), Text.gray('资源点数')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在积累到'), Text.gold('64'), Text.gray('点后，3%概率消耗64点并给予矿物')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('资源点积累效果唯一')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.green('奖励受幸运影响')])
         .build())
-        .texture('kubejs:item/organs/others/ore_lung')
+        .texture('kubejs:item/organs/resource/ore_lung')
         .tag('kubejs:lung')
         .tag('kubejs:resource')
         .tag('kubejs:break_only');
+
+    registeOrgan(new Organ('kubejs:desire_of_midas')
+        .addScore('strength', -1)
+        .addScore('breath_recovery', -0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后增加'), Text.gold('100'), Text.gray('资源点数上限')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当资源点数累积到'), Text.gold('150'), Text.gray('后，2%概率触发'), Text.gold('点石成金')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('触发时，消耗'), Text.gold('100'), Text.gray('资源点数')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('点石成金效果唯一')])
+        .build())
+        .texture('kubejs:item/organs/resource/desire_of_midas')
+        .tag('itemborders:gold')
+        .tag('kubejs:resource')
+        .tag('kubejs:active')
+        .tag('kubejs:break_only');
+
+    registeOrgan(new Organ('kubejs:diamond_bottle')
+        .addScore('breath_recovery', -0.5)
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('挖掘时有'), Text.gold('50%'), Text.gray('概率增加资源点'), Text.gold('1'), Text.gray('点')])
+        .build())
+        .texture('kubejs:item/organs/resource/diamond_bottle')
+        .tag('itemborders:diamond')
+        .tag('kubejs:resource')
+        .tag('kubejs:break');
 
     registeOrgan(new Organ('kubejs:silk_for_cutting')
         .addScore('knockback_resistant', -0.5)
