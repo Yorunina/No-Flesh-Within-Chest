@@ -1,7 +1,0 @@
-type = last_world
-
-last_world {
-  is_server = false
-  world = D:/Game/Minecraft/Will Play/.minecraft/versions/No Flesh Within Chest/saves/Show Case
-}
-
