@@ -60,7 +60,7 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundnormal = 7020ui.png
+  backgroundnormal = config/fancymenu/elements/7020ui.png
 }
 
 customization {
@@ -110,7 +110,7 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundnormal = 5020ui.png
+  backgroundnormal = config/fancymenu/elements/5020ui.png
 }
 
 customization {
@@ -134,7 +134,7 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundnormal = 5020ui.png
+  backgroundnormal = config/fancymenu/elements/5020ui.png
 }
 
 customization {
@@ -170,7 +170,7 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundnormal = 7020ui.png
+  backgroundnormal = config/fancymenu/elements/7020ui.png
 }
 
 customization {
@@ -194,7 +194,7 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundnormal = 5020ui.png
+  backgroundnormal = config/fancymenu/elements/5020ui.png
 }
 
 customization {
@@ -279,13 +279,13 @@ customization {
 }
 
 customization {
-  path = minecraft_title.png
+  path = config/fancymenu/elements/minecraft_title.png
   orientation = mid-right
-  x = -145
+  x = -149
   width = 145
   action = addtexture
   actionid = eae36eb6-7568-4f37-a551-80e7807be31f1703591112690
-  y = -104
+  y = -101
   height = 47
 }
 
