@@ -7,9 +7,7 @@
  */
 function curseOfFragilityPlayerHurtByOthers(event, data) {
     if (!event.source.actual) return;
-
     let player = event.entity;
-
     if (player.hasEffect('kubejs:curse_of_fragility')) {
         player.damageEquipment("feet", 10)
         player.damageEquipment("head", 10)

@@ -29,6 +29,7 @@ function eyeFinder(level, player, interactionHand, structureTagString) {
       let eye = new $EyeofEnder(level, player.getX(), player.getY(0.5), player.getZ())
       eye.setItem(item)
       eye.signalTo(foundPos)
+      player.swing()
       eye.spawn()
       item.shrink(1)
       level.playSound(null, player.getX(), player.getY(), player.getZ(), 'entity.ender_eye.launch', player.getSoundSource(), 0.5, 0.5)

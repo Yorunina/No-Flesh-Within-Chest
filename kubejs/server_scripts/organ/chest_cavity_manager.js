@@ -196,3 +196,7 @@ function lookPos(direction, pos) {
             return -1
     }
 }
+
+function getOppoPos(pos) {
+    return 18 * Math.floor(pos / 9) - pos + 8
+}

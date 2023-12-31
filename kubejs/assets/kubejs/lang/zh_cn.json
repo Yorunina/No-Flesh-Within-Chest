@@ -112,7 +112,12 @@
     "item.kubejs.desire_of_midas": "迈达斯之愿",
     "item.kubejs.rapier_wand": "新月细剑",
     "item.kubejs.color_palette": "调色盘",
+    "item.kubejs.aesegull_rib_right": "立场欺诈者右肋",
+    "item.kubejs.aesegull_rib_left": "立场欺诈者左肋",
+    "item.kubejs.redstone_furnace": "红石血肉熔炉",
+    "item.kubejs.blood_moon_wand": "鲜血之月魔杖",
     
+
     "item.kubejs.active_pill": "激活药",
     "item.kubejs.candy": "糖果",
     "item.kubejs.ice_candy": "冰糖果",
@@ -147,6 +152,8 @@
     "item.kubejs.flora_wand": "花之魔杖",
     "item.kubejs.candy_canes_wand": "拐杖糖",
     "item.kubejs.artist_wand": "艺术家法杖",
+    "item.kubejs.glass_wand": "玻璃魔杖",
+    "item.kubejs.starch_sausage": "淀粉肠",
     "item.kubejs.cream": "奶油",
     
     "fluid.kubejs.syrup": "糖浆",

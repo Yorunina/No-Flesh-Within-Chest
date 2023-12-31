@@ -35,6 +35,9 @@ EntityEvents.hurt(event => {
  */
 EntityEvents.hurt('minecraft:player', event => {
     let data = new EntityHurtCustomModel(event.getDamage())
+    if (!highPriorityPlayerHurtByOthers(event, data)) {
+        return
+    }
     organPlayerHurtByOthers(event, data)
     sweetDreamPlayerHurtByOthers(event, data)
     curseOfFragilityPlayerHurtByOthers(event, data)
@@ -47,3 +50,4 @@ EntityEvents.hurt('minecraft:player', event => {
         event.cancel()
     }
 })
+

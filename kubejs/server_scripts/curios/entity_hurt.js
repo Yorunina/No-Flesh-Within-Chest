@@ -17,10 +17,10 @@ function curiosPlayerHurtByOthers(event, data) {
         .get();
 
     for (let slot = 0; slot < curios.getSlots(); slot++) {
-        if (player.getHealth() - event.getDamage() <= 4) {
+        if (player.getHealth() - event.damage <= 4) {
             let item = curios.getStackInSlot(slot);
-            if (curiosStrategies[item]) {
-                curiosStrategies[item](event, curios, slot, item, data)
+            if (curiosStrategies[item.id]) {
+                curiosStrategies[item.id](event, curios, slot, item, data)
             }
         }
     }
@@ -36,6 +36,7 @@ const curiosStrategies = {
             if (friend && friend.isAlive()) {
                 event.player.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, 0, 0)
                 curios.setStackInSlot(slot, Item.of('irons_spellbooks:silver_ring'));
+                event.player.setHealth(1)
                 event.cancel();
             }
         }

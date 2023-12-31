@@ -11,3 +11,10 @@ function commonEntityHurtByPlayer(event, data) {
 }
 
 
+
+function highPriorityPlayerHurtByOthers(event, data) {
+    if (event.source.getType() == 'heartstop') {
+        return false
+    }
+    return true
+}

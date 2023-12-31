@@ -13,6 +13,9 @@
   "boots": {
     "itemKey": "extraarmor:glass_boots"
   },
+  "mainHand": {
+    "itemKey": "kubejs:glass_wand"
+  },
   "hideGeneratedTooltip": false,
   "customTooltips": [
     "能够强化攻击能力，但血量会大幅下降"

@@ -262,6 +262,26 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:magic')
         .tag('kubejs:active');
 
+    registeOrgan(new Organ('kubejs:color_palette')
+        .addScore('speed', -0.5)
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('手持'), Text.gold('大艺术家法杖'), Text.gray('造成法术伤害时。如果法术为'), Text.gold('火焰箭'), Text.gray('、'), Text.green('剧毒箭'), Text.gray('、'), Text.blue('冰锥')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('会额外造成等同于'), Text.gold('当前法力值/20'), Text.gray('的额外伤害')])
+        .build())
+        .texture('kubejs:item/organs/magic/color_palette')
+        .tag('itemborders:diamond')
+        .tag('kubejs:magic')
+        .tag('kubejs:damage_only');
+
+    registeOrgan(new Organ('kubejs:blood_moon_wand')
+        .addScore('nerves', 1)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后提高'), Text.yellow(0.15), Text.yellow('鲜血咒文伤害倍率')])
+        .build())
+        .texture('kubejs:item/organs/magic/blood_moon_wand')
+        .modifyAttribute('irons_spellbooks:blood_spell_power', 'kubejsBloodSpellPowerWeaponBoost', 0.3, 'addition')
+        .tag('itemborders:diamond')
+        .tag('kubejs:magic')
+        .tag('kubejs:active');
+
     // 资源系列
     registeOrgan(new Organ('kubejs:ore_lung')
         .addScore('health', -0.5)
@@ -299,6 +319,19 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:diamond')
         .tag('kubejs:resource')
         .tag('kubejs:break');
+
+    registeOrgan(new Organ('kubejs:redstone_furnace')
+        .addScore('health', 1.25)
+        .addScore('defense', -0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后增加'), Text.gold('200'), Text.gray('资源点数上限')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('手持'), Text.gold('红石块'), Text.gray('右键以直接获得'), Text.gold('80'), Text.gray('资源点数')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('完全燃烧红石块需要60s')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('特殊效果唯一')])
+        .build())
+        .texture('kubejs:item/organs/resource/redstone_furnace')
+        .tag('kubejs:active')
+        .tag('kubejs:heart')
+        .tag('kubejs:rclick_only');
 
     registeOrgan(new Organ('kubejs:silk_for_cutting')
         .addScore('knockback_resistant', -0.5)
@@ -392,6 +425,26 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:heart')
         .tag('kubejs:relics');
 
+    registeOrgan(new Organ('kubejs:aesegull_rib_left')
+        .addScore('defense', 1.75)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('若在左右对称位置放置有'), Text.gold('立场欺诈者的右肋'), Text.gray('，则增加'), Text.gold(3), Text.gray('护甲值')])
+        .build())
+        .texture('kubejs:item/organs/relics/aesegull_rib_left')
+        .tag('kubejs:rib')
+        .tag('kubejs:active')
+        .tag('kubejs:relics');
+
+    registeOrgan(new Organ('kubejs:aesegull_rib_right')
+        .addScore('defense', 1.75)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('若在左右对称位置放置有'), Text.gold('立场欺诈者的左肋'), Text.gray('，则增加'), Text.gold(3), Text.gray('盔甲韧性')])
+        .build())
+        .texture('kubejs:item/organs/relics/aesegull_rib_right')
+        .tag('kubejs:rib')
+        .tag('kubejs:active')
+        .tag('kubejs:relics');
+
+
+
     // 碎片
     registeOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
@@ -480,15 +533,6 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine')
         .tag('kubejs:active_only')
         .tag('kubejs:evolution');
-
-    registeOrgan(new Organ('kubejs:color_palette')
-        .addScore('speed', -0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('手持'), Text.gold('大艺术家法杖'), Text.gray('造成法术伤害时。如果法术为'), Text.gold('火焰箭'), Text.gray('、'), Text.green('剧毒箭'), Text.gray('、'), Text.blue('冰锥')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('会额外造成等同于'), Text.gold('当前法力值/20'), Text.gray('的额外伤害')])
-        .build())
-        .texture('kubejs:item/organs/others/color_palette')
-        .tag('itemborders:diamond')
-        .tag('kubejs:damage_only');
 
     registeOrgan(new Organ('kubejs:telescopic_tool_arm')
         .addScore('fire_resistant', 0.5)

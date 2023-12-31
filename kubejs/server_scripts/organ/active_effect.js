@@ -162,7 +162,32 @@ const organActiveStrategies = {
     'kubejs:desire_of_midas': function (player, organ, attributeMap) {
         let maxCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
         player.persistentData.putInt(resourceCountMax, maxCount + 100)
-    }
+    },
+    'kubejs:redstone_furnace': function (player, organ, attributeMap) {
+        let maxCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
+        player.persistentData.putInt(resourceCountMax, maxCount + 200)
+    },
+    'kubejs:aesegull_rib_right': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.getInt('Slot')
+        // 取对称位置坐标
+        let opPos = getOppoPos(pos)
+        if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:aesegull_rib_left') {
+            attributeMapValueAddition(attributeMap, global.ARMOR, 3)
+        }
+    },
+    'kubejs:aesegull_rib_left': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.getInt('Slot')
+        // 取对称位置坐标
+        let opPos = getOppoPos(pos)
+        if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:aesegull_rib_right') {
+            attributeMapValueAddition(attributeMap, global.ARMOR_TOUGHNESS, 3)
+        }
+    },
+    'kubejs:blood_moon_wand': function (player, organ, attributeMap) {
+        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.15)
+    },
 };
 
 const organActiveOnlyStrategies = {

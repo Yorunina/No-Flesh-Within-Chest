@@ -57,7 +57,6 @@ ItemEvents.foodEaten(event => {
  */
 function organCharmPlayerHurtByOthers(event, data) {
     let player = event.player
-    player.tell(event.damage)
     let curiosItem = getCuriosItem(player)
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'bear') {
         if (curiosItem.nbt.status == 1) {

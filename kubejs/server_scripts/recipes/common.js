@@ -53,14 +53,18 @@ ServerEvents.recipes(event => {
     event.shaped('kubejs:empty_organ_charm', [
         ['#forge:glass', '#minecraft:logs', '#forge:glass'],
         ['#forge:glass', 'minecraft:ghast_tear', '#forge:glass'],
-        ['#forge:glass', '#forge:glass', '#forge:glass']]);
+        ['#forge:glass', '#forge:glass', '#forge:glass']])
 
     event.shaped('kubejs:friend_to_the_end', [
         ['numismaticoverhaul:gold_coin', '#forge:gems/diamond', 'numismaticoverhaul:gold_coin'],
         ['numismaticoverhaul:gold_coin', '', 'numismaticoverhaul:gold_coin'],
-        ['numismaticoverhaul:gold_coin', 'numismaticoverhaul:gold_coin', 'numismaticoverhaul:gold_coin']]);
+        ['numismaticoverhaul:gold_coin', 'numismaticoverhaul:gold_coin', 'numismaticoverhaul:gold_coin']])
     event.shaped('irons_spellbooks:silver_ring', [
         ['numismaticoverhaul:silver_coin', 'numismaticoverhaul:silver_coin', 'numismaticoverhaul:silver_coin'],
         ['numismaticoverhaul:silver_coin', '', 'numismaticoverhaul:silver_coin'],
-        ['numismaticoverhaul:silver_coin', 'numismaticoverhaul:silver_coin', 'numismaticoverhaul:silver_coin']]);
+        ['numismaticoverhaul:silver_coin', 'numismaticoverhaul:silver_coin', 'numismaticoverhaul:silver_coin']])
+    event.shaped('kubejs:color_palette', [
+        ['create:iron_sheet', 'create:iron_sheet', 'create:iron_sheet'],
+        ['createaddition:electrum_sheet', 'create:clipboard', 'createaddition:electrum_sheet'],
+        ['#forge:dyes/blue', '#forge:dyes/red', '#forge:dyes/green']])
 })

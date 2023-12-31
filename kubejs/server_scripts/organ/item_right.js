@@ -68,4 +68,18 @@ const organRightClickedOnlyStrategies = {
         event.player.removeEffect('kubejs:burning_heart')
         event.item.shrink(1);
     },
+    'kubejs:redstone_furnace': function (event) {
+        if (event.item != 'minecraft:redstone_block') {
+            return
+        }
+        let player = event.player
+        let count = 80;
+        if (player.persistentData.contains(resourceCount)) {
+            count = player.persistentData.getInt(resourceCount) + count;
+        }
+        updateResourceCount(player, count)
+        player.swing()
+        player.addItemCooldown(event.item, 20 * 60)
+        event.item.shrink(1);
+    },
 };

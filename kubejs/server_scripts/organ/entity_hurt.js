@@ -65,7 +65,7 @@ const organEntityBearOnlyStrategies = {
             let player = event.player;
             let amount = typeMap.get('kubejs:legends').length
             if (Math.random() < Math.min(0.25 + 0.1 * amount, 0.8)) {
-                player.potionEffects.add('minecraft:absorption', 60, 2)
+                player.potionEffects.add('minecraft:absorption', 40, 2)
             }
         }
     }

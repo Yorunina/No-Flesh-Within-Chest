@@ -1,0 +1,4 @@
+#Chance of overweight apple generating on trees
+#Range: > 0
+overweightApplePercent = 100
+

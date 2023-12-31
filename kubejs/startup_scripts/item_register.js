@@ -16,6 +16,7 @@ StartupEvents.registry('item', event => {
     event.create('water_candy').texture('kubejs:item/water_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('fire_candy').texture('kubejs:item/fire_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('wind_candy').texture('kubejs:item/wind_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
+    event.create('starch_sausage').texture('kubejs:item/starch_sausage').food(food => { food.hunger(3).saturation(0.8).alwaysEdible() })
 
     event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => {
         food.hunger(1).saturation(1).alwaysEdible().eaten(event => {
@@ -158,6 +159,9 @@ StartupEvents.registry('item', event => {
             entity.addItemCooldown(itemstack, 20 * 60)
             return itemstack;
         })
-    
+
+    event.create('glass_wand').texture('kubejs:item/glass_wand')
+        .maxStackSize(1)
+        .rarity('rare')
 })
 
