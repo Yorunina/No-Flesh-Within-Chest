@@ -9,8 +9,15 @@
  * 3. 检测魔法海马体效果赋予甜蜜之梦状态
  *  3.1. 根据已有器官获取等级
  */
-EntityEvents.hurt('minecraft:player', event => {
-    if (!event.entity.isPlayer()) return;
+
+
+/**
+ * 甜蜜之梦承伤事件
+ * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {EntityHurtCustomModel} data 
+ * @returns 
+ */
+function sweetDreamPlayerHurtByOthers(event, data) {
     let player = event.player;
     if (player.hasEffect('kubejs:sweet_dream')) {
         let itemMap = getPlayerChestCavityItemMap(player);
@@ -23,7 +30,7 @@ EntityEvents.hurt('minecraft:player', event => {
             return;
         }
 
-        let damage = event.getDamage();
+        let damage = data.damage;
         if (sweetDreamPotion.getDuration() * (sweetDreamPotion.getAmplifier() + 1) < damage * 20) {
             player.removeEffect('kubejs:sweet_dream');
             if (itemMap.has('kubejs:candy_pancreas')) {
@@ -41,7 +48,7 @@ EntityEvents.hurt('minecraft:player', event => {
         return;
     }
 
-    if (event.getDamage() >= 10 && !player.hasEffect('kubejs:sweet_dream')) {
+    if (data.damage >= 10 && !player.hasEffect('kubejs:sweet_dream')) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (!itemMap.has('kubejs:magic_hippocampus')) {
             return;
@@ -58,4 +65,4 @@ EntityEvents.hurt('minecraft:player', event => {
             event.player.potionEffects.add('kubejs:sweet_dream', 20 * 5 * durationMuti, amplifierMuti);
         }
     }
-})
+}

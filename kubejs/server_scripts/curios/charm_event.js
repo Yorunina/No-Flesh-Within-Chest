@@ -49,9 +49,15 @@ ItemEvents.foodEaten(event => {
     }
 })
 
-// 忍受任务
-EntityEvents.hurt('minecraft:player', event => {
+/**
+ * 承受伤害
+ * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {EntityHurtCustomModel} data 
+ * @returns 
+ */
+function organCharmPlayerHurtByOthers(event, data) {
     let player = event.player
+    player.tell(event.damage)
     let curiosItem = getCuriosItem(player)
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'bear') {
         if (curiosItem.nbt.status == 1) {
@@ -67,28 +73,32 @@ EntityEvents.hurt('minecraft:player', event => {
             return
         }
     }
-})
+}
 
-// 伤害任务
-EntityEvents.hurt(event => {
-    if (!event.source.player) return;
+/**
+ * 造成伤害
+ * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {EntityHurtCustomModel} data 
+ * @returns 
+ */
+function organCharmEntityHurtByPlayer(event, data) {
     let player = event.source.player
     let curiosItem = getCuriosItem(player)
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'damage') {
         if (curiosItem.nbt.status == 1) {
             return
         }
-        if (event.damage < curiosItem.nbt.damageTask?.minDamage) {
+        if (data.damage < curiosItem.nbt.damageTask?.minDamage) {
             return
         }
-        curiosItem.nbt.damageTask.counter = curiosItem.nbt.damageTask.counter + event.damage
+        curiosItem.nbt.damageTask.counter = curiosItem.nbt.damageTask.counter + data.damage
         if (curiosItem.nbt.damageTask?.counter >= curiosItem.nbt.damageTask?.damageAmount) {
             curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
             curiosItem.nbt.status = 1
             return
         }
     }
-})
+}
 
 
 function getCuriosItem(player) {

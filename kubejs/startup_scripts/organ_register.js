@@ -346,8 +346,8 @@ StartupEvents.registry('item', event => {
         .addScore('digestion', 0.125)
         .addScore('metabolism', 0.125)
         .addScore('speed', 0.25)
-        .addTextLines('default', [LEADING_SYMBOL, Text.gray('在久远的岁月中，它的器官彼此融合')])
-        .addTextLines('default', [LEADING_SYMBOL, Text.gray('最终铸造成为了这块殷红的金属板')])
+        .addTextLines('default', [Text.gray('在久远的岁月中，它的器官彼此融合')])
+        .addTextLines('default', [Text.gray('最终铸造成为了这块殷红的金属板')])
         .build())
         .texture('kubejs:item/organs/relics/relic_metal_plate')
         .tag('kubejs:relics');
@@ -458,6 +458,7 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold')
         .tag('kubejs:active_only');
 
+
     // 位置器官
     registeOrgan(new Organ('kubejs:stomach_tumor')
         .addScore('endurance', 0.5)
@@ -479,6 +480,15 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine')
         .tag('kubejs:active_only')
         .tag('kubejs:evolution');
+
+    registeOrgan(new Organ('kubejs:color_palette')
+        .addScore('speed', -0.5)
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('手持'), Text.gold('大艺术家法杖'), Text.gray('造成法术伤害时。如果法术为'), Text.gold('火焰箭'), Text.gray('、'), Text.green('剧毒箭'), Text.gray('、'), Text.blue('冰锥')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('会额外造成等同于'), Text.gold('当前法力值/20'), Text.gray('的额外伤害')])
+        .build())
+        .texture('kubejs:item/organs/others/color_palette')
+        .tag('itemborders:diamond')
+        .tag('kubejs:damage_only');
 
     registeOrgan(new Organ('kubejs:telescopic_tool_arm')
         .addScore('fire_resistant', 0.5)

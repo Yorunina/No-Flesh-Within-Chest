@@ -173,18 +173,19 @@
 			icon: "kubejs:ore_lung"
 			id: "2DD73A2CCC0054D8"
 			rewards: [{
-				id: "74EE7A78BD288110"
-				item: "kubejs:ore_lung"
-				type: "item"
-			}]
-			subtitle: "吸入矿尘，积累矿物"
-			tasks: [{
-				id: "4C4E1D25C42AC024"
+				count: 5
+				id: "0905D2943CB40EB0"
 				item: {
 					Count: 1
 					id: "numismaticoverhaul:silver_coin"
 					tag: { }
 				}
+				type: "item"
+			}]
+			subtitle: "吸入矿尘，积累矿物"
+			tasks: [{
+				id: "41C666877A44FFB2"
+				item: "kubejs:ore_lung"
 				type: "item"
 			}]
 			title: "矿石肺"
@@ -958,6 +959,33 @@
 			title: "和朋友一起远征"
 			x: 1.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["2DD73A2CCC0054D8"]
+			description: [
+				"为了查看现在资源槽内资源的积累情况，你需要装备&6工程师护目镜&r到自己的&2饰品槽位&r。"
+				""
+				"当饰品槽装备了护目镜之后，在你的资源点数发生变更时，就会在屏幕左侧显示对应的资源槽信息。"
+			]
+			id: "12D186542B18819D"
+			rewards: [{
+				id: "6C8DE8B2ADF40817"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "隐藏的信息"
+			tasks: [{
+				id: "2BF131E90DC87591"
+				item: "create:goggles"
+				type: "item"
+			}]
+			title: "查看资源槽"
+			x: 7.25d
+			y: -4.0d
 		}
 	]
 	title: "章节1：如常"

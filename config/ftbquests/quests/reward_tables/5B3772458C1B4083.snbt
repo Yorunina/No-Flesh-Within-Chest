@@ -1,72 +1,36 @@
 {
-	icon: {
-		Count: 1
-		id: "fruitstack:iron_fruit_knife"
-		tag: {
-			Damage: 0
-		}
-	}
+	icon: "hexerei:blood_sigil"
 	id: "5B3772458C1B4083"
 	loot_size: 1
 	order_index: 3
 	rewards: [
 		{
 			command: "/nfwc stages @p {removeStages:[setting_monster_damage_bonus_2, setting_monster_damage_bonus_3,setting_monster_damage_bonus_5,setting_monster_damage_bonus_10]}"
-			icon: {
-				Count: 1
-				id: "fruitstack:iron_fruit_knife"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "hexerei:blood_sigil"
 			title: "伤害乘数 1x"
 			type: "command"
 		}
 		{
 			command: "/nfwc stages @p {addStages:[setting_monster_damage_bonus_2], removeStages:[setting_monster_damage_bonus_3,setting_monster_damage_bonus_5,setting_monster_damage_bonus_10]}"
-			icon: {
-				Count: 1
-				id: "fruitstack:iron_fruit_knife"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "hexerei:blood_sigil"
 			title: "伤害乘数 2x"
 			type: "command"
 		}
 		{
 			command: "/nfwc stages @p {addStages:[setting_monster_damage_bonus_3], removeStages:[setting_monster_damage_bonus_2,setting_monster_damage_bonus_5,setting_monster_damage_bonus_10]}"
-			icon: {
-				Count: 1
-				id: "fruitstack:iron_fruit_knife"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "hexerei:blood_sigil"
 			title: "伤害乘数 3x"
 			type: "command"
 		}
 		{
 			command: "/nfwc stages @p {addStages:[setting_monster_damage_bonus_5], removeStages:[setting_monster_damage_bonus_2,setting_monster_damage_bonus_3,setting_monster_damage_bonus_10]}"
-			icon: {
-				Count: 1
-				id: "fruitstack:iron_fruit_knife"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "hexerei:blood_sigil"
 			title: "伤害乘数 5x"
 			type: "command"
 		}
 		{
 			command: "/nfwc stages @p {addStages:[setting_monster_damage_bonus_10], removeStages:[setting_monster_damage_bonus_2,setting_monster_damage_bonus_3,setting_monster_damage_bonus_5]}"
-			icon: {
-				Count: 1
-				id: "fruitstack:iron_fruit_knife"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "hexerei:blood_sigil"
 			title: "伤害乘数 10x"
 			type: "command"
 		}

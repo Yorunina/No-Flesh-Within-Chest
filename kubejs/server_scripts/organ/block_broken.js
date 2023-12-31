@@ -24,12 +24,12 @@ BlockEvents.broken(event => {
 const organBlockBrokenStrategies = {
     'kubejs:diamond_bottle': function (event) {
         let player = event.player
-        if (!player.persistentData.contains(resourceCount)) {
-            return
+        let count = 1;
+        if (player.persistentData.contains(resourceCount)) {
+            count = player.persistentData.getInt(resourceCount) + count;
         }
-        let count = player.persistentData.getInt(resourceCount) ?? 0;
         if (Math.random() < 0.5) {
-            updateResourceCount(player, count + 1)
+            updateResourceCount(player, count)
         }
     },
 };

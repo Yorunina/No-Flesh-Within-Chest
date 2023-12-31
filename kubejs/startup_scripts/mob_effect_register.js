@@ -23,4 +23,8 @@ StartupEvents.registry('mob_effect', event => {
         .modifyAttribute('irons_spellbooks:max_mana', 'kubejsMagicForbiden', -10000, "addition")
         .harmful()
         .color(Color.DARK_GRAY)
+
+    event.create('colorful')
+        .beneficial()
+        .color(Color.RED)
 })

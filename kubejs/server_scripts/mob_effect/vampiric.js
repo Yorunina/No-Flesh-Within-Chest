@@ -1,9 +1,14 @@
 // priority: 4
-EntityEvents.hurt(event => {
+/**
+ * 吸血效果
+ * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {EntityHurtCustomModel} data 
+ * @returns 
+ */
+function vampiricEntityHurtByPlayer(event, data) {
     let damageSourcePlayer = event.source.player;
-    if (!damageSourcePlayer) return;
     if (damageSourcePlayer.hasEffect('kubejs:vampiric')) {
-        let damage = event.getDamage();
+        let damage = data.damage;
         let vampiricEffect = damageSourcePlayer.getEffect('kubejs:vampiric')
         let amplifier = vampiricEffect.getAmplifier();
         // 有效等级最高为5
@@ -11,4 +16,4 @@ EntityEvents.hurt(event => {
         damageSourcePlayer.heal(Math.floor(vampiricRate * damage));
         return;
     }
-})
+}

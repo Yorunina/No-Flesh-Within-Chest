@@ -110,6 +110,8 @@
     "item.kubejs.cream_cookie_heart": "快乐奶油饼干心",
     "item.kubejs.diamond_bottle": "钻石风暴瓶",
     "item.kubejs.desire_of_midas": "迈达斯之愿",
+    "item.kubejs.rapier_wand": "新月细剑",
+    "item.kubejs.color_palette": "调色盘",
     
     "item.kubejs.active_pill": "激活药",
     "item.kubejs.candy": "糖果",
@@ -144,6 +146,7 @@
     "item.kubejs.ice_wooden_wand": "寒冰木魔杖",
     "item.kubejs.flora_wand": "花之魔杖",
     "item.kubejs.candy_canes_wand": "拐杖糖",
+    "item.kubejs.artist_wand": "艺术家法杖",
     "item.kubejs.cream": "奶油",
     
     "fluid.kubejs.syrup": "糖浆",
@@ -155,13 +158,20 @@
     "effect.kubejs.vampiric": "吸血",
     "effect.kubejs.body_weakness": "身体虚弱",
     "effect.kubejs.magic_forbiden": "魔力空虚",
+    "effect.kubejs.colorful": "色彩缤纷",
+
     "travelerstitles.kubejs.lost_memory": "回忆之地",
 
     "kubejs.tip.secret_hint": "对着秘密物品按下shift或许会有额外的发现！",
     "kubejs.tip.wares_useage": "使用交货台在村庄里快速提交交货协议",
     "kubejs.tip.magic_forbiden": "魔力空虚状态会扣减10000点魔力上限",
     "kubejs.tip.active_organ": "器官的激活效果需要服用激活药或配备长效药丸激活",
-
+    "kubejs.tip.organ_charm": "器官容器可以用于器官的进化，如果在进化器官的进化上遇到困难，不如试试看！",
+    "kubejs.tip.resource_bar": "佩戴好工程师目镜，你可以看到器官带来的资源条的变化！",
+    "kubejs.tip.burning_heart": "心火状态只有在buff持续的最后五秒钟触发心火暴击效果",
+    "kubejs.tip.candy_organ": "糖果系列器官围绕甜蜜之梦的效果展开. . .或许很适合那些喜欢魔法的人？",
+    "kubejs.tip.ceremonial_knife": "使用献祭匕首能够稳定触发糖果胰的受伤效果",
+    
     "golem_material.biomancy.living_flesh": "鲜活肉块",
 
     "kubejs.boss_rush": "Boss Rush",

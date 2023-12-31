@@ -48,9 +48,19 @@ ServerEvents.recipes(event => {
             return null;
         });
 
+    event.shapeless('kubejs:lucky_cookie', ['minecraft:paper', 'minecraft:cookie'])
+
     event.shaped('kubejs:empty_organ_charm', [
         ['#forge:glass', '#minecraft:logs', '#forge:glass'],
         ['#forge:glass', 'minecraft:ghast_tear', '#forge:glass'],
         ['#forge:glass', '#forge:glass', '#forge:glass']]);
 
+    event.shaped('kubejs:friend_to_the_end', [
+        ['numismaticoverhaul:gold_coin', '#forge:gems/diamond', 'numismaticoverhaul:gold_coin'],
+        ['numismaticoverhaul:gold_coin', '', 'numismaticoverhaul:gold_coin'],
+        ['numismaticoverhaul:gold_coin', 'numismaticoverhaul:gold_coin', 'numismaticoverhaul:gold_coin']]);
+    event.shaped('irons_spellbooks:silver_ring', [
+        ['numismaticoverhaul:silver_coin', 'numismaticoverhaul:silver_coin', 'numismaticoverhaul:silver_coin'],
+        ['numismaticoverhaul:silver_coin', '', 'numismaticoverhaul:silver_coin'],
+        ['numismaticoverhaul:silver_coin', 'numismaticoverhaul:silver_coin', 'numismaticoverhaul:silver_coin']]);
 })

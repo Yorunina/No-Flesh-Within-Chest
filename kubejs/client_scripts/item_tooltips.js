@@ -52,6 +52,14 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('kubejs:empty_organ_charm', (item, advanced, text) => {
         text.add(1, Text.gray('用于承装器官'));
     })
+
+    tooltip.addAdvanced('kubejs:rapier_wand', (item, advanced, text) => {
+        text.add(Text.gray('长按右键以唤起新月之力恢复魔力'));
+    })
+    tooltip.addAdvanced('kubejs:artist_wand', (item, advanced, text) => {
+        text.add(Text.gray('长按右键以获得色彩效果'));
+    })
+    
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1
         if (item.nbt?.organ?.id) {
