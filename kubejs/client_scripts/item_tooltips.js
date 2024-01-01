@@ -59,7 +59,9 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('kubejs:artist_wand', (item, advanced, text) => {
         text.add(Text.gray('长按右键以获得色彩效果'));
     })
-    
+    tooltip.addAdvanced('kubejs:unholy_grail', (item, advanced, text) => {
+        text.add(Text.red('你最好不要喝它...'));
+    })
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1
         if (item.nbt?.organ?.id) {

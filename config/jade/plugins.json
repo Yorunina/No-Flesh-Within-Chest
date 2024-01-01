@@ -46,6 +46,11 @@
     "mob_spawner": true,
     "redstone": true
   },
+  "fluiddrawerslegacy": {
+    "controller": true,
+    "controller_slave": true,
+    "fluiddrawer": true
+  },
   "jade": {
     "coordinates.rel": false,
     "distance": false,

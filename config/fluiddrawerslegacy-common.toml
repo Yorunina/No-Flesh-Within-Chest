@@ -1,0 +1,12 @@
+
+#Debug settings
+[debugMode]
+	#Set false to stop output log.
+	debugMode = false
+
+#General settings
+[general]
+	#Set it to change volume.
+	#Range: 3200 ~ 96000
+	volume = 32000
+

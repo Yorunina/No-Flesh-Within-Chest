@@ -27,4 +27,8 @@ StartupEvents.registry('mob_effect', event => {
     event.create('colorful')
         .beneficial()
         .color(Color.RED)
+
+    event.create('executed')
+        .harmful()
+        .color(Color.GRAY)
 })

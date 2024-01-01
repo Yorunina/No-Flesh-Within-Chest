@@ -39,6 +39,9 @@
   "jade:mod_name": null,
   "jade:distance": null,
   "jade:block_face": null,
+  "fluiddrawerslegacy:controller": null,
+  "fluiddrawerslegacy:controller_slave": null,
+  "fluiddrawerslegacy:fluiddrawer": null,
   "waystones:waystone": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
@@ -78,5 +81,8 @@
   "jade:registry_name": null,
   "jade:mod_name": null,
   "jade:distance": null,
-  "jade:block_face": null
+  "jade:block_face": null,
+  "fluiddrawerslegacy:controller": null,
+  "fluiddrawerslegacy:controller_slave": null,
+  "fluiddrawerslegacy:fluiddrawer": null
 }

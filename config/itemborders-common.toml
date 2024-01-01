@@ -50,6 +50,7 @@
 			"#CBD1CF" = ["$itemborders:iron"]
 			"#FDF55F" = ["$itemborders:gold"]
 			"#4AEDD9" = ["$itemborders:diamond"]
+			"#C94A00" = ["$kubejs:relics"]
 			green = ["$itemborders:green"]
 			blue = ["$itemborders:blue"]
 			dark_purple = ["$itemborders:dark_purple"]

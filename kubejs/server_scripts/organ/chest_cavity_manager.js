@@ -200,3 +200,7 @@ function lookPos(direction, pos) {
 function getOppoPos(pos) {
     return 18 * Math.floor(pos / 9) - pos + 8
 }
+
+global.getPlayerChestCavityItemMap = player => {
+    return getPlayerChestCavityItemMap(player)
+}

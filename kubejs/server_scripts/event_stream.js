@@ -16,13 +16,14 @@ EntityEvents.hurt(event => {
     let data = new EntityHurtCustomModel(event.getDamage())
     organEntityHurtByPlayer(event, data)
     burningHeartEntityHurtByPlayer(event, data)
+    executedEntityHurtByPlayer(event, data)
     vampiricEntityHurtByPlayer(event, data)
     // commonEntityHurtByPlayer(event, data)
     organCharmEntityHurtByPlayer(event, data)
 
     // 事件拦截
     if (event.damage != data.damage) {
-        event.entity.attack(data.damage)
+        event.entity.attack(data.damage > 0 ? data.damage : 0)
         event.cancel()
     }
 })

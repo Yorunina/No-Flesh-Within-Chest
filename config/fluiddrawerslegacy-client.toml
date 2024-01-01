@@ -1,0 +1,13 @@
+
+#Client settings
+[Renderer]
+	#Set the label renderer distance, -1 stands for unlimited distance.
+	#Range: -1 ~ 1024
+	distance = -1
+
+#Waila settings
+[Display]
+	#Set the direct show amounts limit.
+	#Range: 3 ~ 24
+	showlimit = 9
+

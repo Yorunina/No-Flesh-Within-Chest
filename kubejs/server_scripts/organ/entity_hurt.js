@@ -21,7 +21,7 @@ function organEntityHurtByPlayer(event, data) {
                 organEntityDamageOnlyStrategies[organ.id](event, data)
             }
         })
-    }
+    }  
 }
 
 /**
@@ -109,6 +109,13 @@ const organEntityDamageOnlyStrategies = {
                 amplify = 10
             }
             data.damage = data.damage + getPlayerMagicData(player).getMana() / amplify
+        }
+    },
+    'kubejs:executioner_blade_pieces': function (event, data) {
+        let player = event.source.player
+        let item = player.mainHandItem
+        if (item?.id == 'tetra:modular_sword' && item.nbt && item.nbt.contains('sword/executioner_blade_material')) {
+            event.entity.potionEffects.add('kubejs:executed', 20 * 5, 2)
         }
     }
 };

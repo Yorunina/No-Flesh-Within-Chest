@@ -53,7 +53,7 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当你没有穿着胸甲时，'), Text.yellow('空手'), Text.gray('造成伤害会使你获得临时攻击力'), Text.yellow(2), Text.gray('点。')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次触发该效果，会使自身受到等同于攻击增加量的伤害。')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('直到条件不符时的攻击后重置，重置会影响所有当前已有的攻击加成效果。')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('此效果唯一')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
         .build())
         .texture('kubejs:item/organs/infinity/infinity_beats')
         .tag('kubejs:infinity')
@@ -443,7 +443,28 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active')
         .tag('kubejs:relics');
 
+    registeOrgan(new Organ('kubejs:forbidden_fruit')
+        .addScore('detoxification', 1.75)
+        .addScore('health', 0.25)
+        .addTextLines('default', [Text.gray('根植在身体里的禁果')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('能够扭转'), Text.red('不洁圣杯'), Text.gray('的负面效果')])
+        .build())
+        .texture('kubejs:item/organs/relics/forbidden_fruit')
+        .tag('kubejs:liver')
+        .tag('kubejs:relics');
 
+    registeOrgan(new Organ('kubejs:executioner_blade_pieces')
+        .addScore('strength', 1.75)
+        .addScore('health', -0.5)
+        .addTextLines('default', [Text.gray('铸剑为骨')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('使用'), Text.red('行刑者剑刃'), Text.gray('的Tetra武器时，攻击会造成'), Text.gold('行刑Ⅲ'), Text.gray('效果')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当生物持有行刑效果时，所受武器伤害降低，但概率增加相当于基于敌人已损失生命值的额外伤害')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .build())
+        .texture('kubejs:item/organs/relics/executioner_blade_pieces')
+        .tag('kubejs:muscle')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
 
     // 碎片
     registeOrgan(new Organ('kubejs:nether_star_shard')

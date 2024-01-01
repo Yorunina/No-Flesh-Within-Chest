@@ -163,5 +163,35 @@ StartupEvents.registry('item', event => {
     event.create('glass_wand').texture('kubejs:item/glass_wand')
         .maxStackSize(1)
         .rarity('rare')
+
+    event.create('unholy_grail').texture('kubejs:item/unholy_grail')
+        .maxStackSize(1)
+        .rarity('epic')
+        .useAnimation('drink')
+        .use((level, player, hand) => {
+            return true;
+        })
+        .useDuration(itemStack => 20)
+        .finishUsing((itemstack, level, entity) => {
+            entity.playSound('entity.player.burp')
+            let itemMap = global.getPlayerChestCavityItemMap(entity)
+            if (itemMap.has('kubejs:forbidden_fruit')) {
+                entity.potionEffects.add('minecraft:regeneration', 20 * 24, 2)
+                entity.potionEffects.add('minecraft:absorption', 20 * 40, 1)
+                entity.potionEffects.add('minecraft:strength', 20 * 50, 1)
+                entity.potionEffects.add('minecraft:speed', 20 * 60, 0)
+                entity.potionEffects.add('minecraft:resistance', 20 * 60, 1)
+                entity.potionEffects.add('irons_spellbooks:instant_mana', 1, 2)
+            } else {
+                entity.potionEffects.add('minecraft:hunger', 20 * 8, 2)
+                entity.potionEffects.add('minecraft:poison', 20 * 8, 1)
+                entity.potionEffects.add('minecraft:wither', 20 * 5, 2)
+                entity.potionEffects.add('minecraft:weakness', 20 * 10, 1)
+                entity.potionEffects.add('minecraft:nausea', 20 * 12, 0)
+                entity.potionEffects.add('minecraft:slowness', 20 * 12, 0)
+            }
+            entity.addItemCooldown(itemstack, 20 * 60)
+            return itemstack;
+        })
 })
 
