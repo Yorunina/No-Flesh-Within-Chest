@@ -21,7 +21,8 @@ function organEntityHurtByPlayer(event, data) {
                 organEntityDamageOnlyStrategies[organ.id](event, data)
             }
         })
-    }  
+    }
+
 }
 
 /**
@@ -117,7 +118,15 @@ const organEntityDamageOnlyStrategies = {
         if (item?.id == 'tetra:modular_sword' && item.nbt && item.nbt.contains('sword/executioner_blade_material')) {
             event.entity.potionEffects.add('kubejs:executed', 20 * 5, 2)
         }
-    }
+    },
+    'kubejs:heavy_hammer_muscle': function (event, data) {
+        let player = event.source.player
+        if (Math.random() < 0.03 * Math.max(player.getLuck(), 0.3)) {
+            event.entity.potionEffects.add('tetra:stun', 20 * 2, 0)
+        }
+    },
+    'kubejs:demon_eyeball': function (event, data) {
+        let player = event.source.player
+        data.damage = data.damage * (player.pitch + 90) / 90
+    },
 };
-
-

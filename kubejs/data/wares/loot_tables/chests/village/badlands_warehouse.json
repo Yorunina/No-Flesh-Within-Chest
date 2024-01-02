@@ -1,0 +1,93 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 2,
+				"max": 6
+			},
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:paper",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 3
+							},
+							"add": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 1,
+				"max": 6
+			},
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "wares:cardboard_box",
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 1,
+							"add": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 6,
+					"name": "wares:sealed_delivery_agreement",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{experience:{max:32,min:12,step:4},ordered:{max:256,min:64,step:8},payment:\"wares:agreement/village/badlands_payment_sell\",requested:\"wares:agreement/village/badlands_requested_sell\"}"
+						},
+						{
+							"function": "minecraft:set_count",
+							"count": 1,
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 3,
+					"name": "wares:sealed_delivery_agreement",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{experience:{max:32,min:12,step:4},ordered:{max:256,min:64,step:8},payment:\"wares:agreement/village/badlands_payment_buy\",requested:\"wares:agreement/village/badlands_requested_buy\"}"
+						},
+						{
+							"function": "minecraft:set_count",
+							"count": 1,
+							"add": false
+						}
+					]
+				},
+				{
+					"type": "minecraft:empty"
+				}
+			]
+		}
+	],
+	"random_sequence": "wares:chests/village/badlands_warehouse"
+}

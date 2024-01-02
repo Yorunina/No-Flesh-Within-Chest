@@ -62,7 +62,21 @@ LootJS.modifiers(event => {
     event.addLootTypeModifier(LootType.CHEST)
         .removeLoot(Ingredient.of('@nameless_trinkets'))
         .removeLoot('extradelight:bad_food')
+
+    event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(["minecraft:ancient_city"], false)
-        .randomChance(0.3)
+        .randomChance(0.2)
         .addLoot(Item.of('kubejs:unholy_grail'))
+
+    event.addLootTypeModifier(LootType.CHEST)
+        .anyStructure(["#minecraft:village"], false)
+        .addLoot(LootEntry.of('biomancy:healing_additive').when((c) => c.randomChance(0.03)))
+        .addLoot(LootEntry.of('biomancy:breeding_stimulant').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of('simplehats:hatbag_common').when((c) => c.randomChance(0.1)))
+        .addLoot(LootEntry.of('simplehats:hatbag_uncommon').when((c) => c.randomChance(0.05)))
+        .addLoot(LootEntry.of('bosses_of_mass_destruction:soul_star').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
+        
+        
 })

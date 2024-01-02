@@ -13,4 +13,6 @@ rageEffectRange = 24
 #Effect application range for Heal Aura effect
 #Range: 0 ~ 64
 healEffectRange = 6
+#Enable cauldron jam and jello recipe
+enableCauldronRecipe = true
 

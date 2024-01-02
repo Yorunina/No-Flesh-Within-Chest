@@ -174,6 +174,13 @@ function checkPlayerHasChestCavityMap(player) {
 
 const fourDirectionList = ['up', 'down', 'left', 'right']
 const eightDirectionList = ['up', 'down', 'left', 'right', 'rightUp', 'rightDown', 'leftUp', 'leftDown']
+const rightUp22DirectionList = ['rightUp', 'up', 'right']
+const leftUp22DirectionList = ['leftUp', 'up', 'left']
+const rightDown22DirectionList = ['rightDown', 'down', 'right']
+const leftDown22DirectionList = ['leftDown', 'down', 'left']
+const box22DirectionList = [rightUp22DirectionList, leftUp22DirectionList, rightDown22DirectionList, leftDown22DirectionList]
+
+
 function lookPos(direction, pos) {
     switch (direction) {
         case 'up':

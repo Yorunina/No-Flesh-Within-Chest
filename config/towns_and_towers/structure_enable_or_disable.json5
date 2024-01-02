@@ -1,0 +1,96 @@
+/*
+This config file makes it possible to switch off any structure from Towns and Towers. Big thanks to Cristelknight for making this all possible.
+To disable a structure, simply set the value of that structure to "false".
+To change the rarity of a structure category, use the other file in the config.
+
+Curseforge link: https://www.curseforge.com/minecraft/mc-mods/towns-and-towers
+Modrinth link: https://modrinth.com/mod/towns-and-towers
+PMC link: https://www.planetminecraft.com/data-pack/towns-amp-towers-structure-overhaul/
+GitHub Repository: [NEED TO MAKE ONE]
+*/
+{
+	// Here you can find all villages.
+	"villages": {
+		// Here you can find all villages which spawn in colder biomes.
+		"coldVillages": {
+			"village_snowy_taiga": true,
+			"village_sunflower_plains": true,
+			"village_swamp": true,
+			"village_ocean": true,
+			"village_old_growth_taiga": true,
+			"village_snowy_slopes": true,
+			"village_grove": true,
+			"village_meadow": true,
+			"village_mushroom_fields": true,
+			"village_birch_forest": true,
+			"village_flower_forest": true,
+			"village_forest": true
+		},
+		// Here you can find all villages which spawn in warmer biomes.
+		"warmVillages": {
+			"village_jungle": true,
+			"village_sparse_jungle": true,
+			"village_wooded_badlands": true,
+			"village_badlands": true,
+			"village_beach": true
+		},
+		// Here you can find all villages which are exclusive to other worldgen mods (ex.: WWOO, Terralith, BoP, BYG, etc.).
+		"exclusiveVillages": {
+			"village_rustic": true,
+			"village_swedish": true,
+			"village_tudor": true,
+			"village_wandering_trader_camp": true,
+			"village_classic": true,
+			"village_iberian": true,
+			"village_mediterranean": true,
+			"village_nilotic": true
+		}
+	},
+	// Here you can find all outposts.
+	"pillagerOutposts": {
+		// Here you can find all pillager outposts which spawn in colder biomes.
+		"coldOutposts": {
+			"pillager_outpost_snowy_taiga": true,
+			"pillager_outpost_sunflower_plains": true,
+			"pillager_outpost_swamp": true,
+			"pillager_outpost_taiga": true,
+			"pillager_outpost_old_growth_taiga": true,
+			"pillager_outpost_snowy_beach": true,
+			"pillager_outpost_snowy_plains": true,
+			"pillager_outpost_snowy_slopes": true,
+			"pillager_outpost_grove": true,
+			"pillager_outpost_meadow": true,
+			"pillager_outpost_mushroom_fields": true,
+			"pillager_outpost_ocean": true,
+			"pillager_outpost_birch_forest": true,
+			"pillager_outpost_flower_forest": true,
+			"pillager_outpost_forest": true
+		},
+		// Here you can find all pillager outposts which spawn in warmer biomes.
+		"warmOutposts": {
+			"pillager_outpost_jungle": true,
+			"pillager_outpost_savanna": true,
+			"pillager_outpost_sparse_jungle": true,
+			"pillager_outpost_wooded_badlands": true,
+			"pillager_outpost_badlands": true,
+			"pillager_outpost_beach": true,
+			"pillager_outpost_desert": true
+		},
+		// Here you can find all pillager outposts which are exclusive to other worldgen mods (ex.: WWOO, Terralith, BoP, BYG, etc.).
+		"exclusiveOutposts": {
+			"pillager_outpost_rustic": true,
+			"pillager_outpost_swedish": true,
+			"pillager_outpost_tudor": true,
+			"village_wandering_trader_camp": true,
+			"pillager_outpost_classic": true,
+			"pillager_outpost_iberian": true,
+			"pillager_outpost_mediterranean": true,
+			"pillager_outpost_oriental": true
+		}
+	},
+	// Here you can find all structures that aren't villages or outposts.
+	"others": {
+		"mimic_desert": true,
+		"wreckage_ocean": true
+	}
+}

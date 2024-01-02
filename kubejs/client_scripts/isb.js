@@ -1,6 +1,6 @@
 ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('#kubejs:isb_spell_book', (item, advanced, text) => {
-        if (item.nbt && item.nbt.ISB_spellbook&& item.nbt.ISB_spellbook.getInt('starLightEnhance') == 1) {
+        if (item.nbt && item.nbt.ISB_spellbook && item.nbt.ISB_spellbook.getInt('starLightEnhance') == 1) {
             text.add(Text.lightPurple('星月强化法术槽+2').italic())
         }
     });

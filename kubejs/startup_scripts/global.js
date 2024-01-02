@@ -84,6 +84,7 @@ global.TYPE_MAP = {
     'kubejs:active_only': Text.gold('唯一化激活'),
     'kubejs:loot': Text.gold('战利品'),
     'kubejs:loot_only': Text.gold('唯一化战利品'),
+    'kubejs:huge': Text.of('巨型').color('#a900fd'),
 }
 
 

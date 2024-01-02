@@ -188,6 +188,62 @@ const organActiveStrategies = {
     'kubejs:blood_moon_wand': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.15)
     },
+    'kubejs:huge_lung': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
+    },
+    'kubejs:huge_muscle': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
+    },
+    'kubejs:huge_heart': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -10)
+    },
+    'kubejs:huge_intestine': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
+    },
+    'kubejs:huge_rib': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
+    },
+    'kubejs:huge_spine': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
+    },
+    'kubejs:huge_spleen': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
+    },
+    'kubejs:huge_stomach': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
+    },
+    'kubejs:huge_kidney': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
+    },
+    'kubejs:huge_liver': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
+    },
+    'kubejs:huge_appendix': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        if (checkBox22OrganSame(posMap, organ)) { return }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
+    },
+
 };
 
 const organActiveOnlyStrategies = {
@@ -201,7 +257,7 @@ const organActiveOnlyStrategies = {
         attributeMapValueAddition(attributeMap, global.ATTACK_RANGE, 1)
     },
     'kubejs:nether_star_shard': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.2)
+        attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.1)
     },
     'kubejs:wrath_shard': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, -0.8)
@@ -228,4 +284,33 @@ const organActiveOnlyStrategies = {
             attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
         }
     },
+    'kubejs:redstone_chipset': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player);
+        if (typeMap.has('kubejs:machine')) {
+            let value = Math.max(typeMap.get('kubejs:machine').length * 0.02, 0.2)
+            attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, value)
+        }
+        attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 0.3)
+    },
+}
+
+
+
+function checkBox22OrganSame(posMap, organ) {
+    let pos = organ.getInt('Slot')
+    for (let i = 0; i < box22DirectionList.length; i++) {
+        let flag = true
+        let directionList = box22DirectionList[i]
+        for (let j = 0; j < directionList.length; j++) {
+            let currentPos = lookPos(directionList[j], pos)
+            if (!(posMap.has(currentPos) && posMap.get(currentPos).id == organ.id)) {
+                flag = false
+                break
+            }
+        }
+        if (flag) {
+            return true
+        }
+    }
+    return false
 }

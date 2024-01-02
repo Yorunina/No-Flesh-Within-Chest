@@ -440,6 +440,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/aesegull_rib_right')
         .tag('kubejs:rib')
+        .tag('kubejs:food')
         .tag('kubejs:active')
         .tag('kubejs:relics');
 
@@ -466,10 +467,48 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only')
         .tag('kubejs:relics');
 
+    registeOrgan(new Organ('kubejs:heavy_hammer_muscle')
+        .addScore('strength', 1.5)
+        .addScore('swim_speed', -1)
+        .addScore('fire_resistant', -1)
+        .addTextLines('default', [Text.gray('重锤. . .准备中')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('攻击时有'), Text.gold('3%*幸运等级(最大30%)'), Text.gray('的概率造成2s眩晕')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .build())
+        .texture('kubejs:item/organs/relics/heavy_hammer_muscle')
+        .tag('kubejs:muscle')
+        .tag('kubejs:machine')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+
+    registeOrgan(new Organ('kubejs:redstone_chipset')
+        .addScore('nerves', 1.5)
+        .addScore('fire_resistant', -1)
+        .addTextLines('default', [Text.gray('重锤. . .准备中')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后每个机械器官为你提供'), Text.gold('2%(最大20%)'), Text.gray('的暴击概率')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后增加'), Text.gold('30%'), Text.gray('暴击伤害')])
+        .build())
+        .texture('kubejs:item/organs/relics/redstone_chipset')
+        .tag('kubejs:machine')
+        .tag('kubejs:active_only')
+        .tag('kubejs:relics');
+
+    registeOrgan(new Organ('kubejs:demon_eyeball')
+        .addScore('luck', -1)
+        .addScore('fire_resistant', 1)
+        .addTextLines('default', [Text.gray('恶魔喜欢你的视线')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('根据视线与地面夹角决定伤害，夹角越大，伤害越高')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('伤害倍率浮动在'), Text.gold('0% ~ 200%'), Text.gray('之间')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .build())
+        .texture('kubejs:item/organs/relics/demon_eyeball')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+
     // 碎片
     registeOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('20%'), Text.gray('暴击概率')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('10%'), Text.gray('暴击概率')])
         .build())
         .texture('kubejs:item/organs/shard/nether_star_shard')
         .tag('itemborders:gold')
@@ -712,4 +751,17 @@ StartupEvents.registry('item', event => {
     registeOrgan(new Organ('kubejs:stomach_diamond').addScore('digestion', 2).build()).texture('kubejs:item/organs/common/stomach').tag('itemborders:diamond').tag('kubejs:stomach')
     registeOrgan(new Organ('kubejs:heart_diamond').addScore('health', 2).build()).texture('kubejs:item/organs/common/heart').tag('itemborders:diamond').tag('kubejs:heart')
     registeOrgan(new Organ('kubejs:spine_diamond').addScore('defense', 1).addScore('nerves', 2).build()).texture('kubejs:item/organs/common/spine').tag('itemborders:diamond').tag('kubejs:spine')
+
+    // 模板器官
+    registeOrgan(new Organ('kubejs:huge_lung').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('breath_recovery', 2.5).addScore('breath_capacity', 2.5).addScore('endurance', 2.5).build()).texture('kubejs:item/organs/template/lung_template').tag('kubejs:lung').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registeOrgan(new Organ('kubejs:huge_muscle').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('strength', 2.5).addScore('speed', 2.5).build()).texture('kubejs:item/organs/template/muscle_template').tag('kubejs:muscle').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registeOrgan(new Organ('kubejs:huge_heart').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低10生命值上限')]).addScore('health', 2.5).build()).texture('kubejs:item/organs/template/heart_template').tag('kubejs:heart').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registeOrgan(new Organ('kubejs:huge_intestine').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('nutrition', 2.5).build()).texture('kubejs:item/organs/template/intestine_template').tag('kubejs:intestine').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registeOrgan(new Organ('kubejs:huge_rib').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('defense', 2.5).build()).texture('kubejs:item/organs/template/rib_template').tag('kubejs:rib').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registeOrgan(new Organ('kubejs:huge_spine').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('defense', 1.25).addScore('nerves', 2.5).build()).texture('kubejs:item/organs/template/spine_template').tag('kubejs:spine').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registeOrgan(new Organ('kubejs:huge_spleen').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('metabolism', 2.5).build()).texture('kubejs:item/organs/template/spleen_template').tag('kubejs:spleen').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registeOrgan(new Organ('kubejs:huge_stomach').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('digestion', 2.5).build()).texture('kubejs:item/organs/template/stomach_template').tag('kubejs:stomach').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registeOrgan(new Organ('kubejs:huge_kidney').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('filtration', 2.5).build()).texture('kubejs:item/organs/template/kidney_template').tag('kubejs:kidney').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registeOrgan(new Organ('kubejs:huge_liver').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('detoxification', 2.5).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registeOrgan(new Organ('kubejs:huge_appendix').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('luck', 2.5).build()).texture('kubejs:item/organs/template/appendix_template').tag('kubejs:appendix').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
 });

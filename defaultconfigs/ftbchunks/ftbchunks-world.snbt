@@ -1,0 +1,4 @@
+# Default config file that will be copied to saves\新的世界 (1)\serverconfig\ftbchunks-world.snbt if it doesn't exist!
+# Just copy any values you wish to override in here!
+
+{ }
