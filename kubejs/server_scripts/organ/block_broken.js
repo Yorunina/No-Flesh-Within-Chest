@@ -6,7 +6,7 @@ BlockEvents.broken(event => {
     let typeMap = getPlayerChestCavityTypeMap(player);
     if (typeMap.has('kubejs:break')) {
         typeMap.get('kubejs:break').forEach(organ => {
-            organBlockBrokenStrategies[organ.id](event)
+            organBlockBrokenStrategies[organ.id](event, organ)
         })
     }
     let onlySet = new Set()
@@ -14,15 +14,19 @@ BlockEvents.broken(event => {
         typeMap.get('kubejs:break_only').forEach(organ => {
             if (!onlySet.has(organ.id)) {
                 onlySet.add(organ.id)
-                organBlockBrokenOnlyStrategies[organ.id](event)
+                organBlockBrokenOnlyStrategies[organ.id](event, organ)
             }
         })
     }
 })
 
-
+/**
+ * 器官方块破坏策略
+ * @constant
+ * @type {Object<string,function(Internal.BlockBrokenEventJS, organ):void>}
+ */
 const organBlockBrokenStrategies = {
-    'kubejs:diamond_bottle': function (event) {
+    'kubejs:diamond_bottle': function (event, organ) {
         let player = event.player
         let count = 1;
         if (player.persistentData.contains(resourceCount)) {
@@ -34,8 +38,13 @@ const organBlockBrokenStrategies = {
     },
 };
 
+/**
+ * 器官方块破坏唯一策略
+ * @constant
+ * @type {Object<string,function(Internal.BlockBrokenEventJS, organ):void>}
+ */
 const organBlockBrokenOnlyStrategies = {
-    'kubejs:silk_for_cutting': function (event) {
+    'kubejs:silk_for_cutting': function (event, organ) {
         if (!event.block.item.hasTag('forge:glass')) {
             return
         }
@@ -43,7 +52,7 @@ const organBlockBrokenOnlyStrategies = {
         event.block.set('minecraft:air')
         event.cancel()
     },
-    'kubejs:ore_lung': function (event) {
+    'kubejs:ore_lung': function (event, organ) {
         if (!event.block.item.hasTag('forge:stone')) {
             return
         }
@@ -63,7 +72,7 @@ const organBlockBrokenOnlyStrategies = {
         }
         updateResourceCount(player, count)
     },
-    'kubejs:desire_of_midas': function (event) {
+    'kubejs:desire_of_midas': function (event, organ) {
         let player = event.player
         if (!player.persistentData.contains(resourceCount)) {
             return

@@ -6,7 +6,7 @@ ItemEvents.rightClicked(event => {
     let typeMap = getPlayerChestCavityTypeMap(player);
     if (typeMap.has('kubejs:rclick')) {
         typeMap.get('kubejs:rclick').forEach(organ => {
-            organRightClickedStrategies[organ.id](event)
+            organRightClickedStrategies[organ.id](event, organ)
         })
     }
     let onlySet = new Set()
@@ -14,19 +14,28 @@ ItemEvents.rightClicked(event => {
         typeMap.get('kubejs:rclick_only').forEach(organ => {
             if (!onlySet.has(organ.id)) {
                 onlySet.add(organ.id)
-                organRightClickedOnlyStrategies[organ.id](event)
+                organRightClickedOnlyStrategies[organ.id](event, organ)
             }
         })
     }
 })
 
-
+/**
+ * 器官右键事件策略
+ * @constant
+ * @type {Object<string,function(Internal.ItemClickedEventJS, organ):void>}
+ */
 const organRightClickedStrategies = {
 
 }
 
+/**
+ * 器官右键事件唯一策略
+ * @constant
+ * @type {Object<string,function(Internal.ItemClickedEventJS, organ):void>}
+ */
 const organRightClickedOnlyStrategies = {
-    'kubejs:furnace_core': function (event) {
+    'kubejs:furnace_core': function (event, organ) {
         if (!event.item.hasTag('minecraft:coals')) {
             return
         }
@@ -47,7 +56,7 @@ const organRightClickedOnlyStrategies = {
         event.player.removeEffect('kubejs:flaring_heart')
         event.item.shrink(1);
     },
-    'kubejs:burning_heart': function (event) {
+    'kubejs:burning_heart': function (event, organ) {
         if (!event.item.hasTag('minecraft:coals')) {
             return
         }
@@ -68,7 +77,7 @@ const organRightClickedOnlyStrategies = {
         event.player.removeEffect('kubejs:burning_heart')
         event.item.shrink(1);
     },
-    'kubejs:redstone_furnace': function (event) {
+    'kubejs:redstone_furnace': function (event, organ) {
         if (event.item != 'minecraft:redstone_block') {
             return
         }

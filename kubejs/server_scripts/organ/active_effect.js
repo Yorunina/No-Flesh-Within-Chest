@@ -72,7 +72,13 @@ function clearAllActivedModify(player) {
     player.persistentData.putInt(resourceCountMax, defaultResourceMax)
 }
 
-
+/**
+ * 清除玩家所有已经添加的属性
+ * @param {Map} attributeMap
+ * @param {attribute} attribute
+ * @param {number} modifyValue
+ * @returns
+ */
 function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
     if (attributeMap.has(attribute.name)) {
         modifyValue = modifyValue + attributeMap.get(attribute.name)
@@ -82,7 +88,9 @@ function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
 
 
 /**
- * 器官简单策略模式
+ * 器官激活策略
+ * @constant
+ * @type {Object<string,function(Internal.Player, organ, Map):void>}
  */
 const organActiveStrategies = {
     'kubejs:health_appendix': function (player, organ, attributeMap) {
@@ -127,7 +135,7 @@ const organActiveStrategies = {
     },
     'kubejs:stomach_tumor': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
-        let pos = organ.getInt('Slot')
+        let pos = organ.Slot
         let count = 0
         eightDirectionList.forEach(direction => {
             let currentPos = lookPos(direction, pos)
@@ -147,7 +155,7 @@ const organActiveStrategies = {
     },
     'kubejs:hamimelon_organ': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
-        let pos = organ.getInt('Slot')
+        let pos = organ.Slot
         let count = 0
         eightDirectionList.forEach(direction => {
             let currentPos = lookPos(direction, pos)
@@ -169,7 +177,7 @@ const organActiveStrategies = {
     },
     'kubejs:aesegull_rib_right': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
-        let pos = organ.getInt('Slot')
+        let pos = organ.Slot
         // 取对称位置坐标
         let opPos = getOppoPos(pos)
         if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:aesegull_rib_left') {
@@ -178,7 +186,7 @@ const organActiveStrategies = {
     },
     'kubejs:aesegull_rib_left': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
-        let pos = organ.getInt('Slot')
+        let pos = organ.Slot
         // 取对称位置坐标
         let opPos = getOppoPos(pos)
         if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:aesegull_rib_right') {
@@ -246,6 +254,11 @@ const organActiveStrategies = {
 
 };
 
+/**
+ * 器官激活唯一策略
+ * @constant
+ * @type {Object<string,function(Internal.Player, organ, Map):void>}
+ */
 const organActiveOnlyStrategies = {
     'kubejs:telescopic_arm': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 1)
@@ -297,7 +310,7 @@ const organActiveOnlyStrategies = {
 
 
 function checkBox22OrganSame(posMap, organ) {
-    let pos = organ.getInt('Slot')
+    let pos = organ.Slot
     for (let i = 0; i < box22DirectionList.length; i++) {
         let flag = true
         let directionList = box22DirectionList[i]

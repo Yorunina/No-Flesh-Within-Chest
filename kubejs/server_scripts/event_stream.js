@@ -14,7 +14,7 @@ EntityEvents.hurt(event => {
     let player = event.source.player;
     if (!player) return;
     let data = new EntityHurtCustomModel(event.getDamage())
-    organEntityHurtByPlayer(event, data)
+    organPlayerHurtByPlayer(event, data)
     burningHeartEntityHurtByPlayer(event, data)
     executedEntityHurtByPlayer(event, data)
     vampiricEntityHurtByPlayer(event, data)

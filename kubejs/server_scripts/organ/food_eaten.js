@@ -5,7 +5,7 @@ ItemEvents.foodEaten(event => {
     let typeMap = getPlayerChestCavityTypeMap(player);
     if (typeMap.has('kubejs:eat_effect')) {
         typeMap.get('kubejs:eat_effect').forEach(organ => {
-            organFoodEatenStrategies[organ.id](event)
+            organFoodEatenStrategies[organ.id](event, organ)
         })
     }
     let onlySet = new Set()
@@ -13,20 +13,30 @@ ItemEvents.foodEaten(event => {
         typeMap.get('kubejs:eat_effect_only').forEach(organ => {
             if (!onlySet.has(organ.id)) {
                 onlySet.add(organ.id)
-                organFoodEatenOnlyStrategies[organ.id](event)
+                organFoodEatenOnlyStrategies[organ.id](event, organ)
             }
         })
     }
 })
 
+/**
+ * 器官食物食用策略
+ * @constant
+ * @type {Object<string,function(Internal.FoodEatenEventJS, organ):void>}
+ */
 const organFoodEatenStrategies = {
-    'kubejs:greedy_stomach': function (event, itemMap) {
+    'kubejs:greedy_stomach': function (event, organ) {
         event.player.giveExperiencePoints(10)
     },
 };
 
+/**
+ * 器官食物食用唯一策略
+ * @constant
+ * @type {Object<string,function(Internal.FoodEatenEventJS, organ):void>}
+ */
 const organFoodEatenOnlyStrategies = {
-    'kubejs:candy_stomach': function (event) {
+    'kubejs:candy_stomach': function (event, organ) {
         if (!event.item.hasTag('kubejs:eatable_candy')) {
             return
         }
@@ -36,7 +46,7 @@ const organFoodEatenOnlyStrategies = {
                 event.item.getFoodProperties(event.player).getNutrition() * 30 * 20, 0)
         }
     },
-    'kubejs:cream_cookie_heart': function (event) {
+    'kubejs:cream_cookie_heart': function (event, organ) {
         if (event.item.id == 'kubejs:cream') {
             event.player.potionEffects.add('minecraft:speed', 3600 * 20)
             event.player.removeEffect('minecraft:strength')

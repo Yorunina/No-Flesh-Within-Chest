@@ -19,8 +19,8 @@ LootJS.modifiers(event => {
                 typeMap.get('kubejs:loot_only').forEach(organ => {
                     if (!lootOrganSet.has(organ.id)) {
                         lootOrganSet.add(organ.id)
-                        if (entityLootStrategies[organ.id]) {
-                            entityLootStrategies[organ.id](event, organ)
+                        if (entityLootOnlyStrategies[organ.id]) {
+                            entityLootOnlyStrategies[organ.id](event, organ)
                         }
                     }
                 })
@@ -28,9 +28,22 @@ LootJS.modifiers(event => {
         });
 })
 
-
-
+/**
+ * 器官实体掉落策略
+ * @constant
+ * @type {Object<string,function(Internal.LootModificationEventJS, organ):void>}
+ */
 const entityLootStrategies = {
+}
+
+
+
+/**
+ * 器官实体掉落唯一策略
+ * @constant
+ * @type {Object<string,function(Internal.LootModificationEventJS, organ):void>}
+ */
+const entityLootOnlyStrategies = {
     'kubejs:greed_shard': function (event, organ) {
         event.addLoot('numismaticoverhaul:bronze_coin')
     },
