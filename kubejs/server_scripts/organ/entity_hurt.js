@@ -95,22 +95,21 @@ const organPlayerDamageStrategies = {
  */
 const organPlayerDamageOnlyStrategies = {
     'kubejs:infinity_beats': function (event, organ, data) {
-        let damageSourcePlayer = event.source.player;
-        let attriMap = getPlayerAttributeMap(damageSourcePlayer);
-        if (!damageSourcePlayer.hasItemInSlot('mainhand') && !damageSourcePlayer.hasItemInSlot('offhand') &&
-            !damageSourcePlayer.hasItemInSlot('chest')) {
+        let player = event.source.player;
+        let attriMap = getPlayerAttributeMap(player);
+        if (!player.hasItemInSlot('mainhand') && !player.hasItemInSlot('offhand') &&
+            !player.hasItemInSlot('chest')) {
             let value = 2;
             if (attriMap.has(global.TEMP_ATTACK_UP.name)) {
                 value = value + attriMap.get(global.TEMP_ATTACK_UP.name)
             }
             attriMap.set(global.TEMP_ATTACK_UP.name, value)
-            damageSourcePlayer.modifyAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name, value, global.TEMP_ATTACK_UP.operation);
-            setPlayerAttributeMap(damageSourcePlayer, attriMap);
-            damageSourcePlayer.attack(value);
+            player.modifyAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name, value, global.TEMP_ATTACK_UP.operation);
+            setPlayerAttributeMap(player, attriMap);
         } else {
-            damageSourcePlayer.removeAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name);
+            player.removeAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name);
             attriMap.set(global.TEMP_ATTACK_UP.name, 0);
-            setPlayerAttributeMap(damageSourcePlayer, attriMap);
+            setPlayerAttributeMap(player, attriMap);
         }
     },
     'kubejs:color_palette': function (event, organ, data) {

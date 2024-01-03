@@ -37,19 +37,11 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:stomach')
         .tag('kubejs:eat_effect');
 
-    // 幸运之胃
-    registeOrgan(new Organ('kubejs:lucky_stomach')
-        .addScore('luck', -0.5)
-        .build())
-        .texture('kubejs:item/organs/common/stomach')
-        .tag('kubejs:stomach');
-
-
     // 无尽节律之心
     registeOrgan(new Organ('kubejs:infinity_beats')
         .addScore('health', -3)
         .addScore('defense', -3)
-        .addScore('speed', -1)
+        .addScore('breath_recovery', -3)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当你没有穿着胸甲时，'), Text.yellow('空手'), Text.gray('造成伤害会使你获得临时攻击力'), Text.yellow(2), Text.gray('点。')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次触发该效果，会使自身受到等同于攻击增加量的伤害。')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('直到条件不符时的攻击后重置，重置会影响所有当前已有的攻击加成效果。')])
@@ -59,10 +51,11 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:infinity')
         .tag('kubejs:damage_only');
 
+    // 无尽之力
     registeOrgan(new Organ('kubejs:infinity_force')
         .addScore('health', -3)
         .addScore('defense', -3)
-        .addScore('speed', -1)
+        .addScore('breath_recovery', -3)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('根据激活时该物品的强化次数决定伤害加成')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('装备时，击杀Boss概率会获得低于当前强化等级的'), Text.gold('无尽之力')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('同等级的'), Text.gold('无尽之力'), Text.gray('合成后会提高锻造等级')])
@@ -389,6 +382,7 @@ StartupEvents.registry('item', event => {
         .addScore('health', 1)
         .addScore('fire_resistant', 1)
         .addScore('detoxification', -5)
+        .addTextLines('default', [Text.gray('我们彼此分离，却又恒为一体')])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一格'), Text.blue('蓝冰'), Text.gray('，会为你添加额外'), Text.yellow(0.1), Text.aqua('冰系魔法伤害倍率')])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一格'), Text.darkRed('岩浆块'), Text.gray('，会为你添加额外'), Text.yellow(0.1), Text.red('火系魔法伤害倍率')])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('一格内存在任意数量即被视作一格')])
@@ -402,6 +396,7 @@ StartupEvents.registry('item', event => {
         .addScore('nerves', 1.5)
         .addScore('swim_speed', 2)
         .addScore('breath_recovery', 1)
+        .addTextLines('default', [Text.gray('游龙于水')])
         .build())
         .texture('kubejs:item/organs/relics/leviathan_spine')
         .tag('kubejs:spine')
@@ -420,6 +415,7 @@ StartupEvents.registry('item', event => {
         .addScore('health', 1)
         .addScore('photosynthesis', 4)
         .addScore('metabolism', 4)
+        .addTextLines('default', [Text.gray('此刻，繁花重照田野')])
         .build())
         .texture('kubejs:item/organs/relics/flower_heart')
         .tag('kubejs:heart')
@@ -427,6 +423,7 @@ StartupEvents.registry('item', event => {
 
     registeOrgan(new Organ('kubejs:aesegull_rib_left')
         .addScore('defense', 1.75)
+        .addTextLines('default', [Text.gray('它在寻找另一名同伴')])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('若在左右对称位置放置有'), Text.gold('立场欺诈者的右肋'), Text.gray('，则增加'), Text.gold(3), Text.gray('护甲值')])
         .build())
         .texture('kubejs:item/organs/relics/aesegull_rib_left')
@@ -436,6 +433,7 @@ StartupEvents.registry('item', event => {
 
     registeOrgan(new Organ('kubejs:aesegull_rib_right')
         .addScore('defense', 1.75)
+        .addTextLines('default', [Text.gray('它在寻找另一名同伴')])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('若在左右对称位置放置有'), Text.gold('立场欺诈者的左肋'), Text.gray('，则增加'), Text.gold(3), Text.gray('盔甲韧性')])
         .build())
         .texture('kubejs:item/organs/relics/aesegull_rib_right')
@@ -484,7 +482,7 @@ StartupEvents.registry('item', event => {
     registeOrgan(new Organ('kubejs:redstone_chipset')
         .addScore('nerves', 1.5)
         .addScore('fire_resistant', -1)
-        .addTextLines('default', [Text.gray('重锤. . .准备中')])
+        .addTextLines('default', [Text.gray('它能够看到弱点，你也能。')])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后每个机械器官为你提供'), Text.gold('2%(最大20%)'), Text.gray('的暴击概率')])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后增加'), Text.gold('30%'), Text.gray('暴击伤害')])
         .build())
@@ -497,7 +495,7 @@ StartupEvents.registry('item', event => {
         .addScore('luck', -1)
         .addScore('fire_resistant', 1)
         .addTextLines('default', [Text.gray('恶魔喜欢你的视线')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('根据视线与地面夹角决定伤害，夹角越大，伤害越高')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('根据视角决定伤害，视角越低伤害越高。')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('伤害倍率浮动在'), Text.gold('0% ~ 200%'), Text.gray('之间')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
         .build())
