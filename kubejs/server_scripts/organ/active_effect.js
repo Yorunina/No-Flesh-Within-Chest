@@ -251,7 +251,13 @@ const organActiveStrategies = {
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
-
+    'kubejs:bad_ink': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player);
+        if (typeMap.has('kubejs:magic')) {
+            let value = typeMap.get('kubejs:magic').length * 20
+            attributeMapValueAddition(attributeMap, global.MAX_MANA, value)
+        }
+    },
 };
 
 /**

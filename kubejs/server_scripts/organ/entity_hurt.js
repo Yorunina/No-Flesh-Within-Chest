@@ -5,7 +5,7 @@
  * @param {EntityHurtCustomModel} data
  * @returns
  */
-function organPlayerHurtByPlayer(event, data) {
+function organEntityHurtByPlayer(event, data) {
     let player = event.source.player;
     let typeMap = getPlayerChestCavityTypeMap(player);
     if (typeMap.has('kubejs:damage')) {
@@ -52,7 +52,9 @@ function organPlayerHurtByOthers(event, data) {
 
 
 const organPlayerBearStrategies = {
-
+    'kubejs:red_ink': function (event, organ, data) {
+        getPlayerMagicData(event.player).addMana(data.damage * 5)
+    },
 };
 
 
@@ -85,6 +87,7 @@ const organPlayerBearOnlyStrategies = {
  * @type {Object<string,function(Internal.LivingEntityHurtEventJS, organ, EntityHurtCustomModel):void>}
  */
 const organPlayerDamageStrategies = {
+
 };
 
 
@@ -121,9 +124,9 @@ const organPlayerDamageOnlyStrategies = {
         if (event.source.type == 'irons_spellbooks.firebolt'
             || event.source.type == 'irons_spellbooks.icicle'
             || event.source.type == 'irons_spellbooks.poison_arrow') {
-            let amplify = 20
+            let amplify = 30
             if (player.hasEffect('kubejs:colorful')) {
-                amplify = 10
+                amplify = 20
             }
             data.damage = data.damage + getPlayerMagicData(player).getMana() / amplify
         }

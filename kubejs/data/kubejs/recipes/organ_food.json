@@ -6,7 +6,7 @@
       "bonus": 0.1,
       "ingredient": {
         "type": "cuisinedelight:food_type",
-        "foodType": "ORGAN"
+        "foodType": "MEAT"
       },
       "max": 2.5,
       "min": 1.0,

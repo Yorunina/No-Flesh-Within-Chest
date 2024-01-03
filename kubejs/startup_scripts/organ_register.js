@@ -258,12 +258,32 @@ StartupEvents.registry('item', event => {
     registeOrgan(new Organ('kubejs:color_palette')
         .addScore('speed', -0.5)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('手持'), Text.gold('大艺术家法杖'), Text.gray('造成法术伤害时。如果法术为'), Text.gold('火焰箭'), Text.gray('、'), Text.green('剧毒箭'), Text.gray('、'), Text.blue('冰锥')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('会额外造成等同于'), Text.gold('当前法力值/20'), Text.gray('的额外伤害')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('会额外造成等同于'), Text.gold('当前法力值/30'), Text.gray('的额外伤害')])
         .build())
         .texture('kubejs:item/organs/magic/color_palette')
-        .tag('itemborders:diamond')
+        .tag('itemborders:gold')
         .tag('kubejs:magic')
         .tag('kubejs:damage_only');
+
+    registeOrgan(new Organ('kubejs:red_ink')
+        .addScore('strength', -1)
+        .addScore('nutrition', 0.5)
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('遭受伤害时，'), Text.gold('损失血量*5'), Text.gray('将转换为当前魔法值')])
+        .build())
+        .texture('kubejs:item/organs/magic/red_ink')
+        .tag('itemborders:gold')
+        .tag('kubejs:magic')
+        .tag('kubejs:bear');
+
+    registeOrgan(new Organ('kubejs:bad_ink')
+        .addScore('strength', -1)
+        .addScore('filtration', 0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每有一个魔法类型器官，提高'), Text.gold(20), Text.gray('魔法值上限')])
+        .build())
+        .texture('kubejs:item/organs/magic/bad_ink')
+        .tag('itemborders:gold')
+        .tag('kubejs:magic')
+        .tag('kubejs:active');
 
     registeOrgan(new Organ('kubejs:blood_moon_wand')
         .addScore('nerves', 1)
