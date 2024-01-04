@@ -1,3 +1,4 @@
+// priority: 100
 LootJS.modifiers(event => {
     function addBossLoot(entity) {
         return event.addEntityLootModifier(entity)

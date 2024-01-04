@@ -64,7 +64,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/infinity/infinity_force')
         .tag('kubejs:infinity')
         .tag('kubejs:active_only')
-        .tag('kubejs:loot_only');
+        .tag('kubejs:loot_entity_only');
 
     // 玫瑰石英肌束
     registeOrgan(new Organ('kubejs:rose_quartz_muscle')
@@ -377,6 +377,41 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:legends')
         .tag('kubejs:bear_only');
 
+    registeOrgan(new Organ('kubejs:lost_paradise')
+        .addScore('health', 4)
+        .addScore('strength', 4)
+        .addScore('nerves', 2)
+        .addScore('speed', -1)
+        .addScore('endurance', -1)
+        .addTextLines('default', [Text.gray('于是，人类被赶出了伊甸园')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('将会移除所有实体掉落物和宝箱掉落物')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次攻击会随机从以下效果中进行选择')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('将本次伤害类型转换为'), Text.gold('无源摔落伤害')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('攻击伤害固定增加'), Text.gold('敌人最大生命3%')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('攻击伤害翻倍')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('自身获得'), Text.gold('生命恢复效果')])
+        .build())
+        .texture('kubejs:item/organs/legends/lost_paradise')
+        .rarity('epic')
+        .tag('kubejs:legends')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:loot_entity_only')
+        .tag('kubejs:loot_chest_only')
+        .tag('itemborders:diamond');
+
+    registeOrgan(new Organ('kubejs:paradise_regained')
+        .addScore('health', -1)
+        .addScore('strength', -1)
+        .addScore('speed', 1)
+        .addScore('endurance', 1)
+        .addTextLines('default', [Text.gray('于是，神带着神启降临了')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('实体掉落物数量将会翻倍')])
+        .build())
+        .texture('kubejs:item/organs/legends/paradise_regained')
+        .rarity('epic')
+        .tag('kubejs:legends')
+        .tag('kubejs:loot_entity_only')
+        .tag('itemborders:diamond');
 
     // boss遗物器官
     registeOrgan(new Organ('kubejs:relic_metal_plate')
@@ -571,7 +606,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/shard/greed_shard')
         .tag('itemborders:gold')
-        .tag('kubejs:loot_only');
+        .tag('kubejs:loot_entity_only');
 
     registeOrgan(new Organ('kubejs:lust_shard')
         .addScore('fire_resistant', 0.5)
@@ -658,6 +693,15 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/others/long_lasting_pill')
         .tag('itemborders:gold');
+
+    registeOrgan(new Organ('kubejs:d8')
+        .addScore('luck', 1)
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在搜刮野外箱子时，概率可以得到随机属性的器官')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.green('幸运越高，属性范围越大')])
+        .build())
+        .texture('kubejs:item/organs/others/d8')
+        .tag('itemborders:diamond')
+        .tag('kubejs:loot_chest_only');
 
     // 食物系列
     registeOrgan(new Organ('kubejs:hamimelon_organ')

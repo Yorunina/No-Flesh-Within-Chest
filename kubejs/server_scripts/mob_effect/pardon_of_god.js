@@ -6,9 +6,7 @@
  * @returns 
  */
 function pardonOfGodEntityHurtByPlayer(event, data) {
-    let player = event.source.player;
     let entity = event.entity
-    player.tell(event.source.type)
     switch (true) {
         case (event.source.getType() == 'player'):
             if (entity.hasEffect('kubejs:pardon_of_god_melee')) {

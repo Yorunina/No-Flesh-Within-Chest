@@ -39,3 +39,23 @@ const bossTypeList = [
     'meetyourfight:swampjaw',
     'meetyourfight:dame_fortuna',
 ]
+
+const tumorAttriBute = [
+    { name: 'chestcavity:filtration', muti: 1, max: 5 },
+    { name: 'chestcavity:breath_recovery', muti: 0.5, max: 5 },
+    { name: 'chestcavity:nutrition', muti: 1, max: 5 },
+    { name: 'chestcavity:nerves', muti: 0.25, max: 5 },
+    { name: 'chestcavity:strength', muti: 1, max: 5 },
+    { name: 'chestcavity:health', muti: 1, max: 5 },
+    { name: 'chestcavity:breath_capacity', muti: 0.5, max: 5 },
+    { name: 'chestcavity:detoxification', muti: 1, max: 5 },
+    { name: 'chestcavity:speed', muti: 0.25, max: 5 },
+    { name: 'chestcavity:endurance', muti: 1, max: 5 },
+    { name: 'chestcavity:luck', muti: 0.5, max: 5 },
+    { name: 'chestcavity:defense', muti: 0.25, max: 5 },
+    { name: 'chestcavity:digestion', muti: 1, max: 5 },
+    { name: 'chestcavity:metabolism', muti: 1, max: 5 },
+    { name: 'chestcavity:fire_resistant', muti: 0.5, max: 5 },
+    { name: 'chestcavity:knockback_resistant', muti: 0.5, max: 5 },
+    { name: 'chestcavity:water_breath', muti: 0.5, max: 5 },
+]

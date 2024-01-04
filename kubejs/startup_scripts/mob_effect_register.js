@@ -38,16 +38,16 @@ StartupEvents.registry('mob_effect', event => {
             if (entity.level.clientSide) return;
             if (entity.tickCount % 20 == 0) {
                 entity.heal(entity.getMaxHealth() * 0.01)
-            }
-            if (entity.health < entity.maxHealth * 0.67) {
-                entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
-                    if (player.isPlayer()) {
-                        player.tell(Text.gray('它的身体似乎发生了什么变化. . .'))
-                    }
-                })
-                entity.removeEffect('kubejs:glimpse_of_god')
-                entity.potionEffects.add('kubejs:gaze_of_god', 3600 * 20, 0)
-                godPardonEffectIncr(entity)
+                if (entity.health < entity.maxHealth * 0.67) {
+                    entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
+                        if (player.isPlayer()) {
+                            player.tell(Text.gray('它的身体似乎发生了什么变化. . .'))
+                        }
+                    })
+                    entity.removeEffect('kubejs:glimpse_of_god')
+                    entity.potionEffects.add('kubejs:gaze_of_god', 3600 * 20, 0)
+                    godPardonEffectIncr(entity)
+                }
             }
         })
         .color(Color.WHITE)
@@ -58,20 +58,19 @@ StartupEvents.registry('mob_effect', event => {
             if (entity.level.clientSide) return;
             if (entity.tickCount % 20 == 0) {
                 entity.heal(entity.getMaxHealth() * 0.01)
-            }
-            if (entity.health < entity.maxHealth * 0.33) {
-                entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
-                    if (player.isPlayer()) {
-                        player.tell(Text.gray('它的身体似乎发生了什么变化. . .'))
-                    }
-                })
-                entity.removeEffect('kubejs:gaze_of_god')
-                entity.potionEffects.add('kubejs:glare_of_god', 180 * 20, 0)
-                godPardonEffectIncr(entity)
+                if (entity.health < entity.maxHealth * 0.33) {
+                    entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
+                        if (player.isPlayer()) {
+                            player.tell(Text.gray('它的身体似乎发生了什么变化. . .'))
+                        }
+                    })
+                    entity.removeEffect('kubejs:gaze_of_god')
+                    entity.potionEffects.add('kubejs:glare_of_god', 180 * 20, 0)
+                    godPardonEffectIncr(entity)
+                }
             }
         })
         .color(Color.YELLOW)
-
 
     event.create('glare_of_god')
         .beneficial()
@@ -79,18 +78,19 @@ StartupEvents.registry('mob_effect', event => {
             if (entity.level.clientSide) return;
             if (entity.tickCount % 20 == 0) {
                 entity.heal(entity.getMaxHealth() * 0.01)
+                if (entity.getEffect('kubejs:glare_of_god').getDuration() < 41) {
+                    entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
+                        if (player.isPlayer()) {
+                            player.tell(Text.gray('它的身体似乎发生了什么变化. . .'))
+                        }
+                    })
+                    entity.removeEffect('kubejs:glare_of_god')
+                    entity.potionEffects.add('kubejs:glimpse_of_god', 3600 * 20, 0)
+                    entity.setHealth(entity.getMaxHealth())
+                    godPardonEffectIncr(entity)
+                }
             }
-            if (entity.getEffect('kubejs:glare_of_god').getDuration() < 20) {
-                entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
-                    if (player.isPlayer()) {
-                        player.tell(Text.gray('它的身体似乎发生了什么变化. . .'))
-                    }
-                })
-                entity.removeEffect('kubejs:glare_of_god')
-                entity.potionEffects.add('kubejs:glimpse_of_god', 3600 * 20, 0)
-                entity.setHealth(entity.getMaxHealth())
-                godPardonEffectIncr(entity)
-            }
+
         })
         .color(Color.GOLD)
 

@@ -90,6 +90,25 @@ function organCharmEntityHurtByPlayer(event, data) {
         if (data.damage < curiosItem.nbt.damageTask?.minDamage) {
             return
         }
+        if (curiosItem.nbt.damageTask?.type) {
+            let type = 'other'
+            switch (true) {
+                case (event.source.getType() == 'player'):
+                    type = 'melee'
+                    break;
+                case (event.source.getType() == 'arrow'):
+                    type = 'projectile'
+                    break;
+                case (event.source.getType().startsWith('irons_spellbooks')):
+                    type = 'magic'
+                    break;
+                default:
+                    type = 'other'
+            }
+            if (curiosItem.nbt.damageTask.type != type) {
+                return
+            }
+        }
         curiosItem.nbt.damageTask.counter = curiosItem.nbt.damageTask.counter + data.damage
         if (curiosItem.nbt.damageTask?.counter >= curiosItem.nbt.damageTask?.damageAmount) {
             curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
@@ -107,3 +126,4 @@ function getCuriosItem(player) {
     }
     return null
 }
+

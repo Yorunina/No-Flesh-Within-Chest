@@ -1,4 +1,4 @@
-// priority: 10
+// priority: 1000
 /**
  * 造成伤害
  * @param {Internal.LivingEntityHurtEventJS} event 

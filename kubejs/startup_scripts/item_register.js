@@ -193,5 +193,9 @@ StartupEvents.registry('item', event => {
             entity.addItemCooldown(itemstack, 20 * 60)
             return itemstack;
         })
+
+
+    // 随机基本器官
+    event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').tag('kubejs:organ').tag('itemborders:iron')
 })
 

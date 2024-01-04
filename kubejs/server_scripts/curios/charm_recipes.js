@@ -37,9 +37,9 @@ const organCharmNbtMap = {
     'kubejs:spine_iron': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 10, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:spine_gold' },
     'kubejs:spine_gold': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 30, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:spine_diamond' },
 
-    'kubejs:appendix_template': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 3, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:appendix_iron' },
-    'kubejs:appendix_iron': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 10, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:appendix_gold' },
-    'kubejs:appendix_gold': { type: 'kill', killTask: { mobType: 'minecraft:zombie', killAmount: 30, mobName: 'entity.minecraft.zombie', counter: 0 }, targetOrgan: 'kubejs:appendix_diamond' },
+    'kubejs:appendix_template': { type: 'damage', damageTask: {minDamage: 3, damageAmount: 500, counter: 0, type:"projectile"},  targetOrgan: 'kubejs:appendix_iron' },
+    'kubejs:appendix_iron': { type: 'damage', damageTask: {minDamage: 8, damageAmount: 1000, counter: 0, type:"projectile"},  targetOrgan: 'kubejs:appendix_gold' },
+    'kubejs:appendix_gold': { type: 'damage', damageTask: {minDamage: 12, damageAmount: 1800, counter: 0, type:"projectile"},  targetOrgan: 'kubejs:appendix_diamond' },
 
     'kubejs:stomach_template': { type: 'diet', dietTask: {minHunger: 1, foodTypeAmount: 3, foodTypeList: []}, targetOrgan: 'kubejs:stomach_iron'},
     'kubejs:stomach_iron': { type: 'diet', dietTask: {minHunger: 2, foodTypeAmount: 5, foodTypeList: []}, targetOrgan: 'kubejs:stomach_gold'},
@@ -66,8 +66,8 @@ const organCharmNbtMap = {
     'kubejs:liver_gold': { type: 'bear', bearTask: {minDamage: 5, bearAmount: 500, counter: 0}, targetOrgan: 'kubejs:liver_diamond'},
 
 
-    'kubejs:heart_template': { type: 'damage', damageTask: {minDamage: 2, damageAmount: 100, counter: 0}, targetOrgan: 'kubejs:heart_iron'},
-    'kubejs:heart_iron': { type: 'damage', damageTask: {minDamage: 3, damageAmount: 300, counter: 0}, targetOrgan: 'kubejs:heart_gold'},
-    'kubejs:heart_gold': { type: 'damage', damageTask: {minDamage: 5, damageAmount: 500, counter: 0}, targetOrgan: 'kubejs:heart_diamond'},
+    'kubejs:heart_template': { type: 'damage', damageTask: {minDamage: 3, damageAmount: 800, counter: 0, type:"melee"}, targetOrgan: 'kubejs:heart_iron'},
+    'kubejs:heart_iron': { type: 'damage', damageTask: {minDamage: 8, damageAmount: 1500, counter: 0, type:"melee"}, targetOrgan: 'kubejs:heart_gold'},
+    'kubejs:heart_gold': { type: 'damage', damageTask: {minDamage: 15, damageAmount: 3000, counter: 0, type:"melee"}, targetOrgan: 'kubejs:heart_diamond'},
     
 }

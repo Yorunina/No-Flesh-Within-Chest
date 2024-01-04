@@ -82,7 +82,7 @@ const organPlayerBearOnlyStrategies = {
 
 
 /**
- * 实体造成伤害处理策略
+ * 造成伤害处理策略
  * @constant
  * @type {Object<string,function(Internal.LivingEntityHurtEventJS, organ, EntityHurtCustomModel):void>}
  */
@@ -92,7 +92,7 @@ const organPlayerDamageStrategies = {
 
 
 /**
- * 实体造成伤害唯一处理策略
+ * 造成伤害唯一处理策略
  * @constant
  * @type {Object<string,function(Internal.LivingEntityHurtEventJS, organ, EntityHurtCustomModel):void>}
  */
@@ -147,5 +147,30 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:demon_eyeball': function (event, organ, data) {
         let player = event.source.player
         data.damage = data.damage * (player.pitch + 90) / 90
+    },
+    'kubejs:lost_paradise': function (event, organ, data) {
+        let player = event.source.player
+        let random = Math.random()
+        if (random < 0.1) {
+            event.entity.causeFallDamage(4, data.damage, DamageSource.FALL)
+            event.cancel()
+            return
+        }
+        if (random < 0.2) {
+            data.damage = data.damage + event.entity.maxHealth * 0.03
+            return
+        }
+        if (random < 0.3) {
+            data.damage = data.damage * 2
+            return
+        }
+        if (random < 0.4) {
+            data.damage = data.damage + 10
+            return
+        }
+        if (random < 0.5) {
+            player.potionEffects.add('minecraft:regeneration', 20 * 15, 2)
+            return
+        }
     },
 };

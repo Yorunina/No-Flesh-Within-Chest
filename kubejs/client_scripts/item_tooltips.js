@@ -77,7 +77,25 @@ ItemEvents.tooltip((tooltip) => {
             text.add(lineNum++, [Text.gray(`需要承受原伤害最低大于${item.nbt.bearTask.minDamage}的伤害，累积${item.nbt.bearTask.counter.toFixed(2)}/${item.nbt.bearTask.bearAmount}才能进化`)]);
         }
         if (item.nbt?.type == 'damage') {
-            text.add(lineNum++, [Text.gray(`需要造成原伤害最低大于${item.nbt.damageTask.minDamage}的伤害，累积${item.nbt.damageTask.counter.toFixed(2)}/${item.nbt.damageTask.damageAmount}才能进化`)]);
+            let typeName = '任意种类'
+            if (item.nbt.damageTask?.type) {
+                switch (item.nbt.damageTask.type) {
+                    case (event.source.getType() == 'player'):
+                        typeName = '近战'
+                        break;
+                    case (event.source.getType() == 'arrow'):
+                        typeName = '弓箭'
+                        break;
+                    case (event.source.getType().startsWith('irons_spellbooks')):
+                        typeName = '魔法'
+                        break;
+                }
+                if (curiosItem.nbt.damageTask.type != type) {
+                    return
+                }
+            }
+
+            text.add(lineNum++, [Text.gray(`需要造成原伤害最低大于${item.nbt.damageTask.minDamage}的${typeName}伤害，累积${item.nbt.damageTask.counter.toFixed(2)}/${item.nbt.damageTask.damageAmount}才能进化`)]);
         }
         if (item.nbt?.status == 1) {
             text.add(lineNum++, [Text.red(`进化已完成`)]);

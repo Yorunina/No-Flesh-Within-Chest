@@ -1,4 +1,4 @@
-// priority: 0
+// priority: 10
 const playerAttributeMap = new Map();
 
 /**

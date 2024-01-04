@@ -82,8 +82,10 @@ global.TYPE_MAP = {
     'kubejs:evolution': Text.green('进化'),
     'kubejs:food': Text.of('食物').color('#f1b500'),
     'kubejs:active_only': Text.gold('唯一化激活'),
-    'kubejs:loot': Text.gold('战利品'),
-    'kubejs:loot_only': Text.gold('唯一化战利品'),
+    'kubejs:loot_entity': Text.gold('实体战利品'),
+    'kubejs:loot_entity_only': Text.gold('唯一实体战利品'),
+    'kubejs:loot_chest': Text.gold('箱子战利品'),
+    'kubejs:loot_chest_only': Text.gold('唯一箱子战利品'),
     'kubejs:huge': Text.of('巨型').color('#a900fd'),
 }
 
