@@ -125,7 +125,7 @@ function getPlayerChestCavityPosMap(player) {
         return playerChestCavityPosMap.get(uuid);
     }
     initChestCavityIntoMap(player);
-    return playerChestCavityPosMap.get(uuid);
+    return playerChestCavityPosMap.get(uuid) ?? new Map();
 }
 
 /**
@@ -140,7 +140,7 @@ function getPlayerChestCavityItemMap(player) {
         return playerChestCavityItemMap.get(uuid);
     }
     initChestCavityIntoMap(player);
-    return playerChestCavityItemMap.get(uuid);
+    return playerChestCavityItemMap.get(uuid) ?? new Map();
 }
 
 /**
@@ -155,7 +155,7 @@ function getPlayerChestCavityTypeMap(player) {
         return playerChestCavityTypeMap.get(uuid);
     }
     initChestCavityIntoMap(player);
-    return playerChestCavityTypeMap.get(uuid);
+    return playerChestCavityTypeMap.get(uuid) ?? new Map();
 }
 
 /**
