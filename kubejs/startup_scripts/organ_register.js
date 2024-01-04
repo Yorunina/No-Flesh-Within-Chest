@@ -661,7 +661,7 @@ StartupEvents.registry('item', event => {
 
     // 食物系列
     registeOrgan(new Organ('kubejs:hamimelon_organ')
-        .addScore('health', -1)
+        .addScore('health', -0.5)
         .addScore('endurance', 1.5)
         .addScore('luck', 1)
         .addTextLines('default', [Text.gray('被整齐切下的哈密瓜')])

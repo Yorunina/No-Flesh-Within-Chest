@@ -22,7 +22,7 @@ If you have any suggestions or want to report bugs related to this modpack, plea
 
 - [x] 实现基本器官功能
   - [x] 快速注册器官
-- [ ] 实现高级器官效果
+- [x] 实现高级器官效果
   - [x] 实现激活效果
   - [x] 实现独立激活效果
   - [x] 实现激活连携效果
@@ -33,8 +33,7 @@ If you have any suggestions or want to report bugs related to this modpack, plea
   - [x] 实现成长效果
   - [x] 实现器官饰品
   - [x] Iron n spell book 器官联动
-  - [ ] 实现动态基本属性
-  - [ ] 实现扩展胸腔槽位
+  - [x] 实现动态基本属性
   - [x] Tetra联动器官效果
 - [ ] 模组联动器官补充
   - [x] 向大部分生物填入补位符

@@ -24,14 +24,56 @@ DefaultOrgan.prototype = {
 
 
 ItemEvents.tooltip((tooltip) => {
+    tooltip.addAdvancedToAll((item, advanced, text) => {
+        if (!item.nbt?.organData) {
+            return
+        }
+        text.removeIf(e => {
+            if (e.getString() == "removeFlag") {
+                return true;
+            }
+            return false;
+        })
+        let lineNum = 1
+        switch (true) {
+            case tooltip.shift:
+                let organData = item.nbt.organData
+                lineNum = 1
+                organData.allKeys.forEach(key => {
+                    let value = organData[key]
+                    let typeName = global.SCORE_MAP[key]
+                    text.add(lineNum, [LEADING_SYMBOL, Text.gray('每组该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)]);
+                    lineNum++
+                })
+                break;
+            default:
+                lineNum = 1;
+                let tagList = item.getTags().toArray()
+                let typeLine = []
+                for (let i = 0; i < tagList.length; i++) {
+                    let tag = tagList[i].location()
+                    if (tag.getNamespace() != 'kubejs') {
+                        continue
+                    }
+                    tag = String(tag)
+                    if (!global.TYPE_MAP[tag]) {
+                        continue
+                    }
+                    typeLine.push(global.TYPE_MAP[tag], ' ')
+                }
+                if (typeLine.length > 0) {
+                    text.add(lineNum++, [LEADING_SYMBOL, Text.join(typeLine)])
+                }
+                text.add(lineNum++, [
+                    Text.of('按住 ').gold(),
+                    Text.of('[ Shift ] ').yellow().bold(),
+                    Text.of('查看器官信息').gold(),
+                ]);
+        }
+    })
+
     function registerDefaultOrganToolTips(organ) {
         tooltip.addAdvanced(organ.itemID, (item, advanced, text) => {
-            text.removeIf(e => {
-                if (e.getString() == "removeFlag") {
-                    return true;
-                }
-                return false;
-            })
             switch (true) {
                 case tooltip.shift:
                     addForTextLines(text, organ.shiftTextLines, 1);
