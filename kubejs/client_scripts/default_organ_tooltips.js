@@ -74,6 +74,12 @@ ItemEvents.tooltip((tooltip) => {
 
     function registerDefaultOrganToolTips(organ) {
         tooltip.addAdvanced(organ.itemID, (item, advanced, text) => {
+            text.removeIf(e => {
+                if (e.getString() == "removeFlag") {
+                    return true;
+                }
+                return false;
+            })
             switch (true) {
                 case tooltip.shift:
                     addForTextLines(text, organ.shiftTextLines, 1);
