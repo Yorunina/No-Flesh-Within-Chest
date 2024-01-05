@@ -1,0 +1,514 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "name": "dimdungeons:pool_2",
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:emerald",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "geodes:budding_gypsum",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "geodes:budding_lapis",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "nameless_trinkets:mysterious_trinket",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:sea_lantern",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 8,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ender_chest",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "kubejs:redstone_furnace",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "hexerei:budding_selenite",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "majobroom:majo_hat",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "majobroom:majo_hat",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "kubejs:stardust_fragment",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "waystones:warp_stone",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ghast_tear",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dragon_breath",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:enchanted_book",
+          "entryName": "dimdungeons:ebook_mending",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{StoredEnchantments:[{id:\"minecraft:mending\",lvl:1}]}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_chestplate",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 30,
+                "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_helmet",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 30,
+                "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_leggings",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 30,
+                "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_boots",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 30,
+                "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_pickaxe",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 30,
+                "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_sword",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 30,
+                "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:crossbow",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 30,
+                "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bow",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "enchant_with_levels",
+              "treasure": true,
+              "levels": {
+                "min": 30,
+                "max": 30
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "dimdungeons:item_portal_key",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "dimdungeons:item_secret_bell",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "dimdungeons:block_key_charger",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tetra:chthonic_extractor",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tetra:quick_latch",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tetra:metal_scrap",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tetra:vent_plate",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tetra:planar_stabilizer",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tetra:thermal_cell",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "tetra:lubricant_dispenser",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "dimdungeons:block_portal_crown",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "loot_table",
+          "name": "dimdungeons:chests/chestbooks_2",
+          "weight": 32
+        }
+      ]
+    }
+  ]
+}

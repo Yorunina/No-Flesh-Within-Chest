@@ -318,6 +318,25 @@
 			x: 5.0d
 			y: -4.5d
 		}
+		{
+			dependencies: ["49BD99DDA8F8454A"]
+			description: [
+				"很快，在主世界的探索就不能满足你的所有欲望——周边的遗迹已然被探索干净，而过远的地区前去又非常麻烦。"
+				""
+				"此时，你便可以通过在家制作&6维度地牢之门&r前往地牢进行探险！维度地牢的探险难度不高，但其中各个场景各有乐趣所在。并且，其中的奖励箱往往具有着比主世界奖励箱更有用的物品！"
+			]
+			icon: "dimdungeons:block_portal_keyhole"
+			id: "03B3A54BEDB85320"
+			subtitle: "探索新世界！"
+			tasks: [{
+				id: "36876EE03DBD2CD6"
+				item: "dimdungeons:item_portal_key"
+				type: "item"
+			}]
+			title: "维度地牢"
+			x: 5.0d
+			y: 1.5d
+		}
 	]
 	title: "章节2：觉醒"
 }

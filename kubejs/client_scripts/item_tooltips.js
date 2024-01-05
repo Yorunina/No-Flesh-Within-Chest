@@ -62,6 +62,11 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('kubejs:unholy_grail', (item, advanced, text) => {
         text.add(Text.red('你最好不要喝它...'));
     })
+    tooltip.addAdvanced('kubejs:stardust_fragment', (item, advanced, text) => {
+        text.add(Text.gold('能够用于极致法术的制作'));
+    })
+
+    
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1
         if (item.nbt?.organ?.id) {
@@ -78,24 +83,18 @@ ItemEvents.tooltip((tooltip) => {
         }
         if (item.nbt?.type == 'damage') {
             let typeName = '任意种类'
-            if (item.nbt.damageTask?.type) {
-                switch (item.nbt.damageTask.type) {
-                    case (event.source.getType() == 'player'):
-                        typeName = '近战'
-                        break;
-                    case (event.source.getType() == 'arrow'):
-                        typeName = '弓箭'
-                        break;
-                    case (event.source.getType().startsWith('irons_spellbooks')):
-                        typeName = '魔法'
-                        break;
-                }
-                if (curiosItem.nbt.damageTask.type != type) {
-                    return
-                }
+            switch (item.nbt.damageTask?.type) {
+                case ('melee'):
+                    typeName = '近战'
+                    break;
+                case ('projectile'):
+                    typeName = '弓箭'
+                    break;
+                case ('magic'):
+                    typeName = '魔法'
+                    break;
             }
-
-            text.add(lineNum++, [Text.gray(`需要造成原伤害最低大于${item.nbt.damageTask.minDamage}的${typeName}伤害，累积${item.nbt.damageTask.counter.toFixed(2)}/${item.nbt.damageTask.damageAmount}才能进化`)]);
+            text.add(lineNum++, [Text.gray(`需要造成原伤害最低大于${item.nbt.damageTask.minDamage}的`), Text.gold(`${typeName}`), Text.gray(`伤害，累积${item.nbt.damageTask.counter.toFixed(2)}/${item.nbt.damageTask.damageAmount}才能进化`)]);
         }
         if (item.nbt?.status == 1) {
             text.add(lineNum++, [Text.red(`进化已完成`)]);

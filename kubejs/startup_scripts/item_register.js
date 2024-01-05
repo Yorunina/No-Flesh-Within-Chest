@@ -95,6 +95,7 @@ StartupEvents.registry('item', event => {
     event.create('empty_organ_charm').texture('kubejs:item/empty_organ_charm').maxStackSize(1).tag('curios:charm')
     event.create('organ_charm').texture('kubejs:item/organ_charm').maxStackSize(1).tag('curios:charm')
     event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
+    event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1)
 
     event.create('flora_wand').texture('kubejs:item/flora_wand')
         .maxStackSize(1)

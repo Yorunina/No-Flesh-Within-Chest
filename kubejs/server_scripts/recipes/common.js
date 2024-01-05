@@ -3,7 +3,16 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'somebosses' })
     event.remove({ output: 'supplementaries:candy' })
     event.remove({ output: 'moblassos:hostile_lasso' })
+    event.remove({ output: 'majobroom:majo_hat' })
+    event.remove({ output: 'majobroom:majo_cloth' })
     
+
+    event.shaped('minecraft:end_portal_frame', [
+        ['', 'alexsmobs:banana_slug_slime', ''],
+        ['minecraft:phantom_membrane', 'createaddition:gold_wire', 'minecraft:phantom_membrane'],
+        ['', 'alexsmobs:banana_slug_slime', '']
+    ])
+
     event.shaped('minecraft:elytra', [
         ['', 'alexsmobs:banana_slug_slime', ''],
         ['minecraft:phantom_membrane', 'createaddition:gold_wire', 'minecraft:phantom_membrane'],

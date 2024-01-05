@@ -23,6 +23,9 @@ EntityEvents.hurt(event => {
     organCharmEntityHurtByPlayer(event, data)
 
     // 事件拦截
+    if (data.returnDamage != 0) {
+        player.attack(data.returnDamage)
+    }
     if (event.damage != data.damage) {
         event.entity.attack(data.damage > 0 ? data.damage : 0)
         event.cancel()
@@ -47,9 +50,13 @@ EntityEvents.hurt('minecraft:player', event => {
     organCharmPlayerHurtByOthers(event, data)
 
     // 事件拦截
+    if (data.returnDamage != 0 && event.source.actual) {
+        event.source.actual.attack(data.returnDamage)
+    }
     if (event.damage != data.damage) {
         event.entity.attack(data.damage)
         event.cancel()
     }
+
 })
 

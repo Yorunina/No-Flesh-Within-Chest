@@ -1,0 +1,41 @@
+{
+  "size": "large",
+  "color": "#FFA600",
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "somebosses:aesegull",
+          "count": 1
+        }
+      ],
+      "modifiers": [],
+      "rewards": [],
+      "max_wave_time": 1200,
+      "setup_time": 200
+    }
+  ],
+  "rewards": [
+    {
+      "type": "gateways:loot_table",
+      "loot_table": "minecraft:chests/nether_bridge",
+      "rolls": 10,
+      "desc": "rewards.gateways.loot_table.nether_bridge"
+    }
+  ],
+  "failures": [
+    {
+      "type": "gateways:explosion",
+      "strength": 4,
+      "fire": true,
+      "block_damage": true
+    },
+    {
+      "type": "command",
+      "command": "/kill @p",
+      "desc": "即效性死亡"
+    }
+  ],
+  "completion_xp": 20000,
+  "spawn_range": 5
+}

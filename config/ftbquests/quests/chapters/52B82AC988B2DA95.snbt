@@ -56,6 +56,7 @@
 			incompatible: ["1C3CABF6FA4DBB44"]
 			rewards: [
 				{
+					count: 3
 					id: "1042CEF7833487F9"
 					item: {
 						Count: 1
@@ -228,6 +229,34 @@
 			title: "武器大师！"
 			x: 0.0d
 			y: 5.75d
+		}
+		{
+			dependencies: ["2C8054AE6C57197F"]
+			description: [
+				"武器大师的部分武器具有范围伤害，因此在使用时经常会误伤队友。"
+				""
+				"你可以通过制作朋友标签，右键你想视为友军的单位，这样武器就不会对他们造成伤害。"
+			]
+			id: "1559C4568476B95C"
+			rewards: [{
+				count: 2
+				id: "28DA0E75454D98D6"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "保护我的朋友！"
+			tasks: [{
+				id: "0864DE0FDB2EB2E0"
+				item: "weaponmaster:taglockkit"
+				type: "item"
+			}]
+			title: "朋友标识"
+			x: -1.75d
+			y: 3.75d
 		}
 	]
 	title: "武器大师：陪伴一生的伙伴"

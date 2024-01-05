@@ -1,0 +1,157 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+  	  "name":"dimdungeons:chestbooks_4",	  
+      "entries": [
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_efficiency",
+		  "weight": 2,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:efficiency\",lvl:7}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_unbreaking",
+		  "weight": 4,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:unbreaking\",lvl:5}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_fortune",
+		  "weight": 3,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:fortune\",lvl:5}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_sharpness",
+		  "weight": 3,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:sharpness\",lvl:7}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_power",
+		  "weight": 3,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:power\",lvl:7}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_bane_of_arthropods",
+		  "weight": 3,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\",lvl:9}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_smite",
+		  "weight": 3,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:smite\",lvl:9}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_impaling",
+		  "weight": 3,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:impaling\",lvl:9}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_sweeping",
+		  "weight": 2,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:sweeping\",lvl:5}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_fire_aspect",
+		  "weight": 2,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:fire_aspect\",lvl:4}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_looting",
+		  "weight": 2,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:looting\",lvl:5}]}"
+			}
+		  ]
+		},
+        {
+		  "type": "item",
+		  "name": "minecraft:enchanted_book",
+		  "entryName": "dimdungeons:ebook_riptide",
+		  "weight": 2,
+		  "functions": [
+		    {
+			  "function": "set_nbt",
+			  "tag": "{StoredEnchantments:[{id:\"minecraft:riptide\",lvl:6}]}"
+			}
+		  ]
+		}
+      ]
+    }
+  ]
+}

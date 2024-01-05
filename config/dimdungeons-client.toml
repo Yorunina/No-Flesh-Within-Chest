@@ -1,0 +1,11 @@
+
+#Options for client-side rendering.
+[render]
+	#If set to FALSE, the portal keyhole block will not emit particles.
+	showParticles = true
+
+#Options for client-side sounds.
+[audio]
+	#If set to FALSE, the portal keyhole block will not make ambient noises.
+	playPortalSounds = true
+

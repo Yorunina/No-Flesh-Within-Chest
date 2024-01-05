@@ -1,0 +1,1318 @@
+
+#Room Selections for Basic Dungeons
+[roomsTier1]
+	basicEntrances = [["dimdungeons:entrance_1", "dimdungeons:entrance_2", "dimdungeons:entrance_3", "dimdungeons:entrance_4", "dimdungeons:entrance_5", "dimdungeons:entrance_6", "dimdungeons:entrance_7", "dimdungeons:entrance_8", "dimdungeons:entrance_9"]]
+	basicFourways = [["dimdungeons:fourway_1", "dimdungeons:fourway_2", "dimdungeons:fourway_3"], ["dimdungeons:fourway_4", "dimdungeons:fourway_5", "dimdungeons:fourway_6"], ["dimdungeons:combat_1", "dimdungeons:combat_2", "dimdungeons:combat_3", "dimdungeons:farmland_puzzle_1"], ["dimdungeons:combat_4", "dimdungeons:combat_5", "dimdungeons:combat_6"], ["dimdungeons:disco_1", "dimdungeons:disco_2", "dimdungeons:disco_3", "dimdungeons:disco_4"], ["dimdungeons:redstrap_1", "dimdungeons:redore_1", "dimdungeons:redore_2"], ["dimdungeons:hiddenpath_1", "dimdungeons:hiddenpath_2", "dimdungeons:hiddenpath_3"], ["dimdungeons:chain_1", "dimdungeons:honeyfall_2"]]
+	basicThreeways = [["dimdungeons:threeway_1", "dimdungeons:threeway_2", "dimdungeons:pistonwall_3"], ["dimdungeons:threeway_5", "dimdungeons:morethree_2"], ["dimdungeons:morethree_3", "dimdungeons:morethree_4"], ["dimdungeons:morethree_5", "dimdungeons:morethree_6"], ["dimdungeons:tetris_1", "dimdungeons:tetris_2", "dimdungeons:tetris_3"], ["dimdungeons:redstrap_4", "dimdungeons:chesttrap_3"], ["dimdungeons:advice_2", "dimdungeons:advice_2", "dimdungeons:slotmachine_1", "dimdungeons:mazenotfound_2"], ["dimdungeons:firepath_5", "dimdungeons:honeyfall_4"], ["dimdungeons:bedroom_1", "dimdungeons:bedroom_2"]]
+	basicHallways = [["dimdungeons:hallway_1", "dimdungeons:hallway_2"], ["dimdungeons:hallway_4", "dimdungeons:mossyhall_1"], ["dimdungeons:hallway_5", "dimdungeons:hallway_6", "dimdungeons:redsand_3"], ["dimdungeons:coalhall_1", "dimdungeons:coalhall_2", "dimdungeons:coalhall_3"], ["dimdungeons:juke_1", "dimdungeons:juke_2", "dimdungeons:juke_3"], ["dimdungeons:advice_3", "dimdungeons:pistonwall_1"], ["dimdungeons:library_2", "dimdungeons:chesttrap_1"], ["dimdungeons:moohall_1", "dimdungeons:moohall_2"], ["dimdungeons:redstrap_2", "dimdungeons:crushhall_1", "dimdungeons:mazenotfound_3"], ["dimdungeons:yinyang_1", "dimdungeons:yinyang_2"], ["dimdungeons:waterhall_1", "dimdungeons:firepath_4"], ["dimdungeons:tower_1", "dimdungeons:tower_2"], ["dimdungeons:tempt_1", "dimdungeons:tempt_2", "dimdungeons:tempt_3", "dimdungeons:tempt_4"]]
+	basicCorners = [["dimdungeons:corner_1", "dimdungeons:corner_3"], ["dimdungeons:firepath_2"], ["dimdungeons:corner_4"], ["dimdungeons:corner_5", "dimdungeons:redsand_1"], ["dimdungeons:corner_6", "dimdungeons:corner_7"], ["dimdungeons:longcorner_1", "dimdungeons:longcorner_3"], ["dimdungeons:longcorner_4", "dimdungeons:longcorner_5"], ["dimdungeons:icetrap_1"], ["dimdungeons:redstrap_3", "dimdungeons:redstrap_3", "dimdungeons:mazenotfound_1"], ["dimdungeons:skullcorner_1", "dimdungeons:corner_8"], ["dimdungeons:easycorner_1", "dimdungeons:easycorner_2"], ["dimdungeons:easycorner_3", "dimdungeons:easycorner_4"], ["dimdungeons:easycorner_5", "dimdungeons:easycorner_6"]]
+	basicEnds = [["dimdungeons:deadend_1", "dimdungeons:deadend_2", "dimdungeons:deadend_3", "dimdungeons:deadend_4"], ["dimdungeons:coffin_1", "dimdungeons:coffin_2", "dimdungeons:coffin_3", "dimdungeons:coffin_4", "dimdungeons:coffin_5"], ["dimdungeons:advice_1"], ["dimdungeons:slotmachine_2"], ["dimdungeons:portal_puzzle_1", "dimdungeons:portal_puzzle_2"], ["dimdungeons:magicpuzzle_1", "dimdungeons:magicpuzzle_2"], ["dimdungeons:speedpuzzle_1", "dimdungeons:speedpuzzle_2"], ["dimdungeons:restroom_1", "dimdungeons:restroom_2", "dimdungeons:restroom_3", "dimdungeons:restroom_4", "dimdungeons:restroom_5"], ["dimdungeons:shoutout_1", "dimdungeons:shoutout_2", "dimdungeons:shoutout_3", "dimdungeons:shoutout_4"], ["dimdungeons:spawner_1", "dimdungeons:spawner_2", "dimdungeons:spawner_3", "dimdungeons:spawner_4", "dimdungeons:spawner_5", "dimdungeons:spawner_6", "dimdungeons:spawner_6", "dimdungeons:spawner_6"], ["dimdungeons:redspuzzle_1", "dimdungeons:redspuzzle_2", "dimdungeons:redspuzzle_3", "dimdungeons:redspuzzle_4"], ["dimdungeons:deathtrap_1", "dimdungeons:deathtrap_2", "dimdungeons:deathtrap_3", "dimdungeons:deathtrap_4"], ["dimdungeons:keyroom_1", "dimdungeons:keyroom_2"], ["dimdungeons:keyroom_3", "dimdungeons:keyroom_4"], ["dimdungeons:crueltrap_1", "dimdungeons:crueltrap_2", "dimdungeons:crueltrap_3"], ["dimdungeons:beacon_3", "dimdungeons:library_1"], ["dimdungeons:freebie_1", "dimdungeons:freebie_2", "dimdungeons:freebie_3", "dimdungeons:chesttrap_2"], ["dimdungeons:honeytrap_1", "dimdungeons:honeytrap_3", "dimdungeons:honeytrap_4"]]
+
+#Room Selections for Advanced Dungeons
+[roomsTier2]
+	advancedEntrances = [["dimdungeons:entrance_1", "dimdungeons:entrance_2", "dimdungeons:entrance_3", "dimdungeons:entrance_4", "dimdungeons:entrance_5", "dimdungeons:entrance_6", "dimdungeons:entrance_7", "dimdungeons:entrance_8", "dimdungeons:entrance_9"]]
+	advancedFourways = [["dimdungeons:fourway_4", "dimdungeons:fourway_5", "dimdungeons:fourway_6"], ["dimdungeons:fourway_7", "dimdungeons:fourway_8", "dimdungeons:fourway_9"], ["dimdungeons:combat_1", "dimdungeons:combat_2", "dimdungeons:combat_3", "dimdungeons:farmland_puzzle_1"], ["dimdungeons:combat_1", "dimdungeons:combat_2", "dimdungeons:combat_3", "dimdungeons:farmland_puzzle_1", "dimdungeons:combat_4", "dimdungeons:combat_5", "dimdungeons:combat_6"], ["dimdungeons:disco_1", "dimdungeons:disco_2", "dimdungeons:disco_3", "dimdungeons:disco_4"], ["dimdungeons:redstrap_1", "dimdungeons:redore_1", "dimdungeons:redore_3"], ["dimdungeons:hiddenpath_1", "dimdungeons:hiddenpath_2", "dimdungeons:hiddenpath_3", "dimdungeons:swimmaze_1"], ["dimdungeons:chain_2", "dimdungeons:honeyfall_1"]]
+	advancedThreeways = [["dimdungeons:threeway_3", "dimdungeons:threeway_4"], ["dimdungeons:threeway_5", "dimdungeons:morethree_2"], ["dimdungeons:morethree_3", "dimdungeons:morethree_4"], ["dimdungeons:morethree_5", "dimdungeons:morethree_6"], ["dimdungeons:tetris_1", "dimdungeons:tetris_2", "dimdungeons:tetris_3"], ["dimdungeons:redstrap_4", "dimdungeons:chesttrap_4"], ["dimdungeons:advice_2", "dimdungeons:advice_2", "dimdungeons:advice_5"], ["dimdungeons:slotmachine_1", "dimdungeons:pistonwall_4"], ["dimdungeons:firepath_6", "dimdungeons:honeyfall_3"], ["dimdungeons:bedroom_2", "dimdungeons:bedroom_3"]]
+	advancedHallways = [["dimdungeons:redsand_4", "dimdungeons:extrahall_1", "dimdungeons:extrahall_2"], ["dimdungeons:extrahall_3", "dimdungeons:extrahall_4", "dimdungeons:extrahall_5"], ["dimdungeons:coalhall_1", "dimdungeons:coalhall_2", "dimdungeons:coalhall_3"], ["dimdungeons:juke_1", "dimdungeons:juke_2", "dimdungeons:juke_3"], ["dimdungeons:advice_3", "dimdungeons:advice_3", "dimdungeons:advice_6"], ["dimdungeons:library_2", "dimdungeons:chesttrap_1"], ["dimdungeons:mossyhall_1", "dimdungeons:pistonwall_2"], ["dimdungeons:moohall_1", "dimdungeons:moohall_2"], ["dimdungeons:redstrap_2", "dimdungeons:crushhall_2"], ["dimdungeons:yinyang_1", "dimdungeons:yinyang_2"], ["dimdungeons:waterhall_1", "dimdungeons:firepath_1"], ["dimdungeons:tempt_1", "dimdungeons:tempt_2", "dimdungeons:tempt_3", "dimdungeons:tempt_4"], ["dimdungeons:tower_1", "dimdungeons:tower_2"]]
+	advancedCorners = [["dimdungeons:corner_1"], ["dimdungeons:corner_4"], ["dimdungeons:firepath_3"], ["dimdungeons:corner_5"], ["dimdungeons:redsand_2"], ["dimdungeons:corner_6"], ["dimdungeons:corner_7"], ["dimdungeons:longcorner_1"], ["dimdungeons:longcorner_3"], ["dimdungeons:longcorner_4", "dimdungeons:longcorner_5"], ["dimdungeons:icetrap_2", "dimdungeons:redstrap_3"], ["dimdungeons:skullcorner_2", "dimdungeons:corner_8"], ["dimdungeons:hardcorner_1", "dimdungeons:hardcorner_2"], ["dimdungeons:hardcorner_3", "dimdungeons:hardcorner_4"], ["dimdungeons:hardcorner_5", "dimdungeons:hardcorner_6"]]
+	advancedEnds = [["dimdungeons:deadend_5", "dimdungeons:deadend_6", "dimdungeons:deadend_7", "dimdungeons:deadend_8"], ["dimdungeons:coffin_1", "dimdungeons:coffin_2", "dimdungeons:coffin_4"], ["dimdungeons:advice_1", "dimdungeons:advice_1", "dimdungeons:advice_4"], ["dimdungeons:shoutout_1", "dimdungeons:shoutout_2", "dimdungeons:shoutout_3"], ["dimdungeons:spawner_1", "dimdungeons:spawner_2", "dimdungeons:spawner_3", "dimdungeons:spawner_4", "dimdungeons:spawner_5", "dimdungeons:spawner_6"], ["dimdungeons:redspuzzle_1", "dimdungeons:redspuzzle_2", "dimdungeons:redspuzzle_3", "dimdungeons:redspuzzle_4"], ["dimdungeons:deathtrap_1", "dimdungeons:deathtrap_2", "dimdungeons:deathtrap_3", "dimdungeons:deathtrap_4"], ["dimdungeons:keytrap_1", "dimdungeons:keytrap_2", "dimdungeons:keytrap_3", "dimdungeons:keytrap_4", "dimdungeons:keytrap_5"], ["dimdungeons:library_1", "dimdungeons:magicpuzzle_1", "dimdungeons:magicpuzzle_2"], ["dimdungeons:speedpuzzle_3", "dimdungeons:speedpuzzle_4"], ["dimdungeons:honeytrap_2", "dimdungeons:honeytrap_3", "dimdungeons:honeytrap_4"], ["dimdungeons:beacon_2"], ["dimdungeons:portal_puzzle_1", "dimdungeons:portal_puzzle_2"], ["dimdungeons:slotmachine_2"]]
+	advancedLarge = [["dimdungeons:large_maze", "dimdungeons:large_bricks", "dimdungeons:large_ballroom", "dimdungeons:large_garage", "dimdungeons:large_jetcoaster", "dimdungeons:large_slime", "dimdungeons:large_archery", "dimdungeons:large_hallways"]]
+
+#Enemy Sets for Dungeons
+[enemySets]
+	basicEnemySet1 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	basicEnemySet2 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	advancedEnemySet1 = ["minecraft:pillager", "minecraft:skeleton", "minecraft:stray", "minecraft:blaze"]
+	advancedEnemySet2 = ["minecraft:wither_skeleton", "minecraft:hoglin", "minecraft:vindicator", "minecraft:witch"]
+	basicEnemyHealthScaling = 1.0
+	advancedEnemyHealthScaling = 2.0
+	#The number of themes to expect in the common config.
+	numberOfThemes = 3
+
+#Settings for Theme 1
+[dungeonTheme1]
+	themeEntrances1 = [["dimdungeons:theme1_entrance1"], ["dimdungeons:theme1_entrance2"], ["dimdungeons:theme1_entrance3"]]
+	themeFourways1 = [["dimdungeons:theme1_fourway1"], ["dimdungeons:theme1_fourway2"], ["dimdungeons:theme1_fourway3"], ["dimdungeons:theme1_fourway4"], ["dimdungeons:theme1_fourway5"], ["dimdungeons:theme1_fourway6"]]
+	themeThreeways1 = [["dimdungeons:theme1_threeway1"], ["dimdungeons:theme1_threeway2"], ["dimdungeons:theme1_threeway3"], ["dimdungeons:theme1_threeway4"], ["dimdungeons:theme1_threeway5"], ["dimdungeons:theme1_threeway6"]]
+	themeHallways1 = [["dimdungeons:theme1_hallway1"], ["dimdungeons:theme1_hallway2"], ["dimdungeons:theme1_hallway3"], ["dimdungeons:theme1_hallway4"], ["dimdungeons:theme1_hallway5"], ["dimdungeons:theme1_hallway6"]]
+	themeCorners1 = [["dimdungeons:theme1_corner1"], ["dimdungeons:theme1_corner2"], ["dimdungeons:theme1_corner3"], ["dimdungeons:theme1_corner4"], ["dimdungeons:theme1_corner5"], ["dimdungeons:theme1_corner6"]]
+	themeEnds1 = [["dimdungeons:theme1_end1"], ["dimdungeons:theme1_end2"], ["dimdungeons:theme1_end3"], ["dimdungeons:theme1_end4"], ["dimdungeons:theme1_end5"], ["dimdungeons:theme1_end6"]]
+	themeEnemySet1_1 = ["minecraft:skeleton", "minecraft:piglin", "minecraft:blaze"]
+	themeEnemySet2_1 = ["minecraft:wither_skeleton", "minecraft:blaze", "minecraft:wither_skeleton", "minecraft:blaze", "minecraft:hoglin", "minecraft:piglin_brute"]
+	themeEnemyHealthScaling1 = 1.0
+	themeDungeonSize1 = 14
+
+#Settings for Theme 2
+[dungeonTheme2]
+	themeEntrances2 = [["kubejs:theme2_entrance1"], ["kubejs:theme2_entrance2"], ["kubejs:theme2_entrance3"], ["kubejs:theme2_entrance4"]]
+	themeFourways2 = [["dimdungeons:theme2_room00"], ["dimdungeons:theme2_room01"], ["dimdungeons:theme2_room02"], ["dimdungeons:theme2_room03"], ["dimdungeons:theme2_room04"], ["dimdungeons:theme2_room05"], ["dimdungeons:theme2_room06"], ["dimdungeons:theme2_room07"], ["dimdungeons:theme2_room08"], ["dimdungeons:theme2_room09"], ["dimdungeons:theme2_room10"], ["dimdungeons:theme2_room11"], ["dimdungeons:theme2_room12"], ["dimdungeons:theme2_room13"], ["dimdungeons:theme2_room14"], ["dimdungeons:theme2_room15"], ["dimdungeons:theme2_room16"], ["dimdungeons:theme2_room17"], ["dimdungeons:theme2_room18"], ["dimdungeons:theme2_room19"], ["dimdungeons:theme2_room20"], ["dimdungeons:theme2_room21"], ["dimdungeons:theme2_room22"], ["dimdungeons:theme2_room23"], ["dimdungeons:theme2_room24"], ["dimdungeons:theme2_room25"], ["dimdungeons:theme2_room26"], ["dimdungeons:theme2_room27"], ["dimdungeons:theme2_room28"], ["dimdungeons:theme2_room29"], ["dimdungeons:theme2_room30"]]
+	themeThreeways2 = [["dimdungeons:theme2_threeway1"]]
+	themeHallways2 = [["dimdungeons:theme2_hallway1"]]
+	themeCorners2 = [["dimdungeons:theme2_corner1"]]
+	themeEnds2 = [["dimdungeons:theme2_end1"]]
+	themeEnemySet1_2 = ["minecraft:husk", "minecraft:pillager", "minecraft:magma_cube"]
+	themeEnemySet2_2 = ["minecraft:wither_skeleton", "minecraft:blaze", "minecraft:wither_skeleton", "minecraft:blaze"]
+	themeEnemyHealthScaling2 = 1.0
+	themeDungeonSize2 = 14
+
+#Settings for Theme 3
+[dungeonTheme3]
+	themeEntrances3 = [["dimdungeons:sewers_beginroom_base"]]
+	themeFourways3 = [["dimdungeons:sewers_cross_01vf", "dimdungeons:sewers_cross_01vcf", "dimdungeons:sewers_cross_02vf", "dimdungeons:sewers_cross_02vcf", "dimdungeons:sewers_cross_03vf", "dimdungeons:sewers_cross_03vcf"]]
+	themeThreeways3 = [["dimdungeons:sewers_tsection_01vf", "dimdungeons:sewers_tsection_01vcf", "dimdungeons:sewers_tsection_02vf", "dimdungeons:sewers_tsection_02vcf", "dimdungeons:sewers_tsection_03vf", "dimdungeons:sewers_tsection_03vcf"]]
+	themeHallways3 = [["dimdungeons:sewers_straight_01vf", "dimdungeons:sewers_straight_01vcf", "dimdungeons:sewers_straight_02vf", "dimdungeons:sewers_straight_02vcf", "dimdungeons:sewers_straight_03vcf", "dimdungeons:sewers_straight_03vf", "dimdungeons:sewers_straight_04vcf"]]
+	themeCorners3 = [["dimdungeons:sewers_corner_01vf", "dimdungeons:sewers_corner_01vcf", "dimdungeons:sewers_corner_02vf", "dimdungeons:sewers_corner_02vcf", "dimdungeons:sewers_corner_03vf", "dimdungeons:sewers_corner_03vcf"]]
+	themeEnds3 = [["dimdungeons:sewers_bossroom_01", "dimdungeons:sewers_bossroom_02", "dimdungeons:sewers_bossroom_03", "dimdungeons:sewers_finalboss_01vf", "dimdungeons:sewers_bossroom_04", "dimdungeons:sewers_bossroom_05", "dimdungeons:sewers_bossroom_06"]]
+	themeEnemySet1_3 = ["minecraft:zombie", "minecraft:husk", "minecraft:zombie_villager"]
+	themeEnemySet2_3 = ["minecraft:slime"]
+	themeEnemyHealthScaling3 = 1.0
+	themeDungeonSize3 = 14
+
+#Settings for Theme 4
+[dungeonTheme4]
+	themeEntrances4 = [["kubejs:large_entrance"]]
+	themeFourways4 = [["package:emptyzero"]]
+	themeThreeways4 = [["package:emptyzero"]]
+	themeHallways4 = [["package:emptyzero"]]
+	themeCorners4 = [["package:emptyzero"]]
+	themeEnds4 = [["package:emptyzero"]]
+	themeEnemySet1_4 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_4 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling4 = 1.0
+	themeDungeonSize4 = 0
+
+#Settings for Theme 5
+[dungeonTheme5]
+	themeEntrances5 = []
+	themeFourways5 = []
+	themeThreeways5 = []
+	themeHallways5 = []
+	themeCorners5 = []
+	themeEnds5 = []
+	themeEnemySet1_5 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_5 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling5 = 1.0
+	themeDungeonSize5 = 14
+
+#Settings for Theme 6
+[dungeonTheme6]
+	themeEntrances6 = []
+	themeFourways6 = []
+	themeThreeways6 = []
+	themeHallways6 = []
+	themeCorners6 = []
+	themeEnds6 = []
+	themeEnemySet1_6 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_6 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling6 = 1.0
+	themeDungeonSize6 = 14
+
+#Settings for Theme 7
+[dungeonTheme7]
+	themeEntrances7 = []
+	themeFourways7 = []
+	themeThreeways7 = []
+	themeHallways7 = []
+	themeCorners7 = []
+	themeEnds7 = []
+	themeEnemySet1_7 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_7 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling7 = 1.0
+	themeDungeonSize7 = 14
+
+#Settings for Theme 8
+[dungeonTheme8]
+	themeEntrances8 = []
+	themeFourways8 = []
+	themeThreeways8 = []
+	themeHallways8 = []
+	themeCorners8 = []
+	themeEnds8 = []
+	themeEnemySet1_8 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_8 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling8 = 1.0
+	themeDungeonSize8 = 14
+
+#Settings for Theme 9
+[dungeonTheme9]
+	themeEntrances9 = []
+	themeFourways9 = []
+	themeThreeways9 = []
+	themeHallways9 = []
+	themeCorners9 = []
+	themeEnds9 = []
+	themeEnemySet1_9 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_9 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling9 = 1.0
+	themeDungeonSize9 = 14
+
+#Settings for Theme 10
+[dungeonTheme10]
+	themeEntrances10 = []
+	themeFourways10 = []
+	themeThreeways10 = []
+	themeHallways10 = []
+	themeCorners10 = []
+	themeEnds10 = []
+	themeEnemySet1_10 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_10 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling10 = 1.0
+	themeDungeonSize10 = 14
+
+#Settings for Theme 11
+[dungeonTheme11]
+	themeEntrances11 = []
+	themeFourways11 = []
+	themeThreeways11 = []
+	themeHallways11 = []
+	themeCorners11 = []
+	themeEnds11 = []
+	themeEnemySet1_11 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_11 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling11 = 1.0
+	themeDungeonSize11 = 14
+
+#Settings for Theme 12
+[dungeonTheme12]
+	themeEntrances12 = []
+	themeFourways12 = []
+	themeThreeways12 = []
+	themeHallways12 = []
+	themeCorners12 = []
+	themeEnds12 = []
+	themeEnemySet1_12 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_12 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling12 = 1.0
+	themeDungeonSize12 = 14
+
+#Settings for Theme 13
+[dungeonTheme13]
+	themeEntrances13 = []
+	themeFourways13 = []
+	themeThreeways13 = []
+	themeHallways13 = []
+	themeCorners13 = []
+	themeEnds13 = []
+	themeEnemySet1_13 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_13 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling13 = 1.0
+	themeDungeonSize13 = 14
+
+#Settings for Theme 14
+[dungeonTheme14]
+	themeEntrances14 = []
+	themeFourways14 = []
+	themeThreeways14 = []
+	themeHallways14 = []
+	themeCorners14 = []
+	themeEnds14 = []
+	themeEnemySet1_14 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_14 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling14 = 1.0
+	themeDungeonSize14 = 14
+
+#Settings for Theme 15
+[dungeonTheme15]
+	themeEntrances15 = []
+	themeFourways15 = []
+	themeThreeways15 = []
+	themeHallways15 = []
+	themeCorners15 = []
+	themeEnds15 = []
+	themeEnemySet1_15 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_15 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling15 = 1.0
+	themeDungeonSize15 = 14
+
+#Settings for Theme 16
+[dungeonTheme16]
+	themeEntrances16 = []
+	themeFourways16 = []
+	themeThreeways16 = []
+	themeHallways16 = []
+	themeCorners16 = []
+	themeEnds16 = []
+	themeEnemySet1_16 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_16 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling16 = 1.0
+	themeDungeonSize16 = 14
+
+#Settings for Theme 17
+[dungeonTheme17]
+	themeEntrances17 = []
+	themeFourways17 = []
+	themeThreeways17 = []
+	themeHallways17 = []
+	themeCorners17 = []
+	themeEnds17 = []
+	themeEnemySet1_17 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_17 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling17 = 1.0
+	themeDungeonSize17 = 14
+
+#Settings for Theme 18
+[dungeonTheme18]
+	themeEntrances18 = []
+	themeFourways18 = []
+	themeThreeways18 = []
+	themeHallways18 = []
+	themeCorners18 = []
+	themeEnds18 = []
+	themeEnemySet1_18 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_18 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling18 = 1.0
+	themeDungeonSize18 = 14
+
+#Settings for Theme 19
+[dungeonTheme19]
+	themeEntrances19 = []
+	themeFourways19 = []
+	themeThreeways19 = []
+	themeHallways19 = []
+	themeCorners19 = []
+	themeEnds19 = []
+	themeEnemySet1_19 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_19 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling19 = 1.0
+	themeDungeonSize19 = 14
+
+#Settings for Theme 20
+[dungeonTheme20]
+	themeEntrances20 = []
+	themeFourways20 = []
+	themeThreeways20 = []
+	themeHallways20 = []
+	themeCorners20 = []
+	themeEnds20 = []
+	themeEnemySet1_20 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_20 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling20 = 1.0
+	themeDungeonSize20 = 14
+
+#Settings for Theme 21
+[dungeonTheme21]
+	themeEntrances21 = []
+	themeFourways21 = []
+	themeThreeways21 = []
+	themeHallways21 = []
+	themeCorners21 = []
+	themeEnds21 = []
+	themeEnemySet1_21 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_21 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling21 = 1.0
+	themeDungeonSize21 = 14
+
+#Settings for Theme 22
+[dungeonTheme22]
+	themeEntrances22 = []
+	themeFourways22 = []
+	themeThreeways22 = []
+	themeHallways22 = []
+	themeCorners22 = []
+	themeEnds22 = []
+	themeEnemySet1_22 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_22 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling22 = 1.0
+	themeDungeonSize22 = 14
+
+#Settings for Theme 23
+[dungeonTheme23]
+	themeEntrances23 = []
+	themeFourways23 = []
+	themeThreeways23 = []
+	themeHallways23 = []
+	themeCorners23 = []
+	themeEnds23 = []
+	themeEnemySet1_23 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_23 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling23 = 1.0
+	themeDungeonSize23 = 14
+
+#Settings for Theme 24
+[dungeonTheme24]
+	themeEntrances24 = []
+	themeFourways24 = []
+	themeThreeways24 = []
+	themeHallways24 = []
+	themeCorners24 = []
+	themeEnds24 = []
+	themeEnemySet1_24 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_24 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling24 = 1.0
+	themeDungeonSize24 = 14
+
+#Settings for Theme 25
+[dungeonTheme25]
+	themeEntrances25 = []
+	themeFourways25 = []
+	themeThreeways25 = []
+	themeHallways25 = []
+	themeCorners25 = []
+	themeEnds25 = []
+	themeEnemySet1_25 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_25 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling25 = 1.0
+	themeDungeonSize25 = 14
+
+#Settings for Theme 26
+[dungeonTheme26]
+	themeEntrances26 = []
+	themeFourways26 = []
+	themeThreeways26 = []
+	themeHallways26 = []
+	themeCorners26 = []
+	themeEnds26 = []
+	themeEnemySet1_26 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_26 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling26 = 1.0
+	themeDungeonSize26 = 14
+
+#Settings for Theme 27
+[dungeonTheme27]
+	themeEntrances27 = []
+	themeFourways27 = []
+	themeThreeways27 = []
+	themeHallways27 = []
+	themeCorners27 = []
+	themeEnds27 = []
+	themeEnemySet1_27 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_27 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling27 = 1.0
+	themeDungeonSize27 = 14
+
+#Settings for Theme 28
+[dungeonTheme28]
+	themeEntrances28 = []
+	themeFourways28 = []
+	themeThreeways28 = []
+	themeHallways28 = []
+	themeCorners28 = []
+	themeEnds28 = []
+	themeEnemySet1_28 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_28 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling28 = 1.0
+	themeDungeonSize28 = 14
+
+#Settings for Theme 29
+[dungeonTheme29]
+	themeEntrances29 = []
+	themeFourways29 = []
+	themeThreeways29 = []
+	themeHallways29 = []
+	themeCorners29 = []
+	themeEnds29 = []
+	themeEnemySet1_29 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_29 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling29 = 1.0
+	themeDungeonSize29 = 14
+
+#Settings for Theme 30
+[dungeonTheme30]
+	themeEntrances30 = []
+	themeFourways30 = []
+	themeThreeways30 = []
+	themeHallways30 = []
+	themeCorners30 = []
+	themeEnds30 = []
+	themeEnemySet1_30 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_30 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling30 = 1.0
+	themeDungeonSize30 = 14
+
+#Settings for Theme 31
+[dungeonTheme31]
+	themeEntrances31 = []
+	themeFourways31 = []
+	themeThreeways31 = []
+	themeHallways31 = []
+	themeCorners31 = []
+	themeEnds31 = []
+	themeEnemySet1_31 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_31 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling31 = 1.0
+	themeDungeonSize31 = 14
+
+#Settings for Theme 32
+[dungeonTheme32]
+	themeEntrances32 = []
+	themeFourways32 = []
+	themeThreeways32 = []
+	themeHallways32 = []
+	themeCorners32 = []
+	themeEnds32 = []
+	themeEnemySet1_32 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_32 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling32 = 1.0
+	themeDungeonSize32 = 14
+
+#Settings for Theme 33
+[dungeonTheme33]
+	themeEntrances33 = []
+	themeFourways33 = []
+	themeThreeways33 = []
+	themeHallways33 = []
+	themeCorners33 = []
+	themeEnds33 = []
+	themeEnemySet1_33 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_33 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling33 = 1.0
+	themeDungeonSize33 = 14
+
+#Settings for Theme 34
+[dungeonTheme34]
+	themeEntrances34 = []
+	themeFourways34 = []
+	themeThreeways34 = []
+	themeHallways34 = []
+	themeCorners34 = []
+	themeEnds34 = []
+	themeEnemySet1_34 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_34 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling34 = 1.0
+	themeDungeonSize34 = 14
+
+#Settings for Theme 35
+[dungeonTheme35]
+	themeEntrances35 = []
+	themeFourways35 = []
+	themeThreeways35 = []
+	themeHallways35 = []
+	themeCorners35 = []
+	themeEnds35 = []
+	themeEnemySet1_35 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_35 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling35 = 1.0
+	themeDungeonSize35 = 14
+
+#Settings for Theme 36
+[dungeonTheme36]
+	themeEntrances36 = []
+	themeFourways36 = []
+	themeThreeways36 = []
+	themeHallways36 = []
+	themeCorners36 = []
+	themeEnds36 = []
+	themeEnemySet1_36 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_36 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling36 = 1.0
+	themeDungeonSize36 = 14
+
+#Settings for Theme 37
+[dungeonTheme37]
+	themeEntrances37 = []
+	themeFourways37 = []
+	themeThreeways37 = []
+	themeHallways37 = []
+	themeCorners37 = []
+	themeEnds37 = []
+	themeEnemySet1_37 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_37 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling37 = 1.0
+	themeDungeonSize37 = 14
+
+#Settings for Theme 38
+[dungeonTheme38]
+	themeEntrances38 = []
+	themeFourways38 = []
+	themeThreeways38 = []
+	themeHallways38 = []
+	themeCorners38 = []
+	themeEnds38 = []
+	themeEnemySet1_38 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_38 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling38 = 1.0
+	themeDungeonSize38 = 14
+
+#Settings for Theme 39
+[dungeonTheme39]
+	themeEntrances39 = []
+	themeFourways39 = []
+	themeThreeways39 = []
+	themeHallways39 = []
+	themeCorners39 = []
+	themeEnds39 = []
+	themeEnemySet1_39 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_39 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling39 = 1.0
+	themeDungeonSize39 = 14
+
+#Settings for Theme 40
+[dungeonTheme40]
+	themeEntrances40 = []
+	themeFourways40 = []
+	themeThreeways40 = []
+	themeHallways40 = []
+	themeCorners40 = []
+	themeEnds40 = []
+	themeEnemySet1_40 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_40 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling40 = 1.0
+	themeDungeonSize40 = 14
+
+#Settings for Theme 41
+[dungeonTheme41]
+	themeEntrances41 = []
+	themeFourways41 = []
+	themeThreeways41 = []
+	themeHallways41 = []
+	themeCorners41 = []
+	themeEnds41 = []
+	themeEnemySet1_41 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_41 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling41 = 1.0
+	themeDungeonSize41 = 14
+
+#Settings for Theme 42
+[dungeonTheme42]
+	themeEntrances42 = []
+	themeFourways42 = []
+	themeThreeways42 = []
+	themeHallways42 = []
+	themeCorners42 = []
+	themeEnds42 = []
+	themeEnemySet1_42 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_42 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling42 = 1.0
+	themeDungeonSize42 = 14
+
+#Settings for Theme 43
+[dungeonTheme43]
+	themeEntrances43 = []
+	themeFourways43 = []
+	themeThreeways43 = []
+	themeHallways43 = []
+	themeCorners43 = []
+	themeEnds43 = []
+	themeEnemySet1_43 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_43 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling43 = 1.0
+	themeDungeonSize43 = 14
+
+#Settings for Theme 44
+[dungeonTheme44]
+	themeEntrances44 = []
+	themeFourways44 = []
+	themeThreeways44 = []
+	themeHallways44 = []
+	themeCorners44 = []
+	themeEnds44 = []
+	themeEnemySet1_44 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_44 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling44 = 1.0
+	themeDungeonSize44 = 14
+
+#Settings for Theme 45
+[dungeonTheme45]
+	themeEntrances45 = []
+	themeFourways45 = []
+	themeThreeways45 = []
+	themeHallways45 = []
+	themeCorners45 = []
+	themeEnds45 = []
+	themeEnemySet1_45 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_45 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling45 = 1.0
+	themeDungeonSize45 = 14
+
+#Settings for Theme 46
+[dungeonTheme46]
+	themeEntrances46 = []
+	themeFourways46 = []
+	themeThreeways46 = []
+	themeHallways46 = []
+	themeCorners46 = []
+	themeEnds46 = []
+	themeEnemySet1_46 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_46 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling46 = 1.0
+	themeDungeonSize46 = 14
+
+#Settings for Theme 47
+[dungeonTheme47]
+	themeEntrances47 = []
+	themeFourways47 = []
+	themeThreeways47 = []
+	themeHallways47 = []
+	themeCorners47 = []
+	themeEnds47 = []
+	themeEnemySet1_47 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_47 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling47 = 1.0
+	themeDungeonSize47 = 14
+
+#Settings for Theme 48
+[dungeonTheme48]
+	themeEntrances48 = []
+	themeFourways48 = []
+	themeThreeways48 = []
+	themeHallways48 = []
+	themeCorners48 = []
+	themeEnds48 = []
+	themeEnemySet1_48 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_48 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling48 = 1.0
+	themeDungeonSize48 = 14
+
+#Settings for Theme 49
+[dungeonTheme49]
+	themeEntrances49 = []
+	themeFourways49 = []
+	themeThreeways49 = []
+	themeHallways49 = []
+	themeCorners49 = []
+	themeEnds49 = []
+	themeEnemySet1_49 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_49 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling49 = 1.0
+	themeDungeonSize49 = 14
+
+#Settings for Theme 50
+[dungeonTheme50]
+	themeEntrances50 = []
+	themeFourways50 = []
+	themeThreeways50 = []
+	themeHallways50 = []
+	themeCorners50 = []
+	themeEnds50 = []
+	themeEnemySet1_50 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_50 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling50 = 1.0
+	themeDungeonSize50 = 14
+
+#Settings for Theme 51
+[dungeonTheme51]
+	themeEntrances51 = []
+	themeFourways51 = []
+	themeThreeways51 = []
+	themeHallways51 = []
+	themeCorners51 = []
+	themeEnds51 = []
+	themeEnemySet1_51 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_51 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling51 = 1.0
+	themeDungeonSize51 = 14
+
+#Settings for Theme 52
+[dungeonTheme52]
+	themeEntrances52 = []
+	themeFourways52 = []
+	themeThreeways52 = []
+	themeHallways52 = []
+	themeCorners52 = []
+	themeEnds52 = []
+	themeEnemySet1_52 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_52 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling52 = 1.0
+	themeDungeonSize52 = 14
+
+#Settings for Theme 53
+[dungeonTheme53]
+	themeEntrances53 = []
+	themeFourways53 = []
+	themeThreeways53 = []
+	themeHallways53 = []
+	themeCorners53 = []
+	themeEnds53 = []
+	themeEnemySet1_53 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_53 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling53 = 1.0
+	themeDungeonSize53 = 14
+
+#Settings for Theme 54
+[dungeonTheme54]
+	themeEntrances54 = []
+	themeFourways54 = []
+	themeThreeways54 = []
+	themeHallways54 = []
+	themeCorners54 = []
+	themeEnds54 = []
+	themeEnemySet1_54 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_54 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling54 = 1.0
+	themeDungeonSize54 = 14
+
+#Settings for Theme 55
+[dungeonTheme55]
+	themeEntrances55 = []
+	themeFourways55 = []
+	themeThreeways55 = []
+	themeHallways55 = []
+	themeCorners55 = []
+	themeEnds55 = []
+	themeEnemySet1_55 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_55 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling55 = 1.0
+	themeDungeonSize55 = 14
+
+#Settings for Theme 56
+[dungeonTheme56]
+	themeEntrances56 = []
+	themeFourways56 = []
+	themeThreeways56 = []
+	themeHallways56 = []
+	themeCorners56 = []
+	themeEnds56 = []
+	themeEnemySet1_56 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_56 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling56 = 1.0
+	themeDungeonSize56 = 14
+
+#Settings for Theme 57
+[dungeonTheme57]
+	themeEntrances57 = []
+	themeFourways57 = []
+	themeThreeways57 = []
+	themeHallways57 = []
+	themeCorners57 = []
+	themeEnds57 = []
+	themeEnemySet1_57 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_57 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling57 = 1.0
+	themeDungeonSize57 = 14
+
+#Settings for Theme 58
+[dungeonTheme58]
+	themeEntrances58 = []
+	themeFourways58 = []
+	themeThreeways58 = []
+	themeHallways58 = []
+	themeCorners58 = []
+	themeEnds58 = []
+	themeEnemySet1_58 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_58 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling58 = 1.0
+	themeDungeonSize58 = 14
+
+#Settings for Theme 59
+[dungeonTheme59]
+	themeEntrances59 = []
+	themeFourways59 = []
+	themeThreeways59 = []
+	themeHallways59 = []
+	themeCorners59 = []
+	themeEnds59 = []
+	themeEnemySet1_59 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_59 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling59 = 1.0
+	themeDungeonSize59 = 14
+
+#Settings for Theme 60
+[dungeonTheme60]
+	themeEntrances60 = []
+	themeFourways60 = []
+	themeThreeways60 = []
+	themeHallways60 = []
+	themeCorners60 = []
+	themeEnds60 = []
+	themeEnemySet1_60 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_60 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling60 = 1.0
+	themeDungeonSize60 = 14
+
+#Settings for Theme 61
+[dungeonTheme61]
+	themeEntrances61 = []
+	themeFourways61 = []
+	themeThreeways61 = []
+	themeHallways61 = []
+	themeCorners61 = []
+	themeEnds61 = []
+	themeEnemySet1_61 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_61 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling61 = 1.0
+	themeDungeonSize61 = 14
+
+#Settings for Theme 62
+[dungeonTheme62]
+	themeEntrances62 = []
+	themeFourways62 = []
+	themeThreeways62 = []
+	themeHallways62 = []
+	themeCorners62 = []
+	themeEnds62 = []
+	themeEnemySet1_62 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_62 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling62 = 1.0
+	themeDungeonSize62 = 14
+
+#Settings for Theme 63
+[dungeonTheme63]
+	themeEntrances63 = []
+	themeFourways63 = []
+	themeThreeways63 = []
+	themeHallways63 = []
+	themeCorners63 = []
+	themeEnds63 = []
+	themeEnemySet1_63 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_63 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling63 = 1.0
+	themeDungeonSize63 = 14
+
+#Settings for Theme 64
+[dungeonTheme64]
+	themeEntrances64 = []
+	themeFourways64 = []
+	themeThreeways64 = []
+	themeHallways64 = []
+	themeCorners64 = []
+	themeEnds64 = []
+	themeEnemySet1_64 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_64 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling64 = 1.0
+	themeDungeonSize64 = 14
+
+#Settings for Theme 65
+[dungeonTheme65]
+	themeEntrances65 = []
+	themeFourways65 = []
+	themeThreeways65 = []
+	themeHallways65 = []
+	themeCorners65 = []
+	themeEnds65 = []
+	themeEnemySet1_65 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_65 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling65 = 1.0
+	themeDungeonSize65 = 14
+
+#Settings for Theme 66
+[dungeonTheme66]
+	themeEntrances66 = []
+	themeFourways66 = []
+	themeThreeways66 = []
+	themeHallways66 = []
+	themeCorners66 = []
+	themeEnds66 = []
+	themeEnemySet1_66 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_66 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling66 = 1.0
+	themeDungeonSize66 = 14
+
+#Settings for Theme 67
+[dungeonTheme67]
+	themeEntrances67 = []
+	themeFourways67 = []
+	themeThreeways67 = []
+	themeHallways67 = []
+	themeCorners67 = []
+	themeEnds67 = []
+	themeEnemySet1_67 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_67 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling67 = 1.0
+	themeDungeonSize67 = 14
+
+#Settings for Theme 68
+[dungeonTheme68]
+	themeEntrances68 = []
+	themeFourways68 = []
+	themeThreeways68 = []
+	themeHallways68 = []
+	themeCorners68 = []
+	themeEnds68 = []
+	themeEnemySet1_68 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_68 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling68 = 1.0
+	themeDungeonSize68 = 14
+
+#Settings for Theme 69
+[dungeonTheme69]
+	themeEntrances69 = []
+	themeFourways69 = []
+	themeThreeways69 = []
+	themeHallways69 = []
+	themeCorners69 = []
+	themeEnds69 = []
+	themeEnemySet1_69 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_69 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling69 = 1.0
+	themeDungeonSize69 = 14
+
+#Settings for Theme 70
+[dungeonTheme70]
+	themeEntrances70 = []
+	themeFourways70 = []
+	themeThreeways70 = []
+	themeHallways70 = []
+	themeCorners70 = []
+	themeEnds70 = []
+	themeEnemySet1_70 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_70 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling70 = 1.0
+	themeDungeonSize70 = 14
+
+#Settings for Theme 71
+[dungeonTheme71]
+	themeEntrances71 = []
+	themeFourways71 = []
+	themeThreeways71 = []
+	themeHallways71 = []
+	themeCorners71 = []
+	themeEnds71 = []
+	themeEnemySet1_71 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_71 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling71 = 1.0
+	themeDungeonSize71 = 14
+
+#Settings for Theme 72
+[dungeonTheme72]
+	themeEntrances72 = []
+	themeFourways72 = []
+	themeThreeways72 = []
+	themeHallways72 = []
+	themeCorners72 = []
+	themeEnds72 = []
+	themeEnemySet1_72 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_72 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling72 = 1.0
+	themeDungeonSize72 = 14
+
+#Settings for Theme 73
+[dungeonTheme73]
+	themeEntrances73 = []
+	themeFourways73 = []
+	themeThreeways73 = []
+	themeHallways73 = []
+	themeCorners73 = []
+	themeEnds73 = []
+	themeEnemySet1_73 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_73 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling73 = 1.0
+	themeDungeonSize73 = 14
+
+#Settings for Theme 74
+[dungeonTheme74]
+	themeEntrances74 = []
+	themeFourways74 = []
+	themeThreeways74 = []
+	themeHallways74 = []
+	themeCorners74 = []
+	themeEnds74 = []
+	themeEnemySet1_74 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_74 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling74 = 1.0
+	themeDungeonSize74 = 14
+
+#Settings for Theme 75
+[dungeonTheme75]
+	themeEntrances75 = []
+	themeFourways75 = []
+	themeThreeways75 = []
+	themeHallways75 = []
+	themeCorners75 = []
+	themeEnds75 = []
+	themeEnemySet1_75 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_75 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling75 = 1.0
+	themeDungeonSize75 = 14
+
+#Settings for Theme 76
+[dungeonTheme76]
+	themeEntrances76 = []
+	themeFourways76 = []
+	themeThreeways76 = []
+	themeHallways76 = []
+	themeCorners76 = []
+	themeEnds76 = []
+	themeEnemySet1_76 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_76 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling76 = 1.0
+	themeDungeonSize76 = 14
+
+#Settings for Theme 77
+[dungeonTheme77]
+	themeEntrances77 = []
+	themeFourways77 = []
+	themeThreeways77 = []
+	themeHallways77 = []
+	themeCorners77 = []
+	themeEnds77 = []
+	themeEnemySet1_77 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_77 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling77 = 1.0
+	themeDungeonSize77 = 14
+
+#Settings for Theme 78
+[dungeonTheme78]
+	themeEntrances78 = []
+	themeFourways78 = []
+	themeThreeways78 = []
+	themeHallways78 = []
+	themeCorners78 = []
+	themeEnds78 = []
+	themeEnemySet1_78 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_78 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling78 = 1.0
+	themeDungeonSize78 = 14
+
+#Settings for Theme 79
+[dungeonTheme79]
+	themeEntrances79 = []
+	themeFourways79 = []
+	themeThreeways79 = []
+	themeHallways79 = []
+	themeCorners79 = []
+	themeEnds79 = []
+	themeEnemySet1_79 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_79 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling79 = 1.0
+	themeDungeonSize79 = 14
+
+#Settings for Theme 80
+[dungeonTheme80]
+	themeEntrances80 = []
+	themeFourways80 = []
+	themeThreeways80 = []
+	themeHallways80 = []
+	themeCorners80 = []
+	themeEnds80 = []
+	themeEnemySet1_80 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_80 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling80 = 1.0
+	themeDungeonSize80 = 14
+
+#Settings for Theme 81
+[dungeonTheme81]
+	themeEntrances81 = []
+	themeFourways81 = []
+	themeThreeways81 = []
+	themeHallways81 = []
+	themeCorners81 = []
+	themeEnds81 = []
+	themeEnemySet1_81 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_81 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling81 = 1.0
+	themeDungeonSize81 = 14
+
+#Settings for Theme 82
+[dungeonTheme82]
+	themeEntrances82 = []
+	themeFourways82 = []
+	themeThreeways82 = []
+	themeHallways82 = []
+	themeCorners82 = []
+	themeEnds82 = []
+	themeEnemySet1_82 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_82 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling82 = 1.0
+	themeDungeonSize82 = 14
+
+#Settings for Theme 83
+[dungeonTheme83]
+	themeEntrances83 = []
+	themeFourways83 = []
+	themeThreeways83 = []
+	themeHallways83 = []
+	themeCorners83 = []
+	themeEnds83 = []
+	themeEnemySet1_83 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_83 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling83 = 1.0
+	themeDungeonSize83 = 14
+
+#Settings for Theme 84
+[dungeonTheme84]
+	themeEntrances84 = []
+	themeFourways84 = []
+	themeThreeways84 = []
+	themeHallways84 = []
+	themeCorners84 = []
+	themeEnds84 = []
+	themeEnemySet1_84 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_84 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling84 = 1.0
+	themeDungeonSize84 = 14
+
+#Settings for Theme 85
+[dungeonTheme85]
+	themeEntrances85 = []
+	themeFourways85 = []
+	themeThreeways85 = []
+	themeHallways85 = []
+	themeCorners85 = []
+	themeEnds85 = []
+	themeEnemySet1_85 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_85 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling85 = 1.0
+	themeDungeonSize85 = 14
+
+#Settings for Theme 86
+[dungeonTheme86]
+	themeEntrances86 = []
+	themeFourways86 = []
+	themeThreeways86 = []
+	themeHallways86 = []
+	themeCorners86 = []
+	themeEnds86 = []
+	themeEnemySet1_86 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_86 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling86 = 1.0
+	themeDungeonSize86 = 14
+
+#Settings for Theme 87
+[dungeonTheme87]
+	themeEntrances87 = []
+	themeFourways87 = []
+	themeThreeways87 = []
+	themeHallways87 = []
+	themeCorners87 = []
+	themeEnds87 = []
+	themeEnemySet1_87 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_87 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling87 = 1.0
+	themeDungeonSize87 = 14
+
+#Settings for Theme 88
+[dungeonTheme88]
+	themeEntrances88 = []
+	themeFourways88 = []
+	themeThreeways88 = []
+	themeHallways88 = []
+	themeCorners88 = []
+	themeEnds88 = []
+	themeEnemySet1_88 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_88 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling88 = 1.0
+	themeDungeonSize88 = 14
+
+#Settings for Theme 89
+[dungeonTheme89]
+	themeEntrances89 = []
+	themeFourways89 = []
+	themeThreeways89 = []
+	themeHallways89 = []
+	themeCorners89 = []
+	themeEnds89 = []
+	themeEnemySet1_89 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_89 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling89 = 1.0
+	themeDungeonSize89 = 14
+
+#Settings for Theme 90
+[dungeonTheme90]
+	themeEntrances90 = []
+	themeFourways90 = []
+	themeThreeways90 = []
+	themeHallways90 = []
+	themeCorners90 = []
+	themeEnds90 = []
+	themeEnemySet1_90 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_90 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling90 = 1.0
+	themeDungeonSize90 = 14
+
+#Settings for Theme 91
+[dungeonTheme91]
+	themeEntrances91 = []
+	themeFourways91 = []
+	themeThreeways91 = []
+	themeHallways91 = []
+	themeCorners91 = []
+	themeEnds91 = []
+	themeEnemySet1_91 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_91 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling91 = 1.0
+	themeDungeonSize91 = 14
+
+#Settings for Theme 92
+[dungeonTheme92]
+	themeEntrances92 = []
+	themeFourways92 = []
+	themeThreeways92 = []
+	themeHallways92 = []
+	themeCorners92 = []
+	themeEnds92 = []
+	themeEnemySet1_92 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_92 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling92 = 1.0
+	themeDungeonSize92 = 14
+
+#Settings for Theme 93
+[dungeonTheme93]
+	themeEntrances93 = []
+	themeFourways93 = []
+	themeThreeways93 = []
+	themeHallways93 = []
+	themeCorners93 = []
+	themeEnds93 = []
+	themeEnemySet1_93 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_93 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling93 = 1.0
+	themeDungeonSize93 = 14
+
+#Settings for Theme 94
+[dungeonTheme94]
+	themeEntrances94 = []
+	themeFourways94 = []
+	themeThreeways94 = []
+	themeHallways94 = []
+	themeCorners94 = []
+	themeEnds94 = []
+	themeEnemySet1_94 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_94 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling94 = 1.0
+	themeDungeonSize94 = 14
+
+#Settings for Theme 95
+[dungeonTheme95]
+	themeEntrances95 = []
+	themeFourways95 = []
+	themeThreeways95 = []
+	themeHallways95 = []
+	themeCorners95 = []
+	themeEnds95 = []
+	themeEnemySet1_95 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_95 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling95 = 1.0
+	themeDungeonSize95 = 14
+
+#Settings for Theme 96
+[dungeonTheme96]
+	themeEntrances96 = []
+	themeFourways96 = []
+	themeThreeways96 = []
+	themeHallways96 = []
+	themeCorners96 = []
+	themeEnds96 = []
+	themeEnemySet1_96 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_96 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling96 = 1.0
+	themeDungeonSize96 = 14
+
+#Settings for Theme 97
+[dungeonTheme97]
+	themeEntrances97 = []
+	themeFourways97 = []
+	themeThreeways97 = []
+	themeHallways97 = []
+	themeCorners97 = []
+	themeEnds97 = []
+	themeEnemySet1_97 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_97 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling97 = 1.0
+	themeDungeonSize97 = 14
+
+#Settings for Theme 98
+[dungeonTheme98]
+	themeEntrances98 = []
+	themeFourways98 = []
+	themeThreeways98 = []
+	themeHallways98 = []
+	themeCorners98 = []
+	themeEnds98 = []
+	themeEnemySet1_98 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_98 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling98 = 1.0
+	themeDungeonSize98 = 14
+
+#Settings for Theme 99
+[dungeonTheme99]
+	themeEntrances99 = []
+	themeFourways99 = []
+	themeThreeways99 = []
+	themeHallways99 = []
+	themeCorners99 = []
+	themeEnds99 = []
+	themeEnemySet1_99 = ["minecraft:zombie", "minecraft:husk", "minecraft:drowned", "minecraft:spider"]
+	themeEnemySet2_99 = ["minecraft:wither_skeleton", "minecraft:stray", "minecraft:skeleton", "minecraft:pillager"]
+	themeEnemyHealthScaling99 = 1.0
+	themeDungeonSize99 = 14
+

@@ -466,6 +466,26 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active')
         .tag('kubejs:relics');
 
+    registeOrgan(new Organ('kubejs:heart_of_blade')
+        .addScore('health', -1.5)
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('受到攻击时会对敌人造成等同于'), Text.gold('护甲值'), Text.gray('的伤害')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .build())
+        .texture('kubejs:item/organs/relics/heart_of_blade')
+        .tag('kubejs:heart')
+        .tag('kubejs:bear_only')
+        .tag('kubejs:relics');
+
+    registeOrgan(new Organ('kubejs:blade_of_heart')
+        .addScore('defense', -1.5)
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('使用武器大师的宽刃剑造成伤害时')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('其伤害会提高'), Text.gold('30%')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .build())
+        .texture('kubejs:item/organs/relics/blade_of_heart')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+
     registeOrgan(new Organ('kubejs:flower_heart')
         .addScore('health', 1)
         .addScore('photosynthesis', 4)

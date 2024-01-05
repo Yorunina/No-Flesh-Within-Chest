@@ -78,6 +78,5 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('simplehats:hatbag_uncommon').when((c) => c.randomChance(0.05)))
         .addLoot(LootEntry.of('bosses_of_mass_destruction:soul_star').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
-        
-        
+
 })

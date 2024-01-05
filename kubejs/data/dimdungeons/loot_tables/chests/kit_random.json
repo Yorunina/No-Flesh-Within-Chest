@@ -1,0 +1,48 @@
+{
+	"pools": [
+		{
+			"rolls": {
+				"min": 1,
+				"max": 1
+			},
+			"name": "dimdungeons:kit_random",
+			"entries": [
+				{
+				  "type": "loot_table",
+				  "name": "dimdungeons:chests/kit_food",
+				  "weight": 1
+				},
+				{
+				  "type": "loot_table",
+				  "name": "dimdungeons:chests/kit_concrete",
+				  "weight": 1
+				},
+				{
+				  "type": "loot_table",
+				  "name": "dimdungeons:chests/kit_glass",
+				  "weight": 1
+				},
+				{
+				  "type": "loot_table",
+				  "name": "dimdungeons:chests/kit_redstone",
+				  "weight": 1
+				},
+				{
+				  "type": "loot_table",
+				  "name": "dimdungeons:chests/kit_wool",
+				  "weight": 1
+				},
+				{
+				  "type": "loot_table",
+				  "name": "dimdungeons:chests/kit_delight",
+				  "weight": 1
+				},
+				{
+				  "type": "loot_table",
+				  "name": "dimdungeons:chests/kit_biomancy",
+				  "weight": 1
+				}
+			]
+		}
+	]
+}

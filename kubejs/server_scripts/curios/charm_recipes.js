@@ -69,5 +69,8 @@ const organCharmNbtMap = {
     'kubejs:heart_template': { type: 'damage', damageTask: {minDamage: 3, damageAmount: 800, counter: 0, type:"melee"}, targetOrgan: 'kubejs:heart_iron'},
     'kubejs:heart_iron': { type: 'damage', damageTask: {minDamage: 8, damageAmount: 1500, counter: 0, type:"melee"}, targetOrgan: 'kubejs:heart_gold'},
     'kubejs:heart_gold': { type: 'damage', damageTask: {minDamage: 15, damageAmount: 3000, counter: 0, type:"melee"}, targetOrgan: 'kubejs:heart_diamond'},
+
+    'kubejs:blade_of_heart': { type: 'bear', bearTask: {minDamage: 10, bearAmount: 150, counter: 0}, targetOrgan: 'kubejs:heart_of_blade'},
+    'kubejs:heart_of_blade': { type: 'damage', damageTask: {minDamage: 15, damageAmount: 3000, counter: 0, type:"melee"}, targetOrgan: 'kubejs:blade_of_heart'},
     
 }

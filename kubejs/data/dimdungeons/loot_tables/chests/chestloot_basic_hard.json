@@ -1,0 +1,18 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+  	  "name":"dimdungeons:basic_hard",
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "dimdungeons:chests/chestloot_2",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

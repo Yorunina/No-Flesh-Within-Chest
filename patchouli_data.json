@@ -1,0 +1,23 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": true,
+  "bookData": {
+    "dimdungeons:guide_book": {
+      "viewedEntries": [
+        "dimdungeons:introduction",
+        "dimdungeons:simple_advice",
+        "dimdungeons:basic_keys",
+        "dimdungeons:basic_portals",
+        "dimdungeons:patch_notes_1_10",
+        "dimdungeons:patch_notes_179",
+        "dimdungeons:advanced_keys",
+        "dimdungeons:advanced_portals",
+        "dimdungeons:artifact_key_charger",
+        "dimdungeons:artifact_teleporter_hub_key",
+        "dimdungeons:artifact_personal_dimension_key"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
+}

@@ -77,7 +77,10 @@ const organPlayerBearOnlyStrategies = {
                 player.potionEffects.add('minecraft:absorption', 40, 2)
             }
         }
-    }
+    },
+    'kubejs:heart_of_blade': function (event, organ, data) {
+        data.returnDamage = data.returnDamage + event.player.getArmorValue()
+    },
 };
 
 
@@ -134,6 +137,9 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:executioner_blade_pieces': function (event, organ, data) {
         let player = event.source.player
         let item = player.mainHandItem
+        if (event.source.type != 'player') {
+            return
+        }
         if (item?.id == 'tetra:modular_sword' && item.nbt && item.nbt.contains('sword/executioner_blade_material')) {
             event.entity.potionEffects.add('kubejs:executed', 20 * 5, 2)
         }
@@ -171,6 +177,16 @@ const organPlayerDamageOnlyStrategies = {
         if (random < 0.5) {
             player.potionEffects.add('minecraft:regeneration', 20 * 15, 2)
             return
+        }
+    },
+    'kubejs:blade_of_heart': function (event, organ, data) {
+        let player = event.source.player
+        let item = player.mainHandItem
+        if (event.source.type != 'player') {
+            return
+        }
+        if (item?.id == 'weaponmaster:wm_broadsword' ) {
+            data.damage = data.damage * 1.3
         }
     },
 };

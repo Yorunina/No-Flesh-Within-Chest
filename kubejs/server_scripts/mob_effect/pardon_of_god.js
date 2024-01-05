@@ -45,12 +45,12 @@ function pardonOfGodLevelEffect(event, data, amplifier) {
             break;
         case 2:
             event.entity.heal(data.damage)
-            event.source.player.attack(data.damage)
+            data.returnDamage = data.returnDamage + data.damage
             data.damage = 0
             break;
         default:
             event.entity.heal(data.damage)
-            event.source.player.attack(data.damage)
+            data.returnDamage = data.returnDamage + data.damage
             data.damage = 0
             break;
     }
