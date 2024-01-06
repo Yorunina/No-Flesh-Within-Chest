@@ -425,7 +425,9 @@
 		{
 			dependencies: ["22A8C953424C8FD9"]
 			description: [
-				"解除血源恶咒并不需要任何的仪式，相反，它需要&6\"面对绝境的勇气\"&r。在击杀一定数量的怪物之后，诅咒便会自行消除。"
+				"解除血源恶咒并不需要任何的仪式，相反，它需要&6\"面对绝境的勇气\"&r。"
+				""
+				"使用任意&4神意碎片&r，即刻消除该诅咒。"
 				""
 				"&7具体效果：所有怪物血量x5、伤害x2、移动速度x1.5。&r&8纯粹的属性强化&r"
 			]
@@ -444,10 +446,12 @@
 			shape: "hexagon"
 			subtitle: "血源恶咒极大的强化了怪物的能力"
 			tasks: [{
-				id: "07D0B12BABF1C0D8"
-				stat: "minecraft:mob_kills"
-				type: "stat"
-				value: 777
+				consume_items: true
+				id: "325C88F9535A31FF"
+				item: "kubejs:god_consciousness"
+				match_nbt: false
+				title: "任意神意碎片"
+				type: "item"
 			}]
 			title: "回忆诅咒:血源恶咒"
 			x: 9.75d

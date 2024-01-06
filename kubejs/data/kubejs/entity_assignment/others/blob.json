@@ -1,4 +1,11 @@
 {
   "chestcavity": "kubejs:types/others/blob.json",
-  "entities": ["biomancy:flesh_blob", "biomancy:hungry_flesh_blob"]
+  "entities": [
+    "biomancy:flesh_blob",
+    "biomancy:hungry_flesh_blob",
+    "biomancy:primordial_hungry_flesh_blob",
+    "biomancy:primordial_flesh_blob",
+    "biomancy:legacy_flesh_blob",
+    "biomancy:legacy_hungry_flesh_blob"
+  ]
 }

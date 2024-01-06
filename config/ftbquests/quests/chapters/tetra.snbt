@@ -911,6 +911,11 @@
 			icon: "minecraft:diorite"
 			id: "48BD60FBFEC2896A"
 			subtitle: "解除对名词的疑惑"
+			tasks: [{
+				id: "5B07B4A7545C89A9"
+				title: "我已了解"
+				type: "checkmark"
+			}]
 			title: "工具的参数"
 			x: 1.25d
 			y: 3.75d
@@ -1016,7 +1021,6 @@
 		}
 		{
 			description: [
-				"&cPage1：&r"
 				"&6加工台&r加工的零件和属性受到&6图纸&r影响。"
 				""
 				"有些图纸可以&e解锁&r工具&e新的改装部件种类&r。"
@@ -1026,8 +1030,7 @@
 				"有些图纸可以使工具&e获得技能特效&r。"
 				""
 				"{@pagebreak}"
-				"&cPage2：&r"
-				"图纸的&7获得方式&r："
+				"图纸的获得方式："
 				""
 				"&6黄色专论图纸&r：村庄&e村民交易&r"
 				""
@@ -1060,6 +1063,11 @@
 			}
 			id: "615C6A1DA6AEA1A4"
 			subtitle: "将他们展开"
+			tasks: [{
+				id: "6489B4B2522076B5"
+				title: "我已了解"
+				type: "checkmark"
+			}]
 			title: "卷轴计划"
 			x: 0.25d
 			y: 0.0d

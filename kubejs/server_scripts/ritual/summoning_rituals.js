@@ -37,8 +37,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 900, Attributes: [{ Name: 'generic.max_health', Base: 900 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('8x biomancy:creator_mix')
         .input('16x minecraft:blue_ice')
         .input('#forge:shields')
@@ -54,8 +53,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 760, Attributes: [{ Name: 'generic.max_health', Base: 760 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('8x biomancy:creator_mix')
         .input('32x minecraft:basalt')
         .input('32x minecraft:blaze_powder')
@@ -71,8 +69,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 1100, Attributes: [{ Name: 'generic.max_health', Base: 1100 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('16x minecraft:obsidian')
         .input('16x minecraft:snow_block')
         .input('8x biomancy:creator_mix')
@@ -88,8 +85,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 1060, Attributes: [{ Name: 'generic.max_health', Base: 1060 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('minecraft:netherite_scrap')
         .input('8x create:brass_ingot')
         .input('8x biomancy:creator_mix')
@@ -105,8 +101,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 700, Attributes: [{ Name: 'generic.max_health', Base: 700 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('16x minecraft:soul_sand')
         .input('8x minecraft:dripstone_block')
         .input('8x biomancy:creator_mix')
@@ -122,8 +117,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 860, Attributes: [{ Name: 'generic.max_health', Base: 860 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input(Ingredient.of('#forge:ingots/copper').withCount(32))
         .input(Ingredient.of('#forge:dusts/redstone').withCount(32))
         .input('8x biomancy:creator_mix')
@@ -139,8 +133,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 600, Attributes: [{ Name: 'generic.max_health', Base: 600 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('16x minecraft:mossy_stone_bricks')
         .input(Ingredient.of('#minecraft:stone_bricks').withCount(64))
         .input('8x biomancy:creator_mix')
@@ -156,8 +149,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 800, Attributes: [{ Name: 'generic.max_health', Base: 800 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('8x minecraft:bone_block')
         .input('4x irons_spellbooks:epic_ink')
         .input('8x biomancy:creator_mix')
@@ -173,8 +165,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 580, Attributes: [{ Name: 'generic.max_health', Base: 580 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('8x minecraft:iron_block')
         .input('8x minecraft:magma_block')
         .input('8x biomancy:creator_mix')
@@ -190,8 +181,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 660, Attributes: [{ Name: 'generic.max_health', Base: 660 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input(Ingredient.of('#forge:gems/emerald').withCount(16))
         .input(Ingredient.of('#forge:rods/copper').withCount(16))
         .input('8x biomancy:creator_mix')
@@ -207,8 +197,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 670, Attributes: [{ Name: 'generic.max_health', Base: 670 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input(Ingredient.of('#forge:dusts/prismarine').withCount(16))
         .input('minecraft:end_crystal')
         .input('8x biomancy:creator_mix')
@@ -224,8 +213,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 900, Attributes: [{ Name: 'generic.max_health', Base: 900 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('8x minecraft:ender_eye')
         .input('4x minecraft:pufferfish')
         .input('8x biomancy:creator_mix')
@@ -241,8 +229,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 800, Attributes: [{ Name: 'generic.max_health', Base: 800 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('16x minecraft:amethyst_shard')
         .input('4x minecraft:phantom_membrane')
         .input('8x biomancy:creator_mix')
@@ -258,8 +245,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 1140, Attributes: [{ Name: 'generic.max_health', Base: 1140 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('16x minecraft:tnt')
         .input(Ingredient.of('#forge:ingots/gold').withCount(16))
         .input('8x biomancy:creator_mix')
@@ -275,8 +261,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 1000, Attributes: [{ Name: 'generic.max_health', Base: 1000 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('32x minecraft:nether_bricks')
         .input('8x minecraft:fire_charge')
         .input('8x biomancy:creator_mix')
@@ -292,8 +277,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 1300, Attributes: [{ Name: 'generic.max_health', Base: 1300 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('2x minecraft:packed_ice')
         .input('16x minecraft:packed_ice')
         .input('8x biomancy:creator_mix')
@@ -309,8 +293,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 820, Attributes: [{ Name: 'generic.max_health', Base: 820 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('8x create:rose_quartz')
         .input(Ingredient.of('#forge:crops/nether_wart').withCount(32))
         .input('8x biomancy:creator_mix')
@@ -326,8 +309,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 1040, Attributes: [{ Name: 'generic.max_health', Base: 1040 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('minecraft:fermented_spider_eye')
         .input(Ingredient.of('#forge:crops/nether_wart').withCount(32))
         .input('8x biomancy:creator_mix')
@@ -343,8 +325,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 970, Attributes: [{ Name: 'generic.max_health', Base: 970 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('4x minecraft:ender_eye')
         .input(Ingredient.of('#forge:gems/quartz').withCount(16))
         .input('8x biomancy:creator_mix')
@@ -360,8 +341,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 860, Attributes: [{ Name: 'generic.max_health', Base: 860 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('16x minecraft:cactus')
         .input(Ingredient.of('#forge:ingots/gold').withCount(16))
         .input('8x biomancy:creator_mix')
@@ -377,8 +357,7 @@ ServerEvents.recipes(event => {
                 .spread(3, 0, 3)
                 .data({ Health: 830, Attributes: [{ Name: 'generic.max_health', Base: 830 }] })
         )
-        .sacrifice('biomancy:flesh_blob')
-        .sacrificeRegion(3, 3)
+
         .input('16x createaddition:gold_spool')
         .input('8x minecraft:glowstone')
         .input('8x biomancy:creator_mix')

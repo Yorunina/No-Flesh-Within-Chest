@@ -11,13 +11,13 @@
 		{
 			dependencies: ["040207B33E2FEBFF"]
 			description: [
-				"最先推荐的，则是能够让你骑着扫帚飞行的&5魔法巫师&r。"
+				"最先推荐的，则是能够让你骑着扫帚飞行的&6魔法巫师&r。"
 				""
 				"核心原因是因为后续部分配方需要使用混合锅进行制作，因此推荐优先进行发展。"
 				""
 				"魔法巫师的线路并不长，更多的是用于增添沉浸感而产生的一些可选的发展内容，因此大可不必担心。"
 				""
-				"不过，为了制作后面召唤Boss的&5召唤祭坛&r，或许你需要一些为&5魔法使特制的蜡烛&r"
+				"不过，为了制作后面召唤Boss的&6召唤祭坛&r，或许你需要一些为&6魔法使特制的蜡烛&r"
 			]
 			icon: "irons_spellbooks:alchemist_cauldron"
 			id: "00E3E147FC750C90"
@@ -29,8 +29,8 @@
 				type: "checkmark"
 			}]
 			title: "探寻魔法的秘密"
-			x: 1.0d
-			y: -1.5d
+			x: 1.25d
+			y: -1.75d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -92,11 +92,11 @@
 				type: "checkmark"
 			}]
 			title: "激活药丸"
-			x: 4.5d
+			x: 10.75d
 			y: -1.5d
 		}
 		{
-			dependencies: ["1884740B0724DE70"]
+			dependencies: ["27AE075BC0F4376A"]
 			description: [
 				"到现在，你应该发现了——绝大多数生物身上直接取得的器官是无法使用的。"
 				""
@@ -104,11 +104,13 @@
 				""
 				"为了解决排异反应，你有三种解决方法："
 				""
-				"1.使用&5O-阴性附魔&r给器官附魔，使其排异反应消失，2级甚至可以防止器官缺失导致的症状。"
+				"1.使用&6O-阴性附魔&r给器官附魔，使其排异反应消失，2级甚至可以防止器官缺失导致的症状。"
 				""
-				"2.使用抗排异药物，比如&5治愈性原液&r来解除器官的绑定。"
+				"2.使用抗排异药物，比如&6治愈性原液&r来解除器官的绑定。"
 				""
-				"3.直接放弃使用低级器官，换用制作而成的&5高级器官&r。"
+				"3.直接放弃使用低级器官，换用制作而成的&6高级器官&r。"
+				""
+				"&2对于现在而言，使用治愈性原液是最经济且有效的方案。&r"
 			]
 			icon: "biomancy:healing_additive"
 			id: "7F0C1FA54DD6E9BC"
@@ -140,33 +142,13 @@
 				type: "checkmark"
 			}]
 			title: "器官抗排异"
-			x: 3.5d
+			x: 9.75d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7F0C1FA54DD6E9BC"]
 			description: [
-				"&c血肉重铸&r并没有过多的发展价值，但其中部分物品仍具有特色，值得一试。"
-				""
-				"除此之外，该Mod中培育而成的&d肉块&r具有极其特殊的胸腔构造，其提供的器官具有极高的&d可塑性&r，广泛的用于高级器官的制作之中。可以说，这些器官是高级器官的&d通用模板&r。"
-			]
-			icon: "biomancy:bile"
-			id: "5EE1B9D46DFF796E"
-			shape: "rsquare"
-			subtitle: "血肉重铸的入口"
-			tasks: [{
-				id: "6C61CAF765F03EA9"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "铸成红肉身"
-			x: 4.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["7F0C1FA54DD6E9BC"]
-			description: [
-				"召唤祭坛主要用于召唤生物的场景——当然这并不意味着它仅可以召唤生物，实际上也可以用于一些&5特殊配方&r的加工，获得一些&2物品&r的乃至&2效果类&r的奖励。"
+				"召唤祭坛主要用于召唤生物的场景——当然这并不意味着它仅可以召唤生物，实际上也可以用于一些&6特殊配方&r的加工，获得一些&2物品&r的乃至&2效果类&r的奖励。"
 				""
 				"召唤仪式在后续的旅程中会被反复使用，如果你在&2寻找并击杀某些boss&r的话，在寻找之前，不妨查看一下祭坛的配方，或许会有更简单的方法。"
 			]
@@ -187,7 +169,7 @@
 				type: "item"
 			}]
 			title: "召唤你想要的"
-			x: 5.5d
+			x: 11.75d
 			y: 0.0d
 		}
 		{
@@ -208,13 +190,13 @@
 				title: "开始你的旅途吧！"
 				type: "checkmark"
 			}]
-			x: 7.5d
+			x: 13.75d
 			y: 0.0d
 		}
 		{
 			dependencies: ["49BD99DDA8F8454A"]
 			description: [
-				"在本整合包中，所有的召唤仪式，都要以&5仪式催化剂&r作为结尾，放置在召唤祭坛上，以开启一场召唤仪式。"
+				"在本整合包中，所有的召唤仪式，都要以&6仪式催化剂&r作为结尾，放置在召唤祭坛上，以开启一场召唤仪式。"
 				""
 				"因此，在制作召唤催化剂的时候可以考虑&2一次制作较多的量&r，以满足长期的召唤仪式的需求。"
 			]
@@ -234,7 +216,7 @@
 				item: "kubejs:ritual_catalyst"
 				type: "item"
 			}]
-			x: 6.5d
+			x: 12.75d
 			y: -1.5d
 		}
 		{
@@ -264,11 +246,11 @@
 				item: "kubejs:long_lasting_pill"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 11.75d
 			y: -3.0d
 		}
 		{
-			dependencies: ["50D70D990312BC70"]
+			dependencies: ["36D9ACF35A9BD9FA"]
 			description: [
 				"随着能力的不断增长，你发现大部分的特殊器官和激活器官都有着相当劣质的基本面板，并且绝大多数并不能在后续的制作中进行改造。"
 				""
@@ -293,8 +275,8 @@
 				type: "item"
 			}]
 			title: "器官容器"
-			x: 7.0d
-			y: -3.0d
+			x: 8.5d
+			y: 1.75d
 		}
 		{
 			dependencies: ["50D70D990312BC70"]
@@ -315,8 +297,8 @@
 				item: "kubejs:long_lasting_pill_gold"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -4.5d
+			x: 13.75d
+			y: -3.0d
 		}
 		{
 			dependencies: ["49BD99DDA8F8454A"]
@@ -334,12 +316,35 @@
 				type: "item"
 			}]
 			title: "维度地牢"
-			x: 6.5d
+			x: 12.75d
 			y: 1.5d
 		}
 		{
 			dependencies: ["040207B33E2FEBFF"]
+			description: [
+				"为了进一步发展&6器官艺术&r，你需要一个高效且稳定的器官来源。血肉重铸的&d肉块&r便能满足你的这一系列要求。"
+				""
+				"肉块是一个非常高效的器官来源，他能够为你提供一系列的&d模板器官&r。模板器官的用途非常广泛，包括将其放置在器官容器中可以最高升级为T3级别器官，或者使用模板器官制作大量的高级器官。"
+				""
+				"为了发展血肉重铸，你需要获得一些&6尖牙或者尖爪&r，来制作&6血肉温床&r。"
+				""
+				"{@pagebreak}"
+				""
+				"关于尖牙和尖爪之类的物品如何获得，可以通过在搜索栏里面查看对应物品，按下&6Ctrl&r键即可看到对应掉落的生物列表。"
+				""
+				"例如，上文提到的尖牙便可以从狼、猫等生物身上获取。"
+			]
 			id: "1884740B0724DE70"
+			rewards: [{
+				count: 3
+				id: "33A06E290DBAC70E"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "为了重铸你的血肉，你需要它们的血肉"
 			tasks: [{
 				id: "1489BEDE37A5D2E2"
@@ -353,8 +358,261 @@
 				type: "item"
 			}]
 			title: "收割血肉"
-			x: 1.75d
+			x: 2.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["1884740B0724DE70"]
+			description: [
+				"为了培育肉块，你需要向血肉温床内投入&2生肉&r以及使用&2治疗药水&r。温床侧面的眼睛完全发亮时，就意味着可以生产肉块了。"
+				""
+				"肉块存在三个类型，每个类型都存在饥饿和普通版本的区别。如果肉块是饥饿版本的，它会无差别的攻击任何生物。但无论是哪一种，在其血量较低时，都可以使用开胸器打开它的胸腔并且完全取出它的&d模板器官&r，这在后面会非常有用！"
+				""
+				"同时，杀死肉块也可以获得&d鲜活肉块&r，这是后面会广泛用到的一种原材料。"
+			]
+			id: "145730691E558B78"
+			rewards: [{
+				count: 5
+				id: "40B7C1A7CB7E8D46"
+				item: "biomancy:living_flesh"
+				type: "item"
+			}]
+			subtitle: "培养肉块的温床"
+			tasks: [{
+				id: "3091B792DF78ADC6"
+				item: "biomancy:primordial_cradle"
+				type: "item"
+			}]
+			title: "建设血肉温床"
+			x: 3.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["145730691E558B78"]
+			description: [
+				"制作分解器，可以将食物分解成具有更高能量的&2营养物质&r。"
+				""
+				"为了启动分解器，你需要将一部分&6肉类&r放在左侧以提供初始能源。在分解器运行之后，你就可以将营养物质作为燃料，自给自足。"
+			]
+			id: "16D415FC4B0BFB12"
+			rewards: [{
+				count: 32
+				id: "386EBD35C5CD2CC9"
+				item: "biomancy:nutrient_paste"
+				type: "item"
+			}]
+			subtitle: "分解物质，获得物质"
+			tasks: [{
+				id: "67FCCBF084C52B14"
+				item: "biomancy:decomposer"
+				type: "item"
+			}]
+			title: "批量获得生物燃料"
+			x: 5.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["145730691E558B78"]
+			description: [
+				"通过生物锻炉，你可以制作一些奇特的装置——比如后文提到的&6活体酿造台&r，是生产抗排异药物的重要手段。"
+				""
+				"除此之外，生物锻炉也可以&2直接生产模板器官&r，这种方式生产出来的模板器官并不会有对应的实体所属，因此也&2不会产生排异反应&r，非常适合拿来作为临时填充。"
+				""
+				"生物锻炉也需要营养物质进行驱动。"
+			]
+			id: "5F271CD6AAEC88FC"
+			rewards: [{
+				count: 3
+				id: "58518C490DB0DC05"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "铸造红肉身"
+			tasks: [{
+				id: "4695DAB1C60EDB3E"
+				item: "biomancy:bio_forge"
+				type: "item"
+			}]
+			title: "重锻身心"
+			x: 5.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F271CD6AAEC88FC"]
+			description: [
+				"活体酿造台可以用于一系列特殊药水的酿造。其中，就包含了一个对于本整合尤为重要的物品，即&6治愈性原液&r。"
+				""
+				"通过将治愈性原液置于副手，未进行抗排异的器官置于主手，即可进行抗排异。抗排异后，器官的所属将会被清空。这是一种相当经济的方案，相对于另一种附魔方案来说。"
+			]
+			id: "27AE075BC0F4376A"
+			rewards: [{
+				count: 3
+				id: "2168BCD8BEC227B2"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "通过活体酿造，可以制作原本无法想象的产物"
+			tasks: [{
+				id: "302069DE8B31E580"
+				item: "biomancy:bio_lab"
+				type: "item"
+			}]
+			title: "酿造传奇之物"
+			x: 7.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F271CD6AAEC88FC"]
+			description: [
+				"模板器官广泛的用于各种器官配方之中。"
+				""
+				"同时，模板器官可以放入器官容器中，向上进化成为更强大的高级器官，提供更多的基础属性。最高可以升级到T3。"
+			]
+			id: "36D9ACF35A9BD9FA"
+			rewards: [{
+				id: "44D54010BE3AE3BC"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "器官之源"
+			tasks: [{
+				id: "53C335208C07990D"
+				item: {
+					Count: 1
+					id: "kubejs:heart_template"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "模板器官"
+			x: 6.75d
+			y: 1.75d
+		}
+		{
+			dependencies: ["27AE075BC0F4376A"]
+			description: [
+				"通过生物锻炉，你可以制作&6活体注射器&r，向生物的体内注入药剂。"
+				""
+				"其最主要的用途之一是向玩家身体内注入能够提供无限叠加额外生命值的&6伤痛反应原液&r，以及向各种动物注射成长、繁育药剂。"
+				""
+				"但总体而言，其用途有限，玩家可以根据自己的情况自行决定是否制作。"
+			]
+			id: "360F386989316928"
+			rewards: [{
+				id: "577CCFF891B011A7"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "注入你想要的"
+			tasks: [{
+				id: "374E3731D1E7ED65"
+				item: {
+					Count: 1
+					id: "biomancy:injector"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "活体注射"
+			x: 9.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["360F386989316928"]
+			description: [
+				"贪婪之爪拥有着极高的攻击速度，并且在攻击时概率会造成额外的&4流血&r效果。"
+				""
+				"但是，为了使用它，你需要&2喂食它一定的食物以回复耐久&r。同时为了启用它的激活状态，获得更强的能力，你需要&2击败怪物&r为其积攒&4血液&r。"
+				""
+				"当血液积攒之后，即可开启激活状态，在激活状态下每次攻击会消耗一点血液。"
+			]
+			id: "73C9E246535AACD4"
+			rewards: [{
+				id: "3645B502D910A3E3"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "它时刻保持贪婪 . . .饥渴. . ."
+			tasks: [{
+				id: "411A42BD7A137F4E"
+				item: {
+					Count: 1
+					id: "biomancy:ravenous_claws"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "贪婪之爪"
+			x: 10.0d
+			y: -3.25d
+		}
+		{
+			dependencies: ["040207B33E2FEBFF"]
+			description: [
+				"背包在实际的使用过程中有很多不方便的点，比如说物品不能自动进入，或者背包空间较小等问题。"
+				""
+				"针对这些问题，你可以制作&6背包升级&r。通过各种各样的背包升级，你可以在日常的冒险中取得极大的便利。"
+			]
+			id: "01C0D8797395FF20"
+			rewards: [{
+				id: "4ADBCC163849498A"
+				item: "sophisticatedbackpacks:advanced_pickup_upgrade"
+				type: "item"
+			}]
+			subtitle: "打造属于你的背包"
+			tasks: [{
+				id: "1949D25F1573300C"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			title: "背包升级"
+			x: 1.25d
+			y: 1.75d
+		}
+		{
+			dependencies: ["5F271CD6AAEC88FC"]
+			description: ["区别于普通的箱子，血肉箱&6仅允许&r它的主人打开。"]
+			id: "5BCBCDB936D06219"
+			rewards: [{
+				id: "270D241C6AD3AD75"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:gold_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "它认定了你作为主人"
+			tasks: [{
+				id: "0D1877EC8E40C462"
+				item: "biomancy:fleshkin_chest"
+				type: "item"
+			}]
+			title: "血肉箱"
+			x: 7.0d
+			y: -1.75d
 		}
 	]
 	title: "章节2：觉醒"

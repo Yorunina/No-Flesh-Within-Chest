@@ -15,7 +15,7 @@
 		}
 	}
 	id: "71788747161A7134"
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -530,7 +530,7 @@
 				}
 				type: "item"
 			}]
-			title: "‘回家’"
+			title: "“回家”"
 			x: 2.25d
 			y: -9.0d
 		}
@@ -655,5 +655,5 @@
 			y: -2.0d
 		}
 	]
-	title: "Iron的魔法书：重要攻击手段"
+	title: "Iron的魔法书：魔法与第一原则"
 }
