@@ -15,6 +15,10 @@ ItemEvents.tooltip((tooltip) => {
         text.add(Text.darkRed('灼热之眼将指引你前往要塞的道路'));
     })
 
+    tooltip.addAdvanced('kubejs:god_consciousness', (item, advanced, text) => {
+        text.add(1, [Text.gold('意识类型: '), Text.yellow(getMobNameByType(item.nbt?.mobType))]);
+    })
+
 
     tooltip.addAdvanced('kubejs:secret_of_rain', (item, advanced, text) => {
         if (tooltip.shift) {
@@ -65,15 +69,21 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('kubejs:stardust_fragment', (item, advanced, text) => {
         text.add(Text.gold('能够用于极致法术的制作'));
     })
-
+    tooltip.addAdvanced('kubejs:god_bless_empty_necklace', (item, advanced, text) => {
+        text.add(Text.gold('击败虚空之花、暗夜巫师、黑曜巨石柱、下界铁掌之一即可充能'));
+    })
+    tooltip.addAdvanced('kubejs:god_bless_full_necklace', (item, advanced, text) => {
+        text.add(Text.gold('用于在沙漠维度地牢中进行神意挑战'));
+    })
     
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1
         if (item.nbt?.organ?.id) {
             text.add(lineNum++, [Text.gold('储存物: '), Text.yellow(Text.translate(Item.of(item.nbt.organ.id).descriptionId))]);
+            text.add(lineNum++, [Text.gold('进化目标: '), Text.yellow(Text.translate(Item.of(item.nbt.targetOrgan).descriptionId))]);
         }
         if (item.nbt?.type == 'kill') {
-            text.add(lineNum++, [Text.gray(`向容器内填充${item.nbt.killTask.counter}/${item.nbt.killTask.killAmount}个${Text.translate(item.nbt.killTask.mobName).string}灵魂才能够使其进化`)]);
+            text.add(lineNum++, [Text.gray(`向容器内填充${item.nbt.killTask.counter}/${item.nbt.killTask.killAmount}个${getMobNameByType(item.nbt.killTask.mobType)}灵魂才能够使其进化`)]);
         }
         if (item.nbt?.type == 'diet') {
             text.add(lineNum++, [Text.gray(`需要进食${item.nbt.dietTask.foodTypeList.length}/${item.nbt.dietTask.foodTypeAmount}种饥饿值大于${item.nbt.dietTask.minHunger}的食物才能进化`)]);
@@ -101,3 +111,13 @@ ItemEvents.tooltip((tooltip) => {
         }
     })
 })
+
+/**
+ * @param {string} mobType 
+ */
+function getMobNameByType(mobType) {
+    if (!mobType) {
+        return '空'
+    }
+    return Text.translate('entity.' + mobType.replace(':', '.')).string
+}

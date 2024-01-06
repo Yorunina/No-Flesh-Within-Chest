@@ -94,6 +94,10 @@ StartupEvents.registry('item', event => {
 
     event.create('empty_organ_charm').texture('kubejs:item/empty_organ_charm').maxStackSize(1).tag('curios:charm')
     event.create('organ_charm').texture('kubejs:item/organ_charm').maxStackSize(1).tag('curios:charm')
+
+    event.create('god_bless_empty_necklace').texture('kubejs:item/god_bless_empty_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
+    event.create('god_bless_full_necklace').texture('kubejs:item/god_bless_full_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
+
     event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
     event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1)
 

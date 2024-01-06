@@ -20,6 +20,7 @@ EntityEvents.hurt(event => {
     vampiricEntityHurtByPlayer(event, data)
     // commonEntityHurtByPlayer(event, data)
     pardonOfGodEntityHurtByPlayer(event, data)
+    vulnerableEntityHurt(event, data)
     organCharmEntityHurtByPlayer(event, data)
 
     // 事件拦截
@@ -47,6 +48,7 @@ EntityEvents.hurt('minecraft:player', event => {
     sweetDreamPlayerHurtByOthers(event, data)
     curseOfFragilityPlayerHurtByOthers(event, data)
     curiosPlayerHurtByOthers(event, data)
+    vulnerableEntityHurt(event, data)
     organCharmPlayerHurtByOthers(event, data)
 
     // 事件拦截

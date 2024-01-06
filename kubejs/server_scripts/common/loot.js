@@ -22,6 +22,14 @@ LootJS.modifiers(event => {
 
     event.addLootTypeModifier(LootType.ENTITY)
         .removeLoot('@simplehats')
+        .apply(ctx => {
+            if (ctx.entity.isLiving() &&
+                (ctx.entity.hasEffect('kubejs:glare_of_god') ||
+                    ctx.entity.hasEffect('kubejs:gaze_of_god') ||
+                    ctx.entity.hasEffect('kubejs:glimpse_of_god'))) {
+                ctx.addLoot(Item.of('kubejs:god_consciousness', { mobType: ctx.entity.getType() }))
+            }
+        })
 
     addBossLoot('somebosses:aesegull')
     addBossLoot('somebosses:prismarine_watcher')

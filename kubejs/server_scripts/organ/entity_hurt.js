@@ -185,8 +185,32 @@ const organPlayerDamageOnlyStrategies = {
         if (event.source.type != 'player') {
             return
         }
-        if (item?.id == 'weaponmaster:wm_broadsword' ) {
+        if (item?.id == 'weaponmaster:wm_broadsword') {
             data.damage = data.damage * 1.3
+        }
+    },
+    'kubejs:bone_soul': function (event, organ, data) {
+        if (event.source.type != 'player') {
+            return
+        }
+        if (Math.random() > 0.1) {
+            return
+        }
+        let item = event.source.player.mainHandItem
+        if (item?.id == 'weaponmaster:wm_rapier') {
+            event.entity.potionEffects.add('kubejs:vulnerable', 20 * 15, 2)
+        }
+    },
+    'kubejs:parasitic_elf': function (event, organ, data) {
+        if (event.source.type != 'arrow') {
+            return
+        }
+        if (Math.random() < Math.min(0.05 * event.source.player.getLuck(), 0.5)) {
+            event.entity.potionEffects.map.forEach((effect, instance) => {
+                if (!effect.isBeneficial()) {
+                    instance.setDuration(instance.getDuration() + 20 * 2)
+                }
+            })
         }
     },
 };

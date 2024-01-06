@@ -433,6 +433,16 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/relics/relic_metal_plate')
         .tag('kubejs:relics');
 
+    registeOrgan(new Organ('kubejs:parasitic_elf')
+        .addScore('health', 1)
+        .addScore('speed', -1)
+        .addTextLines('default', [Text.gray('寄生在灵魂深处的精灵')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('使用弓箭攻击敌人时，有'), Text.gold('幸运*5%(最大50%)'), Text.gray('的概率延长所有负面效果2s')])
+        .build())
+        .texture('kubejs:item/organs/relics/parasitic_elf')
+        .tag('kubejs:relics')
+        .tag('kubejs:damage_only');
+
     registeOrgan(new Organ('kubejs:love_between_lava_and_ice')
         .addScore('health', 1)
         .addScore('fire_resistant', 1)
@@ -486,6 +496,19 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only')
         .tag('kubejs:relics');
 
+    registeOrgan(new Organ('kubejs:bone_soul')
+        .addScore('defense', 0.5)
+        .addScore('strength', 1)
+        .addScore('endurance', -0.5)
+        .addTextLines('default', [Text.red('铸剑为骨')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('使用武器大师的刺剑造成伤害时')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次攻击'), Text.gold('10%'), Text.gray('概率会造成'), Text.red('易伤效果')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .build())
+        .texture('kubejs:item/organs/relics/bone_soul')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+
     registeOrgan(new Organ('kubejs:flower_heart')
         .addScore('health', 1)
         .addScore('photosynthesis', 4)
@@ -530,7 +553,6 @@ StartupEvents.registry('item', event => {
     registeOrgan(new Organ('kubejs:executioner_blade_pieces')
         .addScore('strength', 1.75)
         .addScore('health', -0.5)
-        .addTextLines('default', [Text.gray('铸剑为骨')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('使用'), Text.red('行刑者剑刃'), Text.gray('的Tetra武器时，攻击会造成'), Text.gold('行刑Ⅲ'), Text.gray('效果')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当生物持有行刑效果时，所受武器伤害降低，但概率增加相当于基于敌人已损失生命值的额外伤害')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
@@ -661,7 +683,7 @@ StartupEvents.registry('item', event => {
         .addScore('speed', -0.5)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(1), Text.gray('触及距离')])
         .build())
-        .texture('kubejs:item/organs/others/telescopic_arm')
+        .texture('kubejs:item/organs/machine/telescopic_arm')
         .tag('itemborders:iron')
         .tag('kubejs:machine')
         .tag('kubejs:active_only')
@@ -671,7 +693,7 @@ StartupEvents.registry('item', event => {
         .addScore('fire_resistant', 0.5)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(2), Text.gray('触及距离')])
         .build())
-        .texture('kubejs:item/organs/others/telescopic_arm')
+        .texture('kubejs:item/organs/machine/telescopic_arm')
         .tag('itemborders:gold')
         .tag('kubejs:machine')
         .tag('kubejs:active_only');
@@ -680,7 +702,7 @@ StartupEvents.registry('item', event => {
         .addScore('fire_resistant', 0.5)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(1), Text.gray('攻击距离')])
         .build())
-        .texture('kubejs:item/organs/others/telescopic_attack_arm')
+        .texture('kubejs:item/organs/machine/telescopic_attack_arm')
         .tag('itemborders:gold')
         .tag('kubejs:machine')
         .tag('kubejs:active_only');

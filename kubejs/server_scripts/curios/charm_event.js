@@ -4,7 +4,7 @@ EntityEvents.death(event => {
     let entity = event.entity;
     let player = event.source.player;
     if (!player) { return }
-    let curiosItem = getCuriosItem(player)
+    let curiosItem = getCuriosItem(player, 'kubejs:organ_charm')
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'kill') {
         if (curiosItem.nbt.status == 1) {
             return
@@ -30,7 +30,7 @@ ItemEvents.foodEaten(event => {
     let player = event.player;
     if (!player) return;
     let food = event.item;
-    let curiosItem = getCuriosItem(player)
+    let curiosItem = getCuriosItem(player, 'kubejs:organ_charm')
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'diet') {
         if (curiosItem.nbt.status == 1) {
             return
@@ -57,7 +57,7 @@ ItemEvents.foodEaten(event => {
  */
 function organCharmPlayerHurtByOthers(event, data) {
     let player = event.player
-    let curiosItem = getCuriosItem(player)
+    let curiosItem = getCuriosItem(player, 'kubejs:organ_charm')
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'bear') {
         if (curiosItem.nbt.status == 1) {
             return
@@ -82,7 +82,7 @@ function organCharmPlayerHurtByOthers(event, data) {
  */
 function organCharmEntityHurtByPlayer(event, data) {
     let player = event.source.player
-    let curiosItem = getCuriosItem(player)
+    let curiosItem = getCuriosItem(player, 'kubejs:organ_charm')
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'damage') {
         if (curiosItem.nbt.status == 1) {
             return
@@ -119,8 +119,8 @@ function organCharmEntityHurtByPlayer(event, data) {
 }
 
 
-function getCuriosItem(player) {
-    let slotResult = new $CuriosApi().getCuriosHelper().findEquippedCurio(Item.of('kubejs:organ_charm'), player);
+function getCuriosItem(player, itemId) {
+    let slotResult = new $CuriosApi().getCuriosHelper().findEquippedCurio(Item.of(itemId), player);
     if (slotResult.isPresent()) {
         return slotResult.get().getRight()
     }

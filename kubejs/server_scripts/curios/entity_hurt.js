@@ -19,17 +19,15 @@ function curiosPlayerHurtByOthers(event, data) {
     for (let slot = 0; slot < curios.getSlots(); slot++) {
         if (player.getHealth() - event.damage <= 4) {
             let item = curios.getStackInSlot(slot);
-            if (curiosStrategies[item.id]) {
-                curiosStrategies[item.id](event, curios, slot, item, data)
+            if (curiosHurtStrategies[item.id]) {
+                curiosHurtStrategies[item.id](event, curios, slot, item, data)
             }
         }
     }
 }
 
 
-
-
-const curiosStrategies = {
+const curiosHurtStrategies = {
     'kubejs:friend_to_the_end': function (event, curios, slot, item, data) {
         if (item.hasNBT() && item.nbt.friendName) {
             let friend = event.server.getPlayer(item.nbt.friendName)

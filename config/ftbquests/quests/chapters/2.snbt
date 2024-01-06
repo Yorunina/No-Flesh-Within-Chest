@@ -92,11 +92,11 @@
 				type: "checkmark"
 			}]
 			title: "激活药丸"
-			x: 3.0d
+			x: 4.5d
 			y: -1.5d
 		}
 		{
-			dependencies: ["040207B33E2FEBFF"]
+			dependencies: ["1884740B0724DE70"]
 			description: [
 				"到现在，你应该发现了——绝大多数生物身上直接取得的器官是无法使用的。"
 				""
@@ -140,7 +140,7 @@
 				type: "checkmark"
 			}]
 			title: "器官抗排异"
-			x: 2.0d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
@@ -160,7 +160,7 @@
 				type: "checkmark"
 			}]
 			title: "铸成红肉身"
-			x: 3.0d
+			x: 4.5d
 			y: 1.5d
 		}
 		{
@@ -187,7 +187,7 @@
 				type: "item"
 			}]
 			title: "召唤你想要的"
-			x: 4.0d
+			x: 5.5d
 			y: 0.0d
 		}
 		{
@@ -208,7 +208,7 @@
 				title: "开始你的旅途吧！"
 				type: "checkmark"
 			}]
-			x: 6.0d
+			x: 7.5d
 			y: 0.0d
 		}
 		{
@@ -234,7 +234,7 @@
 				item: "kubejs:ritual_catalyst"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.5d
 			y: -1.5d
 		}
 		{
@@ -264,7 +264,7 @@
 				item: "kubejs:long_lasting_pill"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 5.5d
 			y: -3.0d
 		}
 		{
@@ -293,7 +293,7 @@
 				type: "item"
 			}]
 			title: "器官容器"
-			x: 5.5d
+			x: 7.0d
 			y: -3.0d
 		}
 		{
@@ -315,7 +315,7 @@
 				item: "kubejs:long_lasting_pill_gold"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.5d
 			y: -4.5d
 		}
 		{
@@ -334,8 +334,27 @@
 				type: "item"
 			}]
 			title: "维度地牢"
-			x: 5.0d
+			x: 6.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["040207B33E2FEBFF"]
+			id: "1884740B0724DE70"
+			subtitle: "为了重铸你的血肉，你需要它们的血肉"
+			tasks: [{
+				id: "1489BEDE37A5D2E2"
+				item: {
+					Count: 1
+					id: "biomancy:despoil_sickle"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "收割血肉"
+			x: 1.75d
+			y: 0.0d
 		}
 	]
 	title: "章节2：觉醒"

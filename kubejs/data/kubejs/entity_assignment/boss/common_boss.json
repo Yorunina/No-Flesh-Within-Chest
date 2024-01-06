@@ -14,7 +14,6 @@
     "somebosses:flaming_berserker",
     "somebosses:electric_head",
     "somebosses:crimson_vampire",
-    "somebosses:mono_eyed_skeleton",
     "somebosses:hand_head",
     "somebosses:nameless_one",
     "somebosses:sand_giant",
@@ -28,6 +27,7 @@
     "meetyourfight:bellringer",
     "meetyourfight:rosalyne",
     "meetyourfight:swampjaw",
-    "meetyourfight:dame_fortuna"
+    "meetyourfight:dame_fortuna",
+    "somebosses:rib_golem"
   ]
 }

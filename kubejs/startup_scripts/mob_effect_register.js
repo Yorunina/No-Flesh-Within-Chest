@@ -103,6 +103,10 @@ StartupEvents.registry('mob_effect', event => {
     event.create('pardon_of_god_projectile')
         .beneficial()
         .color(Color.of('#9c9c9c'))
+    event.create('vulnerable')
+        .harmful()
+        .color(Color.RED)
+
 })
 
 

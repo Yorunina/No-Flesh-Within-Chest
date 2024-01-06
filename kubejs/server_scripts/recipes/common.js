@@ -5,8 +5,9 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'moblassos:hostile_lasso' })
     event.remove({ output: 'majobroom:majo_hat' })
     event.remove({ output: 'majobroom:majo_cloth' })
-    
+    event.remove({ output: 'morebows:ender_bow' })
 
+    
     event.shaped('minecraft:end_portal_frame', [
         ['', 'alexsmobs:banana_slug_slime', ''],
         ['minecraft:phantom_membrane', 'createaddition:gold_wire', 'minecraft:phantom_membrane'],

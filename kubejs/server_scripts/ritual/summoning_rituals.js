@@ -384,7 +384,6 @@ ServerEvents.recipes(event => {
         .input('8x biomancy:creator_mix')
         .recipeTime(200);
 
-
     // 星尘碎片
     event.recipes.summoningrituals
         .altar('kubejs:ritual_catalyst')
@@ -397,4 +396,13 @@ ServerEvents.recipes(event => {
         .itemOutput('kubejs:stardust_fragment')
         .dayTime('night')
         .recipeTime(60);
+
+    // 神恩Boss
+    event.recipes.summoningrituals
+        .altar('kubejs:god_bless_full_necklace')
+        .id('kubejs:god_bless_summon')
+        .blockBelow('minecraft:command_block')
+        .input('minecraft:nether_star')
+        .itemOutput('kubejs:god_bless_empty_necklace')
+        .recipeTime(200);
 })
