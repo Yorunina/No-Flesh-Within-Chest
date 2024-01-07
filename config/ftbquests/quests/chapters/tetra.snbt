@@ -32,6 +32,7 @@
 				""
 				"可以说，能够良好的使用Tetra，可以极大地增强你的工作效率和战斗效率，并且Tetra本身的流程并不复杂，因此强烈推荐在开局就进行Tetra内容的探索。"
 			]
+			hide_dependent_lines: true
 			icon: {
 				Count: 1
 				id: "tetra:modular_double"
@@ -132,7 +133,7 @@
 		{
 			dependencies: ["781312928C5C3155"]
 			description: [
-				"手持&6锤子&r右键&6工作台&r，以获取本模组的&e核心道具&r——&6加工台&r。"
+				"&cPage1：&r手持&6锤子&r右键&6工作台&r，以获取本模组的&e核心道具&r——&6加工台&r。"
 				""
 				"&e原版工具&r需要&e经过一次&r&6加工台&r&e改造&r后，才能使其附带上Tetra模组的属性，&e使其变得可成长&r。"
 				""
@@ -142,8 +143,25 @@
 				""
 				""
 				"{image:kubejs:textures/task/tetra_1.png width:160 height:90 align:1}"
+				""
+				""
+				"{@pagebreak}"
+				"&cPage2：&r使用&6工具架&r将锤子放置在加工台旁边，"
+				""
+				"为你的背包&e腾出空间&r。"
 			]
+			hide_dependent_lines: true
 			id: "312A09022249980F"
+			rewards: [{
+				count: 10
+				id: "1DECB2CBA3C15B27"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "了解加工台，理解加工台."
 			tasks: [{
 				consume_items: false
@@ -175,6 +193,7 @@
 				""
 				"&c不要丢失！&r"
 			]
+			hide_dependent_lines: true
 			id: "4632D20D50741511"
 			rewards: [{
 				count: 5
@@ -219,6 +238,8 @@
 				""
 				"将对一些工具&e可以改装的方向&r进行简要描述，来&e为玩家&r的改装&e提供思路&r。"
 			]
+			hide_dependency_lines: false
+			hide_dependent_lines: true
 			icon: "witherstormmod:command_block_pickaxe"
 			id: "6DCBC9E0C68FCAB4"
 			rewards: [{
@@ -286,7 +307,22 @@
 				"若该部件有其他&e改进&r方式，如：&e对该部件进行附魔、裹上某种材料&r，则在下方提示数量，点击进入查看,&b滚动鼠标滚轮&r查看未完全显示的条目。"
 			]
 			id: "1B3A45C7AB36546F"
+			rewards: [{
+				count: 10
+				id: "3C991D1320402C1A"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "不需要逐字逐句的阅读"
+			tasks: [{
+				id: "3E6164F1F22D8007"
+				title: "我知道了"
+				type: "checkmark"
+			}]
 			title: "全息球的各项UI"
 			x: -1.5d
 			y: -1.25d
@@ -319,6 +355,16 @@
 				}
 			}
 			id: "17089D979EC38CDC"
+			rewards: [{
+				count: 10
+				id: "52A4D7A22A726084"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "开采资源的一种选择"
 			tasks: [{
 				id: "2141DDBF689CFC72"
@@ -332,13 +378,13 @@
 		{
 			dependencies: ["6DCBC9E0C68FCAB4"]
 			description: [
-				"将单头工具的&e头部改成“拐杖”&r，可以获得其&e辅助人们行走&r的效果--&e手持加快行走速度&r。"
+				"将单头工具的&e头部区&r改成&e“拐杖”&r，可以获得其辅助人们行走的效果--&e手持加快行走速度&r。"
 				""
-				"将&e手柄&r改成&e轻手柄&r可以获得投掷属性，配合&a忠诚附魔&r可以充当&e三叉戟&r，"
+				"将手柄改成&e轻手柄&r可以获得投掷属性，配合&a忠诚附魔&r可以充当&e三叉戟&r，"
 				""
 				"如果此时将&e头部&r改造成&6凿地器&r可以实现&e远程破坏方块&r的功能。"
 				""
-				"将&e手柄改成长手柄&r可以获得&a长臂&r的效果，获得&e更远的触及距离&r。"
+				"将手柄改成&e长手柄&r可以获得&a长臂&r的效果，获得&e更远的触及距离&r。"
 			]
 			icon: {
 				Count: 1
@@ -348,6 +394,16 @@
 				}
 			}
 			id: "40963D22AEB8D200"
+			rewards: [{
+				count: 10
+				id: "0E2AA7FC794050D4"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "便捷生活，高于开采资源"
 			tasks: [{
 				id: "5FAEF4B3E0904DD4"
@@ -367,8 +423,19 @@
 				""
 				"将对一些武器&e可以改装的方向&r进行简要描述，来&e为玩家&r的改装&e提供思路&r。"
 			]
+			hide_dependent_lines: true
 			icon: "witherstormmod:command_block_sword"
 			id: "7E7580FC10C7CB80"
+			rewards: [{
+				count: 10
+				id: "5745B9AB4AEDD15E"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "定制属于你自己的武器"
 			tasks: [{
 				id: "6420FB47095E5FBE"
@@ -398,6 +465,16 @@
 				}
 			}
 			id: "205DAFF285CC8BD6"
+			rewards: [{
+				count: 10
+				id: "2A138A7B32E25DBF"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "战斗的一种选择"
 			tasks: [{
 				id: "6AEEE4B353A7500C"
@@ -425,6 +502,16 @@
 				}
 			}
 			id: "2FD26BBB879361AB"
+			rewards: [{
+				count: 10
+				id: "3FB6259925A9FF83"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "战斗的一种选择"
 			tasks: [{
 				id: "47355B4FB029895B"
@@ -442,6 +529,7 @@
 				""
 				"&e对护手的改造&r在找到&6原理图:坚固守卫&r的卷轴后可以解锁&e剑类的格挡&r，重现&e1.8版本的格挡方式&r。"
 			]
+			hide_dependency_lines: false
 			icon: {
 				Count: 1
 				id: "minecraft:netherite_sword"
@@ -450,6 +538,16 @@
 				}
 			}
 			id: "54717A16315DF06A"
+			rewards: [{
+				count: 10
+				id: "56FBE4EB004DDD9C"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "战斗的一种选择"
 			tasks: [{
 				id: "15B6190B3665B463"
@@ -462,7 +560,13 @@
 		}
 		{
 			dependencies: ["7E7580FC10C7CB80"]
-			description: ["&7对弩的改装趋于平淡，作者并未着重改变弩的特性&r。"]
+			description: [
+				"尝试&e改装下&r门可罗雀的&e弩&r，"
+				""
+				"来尝试弩在&e不同基础属性&r下的杀伤力，"
+				""
+				"&7Mod作者对弩的部件未更新，有待观望。&r"
+			]
 			icon: {
 				Count: 1
 				id: "minecraft:crossbow"
@@ -471,6 +575,16 @@
 				}
 			}
 			id: "04049DFDF6E42D72"
+			rewards: [{
+				count: 10
+				id: "213ED4CBE1054670"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "战斗的一种选择"
 			tasks: [{
 				id: "6CAFE370EEF1BD3A"
@@ -546,7 +660,7 @@
 				""
 				"现在，修复工具&e所需的材料&r将根据组成该工具的各个部件所使用的材料&e循环往复&r。"
 				""
-				"&b在这种设定下，降低了修复工具所需的材料，同时也避免了频繁使用易获得的材料进行工具修复的行为。&r"
+				"&7在这种设定下，降低了修复工具所需的材料，同时也避免了频繁使用易获得的材料进行工具修复的行为。&r"
 			]
 			id: "5BA7E809A7B3037B"
 			rewards: [{
@@ -574,7 +688,7 @@
 			description: [
 				"将原版工具放入加工台中，根据工具种类显现出&e可改造的部件&r种类，点击不同部件，可以&e定制该项部件&r的材料。"
 				""
-				"你可以将&e从初期就使用的工具&r，对其关键部件不断做出部件种类、材料的改造，使其&e属性和功能发生改变&r。"
+				"你可以将从&e初期就使用的工具&r，对其关键部件不断做出部件种类、材料的改造，使其&e属性和功能发生改变&r。"
 				""
 				"想要用&b高级材料&r制作工具的部件，需要&c更高等级的锤子&r。"
 				""
@@ -653,6 +767,7 @@
 				""
 				"&o&c锤子等级：&r&r&o这里的&r&e&o锤子等级&r&r&o指的是改造某项部件需要的前置条件的等级。如：对弓的部件改造，用到的&e切削等级&r&o也可以&r&r&e&o抽象的理解&r&r&o为锤子等级&r&r。"
 			]
+			hide_dependent_lines: true
 			icon: {
 				Count: 1
 				id: "tetra:modular_double"
@@ -696,9 +811,10 @@
 			}]
 			title: "锤"
 			x: 1.25d
-			y: -1.0d
+			y: -1.25d
 		}
 		{
+			dependencies: ["48BD60FBFEC2896A"]
 			description: [
 				"原版工具在&6加工台&r上被&e改造&r一次后就会被附加&e打磨值&r这个属性，"
 				""
@@ -732,6 +848,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["48BD60FBFEC2896A"]
 			description: [
 				"              &d以\"双头工具\"区块为例&r"
 				""
@@ -764,6 +881,7 @@
 			y: 8.75d
 		}
 		{
+			dependencies: ["674E912F6FFC7F67"]
 			description: [
 				"&cPage1：&r"
 				"这是获得&a5级锤&r的&e必要建筑&r。"
@@ -772,7 +890,7 @@
 				""
 				"用符合等级的&6锤子或羊角锤&r对准&e高亮显示的位置右键&r破开在遗迹中发现的&6板条箱和锻造容器&r，可以&e获得相应的资源&r。"
 				""
-				"将找到的&6燃烧室&r和&6热力单元（Thermal-ceil）&r&e对应放入&r锻造加工台正上方的&6锻造锤&r&e表面的凹槽&r处，"
+				"将找到的&6燃烧室&r和&6热力单元（Thermal-ceil）&r对应放入锻造加工台正上方的&6锻造锤&r&e表面的凹槽&r处，"
 				""
 				"此时放入&a4级锤&r，可以对其进行&a等级5&r部件的改造。"
 				""
@@ -816,6 +934,7 @@
 			y: -1.25d
 		}
 		{
+			dependencies: ["48BD60FBFEC2896A"]
 			description: [
 				"抛开升级属性本身&e具有等级上限&r这一点，在选择&a打磨属性&r升级时，会占据&a完整度&r。"
 				""
@@ -876,6 +995,16 @@
 				}
 			}
 			id: "6B60264580C19DD1"
+			rewards: [{
+				count: 10
+				id: "668955C62A3D7A22"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "改造工具的进化"
 			tasks: [{
 				consume_items: false
@@ -901,6 +1030,7 @@
 			y: -1.25d
 		}
 		{
+			dependencies: ["312A09022249980F"]
 			description: [
 				"工具具有很多项&e参数&r，这一点毋庸置疑。"
 				""
@@ -908,14 +1038,30 @@
 				""
 				"下面将着重介绍&eTetra模组&r附加给工具的使其变得&e特殊的参数属性&r和一些&e独特的性质&r。"
 			]
-			icon: "minecraft:diorite"
+			hide_dependent_lines: true
 			id: "48BD60FBFEC2896A"
+			rewards: [{
+				count: 10
+				id: "6DB498853045AE87"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "解除对名词的疑惑"
+			tasks: [{
+				id: "57E25C5D32613AD6"
+				title: "我知道了"
+				type: "checkmark"
+			}]
 			title: "工具的参数"
 			x: 1.25d
 			y: 3.75d
 		}
 		{
+			dependencies: ["48BD60FBFEC2896A"]
 			description: [
 				"&cPage1：&r"
 				"Tetra化的工具虽然&e不能在铁砧上附魔和修复&r，但是并&a没有改变对附魔台的相性&r。"
@@ -957,6 +1103,7 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["674E912F6FFC7F67"]
 			description: [
 				"在开采矿物过程中，有时会遇到一些&e在材质上与其他岩石并无二致&r的&e岩石方块&r，"
 				""
@@ -986,6 +1133,7 @@
 			y: -0.75d
 		}
 		{
+			dependencies: ["674E912F6FFC7F67"]
 			description: [
 				"存在于另一种远古遗迹中的&e多方块结构&r，"
 				""
@@ -1015,6 +1163,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["674E912F6FFC7F67"]
 			description: [
 				"&cPage1：&r"
 				"&6加工台&r加工的零件和属性受到&6图纸&r影响。"
@@ -1029,7 +1178,7 @@
 				"&cPage2：&r"
 				"图纸的&7获得方式&r："
 				""
-				"&6黄色专论图纸&r：村庄&e村民交易&r"
+				"&6黄色专长图纸&r：村庄&e村民交易&r"
 				""
 				"&6蓝色刀剑工艺图纸&r：主世界各种&e地牢遗迹&r中获得"
 				""
@@ -1059,14 +1208,53 @@
 				}
 			}
 			id: "615C6A1DA6AEA1A4"
+			rewards: [{
+				count: 10
+				id: "076CFF46AE45550A"
+				item: {
+					Count: 1
+					id: "numismaticoverhaul:silver_coin"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "将他们展开"
+			tasks: [{
+				id: "6F3755AD443C95FE"
+				item: {
+					Count: 1
+					id: "tetra:scroll_rolled"
+					tag: {
+						BlockEntityTag: {
+							data: [{
+								effects: ["tetra:gem_expertise"]
+								glyphs: [
+									14
+									13
+									14
+									15
+								]
+								intricate: 0b
+								key: "gem_expertise"
+								material: 0
+								ribbon: "2bffee"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
 			title: "卷轴计划"
 			x: 0.25d
 			y: 0.0d
 		}
 		{
 			can_repeat: true
-			description: ["&7重新领取全息球&r。"]
+			description: [
+				"&e点击&r上述&e木-锤图标&r&e提交，"
+				""
+				"来&7重新领取全息球&r。"
+			]
 			id: "76320A2F13686EA1"
 			rewards: [{
 				id: "30ACC739448BB1CB"
