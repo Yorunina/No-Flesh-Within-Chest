@@ -24,7 +24,7 @@
 				id: "4AD6BA78F14C67C3"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -95,7 +95,7 @@
 					id: "0B686B55AA201E0A"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:gold_coin"
+						id: "lightmanscurrency:coin_gold"
 						tag: { }
 					}
 					type: "item"
@@ -147,7 +147,7 @@
 				id: "74A3259C68265E7D"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -178,7 +178,7 @@
 				id: "603236169079A3C3"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -209,7 +209,7 @@
 				id: "73449E1E09781EFF"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -242,7 +242,7 @@
 				id: "0AF73554B8C6612D"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -280,7 +280,7 @@
 				id: "282B74C50E2E0728"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -318,7 +318,7 @@
 				id: "0A286171B2B1A138"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -375,7 +375,7 @@
 				id: "79FBDBD6239CD166"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -394,7 +394,7 @@
 		{
 			dependencies: ["22A8C953424C8FD9"]
 			description: [
-				"解除脆弱恶咒并不需要任何的仪式，相反，它需要&6\"坚韧无摧的意志\"&r。承受过足够数量的伤害之后，诅咒便会消除。"
+				"通过完成神意挑战，获得任意类型的&4神意碎片&r，即可解除脆弱恶咒。"
 				""
 				"&7具体效果：永续脆弱诅咒。在拥有该效果情况下，每次遭受生物攻击，所有装备的耐久固定额外降低10点。&r"
 			]
@@ -413,10 +413,11 @@
 			shape: "hexagon"
 			subtitle: "脆弱诅咒使得装备耐久的消耗极快"
 			tasks: [{
-				id: "69FE51E33E66E0E7"
-				stat: "minecraft:damage_taken"
-				type: "stat"
-				value: 1833
+				id: "10F2231D0810E3A5"
+				item: "kubejs:god_consciousness"
+				match_nbt: false
+				title: "任意神意碎片"
+				type: "item"
 			}]
 			title: "回忆诅咒:脆弱恶咒"
 			x: 9.75d
@@ -425,9 +426,7 @@
 		{
 			dependencies: ["22A8C953424C8FD9"]
 			description: [
-				"解除血源恶咒并不需要任何的仪式，相反，它需要&6\"面对绝境的勇气\"&r。"
-				""
-				"使用任意&4神意碎片&r，即刻消除该诅咒。"
+				"通过完成神意挑战，获得任意类型的&4神意碎片&r，即可解除血源恶咒。"
 				""
 				"&7具体效果：所有怪物血量x5、伤害x2、移动速度x1.5。&r&8纯粹的属性强化&r"
 			]
@@ -460,7 +459,7 @@
 		{
 			dependencies: ["22A8C953424C8FD9"]
 			description: [
-				"解除疲劳恶咒并不需要任何的仪式，相反，它需要...呃...&6足够多的睡眠&r？似乎只要睡过足够多的觉，诅咒便会消除。"
+				"通过完成神意挑战，获得任意类型的&4神意碎片&r，即可解除疲倦恶咒。"
 				""
 				"&7具体效果：永续挖掘疲劳Ⅱ&r"
 			]
@@ -478,10 +477,10 @@
 			shape: "hexagon"
 			subtitle: "疲倦恶咒使得你无时无刻被疲劳所影响"
 			tasks: [{
-				id: "2ACDE979DE959314"
-				stat: "minecraft:sleep_in_bed"
-				type: "stat"
-				value: 23
+				id: "33E92295A8E87CBE"
+				item: "kubejs:god_consciousness"
+				title: "任意神意碎片"
+				type: "item"
 			}]
 			title: "回忆诅咒:疲倦恶咒"
 			x: 9.75d

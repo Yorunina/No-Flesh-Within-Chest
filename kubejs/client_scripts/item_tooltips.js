@@ -75,6 +75,9 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('kubejs:god_bless_full_necklace', (item, advanced, text) => {
         text.add(Text.gold('用于在沙漠维度地牢中进行神意挑战'));
     })
+    tooltip.addAdvanced('kubejs:silver_ingot', (item, advanced, text) => {
+        text.add(Text.gold('可以通过'));
+    })
     
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1

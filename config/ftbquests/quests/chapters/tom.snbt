@@ -23,7 +23,7 @@
 				id: "52165A3A71ADB569"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -215,7 +215,7 @@
 				id: "2FBAC004E5FC9C0A"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				title: "这是还给你的"
@@ -232,7 +232,7 @@
 					id: "087ACFC21485DF17"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:silver_coin"
+						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
 					title: "防止点错提交1币"

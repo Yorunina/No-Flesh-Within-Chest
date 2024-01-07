@@ -1,13 +1,25 @@
 ServerEvents.recipes(event => {
 	event.recipes.create.mixing(Fluid.of('kubejs:syrup').withAmount(50), [Fluid.water(50), 'minecraft:sugar', 'hexerei:dried_mugwort_flowers', 'hexerei:dried_belladonna_flowers']).heated()
 
-	event.recipes.create.mixing('2x createaddition:electrum_ingot', [Fluid.lava(100), 'numismaticoverhaul:gold_coin', 'numismaticoverhaul:silver_coin']).heated()
+	event.recipes.create.mixing('2x createaddition:electrum_ingot', [Fluid.lava(100), 'minecraft:gold_ingot', 'kubejs:silver_ingot']).heated()
 
 	event.recipes.create.filling('kubejs:hamimelon_organ', ['fruitsdelight:hamimelon', Fluid.of('kubejs:syrup').withAmount(3000)])
 
 	event.recipes.create.deploying('kubejs:telescopic_tool_arm', ['kubejs:telescopic_arm', 'nameless_trinkets:light_gloves'])
 
 	event.recipes.create.sandpaper_polishing('kubejs:revolution_cable', 'chestcavity:golem_cable')
+
+	event.recipes.create.compacting('kubejs:huge_lung', ['32x kubejs:lung_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_appendix', ['32x kubejs:appendix_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_muscle', ['32x kubejs:muscle_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_heart', ['32x kubejs:heart_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_intestine', ['32x kubejs:intestine_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_rib', ['32x kubejs:rib_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_spine', ['32x kubejs:spine_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_spleen', ['32x kubejs:spleen_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_stomach', ['32x kubejs:stomach_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_kidney', ['32x kubejs:kidney_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_liver', ['32x kubejs:liver_template']).superheated()
 
 	event.recipes.create.mechanical_crafting('kubejs:revolution_gear', [
 		' SSS ',

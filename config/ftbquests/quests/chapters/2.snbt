@@ -54,7 +54,7 @@
 				id: "377272B3F01FA298"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -157,7 +157,7 @@
 				id: "0DD6F90701F5DBCC"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -181,7 +181,6 @@
 				""
 				"&8揭开潜藏在回忆中的秘密。&r"
 			]
-			hide_dependent_lines: true
 			icon: "minecraft:oak_sapling"
 			id: "2EBB4C697D81D42A"
 			subtitle: "一切应当是自由的"
@@ -205,7 +204,7 @@
 				id: "6AC6FB9DC22CD220"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -235,7 +234,7 @@
 				id: "476ED982F630080F"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -263,7 +262,7 @@
 				id: "1C2DCD63D9AEE80B"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -286,7 +285,7 @@
 				id: "7A26A00DECB193D1"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -309,6 +308,29 @@
 			]
 			icon: "dimdungeons:block_portal_keyhole"
 			id: "03B3A54BEDB85320"
+			rewards: [
+				{
+					count: 3
+					id: "6E85D0F5766263AA"
+					item: {
+						Count: 1
+						id: "lightmanscurrency:coin_iron"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5DAB0B997ABFE91E"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "dimdungeons:guide_book"
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "探索新世界！"
 			tasks: [{
 				id: "36876EE03DBD2CD6"
@@ -340,7 +362,7 @@
 				id: "33A06E290DBAC70E"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -426,7 +448,7 @@
 				id: "58518C490DB0DC05"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -454,7 +476,7 @@
 				id: "2168BCD8BEC227B2"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -481,7 +503,7 @@
 				id: "44D54010BE3AE3BC"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -514,7 +536,7 @@
 				id: "577CCFF891B011A7"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -549,7 +571,7 @@
 				id: "3645B502D910A3E3"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -599,7 +621,7 @@
 				id: "270D241C6AD3AD75"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -613,6 +635,241 @@
 			title: "血肉箱"
 			x: 7.0d
 			y: -1.75d
+		}
+		{
+			dependencies: ["03B3A54BEDB85320"]
+			description: [
+				"为了激活维度地牢的钥匙，你需要寻找&6末地传送门&r框架用于激活。"
+				""
+				"手持空白维度钥匙右键空白&2末地传送门框架的黑色空穴部分&r，维度钥匙便会被激活，并且赋予一些特殊的属性。"
+				""
+				"通过将钥匙放置在基础维度地牢传送门中央上方的&6传送门基石&r中即可开启前往维度地牢的路。"
+			]
+			id: "4264FBF118BE08EA"
+			rewards: [{
+				id: "6C1107835A5473E2"
+				item: {
+					Count: 1
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "在家也能激活钥匙！"
+			tasks: [{
+				id: "2A0ACA77DB5077DF"
+				item: "minecraft:end_portal_frame"
+				type: "item"
+			}]
+			title: "制作末地传送门"
+			x: 13.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["03B3A54BEDB85320"]
+			description: [
+				"在基础地牢的冒险箱子中，偶然间你会遇到名为&2高级传送门&r钥匙的物品。"
+				""
+				"高级传送门钥匙能够用于开启&6高级传送门&r，前往高级副本。在高级副本中，箱子的掉落物将会变得更加丰富，并且，能够遇到超越常规附魔等级上限的附魔书！"
+			]
+			icon: "dimdungeons:block_portal_crown"
+			id: "45AB5B1831B0AACF"
+			rewards: [{
+				id: "005036E6044961EE"
+				item: {
+					Count: 1
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "前往高级地牢！"
+			tasks: [{
+				id: "2CD10F473BCB56A1"
+				item: {
+					Count: 1
+					id: "dimdungeons:item_portal_key"
+					tag: {
+						built: 0b
+						dest_x: 6
+						dest_z: 0
+						dungeon_type: "ADVANCED"
+						key_activated: 1b
+						name_part_1: 11
+						name_part_2: 0
+						name_type: 3
+						theme: 0
+					}
+				}
+				match_nbt: false
+				title: "高级钥匙"
+				type: "item"
+			}]
+			title: "高级维度地牢"
+			x: 14.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["03B3A54BEDB85320"]
+			description: [
+				"通过制作个人维度钥匙，&2你可以前往属于你的口袋维度&r。在这个维度，你可以通过对传送门使用各种道具，编辑允许进入的玩家列表。"
+				""
+				"手持下文道具在口袋维度内对着传送门方块右键，就可以触发对应的效果。"
+				""
+				"&6书&r：查看现有的访客列表"
+				"&6白色染料&r：切换为白名单模式"
+				"&6黑色染料&r：切换为黑名单模式"
+				"&6纸&r：通过铁砧命名纸张，将其名称编辑为你想要添加到访客列表中的玩家名称，你就可以向传送门添加新的访客。"
+				"&6砂轮&r：可以清空当前的访客列表。"
+			]
+			id: "5255A65B18FE588A"
+			rewards: [{
+				id: "474C5603581AF6D5"
+				item: {
+					Count: 1
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "拥有你的口袋空间！"
+			tasks: [{
+				id: "53C3F084DD6F041A"
+				item: "dimdungeons:item_blank_build_key"
+				type: "item"
+			}]
+			title: "前往个人维度"
+			x: 15.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4264FBF118BE08EA"]
+			description: [
+				"如果你获得了&6传送大厅钥匙&r，那么你可以通过传送门去往一个极其独特的地牢，这个地牢中不包含任何的怪物，仅仅是一个&2包含多个传送门的大厅&r。"
+				""
+				"你可以在不同的传送门口拾取对应的传送钥匙。然后返回世界中，在不同的位置设置维度传送门，并且将对应的钥匙插入。这样，不同的传送门就可以前往相同的传送大厅。"
+				""
+				"这意味着你可以做一个多维度、多位置的&6中转站&r！"
+			]
+			id: "055755574AC4697C"
+			rewards: [{
+				id: "2EE671725DCF58A6"
+				item: {
+					Count: 1
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "偶尔，你会得到一些特殊钥匙"
+			tasks: [{
+				id: "794A75FE1032AE76"
+				item: "dimdungeons:item_blank_teleporter_key"
+				type: "item"
+			}]
+			title: "传送大厅？！"
+			x: 14.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["45AB5B1831B0AACF"]
+			description: [
+				"为了更好的探索地牢，你可以使用这两样道具——秘密之钟和归途明珠。"
+				""
+				"&6秘密之钟&r可以用于探测房间内是否包含隐藏的箱子，如果有，则会发出8个音符的响声。"
+				""
+				"&6归途明珠&r则是用于快速的返回地牢的入口处。"
+			]
+			id: "738F8D1CEDC020F1"
+			rewards: [{
+				id: "65B0A76807157940"
+				item: {
+					Count: 1
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "成为掌控地牢之人"
+			tasks: [
+				{
+					id: "33343BF20AC4B52E"
+					item: "dimdungeons:item_secret_bell"
+					type: "item"
+				}
+				{
+					id: "1B3FB946CEE7C187"
+					item: "dimdungeons:item_homeward_pearl"
+					type: "item"
+				}
+			]
+			title: "地牢探险家"
+			x: 16.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2EBB4C697D81D42A"]
+			description: [
+				"在通常地牢的探索过程中，偶尔你会遇到名为神恩项链的特殊饰品。携带着它击败&2具有强大破坏力和再生能力的boss&r，将会使其完全充能。"
+				""
+				"与此同时，在维度地牢的特殊沙漠主题副本，你可以寻找到建立在命令方块之上的召唤祭坛。通过使用该祭坛，以满溢神恩项链作为召唤催化剂，即可随机召唤出&2一名神恩Boss&r。"
+				""
+				"神恩Boss的强度并不高，因为其具有的能力与原本Boss并无二样。但是对于玩家的DPS有着相对较高的要求。在所有的阶段，神恩Boss拥有着常驻&61%最大生命值/s&r的生命恢复效率，并且，&2在每个33%血量的阶段，其会随机获得一种伤害免疫类型&r。并且在生命值的最后33%时，其会&2进行180s的DPS Check&r，如果没有在Buff消退前击败Boss，其会&4回复所有生命力&r，并且额外获得一种免疫种类。"
+				""
+				"{@pagebreak}"
+				"为了成功击败神恩Boss，你需要拥有&2魔法、远程、近战&r三种类型的有效攻击手段。"
+				""
+				"击败神恩Boss后，即可获得对应灵魂类型的神意碎片，可以用于传说器官&b复乐园&r的制作。"
+			]
+			icon: "dimdungeons:item_blank_theme_key"
+			id: "5EB8592EEE08BF45"
+			rewards: [{
+				id: "170703F1786429BB"
+				item: {
+					Count: 1
+					id: "dimdungeons:item_blank_theme_key"
+					tag: {
+						theme: 2
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "一种危险的生物召唤仪式"
+			tasks: [{
+				id: "27FEE67CC6FF3B6C"
+				item: "kubejs:god_bless_empty_necklace"
+				type: "item"
+			}]
+			title: "神恩仪式"
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EB8592EEE08BF45"]
+			description: ["击败三个不同的&6神恩Boss&r，使用三个不同灵魂类型的&4神意碎片&r，即可获得&6复乐园&r。"]
+			id: "0DCDFAD4C3288FCD"
+			rewards: [{
+				count: 3
+				id: "4F5386D4974572C8"
+				item: {
+					Count: 1
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "乐园将重新降临"
+			tasks: [{
+				id: "646B8C1B39DCF1C0"
+				item: {
+					Count: 1
+					id: "kubejs:paradise_regained"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.5d
+			y: 0.0d
 		}
 	]
 	title: "章节2：觉醒"

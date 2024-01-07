@@ -30,7 +30,7 @@
 					id: "68F68EEA900B54B3"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:silver_coin"
+						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
 					type: "item"
@@ -77,7 +77,7 @@
 				id: "54219AC6A5460D10"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -143,7 +143,7 @@
 				id: "243324C3D642D9D8"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -177,7 +177,7 @@
 				id: "0905D2943CB40EB0"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -258,7 +258,7 @@
 				id: "68FEB532C449F1F0"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -331,7 +331,7 @@
 				id: "062C34A3636D85AA"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -376,7 +376,7 @@
 				id: "7B5547080E9AA974"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -425,7 +425,7 @@
 					id: "28E32DF01884CD57"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:silver_coin"
+						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
 					type: "item"
@@ -471,7 +471,7 @@
 				id: "547AB928E06DB438"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -517,7 +517,7 @@
 				id: "2396A39A3AAC9C0C"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -541,7 +541,7 @@
 				id: "0136B712C04F49E9"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -565,7 +565,7 @@
 				id: "2AF64ED78935D661"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -595,7 +595,7 @@
 					id: "5CC9E29E1B0EF54F"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:silver_coin"
+						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
 					type: "item"
@@ -644,7 +644,7 @@
 				id: "01EC19571C8B58EF"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -677,7 +677,7 @@
 					id: "6A7406D6BBB8960E"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:silver_coin"
+						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
 					type: "item"
@@ -713,7 +713,7 @@
 					id: "34287DAC9D5122CD"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:silver_coin"
+						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
 					type: "item"
@@ -743,7 +743,7 @@
 				id: "5C94F0AEA4B05C08"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -774,7 +774,7 @@
 				id: "36B521E50A8670A3"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -806,7 +806,7 @@
 				id: "68E182F2D59A4C2B"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -835,7 +835,7 @@
 				id: "443AEBF90B9CD82C"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -871,7 +871,7 @@
 				id: "4225FDCA2824DF55"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -923,7 +923,31 @@
 		}
 		{
 			dependencies: ["3FF06F6F309FAEC3"]
+			description: [
+				"通过解析化石，我们可以了解到更多关于&6古代生物&r的知识。开启它们胸腔，也许我们能够获得更有价值的物品！"
+				""
+				"同时，在古代，我们也可以了解到一种名为&6书龙&r的特殊生物，这对更有效的获取附魔有极大的帮助。"
+			]
+			icon: "unusualprehistory:amber_fossil"
 			id: "2100FE65C252D712"
+			rewards: [{
+				id: "652A9C30F257854B"
+				item: "unusualprehistory:encyclopedia"
+				type: "item"
+			}]
+			subtitle: "为了古代生物，化石是必须原料！"
+			tasks: [{
+				id: "148E1180E9A5C847"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "unusualprehistory:fossils"
+					}
+				}
+				title: "任意种类化石"
+				type: "item"
+			}]
 			title: "书龙、化石、考古"
 			x: 11.75d
 			y: 1.75d
@@ -951,7 +975,7 @@
 				id: "7D4A0E6968338355"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -972,7 +996,7 @@
 				id: "6C8DE8B2ADF40817"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"

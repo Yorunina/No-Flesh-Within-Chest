@@ -112,6 +112,7 @@ const organPlayerDamageOnlyStrategies = {
             attriMap.set(global.TEMP_ATTACK_UP.name, value)
             player.modifyAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name, value, global.TEMP_ATTACK_UP.operation);
             setPlayerAttributeMap(player, attriMap);
+            data.returnDamage = data.returnDamage + value
         } else {
             player.removeAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name);
             attriMap.set(global.TEMP_ATTACK_UP.name, 0);

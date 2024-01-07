@@ -1,0 +1,163 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "56F0A3BB89FE8F1D"
+	group: "4F4F4EA8CE67985B"
+	icon: {
+		Count: 1
+		id: "capsule:capsule"
+		tag: {
+			display: {
+				color: 2963801
+			}
+			label: "Dim Portal Basic"
+			mirror: "NONE"
+			rotation: "CLOCKWISE_90"
+			size: 7
+			sourceInventory: { }
+			state: 7
+			structureName: "config/capsule/prefabs/dim_portal_basic"
+			undeployDelay: 63
+		}
+	}
+	id: "56F0A3BB89FE8F1D"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"在各种任务和村民交易中，你会获得到大量的&6钱币&r。这些钱币可以用于wares货物交易或者来这里购买一些&6蓝图&r！"
+				""
+				"通过购买蓝图，你可以轻松地建造一些平时懒于去做的工作，并且容易的去搬运他们！"
+			]
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "capsule:capsule"
+				tag: {
+					display: {
+						color: 3949738
+					}
+					label: "Copy Any Capsule"
+					size: 1
+					sourceInventory: { }
+					state: 3
+					structureName: "generated_blueprint_copy_path"
+				}
+			}
+			id: "304B1E271805A1B0"
+			rewards: [{
+				id: "16030F13DC217F6F"
+				item: "capsule:capsulemarker"
+				type: "item"
+			}]
+			subtitle: "购买一些即用蓝图吧"
+			tasks: [{
+				id: "203A68A8D86A8C86"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "花掉你的金钱！"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["304B1E271805A1B0"]
+			icon: "dimdungeons:item_portal_key"
+			id: "77647256571F2ED0"
+			rewards: [{
+				id: "30D78248CBBDEAE5"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						display: {
+							color: 2963801
+						}
+						label: "基础维度传送门"
+						mirror: "NONE"
+						rotation: "CLOCKWISE_90"
+						size: 7
+						sourceInventory: { }
+						state: 7
+						structureName: "config/capsule/prefabs/dim_portal_basic"
+						undeployDelay: 63
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "可以反复搬运的维度地牢传送门"
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "73AD81233AD95746"
+				item: {
+					Count: 1
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "基础维度传送门蓝图"
+			x: -3.75d
+			y: 1.75d
+		}
+		{
+			can_repeat: true
+			dependencies: ["304B1E271805A1B0"]
+			icon: {
+				Count: 1
+				id: "dimdungeons:item_portal_key"
+				tag: {
+					built: 1b
+					dest_x: 1
+					dest_z: 0
+					dungeon_type: "BASIC"
+					key_activated: 1b
+					name_part_1: 22
+					name_part_2: 4
+					name_type: 1
+					theme: 0
+				}
+			}
+			id: "7BA6B38A77C6A18E"
+			rewards: [{
+				id: "6695708560A3748D"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						display: {
+							color: 2963801
+						}
+						label: "Dim Portal Advanced"
+						size: 7
+						sourceInventory: { }
+						state: 7
+						structureName: "config/capsule/prefabs/dim_portal_advanced"
+						undeployDelay: 593
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "可以反复搬运的维度地牢传送门"
+			tasks: [{
+				consume_items: true
+				count: 32L
+				id: "793ECC1D0DBA4ED8"
+				item: {
+					Count: 1
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "高级维度传送门蓝图"
+			x: -3.75d
+			y: 3.75d
+		}
+	]
+	title: "结构：用你的金币购买蓝图吧"
+}

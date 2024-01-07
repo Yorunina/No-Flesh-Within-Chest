@@ -49,7 +49,7 @@
 				id: "3C8CEE1968A166EE"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -82,7 +82,7 @@
 				id: "27969AA9AACAB44B"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -238,7 +238,7 @@
 				id: "034BE97AFE1BB692"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -269,7 +269,7 @@
 				id: "7688575E108D773B"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -360,7 +360,7 @@
 				id: "3BBBD6F7EBBF51C3"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -414,7 +414,7 @@
 				id: "31BB2DA3D8C8297F"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -477,7 +477,7 @@
 				id: "1167A7EFFF565060"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"

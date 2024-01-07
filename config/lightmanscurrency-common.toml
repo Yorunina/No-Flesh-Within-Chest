@@ -1,0 +1,141 @@
+
+#Common configuration settings
+[common]
+	#Level of debug messages to be shown in the logs.
+	#0-All debug messages. 1-Warnings/Errors only. 2-Errors only. 3-No debug messages.
+	#Note: All debug messages will still be sent debug.log regardless of settings.
+	#Range: 0 ~ 3
+	debugLevel = 0
+
+	#Crafting Settings
+	[common.crafting]
+		#Whether Network Traders can be crafted.
+		#Disabling will not remove any existing Network Traders from the world, nor prevent their use.
+		#Disabling does NOT disable the recipes of Network Upgrades or the Trading Terminals.
+		#/reload required for changes to take effect.
+		allowNetworkTraderCrafting = true
+		#Whether Trader Interface blocks can be crafted.
+		#Disabling will not remove any existing Trader Interfaces from the world, nor prevent their use.
+		#/reload required for changes to take effect.
+		allowTraderInterfaceCrafting = true
+		#Whether Auction Stand blocks can be crafted.
+		#Disabling will not remove any existing Auction Stands from the world, nor prevent their use.
+		#/reload required for changes to take effect.
+		allowAuctionStandCrafting = true
+		#Whether Tax Blocks can be crafted.
+		#Disabling will not remove any existing Tax Blocks from the world, nor prevent their use.
+		#/reload required for changes to take effect.
+		allowTaxBlockCrafting = true
+
+		#Coin Chest Related Crafting Settings
+		[common.crafting.coin_chest]
+			#Whether the Coin Chest can be crafted.
+			#Disabling will not remove any existing Coin Chests from the world, nor prevent their use.
+			#Disabling does NOT disable the recipes of Coin Chest Upgrades.
+			#/reload required for changes to take effect.
+			allowChestCrafting = true
+			#Whether the Coin Chest Exchange Upgrade can be crafted.
+			#Disabling will not remove any existing Coin Chest Exchange Upgrades from the world, nor prevent their use.
+			#/reload required for changes to take effect.
+			allowExchangeUpgradeCrafting = true
+			#Whether the Coin Chest Magnet Upgrades can be crafted.
+			#Disabling will not remove any existing Coin Chest Magnet Upgrades from the world, nor prevent their use.
+			#/reload required for changes to take effect.
+			allowMagnetUpgradeCrafting = true
+			#Whether the Coin Chest Security Upgrades can be crafted.
+			#Disabling will not remove any existing Coin Chest Security Upgrades from the world, nor prevent their use.
+			#/reload required for changes to take effect.
+			allowSecurityUpgradeCrafting = true
+
+	#Villager Related Settings
+	#Note: Any changes to villagers requires a full reboot to be applied due to how Minecraft/Forge registers trades.
+	[common.villagers]
+		#Whether the wandering trader will have additional trades that allow you to buy misc items with money.
+		addCustomWanderingTrades = true
+		#Whether the banker villager profession will have any registered trades. The banker sells Lightman's Currency items for coins.
+		addBanker = true
+		#Whether the cashier villager profession will have any registered trades.. The cashier sells an amalgamation of vanilla traders products for coins.
+		addCashier = true
+
+		#Settings Related to other Villagers
+		[common.villagers.other_traders]
+			#Whether vanilla villagers should have the Emeralds from their trades replaced with coins.
+			changeVanillaTrades = false
+			#Whether villagers added by other mods should have the Emeralds from their trades replaced with coins.
+			changeModdedTrades = false
+			#Whether the wandering trader should have the emeralds from their trades replaced with the default trader coin.
+			changeWanderingTrades = false
+			#The default coin to replace a traders emeralds with.
+			defaultTraderCoin = "lightmanscurrency:coin_emerald"
+			#List of trader coin overrides.
+			#Each entry must be formatted as follows: "mod:some_trader_type-lightmanscurrency:some_coin"
+			#Every trader not on this list will use the default trader coin defined above.
+			traderOverrides = ["minecraft:butcher-lightmanscurrency:coin_iron", "minecraft:cartographer-lightmanscurrency:coin_iron", "minecraft:farmer-lightmanscurrency:coin_iron", "minecraft:fisherman-lightmanscurrency:coin_iron", "minecraft:fletcher-lightmanscurrency:coin_copper", "minecraft:leatherworker-lightmanscurrency:coin_iron", "minecraft:mason-lightmanscurrency:coin_iron", "minecraft:shepherd-lightmanscurrency:coin_iron"]
+
+	#Loot item customization. Accepts item ids (i.e. lightmanscurrency:coin_copper).
+	#Leave blank (lootItemT? = "") to not spawn loot of that tier (so that you can use higher-tier spawn rates without the presence of lower-tier loot).
+	[common.loot_customization]
+		#T1 loot item. Used for T1-T6 entity & chest loot drops.
+		lootItemT1 = "lightmanscurrency:coin_copper"
+		#T2 loot item. Used for T2-T6 entity & chest loot drops.
+		lootItemT2 = "lightmanscurrency:coin_iron"
+		#T3 loot item. Used for T3-T6 entity & chest loot drops.
+		lootItemT3 = "lightmanscurrency:coin_gold"
+		#T4 loot item. Used for T4-T6 entity & chest loot drops.
+		lootItemT4 = "lightmanscurrency:coin_emerald"
+		#T5 loot item. Used for T5-T6 entity & chest loot drops.
+		lootItemT5 = "lightmanscurrency:coin_diamond"
+		#T6 loot item. Used for T6 entity & chest loot drops.
+		lootItemT6 = "lightmanscurrency:coin_netherite"
+
+	#Entity loot settings. Accepts entity ids (i.e. minecraft:zombie)
+	[common.entity_loot]
+		#Whether coins can be dropped by entities. Does not effect chest loot generation.
+		enableEntityDrops = true
+		#Whether coins can be dropped by entities that were spawned by the vanilla spawner.
+		enableSpawnerEntityDrops = false
+		#Whether modded machines that emulate player behaviour can trigger coin drops from entities.
+		#Set to false to help prevent coin farming.
+		allowFakePlayerTrigger = true
+		#Entities that will occasionally drop T1 loot.
+		entityListT1 = ["minecraft:slime", "minecraft:silverfish", "alexsmobs:cosmic_cod", "alexsmobs:fly", "alexsmobs:raccoon", "alexsmobs:stradpole"]
+		#Entities that will occasionally drop T1 -> T2 loot.
+		entityListT2 = ["minecraft:zombie", "minecraft:skeleton", "minecraft:creeper", "minecraft:spider", "minecraft:cave_spider", "minecraft:husk", "minecraft:stray", "minecraft:magma_cube", "minecraft:zombie_villager", "minecraft:drowned", "alexsmobs:bone_serpent", "alexsmobs:anaconda", "alexsmobs:froststalker", "alexsmobs:rattlesnake", "alexsmobs:rockey_roller", "alexsmobs:skreecher", "alexsmobs:soul_vulture", "alexsmobs:tarantula_hawk"]
+		#Entities that will occasionally drop T1 -> T3 loot.
+		entityListT3 = ["minecraft:guardian", "minecraft:elder_guardian", "minecraft:phantom", "minecraft:blaze", "minecraft:ghast", "minecraft:witch", "minecraft:hoglin", "minecraft:piglin_brute", "minecraft:piglin", "minecraft:zombified_piglin", "alexsmobs:crimson_mosquito", "alexsmobs:dropbear", "alexsmobs:guster", "alexsmobs:skelewag", "alexsmobs:tusklin"]
+		#Entities that will occasionally drop T1 -> T4 loot.
+		entityListT4 = ["minecraft:enderman", "minecraft:evoker", "minecraft:vindicator", "minecraft:pillager", "minecraft:ravager", "minecraft:shulker", "alexsmobs:enderiophage", "alexsmobs:farseer", "alexsmobs:murmur", "alexsmobs:straddler"]
+		#Entities that will occasionally drop T1 -> T5 loot.
+		entityListT5 = ["minecraft:wither_skeleton"]
+		#Entities that will occasionally drop T1 -> T6 loot.
+		entityListT6 = ["alexsmobs:mimicube"]
+		#Entities that will drop a large amount of T1 loot.
+		bossEntityListT1 = []
+		#Entities that will drop a large amount of T1 -> T2 loot.
+		bossEntityListT2 = []
+		#Entities that will drop a large amount of T1 -> T3 loot.
+		bossEntityListT3 = []
+		#Entities that will drop a large amount of T1 -> T4 loot.
+		bossEntityListT4 = ["minecraft:warden"]
+		#Entities that will drop a large amount of T1 -> T5 loot.
+		bossEntityListT5 = ["minecraft:ender_dragon"]
+		#Entities that will drop a large amount of T1 -> T6 loot.
+		bossEntityListT6 = ["minecraft:wither", "alexsmobs:void_worm"]
+
+	#Chest loot settings.
+	[common.chest_loot]
+		#Whether coins can spawn in chests Does not effect entity loot drops.
+		enableChestLoot = true
+		#Chests that will occasionally spawn T1 loot.
+		chestListT1 = ["minecraft:chests/underwater_ruin_small", "minecraft:chests/underwater_ruin_big"]
+		#Chests that will occasionally spawn T1 -> T2 loot.
+		chestListT2 = []
+		#Chests that will occasionally spawn T1 -> T3 loot.
+		chestListT3 = ["minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/simple_dungeon", "minecraft:chests/ruined_portal"]
+		#Chests that will occasionally spawn T1 -> T4 loot.
+		chestListT4 = ["minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/ancient_city"]
+		#Chests that will occasionally spawn T1 -> T5 loot.
+		chestListT5 = ["minecraft:chests/buried_treasure", "minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/bastion_treasure", "minecraft:chests/end_city_treasure"]
+		#Chests that will occasionally spawn T1 -> T6 loot.
+		chestListT6 = []
+

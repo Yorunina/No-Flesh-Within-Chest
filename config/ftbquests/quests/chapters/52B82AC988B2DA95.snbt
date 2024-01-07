@@ -25,7 +25,7 @@
 				id: "2319A4D71F76480F"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -60,7 +60,7 @@
 					id: "1042CEF7833487F9"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:silver_coin"
+						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
 					title: "还给你的银币"
@@ -71,7 +71,7 @@
 					id: "19AFEF778BCA0ADB"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:gold_coin"
+						id: "lightmanscurrency:coin_gold"
 						tag: { }
 					}
 					type: "item"
@@ -95,7 +95,7 @@
 					id: "61269F785AE2CB64"
 					item: {
 						Count: 1
-						id: "numismaticoverhaul:silver_coin"
+						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
 					title: "防止手贱因此消耗银币"
@@ -118,7 +118,7 @@
 				id: "20A85C308C640405"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -152,7 +152,7 @@
 				id: "361C99A0FA76F713"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -189,7 +189,7 @@
 				id: "01F5CA3B2A4C633C"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -243,7 +243,7 @@
 				id: "28DA0E75454D98D6"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"

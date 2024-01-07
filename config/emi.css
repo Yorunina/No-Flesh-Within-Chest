@@ -17,6 +17,11 @@
 	help-level: normal;
 
 	/**
+	 * Where EMI should pull stacks from to populate the index.
+	 */
+	index-source: creative;
+
+	/**
 	 * Whether normal search queries should include the tooltip.
 	 */
 	search-tooltip-by-default: true;
@@ -400,6 +405,11 @@
 	 * Delete the stack in the cursor when hovering the index
 	 */
 	delete-cursor-stack: "key.mouse.left";
+
+	/**
+	 * Copies the hovered recipe's ID to the clipboard
+	 */
+	copy-recipe-id: "key.keyboard.unknown";
 
 	/**
 	 * In edit mode, hide the hovered stack

@@ -34,8 +34,8 @@ ServerEvents.recipes(event => {
     }
 
     registeCustomRecipe(new MixingCauldronRecipe(
-        [Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone')],
-        Item.of('minecraft:stone')))
+        [Ingredient.of('#forge:ingots/gold'), Ingredient.of('#forge:ingots/gold'), Ingredient.of('#bookwyrms:scale'), Ingredient.of('minecraft:redstone'), Ingredient.of('hexerei:dried_sage'), Ingredient.of('hexerei:dried_sage'), Ingredient.of('hexerei:dried_mandrake_flowers'), Ingredient.of('hexerei:dried_mandrake_flowers')],
+        Item.of('kubejs:silver_ingot').withCount(4)))
 
     registeCustomRecipe(new MixingCauldronRecipe(
         [Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('kubejs:lucky_appendix'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone')],

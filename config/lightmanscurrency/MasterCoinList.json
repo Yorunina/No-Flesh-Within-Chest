@@ -1,0 +1,180 @@
+{
+  "CoinEntries": [
+    {
+      "coinitem": "lightmanscurrency:coin_copper",
+      "chain": "main",
+      "initial": "item.lightmanscurrency.coin_copper.initial",
+      "plural": "item.lightmanscurrency.coin_copper.plural"
+    },
+    {
+      "coinitem": "lightmanscurrency:coin_iron",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_copper",
+        "count": 10
+      },
+      "initial": "item.lightmanscurrency.coin_iron.initial",
+      "plural": "item.lightmanscurrency.coin_iron.plural"
+    },
+    {
+      "coinitem": "lightmanscurrency:coin_gold",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_iron",
+        "count": 10
+      },
+      "initial": "item.lightmanscurrency.coin_gold.initial",
+      "plural": "item.lightmanscurrency.coin_gold.plural"
+    },
+    {
+      "coinitem": "lightmanscurrency:coin_emerald",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_gold",
+        "count": 10
+      },
+      "initial": "item.lightmanscurrency.coin_emerald.initial",
+      "plural": "item.lightmanscurrency.coin_emerald.plural"
+    },
+    {
+      "coinitem": "lightmanscurrency:coin_diamond",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_emerald",
+        "count": 10
+      },
+      "initial": "item.lightmanscurrency.coin_diamond.initial",
+      "plural": "item.lightmanscurrency.coin_diamond.plural"
+    },
+    {
+      "coinitem": "lightmanscurrency:coin_netherite",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_diamond",
+        "count": 10
+      },
+      "initial": "item.lightmanscurrency.coin_netherite.initial",
+      "plural": "item.lightmanscurrency.coin_netherite.plural"
+    },
+    {
+      "coinitem": "lightmanscurrency:coinpile_copper",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_copper",
+        "count": 9
+      },
+      "plural": "block.lightmanscurrency.coinpile_copper.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinblock_copper",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coinpile_copper",
+        "count": 4
+      },
+      "plural": "block.lightmanscurrency.coinblock_copper.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinpile_iron",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_iron",
+        "count": 9
+      },
+      "plural": "block.lightmanscurrency.coinpile_iron.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinblock_iron",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coinpile_iron",
+        "count": 4
+      },
+      "plural": "block.lightmanscurrency.coinblock_iron.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinpile_gold",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_gold",
+        "count": 9
+      },
+      "plural": "block.lightmanscurrency.coinpile_gold.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinblock_gold",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coinpile_gold",
+        "count": 4
+      },
+      "plural": "block.lightmanscurrency.coinblock_gold.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinpile_emerald",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_emerald",
+        "count": 9
+      },
+      "plural": "block.lightmanscurrency.coinpile_emerald.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinblock_emerald",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coinpile_emerald",
+        "count": 4
+      },
+      "plural": "block.lightmanscurrency.coinblock_emerald.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinpile_diamond",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_diamond",
+        "count": 9
+      },
+      "plural": "block.lightmanscurrency.coinpile_diamond.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinblock_diamond",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coinpile_diamond",
+        "count": 4
+      },
+      "plural": "block.lightmanscurrency.coinblock_diamond.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinpile_netherite",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coin_netherite",
+        "count": 9
+      },
+      "plural": "block.lightmanscurrency.coinpile_netherite.plural",
+      "hidden": true
+    },
+    {
+      "coinitem": "lightmanscurrency:coinblock_netherite",
+      "chain": "main",
+      "worth": {
+        "coin": "lightmanscurrency:coinpile_netherite",
+        "count": 4
+      },
+      "plural": "block.lightmanscurrency.coinblock_netherite.plural",
+      "hidden": true
+    }
+  ]
+}

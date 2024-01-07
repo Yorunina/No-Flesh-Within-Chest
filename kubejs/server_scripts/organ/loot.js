@@ -72,7 +72,7 @@ const entityLootStrategies = {
  */
 const entityLootOnlyStrategies = {
     'kubejs:greed_shard': function (event, organ) {
-        event.addLoot('numismaticoverhaul:bronze_coin')
+        event.addLoot('lightmanscurrency:coin_copper')
     },
     'kubejs:infinity_force': function (event, organ) {
         if (Math.random() < Math.max(0.05 * event.killerEntity.getLuck(), 0.05)) {

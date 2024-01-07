@@ -176,6 +176,15 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:revolution')
         .tag('kubejs:machine');
 
+    registeOrgan(new Organ('kubejs:compressed_oxygen_implant')
+        .addScore('filtration', -1)
+        .addScore('breath_recovery', 5)
+        .addTextLines('default', [Text.gray('氧气，加压！')])
+        .build())
+        .texture('kubejs:item/organs/machine/compressed_oxygen_implant')
+        .tag('kubejs:lung')
+        .tag('kubejs:machine');
+
     // 糖果心与魔法使系列物品
     // 糖果系列器官
     registeOrgan(new Organ('kubejs:candy_heart')

@@ -13,7 +13,7 @@
 			description: [
 				"为什么需要本章指南？"
 				""
-				"因为本整合中部分器官的来源相对比较复杂，如果不加以指引，制作&5高级器官&r对于单独游玩的玩家而言会变得&4学习成本较高&r。因此本指南主要用于向玩家介绍部分高级器官的获取流程。"
+				"因为本整合中部分器官的来源相对比较复杂，如果不加以指引，制作&6高级器官&r对于单独游玩的玩家而言会变得&4学习成本较高&r。因此本指南主要用于向玩家介绍部分高级器官的获取流程。"
 				""
 				"除此之外，本整合也会推荐几个整合中较为经典的&2器官build&r，以供玩家参考。"
 			]
@@ -24,7 +24,7 @@
 				id: "097FD920C0C1B7B5"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:silver_coin"
+					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
 				type: "item"
@@ -54,7 +54,7 @@
 				id: "43F99A327E4ACF07"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -109,7 +109,7 @@
 				id: "49B6BBD79E03243D"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -156,7 +156,7 @@
 				id: "22C2328AF0E97312"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -178,7 +178,7 @@
 				id: "1189918799852F1C"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -200,7 +200,7 @@
 				id: "08B7D5C3D726FD6F"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -227,7 +227,7 @@
 				id: "6CA1F903669BF0E3"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -256,7 +256,7 @@
 				id: "7C9E76EF605EA50E"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -298,7 +298,7 @@
 				id: "17F97723C16683CB"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -426,7 +426,7 @@
 				id: "18D04D2BC9470552"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"
@@ -453,7 +453,7 @@
 				id: "3D9759FFDEF7926B"
 				item: {
 					Count: 1
-					id: "numismaticoverhaul:gold_coin"
+					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
 				type: "item"

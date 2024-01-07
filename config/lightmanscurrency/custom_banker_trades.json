@@ -1,0 +1,548 @@
+{
+  "TradesLevel1": [
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 5
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:coinmint",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 2,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_gold",
+        "Count": 1
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:atm",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 2,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 5
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:cash_register",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 1,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 4
+      },
+      "Price2": {
+        "ID": "lightmanscurrency:coin_copper",
+        "Count": 8
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:trading_core",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 1,
+      "PriceMult": 0.05
+    }
+  ],
+  "TradesLevel2": [
+    {
+      "Type": "lightmanscurrency:random_selection",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 6
+      },
+      "Sell": [
+        {
+          "ID": "lightmanscurrency:shelf_oak",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:shelf_birch",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:shelf_spruce",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:shelf_jungle",
+          "Count": 1
+        }
+      ],
+      "MaxTrades": 12,
+      "XP": 5,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:random_selection",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 6
+      },
+      "Sell": [
+        {
+          "ID": "lightmanscurrency:shelf_acacia",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:shelf_dark_oak",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:shelf_mangrove",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:shelf_crimson",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:shelf_warped",
+          "Count": 1
+        }
+      ],
+      "MaxTrades": 12,
+      "XP": 5,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 10
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:display_case",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 5,
+      "PriceMult": 0.05
+    }
+  ],
+  "TradesLevel3": [
+    {
+      "Type": "lightmanscurrency:random_selection",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 15
+      },
+      "Sell": [
+        {
+          "ID": "lightmanscurrency:card_display_oak",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:card_display_birch",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:card_display_spruce",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:card_display_jungle",
+          "Count": 1
+        }
+      ],
+      "MaxTrades": 12,
+      "XP": 10,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:random_selection",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 15
+      },
+      "Sell": [
+        {
+          "ID": "lightmanscurrency:card_display_acacia",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:card_display_dark_oak",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:card_display_mangrove",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:card_display_crimson",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:card_display_warped",
+          "Count": 1
+        }
+      ],
+      "MaxTrades": 12,
+      "XP": 10,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 20
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:armor_display",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 10,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 15
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:item_trader_server_sml",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 10,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 10
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:terminal",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 10,
+      "PriceMult": 0.05
+    }
+  ],
+  "TradesLevel4": [
+    {
+      "Type": "lightmanscurrency:random_selection",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 25
+      },
+      "Sell": [
+        {
+          "ID": "lightmanscurrency:vending_machine_magenta",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_pink",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_gray",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_orange",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_yellow",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_lime",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_blue",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_cyan",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_light_blue",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_red",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_light_gray",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_brown",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_purple",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_green",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_black",
+          "Count": 1
+        }
+      ],
+      "MaxTrades": 12,
+      "XP": 15,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 30
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:item_trader_server_med",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 15,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:random_selection",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 30
+      },
+      "Sell": [
+        {
+          "ID": "lightmanscurrency:freezer_magenta",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_pink",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_gray",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_white",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_orange",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_yellow",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_lime",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_blue",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_cyan",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_light_blue",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_red",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_light_gray",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_brown",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_purple",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer_green",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:freezer",
+          "Count": 1
+        }
+      ],
+      "MaxTrades": 12,
+      "XP": 20,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_diamond",
+        "Count": 15
+      },
+      "Sell": {
+        "ID": "minecraft:enchanted_book",
+        "Count": 1,
+        "Tag": "{StoredEnchantments:[{id:\"lightmanscurrency:money_mending\",lvl:1s}]}"
+      },
+      "MaxTrades": 12,
+      "XP": 20,
+      "PriceMult": 0.05
+    }
+  ],
+  "TradesLevel5": [
+    {
+      "Type": "lightmanscurrency:random_selection",
+      "Price": {
+        "ID": "lightmanscurrency:coin_iron",
+        "Count": 25
+      },
+      "Sell": [
+        {
+          "ID": "lightmanscurrency:vending_machine_large_magenta",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_pink",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_gray",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_orange",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_yellow",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_lime",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_blue",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_cyan",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_light_blue",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_red",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_light_gray",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_brown",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_purple",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_green",
+          "Count": 1
+        },
+        {
+          "ID": "lightmanscurrency:vending_machine_large_black",
+          "Count": 1
+        }
+      ],
+      "MaxTrades": 12,
+      "XP": 30,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_gold",
+        "Count": 6
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:item_trader_server_lrg",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 30,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_gold",
+        "Count": 10
+      },
+      "Sell": {
+        "ID": "lightmanscurrency:item_trader_server_xlrg",
+        "Count": 1
+      },
+      "MaxTrades": 12,
+      "XP": 30,
+      "PriceMult": 0.05
+    },
+    {
+      "Type": "lightmanscurrency:simple",
+      "Price": {
+        "ID": "lightmanscurrency:coin_diamond",
+        "Count": 10
+      },
+      "Sell": {
+        "ID": "minecraft:enchanted_book",
+        "Count": 1,
+        "Tag": "{StoredEnchantments:[{id:\"lightmanscurrency:money_mending\",lvl:1s}]}"
+      },
+      "MaxTrades": 12,
+      "XP": 30,
+      "PriceMult": 0.05
+    }
+  ]
+}

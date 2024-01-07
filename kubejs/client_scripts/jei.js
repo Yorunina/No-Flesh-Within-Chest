@@ -18,4 +18,6 @@ JEIEvents.information(event => {
     event.addItem('kubejs:leviathan_rib', Text.black('利维亚桑的肋骨可以在利维亚桑的胸腔中获得'))
     event.addItem('kubejs:bone_soul', Text.black('骨剑顽魂可以在独眼骷髅的胸腔中获得'))
     event.addItem('kubejs:heart_of_blade', Text.black('剑之心可以在冷血杀手的胸腔中获得'))
+    event.addItem('kubejs:god_bless_empty_necklace', Text.black('神恩项链掉落于常规维度地牢的高级战利品宝箱中'))
+    event.addItem('kubejs:redstone_chipset', Text.black('红石芯片可以在电子脉冲头的胸腔中获得'))
 })
