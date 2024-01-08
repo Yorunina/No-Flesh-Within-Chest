@@ -871,6 +871,14 @@
 			x: 18.5d
 			y: 0.0d
 		}
+		{
+			dependencies: ["00E3E147FC750C90"]
+			id: "77ED5164610655DB"
+			subtitle: "或许，魔法才是这个世界的正统？"
+			title: "Iron的魔法书"
+			x: 3.0d
+			y: -1.75d
+		}
 	]
 	title: "章节2：觉醒"
 }

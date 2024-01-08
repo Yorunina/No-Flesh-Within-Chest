@@ -1,5 +1,5 @@
 {
-  "bookGuiScale": 0,
+  "bookGuiScale": 3,
   "clickedVisualize": true,
   "bookData": {
     "dimdungeons:guide_book": {
@@ -24,7 +24,14 @@
     },
     "irons_spellbooks:iss_guide_book": {
       "viewedEntries": [
-        "irons_spellbooks:progression/early_game"
+        "irons_spellbooks:progression/early_game",
+        "irons_spellbooks:spell_books/scrolls",
+        "irons_spellbooks:progression/late_game",
+        "irons_spellbooks:progression/mid_game",
+        "irons_spellbooks:progression/ink",
+        "irons_spellbooks:misc/schools",
+        "irons_spellbooks:spell_books/uncraftable_spell_books",
+        "irons_spellbooks:spell_books/craftable_spell_books"
       ],
       "bookmarks": [],
       "completedManualQuests": []

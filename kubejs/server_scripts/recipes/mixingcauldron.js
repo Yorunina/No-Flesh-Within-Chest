@@ -48,4 +48,8 @@ ServerEvents.recipes(event => {
     registeCustomRecipe(new MixingCauldronRecipe(
         [Ingredient.of('kubejs:magic_muscle'), Ingredient.of('minecraft:enchanted_book'), Ingredient.of('waystones:warp_dust'), Ingredient.of('waystones:warp_dust'), Ingredient.of('#forge:dusts/glowstone'), Ingredient.of('#forge:dusts/glowstone'), Ingredient.of('irons_spellbooks:arcane_essence'), Ingredient.of('irons_spellbooks:arcane_essence')],
         Item.of('kubejs:magic_hippocampus')))
+
+    registeCustomRecipe(new MixingCauldronRecipe(
+        [Ingredient.of('minecraft:ink_sac'), Ingredient.of('hexerei:dried_yellow_dock_flowers'), Ingredient.of('hexerei:dried_mugwort_flowers'), Ingredient.of('hexerei:dried_mugwort_flowers'), Ingredient.of('minecraft:glass_bottle'), Ingredient.of('minecraft:glass_bottle'), Ingredient.of('minecraft:glass_bottle'), Ingredient.of('minecraft:glass_bottle')],
+        Item.of('irons_spellbooks:common_ink').withCount(4)).setFluid('minecraft:water', 1000))
 })

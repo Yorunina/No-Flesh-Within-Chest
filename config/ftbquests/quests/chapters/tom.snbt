@@ -28,6 +28,7 @@
 				}
 				type: "item"
 			}]
+			shape: "rsquare"
 			tasks: [{
 				id: "2C6577D17B5B135D"
 				title: "我已了解"
@@ -221,6 +222,7 @@
 				title: "这是还给你的"
 				type: "item"
 			}]
+			shape: "octagon"
 			tasks: [
 				{
 					id: "59044A90A537E525"

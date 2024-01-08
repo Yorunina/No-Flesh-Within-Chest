@@ -5,6 +5,19 @@
 	group: "0241B51B931E1ED2"
 	icon: "create:wrench"
 	id: "68FC9ADE605CB4D9"
+	images: [{
+		alpha: 128
+		click: ""
+		corner: false
+		dev: false
+		height: 15.0d
+		hover: [ ]
+		image: "kubejs:textures/task/create_background.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: -0.25d
+		y: 1.25d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -17,7 +30,7 @@
 				""
 				"但正如前文所说，机械动力等科技Mod&2学习成本较高&r，且对游戏体验的影响很大，所以本篇章中除了介绍机械动力的机器相关内容外，包含了一些&2实践教学&r。尽可能的真正教会玩家如何去使用机械动力。（虽然整合包作者本身也非常反感机械动力中的复杂设计）"
 				""
-				"如果你对内容实在是感到困惑，也可以选择在商店页面直接&5购买胶囊&r，通过右键使用后，可以直接构建起来完整的&2成品/半成品&r的机器。"
+				"如果你对内容实在是感到困惑，也可以选择在商店页面直接&6购买胶囊&r，通过右键使用后，可以直接构建起来完整的&2成品/半成品&r的机器。"
 			]
 			icon: "create:wrench"
 			id: "4EB8FE041AB6DA8E"
@@ -40,8 +53,8 @@
 				type: "checkmark"
 			}]
 			title: "引言：为什么要发展机械动力"
-			x: 0.0d
-			y: -1.25d
+			x: -0.25d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0861DDE9767A3E9D"]
@@ -86,8 +99,8 @@
 				}
 			]
 			title: "机械动力：快捷模式"
-			x: -8.25d
-			y: -2.0d
+			x: 0.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["6C7A1C7252229459"]
@@ -120,8 +133,8 @@
 				}
 			]
 			title: "更多的自动化"
-			x: 2.5d
-			y: -1.25d
+			x: -1.25d
+			y: -2.0d
 		}
 		{
 			dependencies: ["10A1552945CF569F"]
@@ -154,8 +167,8 @@
 				type: "item"
 			}]
 			title: "新的挑战"
-			x: 1.5d
-			y: 0.75d
+			x: -0.25d
+			y: -3.75d
 		}
 		{
 			dependencies: ["3A98FA709F0DEA42"]
@@ -189,8 +202,8 @@
 				type: "item"
 			}]
 			title: "水车、风车与动力源"
-			x: -1.5d
-			y: 0.5d
+			x: 0.75d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4EB8FE041AB6DA8E"]
@@ -229,8 +242,8 @@
 				}
 			]
 			title: "特殊的矿物？"
-			x: 0.0d
-			y: 1.0d
+			x: -0.25d
+			y: -2.5d
 		}
 		{
 			dependencies: ["1112F6121BC5A1E5"]
@@ -269,8 +282,8 @@
 				type: "item"
 			}]
 			title: "自动化"
-			x: 0.0d
-			y: -3.75d
+			x: -1.5d
+			y: 0.25d
 		}
 		{
 			dependencies: ["0FC81607771D0F71"]
@@ -298,8 +311,8 @@
 				type: "item"
 			}]
 			title: "基础机械"
-			x: -1.25d
-			y: -3.25d
+			x: -0.25d
+			y: 0.75d
 		}
 		{
 			dependencies: ["0C5511D51B5FF508"]
@@ -326,8 +339,8 @@
 				type: "item"
 			}]
 			title: "更复杂的装置"
-			x: 1.75d
-			y: -3.25d
+			x: -1.75d
+			y: -1.0d
 		}
 		{
 			dependencies: ["10E8E39F44A11EC0"]
@@ -370,8 +383,8 @@
 				}
 			]
 			title: "大工程"
-			x: 3.0d
-			y: 2.0d
+			x: -0.25d
+			y: -5.0d
 		}
 		{
 			dependencies: ["10A1552945CF569F"]
@@ -404,8 +417,8 @@
 				}
 			]
 			title: "更多的自动化+1"
-			x: 4.25d
-			y: -1.25d
+			x: -2.75d
+			y: -3.25d
 		}
 		{
 			dependencies: ["6C7A1C7252229459"]
@@ -432,8 +445,8 @@
 				type: "item"
 			}]
 			title: "更多选择"
-			x: 3.0d
-			y: -4.5d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0C5511D51B5FF508"]
@@ -473,8 +486,8 @@
 				type: "item"
 			}]
 			title: "分拣"
-			x: 0.0d
-			y: -5.5d
+			x: -2.75d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1112F6121BC5A1E5"]
@@ -495,16 +508,6 @@
 					item: "minecraft:water_bucket"
 					type: "item"
 				}
-				{
-					count: 2
-					id: "67D4E0FAA86A08E0"
-					item: {
-						Count: 1
-						id: "numismaticoverhaul:bronze_coin"
-						tag: { }
-					}
-					type: "item"
-				}
 			]
 			subtitle: "吹起来"
 			tasks: [{
@@ -513,8 +516,8 @@
 				type: "item"
 			}]
 			title: "冶炼矿物"
-			x: -2.5d
-			y: -5.0d
+			x: -0.25d
+			y: 2.25d
 		}
 		{
 			dependencies: ["44E0A5B43FB1506F"]
@@ -550,8 +553,8 @@
 				}
 			]
 			title: "应力检测员"
-			x: -5.0d
-			y: -0.75d
+			x: 3.25d
+			y: -1.0d
 		}
 		{
 			dependencies: ["24EEB667413FCADC"]
@@ -578,8 +581,8 @@
 				type: "item"
 			}]
 			title: "安山机壳"
-			x: -2.5d
-			y: -0.75d
+			x: 1.25d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0D9604AADEFFED29"]
@@ -593,7 +596,7 @@
 			}]
 			title: "小憩一番"
 			x: 1.0d
-			y: 5.5d
+			y: 3.75d
 		}
 		{
 			dependencies: ["2A1490F82D8F6F10"]
@@ -612,7 +615,7 @@
 			}]
 			title: "烈焰蛋糕"
 			x: 3.0d
-			y: 5.5d
+			y: 3.75d
 		}
 		{
 			dependencies: ["0861DDE9767A3E9D"]
@@ -638,8 +641,8 @@
 				type: "item"
 			}]
 			title: "更好的搅拌"
-			x: -3.0d
-			y: 5.5d
+			x: -3.25d
+			y: 3.75d
 		}
 		{
 			dependencies: ["75EA9654A6522F50"]
@@ -658,8 +661,8 @@
 				type: "item"
 			}]
 			title: "工人们的食物"
-			x: -1.0d
-			y: 5.5d
+			x: -1.25d
+			y: 3.75d
 		}
 		{
 			dependencies: ["24EEB667413FCADC"]
@@ -703,8 +706,8 @@
 				type: "checkmark"
 			}]
 			title: "思索"
-			x: -2.25d
-			y: 3.0d
+			x: 2.25d
+			y: -3.25d
 		}
 		{
 			dependencies: ["44E0A5B43FB1506F"]
@@ -737,8 +740,8 @@
 				}
 			]
 			title: "变速原理"
-			x: -2.25d
-			y: -2.25d
+			x: 1.0d
+			y: 0.25d
 		}
 		{
 			dependencies: ["0FC81607771D0F71"]
@@ -767,8 +770,8 @@
 				type: "item"
 			}]
 			title: "加速！使用动力搅拌器！"
-			x: -4.25d
-			y: -3.5d
+			x: 2.25d
+			y: 1.5d
 		}
 	]
 	title: "机械动力：让万物旋转"

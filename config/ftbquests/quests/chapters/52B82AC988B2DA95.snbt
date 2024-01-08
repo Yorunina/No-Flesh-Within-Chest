@@ -56,17 +56,6 @@
 			incompatible: ["1C3CABF6FA4DBB44"]
 			rewards: [
 				{
-					count: 3
-					id: "1042CEF7833487F9"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					title: "还给你的银币"
-					type: "item"
-				}
-				{
 					count: 2
 					id: "19AFEF778BCA0ADB"
 					item: {
@@ -79,6 +68,12 @@
 				{
 					id: "1C90DB9E9DB53733"
 					item: "simplehats:hatbag_epic"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4008ABC9261FC014"
+					item: "lightmanscurrency:coin_iron"
 					type: "item"
 				}
 			]

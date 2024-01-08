@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "tetra"
 	group: "0241B51B931E1ED2"
@@ -18,6 +18,19 @@
 		}
 	}
 	id: "69A9CF68FED068D9"
+	images: [{
+		alpha: 128
+		click: ""
+		corner: false
+		dev: false
+		height: 40.0d
+		hover: [ ]
+		image: "kubejs:textures/task/tetra_background.png"
+		rotation: 0.0d
+		width: 40.0d
+		x: 0.25d
+		y: 22.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -66,8 +79,8 @@
 				type: "checkmark"
 			}]
 			title: "引言：Tetra的存在意义"
-			x: 1.25d
-			y: -2.5d
+			x: 1.0d
+			y: 18.25d
 		}
 		{
 			dependencies: ["538FC6DDC204DBFA"]
@@ -126,20 +139,17 @@
 				}
 			]
 			title: "Tetra：快捷模式"
-			x: -6.5d
-			y: -2.0d
+			x: 1.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["781312928C5C3155"]
 			description: [
-				"手持&6锤子&r右键&6工作台&r，以获取本模组的&e核心道具&r——&6加工台&r。"
+				"手持&6锤子&r右键&6工作台&r，以获取本模组的核心道具——&6加工台&r。"
 				""
-				"&e原版工具&r需要&e经过一次&r&6加工台&r&e改造&r后，才能使其附带上Tetra模组的属性，&e使其变得可成长&r。"
+				"原版工具需要经过一次加工台改造后，才能使其附带上Tetra模组的属性，使其变为Tetra装备。"
 				""
-				"该工具在耐久为0时&e不会消失&r，而是转变成&a破损状态&r。"
-				""
-				"破损的工具在加工台上&e进行修复可以让其重新被使用&r。"
-				""
+				"Tetra加工台的界面较为复杂，但可以分为绿色的属性区、红色的部件区、蓝色的操作区和左侧紫色的切换区。"
 				""
 				"{image:kubejs:textures/task/tetra_1.png width:160 height:90 align:1}"
 			]
@@ -152,28 +162,24 @@
 				type: "item"
 			}]
 			title: "了解加工台"
-			x: 1.25d
-			y: 1.0d
+			x: -0.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["781312928C5C3155"]
 			description: [
-				"&cPage1:&r 在&e第一次制作锤子&r时会获得系统&e赠送的全息球&r。（木锤和石锤均可）"
+				"在&e第一次制作锤子&r时会获得系统&e赠送的全息球&r。（木锤和石锤均可）"
 				""
 				"&6全息球&r是一个全面性、不是很便于理解的&e说明书&r。"
 				""
 				"手持全息球&e右键&r可以投射专用界面查看&e工具种类、部件以及材料的属性&r，"
 				""
-				"若不小心&e丢失&r，则在探索到相应遗迹&e之前无法重新获得&r。"
+				"若不小心丢失，则在探索到相应遗迹之前无法重新获得。"
 				""
 				"{@pagebreak}"
-				"&cPage2:&r 全息球也拥有着两个&e升级槽位&r，在后续可以对其进行&e加装末影之眼&r的改造升级用于在&d地下寻找远古锻造遗迹&r。"
+				"全息球也拥有着两个&e升级槽位&r，在后续可以对其进行&e加装末影之眼&r的改造升级用于在&d地下寻找远古锻造遗迹&r。"
 				""
-				"也可以&e用于寻找远古残骸&r，副手携带时，当你&e附近存在这些东西且指针方向指向他们&r时，HUD会显示&e橙色波纹&r。"
-				""
-				"右键打开全息球时，&e游戏进程将被暂停&r，以供阅读文字。"
-				""
-				"&c不要丢失！&r"
+				"也可以&e用于寻找远古残骸&r，副手携带时，当你附近存在这些东西且指针方向指向他们时，HUD会显示橙色波纹。"
 			]
 			id: "4632D20D50741511"
 			rewards: [{
@@ -207,17 +213,17 @@
 				}
 				type: "item"
 			}]
-			x: -0.25d
-			y: -1.25d
+			x: -0.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["312A09022249980F"]
 			description: [
 				"工具的分类大致可以分为&e腰带，双头工具，单头工具&r。"
 				""
-				"有时对工具改造可以获得&e方便游戏&r生活的作用不仅仅体现在&e采掘资源&r上。"
+				"有时对工具改造可以获得方便游戏生活的作用不仅仅体现在采掘资源上。"
 				""
-				"将对一些工具&e可以改装的方向&r进行简要描述，来&e为玩家&r的改装&e提供思路&r。"
+				"将对一些工具可以改装的方向进行简要描述，来为玩家的改装提供思路。"
 			]
 			icon: "witherstormmod:command_block_pickaxe"
 			id: "6DCBC9E0C68FCAB4"
@@ -238,71 +244,21 @@
 				type: "checkmark"
 			}]
 			title: "改造工具"
-			x: 3.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["4632D20D50741511"]
-			description: [
-				"&cPage1：&r"
-				"&e右键全息球&r后展开在眼前的是&e工具和武器&r的分类。"
-				""
-				"Tetra模组将工具和武器&e重新划分&r为不同的体系。因此不同体系的工具具有&e不同的改造设定&r。"
-				""
-				"位于&b初始界面最上层的三个英文单词&r分别对应了 \"工具&e制作与改装&r分区\"、\"&e建筑种类&r\"、\"&e系统&r\"这三个分区，点击可以进入不同分区。建筑和系统分区&e暂时以乱码方式&r存在。"
-				"{@pagebreak}"
-				"&cPage2：&r"
-				"              以\"双头工具\"区块为例"
-				""
-				"点击&e双头工具&r可以查看可参与改装的&e部件分区&r。"
-				""
-				"双头工具具有一个手柄区、两个头部区、一个绑定结区。"
-				""
-				"这些分区相当于改变了原本工具只有一种材料属性的局面，改善了工具属性，同时&e改善了一些维修成本&r。"
-				""
-				"分别点击可查看同属于该部件区的&e具体部件种类&r。"
-				""
-				"不同的部件种类提供不同的工具效果，根据需要自定义属于你的工具或武器。"
-				"{@pagebreak}"
-				"&cPage3："
-				"&r选定部件种类后，查看可构成该种类的相关材料。"
-				""
-				"你可以通过&eQ键&r回退到上一级菜单。"
-				""
-				"在材料分类界面，根据材料的本质属性，将&e材料划分为不同大区，如：木、石、金属&r 等。"
-				""
-				"划分材料大区的文字上方，具有&e若干小型图标&r："
-				""
-				"介绍--第一、二个图标分别介绍该部件种类的功能和该部件材料的选取对工具整体效果的影响；"
-				""
-				"筛选--第三、四个图标&e可以点击&r筛选想要的属性，以数值形式呈现不同材料在某些方面的性能情况;第四个图标以输入具体名称筛选材料，&e按Ender取消和开启输入&r。"
-				""
-				"{@pagebreak}"
-				"&cPage4：&r"
-				"选定某项材料后，可查看以该材料构成部件种类&e需要的材料耗费&r、&e参数数值&r、&e改造工具等级&r。"
-				""
-				"对部件种类材质更替之前需要先获取对应等级的改造工具，否则无法完成材质的替换。"
-				""
-				"若该部件有其他&e改进&r方式，如：&e对该部件进行附魔、裹上某种材料&r，则在下方提示数量，点击进入查看,&b滚动鼠标滚轮&r查看未完全显示的条目。"
-			]
-			id: "1B3A45C7AB36546F"
-			subtitle: "不需要逐字逐句的阅读"
-			title: "全息球的各项UI"
-			x: -1.5d
-			y: -1.25d
+			x: -2.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["6DCBC9E0C68FCAB4"]
 			description: [
-				"双头工具以其&e两个头部区&r著名，双头的特点&e可以实现很多功能&r。"
+				"双头工具以其两个头部区著名，双头的特点是可以实现很多功能。"
 				""
-				"&e锤子&r作为基础改造工具，&e对锤子进行升级&r贯穿Tetra的始终。"
+				"锤子作为基础改造工具，对锤子进行升级贯穿Tetra的始终。"
 				""
-				"对一把&e镐类工具&r来说，&e大规模的采掘&r将是一个重要选择，将在&c遗迹&r中获得的&6地底提取器&r&c安装在右端头部区&r上可以获得&e3x3的采掘范围&r。（&7任何双头工具都可以安装这个部件以获得该项能力&r）"
+				"对一把镐类工具来说，大规模的采掘将是一个重要选择，将在&c遗迹&r中获得的&6地底提取器&r安装在右端头部区上可以获得&e3x3的采掘范围&r。（任何双头工具都可以安装这个部件以获得该项能力）"
 				""
-				"&e斧镐&r，将头部区的其中之一换成&e斧头或扁斧&r，你将得到一把&e多功能采掘工具&r。"
+				"斧镐，将头部区的其中之一换成&e斧头或扁斧&r，你将得到一把&e多功能采掘工具&r。"
 				""
-				"&e打开&r&c遗迹&r中的&e板条箱或锻造容器&r需要具有羊角锤功能的工具，其能提供&e“撬开物体”&r的功能。"
+				"打开遗迹中的板条箱或锻造容器需要具有羊角锤功能的工具，其能提供&e撬开物体&r的功能。"
 			]
 			icon: {
 				Count: 1b
@@ -326,19 +282,19 @@
 				type: "checkmark"
 			}]
 			title: "双头工具"
-			x: 6.0d
-			y: 0.25d
+			x: -3.25d
+			y: 16.25d
 		}
 		{
 			dependencies: ["6DCBC9E0C68FCAB4"]
 			description: [
-				"将单头工具的&e头部改成“拐杖”&r，可以获得其&e辅助人们行走&r的效果--&e手持加快行走速度&r。"
+				"将单头工具的头部改成&6拐杖&r，可以获得其辅助人们行走的效果——手持加快行走速度。"
 				""
-				"将&e手柄&r改成&e轻手柄&r可以获得投掷属性，配合&a忠诚附魔&r可以充当&e三叉戟&r，"
+				"将手柄改成&6轻手柄&r可以获得投掷属性，配合&a忠诚附魔&r可以充当三叉戟，"
 				""
-				"如果此时将&e头部&r改造成&6凿地器&r可以实现&e远程破坏方块&r的功能。"
+				"如果此时将头部改造成&6凿地器&r可以实现程破坏方块的功能。"
 				""
-				"将&e手柄改成长手柄&r可以获得&a长臂&r的效果，获得&e更远的触及距离&r。"
+				"将手柄改成&6长手柄&r可以获得长臂的效果，获得更远的触及距离。"
 			]
 			icon: {
 				Count: 1b
@@ -355,17 +311,17 @@
 				type: "checkmark"
 			}]
 			title: "单头工具"
-			x: 6.0d
-			y: 1.5d
+			x: -4.25d
+			y: 18.0d
 		}
 		{
 			dependencies: ["312A09022249980F"]
 			description: [
-				"对传统&e武器进行改装&r可以让他们获得&e新的攻击特性或工具特性&r。"
+				"对传统武器进行改装可以让他们获得新的攻击特性或工具特性。"
 				""
-				"或许某些&e新的攻击特性&r能让人重拾对一些武器的热爱和开拓“&e打伤害”&r的新思路。"
+				"或许某些新的攻击特性能让人重拾对一些武器的热爱和开拓新思路。"
 				""
-				"将对一些武器&e可以改装的方向&r进行简要描述，来&e为玩家&r的改装&e提供思路&r。"
+				"本部分将对一些武器&e可以改装的方向&r进行简要描述，来为玩家的改装提供思路。"
 			]
 			icon: "witherstormmod:command_block_sword"
 			id: "7E7580FC10C7CB80"
@@ -376,8 +332,8 @@
 				type: "checkmark"
 			}]
 			title: "改造武器"
-			x: -1.0d
-			y: 1.0d
+			x: 3.0d
+			y: 18.0d
 		}
 		{
 			dependencies: ["7E7580FC10C7CB80"]
@@ -405,17 +361,15 @@
 				type: "checkmark"
 			}]
 			title: "弓"
-			x: -3.5d
-			y: 1.5d
+			x: 3.0d
+			y: 20.75d
 		}
 		{
 			dependencies: ["7E7580FC10C7CB80"]
 			description: [
 				"对盾牌的&6盾心&r进行改造可以获得&e盾击眩晕&r的功能。"
 				""
-				"&6气动力镶边&r改造可以让盾牌具有&a投掷属性&r，"
-				""
-				"&e按住shift同时右键格挡并释放&r，扔出盾牌痛击敌人。"
+				"&6气动力镶边&r改造可以让盾牌具有&a投掷属性&r。按住shift同时右键格挡并释放，扔出盾牌痛击敌人。"
 			]
 			icon: {
 				Count: 1b
@@ -432,15 +386,15 @@
 				type: "checkmark"
 			}]
 			title: "盾牌"
-			x: -3.5d
-			y: 0.25d
+			x: 4.25d
+			y: 16.75d
 		}
 		{
 			dependencies: ["7E7580FC10C7CB80"]
 			description: [
-				"武器&e也可以是工具&r，对&e剑刃头部&r进行&6军刀剑刃&r或&6短剑刃&r的&e改造&r，可以提高&e切削等级&r。"
+				"武器但也可以是工具，对&e剑刃头部&r进行&6军刀剑刃&r或&6短剑刃&r的改造，可以提高&e切削等级&r。"
 				""
-				"&e对护手的改造&r在找到&6原理图:坚固守卫&r的卷轴后可以解锁&e剑类的格挡&r，重现&e1.8版本的格挡方式&r。"
+				"对护手的改造在找到&6原理图:坚固守卫&r的卷轴后可以解锁&e剑类的格挡&r，重现旧版本的格挡方式。"
 			]
 			icon: {
 				Count: 1b
@@ -457,8 +411,8 @@
 				type: "checkmark"
 			}]
 			title: "刀剑"
-			x: -2.75d
-			y: -0.75d
+			x: 3.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["7E7580FC10C7CB80"]
@@ -478,19 +432,19 @@
 				type: "checkmark"
 			}]
 			title: "弩"
-			x: -2.75d
-			y: 2.5d
+			x: 4.25d
+			y: 19.25d
 		}
 		{
 			dependencies: ["6DCBC9E0C68FCAB4"]
 			description: [
-				"腰带可以&e加以改造来存储物品&r，或改造成&e运动工具&r。"
+				"腰带可以加以改造来存储物品，或改造成运动工具。"
 				""
-				"&c随身存储器&r：使用&e多种储存改装&r使腰带可以&e存储药水、箭矢和各种物品&r！"
+				"&c随身存储器&r：使用多种储存改装使腰带可以&e存储药水、箭矢和各种物品！"
 				""
-				"&c漂浮&r：使用&6平面稳定器&r改造，在&e激活后的信标&r范围内，在空中&e按跳跃键&r将&e允许你无限时间&r的漂浮。"
+				"&c漂浮&r：使用平面稳定器改造，在激活后的信标范围内，在空中按跳跃键将允许你无限时间的漂浮。"
 				""
-				"&c冲刺&r：安装&6助推器&r来获得&e穿着了火箭靴的能力&r和&e突进冲刺的能力&r。"
+				"&c冲刺&r：安装助推器来获得穿着了火箭靴的能力和突进冲刺的能力。"
 			]
 			icon: {
 				Count: 1b
@@ -532,22 +486,37 @@
 				type: "item"
 			}]
 			title: "腰带"
-			x: 5.0d
-			y: 2.5d
+			x: -3.25d
+			y: 19.75d
 		}
 		{
 			dependencies: ["312A09022249980F"]
 			description: [
 				"加工台可以让你的工具&e脱离铁砧进行修复&r，同样修理的规则也发生了改变。"
 				""
-				"在加工台进行&a改装过的工具将无法在铁砧上处理&r。"
-				""
 				"使用加工台修复工具，本质上是对部件种类的修复，因此修复&e不会只局限于一种材料&r。"
-				""
-				"现在，修复工具&e所需的材料&r将根据组成该工具的各个部件所使用的材料&e循环往复&r。"
-				""
-				"&b在这种设定下，降低了修复工具所需的材料，同时也避免了频繁使用易获得的材料进行工具修复的行为。&r"
 			]
+			icon: {
+				Count: 1b
+				id: "tetra:scroll_rolled"
+				tag: {
+					BlockEntityTag: {
+						data: [{
+							effects: ["tetra:gem_expertise"]
+							glyphs: [
+								14
+								13
+								14
+								15
+							]
+							intricate: 0b
+							key: "gem_expertise"
+							material: 0
+							ribbon: "2bffee"
+						}]
+					}
+				}
+			}
 			id: "5BA7E809A7B3037B"
 			rewards: [{
 				count: 10
@@ -566,20 +535,41 @@
 				type: "checkmark"
 			}]
 			title: "如何修理工具"
-			x: 3.0d
-			y: 2.5d
+			x: 0.25d
+			y: 19.5d
 		}
 		{
 			dependencies: ["312A09022249980F"]
 			description: [
 				"将原版工具放入加工台中，根据工具种类显现出&e可改造的部件&r种类，点击不同部件，可以&e定制该项部件&r的材料。"
 				""
-				"你可以将&e从初期就使用的工具&r，对其关键部件不断做出部件种类、材料的改造，使其&e属性和功能发生改变&r。"
+				"你可以将从初期就使用的工具，对其关键部件不断做出部件种类、材料的改造，使其属性和功能发生改变。"
 				""
-				"想要用&b高级材料&r制作工具的部件，需要&c更高等级的锤子&r。"
+				"想要用高级材料制作工具的部件，需要&c更高等级的锤子&r。"
 				""
 				"无脑使用高级材料并不能让你的工具变得更加强大，&e合理的搭配更为重要&r。"
 			]
+			icon: {
+				Count: 1b
+				id: "tetra:scroll_rolled"
+				tag: {
+					BlockEntityTag: {
+						data: [{
+							effects: ["tetra:cut_efficiency"]
+							glyphs: [
+								4
+								0
+								3
+								5
+							]
+							intricate: 0b
+							key: "cut_efficiency"
+							material: 0
+							ribbon: "6666ff"
+						}]
+					}
+				}
+			}
 			id: "47A7AEEFD24F1D7A"
 			rewards: [{
 				count: 10
@@ -598,25 +588,41 @@
 				type: "checkmark"
 			}]
 			title: "如何改造工具"
-			x: 1.25d
-			y: 2.5d
+			x: -1.25d
+			y: 19.5d
 		}
 		{
 			dependencies: ["312A09022249980F"]
 			description: [
-				"工具的&e强化&r可以分为 "
-				"&d①&r“使用过程中积累&a打磨值&r强化” "
-				"&c②&r“额外&e改装强化&r”               "
+				"工具的强化可以分为 "
+				"1 . 使用过程中积累&6打磨值&r强化"
+				"2 . 额外&6改装&r强化              "
 				""
+				"在使用过程中，会增加工具的整体打磨值，当打磨值进度条满时屏幕右上角将弹出提示，此时可以在加工台选择一个部件对其属性选择&6打磨升级&r。"
 				""
-				"&d①&r在使用过程中，会增加工具的&a整体打磨值&r，当打磨值进度条满时屏幕右上角将&b弹出提示&r，此时可以在&6加工台&r选择一个部件对其属性选择打磨升级。"
-				""
-				"&b越高级&r的材料组成的部件，想要得到升级需要的打磨值&b越多&r。"
-				""
-				"受过打磨强化过的部件如果&e更换部件种类或材质&r，则该项部件的打磨升级带来的&e增益将消失&r。"
-				""
-				"&c②&r每个部件可以被视为独立的个体，对不同部件可以分别进行&e附魔&r或者对该项部件进行&e“再改造”&r。"
+				"每个部件可以被视为独立的个体，对不同部件可以分别进行&e附魔&r或者对该项部件进行&e再改造&r。"
 			]
+			icon: {
+				Count: 1b
+				id: "tetra:scroll_rolled"
+				tag: {
+					BlockEntityTag: {
+						data: [{
+							effects: ["tetra:scale_expertise"]
+							glyphs: [
+								6
+								7
+								6
+								8
+							]
+							intricate: 0b
+							key: "scale_expertise"
+							material: 0
+							ribbon: "75a03e"
+						}]
+					}
+				}
+			}
 			id: "6F6EA56EB887392B"
 			rewards: [{
 				count: 10
@@ -636,22 +642,29 @@
 			}]
 			title: "如何强化工具"
 			x: -0.5d
-			y: 2.5d
+			y: 21.0d
 		}
 		{
 			dependencies: ["674E912F6FFC7F67"]
 			description: [
 				"锤子是Tetra中用于改造其他工具的&e最基本工具&r，对它具有清晰的概念具有重要意义："
 				""
-				"①&6加工台&r的获得离不开锤子。"
+				"1 . 加工台的获得离不开锤子。"
 				""
-				"②对某项工具的&e部件材料更改&r基本离不开锤子。"
+				"2 . 对某项工具的&e部件材料更改&r基本离不开锤子。"
 				""
-				"&e锤子具有等级&r这一属性，高级材料的替换需要高级锤子。"
+				"锤子具有等级这一属性，高级材料的替换需要高级锤子。"
 				""
-				"&o※当发现&b无法使用某项材料&r&o制作部件时，不妨看看你的&r&c&o锤子等级&r&r&o是否够格。&r&r"
+				"当发现无法使用某项材料制作部件时，不妨看看你的锤子等级是否满足要求。"
 				""
-				"&o&c锤子等级：&r&r&o这里的&r&e&o锤子等级&r&r&o指的是改造某项部件需要的前置条件的等级。如：对弓的部件改造，用到的&e切削等级&r&o也可以&r&r&e&o抽象的理解&r&r&o为锤子等级&r&r。"
+				"{@pagebreak}"
+				"使用工作台最多合成出等级为2的锤子。"
+				""
+				"将木锤或圆石锤放在加工台上，对两个头部区都进行更高等级材料的替换，可获得等级+1的锤子。"
+				""
+				"但在对想要升级的&e锤子改造&r时，你需要&e另外一把&r锤子。"
+				""
+				"对&a等级为4的锤子&r进行改造升级，仅靠上述步骤无法实现--需要寻找&a远古废墟&r，那里有升级的必须物品。"
 			]
 			icon: {
 				Count: 1b
@@ -669,9 +682,8 @@
 			}
 			id: "781312928C5C3155"
 			rewards: [{
-				count: 10
-				id: "79BBF33BD1225BA0"
-				item: "minecraft:blackstone"
+				id: "6558AE9535E990DC"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "辅助改造的工具"
@@ -695,43 +707,11 @@
 				type: "item"
 			}]
 			title: "锤"
-			x: 1.25d
-			y: -1.0d
+			x: -0.5d
+			y: 15.0d
 		}
 		{
-			description: [
-				"原版工具在&6加工台&r上被&e改造&r一次后就会被附加&e打磨值&r这个属性，"
-				""
-				"对工具进行对应功能的&e使用&r可以&e增加工具整体的打磨值&r，"
-				""
-				"当打磨值&e进度条满&r时，工具可以在加工台上对其中部件选择一条&e升级属性&r，"
-				""
-				"升级属性本身&e具有上限&r，在选择属性升级时，有时会占据&a完整度&r。"
-				""
-				"各个部件在被使用的时候会逐渐被&a固定&r，获得“&e稳固&r”这一属性。"
-			]
-			id: "53D8C3E45C9D0F0C"
-			rewards: [{
-				count: 10
-				id: "440E2F812C75F7CE"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "谨慎的选择，强化亦有条件"
-			tasks: [{
-				id: "74C15ACE3193F22C"
-				title: "我知道了"
-				type: "checkmark"
-			}]
-			title: "工具的打磨值"
-			x: 1.25d
-			y: 5.0d
-		}
-		{
+			dependencies: ["6F6EA56EB887392B"]
 			description: [
 				"              &d以\"双头工具\"区块为例&r"
 				""
@@ -742,6 +722,27 @@
 				""
 				"当头部区两个部件&e均为铁制镐头部件&r，该工具&e可以开采&r钻石级及以下矿物"
 			]
+			icon: {
+				Count: 1b
+				id: "tetra:scroll_rolled"
+				tag: {
+					BlockEntityTag: {
+						data: [{
+							effects: ["tetra:bone_expertise"]
+							glyphs: [
+								12
+								14
+								12
+								14
+							]
+							intricate: 0b
+							key: "bone_expertise"
+							material: 0
+							ribbon: "fff193"
+						}]
+					}
+				}
+			}
 			id: "56C75C9FAD3CEC66"
 			rewards: [{
 				count: 10
@@ -760,43 +761,38 @@
 				type: "checkmark"
 			}]
 			title: "工具的等级"
-			x: 1.25d
-			y: 8.75d
+			x: -0.5d
+			y: 26.75d
 		}
 		{
+			dependencies: ["4632D20D50741511"]
 			description: [
-				"&cPage1：&r"
-				"这是获得&a5级锤&r的&e必要建筑&r。"
+				"这是获得&a5级锤&r的必要建筑。"
 				""
-				"在雪原地形的下方生成的&e远古锻造遗迹&r中寻找到&6锻造加工台&r。&7（可以用&r&6探险家指南针&r&7寻找结构）&r"
+				"在雪原地形的下方生成的&e远古锻造遗迹&r中寻找到&6锻造加工台&r。"
+				"可以用探险家指南针寻找结构）"
 				""
-				"用符合等级的&6锤子或羊角锤&r对准&e高亮显示的位置右键&r破开在遗迹中发现的&6板条箱和锻造容器&r，可以&e获得相应的资源&r。"
+				"用符合等级的锤子或羊角锤对准高亮显示的位置右键破开在遗迹中发现的板条箱和锻造容器&r，可以获得相应的资源。"
 				""
-				"将找到的&6燃烧室&r和&6热力单元（Thermal-ceil）&r&e对应放入&r锻造加工台正上方的&6锻造锤&r&e表面的凹槽&r处，"
+				"将找到的&6燃烧室&r和&6热力单元（Thermal-ceil）&r对应放入锻造加工台正上方的&6锻造锤&r表面的凹槽处，"
 				""
-				"此时放入&a4级锤&r，可以对其进行&a等级5&r部件的改造。"
+				"此时放入4级锤，可以对其进行等级5部件的改造。"
 				""
 				"{@pagebreak}"
-				"&cPage2: &r "
-				"一切准备就绪后，对4级锤&e更换&a5级材料&r时，也可&e能发生加工过程中的阻塞&r，"
+				"一切准备就绪后，对4级锤更换5级材料时，也可能发生加工过程中的阻塞，"
 				""
 				"--此时需要用对应等级的锤子&e对其高亮部位右键击打&r以完成更换过程。"
 				""
-				"更换锤头过程中&e也可能发生对周围方块点燃&r的现象，"
-				""
-				"&7这或许是远古遗迹生成在雪原地形的原因&r。"
+				"更换锤头过程中也可能发生对周围方块点燃的现象，"
 				""
 				"{@pagebreak}"
-				"&cPage3：&r "
-				"就像这个介绍文本分成&e3页&r一样，&6锻造容器&r中也&e被分成了3页&r，其中的资源还是相对丰富的。"
+				"在板条箱和锻造容器中还可以找到其他一些用于锻造锤上的&e零件&r，这些可以提升锻造过程中的顺畅度或工具属性。"
 				""
-				"在&6板条箱&r和&6锻造容器&r中还可以找到&e其他&r一些用于锻造锤上的&e零件&r，这些可以&e提升锻造过程中的顺畅度或工具属性&r。"
+				"使用锤子破坏遗迹中的方块获得&6金属碎片&r。"
 				""
-				"&e使用锤子破坏&r遗迹中的&e方块&r获得&6金属碎片&r。"
-				""
-				"可以&e在加工台中对锤子附魔&r&a精准采集&r，将&6锻造加工台&r和&6锻造锤&r带回家。"
+				"可以在加工台中对锤子附魔&a精准采集&r，将&6锻造加工台&r和&6锻造锤&r带回家。"
 			]
-			icon: "minecraft:gilded_blackstone"
+			icon: "tetra:forged_workbench"
 			id: "35E219B64C68FB53"
 			rewards: [{
 				count: 2
@@ -806,17 +802,36 @@
 			}]
 			subtitle: "更高超的改造技巧"
 			tasks: [{
-				icon: "minecraft:gilded_blackstone"
+				icon: "tetra:forged_workbench"
 				id: "6F5A901BE92FE038"
 				structure: "tetra:regular_ruin"
 				type: "structure"
 			}]
 			title: "寻找远古锻造遗迹"
-			x: 4.0d
-			y: -1.25d
+			x: 0.25d
+			y: 17.25d
 		}
 		{
+			dependencies: ["6F6EA56EB887392B"]
 			description: [
+				"工具具有很多项&e参数&r，这一点毋庸置疑。"
+				""
+				"抛开一些能够直观理解的参数属性，例如&a挖掘速度&r、&a挖掘等级&r这些原版就设计到的名词。"
+				""
+				"下面将着重介绍&eTetra模组&r附加给工具的使其变得&e特殊的参数属性&r和一些&e独特的性质&r。"
+				""
+				"{@pagebreak}"
+				"原版工具在&6加工台&r上被&e改造&r一次后就会被附加&e打磨值&r这个属性，"
+				""
+				"对工具进行对应功能的&e使用&r可以&e增加工具整体的打磨值&r，"
+				""
+				"当打磨值&e进度条满&r时，工具可以在加工台上对其中部件选择一条&e升级属性&r，"
+				""
+				"升级属性本身&e具有上限&r，在选择属性升级时，有时会占据&a完整度&r。"
+				""
+				"各个部件在被使用的时候会逐渐被&a固定&r，获得“&e稳固&r”这一属性。"
+				""
+				"{@pagebreak}"
 				"抛开升级属性本身&e具有等级上限&r这一点，在选择&a打磨属性&r升级时，会占据&a完整度&r。"
 				""
 				"&a完整度&r可以看做&e一个工具&r可以被附加的&e部件上限&r。"
@@ -829,86 +844,27 @@
 				""
 				"每一级&a稳固&r可以为工具&e提供额外的完整度&r。"
 			]
-			id: "3AB5E8B32D5EA26F"
-			rewards: [{
-				count: 10
-				id: "6AF0DFD33DBCA2F0"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "部件强度的上限"
-			tasks: [{
-				id: "2B98517FAA85BD83"
-				title: "我知道了"
-				type: "checkmark"
-			}]
-			title: "工具的完整度"
-			x: 1.25d
-			y: 6.25d
-		}
-		{
-			dependencies: ["781312928C5C3155"]
-			description: [
-				"使用&6工作台&r最多合成出&a等级为2&r的锤子。"
-				""
-				"将&6木锤&ror&6圆石锤&r放在加工台上，对两个头部区&e都进行更高等级材料的替换&r，可获得&e等级加1&r的锤子。"
-				""
-				"但在&e对&r想要升级的&e锤子改造&r时，你需要&e另外一把&r锤子。"
-				""
-				"对&a等级为4的锤子&r进行改造升级，仅靠上述步骤&e无法实现&r--需要寻找&a远古废墟&r，那里有升级的&e必须物品&r。"
-			]
 			icon: {
 				Count: 1b
-				id: "tetra:modular_double"
+				id: "tetra:scroll_rolled"
 				tag: {
-					Damage: 0
-					"double/basic_hammer_left_material": "basic_hammer/obsidian"
-					"double/basic_hammer_right_material": "basic_hammer/obsidian"
-					"double/basic_handle_material": "basic_handle/iron"
-					"double/handle": "double/basic_handle"
-					"double/head_left": "double/basic_hammer_left"
-					"double/head_right": "double/basic_hammer_right"
-					id: "3532acd2-6906-4f9d-aa5c-55459ae100c9"
-				}
-			}
-			id: "6B60264580C19DD1"
-			subtitle: "改造工具的进化"
-			tasks: [{
-				consume_items: false
-				id: "5E97AF6433020719"
-				item: {
-					Count: 1b
-					id: "tetra:modular_double"
-					tag: {
-						Damage: 0
-						"double/basic_hammer_left_material": "basic_hammer/obsidian"
-						"double/basic_hammer_right_material": "basic_hammer/obsidian"
-						"double/basic_handle_material": "basic_handle/iron"
-						"double/handle": "double/basic_handle"
-						"double/head_left": "double/basic_hammer_left"
-						"double/head_right": "double/basic_hammer_right"
-						id: "3532acd2-6906-4f9d-aa5c-55459ae100c9"
+					BlockEntityTag: {
+						data: [{
+							effects: ["tetra:fabric_expertise"]
+							glyphs: [
+								5
+								3
+								6
+								4
+							]
+							intricate: 0b
+							key: "fabric_expertise"
+							material: 0
+							ribbon: "ff3333"
+						}]
 					}
 				}
-				type: "item"
-			}]
-			title: "锤--升级"
-			x: 2.75d
-			y: -1.25d
-		}
-		{
-			description: [
-				"工具具有很多项&e参数&r，这一点毋庸置疑。"
-				""
-				"抛开一些能够直观理解的参数属性，例如&a挖掘速度&r、&a挖掘等级&r这些原版就设计到的名词。"
-				""
-				"下面将着重介绍&eTetra模组&r附加给工具的使其变得&e特殊的参数属性&r和一些&e独特的性质&r。"
-			]
-			icon: "minecraft:diorite"
+			}
 			id: "48BD60FBFEC2896A"
 			subtitle: "解除对名词的疑惑"
 			tasks: [{
@@ -917,29 +873,49 @@
 				type: "checkmark"
 			}]
 			title: "工具的参数"
-			x: 1.25d
-			y: 3.75d
+			x: -0.5d
+			y: 22.75d
 		}
 		{
+			dependencies: ["6F6EA56EB887392B"]
 			description: [
-				"&cPage1：&r"
-				"Tetra化的工具虽然&e不能在铁砧上附魔和修复&r，但是并&a没有改变对附魔台的相性&r。"
+				"Tetra化的工具虽然不能在铁砧上附魔和修复，但是并&a没有改变对附魔台的相性&r。"
 				""
-				"将工具放入附魔台中，在最理想的状态下，工具的&e各个部件都可以被附魔&r上&a附魔属性&r。"
+				"将工具放入附魔台中，在最理想的状态下，工具的各个部件都可以被附魔上&a附魔属性&r。"
 				""
-				"&a祛魔&r的方式也很简单，将&e被附魔过的部件材料&r用其他材料更替一次，即可&e祛魔&r。"
+				"&a祛魔&r的方式也很简单，将被附魔过的部件材料用其他材料更替一次，即可祛魔。"
 				""
 				""
 				"{@pagebreak}"
-				"&cPage2：&r"
-				"同样，工具&e可以被附魔书附魔&r。"
+				"同样，工具可以被附魔书附魔。"
 				""
-				"工具被&e附魔书附魔&r会&e消耗&r工具的&a魔法容量&r数值。"
+				"工具被附魔书附魔会消耗工具的&a魔法容量&r数值。"
 				""
-				"魔法容量&e被消耗的越多、数值越低甚至为负数时&r容易&e出现诅咒&r。"
+				"魔法容量被消耗的越多、数值越低甚至为负数时容易出现诅咒。"
 				""
-				"诅咒可以&e使用青金石和经验&r来驱散"
+				"诅咒可以使用青金石和经验来驱散"
 			]
+			icon: {
+				Count: 1b
+				id: "tetra:scroll_rolled"
+				tag: {
+					BlockEntityTag: {
+						data: [{
+							effects: ["tetra:skin_expertise"]
+							glyphs: [
+								0
+								1
+								1
+								1
+							]
+							intricate: 0b
+							key: "skin_expertise"
+							material: 0
+							ribbon: "bf6930"
+						}]
+					}
+				}
+			}
 			id: "0326579D60162FF6"
 			rewards: [{
 				count: 10
@@ -951,17 +927,18 @@
 				}
 				type: "item"
 			}]
-			subtitle: "逐个“魔化”"
+			subtitle: "工具的魔法"
 			tasks: [{
 				id: "16A60EFC0B93E493"
 				title: "我知道了"
 				type: "checkmark"
 			}]
 			title: "工具的附魔"
-			x: 1.25d
-			y: 7.5d
+			x: 0.25d
+			y: 24.75d
 		}
 		{
+			dependencies: ["4632D20D50741511"]
 			description: [
 				"在开采矿物过程中，有时会遇到一些&e在材质上与其他岩石并无二致&r的&e岩石方块&r，"
 				""
@@ -987,20 +964,27 @@
 				type: "item"
 			}]
 			title: "新的宝石"
-			x: 5.25d
-			y: -0.75d
+			x: -1.25d
+			y: 16.25d
 		}
 		{
+			dependencies: ["4632D20D50741511"]
 			description: [
-				"存在于另一种远古遗迹中的&e多方块结构&r，"
+				"存在于另一种远古遗迹中的多方块结构，"
 				""
-				"对耗尽能量的&6热力单元&r进行&e充能&r。"
+				"对耗尽能量的&6热力单元&r进行充能。"
 				""
-				"&6远古遗迹板块&r只可以&e从后面用羊角锤拆下&r，"
+				"&6远古遗迹板块&r只可以从后面用羊角锤拆下，"
 				""
-				"将他们&e收集齐&r，&e拼凑在加工台附近&r&e解锁新的改装部件&r种类。"
+				"将他们收集齐，拼凑在加工台附近解锁新的改装部件种类。"
 			]
-			icon: "minecraft:gilded_blackstone"
+			icon: {
+				Count: 1b
+				id: "tetra:thermal_cell"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "0E28EA837CB4C8F9"
 			rewards: [{
 				count: 2
@@ -1010,16 +994,23 @@
 			}]
 			subtitle: "独特的配件"
 			tasks: [{
-				icon: "minecraft:gilded_blackstone"
+				icon: {
+					Count: 1b
+					id: "tetra:thermal_cell"
+					tag: {
+						Damage: 0
+					}
+				}
 				id: "31109E1575532ED5"
 				structure: "tetra:extractor_ruin"
 				type: "structure"
 			}]
 			title: "更多的改造配件"
-			x: 2.5d
-			y: 0.0d
+			x: 0.25d
+			y: 16.25d
 		}
 		{
+			dependencies: ["4632D20D50741511"]
 			description: [
 				"&6加工台&r加工的零件和属性受到&6图纸&r影响。"
 				""
@@ -1069,54 +1060,8 @@
 				type: "checkmark"
 			}]
 			title: "卷轴计划"
-			x: 0.25d
-			y: 0.0d
-		}
-		{
-			can_repeat: true
-			description: ["&7重新领取全息球&r。"]
-			id: "76320A2F13686EA1"
-			rewards: [{
-				id: "30ACC739448BB1CB"
-				item: {
-					Count: 1b
-					id: "tetra:holo"
-					tag: {
-						"holo/core": "holo/core"
-						"holo/core_material": "frame/dim"
-						"holo/frame": "holo/frame"
-						"holo/frame_material": "core/ancient"
-						"holo/repo": "holo/repo"
-						"holo/repo_material": "repo/default"
-						"holo/scanner": "holo/scanner"
-						"holo/scanner_material": "scanner/default"
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "又是一个小马虎鬼"
-			tasks: [{
-				consume_items: true
-				id: "2C869CE7FB52D678"
-				item: {
-					Count: 1b
-					id: "tetra:modular_double"
-					tag: {
-						Damage: 0
-						"double/basic_hammer_left_material": "basic_hammer/oak"
-						"double/basic_hammer_right_material": "basic_hammer/oak"
-						"double/basic_handle_material": "basic_handle/stick"
-						"double/handle": "double/basic_handle"
-						"double/head_left": "double/basic_hammer_left"
-						"double/head_right": "double/basic_hammer_right"
-						id: "4a0d4809-20c5-467c-bfed-78565b99b748"
-					}
-				}
-				type: "item"
-			}]
-			title: "领取丢失的全息球"
-			x: -3.75d
-			y: -3.25d
+			x: -1.25d
+			y: 17.25d
 		}
 	]
 	title: "Tetra：模块化与工具"
