@@ -1,0 +1,19 @@
+{
+  "name": "法术卷轴",
+  "icon": "irons_spellbooks:scroll",
+  "category": "irons_spellbooks:root",
+  "sortnum": 0,
+  "read_by_default" : true,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "法术卷轴",
+      "item": "irons_spellbooks:scroll",
+      "text": "法术卷轴可以通过探索和掠夺，或是通过制作获得。每个卷轴都记录着一个特定等级的咒语，他们可以像附魔书一样在奥术铁砧中进行升级。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "法术卷轴可以无视法力消耗和冷却时间直接使用，但是会消耗掉卷轴。它们可以被刻录在法术书中以便重复使用，前提是法术书的品质与容量允许。"
+    }
+  ]
+}

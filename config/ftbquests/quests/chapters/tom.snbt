@@ -22,7 +22,7 @@
 			rewards: [{
 				id: "52165A3A71ADB569"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -214,7 +214,7 @@
 			rewards: [{
 				id: "2FBAC004E5FC9C0A"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -231,7 +231,7 @@
 					consume_items: true
 					id: "087ACFC21485DF17"
 					item: {
-						Count: 1
+						Count: 1b
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}

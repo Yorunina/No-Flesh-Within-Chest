@@ -4,7 +4,7 @@
 	filename: "56F0A3BB89FE8F1D"
 	group: "4F4F4EA8CE67985B"
 	icon: {
-		Count: 1
+		Count: 1b
 		id: "capsule:capsule"
 		tag: {
 			display: {
@@ -33,7 +33,7 @@
 			]
 			hide_dependent_lines: true
 			icon: {
-				Count: 1
+				Count: 1b
 				id: "capsule:capsule"
 				tag: {
 					display: {
@@ -70,7 +70,7 @@
 			rewards: [{
 				id: "30D78248CBBDEAE5"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "capsule:capsule"
 					tag: {
 						display: {
@@ -94,7 +94,7 @@
 				count: 8L
 				id: "73AD81233AD95746"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -108,7 +108,7 @@
 			can_repeat: true
 			dependencies: ["304B1E271805A1B0"]
 			icon: {
-				Count: 1
+				Count: 1b
 				id: "dimdungeons:item_portal_key"
 				tag: {
 					built: 1b
@@ -126,7 +126,7 @@
 			rewards: [{
 				id: "6695708560A3748D"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "capsule:capsule"
 					tag: {
 						display: {
@@ -148,7 +148,7 @@
 				count: 32L
 				id: "793ECC1D0DBA4ED8"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}

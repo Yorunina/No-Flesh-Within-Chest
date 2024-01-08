@@ -26,7 +26,7 @@
 				count: 3
 				id: "48512F3696E650D8"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -58,7 +58,7 @@
 			rewards: [{
 				id: "6C82F5206588920D"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -77,7 +77,7 @@
 					consume_items: true
 					id: "65382BF83F2D8F2E"
 					item: {
-						Count: 1
+						Count: 1b
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -100,7 +100,7 @@
 			rewards: [{
 				id: "49A9BD3EE97EA2C0"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -140,7 +140,7 @@
 				{
 					id: "7A6490BC104F622F"
 					item: {
-						Count: 1
+						Count: 1b
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -176,7 +176,7 @@
 			rewards: [{
 				id: "1E095763EC83A366"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -207,7 +207,7 @@
 				count: 3
 				id: "6D9415D934A5ECBE"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -285,7 +285,7 @@
 				count: 3
 				id: "6FD0B745E9EA9D96"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -313,7 +313,7 @@
 				count: 3
 				id: "4E981F248B0DD603"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -349,7 +349,7 @@
 				{
 					id: "0249E062FC6F31CA"
 					item: {
-						Count: 1
+						Count: 1b
 						id: "lightmanscurrency:coin_gold"
 						tag: { }
 					}
@@ -384,7 +384,7 @@
 			rewards: [{
 				id: "66BB8629BCD2B9A8"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -419,7 +419,7 @@
 			rewards: [{
 				id: "1FD834BF071FF75B"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -530,7 +530,7 @@
 			rewards: [{
 				id: "601207478EFFD3B5"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -565,7 +565,7 @@
 				count: 4
 				id: "1A7151E5CD3818F0"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -672,7 +672,7 @@
 				"{image:kubejs:textures/task/create_1.png width:80 height:45 align:1}"
 			]
 			icon: {
-				Count: 1
+				Count: 1b
 				id: "irons_spellbooks:pumpkin_helmet"
 				tag: {
 					Damage: 0
@@ -684,7 +684,7 @@
 					count: 3
 					id: "06990D6C075B3A81"
 					item: {
-						Count: 1
+						Count: 1b
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -754,7 +754,7 @@
 				count: 3
 				id: "45B4ACF639BBC879"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}

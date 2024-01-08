@@ -1,0 +1,75 @@
+{
+  "name": "游戏后期",
+  "icon": "irons_spellbooks:arcane_anvil",
+  "category": "irons_spellbooks:root",
+  "sortnum": -1,
+  "read_by_default" : true,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Arcane Anvil",
+      "text": "游戏后期需要用到下届合金与大量的基础资源。$(br2)使用下届合金制造的奥术铁砧可以用来升级你的卷轴、套装与法术书，并且赋予武器魔咒。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "irons_spellbooks:arcane_anvil"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "远古典籍",
+      "text": "这些事可以被制造的最高级别的法术书，需要用在古城中发现的残破的书来制作。",
+      "recipe": "irons_spellbooks:netherite_spell_book"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "irons_spellbooks:dragonskin_spell_book",
+      "text": "击杀末影龙会掉落龙皮。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "irons_spellbooks:cryomancer_helmet",
+      "recipe2": "irons_spellbooks:pyromancer_helmet",
+      "title": "元素套装"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "冰霜术士套装",
+      "entity": "minecraft:armor_stand{ArmorItems:[{id:'irons_spellbooks:cryomancer_boots',Count:1b},{id:'irons_spellbooks:cryomancer_leggings',Count:1b},{id:'irons_spellbooks:cryomancer_chestplate',Count:1b},{id:'irons_spellbooks:cryomancer_helmet',Count:1b}],NoBasePlate:1b}",
+      "text": "不同流派的套装均需要用到奥术布匹与一个独特的符文制作。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "irons_spellbooks:upgrade_orb",
+      "title": "升级",
+      "text": "最后是升级阶段。只有元素套装和法术书可以获得升级。$(br2)不同的升级法球由一个基础升级法球和8个所需属性的符文组成。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "irons_spellbooks:upgrade_orb",
+      "recipe2": "irons_spellbooks:fire_upgrade_orb"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "制作升级所需的材料",
+      "enable_visualize" : false,
+      "multiblock": {
+        "pattern": [
+          [ " D S ", "DA0PF"]
+        ],
+        "mapping": {
+          "D": "minecraft:deepslate",
+          "A": "irons_spellbooks:arcane_debris",
+          "P": "irons_spellbooks:armor_pile",
+          "S": "minecraft:soul_sand",
+          "F": "minecraft:soul_fire"
+        }
+      },
+      "text": "奥术残骸相当于是主世界的远古残骸，只能在y=-38下面找到。需要使用下界合金镐挖掘。"
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "irons_spellbooks:citadel_keeper",
+      "text": "灰烬源质是远古骑士的掉落物，破坏地狱中散落的盔甲就会唤醒他们。"
+    }
+  ]
+}

@@ -22,7 +22,7 @@
 			rewards: [{
 				id: "3CD928A479F44FB2"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -232,7 +232,7 @@
 					count: 30
 					id: "3F650248A434E87E"
 					item: {
-						Count: 1
+						Count: 1b
 						id: "lightmanscurrency:coin_gold"
 						tag: { }
 					}

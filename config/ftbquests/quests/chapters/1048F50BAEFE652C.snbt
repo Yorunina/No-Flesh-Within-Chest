@@ -23,7 +23,7 @@
 				count: 5
 				id: "097FD920C0C1B7B5"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -53,7 +53,7 @@
 			rewards: [{
 				id: "43F99A327E4ACF07"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -108,7 +108,7 @@
 			rewards: [{
 				id: "49B6BBD79E03243D"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -155,7 +155,7 @@
 			rewards: [{
 				id: "22C2328AF0E97312"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -177,7 +177,7 @@
 			rewards: [{
 				id: "1189918799852F1C"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -199,7 +199,7 @@
 			rewards: [{
 				id: "08B7D5C3D726FD6F"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -226,7 +226,7 @@
 			rewards: [{
 				id: "6CA1F903669BF0E3"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -255,7 +255,7 @@
 			rewards: [{
 				id: "7C9E76EF605EA50E"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -297,7 +297,7 @@
 			rewards: [{
 				id: "17F97723C16683CB"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -425,7 +425,7 @@
 			rewards: [{
 				id: "18D04D2BC9470552"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -452,7 +452,7 @@
 			rewards: [{
 				id: "3D9759FFDEF7926B"
 				item: {
-					Count: 1
+					Count: 1b
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}

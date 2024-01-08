@@ -4,7 +4,7 @@
 	filename: "00050A3CE01AF565"
 	group: "0241B51B931E1ED2"
 	icon: {
-		Count: 1
+		Count: 1b
 		id: "hexerei:mushroom_witch_hat"
 		tag: {
 			Damage: 0

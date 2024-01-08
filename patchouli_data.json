@@ -21,6 +21,13 @@
       ],
       "bookmarks": [],
       "completedManualQuests": []
+    },
+    "irons_spellbooks:iss_guide_book": {
+      "viewedEntries": [
+        "irons_spellbooks:progression/early_game"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
     }
   }
 }

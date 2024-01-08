@@ -1,0 +1,41 @@
+{
+  "name": "游戏前期",
+  "icon": "irons_spellbooks:inscription_table",
+  "category": "irons_spellbooks:root",
+  "sortnum": -3,
+  "read_by_default" : false,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Overview",
+      "text": "游戏前期的主要任务是探索与掠夺。这片大陆上分布着许多的魔法建筑，其中充满了魔法战利品。但是请小心！每座魔法建筑中都居住这一位强大的魔法师，相信他们一定不会友好的对待你这不速之客。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "irons_spellbooks:scroll",
+      "title": "法术卷轴",
+      "text": "各种法术卷轴便是你最初接触到的魔法。你可以通过消耗卷轴来释放其中记载的法术,不过最好还是将其记录在你的法术书中以便于重复释放。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "法术抄写台",
+      "text": "你可以在法术抄写台上将法术卷轴铭刻在法术书中，放入的卷轴可以被取出。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "irons_spellbooks:inscription_table",
+      "recipe2": "irons_spellbooks:copper_spell_book"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "irons_spellbooks:arcane_essence",
+      "title": "基础材料",
+      "text": "部分基础材料可以在随处可见的建筑中找到。$(br2)奥术源质可以附着在皮革盔甲上以制作流浪法师套装，这会使你在早期获得额外的法力值。"
+    },
+    {
+      "type": "patchouli:entity",
+      "name": "Wandering Magician Armor",
+      "entity": "minecraft:armor_stand{ArmorItems:[{id:'irons_spellbooks:wandering_magician_boots',Count:1b},{id:'irons_spellbooks:wandering_magician_leggings',Count:1b},{id:'irons_spellbooks:wandering_magician_chestplate',Count:1b},{id:'irons_spellbooks:wandering_magician_helmet',Count:1b}],NoBasePlate:1b}"
+    }
+  ]
+}
