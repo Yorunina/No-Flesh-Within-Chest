@@ -22,7 +22,7 @@ If you have any suggestions or want to report bugs related to this modpack, plea
 
 - [x] 实现基本器官功能
   - [x] 快速注册器官
-- [x] 实现高级器官效果
+- [ ] 实现高级器官效果
   - [x] 实现激活效果
   - [x] 实现独立激活效果
   - [x] 实现激活连携效果
@@ -32,9 +32,12 @@ If you have any suggestions or want to report bugs related to this modpack, plea
   - [x] 实现槽位映射
   - [x] 实现成长效果
   - [x] 实现器官饰品
-  - [x] Iron n spell book 器官联动
+  - [x] Iron's spellbooks器官联动
   - [x] 实现动态基本属性
   - [x] Tetra联动器官效果
+  - [x] 实现资源器官
+  - [ ] MoreJs扩充事件列表
+  - [ ] 实现禁忌器官
 - [ ] 模组联动器官补充
   - [x] 向大部分生物填入补位符
   - [ ] Alex生物器官联动
@@ -51,7 +54,7 @@ If you have any suggestions or want to report bugs related to this modpack, plea
 - [ ] 主线设计
   - [x] 三宏伟魔法之一:世界的再生产
   - [ ] 三宏伟魔法之一:田园时代
-  - [ ] 神恩挑战
+  - [x] 神恩挑战
   - [ ] 其余的宏伟魔法
   - [ ] Boss内容与主线融合
 - [ ] 平衡性设计
@@ -67,8 +70,9 @@ If you have any suggestions or want to report bugs related to this modpack, plea
 - [ ] UI设计
   - [x] 胸腔界面修改
   - [x] 主界面修改
+  - [x] 任务页面UI修改
   - [ ] 载入页面修改
-  - [ ] 部分UI美化
+  - [ ] 额外部分UI美化
   - [x] ToolTips美化
 - [x] 优化
   - [x] 模组数量控制

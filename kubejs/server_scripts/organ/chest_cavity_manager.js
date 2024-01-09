@@ -121,7 +121,7 @@ function initChestCavityIntoMap(player, removeFlag) {
 
 function getPlayerChestCavityPosMap(player) {
     let uuid = String(player.getUuid());
-    if (playerChestCavityHashMap.has(uuid)) {
+    if (playerChestCavityPosMap.has(uuid)) {
         return playerChestCavityPosMap.get(uuid);
     }
     initChestCavityIntoMap(player);
@@ -136,7 +136,7 @@ function getPlayerChestCavityPosMap(player) {
 
 function getPlayerChestCavityItemMap(player) {
     let uuid = String(player.getUuid());
-    if (playerChestCavityHashMap.has(uuid)) {
+    if (playerChestCavityItemMap.has(uuid)) {
         return playerChestCavityItemMap.get(uuid);
     }
     initChestCavityIntoMap(player);
