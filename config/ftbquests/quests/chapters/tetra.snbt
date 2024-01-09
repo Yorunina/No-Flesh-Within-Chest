@@ -19,7 +19,6 @@
 	}
 	id: "69A9CF68FED068D9"
 	images: [{
-		alpha: 128
 		click: ""
 		corner: false
 		dev: false

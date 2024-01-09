@@ -306,9 +306,10 @@ StartupEvents.registry('item', event => {
 
     // 资源系列
     registeOrgan(new Organ('kubejs:ore_lung')
-        .addScore('health', -0.5)
-        .addScore('nerves', -1)
+        .addScore('health', -0.25)
+        .addScore('nerves', -0.5)
         .addScore('breath_recovery', 1)
+        .addTextLines('default', [Text.gray('吸入了过多灰尘，已经残破不堪')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次挖掘石头后，便会积累'), Text.gold('1'), Text.gray('资源点数')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在积累到'), Text.gold('64'), Text.gray('点后，3%概率消耗64点并给予矿物')])
         .addTextLines('alt', [LEADING_SYMBOL, Text.red('资源点积累效果唯一')])

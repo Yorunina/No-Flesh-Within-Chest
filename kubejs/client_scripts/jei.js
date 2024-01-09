@@ -20,4 +20,5 @@ JEIEvents.information(event => {
     event.addItem('kubejs:heart_of_blade', Text.black('剑之心可以在冷血杀手的胸腔中获得'))
     event.addItem('kubejs:god_bless_empty_necklace', Text.black('神恩项链掉落于常规维度地牢的高级战利品宝箱中'))
     event.addItem('kubejs:redstone_chipset', Text.black('红石芯片可以在电子脉冲头的胸腔中获得'))
+    event.addItem('kubejs:ore_lung', Text.black('手持肺脏或者动物肺脏右键沙子获得'))
 })

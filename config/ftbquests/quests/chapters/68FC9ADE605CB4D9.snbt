@@ -6,7 +6,6 @@
 	icon: "create:wrench"
 	id: "68FC9ADE605CB4D9"
 	images: [{
-		alpha: 128
 		click: ""
 		corner: false
 		dev: false
@@ -471,11 +470,7 @@
 				{
 					count: 2
 					id: "01A81D336E06A490"
-					item: {
-						Count: 1
-						id: "numismaticoverhaul:bronze_coin"
-						tag: { }
-					}
+					item: "lightmanscurrency:coin_iron"
 					type: "item"
 				}
 			]

@@ -18,10 +18,33 @@
 				"魔法巫师的线路并不长，更多的是用于增添沉浸感而产生的一些可选的发展内容，因此大可不必担心。"
 				""
 				"不过，为了制作后面召唤Boss的&6召唤祭坛&r，或许你需要一些为&6魔法使特制的蜡烛&r"
+				""
+				"将暗影之书放置在书坛上，慢慢阅读吧！"
 			]
 			icon: "irons_spellbooks:alchemist_cauldron"
 			id: "00E3E147FC750C90"
-			shape: "rsquare"
+			rewards: [
+				{
+					id: "69A47379C6E0551E"
+					item: {
+						Count: 1b
+						id: "hexerei:book_of_shadows"
+						tag: {
+							bookmarks: { }
+							chapter: 0
+							opened: 0b
+							page: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0AB96012391DCB55"
+					item: "hexerei:book_of_shadows_altar"
+					type: "item"
+				}
+			]
+			shape: "circle"
 			subtitle: "咒术？魔法？还是科学？"
 			tasks: [{
 				id: "3342C5E8A28DC165"
@@ -300,7 +323,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["49BD99DDA8F8454A"]
+			dependencies: ["7F0C1FA54DD6E9BC"]
 			description: [
 				"很快，在主世界的探索就不能满足你的所有欲望——周边的遗迹已然被探索干净，而过远的地区前去又非常麻烦。"
 				""
@@ -338,8 +361,8 @@
 				type: "item"
 			}]
 			title: "维度地牢"
-			x: 12.75d
-			y: 1.5d
+			x: 11.25d
+			y: 1.75d
 		}
 		{
 			dependencies: ["040207B33E2FEBFF"]
@@ -662,8 +685,8 @@
 				type: "item"
 			}]
 			title: "制作末地传送门"
-			x: 13.75d
-			y: 3.0d
+			x: 12.25d
+			y: 3.25d
 		}
 		{
 			dependencies: ["03B3A54BEDB85320"]
@@ -706,8 +729,8 @@
 				type: "item"
 			}]
 			title: "高级维度地牢"
-			x: 14.5d
-			y: 1.5d
+			x: 13.0d
+			y: 1.75d
 		}
 		{
 			dependencies: ["03B3A54BEDB85320"]
@@ -739,8 +762,8 @@
 				type: "item"
 			}]
 			title: "前往个人维度"
-			x: 15.75d
-			y: 3.0d
+			x: 14.25d
+			y: 3.25d
 		}
 		{
 			dependencies: ["4264FBF118BE08EA"]
@@ -768,8 +791,8 @@
 				type: "item"
 			}]
 			title: "传送大厅？！"
-			x: 14.75d
-			y: 4.5d
+			x: 13.25d
+			y: 4.75d
 		}
 		{
 			dependencies: ["45AB5B1831B0AACF"]
@@ -780,6 +803,7 @@
 				""
 				"&6归途明珠&r则是用于快速的返回地牢的入口处。"
 			]
+			icon: "dimdungeons:item_secret_bell"
 			id: "738F8D1CEDC020F1"
 			rewards: [{
 				id: "65B0A76807157940"
@@ -804,8 +828,8 @@
 				}
 			]
 			title: "地牢探险家"
-			x: 16.75d
-			y: 1.5d
+			x: 15.25d
+			y: 1.75d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -873,11 +897,227 @@
 		}
 		{
 			dependencies: ["00E3E147FC750C90"]
+			description: [
+				"魔法作为一种极其强大的能力，广泛的存在在这片大陆上。"
+				""
+				"为了后续面对更加困难的敌人，选择魔法作为你的第一攻击方式或许是一个不错的选择。"
+				""
+				"相对于魔法巫师中提供的各种&6魔法小玩意&r，Iron的魔法书更偏向于看得见摸得着的&6各类法术&r。"
+				""
+				"同时，也只有Iron的魔法书中的魔法攻击被本整合包&2认定为魔法种类的攻击伤害&r，这对后续击败某些Boss具有重要的意义。"
+			]
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:diamond_spell_book"
+				tag: {
+					ISB_spellbook: {
+						spellSlots: 8
+						spells: [ ]
+					}
+				}
+			}
 			id: "77ED5164610655DB"
+			shape: "rsquare"
 			subtitle: "或许，魔法才是这个世界的正统？"
+			tasks: [{
+				id: "597BFB93174B30AA"
+				title: "我已了解"
+				type: "checkmark"
+			}]
 			title: "Iron的魔法书"
-			x: 3.0d
+			x: 3.25d
 			y: -1.75d
+		}
+		{
+			dependencies: ["00E3E147FC750C90"]
+			description: [
+				"区别于炼金锅，混合锅仅仅用于生产一些&6魔法素材&r，比如说后续会用到的Iron的魔法书的普通墨水，或者某些魔法相关的器官，亦或是银锭的相关制作。"
+				""
+				"炼金锅的使用非常简单，只需要在确定配方之后，右键打开界面逐个添加素材即可。"
+			]
+			icon: "hexerei:mixing_cauldron"
+			id: "3319CFE2739EE21B"
+			rewards: [{
+				id: "51EB5D46666FD0C5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "学习使用混合锅"
+			tasks: [{
+				id: "08DAB9DDF17F3E7D"
+				item: "hexerei:mixing_cauldron"
+				type: "item"
+			}]
+			title: "混合锅"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3319CFE2739EE21B"]
+			description: [
+				"有些时候，你需要研磨一些物质。比如为了获得魔法使的乌鸦，你便需要使用研钵来获取&6混合种子&r。"
+				""
+				"乌鸦是一个非常有趣的伙伴——当然，你需要区分那些笨乌鸦和聪明乌鸦。&2只有魔法巫师模组的乌鸦才能够对混合种子和你的指令感兴趣&r。"
+				""
+				"在用混合种子喂食之后，乌鸦或许就会变成你的伙伴。潜行右键你便可以对乌鸦进行发号施令。"
+			]
+			id: "4C2F1E3735C11A57"
+			rewards: [{
+				id: "08D8BD1FDE253620"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "研磨与乌鸦"
+			tasks: [{
+				id: "7E810232011CFE20"
+				item: "hexerei:pestle_and_mortar"
+				type: "item"
+			}]
+			title: "研磨你所得"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4C2F1E3735C11A57"]
+			description: [
+				"魔法巫师中添加了一套用于巫师装备的服装。在完全装备时会触发特殊的装备效果。"
+				""
+				"其中，所涉及到的魔法伤害并&2不包含Iron的魔法书所造成的伤害&r。其所指的魔法伤害均为原版范围内所涉及到的魔法伤害，如部分药水伤害。"
+				""
+				"除此之外，由于魔法巫师的后续内容仍在开发，因此该套服装并无其他作用。"
+			]
+			id: "047C9E4849F763F4"
+			rewards: [{
+				id: "283FF574FBCB3BF8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "魔法套装. . .但仅限装饰！"
+			tasks: [{
+				id: "7B31FD7B9FBD0F29"
+				item: {
+					Count: 1b
+					id: "hexerei:witch_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "魔法巫师套装"
+			x: 6.75d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4C2F1E3735C11A57"]
+			description: [
+				"乌鸦能够跟很多魔法巫师中的道具联动，比如乌鸦可以将作物收割并且自动放置到配置好的药草罐中，或者乌鸦可以拿起战锤，对周围的敌人进行攻击。"
+				""
+				"推荐玩家制作一根乌鸦笛子，以方便对乌鸦进行操作。"
+			]
+			id: "1846534694DA7AB7"
+			rewards: [{
+				id: "0CBE519C07874F52"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "飞吧！飞的比我还要高！"
+			tasks: [{
+				id: "1D68F2F560B68730"
+				item: {
+					Count: 1b
+					id: "hexerei:crow_flute"
+					tag: {
+						commandMode: 0
+						commandSelected: 0
+						crowList: [{
+							ID: 45340
+							UUID: [I;
+								942098387
+								-351584077
+								-1533472751
+								-472604788
+							]
+						}]
+						dyeColor1: -1
+						dyeColor2: -1
+						helpCommandSelected: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "乌鸦的妙用"
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3319CFE2739EE21B"]
+			description: [
+				"为了后续召唤祭坛的制作，你需要一些魔法巫师的蜡烛。"
+				""
+				"而为了制作蜡烛，你需要寻找到潜藏在&2沼泽和丛林&r群系下的&6月光石洞穴&r。"
+				""
+				"而为了寻找沼泽和丛林群系，或许你用的上&6探测棒&r. . .当然，指南针也是一个不错的选择。"
+				""
+				"如果始终无法找到月光石洞穴，则可以在&2维度地牢的宝箱&r中偶尔发现&6月光石母岩&r，或许可以解决燃眉之急。"
+			]
+			icon: "hexerei:candle"
+			id: "37688C3843A20232"
+			rewards: [{
+				count: 3
+				id: "5A5946C5F6F9C0C2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "前往沼泽或者丛林寻找月光石"
+			tasks: [{
+				id: "77CBFCC9F3C5917C"
+				item: "hexerei:selenite_shard"
+				type: "item"
+			}]
+			title: "蜡烛、沼泽与月光石"
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3319CFE2739EE21B"]
+			description: [
+				"魔法巫师的另一重要内容则是魔法扫帚，通过制作各种扫帚，你可以轻松地去往各种地方探险。"
+				""
+				"扫帚&2允许使用类如挎包、挂件等物品进行装饰和升级&r。相比于魔女的扫帚而言，其具有着更高的&6DIY价值&r。"
+				""
+				"当然，就使用价值来说，如果你认为魔法巫师的扫帚使用过于冗杂，则可以尝试制作魔女的扫帚。"
+			]
+			icon: {
+				Count: 1b
+				id: "hexerei:mahogany_broom"
+				tag: { }
+			}
+			id: "7AAEA01D27277498"
+			rewards: [{
+				id: "3CE66056F389FA4D"
+				item: {
+					Count: 1b
+					id: "hexerei:broom_keychain"
+					tag: {
+						Items: [{
+							Count: 1b
+							Slot: 0b
+							id: "kubejs:full_mark"
+						}]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "我也要飞起来了！"
+			tasks: [{
+				id: "148750957282E55F"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "魔法与飞行扫帚"
+			x: 5.5d
+			y: -5.5d
 		}
 	]
 	title: "章节2：觉醒"

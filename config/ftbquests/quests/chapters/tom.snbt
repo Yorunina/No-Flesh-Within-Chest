@@ -43,9 +43,9 @@
 			description: [
 				"用来与&6存储终端&r组合使用，用以整合大量相邻的容器的完整方块。"
 				""
-				"放在一个容器旁（六个面皆可）（甚至漏斗都算一个容器），它就可以自动识别并链接这个容器，形成&d存储网络&r，此时右击&6存储驱动器&r，将显示它链接到的容器所拥有的总空间和剩余空间格数。"
+				"放在一个容器旁（六个面皆可），它就可以自动识别并链接这个容器，形成&d存储网络&r，此时右击&6存储驱动器&r，将显示它链接到的容器所拥有的总空间和剩余空间格数。"
 				""
-				"如果这个容器和其他容器相邻，&6存储整合器&r会将这些容器一并视为一个整体链接，其极限连接距离为&516格&r（理论上可以连接以储存整合器为中心的32*32*32范围内所有容器）。"
+				"如果这个容器和其他容器相邻，&6存储整合器&r会将这些容器一并视为一个整体链接，其极限连接距离为16格（理论上可以连接以储存整合器为中心的32*32*32范围内所有容器）。"
 			]
 			id: "7843988CB0F906B3"
 			rewards: [{
@@ -65,7 +65,7 @@
 		}
 		{
 			dependencies: ["7843988CB0F906B3"]
-			description: ["将它放在&6存储整合器&r上，即可访问整合存储网络"]
+			description: ["将它放在&6存储整合器&r上，即可方便的访问整合存储网络"]
 			id: "7EA63EFEECF4628D"
 			rewards: [{
 				count: 2
@@ -84,7 +84,7 @@
 		}
 		{
 			dependencies: ["7EA63EFEECF4628D"]
-			description: ["&6存储终端&r的升级版，拥有一个工作台的面板"]
+			description: ["&6存储终端&r的升级版，拥有一个工作台的面板，是正常情况下最优先选择的型号。"]
 			id: "06CFAD62C6DC65CA"
 			rewards: [{
 				count: 2
@@ -102,15 +102,16 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["06CFAD62C6DC65CA"]
+			dependencies: ["7843988CB0F906B3"]
 			description: [
 				"用来搭建&d存储网络&r，可合成为&6框架存储线缆&r。"
 				""
-				"用于连接&6存储终端、合成终端&r或其他容器时必须与&6存储线缆&r连接器搭配使用（例如长距离）"
+				"用于连接&6存储终端、合成终端&r或其他容器时必须与&6存储线缆&r连接器搭配使用。"
 			]
 			id: "17D8CDADACFB7134"
 			rewards: [{
 				count: 2
+				icon: "lightmanscurrency:coin_gold"
 				id: "5A2C147659F191D6"
 				item: {
 					Count: 1
@@ -119,26 +120,50 @@
 				}
 				type: "item"
 			}]
+			subtitle: "远程链接"
 			tasks: [{
 				id: "7DBD3D95D6FE5315"
 				item: "toms_storage:ts.inventory_cable"
 				type: "item"
 			}]
-			x: 6.75d
-			y: -2.0d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["06CFAD62C6DC65CA"]
 			description: [
-				"&6存储代理器&r可以使用箱子内物品来作为&b白名单&r。"
+				"&6存储代理器&r概念上等同于扩展了某个容器的某一面。实际上完全可以视作一个&2朝向容器某个面的输入管道&r。"
+				"{image:kubejs:textures/task/tom_1.png width:160 height:90 align:1}"
+				"图中描绘的则是一个常见场景：其中中心为&6存储代理器&r，其&2指向了右侧红框箱子&r；同时通过手持钻石右键代理器的左侧，使得左侧蓝框箱子作为&6样板容器&r存在在这个体系中。"
 				""
-				"用钻石右击可以设定&b白名单&r面，&b白名单&r面上的储存容器将作为&b白名单&r。"
+				"{@pagebreak}"
+				"{image:kubejs:textures/task/tom_2.png width:160 height:72 align:1}"
 				""
-				"也可作为&6存储整合器&r扩展接触的容器"
+				"图中为蓝框箱子的摆放内容，通过设置其中物品的摆放，&2存储代理器便可控制右侧的容器&r，使之容器极限为模板箱子设置的内容。"
+				""
+				"&2即对应的位置只能存放对应的物品&r，且物品数量不会超过设置数量。如果模板箱子设置了空格，则意味着任何物品都可以进入其中。"
+				""
+				"{@pagebreak}"
+				"在完成了模板箱子设置之后，向漏斗中放入物品，就会以按照设置的上限塞入物品。&2物品塞入的顺序和输入方式有关&r。"
+				""
+				"且由于代理器可以被视作一个&6输入管道&r，因此可输入的槽位受容器与代理器的贴合面限制。"
+				""
+				"例如，如果左侧和右侧放置的都是熔炉，尽管你在输入槽内设置了物品，但由于&2熔炉仅能从顶部输入&r，因此物品也只能流入到燃料槽。"
+				""
+				"{image:kubejs:textures/task/tom_3.png width:160 height:72 align:1}"
+				""
+				"{@pagebreak}"
+				"除此之外，通过铁砧对箱子等物品按照k-v格式命名，可以定义容器的部分属性。"
+				"目前仅支持："
+				"-'&6ignoreSize&r'忽略物品堆叠数"
+				"-'&6maxCount=<max value>&r'设定空槽位中的最大堆叠数"
+				""
+				"例如，你可以设置&2ignoreSize=true&r来让其忽略物品上限的设置。"
 			]
 			id: "3A4DBF039CE9A9E9"
 			rewards: [{
 				count: 2
+				icon: "lightmanscurrency:coin_gold"
 				id: "119F13A99B9881EB"
 				item: {
 					Count: 1
@@ -147,13 +172,14 @@
 				}
 				type: "item"
 			}]
+			subtitle: "灵活存储. . .但用途有限"
 			tasks: [{
 				id: "746A3841940970D5"
 				item: "toms_storage:ts.inventory_proxy"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -0.75d
+			x: 7.25d
+			y: -1.5d
 		}
 		{
 			dependencies: ["06CFAD62C6DC65CA"]
@@ -161,6 +187,7 @@
 			id: "0E870625DCF57C7A"
 			rewards: [{
 				count: 2
+				icon: "lightmanscurrency:coin_gold"
 				id: "6893AAE68DC82CBD"
 				item: {
 					Count: 1
@@ -169,27 +196,29 @@
 				}
 				type: "item"
 			}]
-			subtitle: "手机（误）"
+			subtitle: "远程访问术"
 			tasks: [{
 				id: "0E0AAB585801DDF7"
 				item: "toms_storage:ts.wireless_terminal"
 				type: "item"
 			}]
-			x: 6.75d
-			y: 2.0d
+			x: 7.75d
+			y: 0.0d
 		}
 		{
-			dependencies: ["06CFAD62C6DC65CA"]
+			dependencies: ["0E870625DCF57C7A"]
 			description: [
-				"在&6存储整合器&r旁摆放一个一层的信标即可让先进&6无线终端&r在本世界内任何地方打开终端。"
+				"在&6存储整合器&r旁摆放一个一层的信标即可让&6先进无线终端&r在本世界内任何地方打开终端。"
 				""
 				"在驱动器旁摆放一个满级信标即可用先进无线终端跨世界打开终端。"
 				""
 				"此外一座信标可对多个&6存储整合器&r发挥作用。"
 			]
+			icon: "toms_storage:ts.adv_wireless_terminal"
 			id: "0004C045EF8274F8"
 			rewards: [{
 				count: 2
+				icon: "lightmanscurrency:coin_gold"
 				id: "0C3DA6CCB9368B15"
 				item: {
 					Count: 1
@@ -200,12 +229,13 @@
 			}]
 			subtitle: "信标的额外用途"
 			tasks: [{
-				id: "48F050F00412D77C"
-				item: "minecraft:beacon"
+				id: "12C75A7B277719CD"
+				item: "toms_storage:ts.adv_wireless_terminal"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.75d
+			title: "无限距离访问"
+			x: 9.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["26FE76DDA11E0026"]
@@ -244,6 +274,71 @@
 			title: "Tom的简易存储：快捷模式"
 			x: 0.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["17D8CDADACFB7134"]
+			description: [
+				"暴露在外的走线非常蠢笨，但并不是所有人都有着双层的墙壁以供埋入管线。"
+				""
+				"因此，制作一些嵌框线缆，使用&6喷涂工具&r将其上色伪装。管线便能和周围的环境融为一体！"
+			]
+			icon: "toms_storage:ts.inventory_cable_framed"
+			id: "742289A3FE32A740"
+			rewards: [{
+				count: 3
+				id: "4D3B0829CFA70EA1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "融为一体"
+			tasks: [
+				{
+					id: "7A6003F60A3D30F9"
+					item: "toms_storage:ts.inventory_cable_framed"
+					type: "item"
+				}
+				{
+					id: "77BE1C2D7D293283"
+					item: {
+						Count: 1b
+						id: "toms_storage:ts.paint_kit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["17D8CDADACFB7134"]
+			description: [
+				"除了使用容器相邻的直接传递之外，你也可以使用&2存储线缆连接器来链接容器&r（比如说抽屉）。"
+				""
+				"除此之外，你可以将连接器放在一层信标的上部，在信标光束无直接遮挡时，便可以让该物品网络连入当前维度。在其他地方同样设置信标，通过配置连接器的右上角的输入/输出，即可让&2多个网络间的内容无视距离的共享&r。"
+				""
+				"如果建立二层信标，则可以在跨维度的情况下共享网络内容。"
+				""
+				"或许你可以试着在私人维度中搭建你的私人网络。"
+			]
+			icon: "toms_storage:ts.inventory_cable_connector"
+			id: "15E4E2C92DF895CA"
+			rewards: [{
+				id: "459E9B5B85B26C05"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "合并容器，扩大网络"
+			tasks: [{
+				id: "6DC82FBC2821C637"
+				item: "toms_storage:ts.inventory_cable_connector"
+				type: "item"
+			}]
+			title: "并入新网络"
+			x: 5.5d
+			y: -1.5d
 		}
 	]
 	title: "Tom简易存储：整合一切"
