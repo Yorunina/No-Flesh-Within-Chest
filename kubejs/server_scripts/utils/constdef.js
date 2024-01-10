@@ -1,6 +1,9 @@
 const resourceCount = 'resourceCount'
 const resourceCountMax = 'resourceCountMax'
 const defaultResourceMax = 100
+const warpCount = 'warpCount'
+const warpCountMax = 'warpCountMax'
+const defaultWarpMax = 100
 
 const organActive = 'organActive'
 
@@ -92,4 +95,26 @@ const tumorAttriBute = [
     { name: 'chestcavity:fire_resistant', muti: 0.5, max: 5 },
     { name: 'chestcavity:knockback_resistant', muti: 0.5, max: 5 },
     { name: 'chestcavity:water_breath', muti: 0.5, max: 5 },
+]
+
+const curseEnchantList = [
+    'cursery:curse_electrified',
+    'cursery:curse_switchy',
+    'cursery:curse_illusion',
+    'cursery:curse_undead',
+    'cursery:curse_laddering',
+    'cursery:curse_hungryhealth',
+    'cursery:curse_slowness',
+    'cursery:curse_poison',
+    'cursery:curse_steelfeet',
+    'cursery:curse_heavy_enchant',
+    'cursery:curse_explosive',
+    'cursery:curse_recoil',
+    'cursery:curse_stubby',
+    'cursery:curse_hurtful',
+    'cursery:curse_loose',
+    'cursery:curse_weakness',
+    'cursery:curse_hungry',
+    'cursery:curse_anvil',
+    'cursery:curse_blindness',
 ]

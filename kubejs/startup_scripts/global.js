@@ -87,6 +87,7 @@ global.TYPE_MAP = {
     'kubejs:loot_chest': Text.gold('箱子战利品'),
     'kubejs:loot_chest_only': Text.gold('唯一箱子战利品'),
     'kubejs:huge': Text.of('巨型').color('#a900fd'),
+    'kubejs:warp': Text.darkPurple('禁忌'),
 }
 
 

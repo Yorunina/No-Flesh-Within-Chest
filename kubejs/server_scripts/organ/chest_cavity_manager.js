@@ -10,7 +10,7 @@ const playerChestCavityTypeMap = new Map();
  * 如果之前服用过激活药则进行初始化激活
  */
 PlayerEvents.loggedIn((event) => {
-    initResourceBar(event.player)
+    initAllBar(event.player)
     initChestCavityIntoMap(event.player, false);
     if (event.player.persistentData.contains(organActive) &&
         event.player.persistentData.getInt(organActive) == 1) {
@@ -39,7 +39,7 @@ PlayerEvents.loggedOut((event) => {
 // 只有当玩家手持开胸器并打开gui界面的时候才触发初始化效果
 PlayerEvents.inventoryClosed((event) => {
     let player = event.player;
-    checkAndHideResourceBarHide(player)
+    checkAndHideAllBar(player)
     if (player.mainHandItem != 'chestcavity:chest_opener' && player.offHandItem != 'chestcavity:chest_opener') {
         return;
     }

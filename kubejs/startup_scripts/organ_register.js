@@ -185,6 +185,16 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:lung')
         .tag('kubejs:machine');
 
+    registeOrgan(new Organ('kubejs:platelet_dispatcher')
+        .addScore('metabolism', 3)
+        .addTextLines('default', [Text.gray('它们在你的伤口处聚集')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('如果血量大于'), Text.gold('75%'), Text.gray('，则会每秒恢复'), Text.gold('1'), Text.gray('生命值')])
+        .build())
+        .texture('kubejs:item/organs/machine/platelet_dispatcher')
+        .tag('kubejs:player_tick_only')
+        .tag('kubejs:machine')
+        .tag('itemborders:gold');
+
     // 糖果心与魔法使系列物品
     // 糖果系列器官
     registeOrgan(new Organ('kubejs:candy_heart')
@@ -423,6 +433,38 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:loot_entity_only')
         .tag('itemborders:diamond');
 
+    registeOrgan(new Organ('kubejs:pandora_inactive')
+        .addScore('crystalsynthesis', 0.25)
+        .addScore('speed', 1)
+        .addScore('endurance', 1)
+        .addTextLines('default', [Text.gray('仅仅是从缝隙中感受到的力量就令人战栗')])
+        .addTextLines('default', [Text.darkPurple('打开我. . .你会获得更多力量. . .')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('附魔时，某附魔等级若高于等于'), Text.gold('Ⅲ'), Text.gray('，则会被设置为'), Text.gold('Ⅴ')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('附魔时，某附魔等级若高于等于'), Text.gold('Ⅴ'), Text.gray('，则会被设置为'), Text.gold('Ⅶ')])
+        .build())
+        .texture('kubejs:item/organs/legends/pandora_inactive')
+        .rarity('epic')
+        .tag('kubejs:legends')
+        .tag('kubejs:evolution')
+        .tag('kubejs:enchant_only')
+        .tag('itemborders:diamond');
+
+    // 扭曲器官
+    registeOrgan(new Organ('kubejs:pandora_active')
+        .addScore('crystalsynthesis', 0.25)
+        .addScore('speed', 1)
+        .addScore('endurance', 1)
+        .addTextLines('default', [Text.gray('它沉默了，但它的声音却比任何时候震耳欲聋')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次附魔将会出现额外5个'), Text.darkRed('等级0诅咒附魔')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('附魔时，附魔等级会强制转移到附魔列表中随机某一附魔上')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('被转移的附魔会因此消失')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在窥视附魔时，概率提高'), Text.darkPurple('扭曲值')])
+        .build())
+        .texture('kubejs:item/organs/warp/pandora_active')
+        .rarity('epic')
+        .tag('kubejs:warp')
+        .tag('kubejs:enchant_only');
+
     // boss遗物器官
     registeOrgan(new Organ('kubejs:relic_metal_plate')
         .addScore('health', 0.25)
@@ -456,7 +498,7 @@ StartupEvents.registry('item', event => {
     registeOrgan(new Organ('kubejs:love_between_lava_and_ice')
         .addScore('health', 1)
         .addScore('fire_resistant', 1)
-        .addScore('detoxification', -5)
+        .addScore('detoxification', -2)
         .addTextLines('default', [Text.gray('我们彼此分离，却又恒为一体')])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一格'), Text.blue('蓝冰'), Text.gray('，会为你添加额外'), Text.yellow(0.1), Text.aqua('冰系魔法伤害倍率')])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一格'), Text.darkRed('岩浆块'), Text.gray('，会为你添加额外'), Text.yellow(0.1), Text.red('火系魔法伤害倍率')])
