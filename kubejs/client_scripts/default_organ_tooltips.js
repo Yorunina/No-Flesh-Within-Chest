@@ -16,11 +16,12 @@ DefaultOrgan.prototype = {
         this.organScores.forEach(score => {
             let value = score.value
             let typeName = global.SCORE_MAP[score.id]
-            this.shiftTextLines.push([LEADING_SYMBOL, Text.gray('每组该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)])
+            this.shiftTextLines.push([LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.organ_score.1" }), Text.yellow(String(value)), Text.gray({ "translate": "kubejs.tooltips.organ_score.2" }), Text.yellow(typeName)])
         })
         return this
     },
 }
+
 
 
 ItemEvents.tooltip((tooltip) => {
@@ -42,7 +43,7 @@ ItemEvents.tooltip((tooltip) => {
                 organData.allKeys.forEach(key => {
                     let value = organData[key]
                     let typeName = global.SCORE_MAP[key]
-                    text.add(lineNum, [LEADING_SYMBOL, Text.gray('每组该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)]);
+                    text.add(lineNum, [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.organ_score.1" }), Text.yellow(String(value)), Text.gray({ "translate": "kubejs.tooltips.organ_score.1" }), Text.yellow(typeName)]);
                     lineNum++
                 })
                 break;
@@ -65,9 +66,9 @@ ItemEvents.tooltip((tooltip) => {
                     text.add(lineNum++, [LEADING_SYMBOL, Text.join(typeLine)])
                 }
                 text.add(lineNum++, [
-                    Text.of('按住 ').gold(),
-                    Text.of('[ Shift ] ').yellow().bold(),
-                    Text.of('查看器官信息').gold(),
+                    Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).gold(),
+                    Text.of({ "translate": "kubejs.tooltips.organ_score.4" }).yellow().bold(),
+                    Text.of({ "translate": "kubejs.tooltips.organ_score.5" }).gold(),
                 ]);
         }
     })
@@ -112,23 +113,23 @@ ItemEvents.tooltip((tooltip) => {
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);
                     if (organ.shiftTextLines && organ.shiftTextLines.length != 0) {
                         text.add(lineNum++, [
-                            Text.of('按住 ').gold(),
-                            Text.of('[ Shift ] ').yellow().bold(),
-                            Text.of('查看器官信息').gold(),
+                            Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).gold(),
+                            Text.of({ "translate": "kubejs.tooltips.organ_score.4" }).yellow().bold(),
+                            Text.of({ "translate": "kubejs.tooltips.organ_score.5" }).gold(),
                         ]);
                     }
                     if (organ.ctrlTextLines && organ.ctrlTextLines.length != 0) {
                         text.add(lineNum++, [
-                            Text.of('按住 ').aqua(),
-                            Text.of('[ Ctrl ] ').yellow().bold(),
-                            Text.of('查看激活效果').aqua(),
+                            Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).aqua(),
+                            Text.of({ "translate": "kubejs.tooltips.organ_score.6" }).yellow().bold(),
+                            Text.of({ "translate": "kubejs.tooltips.organ_score.7" }).aqua(),
                         ]);
                     }
                     if (organ.altTextLines && organ.altTextLines.length != 0) {
                         text.add(lineNum++, [
-                            Text.of('按住 ').red(),
-                            Text.of('[ Alt ] ').yellow().bold(),
-                            Text.of('查看特殊效果').red(),
+                            Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).red(),
+                            Text.of({ "translate": "kubejs.tooltips.organ_score.8" }).yellow().bold(),
+                            Text.of({ "translate": "kubejs.tooltips.organ_score.9" }).red(),
                         ]);
                     }
             }

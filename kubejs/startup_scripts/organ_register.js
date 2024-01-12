@@ -14,7 +14,7 @@ StartupEvents.registry('item', event => {
      */
     registerOrgan(new Organ('kubejs:health_appendix')
         .addScore('luck', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一种类为'), Text.yellow('阑尾'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('生命值')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.health_appendix.1" }), Text.yellow({ "translate": "kubejs.tooltips.health_appendix.2" }), Text.gray({ "translate": "kubejs.tooltips.health_appendix.3" }), Text.yellow(1), Text.gray({ "translate": "kubejs.tooltips.health_appendix.4" }), Text.yellow({ "translate": "kubejs.tooltips.health_appendix.5" })])
         .build())
         .texture('kubejs:item/organs/common/appendix')
         .tag('kubejs:appendix')
@@ -31,7 +31,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:greedy_stomach')
         .addScore('digestion', 0.5)
         .addScore('endurance', -0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当你进食时，每个'), Text.yellow('贪婪之胃'), Text.gray('会给予你'), Text.yellow(10), Text.gray('点'), Text.yellow('经验')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.greedy_stomach.1" }), Text.yellow({ "translate": "kubejs.tooltips.greedy_stomach.2" }), Text.gray({ "translate": "kubejs.tooltips.greedy_stomach.3" }), Text.yellow(10), Text.gray({ "translate": "kubejs.tooltips.greedy_stomach.4" }), Text.yellow({ "translate": "kubejs.tooltips.greedy_stomach.5" })])
         .build())
         .texture('kubejs:item/organs/common/stomach')
         .tag('kubejs:stomach')
@@ -42,10 +42,10 @@ StartupEvents.registry('item', event => {
         .addScore('health', -3)
         .addScore('defense', -3)
         .addScore('breath_recovery', -3)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当你没有穿着胸甲时，'), Text.yellow('空手'), Text.gray('造成伤害会使你获得临时攻击力'), Text.yellow(2), Text.gray('点。')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次触发该效果，会使自身受到等同于攻击增加量的伤害。')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('直到条件不符时的攻击后重置，重置会影响所有当前已有的攻击加成效果。')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_beats.1" }), Text.yellow({ "translate": "kubejs.tooltips.infinity_beats.2" }), Text.gray({ "translate": "kubejs.tooltips.infinity_beats.3" }), Text.yellow(2), Text.gray({ "translate": "kubejs.tooltips.infinity_beats.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_beats.5" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_beats.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.infinity_beats.7" })])
         .build())
         .texture('kubejs:item/organs/infinity/infinity_beats')
         .tag('kubejs:infinity')
@@ -56,10 +56,10 @@ StartupEvents.registry('item', event => {
         .addScore('health', -3)
         .addScore('defense', -3)
         .addScore('breath_recovery', -3)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('根据激活时该物品的强化次数决定伤害加成')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('装备时，击杀Boss概率会获得低于当前强化等级的'), Text.gold('无尽之力')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('同等级的'), Text.gold('无尽之力'), Text.gray('合成后会提高锻造等级')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('掉落概率与'), Text.green('幸运'), Text.gray('相关')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_force.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_force.2" }), Text.gold({ "translate": "kubejs.tooltips.infinity_force.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_force.4" }), Text.gold({ "translate": "kubejs.tooltips.infinity_force.5" }), Text.gray({ "translate": "kubejs.tooltips.infinity_force.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_force.7" }), Text.green({ "translate": "kubejs.tooltips.infinity_force.8" }), Text.gray({ "translate": "kubejs.tooltips.infinity_force.9" })])
         .build())
         .texture('kubejs:item/organs/infinity/infinity_force')
         .tag('kubejs:infinity')
@@ -80,14 +80,15 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:rose_quartz_heart')
         .addScore('health', 1)
         .addScore('nerves', -3)
-        .addTextLines('default', [Text.gray('它曾经是无生命的——现在也是。但正是从'), Text.red('无'), Text.gray('之上，你被赋予了生命')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一种类为'), Text.yellow('机械'), Text.gray('的器官，会为你添加额外'), Text.yellow(2), Text.gray('点'), Text.yellow('生命值')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一种类为'), Text.yellow('玫瑰'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('攻击力')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.1" }), Text.red({ "translate": "kubejs.tooltips.rose_quartz_heart.2" }), Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.3" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.4" }), Text.yellow({ "translate": "kubejs.tooltips.rose_quartz_heart.5" }), Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.6" }), Text.yellow(2), Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.7" }), Text.yellow({ "translate": "kubejs.tooltips.rose_quartz_heart.8" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.9" }), Text.yellow({ "translate": "kubejs.tooltips.rose_quartz_heart.10" }), Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.11" }), Text.yellow(1), Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.12" }), Text.yellow({ "translate": "kubejs.tooltips.rose_quartz_heart.13" })])
         .build())
         .texture('kubejs:item/organs/rose_quartz/rose_quartz_heart')
         .tag('kubejs:heart')
         .tag('kubejs:rose')
         .tag('kubejs:active');
+
     // 玫瑰石英肝脏
     registerOrgan(new Organ('kubejs:rose_quartz_liver')
         .addScore('strength', 1)
@@ -105,10 +106,10 @@ StartupEvents.registry('item', event => {
         .addScore('defense', 1)
         .addScore('knockback_resistant', 3)
         .addScore('health', 1)
-        .addTextLines('default', [Text.gray('蕴含着革命之力，但未被完全解放')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('手持煤炭右键以获得'), Text.gold('20s'), Text.red('熔火燃烧')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('熔火燃烧状态下，攻击会额外附加当前buff等级的固定伤害')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('与心火状态不兼容')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.furnace_core.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.furnace_core.2" }), Text.gold({ "translate": "kubejs.tooltips.furnace_core.3" }), Text.red({ "translate": "kubejs.tooltips.furnace_core.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.furnace_core.5" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.furnace_core.6" })])
         .build())
         .texture('kubejs:item/organs/machine/furnace_core')
         .tag('kubejs:heart')
@@ -122,23 +123,22 @@ StartupEvents.registry('item', event => {
         .addScore('defense', 1)
         .addScore('knockback_resistant', 3)
         .addScore('health', 1)
-        .addTextLines('default', [Text.gray('被完全解放的革命之力')])
-        .addTextLines('default', [Text.gray('心火を燃やして、ぶっ潰す！')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('手持煤炭右键以获得'), Text.gold('20s'), Text.red('心火燃烧')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在心火燃烧buff仅剩的最后'), Text.gold('5s'), Text.gray('，会根据状态等级提供心火暴击效果')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('与熔火状态不兼容')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.burning_heart.1" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.burning_heart.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.burning_heart.3" }), Text.gold({ "translate": "kubejs.tooltips.burning_heart.4" }), Text.red({ "translate": "kubejs.tooltips.burning_heart.5" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.burning_heart.6" }), Text.gold({ "translate": "kubejs.tooltips.burning_heart.7" }), Text.gray({ "translate": "kubejs.tooltips.burning_heart.8" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.burning_heart.9" })])
         .build())
         .texture('kubejs:item/organs/machine/burning_heart')
         .tag('kubejs:heart')
         .tag('kubejs:revolution')
         .tag('kubejs:machine')
         .tag('kubejs:rclick_only');
-
     // 革命线缆
     registerOrgan(new Organ('kubejs:revolution_cable')
         .addScore('nerves', 1)
         .addScore('strength', -2)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一种类为'), Text.of('革命').color('#deaa00'), Text.gray('的器官，会为你添加额外'), Text.yellow(1), Text.gray('点'), Text.yellow('生命值')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_cable.1" }), Text.of({ "translate": "kubejs.tooltips.revolution_cable.2" }).color('#deaa00'), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.3" }), Text.yellow(1), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.4" }), Text.yellow({ "translate": "kubejs.tooltips.revolution_cable.5" })])
         .build())
         .texture('kubejs:item/organs/machine/revolution_cable')
         .tag('kubejs:revolution')
@@ -147,8 +147,8 @@ StartupEvents.registry('item', event => {
     // 革命齿轮
     registerOrgan(new Organ('kubejs:revolution_gear')
         .addScore('defense', 0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每'), Text.gold(1), Text.gray('个该器官提供额外的1级'), Text.red('熔火'), Text.gray('等级')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每'), Text.gold(2), Text.gray('个该器官提供额外的1级'), Text.red('心火'), Text.gray('等级')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_gear.1" }), Text.gold(1), Text.gray({ "translate": "kubejs.tooltips.revolution_gear.2" }), Text.red({ "translate": "kubejs.tooltips.revolution_gear.3" }), Text.gray({ "translate": "kubejs.tooltips.revolution_gear.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_gear.5" }), Text.gold(2), Text.gray({ "translate": "kubejs.tooltips.revolution_gear.6" }), Text.red({ "translate": "kubejs.tooltips.revolution_gear.7" }), Text.gray({ "translate": "kubejs.tooltips.revolution_gear.8" })])
         .build())
         .texture('kubejs:item/organs/machine/revolution_gear')
         .tag('kubejs:revolution')
@@ -158,8 +158,8 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:revolution_relay')
         .addScore('speed', -0.5)
         .addScore('nerves', 0.5)
-        .addTextLines('default', [Text.gray('革命之力将会被重新转述')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每'), Text.gold(1), Text.gray('个该器官将会为'), Text.red('心火状态/熔火状态'), Text.gray('提供额外'), Text.gold('5s'), Text.gray('的状态时长')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.revolution_relay.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_relay.2" }), Text.gold(1), Text.gray({ "translate": "kubejs.tooltips.revolution_relay.3" }), Text.red({ "translate": "kubejs.tooltips.revolution_relay.4" }), Text.gray({ "translate": "kubejs.tooltips.revolution_relay.5" }), Text.gold({ "translate": "kubejs.tooltips.revolution_relay.6" }), Text.gray({ "translate": "kubejs.tooltips.revolution_relay.7" })])
         .build())
         .texture('kubejs:item/organs/machine/revolution_relay')
         .tag('kubejs:revolution')
@@ -169,8 +169,8 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:revolution_delay')
         .addScore('speed', -0.5)
         .addScore('nerves', 0.5)
-        .addTextLines('default', [Text.gray('革命之力将会被稍稍延后')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每'), Text.gold(1), Text.gray('个该器官将会减少'), Text.red('心火状态/熔火状态'), Text.gold('3s'), Text.gray('的状态时长')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.revolution_delay.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_delay.2" }), Text.gold(1), Text.gray({ "translate": "kubejs.tooltips.revolution_delay.3" }), Text.red({ "translate": "kubejs.tooltips.revolution_delay.4" }), Text.gold({ "translate": "kubejs.tooltips.revolution_delay.5" }), Text.gray({ "translate": "kubejs.tooltips.revolution_delay.6" })])
         .build())
         .texture('kubejs:item/organs/machine/revolution_delay')
         .tag('kubejs:revolution')
@@ -179,7 +179,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:compressed_oxygen_implant')
         .addScore('filtration', -1)
         .addScore('breath_recovery', 5)
-        .addTextLines('default', [Text.gray('氧气，加压！')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.compressed_oxygen_implant.1" })])
         .build())
         .texture('kubejs:item/organs/machine/compressed_oxygen_implant')
         .tag('kubejs:lung')
@@ -187,8 +187,8 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:platelet_dispatcher')
         .addScore('metabolism', 3)
-        .addTextLines('default', [Text.gray('它们在你的伤口处聚集')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('如果血量大于'), Text.gold('75%'), Text.gray('，则会每秒恢复'), Text.gold('1'), Text.gray('生命值')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.2" }), Text.gold({ "translate": "kubejs.tooltips.platelet_dispatcher.3" }), Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.4" }), Text.gold({ "translate": "kubejs.tooltips.platelet_dispatcher.5" }), Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.6" })])
         .build())
         .texture('kubejs:item/organs/machine/platelet_dispatcher')
         .tag('kubejs:player_tick_only')
@@ -199,9 +199,9 @@ StartupEvents.registry('item', event => {
     // 糖果系列器官
     registerOrgan(new Organ('kubejs:candy_heart')
         .addScore('health', 1)
-        .addTextLines('default', [Text.gray('魔法使的糖果心，流动的是'), Text.red('血'), Text.gray('还是'), Text.of('糖').color('#e8a0dc'), Text.gray('？')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('存在糖果心的情况下，“甜蜜之梦”才会正常发挥效果。')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在你受到伤害时，若拥有“甜蜜之梦”的效果，则会减少该效果的持续时间用以抵消伤害事件。')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.candy_heart.1" }), Text.red({ "translate": "kubejs.tooltips.candy_heart.2" }), Text.gray({ "translate": "kubejs.tooltips.candy_heart.3" }), Text.of({ "translate": "kubejs.tooltips.candy_heart.4" }).color('#e8a0dc'), Text.gray({ "translate": "kubejs.tooltips.candy_heart.5" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_heart.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_heart.7" })])
         .build())
         .texture('kubejs:item/organs/candy/candy_heart')
         .tag('kubejs:heart')
@@ -211,12 +211,12 @@ StartupEvents.registry('item', event => {
         .addScore('nutrition', 1)
         .addScore('digestion', 1)
         .addScore('health', -1)
-        .addTextLines('default', [Text.gray('因为体温在体内'), Text.of('缓缓融化').color('#e8a0dc')])
-        .addTextLines('default', [Text.gray('但融化的糖液又被其充分吸收')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当食用糖类食品时，会获得'), Text.of('“甜蜜之梦”').color('#e8a0dc'), Text.gray('效果')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('如果身上存在该效果，则无法通过食用刷新效果。')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每种糖类物品存在独立的食用间隔'), Text.gold('300s')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('此效果唯一')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.candy_stomach.1" }), Text.of({ "translate": "kubejs.tooltips.candy_stomach.2" }).color('#e8a0dc')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.candy_stomach.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_stomach.4" }), Text.of({ "translate": "kubejs.tooltips.candy_stomach.5" }).color('#e8a0dc'), Text.gray({ "translate": "kubejs.tooltips.candy_stomach.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_stomach.7" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_stomach.8" }), Text.gold({ "translate": "kubejs.tooltips.candy_stomach.9" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_stomach.10" })])
         .build())
         .texture('kubejs:item/organs/candy/candy_stomach')
         .tag('kubejs:stomach')
@@ -226,9 +226,9 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:candy_pancreas')
         .addScore('endurance', -1)
         .addScore('health', -1)
-        .addTextLines('default', [Text.gray('让人有吃下去的冲动。')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当“甜蜜之梦”的效果因为抵消伤害而消失时，给予'), Text.gold('伤害吸收 V'), Text.gray('效果。')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('此效果唯一')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.candy_pancreas.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_pancreas.2" }), Text.gold({ "translate": "kubejs.tooltips.candy_pancreas.3" }), Text.gray({ "translate": "kubejs.tooltips.candy_pancreas.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_pancreas.5" })])
         .build())
         .texture('kubejs:item/organs/candy/candy_pancreas')
         .tag('kubejs:pancreas')
@@ -238,12 +238,12 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:magic_hippocampus')
         .addScore('nerves', 0.75)
         .addScore('luck', 1)
-        .addTextLines('default', [Text.gray('散发着强大的魔力')])
-        .addTextLines('default', [Text.gray('被称之为魔法使的第二心脏')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当遭受到大于等于'), Text.gold('10'), Text.gray('的伤害时，给予玩家'), Text.of('“甜蜜之梦”').color('#e8a0dc'), Text.gray('效果')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每存在'), Text.gold('1'), Text.gray('个'), Text.aqua('魔法束'), Text.gray('，效果持续时间增长5s')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每存在'), Text.gold('2'), Text.gray('个'), Text.aqua('魔法脊柱'), Text.gray('，效果等级提高1级')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('此效果唯一')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.1" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.3" }), Text.gold({ "translate": "kubejs.tooltips.magic_hippocampus.4" }), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.5" }), Text.of({ "translate": "kubejs.tooltips.magic_hippocampus.6" }).color('#e8a0dc'), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.7" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.8" }), Text.gold({ "translate": "kubejs.tooltips.magic_hippocampus.9" }), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.10" }), Text.aqua({ "translate": "kubejs.tooltips.magic_hippocampus.11" }), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.12" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.13" }), Text.gold({ "translate": "kubejs.tooltips.magic_hippocampus.14" }), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.15" }), Text.aqua({ "translate": "kubejs.tooltips.magic_hippocampus.16" }), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.17" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.18" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_hippocampus')
         .tag('kubejs:magic');
@@ -251,15 +251,15 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:magic_muscle')
         .addScore('strength', 1)
         .addScore('health', -0.5)
-        .addTextLines('default', [Text.gray('魔法使的魔力便是通过此条纤维游走于全身')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_muscle.1" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_muscle')
         .tag('kubejs:magic');
 
     registerOrgan(new Organ('kubejs:magic_spine')
         .addScore('nerves', 1)
-        .addTextLines('default', [Text.gray('更为粗壮的魔力传导装置')])
-        .addTextLines('default', [Text.gray('也许解释了为什么软体生物没有魔力')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_spine.1" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_spine.2" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_spine')
         .tag('kubejs:magic');
@@ -267,8 +267,8 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:magic_vision')
         .addScore('nerves', -1)
         .addScore('metabolism', -1)
-        .addTextLines('default', [Text.gray('你现在能够发现敌人的弱点')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后提高'), Text.yellow(0.1), Text.yellow('咒文伤害倍率')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_vision.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_vision.2" }), Text.yellow(0.1), Text.yellow({ "translate": "kubejs.tooltips.magic_vision.3" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_vision')
         .tag('kubejs:magic')
@@ -276,8 +276,8 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:color_palette')
         .addScore('speed', -0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('手持'), Text.gold('大艺术家法杖'), Text.gray('造成法术伤害时。如果法术为'), Text.gold('火焰箭'), Text.gray('、'), Text.green('剧毒箭'), Text.gray('、'), Text.blue('冰锥')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('会额外造成等同于'), Text.gold('当前法力值/30'), Text.gray('的额外伤害')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.color_palette.1" }), Text.gold({ "translate": "kubejs.tooltips.color_palette.2" }), Text.gray({ "translate": "kubejs.tooltips.color_palette.3" }), Text.gold({ "translate": "kubejs.tooltips.color_palette.4" }), Text.gray({ "translate": "kubejs.tooltips.color_palette.5" }), Text.green({ "translate": "kubejs.tooltips.color_palette.6" }), Text.gray({ "translate": "kubejs.tooltips.color_palette.7" }), Text.blue({ "translate": "kubejs.tooltips.color_palette.8" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.color_palette.9" }), Text.gold({ "translate": "kubejs.tooltips.color_palette.10" }), Text.gray({ "translate": "kubejs.tooltips.color_palette.11" })])
         .build())
         .texture('kubejs:item/organs/magic/color_palette')
         .tag('itemborders:gold')
@@ -287,7 +287,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:red_ink')
         .addScore('strength', -1)
         .addScore('nutrition', 0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('遭受伤害时，'), Text.gold('损失血量*5'), Text.gray('将转换为当前魔法值')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.red_ink.1" }), Text.gold({ "translate": "kubejs.tooltips.red_ink.2" }), Text.gray({ "translate": "kubejs.tooltips.red_ink.3" })])
         .build())
         .texture('kubejs:item/organs/magic/red_ink')
         .tag('itemborders:gold')
@@ -297,7 +297,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:bad_ink')
         .addScore('strength', -1)
         .addScore('filtration', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每有一个魔法类型器官，提高'), Text.gold(20), Text.gray('魔法值上限')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bad_ink.1" }), Text.gold(20), Text.gray({ "translate": "kubejs.tooltips.bad_ink.2" })])
         .build())
         .texture('kubejs:item/organs/magic/bad_ink')
         .tag('itemborders:gold')
@@ -306,7 +306,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:blood_moon_wand')
         .addScore('nerves', 1)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后提高'), Text.yellow(0.15), Text.yellow('鲜血咒文伤害倍率')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blood_moon_wand.1" }), Text.yellow(0.15), Text.yellow({ "translate": "kubejs.tooltips.blood_moon_wand.2" })])
         .build())
         .texture('kubejs:item/organs/magic/blood_moon_wand')
         .modifyAttribute('irons_spellbooks:blood_spell_power', 'kubejsBloodSpellPowerWeaponBoost', 0.3, 'addition')
@@ -319,11 +319,11 @@ StartupEvents.registry('item', event => {
         .addScore('health', -0.25)
         .addScore('nerves', -0.5)
         .addScore('breath_recovery', 1)
-        .addTextLines('default', [Text.gray('吸入了过多灰尘，已经残破不堪')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次挖掘石头后，便会积累'), Text.gold('1'), Text.gray('资源点数')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在积累到'), Text.gold('64'), Text.gray('点后，3%概率消耗64点并给予矿物')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('资源点积累效果唯一')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.green('奖励受幸运影响')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.ore_lung.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ore_lung.2" }), Text.gold({ "translate": "kubejs.tooltips.ore_lung.3" }), Text.gray({ "translate": "kubejs.tooltips.ore_lung.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ore_lung.5" }), Text.gold({ "translate": "kubejs.tooltips.ore_lung.6" }), Text.gray({ "translate": "kubejs.tooltips.ore_lung.7" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.ore_lung.8" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.green({ "translate": "kubejs.tooltips.ore_lung.9" })])
         .build())
         .texture('kubejs:item/organs/resource/ore_lung')
         .tag('kubejs:lung')
@@ -333,10 +333,10 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:desire_of_midas')
         .addScore('strength', -1)
         .addScore('breath_recovery', -0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后增加'), Text.gold('100'), Text.gray('资源点数上限')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当资源点数累积到'), Text.gold('150'), Text.gray('后，2%概率触发'), Text.gold('点石成金')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('触发时，消耗'), Text.gold('100'), Text.gray('资源点数')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('点石成金效果唯一')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.desire_of_midas.1" }), Text.gold({ "translate": "kubejs.tooltips.desire_of_midas.2" }), Text.gray({ "translate": "kubejs.tooltips.desire_of_midas.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.desire_of_midas.4" }), Text.gold({ "translate": "kubejs.tooltips.desire_of_midas.5" }), Text.gray({ "translate": "kubejs.tooltips.desire_of_midas.6" }), Text.gold({ "translate": "kubejs.tooltips.desire_of_midas.7" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.desire_of_midas.8" }), Text.gold({ "translate": "kubejs.tooltips.desire_of_midas.9" }), Text.gray({ "translate": "kubejs.tooltips.desire_of_midas.10" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.desire_of_midas.11" })])
         .build())
         .texture('kubejs:item/organs/resource/desire_of_midas')
         .tag('itemborders:gold')
@@ -346,7 +346,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:diamond_bottle')
         .addScore('breath_recovery', -0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('挖掘时有'), Text.gold('50%'), Text.gray('概率增加资源点'), Text.gold('1'), Text.gray('点')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.diamond_bottle.1" }), Text.gold({ "translate": "kubejs.tooltips.diamond_bottle.2" }), Text.gray({ "translate": "kubejs.tooltips.diamond_bottle.3" }), Text.gold({ "translate": "kubejs.tooltips.diamond_bottle.4" }), Text.gray({ "translate": "kubejs.tooltips.diamond_bottle.5" })])
         .build())
         .texture('kubejs:item/organs/resource/diamond_bottle')
         .tag('itemborders:diamond')
@@ -356,10 +356,10 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:redstone_furnace')
         .addScore('health', 1.25)
         .addScore('defense', -0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后增加'), Text.gold('200'), Text.gray('资源点数上限')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('手持'), Text.gold('红石块'), Text.gray('右键以直接获得'), Text.gold('80'), Text.gray('资源点数')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('完全燃烧红石块需要60s')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('特殊效果唯一')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.1" }), Text.gold({ "translate": "kubejs.tooltips.redstone_furnace.2" }), Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.4" }), Text.gold({ "translate": "kubejs.tooltips.redstone_furnace.5" }), Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.6" }), Text.gold({ "translate": "kubejs.tooltips.redstone_furnace.7" }), Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.8" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.9" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.redstone_furnace.10" })])
         .build())
         .texture('kubejs:item/organs/resource/redstone_furnace')
         .tag('kubejs:active')
@@ -368,7 +368,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:silk_for_cutting')
         .addScore('knockback_resistant', -0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('能够精确采集玻璃')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.silk_for_cutting.1" })])
         .build())
         .texture('kubejs:item/organs/others/silk_for_cutting')
         .tag('kubejs:muscle')
@@ -376,7 +376,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:holy_eyeball')
         .addScore('filtration', -0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后提高'), Text.yellow('5%'), Text.yellow('暴击概率')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.holy_eyeball.1" }), Text.yellow({ "translate": "kubejs.tooltips.holy_eyeball.2" }), Text.yellow({ "translate": "kubejs.tooltips.holy_eyeball.3" })])
         .build())
         .texture('kubejs:item/organs/others/holy_eyeball')
         .tag('kubejs:muscle')
@@ -388,10 +388,10 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:doppelganger')
         .addScore('health', -1)
         .addScore('breath_recovery', 1)
-        .addTextLines('default', [Text.gray('二重身会吸收走本体的能量')])
-        .addTextLines('default', [Text.gray('但又会在生命濒危之际帮助你')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('受到致命伤害时，有低概率会获得伤害吸收Ⅲ效果')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('概率取决于其他'), Text.gold('都市传说'), Text.gray('器官种类的数量')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.doppelganger.1" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.doppelganger.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.doppelganger.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.doppelganger.4" }), Text.gold({ "translate": "kubejs.tooltips.doppelganger.5" }), Text.gray({ "translate": "kubejs.tooltips.doppelganger.6" })])
         .build())
         .texture('kubejs:item/organs/legends/doppelganger')
         .tag('kubejs:legends')
@@ -403,13 +403,13 @@ StartupEvents.registry('item', event => {
         .addScore('nerves', 2)
         .addScore('speed', -1)
         .addScore('endurance', -1)
-        .addTextLines('default', [Text.gray('于是，人类被赶出了伊甸园')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('将会移除所有实体掉落物和宝箱掉落物')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次攻击会随机从以下效果中进行选择')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('将本次伤害类型转换为'), Text.gold('无源摔落伤害')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('攻击伤害固定增加'), Text.gold('敌人最大生命3%')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('攻击伤害翻倍')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('自身获得'), Text.gold('生命恢复效果')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.lost_paradise.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.lost_paradise.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.lost_paradise.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.lost_paradise.4" }), Text.gold({ "translate": "kubejs.tooltips.lost_paradise.5" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.lost_paradise.6" }), Text.gold({ "translate": "kubejs.tooltips.lost_paradise.7" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.lost_paradise.8" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.lost_paradise.9" }), Text.gold({ "translate": "kubejs.tooltips.lost_paradise.10" })])
         .build())
         .texture('kubejs:item/organs/legends/lost_paradise')
         .rarity('epic')
@@ -424,8 +424,8 @@ StartupEvents.registry('item', event => {
         .addScore('strength', -1)
         .addScore('speed', 1)
         .addScore('endurance', 1)
-        .addTextLines('default', [Text.gray('于是，神带着神启降临了')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('实体掉落物数量将会翻倍')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.paradise_regained.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.paradise_regained.2" })])
         .build())
         .texture('kubejs:item/organs/legends/paradise_regained')
         .rarity('epic')
@@ -437,10 +437,10 @@ StartupEvents.registry('item', event => {
         .addScore('crystalsynthesis', 0.25)
         .addScore('speed', 1)
         .addScore('endurance', 1)
-        .addTextLines('default', [Text.gray('仅仅是从缝隙中感受到的力量就令人战栗')])
-        .addTextLines('default', [Text.darkPurple('打开我. . .你会获得更多力量. . .')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('附魔时，某附魔等级若高于等于'), Text.gold('Ⅲ'), Text.gray('，则会被设置为'), Text.gold('Ⅴ')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('附魔时，某附魔等级若高于等于'), Text.gold('Ⅴ'), Text.gray('，则会被设置为'), Text.gold('Ⅶ')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.pandora_inactive.1" })])
+        .addTextLines('default', [Text.darkPurple({ "translate": "kubejs.tooltips.pandora_inactive.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_inactive.3" }), Text.gold({ "translate": "kubejs.tooltips.pandora_inactive.4" }), Text.gray({ "translate": "kubejs.tooltips.pandora_inactive.5" }), Text.gold({ "translate": "kubejs.tooltips.pandora_inactive.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_inactive.7" }), Text.gold({ "translate": "kubejs.tooltips.pandora_inactive.8" }), Text.gray({ "translate": "kubejs.tooltips.pandora_inactive.9" }), Text.gold({ "translate": "kubejs.tooltips.pandora_inactive.10" })])
         .build())
         .texture('kubejs:item/organs/legends/pandora_inactive')
         .rarity('epic')
@@ -454,11 +454,11 @@ StartupEvents.registry('item', event => {
         .addScore('crystalsynthesis', 0.25)
         .addScore('speed', 1)
         .addScore('endurance', 1)
-        .addTextLines('default', [Text.gray('它沉默了，但它的声音却比任何时候震耳欲聋')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次附魔将会出现额外5个'), Text.darkRed('等级0诅咒附魔')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('附魔时，附魔等级会强制转移到附魔列表中随机某一附魔上')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('被转移的附魔会因此消失')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在窥视附魔时，概率提高'), Text.darkPurple('扭曲值')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.pandora_active.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_active.2" }), Text.darkRed({ "translate": "kubejs.tooltips.pandora_active.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_active.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_active.5" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_active.6" }), Text.darkPurple({ "translate": "kubejs.tooltips.pandora_active.7" })])
         .build())
         .texture('kubejs:item/organs/warp/pandora_active')
         .rarity('epic')
@@ -479,8 +479,8 @@ StartupEvents.registry('item', event => {
         .addScore('digestion', 0.125)
         .addScore('metabolism', 0.125)
         .addScore('speed', 0.25)
-        .addTextLines('default', [Text.gray('在久远的岁月中，它的器官彼此融合')])
-        .addTextLines('default', [Text.gray('最终铸造成为了这块殷红的金属板')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.relic_metal_plate.1" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.relic_metal_plate.2" })])
         .build())
         .texture('kubejs:item/organs/relics/relic_metal_plate')
         .tag('kubejs:relics');
@@ -488,8 +488,8 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:parasitic_elf')
         .addScore('health', 1)
         .addScore('speed', -1)
-        .addTextLines('default', [Text.gray('寄生在灵魂深处的精灵')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('使用弓箭攻击敌人时，有'), Text.gold('幸运*5%(最大50%)'), Text.gray('的概率延长所有负面效果2s')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.parasitic_elf.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.parasitic_elf.2" }), Text.gold('幸运*5%(最大50%)'), Text.gray({ "translate": "kubejs.tooltips.parasitic_elf.3" })])
         .build())
         .texture('kubejs:item/organs/relics/parasitic_elf')
         .tag('kubejs:relics')
@@ -499,21 +499,22 @@ StartupEvents.registry('item', event => {
         .addScore('health', 1)
         .addScore('fire_resistant', 1)
         .addScore('detoxification', -2)
-        .addTextLines('default', [Text.gray('我们彼此分离，却又恒为一体')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一格'), Text.blue('蓝冰'), Text.gray('，会为你添加额外'), Text.yellow(0.1), Text.aqua('冰系魔法伤害倍率')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('每存在一格'), Text.darkRed('岩浆块'), Text.gray('，会为你添加额外'), Text.yellow(0.1), Text.red('火系魔法伤害倍率')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('一格内存在任意数量即被视作一格')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.2" }), Text.blue({ "translate": "kubejs.tooltips.love_between_lava_and_ice.3" }), Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.4" }), Text.yellow(0.1), Text.aqua({ "translate": "kubejs.tooltips.love_between_lava_and_ice.5" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.6" }), Text.darkRed({ "translate": "kubejs.tooltips.love_between_lava_and_ice.7" }), Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.8" }), Text.yellow(0.1), Text.red({ "translate": "kubejs.tooltips.love_between_lava_and_ice.9" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.10" })])
         .build())
         .texture('kubejs:item/organs/relics/love_between_lava_and_ice')
         .tag('kubejs:heart')
         .tag('kubejs:active')
         .tag('kubejs:relics');
 
+
     registerOrgan(new Organ('kubejs:leviathan_spine')
         .addScore('nerves', 1.5)
         .addScore('swim_speed', 2)
         .addScore('breath_recovery', 1)
-        .addTextLines('default', [Text.gray('游龙于水')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.leviathan_spine.1" })])
         .build())
         .texture('kubejs:item/organs/relics/leviathan_spine')
         .tag('kubejs:spine')
@@ -521,7 +522,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:leviathan_rib')
         .addScore('defense', 1.75)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后会额外提供'), Text.gold(2), Text.gray('护甲韧性')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.leviathan_rib.1" }), Text.gold(2), Text.gray({ "translate": "kubejs.tooltips.leviathan_rib.2" })])
         .build())
         .texture('kubejs:item/organs/relics/leviathan_rib')
         .tag('kubejs:rib')
@@ -530,8 +531,8 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:heart_of_blade')
         .addScore('health', -1.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('受到攻击时会对敌人造成等同于'), Text.gold('护甲值'), Text.gray('的伤害')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.heart_of_blade.1" }), Text.gold({ "translate": "kubejs.tooltips.heart_of_blade.2" }), Text.gray({ "translate": "kubejs.tooltips.heart_of_blade.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.heart_of_blade.4" })])
         .build())
         .texture('kubejs:item/organs/relics/heart_of_blade')
         .tag('kubejs:heart')
@@ -540,9 +541,9 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:blade_of_heart')
         .addScore('defense', -1.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('使用武器大师的宽刃剑造成伤害时')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('其伤害会提高'), Text.gold('30%')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blade_of_heart.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blade_of_heart.2" }), Text.gold({ "translate": "kubejs.tooltips.blade_of_heart.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.blade_of_heart.4" })])
         .build())
         .texture('kubejs:item/organs/relics/blade_of_heart')
         .tag('kubejs:damage_only')
@@ -552,10 +553,10 @@ StartupEvents.registry('item', event => {
         .addScore('defense', 0.5)
         .addScore('strength', 1)
         .addScore('endurance', -0.5)
-        .addTextLines('default', [Text.red('铸剑为骨')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('使用武器大师的刺剑造成伤害时')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('每次攻击'), Text.gold('10%'), Text.gray('概率会造成'), Text.red('易伤效果')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .addTextLines('default', [Text.red({ "translate": "kubejs.tooltips.bone_soul.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bone_soul.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bone_soul.3" }), Text.gold({ "translate": "kubejs.tooltips.bone_soul.4" }), Text.gray({ "translate": "kubejs.tooltips.bone_soul.5" }), Text.red({ "translate": "kubejs.tooltips.bone_soul.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.bone_soul.7" })])
         .build())
         .texture('kubejs:item/organs/relics/bone_soul')
         .tag('kubejs:damage_only')
@@ -565,7 +566,7 @@ StartupEvents.registry('item', event => {
         .addScore('health', 1)
         .addScore('photosynthesis', 4)
         .addScore('metabolism', 4)
-        .addTextLines('default', [Text.gray('此刻，繁花重照田野')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.flower_heart.1" })])
         .build())
         .texture('kubejs:item/organs/relics/flower_heart')
         .tag('kubejs:heart')
@@ -573,8 +574,8 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:aesegull_rib_left')
         .addScore('defense', 1.75)
-        .addTextLines('default', [Text.gray('它在寻找另一名同伴')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('若在左右对称位置放置有'), Text.gold('立场欺诈者的右肋'), Text.gray('，则增加'), Text.gold(3), Text.gray('护甲值')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.aesegull_rib_left.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.aesegull_rib_left.2" }), Text.gold({ "translate": "kubejs.tooltips.aesegull_rib_left.3" }), Text.gray({ "translate": "kubejs.tooltips.aesegull_rib_left.4" }), Text.gold(3), Text.gray({ "translate": "kubejs.tooltips.aesegull_rib_left.5" })])
         .build())
         .texture('kubejs:item/organs/relics/aesegull_rib_left')
         .tag('kubejs:rib')
@@ -583,8 +584,8 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:aesegull_rib_right')
         .addScore('defense', 1.75)
-        .addTextLines('default', [Text.gray('它在寻找另一名同伴')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('若在左右对称位置放置有'), Text.gold('立场欺诈者的左肋'), Text.gray('，则增加'), Text.gold(3), Text.gray('盔甲韧性')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.aesegull_rib_right.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.aesegull_rib_right.2" }), Text.gold({ "translate": "kubejs.tooltips.aesegull_rib_right.3" }), Text.gray({ "translate": "kubejs.tooltips.aesegull_rib_right.4" }), Text.gold(3), Text.gray({ "translate": "kubejs.tooltips.aesegull_rib_right.5" })])
         .build())
         .texture('kubejs:item/organs/relics/aesegull_rib_right')
         .tag('kubejs:rib')
@@ -595,8 +596,8 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:forbidden_fruit')
         .addScore('detoxification', 1.75)
         .addScore('health', 0.25)
-        .addTextLines('default', [Text.gray('根植在身体里的禁果')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('能够扭转'), Text.red('不洁圣杯'), Text.gray('的负面效果')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.forbidden_fruit.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.forbidden_fruit.2" }), Text.red({ "translate": "kubejs.tooltips.forbidden_fruit.3" }), Text.gray({ "translate": "kubejs.tooltips.forbidden_fruit.4" })])
         .build())
         .texture('kubejs:item/organs/relics/forbidden_fruit')
         .tag('kubejs:liver')
@@ -605,9 +606,9 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:executioner_blade_pieces')
         .addScore('strength', 1.75)
         .addScore('health', -0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('使用'), Text.red('行刑者剑刃'), Text.gray('的Tetra武器时，攻击会造成'), Text.gold('行刑Ⅲ'), Text.gray('效果')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('当生物持有行刑效果时，所受武器伤害降低，但概率增加相当于基于敌人已损失生命值的额外伤害')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.executioner_blade_pieces.1" }), Text.red({ "translate": "kubejs.tooltips.executioner_blade_pieces.2" }), Text.gray({ "translate": "kubejs.tooltips.executioner_blade_pieces.3" }), Text.gold({ "translate": "kubejs.tooltips.executioner_blade_pieces.4" }), Text.gray({ "translate": "kubejs.tooltips.executioner_blade_pieces.5" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.executioner_blade_pieces.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.executioner_blade_pieces.7" })])
         .build())
         .texture('kubejs:item/organs/relics/executioner_blade_pieces')
         .tag('kubejs:muscle')
@@ -618,9 +619,9 @@ StartupEvents.registry('item', event => {
         .addScore('strength', 1.5)
         .addScore('swim_speed', -1)
         .addScore('fire_resistant', -1)
-        .addTextLines('default', [Text.gray('重锤. . .准备中')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('攻击时有'), Text.gold('3%*幸运等级(最大30%)'), Text.gray('的概率造成2s眩晕')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.heavy_hammer_muscle.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.heavy_hammer_muscle.2" }), Text.gold('3%*幸运等级(最大30%)'), Text.gray({ "translate": "kubejs.tooltips.heavy_hammer_muscle.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.heavy_hammer_muscle.4" })])
         .build())
         .texture('kubejs:item/organs/relics/heavy_hammer_muscle')
         .tag('kubejs:muscle')
@@ -631,9 +632,9 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:redstone_chipset')
         .addScore('nerves', 1.5)
         .addScore('fire_resistant', -1)
-        .addTextLines('default', [Text.gray('它能够看到弱点，你也能。')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后每个机械器官为你提供'), Text.gold('2%(最大20%)'), Text.gray('的暴击概率')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后增加'), Text.gold('30%'), Text.gray('暴击伤害')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.2" }), Text.gold('2%(最大20%)'), Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.3" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.4" }), Text.gold({ "translate": "kubejs.tooltips.redstone_chipset.5" }), Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.6" })])
         .build())
         .texture('kubejs:item/organs/relics/redstone_chipset')
         .tag('kubejs:machine')
@@ -643,10 +644,10 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:demon_eyeball')
         .addScore('luck', -1)
         .addScore('fire_resistant', 1)
-        .addTextLines('default', [Text.gray('恶魔喜欢你的视线')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('根据视角决定伤害，视角越低伤害越高。')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('伤害倍率浮动在'), Text.gold('0% ~ 200%'), Text.gray('之间')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('此效果唯一')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.demon_eyeball.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.demon_eyeball.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.demon_eyeball.3" }), Text.gold({ "translate": "kubejs.tooltips.demon_eyeball.4" }), Text.gray({ "translate": "kubejs.tooltips.demon_eyeball.5" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.demon_eyeball.6" })])
         .build())
         .texture('kubejs:item/organs/relics/demon_eyeball')
         .tag('kubejs:damage_only')
@@ -655,7 +656,7 @@ StartupEvents.registry('item', event => {
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('10%'), Text.gray('暴击概率')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.nether_star_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.nether_star_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.nether_star_shard.3" })])
         .build())
         .texture('kubejs:item/organs/shard/nether_star_shard')
         .tag('itemborders:gold')
@@ -663,7 +664,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:sloth_shard')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供'), Text.gold('80%'), Text.gray('击退抗性')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sloth_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.sloth_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.sloth_shard.3" })])
         .build())
         .texture('kubejs:item/organs/shard/sloth_shard')
         .tag('itemborders:gold')
@@ -671,8 +672,8 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:wrath_shard')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你增加'), Text.gold('300%'), Text.gray('暴击伤害')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('但会降低'), Text.gold('80%'), Text.gray('暴击概率')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.wrath_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.wrath_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.wrath_shard.3" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.wrath_shard.4" }), Text.gold({ "translate": "kubejs.tooltips.wrath_shard.5" }), Text.gray({ "translate": "kubejs.tooltips.wrath_shard.6" })])
         .build())
         .texture('kubejs:item/organs/shard/wrath_shard')
         .tag('itemborders:gold')
@@ -680,7 +681,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:envy_shard')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你增加'), Text.gold('100%'), Text.gray('暴击伤害')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.envy_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.envy_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.envy_shard.3" })])
         .build())
         .texture('kubejs:item/organs/shard/envy_shard')
         .tag('itemborders:gold')
@@ -688,7 +689,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:gluttony_shard')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后小幅增加消化效率')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.gluttony_shard.1" })])
         .build())
         .texture('kubejs:item/organs/shard/gluttony_shard')
         .tag('itemborders:gold')
@@ -696,7 +697,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:greed_shard')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('击杀任意生物时会为你额外掉落一枚铜币')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.greed_shard.1" })])
         .build())
         .texture('kubejs:item/organs/shard/greed_shard')
         .tag('itemborders:gold')
@@ -704,7 +705,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:lust_shard')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你增加'), Text.gold('100'), Text.gray('最大魔力值')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.lust_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.lust_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.lust_shard.3" })])
         .build())
         .texture('kubejs:item/organs/shard/lust_shard')
         .tag('itemborders:gold')
@@ -712,28 +713,26 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:pride_shard')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你增加'), Text.gold('30%'), Text.gray('召唤伤害倍率')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pride_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.pride_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.pride_shard.3" })])
         .build())
         .texture('kubejs:item/organs/shard/pride_shard')
         .tag('itemborders:gold')
         .tag('kubejs:active_only');
 
-
     // 位置器官
     registerOrgan(new Organ('kubejs:stomach_tumor')
         .addScore('endurance', 0.5)
         .addScore('digestion', 1)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('如果在周围存在最少'), Text.gold(3), Text.gray('个胃瘤，会为你提供额外的'), Text.gold(6), Text.gray('生命值上限')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.stomach_tumor.1" }), Text.gold(3), Text.gray({ "translate": "kubejs.tooltips.stomach_tumor.2" }), Text.gold(6), Text.gray({ "translate": "kubejs.tooltips.stomach_tumor.3" })])
         .build())
         .texture('kubejs:item/organs/others/stomach_tumor')
         .tag('kubejs:stomach')
         .tag('kubejs:active');
 
-
     // 杂项
     registerOrgan(new Organ('kubejs:telescopic_arm')
         .addScore('speed', -0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(1), Text.gray('触及距离')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.telescopic_arm.1" }), Text.gold(1), Text.gray({ "translate": "kubejs.tooltips.telescopic_arm.2" })])
         .build())
         .texture('kubejs:item/organs/machine/telescopic_arm')
         .tag('itemborders:iron')
@@ -743,7 +742,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:telescopic_tool_arm')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(2), Text.gray('触及距离')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.telescopic_tool_arm.1" }), Text.gold(2), Text.gray({ "translate": "kubejs.tooltips.telescopic_tool_arm.2" })])
         .build())
         .texture('kubejs:item/organs/machine/telescopic_arm')
         .tag('itemborders:gold')
@@ -752,7 +751,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:telescopic_attack_arm')
         .addScore('fire_resistant', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活后为你提供额外'), Text.gold(1), Text.gray('攻击距离')])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.telescopic_attack_arm.1" }), Text.gold(1), Text.gray({ "translate": "kubejs.tooltips.telescopic_attack_arm.2" })])
         .build())
         .texture('kubejs:item/organs/machine/telescopic_attack_arm')
         .tag('itemborders:gold')
@@ -775,7 +774,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:long_lasting_pill')
         .addScore('strength', -1)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在关闭器官时会自动触发激活效果')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.long_lasting_pill.1" })])
         .build())
         .texture('kubejs:item/organs/others/long_lasting_pill')
         .tag('itemborders:iron')
@@ -783,28 +782,28 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:long_lasting_pill_gold')
         .addScore('speed', 0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在关闭器官时会自动触发激活效果')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.long_lasting_pill_gold.1" })])
         .build())
         .texture('kubejs:item/organs/others/long_lasting_pill')
         .tag('itemborders:gold');
 
     registerOrgan(new Organ('kubejs:d8')
         .addScore('luck', 1)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('在搜刮野外箱子时，概率可以得到随机属性的器官')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.green('幸运越高，属性范围越大')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.d8.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.green({ "translate": "kubejs.tooltips.d8.2" })])
         .build())
         .texture('kubejs:item/organs/others/d8')
         .tag('itemborders:diamond')
         .tag('kubejs:loot_chest_only');
-        
+
     // 食物系列
     registerOrgan(new Organ('kubejs:hamimelon_organ')
         .addScore('health', -0.5)
         .addScore('endurance', 1.5)
         .addScore('luck', 1)
-        .addTextLines('default', [Text.gray('被整齐切下的哈密瓜')])
-        .addTextLines('default', [Text.gray('它是怎么来到这里的？')])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('周围每存在一个'), Text.of('食物').color('#f1b500'), Text.gray('器官，会额外增加'), Text.gold(2), Text.gray('生命值上限')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.hamimelon_organ.1" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.hamimelon_organ.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.hamimelon_organ.3" }), Text.of({ "translate": "kubejs.tooltips.hamimelon_organ.4" }).color('#f1b500'), Text.gray({ "translate": "kubejs.tooltips.hamimelon_organ.5" }), Text.gold(2), Text.gray({ "translate": "kubejs.tooltips.hamimelon_organ.6" })])
         .build())
         .texture('kubejs:item/organs/food/hamimelon_organ')
         .tag('itemborders:gold')
@@ -814,7 +813,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:watermelon_organ')
         .addScore('health', 0.5)
         .addScore('speed', 0.5)
-        .addTextLines('default', [Text.gray('被整齐切下的西瓜')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.watermelon_organ.1" })])
         .build())
         .texture('kubejs:item/organs/food/watermelon_organ')
         .tag('itemborders:iron')
@@ -822,7 +821,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:lucky_cookie_organ')
         .addScore('luck', 3)
-        .addTextLines('default', [Text.gray('今日运势为:大吉')])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.lucky_cookie_organ.1" })])
         .build())
         .texture('kubejs:item/organs/food/lucky_cookie')
         .tag('itemborders:gold')
@@ -832,9 +831,9 @@ StartupEvents.registry('item', event => {
         .addScore('health', 1.5)
         .addScore('defense', -1)
         .addScore('luck', 1.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('食用曲奇时会获得'), Text.gold('3600s力量Ⅰ'), Text.gray('效果')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray('食用奶油时会获得'), Text.gold('3600s速度Ⅰ'), Text.gray('效果')])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red('效果互斥')])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.1" }), Text.gold({ "translate": "kubejs.tooltips.cream_cookie_heart.2" }), Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.4" }), Text.gold({ "translate": "kubejs.tooltips.cream_cookie_heart.5" }), Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.cream_cookie_heart.7" })])
         .build())
         .texture('kubejs:item/organs/food/cream_cookie_heart')
         .tag('itemborders:gold')
@@ -842,82 +841,145 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:eat_effect_only');
 
     // alex
-    registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart')
-    registerOrgan(new Organ('kubejs:warped_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/alex/warped_spine').tag('kubejs:spine')
+    registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 
-    registerOrgan(new Organ('kubejs:feather').addScore('speed', 1).addScore('defense', -1).build()).texture('kubejs:item/organs/alex/feather')
-    registerOrgan(new Organ('kubejs:mollusk_muscle').addScore('strength', 1.25).addScore('speed', 0.375).build()).texture('kubejs:item/organs/alex/mollusk_muscle').tag('kubejs:muscle')
-    registerOrgan(new Organ('kubejs:giant_squid_whisker').addScore('strength', 0.5).addScore('speed', 1.25).build()).texture('kubejs:item/organs/alex/giant_squid_whisker').tag('kubejs:muscle')
-    registerOrgan(new Organ('kubejs:mimic_octopus_skin').addScore('defense', 1.25).addScore('speed', 0.25).build()).texture('kubejs:item/organs/alex/mimic_octopus_skin')
-    registerOrgan(new Organ('kubejs:fish_spine').addScore('nerves', 1).build()).texture('kubejs:item/organs/alex/fish_spine').tag('kubejs:spine')
-    registerOrgan(new Organ('kubejs:fish_bone').addScore('defense', 0.75).addScore('speed', 0.75).build()).texture('kubejs:item/organs/alex/fish_bone').tag('kubejs:rib')
-    registerOrgan(new Organ('kubejs:fish_intestine').addScore('digestion', 1.25).build()).texture('kubejs:item/organs/alex/fish_intestines').tag('kubejs:intestine')
+    registerOrgan(new Organ('kubejs:warped_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/alex/warped_spine').tag('kubejs:spine');
 
-    registerOrgan(new Organ('kubejs:nether_rib').addScore('defense', 1.25).addScore('fire_resistant', 0.5).build()).texture('kubejs:item/organs/nether/nether_rib').tag('kubejs:rib')
-    registerOrgan(new Organ('kubejs:nether_muscle').addScore('strength', 1.25).addScore('fire_resistant', 0.5).build()).texture('kubejs:item/organs/nether/nether_muscle').tag('kubejs:muscle')
-    registerOrgan(new Organ('kubejs:nether_heart').addScore('health', 0.75).addScore('fire_resistant', 1).build()).texture('kubejs:item/organs/nether/nether_heart').tag('kubejs:heart')
-    registerOrgan(new Organ('kubejs:nether_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/nether/nether_spine').tag('kubejs:spine')
-    registerOrgan(new Organ('kubejs:crimson_mosquito_mouthparts').addScore('strength', 0.5).addScore('defense', -1).build()).texture('kubejs:item/organs/nether/crimson_mosquito_mouthparts')
+    registerOrgan(new Organ('kubejs:feather').addScore('speed', 1).addScore('defense', -1).build()).texture('kubejs:item/organs/alex/feather');
+
+    registerOrgan(new Organ('kubejs:mollusk_muscle').addScore('strength', 1.25).addScore('speed', 0.375).build()).texture('kubejs:item/organs/alex/mollusk_muscle').tag('kubejs:muscle');
+
+    registerOrgan(new Organ('kubejs:giant_squid_whisker').addScore('strength', 0.5).addScore('speed', 1.25).build()).texture('kubejs:item/organs/alex/giant_squid_whisker').tag('kubejs:muscle');
+
+    registerOrgan(new Organ('kubejs:mimic_octopus_skin').addScore('defense', 1.25).addScore('speed', 0.25).build()).texture('kubejs:item/organs/alex/mimic_octopus_skin');
+
+    registerOrgan(new Organ('kubejs:fish_spine').addScore('nerves', 1).build()).texture('kubejs:item/organs/alex/fish_spine').tag('kubejs:spine');
+
+    registerOrgan(new Organ('kubejs:fish_bone').addScore('defense', 0.75).addScore('speed', 0.75).build()).texture('kubejs:item/organs/alex/fish_bone').tag('kubejs:rib');
+
+    registerOrgan(new Organ('kubejs:fish_intestine').addScore('digestion', 1.25).build()).texture('kubejs:item/organs/alex/fish_intestines').tag('kubejs:intestine');
+
+    registerOrgan(new Organ('kubejs:nether_rib').addScore('defense', 1.25).addScore('fire_resistant', 0.5).build()).texture('kubejs:item/organs/nether/nether_rib').tag('kubejs:rib');
+
+    registerOrgan(new Organ('kubejs:nether_muscle').addScore('strength', 1.25).addScore('fire_resistant', 0.5).build()).texture('kubejs:item/organs/nether/nether_muscle').tag('kubejs:muscle');
+
+    registerOrgan(new Organ('kubejs:nether_heart').addScore('health', 0.75).addScore('fire_resistant', 1).build()).texture('kubejs:item/organs/nether/nether_heart').tag('kubejs:heart');
+
+    registerOrgan(new Organ('kubejs:nether_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/nether/nether_spine').tag('kubejs:spine');
+
+    registerOrgan(new Organ('kubejs:crimson_mosquito_mouthparts').addScore('strength', 0.5).addScore('defense', -1).build()).texture('kubejs:item/organs/nether/crimson_mosquito_mouthparts');
 
 
     // 模板器官
-    registerOrgan(new Organ('kubejs:lung_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('breath_recovery', 0.75).addScore('breath_capacity', 0.75).addScore('endurance', 0.75).build()).texture('kubejs:item/organs/template/lung_template').tag('kubejs:lung')
-    registerOrgan(new Organ('kubejs:muscle_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('strength', 0.75).addScore('speed', 0.75).build()).texture('kubejs:item/organs/template/muscle_template').tag('kubejs:muscle')
-    registerOrgan(new Organ('kubejs:heart_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('health', 0.75).build()).texture('kubejs:item/organs/template/heart_template').tag('kubejs:heart')
-    registerOrgan(new Organ('kubejs:intestine_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('nutrition', 0.75).build()).texture('kubejs:item/organs/template/intestine_template').tag('kubejs:intestine')
-    registerOrgan(new Organ('kubejs:rib_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('defense', 0.75).build()).texture('kubejs:item/organs/template/rib_template').tag('kubejs:rib')
-    registerOrgan(new Organ('kubejs:spine_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('defense', 0.375).addScore('nerves', 0.75).build()).texture('kubejs:item/organs/template/spine_template').tag('kubejs:spine')
-    registerOrgan(new Organ('kubejs:spleen_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('metabolism', 0.75).build()).texture('kubejs:item/organs/template/spleen_template').tag('kubejs:spleen')
-    registerOrgan(new Organ('kubejs:stomach_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('digestion', 0.75).build()).texture('kubejs:item/organs/template/stomach_template').tag('kubejs:stomach')
-    registerOrgan(new Organ('kubejs:kidney_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('filtration', 0.75).build()).texture('kubejs:item/organs/template/kidney_template').tag('kubejs:kidney')
-    registerOrgan(new Organ('kubejs:liver_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('detoxification', 0.75).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver')
-    registerOrgan(new Organ('kubejs:appendix_template').addTextLines('default', [Text.gray('从无名肉块中取出的器官')]).addScore('luck', 0.75).build()).texture('kubejs:item/organs/template/appendix_template').tag('kubejs:appendix')
+    registerOrgan(new Organ('kubejs:lung_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.lung_template.1" })]).addScore('breath_recovery', 0.75).addScore('breath_capacity', 0.75).addScore('endurance', 0.75).build()).texture('kubejs:item/organs/template/lung_template').tag('kubejs:lung');
+
+    registerOrgan(new Organ('kubejs:muscle_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.muscle_template.1" })]).addScore('strength', 0.75).addScore('speed', 0.75).build()).texture('kubejs:item/organs/template/muscle_template').tag('kubejs:muscle');
+
+    registerOrgan(new Organ('kubejs:heart_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.heart_template.1" })]).addScore('health', 0.75).build()).texture('kubejs:item/organs/template/heart_template').tag('kubejs:heart');
+
+    registerOrgan(new Organ('kubejs:intestine_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.intestine_template.1" })]).addScore('nutrition', 0.75).build()).texture('kubejs:item/organs/template/intestine_template').tag('kubejs:intestine');
+
+    registerOrgan(new Organ('kubejs:rib_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rib_template.1" })]).addScore('defense', 0.75).build()).texture('kubejs:item/organs/template/rib_template').tag('kubejs:rib');
+
+    registerOrgan(new Organ('kubejs:spine_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.spine_template.1" })]).addScore('defense', 0.375).addScore('nerves', 0.75).build()).texture('kubejs:item/organs/template/spine_template').tag('kubejs:spine');
+
+    registerOrgan(new Organ('kubejs:spleen_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.spleen_template.1" })]).addScore('metabolism', 0.75).build()).texture('kubejs:item/organs/template/spleen_template').tag('kubejs:spleen');
+
+    registerOrgan(new Organ('kubejs:stomach_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.stomach_template.1" })]).addScore('digestion', 0.75).build()).texture('kubejs:item/organs/template/stomach_template').tag('kubejs:stomach');
+
+    registerOrgan(new Organ('kubejs:kidney_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.kidney_template.1" })]).addScore('filtration', 0.75).build()).texture('kubejs:item/organs/template/kidney_template').tag('kubejs:kidney');
+
+    registerOrgan(new Organ('kubejs:liver_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.liver_template.1" })]).addScore('detoxification', 0.75).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver');
+
+    registerOrgan(new Organ('kubejs:appendix_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.appendix_template.1" })]).addScore('luck', 0.75).build()).texture('kubejs:item/organs/template/appendix_template').tag('kubejs:appendix');
 
     // 基本器官
-    registerOrgan(new Organ('kubejs:muscle_iron').addScore('strength', 1.25).addScore('speed', 1.25).build()).texture('kubejs:item/organs/common/muscle').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:muscle')
-    registerOrgan(new Organ('kubejs:spleen_iron').addScore('metabolism', 1.25).build()).texture('kubejs:item/organs/common/spleen').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:spleen')
-    registerOrgan(new Organ('kubejs:appendix_iron').addScore('luck', 1.25).build()).texture('kubejs:item/organs/common/appendix').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:appendix')
-    registerOrgan(new Organ('kubejs:kidney_iron').addScore('filtration', 1.25).build()).texture('kubejs:item/organs/common/kidney').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:kidney')
-    registerOrgan(new Organ('kubejs:liver_iron').addScore('detoxification', 1.25).build()).texture('kubejs:item/organs/common/liver').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:liver')
-    registerOrgan(new Organ('kubejs:rib_iron').addScore('defense', 1.25).build()).texture('kubejs:item/organs/common/rib').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:rib')
-    registerOrgan(new Organ('kubejs:intestine_iron').addScore('nutrition', 1.25).build()).texture('kubejs:item/organs/common/intestine').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:intestine')
-    registerOrgan(new Organ('kubejs:lung_iron').addScore('breath_recovery', 1.25).addScore('breath_capacity', 1.25).addScore('endurance', 1.25).build()).texture('kubejs:item/organs/common/lung').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:lung')
-    registerOrgan(new Organ('kubejs:stomach_iron').addScore('digestion', 1.25).build()).texture('kubejs:item/organs/common/stomach').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:stomach')
-    registerOrgan(new Organ('kubejs:heart_iron').addScore('health', 1.25).build()).texture('kubejs:item/organs/common/heart').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:heart')
-    registerOrgan(new Organ('kubejs:spine_iron').addScore('defense', 0.625).addScore('nerves', 1.25).build()).texture('kubejs:item/organs/common/spine').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:spine')
-    registerOrgan(new Organ('kubejs:muscle_gold').addScore('strength', 1.5).addScore('speed', 1.5).build()).texture('kubejs:item/organs/common/muscle').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:muscle')
-    registerOrgan(new Organ('kubejs:spleen_gold').addScore('metabolism', 1.5).build()).texture('kubejs:item/organs/common/spleen').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:spleen')
-    registerOrgan(new Organ('kubejs:appendix_gold').addScore('luck', 1.5).build()).texture('kubejs:item/organs/common/appendix').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:appendix')
-    registerOrgan(new Organ('kubejs:kidney_gold').addScore('filtration', 1.5).build()).texture('kubejs:item/organs/common/kidney').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:kidney')
-    registerOrgan(new Organ('kubejs:liver_gold').addScore('detoxification', 1.5).build()).texture('kubejs:item/organs/common/liver').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:liver')
-    registerOrgan(new Organ('kubejs:rib_gold').addScore('defense', 1.5).build()).texture('kubejs:item/organs/common/rib').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:rib')
-    registerOrgan(new Organ('kubejs:intestine_gold').addScore('nutrition', 1.5).build()).texture('kubejs:item/organs/common/intestine').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:intestine')
-    registerOrgan(new Organ('kubejs:lung_gold').addScore('breath_recovery', 1.5).addScore('breath_capacity', 1.5).addScore('endurance', 1.5).build()).texture('kubejs:item/organs/common/lung').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:lung')
-    registerOrgan(new Organ('kubejs:stomach_gold').addScore('digestion', 1.5).build()).texture('kubejs:item/organs/common/stomach').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:stomach')
-    registerOrgan(new Organ('kubejs:heart_gold').addScore('health', 1.5).build()).texture('kubejs:item/organs/common/heart').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:heart')
-    registerOrgan(new Organ('kubejs:spine_gold').addScore('defense', 0.75).addScore('nerves', 1.5).build()).texture('kubejs:item/organs/common/spine').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:spine')
-    registerOrgan(new Organ('kubejs:muscle_diamond').addScore('strength', 2).addScore('speed', 2).build()).texture('kubejs:item/organs/common/muscle').tag('itemborders:diamond').tag('kubejs:muscle')
-    registerOrgan(new Organ('kubejs:spleen_diamond').addScore('metabolism', 2).build()).texture('kubejs:item/organs/common/spleen').tag('itemborders:diamond').tag('kubejs:spleen')
-    registerOrgan(new Organ('kubejs:appendix_diamond').addScore('luck', 2).build()).texture('kubejs:item/organs/common/appendix').tag('itemborders:diamond').tag('kubejs:appendix')
-    registerOrgan(new Organ('kubejs:kidney_diamond').addScore('filtration', 2).build()).texture('kubejs:item/organs/common/kidney').tag('itemborders:diamond').tag('kubejs:kidney')
-    registerOrgan(new Organ('kubejs:liver_diamond').addScore('detoxification', 2).build()).texture('kubejs:item/organs/common/liver').tag('itemborders:diamond').tag('kubejs:liver')
-    registerOrgan(new Organ('kubejs:rib_diamond').addScore('defense', 2).build()).texture('kubejs:item/organs/common/rib').tag('itemborders:diamond').tag('kubejs:rib')
-    registerOrgan(new Organ('kubejs:intestine_diamond').addScore('nutrition', 2).build()).texture('kubejs:item/organs/common/intestine').tag('itemborders:diamond').tag('kubejs:intestine')
-    registerOrgan(new Organ('kubejs:lung_diamond').addScore('breath_recovery', 2).addScore('breath_capacity', 2).addScore('endurance', 2).build()).texture('kubejs:item/organs/common/lung').tag('itemborders:diamond').tag('kubejs:lung')
-    registerOrgan(new Organ('kubejs:stomach_diamond').addScore('digestion', 2).build()).texture('kubejs:item/organs/common/stomach').tag('itemborders:diamond').tag('kubejs:stomach')
-    registerOrgan(new Organ('kubejs:heart_diamond').addScore('health', 2).build()).texture('kubejs:item/organs/common/heart').tag('itemborders:diamond').tag('kubejs:heart')
-    registerOrgan(new Organ('kubejs:spine_diamond').addScore('defense', 1).addScore('nerves', 2).build()).texture('kubejs:item/organs/common/spine').tag('itemborders:diamond').tag('kubejs:spine')
+    registerOrgan(new Organ('kubejs:muscle_iron').addScore('strength', 1.25).addScore('speed', 1.25).build()).texture('kubejs:item/organs/common/muscle').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:muscle');
+
+    registerOrgan(new Organ('kubejs:spleen_iron').addScore('metabolism', 1.25).build()).texture('kubejs:item/organs/common/spleen').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:spleen');
+
+    registerOrgan(new Organ('kubejs:appendix_iron').addScore('luck', 1.25).build()).texture('kubejs:item/organs/common/appendix').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:appendix');
+
+    registerOrgan(new Organ('kubejs:kidney_iron').addScore('filtration', 1.25).build()).texture('kubejs:item/organs/common/kidney').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:kidney');
+
+    registerOrgan(new Organ('kubejs:liver_iron').addScore('detoxification', 1.25).build()).texture('kubejs:item/organs/common/liver').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:liver');
+
+    registerOrgan(new Organ('kubejs:rib_iron').addScore('defense', 1.25).build()).texture('kubejs:item/organs/common/rib').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:rib');
+
+    registerOrgan(new Organ('kubejs:intestine_iron').addScore('nutrition', 1.25).build()).texture('kubejs:item/organs/common/intestine').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:intestine');
+
+    registerOrgan(new Organ('kubejs:lung_iron').addScore('breath_recovery', 1.25).addScore('breath_capacity', 1.25).addScore('endurance', 1.25).build()).texture('kubejs:item/organs/common/lung').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:lung');
+
+    registerOrgan(new Organ('kubejs:stomach_iron').addScore('digestion', 1.25).build()).texture('kubejs:item/organs/common/stomach').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:stomach');
+
+    registerOrgan(new Organ('kubejs:heart_iron').addScore('health', 1.25).build()).texture('kubejs:item/organs/common/heart').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:heart');
+
+    registerOrgan(new Organ('kubejs:spine_iron').addScore('defense', 0.625).addScore('nerves', 1.25).build()).texture('kubejs:item/organs/common/spine').tag('itemborders:iron').tag('kubejs:evolution').tag('kubejs:spine');
+
+    registerOrgan(new Organ('kubejs:muscle_gold').addScore('strength', 1.5).addScore('speed', 1.5).build()).texture('kubejs:item/organs/common/muscle').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:muscle');
+
+    registerOrgan(new Organ('kubejs:spleen_gold').addScore('metabolism', 1.5).build()).texture('kubejs:item/organs/common/spleen').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:spleen');
+
+    registerOrgan(new Organ('kubejs:appendix_gold').addScore('luck', 1.5).build()).texture('kubejs:item/organs/common/appendix').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:appendix');
+
+    registerOrgan(new Organ('kubejs:kidney_gold').addScore('filtration', 1.5).build()).texture('kubejs:item/organs/common/kidney').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:kidney');
+
+    registerOrgan(new Organ('kubejs:liver_gold').addScore('detoxification', 1.5).build()).texture('kubejs:item/organs/common/liver').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:liver');
+
+    registerOrgan(new Organ('kubejs:rib_gold').addScore('defense', 1.5).build()).texture('kubejs:item/organs/common/rib').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:rib');
+
+    registerOrgan(new Organ('kubejs:intestine_gold').addScore('nutrition', 1.5).build()).texture('kubejs:item/organs/common/intestine').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:intestine');
+
+    registerOrgan(new Organ('kubejs:lung_gold').addScore('breath_recovery', 1.5).addScore('breath_capacity', 1.5).addScore('endurance', 1.5).build()).texture('kubejs:item/organs/common/lung').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:lung');
+
+    registerOrgan(new Organ('kubejs:stomach_gold').addScore('digestion', 1.5).build()).texture('kubejs:item/organs/common/stomach').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:stomach');
+
+    registerOrgan(new Organ('kubejs:heart_gold').addScore('health', 1.5).build()).texture('kubejs:item/organs/common/heart').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:heart');
+
+    registerOrgan(new Organ('kubejs:spine_gold').addScore('defense', 0.75).addScore('nerves', 1.5).build()).texture('kubejs:item/organs/common/spine').tag('itemborders:gold').tag('kubejs:evolution').tag('kubejs:spine');
+
+    registerOrgan(new Organ('kubejs:muscle_diamond').addScore('strength', 2).addScore('speed', 2).build()).texture('kubejs:item/organs/common/muscle').tag('itemborders:diamond').tag('kubejs:muscle');
+
+    registerOrgan(new Organ('kubejs:spleen_diamond').addScore('metabolism', 2).build()).texture('kubejs:item/organs/common/spleen').tag('itemborders:diamond').tag('kubejs:spleen');
+
+    registerOrgan(new Organ('kubejs:appendix_diamond').addScore('luck', 2).build()).texture('kubejs:item/organs/common/appendix').tag('itemborders:diamond').tag('kubejs:appendix');
+
+    registerOrgan(new Organ('kubejs:kidney_diamond').addScore('filtration', 2).build()).texture('kubejs:item/organs/common/kidney').tag('itemborders:diamond').tag('kubejs:kidney');
+
+    registerOrgan(new Organ('kubejs:liver_diamond').addScore('detoxification', 2).build()).texture('kubejs:item/organs/common/liver').tag('itemborders:diamond').tag('kubejs:liver');
+
+    registerOrgan(new Organ('kubejs:rib_diamond').addScore('defense', 2).build()).texture('kubejs:item/organs/common/rib').tag('itemborders:diamond').tag('kubejs:rib');
+
+    registerOrgan(new Organ('kubejs:intestine_diamond').addScore('nutrition', 2).build()).texture('kubejs:item/organs/common/intestine').tag('itemborders:diamond').tag('kubejs:intestine');
+
+    registerOrgan(new Organ('kubejs:lung_diamond').addScore('breath_recovery', 2).addScore('breath_capacity', 2).addScore('endurance', 2).build()).texture('kubejs:item/organs/common/lung').tag('itemborders:diamond').tag('kubejs:lung');
+
+    registerOrgan(new Organ('kubejs:stomach_diamond').addScore('digestion', 2).build()).texture('kubejs:item/organs/common/stomach').tag('itemborders:diamond').tag('kubejs:stomach');
+
+    registerOrgan(new Organ('kubejs:heart_diamond').addScore('health', 2).build()).texture('kubejs:item/organs/common/heart').tag('itemborders:diamond').tag('kubejs:heart');
+
+    registerOrgan(new Organ('kubejs:spine_diamond').addScore('defense', 1).addScore('nerves', 2).build()).texture('kubejs:item/organs/common/spine').tag('itemborders:diamond').tag('kubejs:spine');
 
     // 模板器官
-    registerOrgan(new Organ('kubejs:huge_lung').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('breath_recovery', 2.5).addScore('breath_capacity', 2.5).addScore('endurance', 2.5).build()).texture('kubejs:item/organs/template/lung_template').tag('kubejs:lung').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
-    registerOrgan(new Organ('kubejs:huge_muscle').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('strength', 2.5).addScore('speed', 2.5).build()).texture('kubejs:item/organs/template/muscle_template').tag('kubejs:muscle').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
-    registerOrgan(new Organ('kubejs:huge_heart').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低10生命值上限')]).addScore('health', 2.5).build()).texture('kubejs:item/organs/template/heart_template').tag('kubejs:heart').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
-    registerOrgan(new Organ('kubejs:huge_intestine').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('nutrition', 2.5).build()).texture('kubejs:item/organs/template/intestine_template').tag('kubejs:intestine').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
-    registerOrgan(new Organ('kubejs:huge_rib').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('defense', 2.5).build()).texture('kubejs:item/organs/template/rib_template').tag('kubejs:rib').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
-    registerOrgan(new Organ('kubejs:huge_spine').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('defense', 1.25).addScore('nerves', 2.5).build()).texture('kubejs:item/organs/template/spine_template').tag('kubejs:spine').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
-    registerOrgan(new Organ('kubejs:huge_spleen').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('metabolism', 2.5).build()).texture('kubejs:item/organs/template/spleen_template').tag('kubejs:spleen').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
-    registerOrgan(new Organ('kubejs:huge_stomach').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('digestion', 2.5).build()).texture('kubejs:item/organs/template/stomach_template').tag('kubejs:stomach').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
-    registerOrgan(new Organ('kubejs:huge_kidney').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('filtration', 2.5).build()).texture('kubejs:item/organs/template/kidney_template').tag('kubejs:kidney').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
-    registerOrgan(new Organ('kubejs:huge_liver').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('detoxification', 2.5).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
-    registerOrgan(new Organ('kubejs:huge_appendix').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray('激活时如果不能形成2x2的相同器官块，会降低5生命值上限')]).addScore('luck', 2.5).build()).texture('kubejs:item/organs/template/appendix_template').tag('kubejs:appendix').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active')
+    registerOrgan(new Organ('kubejs:huge_lung').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_lung.1" })]).addScore('breath_recovery', 2.5).addScore('breath_capacity', 2.5).addScore('endurance', 2.5).build()).texture('kubejs:item/organs/template/lung_template').tag('kubejs:lung').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:huge_muscle').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_muscle.1" })]).addScore('strength', 2.5).addScore('speed', 2.5).build()).texture('kubejs:item/organs/template/muscle_template').tag('kubejs:muscle').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:huge_heart').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_heart.1" })]).addScore('health', 2.5).build()).texture('kubejs:item/organs/template/heart_template').tag('kubejs:heart').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:huge_intestine').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_intestine.1" })]).addScore('nutrition', 2.5).build()).texture('kubejs:item/organs/template/intestine_template').tag('kubejs:intestine').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:huge_rib').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_rib.1" })]).addScore('defense', 2.5).build()).texture('kubejs:item/organs/template/rib_template').tag('kubejs:rib').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:huge_spine').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_spine.1" })]).addScore('defense', 1.25).addScore('nerves', 2.5).build()).texture('kubejs:item/organs/template/spine_template').tag('kubejs:spine').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:huge_spleen').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_spleen.1" })]).addScore('metabolism', 2.5).build()).texture('kubejs:item/organs/template/spleen_template').tag('kubejs:spleen').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:huge_stomach').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_stomach.1" })]).addScore('digestion', 2.5).build()).texture('kubejs:item/organs/template/stomach_template').tag('kubejs:stomach').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:huge_kidney').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_kidney.1" })]).addScore('filtration', 2.5).build()).texture('kubejs:item/organs/template/kidney_template').tag('kubejs:kidney').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:huge_liver').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_liver.1" })]).addScore('detoxification', 2.5).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:huge_appendix').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_appendix.1" })]).addScore('luck', 2.5).build()).texture('kubejs:item/organs/template/appendix_template').tag('kubejs:appendix').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
 });
