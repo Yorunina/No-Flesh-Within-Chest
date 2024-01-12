@@ -1,5 +1,9 @@
 {
     "ModSettings": {
+        "enable_profiles": {
+            "value": false
+        },
+        "enable_updates_check": false,
         "first_run": false
     },
     "GuiSettings": {
@@ -7,6 +11,9 @@
             "value": false
         },
         "enable_inventory_settings_button": {
+            "value": false
+        },
+        "enable_profiles_ui": {
             "value": false
         },
         "enable_inventory_buttons": {

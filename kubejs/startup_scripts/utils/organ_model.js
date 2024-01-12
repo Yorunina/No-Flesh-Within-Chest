@@ -1,6 +1,4 @@
 // priority: 0
-const LEADING_SYMBOL = Text.gold('● ')
-
 function Organ(itemID) {
     this.itemID = itemID
     this.pseudoOrgan = false

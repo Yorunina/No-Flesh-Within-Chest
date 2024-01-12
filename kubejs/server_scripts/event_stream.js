@@ -49,6 +49,7 @@ EntityEvents.hurt('minecraft:player', event => {
     curseOfFragilityPlayerHurtByOthers(event, data)
     curiosPlayerHurtByOthers(event, data)
     vulnerableEntityHurt(event, data)
+    powerOfCitadelPlayerHurtByOthers(event, data)
     organCharmPlayerHurtByOthers(event, data)
 
     // 事件拦截

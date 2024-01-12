@@ -19,12 +19,12 @@ BioBrewingRecipe.prototype = {
 }
 
 ServerEvents.recipes(event => {
-    function registeCustomRecipe(recipeModel) {
+    function registerCustomRecipe(recipeModel) {
         event.custom(recipeModel)
     }
 
-    registeCustomRecipe(new BioBrewingRecipe([Ingredient.of('waystones:warp_dust'), Ingredient.of('minecraft:echo_shard'), Ingredient.of('minecraft:glowstone_dust'), Ingredient.of('#bookwyrms:scale')], Item.of('biomancy:unstable_compound'), Item.of('kubejs:ritual_catalyst').withCount(4)).setNutrientsCost(2).setProcessingTime(600))
+    registerCustomRecipe(new BioBrewingRecipe([Ingredient.of('waystones:warp_dust'), Ingredient.of('minecraft:echo_shard'), Ingredient.of('minecraft:glowstone_dust'), Ingredient.of('#bookwyrms:scale')], Item.of('biomancy:unstable_compound'), Item.of('kubejs:ritual_catalyst').withCount(4)).setNutrientsCost(2).setProcessingTime(600))
 
-    registeCustomRecipe(new BioBrewingRecipe([Ingredient.of('waystones:warp_dust'), Ingredient.of('createaddition:diamond_grit'), Ingredient.of('minecraft:glowstone_dust'), Ingredient.of('#bookwyrms:scale')], Item.of('biomancy:exotic_compound'), Item.of('kubejs:ritual_catalyst').withCount(2)).setNutrientsCost(10).setProcessingTime(2400))
+    registerCustomRecipe(new BioBrewingRecipe([Ingredient.of('waystones:warp_dust'), Ingredient.of('createaddition:diamond_grit'), Ingredient.of('minecraft:glowstone_dust'), Ingredient.of('#bookwyrms:scale')], Item.of('biomancy:exotic_compound'), Item.of('kubejs:ritual_catalyst').withCount(2)).setNutrientsCost(10).setProcessingTime(2400))
 })
 

@@ -106,7 +106,16 @@ StartupEvents.registry('mob_effect', event => {
     event.create('vulnerable')
         .harmful()
         .color(Color.RED)
-
+        
+    event.create('power_of_citadel')
+        .beneficial()
+        .effectTick((entity, lvl) => {
+            if (entity.level.clientSide) return;
+            if (entity.tickCount % 20 == 0) {
+                entity.heal(entity.getMaxHealth() * 0.01)
+            }
+        })
+        .color(Color.DARK_RED)
 })
 
 

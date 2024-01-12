@@ -227,5 +227,10 @@
     "kubejs.boss_rush": "Boss Rush",
 
     "tetra.material.alex_shark_tooth": "鲨鱼尖牙",
-    "tetra.material.alex_shark_tooth.prefix": "鲨鱼尖牙"
+    "tetra.material.alex_shark_tooth.prefix": "鲨鱼尖牙",
+
+
+    "kubejs.tooltips.global_appendix": "阑尾",
+    "kubejs.tooltips.global_heart": "心脏",
+    "kubejs.tooltips.global_intestine": "肠"
 }

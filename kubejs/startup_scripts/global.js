@@ -57,9 +57,9 @@ global.ATTRIBUTE_MAP = {
 }
 
 global.TYPE_MAP = {
-    'kubejs:appendix': Text.aqua('阑尾'),
-    'kubejs:heart': Text.aqua('心脏'),
-    'kubejs:intestine': Text.aqua('肠'),
+    'kubejs:appendix': Text.aqua({"translate": "kubejs.tooltips.global_appendix"}),
+    'kubejs:heart': Text.aqua({"translate": "kubejs.tooltips.global_heart"}),
+    'kubejs:intestine': Text.aqua({"translate": "kubejs.tooltips.global_intestine"}),
     'kubejs:kidney': Text.aqua('肾脏'),
     'kubejs:liver': Text.aqua('肝脏'),
     'kubejs:lung': Text.aqua('肺'),

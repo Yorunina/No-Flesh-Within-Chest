@@ -27,9 +27,9 @@ CookingRecipe.prototype = {
 }
 
 ServerEvents.recipes(event => {
-    function registeCustomRecipe(recipeModel) {
+    function registerCustomRecipe(recipeModel) {
         event.custom(recipeModel)
     }
 
-    registeCustomRecipe(new CookingRecipe([Item.of('minecraft:sugar'), Item.of('minecraft:egg')], Item.of('kubejs:cream')).setCookingtime(60 * 20))
+    registerCustomRecipe(new CookingRecipe([Item.of('minecraft:sugar'), Item.of('minecraft:egg')], Item.of('kubejs:cream')).setCookingtime(60 * 20))
 })

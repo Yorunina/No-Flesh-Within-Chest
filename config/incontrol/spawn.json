@@ -1,5 +1,12 @@
 [
   {
+    "mod": "cataclysm",
+    "result": "allow",
+    "potion": "kubejs:power_of_citadel,10000,0",
+    "onjoin": true,
+    "continue": true
+  },
+  {
     "dimension": "kubejs:lost_memory",
     "onjoin": true,
     "hostile": true,
@@ -16,7 +23,7 @@
     "hostile": true,
     "result": "allow",
     "healthmultiply": 0.2,
-    "potion": "minecraft:invisibility,10000,1",
+    "potion": "minecraft:invisibility,10000,0",
     "continue": true
   },
   {
