@@ -104,7 +104,7 @@ ItemEvents.tooltip((tooltip) => {
                     typeName = { "translate": "kubejs.tooltips.organ_charm.15" }
                     break;
             }
-            text.add(lineNum++, [Text.gray({ "translate": "kubejs.tooltips.organ_charm.16" }), Text.gray(`${item.nbt.damageTask.minDamage}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.17" }), Text.gray(`${typeName}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.18" }), Text.gray(`${item.nbt.damageTask.counter.toFixed(2)}/${item.nbt.damageTask.damageAmount}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.19" })]);
+            text.add(lineNum++, [Text.gray({ "translate": "kubejs.tooltips.organ_charm.16" }), Text.gray(`${item.nbt.damageTask.minDamage}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.17" }), Text.gray(typeName), Text.gray({ "translate": "kubejs.tooltips.organ_charm.18" }), Text.gray(`${item.nbt.damageTask.counter.toFixed(2)}/${item.nbt.damageTask.damageAmount}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.19" })]);
         }
         if (item.nbt?.status == 1) {
             text.add(lineNum++, [Text.red({ "translate": "kubejs.tooltips.organ_charm.20" })]);

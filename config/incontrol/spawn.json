@@ -2,7 +2,7 @@
   {
     "mod": "cataclysm",
     "result": "allow",
-    "potion": "kubejs:power_of_citadel,10000,0",
+    "potion": "kubejs:power_of_citadel,72000,0",
     "onjoin": true,
     "continue": true
   },
@@ -23,7 +23,7 @@
     "hostile": true,
     "result": "allow",
     "healthmultiply": 0.2,
-    "potion": "minecraft:invisibility,10000,0",
+    "potion": "minecraft:invisibility,72000,0",
     "continue": true
   },
   {
