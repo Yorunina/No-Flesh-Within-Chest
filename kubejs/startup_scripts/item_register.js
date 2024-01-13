@@ -101,7 +101,8 @@ StartupEvents.registry('item', event => {
 
     event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
     event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1)
-
+    event.create('god_agreement').texture('kubejs:item/god_agreement').maxStackSize(1)
+    
     event.create('flora_wand').texture('kubejs:item/flora_wand')
         .maxStackSize(1)
         .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellWeaponBoost', 3, 'addition')

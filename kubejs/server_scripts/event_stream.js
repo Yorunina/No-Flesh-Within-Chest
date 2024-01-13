@@ -10,9 +10,12 @@
  * 2. 效果其次
  * 3. 武器、饰品再次
  */
+let damageLock = {};
 EntityEvents.hurt(event => {
-    let player = event.source.player;
+    let player = event.source.player
     if (!player) return;
+    let uuid = player.getStringUuid()
+    if (damageLock[uuid]) return;
     let data = new EntityHurtCustomModel(event.getDamage())
     organEntityHurtByPlayer(event, data)
     burningHeartEntityHurtByPlayer(event, data)
@@ -26,9 +29,15 @@ EntityEvents.hurt(event => {
     // 事件拦截
     if (data.returnDamage != 0) {
         player.attack(data.returnDamage)
+        player.knockback
     }
     if (event.damage != data.damage) {
-        event.entity.attack(data.damage > 0 ? data.damage : 0)
+        damageLock[uuid] = true
+        event.entity.attack(event.getSource(), data.damage)
+        if (event.source.type == 'arrow') {
+            event.source.immediate.remove('discarded')
+        }
+        damageLock[uuid] = false
         event.cancel()
     }
 })
@@ -39,7 +48,11 @@ EntityEvents.hurt(event => {
  * 2. 效果其次
  * 3. 武器、饰品再次
  */
+let hurtLock = {};
 EntityEvents.hurt('minecraft:player', event => {
+    let uuid = event.entity.getStringUuid()
+    if (hurtLock[uuid]) return;
+    event.entity.tell(1)
     let data = new EntityHurtCustomModel(event.getDamage())
     if (!highPriorityPlayerHurtByOthers(event, data)) {
         return
@@ -56,10 +69,5 @@ EntityEvents.hurt('minecraft:player', event => {
     if (data.returnDamage != 0 && event.source.actual) {
         event.source.actual.attack(data.returnDamage)
     }
-    if (event.damage != data.damage) {
-        event.entity.attack(data.damage)
-        event.cancel()
-    }
-
 })
 

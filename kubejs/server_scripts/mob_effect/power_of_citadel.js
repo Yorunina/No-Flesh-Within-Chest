@@ -6,10 +6,12 @@
  * @returns 
  */
 function powerOfCitadelPlayerHurtByOthers(event, data) {
+
     let entity = event.source.actual
     if (!entity) return;
     let player = event.entity;
-    if (entity.hasEffect('kubejs:power_of_citadel')) {
-        player.potionEffects.add('unusualprehistory:prevent_click', 20 * 10, 0)
+    if (entity.isLiving() && entity.hasEffect('kubejs:power_of_citadel')) {
+        let amplifier = entity.getEffect('kubejs:power_of_citadel').getAmplifier()
+        player.potionEffects.add('unusualprehistory:prevent_click', 20 * 5 * (amplifier + 1), 0)
     }
 }

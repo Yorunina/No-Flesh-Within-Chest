@@ -118,3 +118,5 @@ const curseEnchantList = [
     'cursery:curse_anvil',
     'cursery:curse_blindness',
 ]
+
+

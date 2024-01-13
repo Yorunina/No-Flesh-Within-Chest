@@ -86,8 +86,8 @@
 				type: "item"
 			}]
 			title: "钱币"
-			x: 1.0d
-			y: 1.5d
+			x: 0.75d
+			y: 1.25d
 		}
 		{
 			dependencies: ["3FED9C9227FC9CD5"]
@@ -1003,6 +1003,55 @@
 			title: "查看资源槽"
 			x: 7.25d
 			y: -4.0d
+		}
+		{
+			dependencies: ["17F501A9B3D8B5BA"]
+			description: ["有些时候我们需要将货币进行转换，此时，ATM成为了必要的物品。"]
+			id: "639C1EDF7CAB7739"
+			rewards: [{
+				id: "74420D25E189E767"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "为了自由兑换货币"
+			tasks: [{
+				id: "3AB5F96A995E7216"
+				item: "lightmanscurrency:atm"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2311CA3EEABF0250"]
+			description: [
+				"在这个世界上，仍旧存在着旧世界的灾变之力。在某些特定的建筑结构内，你会遭遇拥有&4灾变之力&r的特殊怪物。"
+				""
+				"拥有&4灾变之力&r的怪物在攻击命中你时，会在一段时间内&2禁止方块放置、物品使用、以及任何的攻击行为&r。同时，灾变之力也赋予了这些怪物&6每秒1%&r的生命恢复能力。"
+			]
+			icon: "cataclysm:altar_of_fire"
+			id: "22F081213B71190E"
+			subtitle: "在世界的角落里. . ."
+			tasks: [{
+				id: "16F82F5206B69D49"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "灾变"
+			x: 13.75d
+			y: 1.75d
+		}
+		{
+			dependencies: ["22F081213B71190E"]
+			id: "54D9CCA0E085E647"
+			tasks: [{
+				id: "049EDD3A05FE7565"
+				item: "cataclysm:flame_eye"
+				type: "item"
+			}]
+			title: "寻找灾变之源"
+			x: 15.5d
+			y: 1.75d
 		}
 	]
 	title: "章节1：如常"

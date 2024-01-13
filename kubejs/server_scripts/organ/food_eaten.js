@@ -58,5 +58,19 @@ const organFoodEatenOnlyStrategies = {
             return
         }
     },
+    'kubejs:tamagotchi': function (event, organ) {
+        let player = event.player
+        if (player.hasEffect('kubejs:hungry_tamagotchi')) {
+            player.removeEffect('kubejs:hungry_tamagotchi')
+            player.heal(player.maxHealth)
+            player.potionEffects.add('farmersdelight:nourishment', 90 * 20, 0)
+            player.potionEffects.add('weaponmaster:elixr', 15 * 20, 0)
+            player.tell(Text.gray({ "translate": "kubejs.msg.tamagotchi.2" }))
+            if (Math.random() < 0.2) {
+                updateWarpCount(player, player.persistentData.getInt(warpCount) - 1)
+            }
+        }
+    },
+
 };
 

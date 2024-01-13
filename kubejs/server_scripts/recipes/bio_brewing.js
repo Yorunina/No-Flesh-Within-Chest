@@ -27,4 +27,3 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(new BioBrewingRecipe([Ingredient.of('waystones:warp_dust'), Ingredient.of('createaddition:diamond_grit'), Ingredient.of('minecraft:glowstone_dust'), Ingredient.of('#bookwyrms:scale')], Item.of('biomancy:exotic_compound'), Item.of('kubejs:ritual_catalyst').withCount(2)).setNutrientsCost(10).setProcessingTime(2400))
 })
-

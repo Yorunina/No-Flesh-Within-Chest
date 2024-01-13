@@ -5,3 +5,4 @@ function EntityHurtCustomModel(damage) {
     this.damage = damage
     this.returnDamage = 0
 }
+

@@ -18,12 +18,21 @@
     "continue": true
   },
   {
-    "random": 0.1,
+    "random": 0.5,
     "gamestage": "setting_monster_invisibility_bonus",
     "hostile": true,
     "result": "allow",
     "healthmultiply": 0.2,
     "potion": "minecraft:invisibility,72000,0",
+    "continue": true
+  },
+  {
+    "random": 0.5,
+    "gamestage": "citadel_power_coming",
+    "onjoin": true,
+    "hostile": true,
+    "result": "allow",
+    "potion": "kubejs:power_of_citadel,72000,0",
     "continue": true
   },
   {

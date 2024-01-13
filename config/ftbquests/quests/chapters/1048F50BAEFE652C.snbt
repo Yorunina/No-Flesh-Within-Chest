@@ -1,5 +1,5 @@
 {
-	default_hide_dependency_lines: false
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "1048F50BAEFE652C"
 	group: "4F4F4EA8CE67985B"
@@ -66,8 +66,8 @@
 				type: "item"
 			}]
 			title: "糖果心"
-			x: -4.0d
-			y: 2.5d
+			x: -8.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -87,6 +87,7 @@
 				item: "kubejs:candy"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "魔法使的心是糖果做的"
 			tasks: [{
 				id: "35D77B1435E1B7BC"
@@ -94,11 +95,11 @@
 				type: "checkmark"
 			}]
 			title: "魔法使与糖果心"
-			x: -4.0d
-			y: 1.0d
+			x: -7.5d
+			y: 1.75d
 		}
 		{
-			dependencies: ["0A80B9C8A9529301"]
+			dependencies: ["6662469DC72EA384"]
 			description: [
 				"击败&6霜冻岩浆怪&r获得。"
 				""
@@ -120,8 +121,8 @@
 				item: "kubejs:love_between_lava_and_ice"
 				type: "item"
 			}]
-			x: -5.75d
-			y: 2.5d
+			x: -5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -132,6 +133,7 @@
 			]
 			icon: "minecraft:nether_star"
 			id: "6662469DC72EA384"
+			shape: "rsquare"
 			subtitle: "Boss遗物器官往往具有强大的单体性能"
 			tasks: [{
 				id: "21C2FA1C32FC15A5"
@@ -139,8 +141,8 @@
 				type: "checkmark"
 			}]
 			title: "Boss遗物器官"
-			x: -5.75d
-			y: 1.0d
+			x: -4.0d
+			y: 1.75d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -167,8 +169,8 @@
 				item: "kubejs:candy_pancreas"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 4.0d
+			x: -7.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -189,8 +191,8 @@
 				item: "kubejs:candy_stomach"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 5.5d
+			x: -6.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -211,8 +213,8 @@
 				item: "kubejs:magic_spine"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 8.5d
+			x: -7.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -245,8 +247,8 @@
 					type: "item"
 				}
 			]
-			x: -4.0d
-			y: 7.0d
+			x: -8.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -267,8 +269,8 @@
 				item: "kubejs:magic_muscle"
 				type: "item"
 			}]
-			x: -4.0d
-			y: 10.0d
+			x: -6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -280,6 +282,7 @@
 			hide_dependent_lines: true
 			icon: "minecraft:amethyst_shard"
 			id: "24E73A64F055728A"
+			shape: "rsquare"
 			subtitle: "强大但又危险的器官效果"
 			tasks: [{
 				id: "586110AC47445585"
@@ -287,12 +290,16 @@
 				type: "checkmark"
 			}]
 			title: "穷奇无尽"
-			x: -2.0d
-			y: 1.0d
+			x: -11.0d
+			y: 1.75d
 		}
 		{
 			dependencies: ["24E73A64F055728A"]
-			description: ["无尽节律在你没有手持物品、没有装备胸甲时，攻击会"]
+			description: [
+				"无尽节律在你没有手持物品、没有装备胸甲时，每次攻击会额外提供2的&2临时攻击力&r加成，可&6无限叠加&r。"
+				""
+				"代价是，&2每次攻击自身会受到等同于增加攻击力的固定伤害&r。"
+			]
 			id: "57A1BF07E4937852"
 			rewards: [{
 				id: "17F97723C16683CB"
@@ -309,22 +316,23 @@
 				item: "kubejs:infinity_beats"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 2.5d
+			x: -12.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
 			hide_dependent_lines: true
 			icon: "somebosses:burning_volcanic_rock"
 			id: "7CFE03E2610EA31B"
+			shape: "rsquare"
 			tasks: [{
 				id: "5EB6899990975685"
 				title: "我已了解"
 				type: "checkmark"
 			}]
 			title: "革命机械"
-			x: 0.0d
-			y: 1.0d
+			x: -0.75d
+			y: 1.75d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -334,8 +342,8 @@
 				item: "kubejs:furnace_core"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.5d
+			x: -1.75d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -345,8 +353,8 @@
 				item: "kubejs:burning_heart"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: -0.75d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -356,8 +364,8 @@
 				item: "kubejs:revolution_gear"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.5d
+			x: 0.25d
+			y: 3.0d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -367,8 +375,8 @@
 				item: "kubejs:revolution_cable"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.0d
+			x: -1.75d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -378,8 +386,8 @@
 				item: "kubejs:revolution_relay"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 8.5d
+			x: -0.75d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -389,8 +397,8 @@
 				item: "kubejs:revolution_delay"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 10.0d
+			x: 0.25d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -402,6 +410,7 @@
 			hide_dependent_lines: true
 			icon: "kubejs:telescopic_attack_arm"
 			id: "437705D28D92B135"
+			shape: "rsquare"
 			subtitle: "成长为我所想"
 			tasks: [{
 				id: "2901FD4568C245E6"
@@ -409,8 +418,8 @@
 				type: "checkmark"
 			}]
 			title: "进化器官"
-			x: 2.0d
-			y: 1.0d
+			x: 3.25d
+			y: 1.75d
 		}
 		{
 			dependencies: ["437705D28D92B135"]
@@ -438,8 +447,8 @@
 				type: "item"
 			}]
 			title: "模板器官进化"
-			x: 2.0d
-			y: 2.5d
+			x: 2.25d
+			y: 3.0d
 		}
 		{
 			dependencies: ["437705D28D92B135"]
@@ -465,14 +474,15 @@
 				type: "item"
 			}]
 			title: "伸缩臂"
-			x: 2.0d
-			y: 4.0d
+			x: 3.25d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
 			description: ["碎片系列器官以&4七宗罪&r为契机，如果将其&6收集完全&r，或许可以触发意想不到的效果. . ."]
 			icon: "minecraft:amethyst_shard"
 			id: "235753780EE3782C"
+			shape: "rsquare"
 			subtitle: "碎片与七宗罪"
 			tasks: [{
 				id: "1410D2144D11B1A6"
@@ -480,8 +490,538 @@
 				type: "checkmark"
 			}]
 			title: "碎片"
-			x: 4.0d
-			y: 1.0d
+			x: 6.25d
+			y: 1.75d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["从利维亚桑（利维坦）的胸腔中获得"]
+			id: "4FE34232B6E5B893"
+			rewards: [{
+				id: "403C9797AB3BAB1B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "额外的护甲韧性"
+			tasks: [{
+				id: "5A705833F909154A"
+				item: {
+					Count: 1b
+					id: "kubejs:leviathan_rib"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"从&2冷血杀手&r的胸腔中获得，能够给予弱小的敌人强大的反弹伤害。"
+				""
+				"可以将其放置在器官容器中进化为心之剑。"
+			]
+			id: "6A617A9DCFEB9F9F"
+			rewards: [{
+				id: "50B147575C892569"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "反甲"
+			tasks: [{
+				id: "61FD79848FE6A4E4"
+				item: {
+					Count: 1b
+					id: "kubejs:heart_of_blade"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["易伤效果能够提供&2每层10%&r的伤害加重。在团队作战中能发挥意想不到的效果。"]
+			id: "27E486C76949F7DA"
+			rewards: [{
+				id: "36461A3070DA0DAE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "刺剑与支援"
+			tasks: [{
+				id: "7E712447E89A05DE"
+				item: {
+					Count: 1b
+					id: "kubejs:bone_soul"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["击败虚空之花获得，能够提供一定的&6光合&r效果"]
+			id: "501E9E1A842A2706"
+			rewards: [{
+				id: "4E675E10146937C4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "光合之源"
+			tasks: [{
+				id: "5A7843098A0D3CF8"
+				item: {
+					Count: 1b
+					id: "kubejs:flower_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"通过&6剑之心&r在&2器官容器中进化&r获得，能够针对武器大师的宽刃剑提供稳定的增伤。"
+				""
+				"可以将其放置在器官容器中重新进化成为剑之心。"
+			]
+			id: "427CC07512FED0EE"
+			rewards: [{
+				id: "7515844110424DAD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "心剑出鞘！"
+			tasks: [{
+				id: "434606B7D1398F12"
+				item: {
+					Count: 1b
+					id: "kubejs:blade_of_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["从&2立场欺诈者&r胸腔中取出的一根肋骨，它似乎在渴望着另一半。"]
+			id: "7EA2E7BD4AFF2041"
+			subtitle: "渴望另一半"
+			tasks: [{
+				id: "797AE1FFE2C1589C"
+				item: {
+					Count: 1b
+					id: "kubejs:aesegull_rib_left"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["从&2立场欺诈者&r胸腔中取出的一根肋骨，它似乎在渴望着另一半。"]
+			id: "4093F99C826B6D4A"
+			subtitle: "渴望另一半"
+			tasks: [{
+				id: "4B87E3A06A2B3C13"
+				item: {
+					Count: 1b
+					id: "kubejs:aesegull_rib_right"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["&2骷髅恶魔&r的胸腔中获得，能够扭转&4不洁圣杯&r的负面效果。"]
+			id: "64558EB42DBD89A2"
+			rewards: [{
+				id: "3894458FA41A4949"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "禁忌之果与不洁圣杯"
+			tasks: [{
+				id: "0C0F6D1FCFA311A0"
+				item: {
+					Count: 1b
+					id: "kubejs:forbidden_fruit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["在附加&4行刑&r效果的情况下，攻击概率会附加与&2当前损失血量相关&r的伤害。这意味着怪物的血量越低，伤害增加效果越明显。"]
+			id: "04EA969EDB862A01"
+			rewards: [{
+				id: "1A4801AA9EF3DAD1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "行刑时间"
+			tasks: [{
+				id: "4B255AE58F55BC38"
+				item: {
+					Count: 1b
+					id: "kubejs:executioner_blade_pieces"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"根据&2攻击判定时瞬间&r玩家的视角决定伤害，当视线向下完全垂直于地面时会造成&6相当于原本伤害2倍&r的伤害。"
+				""
+				"可以从下界铁掌的胸腔中取出。"
+			]
+			id: "2C015981504A9704"
+			rewards: [{
+				id: "603AE325CF6F471D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "来自最幽深地狱的视线"
+			tasks: [{
+				id: "1781DF0940904B8C"
+				item: {
+					Count: 1b
+					id: "kubejs:demon_eyeball"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["能够提供稳定的暴击伤害和暴击率，暴击率的提供值与&6机械器官&r的数量相关。"]
+			id: "4301C43F6E85C664"
+			rewards: [{
+				id: "36D367A972AD9544"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它看破我也看破"
+			tasks: [{
+				id: "74B0977272A41ACF"
+				item: {
+					Count: 1b
+					id: "kubejs:redstone_chipset"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["近战攻击时，有跟&2幸运&r相关的概率会造成&62s眩晕&r，在某些Boss作战中会发挥巨大作用。"]
+			id: "0D2D3619083928ED"
+			rewards: [{
+				id: "4BE8BF36EC7A56FD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "幸运晕眩！"
+			tasks: [{
+				id: "6CF981A7867EDECA"
+				item: {
+					Count: 1b
+					id: "kubejs:heavy_hammer_muscle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["在&6福尔图娜女爵&r的胸腔中获得，在弓箭击中时能够概率延续所有&4负面buff&r的持续时间。"]
+			id: "77B4BDEBD8D59C7B"
+			rewards: [{
+				id: "7BC92D3CAECC5076"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "效果延续"
+			tasks: [{
+				id: "1D1329CDBD73CA6B"
+				item: {
+					Count: 1b
+					id: "kubejs:parasitic_elf"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["从利维亚桑（利维坦）的胸腔中获得"]
+			id: "034A6F5A590F4CF5"
+			rewards: [{
+				id: "1B21CC741965C672"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "提供游泳效率"
+			tasks: [{
+				id: "22870C4045AF8154"
+				item: {
+					Count: 1b
+					id: "kubejs:leviathan_spine"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["24E73A64F055728A"]
+			description: [
+				"在维度地牢的&6最高级箱子战利品&r中概率出现，在携带&6无尽之力&r的情况下，击败任意&cBoss单位&r会根据幸运值概率掉落等级为&2低于当前无尽之力等级的无尽之力&r。"
+				""
+				"同等级的无尽之力可以在合成台在中合成锻造。"
+			]
+			id: "11EB4F6B69D9DA6F"
+			rewards: [{
+				id: "6C9096FE0136B68D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "无尽力量源泉"
+			tasks: [{
+				id: "32C06177A15FC76E"
+				item: {
+					Count: 1b
+					id: "kubejs:infinity_force"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["235753780EE3782C"]
+			id: "5700C1D66F61B5E0"
+			tasks: [{
+				id: "1B52886345AC89C9"
+				item: {
+					Count: 1b
+					id: "kubejs:wrath_shard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["235753780EE3782C"]
+			id: "361C5AA4C6C86167"
+			tasks: [{
+				id: "74E23ADEE40B9561"
+				item: {
+					Count: 1b
+					id: "kubejs:sloth_shard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["235753780EE3782C"]
+			id: "35606C57F204A9AB"
+			tasks: [{
+				id: "313CFF957861879F"
+				item: {
+					Count: 1b
+					id: "kubejs:envy_shard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["235753780EE3782C"]
+			id: "785079C06B7A8AE1"
+			tasks: [{
+				id: "7F99A4E065DE2195"
+				item: {
+					Count: 1b
+					id: "kubejs:gluttony_shard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.25d
+			y: 4.0d
+		}
+		{
+			dependencies: ["235753780EE3782C"]
+			id: "132A93177D12F5B9"
+			tasks: [{
+				id: "780586C9DAA4E150"
+				item: {
+					Count: 1b
+					id: "kubejs:lust_shard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.25d
+			y: 4.0d
+		}
+		{
+			dependencies: ["235753780EE3782C"]
+			id: "5B868D14B2F73C1D"
+			tasks: [{
+				id: "154A4D6E39B78FFC"
+				item: {
+					Count: 1b
+					id: "kubejs:greed_shard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.25d
+			y: 4.0d
+		}
+		{
+			dependencies: ["235753780EE3782C"]
+			id: "667AC1E3364E6FAC"
+			tasks: [{
+				id: "311B9DA567C17C5A"
+				item: {
+					Count: 1b
+					id: "kubejs:pride_shard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.25d
+			y: 5.0d
+		}
+		{
+			dependencies: ["235753780EE3782C"]
+			id: "41B89386FBDB06AE"
+			tasks: [{
+				id: "516CD9AA8B9190CA"
+				item: {
+					Count: 1b
+					id: "kubejs:nether_star_shard"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 6.25d
+			y: 5.0d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			id: "0CEDF28C965FF8E5"
+			tasks: [{
+				id: "1A4C6BC3E715C638"
+				item: {
+					Count: 1b
+					id: "kubejs:hamimelon_organ"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			id: "5B73C3290177E214"
+			tasks: [{
+				id: "0D12A6E81A52DDB4"
+				item: {
+					Count: 1b
+					id: "kubejs:watermelon_organ"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			id: "50BC3F4DA0F1BC9D"
+			tasks: [{
+				id: "58136D83DEE74095"
+				item: {
+					Count: 1b
+					id: "kubejs:lucky_cookie_organ"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			id: "450518C1E9B5DBCB"
+			tasks: [{
+				id: "2D0238D40E8300B0"
+				item: {
+					Count: 1b
+					id: "kubejs:cream_cookie_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.25d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			icon: "minecraft:golden_apple"
+			id: "309791281FE1F06A"
+			shape: "rsquare"
+			tasks: [{
+				id: "456D14071F761DCD"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "食物器官"
+			x: 10.25d
+			y: 1.75d
 		}
 	]
 	title: "胸腔：器官收集指南"

@@ -1,0 +1,26 @@
+{
+	icon: "somebosses:burning_volcanic_rock"
+	id: "39872999D79B350B"
+	loot_size: 1
+	order_index: 4
+	rewards: [
+		{
+			auto: "invisible"
+			icon: "somebosses:burning_volcanic_rock"
+			ignore_reward_blocking: true
+			stage: "citadel_power_coming"
+			title: "开启全局灾变"
+			type: "gamestage"
+		}
+		{
+			auto: "invisible"
+			icon: "somebosses:burning_volcanic_rock"
+			ignore_reward_blocking: true
+			remove: true
+			stage: "citadel_power_coming"
+			title: "关闭全局灾变"
+			type: "gamestage"
+		}
+	]
+	title: "灾变是否普遍出现"
+}

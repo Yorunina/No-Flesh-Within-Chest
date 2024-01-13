@@ -39,6 +39,9 @@ function updateResourceCount(player, count) {
     if (count > maxCount) {
         count = maxCount
     }
+    if (count < 0) {
+        count = 0
+    }
     let visible = false
     player.persistentData.putInt(resourceCount, count)
     if (checkCurios(player, 'create:goggles')) {
@@ -71,6 +74,9 @@ function updateWarpCount(player, count) {
     let maxCount = player.persistentData.getInt(warpCountMax) ?? defaultWarpMax
     if (count > maxCount) {
         count = maxCount
+    }
+    if (count < 0) {
+        count = 0
     }
     let visible = false
     player.persistentData.putInt(warpCount, count)

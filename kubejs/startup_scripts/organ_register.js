@@ -195,6 +195,55 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine')
         .tag('itemborders:gold');
 
+    registerOrgan(new Organ('kubejs:machine_clockwork')
+        .addScore('health', 1.25)
+        .addScore('speed', -0.25)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.machine_clockwork.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.machine_clockwork.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.machine_clockwork.3" })])
+        .build())
+        .texture('kubejs:item/organs/machine/machine_clockwork')
+        .tag('kubejs:player_tick_only')
+        .tag('kubejs:machine')
+        .tag('itemborders:gold');
+
+    registerOrgan(new Organ('kubejs:lava_life_cycle_system')
+        .addScore('strength', 1.5)
+        .addScore('filtration', 1.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.lava_life_cycle_system.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.lava_life_cycle_system.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.lava_life_cycle_system.3" })])
+        .build())
+        .texture('kubejs:item/organs/machine/lava_life_cycle_system')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:machine')
+        .tag('itemborders:diamond');
+
+    registerOrgan(new Organ('kubejs:tamagotchi')
+        .addScore('luck', 1.5)
+        .addScore('nerves', 1.25)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.tamagotchi.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.tamagotchi.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.tamagotchi.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.tamagotchi.4" }), Text.darkPurple({ "translate": "kubejs.tooltips.warp_count" })])
+        .build())
+        .texture('kubejs:item/organs/machine/tamagotchi')
+        .tag('kubejs:player_tick_only')
+        .tag('kubejs:eat_effect_only')
+        .tag('kubejs:machine')
+        .tag('itemborders:diamond');
+
+    registerOrgan(new Organ('kubejs:revolution_steam_engine')
+        .addScore('endurance', 0.5)
+        .addScore('fire_resistant', 1.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.revolution_steam_engine.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_steam_engine.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_steam_engine.3" }), Text.gold({ "translate": "effect.kubejs.flaring_heart" }), Text.gold('/'), Text.gold({ "translate": "effect.kubejs.burning_heart" }), Text.gray({ "translate": "kubejs.tooltips.revolution_steam_engine.4" })])
+        .build())
+        .texture('kubejs:item/organs/machine/revolution_steam_engine')
+        .tag('kubejs:rclick_only')
+        .tag('kubejs:machine')
+        .tag('itemborders:diamond');
     // 糖果心与魔法使系列物品
     // 糖果系列器官
     registerOrgan(new Organ('kubejs:candy_heart')
@@ -458,7 +507,7 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_active.2" }), Text.darkRed({ "translate": "kubejs.tooltips.pandora_active.3" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_active.4" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_active.5" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_active.6" }), Text.darkPurple({ "translate": "kubejs.tooltips.pandora_active.7" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pandora_active.6" }), Text.darkPurple({ "translate": "kubejs.tooltips.warp_count" })])
         .build())
         .texture('kubejs:item/organs/warp/pandora_active')
         .rarity('epic')
@@ -489,7 +538,7 @@ StartupEvents.registry('item', event => {
         .addScore('health', 1)
         .addScore('speed', -1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.parasitic_elf.1" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.parasitic_elf.2" }), Text.gold('幸运*5%(最大50%)'), Text.gray({ "translate": "kubejs.tooltips.parasitic_elf.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.parasitic_elf.2" }), Text.gold({ "translate": "kubejs.tooltips.parasitic_elf.3" }), Text.gray({ "translate": "kubejs.tooltips.parasitic_elf.4" })])
         .build())
         .texture('kubejs:item/organs/relics/parasitic_elf')
         .tag('kubejs:relics')
@@ -508,7 +557,6 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:heart')
         .tag('kubejs:active')
         .tag('kubejs:relics');
-
 
     registerOrgan(new Organ('kubejs:leviathan_spine')
         .addScore('nerves', 1.5)
@@ -530,7 +578,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:heart_of_blade')
-        .addScore('health', -1.5)
+        .addScore('health', -1)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.heart_of_blade.1" }), Text.gold({ "translate": "kubejs.tooltips.heart_of_blade.2" }), Text.gray({ "translate": "kubejs.tooltips.heart_of_blade.3" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.heart_of_blade.4" })])
         .build())
@@ -540,7 +588,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:blade_of_heart')
-        .addScore('defense', -1.5)
+        .addScore('defense', -1)
+        .addScore('strength', 1.5)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blade_of_heart.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blade_of_heart.2" }), Text.gold({ "translate": "kubejs.tooltips.blade_of_heart.3" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.blade_of_heart.4" })])
@@ -565,7 +614,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:flower_heart')
         .addScore('health', 1)
         .addScore('photosynthesis', 4)
-        .addScore('metabolism', 4)
+        .addScore('metabolism', 1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.flower_heart.1" })])
         .build())
         .texture('kubejs:item/organs/relics/flower_heart')
@@ -620,8 +669,8 @@ StartupEvents.registry('item', event => {
         .addScore('swim_speed', -1)
         .addScore('fire_resistant', -1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.heavy_hammer_muscle.1" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.heavy_hammer_muscle.2" }), Text.gold('3%*幸运等级(最大30%)'), Text.gray({ "translate": "kubejs.tooltips.heavy_hammer_muscle.3" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.heavy_hammer_muscle.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.heavy_hammer_muscle.2" }), Text.gold({ "translate": "kubejs.tooltips.heavy_hammer_muscle.3" }), Text.gray({ "translate": "kubejs.tooltips.heavy_hammer_muscle.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.heavy_hammer_muscle.5" })])
         .build())
         .texture('kubejs:item/organs/relics/heavy_hammer_muscle')
         .tag('kubejs:muscle')
@@ -653,6 +702,26 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only')
         .tag('kubejs:relics');
 
+    registerOrgan(new Organ('kubejs:sand_bone')
+        .addScore('defense', 1)
+        .addScore('fire_resistant', 1)
+        .addScore('strength', 1.75)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.sand_bone.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sand_bone.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/sand_bone')
+        .tag('kubejs:player_tick_only')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:blooded_chip')
+        .addScore('nerves', 1.25)
+        .addScore('strength', 0.25)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.blooded_chip.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blooded_chip.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/blooded_chip')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)

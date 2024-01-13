@@ -31,7 +31,7 @@
 		{
 			can_repeat: true
 			dependencies: ["0C769BB94D282CC6"]
-			description: ["隐形怪物仅会出现在自然生成的怪物身上，概率为10%"]
+			description: ["隐形怪物仅会出现在自然生成的怪物身上，概率为50%"]
 			icon: "irons_spellbooks:greater_invisibility_elixir"
 			id: "18831FA279B55A25"
 			rewards: [{
@@ -46,6 +46,7 @@
 				title: "启用隐形怪物？"
 				type: "checkmark"
 			}]
+			title: "潜在威胁？"
 			x: 2.75d
 			y: 0.0d
 		}
@@ -108,6 +109,28 @@
 			}]
 			title: "伤害乘数"
 			x: 5.5d
+			y: 2.25d
+		}
+		{
+			can_repeat: true
+			dependencies: ["0C769BB94D282CC6"]
+			description: ["被&6灾变降临&r效果的怪物攻击后玩家将在短时间内无法使用物品、放置方块、进行攻击。"]
+			icon: "somebosses:burning_volcanic_rock"
+			id: "2CFAA13438E72B38"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C8DC997CE7A738F"
+				table_id: 4145327722741839115L
+				type: "choice"
+			}]
+			subtitle: "怪物将会携带灾变效果"
+			tasks: [{
+				id: "0B42DCA173E8BD65"
+				title: "怪物启用灾变效果？"
+				type: "checkmark"
+			}]
+			title: "灾变降临"
+			x: 2.75d
 			y: 2.25d
 		}
 	]

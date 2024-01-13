@@ -79,7 +79,8 @@ LootJS.modifiers(event => {
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(["#minecraft:village"], false)
-        .addLoot(LootEntry.of('biomancy:healing_additive').when((c) => c.randomChance(0.03)))
+        .addLoot(LootEntry.of(WARES_GOD_CHALLENGE).when((c) => c.randomChance(0.01)))
+        .addLoot(LootEntry.of('biomancy:healing_additive').when((c) => c.randomChance(0.1)))
         .addLoot(LootEntry.of('biomancy:breeding_stimulant').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('simplehats:hatbag_common').when((c) => c.randomChance(0.1)))

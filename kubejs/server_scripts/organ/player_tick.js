@@ -1,6 +1,6 @@
 PlayerEvents.tick(event => {
     let player = event.player
-    if (event.server.tickCount % 20 != 0) {
+    if (event.player.age % 20 != 0) {
         return
     }
     let typeMap = getPlayerChestCavityTypeMap(player);
@@ -42,5 +42,30 @@ const organPlayerTickOnlyStrategies = {
             player.heal(1)
         }
     },
-
+    'kubejs:sand_bone': function (event, organ) {
+        let player = event.player
+        if (event.level.getBlock(player.x, player.y - 1, player.z).id == 'minecraft:sand') {
+            player.potionEffects.add('minecraft:speed', 20 * 3, 1)
+        }
+    },
+    'kubejs:machine_clockwork': function (event, organ) {
+        let player = event.player
+        let count = player.persistentData.getInt(resourceCount)
+        if (player.isSprinting()) {
+            let speed = Math.floor(player.getSpeed() * 20)
+            updateResourceCount(player, count + speed)
+        } else if (count > 0) {
+            updateResourceCount(player, count - 1)
+        }
+    },
+    'kubejs:tamagotchi': function (event, organ) {
+        if (event.player.age % 600 != 0) {
+            return
+        }
+        if (Math.random() > 0.05) {
+            return
+        }
+        event.player.potionEffects.add('kubejs:hungry_tamagotchi', 60 * 20, 0)
+        event.player.tell(Text.gray({ "translate": "kubejs.msg.tamagotchi.1" }))
+    },
 };

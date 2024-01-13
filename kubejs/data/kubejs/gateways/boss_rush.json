@@ -355,8 +355,14 @@
     {
       "type": "gateways:loot_table",
       "loot_table": "minecraft:chests/nether_bridge",
-      "rolls": 10,
+      "rolls": 5,
       "desc": "rewards.gateways.loot_table.nether_bridge"
+    },
+    {
+      "type": "gateways:loot_table",
+      "loot_table": "dimdungeons:chests/chestloot_4",
+      "rolls": 5,
+      "desc": "高级战利品"
     }
   ],
   "failures": [

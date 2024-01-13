@@ -1119,6 +1119,48 @@
 			x: 5.5d
 			y: -5.5d
 		}
+		{
+			dependencies: ["0DCDFAD4C3288FCD"]
+			description: ["击败神意BossRush后，使用最终掉落的&b恩准&r，即可将复乐园升级为&4失乐园&r。"]
+			id: "31943A7BAB8816B5"
+			rewards: [{
+				id: "18BFE49141AA5EAD"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			subtitle: "于是，人们被逐出了这里"
+			tasks: [{
+				id: "4559F00C65B3FB78"
+				item: {
+					Count: 1b
+					id: "kubejs:lost_paradise"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 20.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DCDFAD4C3288FCD"]
+			description: ["击败包含小怪的三波神意Boss挑战，即可获得用于升级复乐园的特殊碎片——&b神之认可&r。"]
+			id: "491936134333160E"
+			subtitle: "来自神明的三波挑战"
+			tasks: [{
+				id: "71B0F459CFE155DD"
+				item: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "kubejs:god_challenge"
+					}
+				}
+				type: "item"
+			}]
+			title: "神意挑战"
+			x: 19.75d
+			y: -1.5d
+		}
 	]
 	title: "章节2：觉醒"
 }

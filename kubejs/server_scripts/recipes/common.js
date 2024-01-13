@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'majobroom:majo_hat' })
     event.remove({ output: 'majobroom:majo_cloth' })
     event.remove({ output: 'morebows:ender_bow' })
+    event.remove({ output: 'lightmanscurrency:coinmint' })
 
 
     event.shaped('minecraft:end_portal_frame', [
@@ -18,6 +19,12 @@ ServerEvents.recipes(event => {
         ['', 'alexsmobs:banana_slug_slime', ''],
         ['minecraft:phantom_membrane', 'createaddition:gold_wire', 'minecraft:phantom_membrane'],
         ['', 'alexsmobs:banana_slug_slime', '']
+    ])
+
+    event.shaped('kubejs:silk_for_cutting', [
+        ['minecraft:glass', '#forge:string', 'minecraft:glass'],
+        ['#forge:string', '#forge:dusts/glowstone', '#forge:string'],
+        ['minecraft:glass', '#forge:string', 'minecraft:glass']
     ])
 
     event.shapeless('summoningrituals:altar', ['minecraft:wither_skeleton_skull', '#hexerei:candles', '#hexerei:candles', '#hexerei:candles', 'createaddition:electrum_sheet', 'minecraft:lectern'])
@@ -48,7 +55,7 @@ ServerEvents.recipes(event => {
             return stack;
         });
 
-    event.shapeless('kubejs:paradise_regained', ['kubejs:god_consciousness','kubejs:god_consciousness', 'kubejs:god_consciousness'])
+    event.shapeless('kubejs:paradise_regained', ['kubejs:god_consciousness', 'kubejs:god_consciousness', 'kubejs:god_consciousness'])
         .modifyResult((grid, stack) => {
             let nbt1 = grid.find('kubejs:god_consciousness', 0).nbt
             let nbt2 = grid.find('kubejs:god_consciousness', 1).nbt
@@ -73,6 +80,8 @@ ServerEvents.recipes(event => {
         });
 
     event.shapeless('kubejs:lucky_cookie', ['minecraft:paper', 'minecraft:cookie'])
+
+    event.shapeless('kubejs:lost_paradise', ['kubejs:paradise_regained', 'kubejs:god_agreement'])
 
     event.shaped('kubejs:empty_organ_charm', [
         ['#forge:glass', '#minecraft:logs', '#forge:glass'],

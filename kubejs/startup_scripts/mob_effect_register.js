@@ -36,7 +36,7 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .effectTick((entity, lvl) => {
             if (entity.level.clientSide) return;
-            if (entity.tickCount % 20 == 0) {
+            if (entity.age % 20 == 0) {
                 entity.heal(entity.getMaxHealth() * 0.01)
                 if (entity.health < entity.maxHealth * 0.67) {
                     entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
@@ -56,7 +56,7 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .effectTick((entity, lvl) => {
             if (entity.level.clientSide) return;
-            if (entity.tickCount % 20 == 0) {
+            if (entity.age % 20 == 0) {
                 entity.heal(entity.getMaxHealth() * 0.01)
                 if (entity.health < entity.maxHealth * 0.33) {
                     entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
@@ -76,7 +76,7 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .effectTick((entity, lvl) => {
             if (entity.level.clientSide) return;
-            if (entity.tickCount % 20 == 0) {
+            if (entity.age % 20 == 0) {
                 entity.heal(entity.getMaxHealth() * 0.01)
                 if (entity.getEffect('kubejs:glare_of_god').getDuration() < 41) {
                     entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
@@ -106,12 +106,18 @@ StartupEvents.registry('mob_effect', event => {
     event.create('vulnerable')
         .harmful()
         .color(Color.RED)
-        
+
+    event.create('hungry_tamagotchi')
+        .beneficial()
+        .color(Color.PINK_DYE)
     event.create('power_of_citadel')
         .beneficial()
         .effectTick((entity, lvl) => {
             if (entity.level.clientSide) return;
-            if (entity.tickCount % 20 == 0) {
+            if (entity.age % 20 == 0) {
+                if (entity.isPlayer()) {
+                    entity.removeEffect('kubejs:power_of_citadel')
+                }
                 entity.heal(entity.getMaxHealth() * 0.01)
             }
         })

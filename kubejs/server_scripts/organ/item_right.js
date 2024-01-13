@@ -89,6 +89,28 @@ const organRightClickedOnlyStrategies = {
         updateResourceCount(player, count)
         player.swing()
         player.addItemCooldown(event.item, 20 * 60)
-        event.item.shrink(1);
+        event.item.shrink(1)
+    },
+    'kubejs:revolution_steam_engine': function (event, organ) {
+        let player = event.player
+        if (event.item != Item.of('minecraft:potion', '{Potion:"minecraft:water"}')) {
+            return
+        }
+        player.addItemCooldown(event.item, 20 * 20)
+        let count = player.persistentData.getInt(resourceCount)
+        if (player.hasEffect('kubejs:burning_heart')) {
+            let effect = player.getEffect('kubejs:burning_heart')
+            player.removeEffect('kubejs:burning_heart')
+            player.potionEffects.add('kubejs:flaring_heart', effect.getDuration() + 20 * 10, effect.getAmplifier())
+            updateResourceCount(player, count + (effect.getAmplifier() + 1) * 50)
+        } else if (player.hasEffect('kubejs:flaring_heart')) {
+            player.removeEffect('kubejs:flaring_heart')
+            player.potionEffects.add('kubejs:burning_heart', effect.getDuration() + 20 * 10, effect.getAmplifier())
+            updateResourceCount(player, count + (effect.getAmplifier() + 1) * 50)
+        } else {
+            updateResourceCount(player, count + 25)
+        }
+        event.item.shrink(1)
+        event.player.give(Item.of('minecraft:glass_bottle'))
     },
 };

@@ -147,7 +147,10 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:heavy_hammer_muscle': function (event, organ, data) {
         let player = event.source.player
-        if (Math.random() < 0.03 * Math.max(player.getLuck(), 0.3)) {
+        if (event.source.type != 'player') {
+            return
+        }
+        if (Math.random() < 0.015 * Math.max(player.getLuck(), 0.15)) {
             event.entity.potionEffects.add('tetra:stun', 20 * 2, 0)
         }
     },
@@ -206,12 +209,25 @@ const organPlayerDamageOnlyStrategies = {
         if (event.source.type != 'arrow') {
             return
         }
-        if (Math.random() < Math.min(0.05 * event.source.player.getLuck(), 0.5)) {
+        if (Math.random() < Math.min(0.03 * event.source.player.getLuck(), 0.3)) {
             event.entity.potionEffects.map.forEach((effect, instance) => {
                 if (!effect.isBeneficial()) {
                     instance.setDuration(instance.getDuration() + 20 * 2)
                 }
             })
         }
+    },
+    'kubejs:lava_life_cycle_system': function (event, organ, data) {
+        let player = event.source.player
+        let count = player.persistentData.getInt(resourceCount)
+        let damageBonus = Math.floor(count / 20)
+        if (damageBonus > 0) {
+            data.damage = data.damage + damageBonus
+            updateResourceCount(player, count - damageBonus)
+        }
+    },
+    'kubejs:blooded_chip': function (event, organ, data) {
+        if (event.source.type != 'arrow') return
+        data.damage = data.damage * (1.5 - Math.abs(event.source.immediate.getPitch()) / 90)
     },
 };

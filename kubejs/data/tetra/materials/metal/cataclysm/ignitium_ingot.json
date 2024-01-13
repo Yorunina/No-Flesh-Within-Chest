@@ -11,11 +11,11 @@
   "toolLevel": "minecraft:netherite",
   "toolEfficiency": "8.8",
   "effects": {
-    "stabilizing": 2
+    "stabilizing": 1
   },
   "tints": {
-    "glyph": "F5AC12",
-    "texture": "F5AC12"
+    "glyph": "ebf1f5",
+    "texture": "ebf1f5"
   },
   "textures": [
     "metal",

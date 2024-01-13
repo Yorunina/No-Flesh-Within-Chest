@@ -11,6 +11,9 @@
 	"custombossbar(on/off)" = true
 	#BossMusic(on/off)
 	"BossMusic(on/off)" = true
+	#BossMusicVolume
+	#Range: 1 ~ 1000000
+	BossMusicVolume = 2
 
 [Weapon]
 	#Armor Infinity Durability(on/off)
@@ -42,6 +45,12 @@
 	#Void Core's Cooldown
 	#Range: 0 ~ 1000000
 	VoidCoreCooldown = 160
+	#WASW's Wither Missile's Damage
+	#Range: 0.0 ~ 1000000.0
+	"WASW's WitherMissiledamage" = 16.0
+	#Sandstorm's Timer
+	#Range: 0 ~ 1000000
+	SandstormTimer = 160
 
 ["Entity damage"]
 	#Void Rune's Damage
@@ -65,9 +74,6 @@
 	#Lionfish Spike's Damage
 	#Range: 0.0 ~ 1000000.0
 	LionfishSpikedamage = 4.0
-	#Wither Missile's Damage
-	#Range: 0.0 ~ 1000000.0
-	WitherMissiledamage = 8.0
 	#Wither Howizter's Damage
 	#Range: 0.0 ~ 1000000.0
 	WitherHowizterdamage = 8.0
@@ -92,6 +98,12 @@
 	#Amethyst Cluster's Damage
 	#Range: 0.0 ~ 1000000.0
 	"Amethyst Cluster Damage" = 12.0
+	#Sandstorm's Damage
+	#Range: 0.0 ~ 1000000.0
+	"Sandstorm Damage" = 5.0
+	#Ancient Desert Stele's Damage
+	#Range: 0.0 ~ 1000000.0
+	"Ancient Desert Stele Damage" = 18.0
 
 ["Ender Guardian"]
 	#EnderGuardian's Health Multiplier
@@ -135,9 +147,6 @@
 	#EnderGuardianBlockBreaking radius
 	#Range: 0 ~ 20
 	"EnderGuardianBlockBreaking Z" = 15
-	#Guardian's music volume
-	#Range: 0.0 ~ 1.0
-	"Guardian's Music Volume" = 0.5
 
 ["Netherite Monstrosity"]
 	#Monstrosity's Lavabomb magazine.
@@ -166,9 +175,6 @@
 	#Monstrosity's Immune to Long distance attack range.
 	#Range: 1.0 ~ 1000000.0
 	"Monstrosity's prevent attacks from far away Range" = 18.0
-	#Monstrosity's music volume
-	#Range: 0.0 ~ 1.0
-	"Monstrosity's Music Volume" = 0.5
 
 ["Ender Golem"]
 	#Ender Golem's block breaking ignore the MobGriefing
@@ -201,9 +207,6 @@
 	IgnisDamageCap = 20
 	#Ignis's cracked block breaking ignore the MobGriefing
 	IgnisBlockBreaking = true
-	#Ignis's music volume
-	#Range: 0.0 ~ 1.0
-	"Ignis's Music Volume" = 0.5
 
 [revenant]
 	#Revenant's Health Multiplier
@@ -234,9 +237,9 @@
 	#The Harbinger's charge attack Hp Damage
 	#Range: 0.0 ~ 1.0
 	"The Harbinger's charge attack Hp Damage" = 0.06
-	#The Harbinger's music volume
-	#Range: 0.0 ~ 1.0
-	"The Harbinger's Music Volume" = 0.5
+	#Harbinger's Wither Missile's Damage
+	#Range: 0.0 ~ 1000000.0
+	"Harbinger's WitherMissiledamage" = 8.0
 
 ["The Leviathan"]
 	#Leviathan's Health Multiplier
@@ -267,9 +270,6 @@
 	LeviathanBlockBreaking = true
 	#Leviathan Immune Out of Water
 	LeviathanImmuneOutofWater = true
-	#The Leviathan's music volume
-	#Range: 0.0 ~ 1.0
-	"The Leviathan's Music Volume" = 0.5
 
 ["The Baby Leviathan"]
 	#BabyLeviathan's Health Multiplier
@@ -312,4 +312,59 @@
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	#Range: > 0
 	AmethystCrabSpawnRolls = 100
+	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+	#Range: 0 ~ 1000
+	KoboletonSpawnWeight = 2
+	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+	#Range: > 0
+	KoboletonSpawnRolls = 30
+
+["The Prowler"]
+	#The Prowler's Immune to Long distance attack range.
+	#Range: 1.0 ~ 1000000.0
+	"The Prowler's prevent attacks from far away Range" = 16.0
+	#Prowler's Health Multiplier
+	#Range: 0.0 ~ 1000000.0
+	ProwlerHealthMultiplier = 1.0
+	#Prowler's Damage Multiplier
+	#Range: 0.0 ~ 1000000.0
+	ProwlerDamageMultiplier = 1.0
+
+["Modern Remnant"]
+	#Modern Remnant's Health Multiplier
+	#Range: 0.0 ~ 1000000.0
+	ModernRemnantHealthMultiplier = 1.0
+	#Modern Remnant's Damage Multiplier
+	#Range: 0.0 ~ 1000000.0
+	ModernRemnantDamageMultiplier = 1.0
+
+["Ancient Remnant"]
+	#Ancient Remnant's Health Multiplier
+	#Range: 0.0 ~ 1000000.0
+	AncientRemnantHealthMultiplier = 1.0
+	#Ancient Remnant's Damage Multiplier
+	#Range: 0.0 ~ 1000000.0
+	AncientRemnantDamageMultiplier = 1.0
+	#Ancient Remnant's Immune to Long distance attack range.
+	#Range: 1.0 ~ 1000000.0
+	"Ancient Remnant's prevent attacks from far away Range" = 15.0
+	#Ancient Remnant's DamageCap
+	#Range: 0 ~ 1000000
+	AncientRemnantCap = 21
+	#Ancient Remnant's block breaking ignore the MobGriefing
+	AncientRemnantBlockBreaking = true
+	#Remnant's Charge Hp Damage
+	#Range: 0.0 ~ 1.0
+	"Remnant's Charge Hp Damage" = 0.07
+	#Remnant's Hp Damage
+	#Range: 0.0 ~ 1.0
+	"Remnant's Normal attack Hp Damage" = 0.05
+	#Remnant's Stomp Hp Damage
+	#Range: 0.0 ~ 1.0
+	"Remnant's Stomp Hp Damage" = 0.03
+
+[Koboleton]
+	#Cause Koboleton to Drop Item In Hand Percent
+	#Range: 0.0 ~ 100.0
+	CauseKoboletontoDropItemInHandPercent = 5.0
 
