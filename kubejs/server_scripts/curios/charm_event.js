@@ -51,21 +51,21 @@ ItemEvents.foodEaten(event => {
 
 /**
  * 承受伤害
- * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */
 function organCharmPlayerHurtByOthers(event, data) {
-    let player = event.player
+    let player = event.entity
     let curiosItem = getCuriosItem(player, 'kubejs:organ_charm')
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'bear') {
         if (curiosItem.nbt.status == 1) {
             return
         }
-        if (event.damage < curiosItem.nbt.bearTask?.minDamage) {
+        if (event.amount < curiosItem.nbt.bearTask?.minDamage) {
             return
         }
-        curiosItem.nbt.bearTask.counter = curiosItem.nbt.bearTask.counter + event.damage
+        curiosItem.nbt.bearTask.counter = curiosItem.nbt.bearTask.counter + event.amount
         if (curiosItem.nbt.bearTask?.counter >= curiosItem.nbt.bearTask?.bearAmount) {
             curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
             curiosItem.nbt.status = 1
@@ -76,7 +76,7 @@ function organCharmPlayerHurtByOthers(event, data) {
 
 /**
  * 造成伤害
- * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */
@@ -87,7 +87,7 @@ function organCharmEntityHurtByPlayer(event, data) {
         if (curiosItem.nbt.status == 1) {
             return
         }
-        if (data.damage < curiosItem.nbt.damageTask?.minDamage) {
+        if (event.amount < curiosItem.nbt.damageTask?.minDamage) {
             return
         }
         if (curiosItem.nbt.damageTask?.type) {
@@ -109,7 +109,7 @@ function organCharmEntityHurtByPlayer(event, data) {
                 return
             }
         }
-        curiosItem.nbt.damageTask.counter = curiosItem.nbt.damageTask.counter + data.damage
+        curiosItem.nbt.damageTask.counter = curiosItem.nbt.damageTask.counter + event.amount
         if (curiosItem.nbt.damageTask?.counter >= curiosItem.nbt.damageTask?.damageAmount) {
             curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
             curiosItem.nbt.status = 1

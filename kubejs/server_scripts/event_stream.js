@@ -10,13 +10,14 @@
  * 2. 效果其次
  * 3. 武器、饰品再次
  */
-let damageLock = {};
-EntityEvents.hurt(event => {
+/**
+ * @param {Internal.LivingHurtEvent} event 
+ * @returns 
+ */
+global.damage = event => {
     let player = event.source.player
     if (!player) return;
-    let uuid = player.getStringUuid()
-    if (damageLock[uuid]) return;
-    let data = new EntityHurtCustomModel(event.getDamage())
+    let data = new EntityHurtCustomModel()
     organEntityHurtByPlayer(event, data)
     burningHeartEntityHurtByPlayer(event, data)
     executedEntityHurtByPlayer(event, data)
@@ -26,21 +27,10 @@ EntityEvents.hurt(event => {
     vulnerableEntityHurt(event, data)
     organCharmEntityHurtByPlayer(event, data)
 
-    // 事件拦截
     if (data.returnDamage != 0) {
         player.attack(data.returnDamage)
-        player.knockback
     }
-    if (event.damage != data.damage) {
-        damageLock[uuid] = true
-        event.entity.attack(event.getSource(), data.damage)
-        if (event.source.type == 'arrow') {
-            event.source.immediate.remove('discarded')
-        }
-        damageLock[uuid] = false
-        event.cancel()
-    }
-})
+}
 
 /**
  * 玩家受到伤害总线
@@ -48,12 +38,12 @@ EntityEvents.hurt(event => {
  * 2. 效果其次
  * 3. 武器、饰品再次
  */
-let hurtLock = {};
-EntityEvents.hurt('minecraft:player', event => {
-    let uuid = event.entity.getStringUuid()
-    if (hurtLock[uuid]) return;
-    event.entity.tell(1)
-    let data = new EntityHurtCustomModel(event.getDamage())
+/**
+ * @param {Internal.LivingHurtEvent} event
+ * @returns 
+ */
+global.hurt = event => {
+    let data = new EntityHurtCustomModel()
     if (!highPriorityPlayerHurtByOthers(event, data)) {
         return
     }
@@ -65,9 +55,7 @@ EntityEvents.hurt('minecraft:player', event => {
     powerOfCitadelPlayerHurtByOthers(event, data)
     organCharmPlayerHurtByOthers(event, data)
 
-    // 事件拦截
     if (data.returnDamage != 0 && event.source.actual) {
         event.source.actual.attack(data.returnDamage)
     }
-})
-
+}

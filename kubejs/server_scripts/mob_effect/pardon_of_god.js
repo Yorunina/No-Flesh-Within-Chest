@@ -1,7 +1,7 @@
 // priority: 6
 /**
  * 神之宽恕
- * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */
@@ -30,28 +30,28 @@ function pardonOfGodEntityHurtByPlayer(event, data) {
 
 /**
  * 
- * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @param {number} amplifier 
  */
 function pardonOfGodLevelEffect(event, data, amplifier) {
     switch (amplifier) {
         case 0:
-            data.damage = 0
+            event.amount = 0
             break;
         case 1:
-            event.entity.heal(data.damage)
-            data.damage = 0
+            event.entity.heal(event.amount)
+            event.amount = 0
             break;
         case 2:
-            event.entity.heal(data.damage)
-            data.returnDamage = data.returnDamage + data.damage
-            data.damage = 0
+            event.entity.heal(event.amount)
+            data.returnDamage = data.returnDamage + event.amount
+            event.amount = 0
             break;
         default:
-            event.entity.heal(data.damage)
-            data.returnDamage = data.returnDamage + data.damage
-            data.damage = 0
+            event.entity.heal(event.amount)
+            data.returnDamage = data.returnDamage + event.amount
+            event.amount = 0
             break;
     }
 }

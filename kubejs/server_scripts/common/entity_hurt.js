@@ -1,18 +1,17 @@
 // priority: 1000
 /**
  * 造成伤害
- * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */
 function commonEntityHurtByPlayer(event, data) {
-    let player = event.source.player;
 
 }
 
 /**
  * 受到伤害
- * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */

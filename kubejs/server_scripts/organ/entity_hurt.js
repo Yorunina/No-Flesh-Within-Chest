@@ -1,7 +1,7 @@
 // priority: 10
 /**
  * 造成伤害
- * @param {Internal.LivingEntityHurtEventJS} event
+ * @param {Internal.LivingHurtEvent} event
  * @param {EntityHurtCustomModel} data
  * @returns
  */
@@ -27,12 +27,12 @@ function organEntityHurtByPlayer(event, data) {
 
 /**
  * 承受伤害
- * @param {Internal.LivingEntityHurtEventJS} event
+ * @param {Internal.LivingHurtEvent} event
  * @param {EntityHurtCustomModel} data
  * @returns
  */
 function organPlayerHurtByOthers(event, data) {
-    let player = event.player;
+    let player = event.entity;
     let typeMap = getPlayerChestCavityTypeMap(player);
     if (typeMap.has('kubejs:bear')) {
         typeMap.get('kubejs:bear').forEach(organ => {
@@ -53,7 +53,7 @@ function organPlayerHurtByOthers(event, data) {
 
 const organPlayerBearStrategies = {
     'kubejs:red_ink': function (event, organ, data) {
-        getPlayerMagicData(event.player).addMana(data.damage * 5)
+        getPlayerMagicData(event.entity).addMana(event.amount * 5)
     },
 };
 
@@ -61,17 +61,16 @@ const organPlayerBearStrategies = {
 /**
  * 玩家承受伤害唯一处理策略
  * @constant
- * @type {Object<string,function(Internal.LivingEntityHurtEventJS, organ, EntityHurtCustomModel):void>}
+ * @type {Object<string,function(Internal.LivingHurtEvent, organ, EntityHurtCustomModel):void>}
  */
 const organPlayerBearOnlyStrategies = {
     'kubejs:doppelganger': function (event, organ, data) {
-        let player = event.player
-        if (event.getDamage() < player.getHealth()) {
+        let player = event.entity
+        if (event.amount < player.getHealth()) {
             return
         }
-        let typeMap = getPlayerChestCavityTypeMap(event.player)
+        let typeMap = getPlayerChestCavityTypeMap(player)
         if (typeMap.has('kubejs:legends')) {
-            let player = event.player;
             let amount = typeMap.get('kubejs:legends').length
             if (Math.random() < Math.min(0.25 + 0.1 * amount, 0.8)) {
                 player.potionEffects.add('minecraft:absorption', 40, 2)
@@ -79,7 +78,7 @@ const organPlayerBearOnlyStrategies = {
         }
     },
     'kubejs:heart_of_blade': function (event, organ, data) {
-        data.returnDamage = data.returnDamage + event.player.getArmorValue()
+        data.returnDamage = data.returnDamage + event.entity.getArmorValue()
     },
 };
 
@@ -87,7 +86,7 @@ const organPlayerBearOnlyStrategies = {
 /**
  * 造成伤害处理策略
  * @constant
- * @type {Object<string,function(Internal.LivingEntityHurtEventJS, organ, EntityHurtCustomModel):void>}
+ * @type {Object<string,function(Internal.LivingHurtEvent, organ, EntityHurtCustomModel):void>}
  */
 const organPlayerDamageStrategies = {
 
@@ -97,7 +96,7 @@ const organPlayerDamageStrategies = {
 /**
  * 造成伤害唯一处理策略
  * @constant
- * @type {Object<string,function(Internal.LivingEntityHurtEventJS, organ, EntityHurtCustomModel):void>}
+ * @type {Object<string,function(Internal.LivingHurtEvent, organ, EntityHurtCustomModel):void>}
  */
 const organPlayerDamageOnlyStrategies = {
     'kubejs:infinity_beats': function (event, organ, data) {
@@ -132,7 +131,7 @@ const organPlayerDamageOnlyStrategies = {
             if (player.hasEffect('kubejs:colorful')) {
                 amplify = 20
             }
-            data.damage = data.damage + getPlayerMagicData(player).getMana() / amplify
+            event.amount = event.amount + getPlayerMagicData(player).getMana() / amplify
         }
     },
     'kubejs:executioner_blade_pieces': function (event, organ, data) {
@@ -156,26 +155,26 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:demon_eyeball': function (event, organ, data) {
         let player = event.source.player
-        data.damage = data.damage * (player.pitch + 90) / 90
+        event.amount = event.amount * (player.pitch + 90) / 90
     },
     'kubejs:lost_paradise': function (event, organ, data) {
         let player = event.source.player
         let random = Math.random()
         if (random < 0.1) {
-            event.entity.causeFallDamage(4, data.damage, DamageSource.FALL)
+            event.entity.causeFallDamage(4, event.amount, DamageSource.FALL)
             event.cancel()
             return
         }
         if (random < 0.2) {
-            data.damage = data.damage + event.entity.maxHealth * 0.03
+            event.amount = event.amount + event.entity.maxHealth * 0.03
             return
         }
         if (random < 0.3) {
-            data.damage = data.damage * 2
+            event.amount = event.amount * 2
             return
         }
         if (random < 0.4) {
-            data.damage = data.damage + 10
+            event.amount = event.amount + 10
             return
         }
         if (random < 0.5) {
@@ -190,7 +189,7 @@ const organPlayerDamageOnlyStrategies = {
             return
         }
         if (item?.id == 'weaponmaster:wm_broadsword') {
-            data.damage = data.damage * 1.3
+            event.amount = event.amount * 1.3
         }
     },
     'kubejs:bone_soul': function (event, organ, data) {
@@ -222,12 +221,12 @@ const organPlayerDamageOnlyStrategies = {
         let count = player.persistentData.getInt(resourceCount)
         let damageBonus = Math.floor(count / 20)
         if (damageBonus > 0) {
-            data.damage = data.damage + damageBonus
+            event.amount = event.amount + damageBonus
             updateResourceCount(player, count - damageBonus)
         }
     },
     'kubejs:blooded_chip': function (event, organ, data) {
         if (event.source.type != 'arrow') return
-        data.damage = data.damage * (1.5 - Math.abs(event.source.immediate.getPitch()) / 90)
+        event.amount = event.amount * (1.5 - Math.abs(event.source.immediate.getPitch()) / 90)
     },
 };

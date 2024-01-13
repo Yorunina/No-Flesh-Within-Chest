@@ -1,12 +1,11 @@
 // priority: 6
 /**
  * 脆弱诅咒
- * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */
 function curseOfFragilityPlayerHurtByOthers(event, data) {
-    if (!event.source.actual) return;
     let player = event.entity;
     if (player.hasEffect('kubejs:curse_of_fragility')) {
         player.damageEquipment("feet", 10)

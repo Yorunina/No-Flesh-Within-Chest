@@ -2,12 +2,12 @@
 const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi");
 /**
  * 玩家受伤
- * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */
 function curiosPlayerHurtByOthers(event, data) {
-    let player = event.player;
+    let player = event.entity;
 
     const api = new $CuriosApi();
     const curios = api
@@ -17,7 +17,7 @@ function curiosPlayerHurtByOthers(event, data) {
         .get();
 
     for (let slot = 0; slot < curios.getSlots(); slot++) {
-        if (player.getHealth() - event.damage <= 4) {
+        if (player.getHealth() - event.amount <= 4) {
             let item = curios.getStackInSlot(slot);
             if (curiosHurtStrategies[item.id]) {
                 curiosHurtStrategies[item.id](event, curios, slot, item, data)

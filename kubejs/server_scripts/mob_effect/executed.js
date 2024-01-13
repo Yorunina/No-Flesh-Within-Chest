@@ -1,7 +1,7 @@
 // priority: 6
 /**
  * 被行刑
- * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */
@@ -14,8 +14,8 @@ function executedEntityHurtByPlayer(event, data) {
     let executedEffect = entity.getEffect('kubejs:executed')
     let amplify = executedEffect.getAmplifier()
     if (Math.random() < 0.15) {
-        data.damage = data.damage + (entity.getMaxHealth() - entity.getHealth()) * amplify * 0.03
+        event.amount = event.amount + (entity.getMaxHealth() - entity.getHealth()) * amplify * 0.03
     } else {
-        data.damage = data.damage - amplify * 1
+        event.amount = event.amount - amplify * 1
     }
 }

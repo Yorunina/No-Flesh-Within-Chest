@@ -13,24 +13,19 @@
 
 /**
  * 甜蜜之梦承伤事件
- * @param {Internal.LivingEntityHurtEventJS} event 
+ * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */
 function sweetDreamPlayerHurtByOthers(event, data) {
-    let player = event.player;
+    let player = event.entity;
     if (player.hasEffect('kubejs:sweet_dream')) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (!itemMap.has('kubejs:candy_heart')) {
             return;
         }
         let sweetDreamPotion = player.getEffect('kubejs:sweet_dream')
-        if (event.source.isFire()) {
-            player.removeEffect('kubejs:sweet_dream');
-            return;
-        }
-
-        let damage = data.damage;
+        let damage = event.amount;
         if (sweetDreamPotion.getDuration() * (sweetDreamPotion.getAmplifier() + 1) < damage * 20) {
             player.removeEffect('kubejs:sweet_dream');
             if (itemMap.has('kubejs:candy_pancreas')) {
@@ -48,7 +43,7 @@ function sweetDreamPlayerHurtByOthers(event, data) {
         return;
     }
 
-    if (data.damage >= 10 && !player.hasEffect('kubejs:sweet_dream')) {
+    if (event.amount >= 10 && !player.hasEffect('kubejs:sweet_dream')) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (!itemMap.has('kubejs:magic_hippocampus')) {
             return;
