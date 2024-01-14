@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ES5",
+            "ES2015"
+        ],
+        "typeRoots": [
+            "./probe/generated",
+            "./probe/user"
+        ],
+        "target": "ES2015"
+    }
+}
