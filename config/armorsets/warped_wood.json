@@ -1,0 +1,45 @@
+{
+  "armorSetName": "诡异木",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:warped_wood_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:warped_wood_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:warped_wood_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:warped_wood_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "能够略微强化末影和自然系魔法的威力，并赋予再生效果"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:nature_spell_power",
+      "modifierUUID": "B96248C5-07B3-4BAA-8E40-3553B5878B3E",
+      "description": "+20% 自然系魔法伤害",
+      "value": 0.2
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:ender_spell_power",
+      "modifierUUID": "D21456A5-58C4-478C-A61A-94A7340E572F",
+      "description": "+20% 末影系魔法伤害",
+      "value": 0.2
+    },
+    {
+      "type": "effect",
+      "name": "minecraft:regeneration",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "armorSetName": "木",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:oak_wood_helmet",
+    "mixAndMatch": [
+      "extraarmor:birch_wood_helmet",
+      "extraarmor:spruce_wood_helmet",
+      "extraarmor:jungle_wood_helmet",
+      "extraarmor:acacia_wood_helmet",
+      "extraarmor:dark_oak_wood_helmet",
+      "extraarmor:mangrove_wood_helmet"
+    ],
+    "mustBeEmpty": false
+  },
+  "chest": {
+    "itemKey": "extraarmor:oak_wood_chestplate",
+    "mixAndMatch": [
+      "extraarmor:birch_wood_chestplate",
+      "extraarmor:spruce_wood_chestplate",
+      "extraarmor:jungle_wood_chestplate",
+      "extraarmor:acacia_wood_chestplate",
+      "extraarmor:dark_oak_wood_chestplate",
+      "extraarmor:mangrove_wood_chestplate"
+    ],
+    "mustBeEmpty": false
+  },
+  "legs": {
+    "itemKey": "extraarmor:oak_wood_leggings",
+    "mixAndMatch": [
+      "extraarmor:birch_wood_leggings",
+      "extraarmor:spruce_wood_leggings",
+      "extraarmor:jungle_wood_leggings",
+      "extraarmor:acacia_wood_leggings",
+      "extraarmor:dark_oak_wood_leggings",
+      "extraarmor:mangrove_wood_leggings"
+    ],
+    "mustBeEmpty": false
+  },
+  "boots": {
+    "itemKey": "extraarmor:oak_wood_boots",
+    "mixAndMatch": [
+      "extraarmor:birch_wood_boots",
+      "extraarmor:spruce_wood_boots",
+      "extraarmor:jungle_wood_boots",
+      "extraarmor:acacia_wood_boots",
+      "extraarmor:dark_oak_wood_boots",
+      "extraarmor:mangrove_wood_boots"
+    ],
+    "mustBeEmpty": false
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "能够略微强化自然系魔法的威力，并赋予再生效果"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:nature_spell_power",
+      "modifierUUID": "BC4E02C7-37F6-4318-9763-738E90E5E271",
+      "description": "+20% 自然系魔法伤害",
+      "value": 0.2
+    },
+    {
+      "type": "effect",
+      "name": "minecraft:regeneration",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

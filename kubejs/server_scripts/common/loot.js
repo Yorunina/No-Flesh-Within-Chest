@@ -77,7 +77,7 @@ LootJS.modifiers(event => {
         .randomChance(0.2)
         .addLoot(Item.of('kubejs:unholy_grail'))
 
-    event.addLootTypeModifier(LootType.CHEST)
+        event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(["#minecraft:village"], false)
         .addLoot(LootEntry.of(WARES_GOD_CHALLENGE).when((c) => c.randomChance(0.01)))
         .addLoot(LootEntry.of('biomancy:healing_additive').when((c) => c.randomChance(0.1)))
@@ -87,5 +87,6 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('simplehats:hatbag_uncommon').when((c) => c.randomChance(0.05)))
         .addLoot(LootEntry.of('bosses_of_mass_destruction:soul_star').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of(Item.of('minecraft:potion', '{Potion:"minecraft:luck"}')).when((c) => c.randomChance(0.1)))
 
 })

@@ -20,7 +20,7 @@ ServerEvents.recipes(event => {
         ['minecraft:phantom_membrane', 'createaddition:gold_wire', 'minecraft:phantom_membrane'],
         ['', 'alexsmobs:banana_slug_slime', '']
     ])
-
+    
     event.shaped('kubejs:silk_for_cutting', [
         ['minecraft:glass', '#forge:string', 'minecraft:glass'],
         ['#forge:string', '#forge:dusts/glowstone', '#forge:string'],
@@ -86,7 +86,7 @@ ServerEvents.recipes(event => {
         });
 
     event.shapeless('kubejs:lucky_cookie', ['minecraft:paper', 'minecraft:cookie'])
-
+    
     event.shapeless('kubejs:lost_paradise', ['kubejs:paradise_regained', 'kubejs:god_agreement'])
 
     event.shaped('kubejs:empty_organ_charm', [
@@ -106,4 +106,38 @@ ServerEvents.recipes(event => {
         ['create:iron_sheet', 'create:iron_sheet', 'create:iron_sheet'],
         ['createaddition:electrum_sheet', 'create:clipboard', 'createaddition:electrum_sheet'],
         ['#forge:dyes/blue', '#forge:dyes/red', '#forge:dyes/green']])
+    
+    event.shaped('kubejs:rapier_wand', [
+        ['','hexerei:selenite_shard',''],
+        ['','hexerei:selenite_shard',''],
+        ['hexerei:moon_dust','nameless_trinkets:moon_stone','hexerei:moon_dust']])
+
+    event.shaped('kubejs:flora_wand_basic', [
+        ['bosses_of_mass_destruction:void_thorn','bosses_of_mass_destruction:crystal_fruit','bosses_of_mass_destruction:void_thorn'],
+        ['','minecraft:stick',''],
+        ['','minecraft:stick','']])
+
+    event.shaped('kubejs:holy_wooden_wand', [
+        ['minecraft:stick','irons_spellbooks:holy_rune','minecraft:stick'],
+        ['#minecraft:logs','minecraft:stick','#minecraft:logs'],
+        ['','#minecraft:saplings','']])
+    event.shaped('kubejs:ice_wooden_wand', [
+        ['minecraft:stick','irons_spellbooks:ice_rune','minecraft:stick'],
+        ['#minecraft:logs','minecraft:stick','#minecraft:logs'],
+        ['','#minecraft:saplings','']])
+    event.shaped('kubejs:nature_wooden_wand', [
+        ['minecraft:stick','irons_spellbooks:nature_rune','minecraft:stick'],
+        ['#minecraft:logs','minecraft:stick','#minecraft:logs'],
+        ['','#minecraft:saplings','']])
+
+    event.shaped('kubejs:ceremonial_knife', [
+        ['','kubejs:silver_ingot',''],
+        ['','biomancy:bone_fragments',''],
+        ['biomancy:bone_fragments','alexsmobs:skelewag_sword','biomancy:bone_fragments']])
+
+    event.smelting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster','5.0')
+    event.blasting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster','5.0')
+
+    event.smelting('kubejs:silver_ingot', 'kubejs:rare_mineral_cluster','10.0')
+    event.blasting('kubejs:silver_ingot', 'kubejs:rare_mineral_cluster','10.0')
 })

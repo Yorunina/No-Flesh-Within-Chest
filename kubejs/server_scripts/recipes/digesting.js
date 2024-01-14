@@ -18,9 +18,10 @@ DigestingRecipe.prototype = {
 }
 
 ServerEvents.recipes(event => {
-    function registerCustomRecipe(recipeModel) {
+    function registeCustomRecipe(recipeModel) {
         event.custom(recipeModel)
     }
 
-    registerCustomRecipe(new DigestingRecipe(Ingredient.of('#kubejs:organ'), Item.of('minecraft:dirt')))
+    registeCustomRecipe(new DigestingRecipe(Ingredient.of('#kubejs:organ'), Item.of('minecraft:dirt')))
+    registeCustomRecipe(new DigestingRecipe(Ingredient.of('kubejs:heart_of_blade'), Item.of('kubejs:blade_of_heart')).setNutrientsCost(300).setProcessingTime(1200))
 })

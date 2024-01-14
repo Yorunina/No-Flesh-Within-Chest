@@ -13,11 +13,11 @@ CuttingRecipe.prototype = {
 }
 
 ServerEvents.recipes(event => {
-    function registerCustomRecipe(recipeModel) {
+    function registeCustomRecipe(recipeModel) {
         event.custom(recipeModel)
     }
     event.remove({ output: 'minecraft:melon_slice', mod: 'farmersdelight' })
     
-    registerCustomRecipe(new CuttingRecipe([Item.of('minecraft:melon')], [{ "count": 7, "item": "minecraft:melon_slice" }, { "chance": 0.05, "item": "kubejs:watermelon_organ" }]))
+    registeCustomRecipe(new CuttingRecipe([Item.of('minecraft:melon')], [{ "count": 7, "item": "minecraft:melon_slice" }, { "chance": 0.05, "item": "kubejs:watermelon_organ" }]))
 })
 

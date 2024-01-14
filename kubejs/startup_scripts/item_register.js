@@ -102,11 +102,15 @@ StartupEvents.registry('item', event => {
     event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
     event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1)
     event.create('god_agreement').texture('kubejs:item/god_agreement').maxStackSize(1)
+
     event.create('flora_wand').texture('kubejs:item/flora_wand')
         .maxStackSize(1)
         .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellWeaponBoost', 3, 'addition')
         .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', -0.5, 'addition')
         .rarity('epic')
+
+    event.create('flora_wand_basic').texture('kubejs:item/flora_wand').maxStackSize(1)
+       
 
     event.create('holy_wooden_wand').texture('kubejs:item/holy_wooden_wand')
         .maxStackSize(1)
@@ -203,6 +207,8 @@ StartupEvents.registry('item', event => {
 
     // 随机基本器官
     event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').tag('kubejs:organ').tag('itemborders:iron')
+
+    event.create('kubejs:phantom_eyeball').texture('kubejs:item/phantom_eyeball').maxStackSize(1)
 
     event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
         .useAnimation('bow')

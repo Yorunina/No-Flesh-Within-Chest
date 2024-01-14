@@ -15,4 +15,5 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:incomplete_furnace_core', 'create:sequenced_assembly').texture('kubejs:item/organs/machine/furnace_core')
     event.create('kubejs:incomplete_revolution_relay', 'create:sequenced_assembly').texture('kubejs:item/organs/machine/revolution_relay')
     event.create('kubejs:incomplete_revolution_delay', 'create:sequenced_assembly').texture('kubejs:item/organs/machine/revolution_delay')
+    event.create('kubejs:incomplete_glass_wand', 'create:sequenced_assembly').texture('kubejs:item/glass_wand')
 })

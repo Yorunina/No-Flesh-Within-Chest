@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.filling('kubejs:hamimelon_organ', ['fruitsdelight:hamimelon', Fluid.of('kubejs:syrup').withAmount(3000)])
 
 	event.recipes.create.deploying('kubejs:telescopic_tool_arm', ['kubejs:telescopic_arm', 'nameless_trinkets:light_gloves'])
+	event.recipes.create.deploying('kubejs:telescopic_arm', ['create:extendo_grip', 'biomancy:living_flesh'])
 
 	event.recipes.create.sandpaper_polishing('kubejs:revolution_cable', 'chestcavity:golem_cable')
 
@@ -34,6 +35,27 @@ ServerEvents.recipes(event => {
 		C: 'minecraft:iron_nugget'
 	})
 
+	event.recipes.create.mechanical_crafting('kubejs:chain_armor_piece', [
+		'WSWSW',
+		'SWSWS',
+		'WSWSW',
+		'SWSWS',
+		'WSWSW'
+	], {
+		S: 'minecraft:iron_nugget',
+		W: 'createaddition:iron_wire',
+	})
+
+	event.recipes.create.mechanical_crafting('kubejs:lamellar_armor_piece', [
+		'WSWSW',
+		'SWSWS',
+		'WSWSW',
+		'SWSWS',
+		'WSWSW'
+	], {
+		S: 'create:iron_sheet',
+		W: 'createaddition:iron_wire',
+	})
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:candy_heart')
@@ -91,4 +113,29 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_furnace_core', ['kubejs:incomplete_furnace_core', 'createaddition:connector']),
 		event.recipes.create.filling('kubejs:incomplete_furnace_core', ['kubejs:incomplete_furnace_core', Fluid.of('create:honey').withAmount(1000)])
 	]).transitionalItem('kubejs:incomplete_furnace_core').loops(3)
+
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:compressed_oxygen_implant').withChance(70.0),
+		Item.of('create:copper_sheet').withChance(30.0)
+	], Item.of('create:copper_backtank'), [
+		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank', 'chestcavity:gas_bladder']),
+		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank','createaddition:electrum_sheet']),
+		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank','create:iron_sheet']),
+		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank','createaddition:zinc_sheet'])
+	]).transitionalItem('create:copper_backtank').loops(3)
+
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:glass_wand').withChance(85.0),
+		Item.of('minecraft:glass_pane').withChance(10.0),
+		Item.of('minecraft:glass').withChance(5.0)
+	], 'unusualprehistory:opal_block', [
+		event.recipes.createDeploying('kubejs:incomplete_glass_wand', ['kubejs:incomplete_glass_wand', 'alexsmobs:rainbow_glass']),
+		event.recipes.createDeploying('kubejs:incomplete_glass_wand', ['kubejs:incomplete_glass_wand', 'biomancy:unstable_compound']),
+		event.recipes.createDeploying('kubejs:incomplete_glass_wand', ['kubejs:incomplete_glass_wand', 'biomancy:corrosive_additive'])
+	]).transitionalItem('kubejs:incomplete_glass_wand').loops(6)
+
+	event.recipes.create.crushing([Item.of('5x minecraft:raw_iron'),Item.of('2x minecraft:raw_gold').withChance(0.2),Item.of('3x minecraft:raw_copper').withChance(0.4),Item.of('3x create:raw_zinc').withChance(0.3),Item.of('2x minecraft:lapis_lazuli').withChance(0.25)], 'kubejs:common_mineral_cluster').processingTime(100)
+	event.recipes.create.crushing([Item.of('2x kubejs:silver_ingot'),Item.of('5x createoreexcavation:raw_redstone').withChance(0.4),Item.of('2x createoreexcavation:raw_emerald').withChance(0.3),Item.of('2x createoreexcavation:raw_diamond').withChance(0.3),Item.of('minecraft:netherite_scrap').withChance(0.15)], 'kubejs:rare_mineral_cluster').processingTime(100)
+	event.recipes.create.crushing([Item.of('minecraft:netherite_scrap'),Item.of('5x minecraft:blaze_powder').withChance(0.5),Item.of('5x create:powdered_obsidian').withChance(0.4),Item.of('5x minecraft:glowstone_dust').withChance(0.45),Item.of('8x minecraft:quartz').withChance(0.6),Item.of('kubejs:nether_star_shard').withChance(0.02)], 'minecraft:nether_star').processingTime(300)
+
 })

@@ -195,7 +195,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine')
         .tag('itemborders:gold');
 
-    registerOrgan(new Organ('kubejs:machine_clockwork')
+        registerOrgan(new Organ('kubejs:machine_clockwork')
         .addScore('health', 1.25)
         .addScore('speed', -0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.machine_clockwork.1" })])
@@ -395,6 +395,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:diamond_bottle')
         .addScore('breath_recovery', -0.5)
+        .addTextLines('default', [Text.aqua({ "translate": "kubejs.tooltips.diamond_bottle.6" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.diamond_bottle.1" }), Text.gold({ "translate": "kubejs.tooltips.diamond_bottle.2" }), Text.gray({ "translate": "kubejs.tooltips.diamond_bottle.3" }), Text.gold({ "translate": "kubejs.tooltips.diamond_bottle.4" }), Text.gray({ "translate": "kubejs.tooltips.diamond_bottle.5" })])
         .build())
         .texture('kubejs:item/organs/resource/diamond_bottle')

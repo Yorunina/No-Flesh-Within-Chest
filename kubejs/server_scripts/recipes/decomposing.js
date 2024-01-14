@@ -18,9 +18,9 @@ DecomposingRecipe.prototype = {
 }
 
 ServerEvents.recipes(event => {
-    function registerCustomRecipe(recipeModel) {
+    function registeCustomRecipe(recipeModel) {
         event.custom(recipeModel)
     }
 
-    registerCustomRecipe(new DecomposingRecipe(Ingredient.of('#kubejs:organ'), [{"countRange":{"type":"uniform","max":5,"min":2},"item":"biomancy:organic_matter"}]))
+    registeCustomRecipe(new DecomposingRecipe(Ingredient.of('#kubejs:organ'), [{"countRange":{"type":"uniform","max":5,"min":2},"item":"biomancy:organic_matter"}]))
 })

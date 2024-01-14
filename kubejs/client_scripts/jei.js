@@ -23,4 +23,6 @@ JEIEvents.information(event => {
     event.addItem('kubejs:flower_heart', Text.black({ "translate": "kubejs.jei.flower_heart.1" }))
     event.addItem('kubejs:demon_eyeball', Text.black({ "translate": "kubejs.jei.demon_eyeball.1" }))
     event.addItem('kubejs:parasitic_elf', Text.black({ "translate": "kubejs.jei.parasitic_elf.1" }))
+    event.addItem('kubejs:diamond_bottle', Text.black({ "translate": "kubejs.jei.diamond_bottle.1" }))
+
 })
