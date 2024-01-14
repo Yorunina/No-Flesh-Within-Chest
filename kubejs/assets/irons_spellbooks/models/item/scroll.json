@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "irons_spellbooks:item/scroll"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "custom_model_data": 1
+      },
+      "model": "irons_spellbooks:item/cursed_scroll"
+    }
+  ]
+}

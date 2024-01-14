@@ -1,0 +1,4 @@
+{
+  "chestcavity": "kubejs:types/boss/dame_fortuna.json",
+  "entities": ["meetyourfight:dame_fortuna"]
+}

@@ -1,0 +1,112 @@
+{
+  "defaultChestCavity": [
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 0
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 1
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 2
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 3
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 4
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 5
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 6
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 7
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 8
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 9
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 10
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 11
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 12
+    },
+    {
+      "item": "kubejs:demon_eyeball",
+      "position": 13
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 14
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 15
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 16
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 17
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 18
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 19
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 20
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 21
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 22
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 23
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 24
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 25
+    },
+    {
+      "item": "kubejs:relic_metal_plate",
+      "position": 26
+    }
+  ]
+}

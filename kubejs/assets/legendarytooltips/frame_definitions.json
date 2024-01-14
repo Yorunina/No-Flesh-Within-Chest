@@ -1,0 +1,88 @@
+{
+	"definitions": [
+		{
+			"index": 3,
+			"startColor": "30_#FF912307_orangered-s45-v25_#FF912307+v50_#FF912307+r25+s50-v55",
+			"endColor": "30_#FF818385-v15_#FF818385+r5+g5+v45_#FF818385-v45_#FF818385+r25+g25",
+			"bgStartColor": "30_#FF912307-v105-a36_#F0120A00",
+			"bgEndColor": "#F8818385-v100",
+			"selectors": ["%Nether B", "%Nether Q", "%Nether G", "netherrack", "%Nylium", "crimson_fungus", "warped_fungus", "campfire", "fire_charge", "%Firework", "%Lava"]
+		},
+		{
+			"index": 4,
+			"startColor": "24_#FF008FCC-v25_#FF008FCC+s25+v85",
+			"endColor": "24_#FF044B8A-v30_#FF044B8A+s25+v55",
+			"bgStartColor": "#D0008FCC-v160",
+			"bgEndColor": "#F8044B8A-v75",
+			"selectors": ["sea_lantern", "heart_of_the_sea", "%Prismarine", "conduit", "nautilus_shell"]
+		},
+		{
+			"index": 5,
+			"startColor": "#FF5C4C2D",
+			"endColor": "#FF5C4C2D",
+			"bgStartColor": "#F0160A00",
+			"bgEndColor": "#F0160A00",
+			"selectors": ["$minecraft:small_flowers", "$minecraft:flowers", "$minecraft:leaves", "$minecraft:saplings", "$minecraft:tall_flowers", "%Azalea", "%Dripleaf", "%Vines", "bamboo"]
+		},
+		{
+			"index": 6,
+			"startColor": "#FF705A87",
+			"endColor": "#FF705A87-v70+s15",
+			"bgStartColor": "#E8705A87-v85+s15",
+			"bgEndColor": "#F4705A87-v120+s35",
+			"selectors": ["%Skull", "wither_rose", "%Obsidian", "respawn_anchor", "%Soul"]
+		},
+		{
+			"index": 7,
+			"startColor": "#FF7D8A91",
+			"endColor": "#FF7D8A91",
+			"bgStartColor": "#F07D8A91-v125+s35",
+			"bgEndColor": "#F47D8A91-v100+s55",
+			"selectors": ["iron_door", "iron_trapdoor", "iron_block", "%Anvil", "%Minecart", "%Rail", "hopper", "observer", "dispenser", "dropper", "%Piston"]
+		},
+		{
+			"index": 8,
+			"startColor": "#FFA591B6",
+			"endColor": "#FFA591B6",
+			"bgStartColor": "#E4A591B6-v155+s35",
+			"bgEndColor": "#F4A591B6-v145+s35",
+			"selectors": ["%End", "%Purpur", "%Chorus", "%Shulker"]
+		},
+		{
+			"index": 9,
+			"startColor": "15_#FFFFFADB-v20+s35_#FFFFFADB+v30-s20",
+			"endColor": "15_#FFFFDFAD-v20+s35_#FFFFDFAD+v30-s20",
+			"bgStartColor": "#D8FFFADB-v245",
+			"bgEndColor": "#F4FFDFAD-v210+s90",
+			"selectors": ["elytra", "%Glow", "totem_of_undying", "experience_bottle", "golden_carrot", "golden_apple", "enchanted_golden_apple"]
+		},
+		{
+			"index": 0,
+			"startColor": "20_#FF996922_#FF996922_#FF996922_#FF996922_#FF996922_#FF996922_#FF996922_#FF996922_#FF996922_#FF996922_#FF996922_#FF996922_#FF996922+v64-s32_#FF996922",
+			"endColor": "20_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF5A3A1D_#FF996922+v64-s32",
+			"bgStartColor": "#D0996922-v155",
+			"bgEndColor": "#F45A3A1D-v55",
+			"selectors": ["netherite_sword", "netherite_shovel", "netherite_pickaxe", "netherite_axe", "netherite_hoe", "netherite_helmet", "netherite_chestplate", "netherite_leggings", "netherite_boots",
+						  "!epic"]
+		},
+		{
+			"index": 1,
+			"startColor": "20_#FF697C8C_#FF697C8C_#FF697C8C_#FF697C8C_#FF697C8C_#FF697C8C_#FF697C8C_#FF697C8C_#FF697C8C_#FF697C8C_#FF697C8C_#FF697C8C_#FF697C8C+v48-s16_#FF697C8C",
+			"endColor": "20_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61_#FF3A4C61+v48-s16",
+			"bgStartColor": "#D0697C8C-v155",
+			"bgEndColor": "#F43A4C61-v65",
+			"selectors": ["diamond_sword", "diamond_shovel", "diamond_pickaxe", "diamond_axe", "diamond_hoe", "diamond_helmet", "diamond_chestplate", "diamond_leggings", "diamond_boots",
+						  "enchanted_book", "turtle_helmet", "tipped_arrow", "spectral_arrow", "!rare"]
+		},
+		{
+			"index": 2,
+			"startColor": "20_#FF70453D_#FF70453D_#FF70453D_#FF70453D_#FF70453D_#FF70453D_#FF70453D_#FF70453D_#FF70453D_#FF70453D_#FF70453D_#FF70453D_#FF70453D+v64-s32_#FF70453D",
+			"endColor": "20_#FF542323_#FF542323_#FF542323_#FF542323_#FF542323_#FF542323_#FF542323_#FF542323_#FF542323_#FF542323_#FF542323_#FF542323_#FF542323_#FF542323+v64-s32",
+			"bgStartColor": "#D070453D-v155",
+			"bgEndColor": "#F4542323-v60",
+			"selectors": ["iron_sword", "iron_shovel", "iron_pickaxe", "iron_axe", "iron_hoe", "iron_helmet", "iron_chestplate", "iron_leggings", "iron_boots",
+						  "golden_sword", "golden_shovel", "golden_pickaxe", "golden_axe", "golden_hoe", "golden_helmet", "golden_chestplate", "golden_leggings", "golden_boots",
+						  "%Chainmail", "compass", "clock", "spyglass", "shears", "%Bucket", "lead", "name_tag", "flint_and_steel", "bow", "crossbow", "trident", "shield"]
+		}
+	]
+}

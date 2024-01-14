@@ -1,0 +1,472 @@
+{
+  "pools": [
+    {
+      "rolls": 12,
+  	  "name":"dimdungeons:kit_glass",
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:tinted_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:white_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:orange_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:magenta_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_blue_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:yellow_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lime_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pink_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gray_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_gray_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cyan_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:purple_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:blue_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brown_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:green_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:red_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:black_stained_glass",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:white_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:orange_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:magenta_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_blue_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:yellow_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lime_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pink_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gray_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_gray_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cyan_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:purple_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:blue_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brown_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:green_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:red_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:black_stained_glass_pane",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        }		
+      ]
+    }
+  ]
+}

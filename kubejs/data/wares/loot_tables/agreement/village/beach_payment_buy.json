@@ -1,0 +1,124 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"bonus_rolls": 0.0,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8.0,
+								"min": 4.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:wheat",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 8.0,
+								"min": 4.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:sugar_cane",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 10.0,
+								"min": 4.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:rabbit_hide",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 16.0,
+								"min": 8.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:paper",
+					"weight": 10
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 14.0,
+								"min": 8.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:clay_ball",
+					"weight": 8
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 16.0,
+								"min": 8.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:dead_bush",
+					"weight": 6
+				},
+				{
+					"type": "minecraft:item",
+					"functions": [
+						{
+							"add": false,
+							"count": {
+								"type": "minecraft:uniform",
+								"max": 12.0,
+								"min": 6.0
+							},
+							"function": "minecraft:set_count"
+						}
+					],
+					"name": "minecraft:bread",
+					"weight": 10
+				}
+			],
+				"rolls": 1.0
+			}
+		],
+		"random_sequence": "wares:agreement/village/beach_payment_buy"
+	}

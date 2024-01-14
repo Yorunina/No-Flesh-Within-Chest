@@ -1,0 +1,21 @@
+{
+  "_class": "dev.xkmc.modulargolems.content.config.GolemMaterialConfig",
+  "ingredients": {
+    "biomancy:living_flesh": {
+      "item": "biomancy:living_flesh"
+    }
+  },
+  "modifiers": {
+    "biomancy:living_flesh": {
+      "modulargolems:magic_resistant": 3
+    }
+  },
+  "stats": {
+    "biomancy:living_flesh": {
+      "modulargolems:attack": 8.0,
+      "modulargolems:max_health": 50.0,
+      "modulargolems:regen": 8.0,
+      "modulargolems:weight": -0.4
+    }
+  }
+}

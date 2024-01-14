@@ -1,0 +1,458 @@
+{
+  "pools": [
+    {
+      "rolls": 12,
+  	  "name":"dimdungeons:kit_wool",
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:white_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:orange_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:magenta_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_blue_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:yellow_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lime_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pink_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gray_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_gray_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cyan_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:purple_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:blue_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brown_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:green_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:red_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:black_wool",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 5,
+                "max": 9
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:white_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:orange_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:magenta_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_blue_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:yellow_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:lime_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pink_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gray_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:light_gray_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:cyan_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:purple_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:blue_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:brown_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:green_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:red_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:black_banner",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }            
+			}
+          ]
+        }		
+      ]
+    }
+  ]
+}

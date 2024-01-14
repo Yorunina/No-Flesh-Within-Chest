@@ -1,0 +1,17 @@
+{
+  "chestcavity": "kubejs:types/aquatic_animal/common_fish.json",
+  "entities": [
+    "alexsmobs:blobfish",
+    "alexsmobs:skelewag",
+    "alexsmobs:cachalot_whale",
+    "alexsmobs:catfish",
+    "alexsmobs:comb_jelly",
+    "alexsmobs:devils_hole_pupfi",
+    "alexsmobs:flying_fish",
+    "alexsmobs:frilled_shark",
+    "alexsmobs:hammerhead_shark",
+    "alexsmobs:mudskipper",
+    "alexsmobs:orca",
+    "alexsmobs:seal"
+  ]
+}

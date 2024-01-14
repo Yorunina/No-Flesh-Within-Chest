@@ -1,0 +1,274 @@
+{
+  "pools": [
+      {
+          "rolls": 12,
+          "name": "dimdungeons:kit_delight",
+          "entries": [
+              {
+                  "type": "item",
+                  "name": "fruitsdelight:pear_sapling",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "fruitsdelight:lychee_sapling",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "fruitsdelight:mango_sapling",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "fruitsdelight:peach_sapling",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "fruitsdelight:orange_sapling",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "fruitsdelight:apple_sapling",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "fruitsdelight:mangosteen_sapling",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "fruitsdelight:blueberry_bush",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "fruitsdelight:lemon_tree",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "farmersdelight:tomato_seeds",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "farmersdelight:cabbage_seeds",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "farmersdelight:sunflower_seeds",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "farmersdelight:lemon_seeds",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "hexerei:seed_mixture",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "hexerei:sage_seed",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "minecraft:beetroot_seeds",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "minecraft:melon_seeds",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "minecraft:pumpkin_seeds",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "kubejs:starch_sausage",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "farmersdelight:tomato_seeds",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "kubejs:hamimelon_organ",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "kubejs:watermelon_organ",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "alexsmobs:fish_oil",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              },
+              {
+                  "type": "item",
+                  "name": "kubejs:watermelon_organ",
+                  "weight": 1,
+                  "functions": [
+                      {
+                          "function": "set_count",
+                          "count": 1
+                      }
+                  ]
+              }
+          ]
+      }
+  ]
+}

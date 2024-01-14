@@ -1,0 +1,108 @@
+{
+  "defaultChestCavity": [
+    {
+      "item": "chestcavity:ender_muscle",
+      "position": 0
+    },
+    {
+      "item": "chestcavity:ender_rib",
+      "position": 1
+    },
+    {
+      "item": "chestcavity:ender_appendix",
+      "position": 2
+    },
+    {
+      "item": "chestcavity:ender_lung",
+      "position": 3
+    },
+    {
+      "item": "chestcavity:ender_heart",
+      "position": 4
+    },
+    {
+      "item": "chestcavity:ender_lung",
+      "position": 5
+    },
+    {
+      "item": "chestcavity:ender_rib",
+      "position": 7
+    },
+    {
+      "item": "chestcavity:ender_muscle",
+      "position": 8
+    },
+    {
+      "item": "chestcavity:ender_muscle",
+      "position": 9
+    },
+    {
+      "item": "chestcavity:ender_rib",
+      "position": 10
+    },
+    {
+      "item": "chestcavity:ender_spleen",
+      "position": 11
+    },
+    {
+      "item": "chestcavity:ender_kidney",
+      "position": 12
+    },
+    {
+      "item": "chestcavity:ender_spine",
+      "position": 13
+    },
+    {
+      "item": "chestcavity:ender_kidney",
+      "position": 14
+    },
+    {
+      "item": "chestcavity:ender_liver",
+      "position": 15
+    },
+    {
+      "item": "chestcavity:ender_rib",
+      "position": 16
+    },
+    {
+      "item": "chestcavity:ender_muscle",
+      "position": 17
+    },
+    {
+      "item": "chestcavity:ender_muscle",
+      "position": 18
+    },
+    {
+      "item": "chestcavity:ender_muscle",
+      "position": 19
+    },
+    {
+      "item": "chestcavity:ender_intestine",
+      "position": 20
+    },
+    {
+      "item": "chestcavity:ender_intestine",
+      "position": 21
+    },
+    {
+      "item": "chestcavity:ender_stomach",
+      "position": 22
+    },
+    {
+      "item": "chestcavity:ender_intestine",
+      "position": 23
+    },
+    {
+      "item": "chestcavity:ender_intestine",
+      "position": 24
+    },
+    {
+      "item": "chestcavity:ender_muscle",
+      "position": 25
+    },
+    {
+      "item": "chestcavity:ender_muscle",
+      "position": 26
+    }
+  ]
+}

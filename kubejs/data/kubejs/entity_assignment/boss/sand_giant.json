@@ -1,0 +1,4 @@
+{
+  "chestcavity": "kubejs:types/boss/sand_giant.json",
+  "entities": ["somebosses:sand_giant"]
+}

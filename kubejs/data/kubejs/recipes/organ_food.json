@@ -1,0 +1,18 @@
+{
+  "type": "cuisinedelight:plate_cuisine",
+  "holderItem": "kubejs:organ_feast",
+  "list": [
+    {
+      "bonus": 0.1,
+      "ingredient": {
+        "type": "cuisinedelight:food_type",
+        "foodType": "MEAT"
+      },
+      "max": 2.5,
+      "min": 1.0,
+      "score": 1.0
+    }
+  ],
+  "saturationBonus": 0.5,
+  "saturationBonusModifier": 0.5
+}

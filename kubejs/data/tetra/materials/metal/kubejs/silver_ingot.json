@@ -1,0 +1,29 @@
+{
+  "key": "silver_ingot",
+  "category": "metal",
+  "primary": 5,
+  "secondary": 2.1,
+  "tertiary": 4.2,
+  "durability": 122,
+  "integrityCost": 2,
+  "integrityGain": 5,
+  "magicCapacity": 160,
+  "toolLevel": "minecraft:iron",
+  "toolEfficiency": 6,
+  "tints": {
+    "glyph": "F5AC12",
+    "texture": "F5AC12"
+  },
+  "textures": [
+    "metal",
+    "default"
+  ],
+  "material": {
+    "items": [
+      "kubejs:silver_ingot"
+    ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:gold"
+  }
+}

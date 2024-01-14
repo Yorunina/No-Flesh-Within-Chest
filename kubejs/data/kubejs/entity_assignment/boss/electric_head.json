@@ -1,0 +1,4 @@
+{
+  "chestcavity": "kubejs:types/boss/electric_head.json",
+  "entities": ["somebosses:electric_head"]
+}
