@@ -1,0 +1,38 @@
+{
+  "armorSetName": "强化铁",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:reinforced_iron_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:reinforced_iron_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:reinforced_iron_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:reinforced_iron_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "比钢铁更加不可撼动"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.knockback_resistance",
+      "modifierUUID": "5D30D24A-C92D-48A8-AA97-655FCF284353",
+      "description": "+1 击退抗性",
+      "value": 1.0
+    },
+    {
+      "type": "effect",
+      "name": "minecraft:strength",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

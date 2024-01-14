@@ -1,0 +1,38 @@
+{
+  "armorSetName": "绿宝石",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:emerald_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:emerald_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:emerald_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:emerald_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "村民更加待见你，且更加幸运"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.luck",
+      "modifierUUID": "4633B7D9-B7AD-4C36-8322-F4DDF48CF42B",
+      "description": "+2 幸运",
+      "value": 2.0
+    },
+    {
+      "type": "effect",
+      "name": "minecraft:hero_of_the_village",
+      "value": 1.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

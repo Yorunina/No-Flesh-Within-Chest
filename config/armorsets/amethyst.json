@@ -1,0 +1,36 @@
+{
+  "armorSetName": "紫水晶",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:amethyst_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:amethyst_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:amethyst_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:amethyst_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "魔力与盔甲发生强烈的共鸣，减少施法时间和法术冷却时间"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:cast_time_reduction",
+      "modifierUUID": "E1328811-725F-4CB3-BBD6-0CED3B8E87A4",
+      "description": "-15% 施法时间",
+      "value": 0.15
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:cooldown_reduction",
+      "modifierUUID": "5EF8CE09-33DC-4182-875B-DB1CEC95FBE6",
+      "description": "-15% 法术冷却时间",
+      "value": 0.15
+    }
+  ]
+}
