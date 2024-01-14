@@ -67,7 +67,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["38E0930B64874596"]
@@ -96,7 +96,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["38E0930B64874596"]
@@ -113,8 +113,8 @@
 				item: "goety:cursed_infuser"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: -1.75d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2E3C5A01C7C079C0"]
@@ -161,26 +161,440 @@
 			]
 			title: "举行仪式"
 			x: 0.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["249B296A3CB17779"]
 			description: [
-				"使用锻造仪式获取灵魂方舟。如若放置后需要破坏，请使用鼠标右键而非破坏。"
+				"使用锻造仪式获取&6灵魂方舟&r。如若放置后需要破坏，请使用鼠标右键而非破坏。"
 				""
 				"当灵魂方舟被放置时，玩家将与其绑定。此后，玩家无法通过灵魂图腾类似的方式使用灵魂能量，而是使用灵魂方舟作为灵魂能量的来源。"
 				""
-				"灵魂方舟具有100000点灵魂能量上限。如若你需要使用灵魂方舟中的灵魂能量以魔法仪式，则你需要制作连接宝石将其绑定到你所拥有的灵魂方舟，"
+				"灵魂方舟具有&2100000点灵魂能量上限&r。如若你需要使用灵魂方舟中的灵魂能量以魔法仪式，则你需要制作&6连接宝石&r将其绑定到你所拥有的灵魂方舟，将其放置在对应的诅咒之笼里，即可让魔法仪式使用灵魂方舟内的能量。"
+				""
+				"如果你的灵魂方舟内有超过10000点灵魂能量，在你死亡签的那一刻，你会被传送到灵魂方舟所在的位置。"
 			]
+			icon: "goety:arca"
 			id: "247AED1D908E67BD"
-			subtitle: "远程灵魂存储"
-			tasks: [{
-				id: "616E5BFB735D3F01"
-				item: "goety:arca"
+			rewards: [{
+				count: 5
+				id: "722266CF57F46934"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			x: 1.0d
+			subtitle: "远程灵魂存储"
+			tasks: [
+				{
+					id: "616E5BFB735D3F01"
+					item: "goety:arca"
+					type: "item"
+				}
+				{
+					id: "71FB35A260D17403"
+					item: "goety:soul_transfer"
+					type: "item"
+				}
+			]
+			x: 1.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["39A1A046832960CC"]
+			description: [
+				"女巫精酿是一系列&2极为特殊的药水&r，需要使用名为&6女巫坩埚&r的物品经过几个步骤的加工之后才能够获得。"
+				""
+				"女巫精酿的效果往往非常独特，且效用非常强大，在战斗和日常生产时往往能够提供大量的帮助。"
+			]
+			id: "5ECDE24F7C16B68D"
+			rewards: [{
+				id: "12DA1087C8C729CC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "看起来，你或许需要一瓶精酿？"
+			tasks: [{
+				id: "4330A21FE1D41216"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:witches_brew"
+					}
+				}
+				type: "item"
+			}]
+			title: "女巫酿造师"
+			x: 1.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5ECDE24F7C16B68D"]
+			id: "3CB4A421BFE6A3BC"
+			tasks: [{
+				id: "4FA2DF68288B1671"
+				item: "goety:witch_cauldron"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["249B296A3CB17779"]
+			description: [
+				"&7请注意，灵魂魔法不会被整合包中所述的魔法伤害增强而被强化。它并不被真的视作一种魔法！&r"
+				""
+				"在拥有了稳定的灵魂来源之后，你便可以尝试一些&6灵魂魔法&r。"
+				""
+				"灵魂魔法不同于Iron的魔法书中的法术，其需要消耗灵魂作为代价，才能够释放。其中存在大量的功能性法术，能够在不同的场景中发挥着至关重要的作用。"
+			]
+			icon: "goety:empty_focus"
+			id: "2CE8C11D4D2C773F"
+			rewards: [{
+				count: 3
+				id: "3D2952163EDBDFE9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "初入灵魂魔法"
+			tasks: [
+				{
+					id: "47745E2BE700CB46"
+					item: "goety:empty_focus"
+					type: "item"
+				}
+				{
+					id: "4A01677C1FB7EA6D"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 1
+								slot: 0
+							}
+						}
+						id: "goety:dark_wand"
+						tag: {
+							"Cast Time": 0
+							Cooldown: 0
+							Duration: 0
+							"Soul Cost": 0
+							"Soul Use": 0
+							cap: {
+								Items: [ ]
+								Size: 1
+								slot: 0
+							}
+							goety-dirty: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "法术聚晶"
+			x: -1.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4717C67580F37824"]
+			description: [
+				"右键对着刷怪笼使用，会将刷怪笼的内容保存在捕捉笼内。再次右键诅咒之笼则可以将其转化成为原本&6刷怪笼的复制品&r。"
+				""
+				"这对于制作刷怪场和一个方便的诅咒注入装置非常有利。"
+			]
+			id: "6CE6F35C7131162F"
+			rewards: [{
+				id: "47BB15D0C03D829C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "专属刷怪笼"
+			tasks: [{
+				id: "4F110B3D721D0AD5"
+				item: "goety:flame_capture"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 1.5d
+		}
+		{
+			dependencies: ["249B296A3CB17779"]
+			description: ["当你前往下界之后，即可解锁关于进阶下界仪式和专家下界仪式的相关内容。"]
+			icon: "goety:nether_brick_brazier"
+			id: "48CA5C5BE42B6D3C"
+			subtitle: "富有灵魂能量的地方"
+			tasks: [{
+				id: "2CD93C45F7235979"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "下界仪式"
+			x: 0.0d
+			y: 6.25d
+		}
+		{
+			dependencies: ["247AED1D908E67BD"]
+			description: [
+				"将其放置在灵魂方舟上，可以让其摧毁一些物品，进而将其转换为灵魂能量。"
+				""
+				"● &6灵魂沙&r：25点"
+				"● &6幽匿块&r：5点"
+				"● &6幽匿尖啸体&r ：25点"
+				"● &6灵质&r ：5点"
+				"● &6不死图腾&r ：200点"
+			]
+			id: "12D3937844B0302D"
+			rewards: [{
+				id: "1BD4D6891F14D842"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "物质到灵魂的等式"
+			tasks: [{
+				id: "6FD291FCC1D3DB2D"
+				item: "goety:soul_absorber"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["39A1A046832960CC"]
+			description: [
+				"玩家如果使用怨恨之书攻击生物，就可以把这个生物记录在书中。"
+				""
+				"被记录的生物将总会被你的仆从视作敌对的。在面对该生物时，仆从便会进行主动攻击。"
+			]
+			id: "365F8E2E332B2E27"
+			subtitle: "记录你的仇恨"
+			tasks: [{
+				id: "13C2F7D5A111FF54"
+				item: "goety:grimoire_of_grudges"
+				type: "item"
+			}]
+			x: -1.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E3C5A01C7C079C0"]
+			description: [
+				"如果有&2生物在周围8格范围内死亡&r，则其会释放灵魂粒子，并且将灵魂能量输送给放置该方块的玩家。"
+				""
+				"该方块可以被附魔&5噬魂&r和&5半径&r以提升它的性能。"
+			]
+			id: "58D4C38764206571"
+			rewards: [{
+				id: "25338F7853FA8793"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "吞噬灵魂"
+			tasks: [{
+				id: "1A50C77C52752743"
+				item: "goety:sculk_devourer"
+				type: "item"
+			}]
+			x: 1.75d
 			y: 3.0d
+		}
+		{
+			dependencies: ["58D4C38764206571"]
+			description: [
+				"能够将灵魂能量重新转换成幽匿块。只要将其放在&6诅咒之笼&r的下方，并且用红石激活，其就会&2将周围5半径内的方块转换成幽匿块&r。"
+				""
+				"如果说在周围放置有幽匿传递站，则会将其转换幽匿的能力扩散到传递站周围。"
+			]
+			id: "074F0A4966CAA5DE"
+			rewards: [{
+				id: "3E42B56B0A4D6CE4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "灵魂又重回物质"
+			tasks: [{
+				id: "2971B88E8DBAC2FC"
+				item: "goety:sculk_converter"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["074F0A4966CAA5DE"]
+			description: [
+				"&2利用灵魂能量用来加快作物生长的设备&r，将其放置在&6诅咒之笼&r下方能够加快周围8x4x8范围内的作物的生长。"
+				""
+				"可以通过强效附魔来减少种植站在作物上催熟的时间，但消耗的灵魂量不变。"
+			]
+			id: "1AFD89518183949E"
+			rewards: [{
+				id: "58DA9692E1CB0BEB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "灵魂加快生物生长？"
+			tasks: [{
+				id: "34AAD76F201B5323"
+				item: "goety:sculk_grower"
+				type: "item"
+			}]
+			x: 5.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E3C5A01C7C079C0"]
+			description: ["灵魂蜡烛放置在诅咒之笼上方时，&2可以为某些设备提供灵魂能量&r，类如&6亡灵火炉&r或者&6女巫坩埚&r。"]
+			id: "2C66968C7259F120"
+			rewards: [{
+				id: "1F82BA5905762C2E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "特殊供能接口"
+			tasks: [{
+				id: "6DE5E5F29B3F5BE4"
+				item: "goety:soul_candlestick"
+				type: "item"
+			}]
+			x: -1.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["48CA5C5BE42B6D3C"]
+			description: ["在某些建筑的战利品箱中，你会搜集到各种不同的卷轴。通过阅读这些卷轴的内容，你能够解锁一些合成表用以获取到一些罕见的&6高级仆从&r。"]
+			icon: "goety:buried_scroll"
+			id: "7768DA1835EA65B6"
+			min_required_tasks: 1
+			rewards: [{
+				count: 3
+				id: "252291B9FC52E577"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "你的战士渴望新的力量"
+			tasks: [
+				{
+					id: "1E985A5DB7048FBC"
+					item: "goety:buried_scroll"
+					type: "item"
+				}
+				{
+					id: "3C8D682C93AA5C34"
+					item: "goety:warred_scroll"
+					type: "item"
+				}
+				{
+					id: "74F01F912F24FB33"
+					item: "goety:haunting_scroll"
+					type: "item"
+				}
+				{
+					icon: "goety:front_scroll"
+					id: "361566675C96930F"
+					item: "goety:haunting_scroll"
+					type: "item"
+				}
+			]
+			title: "一些卷轴与故事"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7768DA1835EA65B6"]
+			description: [
+				"为了获取&6灵魂红宝石&r制作一些特殊道具，你可能需要制作一个&6黑暗卷轴&r，用以召唤&4灾厄宰相&r。"
+				""
+				"在林地府邸中使用它，灾厄宰相便会出现，击败它之后将会获得灵魂红宝石。"
+			]
+			id: "7DC6ADF38293C21B"
+			rewards: [{
+				count: 3
+				id: "1E850E7E3ECB38E6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "获取灵魂红宝石"
+			tasks: [{
+				id: "6DDBC4FCF8D9EA03"
+				item: "goety:dark_scroll"
+				type: "item"
+			}]
+			x: -1.75d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2C66968C7259F120"]
+			description: ["只有在&6深暗之域&r中，&6亡灵火炉&r才能够正常燃烧。将其放置在具有灵魂的诅咒之笼上方，就可以驱使它制作&2更高级的金属&r。"]
+			id: "0DFC8BCCE5CA0F08"
+			rewards: [{
+				count: 8
+				id: "1A23A9F1D0E3025F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "灵魂最最深处的火焰"
+			tasks: [{
+				id: "4BCC3BFF740D8FF9"
+				item: "goety:necro_brazier"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7768DA1835EA65B6"]
+			description: [
+				"通过举行安息仪式，你可以召唤本模组的最终单位&6使徒&r。"
+				""
+				"如果你在下界举行该仪式，会因为环境原因，使徒的力量会增加，部分技能会发生变化，战利品也会发生变化。"
+				""
+				"使徒是一个&e极其强力的Boss单位&r，它可能比之前你所遇到的所有怪物都要强大。推荐在战斗前做好充足的准备以应对。"
+				""
+				"当击败他之后，总是会掉落一个&4不洁之血&r，这是用于部分最终配方制作的原料。"
+			]
+			icon: "goety:unholy_blood"
+			id: "537E1732782ABF04"
+			rewards: [{
+				count: 3
+				id: "346FDAE26FEFE6AD"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			subtitle: "他曾经安息在这里. . .但现在不是了"
+			tasks: [{
+				id: "571C59EDF79EE5D7"
+				item: "goety:unholy_blood"
+				type: "item"
+			}]
+			title: "面对使徒"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["537E1732782ABF04"]
+			description: [
+				"在下界击败使徒，则会获得一些额外的奖励，其中包含了&5被遗忘的片段&r以及&5黑夜信标&r。"
+				""
+				"前者可以用于合成被遗忘的卷轴用以解锁&6大师死灵仪式&r。后者则可以让整个世界带来&6永久的夜晚&r。"
+			]
+			id: "352835A8D47C5829"
+			rewards: [{
+				count: 3
+				id: "3CA18716571AE6B2"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			subtitle: "额外的奖励"
+			tasks: [{
+				advancement: "goety:goety/kill_a_apostle"
+				criterion: ""
+				icon: "goety:night_beacon"
+				id: "4DA10199FAF283DA"
+				type: "advancement"
+			}]
+			title: "下界之影"
+			x: -1.75d
+			y: 10.0d
 		}
 	]
 	title: "诡厄巫法：潜藏在黑魔法的力量"

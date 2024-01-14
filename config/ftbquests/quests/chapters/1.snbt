@@ -369,8 +369,8 @@
 				weak_nbt_match: true
 			}]
 			title: "Tetra与工具"
-			x: 3.0d
-			y: 1.5d
+			x: 2.75d
+			y: 1.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -1022,10 +1022,17 @@
 		}
 		{
 			dependencies: ["22F081213B71190E"]
+			description: ["可以通过灾变本身提供的&6各种眼睛&r来寻找其生成的建筑。但由于某些造价过高且机器容易损坏，因此并不推荐利用这种眼睛来寻找建筑。"]
 			id: "54D9CCA0E085E647"
+			rewards: [{
+				id: "5C23AD1FF738A81F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "寻找灾变建筑"
 			tasks: [{
-				id: "049EDD3A05FE7565"
-				item: "cataclysm:flame_eye"
+				id: "4B64AB81FF9995BC"
+				item: "cataclysm:mech_eye"
 				type: "item"
 			}]
 			title: "寻找灾变之源"
@@ -1055,6 +1062,24 @@
 			}]
 			x: 8.25d
 			y: -2.75d
+		}
+		{
+			dependencies: ["538FC6DDC204DBFA"]
+			description: ["制作一个&6训练假人&r——或者一堆训练假人，以便在后续的工作中方便的查看因为你武器/器官变化所带来的战斗收益。"]
+			id: "6A16E11C6C020F12"
+			rewards: [{
+				id: "3AB2755B40522592"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "强化训练"
+			tasks: [{
+				id: "029BCE2F509F439C"
+				item: "dummmmmmy:target_dummy"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
 		}
 	]
 	title: "章节1：如常"

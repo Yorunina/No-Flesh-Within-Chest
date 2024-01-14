@@ -6,11 +6,12 @@ function DryingRackRecipe(ingredients, output, dryingTimeInTicks) {
 }
 
 ServerEvents.recipes(event => {
-    function registeCustomRecipe(recipeModel) {
+    function registerCustomRecipe(recipeModel) {
         event.custom(recipeModel)
     }
 
-    registeCustomRecipe(new DryingRackRecipe([Ingredient.of('minecraft:redstone')], Item.of('minecraft:dirt'), 20 * 120))
-    registeCustomRecipe(new DryingRackRecipe([Ingredient.of('kubejs:magic_spine')], Item.of('kubejs:magic_muscle'), 20 * 600))
+    registerCustomRecipe(new DryingRackRecipe([Ingredient.of('minecraft:redstone')], Item.of('minecraft:dirt'), 20 * 120))
+
+    registerCustomRecipe(new DryingRackRecipe([Ingredient.of('kubejs:magic_spine')], Item.of('kubejs:magic_muscle'), 20 * 600))
 })
 
