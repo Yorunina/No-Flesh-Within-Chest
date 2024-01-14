@@ -1,0 +1,187 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5732E8BABFC7D570"
+	group: "0241B51B931E1ED2"
+	icon: {
+		Count: 1b
+		id: "patchouli:guide_book"
+		tag: {
+			"patchouli:book": "goety:black_book"
+		}
+	}
+	id: "5732E8BABFC7D570"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7F14FD199500DEA0"]
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "goety:black_book"
+				}
+			}
+			id: "39A1A046832960CC"
+			rewards: [{
+				id: "55D814267E1F66D8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "我们对它们的力量知之甚少"
+			tasks: [{
+				id: "07E1699E1DB86E70"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "黑魔法之始"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["39A1A046832960CC"]
+			description: [
+				"你了解到，那些不死生物的力量来源于名为&b灵魂能量&r的潜在能源。"
+				""
+				"通过将其放置在&2副手&r或者携带在饰品栏的&2护符槽位&r，&2其可以在你击杀生物的时候积累灵魂能量&r。不同生物所具有的灵魂能量有所不同，其中村民具有着相对较高的灵魂能量。"
+			]
+			id: "38E0930B64874596"
+			rewards: [{
+				id: "5CAC76DDA55E46F5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "猎取灵魂"
+			tasks: [{
+				id: "2D7682B930A92B64"
+				item: {
+					Count: 1b
+					id: "goety:totem_of_roots"
+					tag: {
+						"Max Souls": 100
+						Souls: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["38E0930B64874596"]
+			description: [
+				"当你拥有了根之图腾之后，你便可以利用其中的灵魂能量来制作一些特殊的物品——比如&a觉醒绿宝石&r。"
+				""
+				"通过使用觉醒绿宝石作为合成材料，你能够制造不死图腾的仿制品——&6灵魂图腾&r。其拥有着更大的灵魂存储空间，能够在后续的工作中发挥至关重要的作用。"
+			]
+			id: "2E3C5A01C7C079C0"
+			rewards: [{
+				id: "2FE5AB17C6996C58"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "更多的灵魂能量"
+			tasks: [{
+				id: "341804E4A14147C2"
+				item: {
+					Count: 1b
+					id: "goety:totem_of_souls"
+					tag: {
+						"Max Souls": 10000
+						Souls: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["38E0930B64874596"]
+			description: ["将诅咒注入器放置在&6刷怪笼&r的上方，既可以将其用于制作一些诅咒配方。如阴影石头、法术聚晶、觉醒绿宝石等配方的合成。"]
+			id: "4717C67580F37824"
+			rewards: [{
+				id: "2BDFA8D3D122088A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "提取刷怪笼的能量"
+			tasks: [{
+				id: "29B8FCA6003ACBCF"
+				item: "goety:cursed_infuser"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2E3C5A01C7C079C0"]
+			description: [
+				"&7建议搭配书本的教程食用&r"
+				""
+				"为了获得更多的力量，你需要举行各种各样的仪式。在举行任何仪式之前，你需要进行不同的准备工作。"
+				""
+				"举行仪式的核心则是利用&6黑暗祭坛&r和&6祭坛基座&r来构建仪式场地，在满足物品和环境条件的情况下，仪式就会发生。"
+				""
+				"除此之外为了举行仪式，你需要一个&6诅咒之笼&r用于提供给祭坛灵魂能量。将黑暗祭坛放置在诅咒之笼上方，将&2蕴含灵魂力量的物品放置在诅咒之笼内&r，即可为仪式提供灵魂能量。"
+				""
+				"不同仪式所需的物品和环境不同。具体请&2参阅对应模组书籍中关于仪式部分的教程&r。具体在合成时使用某种仪式则需要参考配方表中的额外注明。"
+			]
+			icon: "goety:dark_altar"
+			id: "249B296A3CB17779"
+			rewards: [{
+				count: 3
+				id: "6BDC89223CDF05F0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "仪式的准备"
+			tasks: [
+				{
+					id: "26B6F29622EC3A99"
+					item: "goety:dark_altar"
+					type: "item"
+				}
+				{
+					id: "6BC2253F7C2E7B33"
+					item: {
+						Count: 1b
+						id: "goety:cursed_cage"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "01A1EC83A4A67CB7"
+					item: "goety:pedestal"
+					type: "item"
+				}
+			]
+			title: "举行仪式"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["249B296A3CB17779"]
+			description: [
+				"使用锻造仪式获取灵魂方舟。如若放置后需要破坏，请使用鼠标右键而非破坏。"
+				""
+				"当灵魂方舟被放置时，玩家将与其绑定。此后，玩家无法通过灵魂图腾类似的方式使用灵魂能量，而是使用灵魂方舟作为灵魂能量的来源。"
+				""
+				"灵魂方舟具有100000点灵魂能量上限。如若你需要使用灵魂方舟中的灵魂能量以魔法仪式，则你需要制作连接宝石将其绑定到你所拥有的灵魂方舟，"
+			]
+			id: "247AED1D908E67BD"
+			subtitle: "远程灵魂存储"
+			tasks: [{
+				id: "616E5BFB735D3F01"
+				item: "goety:arca"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+	]
+	title: "诡厄巫法：潜藏在黑魔法的力量"
+}

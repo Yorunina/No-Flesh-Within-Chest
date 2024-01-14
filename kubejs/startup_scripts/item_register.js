@@ -208,8 +208,39 @@ StartupEvents.registry('item', event => {
     // 随机基本器官
     event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').tag('kubejs:organ').tag('itemborders:iron')
 
-
     event.create('kubejs:phantom_eyeball').texture('kubejs:item/phantom_eyeball').maxStackSize(1)
 
+    event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
+        .useAnimation('bow')
+        .use((level, player, hand) => {
+            return true;
+        })
+        .useDuration(itemStack => 20)
+        .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
+            let nbt = { organSocres: {} }
+            $ChestCavityEntity.of(entity).get().getChestCavityInstance().getOrganScores().forEach((key, value) => {
+                nbt.organSocres[key] = value
+            })
+            entity.give(Item.of('kubejs:glass_vial', nbt))
+            entity.addItemCooldown(itemstack, 20 * 15)
+            return itemstack;
+        })
+
+    event.create('glass_vial').texture('kubejs:item/glass_vial').maxStackSize(1)
+        .useAnimation('bow')
+        .use((level, player, hand) => {
+            return true;
+        })
+        .useDuration(itemStack => 20)
+        .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
+            if (!itemstack.nbt?.organSocres) return itemstack
+            itemstack.nbt.organSocres.getAllKeys().forEach(key => {
+                entity.tell([LEADING_SYMBOL, Text.yellow(global.SCORE_MAP[key]).hover(global.SCORE_HOVER_MAP[key]), Text.white(' : '), Text.white(itemstack.nbt.organSocres[key])])
+            })
+            entity.addItemCooldown(itemstack, 20 * 15)
+            return itemstack;
+        })
 })
 

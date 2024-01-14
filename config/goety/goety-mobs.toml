@@ -1,0 +1,157 @@
+
+[Textures]
+	#If certain mobs have a different texture during some holiday months, Default: true
+	holidaySkins = true
+
+	[Textures."Summoned Mobs"]
+
+		[Textures."Summoned Mobs"."Zombie Servants"]
+			#If Zombie Servants have custom textures, Default: true
+			zombieServantTexture = true
+			#If Drowned Servants have custom textures, Default: true
+			drownedServantTexture = true
+			#If Husk Servants have custom textures, Default: true
+			huskServantTexture = true
+
+		[Textures."Summoned Mobs"."Skeleton Servants"]
+			#If Skeleton Servants have custom textures, Default: true
+			skeletonServantTexture = true
+			#If Stray Servants have custom textures, Default: true
+			strayServantTexture = true
+			#If Vanguard Servants have custom textures, Default: true
+			vanguardServantTexture = true
+
+		[Textures."Summoned Mobs"."Wraith Servants"]
+			#If Wraith Servants have custom textures, Default: true
+			wraithServantTexture = true
+
+		[Textures."Summoned Mobs"."Zombified Piglin Servants"]
+			#If Zombified Piglin Servants have custom textures, Default: true
+			zPiglinServantTexture = true
+
+		[Textures."Summoned Mobs".Vexes]
+			#If Vexes have custom textures, Default: true
+			vexTexture = true
+
+		[Textures."Summoned Mobs"."Redstone Golem"]
+			#If Redstone Golems show cracks when damaged sufficiently, Default: false
+			redstoneGolemCrack = false
+
+[Servants]
+	#Whether creating a Redstone Golem causes the mold to change blocks, Default: true
+	redstoneGolemMold = true
+	#Whether Vex Servants can teleport to Players, Default: true
+	vexTeleport = true
+	#Whether Servants can attack Creepers if Mob Griefing Rule is False, Default: true
+	servantsAttackCreepers = true
+	#Whether Servants or their owner are immune to attacks made by other servants that are summoned by the same owner, Default: true
+	servantsMasterImmune = true
+	#Owners can't attack or hurt their servants, Default: true
+	ownerAttackCancel = true
+	#Mobs will automatically be hostile to servants, if servant is hostile towards the mob, Default: true
+	mobSense = true
+	#How many seconds it takes before Ravager can manually roar again, Default: 10
+	#Range: > 0
+	ravagerRoarCooldown = 10
+
+	[Servants."Undead Servants"]
+		#Whether Undead Servants can teleport to Players, Default: false
+		undeadTeleport = false
+		#Whether Servants can attack Undead mobs if owner wears a full Necro Set, Default: false
+		necroRobeUndead = false
+		#Whether Undead Servants can heal if summoned while wearing Necro Cape, Default: true
+		undeadServantsHeal = true
+		#How much Soul Energy it cost per second for an Undead Servant to heal, Default: 5
+		#Range: > 0
+		undeadServantsHealCost = 5
+		#How frequent Undead Servants heal, count seconds, Default: 1
+		#Range: > 0
+		undeadServantsHealTime = 1
+		#How much Health Undead Servants heal, numerically, Default: 0.5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		undeadServantsHealAmount = 0.5
+		#Chance that a zombie (or subclass) servant is summoned as a baby, Default: 0.05
+		#Range: 0.0 ~ 1.0
+		zombieServantBabyChance = 0.05
+
+[Illagers]
+	#Whether Illague Effect can spread from non Conquillagers that has the effect, Default: true
+	illagueSpread = true
+	#Whether Enviokers, Inquillagers and Conquillagers can steal Totems of Souls or Totems of Undying, Default: true
+	illagerSteal = true
+
+	[Illagers."Illager Assaults"]
+		#Modded Illagers Spawning based of Player's Soul Energy amount, Default: true
+		illagerAssault = true
+		#Spawn Frequency for Illagers Hunting the Player, Default: 12000
+		#Range: > 0
+		illagerAssaultSpawnFreq = 12000
+		#Spawn Chance for Illagers Hunting the Player every Spawn Frequency, the lower the more likelier, Default: 5
+		#Range: > 0
+		illagerAssaultSpawnChance = 5
+		#How much Soul Energy the Player has is required for Special Illagers to spawn, Default: 2500
+		#Range: > 0
+		illagerAssaultThreshold = 2500
+		#The maximum amount of Soul Energy the Player has that is taken consideration for the Assaults, Default: 30000
+		#Range: > 0
+		illagerAssaultLimit = 30000
+		#Hitting the Illager Assault Limit of Soul Energy have a chance of giving Player Bad Omen effect, Default: true
+		soulEnergyBadOmen = true
+
+	[Illagers.Raid]
+		#Whether Modded Illagers appears in Raids, Default: true
+		specialIllagerRaid = true
+		#Whether Pikers appear in Raids, Default: true
+		pikerRaid = true
+		#Whether Preachers appear in Raids, Default: true
+		preacherRaid = true
+		#Whether Conquillagers appear in Raids, Default: true
+		conquillagerRaid = true
+		#Whether Inquillagers appear in Raids, Default: true
+		inquillagerRaid = true
+		#Whether Enviokers appear in Raids, Default: true
+		enviokerRaid = true
+		#Whether Ministers appear in Raids, Default: true
+		ministerRaid = true
+		#Whether Hostile Redstone Golems appear in Raids, Default: false
+		hostileRedstoneGolemRaid = false
+		#Whether Armored Ravagers spawn in Raids, Default: true
+		armoredRavagerRaid = true
+		#Whether Warlocks appear in Raids, Default: true
+		warlockRaid = true
+
+[Villagers]
+	#Wearing a Dark Robe, along with variants, causes Villagers around the Player to have a negative Reputation unless said Player has 25 or more reputation among them, Default: false
+	villagerHate = false
+	#Having an owned Ravaged or Ravager, causes Villagers around the Player to have a negative Reputation, Default: false
+	villagerHateRavager = false
+	#Casting Spell in the presence of Villagers will cause the Player to lose a number of Reputation, set 0 to disable, Default: 0
+	#Range: > 0
+	villagerHateSpells = 0
+	#Villagers have a chance of converting into Warlocks if they're underneath a Block of Crying Obsidian, Default: true
+	villagerConvertToWarlock = true
+
+[Misc]
+	#Whether Goety Mobs can spawn in Overworld-like modded dimensions, Default: false
+	interDimensionalMobs = false
+	#Spawn Weight for Warlock, Default: 5
+	#Range: > 0
+	warlockSpawnWeight = 5
+	#Spawn Weight for Wraith, Default: 20
+	#Range: > 0
+	wraithSpawnWeight = 20
+	#Whether Mobs with Tall Heads(ie. Villagers, Illagers, etc.) will drop Tall Skulls, Default: true
+	tallSkullDrop = true
+	#Whether Wraiths should teleport towards their targets if they can't see them instead of just teleporting away when they're near them, Default: true
+	wraithAggressiveTeleport = true
+
+	[Misc.Apostle]
+		#Nether Meteors deals environmental damage. WARNING: Causes lots of lag. Default: false
+		apocalypseMode = false
+		#Gives Apostle an even more fancier death animation, Default: false
+		fancierApostleDeath = false
+
+	[Misc.Vizier]
+		#Viziers spawn Vexes instead of Irks, Default: false
+		vizierMinion = false
+

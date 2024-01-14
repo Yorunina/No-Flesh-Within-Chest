@@ -20,7 +20,7 @@ EntityEvents.death(event => {
 
 const curiosDeathStrategies = {
     'kubejs:god_bless_empty_necklace': function (event, curios, slot, item) {
-        if (!bossesOfMassDestructionBossTypeList.some(ctx => ctx == entity.type)) {
+        if (!bossesOfMassDestructionBossTypeList.some(ctx => ctx == event.entity.type)) {
             return
         }
         curios.setStackInSlot(slot, Item.of('kubejs:god_bless_full_necklace'));

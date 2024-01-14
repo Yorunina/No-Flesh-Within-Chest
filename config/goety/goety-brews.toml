@@ -1,0 +1,175 @@
+
+["Vanilla Soul Cost"]
+	#Absorption Soul Cost, Default: 50
+	#Range: > 1
+	absorptionCost = 50
+	#Blindness Soul Cost, Default: 10
+	#Range: > 1
+	blindnessCost = 10
+	#Darkness Soul Cost, Default: 10
+	#Range: > 1
+	darknessCost = 10
+	#Fire Resistance Soul Cost, Default: 25
+	#Range: > 1
+	fireResistanceCost = 25
+	#Glowing Soul Cost, Default: 10
+	#Range: > 1
+	glowingCost = 10
+	#Haste Soul Cost, Default: 25
+	#Range: > 1
+	hasteCost = 25
+	#Hunger Soul Cost, Default: 10
+	#Range: > 1
+	hungerCost = 10
+	#Harming Soul Cost, Default: 25
+	#Range: > 1
+	harmingCost = 25
+	#Healing Soul Cost, Default: 25
+	#Range: > 1
+	healingCost = 25
+	#Health Boost Soul Cost, Default: 100
+	#Range: > 1
+	healthBoostCost = 100
+	#Invisibility Soul Cost, Default: 25
+	#Range: > 1
+	invisibilityCost = 25
+	#Jump Boost Soul Cost, Default: 25
+	#Range: > 1
+	jumpBoostCost = 25
+	#Levitation Soul Cost, Default: 25
+	#Range: > 1
+	levitationCost = 25
+	#Luck Soul Cost, Default: 25
+	#Range: > 1
+	luckCost = 25
+	#Mining Fatigue Soul Cost, Default: 10
+	#Range: > 1
+	miningFatigueCost = 10
+	#Nausea Soul Cost, Default: 10
+	#Range: > 1
+	nauseaCost = 10
+	#Night Vision Soul Cost, Default: 25
+	#Range: > 1
+	nightVisionCost = 25
+	#Poison Soul Cost, Default: 10
+	#Range: > 1
+	poisonCost = 10
+	#Regeneration Soul Cost, Default: 25
+	#Range: > 1
+	regenerationCost = 25
+	#Resistance Soul Cost, Default: 100
+	#Range: > 1
+	resistanceCost = 100
+	#Saturation Soul Cost, Default: 25
+	#Range: > 1
+	saturationCost = 25
+	#Slow Falling Soul Cost, Default: 25
+	#Range: > 1
+	slowFallingCost = 25
+	#Slowness Soul Cost, Default: 10
+	#Range: > 1
+	slownessCost = 10
+	#Speed Soul Cost, Default: 25
+	#Range: > 1
+	speedCost = 25
+	#Strength Soul Cost, Default: 25
+	#Range: > 1
+	strengthCost = 25
+	#Unluck Soul Cost, Default: 25
+	#Range: > 1
+	unluckCost = 25
+	#Water Breathing Soul Cost, Default: 25
+	#Range: > 1
+	waterBreathingCost = 25
+	#Weakness Soul Cost, Default: 25
+	#Range: > 1
+	weaknessCost = 25
+	#Wither Soul Cost, Default: 25
+	#Range: > 1
+	witherCost = 25
+
+["Modded Soul Cost"]
+	#Climbing Soul Cost, Default: 25
+	#Range: > 1
+	climbingCost = 25
+	#Pressure Soul Cost, Default: 10
+	#Range: > 1
+	pressureCost = 10
+	#Ender Ground Soul Cost, Default: 10
+	#Range: > 1
+	enderGroundCost = 10
+	#Flame Hands Soul Cost, Default: 25
+	#Range: > 1
+	flameHandsCost = 25
+	#Venomous Hands Soul Cost, Default: 25
+	#Range: > 1
+	venomousHandsCost = 25
+	#Freezing Soul Cost, Default: 25
+	#Range: > 1
+	freezingCost = 25
+	#Gold Touched Soul Cost, Default: 10
+	#Range: > 1
+	goldTouchedCost = 10
+	#Nyctophobia Soul Cost, Default: 50
+	#Range: > 1
+	nyctophobiaCost = 50
+	#Sapped Soul Cost, Default: 25
+	#Range: > 1
+	sappedCost = 25
+	#Sun Allergy Soul Cost, Default: 50
+	#Range: > 1
+	sunAllergyCost = 50
+	#Tripping Soul Cost, Default: 25
+	#Range: > 1
+	trippingCost = 25
+	#Repulsive Soul Cost, Default: 25
+	#Range: > 1
+	repulsiveCost = 25
+	#Photosynthesis Soul Cost, Default: 25
+	#Range: > 1
+	photosynthesisCost = 25
+	#Swift Swim Soul Cost, Default: 25
+	#Range: > 1
+	swiftSwimCost = 25
+	#Arrowmantic Soul Cost, Default: 50
+	#Range: > 1
+	arrowmanticCost = 50
+	#Flammable Soul Cost, Default: 50
+	#Range: > 1
+	flammableCost = 50
+	#Insight Soul Cost, Default: 50
+	#Range: > 1
+	insightCost = 50
+	#Explosive Soul Cost, Default: 50
+	#Range: > 1
+	explosiveCost = 50
+	#Fiery Aura Soul Cost, Default: 50
+	#Range: > 1
+	fieryAuraCost = 50
+	#Frosty Aura Soul Cost, Default: 100
+	#Range: > 1
+	frostyAuraCost = 100
+	#Wild Rage Soul Cost, Default: 50
+	#Range: > 1
+	wildRageCost = 50
+	#Fire Trail Soul Cost, Default: 50
+	#Range: > 1
+	fireTrailCost = 50
+	#Plunge Soul Cost, Default: 50
+	#Range: > 1
+	plungeCost = 50
+	#Cursed Soul Cost, Default: 50
+	#Range: > 1
+	cursedCost = 50
+	#Save Effects Soul Cost, Default: 50
+	#Range: > 1
+	saveEffectsCost = 50
+
+[Curable]
+	#Whether Nyctophobia is curable via Milk or Wartful Egg, Default: false
+	nyctophobiaCurable = false
+	#Whether Sun Allergy is curable via Milk or Wartful Egg, Default: false
+	sunAllergyCurable = false
+	#Whether Snow Skin is curable via Milk or Wartful Egg, Default: false
+	snowSkinCurable = false
+

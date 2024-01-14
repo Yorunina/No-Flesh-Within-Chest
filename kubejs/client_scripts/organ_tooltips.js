@@ -38,7 +38,7 @@ ItemEvents.tooltip((tooltip) => {
                             continue
                         }
                         tag = String(tag)
-                        if(!global.TYPE_MAP[tag]) {
+                        if (!global.TYPE_MAP[tag]) {
                             continue
                         }
                         typeLine.push(global.TYPE_MAP[tag], ' ')
@@ -80,5 +80,14 @@ ItemEvents.tooltip((tooltip) => {
 
     tooltip.addAdvanced('kubejs:infinity_force', (item, advanced, text) => {
         text.add(1, [Text.gold({ "translate": "item.kubejs.infinity_force" }), Text.yellow(` +${item.nbt?.forgeTimes ? item.nbt.forgeTimes : 0}`)]);
+    })
+
+
+    tooltip.addAdvanced('kubejs:glass_vial', (item, advanced, text) => {
+        let lineNum = 1
+        text.add(lineNum++, [Text.gold('血液样本信息如下：')])
+        item.nbt.organSocres.getAllKeys().forEach(key => {
+            text.add(lineNum++, [LEADING_SYMBOL, Text.yellow(global.SCORE_MAP[key]), Text.white(' : '), Text.white(item.nbt.organSocres[key])])
+        })
     })
 });
