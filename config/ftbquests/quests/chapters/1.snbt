@@ -94,14 +94,22 @@
 			description: [
 				"当你获得石镐的时候，往往意味着要开始千篇一律的挖矿过程。"
 				""
-				"但是暂且可以别心急！不妨看看后面的任务？也许在本整合里，有各种&5意想不到&r的方法来获取原本你心心念念的各种资源！"
+				"但是暂且可以别心急！不妨看看后面的任务？也许在本整合里，有各种&6意想不到&r的方法来获取原本你心心念念的各种资源！"
 			]
 			id: "0721AF9D7D5E4A7C"
-			rewards: [{
-				id: "5EB1FD1478739052"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5EB1FD1478739052"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "155CD648B3A63247"
+					item: "kubejs:eye_of_village"
+					type: "item"
+				}
+			]
 			subtitle: "依旧是寻找铁. . .不过，这次略有不同？"
 			tasks: [{
 				id: "514D2AD3265021ED"
@@ -492,16 +500,24 @@
 			dependencies: ["3FF06F6F309FAEC3"]
 			description: ["为了前往末地，你需要获取一定数量的末影珍珠，用于开启前往末地的大门。"]
 			id: "2311CA3EEABF0250"
-			rewards: [{
-				count: 5
-				id: "0136B712C04F49E9"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
+			rewards: [
+				{
+					count: 5
+					id: "0136B712C04F49E9"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_iron"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 8
+					id: "2028D9298D45F604"
+					item: "kubejs:eye_of_dnl"
+					type: "item"
+				}
+			]
 			subtitle: "前往末地的必需品"
 			tasks: [{
 				id: "355748BEB59386AF"

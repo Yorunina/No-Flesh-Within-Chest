@@ -1,3 +1,5 @@
+// priority: 100
+
 const $EyeofEnder = Java.loadClass('net.minecraft.world.entity.projectile.EyeOfEnder')
 const $Registry = Java.loadClass('net.minecraft.core.Registry')
 const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
@@ -14,6 +16,13 @@ StartupEvents.registry('item', event => {
     .texture('kubejs:item/eye_of_dnl')
     .use((level, player, interactionHand) => {
       return eyeFinder(level, player, interactionHand, 'dnl:all_structure');
+    })
+    .fireResistant();
+
+  event.create('eye_of_village')
+    .texture('kubejs:item/eye_of_village')
+    .use((level, player, interactionHand) => {
+      return eyeFinder(level, player, interactionHand, 'minecraft:village');
     })
     .fireResistant();
 })
