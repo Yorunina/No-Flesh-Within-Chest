@@ -22,9 +22,9 @@ ItemEvents.tooltip((tooltip) => {
 
     tooltip.addAdvanced('kubejs:secret_of_rain', (item, advanced, text) => {
         if (tooltip.shift) {
-            text.add([Text.gray({ "translate": "kubejs.tooltips.god_consciousness.1" }).italic(), Text.gray({ "translate": "kubejs.tooltips.god_consciousness.2" }), Text.blue({ "translate": "kubejs.tooltips.god_consciousness.5" }).bold(), Text.gray({ "translate": "kubejs.tooltips.god_consciousness.3" }), Text.gold({ "translate": "kubejs.tooltips.god_consciousness.6" }).bold(), Text.gray({ "translate": "kubejs.tooltips.god_consciousness.4" })]);
+            text.add([Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.1" }).italic(), Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.2" }), Text.blue({ "translate": "kubejs.tooltips.secret_of_rain.5" }).bold(), Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.3" }), Text.gold({ "translate": "kubejs.tooltips.secret_of_rain.6" }).bold(), Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.4" })]);
         } else {
-            text.add([Text.gray({ "translate": "kubejs.tooltips.god_consciousness.1" }).italic(), Text.gray({ "translate": "kubejs.tooltips.god_consciousness.2" }), Text.blue({ "translate": "kubejs.tooltips.god_consciousness.7" }).bold(), Text.gray({ "translate": "kubejs.tooltips.god_consciousness.3" }), Text.gold({ "translate": "kubejs.tooltips.god_consciousness.8" }).bold(), Text.gray({ "translate": "kubejs.tooltips.god_consciousness.4" })]);
+            text.add([Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.1" }).italic(), Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.2" }), Text.blue({ "translate": "kubejs.tooltips.secret_of_rain.7" }).bold(), Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.3" }), Text.gold({ "translate": "kubejs.tooltips.secret_of_rain.8" }).bold(), Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.4" })]);
         }
     })
 

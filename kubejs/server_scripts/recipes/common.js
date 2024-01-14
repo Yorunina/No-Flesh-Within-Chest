@@ -27,6 +27,12 @@ ServerEvents.recipes(event => {
         ['minecraft:glass', '#forge:string', 'minecraft:glass']
     ])
 
+    event.shaped('kubejs:blood_extractor', [
+        ['create:iron_sheet', 'create:iron_sheet', 'create:iron_sheet'],
+        ['create:iron_sheet', 'chestcavity:chest_opener', '#forge:dusts/glowstone'],
+        ['minecraft:glass_pane', 'chestcavity:golem_cable', 'create:iron_sheet']
+    ])
+
     event.shapeless('summoningrituals:altar', ['minecraft:wither_skeleton_skull', '#hexerei:candles', '#hexerei:candles', '#hexerei:candles', 'createaddition:electrum_sheet', 'minecraft:lectern'])
 
     event.shaped('irons_spellbooks:copper_spell_book', [

@@ -36,8 +36,8 @@ If you have any suggestions or want to report bugs related to this modpack, plea
   - [x] 实现动态基本属性
   - [x] Tetra联动器官效果
   - [x] 实现资源器官
-  - [ ] MoreJs扩充事件列表
-  - [ ] 实现禁忌器官
+  - [x] MoreJs扩充事件列表
+  - [x] 实现禁忌器官
 - [ ] 模组联动器官补充
   - [x] 向大部分生物填入补位符
   - [ ] Alex生物器官联动
@@ -56,6 +56,8 @@ If you have any suggestions or want to report bugs related to this modpack, plea
   - [ ] 三宏伟魔法之一:田园时代
   - [x] 神恩挑战
   - [ ] 其余的宏伟魔法
+  - [x] 资源值设计
+  - [ ] 扭曲值设计
   - [ ] Boss内容与主线融合
 - [ ] 平衡性设计
   - [x] 动态难度基本思路
