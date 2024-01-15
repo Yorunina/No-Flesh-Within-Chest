@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:compressed_oxygen_implant').withChance(70.0),
 		Item.of('create:copper_sheet').withChance(30.0)
-	], Item.of('create:copper_backtank'), [
+	], Item.of('create:copper_backtank', {Air:900}).strongNBT(), [
 		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank', 'chestcavity:gas_bladder']),
 		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank', 'createaddition:electrum_sheet']),
 		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank', 'create:iron_sheet']),
@@ -140,4 +140,33 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.crushing([Item.of('minecraft:netherite_scrap'), Item.of('5x minecraft:blaze_powder').withChance(0.5), Item.of('5x create:powdered_obsidian').withChance(0.4), Item.of('5x minecraft:glowstone_dust').withChance(0.45), Item.of('8x minecraft:quartz').withChance(0.6), Item.of('kubejs:nether_star_shard').withChance(0.02)], 'minecraft:nether_star').processingTime(300)
 
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:rose_quartz_muscle').withChance(80.0),
+		Item.of('create:rose_quartz').withChance(20.0)
+	], 'kubejs:muscle_template', [
+		event.recipes.createCutting('kubejs:incomplete_rose_quartz_muscle','kubejs:incomplete_rose_quartz_muscle'),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_muscle', ['kubejs:incomplete_rose_quartz_muscle', 'biomancy:rejuvenation_serum']),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_muscle', ['kubejs:incomplete_rose_quartz_muscle', 'minecraft:rose_bush']),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_muscle', ['kubejs:incomplete_rose_quartz_muscle', 'create:polished_rose_quartz'])
+	]).transitionalItem('kubejs:incomplete_rose_quartz_muscle').loops(5)
+
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:rose_quartz_liver').withChance(80.0),
+		Item.of('create:rose_quartz').withChance(20.0)
+	], 'kubejs:liver_template', [
+		event.recipes.createCutting('kubejs:incomplete_rose_quartz_liver','kubejs:incomplete_rose_quartz_liver'),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_liver', ['kubejs:incomplete_rose_quartz_liver', 'biomancy:cleansing_serum']),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_liver', ['kubejs:incomplete_rose_quartz_liver', 'minecraft:rose_bush']),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_liver', ['kubejs:incomplete_rose_quartz_liver', 'create:polished_rose_quartz'])
+	]).transitionalItem('kubejs:incomplete_rose_quartz_liver').loops(5)
+
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:rose_quartz_heart').withChance(80.0),
+		Item.of('create:rose_quartz').withChance(20.0)
+	], 'kubejs:heart_template', [
+		event.recipes.createCutting('kubejs:incomplete_rose_quartz_heart','kubejs:incomplete_rose_quartz_heart'),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_heart', ['kubejs:incomplete_rose_quartz_heart', 'biomancy:absorption_boost']),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_heart', ['kubejs:incomplete_rose_quartz_heart', 'minecraft:rose_bush']),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_heart', ['kubejs:incomplete_rose_quartz_heart', 'create:polished_rose_quartz'])
+	]).transitionalItem('kubejs:incomplete_rose_quartz_heart').loops(5)
 })

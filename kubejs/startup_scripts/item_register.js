@@ -242,5 +242,8 @@ StartupEvents.registry('item', event => {
             entity.addItemCooldown(itemstack, 20 * 15)
             return itemstack;
         })
+
+    event.create('kubejs:painting_brush').texture('kubejs:item/painting_brush').maxStackSize(1)
+
 })
 

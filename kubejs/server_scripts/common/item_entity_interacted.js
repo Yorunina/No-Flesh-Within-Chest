@@ -31,6 +31,21 @@ ItemEvents.entityInteracted('kubejs:flora_wand_basic', event => {
         event.player.give(Item.of('kubejs:flora_wand'))
     }
 })
+ 
+ItemEvents.entityInteracted('kubejs:painting_brush', event => {
 
+    let painting_RGB = 'minecraft:painting'
+    let info = event.target.getNbt()
+    let information = info.getAsString()
+
+    if (event.target.type == painting_RGB
+        && information.includes('pigscene')
+        && event.player.getOffhandItem() == 'supplementaries:antique_ink'
+        ) {
+        event.item.shrink(1)
+        event.player.offHandItem.shrink(1)
+        event.player.give(Item.of('kubejs:artist_wand'))
+    }
+})
 
 

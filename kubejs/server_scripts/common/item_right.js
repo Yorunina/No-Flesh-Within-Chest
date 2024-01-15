@@ -16,3 +16,19 @@ ItemEvents.rightClicked(event => {
     }
 })
 
+ItemEvents.rightClicked(event => {
+   
+    let aaa = event.level.getMoonPhase()
+    if (event.item == 'irons_spellbooks:blood_staff'
+        && event.level.isNight()
+        && event.level.moonPhase == 0
+        && event.player.headArmorItem == 'irons_spellbooks:cultist_helmet'
+        && event.player.chestArmorItem == 'irons_spellbooks:cultist_chestplate'
+        && event.player.legsArmorItem == 'irons_spellbooks:cultist_leggings'
+        && event.player.feetArmorItem == 'irons_spellbooks:cultist_boots'
+    ) {
+        event.item.shrink(1)
+        event.player.give(Item.of('kubejs:blood_moon_wand'))
+        event.server.runCommand(`say ha ${aaa}`)
+    }
+})

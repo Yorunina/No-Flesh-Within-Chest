@@ -135,6 +135,11 @@ ServerEvents.recipes(event => {
         ['','biomancy:bone_fragments',''],
         ['biomancy:bone_fragments','alexsmobs:skelewag_sword','biomancy:bone_fragments']])
 
+    event.shaped('kubejs:painting_brush', [
+        ['','minecraft:white_wool',''],
+        ['','minecraft:stick',''],
+        ['','minecraft:stick','']])
+
     event.smelting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster','5.0')
     event.blasting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster','5.0')
 

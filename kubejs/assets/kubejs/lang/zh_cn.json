@@ -201,6 +201,7 @@
     "item.kubejs.blood_extractor": "血清提取器",
     "item.kubejs.glass_vial": "玻璃瓶",
     "item.kubejs.eye_of_village": "村庄之眼",
+    "item.kubejs.painting_brush": "画笔",
 
     "fluid.kubejs.syrup": "糖浆",
 
@@ -270,6 +271,7 @@
     "kubejs.jei.flower_heart.1": "击败虚空之花获得或手持花之魔杖并向盛开的杜鹃丛献祭副手的花飘飘获得",
     "kubejs.jei.demon_eyeball.1": "恶魔之眼可以在下界铁掌的胸腔中获得",
     "kubejs.jei.parasitic_elf.1": "寄宿精灵可以在福尔图娜女爵的胸腔中获得",
+    "kubejs.jei.blood_moon_wand.1":"在新月之时身着血腥教徒套装转化鲜血法杖获得",
     "kubejs.jei.diamond_bottle.1":"拥有幸运buff时，在雷暴天手持水瓶右击钻石块获得",
 
     "kubejs.chestcavity.filtration": "血液过滤效率",
@@ -322,7 +324,6 @@
     "kubejs.chestcavity.arrow_dodging": "箭矢闪避",
     "kubejs.chestcavity.impact_resistant": "冲击抗性",
     "kubejs.chestcavity.rotgut": "嗜腐",
-
     "kubejs.chestcavity.hover.filtration": "如果你没有足够的血液过滤效率，你就会中毒",
     "kubejs.chestcavity.hover.breath_recovery": "影响你呼吸气泡的恢复速度",
     "kubejs.chestcavity.hover.nutrition": "影响食物的饱和度",
@@ -478,7 +479,8 @@
     "kubejs.tooltips.organ_charm.17": "的",
     "kubejs.tooltips.organ_charm.18": "伤害，累积",
     "kubejs.tooltips.organ_charm.19": "才能进化",
-    "kubejs.tooltips.organ_charm.20": "进化已完成",
+    "kubejs.tooltips.organ_charm.21": "需要挖掘",
+    "kubejs.tooltips.organ_charm.22": "个任意金矿石才能进化",
     "kubejs.tooltips.mob_name.1": "空",
     "kubejs.tooltips.health_appendix.1": "每存在一种类为",
     "kubejs.tooltips.health_appendix.2": "阑尾",
@@ -758,6 +760,7 @@
     "kubejs.tooltips.flora_wand_basic.1": "向那朵巨大的花索取生命之源",
     "kubejs.tooltips.flora_wand_basic.2": "并承受它的怒火",
     "kubejs.tooltips.phantom_eyeball.1": "神圣之杖，神圣之珠，求诸神圣之人，即得神圣之眼",
+    "kubejs.tooltips.painting_brush.1": "蘸取古代墨水，从某幅代表三原色的画中获取爆发的灵感",
     "kubejs.tooltips.aesegull_rib_left.1": "它在寻找另一名同伴",
     "kubejs.tooltips.aesegull_rib_left.2": "若在左右对称位置放置有",
     "kubejs.tooltips.aesegull_rib_left.3": "立场欺诈者的右肋",

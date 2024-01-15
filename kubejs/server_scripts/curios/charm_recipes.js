@@ -72,4 +72,5 @@ const organCharmNbtMap = {
     'kubejs:blade_of_heart': { type: 'bear', bearTask: { minDamage: 10, bearAmount: 150, counter: 0 }, targetOrgan: 'kubejs:heart_of_blade' },
     'kubejs:heart_of_blade': { type: 'damage', damageTask: { minDamage: 15, damageAmount: 3000, counter: 0, type: "melee" }, targetOrgan: 'kubejs:blade_of_heart' },
 
+    'kubejs:ore_lung': { type: 'mining', miningTask: { miningAmount: 800, counter: 0  }, targetOrgan: 'kubejs:desire_of_midas'}
 }
