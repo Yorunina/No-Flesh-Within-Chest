@@ -49,6 +49,32 @@ ItemEvents.foodEaten(event => {
     }
 })
 
+//挖掘任务
+BlockEvents.broken(event => {
+    let player = event.player;
+    if (!player) return;
+    let tblock = event.block;
+    let curiosItem = getCuriosItem(player, 'kubejs:organ_charm')
+    if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'mining') {
+        if (curiosItem.nbt.status == 1) {
+            return
+        }
+        if (tblock.id == 'minecraft:gold_ore'
+        || tblock.id == 'minecraft:deepslate_gold_ore'
+        || tblock.id == 'minecraft:nether_gold_ore'
+        || tblock.id == 'deeperdarker:sculk_stone_gold_ore'
+        || tblock.id == 'deeperdarker:gloomslate_gold_ore'){
+            curiosItem.nbt.miningTask.counter++
+        }
+
+        if (curiosItem.nbt.miningTask?.counter >= curiosItem.nbt.miningTask?.miningAmount) {
+            curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
+            curiosItem.nbt.status = 1
+            return
+        }
+    }
+})
+
 /**
  * 承受伤害
  * @param {Internal.LivingHurtEvent} event 

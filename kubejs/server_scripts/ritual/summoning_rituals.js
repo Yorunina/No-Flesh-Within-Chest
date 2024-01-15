@@ -1,4 +1,98 @@
 ServerEvents.recipes(event => {
+    // 七宗罪
+    event.recipes.summoningrituals
+        .altar('kubejs:ritual_catalyst')
+        .id('kubejs:ritual_sloth_shard')
+        .input('#minecraft:beds')
+        .input(Item.of('minecraft:potion', {Potion:"minecraft:strong_turtle_master"}).strongNBT())
+        .input('nameless_trinkets:sleeping_pills')
+        .input('goety:philosophers_stone')
+        .input('kubejs:nether_star_shard')
+        .itemOutput('kubejs:sloth_shard')
+        .sacrifice('minecraft:villager',5)
+        .sacrificeRegion(3, 3)
+        .dayTime('night')
+        .recipeTime(500);
+
+    event.recipes.summoningrituals
+        .altar('kubejs:ritual_catalyst')
+        .id('kubejs:ritual_wrath_shard')
+        .input('hexerei:warhammer')
+        .input('nameless_trinkets:rage_mind')
+        .input('goety:philosophers_stone')
+        .input('kubejs:nether_star_shard')
+        .itemOutput('kubejs:wrath_shard')
+        .sacrifice('minecraft:villager',5)
+        .sacrificeRegion(3, 3)
+        .dayTime('night')
+        .recipeTime(500);
+    
+    event.recipes.summoningrituals
+        .altar('kubejs:ritual_catalyst')
+        .id('kubejs:ritual_pride_shard')
+        .input('goety:refuse_bottle')
+        .input('nameless_trinkets:gods_crown')
+        .input('goety:philosophers_stone')
+        .input('kubejs:nether_star_shard')
+        .itemOutput('kubejs:pride_shard')
+        .sacrifice('minecraft:villager',5)
+        .sacrificeRegion(3, 3)
+        .dayTime('night')
+        .recipeTime(500);
+
+    event.recipes.summoningrituals
+        .altar('kubejs:ritual_catalyst')
+        .id('kubejs:ritual_lust_shard')
+        .input('goety:unholy_blood')
+        .input('irons_spellbooks:mana_upgrade_orb')
+        .input('goety:philosophers_stone')
+        .input('kubejs:nether_star_shard')
+        .itemOutput('kubejs:lust_shard')
+        .sacrifice('minecraft:villager',5)
+        .sacrificeRegion(3, 3)
+        .dayTime('night')
+        .recipeTime(500);
+
+    event.recipes.summoningrituals
+        .altar('kubejs:ritual_catalyst')
+        .id('kubejs:ritual_envy_shard')
+        .input('goety:grimoire_of_grudges')
+        .input('8x goety:ill_bomb')
+        .input('goety:philosophers_stone')
+        .input('kubejs:nether_star_shard')
+        .itemOutput('kubejs:envy_shard')
+        .sacrifice('minecraft:villager',5)
+        .sacrificeRegion(3, 3)
+        .dayTime('night')
+        .recipeTime(500);
+
+    event.recipes.summoningrituals
+        .altar('kubejs:ritual_catalyst')
+        .id('kubejs:ritual_gluttony_shard')
+        .input('4x minecraft:enchanted_golden_apple')
+        .input('goety:hunger_core')
+        .input('goety:philosophers_stone')
+        .input('kubejs:nether_star_shard')
+        .itemOutput('kubejs:gluttony_shard')
+        .sacrifice('minecraft:villager',5)
+        .sacrificeRegion(3, 3)
+        .dayTime('night')
+        .recipeTime(500);
+
+    event.recipes.summoningrituals
+        .altar('kubejs:ritual_catalyst')
+        .id('kubejs:ritual_greed_shard')
+        .input('lootr:trophy')
+        .input('nameless_trinkets:four_leaf_clover')
+        .input('lightmanscurrency:coinblock_diamond')
+        .input('goety:philosophers_stone')
+        .input('kubejs:nether_star_shard')
+        .itemOutput('kubejs:greed_shard')
+        .sacrifice('minecraft:villager',5)
+        .sacrificeRegion(3, 3)
+        .dayTime('night')
+        .recipeTime(500);
+
     // 秘密：雨
     event.recipes.summoningrituals
         .altar('kubejs:ritual_catalyst')

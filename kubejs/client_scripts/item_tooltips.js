@@ -90,6 +90,10 @@ ItemEvents.tooltip((tooltip) => {
         text.add(Text.gold({ "translate": "kubejs.tooltips.phantom_eyeball.1" }));
     })
 
+    tooltip.addAdvanced('kubejs:painting_brush', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.painting_brush.1" }));
+    })
+
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1
         if (item.nbt?.organ?.id) {
@@ -104,6 +108,9 @@ ItemEvents.tooltip((tooltip) => {
         }
         if (item.nbt?.type == 'bear') {
             text.add(lineNum++, [Text.gray({ "translate": "kubejs.tooltips.organ_charm.9" }), Text.gray(`${item.nbt.bearTask.minDamage}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.10" }), Text.gray(`${item.nbt.bearTask.counter.toFixed(2)}/${item.nbt.bearTask.bearAmount}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.11" })]);
+        }
+        if (item.nbt?.type == 'mining') {
+            text.add(lineNum++, [Text.gray({ "translate": "kubejs.tooltips.organ_charm.21" }), Text.gray(`${item.nbt.miningTask.counter}/${item.nbt.miningTask.miningAmount}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.22" })]);
         }
         if (item.nbt?.type == 'damage') {
             let typeName = { "translate": "kubejs.tooltips.organ_charm.12" }

@@ -10,4 +10,16 @@ ServerEvents.tags('item', event => {
 
   event.add('curios:body', ['supplementaries:quiver'])
   event.add('kubejs:anti_rejection', ['biomancy:healing_additive'])
+
+  event.add('kubejs:lung', 'chestcavity:lung')
+  event.add('kubejs:lung', 'chestcavity:rotten_lung')
+  event.add('kubejs:lung', 'chestcavity:animal_lung')
+  event.add('kubejs:lung', 'chestcavity:llama_lung')
+  event.add('kubejs:lung', 'chestcavity:fireproof_lung')
+  event.add('kubejs:lung', 'chestcavity:small_animal_lung')
+  event.add('kubejs:lung', 'chestcavity:insect_lung')
+  event.add('kubejs:lung', 'chestcavity:ender_lung')
+  event.add('kubejs:lung', 'chestcavity:dragon_lung')
+  event.add('kubejs:lung', 'chestcavity:saltwater_lung')
+  event.add('kubejs:lung', 'chestcavity:gas_bladder')
 })

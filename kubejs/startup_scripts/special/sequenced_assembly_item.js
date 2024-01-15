@@ -16,4 +16,8 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:incomplete_revolution_relay', 'create:sequenced_assembly').texture('kubejs:item/organs/machine/revolution_relay')
     event.create('kubejs:incomplete_revolution_delay', 'create:sequenced_assembly').texture('kubejs:item/organs/machine/revolution_delay')
     event.create('kubejs:incomplete_glass_wand', 'create:sequenced_assembly').texture('kubejs:item/glass_wand')
+    event.create('kubejs:incomplete_rose_quartz_muscle', 'create:sequenced_assembly').texture('kubejs:item/organs/rose_quartz/rose_quartz_muscle')
+    event.create('kubejs:incomplete_rose_quartz_liver', 'create:sequenced_assembly').texture('kubejs:item/organs/rose_quartz/rose_quartz_liver')
+    event.create('kubejs:incomplete_rose_quartz_heart', 'create:sequenced_assembly').texture('kubejs:item/organs/rose_quartz/rose_quartz_heart')
+
 })

@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(new BioBrewingRecipe([Ingredient.of('waystones:warp_dust'), Ingredient.of('createaddition:diamond_grit'), Ingredient.of('minecraft:glowstone_dust'), Ingredient.of('#bookwyrms:scale')], Item.of('biomancy:exotic_compound'), Item.of('kubejs:ritual_catalyst').withCount(2)).setNutrientsCost(10).setProcessingTime(2400))
    
-    let cure_potion = Item.of('minecraft:potion', '{Potion:"minecraft:healing"}')
+    let cure_potion = Item.of('minecraft:potion', {Potion:"minecraft:healing"}).strongNBT()
     registerCustomRecipe(new BioBrewingRecipe([Ingredient.of(cure_potion), Ingredient.of('minecraft:golden_apple')], Item.of('biomancy:genetic_compound'), Item.of('kubejs:active_pill').withCount(1)).setNutrientsCost(5).setProcessingTime(300))
 })
 

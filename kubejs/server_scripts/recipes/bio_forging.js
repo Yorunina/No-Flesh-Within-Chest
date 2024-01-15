@@ -49,5 +49,4 @@ ServerEvents.recipes(event => {
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 2, 'item': 'biomancy:regenerative_fluid' }, { 'count': 2, 'item': 'biomancy:hormone_secretion' },{ 'count': 6, 'item': 'biomancy:mob_marrow' }, { 'count': 8, 'item': 'createaddition:electrum_wire' }], Item.of('kubejs:platelet_dispatcher')).setNutrientsCost(48).setTab('biomancy:weapons'))
 
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'minecraft:spider_eye' }, { 'count': 3, 'item': 'meetyourfight:phantoplasm' }, { 'count': 6, 'item': 'biomancy:exotic_compound' }], Item.of('kubejs:phantom_eyeball')).setNutrientsCost(60).setTab('biomancy:weapons'))
-
 })

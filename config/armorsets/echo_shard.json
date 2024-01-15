@@ -1,0 +1,38 @@
+{
+  "armorSetName": "回响",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:echo_shard_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:echo_shard_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:echo_shard_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:echo_shard_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "利用深渊的力量保护自己，并赠予敌人来自黑暗的恐惧"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:spell_resist",
+      "modifierUUID": "006FF68F-CFDE-410E-876A-EB75E0FED708",
+      "description": "+25% 法术抵抗",
+      "value": 0.25
+    },
+    {
+      "type": "effect",
+      "name": "goety:nyctophobia",
+      "value": 1.0,
+      "interactionType": "attack",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}
