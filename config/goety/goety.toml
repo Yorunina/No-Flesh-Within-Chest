@@ -1,0 +1,379 @@
+
+[General]
+	#Totem Maximum Soul Count and Threshold to save the Player, Default: 10000
+	#Range: > 10
+	maxSouls = 10000
+	#Arca Maximum Soul Count, Default: 100000
+	#Range: > 10
+	maxArcaSouls = 100000
+	#Certain Items repair themselves using Soul Energy, Default: true
+	soulRepair = true
+	#Totem of Souls will save the Player if full of Soul Energy and its in Curio Slot, hotbar or off-hand, Default: true
+	totemUndying = true
+	#Arca will save the Player if past Totem Maximum Soul Count, Default: true
+	arcaUndying = true
+	#Gives Players a Totem of Souls when first entering World, Default: false
+	starterTotem = false
+	#Gives Players the Black Book when first entering World and Patchouli is loaded, Default: false
+	starterBook = false
+	#Gives Players the Witch's Brew when first entering World and Patchouli is loaded, Default: false
+	starterWitchBook = false
+	#How much Souls is consumed when crafting with Totem, Default: 1
+	#Range: > 0
+	craftSouls = 1
+	#Show the Soul Energy Bar if Player has Totem of Souls/Arca, Default: true
+	soulGuiShow = true
+	#Show currently equipped focus on Wand/Staff in Gui, Default: true
+	focusGuiShow = true
+	#Whether Wands and Staffs show cooldown if the focus it's equipped with is, Default: true
+	showWandCooldown = true
+	#Show numerical amount of Souls on the Soul Energy Bar, Default: false
+	showNumber = false
+	#Horizontal Position of where the Soul Energy Bar is located, Default: 100
+	#Range: > -2147483647
+	soulGuiHorizontal = 100
+	#Vertical Position of where the Soul Energy Bar is located, Default: -5
+	#Range: > -2147483647
+	soulGuiVertical = -5
+	#Move where the equipped Focus is located horizontally from its original position (- = Left, + = Right), Default: 0
+	#Range: > -2147483647
+	focusGuiHorizontal = 0
+	#Move where the equipped Focus is located vertically from its original position (- = Up, + = Down), Default: 0
+	#Range: > -2147483647
+	focusGuiVertical = 0
+	#Show gloves in first person, Default: true
+	firstPersonGloves = true
+	#Show Hoods when wearing certain robes ie, Illusive Robes, Default: true
+	showRobeHoods = true
+	#Bosses from the Mod has custom looking Boss Bars. Default: true
+	specialBossBar = true
+	#Bosses from the Mod has custom Music Playing. Default: true
+	bossMusic = true
+
+[Blocks]
+	#Add mobs that Hook Bells don't work on. 
+	#To do so, enter the namespace ID of the mob, like "minecraft:zombie, minecraft:skeleton".
+	hookBellBlackList = []
+	#Whether Night Beacons are allowed to function, turning Daytime to Midnight so long as it's activated, Default: true
+	enableNightBeacon = true
+	#Maximum level of experience the Dark Anvil will stick to instead of capping if Cap is disabled, Default: 30
+	#Range: > 1
+	darkAnvilRepairCost = 30
+	#Whether Dark Anvils have a cap that prevents items from being repaired or enchanted if repair cost is exceeded, Default: false
+	darkAnvilCap = false
+	#Whether Dark Anvils will take Experience Points instead of Levels, Default: false
+	darkAnvilTakePoints = false
+	#Whether Dark Anvils ignores enchantment max levels when combining same enchantments, Default: true
+	darkAnvilIgnoreMaxLevels = true
+	#How much Soul Energy is required for the Dark Anvil to repair itself, Default: 1000
+	#Range: > 0
+	darkAnvilSoulCost = 1000
+	#The amount of Soul Energy used up to repair Items per the configured amount of seconds, Default: 1
+	#Range: > 0
+	soulMenderCost = 1
+	#How many seconds the Soul Menderer repairs 1 durability from an item, Default: 0.5
+	#Range: 0.0 ~ 1.7976931348623157E308
+	soulMenderSeconds = 0.5
+	#The amount of Soul Energy used to give Charges to the Sculk Grower, Default: 20
+	#Range: > 0
+	sculkGrowerCost = 20
+	#How much Charges is given to the Sculk Grower whenever it absorbs Soul Energy, Default: 100
+	#Range: > 0
+	sculkGrowerCharge = 100
+	#Whether Sculk Grower continues to grow plants without Redstone if it still contains charges. Setting it to false will cause the Sculk Grower to slowly decay its charges, Default: true
+	sculkGrowerContinue = true
+	#Whether Sculk Grower can accept Potency enchantment, which allows the Grower to grow plants faster, Default: true
+	sculkGrowerPotency = true
+
+["Soul Taken"]
+	#Multiplies the amount of Souls taken by this amount, Default: 2
+	#Range: > 1
+	soulTakenMultiplier = 2
+	#Undead Killed, Default: 5
+	#Range: > 0
+	undeadSouls = 5
+	#Anthropods Killed, Default: 5
+	#Range: > 0
+	anthropodSouls = 5
+	#Animals Killed, Default: 5
+	#Range: > 0
+	animalSouls = 5
+	#Illagers, Witches, Cultists Killed, Default: 25
+	#Range: > 0
+	illagerSouls = 25
+	#Villagers Killed, Default: 100
+	#Range: > 0
+	villagerSouls = 100
+	#Non-Undead Piglin Killed, Default: 10
+	#Range: > 0
+	piglinSouls = 10
+	#Ender Dragon Killed, Default: 1000
+	#Range: > 0
+	enderDragonSouls = 1000
+	#Enderman Killed, Default: 10
+	#Range: > 0
+	endermanSouls = 10
+	#Warden Killed, Default: 10000
+	#Range: > 0
+	wardenSouls = 10000
+	#Players Killed, Default: 100
+	#Range: > 0
+	playerSouls = 100
+	#Others Killed, Default: 5
+	#Range: > 0
+	otherSouls = 5
+
+[Items]
+	#Amount of Soul Energy Dark Scythe gives when hitting mob(s), Default: 1
+	#Range: > 1
+	darkScytheSouls = 1
+	#Scythe Slashes from Death Scythe breaks blocks that regular Scythes easily breaks, Default: true
+	scytheSlashBreaks = true
+	#Fire Spawn Cage are enabled, Default: true
+	fireSpawnCage = true
+	#Amount of Souls needed to repair certain Equipments per second, Default: 5
+	#Range: > 1
+	itemsRepairSouls = 5
+	#Amount of Souls needed to use Spiteful Belt functionality, Default: 5
+	#Range: > 1
+	spitefulBeltUseAmount = 5
+	#The total amount of Rotten Flesh a Pendant of Hunger can hold, Default: 1024
+	#Range: > 1
+	pendantOfHungerLimit = 1024
+	#How much Charges the Sea Amulet needs to consume to function, Default: 1
+	#Range: > 1
+	seaAmuletChargeConsume = 1
+	#The total amount of Charges a Sea Amulet can hold, Default: 256
+	#Range: > 1
+	seaAmuletMax = 256
+	#How much Soul Energy is taken per second when wearer is falling slowly, Default: 1
+	#Range: > 1
+	windRobeSouls = 1
+	#Render Capes on certain Robes, Default: true
+	windRobeCape = true
+
+["Tools & Weapons"]
+
+	["Tools & Weapons".Staffs]
+		#How much base damage Ominous Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		ominousStaffDamage = 4.0
+		#How much base damage Necro Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		necroStaffDamage = 4.0
+		#How much base damage Wind Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		windStaffDamage = 4.0
+		#How much base damage Storm Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		stormStaffDamage = 4.0
+		#How much base damage Nameless Staffs deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		namelessStaffDamage = 6.0
+
+	["Tools & Weapons".Scythes]
+		#How much base damage Scythes deals, the damage added depends on material the scythe is made off (ie. Iron = 2.0), Default: 4.5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		scytheBaseDamage = 4.5
+		#How fast it takes to fully swing a Scythe with item offhand and not wearing Grave Gloves. The lower the number the slower it takes to recharge, Default: 0.6
+		#Range: 0.0 ~ 1.7976931348623157E308
+		scytheAttackSpeed = 0.6
+		#How much damage Death Scythe deals, the configured number is added to Scythe Base Damage, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		deathScytheDamage = 4.0
+		#How many uses before Death Scythe breaks, Default: 444
+		#Range: > 1
+		deathScytheDurability = 444
+		#Define the Enchantability for Death Scythe, higher number the better, Default: 22
+		#Range: > 1
+		deathScytheEnchantability = 22
+
+	["Tools & Weapons"."Dark Tools"]
+		#How much damage Dark Tools deals, the configured number is added to Tool Base Damage, Default: 3.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		darkToolsDamage = 3.0
+		#How fast Dark Tools mines, the higher the better, Default: 8.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		darkToolsBreakSpeed = 8.0
+		#How many uses before Dark Tools breaks, Default: 166
+		#Range: > 1
+		darkToolsDurability = 166
+		#Define the Enchantability for Dark Tools, higher number the better, Default: 20
+		#Range: > 1
+		darkToolsEnchantability = 20
+		#Define the Mining Level for Dark Tools, example, 3 = Diamond, 4 = Netherite, Default: 4
+		#Range: > 0
+		darkToolsMiningLevel = 4
+
+	["Tools & Weapons"."Special Tools"]
+		#How much damage Special Tools deals, the configured number is added to Tool Base Damage, Default: 3.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		specialToolsDamage = 3.0
+		#How fast Special Tools mines, the higher the better, Default: 8.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		specialToolsBreakSpeed = 8.0
+		#How many uses before a Special Tool breaks, Default: 1280
+		#Range: > 1
+		specialToolsDurability = 1280
+		#How many uses before a Hunter's Bow breaks, Default: 133
+		#Range: > 1
+		huntersBowDurability = 133
+		#Define the Enchantability for Special Tools, higher number the better, Default: 22
+		#Range: > 1
+		specialToolsEnchantability = 22
+		#Define the Mining Level for Special Tools, example, 3 = Diamond, 4 = Netherite, Default: 3
+		#Range: > 0
+		specialToolsMiningLevel = 3
+
+	["Tools & Weapons".Misc]
+		#How much damage Philosopher's Mace deals, Default: 9.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		philosophersMaceDamage = 9.0
+		#How many uses before the Philosopher's Mace breaks, Default: 128
+		#Range: > 1
+		philosophersMaceDurability = 128
+		#Define the Enchantability for Philosopher's Mace, higher number the better, Default: 20
+		#Range: > 1
+		philosophersMaceEnchantability = 20
+
+[Armor]
+
+	[Armor."Cursed Knight Armor"]
+		#Define the Durability Multiplier for the armor, higher number the better, Default: 15
+		#Range: > 1
+		cursedKnightDurability = 15
+		#Define the Enchantability for the armor, higher number the better, Default: 15
+		#Range: > 1
+		cursedKnightEnchantability = 15
+		#Define the toughness for each armor piece, Default: 0.5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cursedKnightToughness = 0.5
+		#Define how much knockback resistance each armor piece provides, Default: 0.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cursedKnightKnockResist = 0.0
+
+		[Armor."Cursed Knight Armor"."Armor Points"]
+			#Define how much armor points wearing the Boots provides, Default: 2
+			#Range: > 1
+			cursedKnightFeet = 2
+			#Define how much armor points wearing the Leggings provides, Default: 5
+			#Range: > 1
+			cursedKnightLegs = 5
+			#Define how much armor points wearing the Chestplate provides, Default: 6
+			#Range: > 1
+			cursedKnightChest = 6
+			#Define how much armor points wearing the Helmet provides, Default: 2
+			#Range: > 1
+			cursedKnightHead = 2
+
+	[Armor."Cursed Paladin Armor"]
+		#Define the Durability Multiplier for the armor, higher number the better, Default: 30
+		#Range: > 1
+		cursedPaladinDurability = 30
+		#Define the Enchantability for the armor, higher number the better, Default: 20
+		#Range: > 1
+		cursedPaladinEnchantability = 20
+		#Define the toughness for each armor piece, Default: 1.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cursedPaladinToughness = 1.0
+		#Define how much knockback resistance each armor piece provides, Default: 0.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cursedPaladinKnockResist = 0.0
+
+		[Armor."Cursed Paladin Armor"."Armor Points"]
+			#Define how much armor points wearing the Boots provides, Default: 3
+			#Range: > 1
+			cursedPaladinFeet = 3
+			#Define how much armor points wearing the Leggings provides, Default: 6
+			#Range: > 1
+			cursedPaladinLegs = 6
+			#Define how much armor points wearing the Chestplate provides, Default: 7
+			#Range: > 1
+			cursedPaladinChest = 7
+			#Define how much armor points wearing the Helmet provides, Default: 3
+			#Range: > 1
+			cursedPaladinHead = 3
+
+	[Armor."Black Iron Armor"]
+		#Define the Durability Multiplier for the armor, higher number the better, Default: 15
+		#Range: > 1
+		blackIronDurability = 30
+		#Define the Enchantability for the armor, higher number the better, Default: 15
+		#Range: > 1
+		blackIronEnchantability = 15
+		#Define the toughness for each armor piece, Default: 2.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		blackIronToughness = 2.0
+		#Define how much knockback resistance each armor piece provides, Default: 0.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		blackIronKnockResist = 0.0
+
+		[Armor."Black Iron Armor"."Armor Points"]
+			#Define how much armor points wearing the Boots provides, Default: 2
+			#Range: > 1
+			blackIronFeet = 2
+			#Define how much armor points wearing the Leggings provides, Default: 5
+			#Range: > 1
+			blackIronLegs = 5
+			#Define how much armor points wearing the Chestplate provides, Default: 6
+			#Range: > 1
+			blackIronChest = 6
+			#Define how much armor points wearing the Helmet provides, Default: 2
+			#Range: > 1
+			blackIronHead = 2
+
+	[Armor."Dark Armor"]
+		#Define the Durability Multiplier for the armor, higher number the better, Default: 15
+		#Range: > 1
+		darkArmorDurability = 15
+		#Define the Enchantability for the armor, higher number the better, Default: 20
+		#Range: > 1
+		darkArmorEnchantability = 20
+		#Define the toughness for each armor piece, Default: 2.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		darkArmorToughness = 2.0
+		#Define how much knockback resistance each armor piece provides, Default: 0.3
+		#Range: 0.0 ~ 1.7976931348623157E308
+		darkArmorKnockResist = 0.3
+
+		[Armor."Dark Armor"."Armor Points"]
+			#Define how much armor points wearing the Boots provides, Default: 3
+			#Range: > 1
+			darkArmorFeet = 3
+			#Define how much armor points wearing the Leggings provides, Default: 6
+			#Range: > 1
+			darkArmorLegs = 6
+			#Define how much armor points wearing the Chestplate provides, Default: 8
+			#Range: > 1
+			darkArmorChest = 8
+			#Define how much armor points wearing the Helmet provides, Default: 3
+			#Range: > 1
+			darkArmorHead = 3
+
+[Lich]
+	#Enable Liches healing using Soul Energy, Default: true
+	lichSoulHeal = true
+	#How much Soul Energy is cost to heal the Player per configured second if they've become a Lich, Default: 5
+	#Range: > 0
+	lichHealCost = 5
+	#How many seconds until Lich Players heals using Soul Energy, Default: 1
+	#Range: > 0
+	lichHealSeconds = 1
+	#How much health Lich Players heals using Soul Energy, Default: 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	lichHealAmount = 1.0
+	#Enable to get infinite Night Vision when being a Lich, Default: true
+	lichNightVision = true
+	#Wearing Helmet in Sunlight as a Lich periodically damages it, Default: true
+	lichDamageHelmet = true
+	#Undead Mobs will not attack you if you're a Lich and will even defend you if you're attack by another mob and wearing the Necro Set, Default: true
+	lichUndeadFriendly = true
+	#Enable to make Liches 85% more resistant to Magic Attacks, Default: false
+	lichMagicResist = false
+	#If Lich Undead Friendly is set to true, Only undead that have lower than 50 Hearts are friendly, Default: true
+	lichPowerfulHostile = true
+	#If Villagers provide negative Reputation to Liches and non-Player Iron Golems are automatically aggressive against them, Default: true
+	lichVillagerHate = true
+	#Whether the player needs to read a Forbidden Scroll to start the Potion of Transformation ritual, Default: true
+	lichScrollRequirement = true
+

@@ -94,14 +94,22 @@
 			description: [
 				"当你获得石镐的时候，往往意味着要开始千篇一律的挖矿过程。"
 				""
-				"但是暂且可以别心急！不妨看看后面的任务？也许在本整合里，有各种&5意想不到&r的方法来获取原本你心心念念的各种资源！"
+				"但是暂且可以别心急！不妨看看后面的任务？也许在本整合里，有各种&6意想不到&r的方法来获取原本你心心念念的各种资源！"
 			]
 			id: "0721AF9D7D5E4A7C"
-			rewards: [{
-				id: "5EB1FD1478739052"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "5EB1FD1478739052"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "155CD648B3A63247"
+					item: "kubejs:eye_of_village"
+					type: "item"
+				}
+			]
 			subtitle: "依旧是寻找铁. . .不过，这次略有不同？"
 			tasks: [{
 				id: "514D2AD3265021ED"
@@ -247,15 +255,22 @@
 			]
 			icon: "chestcavity:golem_cable"
 			id: "5BC3743958DA4B16"
-			rewards: [{
-				id: "68FEB532C449F1F0"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
+			rewards: [
+				{
+					id: "68FEB532C449F1F0"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_gold"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "66E04D2E3087A85A"
+					item: "kubejs:blood_extractor"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			subtitle: "关于器官的属性"
 			tasks: [{
@@ -264,52 +279,8 @@
 				type: "checkmark"
 			}]
 			title: "属性的定义"
-			x: 6.5d
+			x: 7.25d
 			y: -1.5d
-		}
-		{
-			can_repeat: true
-			dependencies: ["50CE3ADF8E4D6426"]
-			description: [
-				"如果你真的不小心丢掉了你的一些器官，可以通过完成该任务，来重置你的器官。"
-				""
-				"同时，该任务也用于保证你并不会死档，请灵活运用。"
-				""
-				"请注意，如果你仍有一些&5稀有器官&r，请确保点击前已将其取出以避免损失！"
-			]
-			hide_dependency_lines: true
-			icon: "irons_spellbooks:greater_healing_potion"
-			id: "279037F0BA837179"
-			rewards: [{
-				command: "/chestcavity resetChestCavity @p"
-				icon: "irons_spellbooks:greater_healing_potion"
-				id: "7637EA70C0B4B64C"
-				title: "重置你的器官！"
-				type: "command"
-			}]
-			shape: "gear"
-			subtitle: "当你想要重新开始时"
-			tasks: [
-				{
-					elapsedTime: 180L
-					id: "72C28C47201E8854"
-					title: "等待180秒"
-					type: "questsadditions:time"
-				}
-				{
-					consume_items: true
-					id: "4C45421D05A45596"
-					item: {
-						Count: 1
-						id: "numismaticoverhaul:bronze_coin"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
-			title: "重置器官！"
-			x: 4.5d
-			y: -3.5d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -398,8 +369,8 @@
 				weak_nbt_match: true
 			}]
 			title: "Tetra与工具"
-			x: 3.0d
-			y: 1.5d
+			x: 2.75d
+			y: 1.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -529,16 +500,24 @@
 			dependencies: ["3FF06F6F309FAEC3"]
 			description: ["为了前往末地，你需要获取一定数量的末影珍珠，用于开启前往末地的大门。"]
 			id: "2311CA3EEABF0250"
-			rewards: [{
-				count: 5
-				id: "0136B712C04F49E9"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
+			rewards: [
+				{
+					count: 5
+					id: "0136B712C04F49E9"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_iron"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 8
+					id: "2028D9298D45F604"
+					item: "kubejs:eye_of_dnl"
+					type: "item"
+				}
+			]
 			subtitle: "前往末地的必需品"
 			tasks: [{
 				id: "355748BEB59386AF"
@@ -752,7 +731,7 @@
 			y: -1.25d
 		}
 		{
-			dependencies: ["3E9DD0B78886A183"]
+			dependencies: ["0861DDE9767A3E9D"]
 			description: [
 				"在游戏中会经常遇到存储大量同种物品的情况。这时候就可以考虑使用&2储物抽屉&r进行批量的物品存储。"
 				""
@@ -786,8 +765,8 @@
 				type: "item"
 			}]
 			title: "储物抽屉"
-			x: 7.75d
-			y: -1.5d
+			x: 8.75d
+			y: 3.75d
 		}
 		{
 			dependencies: ["1D8929E0CE7CE0AB"]
@@ -877,8 +856,8 @@
 				type: "item"
 			}]
 			title: "简易、存储、整合"
-			x: 8.75d
-			y: -2.75d
+			x: 11.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["523490881F8317C7"]
@@ -1043,15 +1022,64 @@
 		}
 		{
 			dependencies: ["22F081213B71190E"]
+			description: ["可以通过灾变本身提供的&6各种眼睛&r来寻找其生成的建筑。但由于某些造价过高且机器容易损坏，因此并不推荐利用这种眼睛来寻找建筑。"]
 			id: "54D9CCA0E085E647"
+			rewards: [{
+				id: "5C23AD1FF738A81F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "寻找灾变建筑"
 			tasks: [{
-				id: "049EDD3A05FE7565"
-				item: "cataclysm:flame_eye"
+				id: "4B64AB81FF9995BC"
+				item: "cataclysm:mech_eye"
 				type: "item"
 			}]
 			title: "寻找灾变之源"
 			x: 15.5d
 			y: 1.75d
+		}
+		{
+			dependencies: ["5BC3743958DA4B16"]
+			description: [
+				"如果你对当前的基础属性总和感到迷惑，不妨使用&6血清提取器&r扎自己一下！"
+				""
+				"&2长按右键后&r，血清提取器会生成包含你属性信息的&6血清玻璃管&r，可以清晰地看到自己现有的基础属性。"
+				""
+				"&2手持玻璃管长按右键&r，则可以在消息框中看到属性的对应信息，鼠标放在对应的属性名称上还可以看到对应属性的描述文本。"
+			]
+			id: "7198C447D928AEEC"
+			rewards: [{
+				id: "3FDC13B702961A81"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "查看你的属性"
+			tasks: [{
+				id: "35C0E67EECEF42C1"
+				item: "kubejs:blood_extractor"
+				type: "item"
+			}]
+			x: 8.25d
+			y: -2.75d
+		}
+		{
+			dependencies: ["538FC6DDC204DBFA"]
+			description: ["制作一个&6训练假人&r——或者一堆训练假人，以便在后续的工作中方便的查看因为你武器/器官变化所带来的战斗收益。"]
+			id: "6A16E11C6C020F12"
+			rewards: [{
+				id: "3AB2755B40522592"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "强化训练"
+			tasks: [{
+				id: "029BCE2F509F439C"
+				item: "dummmmmmy:target_dummy"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.5d
 		}
 	]
 	title: "章节1：如常"

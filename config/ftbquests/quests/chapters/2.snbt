@@ -1161,6 +1161,23 @@
 			x: 19.75d
 			y: -1.5d
 		}
+		{
+			dependencies: ["1884740B0724DE70"]
+			id: "7F14FD199500DEA0"
+			tasks: [{
+				id: "1D8FEF00BCE069E9"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:black_book"
+					}
+				}
+				type: "item"
+			}]
+			x: 3.25d
+			y: 1.75d
+		}
 	]
 	title: "章节2：觉醒"
 }

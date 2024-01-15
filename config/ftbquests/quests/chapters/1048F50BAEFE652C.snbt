@@ -1023,6 +1023,51 @@
 			x: 10.25d
 			y: 1.75d
 		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			id: "2A8B1C05CF6801A8"
+			tasks: [{
+				id: "7A124C6421679BDE"
+				item: {
+					Count: 1b
+					id: "kubejs:machine_clockwork"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.75d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			id: "209E99AA8A803BE9"
+			tasks: [{
+				id: "2580EB7EF132E366"
+				item: {
+					Count: 1b
+					id: "kubejs:lava_life_cycle_system"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.75d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			id: "4C96584263F15A3C"
+			tasks: [{
+				id: "1AA74E7782D8ABCF"
+				item: {
+					Count: 1b
+					id: "kubejs:revolution_steam_engine"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.25d
+			y: 5.0d
+		}
 	]
 	title: "胸腔：器官收集指南"
 }

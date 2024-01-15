@@ -30,5 +30,3 @@ ServerEvents.recipes(event => {
     let cure_potion = Item.of('minecraft:potion', {Potion:"minecraft:healing"}).strongNBT()
     registerCustomRecipe(new BioBrewingRecipe([Ingredient.of(cure_potion), Ingredient.of('minecraft:golden_apple')], Item.of('biomancy:genetic_compound'), Item.of('kubejs:active_pill').withCount(1)).setNutrientsCost(5).setProcessingTime(300))
 })
-
-

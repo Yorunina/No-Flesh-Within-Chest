@@ -123,7 +123,7 @@
 				table_id: 4145327722741839115L
 				type: "choice"
 			}]
-			subtitle: "怪物将会携带灾变效果"
+			subtitle: "怪物将有50%概率携带灾变效果"
 			tasks: [{
 				id: "0B42DCA173E8BD65"
 				title: "怪物启用灾变效果？"
