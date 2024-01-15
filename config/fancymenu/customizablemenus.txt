@@ -6,3 +6,9 @@ net.minecraft.client.gui.screens.WinScreen {
 net.minecraft.client.gui.screens.TitleScreen {
 }
 
+net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
+}
+
+net.minecraft.client.gui.screens.PauseScreen {
+}
+

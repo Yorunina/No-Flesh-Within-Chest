@@ -14,3 +14,19 @@ function powerOfCitadelPlayerHurtByOthers(event, data) {
         player.potionEffects.add('unusualprehistory:prevent_click', 20 * 5 * (amplifier + 1), 0)
     }
 }
+
+/**
+ * 
+ * @param {Internal.LivingEntity} entity 
+ * @param {number} lvl 
+ * @returns 
+ */
+global.powerOfCitadelEffectTick = (entity, lvl) => {
+    if (!entity.server) return;
+    if (entity.age % 20 == 0) {
+        if (entity.isPlayer()) {
+            entity.removeEffect('kubejs:power_of_citadel')
+        }
+        entity.heal(entity.getMaxHealth() * 0.01)
+    }
+}

@@ -18,6 +18,7 @@
 		y: 1.25d
 	}]
 	order_index: 2
+	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
@@ -31,6 +32,7 @@
 				""
 				"如果你对内容实在是感到困惑，也可以选择在商店页面直接&6购买胶囊&r，通过右键使用后，可以直接构建起来完整的&2成品/半成品&r的机器。"
 			]
+			hide_dependent_lines: true
 			icon: "create:wrench"
 			id: "4EB8FE041AB6DA8E"
 			incompatible: ["1C784E8FBDB3DBC2"]
@@ -104,10 +106,11 @@
 		{
 			dependencies: ["6C7A1C7252229459"]
 			description: [
-				"更大程度实现自动化：&2砍树，收割农作物&r"
-				""
-				"&9动力锯&r也可竖放置于流水线用于切割物品"
+				"更大程度实现自动化：&2挖矿，冶炼和分拣&r"
+				"&2矿车装配站&r可以把上方被&6胶水&r连接为一个整体的物体通过&6红石信号&r装配到&6矿车&r内,装配好的矿车可以用&6扳手&r取下"
 			]
+			hide_dependent_lines: true
+			icon: "create:cart_assembler"
 			id: "10A1552945CF569F"
 			rewards: [{
 				id: "49A9BD3EE97EA2C0"
@@ -118,16 +121,31 @@
 				}
 				type: "item"
 			}]
-			subtitle: "农场自动化"
+			subtitle: "挖矿自动化"
 			tasks: [
 				{
-					id: "7DA71588255C688C"
-					item: "create:mechanical_harvester"
+					id: "24D6F095BD47D240"
+					item: "create:cart_assembler"
 					type: "item"
 				}
 				{
-					id: "4B28C918C686BF91"
-					item: "create:mechanical_saw"
+					id: "030C3A3E61E3AE0F"
+					item: "minecraft:minecart"
+					type: "item"
+				}
+				{
+					id: "18E5417E35AC5226"
+					item: "minecraft:lever"
+					type: "item"
+				}
+				{
+					id: "7E6B361C6964CB6A"
+					item: "minecraft:rail"
+					type: "item"
+				}
+				{
+					id: "691A550C2D21B8D9"
+					item: "create:wrench"
 					type: "item"
 				}
 			]
@@ -167,7 +185,7 @@
 			}]
 			title: "新的挑战"
 			x: -0.25d
-			y: -3.75d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3A98FA709F0DEA42"]
@@ -178,12 +196,13 @@
 				"{@pagebreak}"
 				"为了生产应力，最简单的方式便是使用&6手摇曲柄&r来人工产生应力。当然，这只是一个临时的方案。"
 				""
-				"通过驱动&6水车&r来生产应力是最常用的方法，并且它占地较小，可以单元化的放在自动化流程的任何一个角落。"
+				"通过驱动&6水车&r来生产应力是之前常用的方法，并且它占地较小，可以单元化的放在自动化流程的任何一个角落。"
 				""
-				"当你需要更大的应力时，&6风车&r就会成为你的另一选项。"
+				"但是这个版本水车废了，&6风车&r是目前最好用的应力供应源，不要犹豫，选风车就完事了。"
 				""
 				"如果这些都无法满足你庞大机器的需求，那么，使用&6锅炉&r或许是唯一的方案。（或者使用Create扩展中的一些动力源）"
 			]
+			hide_dependent_lines: true
 			id: "24EEB667413FCADC"
 			rewards: [{
 				id: "1E095763EC83A366"
@@ -197,10 +216,10 @@
 			subtitle: "最常见的动力源"
 			tasks: [{
 				id: "24C67EC8810E98BB"
-				item: "create:water_wheel"
+				item: "create:windmill_bearing"
 				type: "item"
 			}]
-			title: "水车、风车与动力源"
+			title: "水车、风车与动力源(应力)"
 			x: 0.75d
 			y: -2.0d
 		}
@@ -213,6 +232,7 @@
 				""
 				"有了这些，你就可以合成前期使用量最大的一种金属——&6安山合金&r。"
 			]
+			hide_dependent_lines: true
 			icon: "create:zinc_ingot"
 			id: "3A98FA709F0DEA42"
 			rewards: [{
@@ -255,6 +275,7 @@
 				""
 				"属于create的&2流水线工厂&r就此诞生！"
 			]
+			hide_dependent_lines: true
 			id: "0C5511D51B5FF508"
 			rewards: [
 				{
@@ -289,8 +310,9 @@
 			description: [
 				"为了进一步发展Create，你需要一些基础机械，用以制作常见于各种配方中的材料。"
 				""
-				"其中最重要的则是&5动力辊压机&r，他可以用于各种&6压制&r工作，比如生产铁片。"
+				"其中最重要的则是&5动力辊压机&r，他可以用于各种&6压制&r工作，比如生产铁片。这需要在&6传送带&r或者&6置物台&r上进行"
 			]
+			hide_dependent_lines: true
 			icon: "create:mechanical_press"
 			id: "1112F6121BC5A1E5"
 			rewards: [{
@@ -309,7 +331,7 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			title: "基础机械"
+			title: "第一台机器!"
 			x: -0.25d
 			y: 0.75d
 		}
@@ -320,6 +342,7 @@
 				""
 				"驱动动力合成器时，需要注意物品的组合顺序，这将影响它的工作效率。如果配方存在空位置，则需要使用&6合成槽盖板&r作为占位符。"
 			]
+			hide_dependent_lines: true
 			id: "6C7A1C7252229459"
 			rewards: [{
 				count: 3
@@ -350,6 +373,7 @@
 				""
 				"&6至此，create简单的教程结束，它仍拥有的无限肯恩由你自己去探索吧！&r"
 			]
+			icon: "create:track_station"
 			id: "7A4FBB4ACFA8D7A9"
 			rewards: [
 				{
@@ -383,7 +407,7 @@
 			]
 			title: "大工程"
 			x: -0.25d
-			y: -5.0d
+			y: -5.25d
 		}
 		{
 			dependencies: ["10A1552945CF569F"]
@@ -391,7 +415,13 @@
 				"&9动力犁&r可清除不具有&c物理碰撞箱&r的物体（如火把），同时也可起到收割机的作用，也能将实体无伤害推远"
 				""
 				"&9动力钻&r可以用于挖掘方块，效果同于玩家挖掘"
+				""
+				"绳索和动力钻结合便可以垂直打井"
+				""
+				"&1动力矿车&r则是掘进时所必须的"
 			]
+			hide_dependent_lines: true
+			icon: "create:mechanical_drill"
 			id: "379527B5B5A9C653"
 			rewards: [{
 				id: "66BB8629BCD2B9A8"
@@ -414,8 +444,23 @@
 					item: "create:mechanical_plough"
 					type: "item"
 				}
+				{
+					id: "1BA73419E437DC4A"
+					item: "create:gearshift"
+					type: "item"
+				}
+				{
+					id: "505C4C615A6A8B0A"
+					item: "create:rope_pulley"
+					type: "item"
+				}
+				{
+					id: "594555EC24951B68"
+					item: "minecraft:furnace_minecart"
+					type: "item"
+				}
 			]
-			title: "更多的自动化+1"
+			title: "挖矿自动化"
 			x: -2.75d
 			y: -3.25d
 		}
@@ -444,7 +489,7 @@
 				type: "item"
 			}]
 			title: "更多选择"
-			x: -3.5d
+			x: -3.0d
 			y: -1.0d
 		}
 		{
@@ -455,6 +500,7 @@
 				"&6传送带&r上的物品可能有很多种，根据你的需求将不同的物品分入不同的流水线（或者扔掉？）"
 				"使用两类&6过滤器&r添加标签，实现分拣"
 			]
+			hide_dependent_lines: true
 			id: "55FAA1463318A7BA"
 			rewards: [
 				{
@@ -485,7 +531,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["1112F6121BC5A1E5"]
+			dependencies: ["0677F6E36035E869"]
 			description: [
 				"&6鼓风机&r结合&c岩浆&r可进行熔炼；结合&9水&r可进行洗涤；也能结合&c营火&r熏制食物；结合&9灵魂营火&r将物品进行缠魂。"
 				""
@@ -511,11 +557,11 @@
 				type: "item"
 			}]
 			title: "冶炼矿物"
-			x: -0.25d
-			y: 2.25d
+			x: -4.75d
+			y: -1.0d
 		}
 		{
-			dependencies: ["44E0A5B43FB1506F"]
+			dependencies: ["1112F6121BC5A1E5"]
 			description: [
 				"制作一个&6应力表&r观察剩余的应力"
 				"同时，制作一个&6工程师护目镜&r能让你观察的得更详细"
@@ -534,6 +580,7 @@
 				}
 				type: "item"
 			}]
+			size: 1.5d
 			subtitle: "注意你的应力"
 			tasks: [
 				{
@@ -548,8 +595,8 @@
 				}
 			]
 			title: "应力检测员"
-			x: 3.25d
-			y: -1.0d
+			x: -0.375d
+			y: 2.25d
 		}
 		{
 			dependencies: ["24EEB667413FCADC"]
@@ -558,6 +605,7 @@
 				""
 				"最低级版本的机壳被称作&6安山机壳&r，在没有其他加工手段的情况下，你可以通过&2手持安山合金，右键去皮原木以获得&r。"
 			]
+			hide_dependent_lines: true
 			id: "44E0A5B43FB1506F"
 			rewards: [{
 				count: 4
@@ -569,7 +617,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "制作速度表"
+			subtitle: "最低级的机壳"
 			tasks: [{
 				id: "5D8E66420272179A"
 				item: "create:andesite_casing"
@@ -660,7 +708,8 @@
 			y: 3.75d
 		}
 		{
-			dependencies: ["24EEB667413FCADC"]
+			dependencies: ["3A98FA709F0DEA42"]
+			dependency_requirement: "all_started"
 			description: [
 				"机械动力配备了名为&6思索&r的教学模式。你可以在某些机器和物品上发现它的痕迹。"
 				""
@@ -713,6 +762,7 @@
 				""
 				"在有了黄铜之后，则可以使用&6转速控制器&r随意的变换转速，这也是你后面主要的目标之一。"
 			]
+			hide_dependent_lines: true
 			icon: "create:cogwheel"
 			id: "0FC81607771D0F71"
 			rewards: [{
@@ -747,6 +797,7 @@
 				""
 				"当然，现在你可能无法做出燃烧室，不过在之后的旅程里，做出它几乎是必然。"
 			]
+			icon: "create:mechanical_mixer"
 			id: "79DE01B778B14C0E"
 			rewards: [{
 				count: 3
@@ -758,15 +809,164 @@
 				}
 				type: "item"
 			}]
-			subtitle: "达到动力搅拌器所需求的转速"
-			tasks: [{
-				id: "66CEA69C2C1AAE68"
-				item: "create:mechanical_mixer"
-				type: "item"
-			}]
+			subtitle: "获取黄铜的第一步"
+			tasks: [
+				{
+					id: "66CEA69C2C1AAE68"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "2E37258D630F4D14"
+					item: "create:basin"
+					type: "item"
+				}
+			]
 			title: "加速！使用动力搅拌器！"
 			x: 2.25d
 			y: 1.5d
+		}
+		{
+			dependencies: ["55FAA1463318A7BA"]
+			id: "4F9AA857AEB0C0AE"
+			rewards: [{
+				id: "0F27F0837234FA93"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "更加复杂的功能实现"
+			tasks: [{
+				id: "66683DB6DC8C8C95"
+				item: "create:brass_tunnel"
+				type: "item"
+			}]
+			title: "获得升级"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0C5511D51B5FF508"]
+			id: "38B27FBD44641B53"
+			subtitle: "物品下行"
+			tasks: [{
+				id: "06D9CE0D0B4713A6"
+				item: "create:chute"
+				type: "item"
+			}]
+			title: "垂直传递"
+			x: -3.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38B27FBD44641B53"]
+			id: "4D631051E9BE0F50"
+			rewards: [{
+				id: "302A384EDFAA1710"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "高级功能实现"
+			tasks: [{
+				id: "3545374EA749C19A"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["24EEB667413FCADC"]
+			description: ["&6羊毛&r或者&6风帆&r都可以增加风车的应力，而风帆以外的方块都必须经过&1胶水&r的连接，成为一个整体后被风车带动，当然你也可以连接一些毫不相干的东西，只要你喜欢,它都会随着风车转动"]
+			id: "2CF3F1871D1C18D1"
+			rewards: [{
+				id: "22ADB4C6F8D44660"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "把方块们粘合起来"
+			tasks: [{
+				id: "4D15DDD7748E75AD"
+				item: {
+					Count: 1b
+					id: "create:super_glue"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "打个胶先"
+			x: 2.25d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"379139EF81A5A1E1"
+				"379527B5B5A9C653"
+			]
+			description: [
+				"现在你可以快速获取大量矿物了，同时通过&6鼓风机&r你可以快速冶炼想要的矿物"
+				"现在，开动脑筋建造一个巨大的全自动开采流水线吧"
+			]
+			icon: "minecraft:iron_block"
+			id: "01B508A9355C8265"
+			rewards: [{
+				id: "496E95480C4E258A"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "圆石即是正义"
+			tasks: [
+				{
+					id: "2F39BDBE759941EB"
+					title: "矿物自由！"
+					type: "checkmark"
+				}
+				{
+					id: "02E3B2107DC3FEFF"
+					item: "minecraft:red_sand"
+					type: "item"
+				}
+				{
+					id: "2277711CD33C6727"
+					item: "minecraft:iron_nugget"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["10A1552945CF569F"]
+			description: ["&1动力锯&r的特性是会在收割时将附近的植物一同破坏，发挥想象力，看看你能不能秒杀参天大树。"]
+			icon: "create:mechanical_saw"
+			id: "2AA85BAD484D978F"
+			subtitle: "躺着也能种"
+			tasks: [
+				{
+					id: "64B896572E306275"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+				{
+					id: "2147C0C049CE5496"
+					item: "create:deployer"
+					type: "item"
+				}
+				{
+					id: "7D02129ECD88DDA4"
+					item: "create:mechanical_bearing"
+					type: "item"
+				}
+				{
+					id: "71808807DF605444"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+			]
+			title: "自动农场"
+			x: -3.75d
+			y: -2.0d
 		}
 	]
 	title: "机械动力：让万物旋转"

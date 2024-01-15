@@ -14,7 +14,7 @@
  * @param {Internal.LivingHurtEvent} event 
  * @returns 
  */
-global.damage = event => {
+global.playerDamage = event => {
     let player = event.source.player
     if (!player) return;
     let data = new EntityHurtCustomModel()
@@ -41,7 +41,7 @@ global.damage = event => {
  * @param {Internal.LivingHurtEvent} event
  * @returns 
  */
-global.hurt = event => {
+global.playerHurt = event => {
     let data = new EntityHurtCustomModel()
     if (!highPriorityPlayerHurtByOthers(event, data)) {
         return

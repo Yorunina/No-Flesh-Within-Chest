@@ -4,12 +4,12 @@ ServerEvents.recipes(event => {
         .altar('kubejs:ritual_catalyst')
         .id('kubejs:ritual_sloth_shard')
         .input('#minecraft:beds')
-        .input(Item.of('minecraft:potion', {Potion:"minecraft:strong_turtle_master"}).strongNBT())
+        .input(Item.of('minecraft:potion', { Potion: "minecraft:strong_turtle_master" }).strongNBT())
         .input('nameless_trinkets:sleeping_pills')
         .input('goety:philosophers_stone')
         .input('kubejs:nether_star_shard')
         .itemOutput('kubejs:sloth_shard')
-        .sacrifice('minecraft:villager',5)
+        .sacrifice('minecraft:villager', 1)
         .sacrificeRegion(3, 3)
         .dayTime('night')
         .recipeTime(500);
@@ -22,11 +22,11 @@ ServerEvents.recipes(event => {
         .input('goety:philosophers_stone')
         .input('kubejs:nether_star_shard')
         .itemOutput('kubejs:wrath_shard')
-        .sacrifice('minecraft:villager',5)
+        .sacrifice('minecraft:villager', 1)
         .sacrificeRegion(3, 3)
         .dayTime('night')
         .recipeTime(500);
-    
+
     event.recipes.summoningrituals
         .altar('kubejs:ritual_catalyst')
         .id('kubejs:ritual_pride_shard')
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         .input('goety:philosophers_stone')
         .input('kubejs:nether_star_shard')
         .itemOutput('kubejs:pride_shard')
-        .sacrifice('minecraft:villager',5)
+        .sacrifice('minecraft:villager', 1)
         .sacrificeRegion(3, 3)
         .dayTime('night')
         .recipeTime(500);
@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
         .input('goety:philosophers_stone')
         .input('kubejs:nether_star_shard')
         .itemOutput('kubejs:lust_shard')
-        .sacrifice('minecraft:villager',5)
+        .sacrifice('minecraft:villager', 1)
         .sacrificeRegion(3, 3)
         .dayTime('night')
         .recipeTime(500);
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
         .input('goety:philosophers_stone')
         .input('kubejs:nether_star_shard')
         .itemOutput('kubejs:envy_shard')
-        .sacrifice('minecraft:villager',5)
+        .sacrifice('minecraft:villager', 1)
         .sacrificeRegion(3, 3)
         .dayTime('night')
         .recipeTime(500);
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
         .input('goety:philosophers_stone')
         .input('kubejs:nether_star_shard')
         .itemOutput('kubejs:gluttony_shard')
-        .sacrifice('minecraft:villager',5)
+        .sacrifice('minecraft:villager', 1)
         .sacrificeRegion(3, 3)
         .dayTime('night')
         .recipeTime(500);
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         .input('goety:philosophers_stone')
         .input('kubejs:nether_star_shard')
         .itemOutput('kubejs:greed_shard')
-        .sacrifice('minecraft:villager',5)
+        .sacrifice('minecraft:villager', 1)
         .sacrificeRegion(3, 3)
         .dayTime('night')
         .recipeTime(500);

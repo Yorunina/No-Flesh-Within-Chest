@@ -68,7 +68,7 @@
 			description: ["将它放在&6存储整合器&r上，即可方便的访问整合存储网络"]
 			id: "7EA63EFEECF4628D"
 			rewards: [{
-				count: 2
+				count: 32
 				id: "1738CDEA03C94A74"
 				item: "minecraft:chest"
 				type: "item"
@@ -87,9 +87,9 @@
 			description: ["&6存储终端&r的升级版，拥有一个工作台的面板，是正常情况下最优先选择的型号。"]
 			id: "06CFAD62C6DC65CA"
 			rewards: [{
-				count: 2
-				id: "1940621E06924A7C"
-				item: "minecraft:chest"
+				count: 32
+				id: "2609078BE80B7A84"
+				item: "minecraft:barrel"
 				type: "item"
 			}]
 			subtitle: "获得升级"
@@ -162,14 +162,9 @@
 			]
 			id: "3A4DBF039CE9A9E9"
 			rewards: [{
-				count: 2
-				icon: "lightmanscurrency:coin_gold"
-				id: "119F13A99B9881EB"
-				item: {
-					Count: 1
-					id: "numismaticoverhaul:bronze_coin"
-					tag: { }
-				}
+				count: 3
+				id: "6FC6A6867709F689"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "灵活存储. . .但用途有限"
@@ -186,14 +181,8 @@
 			description: ["持握时，可从更远处（&516格&r）右击终端并打开其界面。（无线终端使用前需要先绑定对应的终端）"]
 			id: "0E870625DCF57C7A"
 			rewards: [{
-				count: 2
-				icon: "lightmanscurrency:coin_gold"
-				id: "6893AAE68DC82CBD"
-				item: {
-					Count: 1
-					id: "numismaticoverhaul:bronze_coin"
-					tag: { }
-				}
+				id: "06457B545226E084"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "远程访问术"
@@ -217,14 +206,9 @@
 			icon: "toms_storage:ts.adv_wireless_terminal"
 			id: "0004C045EF8274F8"
 			rewards: [{
-				count: 2
-				icon: "lightmanscurrency:coin_gold"
-				id: "0C3DA6CCB9368B15"
-				item: {
-					Count: 1
-					id: "numismaticoverhaul:bronze_coin"
-					tag: { }
-				}
+				count: 8
+				id: "63A711EC01B48CCE"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "信标的额外用途"

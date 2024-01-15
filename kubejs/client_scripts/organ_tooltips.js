@@ -84,8 +84,10 @@ ItemEvents.tooltip((tooltip) => {
 
 
     tooltip.addAdvanced('kubejs:glass_vial', (item, advanced, text) => {
+        if (!item.nbt?.organSocres) return
         let lineNum = 1
         text.add(lineNum++, [Text.gold('血液样本信息如下：')])
+
         item.nbt.organSocres.getAllKeys().forEach(key => {
             text.add(lineNum++, [LEADING_SYMBOL, Text.yellow(global.SCORE_MAP[key]), Text.white(' : '), Text.white(item.nbt.organSocres[key])])
         })

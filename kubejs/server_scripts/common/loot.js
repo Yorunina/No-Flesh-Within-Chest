@@ -77,7 +77,7 @@ LootJS.modifiers(event => {
         .randomChance(0.2)
         .addLoot(Item.of('kubejs:unholy_grail'))
 
-        event.addLootTypeModifier(LootType.CHEST)
+    event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(["#minecraft:village"], false)
         .addLoot(LootEntry.of(WARES_GOD_CHALLENGE).when((c) => c.randomChance(0.01)))
         .addLoot(LootEntry.of('biomancy:healing_additive').when((c) => c.randomChance(0.1)))

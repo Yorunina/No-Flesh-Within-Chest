@@ -92,7 +92,8 @@
         "goety:focuses/sword_focus",
         "goety:crafts/philosophers_stone",
         "goety:world/bestiary/apostle",
-        "goety:mutations/necromancer"
+        "goety:mutations/necromancer",
+        "goety:crafts/artifice/night_beacon"
       ],
       "bookmarks": [],
       "completedManualQuests": []

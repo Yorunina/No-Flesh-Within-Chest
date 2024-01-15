@@ -4,9 +4,9 @@
  */
 ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', event => {
     if (event.source.player) {
-        global.damage(event);
+        global.playerDamage(event);
     }
     if (event.entity.isPlayer()) {
-        global.hurt(event);
+        global.playerHurt(event);
     }
 })

@@ -227,6 +227,9 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:blooded_chip': function (event, organ, data) {
         if (event.source.type != 'arrow') return
-        event.amount = event.amount * (1.5 - Math.abs(event.source.immediate.getPitch()) / 90)
+        let entityHeight = event.entity.bbHeight
+        let arrowHeight = event.source.immediate.y - event.entity.y
+        event.source.player.tell(Math.min(arrowHeight/entityHeight, 1) * 0.5 + 1)
+        event.amount = event.amount * (Math.min(arrowHeight/entityHeight, 1) * 0.5 + 1)
     },
 };

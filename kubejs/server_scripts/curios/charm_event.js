@@ -60,10 +60,10 @@ BlockEvents.broken(event => {
             return
         }
         if (tblock.id == 'minecraft:gold_ore'
-        || tblock.id == 'minecraft:deepslate_gold_ore'
-        || tblock.id == 'minecraft:nether_gold_ore'
-        || tblock.id == 'deeperdarker:sculk_stone_gold_ore'
-        || tblock.id == 'deeperdarker:gloomslate_gold_ore'){
+            || tblock.id == 'minecraft:deepslate_gold_ore'
+            || tblock.id == 'minecraft:nether_gold_ore'
+            || tblock.id == 'deeperdarker:sculk_stone_gold_ore'
+            || tblock.id == 'deeperdarker:gloomslate_gold_ore') {
             curiosItem.nbt.miningTask.counter++
         }
 
