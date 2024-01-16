@@ -50,7 +50,11 @@ function organPlayerHurtByOthers(event, data) {
     }
 }
 
-
+/**
+ * 玩家承受伤害处理策略
+ * @constant
+ * @type {Object<string,function(Internal.LivingHurtEvent, organ, EntityHurtCustomModel):void>}
+ */
 const organPlayerBearStrategies = {
     'kubejs:red_ink': function (event, organ, data) {
         getPlayerMagicData(event.entity).addMana(event.amount * 5)

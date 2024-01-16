@@ -1,5 +1,6 @@
 PlayerEvents.tick(event => {
     let player = event.player
+    
     if (event.player.age % 20 != 0) {
         return
     }

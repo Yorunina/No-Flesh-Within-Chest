@@ -224,7 +224,7 @@
 		[Attributes.Bosses.Apostle]
 			#How much Max Health Apostles have, Default: 320.0
 			#Range: 100.0 ~ 1.7976931348623157E308
-			apostleHealth = 320.0
+			apostleHealth = 420.0
 			#How much natural Armor Points Apostles have, Default: 12.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			apostleArmor = 12.0

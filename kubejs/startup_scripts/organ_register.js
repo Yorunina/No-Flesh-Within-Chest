@@ -520,12 +520,12 @@ StartupEvents.registry('item', event => {
         .addScore('health', 0.25)
         .addScore('nerves', 0.25)
         .addScore('breath_recovery', 0.25)
-        .addScore('strength', 0.125)
+        .addScore('strength', 0.25)
         .addScore('filtration', 0.25)
         .addScore('detoxification', 0.25)
         .addScore('defense', 0.125)
         .addScore('nutrition', 0.125)
-        .addScore('endurance', 0.125)
+        .addScore('endurance', 0.25)
         .addScore('digestion', 0.125)
         .addScore('metabolism', 0.125)
         .addScore('speed', 0.25)
@@ -546,9 +546,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only');
 
     registerOrgan(new Organ('kubejs:love_between_lava_and_ice')
-        .addScore('health', 1)
-        .addScore('fire_resistant', 1)
-        .addScore('detoxification', -2)
+        .addScore('health', 1.5)
+        .addScore('fire_resistant', 0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.1" })])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.2" }), Text.blue({ "translate": "kubejs.tooltips.love_between_lava_and_ice.3" }), Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.4" }), Text.yellow(0.1), Text.aqua({ "translate": "kubejs.tooltips.love_between_lava_and_ice.5" })])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.6" }), Text.darkRed({ "translate": "kubejs.tooltips.love_between_lava_and_ice.7" }), Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.8" }), Text.yellow(0.1), Text.red({ "translate": "kubejs.tooltips.love_between_lava_and_ice.9" })])
@@ -560,7 +559,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:leviathan_spine')
-        .addScore('nerves', 1.5)
+        .addScore('nerves', 1.75)
         .addScore('swim_speed', 2)
         .addScore('breath_recovery', 1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.leviathan_spine.1" })])
@@ -579,7 +578,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:heart_of_blade')
-        .addScore('health', -1)
+        .addScore('health', -0.75)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.heart_of_blade.1" }), Text.gold({ "translate": "kubejs.tooltips.heart_of_blade.2" }), Text.gray({ "translate": "kubejs.tooltips.heart_of_blade.3" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.heart_of_blade.4" })])
         .build())
@@ -723,6 +722,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/relics/blooded_chip')
         .tag('kubejs:damage_only')
         .tag('kubejs:relics');
+
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
