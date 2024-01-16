@@ -25,5 +25,4 @@ JEIEvents.information(event => {
     event.addItem('kubejs:parasitic_elf', Text.black({ "translate": "kubejs.jei.parasitic_elf.1" }))
     event.addItem('kubejs:diamond_bottle', Text.black({ "translate": "kubejs.jei.diamond_bottle.1" }))
     event.addItem('kubejs:blood_moon_wand', Text.black({ "translate": "kubejs.jei.blood_moon_wand.1" }))
-
 })

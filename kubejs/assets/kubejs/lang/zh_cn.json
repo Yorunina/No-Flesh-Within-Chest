@@ -169,6 +169,7 @@
     "item.kubejs.eye_of_dnl": "地牢加载之眼",
     "item.kubejs.friend_to_the_end": "誓约之戒",
     "item.kubejs.mr_and_mrs_smith": "夫妻肺片",
+    "item.kubejs.lime_powder": "生石灰粉",
     "item.kubejs.ritual_catalyst": "仪式催化剂",
     "item.kubejs.stardust_fragment": "星尘碎片",
     "item.kubejs.organ_charm": "满溢器官容器",
@@ -202,6 +203,7 @@
     "item.kubejs.glass_vial": "玻璃瓶",
     "item.kubejs.eye_of_village": "村庄之眼",
     "item.kubejs.painting_brush": "画笔",
+    "item.kubejs.holy_potion": "圣灵药",
 
     "fluid.kubejs.syrup": "糖浆",
 
@@ -223,7 +225,8 @@
     "effect.kubejs.executed": "被处刑",
     "effect.kubejs.vulnerable": "易伤",
     "effect.kubejs.power_of_citadel": "灾变之力",
-
+    "effect.kubejs.arrow_damage_boost": "箭矢伤害提升",
+    
     "travelerstitles.kubejs.lost_memory": "回忆之地",
     "kubejs.msg.tamagotchi.1": "Tamagotchi饿了！Tamagotchi想吃饭！",
     "kubejs.msg.tamagotchi.2": "Tamagotchi吃饱了！Tamagotchi很开心！",
@@ -616,7 +619,7 @@
     "kubejs.tooltips.magic_hippocampus.9": "1",
     "kubejs.tooltips.magic_hippocampus.10": "个",
     "kubejs.tooltips.magic_hippocampus.11": "魔法束",
-    "kubejs.tooltips.magic_hippocampus.12": "，效果持续时间增长5s",
+    "kubejs.tooltips.magic_hippocampus.12": "，效果持续时间增长10s",
     "kubejs.tooltips.magic_hippocampus.13": "每存在",
     "kubejs.tooltips.magic_hippocampus.14": "2",
     "kubejs.tooltips.magic_hippocampus.15": "个",
@@ -759,7 +762,7 @@
     "kubejs.tooltips.flower_heart.1": "此刻，繁花重照田野",
     "kubejs.tooltips.flora_wand_basic.1": "向那朵巨大的花索取生命之源",
     "kubejs.tooltips.flora_wand_basic.2": "并承受它的怒火",
-    "kubejs.tooltips.phantom_eyeball.1": "神圣之杖，神圣之珠，求诸神圣之人，即得神圣之眼",
+    "kubejs.tooltips.phantom_eyeball.1": "神圣之珠，求诸神圣之人，即得神圣之眼",
     "kubejs.tooltips.painting_brush.1": "蘸取古代墨水，从某幅代表三原色的画中获取爆发的灵感",
     "kubejs.tooltips.aesegull_rib_left.1": "它在寻找另一名同伴",
     "kubejs.tooltips.aesegull_rib_left.2": "若在左右对称位置放置有",

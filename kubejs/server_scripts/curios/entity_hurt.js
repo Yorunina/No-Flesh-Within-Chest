@@ -32,10 +32,10 @@ const curiosHurtStrategies = {
         if (item.hasNBT() && item.nbt.friendName) {
             let friend = Utils.server.getPlayer(item.nbt.friendName)
             if (friend && friend.isAlive()) {
-                event.player.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, 0, 0)
+                event.entity.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, 0, 0)
                 curios.setStackInSlot(slot, Item.of('irons_spellbooks:silver_ring'));
-                event.player.setHealth(1)
-                event.cancel();
+                event.entity.setHealth(1)
+                event.amount = 0
             }
         }
     },

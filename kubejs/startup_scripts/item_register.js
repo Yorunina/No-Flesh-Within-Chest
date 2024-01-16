@@ -45,20 +45,18 @@ StartupEvents.registry('item', event => {
     event.create('secret_of_rain').texture('kubejs:item/secret_of_rain').tag('kubejs:secret').maxStackSize(1)
     event.create('secret_of_heart').texture('kubejs:item/secret_of_heart').tag('kubejs:secret').maxStackSize(1)
     event.create('secret_of_bloom').texture('kubejs:item/secret_of_bloom').tag('kubejs:secret').maxStackSize(1)
+    event.create('kubejs:painting_brush').texture('kubejs:item/painting_brush').maxStackSize(1)
+    event.create('lime_powder').texture('kubejs:item/lime_powder')
 
     event.create('ceremonial_knife').texture('kubejs:item/ceremonial_knife').maxStackSize(1)
         .useAnimation('bow')
         .useDuration(itemStack => 40)
         .use((level, player, hand) => {
-            if (player.getHealth() > 10) {
-                return true;
-            }
-            return false;
+            return true;
         })
         .finishUsing((itemstack, level, entity) => {
-            if (entity.getHealth() > 10) {
-                entity.attack(10);
-            }
+            if (level.isClientSide()) return itemstack
+            entity.attack(10);
             entity.potionEffects.add('irons_spellbooks:instant_mana', 1, 2)
             entity.addItemCooldown(itemstack, 20 * 15)
             return itemstack;
@@ -73,12 +71,9 @@ StartupEvents.registry('item', event => {
             return true;
         })
         .finishUsing((itemstack, level, entity) => {
-            if (level.isClientSide()) {
-                return itemstack;
-            }
-
+            if (level.isClientSide()) return itemstack
             if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
-                let friend = level.server.getPlayer(itemstack.nbt.friendName)
+                let friend = Utils.server.getPlayer(itemstack.nbt.friendName)
                 if (friend && friend.isAlive()) {
                     entity.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, 0, 0)
                     entity.addItemCooldown(itemstack, 20 * 10)
@@ -110,7 +105,6 @@ StartupEvents.registry('item', event => {
         .rarity('epic')
 
     event.create('flora_wand_basic').texture('kubejs:item/flora_wand').maxStackSize(1)
-       
 
     event.create('holy_wooden_wand').texture('kubejs:item/holy_wooden_wand')
         .maxStackSize(1)
@@ -137,6 +131,7 @@ StartupEvents.registry('item', event => {
         })
         .useDuration(itemStack => 20)
         .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
             entity.playSound('entity.player.burp')
             entity.eat(level, Item.of('kubejs:candy'))
             entity.addItemCooldown(itemstack, 20 * 30)
@@ -152,6 +147,7 @@ StartupEvents.registry('item', event => {
         })
         .useDuration(itemStack => 20)
         .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
             entity.potionEffects.add('irons_spellbooks:instant_mana', 1, 2)
             entity.addItemCooldown(itemstack, 20 * 60)
             return itemstack;
@@ -165,6 +161,7 @@ StartupEvents.registry('item', event => {
         })
         .useDuration(itemStack => 20)
         .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
             entity.potionEffects.add('kubejs:colorful', 20 * 10, 0)
             entity.addItemCooldown(itemstack, 20 * 60)
             return itemstack;
@@ -183,6 +180,7 @@ StartupEvents.registry('item', event => {
         })
         .useDuration(itemStack => 20)
         .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
             entity.playSound('entity.player.burp')
             let itemMap = global.getPlayerChestCavityItemMap(entity)
             if (itemMap.has('kubejs:forbidden_fruit')) {
@@ -243,7 +241,17 @@ StartupEvents.registry('item', event => {
             return itemstack;
         })
 
-    event.create('kubejs:painting_brush').texture('kubejs:item/painting_brush').maxStackSize(1)
-
+    event.create('kubejs:holy_potion').texture('kubejs:item/holy_potion').maxStackSize(1)
+        .rarity('epic')
+        .useAnimation('eat')
+        .use((level, player, hand) => {
+            return true;
+        })
+        .useDuration(itemStack => 20)
+        .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
+            entity.runCommandSilent(`/lichdom revoke ${entity.name.getString()}`)
+            return;
+        })
 })
 

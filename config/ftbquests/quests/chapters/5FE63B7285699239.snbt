@@ -1,0 +1,513 @@
+{
+	default_hide_dependency_lines: true
+	default_quest_shape: ""
+	filename: "5FE63B7285699239"
+	group: "4F4F4EA8CE67985B"
+	icon: "nameless_trinkets:mysterious_trinket"
+	id: "5FE63B7285699239"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "725B6FE9824EE9B7"
+			tasks: [{
+				id: "19E7494A48B31465"
+				item: "nameless_trinkets:experience_battery"
+				type: "item"
+			}]
+			x: -4.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "6799EBA4381F73A1"
+			tasks: [{
+				id: "72069CC716BD633B"
+				item: "nameless_trinkets:what_magnet"
+				type: "item"
+			}]
+			x: -4.75d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "74D994F3DE6EAD1C"
+			tasks: [{
+				id: "779460B504FD07C8"
+				item: "nameless_trinkets:fertilizer"
+				type: "item"
+			}]
+			x: -4.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "2B38D82D0BD91C84"
+			tasks: [{
+				id: "24E50B9F43EC6A77"
+				item: "nameless_trinkets:broken_magnet"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "3364F886EE2477A6"
+			tasks: [{
+				id: "4F1551D6733191C5"
+				item: "nameless_trinkets:tick"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "139568E37BA85F76"
+			tasks: [{
+				id: "38F4D573C55EABF1"
+				item: "nameless_trinkets:cracked_crown"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "2F7A1FAB163BBEB3"
+			tasks: [{
+				id: "7762AD61D63B0011"
+				item: "nameless_trinkets:blaze_nucleus"
+				type: "item"
+			}]
+			x: -2.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "153BC32DE13A3439"
+			tasks: [{
+				id: "186633F7CF2E865F"
+				item: "nameless_trinkets:fractured_nullstone"
+				type: "item"
+			}]
+			x: -2.75d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "627473F1602D9217"
+			tasks: [{
+				id: "31B57BBCD3294548"
+				item: "nameless_trinkets:miners_soul"
+				type: "item"
+			}]
+			x: -2.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "315C8B4E4C57C364"
+			tasks: [{
+				id: "263D73E013CFD1C8"
+				item: "nameless_trinkets:electric_paddle"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "33420A8F6AF70A4E"
+			tasks: [{
+				id: "0224DD2D2D09B4CB"
+				item: "nameless_trinkets:reverse_card"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "5A5BBBE15B718FD0"
+			tasks: [{
+				id: "20ED5A03D8C10F97"
+				item: "nameless_trinkets:broken_ankh"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "70487E9599289248"
+			tasks: [{
+				id: "1916A2A87C538BE3"
+				item: "nameless_trinkets:experience_magnet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "1F2315E61B9729B1"
+			tasks: [{
+				id: "4BC3F1FD7EE3FEAA"
+				item: "nameless_trinkets:callus"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "4DDE2D42223ACAD1"
+			tasks: [{
+				id: "29CFB7D2AB2AB30F"
+				item: "nameless_trinkets:puffer_fish_liver"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "14313986F8BEAEDB"
+			tasks: [{
+				id: "6196EF1374AAF8C2"
+				item: "nameless_trinkets:rage_mind"
+				type: "item"
+			}]
+			x: -4.75d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "3B761272C4A9C474"
+			tasks: [{
+				id: "497621811D811637"
+				item: "nameless_trinkets:blindfold"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "052C4E52895787B5"
+			tasks: [{
+				id: "11AF6897340497CF"
+				item: "nameless_trinkets:ghast_eye"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "1E8FF83362AAA7B6"
+			tasks: [{
+				id: "69BA5FA5D98CBE35"
+				item: "nameless_trinkets:wooden_stick"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "44A126B92239AE27"
+			tasks: [{
+				id: "66F7D45AC217BEBB"
+				item: "nameless_trinkets:ice_cube"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "564B7ACD0CF2A57A"
+			tasks: [{
+				id: "1895EC942DD8A58F"
+				item: "nameless_trinkets:gills"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "28E705C54F0C2873"
+			tasks: [{
+				id: "5A23066AC96DF097"
+				item: "nameless_trinkets:moon_stone"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "7707EF4E3F48CAEB"
+			tasks: [{
+				id: "2A1D03E01B421DAD"
+				item: "nameless_trinkets:spider_legs"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "02F3E3A5E91CE5AF"
+			tasks: [{
+				id: "6CA75FD90954988D"
+				item: "nameless_trinkets:reforger"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "7E3C7F87FCF9BACB"
+			tasks: [{
+				id: "582781D6FFC2A08F"
+				item: "nameless_trinkets:missing_page"
+				type: "item"
+			}]
+			x: -4.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "7264B72B86ED1DAD"
+			tasks: [{
+				id: "6D2BFEF5D1F38128"
+				item: "nameless_trinkets:speed_force"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "2E81BEA546E9ADA7"
+			tasks: [{
+				id: "70014699EFC51052"
+				item: "nameless_trinkets:lucky_rock"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "540326816AF6EE52"
+			tasks: [{
+				id: "685518699165560B"
+				item: "nameless_trinkets:gods_crown"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "0DA4944976ED32AC"
+			tasks: [{
+				id: "4157566942C09618"
+				item: "nameless_trinkets:sleeping_pills"
+				type: "item"
+			}]
+			x: -2.75d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "4557773575B66FE7"
+			tasks: [{
+				id: "3EDCD90DD06BAEAE"
+				item: "nameless_trinkets:super_magnet"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "5C8E398E989ED1CE"
+			tasks: [{
+				id: "073BC7005E558834"
+				item: "nameless_trinkets:sigil_of_baphomet"
+				type: "item"
+			}]
+			x: 2.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "14B693B96A52522B"
+			tasks: [{
+				id: "5443E6820AA2AD99"
+				item: "nameless_trinkets:amphibious_hands"
+				type: "item"
+			}]
+			x: 2.75d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "13E717092B882CC3"
+			tasks: [{
+				id: "3838C5F42EC083BF"
+				item: "nameless_trinkets:ethereal_wings"
+				type: "item"
+			}]
+			x: 2.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "556BE44F02934E64"
+			tasks: [{
+				id: "43DADFFD063A8095"
+				item: "nameless_trinkets:true_heart_of_the_sea"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "58D242EFBA64B302"
+			tasks: [{
+				id: "007A004A145FF722"
+				item: "nameless_trinkets:tear_of_the_sea"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "0E5BCDFED6945C97"
+			tasks: [{
+				id: "6D2047FAEEF0E7AE"
+				item: "nameless_trinkets:pocket_lightning_rod"
+				type: "item"
+			}]
+			x: -2.75d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "5159FF309613E7AF"
+			tasks: [{
+				id: "376B1E16EE8BB481"
+				item: "nameless_trinkets:fragile_cloud"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "04FF16AAC0353F26"
+			tasks: [{
+				id: "457128E1B95AF638"
+				item: "nameless_trinkets:scarab_amulet"
+				type: "item"
+			}]
+			x: -2.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "4EF1AEA1EDA10D3F"
+			tasks: [{
+				id: "3E89DED2952954F7"
+				item: "nameless_trinkets:light_gloves"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "11228645492FEA35"
+			tasks: [{
+				id: "44A55F45F6454BBC"
+				item: "nameless_trinkets:fate_emerald"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "5F0BACD180CF187B"
+			tasks: [{
+				id: "1A499F67D5C70388"
+				item: "nameless_trinkets:four_leaf_clover"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "62CF6FC8D5E8B10F"
+			tasks: [{
+				id: "5E67A088153CDBBF"
+				item: "nameless_trinkets:dragons_eye"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "6ADF12FAED215B19"
+			tasks: [{
+				id: "5DBF74214A574294"
+				item: "nameless_trinkets:dark_nelumbo"
+				type: "item"
+			}]
+			x: -4.75d
+			y: 7.0d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "4A2BFBBE28B4B50E"
+			tasks: [{
+				id: "74060FCCE75D04B0"
+				item: "nameless_trinkets:nelumbo"
+				type: "item"
+			}]
+			x: -3.75d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			description: ["任意Boss死亡时，都有大概率会掉落一个随机神秘饰品。"]
+			icon: "nameless_trinkets:mysterious_trinket"
+			id: "6E502CA178ED4148"
+			shape: "rsquare"
+			subtitle: "饰品如器官，器官如饰品"
+			tasks: [{
+				id: "75ED69D2A7131EBB"
+				item: "nameless_trinkets:mysterious_trinket"
+				type: "item"
+			}]
+			title: "无名饰品"
+			x: 0.0d
+			y: -1.25d
+		}
+	]
+	title: "饰品：偶尔获得的小奖励"
+}

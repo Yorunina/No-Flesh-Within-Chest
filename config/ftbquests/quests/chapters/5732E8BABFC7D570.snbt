@@ -32,9 +32,15 @@
 			shape: "rsquare"
 			subtitle: "我们对它们的力量知之甚少"
 			tasks: [{
-				id: "07E1699E1DB86E70"
-				title: "我已了解"
-				type: "checkmark"
+				id: "21408700D8FA9177"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:black_book"
+					}
+				}
+				type: "item"
 			}]
 			title: "黑魔法之始"
 			x: 0.0d
@@ -229,7 +235,22 @@
 		}
 		{
 			dependencies: ["5ECDE24F7C16B68D"]
+			description: [
+				"药酿便是围绕坩埚的艺术。"
+				""
+				"在女巫坩埚下方放置&c营火、岩浆块&r即可被加热。在周围放置&b灵魂蜡烛&r供给灵魂能量即可开始你的酿造之旅。"
+				""
+				"&7如果你不了解灵魂蜡烛为何，可以在本章节主线中了解到蜡烛以及诅咒之笼的用法。&r"
+				""
+				"当你将坩埚装满水后，你的酿造之旅就可以开始了。"
+			]
 			id: "3CB4A421BFE6A3BC"
+			rewards: [{
+				id: "0B074A4F964AC58C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "女巫佳酿出产之地"
 			tasks: [{
 				id: "4FA2DF68288B1671"
 				item: "goety:witch_cauldron"
@@ -607,8 +628,6 @@
 				""
 				"但是，相对的，你也会在阳光下陷入&c无穷尽的燃烧&r。"
 				""
-				"巫妖转化的过程是不可逆的，在转化之前&c一定要做好决定&r！"
-				""
 				"{@pagebreak}"
 				"要想进化成巫妖，你必须满足以下的条件："
 				""
@@ -632,6 +651,69 @@
 			}]
 			x: 0.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["020F32F2C7347F32"]
+			description: [
+				"&2原本巫妖的转化是不可逆的&r——但在这个脆弱的世界，不光是你的胸腔，似乎整个世界都被划开了一道口子。"
+				""
+				"现在，你可以通过死灵仪式举行逆仪式，酿造传说中的&b圣灵药&r，解除掉你的巫妖状态。"
+			]
+			id: "7524CD5096DAB88F"
+			rewards: [{
+				id: "5200C51F85814811"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			subtitle: "灵魂逆转"
+			tasks: [{
+				id: "600814F456C725E6"
+				item: "kubejs:holy_potion"
+				type: "item"
+			}]
+			x: -1.75d
+			y: 12.0d
+		}
+		{
+			dependencies: ["3CB4A421BFE6A3BC"]
+			description: [
+				"药酿被分为四个步骤，分别是："
+				"&2容量剂 => 催化剂 => 增强剂 => 结束"
+				"&r"
+				"为了开启一次药酿，你需要投入最基本的容量剂——&6下界疣&r。为了酿造效果更为复杂的药剂，你可以在书本中了解到其他的容量剂，类如绯红菌、砰砰疣等。他们必须&2按照顺序进行添&r加，当添加完后，你可以用鼠标指向坩埚查看当前容量上限。"
+				""
+				"其次便是添加催化剂，这&2决定了药水的效果&r。比如为了酿造砍树药剂，你则需要加入石斧作为催化剂。更多的催化剂可以在书本中看到。他们都有着常规药水难以达到的强大效果。"
+				""
+				"{@pagebreak}"
+				""
+				"最后则需要添加增强剂，他们可以改造药水的属性——如火药可以让药水变为投掷药水、红石粉可以增长持续时间等等。"
+				""
+				"在完成所有工作后，使用&6坩埚巨勺&r即可让坩埚吸收周围灵魂蜡烛中的能量，完成酿造。此时便可以使用玻璃瓶进行装瓶。"
+			]
+			icon: "goety:cauldron_ladle"
+			id: "24119BB18C19CC04"
+			rewards: [{
+				count: 3
+				id: "3EAACF4CB31588B9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "你可以在手册中学习如何酿造"
+			tasks: [
+				{
+					id: "40B361965F3C1AE6"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "7C15922CE823DBD2"
+					item: "goety:cauldron_ladle"
+					type: "item"
+				}
+			]
+			title: "开始酿造！"
+			x: 5.75d
+			y: 0.0d
 		}
 	]
 	title: "诡厄巫法：潜藏在黑魔法的力量"

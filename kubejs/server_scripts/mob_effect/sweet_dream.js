@@ -31,7 +31,7 @@ function sweetDreamPlayerHurtByOthers(event, data) {
             if (itemMap.has('kubejs:candy_pancreas')) {
                 player.potionEffects.add('minecraft:absorption', 20 * 30, 4);
             }
-            event.cancel();
+            event.amount = 0
             return;
         }
         let duration = Math.floor(sweetDreamPotion.getDuration() - damage * 20 * 2 / (sweetDreamPotion.getAmplifier() + 1));
@@ -39,7 +39,7 @@ function sweetDreamPlayerHurtByOthers(event, data) {
         let amplifier = sweetDreamPotion.getAmplifier();
         player.removeEffect('kubejs:sweet_dream')
         player.potionEffects.add('kubejs:sweet_dream', duration, amplifier);
-        event.cancel();
+        event.amount = 0
         return;
     }
 
@@ -56,8 +56,8 @@ function sweetDreamPlayerHurtByOthers(event, data) {
         if (itemMap.has('kubejs:magic_spine')) {
             amplifierMuti = amplifierMuti + Math.floor(itemMap.get('kubejs:magic_spine').length / 2)
         }
-        if (!event.player.hasEffect('kubejs:sweet_dream')) {
-            event.player.potionEffects.add('kubejs:sweet_dream', 20 * 5 * durationMuti, amplifierMuti);
+        if (!player.hasEffect('kubejs:sweet_dream')) {
+            player.potionEffects.add('kubejs:sweet_dream', 20 * 10 * durationMuti, amplifierMuti);
         }
     }
 }

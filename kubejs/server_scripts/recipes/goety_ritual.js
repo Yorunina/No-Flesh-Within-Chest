@@ -32,7 +32,6 @@ ServerEvents.recipes(event => {
     function registerCustomRecipe(recipeModel) {
         event.custom(recipeModel)
     }
-    // todo revert lich method
 
-    // registerCustomRecipe(new GoetyRitualRecipe('lich', [Ingredient.of('minecraft:honey_bottle')], Item.of('minecraft:glass_bottle'), Item.of('goety:unholy_blood')).setSoulCost(1000))
+    registerCustomRecipe(new GoetyRitualRecipe('lich', [Ingredient.of('hexerei:crow_ankh_amulet'),Ingredient.of('minecraft:nether_star'), Ingredient.of('minecraft:enchanted_golden_apple'), Ingredient.of('minecraft:totem_of_undying'), Ingredient.of('goety:soul_ruby'), Ingredient.of('nameless_trinkets:unknown_fragment'), Ingredient.of('irons_spellbooks:holy_rune'), Ingredient.of('kubejs:holy_eyeball'), Ingredient.of('minecraft:heart_of_the_sea'), Ingredient.of('unusualprehistory:ammonite_flask'), Ingredient.of('alexsmobs:soul_heart'), Ingredient.of('hexerei:selenite_shard')], Item.of('minecraft:glass_bottle'), Item.of('kubejs:holy_potion')).setSoulCost(1000))
 })

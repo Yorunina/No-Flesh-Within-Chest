@@ -57,6 +57,22 @@ ServerEvents.recipes(event => {
 		W: 'createaddition:iron_wire',
 	})
 
+	event.recipes.create.mechanical_crafting('kubejs:machine_clockwork', [
+		'     A ',
+		'    A A',
+		' E  BAB',
+		'DDDDDC ',
+		' E  BAB',
+		'    A A',
+		'     A '
+	], {
+		A: 'create:brass_sheet',
+		B: 'createaddition:gold_wire',
+		C: 'goety:philosophers_stone',
+		D: 'createaddition:brass_rod',
+		E: 'create:brass_nugget'
+	})
+
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:candy_heart')
 	], 'kubejs:heart_template', [
@@ -136,6 +152,8 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.crushing([Item.of('3x minecraft:raw_iron'), Item.of('2x minecraft:raw_gold').withChance(0.2), Item.of('2x minecraft:raw_copper').withChance(0.4), Item.of('2x create:raw_zinc').withChance(0.3), Item.of('2x minecraft:lapis_lazuli').withChance(0.25)], 'kubejs:common_mineral_cluster').processingTime(100)
 
+	event.recipes.create.crushing([Item.of('8x kubejs:lime_powder'), Item.of('2x kubejs:lime_powder').withChance(0.3)], 'create:limestone').processingTime(100)
+
 	event.recipes.create.crushing([Item.of('2x kubejs:silver_ingot'), Item.of('3x createoreexcavation:raw_redstone').withChance(0.4), Item.of('2x createoreexcavation:raw_emerald').withChance(0.3), Item.of('2x createoreexcavation:raw_diamond').withChance(0.3), Item.of('minecraft:netherite_scrap').withChance(0.15)], 'kubejs:rare_mineral_cluster').processingTime(100)
 
 	event.recipes.create.crushing([Item.of('minecraft:netherite_scrap'), Item.of('5x minecraft:blaze_powder').withChance(0.5), Item.of('5x create:powdered_obsidian').withChance(0.4), Item.of('5x minecraft:glowstone_dust').withChance(0.45), Item.of('8x minecraft:quartz').withChance(0.6), Item.of('kubejs:nether_star_shard').withChance(0.02)], 'minecraft:nether_star').processingTime(300)
@@ -169,4 +187,25 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_heart', ['kubejs:incomplete_rose_quartz_heart', 'minecraft:rose_bush']),
 		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_heart', ['kubejs:incomplete_rose_quartz_heart', 'create:polished_rose_quartz'])
 	]).transitionalItem('kubejs:incomplete_rose_quartz_heart').loops(5)
+
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:lava_life_cycle_system').withChance(75.0),
+		Item.of('chestcavity:iron_scrap').withChance(25.0)
+	], 'art_of_forging:forged_steel_ingot', [
+		event.recipes.createPressing('kubejs:incomplete_lava_life_cycle_system', 'kubejs:incomplete_lava_life_cycle_system'),
+		event.recipes.createPressing('kubejs:incomplete_lava_life_cycle_system', 'kubejs:incomplete_lava_life_cycle_system'),
+		event.recipes.createDeploying('kubejs:incomplete_lava_life_cycle_system', ['kubejs:incomplete_lava_life_cycle_system', 'create:fluid_tank']),
+		event.recipes.createDeploying('kubejs:incomplete_lava_life_cycle_system', ['kubejs:incomplete_lava_life_cycle_system', 'create:precision_mechanism']),
+		event.recipes.create.filling('kubejs:incomplete_lava_life_cycle_system', ['kubejs:incomplete_lava_life_cycle_system', Fluid.of('minecraft:lava').withAmount(1000)])
+	]).transitionalItem('kubejs:incomplete_lava_life_cycle_system').loops(3)
+
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:revolution_steam_engine').withChance(90.0),
+		Item.of('chestcavity:iron_scrap').withChance(10.0)
+	], 'create:steam_engine', [
+		event.recipes.createDeploying('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', 'art_of_forging:forged_steel_ingot']),
+		event.recipes.createDeploying('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', 'kubejs:relic_metal_plate']),
+		event.recipes.create.filling('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', Fluid.of('minecraft:water').withAmount(3000)]),
+		event.recipes.create.filling('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', Fluid.of('minecraft:lava').withAmount(1000)])
+	]).transitionalItem('kubejs:incomplete_revolution_steam_engine').loops(3)
 })

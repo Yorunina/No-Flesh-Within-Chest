@@ -1,26 +1,44 @@
 {
-	icon: "somebosses:burning_volcanic_rock"
+	icon: {
+		Count: 1b
+		id: "unusualprehistory:sloth_pouch_armor"
+		tag: {
+			Damage: 0
+		}
+	}
 	id: "39872999D79B350B"
 	loot_size: 1
 	order_index: 4
 	rewards: [
 		{
 			auto: "invisible"
-			icon: "somebosses:burning_volcanic_rock"
+			icon: {
+				Count: 1b
+				id: "unusualprehistory:sloth_pouch_armor"
+				tag: {
+					Damage: 0
+				}
+			}
 			ignore_reward_blocking: true
-			stage: "citadel_power_coming"
-			title: "开启全局灾变"
+			stage: "all_armor_monster"
+			title: "开启全局护甲"
 			type: "gamestage"
 		}
 		{
 			auto: "invisible"
-			icon: "somebosses:burning_volcanic_rock"
+			icon: {
+				Count: 1b
+				id: "unusualprehistory:sloth_pouch_armor"
+				tag: {
+					Damage: 0
+				}
+			}
 			ignore_reward_blocking: true
 			remove: true
-			stage: "citadel_power_coming"
-			title: "关闭全局灾变"
+			stage: "all_armor_monster"
+			title: "关闭全局护甲"
 			type: "gamestage"
 		}
 	]
-	title: "灾变是否普遍出现"
+	title: "怪物总将携带护甲"
 }

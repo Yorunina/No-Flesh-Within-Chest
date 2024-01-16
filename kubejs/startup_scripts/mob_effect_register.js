@@ -75,6 +75,10 @@ StartupEvents.registry('mob_effect', event => {
             global.powerOfCitadelEffectTick(entity, lvl)
         })
         .color(Color.DARK_RED)
+
+    event.create('arrow_damage_boost')
+        .beneficial()
+        .color(Color.RED)
 })
 
 

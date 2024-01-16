@@ -1163,18 +1163,21 @@
 		}
 		{
 			dependencies: ["1884740B0724DE70"]
-			id: "7F14FD199500DEA0"
-			tasks: [{
-				id: "1D8FEF00BCE069E9"
-				item: {
-					Count: 1b
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "goety:black_book"
-					}
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "goety:black_book"
 				}
-				type: "item"
+			}
+			id: "7F14FD199500DEA0"
+			shape: "rsquare"
+			tasks: [{
+				id: "00EB4C16061BDB00"
+				title: "我已了解"
+				type: "checkmark"
 			}]
+			title: "亡灵与灵魂魔法"
 			x: 3.25d
 			y: 1.75d
 		}

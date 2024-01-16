@@ -43,6 +43,8 @@ const bossTypeList = [
     'meetyourfight:rosalyne',
     'meetyourfight:swampjaw',
     'meetyourfight:dame_fortuna',
+    'invasioncodered:gashslit',
+    'irons_spellbooks:dead_king_corpse',
 ]
 
 const bossesOfMassDestructionBossTypeList = [

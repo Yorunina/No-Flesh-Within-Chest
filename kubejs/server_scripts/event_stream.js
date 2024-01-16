@@ -20,6 +20,7 @@ global.playerDamage = event => {
     let data = new EntityHurtCustomModel()
     organEntityHurtByPlayer(event, data)
     burningHeartEntityHurtByPlayer(event, data)
+    arrowDamageBoostEntityHurtByPlayer(event, data)
     executedEntityHurtByPlayer(event, data)
     vampiricEntityHurtByPlayer(event, data)
     // commonEntityHurtByPlayer(event, data)

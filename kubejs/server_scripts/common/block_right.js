@@ -10,7 +10,7 @@ BlockEvents.rightClicked('minecraft:sand', event => {
 BlockEvents.rightClicked('minecraft:flowering_azalea', event => {
     if (event.player.getMainHandItem() == 'kubejs:flora_wand'
         && event.player.getOffhandItem() == 'alexsmobs:potted_flutter') {
-        event.player.offHandItem.count -= 1
+        event.player.offHandItem.shrink(1)
         event.player.give(Item.of('kubejs:flower_heart'))
     }
 })
@@ -20,7 +20,7 @@ BlockEvents.rightClicked('minecraft:diamond_block', event => {
         && event.level.isThundering()
         && event.player.hasEffect('minecraft:luck')
     ) {
-        event.player.mainHandItem.count -= 1
+        event.player.mainHandItem.shrink(1)
         event.player.give(Item.of('kubejs:diamond_bottle'))
     }
 })

@@ -918,13 +918,15 @@
 			subtitle: "圆石即是正义"
 			tasks: [
 				{
-					id: "2F39BDBE759941EB"
-					title: "矿物自由！"
-					type: "checkmark"
-				}
-				{
 					id: "02E3B2107DC3FEFF"
-					item: "minecraft:red_sand"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:sand"
+						}
+					}
+					title: "Any #forge:sand"
 					type: "item"
 				}
 				{
@@ -933,6 +935,7 @@
 					type: "item"
 				}
 			]
+			title: "矿石自由"
 			x: -6.5d
 			y: -1.0d
 		}

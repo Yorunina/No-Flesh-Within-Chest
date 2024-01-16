@@ -233,7 +233,6 @@ const organPlayerDamageOnlyStrategies = {
         if (event.source.type != 'arrow') return
         let entityHeight = event.entity.bbHeight
         let arrowHeight = event.source.immediate.y - event.entity.y
-        event.source.player.tell(Math.min(arrowHeight/entityHeight, 1) * 0.5 + 1)
-        event.amount = event.amount * (Math.min(arrowHeight/entityHeight, 1) * 0.5 + 1)
+        event.amount = event.amount * (Math.min(arrowHeight/entityHeight, 1.2) * 0.5 + 1)
     },
 };

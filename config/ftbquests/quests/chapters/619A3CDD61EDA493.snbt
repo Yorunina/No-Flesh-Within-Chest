@@ -114,22 +114,28 @@
 		{
 			can_repeat: true
 			dependencies: ["0C769BB94D282CC6"]
-			description: ["被&6灾变降临&r效果的怪物攻击后玩家将在短时间内无法使用物品、放置方块、进行攻击。"]
-			icon: "somebosses:burning_volcanic_rock"
-			id: "2CFAA13438E72B38"
+			description: ["怪物会随机从铁甲、锁链甲、钻石甲、下界合金甲间随机选取盔甲穿戴。"]
+			icon: {
+				Count: 1b
+				id: "unusualprehistory:sloth_pouch_armor"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "57C81F3D5541D23B"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5C8DC997CE7A738F"
+				id: "2E57794D85D7B642"
 				table_id: 4145327722741839115L
 				type: "choice"
 			}]
-			subtitle: "怪物将有50%概率携带灾变效果"
+			subtitle: "怪物总将携带护甲出现"
 			tasks: [{
-				id: "0B42DCA173E8BD65"
-				title: "怪物启用灾变效果？"
+				id: "6E0CE642C3D316F2"
+				title: "我已了解"
 				type: "checkmark"
 			}]
-			title: "灾变降临"
+			title: "怪物总将携带护甲？"
 			x: 2.75d
 			y: 2.25d
 		}

@@ -22,7 +22,7 @@ function powerOfCitadelPlayerHurtByOthers(event, data) {
  * @returns 
  */
 global.powerOfCitadelEffectTick = (entity, lvl) => {
-    if (!entity.server) return;
+    if (entity.getLevel().clientside) return
     if (entity.age % 20 == 0) {
         if (entity.isPlayer()) {
             entity.removeEffect('kubejs:power_of_citadel')

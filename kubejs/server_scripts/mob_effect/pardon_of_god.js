@@ -63,7 +63,7 @@ function pardonOfGodLevelEffect(event, data, amplifier) {
  * @returns 
  */
 global.glimpseOfGodEffectTick = (entity, lvl) => {
-    if (!entity.server) return;
+    if (entity.getLevel().clientside) return
     if (entity.age % 20 == 0) {
         entity.heal(entity.getMaxHealth() * 0.01)
         if (entity.health < entity.maxHealth * 0.67) {
@@ -86,7 +86,7 @@ global.glimpseOfGodEffectTick = (entity, lvl) => {
  * @returns 
  */
 global.gazeOfGodEffectTick = (entity, lvl) => {
-    if (!entity.server) return;
+    if (entity.getLevel().clientside) return
     if (entity.age % 20 == 0) {
         entity.heal(entity.getMaxHealth() * 0.01)
         if (entity.health < entity.maxHealth * 0.33) {
@@ -109,7 +109,7 @@ global.gazeOfGodEffectTick = (entity, lvl) => {
  * @returns 
  */
 global.glareOfGodEffectTick = (entity, lvl) => {
-    if (!entity.server) return;
+    if (entity.getLevel().clientside) return
     if (entity.age % 20 == 0) {
         entity.heal(entity.getMaxHealth() * 0.01)
         if (entity.getEffect('kubejs:glare_of_god').getDuration() < 41) {

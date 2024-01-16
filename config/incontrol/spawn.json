@@ -27,33 +27,15 @@
     "continue": true
   },
   {
-    "random": 0.5,
-    "gamestage": "citadel_power_coming",
+    "gamestage": "all_armor_monster",
     "onjoin": true,
     "hostile": true,
     "result": "allow",
-    "potion": "kubejs:power_of_citadel,72000,0",
+    "armorhelmet": ["minecraft:netherite_helmet", "minecraft:diamond_helmet", "minecraft:iron_helmet", "minecraft:chainmail_helmet"],
+    "armorchest": ["minecraft:netherite_chestplate", "minecraft:diamond_chestplate", "minecraft:iron_chestplate", "minecraft:chainmail_chestplate"],
+    "armorlegs": ["minecraft:netherite_leggings", "minecraft:diamond_leggings", "minecraft:iron_leggings", "minecraft:chainmail_leggings"],
+    "armorboots": ["minecraft:netherite_boots", "minecraft:diamond_boots", "minecraft:iron_boots", "minecraft:chainmail_boots"],
     "continue": true
-  },
-  {
-    "random": 0.5,
-    "onjoin": true,
-    "hostile": true,
-    "result": "allow",
-    "helditem": [],
-    "armorhelmet": ["minecraft:iron_helmet", "minecraft:golden_helmet"],
-    "armorchest": ["minecraft:iron_helmet", "minecraft:golden_helmet"],
-    "armorlegs": ["minecraft:iron_helmet", "minecraft:golden_helmet"],
-    "armorboots": ["minecraft:iron_helmet", "minecraft:golden_helmet"],
-    "continue": true
-  },
-  {
-    "mob": ["minecraft:zombie"],
-    "gamestage": "part_only_boss_affected",
-    "onjoin": true,
-    "hostile": true,
-    "result": "allow",
-    "continue": false
   },
   {
     "gamestage": "setting_monster_health_bonus_2",

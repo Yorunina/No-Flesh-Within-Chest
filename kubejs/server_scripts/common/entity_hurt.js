@@ -16,9 +16,6 @@ function commonEntityHurtByPlayer(event, data) {
  * @returns 
  */
 function highPriorityPlayerHurtByOthers(event, data) {
-    if (event.entity.isInvulnerable()) {
-        return false
-    }
     if (event.source.getType() == 'heartstop') {
         return false
     }

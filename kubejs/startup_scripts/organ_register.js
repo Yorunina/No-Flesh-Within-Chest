@@ -829,14 +829,14 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:lamellar_armor_piece')
-        .addScore('defense', 1.5)
+        .addScore('defense', 2)
         .addScore('speed', -0.25)
         .build())
         .texture('kubejs:item/organs/machine/lamellar_armor_piece')
         .tag('kubejs:machine');
 
     registerOrgan(new Organ('kubejs:chain_armor_piece')
-        .addScore('defense', 1.25)
+        .addScore('defense', 1.75)
         .addScore('speed', -0.125)
         .build())
         .texture('kubejs:item/organs/machine/chain_armor_piece')

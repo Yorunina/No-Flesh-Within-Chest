@@ -48,6 +48,6 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(new CookingRecipe(Item.of('minecraft:bowl'), [Ingredient.of('#kubejs:lung'), Ingredient.of('#kubejs:lung'), Item.of('extradelight:cooking_oil'), Item.of('extradelight:grated_ginger')], Item.of('kubejs:mr_and_mrs_smith').withCount(1)).setCookingtime(60 * 20))
 
-    registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('extradelight:candy_cane_red_block'), Item.of('extradelight:candy_cane_green_block'), Item.of('extradelight:candy_cane_blue_block'), Item.of('kubejs:syrup_bucket')], Item.of('kubejs:candy_canes_wand').withCount(1)).setCookingtime(60 * 20))
+    registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('extradelight:candy_cane_red_block'), Item.of('extradelight:candy_cane_green_block'), Item.of('extradelight:candy_cane_blue_block')], Item.of('kubejs:candy_canes_wand').withCount(1)).setCookingtime(60 * 20))
 
 })

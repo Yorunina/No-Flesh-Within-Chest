@@ -12,3 +12,6 @@ net.minecraft.client.gui.screens.inventory.CreativeModeInventoryScreen {
 net.minecraft.client.gui.screens.PauseScreen {
 }
 
+net.minecraft.client.gui.screens.OptionsScreen {
+}
+
