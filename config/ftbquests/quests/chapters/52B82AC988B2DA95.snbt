@@ -24,7 +24,7 @@
 				count: 4
 				id: "2319A4D71F76480F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -59,7 +59,7 @@
 					count: 2
 					id: "19AFEF778BCA0ADB"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_gold"
 						tag: { }
 					}
@@ -89,7 +89,7 @@
 					consume_items: true
 					id: "61269F785AE2CB64"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -112,7 +112,7 @@
 			rewards: [{
 				id: "20A85C308C640405"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -146,7 +146,7 @@
 				count: 3
 				id: "361C99A0FA76F713"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -183,7 +183,7 @@
 				count: 3
 				id: "01F5CA3B2A4C633C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -237,7 +237,7 @@
 				count: 2
 				id: "28DA0E75454D98D6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -252,6 +252,324 @@
 			title: "朋友标识"
 			x: -1.75d
 			y: 3.75d
+		}
+		{
+			dependencies: ["4B92B6F9C9EDC46E"]
+			description: [
+				"拥有着与常规剑类武器相似的性能，最短的攻击距离，一定的横扫攻击，较快的攻击速度。"
+				""
+				"适合喜欢原版武器手感的玩家。"
+			]
+			id: "71E8F25467157B23"
+			rewards: [{
+				id: "16CA015A57FA44D3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "中规中矩的武器"
+			tasks: [{
+				id: "3F799555E56CF0DB"
+				item: {
+					Count: 1
+					id: "weaponmaster:wm_broadsword"
+					tag: {
+						Ability: "none"
+						AicData: {
+							AgressiveAbility: 25.0f
+							AttackHostile: 25.0f
+							AttackPassive: 25.0f
+							Farming: 0.0f
+							Fishing: 0.0f
+							LowDurability: 5.0f
+							LowHealth: 5.0f
+							Mining: 0.0f
+							NearHostile: 5.0f
+							PassiveAbility: 25.0f
+							Respawn: 0.0f
+							TakeDamage: 5.0f
+							VersionNumber: 2
+						}
+						AicMood: ""
+						AicPersonality: ""
+						BonusDucks: 0
+						CoreWeaponUUID: [I;
+							2021018507
+							-1881259459
+							-1131749424
+							1388561065
+						]
+						CoreWeaponlevels: {
+							f29bc625-66b3-4252-863f-c66cd87d1380: {
+								AttackLevel: 0
+								DefenseLevel: 0
+								MobilityLevel: 0
+								UtilityLevel: 0
+							}
+						}
+						CoreWeaponlevelsPlayerless: { }
+						Damage: 0
+						LastAicMessageTime: 0L
+						PartList: {
+							blade: "iron0"
+							guard: "iron0"
+							handle: "default"
+						}
+						PhanToolStatus: 0b
+						PreviousPlayerUUID: "f29bc625-66b3-4252-863f-c66cd87d1380"
+						Rerolls: 0
+						SelectedLevel: "AttackLevel"
+						UnlockedAICs: { }
+						UnlockedAbilities: "none"
+						WeaponID: "sword"
+						display: {
+							Name: "{\"text\":\"Broadsword\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "宽剑"
+			x: 2.25d
+			y: 1.25d
+		}
+		{
+			dependencies: ["4B92B6F9C9EDC46E"]
+			description: [
+				"刺剑拥有着最快的攻击速度，但代价便是没有任何的横扫攻击效果，且攻击距离仅仅比宽剑好一点点。"
+				""
+				"但刺剑可以搭配各种与近战特效相关的器官，打出不俗的效果。"
+			]
+			id: "6BDC3F62E25B4614"
+			rewards: [{
+				id: "34512ECB18E579AE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "唯快不破"
+			tasks: [{
+				id: "6181DFB68557736F"
+				item: {
+					Count: 1
+					id: "weaponmaster:wm_rapier"
+					tag: {
+						Ability: "none"
+						AicData: {
+							AgressiveAbility: 25.0f
+							AttackHostile: 25.0f
+							AttackPassive: 25.0f
+							Farming: 0.0f
+							Fishing: 0.0f
+							LowDurability: 5.0f
+							LowHealth: 5.0f
+							Mining: 0.0f
+							NearHostile: 5.0f
+							PassiveAbility: 25.0f
+							Respawn: 0.0f
+							TakeDamage: 5.0f
+							VersionNumber: 2
+						}
+						AicMood: ""
+						AicPersonality: ""
+						BonusDucks: 0
+						CoreWeaponUUID: [I;
+							-1780722738
+							1837255725
+							-1336349047
+							-304297163
+						]
+						CoreWeaponlevels: {
+							f29bc625-66b3-4252-863f-c66cd87d1380: {
+								AttackLevel: 0
+								DefenseLevel: 0
+								MobilityLevel: 0
+								UtilityLevel: 0
+							}
+						}
+						CoreWeaponlevelsPlayerless: { }
+						Damage: 0
+						LastAicMessageTime: 0L
+						PartList: {
+							blade: "iron0"
+							guard: "iron0"
+							handle: "default"
+						}
+						PhanToolStatus: 0b
+						PreviousPlayerUUID: "f29bc625-66b3-4252-863f-c66cd87d1380"
+						Rerolls: 0
+						SelectedLevel: "AttackLevel"
+						UnlockedAICs: { }
+						UnlockedAbilities: "none"
+						WeaponID: "rapier"
+						display: {
+							Name: "{\"text\":\"Rapier\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "刺剑"
+			x: 2.25d
+			y: 2.75d
+		}
+		{
+			dependencies: ["4B92B6F9C9EDC46E"]
+			description: [
+				"镰刀拥有着全游戏最大的横扫攻击范围，同时也有着相对较远的攻击距离——仅次于长戟。"
+				""
+				"在面对大量的敌人时，使用镰刀能够轻松地造成相当可观的伤害。"
+				""
+				"同时完成某些器官进化的伤害任务时，使用镰刀可能是最快速的选项之一。"
+			]
+			id: "676512BA0A3EA2D1"
+			rewards: [{
+				id: "71D112C5719E5ACE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "收割灵魂的武器"
+			tasks: [{
+				id: "17C6446F0E116ED4"
+				item: {
+					Count: 1
+					id: "weaponmaster:wm_broadswordlarge"
+					tag: {
+						Ability: "none"
+						AicData: {
+							AgressiveAbility: 25.0f
+							AttackHostile: 25.0f
+							AttackPassive: 25.0f
+							Farming: 0.0f
+							Fishing: 0.0f
+							LowDurability: 5.0f
+							LowHealth: 5.0f
+							Mining: 0.0f
+							NearHostile: 5.0f
+							PassiveAbility: 25.0f
+							Respawn: 0.0f
+							TakeDamage: 5.0f
+							VersionNumber: 2
+						}
+						AicMood: ""
+						AicPersonality: ""
+						BonusDucks: 0
+						CoreWeaponUUID: [I;
+							110135072
+							911035529
+							-1189592933
+							-262846751
+						]
+						CoreWeaponlevels: {
+							f29bc625-66b3-4252-863f-c66cd87d1380: {
+								AttackLevel: 0
+								DefenseLevel: 0
+								MobilityLevel: 0
+								UtilityLevel: 0
+							}
+						}
+						CoreWeaponlevelsPlayerless: { }
+						Damage: 0
+						LastAicMessageTime: 0L
+						PartList: {
+							blade: "iron0"
+							guard: "iron0"
+							handle: "basic"
+						}
+						PhanToolStatus: 0b
+						PreviousPlayerUUID: "f29bc625-66b3-4252-863f-c66cd87d1380"
+						Rerolls: 0
+						SelectedLevel: "AttackLevel"
+						UnlockedAICs: { }
+						UnlockedAbilities: "none"
+						WeaponID: "scythe"
+						display: {
+							Name: "{\"text\":\"Scythe\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "镰刀"
+			x: 2.25d
+			y: 4.25d
+		}
+		{
+			dependencies: ["4B92B6F9C9EDC46E"]
+			description: [
+				"拥有着最长的攻击距离，在某些Boss战斗中，一丝丝的攻击距离便可提供巨大的战斗优势。"
+				""
+				"唯一的缺点便是其攻击速度较慢——但这也方便了某些单次高伤的效果，能够借助其基础的高伤害面板打出不俗的输出。"
+			]
+			id: "744396A152946AE7"
+			rewards: [{
+				id: "28EDB0AFC23AD9A4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "一寸长一寸强"
+			tasks: [{
+				id: "05190F65BDFD8849"
+				item: {
+					Count: 1
+					id: "weaponmaster:wm_rapierlarge"
+					tag: {
+						Ability: "none"
+						AicData: {
+							AgressiveAbility: 25.0f
+							AttackHostile: 25.0f
+							AttackPassive: 25.0f
+							Farming: 0.0f
+							Fishing: 0.0f
+							LowDurability: 5.0f
+							LowHealth: 5.0f
+							Mining: 0.0f
+							NearHostile: 5.0f
+							PassiveAbility: 25.0f
+							Respawn: 0.0f
+							TakeDamage: 5.0f
+							VersionNumber: 2
+						}
+						AicMood: ""
+						AicPersonality: ""
+						BonusDucks: 0
+						CoreWeaponUUID: [I;
+							872272325
+							-747485479
+							-1568508959
+							-2086797240
+						]
+						CoreWeaponlevels: {
+							f29bc625-66b3-4252-863f-c66cd87d1380: {
+								AttackLevel: 0
+								DefenseLevel: 0
+								MobilityLevel: 0
+								UtilityLevel: 0
+							}
+						}
+						CoreWeaponlevelsPlayerless: { }
+						Damage: 0
+						LastAicMessageTime: 0L
+						PartList: {
+							blade: "iron0"
+							guard: "iron0"
+							handle: "basic"
+						}
+						PhanToolStatus: 0b
+						PreviousPlayerUUID: "f29bc625-66b3-4252-863f-c66cd87d1380"
+						Rerolls: 0
+						SelectedLevel: "AttackLevel"
+						UnlockedAICs: { }
+						UnlockedAbilities: "none"
+						WeaponID: "polearm"
+						display: {
+							Name: "{\"text\":\"Polearm\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "戟（长柄武器）"
+			x: 2.25d
+			y: 5.75d
 		}
 	]
 	title: "武器大师：陪伴一生的伙伴"

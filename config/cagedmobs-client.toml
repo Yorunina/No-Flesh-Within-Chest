@@ -1,0 +1,12 @@
+
+#Client side config for CagedMobs. Do not change when shipping in ModPacks!
+[client]
+	#Disables environments rendering inside cages to save on performance.
+	disableEnvsRender = false
+	#Disables entities models rendering inside cages to save on performance.
+	disableEntitiesRender = false
+	#Disables entities growth progress rendering inside cages and keeps the size of the entity inside the cage always the same.
+	disableGrowthRender = false
+	#Disables particles emitted by the cage upgrades
+	disableUpgradesParticles = false
+

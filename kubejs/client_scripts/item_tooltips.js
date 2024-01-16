@@ -81,9 +81,9 @@ ItemEvents.tooltip((tooltip) => {
     })
     tooltip.addAdvanced('kubejs:flora_wand_basic', (item, advanced, text) => {
         if (tooltip.shift) {
-            text.add(Text.red({ "translate": "kubejs.tooltips.flora_wand_basic.2" }));       
+            text.add(Text.red({ "translate": "kubejs.tooltips.flora_wand_basic.2" }));
         } else {
-            text.add(Text.green({ "translate": "kubejs.tooltips.flora_wand_basic.1" }));        
+            text.add(Text.green({ "translate": "kubejs.tooltips.flora_wand_basic.1" }));
         }
     })
     tooltip.addAdvanced('kubejs:phantom_eyeball', (item, advanced, text) => {

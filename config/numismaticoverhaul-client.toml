@@ -1,0 +1,8 @@
+
+[client]
+	example = true
+	#Range: 0 ~ 1000
+	pursePositionX = 129
+	#Range: 0 ~ 2000
+	pursePositionY = 20
+

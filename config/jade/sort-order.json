@@ -42,6 +42,8 @@
   "fluiddrawerslegacy:controller": null,
   "fluiddrawerslegacy:controller_slave": null,
   "fluiddrawerslegacy:fluiddrawer": null,
+  "cagedmobs:hide_container_items": null,
+  "cagedmobs:cagedmobs_jade": null,
   "waystones:waystone": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
@@ -84,5 +86,7 @@
   "jade:block_face": null,
   "fluiddrawerslegacy:controller": null,
   "fluiddrawerslegacy:controller_slave": null,
-  "fluiddrawerslegacy:fluiddrawer": null
+  "fluiddrawerslegacy:fluiddrawer": null,
+  "cagedmobs:hide_container_items": null,
+  "cagedmobs:cagedmobs_jade": null
 }

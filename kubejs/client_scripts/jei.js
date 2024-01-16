@@ -3,7 +3,7 @@ JEIEvents.information(event => {
     event.addItem('kubejs:fire_gem', Text.black({ "translate": "kubejs.jei.fire_gem.1" }))
     event.addItem('kubejs:magic_spine', Text.black({ "translate": "kubejs.jei.magic_spine.1" }))
     event.addItem('kubejs:magic_vision', Text.black({ "translate": "kubejs.jei.magic_vision.1" }))
-    
+
     event.addItem(Ingredient.of('#kubejs:evolution'), [Text.black({ "translate": "kubejs.jei.evolution.1" })])
     event.addItem('kubejs:lucky_cookie_organ', Text.black({ "translate": "kubejs.jei.lucky_cookie_organ.1" }))
     event.addItem('kubejs:unholy_grail', Text.black({ "translate": "kubejs.jei.unholy_grail.1" }))
@@ -25,5 +25,5 @@ JEIEvents.information(event => {
     event.addItem('kubejs:parasitic_elf', Text.black({ "translate": "kubejs.jei.parasitic_elf.1" }))
     event.addItem('kubejs:diamond_bottle', Text.black({ "translate": "kubejs.jei.diamond_bottle.1" }))
     event.addItem('kubejs:blood_moon_wand', Text.black({ "translate": "kubejs.jei.blood_moon_wand.1" }))
-
+    event.addItem('kubejs:cream_cookie_heart', Text.black({ "translate": "kubejs.jei.cream_cookie_heart.1" }))
 })

@@ -4,7 +4,7 @@
 	filename: "iron"
 	group: "0241B51B931E1ED2"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "irons_spellbooks:diamond_spell_book"
 		tag: {
 			ISB_spellbook: {
@@ -71,7 +71,7 @@
 				count: 5
 				id: "3C8CEE1968A166EE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -134,7 +134,7 @@
 				count: 5
 				id: "7688575E108D773B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -191,7 +191,7 @@
 				count: 5
 				id: "3BBBD6F7EBBF51C3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -218,7 +218,7 @@
 				"除此之外，佩戴&6戒指&r也是一个有效提高魔力上限的手段。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "irons_spellbooks:priest_chestplate"
 				tag: {
 					Damage: 0
@@ -230,7 +230,7 @@
 					count: 5
 					id: "1167A7EFFF565060"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -239,7 +239,7 @@
 				{
 					id: "66BD271BAB49C60F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:pumpkin_helmet"
 						tag: {
 							Damage: 0
@@ -292,7 +292,7 @@
 				"在本整合包中，&2铁魔法所造成的伤害才被认为是魔法伤害&r，因此，类如神恩Boss的魔法免疫或者器官的魔法伤害强化，都是主要针对铁魔法的相关属性而设置。原版的类如药水伤害并不包含在其中。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "irons_spellbooks:diamond_spell_book"
 				tag: {
 					ISB_spellbook: {
@@ -305,7 +305,7 @@
 			rewards: [{
 				id: "32487823F6BEACB7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "irons_spellbooks:iss_guide_book"
@@ -375,7 +375,7 @@
 			tasks: [{
 				id: "34488BD2C9B4AB69"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:tarnished_helmet"
 					tag: {
 						Damage: 0
@@ -403,7 +403,7 @@
 			tasks: [{
 				id: "3AB38AF164FBB891"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:wayward_compass"
 					tag: { }
 				}
@@ -425,7 +425,7 @@
 			tasks: [{
 				id: "344B36EE13BBAA34"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:netherite_spell_book"
 					tag: {
 						ISB_spellbook: {
@@ -456,7 +456,7 @@
 			tasks: [{
 				id: "2EFAA50CC58FB59A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:dragonskin_spell_book"
 					tag: {
 						ISB_spellbook: {

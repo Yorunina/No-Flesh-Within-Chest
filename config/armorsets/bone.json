@@ -32,7 +32,7 @@
       "name": "goety:arrowmantic",
       "value": 4.0,
       "interactionType": "attack",
-      "interactionDuration": 300,
+      "interactionDuration": 3000,
       "hideBonusDescription": false,
       "onlyImmuneToNewEffects": false
     }

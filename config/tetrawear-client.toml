@@ -1,0 +1,28 @@
+
+[energy]
+	#Allowed Values: topLeft, topCenter, topRight, middleLeft, middleCenter, middleRight, bottomLeft, bottomCenter, bottomRight
+	attachment = "middleCenter"
+	#X-axis offset for the energy bar, positive values moves it to the right
+	#Range: > -2147483648
+	x = -1
+	#Y-axis offset for the energy bar, positive values moves it upwards
+	#Range: > -2147483648
+	y = 22
+
+[temperature]
+	#Allowed Values: topLeft, topCenter, topRight, middleLeft, middleCenter, middleRight, bottomLeft, bottomCenter, bottomRight
+	attachment = "bottomCenter"
+	#Shift the position upwards when the breath meter is visible
+	breath_shift = true
+	#X-axis offset for the temperature bar, positive values moves it to the right
+	#Range: > -2147483648
+	x = 50
+	#Y-axis offset for the temperature bar, positive values moves it upwards
+	#Range: > -2147483648
+	y = -42
+
+[dodge]
+	#Doubletap delay (milliseconds) to trigger any of the dodge keys, set to 0 to disable double tap
+	#Range: > 0
+	tap_delay = 180
+
