@@ -46,6 +46,9 @@
     "mob_spawner": true,
     "redstone": true
   },
+  "cagedmobs": {
+    "cagedmobs_jade": true
+  },
   "fluiddrawerslegacy": {
     "controller": true,
     "controller_slave": true,

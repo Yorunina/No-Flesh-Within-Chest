@@ -27,7 +27,7 @@
 				{
 					id: "69A47379C6E0551E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "hexerei:book_of_shadows"
 						tag: {
 							bookmarks: { }
@@ -76,7 +76,7 @@
 				consume_items: true
 				id: "377272B3F01FA298"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -146,7 +146,7 @@
 				{
 					id: "3B5B97406D293CA5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:enchanted_book"
 						tag: {
 							StoredEnchantments: [{
@@ -179,7 +179,7 @@
 			rewards: [{
 				id: "0DD6F90701F5DBCC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -226,7 +226,7 @@
 			rewards: [{
 				id: "6AC6FB9DC22CD220"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -256,7 +256,7 @@
 			rewards: [{
 				id: "476ED982F630080F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -284,7 +284,7 @@
 			rewards: [{
 				id: "1C2DCD63D9AEE80B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -307,7 +307,7 @@
 			rewards: [{
 				id: "7A26A00DECB193D1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -336,7 +336,7 @@
 					count: 3
 					id: "6E85D0F5766263AA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -345,7 +345,7 @@
 				{
 					id: "5DAB0B997ABFE91E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "patchouli:guide_book"
 						tag: {
 							"patchouli:book": "dimdungeons:guide_book"
@@ -384,7 +384,7 @@
 				count: 3
 				id: "33A06E290DBAC70E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -394,7 +394,7 @@
 			tasks: [{
 				id: "1489BEDE37A5D2E2"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "biomancy:despoil_sickle"
 					tag: {
 						Damage: 0
@@ -470,7 +470,7 @@
 				count: 3
 				id: "58518C490DB0DC05"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -498,7 +498,7 @@
 				count: 3
 				id: "2168BCD8BEC227B2"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -525,7 +525,7 @@
 			rewards: [{
 				id: "44D54010BE3AE3BC"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -535,7 +535,7 @@
 			tasks: [{
 				id: "53C335208C07990D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "kubejs:heart_template"
 					tag: { }
 				}
@@ -558,7 +558,7 @@
 			rewards: [{
 				id: "577CCFF891B011A7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -568,7 +568,7 @@
 			tasks: [{
 				id: "374E3731D1E7ED65"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "biomancy:injector"
 					tag: {
 						Damage: 0
@@ -593,7 +593,7 @@
 			rewards: [{
 				id: "3645B502D910A3E3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -603,7 +603,7 @@
 			tasks: [{
 				id: "411A42BD7A137F4E"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "biomancy:ravenous_claws"
 					tag: { }
 				}
@@ -643,7 +643,7 @@
 			rewards: [{
 				id: "270D241C6AD3AD75"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -672,7 +672,7 @@
 			rewards: [{
 				id: "6C1107835A5473E2"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -700,7 +700,7 @@
 			rewards: [{
 				id: "005036E6044961EE"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -710,7 +710,7 @@
 			tasks: [{
 				id: "2CD10F473BCB56A1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "dimdungeons:item_portal_key"
 					tag: {
 						built: 0b
@@ -749,7 +749,7 @@
 			rewards: [{
 				id: "474C5603581AF6D5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -778,7 +778,7 @@
 			rewards: [{
 				id: "2EE671725DCF58A6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -808,7 +808,7 @@
 			rewards: [{
 				id: "65B0A76807157940"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -850,7 +850,7 @@
 			rewards: [{
 				id: "170703F1786429BB"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "dimdungeons:item_blank_theme_key"
 					tag: {
 						theme: 2
@@ -876,7 +876,7 @@
 				count: 3
 				id: "4F5386D4974572C8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -886,7 +886,7 @@
 			tasks: [{
 				id: "646B8C1B39DCF1C0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "kubejs:paradise_regained"
 					tag: { }
 				}
@@ -907,7 +907,7 @@
 				"同时，也只有Iron的魔法书中的魔法攻击被本整合包&2认定为魔法种类的攻击伤害&r，这对后续击败某些Boss具有重要的意义。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "irons_spellbooks:diamond_spell_book"
 				tag: {
 					ISB_spellbook: {
@@ -996,7 +996,7 @@
 			tasks: [{
 				id: "7B31FD7B9FBD0F29"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "hexerei:witch_helmet"
 					tag: {
 						Damage: 0
@@ -1025,7 +1025,7 @@
 			tasks: [{
 				id: "1D68F2F560B68730"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "hexerei:crow_flute"
 					tag: {
 						commandMode: 0
@@ -1089,7 +1089,7 @@
 				"当然，就使用价值来说，如果你认为魔法巫师的扫帚使用过于冗杂，则可以尝试制作魔女的扫帚。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "hexerei:mahogany_broom"
 				tag: { }
 			}
@@ -1097,7 +1097,7 @@
 			rewards: [{
 				id: "3CE66056F389FA4D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "hexerei:broom_keychain"
 					tag: {
 						Items: [{
@@ -1132,7 +1132,7 @@
 			tasks: [{
 				id: "4559F00C65B3FB78"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "kubejs:lost_paradise"
 					tag: { }
 				}
@@ -1149,7 +1149,7 @@
 			tasks: [{
 				id: "71B0F459CFE155DD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gateways:gate_pearl"
 					tag: {
 						gateway: "kubejs:god_challenge"
@@ -1167,7 +1167,7 @@
 			tasks: [{
 				id: "1D8FEF00BCE069E9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "goety:black_book"

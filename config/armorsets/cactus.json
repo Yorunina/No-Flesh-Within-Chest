@@ -1,0 +1,63 @@
+{
+  "armorSetName": "仙人掌",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:cactus_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:cactus_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:cactus_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:cactus_boots"
+  },
+  "mainHand": {
+    "itemKey": "somebosses:cactus_weapon"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "获得仙人掌一般的生命力，并且能得心应手地使用仙人掌攻击"
+  ],
+  "partialBonusRequiredAmount": 3,
+  "partialSetBonuses": [
+    {
+      "type": "effect",
+      "name": "goety:photosynthesis",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.attack_speed",
+      "modifierUUID": "B7361DFA-B930-449F-9CE4-009FCFAFBABF",
+      "attributeOperation": 2,
+      "description": "+30% 攻击速度",
+      "value": 0.3
+    },
+    {
+      "type": "effect",
+      "name": "goety:photosynthesis",
+      "value": 1.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    },
+    {
+      "type": "effect",
+      "name": "alexsmobs:exsanguination",
+      "value": 1.0,
+      "interactionType": "attack",
+      "interactionDuration": 200,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

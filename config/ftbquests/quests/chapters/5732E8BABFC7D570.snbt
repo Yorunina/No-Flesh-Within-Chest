@@ -4,20 +4,20 @@
 	filename: "5732E8BABFC7D570"
 	group: "0241B51B931E1ED2"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "patchouli:guide_book"
 		tag: {
 			"patchouli:book": "goety:black_book"
 		}
 	}
 	id: "5732E8BABFC7D570"
-	order_index: 5
+	order_index: 6
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["7F14FD199500DEA0"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "patchouli:guide_book"
 				tag: {
 					"patchouli:book": "goety:black_book"
@@ -57,7 +57,7 @@
 			tasks: [{
 				id: "2D7682B930A92B64"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "goety:totem_of_roots"
 					tag: {
 						"Max Souls": 100
@@ -86,7 +86,7 @@
 			tasks: [{
 				id: "341804E4A14147C2"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "goety:totem_of_souls"
 					tag: {
 						"Max Souls": 10000
@@ -147,7 +147,7 @@
 				{
 					id: "6BC2253F7C2E7B33"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "goety:cursed_cage"
 						tag: { }
 					}
@@ -215,7 +215,7 @@
 			tasks: [{
 				id: "4330A21FE1D41216"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "goety:witches_brew"
@@ -265,7 +265,7 @@
 				{
 					id: "4A01677C1FB7EA6D"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]

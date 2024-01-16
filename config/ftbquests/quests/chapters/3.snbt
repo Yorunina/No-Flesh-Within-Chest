@@ -23,7 +23,7 @@
 			rewards: [{
 				id: "4AD6BA78F14C67C3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -68,7 +68,7 @@
 				"&6Flos solum sub pluvia efflorescit&r"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "irons_spellbooks:diamond_spell_book"
 				tag: {
 					ISB_spellbook: {
@@ -94,7 +94,7 @@
 					count: 3
 					id: "0B686B55AA201E0A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_gold"
 						tag: { }
 					}
@@ -146,7 +146,7 @@
 			rewards: [{
 				id: "74A3259C68265E7D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -177,7 +177,7 @@
 			rewards: [{
 				id: "603236169079A3C3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -208,7 +208,7 @@
 			rewards: [{
 				id: "73449E1E09781EFF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -241,7 +241,7 @@
 			rewards: [{
 				id: "0AF73554B8C6612D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -269,7 +269,7 @@
 			hide_dependency_lines: true
 			hide_text_until_complete: true
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:fishing_rod"
 				tag: {
 					Damage: 0
@@ -279,7 +279,7 @@
 			rewards: [{
 				id: "282B74C50E2E0728"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -317,7 +317,7 @@
 				count: 5
 				id: "0A286171B2B1A138"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -374,7 +374,7 @@
 			rewards: [{
 				id: "79FBDBD6239CD166"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -500,7 +500,7 @@
 			tasks: [{
 				id: "1E9415A2CEBA9C27"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "gateways:gate_pearl"
 					tag: {
 						gateway: "kubejs:boss_rush"
@@ -511,6 +511,42 @@
 			title: "挑战Boss Rush！"
 			x: -2.0d
 			y: 4.5d
+		}
+		{
+			icon: "lootr:lootr_chest"
+			id: "63F0272B45EA47C7"
+			rewards: [
+				{
+					auto: "no_toast"
+					command: "/give @s kubejs:d8"
+					id: "54C095391F3E6A56"
+					player_command: true
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+				{
+					auto: "no_toast"
+					command: "/title @s title \"命运之神嘉奖了你的探索精神\""
+					id: "3AA651C28CF41756"
+					player_command: true
+					silent: true
+					team_reward: false
+					type: "command"
+				}
+			]
+			tasks: [{
+				disable_toast: true
+				icon: "lootr:lootr_chest"
+				id: "4DF78B8096E84737"
+				secret: true
+				stat: "lootr:looted_stat"
+				type: "stat"
+				value: 288
+			}]
+			title: "搜索者"
+			x: -2.0d
+			y: 6.0d
 		}
 	]
 	title: "章节3：秘密"

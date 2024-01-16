@@ -1,0 +1,140 @@
+
+[entity]
+	enableEnderExecutorReduceDamage = true
+	enableEnderExecutorBeamAttack = true
+	lichAttackBabyTurtles = true
+	lichSummonVex = true
+	ogreAttackVillagers = true
+	ogreAttackBabyTurtles = true
+	enableOgreDestroyBlocks = true
+	spiderNestSummonCaveSpider = true
+	enableMeltyMonsterSetFire = true
+	cursedDollBurnsInDaylight = true
+	kashaAttackVillagers = true
+	kashaAttackBabyTurtles = true
+	enableJackFrostFreezesWater = true
+	enableJackFrostRegen = true
+	dullahanBurnsInDaylight = true
+	alrauneAttackVillagers = true
+	enableAlrauneRegen = true
+	redcapAttackVillagers = true
+	redcapAttackBabyTurtles = true
+	enableSlimeGirlRegen = true
+	magicalSlimeSpawnsOnSlimeGirlDeath = true
+	monolithAttackGolems = true
+	monolithAttackVillagers = true
+	monolithAttackIllagers = true
+	crimsonSlaughtererAttackAnimals = true
+	crimsonSlaughtererAttackVillagers = true
+	dyssomniaSummonPhantom = true
+	snowCanineAttackBabyTurtles = true
+	savagefangAttackAnimals = true
+	savagefangAttackVillagers = true
+	savagefangAttackIllagers = true
+	savagefangAttackDamagedMobs = true
+	necroticReaperAttackVillagers = true
+	necroticReaperAttackBabyTurtles = true
+	dodomekiBurnsInDaylight = true
+	enableGlaryadRegen = true
+	jiangshiAttackVillagers = true
+	jiangshiAttackBabyTurtles = true
+	giantMummyAttackVillagers = true
+	giantMummyAttackBabyTurtles = true
+	enableGiantMummyDestroyBlocks = true
+
+	[entity.spawn]
+		#Range: 0.0 ~ 1.0
+		pinkHarpySpawnChance = 0.001
+
+		[entity.spawn.replaceChance]
+			#Range: 0.0 ~ 1.0
+			zombieGirlReplaceChance = 0.15
+			#Range: 0.0 ~ 1.0
+			huskGirlReplaceChance = 0.15
+			#Range: 0.0 ~ 1.0
+			drownedGirlReplaceChance = 0.15
+			#Range: 0.0 ~ 1.0
+			skeletonGirlReplaceChance = 0.15
+			#Range: 0.0 ~ 1.0
+			witherSkeletonGirlReplaceChance = 0.15
+			#Range: 0.0 ~ 1.0
+			strayGirlReplaceChance = 0.15
+			#Range: 0.0 ~ 1.0
+			creeperGirlReplaceChance = 0.15
+			#Range: 0.0 ~ 1.0
+			enderExecutorReplaceChance = 0.03125
+
+		[entity.spawn.chance]
+			#Range: 0.0 ~ 1.0
+			ghastlySeekerSpawnChance = 0.05
+			#Range: 0.0 ~ 1.0
+			crimsonSlaughtererSpawnChance = 0.375
+			#Range: 0.0 ~ 1.0
+			savagefangSpawnChance = 0.8
+
+		[entity.spawn.height]
+			#Range: -64 ~ 320
+			surfaceMobSpawnMinHeight = 64
+			#Range: -64 ~ 320
+			koboldSpawnMaxHeight = 31
+			#Range: -64 ~ 320
+			lichSpawnMaxHeight = -1
+			#Range: -64 ~ 320
+			ogreSpawnMaxHeight = -1
+			#Range: -64 ~ 320
+			spiderNestSpawnMaxHeight = -1
+			#Range: -64 ~ 320
+			necroticReaperSpawnMaxHeight = -1
+
+[item]
+	#Range: 0 ~ 240000
+	insomuniaFruitCooldownLevel0 = 1800
+	#Range: 0 ~ 240000
+	insomuniaFruitCooldownLevel1 = 1800
+	#Range: 0 ~ 240000
+	insomuniaFruitCooldownLevel2 = 1800
+	#Range: 0 ~ 240000
+	insomuniaFruitCooldownLevel3 = 1600
+	#Range: 0 ~ 240000
+	insomuniaFruitCooldownLevel4 = 1400
+	#Range: 0 ~ 240000
+	insomuniaFruitCooldownLevel5 = 1200
+	#Range: 0 ~ 240000
+	totemOfRepulseCooldown = 1800
+
+[enchantment]
+	#Range: 1 ~ 10
+	healthBoostMaxLevel = 5
+	healthBoostIsTreasure = true
+	healthBoostIsTradeable = true
+	healthBoostIsDiscoverable = true
+	#Range: 1 ~ 10
+	waterAspectMaxLevel = 5
+	waterAspectIsTreasure = false
+	waterAspectIsTradeable = true
+	waterAspectIsDiscoverable = true
+	#Range: 1 ~ 10
+	antiAirMaxLevel = 5
+	antiAirIsTreasure = false
+	antiAirIsTradeable = true
+	antiAirIsDiscoverable = true
+
+[potion]
+	enableKoboldPotionBrewingRecipes = true
+	enableHealingIIIPotionBrewingRecipes = true
+	enableHarmingIIIPotionBrewingRecipes = true
+	enableRegenerationIIIPotionBrewingRecipes = true
+	enableOgrePotionBrewingRecipes = true
+	enableVoracityPotionBrewingRecipes = true
+	enableEnderRagePotionBrewingRecipes = true
+	enableCombustionPotionBrewingRecipes = true
+	enableSlownessPotionBrewingRecipes = true
+	enableInvisibilityPotionBrewingRecipes = true
+	enableBlastingBottleBrewingRecipe = true
+	enableLightningBottleBrewingRecipe = true
+
+[world]
+	additionalChestLoots = true
+	additionalVillagerTrades = true
+	additionalWandererTrades = true
+

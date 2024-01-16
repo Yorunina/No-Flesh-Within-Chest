@@ -4,7 +4,7 @@
 	filename: "tetra"
 	group: "0241B51B931E1ED2"
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "tetra:modular_double"
 		tag: {
 			Damage: 0
@@ -45,7 +45,7 @@
 				"可以说，能够良好的使用Tetra，可以极大地增强你的工作效率和战斗效率，并且Tetra本身的流程并不复杂，因此强烈推荐在开局就进行Tetra内容的探索。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:modular_double"
 				tag: {
 					Damage: 0
@@ -64,7 +64,7 @@
 				count: 5
 				id: "34A91804EA15901C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -98,7 +98,7 @@
 				{
 					id: "4F522D766964E4A7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -109,7 +109,7 @@
 					count: 12
 					id: "3F15994B08531A33"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_gold"
 						tag: { }
 					}
@@ -129,7 +129,7 @@
 					consume_items: true
 					id: "5A4E6247BFB16552"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -185,7 +185,7 @@
 				count: 5
 				id: "037566F6FB6F211C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -196,7 +196,7 @@
 				consume_items: false
 				id: "48AC0E74C64294E0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tetra:holo"
 					tag: {
 						"holo/core": "holo/core"
@@ -230,7 +230,7 @@
 				count: 10
 				id: "36CD261291BB4560"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -260,7 +260,7 @@
 				"打开遗迹中的板条箱或锻造容器需要具有羊角锤功能的工具，其能提供&e撬开物体&r的功能。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:modular_double"
 				tag: {
 					Damage: 0
@@ -296,7 +296,7 @@
 				"将手柄改成&6长手柄&r可以获得长臂的效果，获得更远的触及距离。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:netherite_shovel"
 				tag: {
 					Damage: 0
@@ -346,7 +346,7 @@
 				"&6平面稳定器&r可以&e消除大部分弹道轨迹&r的影响，让你的箭矢&e更加精准&r。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:bow"
 				tag: {
 					Damage: 0
@@ -371,7 +371,7 @@
 				"&6气动力镶边&r改造可以让盾牌具有&a投掷属性&r。按住shift同时右键格挡并释放，扔出盾牌痛击敌人。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:shield"
 				tag: {
 					Damage: 0
@@ -396,7 +396,7 @@
 				"对护手的改造在找到&6原理图:坚固守卫&r的卷轴后可以解锁&e剑类的格挡&r，重现旧版本的格挡方式。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:netherite_sword"
 				tag: {
 					Damage: 0
@@ -417,7 +417,7 @@
 			dependencies: ["7E7580FC10C7CB80"]
 			description: ["&7对弩的改装趋于平淡，作者并未着重改变弩的特性&r。"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "minecraft:crossbow"
 				tag: {
 					Damage: 0
@@ -446,7 +446,7 @@
 				"&c冲刺&r：安装助推器来获得穿着了火箭靴的能力和突进冲刺的能力。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:modular_toolbelt"
 				tag: {
 					id: "1000ee52-eb9c-413d-841a-efbf39550eb5"
@@ -461,7 +461,7 @@
 				count: 10
 				id: "47B3B2D4F2798679"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -472,7 +472,7 @@
 				consume_items: false
 				id: "300F9A94892FAEFD"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tetra:modular_toolbelt"
 					tag: {
 						id: "27441eea-8dd4-4b95-a6d5-5a7c35cbd58d"
@@ -496,7 +496,7 @@
 				"使用加工台修复工具，本质上是对部件种类的修复，因此修复&e不会只局限于一种材料&r。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:scroll_rolled"
 				tag: {
 					BlockEntityTag: {
@@ -521,7 +521,7 @@
 				count: 10
 				id: "678A30C0C845692D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -549,7 +549,7 @@
 				"无脑使用高级材料并不能让你的工具变得更加强大，&e合理的搭配更为重要&r。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:scroll_rolled"
 				tag: {
 					BlockEntityTag: {
@@ -574,7 +574,7 @@
 				count: 10
 				id: "6CD37FAFE6F68DE6"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -602,7 +602,7 @@
 				"每个部件可以被视为独立的个体，对不同部件可以分别进行&e附魔&r或者对该项部件进行&e再改造&r。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:scroll_rolled"
 				tag: {
 					BlockEntityTag: {
@@ -627,7 +627,7 @@
 				count: 10
 				id: "17F36C066E19C62B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -666,7 +666,7 @@
 				"对&a等级为4的锤子&r进行改造升级，仅靠上述步骤无法实现--需要寻找&a远古废墟&r，那里有升级的必须物品。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:modular_double"
 				tag: {
 					Damage: 0
@@ -690,7 +690,7 @@
 				consume_items: false
 				id: "193BCC8E7A45F452"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tetra:modular_double"
 					tag: {
 						Damage: 0
@@ -722,7 +722,7 @@
 				"当头部区两个部件&e均为铁制镐头部件&r，该工具&e可以开采&r钻石级及以下矿物"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:scroll_rolled"
 				tag: {
 					BlockEntityTag: {
@@ -747,7 +747,7 @@
 				count: 10
 				id: "55C235C3DAB17160"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -844,7 +844,7 @@
 				"每一级&a稳固&r可以为工具&e提供额外的完整度&r。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:scroll_rolled"
 				tag: {
 					BlockEntityTag: {
@@ -895,7 +895,7 @@
 				"诅咒可以使用青金石和经验来驱散"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:scroll_rolled"
 				tag: {
 					BlockEntityTag: {
@@ -920,7 +920,7 @@
 				count: 10
 				id: "764E56650986C0BA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -978,7 +978,7 @@
 				"将他们收集齐，拼凑在加工台附近解锁新的改装部件种类。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:thermal_cell"
 				tag: {
 					Damage: 0
@@ -994,7 +994,7 @@
 			subtitle: "独特的配件"
 			tasks: [{
 				icon: {
-					Count: 1b
+					Count: 1
 					id: "tetra:thermal_cell"
 					tag: {
 						Damage: 0
@@ -1031,7 +1031,7 @@
 				"&6镀金图纸&r：&e下界遗迹&r中搜索获得"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:scroll_rolled"
 				tag: {
 					BlockEntityTag: {

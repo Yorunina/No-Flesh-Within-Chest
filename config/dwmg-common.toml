@@ -1,0 +1,40 @@
+
+[sound]
+	#Befriended mob ambient sound frequency is multiplied by this number.
+	#Range: 0.0 ~ 1.0
+	ambientSoundChance = 1.0
+	#If true, befriended Zombie Girls and variants will use HMaG default girl sound.
+	zombiesUseGirlSound = false
+	#If true, befriended Skeleton Girls and variants will use HMaG default girl sound.
+	skeletonsUseGirlSound = false
+	#If true, befriended Ghastly Seekers will use HMaG default girl sound.
+	ghastsUseGirlSound = false
+	#If true, befriended Zombie Girls and variants will not make ambient sound.
+	zombiesNoAmbientSound = false
+	#If true, befriended Skeleton Girls and variants will not make ambient sound.
+	skeletonsNoAmbientSound = false
+	#If true, befriended Ghastly Seekers will not make ambient sound.
+	ghastsNoAmbientSound = false
+
+[combat]
+	#If true, projectiles from befriended mobs will hurt allies.
+	enableProjectileFriendlyDamage = false
+	#Max health value boosted by level-up. Zero = no limit.
+	#Range: 0.0 ~ 1000000.0
+	maxHealthBoostByLevel = 0.0
+	#Max ATK value boosted by level-up. Zero = no limit.
+	#Range: 0.0 ~ 1000000.0
+	maxAtkBoostByLevel = 0.0
+
+[interaction]
+	#Allow vanilla conversion if true, i.e. Husk -> Zombie -> Drowned; Skeleton -> Stray.
+	allowVanillaConversion = true
+	#Allow reverting vanilla conversion if true, i.e. Drowned -> Zombie -> Husk; Stray -> Skeleton.
+	allowReverseConversion = true
+	#If true, all befriended Zombie Girls can be converted to Husk Girls with Sponge, no matter if they're converted from Husk Girls.
+	allZombieGirlsCanConvertToHusks = false
+	#If true, all befriended Drowned Girls can be converted to Zombie Girls with Sponge, no matter if they're converted from Zombie Girls.
+	allDrownedGirlsCanConvertToZombies = false
+	#If true, all befriended Stray Girls can be converted to Skeleton Girls with Flint and Steel, no matter if they're converted from Skeleton Girls.
+	allStrayGirlsCanConvertToSkeletons = false
+

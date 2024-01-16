@@ -30,7 +30,7 @@
 					count: 2
 					id: "68F68EEA900B54B3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -44,7 +44,7 @@
 				count: 3L
 				id: "58D53C77056E6A51"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "minecraft:logs"
@@ -73,7 +73,7 @@
 			rewards: [{
 				id: "64871BE653D21106"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:wallet_iron"
 					tag: { }
 				}
@@ -114,7 +114,7 @@
 			tasks: [{
 				id: "514D2AD3265021ED"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:stone_pickaxe"
 					tag: {
 						Damage: 0
@@ -143,7 +143,7 @@
 			rewards: [{
 				id: "243324C3D642D9D8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -177,7 +177,7 @@
 				count: 5
 				id: "0905D2943CB40EB0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -259,7 +259,7 @@
 				{
 					id: "68FEB532C449F1F0"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_gold"
 						tag: { }
 					}
@@ -294,7 +294,7 @@
 				count: 3
 				id: "062C34A3636D85AA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -322,7 +322,7 @@
 				"如果你足够了解本Mod，则可以通过选择&5快捷模式&r，直接&2获得所有后续任务线的奖励&r；或者，你可以选择解锁Tetra的任务页，随着任务一点点完成Tetra探索之旅。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "tetra:modular_double"
 				tag: {
 					Damage: 0
@@ -339,7 +339,7 @@
 			rewards: [{
 				id: "7B5547080E9AA974"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -351,7 +351,7 @@
 				consume_items: false
 				id: "1844B4BCBC6B4602"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tetra:modular_double"
 					tag: {
 						Damage: 0
@@ -388,7 +388,7 @@
 					count: 5
 					id: "28E32DF01884CD57"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -425,7 +425,7 @@
 				"通过右键指南针，你可以使用其搜索框来定向的搜索对应的群系或结构。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "naturescompass:naturescompass"
 				tag: { }
 			}
@@ -434,7 +434,7 @@
 				count: 5
 				id: "547AB928E06DB438"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -445,7 +445,7 @@
 				{
 					id: "6B95171F482E713B"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "naturescompass:naturescompass"
 						tag: { }
 					}
@@ -454,7 +454,7 @@
 				{
 					id: "4218C63920D650EB"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "explorerscompass:explorerscompass"
 						tag: { }
 					}
@@ -480,7 +480,7 @@
 				count: 5
 				id: "2396A39A3AAC9C0C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -505,7 +505,7 @@
 					count: 5
 					id: "0136B712C04F49E9"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -536,7 +536,7 @@
 			rewards: [{
 				id: "2AF64ED78935D661"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -566,7 +566,7 @@
 					count: 5
 					id: "5CC9E29E1B0EF54F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -615,7 +615,7 @@
 				count: 5
 				id: "01EC19571C8B58EF"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -648,7 +648,7 @@
 					count: 5
 					id: "6A7406D6BBB8960E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -684,7 +684,7 @@
 					count: 5
 					id: "34287DAC9D5122CD"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "lightmanscurrency:coin_iron"
 						tag: { }
 					}
@@ -714,7 +714,7 @@
 				count: 5
 				id: "5C94F0AEA4B05C08"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -745,7 +745,7 @@
 				count: 5
 				id: "36B521E50A8670A3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -755,7 +755,7 @@
 			tasks: [{
 				id: "258D2089515F93C9"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "storagedrawers:drawers"
@@ -777,7 +777,7 @@
 				count: 5
 				id: "68E182F2D59A4C2B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -806,7 +806,7 @@
 			rewards: [{
 				id: "443AEBF90B9CD82C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_gold"
 					tag: { }
 				}
@@ -816,7 +816,7 @@
 			tasks: [{
 				id: "4EC33C7DB69FF161"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "minecraft:elytra"
 					tag: {
 						Damage: 0
@@ -842,7 +842,7 @@
 				count: 5
 				id: "4225FDCA2824DF55"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -911,7 +911,7 @@
 			tasks: [{
 				id: "148E1180E9A5C847"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "unusualprehistory:fossils"
@@ -946,7 +946,7 @@
 				count: 2L
 				id: "7D4A0E6968338355"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}
@@ -967,7 +967,7 @@
 			rewards: [{
 				id: "6C8DE8B2ADF40817"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "lightmanscurrency:coin_iron"
 					tag: { }
 				}

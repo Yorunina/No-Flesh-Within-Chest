@@ -1,0 +1,34 @@
+{
+  "armorSetName": "铜",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:copper_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:copper_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:copper_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:copper_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "雨水落下，电流闪烁全身……"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:lightning_spell_power",
+      "modifierUUID": "C0B2C335-5989-49B8-9760-9C687C39C207",
+      "description": "+80% 雷电系魔法伤害 when in rain",
+      "value": 0.8,
+      "conditions": [
+        {
+          "type": "inRain"
+        }
+      ]
+    }
+  ]
+}
