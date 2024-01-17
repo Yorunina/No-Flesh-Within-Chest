@@ -4,6 +4,7 @@ ServerEvents.recipes(event => {
 	event.recipes.create.mixing('2x createaddition:electrum_ingot', [Fluid.lava(100), 'minecraft:gold_ingot', 'kubejs:silver_ingot']).heated()
 
 	event.recipes.create.filling('kubejs:hamimelon_organ', ['fruitsdelight:hamimelon', Fluid.of('kubejs:syrup').withAmount(3000)])
+	event.recipes.create.filling('kubejs:red_ink', ['kubejs:bad_ink', Fluid.of('hexerei:blood_fluid').withAmount(2000)])
 
 	event.recipes.create.deploying('kubejs:telescopic_tool_arm', ['kubejs:telescopic_arm', 'nameless_trinkets:light_gloves'])
 	event.recipes.create.deploying('kubejs:telescopic_arm', ['create:extendo_grip', 'biomancy:living_flesh'])
@@ -56,6 +57,43 @@ ServerEvents.recipes(event => {
 		S: 'create:iron_sheet',
 		W: 'createaddition:iron_wire',
 	})
+
+	event.recipes.create.mechanical_crafting('kubejs:tamagotchi', [
+		'  AAA  ',
+		' ASSSA ',
+		'ASWBWSA',
+		'ASDCDSA',
+		'ASWEWSA',
+		'ASSSSSA',
+		' AAAAA '
+	], {
+		A: 'minecraft:pink_dye',
+		B: 'create:electron_tube',
+		C: 'biomancy:creator_mix',
+		D: 'create:precision_mechanism',
+		E: 'createaddition:connector',
+		S: 'create:iron_sheet',
+		W: 'createaddition:copper_wire',
+	})
+
+
+	event.recipes.create.mechanical_crafting('kubejs:enery_bottle_max', [
+		' AAA ',
+		'ABBBA',
+		'ACECA',
+		'ACDCA',
+		'ACECA',
+		'ABBBA',
+		'AAAAA'
+	], {
+		A: 'create:polished_rose_quartz',
+		B: 'createaddition:modular_accumulator',
+		C: 'create:brass_sheet',
+		D: 'nameless_trinkets:experience_battery',
+		E: 'minecraft:netherite_ingot',
+	})
+
+	
 
 	event.recipes.create.mechanical_crafting('kubejs:machine_clockwork', [
 		'     A ',
@@ -208,4 +246,17 @@ ServerEvents.recipes(event => {
 		event.recipes.create.filling('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', Fluid.of('minecraft:water').withAmount(3000)]),
 		event.recipes.create.filling('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', Fluid.of('minecraft:lava').withAmount(1000)])
 	]).transitionalItem('kubejs:incomplete_revolution_steam_engine').loops(3)
+
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:cream_cookie_heart').withChance(50.0),
+		Item.of('minecraft:cookie').withChance(50.0)
+	], Ingredient.of('#kubejs:is_cookie_block'), [
+		event.recipes.createPressing('minecraft:cookie', 'minecraft:cookie'),
+		event.recipes.createCutting('minecraft:cookie', 'minecraft:cookie'),
+		event.recipes.create.filling('minecraft:cookie', ['minecraft:cookie', Fluid.of('kubejs:cream').withAmount(500)]),
+		event.recipes.createPressing('minecraft:cookie', 'minecraft:cookie'),
+		event.recipes.createCutting('minecraft:cookie', 'minecraft:cookie')
+	]).transitionalItem('minecraft:cookie').loops(1)
+
+	
 })

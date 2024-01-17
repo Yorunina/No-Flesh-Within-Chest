@@ -3,7 +3,7 @@
     {
       "rolls": {
         "min": 2,
-        "max": 4
+        "max": 5
       },
       "name": "dimdungeons:pool_4",
       "entries": [
@@ -410,7 +410,7 @@
         {
           "type": "item",
           "name": "kubejs:infinity_force",
-          "weight": 10,
+          "weight": 15,
           "functions": [
             {
               "function": "set_count",

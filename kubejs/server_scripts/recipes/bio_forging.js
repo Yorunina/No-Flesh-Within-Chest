@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
     
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 4, 'item': 'biomancy:flesh_bits' }, { 'count': 2, 'item': 'biomancy:elastic_fibers' }], Item.of('kubejs:appendix_template')).setNutrientsCost(32).setTab('biomancy:weapons'))
 
-    registerCustomRecipe(new BioForgingRecipe([{ 'count': 8, 'item': 'biomancy:flesh_bits' }, { 'count': 8, 'item': 'createaddition:iron_rod' }, { 'count': 1, 'item': 'kubejs:telescopic_arm' }], Item.of('kubejs:telescopic_arm')).setNutrientsCost(48).setTab('biomancy:weapons'))
+    registerCustomRecipe(new BioForgingRecipe([{ 'count': 8, 'item': 'biomancy:flesh_bits' }, { 'count': 8, 'item': 'createaddition:iron_rod' }, { 'count': 1, 'item': 'create:brass_hand' }], Item.of('kubejs:telescopic_arm')).setNutrientsCost(48).setTab('biomancy:weapons'))
 
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 2, 'item': 'biomancy:regenerative_fluid' }, { 'count': 2, 'item': 'biomancy:hormone_secretion' }, { 'count': 6, 'item': 'biomancy:mob_marrow' }, { 'count': 8, 'item': 'createaddition:electrum_wire' }], Item.of('kubejs:platelet_dispatcher')).setNutrientsCost(48).setTab('biomancy:weapons'))
 

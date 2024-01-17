@@ -35,6 +35,8 @@ const bossTypeList = [
     'cataclysm:ignis',
     'cataclysm:the_harbinger',
     'cataclysm:the_leviathan',
+    'cataclysm:ancient_remnant',
+    'cataclysm:modern_remnant',
     'bosses_of_mass_destruction:void_blossom',
     'bosses_of_mass_destruction:lich',
     'bosses_of_mass_destruction:gauntlet',

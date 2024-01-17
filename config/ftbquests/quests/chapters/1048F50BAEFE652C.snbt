@@ -66,7 +66,7 @@
 				type: "item"
 			}]
 			title: "糖果心"
-			x: -8.5d
+			x: -8.75d
 			y: 3.0d
 		}
 		{
@@ -95,7 +95,7 @@
 				type: "checkmark"
 			}]
 			title: "魔法使与糖果心"
-			x: -7.5d
+			x: -7.75d
 			y: 1.75d
 		}
 		{
@@ -121,7 +121,7 @@
 				item: "kubejs:love_between_lava_and_ice"
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.25d
 			y: 3.0d
 		}
 		{
@@ -141,7 +141,7 @@
 				type: "checkmark"
 			}]
 			title: "Boss遗物器官"
-			x: -4.0d
+			x: -4.25d
 			y: 1.75d
 		}
 		{
@@ -169,7 +169,7 @@
 				item: "kubejs:candy_pancreas"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -7.75d
 			y: 3.0d
 		}
 		{
@@ -191,7 +191,7 @@
 				item: "kubejs:candy_stomach"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -6.75d
 			y: 3.0d
 		}
 		{
@@ -213,7 +213,7 @@
 				item: "kubejs:magic_spine"
 				type: "item"
 			}]
-			x: -7.5d
+			x: -7.75d
 			y: 4.0d
 		}
 		{
@@ -247,7 +247,7 @@
 					type: "item"
 				}
 			]
-			x: -8.5d
+			x: -8.75d
 			y: 4.0d
 		}
 		{
@@ -269,7 +269,7 @@
 				item: "kubejs:magic_muscle"
 				type: "item"
 			}]
-			x: -6.5d
+			x: -6.75d
 			y: 4.0d
 		}
 		{
@@ -331,7 +331,7 @@
 				type: "checkmark"
 			}]
 			title: "革命机械"
-			x: -0.75d
+			x: -0.5d
 			y: 1.75d
 		}
 		{
@@ -342,7 +342,7 @@
 				item: "kubejs:furnace_core"
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.5d
 			y: 3.0d
 		}
 		{
@@ -353,7 +353,7 @@
 				item: "kubejs:burning_heart"
 				type: "item"
 			}]
-			x: -0.75d
+			x: -0.5d
 			y: 3.0d
 		}
 		{
@@ -364,7 +364,7 @@
 				item: "kubejs:revolution_gear"
 				type: "item"
 			}]
-			x: 0.25d
+			x: 0.5d
 			y: 3.0d
 		}
 		{
@@ -375,7 +375,7 @@
 				item: "kubejs:revolution_cable"
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.5d
 			y: 4.0d
 		}
 		{
@@ -386,7 +386,7 @@
 				item: "kubejs:revolution_relay"
 				type: "item"
 			}]
-			x: -0.75d
+			x: -0.5d
 			y: 4.0d
 		}
 		{
@@ -397,7 +397,7 @@
 				item: "kubejs:revolution_delay"
 				type: "item"
 			}]
-			x: 0.25d
+			x: 0.5d
 			y: 4.0d
 		}
 		{
@@ -512,7 +512,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.25d
 			y: 4.0d
 		}
 		{
@@ -538,7 +538,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.25d
 			y: 3.0d
 		}
 		{
@@ -560,7 +560,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.25d
 			y: 7.0d
 		}
 		{
@@ -582,7 +582,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.25d
 			y: 3.0d
 		}
 		{
@@ -608,7 +608,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.25d
 			y: 4.0d
 		}
 		{
@@ -625,7 +625,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.25d
 			y: 5.0d
 		}
 		{
@@ -642,7 +642,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.25d
 			y: 5.0d
 		}
 		{
@@ -664,7 +664,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.25d
 			y: 5.0d
 		}
 		{
@@ -686,7 +686,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.25d
 			y: 6.0d
 		}
 		{
@@ -712,7 +712,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.25d
 			y: 6.0d
 		}
 		{
@@ -734,7 +734,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
+			x: -3.25d
 			y: 6.0d
 		}
 		{
@@ -756,7 +756,7 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
+			x: -4.25d
 			y: 7.0d
 		}
 		{
@@ -778,7 +778,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.25d
 			y: 7.0d
 		}
 		{
@@ -800,7 +800,7 @@
 				}
 				type: "item"
 			}]
-			x: -5.0d
+			x: -5.25d
 			y: 4.0d
 		}
 		{
@@ -1035,7 +1035,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.5d
 			y: 5.0d
 		}
 		{
@@ -1050,7 +1050,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.75d
+			x: -0.5d
 			y: 5.0d
 		}
 		{
@@ -1065,7 +1065,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.25d
+			x: 0.5d
 			y: 5.0d
 		}
 	]

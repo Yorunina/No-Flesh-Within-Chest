@@ -25,4 +25,8 @@ JEIEvents.information(event => {
     event.addItem('kubejs:parasitic_elf', Text.black({ "translate": "kubejs.jei.parasitic_elf.1" }))
     event.addItem('kubejs:diamond_bottle', Text.black({ "translate": "kubejs.jei.diamond_bottle.1" }))
     event.addItem('kubejs:blood_moon_wand', Text.black({ "translate": "kubejs.jei.blood_moon_wand.1" }))
+    event.addItem('kubejs:pandora_inactive', Text.black({ "translate": "kubejs.jei.pandora_inactive.1" }))
+    event.addItem('kubejs:blooded_chip', Text.black({ "translate": "kubejs.jei.blooded_chip.1" }))
+    event.addItem('kubejs:bad_ink', Text.black({ "translate": "kubejs.jei.bad_ink.1" }))
+    event.addItem('kubejs:mini_slime', Text.black({ "translate": "kubejs.jei.mini_slime.1" }))
 })

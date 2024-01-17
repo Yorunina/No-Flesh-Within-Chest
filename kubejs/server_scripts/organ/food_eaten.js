@@ -52,7 +52,7 @@ const organFoodEatenOnlyStrategies = {
             event.player.removeEffect('minecraft:strength')
             return
         }
-        if (event.item.id == 'minecraft:cookie') {
+        if (event.item.hasTag('kubejs:is_cookie')) {
             event.player.potionEffects.add('minecraft:strength', 3600 * 20)
             event.player.removeEffect('minecraft:speed')
             return

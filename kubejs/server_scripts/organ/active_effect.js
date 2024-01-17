@@ -167,6 +167,12 @@ const organActiveStrategies = {
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, 2 * count)
         }
     },
+    'kubejs:mini_slime': function (player, organ, attributeMap) {
+        let pos = organ.Slot
+        let rowOffset = Math.abs(Math.floor(pos / 9) - 1)
+        let lineOffset = Math.abs(pos % 9 - 4)
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, 2 * (lineOffset + rowOffset))
+    },
     'kubejs:desire_of_midas': function (player, organ, attributeMap) {
         let maxCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
         player.persistentData.putInt(resourceCountMax, maxCount + 100)

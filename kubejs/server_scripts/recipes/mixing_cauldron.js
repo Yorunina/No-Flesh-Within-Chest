@@ -65,4 +65,7 @@ ServerEvents.recipes(event => {
         [Ingredient.of('biomancy:cleansing_serum'), Ingredient.of('biomancy:cleansing_serum'), Ingredient.of('goety:soul_heal_focus'), Ingredient.of('goety:soul_heal_focus'), Ingredient.of('minecraft:enchanted_golden_apple'), Ingredient.of('goety:philosophers_stone'), Ingredient.of('hexerei:mindful_trance_blend'), Ingredient.of('kubejs:long_lasting_pill')],
         Item.of('kubejs:long_lasting_pill_gold').withCount(1)).setFluid('hexerei:quicksilver_fluid', 500).setFluidOutput('minecraft:water').addHeatRequirement())
         
+    registerCustomRecipe(new MixingCauldronRecipe(
+        [Ingredient.of('kubejs:cream'), Ingredient.of('kubejs:cream'), Ingredient.of('kubejs:cream'), Ingredient.of('kubejs:cream'), Ingredient.of('kubejs:cream'), Ingredient.of('kubejs:cream'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar')],
+        Item.of('extradelight:cheese').withCount(2)).setFluid('minecraft:water', 1000).setFluidOutput('kubejs:cream').addHeatRequirement())
 })

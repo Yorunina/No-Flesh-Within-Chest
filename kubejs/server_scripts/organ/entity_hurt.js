@@ -233,6 +233,26 @@ const organPlayerDamageOnlyStrategies = {
         if (event.source.type != 'arrow') return
         let entityHeight = event.entity.bbHeight
         let arrowHeight = event.source.immediate.y - event.entity.y
-        event.amount = event.amount * (Math.min(arrowHeight/entityHeight, 1.2) * 0.5 + 1)
+        event.amount = event.amount * (Math.min(arrowHeight / entityHeight, 1.2) * 0.5 + 1)
     },
+    'kubejs:the_thrid_eye': function (event, organ, data) {
+        if (event.source.type != 'arrow') return
+        event.entity.invulnerableTime = event.entity.invulnerableTime / 2
+        event.amount = event.amount * 0.75
+    },
+    'kubejs:enery_bottle_max': function (event, organ, data) {
+        let player = event.source.player
+        let count = player.persistentData.getInt(resourceCount)
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        let roseCount = 0
+        let amplifier = 0.5
+        if (typeMap.has('kubejs:rose')) {
+            roseCount = roseCount + typeMap.get('kubejs:rose').length
+        }
+        if (player.hasEffect('kubejs:burning_heart') || player.hasEffect('kubejs:flaring_heart')) {
+            amplifier = 2
+        }
+        updateResourceCount(player, count + Math.floor(roseCount * amplifier))
+    },
+
 };

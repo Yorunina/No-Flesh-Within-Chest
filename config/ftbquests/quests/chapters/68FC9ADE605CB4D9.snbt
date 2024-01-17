@@ -112,15 +112,22 @@
 			hide_dependent_lines: true
 			icon: "create:cart_assembler"
 			id: "10A1552945CF569F"
-			rewards: [{
-				id: "49A9BD3EE97EA2C0"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
+			rewards: [
+				{
+					id: "49A9BD3EE97EA2C0"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_iron"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "17578422EEC13AEA"
+					item: "create:wrench"
+					type: "item"
+				}
+			]
 			subtitle: "挖矿自动化"
 			tasks: [
 				{
@@ -141,11 +148,6 @@
 				{
 					id: "7E6B361C6964CB6A"
 					item: "minecraft:rail"
-					type: "item"
-				}
-				{
-					id: "691A550C2D21B8D9"
-					item: "create:wrench"
 					type: "item"
 				}
 			]
@@ -416,22 +418,29 @@
 				""
 				"&9动力钻&r可以用于挖掘方块，效果同于玩家挖掘"
 				""
-				"绳索和动力钻结合便可以垂直打井"
-				""
-				"&1动力矿车&r则是掘进时所必须的"
+				"绳索和动力钻结合便可以&6垂直打井"
+				"&r"
+				"&1动力矿车&r则是&6水平掘进&r时所必须的"
 			]
 			hide_dependent_lines: true
 			icon: "create:mechanical_drill"
 			id: "379527B5B5A9C653"
-			rewards: [{
-				id: "66BB8629BCD2B9A8"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
+			rewards: [
+				{
+					id: "66BB8629BCD2B9A8"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_iron"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "796F88E974E65CC4"
+					item: "minecraft:furnace_minecart"
+					type: "item"
+				}
+			]
 			subtitle: "+1"
 			tasks: [
 				{
@@ -452,11 +461,6 @@
 				{
 					id: "505C4C615A6A8B0A"
 					item: "create:rope_pulley"
-					type: "item"
-				}
-				{
-					id: "594555EC24951B68"
-					item: "minecraft:furnace_minecart"
 					type: "item"
 				}
 			]
@@ -572,6 +576,7 @@
 			icon: "create:goggles"
 			id: "47B5B3FBC91E73D7"
 			rewards: [{
+				count: 3
 				id: "601207478EFFD3B5"
 				item: {
 					Count: 1b
@@ -829,11 +834,18 @@
 		{
 			dependencies: ["55FAA1463318A7BA"]
 			id: "4F9AA857AEB0C0AE"
-			rewards: [{
-				id: "0F27F0837234FA93"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "0F27F0837234FA93"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "1026B2B5F7FB7240"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+			]
 			subtitle: "更加复杂的功能实现"
 			tasks: [{
 				id: "66683DB6DC8C8C95"
@@ -847,6 +859,11 @@
 		{
 			dependencies: ["0C5511D51B5FF508"]
 			id: "38B27FBD44641B53"
+			rewards: [{
+				id: "6FCB2BA3FEA80C6F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "物品下行"
 			tasks: [{
 				id: "06D9CE0D0B4713A6"
@@ -861,6 +878,7 @@
 			dependencies: ["38B27FBD44641B53"]
 			id: "4D631051E9BE0F50"
 			rewards: [{
+				count: 3
 				id: "302A384EDFAA1710"
 				item: "lightmanscurrency:coin_iron"
 				type: "item"
@@ -879,6 +897,7 @@
 			description: ["&6羊毛&r或者&6风帆&r都可以增加风车的应力，而风帆以外的方块都必须经过&1胶水&r的连接，成为一个整体后被风车带动，当然你也可以连接一些毫不相干的东西，只要你喜欢,它都会随着风车转动"]
 			id: "2CF3F1871D1C18D1"
 			rewards: [{
+				count: 3
 				id: "22ADB4C6F8D44660"
 				item: "lightmanscurrency:coin_iron"
 				type: "item"
@@ -895,7 +914,7 @@
 				}
 				type: "item"
 			}]
-			title: "打个胶先"
+			title: "胶水"
 			x: 2.25d
 			y: -2.0d
 		}
@@ -911,6 +930,7 @@
 			icon: "minecraft:iron_block"
 			id: "01B508A9355C8265"
 			rewards: [{
+				count: 3
 				id: "496E95480C4E258A"
 				item: "lightmanscurrency:coin_iron"
 				type: "item"

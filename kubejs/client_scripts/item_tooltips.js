@@ -23,7 +23,6 @@ ItemEvents.tooltip((tooltip) => {
         text.add(1, [Text.gold({ "translate": "kubejs.tooltips.god_consciousness.1" }), Text.yellow(getMobNameByType(item.nbt?.mobType))]);
     })
 
-
     tooltip.addAdvanced('kubejs:secret_of_rain', (item, advanced, text) => {
         if (tooltip.shift) {
             text.add([Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.1" }).italic(), Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.2" }), Text.blue({ "translate": "kubejs.tooltips.secret_of_rain.5" }).bold(), Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.3" }), Text.gold({ "translate": "kubejs.tooltips.secret_of_rain.6" }).bold(), Text.gray({ "translate": "kubejs.tooltips.secret_of_rain.4" })]);

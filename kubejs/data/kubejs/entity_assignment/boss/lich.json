@@ -1,0 +1,4 @@
+{
+  "chestcavity": "kubejs:types/boss/lich.json",
+  "entities": ["bosses_of_mass_destruction:lich"]
+}
