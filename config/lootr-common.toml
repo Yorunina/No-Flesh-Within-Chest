@@ -63,7 +63,7 @@ decay_structures = []
 decay_all = false
 #how long (in ticks) a refreshing loot containers should take to refresh their contents (default 20 minutes = 20 * 60 * 20)
 #Range: > 0
-refresh_value = 24000
+refresh_value = 40
 #list of loot tables which will refresh (default blank, meaning no chests refresh, in the format of ["modid:loot_table", "othermodid:loot_table"])
 refresh_loot_tables = []
 #list of mod IDs whose loot tables will refresh (default blank, meaning no chests refresh, in the format of ["modid", "othermodid"])

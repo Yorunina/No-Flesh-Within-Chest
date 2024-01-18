@@ -125,7 +125,7 @@
 	#Chest loot settings.
 	[common.chest_loot]
 		#Whether coins can spawn in chests Does not effect entity loot drops.
-		enableChestLoot = true
+		enableChestLoot = false
 		#Chests that will occasionally spawn T1 loot.
 		chestListT1 = ["minecraft:chests/underwater_ruin_small", "minecraft:chests/underwater_ruin_big"]
 		#Chests that will occasionally spawn T1 -> T2 loot.
@@ -135,7 +135,7 @@
 		#Chests that will occasionally spawn T1 -> T4 loot.
 		chestListT4 = ["minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_library", "minecraft:chests/ancient_city"]
 		#Chests that will occasionally spawn T1 -> T5 loot.
-		chestListT5 = ["minecraft:chests/buried_treasure", "minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_other", "minecraft:chests/bastion_treasure", "minecraft:chests/end_city_treasure"]
+		chestListT5 = ["minecraft:chests/buried_treasure"]
 		#Chests that will occasionally spawn T1 -> T6 loot.
 		chestListT6 = []
 

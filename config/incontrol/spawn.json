@@ -1,6 +1,14 @@
 [
   {
-    "mod": "cataclysm",
+    "mob": [
+      "cataclysm:netherite_monstrosity",
+      "cataclysm:ender_guardian",
+      "cataclysm:ignis",
+      "cataclysm:the_harbinger",
+      "cataclysm:the_leviathan",
+      "cataclysm:ancient_remnant",
+      "cataclysm:modern_remnant"
+    ],
     "result": "allow",
     "potion": "kubejs:power_of_citadel,72000,0",
     "onjoin": true,
@@ -31,10 +39,30 @@
     "onjoin": true,
     "hostile": true,
     "result": "allow",
-    "armorhelmet": ["minecraft:netherite_helmet", "minecraft:diamond_helmet", "minecraft:iron_helmet", "minecraft:chainmail_helmet"],
-    "armorchest": ["minecraft:netherite_chestplate", "minecraft:diamond_chestplate", "minecraft:iron_chestplate", "minecraft:chainmail_chestplate"],
-    "armorlegs": ["minecraft:netherite_leggings", "minecraft:diamond_leggings", "minecraft:iron_leggings", "minecraft:chainmail_leggings"],
-    "armorboots": ["minecraft:netherite_boots", "minecraft:diamond_boots", "minecraft:iron_boots", "minecraft:chainmail_boots"],
+    "armorhelmet": [
+      "minecraft:netherite_helmet",
+      "minecraft:diamond_helmet",
+      "minecraft:iron_helmet",
+      "minecraft:chainmail_helmet"
+    ],
+    "armorchest": [
+      "minecraft:netherite_chestplate",
+      "minecraft:diamond_chestplate",
+      "minecraft:iron_chestplate",
+      "minecraft:chainmail_chestplate"
+    ],
+    "armorlegs": [
+      "minecraft:netherite_leggings",
+      "minecraft:diamond_leggings",
+      "minecraft:iron_leggings",
+      "minecraft:chainmail_leggings"
+    ],
+    "armorboots": [
+      "minecraft:netherite_boots",
+      "minecraft:diamond_boots",
+      "minecraft:iron_boots",
+      "minecraft:chainmail_boots"
+    ],
     "continue": true
   },
   {
