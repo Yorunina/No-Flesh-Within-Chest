@@ -382,6 +382,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:magic')
         .tag('kubejs:active');
 
+
     // 资源系列
     registerOrgan(new Organ('kubejs:ore_lung')
         .addScore('health', -0.25)
@@ -753,6 +754,31 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/blooded_chip')
         .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:ring_for_home')
+        .addScore('nerves', -0.25)
+        .addScore('speed', -0.75)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.ring_for_home.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ring_for_home.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/ring_for_home')
+        .tag('kubejs:eat_effect_only')
+        .tag('kubejs:magic')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:embers_liver')
+        .addScore('detoxification', 1)
+        .addScore('fire_resistant', 1)
+        .addScore('strength', -1.5)
+        .addScore('health', -0.75)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.embers_liver.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.embers_liver.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.embers_liver.3" })])
+        .build())
+        .texture('kubejs:item/organs/relics/embers_liver')
+        .tag('kubejs:liver')
+        .tag('kubejs:player_tick_only')
         .tag('kubejs:relics');
 
     // 碎片

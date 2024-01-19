@@ -5,7 +5,7 @@
 
 	[friendly-fire.server-options]
 		#Whether or not to allow players to teleport to eachother within a party
-		"Allow teleportation" = false
+		"Allow teleportation" = true
 		#Whether or not to auto-assign all players to a party
 		"Auto-assign Parties" = false
 		#Whether or not to allow invite all

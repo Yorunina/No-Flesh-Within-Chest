@@ -164,24 +164,24 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:lost_paradise': function (event, organ, data) {
         let player = event.source.player
         let random = Math.random()
-        if (random < 0.1) {
-            event.entity.causeFallDamage(4, event.amount, DamageSource.FALL)
-            event.cancel()
-            return
-        }
         if (random < 0.2) {
-            event.amount = event.amount + event.entity.maxHealth * 0.03
-            return
-        }
-        if (random < 0.3) {
-            event.amount = event.amount * 2
+            event.entity.causeFallDamage(4, event.amount, DamageSource.FALL)
+            event.amount = 0
             return
         }
         if (random < 0.4) {
+            event.amount = event.amount + event.entity.maxHealth * 0.03
+            return
+        }
+        if (random < 0.6) {
+            event.amount = event.amount * 2
+            return
+        }
+        if (random < 0.8) {
             event.amount = event.amount + 10
             return
         }
-        if (random < 0.5) {
+        if (random < 1) {
             player.potionEffects.add('minecraft:regeneration', 20 * 15, 2)
             return
         }

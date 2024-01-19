@@ -69,4 +69,18 @@ const organPlayerTickOnlyStrategies = {
         event.player.potionEffects.add('kubejs:hungry_tamagotchi', 60 * 20, 0)
         event.player.tell(Text.gray({ "translate": "kubejs.msg.tamagotchi.1" }))
     },
+    'kubejs:embers_liver': function (event, organ) {
+        let player = event.player
+        if (player.age % 40 != 0) {
+            return
+        }
+        if (!player.isOnFire()) {
+            return
+        }
+        let amplifier = 0
+        if (player.hasEffect('minecraft:strength')) {
+            amplifier = player.getEffect('minecraft:strength').getAmplifier()
+        }
+        player.potionEffects.add('minecraft:strength', 6 * 20, Math.min(amplifier + 1, 4))
+    },
 };

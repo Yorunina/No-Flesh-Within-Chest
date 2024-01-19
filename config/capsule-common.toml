@@ -66,7 +66,7 @@
 	#List of block ids or tags that will never be captured by a non overpowered capsule. While capturing, the blocks will stay in place.
 	# Ex block: minecraft:spawner
 	# Ex tag: minecraft:beds
-	excludedBlocks = ["minecraft:spawner", "minecraft:end_portal", "minecraft:end_portal_frame", "minecraft:air", "minecraft:structure_void", "minecraft:bedrock", "ic2:", "refinedstorage:", "superfactorymanager:", "gregtech:machine", "gtadditions:", "bloodmagic:alchemy_table", "mekanism:machineblock", "mekanism:boundingblock", "tombstone:player_graves", "minecraft:water", "minecraft:lava"]
+	excludedBlocks = ["minecraft:spawner", "minecraft:end_portal", "minecraft:end_portal_frame", "minecraft:air", "minecraft:structure_void", "minecraft:bedrock", "ic2:", "refinedstorage:", "superfactorymanager:", "gregtech:machine", "gtadditions:", "bloodmagic:alchemy_table", "mekanism:machineblock", "mekanism:boundingblock", "tombstone:player_graves"]
 	#List of block ids or tags that will never be captured even with an overpowered capsule. While capturing, the blocks will stay in place.
 	#Mod prefix usually indicate an incompatibility, remove at your own risk. See https://github.com/Lythom/capsule/wiki/Known-incompatibilities. 
 	# Ex: minecraft:spawner

@@ -82,7 +82,7 @@ const organRightClickedOnlyStrategies = {
             return
         }
         let player = event.player
-        let count = 80;
+        let count = 100;
         if (player.persistentData.contains(resourceCount)) {
             count = player.persistentData.getInt(resourceCount) + count;
         }

@@ -1,0 +1,4 @@
+{
+  "chestcavity": "kubejs:types/boss/ignis.json",
+  "entities": ["cataclysm:ignis"]
+}

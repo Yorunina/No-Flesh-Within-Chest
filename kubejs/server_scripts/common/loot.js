@@ -38,7 +38,7 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('kubejs:candy_pancreas'));
 
     event.addEntityLootModifier('minecraft:witch')
-        .addLoot(LootEntry.of('kubejs:magic_spine').when((c) => c.randomChance(0.02)));
+        .addLoot(LootEntry.of('kubejs:magic_spine').when((c) => c.randomChance(0.05)));
 
     event.addLootTypeModifier(LootType.ENTITY)
         .removeLoot('@simplehats')
@@ -86,5 +86,5 @@ LootJS.modifiers(event => {
         .anyStructure(['#dnl:all_structure'], false)
         .addLoot(LootEntry.of('kubejs:ritual_catalyst').when((c) => c.randomChance(0.1)))
         .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.02)))
-    
+
 })

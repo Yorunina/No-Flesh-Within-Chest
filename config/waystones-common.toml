@@ -54,7 +54,7 @@
 	leashedDenyList = ["minecraft:wither"]
 	#Set to 'ALLOW' to allow dimensional warp in general. Set to 'GLOBAL_ONLY' to restrict dimensional warp to global waystones. Set to 'DENY' to disallow all dimensional warps.
 	#Allowed Values: ALLOW, GLOBAL_ONLY, DENY
-	dimensionalWarp = "ALLOW"
+	dimensionalWarp = "GLOBAL_ONLY"
 	#List of dimensions that players are allowed to warp cross-dimension from and to. If left empty, all dimensions except those in dimensionalWarpDenyList are allowed.
 	dimensionalWarpAllowList = []
 	#List of dimensions that players are not allowed to warp cross-dimension from and to. Only used if dimensionalWarpAllowList is empty.

@@ -52,6 +52,6 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'minecraft:spider_eye' }, { 'count': 3, 'item': 'meetyourfight:phantoplasm' }, { 'count': 6, 'item': 'biomancy:exotic_compound' }], Item.of('kubejs:phantom_eyeball')).setNutrientsCost(60).setTab('biomancy:weapons'))
 
-    registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'kubejs:stomach_template' }, { 'count': 2, 'item': 'biomancy:enlargement_serum' }, { 'count': 16, 'item': 'biomancy:malignant_flesh_veins' }, { 'count': 8, 'item': 'biomancy:nutrient_bar' }], Item.of('kubejs:stomach_tumor')).setNutrientsCost(300).setTab('biomancy:weapons'))
+    registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'kubejs:stomach_template' }, { 'count': 2, 'item': 'biomancy:enlargement_serum' }, { 'count': 16, 'item': 'biomancy:malignant_flesh_veins' }, { 'count': 8, 'item': 'biomancy:nutrient_bar' }], Item.of('kubejs:stomach_tumor')).setNutrientsCost(40).setTab('biomancy:weapons'))
 
 })

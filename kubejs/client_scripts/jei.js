@@ -27,6 +27,8 @@ JEIEvents.information(event => {
     event.addItem('kubejs:blood_moon_wand', Text.black({ "translate": "kubejs.jei.blood_moon_wand.1" }))
     event.addItem('kubejs:pandora_inactive', Text.black({ "translate": "kubejs.jei.pandora_inactive.1" }))
     event.addItem('kubejs:blooded_chip', Text.black({ "translate": "kubejs.jei.blooded_chip.1" }))
+    event.addItem('kubejs:ring_for_home', Text.black({ "translate": "kubejs.jei.ring_for_home.1" }))
+    event.addItem('kubejs:embers_liver', Text.black({ "translate": "kubejs.jei.embers_liver.1" }))
     event.addItem('kubejs:bad_ink', Text.black({ "translate": "kubejs.jei.bad_ink.1" }))
     event.addItem('kubejs:mini_slime', Text.black({ "translate": "kubejs.jei.mini_slime.1" }))
 })

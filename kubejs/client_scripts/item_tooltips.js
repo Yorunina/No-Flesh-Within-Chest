@@ -109,25 +109,33 @@ ItemEvents.tooltip((tooltip) => {
             text.add(lineNum++, [Text.gray({ "translate": "kubejs.tooltips.organ_charm.9" }), Text.gray(`${item.nbt.bearTask.minDamage}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.10" }), Text.gray(`${item.nbt.bearTask.counter.toFixed(2)}/${item.nbt.bearTask.bearAmount}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.11" })]);
         }
         if (item.nbt?.type == 'mining') {
-            text.add(lineNum++, [Text.gray({ "translate": "kubejs.tooltips.organ_charm.21" }), Text.gray(`${item.nbt.miningTask.counter}/${item.nbt.miningTask.miningAmount}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.22" })]);
+            let blockList = []
+            if (item.nbt.miningTask.targetblock) {
+                item.nbt.miningTask.targetblock.forEach(ctx => {
+                    blockList.push(Text.translate(Item.of(ctx).descriptionId).string)
+                })
+            }
+            text.add(lineNum++,[Text.gold({ "translate": "kubejs.tooltips.organ_charm.12" }), Text.yellow(blockList.join('/'))])
+            
+            text.add(lineNum++, [Text.gray({ "translate": "kubejs.tooltips.organ_charm.13" }), Text.gray(`${item.nbt.miningTask.counter}/${item.nbt.miningTask.miningAmount}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.14" })]);
         }
         if (item.nbt?.type == 'damage') {
-            let typeName = { "translate": "kubejs.tooltips.organ_charm.12" }
+            let typeName = { "translate": "kubejs.tooltips.organ_charm.15" }
             switch (item.nbt.damageTask?.type) {
                 case ('melee'):
-                    typeName = { "translate": "kubejs.tooltips.organ_charm.13" }
+                    typeName = { "translate": "kubejs.tooltips.organ_charm.16" }
                     break;
                 case ('projectile'):
-                    typeName = { "translate": "kubejs.tooltips.organ_charm.14" }
+                    typeName = { "translate": "kubejs.tooltips.organ_charm.17" }
                     break;
                 case ('magic'):
-                    typeName = { "translate": "kubejs.tooltips.organ_charm.15" }
+                    typeName = { "translate": "kubejs.tooltips.organ_charm.18" }
                     break;
             }
-            text.add(lineNum++, [Text.gray({ "translate": "kubejs.tooltips.organ_charm.16" }), Text.gray(`${item.nbt.damageTask.minDamage}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.17" }), Text.gray(typeName), Text.gray({ "translate": "kubejs.tooltips.organ_charm.18" }), Text.gray(`${item.nbt.damageTask.counter.toFixed(2)}/${item.nbt.damageTask.damageAmount}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.19" })]);
+            text.add(lineNum++, [Text.gray({ "translate": "kubejs.tooltips.organ_charm.19" }), Text.gray(`${item.nbt.damageTask.minDamage}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.20" }), Text.gray(typeName), Text.gray({ "translate": "kubejs.tooltips.organ_charm.21" }), Text.gray(`${item.nbt.damageTask.counter.toFixed(2)}/${item.nbt.damageTask.damageAmount}`), Text.gray({ "translate": "kubejs.tooltips.organ_charm.22" })]);
         }
         if (item.nbt?.status == 1) {
-            text.add(lineNum++, [Text.red({ "translate": "kubejs.tooltips.organ_charm.20" })]);
+            text.add(lineNum++, [Text.red({ "translate": "kubejs.tooltips.organ_charm.23" })]);
         }
     })
 })

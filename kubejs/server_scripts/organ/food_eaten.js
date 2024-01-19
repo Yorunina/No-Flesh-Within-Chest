@@ -71,6 +71,16 @@ const organFoodEatenOnlyStrategies = {
             }
         }
     },
+    'kubejs:ring_for_home': function (event, organ) {
+        let player = event.player
+        if (event.item.item.foodProperties.nutrition >= 10) {
+            let deathLocation = player.lastDeathLocation
+            if (deathLocation.isPresent()) {
+                let deathPos = deathLocation.get().pos()
+                event.player.teleportTo(deathLocation.get().dimension(), deathPos.x, deathPos.y, deathPos.z, event.player.yaw, event.player.pitch)
+            }
+        }
+    },
 
 };
 

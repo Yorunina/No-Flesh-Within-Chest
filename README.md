@@ -22,7 +22,7 @@ If you have any suggestions or want to report bugs related to this modpack, plea
 
 - [x] 实现基本器官功能
   - [x] 快速注册器官
-- [ ] 实现高级器官效果
+- [x] 实现高级器官效果
   - [x] 实现激活效果
   - [x] 实现独立激活效果
   - [x] 实现激活连携效果
