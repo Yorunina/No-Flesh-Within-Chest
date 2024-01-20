@@ -2,7 +2,8 @@
   "chestcavity": "kubejs:types/reptile/common_reptile.json",
   "entities": [
     "alexsmobs:alligator_snapping_turtle",
-    "alexsmobs:anacondas",
+    "alexsmobs:anaconda",
+    "alexsmobs:anaconda_part",
     "alexsmobs:caiman",
     "alexsmobs:crocodile",
     "alexsmobs:komodo_dragon",

@@ -6,6 +6,10 @@
     "alexsmobs:leafcutter_ant",
     "alexsmobs:tarantula_hawk",
     "alexsmobs:triops",
-    "alexsmobs:tarantula_hawk"
+    "alexsmobs:centipede_body",
+    "alexsmobs:centipede_head",
+    "alexsmobs:centipede_tail",
+    "goety:wartling",
+    "cataclysm:endermaptera"
   ]
 }

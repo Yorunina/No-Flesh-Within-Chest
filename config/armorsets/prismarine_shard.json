@@ -1,0 +1,53 @@
+{
+  "armorSetName": "海晶碎片",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:prismarine_shard_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:prismarine_shard_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:prismarine_shard_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:prismarine_shard_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "海底神殿稍微认可了你一些……"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "forge:swim_speed",
+      "modifierUUID": "D86F6230-A725-4385-94F6-A9BB7E101AF3",
+      "description": "+30% 游泳速度",
+      "value": 0.3,
+      "attributeOperation": 1
+    },
+    {
+      "type": "effect",
+      "name": "minecraft:night_vision",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "conditions": [
+        {
+          "type": "inWater"
+        }
+      ],
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    },
+    {
+      "type": "effect",
+      "name": "minecraft:mining_fatigue",
+      "value": 0.0,
+      "interactionType": "immunity",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "armorSetName": "哭泣黑曜石",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:crying_obsidian_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:crying_obsidian_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:crying_obsidian_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:crying_obsidian_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "同时是最好的物理和魔法材料，让人感叹自然的鬼斧神工"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:spell_power",
+      "modifierUUID": "84407F2A-AE6F-4C92-A186-63F48CCB781C",
+      "description": "+25% 魔法伤害",
+      "value": 0.25
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:spell_resist",
+      "modifierUUID": "091A0D81-5757-4687-914A-DD666F4B2DDC",
+      "description": "+25% 法术抵抗",
+      "value": 0.25
+    },
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.armor_toughness",
+      "modifierUUID": "5551B336-1F13-4977-AA83-FB407B7703C3",
+      "description": "+8 盔甲韧性",
+      "value": 8.0
+    }
+  ]
+}

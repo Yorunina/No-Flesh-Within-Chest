@@ -4,7 +4,7 @@
     "alexsmobs:froststalker",
     "alexsmobs:guster",
     "alexsmobs:mungus",
-    "alexsmobs:murmur_heads",
+    "alexsmobs:murmur_head",
     "alexsmobs:murmur",
     "alexsmobs:rocky_roller",
     "alexsmobs:skreecher",
@@ -29,6 +29,7 @@
     "alexsmobs:snow_leopard",
     "alexsmobs:sugar_glider",
     "alexsmobs:tasmanian_devil",
-    "alexsmobs:tiger"
+    "alexsmobs:tiger",
+    "bookwyrms:book_wyrm"
   ]
 }

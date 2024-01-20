@@ -1,0 +1,19 @@
+{
+    "chestcavity": "kubejs:types/human/common_human.json",
+    "entities": [
+        "supplementaries:red_merchant",
+        "irons_spellbooks:pyromancer",
+        "irons_spellbooks:cryomancer",
+        "irons_spellbooks:archevoker",
+        "irons_spellbooks:priest",
+        "goety:warlock",
+        "goety:envioker",
+        "goety:inquillager",
+        "goety:conquillager",
+        "goety:piker",
+        "goety:preacher",
+        "goety:crone",
+        "goety:minister"
+    ]
+  }
+  

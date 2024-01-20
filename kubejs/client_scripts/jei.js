@@ -31,4 +31,6 @@ JEIEvents.information(event => {
     event.addItem('kubejs:embers_liver', Text.black({ "translate": "kubejs.jei.embers_liver.1" }))
     event.addItem('kubejs:bad_ink', Text.black({ "translate": "kubejs.jei.bad_ink.1" }))
     event.addItem('kubejs:mini_slime', Text.black({ "translate": "kubejs.jei.mini_slime.1" }))
+    event.addItem('kubejs:sand_bone', Text.black({ "translate": "kubejs.jei.sand_bone.1" }))
+
 })
