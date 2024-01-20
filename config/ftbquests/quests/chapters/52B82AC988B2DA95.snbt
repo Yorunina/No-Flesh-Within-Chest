@@ -19,7 +19,6 @@
 			]
 			icon: "weaponmaster:workstation"
 			id: "1C3CABF6FA4DBB44"
-			incompatible: ["5A2FBD3260EAA17A"]
 			rewards: [{
 				count: 4
 				id: "2319A4D71F76480F"
@@ -39,66 +38,6 @@
 			}]
 			title: "引言：何为武器大师"
 			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1C3CABF6FA4DBB44"]
-			description: [
-				"通过完成该任务，你可以获取该章节所有任务的奖励。"
-				""
-				"但是，这意味着你&4不能&r游玩该章节的所有教学任务！"
-				""
-				"请慎重！"
-			]
-			hide_dependency_lines: true
-			icon: "kubejs:exclamation_mark"
-			id: "5A2FBD3260EAA17A"
-			incompatible: ["1C3CABF6FA4DBB44"]
-			rewards: [
-				{
-					count: 2
-					id: "19AFEF778BCA0ADB"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_gold"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "1C90DB9E9DB53733"
-					item: "simplehats:hatbag_epic"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "4008ABC9261FC014"
-					item: "lightmanscurrency:coin_iron"
-					type: "item"
-				}
-			]
-			shape: "octagon"
-			subtitle: "如果你已经足够了解，且需要该章节的奖励"
-			tasks: [
-				{
-					id: "2E9C4AC3C43B53E7"
-					title: "快捷，启动！"
-					type: "checkmark"
-				}
-				{
-					consume_items: true
-					id: "61269F785AE2CB64"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					title: "防止手贱因此消耗银币"
-					type: "item"
-				}
-			]
-			title: "武器大师：快捷模式"
-			x: -5.0d
 			y: 0.0d
 		}
 		{

@@ -15,415 +15,443 @@
 		}
 	}
 	id: "71788747161A7134"
-	images: [
-		{
-			click: ""
-			corner: false
-			dev: false
-			height: 10.0d
-			hover: [ ]
-			image: "kubejs:textures/task/isb_background_1.png"
-			rotation: 0.0d
-			width: 10.0d
-			x: -2.25d
-			y: -9.25d
-		}
-		{
-			click: ""
-			corner: false
-			dev: false
-			height: 30.0d
-			hover: [ ]
-			image: "kubejs:textures/task/isb_background_2.png"
-			order: -1
-			rotation: 0.0d
-			width: 30.0d
-			x: 2.75d
-			y: -7.75d
-		}
-	]
-	order_index: 4
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 45.0d
+		hover: [ ]
+		image: "kubejs:textures/task/isb_background_1.png"
+		rotation: 0.0d
+		width: 45.0d
+		x: -0.5d
+		y: -3.0d
+	}]
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["48EAD277DFC740E9"]
+			dependencies: ["49001B4F8FF6A5D9"]
 			description: [
-				"为了制作法术卷轴，你需要一个法术撰写台，使用法术撰写台需要向格子中分别放入&6纸张&r、&6专精物品&r和&6不同等级的墨水&r。"
+				"想成为一个强大的魔法师并不是终日宅在家里研究，而是踏遍世界各地寻找魔法的踪迹。这意味着你或许需要一个趁手的交通工具来帮助你更方便的周游世界。"
 				""
-				"不同的专精物品代表了不同的法术学派，具体所需的代表物品可以在&2Iron的魔法书的手册&r中查看比如&6烈焰棒&r代表火焰学派、&6冰封骨骸&r代表冰霜学派. . .使用不同的专精，就会合成出不同学派的法术。"
-				""
-				"&2越高等级的法术需要越高等级的墨水进行合成&r，因此在进行卷轴的制作前也可以根据自己的经济情况选择适合的墨水。"
-				""
-				"{@pagebreak}"
-				"鲜血精华来源于炼药锅烹饪生物获取。"
-				""
-				"冰封骨骸掉落于流浪者。"
-				""
-				"雷电瓶需要手持空瓶右键闪电苦力怕获得。"
-				""
-				"神祈宝珠通过金锭和紫水晶的合成获得。"
+				"&2魔法巫师&r模组中的扫帚是一个不错的选择，它不仅能用来飞行赶路，还允许你对它进行改造。为扫帚装载不同类型的背包、替换扫帚头、增加装饰等等，都会极大方便你的旅途。"
 			]
-			icon: "irons_spellbooks:scroll_forge"
-			id: "3F531FE03C454203"
-			min_required_tasks: 1
-			optional: true
-			rewards: [{
-				count: 5
-				id: "3C8CEE1968A166EE"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "在了解法术前，首要需了解法术流派"
-			tasks: [{
-				id: "757E68E4DBC10C1E"
-				item: "irons_spellbooks:scroll_forge"
-				type: "item"
-			}]
-			title: "撰写法术卷轴"
-			x: 7.25d
-			y: -4.75d
-		}
-		{
-			dependencies: ["3F531FE03C454203"]
-			description: [
-				"当你拥有了法术卷轴之后，就可以将其&2安装在你的魔法书或者魔法武器&r上了。"
-				""
-				"右键法术抄写台，即可将法术抄写在对应的装备上。当你想要取下时，仅需要在抄写台上取消即可。"
-				""
-				"直接右键使用也可以直接释放法术卷轴中的魔法，但会&2消耗掉对应的法术卷轴&r。"
-				""
-				"如果法术配置在法术书中，需要将其装备在&6饰品栏&r，使用键位里配置好的施法按钮进行法术释放。"
-			]
-			icon: "irons_spellbooks:inscription_table"
-			id: "31B5C1D0FEBE2D26"
-			rewards: [{
-				id: "026D8F70A7C3C648"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "像附魔书一样强化"
-			tasks: [{
-				id: "50E3ADACB85FF99D"
-				item: "irons_spellbooks:inscription_table"
-				type: "item"
-			}]
-			title: "飞跃的升级"
-			x: 9.0d
-			y: -4.75d
-		}
-		{
-			dependencies: ["48EAD277DFC740E9"]
-			description: [
-				"炼金锅是一种基础但复杂的魔法道具。其发挥着&6提升墨水品质&r、&6熬煮鲜血精华&r、&6还原卷轴到墨水&r以及&6炼制药水&r的功能。"
-				""
-				"如果想要&6提高墨水品质&r，则需要按照配方，右键放置四瓶低级墨水到炼药锅中，形成药水基底，进而投入对应的提升材料（如铜锭、金锭等，取决于墨水等级）。进而就会在锅内生成一瓶高等级墨水。"
-				""
-				"如果想要&6熬煮鲜血精华&r，只需要在有水位时，&2熬煮生物使其受伤&r，那么就会在锅内生成鲜血精华，通过手持空瓶右键便可收集。"
-				""
-				"{@pagebreak}"
-				"至于如果想要&6还原卷轴到墨水&r，则仅需将法术卷轴投入到有水的炼金锅中，即有&250%的概率&r生成对应品质的墨水，通过使用空瓶取出。"
-				""
-				"&6酿造药水&r则是和提升墨水品质相同，倒入药水基底后，投入素材即可。"
-			]
-			id: "4269F9053A9837CE"
-			rewards: [{
-				count: 5
-				id: "7688575E108D773B"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "又是一口锅"
-			tasks: [{
-				consume_items: false
-				id: "1AF67C8AD8741E27"
-				item: "irons_spellbooks:alchemist_cauldron"
-				type: "item"
-			}]
-			title: "炼金的大锅"
-			x: 5.25d
-			y: -4.75d
-		}
-		{
-			dependencies: ["31B5C1D0FEBE2D26"]
-			description: [
-				"奥术铁砧有多种用途，其中最常见的即是&2将法术卷轴敲在武器上&r，这样武器在右键时便会释放对应的法术。但这会覆盖掉武器原本的右键效果。"
-				""
-				"如果以&6忏悔石&r作为材料，则可以将武器的法术消除（不会返还法术）。"
-				""
-				"除此之外，&2两个相同的卷轴合成可以合成更高等级的卷轴&r（但不能超越法术上限），这往往用于逆向批量生产高级墨水。"
-				""
-				"最后，奥术铁砧也可以用于后期的&2升级法球强化&r。将装备与升级法球放置在奥术铁砧上，便可应用升级法球的效果。"
-			]
-			icon: "irons_spellbooks:arcane_anvil"
-			id: "78DB2A07CD7B5401"
-			rewards: [{
-				id: "50DAD3DA4E7F5A51"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "展开新道路"
-			tasks: [{
-				id: "373F3CD39F7796D1"
-				item: "irons_spellbooks:arcane_anvil"
-				type: "item"
-			}]
-			title: "抵至顶端"
-			x: 11.0d
-			y: -4.75d
-		}
-		{
-			dependencies: ["37876447D30E096F"]
-			description: [
-				"在各类战利品箱中，你偶然能够寻找到名为&6墨水&r的物品。其可以用于在&2法术撰写台&r中撰写普通品质的法术卷轴。"
-				""
-				"除此之外，你也可以通过魔法巫师的坩埚&5嬗变&r出所需的低级墨水。"
-			]
-			id: "48EAD277DFC740E9"
-			rewards: [{
-				count: 5
-				id: "3BBBD6F7EBBF51C3"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "卷轴构成的基础元素"
-			tasks: [{
-				consume_items: false
-				id: "6EA201263E0A78EF"
-				item: "irons_spellbooks:common_ink"
-				type: "item"
-			}]
-			title: "墨水"
-			x: 3.5d
-			y: -4.75d
-		}
-		{
-			dependencies: ["37876447D30E096F"]
-			description: [
-				"为了能够一次性释放更多的法术，你亟需提高你的魔力上限。"
-				""
-				"装备一套&b魔力布匹&r制成的&6上好护甲&r或许是一个不错的主意。针对每个法术学派，其都拥有着一套对应的&6魔法护甲&r。这些护甲不光能够提高你的魔力上限，还能够一定程度上提高你的法术强度。"
-				""
-				"除此之外，佩戴&6戒指&r也是一个有效提高魔力上限的手段。"
-			]
+			hide_dependency_lines: false
 			icon: {
 				Count: 1b
-				id: "irons_spellbooks:priest_chestplate"
-				tag: {
-					Damage: 0
-				}
+				id: "hexerei:witch_hazel_broom"
+				tag: { }
 			}
-			id: "239E1D7FBB22A47F"
-			rewards: [
+			id: "5B335FBB31D1A11E"
+			min_required_tasks: 1
+			rewards: [{
+				id: "6A333AC7938D027B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
 				{
-					count: 5
-					id: "1167A7EFFF565060"
+					id: "786770AB592F97D2"
 					item: {
 						Count: 1b
-						id: "lightmanscurrency:coin_iron"
+						id: "hexerei:witch_hazel_broom"
 						tag: { }
 					}
 					type: "item"
 				}
 				{
-					id: "66BD271BAB49C60F"
+					id: "0712F256DAE7303E"
 					item: {
 						Count: 1b
-						id: "irons_spellbooks:pumpkin_helmet"
-						tag: {
-							Damage: 0
-						}
+						id: "hexerei:mahogany_broom"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "2295D8D35D2A5134"
+					item: {
+						Count: 1b
+						id: "hexerei:willow_broom"
+						tag: { }
 					}
 					type: "item"
 				}
 			]
-			subtitle: "有效性比防御性更好"
-			tasks: [{
-				id: "724650F93AC1AF63"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "好马配好鞍！"
-			x: 5.25d
-			y: -2.0d
+			title: "飞行！巫师的扫帚"
+			x: -3.5d
+			y: -8.5d
 		}
 		{
-			dependencies: ["37876447D30E096F"]
-			description: [
-				"&6奥术源质&r是一种极其重要的法术原料，广泛的存在于各种配方之中。"
-				""
-				"你可以在各种物品&2奖励箱&r中寻找到奥术源质，除此之外，击败&2Iron的魔法书中的部分敌人&r，也可以获得一定的奥数源质。"
-			]
-			id: "1D626357219ADF98"
+			dependencies: ["37BCA277F892BBB0"]
+			hide_dependency_lines: false
+			id: "77EBA7DEDBAE54BC"
 			rewards: [{
-				id: "2C68A8DAC67470F8"
+				id: "0F9F27A0A30B04B0"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "魔法使的基础"
 			tasks: [{
-				consume_items: false
-				id: "10A39B7F5CAE9A6B"
-				item: "irons_spellbooks:arcane_essence"
+				id: "5CF0B2605E35163B"
+				item: "irons_spellbooks:ender_rune"
 				type: "item"
 			}]
-			title: "收集奥术源质"
-			x: 5.0d
+			x: 5.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["635394443D21A635"]
+			hide_dependency_lines: false
+			id: "64FAEC94C3F491EC"
+			rewards: [{
+				id: "0464A2A0229DFB7F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0395682570271BE2"
+				item: "irons_spellbooks:holy_rune"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["6B94559E3B5CA88E"]
+			hide_dependency_lines: false
+			id: "37D4F48241A35F28"
+			rewards: [{
+				id: "058A2FFC3FDB091E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A1EADED0D497880"
+				item: "irons_spellbooks:blood_rune"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5C2CEEA69AA36789"]
+			hide_dependency_lines: false
+			id: "48F38A4EEC29B813"
+			rewards: [{
+				id: "2B8EC1691D7AA0A7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BA256B62084242C"
+				item: "irons_spellbooks:evocation_rune"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -11.0d
+		}
+		{
+			dependencies: ["03BBFD0234857AF9"]
+			description: ["用于合成魔力升级法球。"]
+			hide_dependency_lines: true
+			id: "54447CE2FB2EB3FB"
+			rewards: [{
+				id: "52964AEE50E86E04"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4723A618D7B39683"
+				item: "irons_spellbooks:arcane_rune"
+				type: "item"
+			}]
+			x: 1.5d
 			y: -7.0d
 		}
 		{
-			dependencies: ["77ED5164610655DB"]
-			description: [
-				"Iron's SpellBooks（后简称铁魔法，虽然Iron是作者的名字）是一款核心围绕战斗内容的&6魔法类&r模组。虽然其中包含了部分便于生存的特性，但绝大多数法术的设计目的仍旧是为了更好的战斗。"
-				""
-				"玩家可以在铁魔法的游戏历程中，自行选择学习的&6法术流派&r，搭配自己的魔法书，打出成吨的魔法伤害。"
-				""
-				"在本整合包中，&2铁魔法所造成的伤害才被认为是魔法伤害&r，因此，类如神恩Boss的魔法免疫或者器官的魔法伤害强化，都是主要针对铁魔法的相关属性而设置。原版的类如药水伤害并不包含在其中。"
-			]
-			icon: {
-				Count: 1b
-				id: "irons_spellbooks:diamond_spell_book"
-				tag: {
-					ISB_spellbook: {
-						spellSlots: 8
-						spells: [ ]
-					}
-				}
-			}
-			id: "37876447D30E096F"
+			dependencies: ["03BBFD0234857AF9"]
+			description: ["用于合成冷却缩减升级法球。"]
+			hide_dependency_lines: true
+			id: "5E1DBC8E808C2404"
 			rewards: [{
-				id: "32487823F6BEACB7"
-				item: {
-					Count: 1b
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "irons_spellbooks:iss_guide_book"
-					}
-				}
-				type: "item"
-			}]
-			shape: "rsquare"
-			subtitle: "铁魔法、铁傀儡与玫瑰"
-			tasks: [{
-				id: "39038D5AF6CCED6C"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "引言：为什么要发展Iron的魔法书"
-			x: 0.75d
-			y: -4.75d
-		}
-		{
-			dependencies: ["77ED5164610655DB"]
-			description: [
-				"通过完成该任务，你可以获取该章节所有任务的奖励。"
-				""
-				"但是，这意味着你&4不能&r游玩该章节的所有教学任务！"
-				""
-				"请慎重！"
-			]
-			hide_text_until_complete: false
-			icon: "kubejs:exclamation_mark"
-			id: "1CF31092D8A4DDE2"
-			rewards: [{
-				id: "0C17B95899F98C89"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			shape: "octagon"
-			subtitle: "如果你已经足够了解，且需要该章节的奖励"
-			tasks: [
-				{
-					id: "7DB81233C3A6609D"
-					title: "我已了解"
-					type: "checkmark"
-				}
-				{
-					consume_items: true
-					id: "651932743DF2699C"
-					item: "lightmanscurrency:coin_iron"
-					title: "提交铁币防止手贱点错"
-					type: "item"
-				}
-			]
-			title: "Iron的魔法书：快捷模式"
-			x: -7.0d
-			y: -4.75d
-		}
-		{
-			dependencies: ["4269F9053A9837CE"]
-			description: ["击败亡灵术士时有概率掉落&6黯淡皇冠&r。对于一名法师来说，它的缺点不值一提。"]
-			id: "5B5E6E1CCF036BDA"
-			rewards: [{
-				count: 2
-				id: "56457DEFB0F7D425"
+				id: "4F6792F53DC15BE8"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "亡灵术士的遗物"
 			tasks: [{
-				id: "34488BD2C9B4AB69"
-				item: {
-					Count: 1b
-					id: "irons_spellbooks:tarnished_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "6B19541C90BC0E88"
+				item: "irons_spellbooks:cooldown_rune"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -10.75d
+			x: 1.5d
+			y: -8.5d
 		}
 		{
-			dependencies: ["48EAD277DFC740E9"]
-			description: [
-				"右键使用归途指南针，其将会指向一个特定的地下墓穴。如果很大的范围内没有地下墓穴，则会失去固定的指向。"
-				""
-				"一个归途指南针仅能指向一个墓穴。"
-			]
-			id: "50D5F2B8512EE2E2"
+			dependencies: ["6E151A3224E43D99"]
+			hide_dependency_lines: false
+			id: "2E04B7D75F40FA60"
 			rewards: [{
-				id: "0A77F4D9AA081253"
+				id: "46762B261E28FCB3"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "指引你去往地穴的路"
 			tasks: [{
-				id: "3AB38AF164FBB891"
-				item: {
-					Count: 1b
-					id: "irons_spellbooks:wayward_compass"
-					tag: { }
-				}
+				id: "0575BFFDA0DD59F7"
+				item: "irons_spellbooks:nature_rune"
 				type: "item"
 			}]
-			x: -4.25d
-			y: -9.5d
+			x: 6.5d
+			y: -8.0d
 		}
 		{
-			dependencies: ["31B5C1D0FEBE2D26"]
-			description: ["在&2远古城市&r的奖励箱中，偶尔会遇到名为&6残破的书&r的物品，可以借助它，还原最为强大的&6远古魔法书&r。"]
-			id: "5CFE7697C04AFCF8"
+			dependencies: ["03BBFD0234857AF9"]
+			description: ["用于合成抗性升级法球。"]
+			hide_dependency_lines: true
+			id: "17413FA76A005283"
 			rewards: [{
-				id: "126C5A10A4F346BC"
-				item: "lightmanscurrency:coin_emerald"
+				id: "2D8BA387D97C3737"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "残破之书仍有光辉之时"
 			tasks: [{
-				id: "344B36EE13BBAA34"
+				id: "52A30ADE53C2C4F2"
+				item: "irons_spellbooks:protection_rune"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["43A34214A50911F2"]
+			hide_dependency_lines: false
+			id: "792BD0BFA2189110"
+			rewards: [{
+				id: "1B4747663F5AC3CF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2140388DE02D8B65"
+				item: "irons_spellbooks:fire_rune"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["17A5CD928AD140DB"]
+			hide_dependency_lines: false
+			id: "40C82776583AFB70"
+			rewards: [{
+				id: "72F2B6349DD93BA8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "01DD44CD54DD033A"
+				item: "irons_spellbooks:ice_rune"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0EE3679FD3BD92B0"]
+			hide_dependency_lines: false
+			id: "539AD15617908DBF"
+			rewards: [{
+				id: "7859CE098557DEDA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "311621F6D31E38C1"
+				item: "irons_spellbooks:lightning_rune"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"制作所有其他符文的基础。在一些&6原版结构&r中能找到少量，在本模组结构中更常见。"
+				""
+				"每个种类的法师在死亡时掉落一块同种类符文（亡灵术士除外）。"
+			]
+			id: "03BBFD0234857AF9"
+			rewards: [{
+				id: "3F49902D031CF2AE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E34F397F55B1B65"
+				item: "irons_spellbooks:blank_rune"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["03BBFD0234857AF9"]
+			description: [
+				"雷电学派的指定材料，是制作该学派卷轴、符文、装备等的重要材料。"
+				""
+				"对闪电苦力怕使用玻璃瓶获得，每次获取时苦力怕会受到5点伤害，但是不会恢复为普通苦力怕。"
+				""
+				"你可以在雷雨天用带有“引雷”附魔的三叉戟击中苦力怕使其变为闪电苦力怕。"
+			]
+			hide_dependency_lines: false
+			id: "0EE3679FD3BD92B0"
+			tasks: [{
+				id: "5603F7BB58849F4A"
+				item: "irons_spellbooks:lightning_bottle"
+				type: "item"
+			}]
+			title: "雷电学派"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["03BBFD0234857AF9"]
+			description: [
+				"神圣学派的指定材料，是制作该学派卷轴、符文、装备等的重要材料。"
+				""
+				"通过合成获得。"
+			]
+			hide_dependency_lines: false
+			id: "635394443D21A635"
+			tasks: [{
+				id: "1B75D6F884473CCC"
+				item: "irons_spellbooks:divine_pearl"
+				type: "item"
+			}]
+			title: "神圣学派"
+			x: 1.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["03BBFD0234857AF9"]
+			description: [
+				"&b冰霜学派&r的指定材料，是制作该学派卷轴、符文、装备等的重要材料。"
+				""
+				"由&c流浪者&r掉落。"
+				""
+				"流浪者是骷髅的变种，只生成于雪地、冰刺之地、雪地针叶林。"
+			]
+			hide_dependency_lines: false
+			id: "17A5CD928AD140DB"
+			tasks: [{
+				id: "3D604363E7803535"
+				item: "irons_spellbooks:frozen_bone"
+				type: "item"
+			}]
+			title: "冰霜学派"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7F70A0CC05B25A91"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: false
+			id: "6873532EB79AB6E1"
+			tasks: [{
+				id: "375718D87891FE86"
+				item: "irons_spellbooks:blood_vial"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["03BBFD0234857AF9"]
+			description: ["烈焰学派的指定材料，是制作该学派卷轴、符文、装备等的重要材料。"]
+			hide_dependency_lines: false
+			id: "43A34214A50911F2"
+			tasks: [{
+				id: "01622344E9487B0E"
+				item: "minecraft:blaze_rod"
+				type: "item"
+			}]
+			title: "火焰学派"
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["03BBFD0234857AF9"]
+			description: ["自然/剧毒学派的指定材料，是制作该学派卷轴、符文、装备等的重要材料。"]
+			hide_dependency_lines: false
+			id: "6E151A3224E43D99"
+			tasks: [{
+				id: "641C18EF0B0240B4"
+				item: "minecraft:poisonous_potato"
+				type: "item"
+			}]
+			title: "自然/剧毒学派"
+			x: 5.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["03BBFD0234857AF9"]
+			description: ["唤魔学派的指定材料，是制作该学派卷轴、符文、装备等的重要材料。"]
+			hide_dependency_lines: false
+			id: "5C2CEEA69AA36789"
+			tasks: [{
+				id: "6C03B580D17E3AF6"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			title: "唤魔学派"
+			x: 3.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["03BBFD0234857AF9"]
+			description: ["末影学派的指定材料，是制作该学派卷轴、符文、装备等的重要材料。"]
+			hide_dependency_lines: false
+			id: "37BCA277F892BBB0"
+			tasks: [{
+				id: "4AC4A6A09E4CE77E"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			title: "末影学派"
+			x: 5.5d
+			y: -10.0d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: ["你发现了一些被人遗忘的手稿碎片。"]
+			id: "2FCB9E361DF2289F"
+			rewards: [{
+				id: "14B6A78C89C30BE6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "55AC135E815D7A5D"
+				item: "irons_spellbooks:ancient_knowledge_fragment"
+				type: "item"
+			}]
+			title: "尘封的敬畏"
+			x: 10.25d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5BCFF4453AC3F1D2"]
+			hide_dependency_lines: false
+			id: "5155EF46F65C49DF"
+			rewards: [{
+				count: 3
+				id: "5A2E2D09006F166A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5CE6AF2819AAF846"
 				item: {
 					Count: 1b
 					id: "irons_spellbooks:netherite_spell_book"
@@ -436,25 +464,188 @@
 				}
 				type: "item"
 			}]
-			x: -4.25d
-			y: -7.75d
+			x: -1.25d
+			y: -14.75d
 		}
 		{
-			dependencies: ["31B5C1D0FEBE2D26"]
-			description: [
-				"通过末影龙掉落的龙皮，你可以制作传奇魔法书，&6龙皮魔法书&r。"
-				""
-				"不过，你仍然需要远古城市中获取的&6残破的书&r作为基础材料。"
+			dependencies: [
+				"62ED518C8459FCDF"
+				"7B2BB14AF56EBB12"
 			]
-			id: "49E0EA9CE5F40087"
+			description: ["你的疣猪皮还够么？"]
+			hide_dependency_lines: false
+			id: "0C1B1564082F6663"
 			rewards: [{
-				id: "3E58B8E177C9E283"
-				item: "lightmanscurrency:coin_emerald"
+				id: "1385C861DD27D283"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "它仍然活着. . .它仍在呼吸"
 			tasks: [{
-				id: "2EFAA50CC58FB59A"
+				id: "6D6F3811015970DF"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:diamond_spell_book"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 8
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.25d
+			y: -12.75d
+		}
+		{
+			dependencies: ["794B9227FD9A06BC"]
+			description: [
+				"是时候去下界击杀疣猪兽来获取疣猪皮了，记得多杀几只，因为还有一本法术书也需要它合成。"
+				"制作出这一本法术书代表脱离新手期，是进入中期的标志。"
+			]
+			hide_dependency_lines: false
+			id: "62ED518C8459FCDF"
+			rewards: [{
+				id: "0179C8C76D882D3E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BCBC76E2BE0C82E"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:gold_spell_book"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 6
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.25d
+			y: -11.75d
+		}
+		{
+			dependencies: ["17889F915BEB2F91"]
+			description: ["拥有相比于初学者日志 更高的品质和更多的法术槽位，并且不需要模组材料制作。"]
+			hide_dependency_lines: false
+			id: "794B9227FD9A06BC"
+			rewards: [{
+				id: "4A8545587014B543"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "75B4BC9FC8D62607"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:iron_spell_book"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 5
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.25d
+			y: -10.75d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: ["不需要模组物品作为材料合成的法术书，仅能施展最基础的法术。"]
+			id: "17889F915BEB2F91"
+			rewards: [{
+				count: 5
+				id: "0E3A4BB5F85ABC37"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "27B28F6E521F5C47"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:copper_spell_book"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 4
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.25d
+			y: -9.75d
+		}
+		{
+			dependencies: ["17889F915BEB2F91"]
+			description: ["生成在远古城市中的奖励箱中，用于合成其他法术书。"]
+			id: "5BCFF4453AC3F1D2"
+			rewards: [{
+				count: 2
+				id: "4024835C107EC118"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D3A1D04124A408D"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:rotten_spell_book"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 3
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.25d
+			y: -13.75d
+		}
+		{
+			dependencies: ["17889F915BEB2F91"]
+			description: ["由&c烈焰人&r概率掉落。"]
+			id: "61C2BFE7C8DE8011"
+			rewards: [{
+				id: "5211426E74E5E055"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02278302772EC71B"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:blaze_spell_book"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 5
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -8.75d
+			y: -12.75d
+		}
+		{
+			dependencies: ["5BCFF4453AC3F1D2"]
+			hide_dependency_lines: false
+			id: "48FE396B4D24A0D6"
+			rewards: [{
+				count: 3
+				id: "45306F8FABACB98B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54BFD2539A727C76"
 				item: {
 					Count: 1b
 					id: "irons_spellbooks:dragonskin_spell_book"
@@ -467,54 +658,1999 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: -3.25d
+			y: -14.75d
+		}
+		{
+			dependencies: ["794B9227FD9A06BC"]
+			description: ["虽然它拥有自然法术强度加成，但是抛开这一点，它仍然是你中期不错的选择。"]
+			hide_dependency_lines: false
+			id: "7B2BB14AF56EBB12"
+			rewards: [{
+				id: "61C03353199596DF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6A6D23B13A68F5E9"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:druidic_spell_book"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 6
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "德鲁伊法典"
+			x: -3.25d
+			y: -11.75d
+		}
+		{
+			dependencies: ["17889F915BEB2F91"]
+			description: ["由召唤师堡木制围墙内侧铁笼关押的&2傻子村民&r交易获得。"]
+			id: "58ABC08E7A88EB8F"
+			rewards: [{
+				id: "47C716E7E68DFD79"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6CA8148B999AB4DC"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:villager_spell_book"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 6
+							spells: [ ]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -8.75d
+			y: -13.75d
+		}
+		{
+			dependencies: ["17889F915BEB2F91"]
+			description: ["由生物&c高位唤魔者&r掉落"]
+			id: "0BBDE45DA334A415"
+			rewards: [{
+				count: 3
+				id: "4424B543D3CEB530"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0501A9DC46AE599D"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:evoker_spell_book"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 3
+							spells: [
+								{
+									level: 6
+									sid: "irons_spellbooks:fang_strike"
+									slot: 0
+								}
+								{
+									level: 4
+									sid: "irons_spellbooks:fang_ward"
+									slot: 1
+								}
+								{
+									level: 4
+									sid: "irons_spellbooks:summon_vex"
+									slot: 2
+								}
+							]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -8.75d
+			y: -14.75d
+		}
+		{
+			dependencies: ["4BD339C63D7E830A"]
+			hide_dependency_lines: false
+			id: "770BAE3DE6CD61A3"
+			rewards: [{
+				count: 5
+				id: "4638E9E13977EA23"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E4DACF2FC4CCD93"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:blood_staff"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 5
+							spells: [
+								{
+									level: 6
+									sid: "irons_spellbooks:wither_skull"
+									slot: 0
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:ray_of_siphoning"
+									slot: 1
+								}
+								{
+									level: 3
+									sid: "irons_spellbooks:blood_step"
+									slot: 2
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:blood_slash"
+									slot: 3
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:blaze_storm"
+									slot: 4
+								}
+							]
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "终结死者之王！"
+			x: -2.25d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			description: ["召唤师堡二层自然生成的&c卫道士&r死亡后小概率掉落。"]
+			id: "1F76965B858D5C7E"
+			rewards: [{
+				count: 3
+				id: "14D0489F7DA087AA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B7484412ADA3051"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:magehunter"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -10.25d
+			y: -13.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			description: ["击杀&c远古骑士&r时小概率掉落。"]
+			id: "296C4B13FA829A52"
+			rewards: [{
+				count: 3
+				id: "26ECF2522FFA0768"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E9C477999E67EC7"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:keeper_flamberge"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -10.25d
+			y: -12.75d
+		}
+		{
+			dependencies: ["55DEF616688BC8BD"]
+			description: ["奥术源质可以附着在皮革盔甲上来制作流浪法师套装，这会使你在早期获得额外的法力值。"]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:wandering_magician_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4E4A4389B31EEC59"
+			rewards: [{
+				count: 5
+				id: "3009A65C3D2FC22E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "49115A5B47B54AA9"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:wandering_magician_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A61D16FC1DF4515"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:wandering_magician_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "14AFFE4B6C85B1F8"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:wandering_magician_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B0BFE8148A87A08"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:wandering_magician_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "流浪法师套装"
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["10E0E4D042282773"]
+			dependency_requirement: "one_completed"
+			description: [
+				"或许你需要比流浪法师更强一些的防具。"
+				""
+				"惊悚南瓜套装会提供更多的护甲值、法力值，以及你会拥有一副酷炫的外观。"
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:pumpkin_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6D5ED876A6971B6B"
+			rewards: [{
+				id: "01EDCFBE293452BA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "60940A10C87FF128"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:pumpkin_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6DAFDC60CB008A26"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:pumpkin_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D61F44650C6F36E"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:pumpkin_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "52546D03FD1CAB2A"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:pumpkin_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "惊悚南瓜套装"
+			x: -9.5d
+			y: -6.75d
+		}
+		{
+			dependencies: ["792BD0BFA2189110"]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:pyromancer_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1B879791521CAF70"
+			rewards: [{
+				count: 5
+				id: "2956AD359B737B29"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "334E65C0B91EB4DA"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:pyromancer_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "15F8BC0783FA0209"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:pyromancer_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3FB5F2C2CD051CBE"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:pyromancer_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D4CEED202FE364D"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:pyromancer_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "炽焰术士套装"
+			x: 7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["539AD15617908DBF"]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:electromancer_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6BA198AE9D9CE827"
+			rewards: [{
+				count: 5
+				id: "1FF4A4B1C43FD57E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "40045F2B2E95CBEC"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:electromancer_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "51EEA41E9BC5552D"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:electromancer_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4CEAC691033E1037"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:electromancer_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47954006DC8A11AD"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:electromancer_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "雷霆术士套装"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["37D4F48241A35F28"]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:cultist_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "769EEDA1B673E230"
+			rewards: [{
+				count: 5
+				id: "11A057EEBFF3627F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "39F1E9CAA00469F1"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:cultist_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "417B25090E91B053"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:cultist_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7818923EFB945461"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:cultist_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "28A1DA28ED396F60"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:cultist_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "血腥教徒套装"
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["48F38A4EEC29B813"]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:archevoker_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "76C3130D1D194098"
+			rewards: [{
+				count: 5
+				id: "65F514971BC0E1D5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3A2D4ECDF301D752"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:archevoker_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "714005FA1ECF42D8"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:archevoker_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07F06DA456951182"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:archevoker_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CA04B878C6DE7AA"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:archevoker_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "高位唤魔者套装"
+			x: 3.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["77EBA7DEDBAE54BC"]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:shadowwalker_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1E1DA1898F94E815"
+			rewards: [{
+				count: 5
+				id: "167363343C4B6B9A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7C91DBC1BD6268E9"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:shadowwalker_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BE696BF6E175B6D"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:shadowwalker_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "34FAF529AFF3AB44"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:shadowwalker_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1955AD1C031150BD"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:shadowwalker_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "暗影行者套装"
+			x: 5.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["40C82776583AFB70"]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:cryomancer_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2AE42CAD3EBC2714"
+			rewards: [{
+				count: 5
+				id: "16F753D6482A9C18"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7051278F6FDAE6DE"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:cryomancer_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55059B6480820506"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:cryomancer_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E1F6C88790280A5"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:cryomancer_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4EA0300B8CD7E61E"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:cryomancer_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "冰霜术士套装"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64FAEC94C3F491EC"]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:priest_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "443E1D1F09F8515D"
+			rewards: [{
+				count: 5
+				id: "2902074E3AE0C8C3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3F170583173A1C76"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:priest_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59BFD3EF01B6B1F3"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:priest_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "699B2284A991882F"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:priest_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3AE9F86A7C3E3FF3"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:priest_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "牧师套装"
+			x: 1.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["2E04B7D75F40FA60"]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:plagued_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "259465137A5C1002"
+			rewards: [{
+				count: 5
+				id: "262F54AF00BD8FC1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2D31A1C6779AC0ED"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:plagued_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F00FBD2FC751AC1"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:plagued_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3B59F38CB81CA43A"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:plagued_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "742E4FF54A371350"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:plagued_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "瘟疫术士套装"
+			x: 7.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			description: ["&c亡灵术士&r有概率掉落。"]
+			id: "43D0E66F310F5F03"
+			rewards: [{
+				count: 3
+				id: "1280C15E04FD6B96"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1D7A1792B4B288A8"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:tarnished_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -10.25d
+			y: -14.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "073FAF010FC76CCD"
+			rewards: [{
+				id: "340DEE9D0FEFD8C5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "39BE96DEC21671A2"
+				item: "irons_spellbooks:frostward_ring"
+				type: "item"
+			}]
+			x: -12.75d
+			y: -12.75d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"再次说明，《Iron的魔法书》是一个以探索和搜寻为主题的模组，所以只提供了少量可供合成的饰品。"
+				"它们都很廉价，在旅途刚开始的时候，或许会祝你一臂之力。"
+			]
+			icon: "irons_spellbooks:amethyst_resonance_charm"
+			id: "5870336B632EEE78"
+			min_required_tasks: 1
+			tasks: [
+				{
+					id: "4D35B9B1715AA588"
+					item: "irons_spellbooks:silver_ring"
+					type: "item"
+				}
+				{
+					id: "16B76F3DB4CC8727"
+					item: "irons_spellbooks:mana_ring"
+					type: "item"
+				}
+				{
+					id: "2855422D2683F020"
+					item: "irons_spellbooks:amethyst_resonance_charm"
+					type: "item"
+				}
+			]
+			title: "初学者饰品"
+			x: -5.0d
+			y: -9.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "014E60A0AEB948F6"
+			rewards: [{
+				id: "2C363E80AFA35B40"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "60AE4D2BF19695E7"
+				item: "irons_spellbooks:cooldown_ring"
+				type: "item"
+			}]
+			x: -12.75d
+			y: -11.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "5F625C5D72F837BE"
+			rewards: [{
+				id: "14ADBA35E1908B05"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B44375FEE5B9435"
+				item: "irons_spellbooks:cast_time_ring"
+				type: "item"
+			}]
+			x: -12.75d
+			y: -13.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "7180FA5F43CDA3F2"
+			rewards: [{
+				id: "54BDE2F15126A13F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "473F1C0B39B8A352"
+				item: "irons_spellbooks:heavy_chain_necklace"
+				type: "item"
+			}]
+			x: -12.75d
+			y: -14.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "4A58F3A50C08F6CB"
+			rewards: [{
+				id: "0ED4ACD2AA8AC728"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "195EE936DD88259A"
+				item: "irons_spellbooks:emerald_stoneplate_ring"
+				type: "item"
+			}]
+			x: -11.75d
+			y: -10.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "1D8E1B03ED3D29A3"
+			rewards: [{
+				id: "77FAA83F31EDF213"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70B6BF9B03FD69BD"
+				item: "irons_spellbooks:fireward_ring"
+				type: "item"
+			}]
+			x: -11.75d
+			y: -12.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "516E872ADEEEA566"
+			rewards: [{
+				id: "01D2E0B41BEB516C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "71236321EB4BFA02"
+				item: "irons_spellbooks:poisonward_ring"
+				type: "item"
+			}]
+			x: -11.75d
+			y: -11.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "2C96058FE81C7EA9"
+			rewards: [{
+				id: "7322E9DC316582FF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0889901276E034A0"
+				item: "irons_spellbooks:conjurers_talisman"
+				type: "item"
+			}]
+			x: -11.75d
+			y: -9.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "61B1D658047C9B4C"
+			rewards: [{
+				id: "61B409D8FA5790F1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "183E018EF0E76AB5"
+				item: "irons_spellbooks:affinity_ring"
+				type: "item"
+			}]
+			x: -11.75d
+			y: -14.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "7734E0C707D3A504"
+			rewards: [{
+				id: "00DB9611FF5C0393"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F48485D4FAE7BF0"
+				item: "irons_spellbooks:concentration_amulet"
+				type: "item"
+			}]
+			x: -11.75d
+			y: -13.75d
+		}
+		{
+			dependencies: ["5870336B632EEE78"]
+			id: "0D0EBFCBEEF7BD72"
+			rewards: [{
+				id: "78F714E1A00DCE19"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "45501C6DBFE528D7"
+				item: "irons_spellbooks:invisibility_ring"
+				type: "item"
+			}]
+			x: -12.75d
+			y: -10.75d
+		}
+		{
+			dependencies: ["77ED5164610655DB"]
+			description: [
+				"&2Iron的魔法书&r是一款受经典 RPG 游戏启发的魔法模组，旨在将经典的施法流程引入游戏当中。"
+				""
+				"你可以通过与危险的巫师战斗、突袭大量自然生成的建筑、深入地下城、收集资源和寻找强大的魔法物品来获得使用魔法的力量。"
+			]
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "irons_spellbooks:iss_guide_book"
+				}
+			}
+			id: "49001B4F8FF6A5D9"
+			rewards: [{
+				id: "2D59030191E686D5"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "irons_spellbooks:iss_guide_book"
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "3496F0D6C39CFE0A"
+				title: "开启铁魔法之旅"
+				type: "checkmark"
+			}]
+			title: "开启Iron的魔法书之旅"
+			x: -2.25d
+			y: -7.25d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"作用一："
+				""
+				"可以将&6法术卷轴&r敲在武器上，使该法术成为武器的右键技能。（可以使用忏悔石在锻造台中消除强化）"
+				"&7（注：会使物品其他的右键行为失效）&r"
+				""
+				"{image:kubejs:textures/task/isb_1_1.png width:170 height:90 align:1}"
+				""
+				""
+				"{@pagebreak}"
+				"作用二："
+				""
+				"使用升级法球进行&2装备强化&r。（可以使用忏悔石在锻造台中消除强化）"
+				""
+				"{image:kubejs:textures/task/isb_1_2.png width:170 height:90 align:1}"
+				""
+				"{@pagebreak}"
+				"作用三："
+				""
+				"将两个相同的卷轴合成一个高一级的卷轴。"
+				""
+				"{image:kubejs:textures/task/isb_1_3.png width:170 height:90 align:1}"
+			]
+			hide_dependency_lines: false
+			id: "4E574A8D228115B3"
+			rewards: [{
+				id: "5B5ED1B7BD177958"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "59CF2BFFFA748B93"
+				item: "irons_spellbooks:arcane_anvil"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"{image:kubejs:textures/task/isb_2.png width:170 height:100 align:1}"
+				""
+				"你可以利用法术抄写台将魔法卷轴抄写在你的魔法书中，或者将魔法书中的魔法还原成卷轴。"
+				""
+				"1. 放置&6魔法书&r"
+				""
+				"2. 放置&6卷轴&r"
+				""
+				"3. 进行抄写"
+				""
+				"4. 选择魔法抄写的位置"
+				""
+				"5. 将选中的魔法还原成魔法卷轴。"
+				""
+				"注意：卷轴的品质不能超过魔法书的品质，否则不能完成抄写。"
+			]
+			hide_dependency_lines: false
+			id: "14479C9FE223E066"
+			rewards: [{
+				id: "2DAF7F70EBB22EC9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "213D4C815E209DBB"
+				item: "irons_spellbooks:inscription_table"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"{image:kubejs:textures/task/isb_3.png width:160 height:100 align:1}"
+				""
+				"1：放置&6墨水&r，墨水的品质决定卷轴的品质。"
+				""
+				"2：放置&6纸&r，书写一张卷轴需要消耗一张纸。"
+				""
+				"3：放置&2学派所指定的材料&r，决定制作卷轴的法术学派。"
+				""
+				"放置学派指定材料后，会显示出可撰写的法术。部分法术可能会显示问号图样，尝试使用更高等级的墨水来撰写。"
+				""
+				""
+				"4：撰写完毕的卷轴位于此处。注意，只有鼠标左键将其拿出才会消耗原材料。"
+			]
+			hide_dependency_lines: false
+			id: "45DA2A8404C7AEC8"
+			rewards: [{
+				id: "73591A515AC765D9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "square"
+			tasks: [{
+				id: "413B003BD547523A"
+				item: "irons_spellbooks:scroll_forge"
+				type: "item"
+			}]
+			x: -1.0d
 			y: -8.5d
 		}
 		{
-			dependencies: ["3F531FE03C454203"]
-			description: [
-				"在远古城市的探索中，你会获得一些特殊的&6抄本碎片&r，在经过还原之后，你可以学习一个已经失传的&6虚空学派&r的法术。"
-				""
-				"手持手抄卷轴右键即可选择一个魔法进行学习。在学习完成后，即可用回响碎片作为专精来制作对应的法术卷轴。"
-			]
-			id: "323B528048A6BE43"
+			dependencies: ["357BD9BCD5907C1A"]
+			hide_dependency_lines: false
+			id: "7F70A0CC05B25A91"
 			rewards: [{
-				id: "6C9E068227863813"
+				id: "2155D7501A265633"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "偶然间，你了解到了一些禁忌知识"
 			tasks: [{
-				id: "3B0AE4C398945017"
-				item: "irons_spellbooks:eldritch_manuscript"
+				id: "066772A93041B5D2"
+				item: "irons_spellbooks:alchemist_cauldron"
 				type: "item"
 			}]
-			title: "虚空学派"
-			x: 8.5d
-			y: -2.75d
+			x: -9.5d
+			y: -0.5d
 		}
 		{
-			dependencies: ["3F531FE03C454203"]
+			dependencies: ["55DEF616688BC8BD"]
 			description: [
-				"在探险中你可能遇到了很多的空白符文。通过空白符文与对应学派专精物品的合成，即可获得对应学派的符文，可以用于制作装备. . .或者，制作&6升级法球&r。"
+				"生成于主世界的一种罕见的矿石。"
 				""
-				"升级法球可以借由&6奥术铁砧&r强化装备，其中类如冷却缩减等效果尤为强大，能够为后续的战斗带来极大的便利。"
+				"奥术残骸的推荐挖掘高度为主世界 -46到 -50，需要使用下界合金镐或更高挖掘等级的镐来开采。"
+				""
+				"需要通过高炉烧炼而得到奥术残骸碎片。"
 			]
-			id: "2375F964F546450B"
+			id: "0C5CCA339527129E"
+			tasks: [{
+				id: "37DD3A30C7EC5C16"
+				item: "irons_spellbooks:arcane_debris"
+				type: "item"
+			}]
+			title: "挖掘：奥术残骸"
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3C63BD62985C447B"]
+			hide_dependency_lines: false
+			id: "2E8549C0F0CA0674"
+			tasks: [{
+				id: "13C12A2827928C14"
+				item: "irons_spellbooks:oakskin_elixir"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2E8549C0F0CA0674"]
+			hide_dependency_lines: false
+			id: "6B3444EBDE01DB71"
+			tasks: [{
+				id: "022DF75E7E191066"
+				item: "irons_spellbooks:greater_oakskin_elixir"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3C63BD62985C447B"]
+			hide_dependency_lines: false
+			id: "6603C0C8CC073808"
+			tasks: [{
+				id: "50E41895B900503F"
+				item: "irons_spellbooks:greater_healing_potion"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1755D59102E39435"]
+			hide_dependency_lines: false
+			id: "7FB1863112150AD1"
+			tasks: [{
+				id: "560380A77BECEBFE"
+				item: "irons_spellbooks:invisibility_elixir"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7FB1863112150AD1"]
+			hide_dependency_lines: false
+			id: "670690775F4F0400"
+			tasks: [{
+				id: "1442CB4580105EC4"
+				item: "irons_spellbooks:greater_invisibility_elixir"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7B88261CC7F5D7FC"]
+			hide_dependency_lines: false
+			id: "5C6441C603D92CB8"
+			tasks: [{
+				id: "3085A720F0F46ABC"
+				item: "irons_spellbooks:evasion_elixir"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5C6441C603D92CB8"]
+			hide_dependency_lines: false
+			id: "04ACDD30B29A1279"
+			tasks: [{
+				id: "78518BDCFEF839E4"
+				item: "irons_spellbooks:greater_evasion_elixir"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "6BBEC992679DEA2B"
+			tasks: [{
+				id: "7409A319DD63657E"
+				item: "irons_spellbooks:blood_upgrade_orb"
+				type: "item"
+			}]
+			x: -10.75d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "09EB5BBA2E63E869"
+			tasks: [{
+				id: "41F5279D14194E02"
+				item: "irons_spellbooks:evocation_upgrade_orb"
+				type: "item"
+			}]
+			x: -11.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "1CAF0A72DAF3C60B"
+			tasks: [{
+				id: "28254ECD5ABBB67E"
+				item: "irons_spellbooks:nature_upgrade_orb"
+				type: "item"
+			}]
+			x: -11.75d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "01536722BD24EAC0"
+			tasks: [{
+				id: "14DD894BEDAAAFBC"
+				item: "irons_spellbooks:mana_upgrade_orb"
+				type: "item"
+			}]
+			x: -12.75d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "335DC7DDC79EE510"
+			tasks: [{
+				id: "1D542F13A6F3C33C"
+				item: "irons_spellbooks:cooldown_upgrade_orb"
+				type: "item"
+			}]
+			x: -12.75d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "21B0D29A647EB55C"
+			tasks: [{
+				id: "64A7C64D4FB636C3"
+				item: "irons_spellbooks:protection_upgrade_orb"
+				type: "item"
+			}]
+			x: -12.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "3A65F5B2BC61ADB1"
+			tasks: [{
+				id: "7B779714B307B6A3"
+				item: "irons_spellbooks:ender_upgrade_orb"
+				type: "item"
+			}]
+			x: -10.75d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "5B011BB4A7A89493"
+			tasks: [{
+				id: "70A567AE9742E9F5"
+				item: "irons_spellbooks:holy_upgrade_orb"
+				type: "item"
+			}]
+			x: -10.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["537496294B53CF7E"]
+			description: [
+				"合成材料，用于合成其它属性的&6升级法球&r。"
+				""
+				"合成后的升级法球，可以放在&6奥术铁砧&r中给装备进行升级。"
+			]
+			hide_dependency_lines: false
+			id: "1B90A8C768315CA6"
 			rewards: [{
-				id: "18F49A4F2DD887B7"
+				id: "5A66BC6B74BB6B65"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "尝试达到能力的极限"
 			tasks: [{
-				id: "53BC93DFC79BB977"
+				id: "63D2AD5A40874D50"
 				item: "irons_spellbooks:upgrade_orb"
 				type: "item"
 			}]
-			title: "无尽前途"
-			x: 8.25d
-			y: -6.5d
+			x: -9.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "1D83B033F6A028AE"
+			tasks: [{
+				id: "4CF1BEF7F95F709C"
+				item: "irons_spellbooks:lightning_upgrade_orb"
+				type: "item"
+			}]
+			x: -10.75d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "1ECFCB14E5960057"
+			tasks: [{
+				id: "14BE3C878F78114E"
+				item: "irons_spellbooks:fire_upgrade_orb"
+				type: "item"
+			}]
+			x: -11.75d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1B90A8C768315CA6"]
+			id: "521659E188225BE8"
+			tasks: [{
+				id: "2897FA1A165267D4"
+				item: "irons_spellbooks:ice_upgrade_orb"
+				type: "item"
+			}]
+			x: -11.75d
+			y: -1.0d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"奥术源质是该模组中常见且重要的魔法材料。"
+				""
+				"它可以在本模组中的结构中找到，也可以通过击杀本模组的敌对法师掉落。"
+				""
+				"其主要作用是合成一些魔法物品或其他的魔法材料。"
+			]
+			id: "55DEF616688BC8BD"
+			rewards: [{
+				count: 3
+				id: "66B77E81633FCAAB"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "349CD2EEB3EEFC0C"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.75d
+		}
+		{
+			dependencies: ["55DEF616688BC8BD"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: false
+			id: "10E0E4D042282773"
+			progression_mode: "linear"
+			rewards: [{
+				count: 5
+				id: "25EA83BB9D5EFD79"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C29FFBDF0001F81"
+				item: "irons_spellbooks:magic_cloth"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.75d
+		}
+		{
+			dependencies: ["55DEF616688BC8BD"]
+			dependency_requirement: "one_completed"
+			hide_dependency_lines: false
+			id: "537496294B53CF7E"
+			rewards: [{
+				id: "3F4AFA0FD7170DDA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4CC4F78D7148DDEE"
+				item: "irons_spellbooks:arcane_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			id: "41AA6E07B7844839"
+			rewards: [{
+				id: "1D49F1EA011A5D4E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2E31FACD2131DA44"
+				item: "irons_spellbooks:common_ink"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["41AA6E07B7844839"]
+			id: "297604F669BE0601"
+			rewards: [{
+				count: 2
+				id: "60B916B8EFE635C5"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B5A48A22FA1CFF8"
+				item: "irons_spellbooks:uncommon_ink"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["297604F669BE0601"]
+			id: "3A671DE2C2A0198D"
+			rewards: [{
+				count: 5
+				id: "2C682CC008813B3D"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68A85F9C7B8469CE"
+				item: "irons_spellbooks:rare_ink"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3A671DE2C2A0198D"]
+			id: "245EC9DDA4A0DB57"
+			rewards: [{
+				id: "7D5143E992910B9F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4B580488CD5B3462"
+				item: "irons_spellbooks:epic_ink"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["245EC9DDA4A0DB57"]
+			id: "1BD3CED4F63F0F60"
+			rewards: [{
+				count: 2
+				id: "5158DF8B92C38166"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5FF08ADF677D2B09"
+				item: "irons_spellbooks:legendary_ink"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["03BBFD0234857AF9"]
+			description: [
+				"鲜血学派的指定材料，是制作该学派卷轴、符文、装备等的重要材料。"
+				""
+				"在燃着的营火上方放置炼药锅，当生物处于炼药锅中时，每秒会受到2点伤害，并且炼药锅会有 1/2 几率增加一层血液。"
+				""
+				"手持玻璃瓶右键装有血液的炼药锅可以获取鲜血精华，每层血液可以获取一瓶鲜血精华。"
+			]
+			hide_dependency_lines: false
+			id: "6B94559E3B5CA88E"
+			tasks: [{
+				id: "48FE339BCF70CF36"
+				item: "irons_spellbooks:blood_vial"
+				type: "item"
+			}]
+			title: "鲜血学派"
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"可以从&2远古城市&r中获得。"
+				""
+				"&7远古城市生成在深暗之域生物群系，固定生成Y轴为-52。主体由深板岩等构成，结构被城墙包围。&r"
+			]
+			id: "27723D7410ADC066"
+			rewards: [{
+				id: "210450A20D381FEC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "67D355B679146D08"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			x: 10.25d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"2FCB9E361DF2289F"
+				"27723D7410ADC066"
+			]
+			description: ["通过使用来源于古代城市的手稿，能够领悟&6回响学派&r的法术。"]
+			hide_dependency_lines: false
+			id: "3D0FC8A60343E3B2"
+			rewards: [{
+				count: 3
+				id: "240DA0BBA89B0DC0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F3D708D7EF7EFA3"
+				item: "irons_spellbooks:eldritch_manuscript"
+				type: "item"
+			}]
+			title: "遁入虚无..."
+			x: 12.75d
+			y: -7.0d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"准备好探索&c地下墓穴&r，挑战死者之王了吗？他十分强大，你需要有足够强的实力才能打败他！"
+				""
+				"右键使用&6归途指南针&r，会指向一个特定的地下墓穴。当很大范围内无地下墓穴时，右键会使指针失控地旋转并指向随机方向。"
+			]
+			id: "5DF4641AEE65118C"
+			rewards: [{
+				id: "09A53F65397EB35F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5872B5B75DAE699A"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:wayward_compass"
+					tag: {
+						isInInventory: 1b
+					}
+				}
+				type: "item"
+			}]
+			title: "前往地下墓穴"
+			x: -2.25d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2DF89A3AD4B2F1A7"]
+			hide_dependency_lines: false
+			id: "357BD9BCD5907C1A"
+			tasks: [{
+				id: "3A1E737E1D7311F0"
+				item: "irons_spellbooks:cinder_essence"
+				type: "item"
+			}]
+			x: -9.5d
+			y: -1.75d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			id: "3C63BD62985C447B"
+			tasks: [{
+				id: "5481F7948CDA43BC"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:strong_healing"
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			id: "21C6162B6040FD3C"
+			tasks: [{
+				id: "4F98BF2D1BCD3D4C"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "irons_spellbooks:instant_mana_one"
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["21C6162B6040FD3C"]
+			hide_dependency_lines: false
+			id: "233D5A37370FC0B8"
+			tasks: [{
+				id: "6FDF1676B6E8329E"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "irons_spellbooks:instant_mana_two"
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["233D5A37370FC0B8"]
+			hide_dependency_lines: false
+			id: "7B88261CC7F5D7FC"
+			tasks: [{
+				id: "6D2072660ECADBAF"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "irons_spellbooks:instant_mana_three"
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7B88261CC7F5D7FC"]
+			hide_dependency_lines: false
+			id: "07BFA8CD7B444BA7"
+			tasks: [{
+				id: "1C6A51E0F42B4CE6"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "irons_spellbooks:instant_mana_four"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			id: "1755D59102E39435"
+			tasks: [{
+				id: "224B86122C8567E5"
+				item: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:invisibility"
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5DF4641AEE65118C"]
+			description: [
+				"类似要塞，是一种生成在主世界的多级结构。是一个随机生成的地牢和含有boss的结构，这是一位很久以前去世的国王的魔法据点，可以在地下深处找到。"
+				""
+				"可以使用&2归途指南针&r来定位结构。地下墓穴许多房间有陷阱，请小心探索。"
+				""
+				"&c死王之尸&r生成在其中的boss房中。"
+			]
+			hide_dependency_lines: false
+			id: "4BD339C63D7E830A"
+			rewards: [{
+				id: "2630E91C60B718E2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0DFEBB72078A402F"
+				structure: "irons_spellbooks:catacombs"
+				type: "structure"
+			}]
+			title: "发现地下墓穴！"
+			x: -2.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: ["高位唤魔者的巢穴，可以在森林、平原、沙漠和大草原中找到，周围随机生成营地。"]
+			id: "1BE4F216934747A4"
+			rewards: [{
+				id: "6D9C1B91341536C9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "550B5BFF13B13DF5"
+				structure: "irons_spellbooks:evoker_fort"
+				type: "structure"
+			}]
+			title: "发现召唤师塔"
+			x: -7.25d
+			y: -14.75d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: ["孤独的冰霜魔法塔，它可以在山脉和雪原的生物群落中找到。"]
+			id: "4A437BA1EF8514AE"
+			rewards: [{
+				id: "7997185EB6CDEE9E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4BD69C59F1C7A79B"
+				structure: "irons_spellbooks:mountain_tower"
+				title: "发现冰霜魔法塔"
+				type: "structure"
+			}]
+			x: -7.25d
+			y: -12.75d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: ["炽焰术士法师的家，可以在沼泽生物群落中找到。"]
+			id: "6C16CC9AF296F649"
+			rewards: [{
+				id: "4E443ED97B19AE1C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3ADF95FAEFB16AFA"
+				structure: "irons_spellbooks:mangrove_hut"
+				title: "发现红树林小屋"
+				type: "structure"
+			}]
+			x: -7.25d
+			y: -13.75d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"{image:kubejs:textures/task/isb_4.png width:150 height:100 align:1}"
+				""
+				"名字很久以前就被遗忘了的战斗地点。在下界生成，其中生成的散落的盔甲是获取灰烬源质的唯一来源。"
+				""
+				"特征是巨大的传送门框架，散落的深板岩石砖柱和散落的盔甲。"
+			]
+			id: "2DF89A3AD4B2F1A7"
+			rewards: [{
+				id: "673FA2FF6EC6F4A7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "124F864FD6DC6533"
+				structure: "irons_spellbooks:ancient_battleground"
+				title: "发现远古战场"
+				type: "structure"
+			}]
+			x: -6.0d
+			y: -1.75d
+		}
+		{
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"现在，在平原地形的村庄中，会有一座牧师塔，其中会自然生成一位牧师。"
+				""
+				"牧师是一种中立生物，会保护村庄和攻击敌对生物。牧师属于神圣学派的法师，主要使用神圣法术攻击。"
+			]
+			id: "7C27BF864690DBFC"
+			rewards: [{
+				id: "421644ADA6E6FB05"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3D222F5469F147D7"
+				structure: "minecraft:village_plains"
+				type: "structure"
+			}]
+			title: "发现牧师塔"
+			x: -7.25d
+			y: -11.75d
 		}
 	]
 	title: "Iron的魔法书：魔法与第一原则"
