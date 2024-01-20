@@ -81,6 +81,8 @@ LootJS.modifiers(event => {
     event.addLootTypeModifier(LootType.CHEST)
         .anyDimension(['minecraft:the_nether'])
         .addLoot(LootEntry.of('kubejs:the_third_eye').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of('kubejs:redstone_furnace').when((c) => c.randomChance(0.02)))
+        
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['#dnl:all_structure'], false)

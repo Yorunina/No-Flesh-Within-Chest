@@ -28,7 +28,16 @@ PlayerEvents.tick(event => {
  * @type {Object<string,function(Internal.SimplePlayerEventJS, organ):void>}
  */
 const organPlayerTickStrategies = {
-
+    'kubejs:machine_clockwork': function (event, organ) {
+        let player = event.player
+        let count = player.persistentData.getInt(resourceCount)
+        if (player.isSprinting()) {
+            let speed = Math.floor(player.getSpeed() * 20)
+            updateResourceCount(player, count + speed)
+        } else if (count > 0) {
+            updateResourceCount(player, count - 1)
+        }
+    }
 };
 
 /**
@@ -47,16 +56,6 @@ const organPlayerTickOnlyStrategies = {
         let player = event.player
         if (event.level.getBlock(player.x, player.y - 1, player.z).id == 'minecraft:sand') {
             player.potionEffects.add('minecraft:speed', 20 * 3, 1)
-        }
-    },
-    'kubejs:machine_clockwork': function (event, organ) {
-        let player = event.player
-        let count = player.persistentData.getInt(resourceCount)
-        if (player.isSprinting()) {
-            let speed = Math.floor(player.getSpeed() * 20)
-            updateResourceCount(player, count + speed)
-        } else if (count > 0) {
-            updateResourceCount(player, count - 1)
         }
     },
     'kubejs:tamagotchi': function (event, organ) {

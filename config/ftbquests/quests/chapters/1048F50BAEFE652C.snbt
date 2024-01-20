@@ -290,7 +290,7 @@
 				type: "checkmark"
 			}]
 			title: "穷奇无尽"
-			x: -11.0d
+			x: -11.5d
 			y: 1.75d
 		}
 		{
@@ -299,6 +299,8 @@
 				"无尽节律在你没有手持物品、没有装备胸甲时，每次攻击会额外提供2的&2临时攻击力&r加成，可&6无限叠加&r。"
 				""
 				"代价是，&2每次攻击自身会受到等同于增加攻击力的固定伤害&r。"
+				""
+				"该物品低概率出现在下界的任意战利品箱中。"
 			]
 			id: "57A1BF07E4937852"
 			rewards: [{
@@ -316,7 +318,7 @@
 				item: "kubejs:infinity_beats"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -12.5d
 			y: 3.0d
 		}
 		{
@@ -826,7 +828,7 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
+			x: -11.5d
 			y: 3.0d
 		}
 		{
@@ -961,7 +963,7 @@
 				}
 				type: "item"
 			}]
-			x: 9.25d
+			x: 9.0d
 			y: 3.0d
 		}
 		{
@@ -976,7 +978,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.25d
+			x: 10.0d
 			y: 3.0d
 		}
 		{
@@ -991,7 +993,7 @@
 				}
 				type: "item"
 			}]
-			x: 11.25d
+			x: 11.0d
 			y: 3.0d
 		}
 		{
@@ -1006,7 +1008,7 @@
 				}
 				type: "item"
 			}]
-			x: 9.25d
+			x: 9.0d
 			y: 4.0d
 		}
 		{
@@ -1020,12 +1022,17 @@
 				type: "checkmark"
 			}]
 			title: "食物器官"
-			x: 10.25d
+			x: 10.0d
 			y: 1.75d
 		}
 		{
-			dependencies: ["7CFE03E2610EA31B"]
+			dependencies: ["4F074296A3A9D918"]
 			id: "2A8B1C05CF6801A8"
+			rewards: [{
+				id: "233C5A031F4E96F9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7A124C6421679BDE"
 				item: {
@@ -1035,12 +1042,17 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.0d
+			x: -8.75d
+			y: 11.25d
 		}
 		{
-			dependencies: ["7CFE03E2610EA31B"]
+			dependencies: ["4F074296A3A9D918"]
 			id: "209E99AA8A803BE9"
+			rewards: [{
+				id: "6524369466C4750B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2580EB7EF132E366"
 				item: {
@@ -1050,8 +1062,8 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: 5.0d
+			x: -7.75d
+			y: 11.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -1065,8 +1077,247 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: -1.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			description: [""]
+			id: "40DE4D7FB506EEF7"
+			tasks: [{
+				id: "38F7A9F12962699A"
+				item: {
+					Count: 1b
+					id: "kubejs:mini_slime"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"&6资源类器官&r最大的特点就是其关联了一个额外的属性条——这个属性被称为&2资源点数&r。"
+				""
+				"通过佩戴&6工程师护目镜&r在饰品槽位，可以看到当前拥有的资源点数和扭曲点数。"
+				""
+				"资源点数往往和一些物品的获取有关，比如说在满足某些资源点条件下，挖掘会获得物品。但在某些情况下，资源点数也可以用于强化战斗能力。"
+			]
+			icon: "minecraft:diamond"
+			id: "27BC9CE4043A3FEC"
+			shape: "rsquare"
+			subtitle: "你或许也需要一个护目镜"
+			tasks: [{
+				id: "18EA73DED0A25061"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			x: -11.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["27BC9CE4043A3FEC"]
+			description: [
+				"由&2胃瘤&r在器官容器中&2进化&r获得。"
+				""
+				"能够在激活后稳定的提供100的&2资源点数上限&r，并且在资源点数累积到150以上时，每次挖掘有2%的概率触发&6点石成金&r，使掉落物强制转换成为金块，并损失100资源点。"
+			]
+			id: "77AA2FDAEE799E7A"
+			rewards: [{
+				id: "0B624AE301029750"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "于是，一切的都变为了黄金"
+			tasks: [{
+				id: "4F2034F3B0F4D033"
+				item: {
+					Count: 1b
+					id: "kubejs:desire_of_midas"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -12.5d
+			y: 10.25d
+		}
+		{
+			dependencies: ["27BC9CE4043A3FEC"]
+			description: [
+				"在雷雨天气下，手持水瓶右击钻石块即可引发雷电，获得&b钻石风暴瓶&r。"
+				""
+				"钻石风暴瓶能够在挖掘时提供较为稳定的资源点数获取。"
+			]
+			id: "6E69342ACE49927A"
+			rewards: [{
+				id: "0A22BB0B10CC3F08"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "雷雨与钻石之精华"
+			tasks: [{
+				id: "4CBAAA5416B637B9"
+				item: {
+					Count: 1b
+					id: "kubejs:diamond_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -11.5d
+			y: 10.25d
+		}
+		{
+			dependencies: ["27BC9CE4043A3FEC"]
+			description: [
+				"手持肺脏右键沙子即可转变成为&6矿石肺&r。"
+				""
+				"其作为早期能够获得的资源类器官，能够在拥有较少资源点数的情况下，凭空生产矿物。在Create倍产之后，收益相当可观。"
+			]
+			id: "7F3FB7A718B1BE72"
+			rewards: [{
+				id: "12B0DA9A6571DD1E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "肺里的灰尘凝结成球"
+			tasks: [{
+				id: "4756593B9413C3B5"
+				item: {
+					Count: 1b
+					id: "kubejs:ore_lung"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: 10.25d
+		}
+		{
+			dependencies: ["27BC9CE4043A3FEC"]
+			description: [
+				"在下界的任意奖励品箱或者维度地牢的普通等级奖励箱中有概率掉落。"
+				""
+				"在激活时能够稳定提供&2200点资源点数上限&r，并且能够将红石块即时转化为100资源点数。"
+			]
+			id: "514236B73891412F"
+			rewards: [{
+				id: "57FB43729284B453"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它呼哧作响，它熊熊燃烧"
+			tasks: [{
+				id: "4703E92720DC0B64"
+				item: {
+					Count: 1b
+					id: "kubejs:redstone_furnace"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -12.5d
+			y: 11.25d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			id: "4F074296A3A9D918"
+			shape: "rsquare"
+			tasks: [{
+				id: "153F50A51D80258F"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			title: "机械"
+			x: -7.75d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: ["在血肉重铸的&c生物熔炉&r中铸造，能够在血量较高的情况下提供一个稳定的生命恢复效果。"]
+			id: "4822AD05D26617B9"
+			rewards: [{
+				id: "59558E4D5C0F94B0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "流血的伤口正在凝合"
+			tasks: [{
+				id: "0C80B89195E2B077"
+				item: {
+					Count: 1b
+					id: "kubejs:platelet_dispatcher"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.75d
+			y: 10.25d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			id: "487F865668983381"
+			rewards: [{
+				id: "2CD645DCF3C8596B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "沉重的氧气罐"
+			tasks: [{
+				id: "43EE8B41A3777ED2"
+				item: {
+					Count: 1b
+					id: "kubejs:compressed_oxygen_implant"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.75d
+			y: 10.25d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			id: "5FBF5D70BCFBD9AF"
+			rewards: [{
+				id: "742CB0CBEAB0D9C5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "沉重板甲片"
+			tasks: [{
+				id: "3E854109E065E1DB"
+				item: {
+					Count: 1b
+					id: "kubejs:lamellar_armor_piece"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.75d
+			y: 10.25d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			id: "2608FB8AF6185F62"
+			rewards: [{
+				id: "18B74994CE09656B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "不够沉重的链甲片"
+			tasks: [{
+				id: "1329FB77EAEB679D"
+				item: {
+					Count: 1b
+					id: "kubejs:chain_armor_piece"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.75d
+			y: 11.25d
 		}
 	]
 	title: "胸腔：器官收集指南"

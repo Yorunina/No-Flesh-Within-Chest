@@ -18,8 +18,9 @@ BlockEvents.rightClicked('minecraft:flowering_azalea', event => {
 BlockEvents.rightClicked('minecraft:diamond_block', event => {
     if (event.player.getMainHandItem() == Item.of('minecraft:potion', '{Potion:"minecraft:water"}')
         && event.level.isThundering()
-        && event.player.hasEffect('minecraft:luck')
     ) {
+        event.block.spawnLightning()
+        event.block.set('minecraft:air')
         event.player.mainHandItem.shrink(1)
         event.player.give(Item.of('kubejs:diamond_bottle'))
     }

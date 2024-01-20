@@ -199,6 +199,7 @@
 				""
 				"适合喜欢原版武器手感的玩家。"
 			]
+			hide_dependency_lines: true
 			id: "71E8F25467157B23"
 			rewards: [{
 				id: "16CA015A57FA44D3"
@@ -278,6 +279,7 @@
 				""
 				"但刺剑可以搭配各种与近战特效相关的器官，打出不俗的效果。"
 			]
+			hide_dependency_lines: true
 			id: "6BDC3F62E25B4614"
 			rewards: [{
 				id: "34512ECB18E579AE"
@@ -359,6 +361,7 @@
 				""
 				"同时完成某些器官进化的伤害任务时，使用镰刀可能是最快速的选项之一。"
 			]
+			hide_dependency_lines: true
 			id: "676512BA0A3EA2D1"
 			rewards: [{
 				id: "71D112C5719E5ACE"
@@ -438,6 +441,7 @@
 				""
 				"唯一的缺点便是其攻击速度较慢——但这也方便了某些单次高伤的效果，能够借助其基础的高伤害面板打出不俗的输出。"
 			]
+			hide_dependency_lines: true
 			id: "744396A152946AE7"
 			rewards: [{
 				id: "28EDB0AFC23AD9A4"

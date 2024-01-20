@@ -22,7 +22,7 @@ StartupEvents.registry('item', event => {
 
     // 幸运阑尾
     registerOrgan(new Organ('kubejs:lucky_appendix')
-        .addScore('luck', 1.5)
+        .addScore('luck', 3)
         .build())
         .texture('kubejs:item/organs/others/lucky_appendix')
         .tag('kubejs:appendix');
@@ -183,6 +183,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:compressed_oxygen_implant')
         .addScore('filtration', -1)
+        .addScore('speed', -1)
         .addScore('breath_recovery', 5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.compressed_oxygen_implant.1" })])
         .build())
@@ -208,7 +209,7 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.machine_clockwork.3" })])
         .build())
         .texture('kubejs:item/organs/machine/machine_clockwork')
-        .tag('kubejs:player_tick_only')
+        .tag('kubejs:player_tick')
         .tag('kubejs:machine')
         .tag('itemborders:gold');
 
@@ -374,7 +375,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:blood_moon_wand')
         .addScore('nerves', 1)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blood_moon_wand.1" }), Text.yellow(0.15), Text.yellow({ "translate": "kubejs.tooltips.blood_moon_wand.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blood_moon_wand.1" }), Text.yellow(0.3), Text.yellow({ "translate": "kubejs.tooltips.blood_moon_wand.2" })])
         .build())
         .texture('kubejs:item/organs/magic/blood_moon_wand')
         .modifyAttribute('irons_spellbooks:blood_spell_power', 'kubejsBloodSpellPowerWeaponBoost', 0.3, 'addition')
@@ -414,8 +415,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:break_only');
 
     registerOrgan(new Organ('kubejs:diamond_bottle')
-        .addScore('breath_recovery', -0.5)
-        .addTextLines('default', [Text.aqua({ "translate": "kubejs.tooltips.diamond_bottle.6" })])
+        .addScore('breath_recovery', -0.75)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.diamond_bottle.6" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.diamond_bottle.1" }), Text.gold({ "translate": "kubejs.tooltips.diamond_bottle.2" }), Text.gray({ "translate": "kubejs.tooltips.diamond_bottle.3" }), Text.gold({ "translate": "kubejs.tooltips.diamond_bottle.4" }), Text.gray({ "translate": "kubejs.tooltips.diamond_bottle.5" })])
         .build())
         .texture('kubejs:item/organs/resource/diamond_bottle')
@@ -426,10 +427,10 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:redstone_furnace')
         .addScore('health', 1.25)
         .addScore('defense', -0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.1" }), Text.gold({ "translate": "kubejs.tooltips.redstone_furnace.2" }), Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.3" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.4" }), Text.gold({ "translate": "kubejs.tooltips.redstone_furnace.5" }), Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.6" }), Text.gold({ "translate": "kubejs.tooltips.redstone_furnace.7" }), Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.8" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.9" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.redstone_furnace.10" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.1" }), Text.gold(100), Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.3" }), Text.gold({ "translate": "kubejs.tooltips.redstone_furnace.4" }), Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.5" }), Text.gold(100), Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_furnace.7" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.redstone_furnace.8" })])
         .build())
         .texture('kubejs:item/organs/resource/redstone_furnace')
         .tag('kubejs:active')
@@ -754,9 +755,10 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/blooded_chip')
         .tag('kubejs:damage_only')
+        .tag('kubejs:machine')
         .tag('kubejs:relics');
 
-        registerOrgan(new Organ('kubejs:ring_for_home')
+    registerOrgan(new Organ('kubejs:ring_for_home')
         .addScore('nerves', -0.25)
         .addScore('speed', -0.75)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.ring_for_home.1" })])
@@ -887,17 +889,19 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:lamellar_armor_piece')
-        .addScore('defense', 2)
-        .addScore('speed', -0.25)
+        .addScore('defense', 2.25)
+        .addScore('speed', -0.5)
         .build())
         .texture('kubejs:item/organs/machine/lamellar_armor_piece')
+        .tag('itemborders:iron')
         .tag('kubejs:machine');
 
     registerOrgan(new Organ('kubejs:chain_armor_piece')
-        .addScore('defense', 1.75)
-        .addScore('speed', -0.125)
+        .addScore('defense', 2)
+        .addScore('speed', -0.25)
         .build())
         .texture('kubejs:item/organs/machine/chain_armor_piece')
+        .tag('itemborders:iron')
         .tag('kubejs:machine');
 
     registerOrgan(new Organ('kubejs:long_lasting_pill')

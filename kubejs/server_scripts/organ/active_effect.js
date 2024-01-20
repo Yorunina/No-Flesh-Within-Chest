@@ -179,7 +179,7 @@ const organActiveStrategies = {
     },
     'kubejs:redstone_furnace': function (player, organ, attributeMap) {
         let maxCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
-        player.persistentData.putInt(resourceCountMax, maxCount + 200)
+        player.persistentData.putInt(resourceCountMax, maxCount + 100)
     },
     'kubejs:aesegull_rib_right': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
@@ -200,7 +200,7 @@ const organActiveStrategies = {
         }
     },
     'kubejs:blood_moon_wand': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.15)
+        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.3)
     },
     'kubejs:huge_lung': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);

@@ -146,11 +146,6 @@ ServerEvents.recipes(event => {
     event.smelting('kubejs:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
     event.blasting('kubejs:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
 
-    event.shaped('kubejs:lucky_appendix', [
-        ['meetyourfight:velvet_fortune', 'meetyourfight:velvet_fortune', 'meetyourfight:velvet_fortune'],
-        ['meetyourfight:velvet_fortune', 'kubejs:appendix_template', 'meetyourfight:velvet_fortune'],
-        ['meetyourfight:velvet_fortune', 'nameless_trinkets:lucky_rock', 'meetyourfight:velvet_fortune']])
-
     event.shaped('kubejs:doppelganger', [
         ['', 'nameless_trinkets:reverse_card', ''],
         ['minecraft:totem_of_undying', 'goety:haunted_armor_stand', 'minecraft:totem_of_undying']])

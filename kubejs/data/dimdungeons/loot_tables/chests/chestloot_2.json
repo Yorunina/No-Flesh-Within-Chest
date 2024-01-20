@@ -122,7 +122,7 @@
         {
           "type": "item",
           "name": "kubejs:redstone_furnace",
-          "weight": 3,
+          "weight": 6,
           "functions": [
             {
               "function": "set_count",

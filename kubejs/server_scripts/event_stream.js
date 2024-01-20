@@ -17,6 +17,7 @@
 global.playerDamage = event => {
     let player = event.source.player
     if (!player) return;
+    player.tell(event.source.type)
     let data = new EntityHurtCustomModel()
     organEntityHurtByPlayer(event, data)
     burningHeartEntityHurtByPlayer(event, data)

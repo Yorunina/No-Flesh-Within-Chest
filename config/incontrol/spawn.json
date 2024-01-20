@@ -6,8 +6,7 @@
       "cataclysm:ignis",
       "cataclysm:the_harbinger",
       "cataclysm:the_leviathan",
-      "cataclysm:ancient_remnant",
-      "cataclysm:modern_remnant"
+      "cataclysm:ancient_remnant"
     ],
     "result": "allow",
     "potion": "kubejs:power_of_citadel,72000,0",

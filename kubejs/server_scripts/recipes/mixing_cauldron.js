@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         Item.of('create:scoria').withCount(8)).setFluid('minecraft:lava', 1000).setFluidOutput('hexerei:quicksilver_fluid').addHeatRequirement())
 
     registerCustomRecipe(new MixingCauldronRecipe(
-        [Ingredient.of('biomancy:healing_additive'), Ingredient.of('biomancy:healing_additive'), Ingredient.of('goety:animation_core'), Ingredient.of('goety:animation_core'), Ingredient.of('irons_spellbooks:greater_healing_potion'), Ingredient.of('irons_spellbooks:arcane_salvage'), Ingredient.of('hexerei:mindful_trance_blend'), Ingredient.of('kubejs:active_pill')],
+        [Ingredient.of('biomancy:healing_additive'), Ingredient.of('biomancy:healing_additive'), Ingredient.of('hexerei:mindful_trance_blend'), Ingredient.of('minecraft:golden_apple'), Ingredient.of('minecraft:golden_apple'), Ingredient.of('kubejs:active_pill'), Ingredient.of('kubejs:active_pill'), Ingredient.of('kubejs:active_pill')],
         Item.of('kubejs:long_lasting_pill').withCount(1)).setFluid('createaddition:bioethanol', 500).setFluidOutput('minecraft:water').addHeatRequirement())
         
     registerCustomRecipe(new MixingCauldronRecipe(
