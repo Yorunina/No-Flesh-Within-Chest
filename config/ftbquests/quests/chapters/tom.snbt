@@ -17,8 +17,8 @@
 				"来试试&6tom的简易存储&r吧！"
 				"无需电力，即可轻松解决存储的难题"
 			]
+			icon: "toms_storage:ts.inventory_connector"
 			id: "4806938A4DAB5634"
-			incompatible: ["32539850EF8C3CA8"]
 			rewards: [{
 				id: "52165A3A71ADB569"
 				item: {
@@ -220,44 +220,6 @@
 			title: "无限距离访问"
 			x: 9.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["26FE76DDA11E0026"]
-			icon: "kubejs:exclamation_mark"
-			id: "32539850EF8C3CA8"
-			incompatible: ["4806938A4DAB5634"]
-			rewards: [{
-				id: "2FBAC004E5FC9C0A"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				title: "这是还给你的"
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [
-				{
-					id: "59044A90A537E525"
-					title: "快捷，启动！"
-					type: "checkmark"
-				}
-				{
-					consume_items: true
-					id: "087ACFC21485DF17"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					title: "防止点错提交1币"
-					type: "item"
-				}
-			]
-			title: "Tom的简易存储：快捷模式"
-			x: 0.0d
-			y: -2.5d
 		}
 		{
 			dependencies: ["17D8CDADACFB7134"]

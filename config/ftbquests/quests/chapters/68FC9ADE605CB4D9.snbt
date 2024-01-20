@@ -35,7 +35,6 @@
 			hide_dependent_lines: true
 			icon: "create:wrench"
 			id: "4EB8FE041AB6DA8E"
-			incompatible: ["1C784E8FBDB3DBC2"]
 			rewards: [{
 				count: 3
 				id: "48512F3696E650D8"
@@ -56,52 +55,6 @@
 			title: "引言：为什么要发展机械动力"
 			x: -0.25d
 			y: -1.0d
-		}
-		{
-			dependencies: ["0861DDE9767A3E9D"]
-			description: [
-				"通过完成该任务，你可以获取该章节所有任务的奖励。"
-				""
-				"但是，这意味着你&4不能&r游玩该章节的所有教学任务！"
-				""
-				"请慎重！"
-			]
-			icon: "kubejs:exclamation_mark"
-			id: "1C784E8FBDB3DBC2"
-			incompatible: ["4EB8FE041AB6DA8E"]
-			rewards: [{
-				id: "6C82F5206588920D"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				title: "还给你的"
-				type: "item"
-			}]
-			shape: "octagon"
-			subtitle: "如果你已经足够了解，且需要该章节的奖励"
-			tasks: [
-				{
-					id: "75891085F2AAA66E"
-					title: "快捷，启动！"
-					type: "checkmark"
-				}
-				{
-					consume_items: true
-					id: "65382BF83F2D8F2E"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					title: "防止手贱因此消耗银币"
-					type: "item"
-				}
-			]
-			title: "机械动力：快捷模式"
-			x: 0.0d
-			y: 6.5d
 		}
 		{
 			dependencies: ["6C7A1C7252229459"]
