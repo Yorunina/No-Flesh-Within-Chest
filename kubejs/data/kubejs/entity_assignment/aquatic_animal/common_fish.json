@@ -6,12 +6,14 @@
     "alexsmobs:cachalot_whale",
     "alexsmobs:catfish",
     "alexsmobs:comb_jelly",
-    "alexsmobs:devils_hole_pupfi",
+    "alexsmobs:devils_hole_pupfish",
     "alexsmobs:flying_fish",
     "alexsmobs:frilled_shark",
     "alexsmobs:hammerhead_shark",
     "alexsmobs:mudskipper",
     "alexsmobs:orca",
-    "alexsmobs:seal"
+    "alexsmobs:seal",
+    "bettas:betta_fish",
+    "cataclysm:lionfish"
   ]
 }

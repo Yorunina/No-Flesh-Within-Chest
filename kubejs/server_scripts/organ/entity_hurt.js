@@ -235,7 +235,7 @@ const organPlayerDamageOnlyStrategies = {
         let arrowHeight = event.source.immediate.y - event.entity.y
         event.amount = event.amount * (Math.min(arrowHeight / entityHeight, 1.2) * 0.5 + 1)
     },
-    'kubejs:the_thrid_eye': function (event, organ, data) {
+    'kubejs:the_third_eye': function (event, organ, data) {
         if (event.source.type != 'arrow') return
         event.entity.invulnerableTime = event.entity.invulnerableTime / 2
         event.amount = event.amount * 0.75

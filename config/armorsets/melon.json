@@ -1,0 +1,31 @@
+{
+  "armorSetName": "西瓜",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:melon_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:melon_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:melon_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:melon_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "你感到格外的舒适……"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "farmersdelight:comfort",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "armorSetName": "幽魂",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:ghost_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:ghost_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:ghost_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:ghost_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "灵魂之力环绕周身，反哺你并诅咒你的敌人"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "alexsmobs:soulsteal",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    },
+    {
+      "type": "effect",
+      "name": "goety:cursed",
+      "value": 0.0,
+      "interactionType": "attack",
+      "interactionDuration": 600,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

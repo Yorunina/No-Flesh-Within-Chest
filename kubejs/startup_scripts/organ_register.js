@@ -519,14 +519,14 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:enchant_only')
         .tag('itemborders:diamond');
 
-    registerOrgan(new Organ('kubejs:the_thrid_eye')
+    registerOrgan(new Organ('kubejs:the_third_eye')
         .addScore('nerves', 1)
         .addScore('luck', -1)
         .addScore('crystalsynthesis', 0.25)
-        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.the_thrid_eye.1" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.the_thrid_eye.2" }), Text.gold('25%'), Text.gray({ "translate": "kubejs.tooltips.the_thrid_eye.3" }), Text.red({ "translate": "kubejs.tooltips.the_thrid_eye.4" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.the_third_eye.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.the_third_eye.2" }), Text.gold('25%'), Text.gray({ "translate": "kubejs.tooltips.the_third_eye.3" }), Text.red({ "translate": "kubejs.tooltips.the_third_eye.4" })])
         .build())
-        .texture('kubejs:item/organs/legends/the_thrid_eye')
+        .texture('kubejs:item/organs/legends/the_third_eye')
         .rarity('epic')
         .tag('kubejs:legends')
         .tag('kubejs:damage_only')
@@ -756,7 +756,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only')
         .tag('kubejs:relics');
 
-    registerOrgan(new Organ('kubejs:ring_for_home')
+        registerOrgan(new Organ('kubejs:ring_for_home')
         .addScore('nerves', -0.25)
         .addScore('speed', -0.75)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.ring_for_home.1" })])

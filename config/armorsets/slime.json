@@ -1,0 +1,55 @@
+{
+  "armorSetName": "黏液",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:slime_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:slime_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:slime_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:slime_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "站在黏液块上，然后一飞冲天！"
+  ],
+  "partialBonusRequiredAmount": 3,
+  "partialSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:jump_boost",
+      "value": 5.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "conditions": [
+        {
+          "type": "onblock",
+          "extra": "minecraft:slime_block"
+        }
+      ],
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:jump_boost",
+      "value": 11.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "conditions": [
+        {
+          "type": "onblock",
+          "extra": "minecraft:slime_block"
+        }
+      ],
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

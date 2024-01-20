@@ -1,0 +1,29 @@
+{
+  "armorSetName": "黑曜石",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "extraarmor:obsidian_helmet"
+  },
+  "chest": {
+    "itemKey": "extraarmor:obsidian_chestplate"
+  },
+  "legs": {
+    "itemKey": "extraarmor:obsidian_leggings"
+  },
+  "boots": {
+    "itemKey": "extraarmor:obsidian_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "适用于高烈度的战斗"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.armor_toughness",
+      "modifierUUID": "B5F41798-DB59-4DC5-B085-EB4F13D44C4B",
+      "description": "+12 盔甲韧性",
+      "value": 12.0
+    }
+  ]
+}

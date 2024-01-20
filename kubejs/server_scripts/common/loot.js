@@ -80,11 +80,11 @@ LootJS.modifiers(event => {
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyDimension(['minecraft:the_nether'])
-        .addLoot(LootEntry.of('kubejs:the_thrid_eye').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of('kubejs:the_third_eye').when((c) => c.randomChance(0.02)))
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['#dnl:all_structure'], false)
         .addLoot(LootEntry.of('kubejs:ritual_catalyst').when((c) => c.randomChance(0.1)))
         .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.02)))
-
+    
 })
