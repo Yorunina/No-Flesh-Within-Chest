@@ -26,68 +26,6 @@ function organEntityHurtByPlayer(event, data) {
 }
 
 /**
- * 承受伤害
- * @param {Internal.LivingHurtEvent} event
- * @param {EntityHurtCustomModel} data
- * @returns
- */
-function organPlayerHurtByOthers(event, data) {
-    let player = event.entity;
-    let typeMap = getPlayerChestCavityTypeMap(player);
-    if (typeMap.has('kubejs:bear')) {
-        typeMap.get('kubejs:bear').forEach(organ => {
-            organPlayerBearStrategies[organ.id](event, organ, data)
-        })
-    }
-    let onlySet = new Set()
-    if (typeMap.has('kubejs:bear_only')) {
-        typeMap.get('kubejs:bear_only').forEach(organ => {
-            if (!onlySet.has(organ.id)) {
-                onlySet.add(organ.id)
-                organPlayerBearOnlyStrategies[organ.id](event, organ, data)
-            }
-        })
-    }
-}
-
-/**
- * 玩家承受伤害处理策略
- * @constant
- * @type {Object<string,function(Internal.LivingHurtEvent, organ, EntityHurtCustomModel):void>}
- */
-const organPlayerBearStrategies = {
-    'kubejs:red_ink': function (event, organ, data) {
-        getPlayerMagicData(event.entity).addMana(event.amount * 5)
-    },
-};
-
-
-/**
- * 玩家承受伤害唯一处理策略
- * @constant
- * @type {Object<string,function(Internal.LivingHurtEvent, organ, EntityHurtCustomModel):void>}
- */
-const organPlayerBearOnlyStrategies = {
-    'kubejs:doppelganger': function (event, organ, data) {
-        let player = event.entity
-        if (event.amount < player.getHealth()) {
-            return
-        }
-        let typeMap = getPlayerChestCavityTypeMap(player)
-        if (typeMap.has('kubejs:legends')) {
-            let amount = typeMap.get('kubejs:legends').length
-            if (Math.random() < Math.min(0.25 + 0.1 * amount, 0.8)) {
-                player.potionEffects.add('minecraft:absorption', 40, 2)
-            }
-        }
-    },
-    'kubejs:heart_of_blade': function (event, organ, data) {
-        data.returnDamage = data.returnDamage + event.entity.getArmorValue()
-    },
-};
-
-
-/**
  * 造成伤害处理策略
  * @constant
  * @type {Object<string,function(Internal.LivingHurtEvent, organ, EntityHurtCustomModel):void>}
@@ -254,5 +192,18 @@ const organPlayerDamageOnlyStrategies = {
         }
         updateResourceCount(player, count + Math.floor(roseCount * amplifier))
     },
-
+    'kubejs:netherite_muscle': function (event, organ, data) {
+        let entity = event.entity
+        let entityList = getEntitiesWithinRadius(entity.getLevel(), entity.position(), 3)
+        entityList.forEach(entity => {
+            if (entity.isAlive()) {
+                entity.attack(event.amount)
+            }
+        })
+    },
+    'kubejs:ender_guard_eyeball': function (event, organ, data) {
+        if (event.source.type != 'arrow') return
+        let potionList = ['minecraft:slowness', 'minecraft:poison', 'cataclysm:abyssal_burn', 'minecraft:weakness', 'minecraft:wither', 'tetra:stun', 'tetra:bleeding', 'goety:cursed']
+        event.entity.potionEffects.add(randomGet(potionList), 20 * 4, 0)
+    },
 };

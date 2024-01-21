@@ -143,7 +143,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:revolution_cable')
         .addScore('nerves', 1)
         .addScore('strength', -2)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_cable.1" }), Text.of({ "translate": "kubejs.tooltips.revolution_cable.2" }).color('#deaa00'), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.3" }), Text.yellow(1), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.4" }), Text.yellow({ "translate": "kubejs.tooltips.revolution_cable.5" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_cable.1" }), Text.of({ "translate": "kubejs.tooltips.revolution_cable.2" }).color('#deaa00'), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.3" }), Text.yellow(2), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.4" }), Text.yellow({ "translate": "kubejs.tooltips.revolution_cable.5" })])
         .build())
         .texture('kubejs:item/organs/machine/revolution_cable')
         .tag('kubejs:revolution')
@@ -262,6 +262,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/machine/revolution_steam_engine')
         .tag('kubejs:rclick_only')
+        .tag('kubejs:revolution')
         .tag('kubejs:machine')
         .tag('itemborders:diamond');
     // 糖果心与魔法使系列物品
@@ -363,15 +364,6 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:magic')
         .tag('kubejs:bear');
 
-    registerOrgan(new Organ('kubejs:bad_ink')
-        .addScore('strength', -1)
-        .addScore('filtration', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bad_ink.1" }), Text.gold(20), Text.gray({ "translate": "kubejs.tooltips.bad_ink.2" })])
-        .build())
-        .texture('kubejs:item/organs/magic/bad_ink')
-        .tag('itemborders:gold')
-        .tag('kubejs:magic')
-        .tag('kubejs:active');
 
     registerOrgan(new Organ('kubejs:blood_moon_wand')
         .addScore('nerves', 1)
@@ -466,6 +458,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/legends/doppelganger')
         .tag('kubejs:legends')
+        .tag('kubejs:evolution')
         .tag('kubejs:bear_only');
 
     registerOrgan(new Organ('kubejs:lost_paradise')
@@ -747,13 +740,13 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:player_tick_only')
         .tag('kubejs:relics');
 
-    registerOrgan(new Organ('kubejs:blooded_chip')
+    registerOrgan(new Organ('kubejs:ancient_chip')
         .addScore('nerves', 1.25)
         .addScore('strength', 0.25)
-        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.blooded_chip.1" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blooded_chip.2" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.ancient_chip.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ancient_chip.2" })])
         .build())
-        .texture('kubejs:item/organs/relics/blooded_chip')
+        .texture('kubejs:item/organs/relics/ancient_chip')
         .tag('kubejs:damage_only')
         .tag('kubejs:machine')
         .tag('kubejs:relics');
@@ -782,6 +775,54 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:liver')
         .tag('kubejs:player_tick_only')
         .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:netherite_muscle')
+        .addScore('strength', 2.25)
+        .addScore('fire_resistant', 1)
+        .addScore('digestion', -1)
+        .addScore('iron_repair', 1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.netherite_muscle.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.netherite_muscle.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.netherite_muscle.3" })])
+        .build())
+        .texture('kubejs:item/organs/relics/netherite_muscle')
+        .tag('kubejs:muscle')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:ender_guard_eyeball')
+        .addScore('hydrophobia', 1)
+        .addScore('luck', -2)
+        .addScore('crystalsynthesis', 0.25)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.ender_guard_eyeball.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ender_guard_eyeball.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/ender_guard_eyeball')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:harbinger_lung')
+        .addScore('breath_recovery', 1)
+        .addScore('breath_capacity', 1)
+        .addScore('withered', 0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.harbinger_lung.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.harbinger_lung.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/harbinger_lung')
+        .tag('kubejs:machine')
+        .tag('kubejs:bear_only')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:bad_ink')
+        .addScore('strength', -1)
+        .addScore('filtration', 0.5)
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bad_ink.1" }), Text.gold(20), Text.gray({ "translate": "kubejs.tooltips.bad_ink.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/bad_ink')
+        .tag('itemborders:gold')
+        .tag('kubejs:magic')
+        .tag('kubejs:relics')
+        .tag('kubejs:active');
 
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
@@ -890,7 +931,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:lamellar_armor_piece')
         .addScore('defense', 2.25)
-        .addScore('speed', -0.5)
+        .addScore('speed', -1)
         .build())
         .texture('kubejs:item/organs/machine/lamellar_armor_piece')
         .tag('itemborders:iron')
@@ -898,7 +939,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:chain_armor_piece')
         .addScore('defense', 2)
-        .addScore('speed', -0.25)
+        .addScore('speed', -0.5)
         .build())
         .texture('kubejs:item/organs/machine/chain_armor_piece')
         .tag('itemborders:iron')
@@ -930,7 +971,7 @@ StartupEvents.registry('item', event => {
 
     // 食物系列
     registerOrgan(new Organ('kubejs:hamimelon_organ')
-        .addScore('health', -0.5)
+        .addScore('health', 0.5)
         .addScore('endurance', 1.5)
         .addScore('luck', 1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.hamimelon_organ.1" })])
@@ -943,7 +984,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active');
 
     registerOrgan(new Organ('kubejs:watermelon_organ')
-        .addScore('health', 0.5)
+        .addScore('health', 1)
         .addScore('speed', 0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.watermelon_organ.1" })])
         .build())
@@ -981,6 +1022,18 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/food/mini_slime')
         .tag('kubejs:active')
+        .tag('itemborders:diamond')
+        .tag('kubejs:food');
+
+    registerOrgan(new Organ('kubejs:mini_vampire')
+        .addScore('health', -0.5)
+        .addScore('speed', 1)
+        .addScore('fire_resistant', -1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.mini_vampire.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mini_vampire.2" })])
+        .build())
+        .texture('kubejs:item/organs/food/mini_vampire')
+        .tag('kubejs:player_tick_only')
         .tag('itemborders:diamond')
         .tag('kubejs:food');
 

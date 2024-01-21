@@ -148,5 +148,5 @@ ServerEvents.recipes(event => {
 
     event.shaped('kubejs:doppelganger', [
         ['', 'nameless_trinkets:reverse_card', ''],
-        ['minecraft:totem_of_undying', 'goety:haunted_armor_stand', 'minecraft:totem_of_undying']])
+        ['minecraft:totem_of_undying', 'meetyourfight:phantoplasm', 'minecraft:totem_of_undying']])
 })
