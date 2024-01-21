@@ -8,6 +8,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'morebows:ender_bow' })
     event.remove({ output: 'lightmanscurrency:coinmint' })
     event.remove({ output: 'irons_spellbooks:dev_staff' })
+    event.remove({ output: 'goety:warped_wartful_egg' })
     
     event.shaped('minecraft:end_portal_frame', [
         ['hexerei:selenite_shard', 'hexerei:wax_blend', 'hexerei:selenite_shard'],

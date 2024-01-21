@@ -15,6 +15,14 @@ Wares.prototype = {
         this.requestedItems.push(item)
         return this
     },
+    setPaymentItems: function (paymentItems) {
+        this.paymentItems = paymentItems
+        return this
+    },
+    setRequestedItems: function (requestedItems) {
+        this.requestedItems = requestedItems
+        return this
+    },
     setBuyerAddress: function (buyerAddress, color) {
         this.buyerAddress = buildMessageJsonString(buyerAddress, color);
         return this
@@ -52,21 +60,50 @@ function buildMessageJsonString(text, color) {
     return `{ "color": "${color}", "text": "${text}" }`
 }
 
-const WARES_GOD_CHALLENGE = new Wares('god_challenge')
-    .addPaymentItems(Item.of('gateways:gate_pearl', '{gateway:"kubejs:god_challenge"}'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_emerald'))
-    .setTitle('传说中的物品', '#e6493e')
-    .setMessage('有商人说，在某些村庄收购到了蕴含特殊力量的挑战之门。\n而这股力量如此强大，以至于连专业的冒险团队都为之汗颜。\n如果你有需要，他们可以将其低价转卖给你。', '#33333')
-    .setOrdered(3)
-    .build()
+function SimpleWares(requestedItems, paymentItems, ordered) {
+    this.paymentItems = paymentItems
+    this.requestedItems = requestedItems
+    this.ordered = ordered
+}
 
-const WARES_BOSS_RUSH = new Wares('boss_rush')
-    .addPaymentItems(Item.of('gateways:gate_pearl', '{gateway:"kubejs:boss_rush"}'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_emerald'))
-    .setTitle('传说中的物品', '#e6493e')
-    .setMessage('有商人说，在某些村庄收购到了蕴含特殊力量的挑战之门。\n而这股力量如此强大，以至于连专业的冒险团队都为之汗颜。\n如果你有需要，他们可以将其低价转卖给你。', '#33333')
-    .setOrdered(1)
-    .build()
+
+const PotionTask = [
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', '{AreaOfEffect:0,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.chop_tree",Duration:1}],CustomPotionColor:6967847,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4)], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:0,CustomBrew:1b,CustomPotionColor:9868950,CustomPotionEffects:[{Ambient:0b,Amplifier:2b,CurativeItems:[{Count:1b,id:"minecraft:milk_bucket"}],Duration:1800,Id:56,ShowIcon:1b,ShowParticles:1b,"forge:id":"goety:arrowmantic"}],Lingering:0.0f,Quaff:0,Velocity:0.1f}')], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(3)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:0,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.strip",Duration:1}],CustomPotionColor:5329233,Lingering:0.0f,Quaff:0,Velocity:0.0f}')], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:2,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.love",Duration:1}],CustomPotionColor:16713305,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4)], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(2)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:2,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.growth",Duration:1}],CustomPotionColor:38417,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4)], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:2,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.flaying",Duration:1}],CustomPotionColor:10373418,Lingering:0.0f,Quaff:0,Velocity:0.0f}')], 16),
+]
+
+const ChallengeTask = [
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:god_challenge"}')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:boss_rush"}')], 1),
+]
+
+function getRandomBrewerWares() {
+    let task = randomGet(PotionTask)
+    return new Wares('brewer')
+        .setPaymentItems(task.paymentItems)
+        .setRequestedItems(task.requestedItems)
+        .setTitle('女巫酿造师', '#33333')
+        .setMessage('我了解到你似乎有些 **特殊的** 需求。不如看看这瓶女巫精酿是否能够满足你的一时之需？', '#33333')
+        .setOrdered(task.ordered)
+        .build()
+}
+
+
+function getRandomChallengeWares() {
+    let task = randomGet(ChallengeTask)
+    return new Wares('challenge')
+        .setPaymentItems(task.paymentItems)
+        .setRequestedItems(task.requestedItems)
+        .setTitle('传说中的物品', '#e6493e')
+        .setMessage('有商人说，在某些村庄收购到了蕴含特殊力量的挑战之门。\n而这股力量如此强大，以至于连专业的冒险团队都为之汗颜。\n如果你有需要，他们可以将其低价转卖给你。', '#33333')
+        .setOrdered(3)
+        .build()
+}
+
 
 const WARES_BOOK_WYRM = new Wares('book_wyrm')
     .addPaymentItems(Item.of('bookwyrms:book_wyrm_spawn_egg'))
@@ -138,12 +175,4 @@ const WARES_TETRA_PART_3 = new Wares('tetra_part_3')
     .setTitle('遗迹探索者', '#33333')
     .setMessage('从某些地下遗迹里面，我们寻找到了古代锻造相关的遗迹品，如果你感兴趣的话。可以跟我聊聊。', '#33333')
     .setOrdered(3)
-    .build()
-
-const WARES_BREWER_1 = new Wares('brewer_1')
-    .addPaymentItems(Item.of('goety:splash_brew', '{AreaOfEffect:0,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.chop_tree",Duration:1}],CustomPotionColor:6967847,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_gold').withCount(1))
-    .setTitle('女巫酿造师', '#33333')
-    .setMessage('我了解到你似乎有些 **特殊的** 需求。不如看看这瓶女巫精酿是否能够满足你的一时之需？', '#33333')
-    .setOrdered(16)
     .build()

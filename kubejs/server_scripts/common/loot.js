@@ -68,7 +68,6 @@ LootJS.modifiers(event => {
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['#minecraft:village', 'above_and_below:sky_castle'], false)
-        .addLoot(LootEntry.of(WARES_GOD_CHALLENGE).when((c) => c.randomChance(0.05)))
         .addLoot(LootEntry.of('biomancy:healing_additive').when((c) => c.randomChance(0.25)))
         .addLoot(LootEntry.of('biomancy:breeding_stimulant').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
@@ -77,16 +76,25 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('bosses_of_mass_destruction:soul_star').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of(Item.of('minecraft:potion', '{Potion:"minecraft:luck"}')).when((c) => c.randomChance(0.1)))
+        .apply(ctx => {
+            if (Math.random() < 0.1) {
+                ctx.addLoot(getRandomBrewerWares())
+            }
+            if (Math.random() < 0.02) {
+                ctx.addLoot(getRandomChallengeWares())
+            }
+        })
+
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyDimension(['minecraft:the_nether'])
         .addLoot(LootEntry.of('kubejs:the_third_eye').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('kubejs:redstone_furnace').when((c) => c.randomChance(0.02)))
-        
+
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['#dnl:all_structure'], false)
         .addLoot(LootEntry.of('kubejs:ritual_catalyst').when((c) => c.randomChance(0.1)))
         .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.02)))
-    
+
 })

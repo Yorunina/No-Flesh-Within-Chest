@@ -602,7 +602,7 @@
 				""
 				"考虑到部分玩家完全不会/不想搞明白机械动力的具体内容，本整合包的设计上也并没有过于倾向于自动化。排除掉几个挑战性质的器官外，机械动力也是&2选择性的一环&r。"
 				""
-				"因此，你完全没必要为了机械动力而精进某些东西，仅需要跟着教程，一步一步完成即可。在这个过程中，你可能突然&5领悟&r某些机器的用法——但就算没有领悟也没关系，可以完全通过人工的方式来获取整合中所需要的资源。"
+				"因此，你完全没必要为了机械动力而精进某些东西，仅需要跟着教程，一步一步完成即可。在这个过程中，你可能突然&6领悟&r某些机器的用法——但就算没有领悟也没关系，可以完全通过人工的方式来获取整合中所需要的资源。"
 				""
 				""
 				"{@pagebreak}"
@@ -907,6 +907,7 @@
 				item: "unusualprehistory:encyclopedia"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "为了古代生物，化石是必须原料！"
 			tasks: [{
 				id: "148E1180E9A5C847"
@@ -1080,6 +1081,58 @@
 			}]
 			x: 3.5d
 			y: 2.5d
+		}
+		{
+			dependencies: ["639C1EDF7CAB7739"]
+			description: [
+				"在拥有了任务获得的金币后，第一个疑问便是如何消费这些金币。"
+				""
+				"答案也很简单——通过Wares的&6凭证买卖系统&r。"
+				""
+				"你可以在某些&2地牢箱子&r里找到Wares的交易凭证（往往出现在村庄箱子中），其中包含了各种类型的交易。你可以通过在村庄中防止交货台，填充纸盒后，手动或者等待对应职业的村民自动的进行交易。"
+				""
+				"你可以通过本任务奖励的凭证，购买前期有大用处的&c归魂亡铃&r。这能够使你返回上一次死亡地点。"
+			]
+			icon: "wares:delivery_table"
+			id: "74F1E7C9FB0D08A1"
+			rewards: [{
+				id: "15FE7C5AEC18DD75"
+				item: {
+					Count: 1b
+					id: "wares:delivery_agreement"
+					tag: {
+						experience: 0.0d
+						id: "organ_1"
+						message: "{ \"color\": \"#33333\", \"text\": \"或许你会需要. . .这个?\\n不要害怕，这已经被取出很久了. . .\" }"
+						ordered: 1.0d
+						paymentItems: [{
+							Count: 1b
+							id: "kubejs:ring_for_home"
+						}]
+						requestedItems: [{
+							Count: 1b
+							id: "lightmanscurrency:coin_gold"
+						}]
+						title: "{ \"color\": \"#33333\", \"text\": \"黑市商人\" }"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "消费你的金币"
+			tasks: [
+				{
+					id: "33D374ED133AE383"
+					item: "wares:delivery_table"
+					type: "item"
+				}
+				{
+					id: "691600D9DFE212C2"
+					item: "wares:cardboard_box"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.0d
 		}
 	]
 	title: "章节1：如常"

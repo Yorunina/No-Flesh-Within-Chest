@@ -66,7 +66,7 @@
 				type: "item"
 			}]
 			title: "糖果心"
-			x: -5.25d
+			x: -6.5d
 			y: 10.25d
 		}
 		{
@@ -95,7 +95,7 @@
 				type: "checkmark"
 			}]
 			title: "魔法使与糖果心"
-			x: -4.25d
+			x: -5.5d
 			y: 9.0d
 		}
 		{
@@ -169,7 +169,7 @@
 				item: "kubejs:candy_pancreas"
 				type: "item"
 			}]
-			x: -4.25d
+			x: -5.5d
 			y: 10.25d
 		}
 		{
@@ -191,7 +191,7 @@
 				item: "kubejs:candy_stomach"
 				type: "item"
 			}]
-			x: -3.25d
+			x: -4.5d
 			y: 10.25d
 		}
 		{
@@ -213,7 +213,7 @@
 				item: "kubejs:magic_spine"
 				type: "item"
 			}]
-			x: -4.25d
+			x: -5.5d
 			y: 11.25d
 		}
 		{
@@ -247,7 +247,7 @@
 					type: "item"
 				}
 			]
-			x: -5.25d
+			x: -6.5d
 			y: 11.25d
 		}
 		{
@@ -269,7 +269,7 @@
 				item: "kubejs:magic_muscle"
 				type: "item"
 			}]
-			x: -3.25d
+			x: -4.5d
 			y: 11.25d
 		}
 		{
@@ -333,8 +333,8 @@
 				type: "checkmark"
 			}]
 			title: "革命机械"
-			x: 0.0d
-			y: 1.75d
+			x: 0.25d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -355,8 +355,8 @@
 				item: "kubejs:furnace_core"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.0d
+			x: -0.75d
+			y: 10.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -377,8 +377,8 @@
 				item: "kubejs:burning_heart"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: 0.25d
+			y: 10.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -395,8 +395,8 @@
 				item: "kubejs:revolution_gear"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: 1.25d
+			y: 10.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -413,8 +413,8 @@
 				item: "kubejs:revolution_cable"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.0d
+			x: -0.75d
+			y: 11.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -431,8 +431,8 @@
 				item: "kubejs:revolution_relay"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: 0.25d
+			y: 11.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -449,8 +449,8 @@
 				item: "kubejs:revolution_delay"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.0d
+			x: 1.25d
+			y: 11.25d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -791,8 +791,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.25d
-			y: 4.0d
+			x: -8.25d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -889,6 +889,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "5700C1D66F61B5E0"
+			rewards: [{
+				id: "48D3956A311294E2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1B52886345AC89C9"
 				item: {
@@ -904,6 +909,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "361C5AA4C6C86167"
+			rewards: [{
+				id: "6A8B0EE94504F34C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "74E23ADEE40B9561"
 				item: {
@@ -919,6 +929,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "35606C57F204A9AB"
+			rewards: [{
+				id: "25C512B408B536F4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "313CFF957861879F"
 				item: {
@@ -934,6 +949,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "785079C06B7A8AE1"
+			rewards: [{
+				id: "0B7853E833A067C4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7F99A4E065DE2195"
 				item: {
@@ -949,6 +969,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "132A93177D12F5B9"
+			rewards: [{
+				id: "5C3549B8C39FF2EF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "780586C9DAA4E150"
 				item: {
@@ -964,6 +989,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "5B868D14B2F73C1D"
+			rewards: [{
+				id: "28DAAED8526E1C45"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "154A4D6E39B78FFC"
 				item: {
@@ -979,6 +1009,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "667AC1E3364E6FAC"
+			rewards: [{
+				id: "438273AF455F5D20"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "311B9DA567C17C5A"
 				item: {
@@ -994,6 +1029,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "41B89386FBDB06AE"
+			rewards: [{
+				id: "6CF03D0FB70139FD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "516CD9AA8B9190CA"
 				item: {
@@ -1127,8 +1167,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.75d
-			y: 11.25d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1149,8 +1189,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.75d
-			y: 11.25d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -1175,8 +1215,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: -0.75d
+			y: 12.25d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1327,16 +1367,23 @@
 		}
 		{
 			dependencies: ["6794388AA5357126"]
+			description: [
+				"机械类器官是目前存在&2最为广泛&r的一类器官，其包含了类如革命机械、玫瑰机械等多系列器官。"
+				""
+				"同时，机械器官往往能够与&6资源点数&r产生联动效果，进而起到意想不到的作用。"
+			]
+			icon: "create:cogwheel"
 			id: "4F074296A3A9D918"
 			shape: "rsquare"
+			subtitle: "人类所创造的第二奇迹"
 			tasks: [{
-				id: "153F50A51D80258F"
-				item: "create:cogwheel"
-				type: "item"
+				id: "01E93282D5711745"
+				title: "我已了解"
+				type: "checkmark"
 			}]
 			title: "机械"
-			x: -7.75d
-			y: 9.0d
+			x: 0.0d
+			y: 1.75d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1357,8 +1404,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.75d
-			y: 10.25d
+			x: -1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1379,8 +1426,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.75d
-			y: 10.25d
+			x: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1401,8 +1448,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.75d
-			y: 10.25d
+			x: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1423,8 +1470,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.75d
-			y: 11.25d
+			x: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1445,8 +1492,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.25d
-			y: 3.0d
+			x: -9.25d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1658,8 +1705,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.75d
-			y: 12.25d
+			x: -1.0d
+			y: 5.0d
 		}
 	]
 	title: "胸腔：器官收集指南"
