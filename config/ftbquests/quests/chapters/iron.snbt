@@ -1936,14 +1936,13 @@
 				""
 				"需要通过高炉烧炼而得到奥术残骸碎片。"
 			]
-			icon: "irons_spellbooks:arcane_debris"
 			id: "0C5CCA339527129E"
 			tasks: [{
 				id: "37DD3A30C7EC5C16"
 				item: "irons_spellbooks:arcane_debris"
 				type: "item"
 			}]
-			title: "奥术残骸"
+			title: "挖掘：奥术残骸"
 			x: -8.0d
 			y: -4.0d
 		}
@@ -2184,20 +2183,12 @@
 				"其主要作用是合成一些魔法物品或其他的魔法材料。"
 			]
 			id: "55DEF616688BC8BD"
-			rewards: [
-				{
-					count: 3
-					id: "66B77E81633FCAAB"
-					item: "lightmanscurrency:coin_iron"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "3C487B0B3020D032"
-					item: "irons_spellbooks:arcane_essence"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 3
+				id: "66B77E81633FCAAB"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "349CD2EEB3EEFC0C"
 				item: "irons_spellbooks:arcane_essence"
