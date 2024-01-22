@@ -83,6 +83,15 @@ LootJS.modifiers(event => {
             if (Math.random() < 0.02) {
                 ctx.addLoot(getRandomChallengeWares())
             }
+            if (Math.random() < 0.05) {
+                ctx.addLoot(getRandomEggWares())
+            }
+            if (Math.random() < 0.03) {
+                ctx.addLoot(getRandomSpecialWares())
+            }
+            if (Math.random() < 0.03) {
+                ctx.addLoot(getRandomOrganWares())
+            }
         })
 
 
