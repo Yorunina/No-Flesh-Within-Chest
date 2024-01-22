@@ -305,6 +305,18 @@
     {
       "entities": [
         {
+          "entity": "cataclysm:ancient_remnant",
+          "count": 1
+        }
+      ],
+      "modifiers": [],
+      "rewards": [],
+      "max_wave_time": 1200,
+      "setup_time": 200
+    },
+    {
+      "entities": [
+        {
           "entity": "meetyourfight:bellringer",
           "count": 1
         }
@@ -362,7 +374,7 @@
       "type": "gateways:loot_table",
       "loot_table": "dimdungeons:chests/chestloot_4",
       "rolls": 5,
-      "desc": "高级战利品"
+      "desc": "rewards.dimdungeons.loot_table.chest_4"
     }
   ],
   "failures": [

@@ -78,7 +78,7 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of(Item.of('minecraft:potion', '{Potion:"minecraft:luck"}')).when((c) => c.randomChance(0.1)))
         .apply(ctx => {
             if (Math.random() < 0.1) {
-                ctx.addLoot(getRandomBrewerWares())
+                ctx.addLoot(getRandomPotionWares())
             }
             if (Math.random() < 0.02) {
                 ctx.addLoot(getRandomChallengeWares())
