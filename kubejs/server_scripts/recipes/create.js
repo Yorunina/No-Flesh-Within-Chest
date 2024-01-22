@@ -11,17 +11,17 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.sandpaper_polishing('kubejs:revolution_cable', 'chestcavity:golem_cable')
 
-	event.recipes.create.compacting('kubejs:huge_lung', ['32x kubejs:lung_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_appendix', ['32x kubejs:appendix_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_muscle', ['32x kubejs:muscle_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_heart', ['32x kubejs:heart_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_intestine', ['32x kubejs:intestine_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_rib', ['32x kubejs:rib_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_spine', ['32x kubejs:spine_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_spleen', ['32x kubejs:spleen_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_stomach', ['32x kubejs:stomach_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_kidney', ['32x kubejs:kidney_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_liver', ['32x kubejs:liver_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_lung', ['16x kubejs:lung_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_appendix', ['16x kubejs:appendix_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_muscle', ['16x kubejs:muscle_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_heart', ['16x kubejs:heart_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_intestine', ['16x kubejs:intestine_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_rib', ['16x kubejs:rib_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_spine', ['16x kubejs:spine_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_spleen', ['16x kubejs:spleen_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_stomach', ['16x kubejs:stomach_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_kidney', ['16x kubejs:kidney_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_liver', ['16x kubejs:liver_template']).superheated()
 
 	event.recipes.create.mechanical_crafting('kubejs:revolution_gear', [
 		' SSS ',
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
 	], {
 		A: 'create:brass_sheet',
 		B: 'createaddition:gold_wire',
-		C: 'goety:philosophers_stone',
+		C: 'goety:animation_core',
 		D: 'createaddition:brass_rod',
 		E: 'create:brass_nugget'
 	})

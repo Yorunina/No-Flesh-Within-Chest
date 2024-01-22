@@ -1,0 +1,31 @@
+{
+  "defaultChestCavity": [
+    
+    {"item": "chestcavity:rotten_rib","position": 1},
+    {"item": "chestcavity:rotten_appendix","position": 2},
+    {"item": "chestcavity:rotten_lung","position": 3},
+    {"item": "kubejs:warped_heart","position": 4},
+    {"item": "chestcavity:rotten_lung","position": 5},
+
+
+    {"item": "chestcavity:rotten_muscle","position": 8},
+    {"item": "chestcavity:rotten_muscle","position": 9},
+    {"item": "chestcavity:rotten_rib","position": 10},
+    {"item": "chestcavity:rotten_spleen","position": 11},
+    {"item": "chestcavity:rotten_kidney","position": 12},
+    {"item": "kubejs:warped_spine","position": 13},
+    {"item": "chestcavity:rotten_kidney","position": 14},
+    {"item": "chestcavity:rotten_liver","position": 15},
+
+
+    {"item": "chestcavity:rotten_muscle","position": 18},
+
+
+    {"item": "chestcavity:rotten_intestine","position": 21},
+    {"item": "chestcavity:rotten_stomach","position": 22},
+    {"item": "chestcavity:rotten_intestine","position": 23},
+    {"item": "chestcavity:rotten_intestine","position": 24},
+    {"item": "chestcavity:rotten_muscle","position": 25}
+
+  ]
+}

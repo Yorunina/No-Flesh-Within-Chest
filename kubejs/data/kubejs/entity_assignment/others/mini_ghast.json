@@ -1,0 +1,6 @@
+{
+    "chestcavity": "kubejs:types/others/mini_ghast.json",
+    "entities": [
+        "goety:mini_ghast"
+    ]
+  }

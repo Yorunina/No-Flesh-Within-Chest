@@ -66,8 +66,8 @@
 				type: "item"
 			}]
 			title: "糖果心"
-			x: -8.75d
-			y: 3.0d
+			x: -6.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -95,8 +95,8 @@
 				type: "checkmark"
 			}]
 			title: "魔法使与糖果心"
-			x: -7.75d
-			y: 1.75d
+			x: -5.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -141,7 +141,7 @@
 				type: "checkmark"
 			}]
 			title: "Boss遗物器官"
-			x: -4.25d
+			x: -5.75d
 			y: 1.75d
 		}
 		{
@@ -169,8 +169,8 @@
 				item: "kubejs:candy_pancreas"
 				type: "item"
 			}]
-			x: -7.75d
-			y: 3.0d
+			x: -5.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -191,8 +191,8 @@
 				item: "kubejs:candy_stomach"
 				type: "item"
 			}]
-			x: -6.75d
-			y: 3.0d
+			x: -4.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -213,8 +213,8 @@
 				item: "kubejs:magic_spine"
 				type: "item"
 			}]
-			x: -7.75d
-			y: 4.0d
+			x: -5.5d
+			y: 11.25d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -247,8 +247,8 @@
 					type: "item"
 				}
 			]
-			x: -8.75d
-			y: 4.0d
+			x: -6.5d
+			y: 11.25d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -269,8 +269,8 @@
 				item: "kubejs:magic_muscle"
 				type: "item"
 			}]
-			x: -6.75d
-			y: 4.0d
+			x: -4.5d
+			y: 11.25d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -290,7 +290,7 @@
 				type: "checkmark"
 			}]
 			title: "穷奇无尽"
-			x: -11.0d
+			x: -11.5d
 			y: 1.75d
 		}
 		{
@@ -299,6 +299,8 @@
 				"无尽节律在你没有手持物品、没有装备胸甲时，每次攻击会额外提供2的&2临时攻击力&r加成，可&6无限叠加&r。"
 				""
 				"代价是，&2每次攻击自身会受到等同于增加攻击力的固定伤害&r。"
+				""
+				"该物品低概率出现在下界的任意战利品箱中。"
 			]
 			id: "57A1BF07E4937852"
 			rewards: [{
@@ -316,7 +318,7 @@
 				item: "kubejs:infinity_beats"
 				type: "item"
 			}]
-			x: -12.0d
+			x: -12.5d
 			y: 3.0d
 		}
 		{
@@ -331,74 +333,124 @@
 				type: "checkmark"
 			}]
 			title: "革命机械"
-			x: -0.5d
-			y: 1.75d
+			x: 0.25d
+			y: 9.0d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
+			description: [
+				"革命系列的&6核心器官&r，通过消耗煤炭来获得临时的效果增益。"
+				""
+				"&c熔火效果&r每有一级，将会提供额外&63&r点的固定攻击伤害加成。"
+			]
 			id: "55C12BA0AF6395BA"
+			rewards: [{
+				id: "5805F720AB0034D2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "熔炉的火焰温暖胸膛"
 			tasks: [{
 				id: "0A06133224D37B30"
 				item: "kubejs:furnace_core"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.0d
+			x: -0.75d
+			y: 10.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
+			description: [
+				"革命系列的&6核心器官&r，通过消耗煤炭来获得临时的效果增益。"
+				""
+				"&c心火效果&r会在buff仅有5s时触发心火暴击效果，在效果期间伤害会变为&2原伤害 * (1.0 * 效果等级 + 1.5)&r的伤害值。"
+			]
 			id: "5A21F4A601331B62"
+			rewards: [{
+				id: "3E0BB55225790C5D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "心火熊熊燃烧，涌出胸膛"
 			tasks: [{
 				id: "370448F04E7517CB"
 				item: "kubejs:burning_heart"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.0d
+			x: 0.25d
+			y: 10.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
+			description: ["根据其放置在胸腔中的数量，提供额外的&c心火/熔火&r等级。"]
 			id: "7C75261D5B3850A1"
+			rewards: [{
+				id: "243A2555A0DF3169"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "齿轮嘎吱作响"
 			tasks: [{
 				id: "4E8DA24D4EEE3859"
 				item: "kubejs:revolution_gear"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 3.0d
+			x: 1.25d
+			y: 10.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
+			description: ["根据革命系列器官的数量给予额外的&2生命值&r。"]
 			id: "2B68E92732922528"
+			rewards: [{
+				id: "176B9BBF7B56D612"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "线缆链接着胸腔中的一切"
 			tasks: [{
 				id: "22E7533783E26139"
 				item: "kubejs:revolution_cable"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 4.0d
+			x: -0.75d
+			y: 11.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
+			description: ["根据其放置在胸腔中的数量，提供额外的&c心火/熔火&r持续时间长。"]
 			id: "0D1CC41165B1B371"
+			rewards: [{
+				id: "36C77B5564DBE9C2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "火焰燃烧永无休止"
 			tasks: [{
 				id: "424673065E35B4CD"
 				item: "kubejs:revolution_relay"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 4.0d
+			x: 0.25d
+			y: 11.25d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
+			description: ["根据其放置在胸腔中的数量，减少&c心火/熔火&r持续时间长。"]
 			id: "407F877FE481FDB5"
+			rewards: [{
+				id: "2CC8039C7335A716"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "火焰变得更加明亮"
 			tasks: [{
 				id: "59DBDD2FBCCD8B21"
 				item: "kubejs:revolution_delay"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 4.0d
+			x: 1.25d
+			y: 11.25d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -410,12 +462,17 @@
 			hide_dependent_lines: true
 			icon: "kubejs:telescopic_attack_arm"
 			id: "437705D28D92B135"
+			rewards: [{
+				id: "5D47BBADBCFA005D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			shape: "rsquare"
 			subtitle: "成长为我所想"
 			tasks: [{
-				id: "2901FD4568C245E6"
-				title: "我已了解"
-				type: "checkmark"
+				id: "5375B1C61A990743"
+				item: "kubejs:empty_organ_charm"
+				type: "item"
 			}]
 			title: "进化器官"
 			x: 3.25d
@@ -453,7 +510,7 @@
 		{
 			dependencies: ["437705D28D92B135"]
 			description: [
-				"伸缩臂可以通过容器提升为&4伸缩攻击臂&r"
+				"伸缩臂可以通过容器提升为&6伸缩攻击臂&r"
 				""
 				"同时，你也可以通过机械手的配方将其升级为&6伸缩工具臂&r"
 			]
@@ -560,8 +617,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.25d
-			y: 7.0d
+			x: -6.25d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -686,8 +743,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.25d
-			y: 6.0d
+			x: -9.25d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -702,7 +759,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "来自最幽深地狱的视线"
+			subtitle: "你必须低下头，心生敬畏"
 			tasks: [{
 				id: "1781DF0940904B8C"
 				item: {
@@ -712,8 +769,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.25d
-			y: 6.0d
+			x: -9.25d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -734,7 +791,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.25d
+			x: -8.25d
 			y: 6.0d
 		}
 		{
@@ -756,8 +813,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.25d
-			y: 7.0d
+			x: -7.25d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -778,8 +835,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.25d
-			y: 7.0d
+			x: -8.25d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -826,12 +883,17 @@
 				}
 				type: "item"
 			}]
-			x: -11.0d
+			x: -11.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "5700C1D66F61B5E0"
+			rewards: [{
+				id: "48D3956A311294E2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1B52886345AC89C9"
 				item: {
@@ -841,12 +903,17 @@
 				}
 				type: "item"
 			}]
-			x: 5.25d
-			y: 3.0d
+			x: 6.25d
+			y: 5.0d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "361C5AA4C6C86167"
+			rewards: [{
+				id: "6A8B0EE94504F34C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "74E23ADEE40B9561"
 				item: {
@@ -862,6 +929,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "35606C57F204A9AB"
+			rewards: [{
+				id: "25C512B408B536F4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "313CFF957861879F"
 				item: {
@@ -877,6 +949,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "785079C06B7A8AE1"
+			rewards: [{
+				id: "0B7853E833A067C4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7F99A4E065DE2195"
 				item: {
@@ -892,6 +969,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "132A93177D12F5B9"
+			rewards: [{
+				id: "5C3549B8C39FF2EF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "780586C9DAA4E150"
 				item: {
@@ -907,6 +989,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "5B868D14B2F73C1D"
+			rewards: [{
+				id: "28DAAED8526E1C45"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "154A4D6E39B78FFC"
 				item: {
@@ -922,6 +1009,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "667AC1E3364E6FAC"
+			rewards: [{
+				id: "438273AF455F5D20"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "311B9DA567C17C5A"
 				item: {
@@ -937,6 +1029,11 @@
 		{
 			dependencies: ["235753780EE3782C"]
 			id: "41B89386FBDB06AE"
+			rewards: [{
+				id: "6CF03D0FB70139FD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "516CD9AA8B9190CA"
 				item: {
@@ -946,12 +1043,19 @@
 				}
 				type: "item"
 			}]
-			x: 6.25d
-			y: 5.0d
+			x: 5.25d
+			y: 3.0d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
+			description: ["一个位置&2检测类型&r的器官，能够根据周围食物器官的数量给予额外的生命值加成。"]
 			id: "0CEDF28C965FF8E5"
+			rewards: [{
+				id: "5B71184543C55AD8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "食物与健康"
 			tasks: [{
 				id: "1A4C6BC3E715C638"
 				item: {
@@ -961,12 +1065,19 @@
 				}
 				type: "item"
 			}]
-			x: 9.25d
+			x: 8.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
+			description: ["基础的食物器官。"]
 			id: "5B73C3290177E214"
+			rewards: [{
+				id: "705550EB3EC4F754"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "最常见的食物器官"
 			tasks: [{
 				id: "0D12A6E81A52DDB4"
 				item: {
@@ -976,12 +1087,19 @@
 				}
 				type: "item"
 			}]
-			x: 10.25d
+			x: 9.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
+			description: ["在食用幸运饼干时概率获得。"]
 			id: "50BC3F4DA0F1BC9D"
+			rewards: [{
+				id: "2455F73E408EC695"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "究极幸运星"
 			tasks: [{
 				id: "58136D83DEE74095"
 				item: {
@@ -991,12 +1109,19 @@
 				}
 				type: "item"
 			}]
-			x: 11.25d
+			x: 10.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
+			description: ["在食用&2饼干&r和&2奶油&r时会获得相当持久的特殊效果。"]
 			id: "450518C1E9B5DBCB"
+			rewards: [{
+				id: "705B51E06059840D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "廉价奶油物品"
 			tasks: [{
 				id: "2D0238D40E8300B0"
 				item: {
@@ -1006,7 +1131,7 @@
 				}
 				type: "item"
 			}]
-			x: 9.25d
+			x: 8.5d
 			y: 4.0d
 		}
 		{
@@ -1020,12 +1145,19 @@
 				type: "checkmark"
 			}]
 			title: "食物器官"
-			x: 10.25d
+			x: 9.5d
 			y: 1.75d
 		}
 		{
-			dependencies: ["7CFE03E2610EA31B"]
+			dependencies: ["4F074296A3A9D918"]
+			description: ["在奔跑时能够提供资源点。当玩家移动速度较快时，佩戴多个发条，能够提供相当可观的资源点数提升。"]
 			id: "2A8B1C05CF6801A8"
+			rewards: [{
+				id: "233C5A031F4E96F9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "仓鼠轮？"
 			tasks: [{
 				id: "7A124C6421679BDE"
 				item: {
@@ -1035,12 +1167,19 @@
 				}
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.0d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["7CFE03E2610EA31B"]
+			dependencies: ["4F074296A3A9D918"]
+			description: ["能够将资源点数转化成为伤害的器官，在&6资源类Build&r中起到&6核心部件&r的作用。"]
 			id: "209E99AA8A803BE9"
+			rewards: [{
+				id: "6524369466C4750B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "如今，工厂中的血肉化为熔岩"
 			tasks: [{
 				id: "2580EB7EF132E366"
 				item: {
@@ -1050,12 +1189,23 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
-			y: 5.0d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
+			description: [
+				"手持&b水瓶&r右键，即可获得少量的资源点数。"
+				""
+				"如果身处在&c心火/熔火&r状态下，其会将&c心火/熔火&r转换为对应的另一个状态，并且延长效果持续时长。根据效果等级，可以给予额外的大量资源点数。"
+			]
 			id: "4C96584263F15A3C"
+			rewards: [{
+				id: "49CF05D92EB40594"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "正是蒸汽引领了我们的第一次革命"
 			tasks: [{
 				id: "1AA74E7782D8ABCF"
 				item: {
@@ -1065,7 +1215,497 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: -0.75d
+			y: 12.25d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			description: ["在胸腔中摆放位置距离胸腔中心越远，提供的生命值越多。"]
+			id: "40DE4D7FB506EEF7"
+			rewards: [{
+				id: "30383E8596B92F36"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "吃一口，凉凉的。"
+			tasks: [{
+				id: "38F7A9F12962699A"
+				item: {
+					Count: 1b
+					id: "kubejs:mini_slime"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"&6资源类器官&r最大的特点就是其关联了一个额外的属性条——这个属性被称为&2资源点数&r。"
+				""
+				"通过佩戴&6工程师护目镜&r在饰品槽位，可以看到当前拥有的资源点数和扭曲点数。"
+				""
+				"资源点数往往和一些物品的获取有关，比如说在满足某些资源点条件下，挖掘会获得物品。但在某些情况下，资源点数也可以用于强化战斗能力。"
+			]
+			icon: "minecraft:diamond"
+			id: "27BC9CE4043A3FEC"
+			shape: "rsquare"
+			subtitle: "你或许也需要一个护目镜"
+			tasks: [{
+				id: "18EA73DED0A25061"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			x: -11.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["27BC9CE4043A3FEC"]
+			description: [
+				"由&2胃瘤&r在器官容器中&2进化&r获得。"
+				""
+				"能够在激活后稳定的提供100的&2资源点数上限&r，并且在资源点数累积到150以上时，每次挖掘有2%的概率触发&6点石成金&r，使掉落物强制转换成为金块，并损失100资源点。"
+			]
+			id: "77AA2FDAEE799E7A"
+			rewards: [{
+				id: "0B624AE301029750"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "于是，一切的都变为了黄金"
+			tasks: [{
+				id: "4F2034F3B0F4D033"
+				item: {
+					Count: 1b
+					id: "kubejs:desire_of_midas"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -12.5d
+			y: 10.25d
+		}
+		{
+			dependencies: ["27BC9CE4043A3FEC"]
+			description: [
+				"在雷雨天气下，手持水瓶右击钻石块即可引发雷电，获得&b钻石风暴瓶&r。"
+				""
+				"钻石风暴瓶能够在挖掘时提供较为稳定的资源点数获取。"
+			]
+			id: "6E69342ACE49927A"
+			rewards: [{
+				id: "0A22BB0B10CC3F08"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "雷雨与钻石之精华"
+			tasks: [{
+				id: "4CBAAA5416B637B9"
+				item: {
+					Count: 1b
+					id: "kubejs:diamond_bottle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -11.5d
+			y: 10.25d
+		}
+		{
+			dependencies: ["27BC9CE4043A3FEC"]
+			description: [
+				"手持肺脏右键沙子即可转变成为&6矿石肺&r。"
+				""
+				"其作为早期能够获得的资源类器官，能够在拥有较少资源点数的情况下，凭空生产矿物。在Create倍产之后，收益相当可观。"
+			]
+			id: "7F3FB7A718B1BE72"
+			rewards: [{
+				id: "12B0DA9A6571DD1E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "肺里的灰尘凝结成球"
+			tasks: [{
+				id: "4756593B9413C3B5"
+				item: {
+					Count: 1b
+					id: "kubejs:ore_lung"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -10.5d
+			y: 10.25d
+		}
+		{
+			dependencies: ["27BC9CE4043A3FEC"]
+			description: [
+				"在下界的任意奖励品箱或者维度地牢的普通等级奖励箱中有概率掉落。"
+				""
+				"在激活时能够稳定提供&2100点资源点数上限&r，并且能够将红石块即时转化为100资源点数。"
+			]
+			id: "514236B73891412F"
+			rewards: [{
+				id: "57FB43729284B453"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它呼哧作响，它熊熊燃烧"
+			tasks: [{
+				id: "4703E92720DC0B64"
+				item: {
+					Count: 1b
+					id: "kubejs:redstone_furnace"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -12.5d
+			y: 11.25d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"机械类器官是目前存在&2最为广泛&r的一类器官，其包含了类如革命机械、玫瑰机械等多系列器官。"
+				""
+				"同时，机械器官往往能够与&6资源点数&r产生联动效果，进而起到意想不到的作用。"
+			]
+			icon: "create:cogwheel"
+			id: "4F074296A3A9D918"
+			shape: "rsquare"
+			subtitle: "人类所创造的第二奇迹"
+			tasks: [{
+				id: "01E93282D5711745"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "机械"
+			x: 0.0d
+			y: 1.75d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: ["在血肉重铸的&c生物熔炉&r中铸造，能够在血量较高的情况下提供一个稳定的生命恢复效果。"]
+			id: "4822AD05D26617B9"
+			rewards: [{
+				id: "59558E4D5C0F94B0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "流血的伤口正在凝合"
+			tasks: [{
+				id: "0C80B89195E2B077"
+				item: {
+					Count: 1b
+					id: "kubejs:platelet_dispatcher"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: ["能够极大幅度的提高呼吸效率. . .除此之外别无他用。"]
+			id: "487F865668983381"
+			rewards: [{
+				id: "2CD645DCF3C8596B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "沉重的氧气罐"
+			tasks: [{
+				id: "43EE8B41A3777ED2"
+				item: {
+					Count: 1b
+					id: "kubejs:compressed_oxygen_implant"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: ["媲美T3级别的防御力提升，缺点在于会降低移动速度。"]
+			id: "5FBF5D70BCFBD9AF"
+			rewards: [{
+				id: "742CB0CBEAB0D9C5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "沉重板甲片"
+			tasks: [{
+				id: "3E854109E065E1DB"
+				item: {
+					Count: 1b
+					id: "kubejs:lamellar_armor_piece"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: ["媲美T3级别的防御力提升，缺点在于会降低移动速度。"]
+			id: "2608FB8AF6185F62"
+			rewards: [{
+				id: "18B74994CE09656B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "不够沉重的链甲片"
+			tasks: [{
+				id: "1329FB77EAEB679D"
+				item: {
+					Count: 1b
+					id: "kubejs:chain_armor_piece"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["可以在&c聚沙巨魔&r的胸腔中获得，能够提供玩家在沙地上的额外移动buff。"]
+			id: "69E1AE4B87F60DF1"
+			rewards: [{
+				id: "3DA2DCCAFBBEA9F9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "沙地能手"
+			tasks: [{
+				id: "41751E18A3F5220D"
+				item: {
+					Count: 1b
+					id: "kubejs:sand_bone"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.25d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"在&c敲钟人&r的胸腔中获得. . .但绝大多数玩家会在&2早期的Wares任务&r中就已经得到。"
+				""
+				"能够提供给玩家稳定的拾取死亡掉落物品的方法。"
+			]
+			id: "24C231712698A9F9"
+			rewards: [{
+				id: "4AA4D03C984924D8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "魂归亡土"
+			tasks: [{
+				id: "762F546E2E88C2A4"
+				item: {
+					Count: 1b
+					id: "kubejs:ring_for_home"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"在&c末影守卫&r的胸腔中可以发现。"
+				""
+				"其给予的负面效果并非是全量的——只有&2少部分负面效果&r存在在随机池中，包括：缓慢、中毒、灼烧、虚弱、凋零、眩晕、流血、诅咒。"
+			]
+			id: "2B254AA97849DC42"
+			rewards: [{
+				id: "5A782F5AED7699E3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它从另一维度把信息带了回来"
+			tasks: [{
+				id: "5E1186883A31A9E9"
+				item: {
+					Count: 1b
+					id: "kubejs:ender_guard_eyeball"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"在&c焰魔&r的胸腔中获得。"
+				""
+				"玩家在着火状态下会逐渐累积&2最高为5级的力量效果&r，能够造成相当可观额外输出。但需要注意力量的持续时间极短，而判定时间间隔为2s，因此很容导致buff断续。"
+			]
+			id: "271802F527EBA289"
+			rewards: [{
+				id: "496B81283CED3C68"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "强力的输出器官"
+			tasks: [{
+				id: "513EB3734EF98ED4"
+				item: {
+					Count: 1b
+					id: "kubejs:embers_liver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.25d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"在&c下界合金巨兽&r的胸腔中获得。"
+				""
+				"能够让攻击伤害扩散到周围单位身上，但此扩散伤害并不认为是玩家造成的伤害，且不继承其他器官的攻击特殊效果。"
+			]
+			id: "070F4AA2D5E3671F"
+			rewards: [{
+				id: "462B23FB914833DA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "狂热战士"
+			tasks: [{
+				id: "79A55241EBF146D3"
+				item: {
+					Count: 1b
+					id: "kubejs:netherite_muscle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.25d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			id: "6E082577F9B3D5B0"
+			rewards: [{
+				id: "5491E3B6B2D55DEC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "229D5814E728D022"
+				item: {
+					Count: 1b
+					id: "kubejs:harbinger_lung"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.25d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			id: "3F95DAB6801AC2E3"
+			rewards: [{
+				id: "077C253EDA62C0CD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5494E890A50E5838"
+				item: {
+					Count: 1b
+					id: "kubejs:ancient_chip"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -8.25d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"&m&7用于填充Boss器官使用的通用器官模板&r&r"
+				""
+				"中规中矩的属性，可以用于不知道放什么的情况下使用。"
+			]
+			id: "748B8B95691F809B"
+			subtitle: "长久岁月中. . .肌肉消融为金属"
+			tasks: [{
+				id: "6296C205331927D1"
+				item: {
+					Count: 1b
+					id: "kubejs:relic_metal_plate"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -9.25d
+			y: 3.0d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			description: [
+				"通过器官容器进化&6二重身&r获得。"
+				""
+				"能够在&2生命值低于30%的时候给予玩家吸血效果&r，20%的时候效果变化为2级，10%的时候变化为3级。"
+			]
+			id: "54066B06BF4DCAD7"
+			rewards: [{
+				id: "429274F36E753A6F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它好像有点焦急"
+			tasks: [{
+				id: "420FCE6733A36FDA"
+				item: {
+					Count: 1b
+					id: "kubejs:mini_vampire"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: ["桥接了&c玫瑰&r、&2革命&r、&6资源&r类器官的重要兼容性器官。成型后能够为玩家提供巨量的资源点数。"]
+			id: "0843824CD5F1C712"
+			rewards: [{
+				id: "236031DF7F51994E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "Power Up！"
+			tasks: [{
+				id: "20B01C7DD0952A2C"
+				item: {
+					Count: 1b
+					id: "kubejs:enery_bottle_max"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.0d
 			y: 5.0d
 		}
 	]

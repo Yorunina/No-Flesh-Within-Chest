@@ -84,5 +84,8 @@ const organBlockBrokenOnlyStrategies = {
             updateResourceCount(player, count - 100)
             event.cancel()
         }
+        if (count > 500 && Math.random() < 0.01) { 
+
+        }
     },
 }

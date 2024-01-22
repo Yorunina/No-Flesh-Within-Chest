@@ -17,8 +17,8 @@
 				"来试试&6tom的简易存储&r吧！"
 				"无需电力，即可轻松解决存储的难题"
 			]
+			icon: "toms_storage:ts.inventory_connector"
 			id: "4806938A4DAB5634"
-			incompatible: ["32539850EF8C3CA8"]
 			rewards: [{
 				id: "52165A3A71ADB569"
 				item: {
@@ -49,9 +49,9 @@
 			]
 			id: "7843988CB0F906B3"
 			rewards: [{
-				count: 2
-				id: "12943E2801918C6E"
-				item: "minecraft:chest"
+				count: 8
+				id: "36397C2C40CEEC9A"
+				item: "minecraft:barrel"
 				type: "item"
 			}]
 			subtitle: "链接存储网络"
@@ -68,9 +68,9 @@
 			description: ["将它放在&6存储整合器&r上，即可方便的访问整合存储网络"]
 			id: "7EA63EFEECF4628D"
 			rewards: [{
-				count: 32
-				id: "1738CDEA03C94A74"
-				item: "minecraft:chest"
+				count: 8
+				id: "1E8E446A5F45EA6B"
+				item: "storagedrawers:oak_full_drawers_1"
 				type: "item"
 			}]
 			subtitle: "操作存储网络"
@@ -87,9 +87,8 @@
 			description: ["&6存储终端&r的升级版，拥有一个工作台的面板，是正常情况下最优先选择的型号。"]
 			id: "06CFAD62C6DC65CA"
 			rewards: [{
-				count: 32
-				id: "2609078BE80B7A84"
-				item: "minecraft:barrel"
+				id: "0BE186401EC124A1"
+				item: "storagedrawers:controller"
 				type: "item"
 			}]
 			subtitle: "获得升级"
@@ -205,12 +204,19 @@
 			]
 			icon: "toms_storage:ts.adv_wireless_terminal"
 			id: "0004C045EF8274F8"
-			rewards: [{
-				count: 8
-				id: "63A711EC01B48CCE"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "63A711EC01B48CCE"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "1EB3E2BC872FDCCC"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+			]
 			subtitle: "信标的额外用途"
 			tasks: [{
 				id: "12C75A7B277719CD"
@@ -220,44 +226,6 @@
 			title: "无限距离访问"
 			x: 9.5d
 			y: 0.0d
-		}
-		{
-			dependencies: ["26FE76DDA11E0026"]
-			icon: "kubejs:exclamation_mark"
-			id: "32539850EF8C3CA8"
-			incompatible: ["4806938A4DAB5634"]
-			rewards: [{
-				id: "2FBAC004E5FC9C0A"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				title: "这是还给你的"
-				type: "item"
-			}]
-			shape: "octagon"
-			tasks: [
-				{
-					id: "59044A90A537E525"
-					title: "快捷，启动！"
-					type: "checkmark"
-				}
-				{
-					consume_items: true
-					id: "087ACFC21485DF17"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					title: "防止点错提交1币"
-					type: "item"
-				}
-			]
-			title: "Tom的简易存储：快捷模式"
-			x: 0.0d
-			y: -2.5d
 		}
 		{
 			dependencies: ["17D8CDADACFB7134"]
@@ -323,6 +291,48 @@
 			title: "并入新网络"
 			x: 5.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["7EA63EFEECF4628D"]
+			description: [
+				"&2敞口箱&r会将前方一格空气方块内的物品全都视作在容器内。同时如果网络将物品输送到敞口箱，其物品也会掉落在前方一格内。"
+				""
+				"这往往被用于物品销毁或者作为缓存使用。或者部分需要进行水流运输等世界合成相关的场景。"
+			]
+			id: "01EF48B3999B5BBE"
+			rewards: [{
+				id: "167B101D58E11673"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2AD8943DADC3951C"
+				item: "toms_storage:ts.open_crate"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7843988CB0F906B3"]
+			description: [
+				"&6基础存储漏斗&r可以用于向网络中输入或者输出物品。手持物品右键存储漏斗可以为其设置过滤白名单。"
+				""
+				"如果该漏斗用于&2两个网络之间的物品传输&r，则必须设置过滤，否则漏斗将不会进行工作！"
+			]
+			id: "450CA5A5B76B188E"
+			rewards: [{
+				id: "3958B11495AA31D7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68F7E0E9C890904B"
+				item: "toms_storage:ts.inventory_hopper_basic"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.25d
 		}
 	]
 	title: "Tom简易存储：整合一切"

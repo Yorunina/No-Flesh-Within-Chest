@@ -19,7 +19,6 @@
 			]
 			icon: "weaponmaster:workstation"
 			id: "1C3CABF6FA4DBB44"
-			incompatible: ["5A2FBD3260EAA17A"]
 			rewards: [{
 				count: 4
 				id: "2319A4D71F76480F"
@@ -39,66 +38,6 @@
 			}]
 			title: "引言：何为武器大师"
 			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1C3CABF6FA4DBB44"]
-			description: [
-				"通过完成该任务，你可以获取该章节所有任务的奖励。"
-				""
-				"但是，这意味着你&4不能&r游玩该章节的所有教学任务！"
-				""
-				"请慎重！"
-			]
-			hide_dependency_lines: true
-			icon: "kubejs:exclamation_mark"
-			id: "5A2FBD3260EAA17A"
-			incompatible: ["1C3CABF6FA4DBB44"]
-			rewards: [
-				{
-					count: 2
-					id: "19AFEF778BCA0ADB"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_gold"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "1C90DB9E9DB53733"
-					item: "simplehats:hatbag_epic"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "4008ABC9261FC014"
-					item: "lightmanscurrency:coin_iron"
-					type: "item"
-				}
-			]
-			shape: "octagon"
-			subtitle: "如果你已经足够了解，且需要该章节的奖励"
-			tasks: [
-				{
-					id: "2E9C4AC3C43B53E7"
-					title: "快捷，启动！"
-					type: "checkmark"
-				}
-				{
-					consume_items: true
-					id: "61269F785AE2CB64"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					title: "防止手贱因此消耗银币"
-					type: "item"
-				}
-			]
-			title: "武器大师：快捷模式"
-			x: -5.0d
 			y: 0.0d
 		}
 		{
@@ -260,6 +199,7 @@
 				""
 				"适合喜欢原版武器手感的玩家。"
 			]
+			hide_dependency_lines: true
 			id: "71E8F25467157B23"
 			rewards: [{
 				id: "16CA015A57FA44D3"
@@ -339,6 +279,7 @@
 				""
 				"但刺剑可以搭配各种与近战特效相关的器官，打出不俗的效果。"
 			]
+			hide_dependency_lines: true
 			id: "6BDC3F62E25B4614"
 			rewards: [{
 				id: "34512ECB18E579AE"
@@ -420,6 +361,7 @@
 				""
 				"同时完成某些器官进化的伤害任务时，使用镰刀可能是最快速的选项之一。"
 			]
+			hide_dependency_lines: true
 			id: "676512BA0A3EA2D1"
 			rewards: [{
 				id: "71D112C5719E5ACE"
@@ -499,6 +441,7 @@
 				""
 				"唯一的缺点便是其攻击速度较慢——但这也方便了某些单次高伤的效果，能够借助其基础的高伤害面板打出不俗的输出。"
 			]
+			hide_dependency_lines: true
 			id: "744396A152946AE7"
 			rewards: [{
 				id: "28EDB0AFC23AD9A4"

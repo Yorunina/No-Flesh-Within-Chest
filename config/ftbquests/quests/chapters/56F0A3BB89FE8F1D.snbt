@@ -145,13 +145,9 @@
 			subtitle: "可以反复搬运的维度地牢传送门"
 			tasks: [{
 				consume_items: true
-				count: 32L
-				id: "793ECC1D0DBA4ED8"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
+				count: 4L
+				id: "4A8B061F5DD5A43F"
+				item: "lightmanscurrency:coin_emerald"
 				type: "item"
 			}]
 			title: "高级维度传送门蓝图"

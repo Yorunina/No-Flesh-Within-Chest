@@ -59,7 +59,6 @@
 				}
 			}
 			id: "674E912F6FFC7F67"
-			incompatible: ["0656A2B2A84D3DE3"]
 			rewards: [{
 				count: 5
 				id: "34A91804EA15901C"
@@ -80,66 +79,6 @@
 			title: "引言：Tetra的存在意义"
 			x: 1.0d
 			y: 18.25d
-		}
-		{
-			dependencies: ["538FC6DDC204DBFA"]
-			description: [
-				"通过完成该任务，你可以获取该章节所有任务的奖励。"
-				""
-				"但是，这意味着你&d不能&r游玩该章节的所有教学任务！"
-				""
-				"请慎重！"
-			]
-			hide_dependency_lines: true
-			icon: "kubejs:exclamation_mark"
-			id: "0656A2B2A84D3DE3"
-			incompatible: ["674E912F6FFC7F67"]
-			rewards: [
-				{
-					id: "4F522D766964E4A7"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					title: "这是还给你的一个银币"
-					type: "item"
-				}
-				{
-					count: 12
-					id: "3F15994B08531A33"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_gold"
-						tag: { }
-					}
-					title: "这是合计奖励"
-					type: "item"
-				}
-			]
-			shape: "octagon"
-			subtitle: "如果你已经足够了解，且需要该章节的奖励"
-			tasks: [
-				{
-					id: "20363B49C8B65B2B"
-					title: "快捷，启动！"
-					type: "checkmark"
-				}
-				{
-					consume_items: true
-					id: "5A4E6247BFB16552"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					title: "防止手贱因此消耗银币"
-					type: "item"
-				}
-			]
-			title: "Tetra：快捷模式"
-			x: 1.0d
-			y: 20.5d
 		}
 		{
 			dependencies: ["781312928C5C3155"]

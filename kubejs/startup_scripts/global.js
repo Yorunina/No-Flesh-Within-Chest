@@ -88,6 +88,7 @@ global.TYPE_MAP = {
     'kubejs:loot_chest_only': Text.gold({ "translate": "kubejs.tooltips.loot_chest_only" }),
     'kubejs:huge': Text.of({ "translate": "kubejs.tooltips.huge" }).color('#a900fd'),
     'kubejs:warp': Text.darkPurple({ "translate": "kubejs.tooltips.warp" }),
+    'kubejs:prehistory': Text.of({ "translate": "kubejs.tooltips.prehistory" }).color('#d6d124'),
 }
 
 

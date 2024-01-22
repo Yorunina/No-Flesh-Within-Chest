@@ -1,0 +1,7 @@
+{
+    "chestcavity": "kubejs:types/others/live_armor.json",
+    "entities": [
+        "goety:haunted_armor",
+        "irons_spellbooks:citadel_keeper"
+    ]
+  }

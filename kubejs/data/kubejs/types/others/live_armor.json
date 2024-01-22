@@ -1,0 +1,17 @@
+{
+    "defaultChestCavity": [
+   
+      {"item": "kubejs:chain_armor_piece","position": 3},
+      {"item": "kubejs:relic_metal_plate","position": 4},
+      {"item": "kubejs:chain_armor_piece","position": 5},
+     
+      {"item": "kubejs:lamellar_armor_piece","position": 12},
+      {"item": "kubejs:relic_metal_plate","position": 13},
+      {"item": "kubejs:lamellar_armor_piece","position": 14},
+
+      {"item": "kubejs:chain_armor_piece","position": 21},
+      {"item": "kubejs:relic_metal_plate","position": 22},
+      {"item": "kubejs:chain_armor_piece","position": 23}
+      
+    ]
+  }

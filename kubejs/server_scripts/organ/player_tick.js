@@ -1,6 +1,6 @@
 PlayerEvents.tick(event => {
     let player = event.player
-    
+
     if (event.player.age % 20 != 0) {
         return
     }
@@ -28,7 +28,16 @@ PlayerEvents.tick(event => {
  * @type {Object<string,function(Internal.SimplePlayerEventJS, organ):void>}
  */
 const organPlayerTickStrategies = {
-
+    'kubejs:machine_clockwork': function (event, organ) {
+        let player = event.player
+        let count = player.persistentData.getInt(resourceCount)
+        if (player.isSprinting()) {
+            let speed = Math.floor(player.getSpeed() * 20)
+            updateResourceCount(player, count + speed)
+        } else if (count > 0) {
+            updateResourceCount(player, count - 1)
+        }
+    },
 };
 
 /**
@@ -47,16 +56,6 @@ const organPlayerTickOnlyStrategies = {
         let player = event.player
         if (event.level.getBlock(player.x, player.y - 1, player.z).id == 'minecraft:sand') {
             player.potionEffects.add('minecraft:speed', 20 * 3, 1)
-        }
-    },
-    'kubejs:machine_clockwork': function (event, organ) {
-        let player = event.player
-        let count = player.persistentData.getInt(resourceCount)
-        if (player.isSprinting()) {
-            let speed = Math.floor(player.getSpeed() * 20)
-            updateResourceCount(player, count + speed)
-        } else if (count > 0) {
-            updateResourceCount(player, count - 1)
         }
     },
     'kubejs:tamagotchi': function (event, organ) {
@@ -82,5 +81,17 @@ const organPlayerTickOnlyStrategies = {
             amplifier = player.getEffect('minecraft:strength').getAmplifier()
         }
         player.potionEffects.add('minecraft:strength', 6 * 20, Math.min(amplifier + 1, 4))
+    },
+    'kubejs:mini_vampire': function (event, organ) {
+        let player = event.player
+        let maxHealth = player.getMaxHealth()
+        let health = player.getHealth()
+        if (health < maxHealth * 0.1) {
+            player.potionEffects.add('kubejs:vampiric', 20 * 3, 2)
+        } else if (health < maxHealth * 0.2) {
+            player.potionEffects.add('kubejs:vampiric', 20 * 3, 1)
+        } else if (health < maxHealth * 0.3) {
+            player.potionEffects.add('kubejs:vampiric', 20 * 3, 0)
+        }
     },
 };

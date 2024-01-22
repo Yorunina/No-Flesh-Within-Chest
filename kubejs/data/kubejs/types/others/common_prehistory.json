@@ -1,0 +1,31 @@
+{
+    "defaultChestCavity": [
+      {"item": "kubejs:prehistory_muscle","position": 0},
+      {"item": "kubejs:prehistory_rib","position": 1},
+      {"item": "kubejs:prehistory_appendix","position": 2},
+      {"item": "kubejs:prehistory_lung","position": 3},
+      {"item": "kubejs:prehistory_heart","position": 4},
+      {"item": "kubejs:prehistory_lung","position": 5},
+  
+      {"item": "kubejs:prehistory_rib","position": 7},
+      {"item": "kubejs:prehistory_muscle","position": 8},
+      {"item": "kubejs:prehistory_muscle","position": 9},
+      {"item": "kubejs:prehistory_rib","position": 10},
+      {"item": "kubejs:prehistory_spleen","position": 11},
+      {"item": "kubejs:prehistory_kidney","position": 12},
+      {"item": "kubejs:prehistory_spine","position": 13},
+      {"item": "kubejs:prehistory_kidney","position": 14},
+      {"item": "kubejs:prehistory_liver","position": 15},
+      {"item": "kubejs:prehistory_rib","position": 16},
+      {"item": "kubejs:prehistory_muscle","position": 17},
+      {"item": "kubejs:prehistory_muscle","position": 18},
+      {"item": "kubejs:prehistory_muscle","position": 19},
+      {"item": "kubejs:prehistory_intestine","position": 20},
+      {"item": "kubejs:prehistory_intestine","position": 21},
+      {"item": "kubejs:prehistory_stomach","position": 22},
+      {"item": "kubejs:prehistory_intestine","position": 23},
+      {"item": "kubejs:prehistory_intestine","position": 24},
+      {"item": "kubejs:prehistory_muscle","position": 25},
+      {"item": "kubejs:prehistory_muscle","position": 26}
+    ]
+  }

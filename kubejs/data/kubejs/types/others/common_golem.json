@@ -1,0 +1,31 @@
+{
+    "defaultChestCavity": [
+      {"item": "chestcavity:golem_plating","position": 0},
+      {"item": "chestcavity:piston_muscle","position": 1},
+      {"item": "chestcavity:piston_muscle","position": 2},
+      {"item": "chestcavity:golem_plating","position": 3},
+      {"item": "chestcavity:golem_core","position": 4},
+      {"item": "chestcavity:golem_plating","position": 5},
+      {"item": "chestcavity:piston_muscle","position": 6},
+      {"item": "chestcavity:piston_muscle","position": 7},
+      {"item": "chestcavity:golem_plating","position": 8},
+      {"item": "chestcavity:golem_plating","position": 9},
+      {"item": "chestcavity:piston_muscle","position": 10},
+      {"item": "chestcavity:piston_muscle","position": 11},
+      {"item": "chestcavity:golem_plating","position": 12},
+      {"item": "chestcavity:golem_cable","position": 13},
+      {"item": "chestcavity:golem_plating","position": 14},
+      {"item": "chestcavity:piston_muscle","position": 15},
+      {"item": "chestcavity:piston_muscle","position": 16},
+      {"item": "chestcavity:golem_plating","position": 17},
+      {"item": "chestcavity:golem_plating","position": 18},
+      {"item": "chestcavity:piston_muscle","position": 19},
+      {"item": "chestcavity:inner_furnace","position": 20},
+      {"item": "chestcavity:inner_furnace","position": 21},
+      {"item": "chestcavity:inner_furnace","position": 22},
+      {"item": "chestcavity:inner_furnace","position": 23},
+      {"item": "chestcavity:inner_furnace","position": 24},
+      {"item": "chestcavity:piston_muscle","position": 25},
+      {"item": "chestcavity:golem_plating","position": 26}
+    ]
+  }

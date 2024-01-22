@@ -22,6 +22,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["72D090FF4C44DAAD"]
 			description: ["&2制作团队：GoCamping！（译名：去露营！）&r"]
 			icon: "minecraft:campfire"
 			id: "0E3B5BC6A471679E"
@@ -35,6 +36,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["72D090FF4C44DAAD"]
 			description: ["本整合包中的教程大量参考了中文McMod站点中各位先驱者的资料和文章。"]
 			id: "64EA255C062BB895"
 			subtitle: "额外鸣谢"

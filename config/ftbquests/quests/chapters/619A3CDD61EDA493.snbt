@@ -114,7 +114,11 @@
 		{
 			can_repeat: true
 			dependencies: ["0C769BB94D282CC6"]
-			description: ["怪物会随机从铁甲、锁链甲、钻石甲、下界合金甲间随机选取盔甲穿戴。"]
+			description: [
+				"怪物会随机从铁甲、锁链甲、钻石甲、下界合金甲间随机选取盔甲穿戴。"
+				""
+				"这同样意味着你无法直接对怪物进行开胸。"
+			]
 			icon: {
 				Count: 1b
 				id: "unusualprehistory:sloth_pouch_armor"

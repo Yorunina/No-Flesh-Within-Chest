@@ -9,7 +9,10 @@
     "alexsmobs:centipede_body",
     "alexsmobs:centipede_head",
     "alexsmobs:centipede_tail",
+    "alexsmobs:lobster",
+    "alexsmobs:mantis_shrimp",
     "goety:wartling",
-    "cataclysm:endermaptera"
+    "cataclysm:endermaptera",
+    "cataclysm:amethyst_crab"
   ]
 }

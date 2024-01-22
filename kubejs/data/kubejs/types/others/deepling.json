@@ -1,0 +1,30 @@
+{
+    "defaultChestCavity": [
+      
+      {"item": "kubejs:fish_bone","position": 1},
+      {"item": "chestcavity:saltwater_lung","position": 3},
+      {"item": "chestcavity:saltwater_heart","position": 4},
+      {"item": "chestcavity:saltwater_lung","position": 5},
+  
+  
+      {"item": "chestcavity:saltwater_muscle","position": 8},
+      {"item": "chestcavity:saltwater_muscle","position": 9},
+      {"item": "kubejs:fish_bone","position": 10},
+      {"item": "chestcavity:spleen","position": 11},
+      {"item": "chestcavity:kidney","position": 12},
+      {"item": "kubejs:fish_spine","position": 13},
+      {"item": "chestcavity:kidney","position": 14},
+      {"item": "chestcavity:liver","position": 15},
+  
+  
+      {"item": "chestcavity:saltwater_muscle","position": 18},
+  
+  
+      {"item": "kubejs:fish_intestine","position": 21},
+      {"item": "chestcavity:stomach","position": 22},
+      {"item": "kubejs:fish_intestine","position": 23},
+      {"item": "kubejs:fish_intestine","position": 24},
+      {"item": "chestcavity:saltwater_muscle","position": 25}
+  
+    ]
+}
