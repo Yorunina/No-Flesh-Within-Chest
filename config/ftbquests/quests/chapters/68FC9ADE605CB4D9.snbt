@@ -114,6 +114,7 @@
 				"当你应有尽有，可以尝试制作更复杂的的系统"
 				"比如&9列车&r"
 			]
+			hide_dependent_lines: true
 			id: "10E8E39F44A11EC0"
 			rewards: [
 				{

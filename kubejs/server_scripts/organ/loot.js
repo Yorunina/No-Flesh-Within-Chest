@@ -118,6 +118,9 @@ const chestLootOnlyStrategies = {
         event.removeLoot(ItemFilter.ALWAYS_TRUE)
     },
     'kubejs:d8': function (event, organ) {
+        if (Math.random() < 0.2) {
+            return
+        }
         let player = event.player
         let item = Item.of('kubejs:random_tumor', { organData: {} })
         let amount = Math.floor(Math.random() * 5 + 1)

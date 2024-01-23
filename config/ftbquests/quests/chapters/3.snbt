@@ -300,15 +300,17 @@
 		{
 			dependencies: ["2E03433F8ED6CA99"]
 			description: [
-				"&o&6Flos solum sub pluvia efflorescit&r&r"
+				"{ \"text\": \"Flos solum sub pluvia efflorescit\", \"color\": \"gold\", \"underlined\":\"true\", \"clickEvent\": { \"action\" : \"copy_to_clipboard\", \"value\" : \"Flos solum sub pluvia efflorescit\"} }\""
 				""
-				"请注意，该维度&4难度极高&r，前往前可以根据情况开启死亡不掉落或者卸下部分贵重装备。"
+				"请注意，该维度&4难度较高&r，前往前可以根据情况开启死亡不掉落或者卸下部分贵重装备。"
 				""
 				"在预期中首次前往该维度的死亡几乎是&4必定&r的结局。"
 				""
 				"如果需要返回主世界，则需要咏唱该魔咒的下半句。"
 				""
-				"&o&6Dies clarus corruent etiam petala&r&r"
+				"{ \"text\": \"Dies clarus corruent etiam petala\", \"color\": \"gold\", \"underlined\":\"true\", \"clickEvent\": { \"action\" : \"copy_to_clipboard\", \"value\" : \"Dies clarus corruent etiam petala\"} }\""
+				""
+				"&7文本可通过点击复制&r"
 			]
 			hide_dependency_lines: true
 			icon: "alexsmobs:acacia_blossom"

@@ -68,22 +68,26 @@
 			icon: "dimdungeons:item_portal_key"
 			id: "77647256571F2ED0"
 			rewards: [{
-				id: "30D78248CBBDEAE5"
+				id: "661412D528E130F1"
 				item: {
 					Count: 1b
 					id: "capsule:capsule"
 					tag: {
-						display: {
-							color: 2963801
+						activetimer: {
+							starttime: 5053
 						}
-						label: "基础维度传送门"
+						canRotate: 0b
+						color: 7105644
+						display: {
+							color: 14714914
+						}
+						label: "Dim Portal Basic"
 						mirror: "NONE"
-						rotation: "CLOCKWISE_90"
+						rotation: "NONE"
 						size: 7
-						sourceInventory: { }
-						state: 7
-						structureName: "config/capsule/prefabs/dim_portal_basic"
-						undeployDelay: 63
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_dim_portal_basic-9"
+						upgraded: 0
 					}
 				}
 				type: "item"
@@ -101,7 +105,7 @@
 				type: "item"
 			}]
 			title: "基础维度传送门蓝图"
-			x: -3.75d
+			x: -3.25d
 			y: 1.75d
 		}
 		{
@@ -124,20 +128,26 @@
 			}
 			id: "7BA6B38A77C6A18E"
 			rewards: [{
-				id: "6695708560A3748D"
+				id: "64095E7A96446164"
 				item: {
 					Count: 1b
 					id: "capsule:capsule"
 					tag: {
+						activetimer: {
+							starttime: 4666
+						}
+						canRotate: 0b
+						color: 7105644
 						display: {
-							color: 2963801
+							color: 6196919
 						}
 						label: "Dim Portal Advanced"
+						mirror: "NONE"
+						rotation: "NONE"
 						size: 7
-						sourceInventory: { }
-						state: 7
-						structureName: "config/capsule/prefabs/dim_portal_advanced"
-						undeployDelay: 593
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_dim_portal_advanced-8"
+						upgraded: 0
 					}
 				}
 				type: "item"
@@ -151,7 +161,288 @@
 				type: "item"
 			}]
 			title: "高级维度传送门蓝图"
-			x: -3.75d
+			x: -3.25d
+			y: 3.75d
+		}
+		{
+			can_repeat: true
+			dependencies: ["304B1E271805A1B0"]
+			icon: "waystones:waystone"
+			id: "4648F3EE70D1996F"
+			rewards: [{
+				id: "7B1C8893FB7B6B91"
+				item: {
+					Count: 1b
+					id: "capsule:capsule"
+					tag: {
+						activetimer: {
+							starttime: 1376
+						}
+						canRotate: 0b
+						color: 9819623
+						display: {
+							color: 9819623
+						}
+						label: "Waystone Station"
+						mirror: "NONE"
+						rotation: "NONE"
+						size: 7
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_waystone_station-2"
+						upgraded: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "可以随身携带的石碑站点"
+			tasks: [{
+				consume_items: true
+				id: "3DF01B12AF74611F"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			title: "传送石碑站点"
+			x: -1.0d
+			y: 1.75d
+		}
+		{
+			can_repeat: true
+			dependencies: ["304B1E271805A1B0"]
+			icon: "minecraft:black_bed"
+			id: "16D0C2ADB0BDC682"
+			rewards: [{
+				id: "7E4DD2372CAED243"
+				item: {
+					Count: 1b
+					id: "capsule:capsule"
+					tag: {
+						activetimer: {
+							starttime: 3040
+						}
+						canRotate: 0b
+						color: 7105644
+						display: {
+							color: 7105644
+						}
+						label: "Sabbath Ritual"
+						mirror: "NONE"
+						rotation: "NONE"
+						size: 9
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_sabbath_ritual-6"
+						upgraded: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "4618A6A10602F813"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			title: "安息仪式祭坛"
+			x: 1.5d
+			y: 1.75d
+		}
+		{
+			can_repeat: true
+			dependencies: ["304B1E271805A1B0"]
+			icon: "irons_spellbooks:arcane_anvil"
+			id: "5CB1ADFB92A1BB22"
+			rewards: [{
+				id: "2E7F7A28D7B00FEF"
+				item: {
+					Count: 1b
+					id: "capsule:capsule"
+					tag: {
+						canRotate: 0b
+						color: 14714914
+						display: {
+							color: 5544791
+						}
+						label: "Iron Spell Workshop"
+						size: 5
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_iron_spell_workshop-12"
+						upgraded: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "一个完整的Iron的魔法工作站"
+			tasks: [{
+				consume_items: true
+				id: "43C8D49D0723E50B"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			title: "Iron的魔法工作站"
+			x: 3.75d
+			y: 1.75d
+		}
+		{
+			can_repeat: true
+			dependencies: ["304B1E271805A1B0"]
+			icon: "tetra:forged_workbench"
+			id: "73F6923DCE383C5D"
+			rewards: [{
+				id: "2893721521F6F29D"
+				item: {
+					Count: 1b
+					id: "capsule:capsule"
+					tag: {
+						activetimer: {
+							starttime: 1882
+						}
+						canRotate: 0b
+						color: 5544791
+						display: {
+							color: 7105644
+						}
+						label: "Tetra Workshop"
+						mirror: "NONE"
+						rotation: "NONE"
+						size: 9
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_tetra_workshop-3"
+						upgraded: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "一个包含锻造锤的Tetra工作站"
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "47CEC3EE78078BDD"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			title: "Tetra工作站"
+			x: 6.0d
+			y: 1.75d
+		}
+		{
+			can_repeat: true
+			dependencies: ["304B1E271805A1B0"]
+			icon: "toms_storage:ts.inventory_connector"
+			id: "4717E22823792074"
+			rewards: [{
+				id: "58780E8CBEACE597"
+				item: {
+					Count: 1b
+					id: "capsule:capsule"
+					tag: {
+						activetimer: {
+							starttime: 2674
+						}
+						canRotate: 0b
+						color: 13421772
+						display: {
+							color: 14714914
+						}
+						label: "Simple Storage"
+						mirror: "NONE"
+						rotation: "NONE"
+						size: 9
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_simple_storage-5"
+						upgraded: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "一个待扩展的存储站雏形"
+			tasks: [{
+				consume_items: true
+				count: 4L
+				id: "1A2F9A6AA264D8B8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			title: "存储站雏形"
+			x: -1.0d
+			y: 3.75d
+		}
+		{
+			can_repeat: true
+			dependencies: ["304B1E271805A1B0"]
+			icon: "farmersdelight:stove"
+			id: "2D616B58186CB82A"
+			rewards: [{
+				id: "55187A33A9C733C8"
+				item: {
+					Count: 1b
+					id: "capsule:capsule"
+					tag: {
+						activetimer: {
+							starttime: 5437
+						}
+						canRotate: 0b
+						color: 14714914
+						display: {
+							color: 13421772
+						}
+						label: "Farmer Delight Kitchen"
+						mirror: "NONE"
+						rotation: "NONE"
+						size: 7
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_farmer_delight_kitchen-10"
+						upgraded: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "农夫乐事厨房"
+			tasks: [{
+				consume_items: true
+				id: "28998CF37552841A"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			title: "乐事厨房"
+			x: 3.75d
+			y: 3.75d
+		}
+		{
+			dependencies: ["304B1E271805A1B0"]
+			icon: "minecraft:nether_gold_ore"
+			id: "3BEF1D1051A5E14E"
+			rewards: [{
+				id: "4049D339F7B369D5"
+				item: {
+					Count: 1b
+					id: "capsule:capsule"
+					tag: {
+						activetimer: {
+							starttime: 6257
+						}
+						canRotate: 0b
+						color: 10076989
+						display: {
+							color: 9819623
+						}
+						label: "Adept Nether Ritual"
+						mirror: "NONE"
+						rotation: "NONE"
+						size: 9
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_adept_nether_ritual-11"
+						upgraded: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "一个能够聚集灵魂的仪式祭坛"
+			tasks: [{
+				id: "66477C775A8D6C56"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			title: "进阶下界仪式祭坛"
+			x: 1.5d
 			y: 3.75d
 		}
 	]

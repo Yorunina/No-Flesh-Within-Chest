@@ -87,6 +87,9 @@ ServerEvents.recipes(event => {
         });
 
     event.shapeless('kubejs:lucky_cookie', ['minecraft:paper', 'minecraft:cookie'])
+    event.shapeless('kubejs:eye_of_village', ['minecraft:ender_pearl', 'minecraft:emerald'])
+    event.shapeless('kubejs:eye_of_dnl', ['minecraft:ender_pearl', 'minecraft:gold_ingot'])
+    event.shapeless('kubejs:eye_of_fortress', ['minecraft:ender_pearl', 'minecraft:magma_cream'])
 
     event.shapeless('kubejs:lost_paradise', ['kubejs:paradise_regained', 'kubejs:god_agreement'])
 
