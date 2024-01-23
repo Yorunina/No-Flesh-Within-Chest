@@ -8,6 +8,15 @@
     "alexsmobs:stradpole",
     "alexsmobs:warped_mosco",
     "alexsmobs:warped_toad",
-    "cataclysm:ignited_revenant"
+    "cataclysm:ignited_revenant",
+    "bygonenether:piglin_prisoner",
+    "bygonenether:piglin_hunter",
+    "bygonenether:wex",
+    "bygonenether:warped_enderman",
+    "bygonenether:wraither",
+    "bygonenether:corpor",
+    "bygonenether:wither_skeleton_knight",
+    "bygonenether:wither_skeleton_horse"
+
   ]
 }

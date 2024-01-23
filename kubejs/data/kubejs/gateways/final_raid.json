@@ -1,0 +1,1348 @@
+{
+    "size": "large",
+    "color": "#483D8B",
+    "waves": [
+      {
+        "entities": [
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:illusioner"
+          },
+          {
+            "entity": "minecraft:illusioner"
+          },
+          {
+            "entity": "minecraft:illusioner"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:illusioner"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:illusioner"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:hostile_redstone_golem"
+          },
+          {
+            "entity": "goety:hostile_redstone_golem"
+          },
+          {
+            "entity": "goety:hostile_redstone_golem"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "goety:crone",
+            "nbt": "{Health: 200, Attributes: [{ Name: \"generic.max_health\", Base: 200 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "goety:minister",
+            "nbt": "{Health: 200, Attributes: [{ Name: \"generic.max_health\", Base: 200 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:envioker"
+          }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "somebosses:stone_guard"
+          },
+          {
+            "entity": "somebosses:stone_minion"
+          },
+          {
+            "entity": "somebosses:stone_minion"
+          },
+          {
+            "entity": "somebosses:stone_minion"
+          },
+          {
+            "entity": "somebosses:stone_minion"
+          },
+          {
+            "entity": "somebosses:stone_minion"
+          },
+          {
+            "entity": "somebosses:stone_minion"
+          },
+          {
+            "entity": "somebosses:stone_minion"
+          },
+          {
+            "entity": "somebosses:stone_minion"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "goety:hostile_redstone_golem"
+          },
+          {
+            "entity": "goety:hostile_redstone_golem"
+          },
+          {
+            "entity": "goety:hostile_redstone_golem"
+          },
+          {
+            "entity": "goety:hostile_redstone_golem"
+          },
+          {
+            "entity": "goety:hostile_redstone_golem"
+          }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "somebosses:merciless_assasin"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "minecraft:vex"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:tormentor"
+          },
+          {
+            "entity": "goety:irk"
+          },
+          {
+            "entity": "goety:irk"
+          },
+          {
+            "entity": "goety:irk"
+          },
+          {
+            "entity": "goety:irk"
+          },
+          {
+            "entity": "goety:irk"
+          },
+          {
+            "entity": "goety:irk"
+          },
+          {
+            "entity": "goety:irk"
+          },
+          {
+            "entity": "goety:irk"
+          },
+          {
+            "entity": "goety:irk"
+          },
+          {
+            "entity": "goety:irk"
+          },
+          {
+            "entity": "bygonenether:wex"
+          },
+          {
+            "entity": "bygonenether:wex"
+          },
+          {
+            "entity": "bygonenether:wex"
+          },
+          {
+            "entity": "bygonenether:wex"
+          },
+          {
+            "entity": "bygonenether:wex"
+          },
+          {
+            "entity": "bygonenether:wex"
+          },
+          {
+            "entity": "bygonenether:wex"
+          },
+          {
+            "entity": "bygonenether:wex"
+          } 
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+          {
+            "entity": "invasioncodered:gashslit"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:pillager"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:vindicator"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:witch"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:evoker"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:ravager"
+          },
+          {
+            "entity": "minecraft:illusioner"
+          },
+          {
+            "entity": "minecraft:illusioner"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:piker"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:conquillager"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:envioker"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:preacher"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:inquillager"
+          },
+          {
+            "entity": "goety:hostile_redstone_golem"
+          },
+          {
+            "entity": "goety:hostile_redstone_golem"
+          }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 5          
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.5     
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.3  
+            }
+
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      }
+ 
+ 
+    ],
+    "rewards": [
+      {
+        "type": "gateways:loot_table",
+        "loot_table": "minecraft:chests/village",
+        "rolls": 80,
+        "desc": "村庄战利品"
+      },
+      {
+        "type": "gateways:loot_table",
+        "loot_table": "dimdungeons:chests/chestloot_4",
+        "rolls": 15,
+        "desc": "高级战利品"
+      }
+    ],
+    "failures": [
+      {
+        "type": "gateways:explosion",
+        "strength": 10,
+        "fire": true,
+        "block_damage": true
+      },
+      {
+        "type": "command",
+        "command": "/kill @p",
+        "desc": "即效性死亡"
+      }
+    ],
+    "completion_xp": 50000,
+    "spawn_range": 8
+  }
+  
