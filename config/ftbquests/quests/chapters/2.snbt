@@ -5,6 +5,18 @@
 	group: "4E02CBDD9D86D249"
 	icon: "cataclysm:burning_ashes"
 	id: "074AE67620B22558"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 26.91358024691358d
+		hover: [ ]
+		image: "kubejs:textures/task/chapter2.png"
+		rotation: 0.0d
+		width: 15.0d
+		x: 6.75d
+		y: 3.25d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -52,39 +64,8 @@
 				type: "checkmark"
 			}]
 			title: "探寻魔法的秘密"
-			x: 1.25d
-			y: -1.75d
-		}
-		{
-			dependencies: ["3E9DD0B78886A183"]
-			description: [
-				"当你有了一些铁之后，就可以开始考虑步入&2各种Mod&r的殿堂了。"
-				""
-				"这些Mod往往会给你带来很多的便利，并且并不需要你付出过多的努力。"
-				""
-				"因此请多多尝试！"
-			]
-			icon: "sophisticatedbackpacks:backpack"
-			id: "040207B33E2FEBFF"
-			rewards: [{
-				id: "29EB90ADA285930A"
-				item: "sophisticatedbackpacks:backpack"
-				type: "item"
-			}]
-			subtitle: "制作一些超出常理的东西！"
-			tasks: [{
-				consume_items: true
-				id: "377272B3F01FA298"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "开启探索之旅！"
-			x: 0.0d
-			y: 0.0d
+			x: 2.75d
+			y: 9.25d
 		}
 		{
 			dependencies: ["7F0C1FA54DD6E9BC"]
@@ -115,8 +96,8 @@
 				type: "checkmark"
 			}]
 			title: "激活药丸"
-			x: 10.75d
-			y: -1.5d
+			x: 3.25d
+			y: 4.0d
 		}
 		{
 			dependencies: ["27AE075BC0F4376A"]
@@ -165,8 +146,8 @@
 				type: "checkmark"
 			}]
 			title: "器官抗排异"
-			x: 9.75d
-			y: 0.0d
+			x: 4.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["7F0C1FA54DD6E9BC"]
@@ -192,8 +173,8 @@
 				type: "item"
 			}]
 			title: "召唤你想要的"
-			x: 11.75d
-			y: 0.0d
+			x: 5.25d
+			y: 3.75d
 		}
 		{
 			dependencies: ["49BD99DDA8F8454A"]
@@ -212,8 +193,8 @@
 				title: "开始你的旅途吧！"
 				type: "checkmark"
 			}]
-			x: 13.75d
-			y: 0.0d
+			x: 7.0d
+			y: 2.75d
 		}
 		{
 			dependencies: ["49BD99DDA8F8454A"]
@@ -238,8 +219,8 @@
 				item: "kubejs:ritual_catalyst"
 				type: "item"
 			}]
-			x: 12.75d
-			y: -1.5d
+			x: 4.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["658FEA8E308D741C"]
@@ -268,8 +249,8 @@
 				item: "kubejs:long_lasting_pill"
 				type: "item"
 			}]
-			x: 11.75d
-			y: -3.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["36D9ACF35A9BD9FA"]
@@ -297,8 +278,8 @@
 				type: "item"
 			}]
 			title: "器官容器"
-			x: 8.5d
-			y: 1.75d
+			x: 7.0d
+			y: 9.25d
 		}
 		{
 			dependencies: ["50D70D990312BC70"]
@@ -319,8 +300,8 @@
 				item: "kubejs:long_lasting_pill_gold"
 				type: "item"
 			}]
-			x: 13.75d
-			y: -3.0d
+			x: 0.75d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7F0C1FA54DD6E9BC"]
@@ -361,8 +342,8 @@
 				type: "item"
 			}]
 			title: "维度地牢"
-			x: 11.25d
-			y: 1.75d
+			x: 0.75d
+			y: 5.5d
 		}
 		{
 			dependencies: ["040207B33E2FEBFF"]
@@ -403,8 +384,8 @@
 				type: "item"
 			}]
 			title: "收割血肉"
-			x: 2.0d
-			y: 0.0d
+			x: 9.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1884740B0724DE70"]
@@ -429,8 +410,8 @@
 				type: "item"
 			}]
 			title: "建设血肉温床"
-			x: 3.75d
-			y: 0.0d
+			x: 8.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["145730691E558B78"]
@@ -453,8 +434,8 @@
 				type: "item"
 			}]
 			title: "批量获得生物燃料"
-			x: 5.0d
-			y: -1.75d
+			x: 9.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["145730691E558B78"]
@@ -483,8 +464,8 @@
 				type: "item"
 			}]
 			title: "重锻身心"
-			x: 5.75d
-			y: 0.0d
+			x: 7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5F271CD6AAEC88FC"]
@@ -511,8 +492,8 @@
 				type: "item"
 			}]
 			title: "酿造传奇之物"
-			x: 7.75d
-			y: 0.0d
+			x: 5.25d
+			y: 7.5d
 		}
 		{
 			dependencies: ["5F271CD6AAEC88FC"]
@@ -542,8 +523,8 @@
 				type: "item"
 			}]
 			title: "模板器官"
-			x: 6.75d
-			y: 1.75d
+			x: 8.25d
+			y: 9.25d
 		}
 		{
 			dependencies: ["27AE075BC0F4376A"]
@@ -577,8 +558,8 @@
 				type: "item"
 			}]
 			title: "活体注射"
-			x: 9.0d
-			y: -1.75d
+			x: 4.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["360F386989316928"]
@@ -610,31 +591,8 @@
 				type: "item"
 			}]
 			title: "贪婪之爪"
-			x: 10.0d
-			y: -3.25d
-		}
-		{
-			dependencies: ["040207B33E2FEBFF"]
-			description: [
-				"背包在实际的使用过程中有很多不方便的点，比如说物品不能自动进入，或者背包空间较小等问题。"
-				""
-				"针对这些问题，你可以制作&6背包升级&r。通过各种各样的背包升级，你可以在日常的冒险中取得极大的便利。"
-			]
-			id: "01C0D8797395FF20"
-			rewards: [{
-				id: "4ADBCC163849498A"
-				item: "sophisticatedbackpacks:advanced_pickup_upgrade"
-				type: "item"
-			}]
-			subtitle: "打造属于你的背包"
-			tasks: [{
-				id: "1949D25F1573300C"
-				item: "sophisticatedbackpacks:upgrade_base"
-				type: "item"
-			}]
-			title: "背包升级"
-			x: 1.25d
-			y: 1.75d
+			x: 4.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["5F271CD6AAEC88FC"]
@@ -656,8 +614,8 @@
 				type: "item"
 			}]
 			title: "血肉箱"
-			x: 7.0d
-			y: -1.75d
+			x: 5.75d
+			y: 9.25d
 		}
 		{
 			dependencies: ["03B3A54BEDB85320"]
@@ -685,8 +643,8 @@
 				type: "item"
 			}]
 			title: "制作末地传送门"
-			x: 12.25d
-			y: 3.25d
+			x: -0.25d
+			y: 6.5d
 		}
 		{
 			dependencies: ["03B3A54BEDB85320"]
@@ -729,8 +687,8 @@
 				type: "item"
 			}]
 			title: "高级维度地牢"
-			x: 13.0d
-			y: 1.75d
+			x: -0.25d
+			y: 4.5d
 		}
 		{
 			dependencies: ["03B3A54BEDB85320"]
@@ -762,8 +720,8 @@
 				type: "item"
 			}]
 			title: "前往个人维度"
-			x: 14.25d
-			y: 3.25d
+			x: -1.75d
+			y: 5.5d
 		}
 		{
 			dependencies: ["4264FBF118BE08EA"]
@@ -791,8 +749,8 @@
 				type: "item"
 			}]
 			title: "传送大厅？！"
-			x: 13.25d
-			y: 4.75d
+			x: -1.75d
+			y: 6.5d
 		}
 		{
 			dependencies: ["45AB5B1831B0AACF"]
@@ -828,8 +786,8 @@
 				}
 			]
 			title: "地牢探险家"
-			x: 15.25d
-			y: 1.75d
+			x: -1.75d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -865,8 +823,8 @@
 				type: "item"
 			}]
 			title: "神恩仪式"
-			x: 16.0d
-			y: 0.0d
+			x: 7.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5EB8592EEE08BF45"]
@@ -892,8 +850,8 @@
 				}
 				type: "item"
 			}]
-			x: 18.5d
-			y: 0.0d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["00E3E147FC750C90"]
@@ -925,8 +883,8 @@
 				type: "checkmark"
 			}]
 			title: "Iron的魔法书"
-			x: 3.25d
-			y: -1.75d
+			x: 1.75d
+			y: 8.0d
 		}
 		{
 			dependencies: ["00E3E147FC750C90"]
@@ -949,8 +907,8 @@
 				type: "item"
 			}]
 			title: "混合锅"
-			x: 2.5d
-			y: -3.5d
+			x: 4.25d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3319CFE2739EE21B"]
@@ -974,8 +932,8 @@
 				type: "item"
 			}]
 			title: "研磨你所得"
-			x: 4.5d
-			y: -3.5d
+			x: 5.75d
+			y: 10.5d
 		}
 		{
 			dependencies: ["4C2F1E3735C11A57"]
@@ -1005,8 +963,8 @@
 				type: "item"
 			}]
 			title: "魔法巫师套装"
-			x: 6.75d
-			y: -3.5d
+			x: 6.5d
+			y: 11.75d
 		}
 		{
 			dependencies: ["4C2F1E3735C11A57"]
@@ -1047,8 +1005,8 @@
 				type: "item"
 			}]
 			title: "乌鸦的妙用"
-			x: 7.5d
-			y: -5.5d
+			x: 5.25d
+			y: 11.75d
 		}
 		{
 			dependencies: ["3319CFE2739EE21B"]
@@ -1076,8 +1034,8 @@
 				type: "item"
 			}]
 			title: "蜡烛、沼泽与月光石"
-			x: 4.0d
-			y: -5.5d
+			x: 2.75d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3319CFE2739EE21B"]
@@ -1116,8 +1074,8 @@
 				type: "checkmark"
 			}]
 			title: "魔法与飞行扫帚"
-			x: 5.5d
-			y: -5.5d
+			x: 4.0d
+			y: 11.25d
 		}
 		{
 			dependencies: ["0DCDFAD4C3288FCD"]
@@ -1138,8 +1096,8 @@
 				}
 				type: "item"
 			}]
-			x: 20.75d
-			y: 0.0d
+			x: 9.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0DCDFAD4C3288FCD"]
@@ -1158,8 +1116,8 @@
 				type: "item"
 			}]
 			title: "神意挑战"
-			x: 19.75d
-			y: -1.5d
+			x: 4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1884740B0724DE70"]
@@ -1178,8 +1136,8 @@
 				type: "checkmark"
 			}]
 			title: "亡灵与灵魂魔法"
-			x: 3.25d
-			y: 1.75d
+			x: 8.5d
+			y: 3.75d
 		}
 	]
 	title: "章节2：觉醒"

@@ -5,6 +5,18 @@
 	group: "0241B51B931E1ED2"
 	icon: "toms_storage:ts.inventory_connector"
 	id: "05ADC2E0A7649AC7"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 15.0d
+		hover: [ ]
+		image: "kubejs:textures/task/tom_background.png"
+		rotation: 0.0d
+		width: 19.583333333333332d
+		x: 6.25d
+		y: -0.25d
+	}]
 	order_index: 3
 	quest_links: [ ]
 	quests: [

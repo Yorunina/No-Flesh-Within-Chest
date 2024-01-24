@@ -98,6 +98,7 @@
 			hide_dependency_lines: true
 			icon: "alexsmobs:potted_flutter"
 			id: "37A0FA236DF85027"
+			shape: "rsquare"
 			subtitle: "早期发布版本对应总体进度情况一览"
 			tasks: [{
 				id: "248868AC9E4DAAF6"
@@ -137,6 +138,7 @@
 				"最重要的，是，&6完成非中本地化&r"
 			]
 			id: "1F2A2EB40A0386CE"
+			shape: "rsquare"
 			subtitle: "发布非中版本（Curseforge发布）的必要进展"
 			tasks: [{
 				id: "15FD667B8A05CA80"
@@ -159,6 +161,7 @@
 				"{\"text\":\"点击前往Git查看进度\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Yorunina/No-Flesh-Within-Chest\"}}"
 			]
 			id: "5D4966C4D48F6E5E"
+			shape: "rsquare"
 			subtitle: "整合包的扩展是无限的，但短期内，可以将其视为完成"
 			tasks: [{
 				id: "1B6A2462D4392535"

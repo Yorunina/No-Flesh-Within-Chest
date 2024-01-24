@@ -5,6 +5,18 @@
 	group: "2358ECA720E3F23E"
 	icon: "minecraft:crimson_fungus"
 	id: "619A3CDD61EDA493"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 4.205128205128204d
+		hover: [ ]
+		image: "kubejs:textures/task/collection_1.png"
+		rotation: 0.0d
+		width: 16.0d
+		x: 0.0d
+		y: 2.75d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -25,8 +37,8 @@
 				title: "死亡掉落？"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 0.0d
+			x: -4.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -47,8 +59,8 @@
 				type: "checkmark"
 			}]
 			title: "潜在威胁？"
-			x: 2.75d
-			y: 0.0d
+			x: -3.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0C769BB94D282CC6"]
@@ -66,8 +78,8 @@
 				type: "checkmark"
 			}]
 			title: "正在开发中. . ."
-			x: -2.75d
-			y: 0.0d
+			x: -5.75d
+			y: 1.5d
 		}
 		{
 			can_repeat: true
@@ -86,8 +98,8 @@
 				title: "血量乘数"
 				type: "checkmark"
 			}]
-			x: 5.5d
-			y: 0.0d
+			x: -2.0d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -108,8 +120,8 @@
 				type: "checkmark"
 			}]
 			title: "伤害乘数"
-			x: 5.5d
-			y: 2.25d
+			x: -0.75d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -140,8 +152,8 @@
 				type: "checkmark"
 			}]
 			title: "怪物总将携带护甲？"
-			x: 2.75d
-			y: 2.25d
+			x: 0.5d
+			y: 2.5d
 		}
 	]
 	title: "独立难度设置"

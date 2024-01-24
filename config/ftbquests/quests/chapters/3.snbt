@@ -5,6 +5,18 @@
 	group: "4E02CBDD9D86D249"
 	icon: "witherstormmod:withered_bone"
 	id: "37DC06F829B60ADC"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 19.565217391304348d
+		hover: [ ]
+		image: "kubejs:textures/task/chapter3.png"
+		rotation: 0.0d
+		width: 15.0d
+		x: 3.5d
+		y: 1.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -36,8 +48,8 @@
 				item: "kubejs:secret_of_rain"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.5d
+			x: -1.75d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -128,8 +140,8 @@
 				}
 			]
 			title: "三大世界改变魔法"
-			x: 0.0d
-			y: 0.0d
+			x: 1.75d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -159,8 +171,8 @@
 				item: "kubejs:secret_of_bloom"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -1.75d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -190,8 +202,8 @@
 				item: "kubejs:secret_of_heart"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.5d
+			x: -1.75d
+			y: -1.75d
 		}
 		{
 			dependencies: ["2F700F7D0269B839"]
@@ -223,8 +235,8 @@
 				title: "曲水丰润图:第一阶段"
 				type: "gamestage"
 			}]
-			x: 2.0d
-			y: -1.5d
+			x: 8.5d
+			y: -1.75d
 		}
 		{
 			dependencies: ["6910E549F8D4A9A0"]
@@ -256,8 +268,8 @@
 				title: "曲水丰润图:第二阶段"
 				type: "gamestage"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: 8.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["65427C12F230F5DC"]
@@ -294,8 +306,8 @@
 				title: "曲水丰润图:第三阶段"
 				type: "gamestage"
 			}]
-			x: 2.0d
-			y: 1.5d
+			x: 8.5d
+			y: 0.75d
 		}
 		{
 			dependencies: ["2E03433F8ED6CA99"]
@@ -334,8 +346,8 @@
 				title: "访问记忆中的世界"
 				type: "dimension"
 			}]
-			x: 4.5d
-			y: 0.0d
+			x: 5.75d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -353,8 +365,8 @@
 				type: "item"
 			}]
 			title: "更多秘密. . ."
-			x: -2.0d
-			y: 3.0d
+			x: -1.75d
+			y: 2.0d
 		}
 		{
 			dependencies: ["789A88270498ED92"]
@@ -390,8 +402,8 @@
 				type: "checkmark"
 			}]
 			title: "发现隐秘遗迹"
-			x: 7.5d
-			y: 0.0d
+			x: 3.75d
+			y: -0.5d
 		}
 		{
 			dependencies: ["22A8C953424C8FD9"]
@@ -422,8 +434,8 @@
 				type: "item"
 			}]
 			title: "回忆诅咒:脆弱恶咒"
-			x: 9.75d
-			y: 0.0d
+			x: 5.75d
+			y: -0.5d
 		}
 		{
 			dependencies: ["22A8C953424C8FD9"]
@@ -455,8 +467,8 @@
 				type: "item"
 			}]
 			title: "回忆诅咒:血源恶咒"
-			x: 9.75d
-			y: -1.5d
+			x: 1.75d
+			y: -0.5d
 		}
 		{
 			dependencies: ["22A8C953424C8FD9"]
@@ -485,8 +497,8 @@
 				type: "item"
 			}]
 			title: "回忆诅咒:疲倦恶咒"
-			x: 9.75d
-			y: 1.5d
+			x: 3.75d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -511,8 +523,8 @@
 				type: "item"
 			}]
 			title: "挑战Boss Rush！"
-			x: -2.0d
-			y: 4.5d
+			x: -1.75d
+			y: 0.75d
 		}
 	]
 	title: "章节3：秘密"

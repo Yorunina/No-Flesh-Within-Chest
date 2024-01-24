@@ -5,6 +5,18 @@
 	group: "2358ECA720E3F23E"
 	icon: "minecraft:book"
 	id: "11B9ECC94E30685D"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 6.32258064516129d
+		hover: [ ]
+		image: "kubejs:textures/task/brief_introduction.png"
+		rotation: 0.0d
+		width: 4.0d
+		x: 0.0d
+		y: -0.25d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -55,7 +67,7 @@
 			}]
 			title: "胸腔"
 			x: 0.0d
-			y: -2.5d
+			y: -3.25d
 		}
 		{
 			dependencies: ["72D090FF4C44DAAD"]
@@ -74,7 +86,7 @@
 			}]
 			title: "巫术与魔法"
 			x: 2.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["72D090FF4C44DAAD"]
@@ -89,7 +101,7 @@
 			}]
 			title: "机械与蒸汽"
 			x: -2.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["72D090FF4C44DAAD"]
@@ -122,8 +134,8 @@
 				type: "checkmark"
 			}]
 			title: "任务形状"
-			x: -2.0d
-			y: 2.0d
+			x: -1.75d
+			y: 1.75d
 		}
 		{
 			dependencies: ["72D090FF4C44DAAD"]
@@ -146,7 +158,7 @@
 			}]
 			title: "独立难度选择"
 			x: 1.75d
-			y: 2.0d
+			y: 1.75d
 		}
 	]
 	title: "简介"

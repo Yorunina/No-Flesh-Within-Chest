@@ -21,6 +21,18 @@
 		}
 	}
 	id: "56F0A3BB89FE8F1D"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 4.467948717948718d
+		hover: [ ]
+		image: "kubejs:textures/task/collection_1.png"
+		rotation: 0.0d
+		width: 17.0d
+		x: -3.25d
+		y: 0.0d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -59,8 +71,8 @@
 				type: "checkmark"
 			}]
 			title: "花掉你的金钱！"
-			x: 0.0d
-			y: 0.0d
+			x: -9.25d
+			y: -1.25d
 		}
 		{
 			can_repeat: true
@@ -105,8 +117,8 @@
 				type: "item"
 			}]
 			title: "基础维度传送门蓝图"
-			x: -3.25d
-			y: 1.75d
+			x: -8.0d
+			y: -0.25d
 		}
 		{
 			can_repeat: true
@@ -161,8 +173,8 @@
 				type: "item"
 			}]
 			title: "高级维度传送门蓝图"
-			x: -3.25d
-			y: 3.75d
+			x: -6.75d
+			y: -0.25d
 		}
 		{
 			can_repeat: true
@@ -202,48 +214,8 @@
 				type: "item"
 			}]
 			title: "传送石碑站点"
-			x: -1.0d
-			y: 1.75d
-		}
-		{
-			can_repeat: true
-			dependencies: ["304B1E271805A1B0"]
-			icon: "minecraft:black_bed"
-			id: "16D0C2ADB0BDC682"
-			rewards: [{
-				id: "7E4DD2372CAED243"
-				item: {
-					Count: 1b
-					id: "capsule:capsule"
-					tag: {
-						activetimer: {
-							starttime: 3040
-						}
-						canRotate: 0b
-						color: 7105644
-						display: {
-							color: 7105644
-						}
-						label: "Sabbath Ritual"
-						mirror: "NONE"
-						rotation: "NONE"
-						size: 9
-						state: 2
-						structureName: "c-yorunina-config_capsule_rewards_sabbath_ritual-6"
-						upgraded: 0
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				consume_items: true
-				id: "4618A6A10602F813"
-				item: "lightmanscurrency:coin_diamond"
-				type: "item"
-			}]
-			title: "安息仪式祭坛"
-			x: 1.5d
-			y: 1.75d
+			x: -5.5d
+			y: -0.25d
 		}
 		{
 			can_repeat: true
@@ -278,8 +250,8 @@
 				type: "item"
 			}]
 			title: "Iron的魔法工作站"
-			x: 3.75d
-			y: 1.75d
+			x: -4.25d
+			y: -0.25d
 		}
 		{
 			can_repeat: true
@@ -320,8 +292,8 @@
 				type: "item"
 			}]
 			title: "Tetra工作站"
-			x: 6.0d
-			y: 1.75d
+			x: -3.0d
+			y: -0.25d
 		}
 		{
 			can_repeat: true
@@ -362,8 +334,8 @@
 				type: "item"
 			}]
 			title: "存储站雏形"
-			x: -1.0d
-			y: 3.75d
+			x: -1.75d
+			y: -0.25d
 		}
 		{
 			can_repeat: true
@@ -403,47 +375,8 @@
 				type: "item"
 			}]
 			title: "乐事厨房"
-			x: 3.75d
-			y: 3.75d
-		}
-		{
-			dependencies: ["304B1E271805A1B0"]
-			icon: "minecraft:nether_gold_ore"
-			id: "3BEF1D1051A5E14E"
-			rewards: [{
-				id: "4049D339F7B369D5"
-				item: {
-					Count: 1b
-					id: "capsule:capsule"
-					tag: {
-						activetimer: {
-							starttime: 6257
-						}
-						canRotate: 0b
-						color: 10076989
-						display: {
-							color: 9819623
-						}
-						label: "Adept Nether Ritual"
-						mirror: "NONE"
-						rotation: "NONE"
-						size: 9
-						state: 2
-						structureName: "c-yorunina-config_capsule_rewards_adept_nether_ritual-11"
-						upgraded: 0
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "一个能够聚集灵魂的仪式祭坛"
-			tasks: [{
-				id: "66477C775A8D6C56"
-				item: "lightmanscurrency:coin_diamond"
-				type: "item"
-			}]
-			title: "进阶下界仪式祭坛"
-			x: 1.5d
-			y: 3.75d
+			x: -0.5d
+			y: -0.25d
 		}
 	]
 	title: "结构：用你的金币购买蓝图吧"

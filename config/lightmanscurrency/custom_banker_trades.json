@@ -3,20 +3,6 @@
     {
       "Type": "lightmanscurrency:simple",
       "Price": {
-        "ID": "lightmanscurrency:coin_iron",
-        "Count": 5
-      },
-      "Sell": {
-        "ID": "lightmanscurrency:coinmint",
-        "Count": 1
-      },
-      "MaxTrades": 12,
-      "XP": 2,
-      "PriceMult": 0.05
-    },
-    {
-      "Type": "lightmanscurrency:simple",
-      "Price": {
         "ID": "lightmanscurrency:coin_gold",
         "Count": 1
       },
