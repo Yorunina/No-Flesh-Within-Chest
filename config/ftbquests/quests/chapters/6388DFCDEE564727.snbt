@@ -9,6 +9,18 @@
 		tag: { }
 	}
 	id: "6388DFCDEE564727"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 14.438356164383562d
+		hover: [ ]
+		image: "kubejs:textures/task/collection_4.png"
+		rotation: 0.0d
+		width: 17.0d
+		x: -4.25d
+		y: 0.75d
+	}]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
@@ -32,8 +44,8 @@
 				type: "item"
 			}]
 			title: "蒙多想去哪就去哪!"
-			x: -8.0d
-			y: -4.0d
+			x: -10.0d
+			y: -4.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -54,8 +66,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: -3.0d
+			x: -10.0d
+			y: -3.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -76,8 +88,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: -2.0d
+			x: -10.0d
+			y: -2.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -98,8 +110,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: -1.0d
+			x: -10.0d
+			y: -1.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -120,8 +132,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 0.0d
+			x: -10.0d
+			y: -0.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -142,8 +154,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.0d
-			y: 1.0d
+			x: -10.0d
+			y: 0.75d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -160,7 +172,7 @@
 			}]
 			title: "靛蓝炸弹"
 			x: -5.25d
-			y: -4.0d
+			y: -4.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -181,7 +193,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: -4.25d
 		}
 		{
@@ -203,7 +215,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: -4.25d
 		}
 		{
@@ -225,7 +237,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.25d
 			y: -4.25d
 		}
 		{
@@ -247,7 +259,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -4.25d
 		}
 		{
@@ -263,7 +275,7 @@
 				item: "witherstormmod:command_block_sword"
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: -3.25d
 		}
 		{
@@ -285,7 +297,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: -3.25d
 		}
 		{
@@ -307,7 +319,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.25d
 			y: -3.25d
 		}
 		{
@@ -329,7 +341,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -3.25d
 		}
 		{
@@ -351,7 +363,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: -2.25d
 		}
 		{
@@ -373,7 +385,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: -2.25d
 		}
 		{
@@ -395,7 +407,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.25d
 			y: -2.25d
 		}
 		{
@@ -417,7 +429,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -2.25d
 		}
 		{
@@ -439,7 +451,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: -1.25d
 		}
 		{
@@ -461,7 +473,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: -1.25d
 		}
 		{
@@ -483,7 +495,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.25d
 			y: -1.25d
 		}
 		{
@@ -505,7 +517,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -1.25d
 		}
 		{
@@ -521,7 +533,7 @@
 				item: "witherstormmod:command_block_axe"
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: -0.25d
 		}
 		{
@@ -543,7 +555,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: -0.25d
 		}
 		{
@@ -565,7 +577,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.25d
 			y: -0.25d
 		}
 		{
@@ -587,7 +599,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: -0.25d
 		}
 		{
@@ -609,7 +621,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: 0.75d
 		}
 		{
@@ -631,7 +643,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: 0.75d
 		}
 		{
@@ -653,7 +665,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.25d
 			y: 0.75d
 		}
 		{
@@ -675,7 +687,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: 0.75d
 		}
 		{
@@ -691,7 +703,7 @@
 				item: "cataclysm:gauntlet_of_guard"
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: 1.75d
 		}
 		{
@@ -707,7 +719,7 @@
 				item: "cataclysm:gauntlet_of_bulwark"
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: 1.75d
 		}
 		{
@@ -729,7 +741,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.25d
 			y: 1.75d
 		}
 		{
@@ -745,7 +757,7 @@
 				item: "cataclysm:the_incinerator"
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: 1.75d
 		}
 		{
@@ -767,7 +779,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: 2.75d
 		}
 		{
@@ -789,7 +801,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: 2.75d
 		}
 		{
@@ -805,7 +817,7 @@
 				item: "cataclysm:meat_shredder"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.25d
 			y: 2.75d
 		}
 		{
@@ -827,7 +839,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: 2.75d
 		}
 		{
@@ -843,7 +855,7 @@
 				item: "cataclysm:wither_assault_shoulder_weapon"
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: 3.75d
 		}
 		{
@@ -859,7 +871,7 @@
 				item: "cataclysm:void_assault_shoulder_weapon"
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: 3.75d
 		}
 		{
@@ -875,7 +887,7 @@
 				item: "cataclysm:tidal_claws"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.25d
 			y: 3.75d
 		}
 		{
@@ -897,7 +909,7 @@
 				}
 				type: "item"
 			}]
-			x: 0.5d
+			x: 1.5d
 			y: 3.75d
 		}
 		{
@@ -919,7 +931,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: 4.75d
 		}
 		{
@@ -941,7 +953,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: 4.75d
 		}
 		{
@@ -963,7 +975,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.75d
+			x: -2.25d
 			y: 5.75d
 		}
 		{
@@ -985,7 +997,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -1.0d
 			y: 5.75d
 		}
 		{
@@ -1007,7 +1019,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.25d
 			y: 4.75d
 		}
 	]

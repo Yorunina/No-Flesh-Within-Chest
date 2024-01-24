@@ -5,6 +5,140 @@
 	group: "4F4F4EA8CE67985B"
 	icon: "kubejs:infinity_beats"
 	id: "1048F50BAEFE652C"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: -2.75d
+			y: 5.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_2.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: -2.75d
+			y: 8.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: -2.75d
+			y: 12.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: -2.75d
+			y: 15.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: -2.75d
+			y: 18.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: -2.75d
+			y: 21.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 12.5d
+			y: 5.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 12.5d
+			y: 8.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 12.5d
+			y: 11.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 2.0d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_0.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.25d
+			y: 2.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 12.5d
+			y: 15.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -37,8 +171,8 @@
 				type: "checkmark"
 			}]
 			title: "引言：器官收集指南"
-			x: 0.0d
-			y: 0.0d
+			x: -2.25d
+			y: 2.0d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -66,8 +200,8 @@
 				type: "item"
 			}]
 			title: "糖果心"
-			x: -6.5d
-			y: 10.25d
+			x: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -95,8 +229,8 @@
 				type: "checkmark"
 			}]
 			title: "魔法使与糖果心"
-			x: -5.5d
-			y: 9.0d
+			x: 6.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -121,8 +255,8 @@
 				item: "kubejs:love_between_lava_and_ice"
 				type: "item"
 			}]
-			x: -5.25d
-			y: 3.0d
+			x: -3.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -141,8 +275,8 @@
 				type: "checkmark"
 			}]
 			title: "Boss遗物器官"
-			x: -5.75d
-			y: 1.75d
+			x: -8.75d
+			y: 7.5d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -169,8 +303,8 @@
 				item: "kubejs:candy_pancreas"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 10.25d
+			x: 8.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -191,8 +325,8 @@
 				item: "kubejs:candy_stomach"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 10.25d
+			x: 9.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -213,8 +347,8 @@
 				item: "kubejs:magic_spine"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 11.25d
+			x: 11.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -247,8 +381,8 @@
 					type: "item"
 				}
 			]
-			x: -6.5d
-			y: 11.25d
+			x: 10.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -269,8 +403,8 @@
 				item: "kubejs:magic_muscle"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 11.25d
+			x: 12.5d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -290,8 +424,8 @@
 				type: "checkmark"
 			}]
 			title: "穷奇无尽"
-			x: -11.5d
-			y: 1.75d
+			x: -8.75d
+			y: 4.5d
 		}
 		{
 			dependencies: ["24E73A64F055728A"]
@@ -318,8 +452,8 @@
 				item: "kubejs:infinity_beats"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 3.0d
+			x: -7.75d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -333,8 +467,8 @@
 				type: "checkmark"
 			}]
 			title: "革命机械"
-			x: 0.25d
-			y: 9.0d
+			x: 6.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -355,8 +489,8 @@
 				item: "kubejs:furnace_core"
 				type: "item"
 			}]
-			x: -0.75d
-			y: 10.25d
+			x: 7.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -377,8 +511,8 @@
 				item: "kubejs:burning_heart"
 				type: "item"
 			}]
-			x: 0.25d
-			y: 10.25d
+			x: 8.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -395,8 +529,8 @@
 				item: "kubejs:revolution_gear"
 				type: "item"
 			}]
-			x: 1.25d
-			y: 10.25d
+			x: 9.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -413,8 +547,8 @@
 				item: "kubejs:revolution_cable"
 				type: "item"
 			}]
-			x: -0.75d
-			y: 11.25d
+			x: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -431,8 +565,8 @@
 				item: "kubejs:revolution_relay"
 				type: "item"
 			}]
-			x: 0.25d
-			y: 11.25d
+			x: 11.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -449,8 +583,8 @@
 				item: "kubejs:revolution_delay"
 				type: "item"
 			}]
-			x: 1.25d
-			y: 11.25d
+			x: 12.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -475,8 +609,8 @@
 				type: "item"
 			}]
 			title: "进化器官"
-			x: 3.25d
-			y: 1.75d
+			x: -8.75d
+			y: 14.5d
 		}
 		{
 			dependencies: ["437705D28D92B135"]
@@ -504,8 +638,8 @@
 				type: "item"
 			}]
 			title: "模板器官进化"
-			x: 2.25d
-			y: 3.0d
+			x: -6.75d
+			y: 15.5d
 		}
 		{
 			dependencies: ["437705D28D92B135"]
@@ -531,8 +665,8 @@
 				type: "item"
 			}]
 			title: "伸缩臂"
-			x: 3.25d
-			y: 3.0d
+			x: -7.75d
+			y: 15.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -547,8 +681,8 @@
 				type: "checkmark"
 			}]
 			title: "碎片"
-			x: 6.25d
-			y: 1.75d
+			x: -8.75d
+			y: 17.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -569,8 +703,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.25d
-			y: 4.0d
+			x: -6.75d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -595,8 +729,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.25d
-			y: 3.0d
+			x: -1.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -617,8 +751,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.25d
-			y: 5.0d
+			x: -1.75d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -639,8 +773,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.25d
-			y: 3.0d
+			x: -2.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -665,8 +799,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.25d
-			y: 4.0d
+			x: -5.75d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -682,8 +816,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.25d
-			y: 5.0d
+			x: -0.75d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -699,8 +833,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.25d
-			y: 5.0d
+			x: 0.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -721,8 +855,8 @@
 				}
 				type: "item"
 			}]
-			x: -3.25d
-			y: 5.0d
+			x: 1.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -743,8 +877,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.25d
-			y: 4.0d
+			x: -0.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -769,8 +903,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.25d
-			y: 5.0d
+			x: -4.75d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -791,8 +925,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.25d
-			y: 6.0d
+			x: 3.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -813,8 +947,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.25d
-			y: 5.0d
+			x: -2.75d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -835,8 +969,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.25d
-			y: 3.0d
+			x: -6.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -857,8 +991,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.25d
-			y: 4.0d
+			x: -7.75d
+			y: 9.5d
 		}
 		{
 			dependencies: ["24E73A64F055728A"]
@@ -883,8 +1017,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.5d
-			y: 3.0d
+			x: -6.75d
+			y: 5.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -903,8 +1037,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.25d
-			y: 5.0d
+			x: -0.75d
+			y: 18.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -923,8 +1057,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.25d
-			y: 3.0d
+			x: -6.75d
+			y: 18.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -943,8 +1077,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.25d
-			y: 3.0d
+			x: -5.75d
+			y: 18.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -963,8 +1097,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.25d
-			y: 4.0d
+			x: -4.75d
+			y: 18.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -983,8 +1117,8 @@
 				}
 				type: "item"
 			}]
-			x: 6.25d
-			y: 4.0d
+			x: -3.75d
+			y: 18.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1003,8 +1137,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.25d
-			y: 4.0d
+			x: -2.75d
+			y: 18.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1023,8 +1157,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.25d
-			y: 5.0d
+			x: -1.75d
+			y: 18.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1043,8 +1177,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.25d
-			y: 3.0d
+			x: -7.75d
+			y: 18.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1065,8 +1199,8 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: 3.0d
+			x: -7.75d
+			y: 21.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1087,8 +1221,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: 3.0d
+			x: -6.75d
+			y: 21.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1109,8 +1243,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 3.0d
+			x: -5.75d
+			y: 21.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1131,22 +1265,24 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: 4.0d
+			x: -4.75d
+			y: 21.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
+			description: ["食物类器官是一个相当独特的分类，其主要以激活效果为主，通过胸腔内的独特摆放顺序来激发不同的效果。"]
 			icon: "minecraft:golden_apple"
 			id: "309791281FE1F06A"
 			shape: "rsquare"
+			subtitle: "是器官吃了食物还是食物吃了器官"
 			tasks: [{
 				id: "456D14071F761DCD"
 				title: "我已了解"
 				type: "checkmark"
 			}]
 			title: "食物器官"
-			x: 9.5d
-			y: 1.75d
+			x: -8.75d
+			y: 20.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1167,8 +1303,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.0d
+			x: -4.75d
+			y: 12.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1189,8 +1325,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: -3.75d
+			y: 12.5d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -1215,8 +1351,8 @@
 				}
 				type: "item"
 			}]
-			x: -0.75d
-			y: 12.25d
+			x: 13.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1237,8 +1373,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
-			y: 4.0d
+			x: -3.75d
+			y: 21.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -1258,8 +1394,9 @@
 				title: "我已了解"
 				type: "checkmark"
 			}]
-			x: -11.5d
-			y: 9.0d
+			title: "资源类器官"
+			x: 6.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["27BC9CE4043A3FEC"]
@@ -1284,8 +1421,8 @@
 				}
 				type: "item"
 			}]
-			x: -12.5d
-			y: 10.25d
+			x: 7.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["27BC9CE4043A3FEC"]
@@ -1310,8 +1447,8 @@
 				}
 				type: "item"
 			}]
-			x: -11.5d
-			y: 10.25d
+			x: 8.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["27BC9CE4043A3FEC"]
@@ -1336,8 +1473,8 @@
 				}
 				type: "item"
 			}]
-			x: -10.5d
-			y: 10.25d
+			x: 9.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["27BC9CE4043A3FEC"]
@@ -1362,8 +1499,8 @@
 				}
 				type: "item"
 			}]
-			x: -12.5d
-			y: 11.25d
+			x: 10.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -1382,8 +1519,8 @@
 				type: "checkmark"
 			}]
 			title: "机械"
-			x: 0.0d
-			y: 1.75d
+			x: -8.75d
+			y: 11.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1404,8 +1541,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.0d
+			x: -7.75d
+			y: 12.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1426,8 +1563,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: -6.75d
+			y: 12.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1448,8 +1585,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: -5.75d
+			y: 12.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1470,8 +1607,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
-			y: 4.0d
+			x: -2.75d
+			y: 12.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1492,8 +1629,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.25d
-			y: 6.0d
+			x: 2.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1518,8 +1655,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.25d
-			y: 3.0d
+			x: -5.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1544,8 +1681,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.25d
-			y: 3.0d
+			x: -4.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1570,8 +1707,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.25d
-			y: 4.0d
+			x: 0.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1596,8 +1733,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.25d
-			y: 4.0d
+			x: 1.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1616,8 +1753,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.25d
-			y: 4.0d
+			x: 2.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1636,8 +1773,8 @@
 				}
 				type: "item"
 			}]
-			x: -8.25d
-			y: 5.0d
+			x: -3.75d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1657,8 +1794,8 @@
 				}
 				type: "item"
 			}]
-			x: -9.25d
-			y: 3.0d
+			x: -7.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1683,8 +1820,8 @@
 				}
 				type: "item"
 			}]
-			x: 10.5d
-			y: 4.0d
+			x: -2.75d
+			y: 21.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1705,8 +1842,8 @@
 				}
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: -1.75d
+			y: 12.5d
 		}
 	]
 	title: "胸腔：器官收集指南"

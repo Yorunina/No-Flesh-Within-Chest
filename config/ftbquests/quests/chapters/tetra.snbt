@@ -94,10 +94,10 @@
 			id: "312A09022249980F"
 			subtitle: "了解加工台，理解加工台."
 			tasks: [{
-				consume_items: false
-				id: "3080F093BD402BE5"
-				item: "tetra:basic_workbench"
-				type: "item"
+				advancement: "tetra:upgrades/workbench"
+				criterion: ""
+				id: "115950E130CCDA28"
+				type: "advancement"
 			}]
 			title: "了解加工台"
 			x: -0.5d

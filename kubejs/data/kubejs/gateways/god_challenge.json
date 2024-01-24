@@ -6,23 +6,23 @@
       "entities": [
         {
           "entity": "minecraft:blaze",
-          "nbt": "{Health: 80, Attributes: [{ Name: \"generic.max_health\", Base: 80 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+          "nbt": "{Health: 120, Attributes: [{ Name: \"generic.max_health\", Base: 120 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
         },
         {
           "entity": "minecraft:blaze",
-          "nbt": "{Health: 80, Attributes: [{ Name: \"generic.max_health\", Base: 80 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+          "nbt": "{Health: 120, Attributes: [{ Name: \"generic.max_health\", Base: 120 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
         },
         {
           "entity": "minecraft:blaze",
-          "nbt": "{Health: 80, Attributes: [{ Name: \"generic.max_health\", Base: 80 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+          "nbt": "{Health: 120, Attributes: [{ Name: \"generic.max_health\", Base: 120 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
         },
         {
           "entity": "minecraft:blaze",
-          "nbt": "{Health: 80, Attributes: [{ Name: \"generic.max_health\", Base: 80 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+          "nbt": "{Health: 120, Attributes: [{ Name: \"generic.max_health\", Base: 120 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
         },
         {
           "entity": "minecraft:blaze",
-          "nbt": "{Health: 80, Attributes: [{ Name: \"generic.max_health\", Base: 80 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+          "nbt": "{Health: 120, Attributes: [{ Name: \"generic.max_health\", Base: 120 }], Glowing: 1b, ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
         },
         {
           "entity": "somebosses:vulcan",
@@ -82,7 +82,7 @@
         },
         {
           "entity": "cataclysm:ender_guardian",
-          "nbt": "{Glowing: 1b}"
+          "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"kubejs:glimpse_of_god\", Id: 114,Amplifier: 0,Duration: 72000,ShowParticles: 0b}]}"
         }
       ],
       "modifiers": [],
@@ -104,7 +104,7 @@
       "type": "gateways:loot_table",
       "loot_table": "dimdungeons:chests/chestloot_4",
       "rolls": 5,
-      "desc": "高级战利品"
+      "desc": "rewards.dimdungeons.loot_table.chest_4"
     }
   ],
   "failures": [

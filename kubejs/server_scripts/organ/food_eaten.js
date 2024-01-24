@@ -37,13 +37,13 @@ const organFoodEatenStrategies = {
  */
 const organFoodEatenOnlyStrategies = {
     'kubejs:candy_stomach': function (event, organ) {
-        if (!event.item.hasTag('kubejs:eatable_candy')) {
+        if (!event.item.hasTag('extradelight:candy_bowl_valid')) {
             return
         }
         event.player.addItemCooldown(event.item, 20 * 300)
         if (!event.player.hasEffect('kubejs:sweet_dream')) {
             event.player.potionEffects.add('kubejs:sweet_dream',
-                event.item.getFoodProperties(event.player).getNutrition() * 30 * 20, 0)
+                event.item.getFoodProperties(event.player).getNutrition() * 15 * 20, 0)
         }
     },
     'kubejs:cream_cookie_heart': function (event, organ) {

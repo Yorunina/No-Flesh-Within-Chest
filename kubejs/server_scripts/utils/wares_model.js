@@ -67,8 +67,8 @@ function SimpleWares(requestedItems, paymentItems, ordered) {
 }
 
 
-const PotionTask = [
-    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', '{AreaOfEffect:0,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.chop_tree",Duration:1}],CustomPotionColor:6967847,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4)], 16),
+const PotionWares = [
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', '{AreaOfEffect:0,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.chop_tree",Duration:1}],CustomPotionColor:6967847,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4)], 64),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:0,CustomBrew:1b,CustomPotionColor:9868950,CustomPotionEffects:[{Ambient:0b,Amplifier:2b,CurativeItems:[{Count:1b,id:"minecraft:milk_bucket"}],Duration:1800,Id:56,ShowIcon:1b,ShowParticles:1b,"forge:id":"goety:arrowmantic"}],Lingering:0.0f,Quaff:0,Velocity:0.1f}')], 16),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(3)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:0,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.strip",Duration:1}],CustomPotionColor:5329233,Lingering:0.0f,Quaff:0,Velocity:0.0f}')], 16),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:2,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.love",Duration:1}],CustomPotionColor:16713305,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4)], 16),
@@ -76,106 +76,73 @@ const PotionTask = [
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:2,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.flaying",Duration:1}],CustomPotionColor:10373418,Lingering:0.0f,Quaff:0,Velocity:0.0f}')], 16),
 ]
 
-const ChallengeTask = [
-    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:god_challenge"}')], 1),
-    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:boss_rush"}')], 1),
-    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:final_raid"}')], 1),
-    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:element_revelry"}')], 1),
-
+const ChallengeWares = [
+    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:god_challenge"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:boss_rush"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:final_raid"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:element_revelry"}')], 3),
 ]
 
-function getRandomBrewerWares() {
-    let task = randomGet(PotionTask)
-    return new Wares('brewer')
-        .setPaymentItems(task.paymentItems)
-        .setRequestedItems(task.requestedItems)
-        .setTitle('女巫酿造师', '#33333')
-        .setMessage('我了解到你似乎有些 **特殊的** 需求。不如看看这瓶女巫精酿是否能够满足你的一时之需？', '#33333')
-        .setOrdered(task.ordered)
-        .build()
+const EggWares = [
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(3)], [Item.of('bookwyrms:book_wyrm_spawn_egg')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(6)], [Item.of('hexerei:crow_spawn_egg')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('unusualprehistory:rex_spawn_egg')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('bettas:betta_fish_spawn_egg')], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('modulargolems:metal_golem_template')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('alexsmobs:spawn_egg_jerboa')], 4),
+]
+
+const SpecialWares = [
+    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('sophisticatedbackpacks:netherite_backpack', '{inventorySlots:180, upgradeSlots:5}')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('sophisticatedbackpacks:netherite_backpack', '{inventorySlots:100, upgradeSlots:9}')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('tetra:forged_workbench')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('tetra:chthonic_extractor')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('tetra:chthonic_extractor')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('dimdungeons:item_blank_theme_key', '{theme:2}')], 4),
+]
+
+const OrganWares = [
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(4)], [Item.of('kubejs:redstone_furnace')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(4)], [Item.of('kubejs:d8')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(4)], [Item.of('kubejs:nether_star_shard')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(4)], [Item.of('kubejs:long_lasting_pill')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(4)], [Item.of('kubejs:doppelganger')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(4)], [Item.of('kubejs:rose_quartz_muscle')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(4)], [Item.of('kubejs:platelet_dispatcher')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(4)], [Item.of('kubejs:compressed_oxygen_implant')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(4)], [Item.of('kubejs:the_third_eye')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:muscle_gold')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:spleen_gold')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:heart_gold')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:stomach_gold')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:lung_gold')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:rib_gold')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:kidney_gold')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:spine_gold')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:liver_gold')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:intestine_gold')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:appendix_gold')], 4),
+]
+
+function getRandomPotionWares() {
+    let task = randomGet(PotionWares)
+    return new Wares('potion').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('女巫酿造师', '#33333').setMessage('我了解到你似乎有些 **特殊的** 需求。不如看看这瓶女巫精酿是否能够满足你的一时之需？', '#33333').setOrdered(task.ordered).build()
 }
-
-
 function getRandomChallengeWares() {
-    let task = randomGet(ChallengeTask)
-    return new Wares('challenge')
-        .setPaymentItems(task.paymentItems)
-        .setRequestedItems(task.requestedItems)
-        .setTitle('传说中的物品', '#e6493e')
-        .setMessage('有商人说，在某些村庄收购到了蕴含特殊力量的挑战之门。\n而这股力量如此强大，以至于连专业的冒险团队都为之汗颜。\n如果你有需要，他们可以将其低价转卖给你。', '#33333')
-        .setOrdered(3)
-        .build()
+    let task = randomGet(ChallengeWares)
+    return new Wares('challenge').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('传说中的物品', '#e6493e').setMessage('我们在某些村庄收购到了蕴含特殊力量的挑战之门。\n而这股力量如此强大，以至于连专业的冒险团队都为之汗颜。\n如果你有需要，可以将其低价转卖给你。', '#33333').setOrdered(task.ordered).build()
+}
+function getRandomEggWares() {
+    let task = randomGet(EggWares)
+    return new Wares('egg').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('宠物商人', '#33333').setMessage('咳，你也许在荒野上遇到过它吧。\n我们把它装在怪物蛋里，这对你来说很方便吧？', '#33333').setOrdered(task.ordered).build()
+}
+function getRandomSpecialWares() {
+    let task = randomGet(SpecialWares)
+    return new Wares('special').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('遗物商人', '#33333').setMessage('我们的探险队从遗迹中搜寻到了一些有趣的物品。\n我们只需要一个合理的价格。剩下的，你自己决定。', '#33333').setOrdered(task.ordered).build()
+}
+function getRandomOrganWares() {
+    let task = randomGet(OrganWares)
+    return new Wares('special').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('器官商人', '#d15492').setMessage('这是一些. . .肉制品。\n我们保存的相当完好，保证随取随用。', '#33333').setOrdered(task.ordered).build()
 }
 
 
-const WARES_BOOK_WYRM = new Wares('book_wyrm')
-    .addPaymentItems(Item.of('bookwyrms:book_wyrm_spawn_egg'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_emerald'))
-    .setTitle('宠物商人', '#33333')
-    .setMessage('商人们弄到了非常有趣的生物。\n只要你愿意花费一点点预算，他们就愿意将这种打包好的生物出让给你。', '#33333')
-    .setOrdered(8)
-    .build()
-
-const WARES_CROW = new Wares('crow')
-    .addPaymentItems(Item.of('hexerei:crow_spawn_egg'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_emerald'))
-    .setTitle('宠物商人', '#33333')
-    .setMessage('商人们弄到了非常有趣的生物。\n只要你愿意花费一点点预算，他们就愿意将这种打包好的生物出让给你。', '#33333')
-    .setOrdered(8)
-    .build()
-
-const WARES_REX = new Wares('rex')
-    .addPaymentItems(Item.of('unusualprehistory:rex_spawn_egg'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_emerald'))
-    .setTitle('宠物商人', '#33333')
-    .setMessage('商人们弄到了非常有趣的生物。\n只要你愿意花费一点点预算，他们就愿意将这种打包好的生物出让给你。', '#33333')
-    .setOrdered(2)
-    .build()
-
-const WARES_BETTA_FISH = new Wares('betta_fish')
-    .addPaymentItems(Item.of('bettas:betta_fish_spawn_egg'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_emerald'))
-    .setTitle('宠物商人', '#33333')
-    .setMessage('商人们弄到了非常有趣的生物。\n只要你愿意花费一点点预算，他们就愿意将这种打包好的生物出让给你。', '#33333')
-    .setOrdered(20)
-    .build()
-
-const WARES_MORE_SOLT_BAG = new Wares('more_solt_bag')
-    .addPaymentItems(Item.of('sophisticatedbackpacks:netherite_backpack', '{inventorySlots:180, upgradeSlots:5}'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_diamond').withCount(4))
-    .setTitle('背包商人', '#33333')
-    .setMessage('我们从某些坟墓. . .**不需要的人** 身上搞到了这些东西。\n似乎是一个非常罕见的大背包。\n如果你想要的话，或许需要支付一个合适的价格。', '#33333')
-    .setOrdered(3)
-    .build()
-
-const WARES_MORE_UPGRADE_BAG = new Wares('more_upgrade_bag')
-    .addPaymentItems(Item.of('sophisticatedbackpacks:netherite_backpack', '{inventorySlots:100, upgradeSlots:9}'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_diamond').withCount(4))
-    .setTitle('背包商人', '#33333')
-    .setMessage('我们从某些坟墓. . .**不需要的人** 身上搞到了这些东西。\n似乎是一个非常罕见的背包，有着更多的插槽。\n如果你想要的话，或许需要支付一个合适的价格。', '#33333')
-    .setOrdered(3)
-    .build()
-
-const WARES_TETRA_PART_1 = new Wares('tetra_part_1')
-    .addPaymentItems(Item.of('tetra:forged_workbench'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_diamond').withCount(1))
-    .setTitle('遗迹探索者', '#33333')
-    .setMessage('从某些地下遗迹里面，我们寻找到了古代锻造相关的遗迹品，如果你感兴趣的话。可以跟我聊聊。', '#33333')
-    .setOrdered(3)
-    .build()
-
-const WARES_TETRA_PART_2 = new Wares('tetra_part_2')
-    .addPaymentItems(Item.of('tetra:chthonic_extractor'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_diamond').withCount(1))
-    .setTitle('遗迹探索者', '#33333')
-    .setMessage('从某些地下遗迹里面，我们寻找到了古代锻造相关的遗迹品，如果你感兴趣的话。可以跟我聊聊。', '#33333')
-    .setOrdered(3)
-    .build()
-
-const WARES_TETRA_PART_3 = new Wares('tetra_part_3')
-    .addPaymentItems(Item.of('tetra:chthonic_extractor'))
-    .addRequestedItems(Item.of('lightmanscurrency:coin_diamond').withCount(1))
-    .setTitle('遗迹探索者', '#33333')
-    .setMessage('从某些地下遗迹里面，我们寻找到了古代锻造相关的遗迹品，如果你感兴趣的话。可以跟我聊聊。', '#33333')
-    .setOrdered(3)
-    .build()

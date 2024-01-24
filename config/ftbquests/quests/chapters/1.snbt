@@ -5,6 +5,56 @@
 	group: "4E02CBDD9D86D249"
 	icon: "minecraft:oak_sapling"
 	id: "6903E1989FA10D92"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 0.03125d
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 0.03125d
+			x: 6.75d
+			y: 3.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 0.03125d
+			x: 6.25d
+			y: 3.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 27.460317460317462d
+			hover: [ ]
+			image: "kubejs:textures/task/chapter1_1.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 6.5d
+			y: 2.75d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -54,8 +104,8 @@
 				type: "item"
 			}]
 			title: "第一棵树"
-			x: 0.0d
-			y: 0.0d
+			x: 6.75d
+			y: 10.25d
 		}
 		{
 			dependencies: ["3FED9C9227FC9CD5"]
@@ -86,8 +136,8 @@
 				type: "item"
 			}]
 			title: "钱币"
-			x: 0.75d
-			y: 1.25d
+			x: 8.25d
+			y: 9.25d
 		}
 		{
 			dependencies: ["3FED9C9227FC9CD5"]
@@ -123,8 +173,8 @@
 				type: "item"
 			}]
 			title: "完美的开始"
-			x: 2.0d
-			y: 0.0d
+			x: 6.75d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0721AF9D7D5E4A7C"]
@@ -157,8 +207,8 @@
 				type: "item"
 			}]
 			title: "了解自我"
-			x: 4.0d
-			y: 0.0d
+			x: 6.75d
+			y: 5.25d
 		}
 		{
 			dependencies: ["6069FC5CA00481CE"]
@@ -190,8 +240,8 @@
 				type: "item"
 			}]
 			title: "矿石肺"
-			x: 6.25d
-			y: -2.75d
+			x: 3.75d
+			y: 3.25d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -219,7 +269,7 @@
 			}]
 			title: "重定义自己的内在"
 			x: 5.25d
-			y: -1.5d
+			y: 4.25d
 		}
 		{
 			dependencies: ["6069FC5CA00481CE"]
@@ -279,8 +329,8 @@
 				type: "checkmark"
 			}]
 			title: "属性的定义"
-			x: 7.25d
-			y: -1.5d
+			x: 3.75d
+			y: 4.25d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -309,8 +359,8 @@
 				type: "item"
 			}]
 			title: "足够多的铁"
-			x: 6.5d
-			y: 0.0d
+			x: 8.25d
+			y: 3.75d
 		}
 		{
 			dependencies: ["0721AF9D7D5E4A7C"]
@@ -369,8 +419,8 @@
 				weak_nbt_match: true
 			}]
 			title: "Tetra与工具"
-			x: 2.75d
-			y: 1.25d
+			x: 5.25d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -414,8 +464,8 @@
 				type: "dimension"
 			}]
 			title: "前往下界"
-			x: 8.5d
-			y: 0.0d
+			x: 8.25d
+			y: 2.25d
 		}
 		{
 			dependencies: ["51FA796A91E94C4D"]
@@ -463,7 +513,7 @@
 			]
 			title: "指南针"
 			x: 9.75d
-			y: 1.75d
+			y: 2.25d
 		}
 		{
 			dependencies: ["51FA796A91E94C4D"]
@@ -493,8 +543,8 @@
 				type: "item"
 			}]
 			title: "下界堡垒与烈焰人"
-			x: 10.5d
-			y: 0.0d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3FF06F6F309FAEC3"]
@@ -525,8 +575,8 @@
 				type: "item"
 			}]
 			title: "与末影人相遇"
-			x: 12.5d
-			y: 0.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2311CA3EEABF0250"]
@@ -549,8 +599,8 @@
 				type: "dimension"
 			}]
 			title: "前往末地"
-			x: 14.5d
-			y: 0.0d
+			x: 6.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["51FA796A91E94C4D"]
@@ -586,8 +636,8 @@
 				type: "item"
 			}]
 			title: "成为武器大师"
-			x: 9.75d
-			y: -1.5d
+			x: 6.75d
+			y: 2.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -629,8 +679,8 @@
 				type: "item"
 			}]
 			title: "机械动力？人工动力！"
-			x: 7.5d
-			y: 1.75d
+			x: 9.75d
+			y: 3.75d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -667,8 +717,8 @@
 				type: "checkmark"
 			}]
 			title: "寻找Alex生物"
-			x: 4.75d
-			y: 1.25d
+			x: 5.25d
+			y: 5.25d
 		}
 		{
 			dependencies: ["0721AF9D7D5E4A7C"]
@@ -703,8 +753,8 @@
 				type: "item"
 			}]
 			title: "将光源挂在腰上"
-			x: 3.0d
-			y: -1.5d
+			x: 3.75d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2311CA3EEABF0250"]
@@ -727,8 +777,8 @@
 				type: "item"
 			}]
 			title: "特殊的眼睛"
-			x: 13.5d
-			y: -1.25d
+			x: 4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0861DDE9767A3E9D"]
@@ -765,7 +815,7 @@
 				type: "item"
 			}]
 			title: "储物抽屉"
-			x: 8.75d
+			x: 11.25d
 			y: 3.75d
 		}
 		{
@@ -792,8 +842,8 @@
 				value: 1L
 			}]
 			title: "击败末影龙！"
-			x: 16.5d
-			y: 0.0d
+			x: 4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1D8929E0CE7CE0AB"]
@@ -825,8 +875,8 @@
 				type: "item"
 			}]
 			title: "追寻鞘翅"
-			x: 15.5d
-			y: -1.25d
+			x: 7.75d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5E8F821F42C92E8A"]
@@ -856,7 +906,7 @@
 				type: "item"
 			}]
 			title: "简易、存储、整合"
-			x: 11.0d
+			x: 12.75d
 			y: 3.75d
 		}
 		{
@@ -890,8 +940,8 @@
 				type: "item"
 			}]
 			title: "斗鱼能手"
-			x: 5.5d
-			y: 2.5d
+			x: 3.75d
+			y: 5.25d
 		}
 		{
 			dependencies: ["3FF06F6F309FAEC3"]
@@ -922,8 +972,8 @@
 				type: "item"
 			}]
 			title: "书龙、化石、考古"
-			x: 11.75d
-			y: 1.75d
+			x: 4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3FED9C9227FC9CD5"]
@@ -954,8 +1004,8 @@
 				type: "item"
 			}]
 			title: "和朋友一起远征"
-			x: 1.0d
-			y: -1.5d
+			x: 5.25d
+			y: 10.25d
 		}
 		{
 			dependencies: ["2DD73A2CCC0054D8"]
@@ -981,8 +1031,8 @@
 				type: "item"
 			}]
 			title: "查看资源槽"
-			x: 7.25d
-			y: -4.0d
+			x: 2.25d
+			y: 3.25d
 		}
 		{
 			dependencies: ["17F501A9B3D8B5BA"]
@@ -999,8 +1049,8 @@
 				item: "lightmanscurrency:atm"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: 9.75d
+			y: 8.25d
 		}
 		{
 			dependencies: ["2311CA3EEABF0250"]
@@ -1018,8 +1068,8 @@
 				type: "checkmark"
 			}]
 			title: "灾变"
-			x: 13.75d
-			y: 1.75d
+			x: 7.75d
+			y: -4.0d
 		}
 		{
 			dependencies: ["22F081213B71190E"]
@@ -1037,8 +1087,8 @@
 				type: "item"
 			}]
 			title: "寻找灾变之源"
-			x: 15.5d
-			y: 1.75d
+			x: 9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5BC3743958DA4B16"]
@@ -1061,8 +1111,8 @@
 				item: "kubejs:blood_extractor"
 				type: "item"
 			}]
-			x: 8.25d
-			y: -2.75d
+			x: 2.25d
+			y: 4.25d
 		}
 		{
 			dependencies: ["538FC6DDC204DBFA"]
@@ -1079,8 +1129,114 @@
 				item: "dummmmmmy:target_dummy"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.5d
+			x: 3.75d
+			y: 7.0d
+		}
+		{
+			dependencies: ["639C1EDF7CAB7739"]
+			description: [
+				"在拥有了任务获得的金币后，第一个疑问便是如何消费这些金币。"
+				""
+				"答案也很简单——通过Wares的&6凭证买卖系统&r。"
+				""
+				"你可以在某些&2地牢箱子&r里找到Wares的交易凭证（往往出现在村庄箱子中），其中包含了各种类型的交易。你可以通过在村庄中防止交货台，填充纸盒后，手动或者等待对应职业的村民自动的进行交易。"
+				""
+				"你可以通过本任务奖励的凭证，购买前期有大用处的&c归魂亡铃&r。这能够使你返回上一次死亡地点。"
+			]
+			icon: "wares:delivery_table"
+			id: "74F1E7C9FB0D08A1"
+			rewards: [{
+				id: "15FE7C5AEC18DD75"
+				item: {
+					Count: 1b
+					id: "wares:delivery_agreement"
+					tag: {
+						experience: 0.0d
+						id: "organ_1"
+						message: "{ \"color\": \"#33333\", \"text\": \"或许你会需要. . .这个?\\n不要害怕，这已经被取出很久了. . .\" }"
+						ordered: 1.0d
+						paymentItems: [{
+							Count: 1b
+							id: "kubejs:ring_for_home"
+						}]
+						requestedItems: [{
+							Count: 1b
+							id: "lightmanscurrency:coin_gold"
+						}]
+						title: "{ \"color\": \"#33333\", \"text\": \"黑市商人\" }"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "消费你的金币"
+			tasks: [
+				{
+					id: "33D374ED133AE383"
+					item: "wares:delivery_table"
+					type: "item"
+				}
+				{
+					id: "691600D9DFE212C2"
+					item: "wares:cardboard_box"
+					type: "item"
+				}
+			]
+			x: 11.25d
+			y: 7.25d
+		}
+		{
+			dependencies: ["0721AF9D7D5E4A7C"]
+			description: [
+				"当你有了一些铁之后，就可以开始考虑步入&2各种Mod&r的殿堂了。"
+				""
+				"这些Mod往往会给你带来很多的便利，并且并不需要你付出过多的努力。"
+				""
+				"因此请多多尝试！"
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "040207B33E2FEBFF"
+			rewards: [{
+				id: "29EB90ADA285930A"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			subtitle: "制作一些超出常理的东西！"
+			tasks: [{
+				consume_items: true
+				id: "377272B3F01FA298"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_iron"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "开启探索之旅！"
+			x: 8.25d
+			y: 7.0d
+		}
+		{
+			dependencies: ["040207B33E2FEBFF"]
+			description: [
+				"背包在实际的使用过程中有很多不方便的点，比如说物品不能自动进入，或者背包空间较小等问题。"
+				""
+				"针对这些问题，你可以制作&6背包升级&r。通过各种各样的背包升级，你可以在日常的冒险中取得极大的便利。"
+			]
+			id: "01C0D8797395FF20"
+			rewards: [{
+				id: "4ADBCC163849498A"
+				item: "sophisticatedbackpacks:advanced_pickup_upgrade"
+				type: "item"
+			}]
+			subtitle: "打造属于你的背包"
+			tasks: [{
+				id: "1949D25F1573300C"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			title: "背包升级"
+			x: 9.75d
+			y: 6.0d
 		}
 		{
 			dependencies: ["639C1EDF7CAB7739"]

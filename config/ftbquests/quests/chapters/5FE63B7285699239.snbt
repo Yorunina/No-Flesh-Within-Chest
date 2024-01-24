@@ -5,6 +5,18 @@
 	group: "4F4F4EA8CE67985B"
 	icon: "nameless_trinkets:mysterious_trinket"
 	id: "5FE63B7285699239"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 12.58d
+		hover: [ ]
+		image: "kubejs:textures/task/collection_3.png"
+		rotation: 0.0d
+		width: 16.5d
+		x: 3.75d
+		y: 2.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -21,8 +33,8 @@
 				item: "nameless_trinkets:experience_battery"
 				type: "item"
 			}]
-			x: -4.75d
-			y: 1.0d
+			x: -1.75d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -37,8 +49,8 @@
 				item: "nameless_trinkets:what_magnet"
 				type: "item"
 			}]
-			x: -4.75d
-			y: 2.0d
+			x: 2.0d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -53,8 +65,8 @@
 				item: "nameless_trinkets:fertilizer"
 				type: "item"
 			}]
-			x: -4.75d
-			y: 3.0d
+			x: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -69,8 +81,8 @@
 				item: "nameless_trinkets:broken_magnet"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 1.0d
+			x: -0.5d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -85,8 +97,8 @@
 				item: "nameless_trinkets:tick"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 2.0d
+			x: 4.5d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -101,8 +113,8 @@
 				item: "nameless_trinkets:cracked_crown"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.0d
+			x: 2.0d
+			y: 3.75d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -117,8 +129,8 @@
 				item: "nameless_trinkets:blaze_nucleus"
 				type: "item"
 			}]
-			x: -2.75d
-			y: 1.0d
+			x: 0.75d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -133,8 +145,8 @@
 				item: "nameless_trinkets:fractured_nullstone"
 				type: "item"
 			}]
-			x: -2.75d
-			y: 2.0d
+			x: 3.25d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -149,8 +161,8 @@
 				item: "nameless_trinkets:miners_soul"
 				type: "item"
 			}]
-			x: -2.75d
-			y: 3.0d
+			x: 7.0d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -165,8 +177,8 @@
 				item: "nameless_trinkets:electric_paddle"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: 8.25d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -181,8 +193,8 @@
 				item: "nameless_trinkets:reverse_card"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.0d
+			x: 0.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -197,8 +209,8 @@
 				item: "nameless_trinkets:broken_ankh"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.0d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -213,8 +225,8 @@
 				item: "nameless_trinkets:experience_magnet"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: 9.5d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -229,8 +241,8 @@
 				item: "nameless_trinkets:callus"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -245,8 +257,8 @@
 				item: "nameless_trinkets:puffer_fish_liver"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: 5.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -261,8 +273,8 @@
 				item: "nameless_trinkets:rage_mind"
 				type: "item"
 			}]
-			x: -4.75d
-			y: 5.0d
+			x: 7.0d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -277,8 +289,8 @@
 				item: "nameless_trinkets:blindfold"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 5.0d
+			x: 8.25d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -293,8 +305,8 @@
 				item: "nameless_trinkets:ghast_eye"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 7.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -309,8 +321,8 @@
 				item: "nameless_trinkets:wooden_stick"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.0d
+			x: 8.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -325,8 +337,8 @@
 				item: "nameless_trinkets:ice_cube"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 3.0d
+			x: 5.75d
+			y: -1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -341,8 +353,8 @@
 				item: "nameless_trinkets:gills"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 1.0d
+			x: -1.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -357,8 +369,8 @@
 				item: "nameless_trinkets:moon_stone"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			x: 3.25d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -373,8 +385,8 @@
 				item: "nameless_trinkets:spider_legs"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: 7.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -389,8 +401,8 @@
 				item: "nameless_trinkets:reforger"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 1.0d
+			x: 9.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -405,8 +417,8 @@
 				item: "nameless_trinkets:missing_page"
 				type: "item"
 			}]
-			x: -4.75d
-			y: 6.0d
+			x: -1.75d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -421,8 +433,8 @@
 				item: "nameless_trinkets:speed_force"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 6.0d
+			x: -0.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -437,8 +449,8 @@
 				item: "nameless_trinkets:lucky_rock"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 6.0d
+			x: -0.5d
+			y: 3.75d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -453,8 +465,8 @@
 				item: "nameless_trinkets:gods_crown"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 7.0d
+			x: 0.75d
+			y: 3.75d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -469,8 +481,8 @@
 				item: "nameless_trinkets:sleeping_pills"
 				type: "item"
 			}]
-			x: -2.75d
-			y: 7.0d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -485,8 +497,8 @@
 				item: "nameless_trinkets:super_magnet"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 2.0d
+			x: 0.75d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -501,8 +513,8 @@
 				item: "nameless_trinkets:sigil_of_baphomet"
 				type: "item"
 			}]
-			x: 2.75d
-			y: 1.0d
+			x: 8.25d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -517,8 +529,8 @@
 				item: "nameless_trinkets:amphibious_hands"
 				type: "item"
 			}]
-			x: 2.75d
-			y: 2.0d
+			x: -0.5d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -533,8 +545,8 @@
 				item: "nameless_trinkets:ethereal_wings"
 				type: "item"
 			}]
-			x: 2.75d
-			y: 3.0d
+			x: 3.25d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -549,8 +561,8 @@
 				item: "nameless_trinkets:true_heart_of_the_sea"
 				type: "item"
 			}]
-			x: 4.75d
-			y: 1.0d
+			x: -1.75d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -565,8 +577,8 @@
 				item: "nameless_trinkets:tear_of_the_sea"
 				type: "item"
 			}]
-			x: 4.75d
-			y: 2.0d
+			x: 2.0d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -581,8 +593,8 @@
 				item: "nameless_trinkets:pocket_lightning_rod"
 				type: "item"
 			}]
-			x: -2.75d
-			y: 5.0d
+			x: 9.5d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -597,8 +609,8 @@
 				item: "nameless_trinkets:fragile_cloud"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: 5.75d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -613,8 +625,8 @@
 				item: "nameless_trinkets:scarab_amulet"
 				type: "item"
 			}]
-			x: -2.75d
-			y: 6.0d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -629,8 +641,8 @@
 				item: "nameless_trinkets:light_gloves"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 6.0d
+			x: 9.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -645,8 +657,8 @@
 				item: "nameless_trinkets:fate_emerald"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 6.0d
+			x: -1.75d
+			y: 3.75d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -661,8 +673,8 @@
 				item: "nameless_trinkets:four_leaf_clover"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 3.0d
+			x: 4.5d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -677,8 +689,8 @@
 				item: "nameless_trinkets:dragons_eye"
 				type: "item"
 			}]
-			x: 4.75d
-			y: 3.0d
+			x: 5.75d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -693,8 +705,8 @@
 				item: "nameless_trinkets:dark_nelumbo"
 				type: "item"
 			}]
-			x: -4.75d
-			y: 7.0d
+			x: 3.25d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -709,8 +721,8 @@
 				item: "nameless_trinkets:nelumbo"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 7.0d
+			x: 0.75d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -725,8 +737,8 @@
 				type: "item"
 			}]
 			title: "无名饰品"
-			x: 0.0d
-			y: -1.25d
+			x: -2.75d
+			y: -2.25d
 		}
 	]
 	title: "饰品：偶尔获得的小奖励"

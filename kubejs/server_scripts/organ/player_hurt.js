@@ -196,7 +196,7 @@ const organPlayerDamageOnlyStrategies = {
         let entity = event.entity
         let entityList = getEntitiesWithinRadius(entity.getLevel(), entity.position(), 3)
         entityList.forEach(entity => {
-            if (entity.isAlive()) {
+            if (entity.isAlive() && !entity.isPlayer()) {
                 entity.attack(event.amount)
             }
         })
