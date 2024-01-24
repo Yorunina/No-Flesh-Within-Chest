@@ -656,107 +656,107 @@
         "entities": [
             {
                 "entity": "alexsmobs:crimson_mosquito",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "alexsmobs:crimson_mosquito",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "alexsmobs:crimson_mosquito",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "alexsmobs:crimson_mosquito",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "alexsmobs:crimson_mosquito",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "alexsmobs:crimson_mosquito",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "alexsmobs:crimson_mosquito",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "alexsmobs:crimson_mosquito",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:primordial_hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:primordial_hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:primordial_hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:primordial_hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:primordial_hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:primordial_hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:primordial_hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },
             {
                 "entity": "biomancy:primordial_hungry_flesh_blob",
-                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             }
 
         ],

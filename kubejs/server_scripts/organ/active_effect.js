@@ -115,7 +115,7 @@ const organActiveStrategies = {
     'kubejs:revolution_cable': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player);
         if (typeMap.has('kubejs:revolution')) {
-            let value = typeMap.get('kubejs:revolution').length * 2
+            let value = typeMap.get('kubejs:revolution').length * 1
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
     },

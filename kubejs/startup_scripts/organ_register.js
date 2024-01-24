@@ -143,7 +143,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:revolution_cable')
         .addScore('nerves', 1)
         .addScore('strength', -2)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_cable.1" }), Text.of({ "translate": "kubejs.tooltips.revolution_cable.2" }).color('#deaa00'), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.3" }), Text.yellow(2), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.4" }), Text.yellow({ "translate": "kubejs.tooltips.revolution_cable.5" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_cable.1" }), Text.of({ "translate": "kubejs.tooltips.revolution_cable.2" }).color('#deaa00'), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.3" }), Text.yellow(1), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.4" }), Text.yellow({ "translate": "kubejs.tooltips.revolution_cable.5" })])
         .build())
         .texture('kubejs:item/organs/machine/revolution_cable')
         .tag('kubejs:revolution')

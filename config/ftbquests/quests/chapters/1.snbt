@@ -1250,9 +1250,9 @@
 				"你可以通过本任务奖励的凭证，购买前期有大用处的&c归魂亡铃&r。这能够使你返回上一次死亡地点。"
 			]
 			icon: "wares:delivery_table"
-			id: "74F1E7C9FB0D08A1"
+			id: "433272D518D73A92"
 			rewards: [{
-				id: "15FE7C5AEC18DD75"
+				id: "513DEC55660790E5"
 				item: {
 					Count: 1b
 					id: "wares:delivery_agreement"
@@ -1277,12 +1277,12 @@
 			subtitle: "消费你的金币"
 			tasks: [
 				{
-					id: "33D374ED133AE383"
+					id: "7245191763611BBC"
 					item: "wares:delivery_table"
 					type: "item"
 				}
 				{
-					id: "691600D9DFE212C2"
+					id: "2FF5E1294EE684FC"
 					item: "wares:cardboard_box"
 					type: "item"
 				}

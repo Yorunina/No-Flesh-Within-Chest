@@ -26,7 +26,7 @@
         },
         {
           "entity": "somebosses:vulcan",
-          "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"kubejs:glimpse_of_god\", Id: 115,Amplifier: 0,Duration: 72000,ShowParticles: 0b}]}"
+          "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"kubejs:glimpse_of_god\",Amplifier: 0,Duration: 72000,ShowParticles: 0b}]}"
         }
       ],
       "modifiers": [],
@@ -58,7 +58,7 @@
         },
         {
           "entity": "irons_spellbooks:dead_king_corpse",
-          "nbt": "{Health: 600, Attributes: [{ Name: \"generic.max_health\", Base: 600 }], Glowing: 1b,ActiveEffects:[{\"forge:id\":\"kubejs:glimpse_of_god\", Id: 115,Amplifier: 0,Duration: 72000,ShowParticles: 0b}]}"
+          "nbt": "{Health: 600, Attributes: [{ Name: \"generic.max_health\", Base: 600 }], Glowing: 1b,ActiveEffects:[{\"forge:id\":\"kubejs:glimpse_of_god\",Amplifier: 0,Duration: 72000,ShowParticles: 0b}]}"
         }
       ],
       "modifiers": [],
@@ -82,7 +82,7 @@
         },
         {
           "entity": "cataclysm:ender_guardian",
-          "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"kubejs:glimpse_of_god\", Id: 114,Amplifier: 0,Duration: 72000,ShowParticles: 0b}]}"
+          "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"kubejs:glimpse_of_god\",Amplifier: 0,Duration: 72000,ShowParticles: 0b}]}"
         }
       ],
       "modifiers": [],
