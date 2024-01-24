@@ -1,0 +1,814 @@
+{
+    "size": "large",
+    "color": "#EEDD82",
+    "waves": [
+      {
+        "entities": [
+            {
+                "entity": "irons_spellbooks:pyromancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:pyromancer_boots\",Count: 1b},{id: \"irons_spellbooks:pyromancer_leggings\",Count: 1b},{id: \"irons_spellbooks:pyromancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:pyromancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:pyromancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:pyromancer_boots\",Count: 1b},{id: \"irons_spellbooks:pyromancer_leggings\",Count: 1b},{id: \"irons_spellbooks:pyromancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:pyromancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:pyromancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:pyromancer_boots\",Count: 1b},{id: \"irons_spellbooks:pyromancer_leggings\",Count: 1b},{id: \"irons_spellbooks:pyromancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:pyromancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:pyromancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:pyromancer_boots\",Count: 1b},{id: \"irons_spellbooks:pyromancer_leggings\",Count: 1b},{id: \"irons_spellbooks:pyromancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:pyromancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:pyromancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:pyromancer_boots\",Count: 1b},{id: \"irons_spellbooks:pyromancer_leggings\",Count: 1b},{id: \"irons_spellbooks:pyromancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:pyromancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:blaze",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:blaze",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:blaze",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:blaze",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:blaze",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:blaze",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:blaze",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:blaze",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "cataclysm:ignited_revenant",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "cataclysm:ignited_revenant",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:fiery_aura\", Id: 217,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 8         
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.6   
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 1.0   
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.8
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "goety:cairn_necromancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:cryomancer_boots\",Count: 1b},{id: \"irons_spellbooks:cryomancer_leggings\",Count: 1b},{id: \"irons_spellbooks:cryomancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:cryomancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "goety:cairn_necromancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:cryomancer_boots\",Count: 1b},{id: \"irons_spellbooks:cryomancer_leggings\",Count: 1b},{id: \"irons_spellbooks:cryomancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:cryomancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "goety:cairn_necromancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:cryomancer_boots\",Count: 1b},{id: \"irons_spellbooks:cryomancer_leggings\",Count: 1b},{id: \"irons_spellbooks:cryomancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:cryomancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "goety:cairn_necromancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:cryomancer_boots\",Count: 1b},{id: \"irons_spellbooks:cryomancer_leggings\",Count: 1b},{id: \"irons_spellbooks:cryomancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:cryomancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "goety:cairn_necromancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:cryomancer_boots\",Count: 1b},{id: \"irons_spellbooks:cryomancer_leggings\",Count: 1b},{id: \"irons_spellbooks:cryomancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:cryomancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:cryomancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:cryomancer_boots\",Count: 1b},{id: \"irons_spellbooks:cryomancer_leggings\",Count: 1b},{id: \"irons_spellbooks:cryomancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:cryomancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:cryomancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:cryomancer_boots\",Count: 1b},{id: \"irons_spellbooks:cryomancer_leggings\",Count: 1b},{id: \"irons_spellbooks:cryomancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:cryomancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:cryomancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:cryomancer_boots\",Count: 1b},{id: \"irons_spellbooks:cryomancer_leggings\",Count: 1b},{id: \"irons_spellbooks:cryomancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:cryomancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:cryomancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:cryomancer_boots\",Count: 1b},{id: \"irons_spellbooks:cryomancer_leggings\",Count: 1b},{id: \"irons_spellbooks:cryomancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:cryomancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:cryomancer",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:cryomancer_boots\",Count: 1b},{id: \"irons_spellbooks:cryomancer_leggings\",Count: 1b},{id: \"irons_spellbooks:cryomancer_chestplate\",Count: 1b},{id: \"irons_spellbooks:cryomancer_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:stray",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:stray",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:stray",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:stray",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:stray",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "alexsmobs:froststalker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:froststalker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:froststalker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:froststalker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:froststalker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:frosty_aura\", Id: 218,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 8         
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.6   
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 1.0   
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.8
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "minecraft:husk",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:venomous_hands\", Id: 214,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:husk",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:venomous_hands\", Id: 214,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:husk",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:venomous_hands\", Id: 214,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:husk",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:venomous_hands\", Id: 214,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:husk",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:venomous_hands\", Id: 214,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:husk",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:venomous_hands\", Id: 214,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:husk",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:venomous_hands\", Id: 214,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:husk",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:venomous_hands\", Id: 214,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:husk",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:venomous_hands\", Id: 214,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:husk",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:venomous_hands\", Id: 214,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:cave_spider",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:cave_spider",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:cave_spider",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:cave_spider",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:cave_spider",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:cave_spider",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:cave_spider",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:cave_spider",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:cave_spider",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:cave_spider",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:centipede_head",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:centipede_head",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:centipede_head",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:centipede_head",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:centipede_head",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:centipede_head",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:centipede_head",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:centipede_head",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\", Id: 157,Amplifier: 7,Duration: 72000,ShowParticles: 0b}]}"
+            } 
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 8         
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.6   
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 1.0   
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.8
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "minecraft:wither_skeleton",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:netherite_sword\",Count: 1b}], ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:wither_skeleton",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:netherite_sword\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:wither_skeleton",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:netherite_sword\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:wither_skeleton",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:netherite_sword\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:wither_skeleton",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:bow\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:wither_skeleton",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:bow\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:wither_skeleton",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:bow\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:wither_skeleton",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:bow\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wex",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"chestcavity:netherite_cleaver\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wex",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"chestcavity:netherite_cleaver\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wex",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"chestcavity:netherite_cleaver\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wex",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"chestcavity:netherite_cleaver\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wex",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"chestcavity:netherite_cleaver\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wraither",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"goety:dark_scythe\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wraither",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"goety:dark_scythe\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wraither",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"goety:dark_scythe\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:corpor",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:netherite_axe\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:corpor",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:netherite_axe\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:corpor",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"minecraft:netherite_axe\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wither_skeleton_knight",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"hexerei:warhammer\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wither_skeleton_knight",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"hexerei:warhammer\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "bygonenether:wither_skeleton_knight",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:flame_hands\", Id: 213,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],HandItems: [{id: \"hexerei:warhammer\",Count: 1b}],ArmorItems: [{id: \"minecraft:netherite_boots\",Count: 1b},{id: \"minecraft:netherite_leggings\",Count: 1b},{id: \"minecraft:netherite_chestplate\",Count: 1b},{id: \"minecraft:netherite_helmet\",Count: 1b}]}"
+            }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 8         
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.6   
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 1.0   
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.8
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "minecraft:creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "minecraft:creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "witherstormmod:sickened_creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "witherstormmod:sickened_creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "witherstormmod:sickened_creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "witherstormmod:sickened_creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "witherstormmod:sickened_creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "witherstormmod:sickened_creeper",
+                "nbt": "{\"powered\": true, Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:explosive\", Id: 211,Amplifier: 4,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"goety:charged\", Id: 190,Amplifier: 1,Duration: 72000,ShowParticles: 0b}]}"
+            }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 12        
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 3.0   
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.8
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "minecraft:evoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:evoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:evoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:evoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:evoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:evoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:evoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "minecraft:evoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "goety:envioker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "goety:envioker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "goety:envioker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "goety:envioker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "goety:envioker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:archevoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:archevoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:archevoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:archevoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            },
+            {
+                "entity": "irons_spellbooks:archevoker",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"goety:repulsive\", Id: 215,Amplifier: 4,Duration: 72000,ShowParticles: 0b}],ArmorItems: [{id: \"irons_spellbooks:archevoker_boots\",Count: 1b},{id: \"irons_spellbooks:archevoker_leggings\",Count: 1b},{id: \"irons_spellbooks:archevoker_chestplate\",Count: 1b},{id: \"irons_spellbooks:archevoker_helmet\",Count: 1b}]}"
+            }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 8         
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.6   
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 1.0   
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.8
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "alexsmobs:crimson_mosquito",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:crimson_mosquito",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:crimson_mosquito",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:crimson_mosquito",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:crimson_mosquito",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:crimson_mosquito",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:crimson_mosquito",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "alexsmobs:crimson_mosquito",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:primordial_hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:primordial_hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:primordial_hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:primordial_hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:primordial_hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:primordial_hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:primordial_hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
+                "entity": "biomancy:primordial_hungry_flesh_blob",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\", Id: 10,Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 12        
+            },
+            {
+                "attribute": "generic.attack_damage",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.6   
+            },
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 2.0   
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.8
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 6000,
+        "setup_time": 200
+      }
+    ],
+    "rewards": [
+        {
+            "type": "gateways:loot_table",
+            "loot_table": "dimdungeons:chests/chestloot_4",
+            "rolls": 25,
+            "desc": "高级战利品"
+        }
+    ],
+    "failures": [
+      {
+        "type": "gateways:explosion",
+        "strength": 10,
+        "fire": true,
+        "block_damage": true
+      },
+      {
+        "type": "command",
+        "command": "/kill @p",
+        "desc": "即效性死亡"
+      }
+    ],
+    "completion_xp": 36000,
+    "spawn_range": 8
+  }
+  
