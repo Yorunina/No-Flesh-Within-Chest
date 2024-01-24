@@ -37,6 +37,20 @@
         },
         {
           "type": "item",
+          "name": "lightmanscurrency:coin_gold",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
           "name": "minecraft:raw_gold_block",
           "weight": 3,
           "functions": [

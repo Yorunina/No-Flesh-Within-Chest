@@ -65,6 +65,7 @@ const organFoodEatenOnlyStrategies = {
             player.heal(player.maxHealth)
             player.potionEffects.add('farmersdelight:nourishment', 90 * 20, 0)
             player.potionEffects.add('weaponmaster:elixr', 15 * 20, 0)
+            player.potionEffects.add('minecraft:resistance', 90 * 20, 1)
             player.tell(Text.gray({ "translate": "kubejs.msg.tamagotchi.2" }))
             if (Math.random() < 0.2) {
                 updateWarpCount(player, player.persistentData.getInt(warpCount) - 1)

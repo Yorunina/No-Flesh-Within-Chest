@@ -702,6 +702,8 @@
 				"&6黑色染料&r：切换为黑名单模式"
 				"&6纸&r：通过铁砧命名纸张，将其名称编辑为你想要添加到访客列表中的玩家名称，你就可以向传送门添加新的访客。"
 				"&6砂轮&r：可以清空当前的访客列表。"
+				""
+				"私人维度往往用于放置一些私人物品——或者仅仅作为一个超平坦的地形使用。"
 			]
 			id: "5255A65B18FE588A"
 			rewards: [{
@@ -1103,6 +1105,11 @@
 			dependencies: ["0DCDFAD4C3288FCD"]
 			description: ["击败包含小怪的三波神意Boss挑战，即可获得用于升级复乐园的特殊碎片——&b神之认可&r。"]
 			id: "491936134333160E"
+			rewards: [{
+				id: "432D9AF05E8F32B4"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
 			subtitle: "来自神明的三波挑战"
 			tasks: [{
 				id: "71B0F459CFE155DD"
@@ -1138,6 +1145,35 @@
 			title: "亡灵与灵魂魔法"
 			x: 8.5d
 			y: 3.75d
+		}
+		{
+			dependencies: ["0DCDFAD4C3288FCD"]
+			description: [
+				"除了神意挑战之外，仍存在有名为&6元素狂欢&r、&6boss rush&r等挑战之门内容。"
+				""
+				"其中，难度最高的当属&9最终袭击&r，其包含了17波与袭击相关的敌人，且最终有着压轴Boss&c猎刃帝王&r。"
+			]
+			id: "6C3D3B9EBA65B44D"
+			rewards: [{
+				id: "3E4BF7CDF46FBBC9"
+				item: "lightmanscurrency:coin_diamond"
+				type: "item"
+			}]
+			subtitle: "人外有人. . ."
+			tasks: [{
+				id: "3C21E3193EB6D145"
+				item: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "kubejs:final_raid"
+					}
+				}
+				type: "item"
+			}]
+			title: "最终袭击"
+			x: 7.0d
+			y: -4.5d
 		}
 	]
 	title: "章节2：觉醒"

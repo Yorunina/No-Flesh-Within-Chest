@@ -54,7 +54,7 @@ PlayerEvents.inventoryClosed((event) => {
 
 /**
  * 将玩家信息插入到器官表中（初始化器官表
- * @param {Internal.player} player 
+ * @param {Internal.Player} player 
  * @param {Boolean} removeFlag 
  * @returns 
  */
@@ -108,6 +108,8 @@ function initChestCavityIntoMap(player, removeFlag) {
     playerChestCavityHashMap.set(uuid, newHash);
     if (removeFlag) {
         player.persistentData.putInt(organActive, 0)
+        player.potionEffects.add('kubejs:magic_forbiden', 20 * 20)
+        player.potionEffects.add('minecraft:slowness', 20 * 30)
         clearAllActivedModify(player)
     }
     return;

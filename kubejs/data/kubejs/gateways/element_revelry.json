@@ -1,6 +1,9 @@
 {
     "size": "large",
     "color": "#EEDD82",
+    "leash_range": 48,
+    "allow_discarding": true,
+    
     "waves": [
       {
         "entities": [
@@ -808,7 +811,7 @@
         "desc": "即效性死亡"
       }
     ],
-    "completion_xp": 36000,
-    "spawn_range": 8
+    "completion_xp": 18000,
+    "spawn_range": 5
   }
   

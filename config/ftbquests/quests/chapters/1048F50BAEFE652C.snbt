@@ -136,7 +136,19 @@
 			rotation: 0.0d
 			width: 17.0d
 			x: 12.5d
-			y: 15.0d
+			y: 14.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 12.5d
+			y: 17.75d
 		}
 	]
 	order_index: 0
@@ -457,10 +469,16 @@
 		}
 		{
 			dependencies: ["6794388AA5357126"]
+			description: [
+				"&6革命机械&r系列围绕&c心火&r与&e熔火&r效果，结合部分物品的手持使用，能够产生巨大的威力。"
+				""
+				"同时革命机械系列与资源类物品的兼容性良好，其庞大的构筑规模具有着非常高的扩展性。"
+			]
 			hide_dependent_lines: true
 			icon: "somebosses:burning_volcanic_rock"
 			id: "7CFE03E2610EA31B"
 			shape: "rsquare"
+			subtitle: "机械的出现是革命性的"
 			tasks: [{
 				id: "5EB6899990975685"
 				title: "我已了解"
@@ -670,7 +688,11 @@
 		}
 		{
 			dependencies: ["6794388AA5357126"]
-			description: ["碎片系列器官以&4七宗罪&r为契机，如果将其&6收集完全&r，或许可以触发意想不到的效果. . ."]
+			description: [
+				"碎片系列器官以&4七宗罪&r为契机，如果将其&6收集完全&r，或许可以触发意想不到的效果. . ."
+				""
+				"&7但是，现在，它们还在沉睡. . .&r"
+			]
 			icon: "minecraft:amethyst_shard"
 			id: "235753780EE3782C"
 			shape: "rsquare"
@@ -756,7 +778,7 @@
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
-			description: ["击败虚空之花获得，能够提供一定的&6光合&r效果"]
+			description: ["击败虚空之花获得，能够提供一定的&6光合&r效果。同时，其基础属性也能用于调和水过敏症状。"]
 			id: "501E9E1A842A2706"
 			rewards: [{
 				id: "4E675E10146937C4"
@@ -1738,12 +1760,14 @@
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
+			description: ["也属于&6机械&r与&6资源类&r器官。为资源类器官构筑提供了一个获得大量减伤的方式。但有些时候过于奢侈。"]
 			id: "6E082577F9B3D5B0"
 			rewards: [{
 				id: "5491E3B6B2D55DEC"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "浑浊的吐息诉说痛苦"
 			tasks: [{
 				id: "229D5814E728D022"
 				item: {
@@ -1758,12 +1782,17 @@
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
+			description: [
+				"你的弓箭越接近于&6实体的上部&r，其造成的伤害越高。最高可达到&c1.5倍&r"
+				"&7(但因为各个生物碰撞箱的区别，并不是所有生物都能达到1.5倍)&r"
+			]
 			id: "3F95DAB6801AC2E3"
 			rewards: [{
 				id: "077C253EDA62C0CD"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "它足够远古. . ."
 			tasks: [{
 				id: "5494E890A50E5838"
 				item: {
@@ -1844,6 +1873,318 @@
 			}]
 			x: -1.75d
 			y: 12.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: ["通过提高魔力上限，可以提高画板等魔法装备带来的伤害效果增强。同时也可以使你更多的存储魔力以释放出更多的法术。"]
+			id: "791313D02F7F09EC"
+			rewards: [{
+				id: "1B5E2C1F4E11CD53"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "提高你的魔力上限！"
+			tasks: [{
+				id: "6EF047F37402A123"
+				item: {
+					Count: 1b
+					id: "kubejs:bad_ink"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.25d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: [
+				"当&6tamagotchi&r放置在胸腔中时，每隔30s会进行一次判定，概率其会给予玩家&6\"tamagotchi饿了\"&r的状态。"
+				""
+				"在该状态下进食，即可将该饥饿Buff转变为一个较为强力的正面效果。"
+			]
+			id: "49CD243E381398F3"
+			subtitle: "或许. . .它一直都活着"
+			tasks: [{
+				id: "052EAE4978FAEEBC"
+				item: {
+					Count: 1b
+					id: "kubejs:tamagotchi"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.75d
+			y: 12.5d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"&6魔法类器官&r是指与Iron的魔法书中的法术产生联动的内容。其往往与&b法力值&r、&b法力值上限&r、Iron的法术相关。"
+				""
+				"类如Goety等法术体系，则被排除在外。对于这些排除在外的法术伤害，皆可以视为&e真实伤害&r，其可以穿透神恩的魔法免疫效果。"
+			]
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:diamond_spell_book"
+				tag: {
+					ISB_spellbook: {
+						spellSlots: 8
+						spells: [ ]
+					}
+				}
+			}
+			id: "7FF071C02D97C693"
+			shape: "rsquare"
+			subtitle: "我们把信念重新集结，并命名为魔法"
+			tasks: [{
+				id: "78AB372F3D53863A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "魔法类器官"
+			x: 6.5d
+			y: 13.5d
+		}
+		{
+			dependencies: ["7FF071C02D97C693"]
+			description: [
+				"能够将&2法力值直接转化为伤害&r，配合&6大艺术家法杖&r能够打出相当炸裂的输出。"
+				""
+				"大艺术家法杖提供的&e色彩&r效果可以进一步强化该器官提供的伤害增强。"
+			]
+			id: "09F6678D39F5060C"
+			rewards: [{
+				id: "739E81EB17007102"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "筑三原色为画"
+			tasks: [{
+				id: "092C7C9F26139539"
+				item: {
+					Count: 1b
+					id: "kubejs:color_palette"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["7FF071C02D97C693"]
+			description: ["能提供鲜血法术强度及少量神经效率。"]
+			id: "79FB1CAFE0739A03"
+			rewards: [{
+				id: "272EC834CA1EB1E3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "既是法杖又是器官"
+			tasks: [{
+				id: "050CFF9EA9F5E020"
+				item: {
+					Count: 1b
+					id: "kubejs:blood_moon_wand"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["7FF071C02D97C693"]
+			description: ["根据受伤值回复法力，在某些&6受伤流派&r的构筑中可能有所帮助。"]
+			id: "2765573B3F088673"
+			rewards: [{
+				id: "6CC1DE3D63A2A651"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "受伤回蓝！"
+			tasks: [{
+				id: "389CCF12EC28716C"
+				item: {
+					Count: 1b
+					id: "kubejs:red_ink"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"&6传说类器官&r往往来源于一些神化传说. . .或者一些无法理解的力量。"
+				""
+				"它们的效果非常杂乱且强大，因此很难用某个类型来进行描述。"
+				""
+				"&5禁忌类器官&r则更多的与&d扭曲&r设计相关，但目前扭曲的设计仍处于早期，因此可以忽略掉其带来的影响。"
+			]
+			icon: {
+				Count: 1b
+				id: "kubejs:pandora_active"
+				tag: { }
+			}
+			id: "3910C8340AB4ECE9"
+			shape: "rsquare"
+			subtitle: "我不知为何，它不止为何，祂不值为何"
+			tasks: [{
+				id: "7D116E1405FE5397"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "传说与禁忌"
+			x: 6.5d
+			y: 16.5d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: [
+				"在使用潘多拉魔盒附魔时，会将当前附魔结果固定额外放入5个等级为0的&4诅咒附魔&r。"
+				""
+				"在此之后，随机从塞入诅咒的附魔结果中，随机抽取一个附魔，并将所有附魔的附魔等级累加到该附魔上。"
+				""
+				"类如，原本附魔结果为&6时运3&r与&6耐久1&r，在完成上述过程后，附魔结果可能为&c时运4&r、&c耐久4&r或者&c某一等级4的诅咒附魔&r。"
+				""
+				"这偶尔会导致非常高等级的附魔结果，但往往需要付出极其巨大的代价。"
+			]
+			id: "14EF14B7DA565B51"
+			rewards: [{
+				id: "709E3CCDE20D018F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "黑暗降临"
+			tasks: [{
+				id: "792DA7E218F2F172"
+				item: {
+					Count: 1b
+					id: "kubejs:pandora_active"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: [
+				"能够在某些特殊情况下使附魔强化到&2更高的等级&r。"
+				""
+				"但在本身附魔就能够达到更高等级的情况下，其效果可能是负面的。"
+			]
+			id: "689C37F70BA23D7C"
+			rewards: [{
+				id: "550374E6BEE82943"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "强化. . . 附魔"
+			tasks: [{
+				id: "28F0A628AB10D65A"
+				item: {
+					Count: 1b
+					id: "kubejs:pandora_inactive"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: ["失乐园作为本整合的毕业器官之一，可以用于专门针对神恩Boss。"]
+			id: "06B55C5879547085"
+			rewards: [{
+				id: "6B3A652AB587390E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "乐园不再"
+			tasks: [{
+				id: "5092EE368DF18232"
+				item: {
+					Count: 1b
+					id: "kubejs:lost_paradise"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: ["失乐园的前置器官，能够翻倍实体掉落物。"]
+			id: "059F707F9E9F151E"
+			rewards: [{
+				id: "2F39A62E324CF399"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "乐园重现"
+			tasks: [{
+				id: "3D8843E75DD7C6BE"
+				item: {
+					Count: 1b
+					id: "kubejs:paradise_regained"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: ["在下界的战利品箱中获得，能够为主打负面效果的&2弓箭伤害&r提供一个高频输出的方式。"]
+			id: "136631343CC30217"
+			rewards: [{
+				id: "5EABEF43588C652B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "祂看到了"
+			tasks: [{
+				id: "0AA206A9E9D14538"
+				item: {
+					Count: 1b
+					id: "kubejs:the_third_eye"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: ["能够用于免疫&6濒死伤害&r，其触发没有时间间隔的限制。"]
+			id: "38E593AFA26ED74F"
+			rewards: [{
+				id: "0A9B9BB883582CD8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它会救你. . .但不会太多次"
+			tasks: [{
+				id: "6EF2316670539531"
+				item: {
+					Count: 1b
+					id: "kubejs:doppelganger"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 17.5d
 		}
 	]
 	title: "胸腔：器官收集指南"

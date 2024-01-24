@@ -51,6 +51,20 @@
         },
         {
           "type": "item",
+          "name": "lightmanscurrency:coin_emerald",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
           "name": "minecraft:wither_rose",
           "weight": 3,
           "functions": [

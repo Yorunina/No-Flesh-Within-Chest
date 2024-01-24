@@ -79,9 +79,22 @@ const PotionWares = [
 const ChallengeWares = [
     new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:god_challenge"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:boss_rush"}')], 3),
-    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:final_raid"}')], 3),
-    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:element_revelry"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:final_raid"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:element_revelry"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway:"gateways:magma_cube_gate_large"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:blaze_gate_large"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:enderman_gate_large"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:shulker_gate_large"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:spider_gate_large"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:skeleton_gate_large"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:slime_gate_large"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:witch_gate_large"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:zombie_gate_large"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:creeper_gate_large"}')], 3)
+
 ]
+
+
 
 const EggWares = [
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(3)], [Item.of('bookwyrms:book_wyrm_spawn_egg')], 4),
@@ -93,12 +106,34 @@ const EggWares = [
 ]
 
 const SpecialWares = [
-    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('sophisticatedbackpacks:netherite_backpack', '{inventorySlots:180, upgradeSlots:5}')], 1),
-    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('sophisticatedbackpacks:netherite_backpack', '{inventorySlots:100, upgradeSlots:9}')], 1),
+    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('sophisticatedbackpacks:netherite_backpack', '{inventorySlots:180, upgradeSlots:5}')], 2),
+    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('sophisticatedbackpacks:netherite_backpack', '{inventorySlots:100, upgradeSlots:9}')], 2),
     new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('tetra:forged_workbench')], 4),
     new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('tetra:chthonic_extractor')], 4),
     new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('tetra:chthonic_extractor')], 4),
     new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('dimdungeons:item_blank_theme_key', '{theme:2}')], 4),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:one_eyed_wrait_in_a_bottle')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:rusty_sword_relic')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:disgusting_pendant')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:vampire_bait')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:prismarine_eye')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:dark_magic_gauntlet')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:token_of_the_ninja')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:frozen_shield_plate')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:gilded_dynamite')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:furnace_torch')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:ice_lantern')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:bone_of_curse')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:slab_of_command')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:illegal_beacon')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:necromancy_staff')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:burning_volcanic_rock')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:cursed_spring_water')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:chaos_insignia')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:monochrome_mask')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:cactus_relic')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('somebosses:power_generator_core')], 3),
+
 ]
 
 const OrganWares = [

@@ -15,6 +15,11 @@ LootJS.modifiers(event => {
                 LootEntry.of('simplehats:hatbag_festive').when((c) => c.randomChance(0.2)),
                 LootEntry.of('simplehats:hatbag_halloween').when((c) => c.randomChance(0.2)),
             )
+            .addAlternativesLoot(
+                LootEntry.of('lightmanscurrency:coin_gold').when((c) => c.randomChance(0.5)),
+                LootEntry.of('lightmanscurrency:coin_emerald').when((c) => c.randomChance(0.3)),
+                LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.1)),
+            )
     }
 
     bossTypeList.forEach(entityId => {
@@ -51,16 +56,6 @@ LootJS.modifiers(event => {
             }
         })
 
-    event.addLootTypeModifier(LootType.ENTITY)
-        .removeLoot('@simplehats')
-        .apply(ctx => {
-            if (ctx.entity.isLiving() &&
-                (ctx.entity.hasEffect('kubejs:glare_of_god') ||
-                    ctx.entity.hasEffect('kubejs:gaze_of_god') ||
-                    ctx.entity.hasEffect('kubejs:glimpse_of_god'))) {
-                ctx.addLoot(Item.of('kubejs:god_consciousness', { mobType: ctx.entity.getType() }))
-            }
-        })
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['minecraft:ancient_city'], false)
@@ -77,7 +72,7 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of(Item.of('minecraft:potion', '{Potion:"minecraft:luck"}')).when((c) => c.randomChance(0.1)))
         .apply(ctx => {
-            if (Math.random() < 0.1) {
+            if (Math.random() < 0.2) {
                 ctx.addLoot(getRandomPotionWares())
             }
             if (Math.random() < 0.02) {
@@ -86,20 +81,11 @@ LootJS.modifiers(event => {
             if (Math.random() < 0.05) {
                 ctx.addLoot(getRandomEggWares())
             }
-            if (Math.random() < 0.03) {
+            if (Math.random() < 0.08) {
                 ctx.addLoot(getRandomSpecialWares())
             }
             if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomOrganWares())
-            }
-        })
-
-        .apply(ctx => {
-            if (Math.random() < 0.1) {
-                ctx.addLoot(getRandomBrewerWares())
-            }
-            if (Math.random() < 0.02) {
-                ctx.addLoot(getRandomChallengeWares())
             }
         })
 

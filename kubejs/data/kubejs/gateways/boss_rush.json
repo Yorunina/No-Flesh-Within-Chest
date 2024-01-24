@@ -1,6 +1,8 @@
 {
   "size": "large",
   "color": "#FFA600",
+  "leash_range": 48,
+  "allow_discarding": true,
   "waves": [
     {
       "entities": [
@@ -383,11 +385,6 @@
       "strength": 4,
       "fire": true,
       "block_damage": true
-    },
-    {
-      "type": "command",
-      "command": "/kill @p",
-      "desc": "即效性死亡"
     }
   ],
   "completion_xp": 20000,

@@ -260,7 +260,7 @@ const organActiveStrategies = {
     'kubejs:bad_ink': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player);
         if (typeMap.has('kubejs:magic')) {
-            let value = typeMap.get('kubejs:magic').length * 20
+            let value = typeMap.get('kubejs:magic').length * 30
             attributeMapValueAddition(attributeMap, global.MAX_MANA, value)
         }
     },
