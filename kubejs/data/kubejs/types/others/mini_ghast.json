@@ -1,0 +1,31 @@
+{
+    "defaultChestCavity": [
+      {"item": "chestcavity:fireproof_muscle","position": 0},
+      {"item": "chestcavity:gas_bladder","position": 1},
+      {"item": "chestcavity:fireproof_appendix","position": 2},
+      {"item": "chestcavity:gas_bladder","position": 3},
+      {"item": "chestcavity:fireproof_heart","position": 4},
+      {"item": "chestcavity:gas_bladder","position": 5},
+  
+      {"item": "chestcavity:gas_bladder","position": 7},
+      {"item": "chestcavity:fireproof_muscle","position": 8},
+      {"item": "chestcavity:fireproof_muscle","position": 9},
+      {"item": "chestcavity:fireproof_rib","position": 10},
+      {"item": "chestcavity:fireproof_spleen","position": 11},
+      {"item": "chestcavity:fireproof_kidney","position": 12},
+      {"item": "chestcavity:fireproof_spine","position": 13},
+      {"item": "chestcavity:fireproof_kidney","position": 14},
+      {"item": "chestcavity:fireproof_liver","position": 15},
+      {"item": "chestcavity:fireproof_rib","position": 16},
+      {"item": "chestcavity:fireproof_muscle","position": 17},
+      {"item": "chestcavity:fireproof_muscle","position": 18},
+      {"item": "chestcavity:fireproof_muscle","position": 19},
+      {"item": "chestcavity:fireproof_intestine","position": 20},
+      {"item": "chestcavity:fireproof_intestine","position": 21},
+      {"item": "chestcavity:volatile_stomach","position": 22},
+      {"item": "chestcavity:fireproof_intestine","position": 23},
+      {"item": "chestcavity:fireproof_intestine","position": 24},
+      {"item": "chestcavity:fireproof_muscle","position": 25},
+      {"item": "chestcavity:fireproof_muscle","position": 26}
+    ]
+  }

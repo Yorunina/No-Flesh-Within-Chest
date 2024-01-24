@@ -1,14 +1,22 @@
 {
   "chestcavity": "kubejs:types/nether/common_nether_mob.json",
   "entities": [
-    "alexsmobs:bone_serpent_part",
-    "alexsmobs:bone_serpent",
     "alexsmobs:dropbear",
     "alexsmobs:laviathan",
     "alexsmobs:soul_vulture",
     "alexsmobs:straddler",
     "alexsmobs:stradpole",
     "alexsmobs:warped_mosco",
-    "alexsmobs:warped_toad"
+    "alexsmobs:warped_toad",
+    "cataclysm:ignited_revenant",
+    "bygonenether:piglin_prisoner",
+    "bygonenether:piglin_hunter",
+    "bygonenether:wex",
+    "bygonenether:warped_enderman",
+    "bygonenether:wraither",
+    "bygonenether:corpor",
+    "bygonenether:wither_skeleton_knight",
+    "bygonenether:wither_skeleton_horse"
+
   ]
 }

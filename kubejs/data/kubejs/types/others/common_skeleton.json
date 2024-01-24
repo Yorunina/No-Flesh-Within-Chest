@@ -1,0 +1,11 @@
+{
+    "defaultChestCavity": [
+      
+      {"item": "chestcavity:rotten_rib","position": 1},
+      {"item": "chestcavity:rotten_rib","position": 7},
+  
+      {"item": "chestcavity:rotten_rib","position": 10},
+      {"item": "chestcavity:rotten_spine","position": 13},
+      {"item": "chestcavity:rotten_rib","position": 16}
+    ]
+}

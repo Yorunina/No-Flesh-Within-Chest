@@ -94,6 +94,15 @@ LootJS.modifiers(event => {
             }
         })
 
+        .apply(ctx => {
+            if (Math.random() < 0.1) {
+                ctx.addLoot(getRandomBrewerWares())
+            }
+            if (Math.random() < 0.02) {
+                ctx.addLoot(getRandomChallengeWares())
+            }
+        })
+
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyDimension(['minecraft:the_nether'])

@@ -143,7 +143,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:revolution_cable')
         .addScore('nerves', 1)
         .addScore('strength', -2)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_cable.1" }), Text.of({ "translate": "kubejs.tooltips.revolution_cable.2" }).color('#deaa00'), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.3" }), Text.yellow(2), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.4" }), Text.yellow({ "translate": "kubejs.tooltips.revolution_cable.5" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_cable.1" }), Text.of({ "translate": "kubejs.tooltips.revolution_cable.2" }).color('#deaa00'), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.3" }), Text.yellow(1), Text.gray({ "translate": "kubejs.tooltips.revolution_cable.4" }), Text.yellow({ "translate": "kubejs.tooltips.revolution_cable.5" })])
         .build())
         .texture('kubejs:item/organs/machine/revolution_cable')
         .tag('kubejs:revolution')
@@ -1179,4 +1179,27 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:huge_liver').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_liver.1" })]).addScore('detoxification', 2.5).build()).texture('kubejs:item/organs/template/liver_template').tag('kubejs:liver').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
 
     registerOrgan(new Organ('kubejs:huge_appendix').addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.huge_appendix.1" })]).addScore('luck', 2.5).build()).texture('kubejs:item/organs/template/appendix_template').tag('kubejs:appendix').tag('kubejs:huge').tag('itemborders:gold').tag('kubejs:active');
+
+    // 远古器官
+    registerOrgan(new Organ('kubejs:prehistory_lung').addScore('breath_recovery', 1.25).addScore('breath_capacity', 1.25).addScore('endurance', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_lung').tag('kubejs:lung').tag('kubejs:prehistory');
+
+    registerOrgan(new Organ('kubejs:prehistory_muscle').addScore('strength', 1.25).addScore('speed', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_muscle').tag('kubejs:muscle').tag('kubejs:prehistory');
+
+    registerOrgan(new Organ('kubejs:prehistory_heart').addScore('health', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_heart').tag('kubejs:heart').tag('kubejs:prehistory');
+
+    registerOrgan(new Organ('kubejs:prehistory_intestine').addScore('nutrition', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_intestine').tag('kubejs:intestine').tag('kubejs:prehistory');
+
+    registerOrgan(new Organ('kubejs:prehistory_rib').addScore('defense', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_rib').tag('kubejs:rib').tag('kubejs:prehistory');
+
+    registerOrgan(new Organ('kubejs:prehistory_spine').addScore('defense', 0.625).addScore('nerves', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_spine').tag('kubejs:spine').tag('kubejs:prehistory');
+
+    registerOrgan(new Organ('kubejs:prehistory_spleen').addScore('metabolism', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_spleen').tag('kubejs:spleen').tag('kubejs:prehistory');
+
+    registerOrgan(new Organ('kubejs:prehistory_stomach').addScore('digestion', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_stomach').tag('kubejs:stomach').tag('kubejs:prehistory');
+
+    registerOrgan(new Organ('kubejs:prehistory_kidney').addScore('filtration', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_kidney').tag('kubejs:kidney').tag('kubejs:prehistory');
+
+    registerOrgan(new Organ('kubejs:prehistory_liver').addScore('detoxification', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_liver').tag('kubejs:liver').tag('kubejs:prehistory');
+
+    registerOrgan(new Organ('kubejs:prehistory_appendix').addScore('luck', 1.25).build()).texture('kubejs:item/organs/prehistory/prehistory_appendix').tag('kubejs:appendix').tag('kubejs:prehistory');
 });

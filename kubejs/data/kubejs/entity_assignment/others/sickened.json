@@ -1,0 +1,11 @@
+{
+    "chestcavity": "kubejs:types/others/sickened.json",
+    "entities": [
+        "witherstormmod:sickened_creeper",
+        "witherstormmod:sickened_skeleton",
+        "witherstormmod:sickened_spider",
+        "witherstormmod:sickened_zombie",
+        "witherstormmod:tentacle",
+        "witherstormmod:wither_storm_head"
+    ]
+  }

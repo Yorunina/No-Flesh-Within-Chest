@@ -79,6 +79,8 @@ const PotionWares = [
 const ChallengeWares = [
     new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:god_challenge"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:boss_rush"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:final_raid"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:element_revelry"}')], 3),
 ]
 
 const EggWares = [
