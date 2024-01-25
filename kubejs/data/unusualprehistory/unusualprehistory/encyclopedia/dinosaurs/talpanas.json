@@ -1,0 +1,31 @@
+{
+  "text": "talpanas.txt",
+  "title": "  鼹鸭",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:talpanas",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 1.5,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:talpanas",
+      "x": 290,
+      "y": 40,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 1.0,
+      "offset_x":0,
+      "offset_y": -5,
+      "hover_text": "鼹鸭"
+    }
+  ]
+}

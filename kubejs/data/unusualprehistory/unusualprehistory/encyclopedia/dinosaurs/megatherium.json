@@ -1,0 +1,31 @@
+{
+  "text": "megatherium.txt",
+  "title": "  大地懒",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:megatherium",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 0.5,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:megatherium",
+      "x": 320,
+      "y": 160,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.3,
+      "offset_x": 9,
+      "offset_y": 9,
+      "hover_text": "大地懒"
+    }
+  ]
+}

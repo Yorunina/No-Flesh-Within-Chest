@@ -1,0 +1,49 @@
+{
+  "text": "ammon.txt",
+  "title": "  菊石",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "recipes": [
+    {
+      "recipe": "unusualprehistory:ammonite_shell",
+      "shapeless": false,
+      "x": 218,
+      "y": 20,
+      "page": 0,
+      "scale": 1.0
+    },
+    {
+      "recipe": "unusualprehistory:warpick",
+      "shapeless": false,
+      "x": 218,
+      "y": 108,
+      "page": 0,
+      "scale": 1.0
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:ammon",
+      "x": 80,
+      "y": 80,
+      "page" : 0,
+      "scale": 1.5,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:ammon",
+      "x": 290,
+      "y": 40,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 1.0,
+      "offset_x":-3,
+      "offset_y": -8,
+      "hover_text": "菊石"
+    }
+  ]
+}

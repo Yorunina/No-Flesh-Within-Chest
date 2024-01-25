@@ -7,7 +7,7 @@ WanderingTraderSellsAgreements = true
 [Delivery]
 	#Time in ticks that deliveries take. Agreement can override this value. Default: 200 ticks (10 seconds)
 	#Range: > 1
-	DefaultDeliveryTime = 200
+	DefaultDeliveryTime = 400
 	#Each delivery requires (and consumes) a packaging. ('wares:delivery_boxes' tag)
 	#A slot for boxes will be added to delivery table. Default: true
 	DeliveriesRequireBoxes = true
@@ -34,7 +34,7 @@ WanderingTraderSellsAgreements = true
 		#Time modifier when delivering manually.
 		#Default: 3x
 		#Range: 1.0 ~ 999.0
-		ManualDeliveryTimeModifier = 3.0
+		ManualDeliveryTimeModifier = 5.0
 
 [Structures]
 	#Warehouses will generate in villages.

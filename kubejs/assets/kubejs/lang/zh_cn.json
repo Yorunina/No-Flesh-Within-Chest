@@ -1,4 +1,6 @@
 {
+    "key.categories.kubejs": "kubejs",
+    "key.kubejs.organ_skill": "器官技能按键",
     "item.kubejs.lucky_appendix": "幸运阑尾",
     "item.kubejs.health_appendix": "健康阑尾",
     "item.kubejs.greedy_stomach": "贪婪之胃",

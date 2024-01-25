@@ -1,0 +1,41 @@
+{
+  "text": "ulugh.txt",
+  "title": "  乌鲁伯格龙",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "pictures": [
+    {
+      "page": 1,
+      "picture_location": "unusualprehistory:textures/gui/book/1014_sign.png",
+      "x": 280,
+      "y": 155,
+      "xSize": 100,
+      "ySize": 29
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:ulughbegsaurus",
+      "x": 90,
+      "y": 115,
+      "page" : 0,
+      "scale": 0.7,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:ulughbegsaurus",
+      "x": 290,
+      "y": 40,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.3,
+      "offset_x": 10,
+      "offset_y": 11,
+      "hover_text": "乌鲁伯格龙"
+    }
+  ]
+}

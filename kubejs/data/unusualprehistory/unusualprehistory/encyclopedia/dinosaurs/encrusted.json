@@ -1,0 +1,40 @@
+{
+  "text": "encrusted.txt",
+  "title": "  史前飞虫",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "item_renders": [
+    {
+      "item": "unusualprehistory:encrusted_organ",
+      "x": 185,
+      "y": 35,
+      "page": 0,
+      "scale": 1.5
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:encrusted",
+      "x": 90,
+      "y": 90,
+      "page" : 0,
+      "scale": 0.6,
+      "rot_x": 25,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:encrusted",
+      "x": 320,
+      "y": 120,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.38,
+      "offset_x": 8,
+      "offset_y": 6,
+      "hover_text": "史前飞虫"
+    }
+  ]
+}

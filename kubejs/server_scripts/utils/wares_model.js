@@ -66,9 +66,9 @@ function SimpleWares(requestedItems, paymentItems, ordered) {
     this.ordered = ordered
 }
 
-
 const PotionWares = [
-    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', '{AreaOfEffect:0,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.chop_tree",Duration:1}],CustomPotionColor:6967847,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4)], 64),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('biomancy:healing_additive').withCount(1)], 8),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', '{AreaOfEffect:0,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.chop_tree",Duration:1}],CustomPotionColor:6967847,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4)], 16),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:0,CustomBrew:1b,CustomPotionColor:9868950,CustomPotionEffects:[{Ambient:0b,Amplifier:2b,CurativeItems:[{Count:1b,id:"minecraft:milk_bucket"}],Duration:1800,Id:56,ShowIcon:1b,ShowParticles:1b,"forge:id":"goety:arrowmantic"}],Lingering:0.0f,Quaff:0,Velocity:0.1f}')], 16),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(3)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:0,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.strip",Duration:1}],CustomPotionColor:5329233,Lingering:0.0f,Quaff:0,Velocity:0.0f}')], 16),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', 3, '{AreaOfEffect:2,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.love",Duration:1}],CustomPotionColor:16713305,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4)], 16),

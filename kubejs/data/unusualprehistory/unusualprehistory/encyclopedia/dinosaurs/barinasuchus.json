@@ -1,0 +1,31 @@
+{
+  "text": "barinasuchus.txt",
+  "title": "  巴里纳斯鳄",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:barinasuchus",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 0.6,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:barinasuchus",
+      "x": 320,
+      "y": 160,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.3,
+      "offset_x": 9,
+      "offset_y": 8,
+      "hover_text": "巴里纳斯鳄"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "text": "mammoth.txt",
+  "title": "  猛犸",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:mammoth",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 0.5,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "recipes": [
+    {
+      "recipe": "unusualprehistory:mammoth_meatball",
+      "shapeless": true,
+      "x": 18,
+      "y": 100,
+      "page": 1,
+      "scale": 1.3
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:mammoth",
+      "x": 320,
+      "y": 160,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.25,
+      "offset_x": 9,
+      "offset_y": 10,
+      "hover_text": "猛犸"
+    }
+  ]
+}

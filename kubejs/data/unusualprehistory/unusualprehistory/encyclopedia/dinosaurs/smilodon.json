@@ -1,0 +1,41 @@
+{
+  "text": "smilodon.txt",
+  "title": "  刃齿虎",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:smilodon",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 1.1,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "recipes": [
+    {
+      "recipe": "unusualprehistory:insulator",
+      "shapeless": true,
+      "x": 218,
+      "y": 108,
+      "page": 0,
+      "scale": 1.2
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:smilodon",
+      "x": 320,
+      "y": 160,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.5,
+      "offset_x": 7,
+      "offset_y": 5,
+      "hover_text": "刃齿虎"
+    }
+  ]
+}

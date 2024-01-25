@@ -1,0 +1,42 @@
+{
+  "text": "palaeophis.txt",
+  "title": "  古象鼻蛇",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "recipes": [
+    {
+      "recipe": "unusualprehistory:shedscale_chestplate",
+      "shapeless": false,
+      "x": 215,
+      "y": 80,
+      "page": 0,
+      "scale": 1.0
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:book_palaeo",
+      "x": 90,
+      "y": 80,
+      "page" : 0,
+      "scale": 0.7,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:palaeophis",
+      "entity_data": "{ShedTime:-2}",
+      "x": 320,
+      "y": 160,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 1,
+      "offset_x": -4,
+      "offset_y": -8,
+      "hover_text": "古象鼻蛇"
+    }
+  ]
+}

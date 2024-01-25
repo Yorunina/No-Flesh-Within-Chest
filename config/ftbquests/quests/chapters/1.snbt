@@ -252,15 +252,51 @@
 				""
 				"但并不是所有器官都会为你提供&2正面效果&r，某些器官——尤其是某些具有特殊效果的器官，往往会有着为负数的基本属性。"
 				""
-				"请注意！类如&2健康、神经效率、解毒效率&r等属性会影响到玩家是否能够正常存活！在摘除相关器官的时候请一定做好&4应急准备&r！防止陷入&4无限死亡&r的循环！"
+				"请注意！类如&2健康、神经效率、解毒效率&r等属性会影响到玩家是否能够正常存活！在摘除相关器官的时候请一定做好&c应急准备&r！防止陷入&c无限死亡&r的循环！"
+				""
+				"{@pagebreak}"
+				"但在添加器官的时候需要注意，不属于你的器官将会使你陷入&c器官排异&r的苦难之中。"
+				""
+				"消除器官排异的方法有很多种，其中使用&2治愈性原液&r是最为经济的方案之一。副手持治愈性原液，主手持不兼容的器官，即可使其消除器官所属，进而解决器官排异的问题。"
 			]
 			icon: "chestcavity:heart"
 			id: "6069FC5CA00481CE"
-			rewards: [{
-				id: "02FFBC5A74481DDF"
-				item: "chestcavity:heart"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "02FFBC5A74481DDF"
+					item: "chestcavity:heart"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7CD3471551081AE6"
+					item: "biomancy:healing_additive"
+					type: "item"
+				}
+				{
+					id: "783C0CA0E2FDDBFB"
+					item: {
+						Count: 1b
+						id: "wares:delivery_agreement"
+						tag: {
+							buyerAddress: "{\"color\":\"#333333\",\"text\":\"\"}"
+							buyerName: "{\"color\":\"#7f8584\",\"text\":\"黑市酿造师\"}"
+							id: "potion"
+							message: "{\"color\":\"#333333\",\"text\":\"我这里. . .有无穷尽的治愈原液。\\n不过价格嘛. . .\"}"
+							paymentItems: [{
+								Count: 1
+								id: "biomancy:healing_additive"
+							}]
+							requestedItems: [{
+								Count: 8
+								id: "lightmanscurrency:coin_gold"
+							}]
+							title: "{\"color\":\"#922706\",\"text\":\"无限疗愈\"}"
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "尝试向自己的胸腔里添加新的器官"
 			tasks: [{
 				id: "020624CBE3D724FC"

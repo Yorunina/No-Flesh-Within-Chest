@@ -1,6 +1,7 @@
 ItemEvents.rightClicked(event => {
     let player = event.player;
     let item = event.item;
+    player.addItemCooldown('kubejs:platelet_dispatcher', 20 * 60)
     if (item.hasTag('kubejs:anti_rejection')) {
         if (event.getHand() == "off_hand") {
             let organ = player.getMainHandItem();

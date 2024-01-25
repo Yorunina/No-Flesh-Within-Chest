@@ -1,0 +1,42 @@
+{
+  "text": "sarracenia.txt",
+  "title": "  瓶子草",
+  "page_to_go": "unusualprehistory:plants",
+  "plant_button":[
+    {
+      "plant": "unusualprehistory:sarracenia",
+      "x": 290,
+      "y": 80,
+      "page" : 0,
+      "scale": 1.2,
+      "plant_scale": 1.1,
+      "offset_x": -4,
+      "offset_y": -6,
+      "hover_text": "瓶子草"
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:sarracenia",
+      "x": 80,
+      "y": 110,
+      "page" : 0,
+      "scale": 1.5,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    },
+    {
+      "entity": "unusualprehistory:tall_sarracenia",
+      "x": 120,
+      "y": 110,
+      "page" : 0,
+      "scale": 1.5,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ]
+}

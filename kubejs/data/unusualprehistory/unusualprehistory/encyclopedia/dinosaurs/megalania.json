@@ -1,0 +1,31 @@
+{
+  "text": "megalania.txt",
+  "title": "  古巨蜥",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:megalania",
+      "x": 90,
+      "y": 95,
+      "page" : 0,
+      "scale": 0.5,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:megalania",
+      "x": 320,
+      "y": 160,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.23,
+      "offset_x": 11,
+      "offset_y": 9,
+      "hover_text": "古巨蜥"
+    }
+  ]
+}

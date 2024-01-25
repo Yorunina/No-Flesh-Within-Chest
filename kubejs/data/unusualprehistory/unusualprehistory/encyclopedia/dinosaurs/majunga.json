@@ -1,0 +1,42 @@
+{
+  "text": "majunga.txt",
+  "title": "  玛君龙",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "recipes": [
+    {
+      "recipe": "unusualprehistory:majunga_helmet",
+      "shapeless": false,
+      "x": 218,
+      "y": 108,
+      "page": 0,
+      "scale": 1.0
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:majunga",
+      "x": 90,
+      "y": 110,
+      "page" : 0,
+      "scale": 1,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:majunga",
+      "x": 230,
+      "y": 40,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.5,
+      "offset_x": 7,
+      "offset_y": 5,
+      "hover_text": "玛君龙"
+    }
+  ]
+}

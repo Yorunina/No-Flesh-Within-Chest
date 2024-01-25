@@ -1,6 +1,8 @@
 <NEWLINE>
-哦，出了点问题。
+反正就是出错了，就不翻译了(恼)
+Oh no, something went wrong.
 <NEWLINE>
-如果您看到这条消息并与恐龙互动，那意味着 JSON 文件没有正确的名称！
+If you are seeing this and interacted with a dino it means the json file doesn't have the correct name!
 <NEWLINE>
-如果您看到这条消息并尝试添加条目，这也意味着 JSON 文件没有正确的名称，或者您没有指定您的文本文件！
+If you are seeing this and are trying to add an entry it also means the json file doesn't have the correct name,
+or you didnt specify your text file!

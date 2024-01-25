@@ -1,0 +1,41 @@
+{
+  "text": "raptor.txt",
+  "title": "  伶盗龙",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:veloci",
+      "x": 290,
+      "y": 60,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.57,
+      "offset_x": 9,
+      "offset_y": 3,
+      "hover_text": "伶盗龙"
+    }
+  ],
+  "recipes": [
+    {
+      "recipe": "unusualprehistory:veloci_shield",
+      "shapeless": false,
+      "x": 210,
+      "y": 65,
+      "page": 0,
+      "scale": 1.3
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:veloci",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 1,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ]
+}

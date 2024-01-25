@@ -1,0 +1,31 @@
+{
+  "text": "sludge.txt",
+  "title": "  烂泥怪",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:sludge",
+      "x": 90,
+      "y": 90,
+      "page" : 0,
+      "scale": 0.8,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:sludge",
+      "x": 290,
+      "y": 80,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.4,
+      "offset_x": 7,
+      "offset_y": 5,
+      "hover_text": "烂泥怪"
+    }
+  ]
+}

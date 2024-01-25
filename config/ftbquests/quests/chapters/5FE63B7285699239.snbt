@@ -113,7 +113,7 @@
 				item: "nameless_trinkets:cracked_crown"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.75d
 			y: 3.75d
 		}
 		{
@@ -449,8 +449,8 @@
 				item: "nameless_trinkets:lucky_rock"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.75d
+			x: 3.25d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -465,7 +465,7 @@
 				item: "nameless_trinkets:gods_crown"
 				type: "item"
 			}]
-			x: 0.75d
+			x: -0.5d
 			y: 3.75d
 		}
 		{
@@ -530,22 +530,6 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 1.25d
-		}
-		{
-			dependencies: ["6E502CA178ED4148"]
-			id: "13E717092B882CC3"
-			rewards: [{
-				id: "519199002BA26A40"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3838C5F42EC083BF"
-				item: "nameless_trinkets:ethereal_wings"
-				type: "item"
-			}]
-			x: 3.25d
 			y: 1.25d
 		}
 		{

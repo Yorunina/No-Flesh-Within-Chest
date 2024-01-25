@@ -1,0 +1,31 @@
+{
+  "text": "hwacha.txt",
+  "title": "  箭炮猎龙",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:hwachavenator",
+      "x": 105,
+      "y": 115,
+      "page" : 0,
+      "scale": 0.6,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:hwachavenator",
+      "x": 350,
+      "y": 160,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.3,
+      "offset_x": 11,
+      "offset_y": 11,
+      "hover_text": "箭炮猎龙"
+    }
+  ]
+}

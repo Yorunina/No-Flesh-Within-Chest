@@ -1,0 +1,40 @@
+{
+  "text": "coty.txt",
+  "title": "  杯鼻龙",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:coty",
+      "x": 90,
+      "y": 90,
+      "page" : 0,
+      "scale": 0.9,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "item_renders": [
+    {
+      "item": "unusualprehistory:grog",
+      "x": 225,
+      "y": 95,
+      "page" : 0,
+      "scale": 1.5
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:coty",
+      "x": 230,
+      "y": 80,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.45,
+      "offset_x": 9,
+      "offset_y": 4,
+      "hover_text": "杯鼻龙"
+    }
+  ]
+}

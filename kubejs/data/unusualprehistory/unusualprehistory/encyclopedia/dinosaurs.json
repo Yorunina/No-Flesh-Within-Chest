@@ -1,0 +1,23 @@
+{
+  "title": "  史前动物",
+  "text": "root_dinosaur.txt",
+  "pictures": [
+    {
+      "page": 0,
+      "picture_location": "unusualprehistory:textures/item/ammonite_shell.png",
+      "x": 70,
+      "y": 28,
+      "xSize": 44,
+      "ySize": 44
+    }
+  ],
+  "entity_index": [
+    {
+      "page": 0,
+      "xLocation": 210,
+      "yLocation": 0,
+      "columns": 5,
+      "rows": 5
+    }
+  ]
+}

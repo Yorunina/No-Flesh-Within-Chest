@@ -1,0 +1,31 @@
+{
+  "text": "dryo.txt",
+  "title": "  槲叶",
+  "page_to_go": "unusualprehistory:plants",
+  "plant_button":[
+    {
+      "plant": "unusualprehistory:dryo_sapling",
+      "x": 290,
+      "y": 80,
+      "page" : 0,
+      "scale": 1.2,
+      "plant_scale": 1.1,
+      "offset_x": -4,
+      "offset_y": -6,
+      "hover_text": "槲叶"
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:dryo_sapling",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 1.5,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ]
+}
