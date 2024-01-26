@@ -47,10 +47,11 @@
 		#   Negation - ~ followed by any selector above.  This selector will be negated, matching every item that does NOT match the selector.  Examples: "~minecraft:stick", "~!uncommon", "~@minecraft"
 		#   Combining selectors - Any number of selectors can be combined by separating them with a plus sign.  Examples: "minecraft:diamond_sword+&Enchantments", "minecraft:stick+~!common+&Damage=0"
 		[client.options.manual_borders]
+			"#C94A00" = ["$kubejs:relics"]
 			"#CBD1CF" = ["$itemborders:iron"]
 			"#FDF55F" = ["$itemborders:gold"]
 			"#4AEDD9" = ["$itemborders:diamond"]
-			"#C94A00" = ["$kubejs:relics"]
+			"#C90000" = ["$itemborders:red"]
 			"#B500A0" = ["$kubejs:warp"]
 			"#FFA6FF" = ["$kubejs:candy"]
 			green = ["$itemborders:green"]

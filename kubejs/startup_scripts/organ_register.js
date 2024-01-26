@@ -119,6 +119,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/machine/furnace_core')
         .tag('kubejs:heart')
         .tag('kubejs:revolution')
+        .tag('itemborders:gold')
         .tag('kubejs:machine')
         .tag('kubejs:rclick_only');
 
@@ -137,6 +138,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/machine/burning_heart')
         .tag('kubejs:heart')
         .tag('kubejs:revolution')
+        .tag('itemborders:gold')
         .tag('kubejs:machine')
         .tag('kubejs:rclick_only');
     // 革命线缆
@@ -148,6 +150,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/machine/revolution_cable')
         .tag('kubejs:revolution')
+        .tag('itemborders:gold')
         .tag('kubejs:machine')
         .tag('kubejs:active');
     // 革命齿轮
@@ -158,6 +161,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/machine/revolution_gear')
         .tag('kubejs:revolution')
+        .tag('itemborders:gold')
         .tag('kubejs:machine');
 
     // 革命继电器
@@ -169,6 +173,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/machine/revolution_relay')
         .tag('kubejs:revolution')
+        .tag('itemborders:gold')
         .tag('kubejs:machine');
 
     // 革命断路器
@@ -180,6 +185,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/machine/revolution_delay')
         .tag('kubejs:revolution')
+        .tag('itemborders:gold')
         .tag('kubejs:machine');
 
     registerOrgan(new Organ('kubejs:compressed_oxygen_implant')
@@ -190,6 +196,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/machine/compressed_oxygen_implant')
         .tag('kubejs:lung')
+        .tag('itemborders:iron')
         .tag('kubejs:machine');
 
     registerOrgan(new Organ('kubejs:platelet_dispatcher')
@@ -317,7 +324,8 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.18" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_hippocampus')
-        .tag('kubejs:magic');
+        .tag('kubejs:magic')
+        .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:magic_muscle')
         .addScore('strength', 1)
@@ -325,7 +333,8 @@ StartupEvents.registry('item', event => {
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_muscle.1" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_muscle')
-        .tag('kubejs:magic');
+        .tag('kubejs:magic')
+        .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:magic_spine')
         .addScore('nerves', 1)
@@ -333,7 +342,8 @@ StartupEvents.registry('item', event => {
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_spine.2" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_spine')
-        .tag('kubejs:magic');
+        .tag('kubejs:magic')
+        .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:magic_vision')
         .addScore('nerves', -1)
@@ -343,7 +353,8 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/magic/magic_vision')
         .tag('kubejs:magic')
-        .tag('kubejs:active');
+        .tag('kubejs:active')
+        .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:color_palette')
         .addScore('speed', -0.5)
@@ -391,6 +402,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/resource/ore_lung')
         .tag('kubejs:lung')
         .tag('kubejs:resource')
+        .tag('itemborders:iron')
         .tag('kubejs:break_only');
 
     registerOrgan(new Organ('kubejs:desire_of_midas')
@@ -428,6 +440,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/resource/redstone_furnace')
         .tag('kubejs:active')
         .tag('kubejs:heart')
+        .tag('itemborders:red')
         .tag('kubejs:rclick_only');
 
     registerOrgan(new Organ('kubejs:silk_for_cutting')
@@ -444,6 +457,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/others/holy_eyeball')
         .tag('kubejs:muscle')
+        .tag('itemborders:gold')
         .tag('kubejs:active');
 
 
@@ -460,7 +474,8 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/legends/doppelganger')
         .tag('kubejs:legends')
         .tag('kubejs:evolution')
-        .tag('kubejs:bear_only');
+        .tag('kubejs:bear_only')
+        .tag('itemborders:gold');
 
     registerOrgan(new Organ('kubejs:lost_paradise')
         .addScore('health', 4)
@@ -526,6 +541,17 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:legends')
         .tag('kubejs:damage_only')
         .tag('itemborders:diamond');
+
+    registerOrgan(new Organ('kubejs:illithids')
+        .addScore('health', -0.5)
+        .addScore('nerves', 1.75)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.illithids.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.illithids.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.illithids.3" })])
+        .build())
+        .texture('kubejs:item/organs/warp/illithids')
+        .tag('kubejs:warp')
+        .tag('kubejs:key_pressed_only');
 
     // 扭曲器官
     registerOrgan(new Organ('kubejs:pandora_active')
