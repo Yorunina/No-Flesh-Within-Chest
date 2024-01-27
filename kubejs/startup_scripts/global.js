@@ -48,6 +48,7 @@ global.ATTRIBUTE_MAP = {
     'kubejsAttackRange': global.ATTACK_RANGE,
     'kubejsReachRange': global.REACH_DISTANCE,
     'kubejsCriticalHit': global.CRITICAL_HIT,
+    'kubejsCriticalDamage': global.CRITICAL_DAMAGE,
     'kubejsParry': global.PARRY,
     'kubejsDodge': global.DODGE,
     'kubejsRegeneration': global.REGENERATION,

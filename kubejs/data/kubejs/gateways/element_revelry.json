@@ -1,7 +1,7 @@
 {
     "size": "large",
     "color": "#EEDD82",
-    "leash_range": 48,
+    "leash_range": 64,
     "allow_discarding": true,
     
     "waves": [

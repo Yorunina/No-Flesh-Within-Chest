@@ -2186,6 +2186,60 @@
 			x: 12.5d
 			y: 17.5d
 		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: [
+				"偶尔在&7墓穴&r建筑战利品箱子中可以找到。"
+				""
+				"使用主动技能按键激活(默认X)，激活时对指向的生物附加&c野性狂暴&r效果。受该效果影响的怪物会&2无视敌我的攻击周围的任何单位&r。"
+				""
+				"其具有冷却时间60s。"
+			]
+			id: "7587D294016E6A81"
+			rewards: [{
+				id: "2DFC15DAE10610AD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它使万物癫狂"
+			tasks: [{
+				id: "06237B34790A5896"
+				item: {
+					Count: 1b
+					id: "kubejs:illithids"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: [
+				"装备D8的角色，在开启奖励品箱时高概率获得&c无形肉瘤&r。其具有着随机的基础属性如力量、速度、消化效率等。"
+				""
+				"玩家的&2幸运&r越高，属性的随机范围越大，这意味着较高的幸运属性可能会获得属性更为极端的肉瘤。"
+			]
+			id: "67A03C4E8449D8C7"
+			rewards: [{
+				id: "19A52D377ACA642B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "把命运交付它手"
+			tasks: [{
+				id: "75A27682EC229AF7"
+				item: {
+					Count: 1b
+					id: "kubejs:d8"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 17.5d
+		}
 	]
 	title: "胸腔：器官收集指南"
 }

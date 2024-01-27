@@ -27,8 +27,8 @@ const organPlayerKeyPressedOnlyStrategies = {
         let particleCarrot = Utils.particleOptions(`dust 1 0 0 1`)
         let ray = player.rayTrace(32, true)
         if (ray.entity && ray.entity.isLiving()) {
-            ray.entity.potionEffects.add('goety:wild_rage', 20 * 60)
-            player.addItemCooldown('kubejs:illithids', 20 * 30)
+            ray.entity.potionEffects.add('goety:wild_rage', ray.entity.maxHealth > 100 ? 20 * 10 : 20 * 60)
+            player.addItemCooldown('kubejs:illithids', 20 * 60)
             event.level.spawnParticles(particleCarrot, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
         }
     },

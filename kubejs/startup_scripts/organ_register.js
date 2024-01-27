@@ -995,6 +995,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/others/d8')
         .tag('itemborders:diamond')
+        .tag('kubejs:legends')
         .tag('kubejs:loot_chest_only');
 
     // 食物系列
@@ -1094,6 +1095,8 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:crimson_mosquito_mouthparts').addScore('strength', 0.5).addScore('defense', -1).build()).texture('kubejs:item/organs/nether/crimson_mosquito_mouthparts');
 
+    // 纪念器官
+    registerOrgan(new Organ('kubejs:hard_bone').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.hard_bone.1" })]).addScore('defense', 2).addScore('strength', 1).build()).texture('minecraft:item/bone').tag('kubejs:rib').tag('itemborders:diamond');
 
     // 模板器官
     registerOrgan(new Organ('kubejs:lung_template').addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.lung_template.1" })]).addScore('breath_recovery', 0.75).addScore('breath_capacity', 0.75).addScore('endurance', 0.75).build()).texture('kubejs:item/organs/template/lung_template').tag('kubejs:lung');

@@ -114,4 +114,5 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('minecraft:netherite_scrap').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('hexerei:selenite_shard').when((c) => c.randomChance(0.05)))
         .addLoot(LootEntry.of('goety:empty_focus').when((c) => c.randomChance(0.05)))
+        .addLoot(LootEntry.of('goety:spent_totem').when((c) => c.randomChance(0.03)))
 })

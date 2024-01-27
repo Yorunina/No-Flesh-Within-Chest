@@ -208,6 +208,8 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:phantom_eyeball').texture('kubejs:item/phantom_eyeball').maxStackSize(1)
 
+    event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
+
     event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
         .useAnimation('bow')
         .use((level, player, hand) => {

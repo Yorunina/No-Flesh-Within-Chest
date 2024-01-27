@@ -71,6 +71,7 @@
 			]
 			icon: "kubejs:secret_of_origin"
 			id: "1CBCFF5EB305F9CD"
+			shape: "rsquare"
 			subtitle: "正在制作中"
 			tasks: [{
 				id: "18751C8315E9B424"
