@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.crushing([Item.of('3x minecraft:raw_iron'), Item.of('2x minecraft:raw_gold').withChance(0.2), Item.of('2x minecraft:raw_copper').withChance(0.4), Item.of('2x create:raw_zinc').withChance(0.3), Item.of('2x minecraft:lapis_lazuli').withChance(0.25)], 'kubejs:common_mineral_cluster').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('8x kubejs:lime_powder'), Item.of('2x kubejs:lime_powder').withChance(0.3)], 'create:limestone').processingTime(100)
+	event.recipes.create.crushing([Item.of('3x kubejs:lime_powder'), Item.of('2x kubejs:lime_powder').withChance(0.3)], 'create:limestone').processingTime(100)
 
 	event.recipes.create.crushing([Item.of('2x kubejs:silver_ingot'), Item.of('3x createoreexcavation:raw_redstone').withChance(0.4), Item.of('2x createoreexcavation:raw_emerald').withChance(0.3), Item.of('2x createoreexcavation:raw_diamond').withChance(0.3), Item.of('minecraft:netherite_scrap').withChance(0.15)], 'kubejs:rare_mineral_cluster').processingTime(100)
 

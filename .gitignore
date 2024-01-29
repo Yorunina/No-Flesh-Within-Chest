@@ -26,3 +26,5 @@
 /schematics
 /fancymenu_data
 /fancymenu_setups
+/servers*
+/patchouli_data.json

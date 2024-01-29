@@ -196,15 +196,22 @@
 				"&d甜蜜之梦&r的效果为：当玩家受到来自于非火焰的伤害时，甜蜜之梦将会将玩家所受的伤害值抵消，转变为扣减自身的buff时长。"
 			]
 			id: "7C6A372F5D824085"
-			rewards: [{
-				id: "43F99A327E4ACF07"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
+			rewards: [
+				{
+					id: "43F99A327E4ACF07"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_gold"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "43F1F3062D7A0195"
+					item: "kubejs:candy_canes_wand"
+					type: "item"
+				}
+			]
 			subtitle: "糖心满溢"
 			tasks: [{
 				id: "19951308476CE6BD"
@@ -1951,8 +1958,13 @@
 			description: [
 				"能够将&2法力值直接转化为伤害&r，配合&6大艺术家法杖&r能够打出相当炸裂的输出。"
 				""
-				"大艺术家法杖提供的&e色彩&r效果可以进一步强化该器官提供的伤害增强。"
+				"大艺术家法杖提供的&e色彩&r效果可以进一步强化该器官提供的伤害增强。你可以在古代都市的箱子中寻找到大艺术家法杖。"
 			]
+			icon: {
+				Count: 1b
+				id: "kubejs:color_palette"
+				tag: { }
+			}
 			id: "09F6678D39F5060C"
 			rewards: [{
 				id: "739E81EB17007102"
@@ -1960,15 +1972,28 @@
 				type: "item"
 			}]
 			subtitle: "筑三原色为画"
-			tasks: [{
-				id: "092C7C9F26139539"
-				item: {
-					Count: 1b
-					id: "kubejs:color_palette"
-					tag: { }
+			tasks: [
+				{
+					id: "092C7C9F26139539"
+					item: {
+						Count: 1b
+						id: "kubejs:color_palette"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "55A4C803363203E6"
+					item: {
+						Count: 1b
+						id: "kubejs:artist_wand"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			x: 7.5d
 			y: 14.5d
 		}
@@ -2239,6 +2264,28 @@
 			}]
 			x: 14.5d
 			y: 17.5d
+		}
+		{
+			dependencies: ["795DE8D8EF4D3A01"]
+			description: ["在与&c水人(Water Man)&r的战斗中概率掉落，能够提高所有类型的咒文伤害。"]
+			id: "77FD36002BC9A7FE"
+			rewards: [{
+				id: "0AD72A62D960AC70"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "魔法使独到的见解"
+			tasks: [{
+				id: "39DDDF3952B012CF"
+				item: {
+					Count: 1b
+					id: "kubejs:magic_vision"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 8.5d
 		}
 	]
 	title: "胸腔：器官收集指南"

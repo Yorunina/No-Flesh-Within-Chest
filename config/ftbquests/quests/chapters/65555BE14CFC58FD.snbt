@@ -238,7 +238,33 @@
 			}]
 			title: "白子翎羽"
 			x: -1.25d
-			y: 4.25d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "37BF78CED63FC2DA"
+			subtitle: "第二位赞助人！不愿意透露姓名！"
+			tasks: [{
+				id: "6CEE217B384012BA"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "爱发电用户_kSCc"
+			x: -2.25d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "3D8902783ABF246B"
+			subtitle: "第三位赞助人！还帮助了测试定位问题！"
+			tasks: [{
+				id: "03065D2DF653D533"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "这是我家猫"
+			x: -0.25d
+			y: 4.5d
 		}
 	]
 	title: "制作人名单"

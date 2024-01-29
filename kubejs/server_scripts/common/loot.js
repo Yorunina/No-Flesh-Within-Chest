@@ -21,7 +21,7 @@ LootJS.modifiers(event => {
                 LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.1)),
             )
     }
-
+    
     bossTypeList.forEach(entityId => {
         addBossLoot(entityId)
     })
@@ -35,7 +35,8 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('goety:apostle')
         .addLoot('kubejs:pandora_inactive');
     event.addEntityLootModifier('bosses_of_mass_destruction:void_blossom')
-        .addLoot('kubejs:secret_of_bloom');
+        .addLoot('kubejs:secret_of_bloom')
+        .addLoot('kubejs:flower_heart');
     event.addEntityLootModifier('minecraft:slime')
         .addLoot(LootEntry.of('kubejs:mini_slime').when(c => c.matchEquip('mainhand', 'minecraft:glass_bottle')));
 
@@ -60,6 +61,7 @@ LootJS.modifiers(event => {
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['minecraft:ancient_city'], false)
         .addLoot(LootEntry.of('kubejs:unholy_grail').when((c) => c.randomChance(0.1)))
+        .addLoot(LootEntry.of('kubejs:artist_wand').when((c) => c.randomChance(0.1)))
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['#minecraft:village'], false)
@@ -87,6 +89,9 @@ LootJS.modifiers(event => {
             if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomOrganWares())
             }
+            if (Math.random() < 0.5) {
+                ctx.addLoot(getRandomOreWares())
+            }
         })
 
 
@@ -103,8 +108,8 @@ LootJS.modifiers(event => {
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['#kubejs:graveyard'], false)
-        .addLoot(LootEntry.of('kubejs:unholy_grail').when((c) => c.randomChance(0.02)))
-        .addLoot(LootEntry.of('kubejs:illithids').when((c) => c.randomChance(0.01)))
+        .addLoot(LootEntry.of('kubejs:unholy_grail').when((c) => c.randomChance(0.01)))
+        .addLoot(LootEntry.of('kubejs:illithids').when((c) => c.randomChance(0.005)))
         .addLoot(LootEntry.of('minecraft:diamond').when((c) => c.randomChance(0.1)))
         .addLoot(LootEntry.of('nameless_trinkets:mysterious_trinket').when((c) => c.randomChance(0.05)))
         .addLoot(LootEntry.of('lightmanscurrency:coin_gold').when((c) => c.randomChance(0.1)))
@@ -115,4 +120,6 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('hexerei:selenite_shard').when((c) => c.randomChance(0.05)))
         .addLoot(LootEntry.of('goety:empty_focus').when((c) => c.randomChance(0.05)))
         .addLoot(LootEntry.of('goety:spent_totem').when((c) => c.randomChance(0.03)))
+        .addLoot(LootEntry.of('minecraft:iron_ingot').when((c) => c.randomChance(0.3)))
+        .addLoot(LootEntry.of('minecraft:gold_ingot').when((c) => c.randomChance(0.1)))
 })

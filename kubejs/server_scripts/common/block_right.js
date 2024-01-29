@@ -7,14 +7,6 @@ BlockEvents.rightClicked('minecraft:sand', event => {
     }
 })
 
-BlockEvents.rightClicked('minecraft:flowering_azalea', event => {
-    if (event.player.getMainHandItem() == 'kubejs:flora_wand'
-        && event.player.getOffhandItem() == 'alexsmobs:potted_flutter') {
-        event.player.offHandItem.shrink(1)
-        event.player.give(Item.of('kubejs:flower_heart'))
-    }
-})
-
 BlockEvents.rightClicked('minecraft:diamond_block', event => {
     if (event.player.getMainHandItem() == Item.of('minecraft:potion', '{Potion:"minecraft:water"}')
         && event.level.isThundering()

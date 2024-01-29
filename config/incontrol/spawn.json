@@ -9,7 +9,7 @@
       "cataclysm:ancient_remnant"
     ],
     "result": "allow",
-    "potion": "kubejs:power_of_citadel,72000,0",
+    "potion": "kubejs:power_of_citadel,144000,0",
     "onjoin": true,
     "continue": true
   },

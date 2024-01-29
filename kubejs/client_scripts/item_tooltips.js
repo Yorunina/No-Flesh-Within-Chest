@@ -79,10 +79,6 @@ ItemEvents.tooltip((tooltip) => {
         text.add(Text.gold({ "translate": "kubejs.tooltips.god_bless_full_necklace.1" }));
     })
     
-    tooltip.addAdvanced('kubejs:painting_brush', (item, advanced, text) => {
-        text.add(Text.gray({ "translate": "kubejs.tooltips.painting_brush.1" }));
-    })
-
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1
         if (item.nbt?.organ?.id) {

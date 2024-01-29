@@ -276,7 +276,8 @@ StartupEvents.registry('item', event => {
     // 糖果心与魔法使系列物品
     // 糖果系列器官
     registerOrgan(new Organ('kubejs:candy_heart')
-        .addScore('health', 1)
+        .addScore('health', 1.75)
+        .addScore('nutrition', 1.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.candy_heart.1" }), Text.red({ "translate": "kubejs.tooltips.candy_heart.2" }), Text.gray({ "translate": "kubejs.tooltips.candy_heart.3" }), Text.of({ "translate": "kubejs.tooltips.candy_heart.4" }).color('#e8a0dc'), Text.gray({ "translate": "kubejs.tooltips.candy_heart.5" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_heart.6" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_heart.7" })])
@@ -286,9 +287,9 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:candy');
 
     registerOrgan(new Organ('kubejs:candy_stomach')
-        .addScore('nutrition', 1)
-        .addScore('digestion', 1)
-        .addScore('health', -1)
+        .addScore('nutrition', 1.5)
+        .addScore('digestion', 1.5)
+        .addScore('health', -0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.candy_stomach.1" }), Text.of({ "translate": "kubejs.tooltips.candy_stomach.2" }).color('#e8a0dc')])
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.candy_stomach.3" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_stomach.4" }), Text.of({ "translate": "kubejs.tooltips.candy_stomach.5" }).color('#e8a0dc'), Text.gray({ "translate": "kubejs.tooltips.candy_stomach.6" })])
@@ -303,7 +304,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:candy_pancreas')
         .addScore('endurance', -1)
-        .addScore('health', -1)
+        .addScore('health', -0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.candy_pancreas.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_pancreas.2" }), Text.gold({ "translate": "kubejs.tooltips.candy_pancreas.3" }), Text.gray({ "translate": "kubejs.tooltips.candy_pancreas.4" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.candy_pancreas.5" })])
@@ -314,7 +315,7 @@ StartupEvents.registry('item', event => {
 
     // 魔法使系列
     registerOrgan(new Organ('kubejs:magic_hippocampus')
-        .addScore('nerves', 0.75)
+        .addScore('nerves', 1.25)
         .addScore('luck', 1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.1" })])
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.2" })])
@@ -328,8 +329,8 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:magic_muscle')
-        .addScore('strength', 1)
-        .addScore('health', -0.5)
+        .addScore('strength', 1.25)
+        .addScore('health', -0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_muscle.1" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_muscle')
@@ -346,10 +347,10 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:magic_vision')
-        .addScore('nerves', -1)
+        .addScore('nerves', -0.5)
         .addScore('metabolism', -1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_vision.1" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_vision.2" }), Text.yellow(0.1), Text.yellow({ "translate": "kubejs.tooltips.magic_vision.3" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_vision.2" }), Text.yellow(0.2), Text.yellow({ "translate": "kubejs.tooltips.magic_vision.3" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_vision')
         .tag('kubejs:magic')
@@ -378,7 +379,7 @@ StartupEvents.registry('item', event => {
 
 
     registerOrgan(new Organ('kubejs:blood_moon_wand')
-        .addScore('nerves', 1)
+        .addScore('nerves', 1.25)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blood_moon_wand.1" }), Text.yellow(0.3), Text.yellow({ "translate": "kubejs.tooltips.blood_moon_wand.2" })])
         .build())
         .texture('kubejs:item/organs/magic/blood_moon_wand')

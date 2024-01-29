@@ -159,6 +159,17 @@ const OrganWares = [
     new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('kubejs:appendix_gold')], 4),
 ]
 
+const OreWares = [
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:coal').withCount(8)], 64),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:iron_ingot').withCount(4)], 64),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:redstone').withCount(4)], 64),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:lapis_lazuli').withCount(4)], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:gold_ingot')], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(3)], [Item.of('minecraft:diamond')], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:andesite').withCount(16)], 64),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(8)], [Item.of('hexerei:selenite_shard').withCount(1)], 3),
+]
+
 function getRandomPotionWares() {
     let task = randomGet(PotionWares)
     return new Wares('potion').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('女巫酿造师', '#33333').setMessage('我了解到你似乎有些 **特殊的** 需求。不如看看这瓶女巫精酿是否能够满足你的一时之需？', '#33333').setOrdered(task.ordered).build()
@@ -178,6 +189,10 @@ function getRandomSpecialWares() {
 function getRandomOrganWares() {
     let task = randomGet(OrganWares)
     return new Wares('special').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('器官商人', '#d15492').setMessage('这是一些. . .肉制品。\n我们保存的相当完好，保证随取随用。', '#33333').setOrdered(task.ordered).build()
+}
+function getRandomOreWares() {
+    let task = randomGet(OreWares)
+    return new Wares('special').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('矿石商人', '#33333').setMessage('你好，我这里有些矿物。\n或许这对你有用。', '#33333').setOrdered(task.ordered).build()
 }
 
 

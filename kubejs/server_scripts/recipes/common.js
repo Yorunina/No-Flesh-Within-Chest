@@ -103,10 +103,12 @@ ServerEvents.recipes(event => {
         ['lightmanscurrency:coin_gold', '#forge:gems/diamond', 'lightmanscurrency:coin_gold'],
         ['lightmanscurrency:coin_gold', '', 'lightmanscurrency:coin_gold'],
         ['lightmanscurrency:coin_gold', 'lightmanscurrency:coin_gold', 'lightmanscurrency:coin_gold']])
+        
     event.shaped('irons_spellbooks:silver_ring', [
         ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot'],
         ['kubejs:silver_ingot', '', 'kubejs:silver_ingot'],
         ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot']])
+
     event.shaped('kubejs:color_palette', [
         ['create:iron_sheet', 'create:iron_sheet', 'create:iron_sheet'],
         ['createaddition:electrum_sheet', 'create:clipboard', 'createaddition:electrum_sheet'],
@@ -126,10 +128,12 @@ ServerEvents.recipes(event => {
         ['minecraft:stick', 'irons_spellbooks:holy_rune', 'minecraft:stick'],
         ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
         ['', '#minecraft:saplings', '']])
+
     event.shaped('kubejs:ice_wooden_wand', [
         ['minecraft:stick', 'irons_spellbooks:ice_rune', 'minecraft:stick'],
         ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
         ['', '#minecraft:saplings', '']])
+
     event.shaped('kubejs:nature_wooden_wand', [
         ['minecraft:stick', 'irons_spellbooks:nature_rune', 'minecraft:stick'],
         ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
@@ -140,10 +144,10 @@ ServerEvents.recipes(event => {
         ['', 'biomancy:bone_fragments', ''],
         ['biomancy:bone_fragments', 'alexsmobs:skelewag_sword', 'biomancy:bone_fragments']])
 
-    event.shaped('kubejs:painting_brush', [
-        ['', 'minecraft:white_wool', ''],
-        ['', 'minecraft:stick', ''],
-        ['', 'minecraft:stick', '']])
+    event.shaped('kubejs:artist_wand', [
+        ['', '', 'goety:unholy_blood'],
+        ['createaddition:electrum_wire', 'minecraft:white_wool', ''],
+        ['minecraft:stick', 'createaddition:electrum_wire', '']])
 
     event.smelting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
     event.blasting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
