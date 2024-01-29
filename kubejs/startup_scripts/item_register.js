@@ -104,8 +104,6 @@ StartupEvents.registry('item', event => {
         .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', -0.5, 'addition')
         .rarity('epic')
 
-    event.create('flora_wand_basic').texture('kubejs:item/flora_wand').maxStackSize(1)
-
     event.create('holy_wooden_wand').texture('kubejs:item/holy_wooden_wand')
         .maxStackSize(1)
         .modifyAttribute('irons_spellbooks:holy_spell_power', 'kubejsHolySpellWeaponBoost', 0.3, 'addition')
@@ -205,8 +203,6 @@ StartupEvents.registry('item', event => {
 
     // 随机基本器官
     event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').tag('kubejs:organ').tag('itemborders:iron')
-
-    event.create('kubejs:phantom_eyeball').texture('kubejs:item/phantom_eyeball').maxStackSize(1)
 
     event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
 

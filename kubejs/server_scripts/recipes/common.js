@@ -117,7 +117,7 @@ ServerEvents.recipes(event => {
         ['', 'hexerei:selenite_shard', ''],
         ['hexerei:moon_dust', 'nameless_trinkets:moon_stone', 'hexerei:moon_dust']])
 
-    event.shaped('kubejs:flora_wand_basic', [
+    event.shaped('kubejs:flora_wand', [
         ['bosses_of_mass_destruction:void_thorn', 'bosses_of_mass_destruction:crystal_fruit', 'bosses_of_mass_destruction:void_thorn'],
         ['', 'minecraft:stick', ''],
         ['', 'minecraft:stick', '']])
