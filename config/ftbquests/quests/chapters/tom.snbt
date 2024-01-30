@@ -124,11 +124,7 @@
 				count: 2
 				icon: "lightmanscurrency:coin_gold"
 				id: "5A2C147659F191D6"
-				item: {
-					Count: 1
-					id: "numismaticoverhaul:bronze_coin"
-					tag: { }
-				}
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			subtitle: "远程链接"

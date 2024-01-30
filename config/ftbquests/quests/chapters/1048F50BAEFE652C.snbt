@@ -2287,6 +2287,32 @@
 			x: 13.5d
 			y: 8.5d
 		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: [
+				"被&c不洁之血&r污染的蠕虫，能够在你手持附魔物品时，按下主动按键，消除上面的一个诅咒附魔。"
+				""
+				"代价是你将会获得少量&5扭曲值&r。该技能冷却时间600s。"
+			]
+			id: "33DC3C993B5E5DA4"
+			rewards: [{
+				id: "0E6A2F087DF20A84"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它能够消除你的苦难"
+			tasks: [{
+				id: "26119E56C0D0579C"
+				item: {
+					Count: 1b
+					id: "kubejs:disenchantment_paper"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 17.5d
+		}
 	]
 	title: "胸腔：器官收集指南"
 }

@@ -37,6 +37,8 @@ ServerEvents.recipes(event => {
 
     event.shapeless('summoningrituals:altar', ['minecraft:wither_skeleton_skull', '#hexerei:candles', '#hexerei:candles', '#hexerei:candles', 'createaddition:electrum_sheet', 'minecraft:lectern'])
 
+    event.shapeless('kubejs:disenchantment_paper', ['minecraft:enchanted_book', 'alexsmobs:mysterious_worm', 'goety:unholy_blood'])
+
     event.shaped('irons_spellbooks:copper_spell_book', [
         ['kubejs:stardust_fragment', 'kubejs:stardust_fragment', 'kubejs:stardust_fragment'],
         ['kubejs:stardust_fragment', '#kubejs:isb_spell_book', 'kubejs:stardust_fragment'],
@@ -103,7 +105,7 @@ ServerEvents.recipes(event => {
         ['lightmanscurrency:coin_gold', '#forge:gems/diamond', 'lightmanscurrency:coin_gold'],
         ['lightmanscurrency:coin_gold', '', 'lightmanscurrency:coin_gold'],
         ['lightmanscurrency:coin_gold', 'lightmanscurrency:coin_gold', 'lightmanscurrency:coin_gold']])
-        
+
     event.shaped('irons_spellbooks:silver_ring', [
         ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot'],
         ['kubejs:silver_ingot', '', 'kubejs:silver_ingot'],

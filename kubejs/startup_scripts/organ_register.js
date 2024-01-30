@@ -554,6 +554,18 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:warp')
         .tag('kubejs:key_pressed_only');
 
+    registerOrgan(new Organ('kubejs:disenchantment_paper')
+        .addScore('health', -0.5)
+        .addScore('nerves', -0.5)
+        .addScore('speed', -2)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.disenchantment_paper.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.disenchantment_paper.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.disenchantment_paper.3" })])
+        .build())
+        .texture('kubejs:item/organs/warp/disenchantment_paper')
+        .tag('kubejs:warp')
+        .tag('kubejs:key_pressed_only');
+        
     // 扭曲器官
     registerOrgan(new Organ('kubejs:pandora_active')
         .addScore('crystalsynthesis', 0.25)
@@ -822,8 +834,8 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:ender_guard_eyeball')
         .addScore('hydrophobia', 1)
-        .addScore('luck', -2)
-        .addScore('crystalsynthesis', 0.25)
+        .addScore('luck', -1)
+        .addScore('crystalsynthesis', 0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.ender_guard_eyeball.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ender_guard_eyeball.2" })])
         .build())

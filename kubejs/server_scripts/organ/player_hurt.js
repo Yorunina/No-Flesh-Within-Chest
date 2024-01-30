@@ -167,7 +167,7 @@ const organPlayerDamageOnlyStrategies = {
             updateResourceCount(player, count - damageBonus)
         }
     },
-    'kubejs:blooded_chip': function (event, organ, data) {
+    'kubejs:ancient_chip': function (event, organ, data) {
         if (event.source.type != 'arrow') return
         let entityHeight = event.entity.bbHeight
         let arrowHeight = event.source.immediate.y - event.entity.y

@@ -32,4 +32,28 @@ const organPlayerKeyPressedOnlyStrategies = {
             event.level.spawnParticles(particleCarrot, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
         }
     },
+    'kubejs:disenchantment_paper': function (event, organ) {
+        let player = event.player
+        let item = player.getMainHandItem()
+        if (!item || !item.enchanted) {
+            return
+        }
+        let curseList = []
+        item.enchantments.forEach((name, level) => {
+            if (curseEnchantList.some(ele => ele == name)) {
+                curseList.push(name)
+            }
+        })
+        if (curseList.length <= 0) {
+            return
+        }
+        let removedCurse = randomGet(curseList)
+        item.nbt.Enchantments = item.nbt.Enchantments.filter(function (item) {
+            return item.id != removedCurse
+        });
+        player.addItemCooldown('kubejs:disenchantment_paper', 20 * 600)
+        player.setStatusMessage([Text.lightPurple('祛魔虫'), '吃下了一个', Text.red('诅咒附魔')])
+        let count = event.player.persistentData.getInt(warpCount) ?? 0
+        updateWarpCount(event.player, count + 5)
+    },
 };

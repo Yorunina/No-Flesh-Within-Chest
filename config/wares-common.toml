@@ -11,6 +11,12 @@ WanderingTraderSellsAgreements = true
 	#Each delivery requires (and consumes) a packaging. ('wares:delivery_boxes' tag)
 	#A slot for boxes will be added to delivery table. Default: true
 	DeliveriesRequireBoxes = true
+	#Delivery outputs can be taken by consumers from the side of the delivery table, in addition to the bottom.
+	#Default: false
+	TableOutputsFromSides = false
+	#Completed Delivery Agreement will be moved to the output slots when they have space.
+	#Default: true
+	MoveCompletedAgreementToOutput = true
 
 	[Delivery.Packager]
 		#Packager worker is required for Delivery Table to work.
@@ -42,4 +48,12 @@ WanderingTraderSellsAgreements = true
 	#Warehouse structure weight. Larger number = more chances to spawn.
 	#Range: > 1
 	WarehouseWeight = 20
+
+[Misc]
+	#Owner of the table is set to the last player who interacted with it (instead of who placed it or first interacted)
+	#Can be useful for modpack developers. Not used by the mod itself.
+	#Default: false
+	ChangeOwnerToLastPlayer = false
+	#Delivery Table advancements would be triggered on the closest player if owner is offline or table doesn't have one.
+	TriggerTableAdvancementOnNearestPlayer = true
 
