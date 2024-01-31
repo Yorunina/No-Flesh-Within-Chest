@@ -113,7 +113,6 @@
 					type: "item"
 				}
 			]
-			secret: true
 			shape: "hexagon"
 			subtitle: "在这个世界上，似乎存在有难以知晓的秘密"
 			tasks: [

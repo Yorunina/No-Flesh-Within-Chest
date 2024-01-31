@@ -13,6 +13,7 @@ ItemEvents.tooltip((tooltip) => {
 
     tooltip.addAdvanced('#kubejs:anti_rejection', (item, advanced, text) => {
         text.add(Text.gray({ "translate": "kubejs.tooltips.anti_rejection.1" }));
+        text.add(Text.gray({ "translate": "kubejs.tooltips.anti_rejection.2" }));
     })
 
     tooltip.addAdvanced('kubejs:eye_of_fortress', (item, advanced, text) => {

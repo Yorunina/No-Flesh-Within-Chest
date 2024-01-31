@@ -3,7 +3,7 @@ LootJS.modifiers(event => {
     function addBossLoot(entity) {
         return event.addEntityLootModifier(entity)
             .addAlternativesLoot(
-                LootEntry.of('nameless_trinkets:mysterious_trinket').when((c) => c.randomChance(0.8)),
+                LootEntry.of('kubejs:mysterious_trinket').when((c) => c.randomChance(0.8)),
             )
             .addAlternativesLoot(
                 LootEntry.of('simplehats:hatbag_common').when((c) => c.randomChance(0.3)),
@@ -111,7 +111,7 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('kubejs:unholy_grail').when((c) => c.randomChance(0.01)))
         .addLoot(LootEntry.of('kubejs:illithids').when((c) => c.randomChance(0.005)))
         .addLoot(LootEntry.of('minecraft:diamond').when((c) => c.randomChance(0.1)))
-        .addLoot(LootEntry.of('nameless_trinkets:mysterious_trinket').when((c) => c.randomChance(0.05)))
+        .addLoot(LootEntry.of('kubejs:mysterious_trinket').when((c) => c.randomChance(0.05)))
         .addLoot(LootEntry.of('lightmanscurrency:coin_gold').when((c) => c.randomChance(0.1)))
         .addLoot(LootEntry.of('irons_spellbooks:ancient_knowledge_fragment').when((c) => c.randomChance(0.01)))
         .addLoot(LootEntry.of('irons_spellbooks:arcane_essence').when((c) => c.randomChance(0.2)))

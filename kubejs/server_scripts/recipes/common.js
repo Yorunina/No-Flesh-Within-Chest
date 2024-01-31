@@ -94,6 +94,20 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:eye_of_dnl', ['minecraft:ender_pearl', 'minecraft:gold_ingot'])
     event.shapeless('kubejs:eye_of_fortress', ['minecraft:ender_pearl', 'minecraft:magma_cream'])
 
+    event.shapeless('chestcavity:appendix', [Ingredient.of('*'), 'biomancy:healing_additive'])
+        .modifyResult((grid, stack) => {
+            for (let i = 0; i <= 9; i++) {
+                let organ = grid.get(i)
+                if (organ && organ.hasNBT() && organ.nbt.contains('chestcavity:organ_compatibility')) {
+                    organ.nbt.remove('chestcavity:organ_compatibility')
+                    return organ;
+                }
+            }
+            return null;
+        });
+
+
+
     event.shapeless('kubejs:lost_paradise', ['kubejs:paradise_regained', 'kubejs:god_agreement'])
 
     event.shaped('kubejs:empty_organ_charm', [

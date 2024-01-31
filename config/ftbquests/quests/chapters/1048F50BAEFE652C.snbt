@@ -1911,6 +1911,11 @@
 				"在该状态下进食，即可将该饥饿Buff转变为一个较为强力的正面效果。"
 			]
 			id: "49CD243E381398F3"
+			rewards: [{
+				id: "63673F4B0E704931"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "或许. . .它一直都活着"
 			tasks: [{
 				id: "052EAE4978FAEEBC"
@@ -2293,6 +2298,8 @@
 				"被&c不洁之血&r污染的蠕虫，能够在你手持附魔物品时，按下主动按键，消除上面的一个诅咒附魔。"
 				""
 				"代价是你将会获得少量&5扭曲值&r。该技能冷却时间600s。"
+				""
+				"为了获得神秘蠕虫，你需要将将&c绯红孑孓&r放入&2衣壳体&r中。"
 			]
 			id: "33DC3C993B5E5DA4"
 			rewards: [{
@@ -2312,6 +2319,84 @@
 			}]
 			x: 15.5d
 			y: 17.5d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: [
+				"&c玫瑰&r系列以激活后提供的大量属性为主要核心。"
+				""
+				"玫瑰石英心脏便是其中的关键部件之一。"
+			]
+			id: "20385C663BC4CBAD"
+			rewards: [{
+				id: "77CC3E3AE7144A69"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它称自己为玫瑰，于是便成为玫瑰"
+			tasks: [{
+				id: "03A1A43A388E670E"
+				item: {
+					Count: 1b
+					id: "kubejs:rose_quartz_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.25d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: [
+				"&c玫瑰石英&r的白板器官之一。"
+				""
+				"能够提供少许的解毒效率，其意义在于配合玫瑰石英系列其他的种类激活器官。"
+			]
+			id: "4609B0E23FB50956"
+			rewards: [{
+				id: "6433A046712A54DB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我成玫瑰，它成玫瑰"
+			tasks: [{
+				id: "3F1D67A9F318E86F"
+				item: {
+					Count: 1b
+					id: "kubejs:rose_quartz_liver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.25d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: [
+				"&c玫瑰石英&r的白板器官之一。"
+				""
+				"能够提供少许的力量，其意义在于配合玫瑰石英系列其他的种类激活器官。"
+			]
+			id: "5704DDF15A4710BF"
+			rewards: [{
+				id: "369205CE27AF7D37"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我成就玫瑰，而那玫瑰也欲成就我"
+			tasks: [{
+				id: "689E1EB7F97DED09"
+				item: {
+					Count: 1b
+					id: "kubejs:rose_quartz_muscle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.25d
+			y: 12.5d
 		}
 	]
 	title: "胸腔：器官收集指南"

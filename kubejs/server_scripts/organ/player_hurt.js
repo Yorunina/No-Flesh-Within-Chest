@@ -91,7 +91,7 @@ const organPlayerDamageOnlyStrategies = {
         if (event.source.type != 'player') {
             return
         }
-        if (Math.random() < 0.015 * Math.max(player.getLuck(), 0.15)) {
+        if (Math.random() < Math.min(0.015 * player.getLuck(), 0.15)) {
             event.entity.potionEffects.add('tetra:stun', 20 * 2, 0)
         }
     },

@@ -258,6 +258,8 @@
 				"但在添加器官的时候需要注意，不属于你的器官将会使你陷入&c器官排异&r的苦难之中。"
 				""
 				"消除器官排异的方法有很多种，其中使用&2治愈性原液&r是最为经济的方案之一。副手持治愈性原液，主手持不兼容的器官，即可使其消除器官所属，进而解决器官排异的问题。"
+				""
+				"或者，你可以在合成台里，通过器官和原液合成解除排异。(这往往用于一些可以食用的器官)"
 			]
 			icon: "chestcavity:heart"
 			id: "6069FC5CA00481CE"
@@ -778,7 +780,7 @@
 				}
 				{
 					id: "11CE9C63C34BD241"
-					item: "nameless_trinkets:mysterious_trinket"
+					item: "kubejs:mysterious_trinket"
 					type: "item"
 				}
 			]
