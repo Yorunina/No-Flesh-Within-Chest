@@ -74,13 +74,13 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of(Item.of('minecraft:potion', '{Potion:"minecraft:luck"}')).when((c) => c.randomChance(0.1)))
         .apply(ctx => {
-            if (Math.random() < 0.2) {
+            if (Math.random() < 0.12) {
                 ctx.addLoot(getRandomPotionWares())
             }
-            if (Math.random() < 0.02) {
+            if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomChallengeWares())
             }
-            if (Math.random() < 0.05) {
+            if (Math.random() < 0.02) {
                 ctx.addLoot(getRandomEggWares())
             }
             if (Math.random() < 0.08) {
@@ -89,7 +89,7 @@ LootJS.modifiers(event => {
             if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomOrganWares())
             }
-            if (Math.random() < 0.5) {
+            if (Math.random() < 0.1) {
                 ctx.addLoot(getRandomOreWares())
             }
         })

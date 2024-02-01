@@ -11,17 +11,17 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.sandpaper_polishing('kubejs:revolution_cable', 'chestcavity:golem_cable')
 
-	event.recipes.create.compacting('kubejs:huge_lung', ['16x kubejs:lung_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_appendix', ['16x kubejs:appendix_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_muscle', ['16x kubejs:muscle_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_heart', ['16x kubejs:heart_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_intestine', ['16x kubejs:intestine_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_rib', ['16x kubejs:rib_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_spine', ['16x kubejs:spine_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_spleen', ['16x kubejs:spleen_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_stomach', ['16x kubejs:stomach_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_kidney', ['16x kubejs:kidney_template']).superheated()
-	event.recipes.create.compacting('kubejs:huge_liver', ['16x kubejs:liver_template']).superheated()
+	event.recipes.create.compacting('kubejs:huge_lung', ['kubejs:lung_template', 'biomancy:ageing_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_appendix', ['kubejs:appendix_template', 'biomancy:ageing_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_muscle', ['kubejs:muscle_template', 'biomancy:ageing_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_heart', ['kubejs:heart_template', 'biomancy:ageing_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_intestine', ['kubejs:intestine_template', 'biomancy:ageing_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_rib', ['kubejs:rib_template', 'biomancy:ageing_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_spine', ['kubejs:spine_template', 'biomancy:ageing_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_spleen', ['kubejs:spleen_template', 'biomancy:ageing_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_stomach', ['kubejs:stomach_template', 'biomancy:ageing_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_kidney', ['kubejs:kidney_template', 'biomancy:ageing_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_liver', ['kubejs:liver_template', 'biomancy:ageing_serum']).superheated()
 
 	event.recipes.create.mechanical_crafting('kubejs:revolution_gear', [
 		' SSS ',

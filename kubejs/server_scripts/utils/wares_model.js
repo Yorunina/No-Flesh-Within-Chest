@@ -160,12 +160,12 @@ const OrganWares = [
 ]
 
 const OreWares = [
-    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:coal').withCount(8)], 64),
-    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:iron_ingot').withCount(4)], 64),
-    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:redstone').withCount(4)], 64),
-    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:lapis_lazuli').withCount(4)], 16),
-    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:gold_ingot')], 16),
-    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(3)], [Item.of('minecraft:diamond')], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:coal').withCount(16)], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:iron_ingot').withCount(8)], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:redstone').withCount(16)], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:lapis_lazuli').withCount(16)], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:gold_ingot').withCount(4)], 16),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(3)], [Item.of('minecraft:diamond').withCount(2)], 16),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('minecraft:andesite').withCount(16)], 64),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(8)], [Item.of('hexerei:selenite_shard').withCount(1)], 3),
 ]

@@ -138,6 +138,12 @@
 					}
 					type: "item"
 				}
+				{
+					advancement: "minecraft:story/root"
+					criterion: ""
+					id: "77DAC91B48E0F443"
+					type: "advancement"
+				}
 			]
 			subtitle: "让你能够自如使用野生怪物的器官"
 			tasks: [{
@@ -1122,7 +1128,9 @@
 						gateway: "kubejs:god_challenge"
 					}
 				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "神意挑战"
 			x: 4.5d
@@ -1171,7 +1179,9 @@
 						gateway: "kubejs:final_raid"
 					}
 				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "最终袭击"
 			x: 7.0d

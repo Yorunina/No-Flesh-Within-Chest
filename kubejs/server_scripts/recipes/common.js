@@ -93,8 +93,11 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:eye_of_village', ['minecraft:ender_pearl', 'minecraft:emerald'])
     event.shapeless('kubejs:eye_of_dnl', ['minecraft:ender_pearl', 'minecraft:gold_ingot'])
     event.shapeless('kubejs:eye_of_fortress', ['minecraft:ender_pearl', 'minecraft:magma_cream'])
-
-    event.shapeless('chestcavity:appendix', [Ingredient.of('*'), 'biomancy:healing_additive'])
+    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:explosion_proof_jacket'])
+    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:ethereal_wings'])
+    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:creeper_sense'])
+    
+    event.shapeless('chestcavity:appendix', [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
         .modifyResult((grid, stack) => {
             for (let i = 0; i <= 9; i++) {
                 let organ = grid.get(i)

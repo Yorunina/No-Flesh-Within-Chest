@@ -565,7 +565,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/warp/disenchantment_paper')
         .tag('kubejs:warp')
         .tag('kubejs:key_pressed_only');
-        
+
     // 扭曲器官
     registerOrgan(new Organ('kubejs:pandora_active')
         .addScore('crystalsynthesis', 0.25)
@@ -864,6 +864,17 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:magic')
         .tag('kubejs:relics')
         .tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:freezing_intestine')
+        .addScore('digestion', 1.25)
+        .addScore('nutrition', 1.75)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.freezing_intestine.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.freezing_intestine.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/freezing_intestine')
+        .tag('kubejs:intestine')
+        .tag('kubejs:bear_only')
+        .tag('kubejs:relics');
 
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
