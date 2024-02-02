@@ -259,66 +259,6 @@
     {
       "entities": [
         {
-          "entity": "cataclysm:netherite_monstrosity",
-          "count": 1
-        }
-      ],
-      "modifiers": [],
-      "rewards": [],
-      "max_wave_time": 1200,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "cataclysm:ender_guardian",
-          "count": 1
-        }
-      ],
-      "modifiers": [],
-      "rewards": [],
-      "max_wave_time": 1200,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "cataclysm:ignis",
-          "count": 1
-        }
-      ],
-      "modifiers": [],
-      "rewards": [],
-      "max_wave_time": 1200,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "cataclysm:the_harbinger",
-          "count": 1
-        }
-      ],
-      "modifiers": [],
-      "rewards": [],
-      "max_wave_time": 1200,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "cataclysm:ancient_remnant",
-          "count": 1
-        }
-      ],
-      "modifiers": [],
-      "rewards": [],
-      "max_wave_time": 1200,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
           "entity": "meetyourfight:bellringer",
           "count": 1
         }

@@ -305,7 +305,7 @@ const organActiveOnlyStrategies = {
     },
     'kubejs:infinity_force': function (player, organ, attributeMap) {
         if (organ.tag?.forgeTimes) {
-            let value = organ.tag.forgeTimes * 0.5
+            let value = organ.tag.forgeTimes * 2
             attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
         }
     },
@@ -316,6 +316,38 @@ const organActiveOnlyStrategies = {
             attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, value)
         }
         attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 0.3)
+    },
+    'kubejs:king_of_stomach': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let healthUp = 0
+        let attackUp = 0
+        let manaUp = 0
+        let onlySet = new Set()
+        posMap.forEach((value, key) => {
+            if (value) {
+                let foodPro = Item.of(value.id).getFoodProperties(player)
+                if (foodPro) {
+                    let nutrition = foodPro.getNutrition()
+                    let staturation = foodPro.getSaturationModifier() * nutrition
+                    if (!onlySet.has(organ.id)) {
+                        healthUp = healthUp + nutrition / 2
+                        attackUp = attackUp + staturation / 3
+                        onlySet.add(organ.id)
+                        if (foodPro.getEffects().length) {
+                            manaUp = manaUp + foodPro.getEffects().length * 20
+                        }
+                    }
+                    healthUp = healthUp + nutrition / 4
+                    attackUp = attackUp + staturation / 5
+                } else {
+                    healthUp = healthUp - 1
+                    attackUp = attackUp - 0.2
+                }
+            }
+        })
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, Math.floor(healthUp))
+        attributeMapValueAddition(attributeMap, global.ATTACK_UP, attackUp)
+        attributeMapValueAddition(attributeMap, global.MAX_MANA, Math.floor(manaUp))
     },
 }
 

@@ -101,7 +101,6 @@ const EggWares = [
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(6)], [Item.of('hexerei:crow_spawn_egg')], 4),
     new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('unusualprehistory:rex_spawn_egg')], 4),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('bettas:betta_fish_spawn_egg')], 16),
-    new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('modulargolems:metal_golem_template')], 4),
     new SimpleWares([Item.of('lightmanscurrency:coin_emerald').withCount(1)], [Item.of('alexsmobs:spawn_egg_jerboa')], 4),
 ]
 

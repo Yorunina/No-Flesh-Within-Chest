@@ -42,10 +42,10 @@ StartupEvents.registry('item', event => {
         .addScore('health', -3)
         .addScore('defense', -3)
         .addScore('breath_recovery', -3)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_beats.1" }), Text.yellow({ "translate": "kubejs.tooltips.infinity_beats.2" }), Text.gray({ "translate": "kubejs.tooltips.infinity_beats.3" }), Text.yellow(2), Text.gray({ "translate": "kubejs.tooltips.infinity_beats.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.yellow({ "translate": "kubejs.tooltips.infinity_beats.1" }), Text.gray({ "translate": "kubejs.tooltips.infinity_beats.2" }), Text.yellow(4), Text.gray({ "translate": "kubejs.tooltips.infinity_beats.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_beats.4" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_beats.5" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.infinity_beats.6" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.infinity_beats.7" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.infinity_beats.6" })])
         .build())
         .texture('kubejs:item/organs/infinity/infinity_beats')
         .tag('kubejs:infinity')
@@ -707,7 +707,6 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/aesegull_rib_right')
         .tag('kubejs:rib')
-        .tag('kubejs:food')
         .tag('kubejs:active')
         .tag('kubejs:relics');
 
@@ -876,6 +875,14 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:bear_only')
         .tag('kubejs:relics');
 
+    registerOrgan(new Organ('kubejs:void_worm_stomach')
+        .addScore('digestion', 2.5)
+        .addScore('nutrition', 1.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.void_worm_stomach.1" })])
+        .build())
+        .texture('kubejs:item/organs/relics/void_worm_stomach')
+        .tag('kubejs:stomach')
+        .tag('kubejs:relics');
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
@@ -1024,7 +1031,7 @@ StartupEvents.registry('item', event => {
 
     // 食物系列
     registerOrgan(new Organ('kubejs:hamimelon_organ')
-        .addScore('health', 0.5)
+        .addScore('health', 1)
         .addScore('endurance', 1.5)
         .addScore('luck', 1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.hamimelon_organ.1" })])
@@ -1037,7 +1044,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active');
 
     registerOrgan(new Organ('kubejs:watermelon_organ')
-        .addScore('health', 1)
+        .addScore('health', 1.25)
         .addScore('speed', 0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.watermelon_organ.1" })])
         .build())
@@ -1088,6 +1095,22 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/food/mini_vampire')
         .tag('kubejs:player_tick_only')
         .tag('itemborders:diamond')
+        .tag('kubejs:food');
+
+    registerOrgan(new Organ('kubejs:king_of_stomach')
+        .addScore('health', -0.5)
+        .addScore('speed', 1)
+        .addScore('fire_resistant', -1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.king_of_stomach.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.king_of_stomach.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.king_of_stomach.3" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.king_of_stomach.4" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.king_of_stomach.5" })])
+        .build())
+        .texture('kubejs:item/organs/food/king_of_stomach')
+        .tag('kubejs:active_only')
+        .tag('itemborders:diamond')
+        .tag('kubejs:stomache')
         .tag('kubejs:food');
 
     // alex

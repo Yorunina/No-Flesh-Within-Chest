@@ -3,8 +3,8 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.mixing('2x createaddition:electrum_ingot', [Fluid.lava(100), 'minecraft:gold_ingot', 'kubejs:silver_ingot']).heated()
 
-	event.recipes.create.filling('kubejs:hamimelon_organ', ['fruitsdelight:hamimelon', Fluid.of('kubejs:syrup').withAmount(3000)])
-	event.recipes.create.filling('kubejs:red_ink', ['kubejs:bad_ink', Fluid.of('hexerei:blood_fluid').withAmount(2000)])
+	event.recipes.create.filling('kubejs:hamimelon_organ', ['fruitsdelight:hamimelon', Fluid.of('kubejs:syrup').withAmount(1000)])
+	event.recipes.create.filling('kubejs:red_ink', ['kubejs:bad_ink', Fluid.of('hexerei:blood_fluid').withAmount(1000)])
 
 	event.recipes.create.deploying('kubejs:telescopic_tool_arm', ['kubejs:telescopic_arm', 'nameless_trinkets:light_gloves'])
 	event.recipes.create.deploying('kubejs:telescopic_arm', ['create:extendo_grip', 'biomancy:living_flesh'])
@@ -59,36 +59,31 @@ ServerEvents.recipes(event => {
 	})
 
 	event.recipes.create.mechanical_crafting('kubejs:tamagotchi', [
-		'  AAA  ',
-		' ASSSA ',
-		'ASWBWSA',
-		'ASDCDSA',
-		'ASWEWSA',
-		'ASSSSSA',
-		' AAAAA '
+
+		' SSS ',
+		'SWBWS',
+		'SDCDS',
+		'SWEWS',
+		'SSSSS'
 	], {
-		A: 'minecraft:pink_dye',
 		B: 'create:electron_tube',
 		C: 'biomancy:creator_mix',
 		D: 'create:precision_mechanism',
 		E: 'createaddition:connector',
-		S: 'create:iron_sheet',
+		S: 'minecraft:pink_dye',
 		W: 'createaddition:copper_wire',
 	})
 
 
 	event.recipes.create.mechanical_crafting('kubejs:enery_bottle_max', [
 		' AAA ',
-		'ABBBA',
-		'ACECA',
-		'ACDCA',
-		'ACECA',
-		'ABBBA',
+		'ABEBA',
+		'ABDBA',
+		'ABEBA',
 		'AAAAA'
 	], {
 		A: 'create:polished_rose_quartz',
 		B: 'createaddition:modular_accumulator',
-		C: 'create:brass_sheet',
 		D: 'nameless_trinkets:experience_battery',
 		E: 'minecraft:netherite_ingot',
 	})
@@ -118,7 +113,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', 'irons_spellbooks:arcane_essence']),
 		event.recipes.createDeploying('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', 'biomancy:living_flesh']),
 		event.recipes.createDeploying('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', '#forge:dyes/pink']),
-		event.recipes.create.filling('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', Fluid.of('kubejs:syrup').withAmount(1000)])
+		event.recipes.create.filling('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', Fluid.of('kubejs:syrup').withAmount(500)])
 	]).transitionalItem('kubejs:incomplete_heart_template').loops(5)
 
 	event.recipes.create.sequenced_assembly([
@@ -127,7 +122,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:redstone']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:repeater']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:redstone_torch']),
-	]).transitionalItem('kubejs:incomplete_revolution_relay').loops(10)
+	]).transitionalItem('kubejs:incomplete_revolution_relay').loops(5)
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:revolution_delay')
@@ -135,7 +130,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_revolution_delay', ['kubejs:incomplete_revolution_delay', 'minecraft:redstone']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_delay', 'minecraft:comparator']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_delay', 'minecraft:redstone_torch']),
-	]).transitionalItem('kubejs:incomplete_revolution_delay').loops(10)
+	]).transitionalItem('kubejs:incomplete_revolution_delay').loops(5)
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:candy_stomach')
@@ -144,7 +139,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_stomach_template', ['kubejs:incomplete_stomach_template', '#bookwyrms:scale']),
 		event.recipes.createDeploying('kubejs:incomplete_stomach_template', ['kubejs:incomplete_stomach_template', 'biomancy:living_flesh']),
 		event.recipes.createDeploying('kubejs:incomplete_stomach_template', ['kubejs:incomplete_stomach_template', '#forge:dyes/pink']),
-		event.recipes.create.filling('kubejs:incomplete_stomach_template', ['kubejs:incomplete_stomach_template', Fluid.of('kubejs:syrup').withAmount(1000)])
+		event.recipes.create.filling('kubejs:incomplete_stomach_template', ['kubejs:incomplete_stomach_template', Fluid.of('kubejs:syrup').withAmount(500)])
 	]).transitionalItem('kubejs:incomplete_stomach_template').loops(5)
 
 	event.recipes.create.sequenced_assembly([
@@ -154,7 +149,7 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_burning_heart', ['kubejs:incomplete_burning_heart', 'chestcavity:active_blaze_rod']),
 		event.recipes.createDeploying('kubejs:incomplete_burning_heart', ['kubejs:incomplete_burning_heart', 'alexsmobs:guster_eye']),
 		event.recipes.createDeploying('kubejs:incomplete_burning_heart', ['kubejs:incomplete_burning_heart', 'kubejs:fire_gem']),
-		event.recipes.create.filling('kubejs:incomplete_burning_heart', ['kubejs:incomplete_burning_heart', Fluid.of('minecraft:lava').withAmount(1000)])
+		event.recipes.create.filling('kubejs:incomplete_burning_heart', ['kubejs:incomplete_burning_heart', Fluid.of('minecraft:lava').withAmount(500)])
 	]).transitionalItem('kubejs:incomplete_burning_heart').loops(3)
 
 
@@ -165,18 +160,18 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_furnace_core', ['kubejs:incomplete_furnace_core', 'minecraft:iron_block']),
 		event.recipes.createDeploying('kubejs:incomplete_furnace_core', ['kubejs:incomplete_furnace_core', 'minecraft:blast_furnace']),
 		event.recipes.createDeploying('kubejs:incomplete_furnace_core', ['kubejs:incomplete_furnace_core', 'createaddition:connector']),
-		event.recipes.create.filling('kubejs:incomplete_furnace_core', ['kubejs:incomplete_furnace_core', Fluid.of('create:honey').withAmount(1000)])
+		event.recipes.create.filling('kubejs:incomplete_furnace_core', ['kubejs:incomplete_furnace_core', Fluid.of('create:honey').withAmount(500)])
 	]).transitionalItem('kubejs:incomplete_furnace_core').loops(3)
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:compressed_oxygen_implant').withChance(70.0),
 		Item.of('create:copper_sheet').withChance(30.0)
-	], Item.of('create:copper_backtank', { Air: 900 }).strongNBT(), [
-		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank', 'chestcavity:gas_bladder']),
-		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank', 'createaddition:electrum_sheet']),
-		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank', 'create:iron_sheet']),
-		event.recipes.createDeploying('create:copper_backtank', ['create:copper_backtank', 'createaddition:zinc_sheet'])
-	]).transitionalItem('create:copper_backtank').loops(3)
+	], Item.of('create:fluid_tank').strongNBT(), [
+		event.recipes.createDeploying('create:fluid_tank', ['create:fluid_tank', 'chestcavity:gas_bladder']),
+		event.recipes.createDeploying('create:fluid_tank', ['create:fluid_tank', 'createaddition:electrum_sheet']),
+		event.recipes.createDeploying('create:fluid_tank', ['create:fluid_tank', 'create:iron_sheet']),
+		event.recipes.createDeploying('create:fluid_tank', ['create:fluid_tank', 'createaddition:zinc_sheet'])
+	]).transitionalItem('create:fluid_tank').loops(3)
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:glass_wand').withChance(85.0),
@@ -243,8 +238,8 @@ ServerEvents.recipes(event => {
 	], 'create:steam_engine', [
 		event.recipes.createDeploying('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', 'art_of_forging:forged_steel_ingot']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', 'kubejs:relic_metal_plate']),
-		event.recipes.create.filling('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', Fluid.of('minecraft:water').withAmount(3000)]),
-		event.recipes.create.filling('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', Fluid.of('minecraft:lava').withAmount(1000)])
+		event.recipes.create.filling('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', Fluid.of('minecraft:water').withAmount(500)]),
+		event.recipes.create.filling('kubejs:incomplete_revolution_steam_engine', ['kubejs:incomplete_revolution_steam_engine', Fluid.of('minecraft:lava').withAmount(500)])
 	]).transitionalItem('kubejs:incomplete_revolution_steam_engine').loops(3)
 
 	event.recipes.create.sequenced_assembly([

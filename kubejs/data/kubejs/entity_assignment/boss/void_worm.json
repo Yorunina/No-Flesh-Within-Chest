@@ -1,0 +1,7 @@
+{
+  "chestcavity": "kubejs:types/boss/void_worm.json",
+  "entities": [
+    "alexsmobs:void_worm_part",
+    "alexsmobs:void_worm"
+  ]
+}
