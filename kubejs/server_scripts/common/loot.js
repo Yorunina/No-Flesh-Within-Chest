@@ -3,7 +3,7 @@ LootJS.modifiers(event => {
     function addBossLoot(entity) {
         return event.addEntityLootModifier(entity)
             .addAlternativesLoot(
-                LootEntry.of('nameless_trinkets:mysterious_trinket').when((c) => c.randomChance(0.8)),
+                LootEntry.of('kubejs:mysterious_trinket').when((c) => c.randomChance(0.8)),
             )
             .addAlternativesLoot(
                 LootEntry.of('simplehats:hatbag_common').when((c) => c.randomChance(0.3)),
@@ -15,8 +15,13 @@ LootJS.modifiers(event => {
                 LootEntry.of('simplehats:hatbag_festive').when((c) => c.randomChance(0.2)),
                 LootEntry.of('simplehats:hatbag_halloween').when((c) => c.randomChance(0.2)),
             )
+            .addAlternativesLoot(
+                LootEntry.of('lightmanscurrency:coin_gold').when((c) => c.randomChance(0.5)),
+                LootEntry.of('lightmanscurrency:coin_emerald').when((c) => c.randomChance(0.3)),
+                LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.1)),
+            )
     }
-
+    
     bossTypeList.forEach(entityId => {
         addBossLoot(entityId)
     })
@@ -30,7 +35,8 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('goety:apostle')
         .addLoot('kubejs:pandora_inactive');
     event.addEntityLootModifier('bosses_of_mass_destruction:void_blossom')
-        .addLoot('kubejs:secret_of_bloom');
+        .addLoot('kubejs:secret_of_bloom')
+        .addLoot('kubejs:flower_heart');
     event.addEntityLootModifier('minecraft:slime')
         .addLoot(LootEntry.of('kubejs:mini_slime').when(c => c.matchEquip('mainhand', 'minecraft:glass_bottle')));
 
@@ -51,23 +57,14 @@ LootJS.modifiers(event => {
             }
         })
 
-    event.addLootTypeModifier(LootType.ENTITY)
-        .removeLoot('@simplehats')
-        .apply(ctx => {
-            if (ctx.entity.isLiving() &&
-                (ctx.entity.hasEffect('kubejs:glare_of_god') ||
-                    ctx.entity.hasEffect('kubejs:gaze_of_god') ||
-                    ctx.entity.hasEffect('kubejs:glimpse_of_god'))) {
-                ctx.addLoot(Item.of('kubejs:god_consciousness', { mobType: ctx.entity.getType() }))
-            }
-        })
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['minecraft:ancient_city'], false)
         .addLoot(LootEntry.of('kubejs:unholy_grail').when((c) => c.randomChance(0.1)))
+        .addLoot(LootEntry.of('kubejs:artist_wand').when((c) => c.randomChance(0.1)))
 
     event.addLootTypeModifier(LootType.CHEST)
-        .anyStructure(['#minecraft:village', 'above_and_below:sky_castle'], false)
+        .anyStructure(['#minecraft:village'], false)
         .addLoot(LootEntry.of('biomancy:healing_additive').when((c) => c.randomChance(0.25)))
         .addLoot(LootEntry.of('biomancy:breeding_stimulant').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
@@ -77,29 +74,23 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('biomancy:ageing_serum').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of(Item.of('minecraft:potion', '{Potion:"minecraft:luck"}')).when((c) => c.randomChance(0.1)))
         .apply(ctx => {
-            if (Math.random() < 0.1) {
+            if (Math.random() < 0.12) {
                 ctx.addLoot(getRandomPotionWares())
             }
-            if (Math.random() < 0.02) {
+            if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomChallengeWares())
             }
-            if (Math.random() < 0.05) {
+            if (Math.random() < 0.02) {
                 ctx.addLoot(getRandomEggWares())
             }
-            if (Math.random() < 0.03) {
+            if (Math.random() < 0.08) {
                 ctx.addLoot(getRandomSpecialWares())
             }
             if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomOrganWares())
             }
-        })
-
-        .apply(ctx => {
             if (Math.random() < 0.1) {
-                ctx.addLoot(getRandomBrewerWares())
-            }
-            if (Math.random() < 0.02) {
-                ctx.addLoot(getRandomChallengeWares())
+                ctx.addLoot(getRandomOreWares())
             }
         })
 
@@ -115,4 +106,20 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('kubejs:ritual_catalyst').when((c) => c.randomChance(0.1)))
         .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.02)))
 
+    event.addLootTypeModifier(LootType.CHEST)
+        .anyStructure(['#kubejs:graveyard'], false)
+        .addLoot(LootEntry.of('kubejs:unholy_grail').when((c) => c.randomChance(0.01)))
+        .addLoot(LootEntry.of('kubejs:illithids').when((c) => c.randomChance(0.005)))
+        .addLoot(LootEntry.of('minecraft:diamond').when((c) => c.randomChance(0.1)))
+        .addLoot(LootEntry.of('kubejs:mysterious_trinket').when((c) => c.randomChance(0.05)))
+        .addLoot(LootEntry.of('lightmanscurrency:coin_gold').when((c) => c.randomChance(0.1)))
+        .addLoot(LootEntry.of('irons_spellbooks:ancient_knowledge_fragment').when((c) => c.randomChance(0.01)))
+        .addLoot(LootEntry.of('irons_spellbooks:arcane_essence').when((c) => c.randomChance(0.2)))
+        .addLoot(LootEntry.of('irons_spellbooks:arcane_salvage').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of('minecraft:netherite_scrap').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of('hexerei:selenite_shard').when((c) => c.randomChance(0.05)))
+        .addLoot(LootEntry.of('goety:empty_focus').when((c) => c.randomChance(0.05)))
+        .addLoot(LootEntry.of('goety:spent_totem').when((c) => c.randomChance(0.03)))
+        .addLoot(LootEntry.of('minecraft:iron_ingot').when((c) => c.randomChance(0.3)))
+        .addLoot(LootEntry.of('minecraft:gold_ingot').when((c) => c.randomChance(0.1)))
 })

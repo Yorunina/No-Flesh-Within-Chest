@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "5FE63B7285699239"
 	group: "4F4F4EA8CE67985B"
-	icon: "nameless_trinkets:mysterious_trinket"
+	icon: "kubejs:mysterious_trinket"
 	id: "5FE63B7285699239"
 	images: [{
 		click: ""
@@ -113,7 +113,7 @@
 				item: "nameless_trinkets:cracked_crown"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.75d
 			y: 3.75d
 		}
 		{
@@ -449,8 +449,8 @@
 				item: "nameless_trinkets:lucky_rock"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 3.75d
+			x: 3.25d
+			y: 1.25d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -465,7 +465,7 @@
 				item: "nameless_trinkets:gods_crown"
 				type: "item"
 			}]
-			x: 0.75d
+			x: -0.5d
 			y: 3.75d
 		}
 		{
@@ -530,22 +530,6 @@
 				type: "item"
 			}]
 			x: -0.5d
-			y: 1.25d
-		}
-		{
-			dependencies: ["6E502CA178ED4148"]
-			id: "13E717092B882CC3"
-			rewards: [{
-				id: "519199002BA26A40"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			tasks: [{
-				id: "3838C5F42EC083BF"
-				item: "nameless_trinkets:ethereal_wings"
-				type: "item"
-			}]
-			x: 3.25d
 			y: 1.25d
 		}
 		{
@@ -727,13 +711,13 @@
 		{
 			dependencies: ["3E9DD0B78886A183"]
 			description: ["任意Boss死亡时，都有大概率会掉落一个随机神秘饰品。"]
-			icon: "nameless_trinkets:mysterious_trinket"
+			icon: "kubejs:mysterious_trinket"
 			id: "6E502CA178ED4148"
 			shape: "rsquare"
 			subtitle: "饰品如器官，器官如饰品"
 			tasks: [{
 				id: "75ED69D2A7131EBB"
-				item: "nameless_trinkets:mysterious_trinket"
+				item: "kubejs:mysterious_trinket"
 				type: "item"
 			}]
 			title: "无名饰品"

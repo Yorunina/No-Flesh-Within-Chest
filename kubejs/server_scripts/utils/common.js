@@ -10,7 +10,7 @@ function getEntitiesWithinRadius(level, pos, radius) {
     let entityAABBList = level.getEntitiesWithin(area)
     let entityList = []
     entityAABBList.forEach(entity => {
-        if (entity.distanceToSqr(pos) <= radius) {
+        if (entity.position() && entity.position().distanceTo(pos) <= radius) {
             entityList.push(entity)
         }
     })

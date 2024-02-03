@@ -1,6 +1,8 @@
 {
   "size": "large",
   "color": "#00ADFC",
+  "leash_range": 48,
+  "allow_discarding": true,
   "waves": [
     {
       "entities": [
@@ -103,7 +105,7 @@
     {
       "type": "gateways:loot_table",
       "loot_table": "dimdungeons:chests/chestloot_4",
-      "rolls": 5,
+      "rolls": 10,
       "desc": "rewards.dimdungeons.loot_table.chest_4"
     }
   ],
