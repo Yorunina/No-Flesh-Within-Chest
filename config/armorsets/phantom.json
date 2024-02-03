@@ -20,17 +20,17 @@
   "fullSetBonuses": [
     {
       "type": "attribute",
-      "name": "critical_hit",
+      "name": "obscure_api:critical_hit",
       "modifierUUID": "13D905DD-074D-4A8D-863A-C1F10726C88C",
       "description": "+20% ±©»÷¸ÅÂÊ",
-      "value": 0.2,
+      "value": 0.2
     },
     {
       "type": "attribute",
       "name": "obscure_api:critical_damage",
       "modifierUUID": "619EECDC-08B9-436B-B0FD-7F7EEBD48B32",
       "description": "+50% ±©»÷ÉËº¦",
-      "value": 0.5,
+      "value": 0.5
     },
     {
       "type": "attribute",
