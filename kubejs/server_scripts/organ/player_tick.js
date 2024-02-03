@@ -1,3 +1,4 @@
+// priority: 10
 PlayerEvents.tick(event => {
     let player = event.player
 

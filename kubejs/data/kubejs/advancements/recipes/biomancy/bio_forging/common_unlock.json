@@ -1,0 +1,43 @@
+{
+    "parent": "minecraft:recipes/root",
+    "criteria": {
+        "has_flesh_bits": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "biomancy:flesh_bits"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "requirements": [
+        [
+            "has_flesh_bits"
+        ]
+    ],
+    "rewards": {
+        "recipes": [
+            "kubejs:bio_forging/heart_template",
+            "kubejs:bio_forging/lung_template",
+            "kubejs:bio_forging/muscle_template",
+            "kubejs:bio_forging/intestine_template",
+            "kubejs:bio_forging/rib_template",
+            "kubejs:bio_forging/spleen_template",
+            "kubejs:bio_forging/spine_template",
+            "kubejs:bio_forging/stomach_template",
+            "kubejs:bio_forging/kidney_template",
+            "kubejs:bio_forging/liver_template",
+            "kubejs:bio_forging/d8",
+            "kubejs:bio_forging/appendix_template",
+            "kubejs:bio_forging/telescopic_arm",
+            "kubejs:bio_forging/platelet_dispatcher",
+            "kubejs:bio_forging/holy_eyeball",
+            "kubejs:bio_forging/stomach_tumor",
+            "kubejs:bio_forging/lucky_appendix"
+        ]
+    }
+}

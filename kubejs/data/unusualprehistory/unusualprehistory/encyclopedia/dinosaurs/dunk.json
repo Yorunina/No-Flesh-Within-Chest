@@ -1,0 +1,31 @@
+{
+  "text": "dunk.txt",
+  "title": "  邓氏鱼",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:dunk",
+      "x": 90,
+      "y": 90,
+      "page" : 0,
+      "scale": 0.6,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:dunk",
+      "x": 350,
+      "y": 40,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.4,
+      "offset_x": 8,
+      "offset_y":5,
+      "hover_text": "邓氏鱼"
+    }
+  ]
+}

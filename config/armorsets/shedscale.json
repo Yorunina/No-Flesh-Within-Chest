@@ -1,0 +1,50 @@
+{
+  "armorSetName": "澜光",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "unusualprehistory:shedscale_helmet"
+  },
+  "chest": {
+    "itemKey": "unusualprehistory:shedscale_chestplate"
+  },
+  "legs": {
+    "itemKey": "unusualprehistory:shedscale_leggings"
+  },
+  "boots": {
+    "itemKey": "unusualprehistory:shedscale_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "使你成为水中最勇猛的战士"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:strength",
+      "value": 1.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "conditions": [
+        {
+          "type": "inWater"
+        }
+      ],
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    },
+    {
+      "type": "effect",
+      "name": "minecraft:resistance",
+      "value": 1.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "conditions": [
+        {
+          "type": "inWater"
+        }
+      ],
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

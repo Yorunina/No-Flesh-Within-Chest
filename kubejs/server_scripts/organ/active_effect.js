@@ -115,12 +115,12 @@ const organActiveStrategies = {
     'kubejs:revolution_cable': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player);
         if (typeMap.has('kubejs:revolution')) {
-            let value = typeMap.get('kubejs:revolution').length * 2
+            let value = typeMap.get('kubejs:revolution').length * 1
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
         }
     },
     'kubejs:magic_vision': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.1)
+        attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.2)
     },
     'kubejs:love_between_lava_and_ice': function (player, organ, attributeMap) {
         let itemMap = getPlayerChestCavityItemMap(player);
@@ -152,6 +152,7 @@ const organActiveStrategies = {
     },
     'kubejs:holy_eyeball': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.05)
+        attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.2)
     },
     'kubejs:hamimelon_organ': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
@@ -260,7 +261,7 @@ const organActiveStrategies = {
     'kubejs:bad_ink': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player);
         if (typeMap.has('kubejs:magic')) {
-            let value = typeMap.get('kubejs:magic').length * 20
+            let value = typeMap.get('kubejs:magic').length * 30
             attributeMapValueAddition(attributeMap, global.MAX_MANA, value)
         }
     },
@@ -305,7 +306,7 @@ const organActiveOnlyStrategies = {
     },
     'kubejs:infinity_force': function (player, organ, attributeMap) {
         if (organ.tag?.forgeTimes) {
-            let value = organ.tag.forgeTimes * 0.5
+            let value = organ.tag.forgeTimes * 2
             attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
         }
     },
@@ -316,6 +317,38 @@ const organActiveOnlyStrategies = {
             attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, value)
         }
         attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 0.3)
+    },
+    'kubejs:king_of_stomach': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let healthUp = 0
+        let attackUp = 0
+        let manaUp = 0
+        let onlySet = new Set()
+        posMap.forEach((value, key) => {
+            if (value) {
+                let foodPro = Item.of(value.id).getFoodProperties(player)
+                if (foodPro) {
+                    let nutrition = foodPro.getNutrition()
+                    let staturation = foodPro.getSaturationModifier() * nutrition
+                    if (!onlySet.has(organ.id)) {
+                        healthUp = healthUp + nutrition / 2
+                        attackUp = attackUp + staturation / 3
+                        onlySet.add(organ.id)
+                        if (foodPro.getEffects().length) {
+                            manaUp = manaUp + foodPro.getEffects().length * 20
+                        }
+                    }
+                    healthUp = healthUp + nutrition / 4
+                    attackUp = attackUp + staturation / 5
+                } else {
+                    healthUp = healthUp - 1
+                    attackUp = attackUp - 0.2
+                }
+            }
+        })
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, Math.floor(healthUp))
+        attributeMapValueAddition(attributeMap, global.ATTACK_UP, attackUp)
+        attributeMapValueAddition(attributeMap, global.MAX_MANA, Math.floor(manaUp))
     },
 }
 

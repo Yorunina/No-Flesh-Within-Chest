@@ -5,18 +5,30 @@
 	group: "2358ECA720E3F23E"
 	icon: "minecraft:book"
 	id: "11B9ECC94E30685D"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 6.32258064516129d
+		hover: [ ]
+		image: "kubejs:textures/task/brief_introduction.png"
+		rotation: 0.0d
+		width: 4.0d
+		x: 0.0d
+		y: -0.25d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			description: [
-				"No Flesh Within Chest (译名：胸无成物) 是一款围绕&5生物器官&r的&2主题&r整合包。通过和谐的融入冒险与科技内容，引导玩家体验了解&2胸腔mod&r的游戏内容，以及其延伸的魔改玩法。"
+				"No Flesh Within Chest (译名：胸无成物) 是一款围绕&c生物器官&r的&2主题&r整合包。通过和谐的融入冒险与科技内容，引导玩家体验了解&6胸腔mod&r的游戏内容，以及其延伸的魔改玩法。"
 				""
 				"整合包内通过大量&2新奇的游戏模式&r，引领玩家体验从未体验过的游戏历程；同时又通过和谐、合理的游戏内容设计，让玩家能够有充足的机会去了解绝大部分作者所设计的游戏内容。"
 				"{@pagebreak}"
 				"最后，本整合包也希望通过这种方式，向现行大量的整合包作者证明："
 				""
-				"即便不通过&5mod堆料&r的方式，仍旧能够塑造出人意料且趣味横生的游戏模式。"
+				"即便不通过&cmod堆料&r的方式，仍旧能够塑造出人意料且趣味横生的游戏模式。"
 			]
 			hide_dependent_lines: true
 			icon: "chestcavity:kidney"
@@ -55,7 +67,7 @@
 			}]
 			title: "胸腔"
 			x: 0.0d
-			y: -2.5d
+			y: -3.25d
 		}
 		{
 			dependencies: ["72D090FF4C44DAAD"]
@@ -74,7 +86,7 @@
 			}]
 			title: "巫术与魔法"
 			x: 2.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["72D090FF4C44DAAD"]
@@ -89,7 +101,7 @@
 			}]
 			title: "机械与蒸汽"
 			x: -2.5d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["72D090FF4C44DAAD"]
@@ -122,8 +134,8 @@
 				type: "checkmark"
 			}]
 			title: "任务形状"
-			x: -2.0d
-			y: 2.0d
+			x: -1.75d
+			y: 1.75d
 		}
 		{
 			dependencies: ["72D090FF4C44DAAD"]
@@ -146,7 +158,7 @@
 			}]
 			title: "独立难度选择"
 			x: 1.75d
-			y: 2.0d
+			y: 1.75d
 		}
 	]
 	title: "简介"

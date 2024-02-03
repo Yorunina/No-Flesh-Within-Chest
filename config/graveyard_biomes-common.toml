@@ -1,0 +1,90 @@
+
+#Welcome to The Graveyard Biomes Config!
+#
+#Configure the weight of the biomes by changing "theGraveyardBiomesWeight".
+#Configure which minecraft biomes can be replaced by The Graveyard biomes.
+#A full list of all the biomes can be found here https:minecraft.fandom.com/wiki/Biome#Biome_IDs.
+#Configure fog density and fog height.
+#
+["The Graveyard - Biome Config"]
+
+	["The Graveyard - Biome Config".the_graveyard_weight]
+		#Set weight of the Graveyard biomes
+		#Range: 0 ~ 100
+		weight = 1
+
+	["The Graveyard - Biome Config".ancient_dead_coral_reef]
+		#Allow the biome to spawn: 
+		generate = true
+		#Set minecraft biomes in which the Graveyard biome will spawn: 
+		replaceableBiomes = ["beach"]
+
+	["The Graveyard - Biome Config".haunted_forest]
+		#Allow the biome to spawn: 
+		generate = true
+		#Set minecraft biomes in which the Graveyard biome will spawn: 
+		replaceableBiomes = ["windswept_forest"]
+
+	["The Graveyard - Biome Config".haunted_lakes]
+		#Allow the biome to spawn: 
+		generate = true
+		#Set minecraft biomes in which the Graveyard biome will spawn: 
+		replaceableBiomes = ["swamp"]
+
+	["The Graveyard - Biome Config".eroded_haunted_forest]
+		#Allow the biome to spawn: 
+		generate = true
+		#Set minecraft biomes in which the Graveyard biome will spawn: 
+		replaceableBiomes = ["meadow"]
+
+	["The Graveyard - Biome Config".deep_dark_forest]
+		#Allow the biome to spawn: 
+		generate = true
+		#Set minecraft biomes in which the Graveyard biome will spawn: 
+		replaceableBiomes = ["dark_forest"]
+
+["The Graveyard - Biome Fog Config"]
+
+	["The Graveyard - Biome Fog Config".fog_haunted_forest]
+		#Enable fog in the biome: 
+		generate = true
+		#Set density of the fog (smaller values = denser): 
+		#Range: 0.0 ~ 32.0
+		density = 0.35
+		#Set Y value, where the fog starts: 
+		#Range: -64 ~ 256
+		minY = 63
+		#Set Y value, where the fog ends: 
+		#Range: -64 ~ 256
+		maxY = 148
+
+	["The Graveyard - Biome Fog Config".fog_haunted_lakes]
+		#Enable fog in the biome: 
+		generate = true
+		#Set density of the fog (smaller values = denser): 
+		#Range: 0.0 ~ 32.0
+		density = 0.3
+		#Set Y value, where the fog starts: 
+		#Range: -64 ~ 256
+		minY = 63
+		#Set Y value, where the fog ends: 
+		#Range: -64 ~ 256
+		maxY = 128
+
+	["The Graveyard - Biome Fog Config".fog_eroded_haunted_forest]
+		#Enable fog in the biome: 
+		generate = true
+		#Set density of the fog (smaller values = denser): 
+		#Range: 0.0 ~ 32.0
+		density = 0.35
+		#Set Y value, where the fog starts: 
+		#Range: -64 ~ 256
+		minY = 93
+		#Set Y value, where the fog ends: 
+		#Range: -64 ~ 256
+		maxY = 160
+
+["The Graveyard - Misc Config"]
+	#Soul Lanterns will spawn instead of candles in the Hauntes Lakes.
+	haunted_lakes_soul_lanterns = false
+

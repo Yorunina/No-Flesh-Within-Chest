@@ -1,0 +1,31 @@
+{
+  "text": "brachi.txt",
+  "title": "  腕龙",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:brachi",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 0.17,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:brachi",
+      "x": 230,
+      "y": 120,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.1,
+      "offset_x": 12,
+      "offset_y": 16,
+      "hover_text": "腕龙"
+    }
+  ]
+}

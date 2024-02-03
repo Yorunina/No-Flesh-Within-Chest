@@ -5,6 +5,56 @@
 	group: "4E02CBDD9D86D249"
 	icon: "minecraft:oak_sapling"
 	id: "6903E1989FA10D92"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 0.03125d
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 0.03125d
+			x: 6.75d
+			y: 3.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 1.0d
+			hover: [ ]
+			image: "minecraft:block/nether_portal"
+			rotation: 0.0d
+			width: 0.03125d
+			x: 6.25d
+			y: 3.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 27.460317460317462d
+			hover: [ ]
+			image: "kubejs:textures/task/chapter1_1.png"
+			rotation: 0.0d
+			width: 15.0d
+			x: 6.5d
+			y: 2.75d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -54,8 +104,8 @@
 				type: "item"
 			}]
 			title: "第一棵树"
-			x: 0.0d
-			y: 0.0d
+			x: 6.75d
+			y: 10.25d
 		}
 		{
 			dependencies: ["3FED9C9227FC9CD5"]
@@ -86,8 +136,8 @@
 				type: "item"
 			}]
 			title: "钱币"
-			x: 0.75d
-			y: 1.25d
+			x: 8.25d
+			y: 9.25d
 		}
 		{
 			dependencies: ["3FED9C9227FC9CD5"]
@@ -123,8 +173,8 @@
 				type: "item"
 			}]
 			title: "完美的开始"
-			x: 2.0d
-			y: 0.0d
+			x: 6.75d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0721AF9D7D5E4A7C"]
@@ -157,8 +207,8 @@
 				type: "item"
 			}]
 			title: "了解自我"
-			x: 4.0d
-			y: 0.0d
+			x: 6.75d
+			y: 5.25d
 		}
 		{
 			dependencies: ["6069FC5CA00481CE"]
@@ -190,8 +240,8 @@
 				type: "item"
 			}]
 			title: "矿石肺"
-			x: 6.25d
-			y: -2.75d
+			x: 3.75d
+			y: 3.25d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -202,15 +252,53 @@
 				""
 				"但并不是所有器官都会为你提供&2正面效果&r，某些器官——尤其是某些具有特殊效果的器官，往往会有着为负数的基本属性。"
 				""
-				"请注意！类如&2健康、神经效率、解毒效率&r等属性会影响到玩家是否能够正常存活！在摘除相关器官的时候请一定做好&4应急准备&r！防止陷入&4无限死亡&r的循环！"
+				"请注意！类如&2健康、神经效率、解毒效率&r等属性会影响到玩家是否能够正常存活！在摘除相关器官的时候请一定做好&c应急准备&r！防止陷入&c无限死亡&r的循环！"
+				""
+				"{@pagebreak}"
+				"但在添加器官的时候需要注意，不属于你的器官将会使你陷入&c器官排异&r的苦难之中。"
+				""
+				"消除器官排异的方法有很多种，其中使用&2治愈性原液&r是最为经济的方案之一。副手持治愈性原液，主手持不兼容的器官，即可使其消除器官所属，进而解决器官排异的问题。"
+				""
+				"或者，你可以在合成台里，通过器官和原液合成解除排异。(这往往用于一些可以食用的器官)"
 			]
 			icon: "chestcavity:heart"
 			id: "6069FC5CA00481CE"
-			rewards: [{
-				id: "02FFBC5A74481DDF"
-				item: "chestcavity:heart"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "02FFBC5A74481DDF"
+					item: "chestcavity:heart"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7CD3471551081AE6"
+					item: "biomancy:healing_additive"
+					type: "item"
+				}
+				{
+					id: "783C0CA0E2FDDBFB"
+					item: {
+						Count: 1b
+						id: "wares:delivery_agreement"
+						tag: {
+							buyerAddress: "{\"color\":\"#333333\",\"text\":\"\"}"
+							buyerName: "{\"color\":\"#7f8584\",\"text\":\"黑市酿造师\"}"
+							id: "potion"
+							message: "{\"color\":\"#333333\",\"text\":\"我这里. . .有无穷尽的治愈原液。\\n不过价格嘛. . .\"}"
+							paymentItems: [{
+								Count: 1
+								id: "biomancy:healing_additive"
+							}]
+							requestedItems: [{
+								Count: 8
+								id: "lightmanscurrency:coin_gold"
+							}]
+							title: "{\"color\":\"#922706\",\"text\":\"无限疗愈\"}"
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "尝试向自己的胸腔里添加新的器官"
 			tasks: [{
 				id: "020624CBE3D724FC"
@@ -219,7 +307,7 @@
 			}]
 			title: "重定义自己的内在"
 			x: 5.25d
-			y: -1.5d
+			y: 4.25d
 		}
 		{
 			dependencies: ["6069FC5CA00481CE"]
@@ -279,8 +367,8 @@
 				type: "checkmark"
 			}]
 			title: "属性的定义"
-			x: 7.25d
-			y: -1.5d
+			x: 3.75d
+			y: 4.25d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -309,8 +397,8 @@
 				type: "item"
 			}]
 			title: "足够多的铁"
-			x: 6.5d
-			y: 0.0d
+			x: 8.25d
+			y: 3.75d
 		}
 		{
 			dependencies: ["0721AF9D7D5E4A7C"]
@@ -369,8 +457,8 @@
 				weak_nbt_match: true
 			}]
 			title: "Tetra与工具"
-			x: 2.75d
-			y: 1.25d
+			x: 5.25d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -414,8 +502,8 @@
 				type: "dimension"
 			}]
 			title: "前往下界"
-			x: 8.5d
-			y: 0.0d
+			x: 8.25d
+			y: 2.25d
 		}
 		{
 			dependencies: ["51FA796A91E94C4D"]
@@ -463,7 +551,7 @@
 			]
 			title: "指南针"
 			x: 9.75d
-			y: 1.75d
+			y: 2.25d
 		}
 		{
 			dependencies: ["51FA796A91E94C4D"]
@@ -493,8 +581,8 @@
 				type: "item"
 			}]
 			title: "下界堡垒与烈焰人"
-			x: 10.5d
-			y: 0.0d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3FF06F6F309FAEC3"]
@@ -525,8 +613,8 @@
 				type: "item"
 			}]
 			title: "与末影人相遇"
-			x: 12.5d
-			y: 0.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2311CA3EEABF0250"]
@@ -549,8 +637,8 @@
 				type: "dimension"
 			}]
 			title: "前往末地"
-			x: 14.5d
-			y: 0.0d
+			x: 6.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["51FA796A91E94C4D"]
@@ -586,8 +674,8 @@
 				type: "item"
 			}]
 			title: "成为武器大师"
-			x: 9.75d
-			y: -1.5d
+			x: 6.75d
+			y: 2.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -629,8 +717,8 @@
 				type: "item"
 			}]
 			title: "机械动力？人工动力！"
-			x: 7.5d
-			y: 1.75d
+			x: 9.75d
+			y: 3.75d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -667,8 +755,8 @@
 				type: "checkmark"
 			}]
 			title: "寻找Alex生物"
-			x: 4.75d
-			y: 1.25d
+			x: 5.25d
+			y: 5.25d
 		}
 		{
 			dependencies: ["0721AF9D7D5E4A7C"]
@@ -692,7 +780,7 @@
 				}
 				{
 					id: "11CE9C63C34BD241"
-					item: "nameless_trinkets:mysterious_trinket"
+					item: "kubejs:mysterious_trinket"
 					type: "item"
 				}
 			]
@@ -703,8 +791,8 @@
 				type: "item"
 			}]
 			title: "将光源挂在腰上"
-			x: 3.0d
-			y: -1.5d
+			x: 3.75d
+			y: 8.0d
 		}
 		{
 			dependencies: ["2311CA3EEABF0250"]
@@ -727,8 +815,8 @@
 				type: "item"
 			}]
 			title: "特殊的眼睛"
-			x: 13.5d
-			y: -1.25d
+			x: 4.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0861DDE9767A3E9D"]
@@ -765,7 +853,7 @@
 				type: "item"
 			}]
 			title: "储物抽屉"
-			x: 8.75d
+			x: 11.25d
 			y: 3.75d
 		}
 		{
@@ -792,8 +880,8 @@
 				value: 1L
 			}]
 			title: "击败末影龙！"
-			x: 16.5d
-			y: 0.0d
+			x: 4.5d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1D8929E0CE7CE0AB"]
@@ -825,13 +913,13 @@
 				type: "item"
 			}]
 			title: "追寻鞘翅"
-			x: 15.5d
-			y: -1.25d
+			x: 7.75d
+			y: -6.0d
 		}
 		{
 			dependencies: ["5E8F821F42C92E8A"]
 			description: [
-				"随着你的基底规模逐渐扩大，箱子的数量也会急剧变多，此时，你急需一个类如AE、RS的Mod来&2统一管理你的存储容器&r。"
+				"随着你的基地规模逐渐扩大，箱子的数量也会急剧变多，此时，你急需一个类如AE、RS的Mod来&2统一管理你的存储容器&r。"
 				""
 				"这个时候，你便可以使用&2Tom的简易存储&r来解决问题。Tom的简易存储可以方便的整合周围的容器，并且提供一个统一的接口用于玩家互动。"
 				""
@@ -856,7 +944,7 @@
 				type: "item"
 			}]
 			title: "简易、存储、整合"
-			x: 11.0d
+			x: 12.75d
 			y: 3.75d
 		}
 		{
@@ -890,8 +978,8 @@
 				type: "item"
 			}]
 			title: "斗鱼能手"
-			x: 5.5d
-			y: 2.5d
+			x: 3.75d
+			y: 5.25d
 		}
 		{
 			dependencies: ["3FF06F6F309FAEC3"]
@@ -899,6 +987,8 @@
 				"通过解析化石，我们可以了解到更多关于&6古代生物&r的知识。开启它们胸腔，也许我们能够获得更有价值的物品！"
 				""
 				"同时，在古代，我们也可以了解到一种名为&6书龙&r的特殊生物，这对更有效的获取附魔有极大的帮助。"
+				""
+				"&7WIP&r"
 			]
 			icon: "unusualprehistory:amber_fossil"
 			id: "2100FE65C252D712"
@@ -922,8 +1012,8 @@
 				type: "item"
 			}]
 			title: "书龙、化石、考古"
-			x: 11.75d
-			y: 1.75d
+			x: 4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3FED9C9227FC9CD5"]
@@ -954,8 +1044,8 @@
 				type: "item"
 			}]
 			title: "和朋友一起远征"
-			x: 1.0d
-			y: -1.5d
+			x: 5.25d
+			y: 10.25d
 		}
 		{
 			dependencies: ["2DD73A2CCC0054D8"]
@@ -981,8 +1071,8 @@
 				type: "item"
 			}]
 			title: "查看资源槽"
-			x: 7.25d
-			y: -4.0d
+			x: 2.25d
+			y: 3.25d
 		}
 		{
 			dependencies: ["17F501A9B3D8B5BA"]
@@ -999,8 +1089,8 @@
 				item: "lightmanscurrency:atm"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 2.5d
+			x: 9.75d
+			y: 8.25d
 		}
 		{
 			dependencies: ["2311CA3EEABF0250"]
@@ -1018,8 +1108,8 @@
 				type: "checkmark"
 			}]
 			title: "灾变"
-			x: 13.75d
-			y: 1.75d
+			x: 7.75d
+			y: -4.0d
 		}
 		{
 			dependencies: ["22F081213B71190E"]
@@ -1037,8 +1127,8 @@
 				type: "item"
 			}]
 			title: "寻找灾变之源"
-			x: 15.5d
-			y: 1.75d
+			x: 9.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["5BC3743958DA4B16"]
@@ -1061,8 +1151,8 @@
 				item: "kubejs:blood_extractor"
 				type: "item"
 			}]
-			x: 8.25d
-			y: -2.75d
+			x: 2.25d
+			y: 4.25d
 		}
 		{
 			dependencies: ["538FC6DDC204DBFA"]
@@ -1079,8 +1169,8 @@
 				item: "dummmmmmy:target_dummy"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 2.5d
+			x: 3.75d
+			y: 7.0d
 		}
 		{
 			dependencies: ["639C1EDF7CAB7739"]
@@ -1089,7 +1179,7 @@
 				""
 				"答案也很简单——通过Wares的&6凭证买卖系统&r。"
 				""
-				"你可以在某些&2地牢箱子&r里找到Wares的交易凭证（往往出现在村庄箱子中），其中包含了各种类型的交易。你可以通过在村庄中防止交货台，填充纸盒后，手动或者等待对应职业的村民自动的进行交易。"
+				"你可以在某些&2地牢箱子&r里找到Wares的交易凭证（往往出现在村庄箱子中），其中包含了各种类型的交易。你可以通过在村庄中放置交货台，填充纸盒后，手动或者等待对应职业的村民自动的进行交易。"
 				""
 				"你可以通过本任务奖励的凭证，购买前期有大用处的&c归魂亡铃&r。这能够使你返回上一次死亡地点。"
 			]
@@ -1131,8 +1221,85 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 4.0d
+			x: 11.25d
+			y: 7.25d
+		}
+		{
+			dependencies: ["0721AF9D7D5E4A7C"]
+			description: [
+				"当你有了一些铁之后，就可以开始考虑步入&2各种Mod&r的殿堂了。"
+				""
+				"这些Mod往往会给你带来很多的便利，并且并不需要你付出过多的努力。"
+				""
+				"因此请多多尝试！"
+			]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "040207B33E2FEBFF"
+			rewards: [{
+				id: "29EB90ADA285930A"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			subtitle: "制作一些超出常理的东西！"
+			tasks: [{
+				consume_items: true
+				id: "377272B3F01FA298"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_iron"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "开启探索之旅！"
+			x: 8.25d
+			y: 7.0d
+		}
+		{
+			dependencies: ["040207B33E2FEBFF"]
+			description: [
+				"背包在实际的使用过程中有很多不方便的点，比如说物品不能自动进入，或者背包空间较小等问题。"
+				""
+				"针对这些问题，你可以制作&6背包升级&r。通过各种各样的背包升级，你可以在日常的冒险中取得极大的便利。"
+			]
+			id: "01C0D8797395FF20"
+			rewards: [{
+				id: "4ADBCC163849498A"
+				item: "sophisticatedbackpacks:advanced_pickup_upgrade"
+				type: "item"
+			}]
+			subtitle: "打造属于你的背包"
+			tasks: [{
+				id: "1949D25F1573300C"
+				item: "sophisticatedbackpacks:upgrade_base"
+				type: "item"
+			}]
+			title: "背包升级"
+			x: 9.75d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5067AA0335B2B396"]
+			description: [
+				"按下&6组队键(默认[)&r打开组队界面，邀请你的朋友进入你的队伍！"
+				""
+				"在同一队伍中将不会受到友军伤害，这对多人的旅行用处巨大！"
+			]
+			icon: {
+				Count: 1b
+				id: "kubejs:love_between_lava_and_ice"
+				tag: { }
+			}
+			id: "4B547FE8ACF6EF37"
+			subtitle: "组成团队一同出征！"
+			tasks: [{
+				id: "4657C57D8683ADA2"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "邀请你的朋友！"
+			x: 3.75d
+			y: 10.25d
 		}
 	]
 	title: "章节1：如常"

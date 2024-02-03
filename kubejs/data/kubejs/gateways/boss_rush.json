@@ -1,6 +1,8 @@
 {
   "size": "large",
   "color": "#FFA600",
+  "leash_range": 48,
+  "allow_discarding": true,
   "waves": [
     {
       "entities": [
@@ -257,54 +259,6 @@
     {
       "entities": [
         {
-          "entity": "cataclysm:netherite_monstrosity",
-          "count": 1
-        }
-      ],
-      "modifiers": [],
-      "rewards": [],
-      "max_wave_time": 1200,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "cataclysm:ender_guardian",
-          "count": 1
-        }
-      ],
-      "modifiers": [],
-      "rewards": [],
-      "max_wave_time": 1200,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "cataclysm:ignis",
-          "count": 1
-        }
-      ],
-      "modifiers": [],
-      "rewards": [],
-      "max_wave_time": 1200,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "cataclysm:the_harbinger",
-          "count": 1
-        }
-      ],
-      "modifiers": [],
-      "rewards": [],
-      "max_wave_time": 1200,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
           "entity": "meetyourfight:bellringer",
           "count": 1
         }
@@ -362,7 +316,7 @@
       "type": "gateways:loot_table",
       "loot_table": "dimdungeons:chests/chestloot_4",
       "rolls": 5,
-      "desc": "高级战利品"
+      "desc": "rewards.dimdungeons.loot_table.chest_4"
     }
   ],
   "failures": [
@@ -371,11 +325,6 @@
       "strength": 4,
       "fire": true,
       "block_damage": true
-    },
-    {
-      "type": "command",
-      "command": "/kill @p",
-      "desc": "即效性死亡"
     }
   ],
   "completion_xp": 20000,

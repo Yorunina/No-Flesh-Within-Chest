@@ -11,8 +11,9 @@ ItemEvents.tooltip((tooltip) => {
         addForTextLines(text, [[LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ceremonial_knife.1" })], [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ceremonial_knife.2" }), Text.gold('10'), Text.gray({ "translate": "kubejs.tooltips.ceremonial_knife.3" })]], 1);
     })
 
-    tooltip.addAdvanced('#kubejs:anti_rejection', (item, advanced, text) => {
-        text.add(Text.gray({ "translate": "kubejs.tooltips.anti_rejection.1" }));
+    tooltip.addAdvanced('biomancy:healing_additive', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.healing_additive.1" }));
+        text.add(Text.gray({ "translate": "kubejs.tooltips.healing_additive.2" }));
     })
 
     tooltip.addAdvanced('kubejs:eye_of_fortress', (item, advanced, text) => {
@@ -78,21 +79,7 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('kubejs:god_bless_full_necklace', (item, advanced, text) => {
         text.add(Text.gold({ "translate": "kubejs.tooltips.god_bless_full_necklace.1" }));
     })
-    tooltip.addAdvanced('kubejs:flora_wand_basic', (item, advanced, text) => {
-        if (tooltip.shift) {
-            text.add(Text.red({ "translate": "kubejs.tooltips.flora_wand_basic.2" }));
-        } else {
-            text.add(Text.green({ "translate": "kubejs.tooltips.flora_wand_basic.1" }));
-        }
-    })
-    tooltip.addAdvanced('kubejs:phantom_eyeball', (item, advanced, text) => {
-        text.add(Text.gold({ "translate": "kubejs.tooltips.phantom_eyeball.1" }));
-    })
-
-    tooltip.addAdvanced('kubejs:painting_brush', (item, advanced, text) => {
-        text.add(Text.gray({ "translate": "kubejs.tooltips.painting_brush.1" }));
-    })
-
+    
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1
         if (item.nbt?.organ?.id) {

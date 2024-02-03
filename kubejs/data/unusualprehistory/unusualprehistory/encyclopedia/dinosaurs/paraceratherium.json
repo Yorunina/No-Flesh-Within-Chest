@@ -1,0 +1,31 @@
+{
+  "text": "paraceratherium.txt",
+  "title": "  巨犀",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:paraceratherium",
+      "x": 85,
+      "y": 100,
+      "page" : 0,
+      "scale": 0.3,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:paraceratherium",
+      "x": 320,
+      "y": 160,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.18,
+      "offset_x": 9,
+      "offset_y": 13,
+      "hover_text": "巨犀"
+    }
+  ]
+}

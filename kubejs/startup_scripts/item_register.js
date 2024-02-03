@@ -11,11 +11,11 @@ StartupEvents.registry('item', event => {
             });
     })
 
-    event.create('candy').texture('kubejs:item/candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
-    event.create('ice_candy').texture('kubejs:item/ice_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
-    event.create('water_candy').texture('kubejs:item/water_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
-    event.create('fire_candy').texture('kubejs:item/fire_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
-    event.create('wind_candy').texture('kubejs:item/wind_candy').tag('kubejs:eatable_candy').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
+    event.create('candy').texture('kubejs:item/candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
+    event.create('ice_candy').texture('kubejs:item/ice_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
+    event.create('water_candy').texture('kubejs:item/water_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
+    event.create('fire_candy').texture('kubejs:item/fire_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
+    event.create('wind_candy').texture('kubejs:item/wind_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('starch_sausage').texture('kubejs:item/starch_sausage').food(food => { food.hunger(3).saturation(0.8).alwaysEdible() })
 
     event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => {
@@ -28,12 +28,12 @@ StartupEvents.registry('item', event => {
     }).tag('supplementaries:cookies').maxStackSize(64)
     event.create('cream').texture('kubejs:item/cream').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
 
-    event.create('mr_and_mrs_smith').texture('kubejs:item/mr_and_mrs_smith').tag('kubejs:eatable_candy').food(food => { food.hunger(4).saturation(1).alwaysEdible(); food.effect('minecraft:regeneration', 20 * 30, 1, 1) })
+    event.create('mr_and_mrs_smith').texture('kubejs:item/mr_and_mrs_smith').food(food => { food.hunger(4).saturation(1).alwaysEdible(); food.effect('minecraft:regeneration', 20 * 30, 1, 1) })
 
     event.create('scrap').texture('kubejs:item/scrap')
     event.create('fire_gem').texture('kubejs:item/fire_gem')
     event.create('silver_ingot').texture('kubejs:item/silver_ingot')
-
+    event.create('raw_silver').texture('kubejs:item/raw_silver')
 
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
     event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
@@ -45,7 +45,6 @@ StartupEvents.registry('item', event => {
     event.create('secret_of_rain').texture('kubejs:item/secret_of_rain').tag('kubejs:secret').maxStackSize(1)
     event.create('secret_of_heart').texture('kubejs:item/secret_of_heart').tag('kubejs:secret').maxStackSize(1)
     event.create('secret_of_bloom').texture('kubejs:item/secret_of_bloom').tag('kubejs:secret').maxStackSize(1)
-    event.create('kubejs:painting_brush').texture('kubejs:item/painting_brush').maxStackSize(1)
     event.create('lime_powder').texture('kubejs:item/lime_powder')
 
     event.create('ceremonial_knife').texture('kubejs:item/ceremonial_knife').maxStackSize(1)
@@ -103,8 +102,6 @@ StartupEvents.registry('item', event => {
         .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellWeaponBoost', 3, 'addition')
         .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', -0.5, 'addition')
         .rarity('epic')
-
-    event.create('flora_wand_basic').texture('kubejs:item/flora_wand').maxStackSize(1)
 
     event.create('holy_wooden_wand').texture('kubejs:item/holy_wooden_wand')
         .maxStackSize(1)
@@ -204,10 +201,11 @@ StartupEvents.registry('item', event => {
 
 
     // 随机基本器官
-    event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').tag('kubejs:organ').tag('itemborders:iron')
+    event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').maxStackSize(1).tag('kubejs:organ').tag('itemborders:iron')
 
-    event.create('kubejs:phantom_eyeball').texture('kubejs:item/phantom_eyeball').maxStackSize(1)
-
+    event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
+    event.create('kubejs:mysterious_trinket').texture('kubejs:item/mysterious_trinket').maxStackSize(64)
+    
     event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
         .useAnimation('bow')
         .use((level, player, hand) => {

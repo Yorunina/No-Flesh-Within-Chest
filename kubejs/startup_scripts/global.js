@@ -29,6 +29,7 @@ global.REGENERATION = { key: 'obscure_api:regeneration', name: 'kubejsRegenerati
 global.PENETRATION = { key: 'obscure_api:penetration', name: 'kubejsPenetration', operation: 'addition' }
 global.SUMMON_DAMAGE = { key: 'irons_spellbooks:summon_damage', name: 'kubejsSummonDamage', operation: 'addition' }
 global.BLOOD_SPELL_DAMAGE = { key: 'irons_spellbooks:blood_spell_power', name: 'kubejsBloodSpellDamage', operation: 'addition' }
+global.HOLY_SPELL_DAMAGE = { key: 'irons_spellbooks:holy_spell_power', name: 'kubejsHolySpellDamage', operation: 'addition' }
 
 global.ATTRIBUTE_MAP = {
     'kubejsAttackDamage': global.ATTACK_UP,
@@ -48,12 +49,14 @@ global.ATTRIBUTE_MAP = {
     'kubejsAttackRange': global.ATTACK_RANGE,
     'kubejsReachRange': global.REACH_DISTANCE,
     'kubejsCriticalHit': global.CRITICAL_HIT,
+    'kubejsCriticalDamage': global.CRITICAL_DAMAGE,
     'kubejsParry': global.PARRY,
     'kubejsDodge': global.DODGE,
     'kubejsRegeneration': global.REGENERATION,
     'kubejsPenetration': global.PENETRATION,
     'kubejsSummonDamage': global.SUMMON_DAMAGE,
     'kubejsBloodSpellDamage': global.BLOOD_SPELL_DAMAGE,
+    'kubejsHolySpellDamage': global.HOLY_SPELL_DAMAGE,
 }
 
 global.TYPE_MAP = {

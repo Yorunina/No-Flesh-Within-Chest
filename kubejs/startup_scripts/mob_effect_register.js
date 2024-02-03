@@ -1,3 +1,15 @@
+/**
+ * @param {Internal.LivingEntity} entity 
+ */
+function godPardonEffectIncr(entity) {
+    let effectType = randomGet(['kubejs:pardon_of_god_magic', 'kubejs:pardon_of_god_melee', 'kubejs:pardon_of_god_projectile'])
+    let amplifier = 0
+    if (entity.hasEffect(effectType)) {
+        amplifier = entity.getEffect(effectType).getAmplifier() + 1
+    }
+    entity.potionEffects.add(effectType, 1200 * 20, amplifier)
+}
+
 StartupEvents.registry('mob_effect', event => {
     event.create('burning_heart')
         .beneficial()
@@ -35,21 +47,61 @@ StartupEvents.registry('mob_effect', event => {
     event.create('glimpse_of_god')
         .beneficial()
         .effectTick((entity, lvl) => {
-            global.glimpseOfGodEffectTick(entity, lvl)
+            if (!entity || entity.level.isClientSide()) return
+            if (entity.age % 20 == 0) {
+                entity.heal(entity.getMaxHealth() * 0.01)
+                if (entity.health < entity.maxHealth * 0.67) {
+                    entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
+                        if (player.isPlayer()) {
+                            player.tell(Text.gray('它的身体似乎发生了什么变化. . .'))
+                        }
+                    })
+                    entity.removeEffect('kubejs:glimpse_of_god')
+                    entity.potionEffects.add('kubejs:gaze_of_god', 3600 * 20, 0)
+                    godPardonEffectIncr(entity)
+                }
+            }
         })
         .color(Color.WHITE)
 
     event.create('gaze_of_god')
         .beneficial()
         .effectTick((entity, lvl) => {
-            global.gazeOfGodEffectTick(entity, lvl)
+            if (!entity || entity.level.isClientSide()) return
+            if (entity.age % 20 == 0) {
+                entity.heal(entity.getMaxHealth() * 0.01)
+                if (entity.health < entity.maxHealth * 0.33) {
+                    entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
+                        if (player.isPlayer()) {
+                            player.tell(Text.gray('它的身体似乎发生了什么变化. . .'))
+                        }
+                    })
+                    entity.removeEffect('kubejs:gaze_of_god')
+                    entity.potionEffects.add('kubejs:glare_of_god', 180 * 20, 0)
+                    godPardonEffectIncr(entity)
+                }
+            }
         })
         .color(Color.YELLOW)
 
     event.create('glare_of_god')
         .beneficial()
         .effectTick((entity, lvl) => {
-            global.glareOfGodEffectTick(entity, lvl)
+            if (!entity || entity.level.isClientSide()) return
+            if (entity.age % 20 == 0) {
+                entity.heal(entity.getMaxHealth() * 0.01)
+                if (entity.getEffect('kubejs:glare_of_god').getDuration() < 41) {
+                    entity.level.getEntitiesWithin(AABB.of(entity.x - 10, entity.y - 10, entity.z - 10, entity.x + 10, entity.y + 10, entity.z + 10)).forEach(player => {
+                        if (player.isPlayer()) {
+                            player.tell(Text.gray('它的身体似乎发生了什么变化. . .'))
+                        }
+                    })
+                    entity.removeEffect('kubejs:glare_of_god')
+                    entity.potionEffects.add('kubejs:glimpse_of_god', 3600 * 20, 0)
+                    entity.setHealth(entity.getMaxHealth())
+                    godPardonEffectIncr(entity)
+                }
+            }
         })
         .color(Color.GOLD)
 
@@ -69,16 +121,12 @@ StartupEvents.registry('mob_effect', event => {
     event.create('hungry_tamagotchi')
         .beneficial()
         .color(Color.PINK_DYE)
+
     event.create('power_of_citadel')
         .beneficial()
-        .effectTick((entity, lvl) => {
-            global.powerOfCitadelEffectTick(entity, lvl)
-        })
         .color(Color.DARK_RED)
 
     event.create('arrow_damage_boost')
         .beneficial()
         .color(Color.RED)
 })
-
-

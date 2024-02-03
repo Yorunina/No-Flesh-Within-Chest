@@ -44,9 +44,8 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:infinity_beats': function (event, organ, data) {
         let player = event.source.player;
         let attriMap = getPlayerAttributeMap(player);
-        if (!player.hasItemInSlot('mainhand') && !player.hasItemInSlot('offhand') &&
-            !player.hasItemInSlot('chest')) {
-            let value = 2;
+        if (!player.hasItemInSlot('mainhand') && !player.hasItemInSlot('offhand')) {
+            let value = 4;
             if (attriMap.has(global.TEMP_ATTACK_UP.name)) {
                 value = value + attriMap.get(global.TEMP_ATTACK_UP.name)
             }
@@ -91,7 +90,7 @@ const organPlayerDamageOnlyStrategies = {
         if (event.source.type != 'player') {
             return
         }
-        if (Math.random() < 0.015 * Math.max(player.getLuck(), 0.15)) {
+        if (Math.random() < Math.min(0.015 * player.getLuck(), 0.15)) {
             event.entity.potionEffects.add('tetra:stun', 20 * 2, 0)
         }
     },
@@ -167,7 +166,7 @@ const organPlayerDamageOnlyStrategies = {
             updateResourceCount(player, count - damageBonus)
         }
     },
-    'kubejs:blooded_chip': function (event, organ, data) {
+    'kubejs:ancient_chip': function (event, organ, data) {
         if (event.source.type != 'arrow') return
         let entityHeight = event.entity.bbHeight
         let arrowHeight = event.source.immediate.y - event.entity.y
@@ -195,9 +194,9 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:netherite_muscle': function (event, organ, data) {
         let entity = event.entity
         let entityList = getEntitiesWithinRadius(entity.getLevel(), entity.position(), 3)
-        entityList.forEach(entity => {
-            if (entity.isAlive()) {
-                entity.attack(event.amount)
+        entityList.forEach(e => {
+            if (e.isLiving() && !e.isPlayer() && e.uuid != entity.uuid) {
+                e.attack(event.amount)
             }
         })
     },

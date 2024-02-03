@@ -37,13 +37,13 @@ const organFoodEatenStrategies = {
  */
 const organFoodEatenOnlyStrategies = {
     'kubejs:candy_stomach': function (event, organ) {
-        if (!event.item.hasTag('kubejs:eatable_candy')) {
+        if (!event.item.hasTag('extradelight:candy_bowl_valid')) {
             return
         }
         event.player.addItemCooldown(event.item, 20 * 300)
         if (!event.player.hasEffect('kubejs:sweet_dream')) {
             event.player.potionEffects.add('kubejs:sweet_dream',
-                event.item.getFoodProperties(event.player).getNutrition() * 30 * 20, 0)
+                event.item.getFoodProperties(event.player).getNutrition() * 15 * 20, 0)
         }
     },
     'kubejs:cream_cookie_heart': function (event, organ) {
@@ -65,6 +65,7 @@ const organFoodEatenOnlyStrategies = {
             player.heal(player.maxHealth)
             player.potionEffects.add('farmersdelight:nourishment', 90 * 20, 0)
             player.potionEffects.add('weaponmaster:elixr', 15 * 20, 0)
+            player.potionEffects.add('minecraft:resistance', 90 * 20, 1)
             player.tell(Text.gray({ "translate": "kubejs.msg.tamagotchi.2" }))
             if (Math.random() < 0.2) {
                 updateWarpCount(player, player.persistentData.getInt(warpCount) - 1)

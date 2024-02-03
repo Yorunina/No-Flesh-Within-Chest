@@ -1,0 +1,42 @@
+{
+  "text": "horsetail.txt",
+  "title": "  木贼",
+  "page_to_go": "unusualprehistory:plants",
+  "plant_button":[
+    {
+      "plant": "unusualprehistory:horsetail",
+      "x": 290,
+      "y": 80,
+      "page" : 0,
+      "scale": 1.2,
+      "plant_scale": 1.1,
+      "offset_x": -4,
+      "offset_y": -6,
+      "hover_text": "木贼"
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:horsetail",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 1.5,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    },
+    {
+      "entity": "unusualprehistory:tall_horsetail",
+      "x": 130,
+      "y": 100,
+      "page" : 0,
+      "scale": 1.5,
+      "rot_x": 70,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ]
+}

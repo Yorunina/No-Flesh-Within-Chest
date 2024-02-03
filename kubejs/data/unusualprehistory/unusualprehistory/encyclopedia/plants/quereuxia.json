@@ -1,0 +1,31 @@
+{
+  "text": "quereuxia.txt",
+  "title": "  葛赫叶",
+  "page_to_go": "unusualprehistory:plants",
+  "plant_button":[
+    {
+      "plant": "unusualprehistory:quereuxia",
+      "x": 290,
+      "y": 80,
+      "page" : 0,
+      "scale": 1.2,
+      "plant_scale": 0.1,
+      "offset_x": -4,
+      "offset_y": -6,
+      "hover_text": "葛赫叶"
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:quereuxia",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 2,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ]
+}

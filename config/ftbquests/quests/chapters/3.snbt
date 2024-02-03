@@ -5,6 +5,18 @@
 	group: "4E02CBDD9D86D249"
 	icon: "witherstormmod:withered_bone"
 	id: "37DC06F829B60ADC"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 19.565217391304348d
+		hover: [ ]
+		image: "kubejs:textures/task/chapter3.png"
+		rotation: 0.0d
+		width: 15.0d
+		x: 3.5d
+		y: 1.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -36,8 +48,8 @@
 				item: "kubejs:secret_of_rain"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.5d
+			x: -1.75d
+			y: -3.0d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -101,7 +113,6 @@
 					type: "item"
 				}
 			]
-			secret: true
 			shape: "hexagon"
 			subtitle: "在这个世界上，似乎存在有难以知晓的秘密"
 			tasks: [
@@ -128,8 +139,8 @@
 				}
 			]
 			title: "三大世界改变魔法"
-			x: 0.0d
-			y: 0.0d
+			x: 1.75d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -159,8 +170,8 @@
 				item: "kubejs:secret_of_bloom"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -1.75d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -190,8 +201,8 @@
 				item: "kubejs:secret_of_heart"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 1.5d
+			x: -1.75d
+			y: -1.75d
 		}
 		{
 			dependencies: ["2F700F7D0269B839"]
@@ -223,8 +234,8 @@
 				title: "曲水丰润图:第一阶段"
 				type: "gamestage"
 			}]
-			x: 2.0d
-			y: -1.5d
+			x: 8.5d
+			y: -1.75d
 		}
 		{
 			dependencies: ["6910E549F8D4A9A0"]
@@ -256,8 +267,8 @@
 				title: "曲水丰润图:第二阶段"
 				type: "gamestage"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: 8.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["65427C12F230F5DC"]
@@ -294,21 +305,23 @@
 				title: "曲水丰润图:第三阶段"
 				type: "gamestage"
 			}]
-			x: 2.0d
-			y: 1.5d
+			x: 8.5d
+			y: 0.75d
 		}
 		{
 			dependencies: ["2E03433F8ED6CA99"]
 			description: [
-				"&o&6Flos solum sub pluvia efflorescit&r&r"
+				"{ \"text\": \"Flos solum sub pluvia efflorescit\", \"color\": \"gold\", \"underlined\":\"true\", \"clickEvent\": { \"action\" : \"copy_to_clipboard\", \"value\" : \"Flos solum sub pluvia efflorescit\"} }\""
 				""
-				"请注意，该维度&4难度极高&r，前往前可以根据情况开启死亡不掉落或者卸下部分贵重装备。"
+				"请注意，该维度&4难度较高&r，前往前可以根据情况开启死亡不掉落或者卸下部分贵重装备。"
 				""
 				"在预期中首次前往该维度的死亡几乎是&4必定&r的结局。"
 				""
 				"如果需要返回主世界，则需要咏唱该魔咒的下半句。"
 				""
-				"&o&6Dies clarus corruent etiam petala&r&r"
+				"{ \"text\": \"Dies clarus corruent etiam petala\", \"color\": \"gold\", \"underlined\":\"true\", \"clickEvent\": { \"action\" : \"copy_to_clipboard\", \"value\" : \"Dies clarus corruent etiam petala\"} }\""
+				""
+				"&7文本可通过点击复制&r"
 			]
 			hide_dependency_lines: true
 			icon: "alexsmobs:acacia_blossom"
@@ -332,8 +345,8 @@
 				title: "访问记忆中的世界"
 				type: "dimension"
 			}]
-			x: 4.5d
-			y: 0.0d
+			x: 5.75d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -351,8 +364,8 @@
 				type: "item"
 			}]
 			title: "更多秘密. . ."
-			x: -2.0d
-			y: 3.0d
+			x: -1.75d
+			y: 2.0d
 		}
 		{
 			dependencies: ["789A88270498ED92"]
@@ -388,8 +401,8 @@
 				type: "checkmark"
 			}]
 			title: "发现隐秘遗迹"
-			x: 7.5d
-			y: 0.0d
+			x: 3.75d
+			y: -0.5d
 		}
 		{
 			dependencies: ["22A8C953424C8FD9"]
@@ -420,8 +433,8 @@
 				type: "item"
 			}]
 			title: "回忆诅咒:脆弱恶咒"
-			x: 9.75d
-			y: 0.0d
+			x: 5.75d
+			y: -0.5d
 		}
 		{
 			dependencies: ["22A8C953424C8FD9"]
@@ -453,8 +466,8 @@
 				type: "item"
 			}]
 			title: "回忆诅咒:血源恶咒"
-			x: 9.75d
-			y: -1.5d
+			x: 1.75d
+			y: -0.5d
 		}
 		{
 			dependencies: ["22A8C953424C8FD9"]
@@ -483,17 +496,15 @@
 				type: "item"
 			}]
 			title: "回忆诅咒:疲倦恶咒"
-			x: 9.75d
-			y: 1.5d
+			x: 3.75d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
 			description: [
-				"如果你对你的实力有足够的自信，则可以尝试挑战由29个Boss组成的Boss Rush。"
+				"如果你对你的实力有足够的自信，则可以尝试挑战由几十个Boss组成的Boss Rush。"
 				""
 				"相比于直接召唤出来的Boss，Boss Rush的Boss血量较低，但击杀时间被限制在了2分钟内。"
-				""
-				"如果挑战失败，你将会迎来&c死亡&r。"
 			]
 			id: "755E4A472C9A7A0A"
 			subtitle: "艰苦卓绝"
@@ -506,11 +517,13 @@
 						gateway: "kubejs:boss_rush"
 					}
 				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "挑战Boss Rush！"
-			x: -2.0d
-			y: 4.5d
+			x: -1.75d
+			y: 0.75d
 		}
 	]
 	title: "章节3：秘密"

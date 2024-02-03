@@ -1,0 +1,32 @@
+{
+  "title": "  肿头龙",
+  "text": "pachy.txt",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:pachy",
+      "x": 290,
+      "y": 120,
+      "page" : 1,
+      "scale": 1.2,
+      "entity_scale": 0.6,
+      "offset_x": 7,
+      "offset_y": 4,
+      "hover_text": "肿头龙"
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:pachy",
+      "x": 90,
+      "y": 100,
+      "page" : 0,
+      "scale": 1,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+
+  ]
+}

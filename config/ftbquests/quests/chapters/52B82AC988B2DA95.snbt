@@ -5,14 +5,24 @@
 	group: "0241B51B931E1ED2"
 	icon: "weaponmaster:workstation"
 	id: "52B82AC988B2DA95"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 15.0d
+		hover: [ ]
+		image: "kubejs:textures/task/weapon_master_background.png"
+		rotation: 0.0d
+		width: 15.0d
+		x: 1.0d
+		y: 3.5d
+	}]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["4C370F7BB4E56798"]
 			description: [
-				"欢迎来到武器大师系列教程！如果该任务无法正常提交，大概率是因为你已经选择了&4快捷模式&r。选择快捷模式后，本任务并不会隐藏。"
-				""
 				"相对于其他装备Mod，武器大师能够提供&5长久的成长&r，给予玩家养成的成就感。"
 				""
 				"除此之外，武器大师拥有着其他装备Mod难以企及的贴图以及装备的高自定义。任何游玩过武器大师武器的玩家都会对该Mod内的物品印象深刻。"
@@ -37,8 +47,8 @@
 				type: "checkmark"
 			}]
 			title: "引言：何为武器大师"
-			x: 0.0d
-			y: 0.0d
+			x: 1.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["1C3CABF6FA4DBB44"]
@@ -64,8 +74,8 @@
 				type: "item"
 			}]
 			title: "选择你的武器！"
-			x: 0.0d
-			y: 1.25d
+			x: 2.75d
+			y: 3.25d
 		}
 		{
 			dependencies: ["4B92B6F9C9EDC46E"]
@@ -98,8 +108,8 @@
 				type: "checkmark"
 			}]
 			title: "擦拭你的武器"
-			x: 0.0d
-			y: 2.75d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2C8054AE6C57197F"]
@@ -135,8 +145,8 @@
 				type: "checkmark"
 			}]
 			title: "武器升级"
-			x: 0.0d
-			y: 4.25d
+			x: -0.75d
+			y: 3.25d
 		}
 		{
 			dependencies: ["09F28AC07C32FAB3"]
@@ -161,36 +171,8 @@
 				type: "checkmark"
 			}]
 			title: "武器大师！"
-			x: 0.0d
-			y: 5.75d
-		}
-		{
-			dependencies: ["2C8054AE6C57197F"]
-			description: [
-				"武器大师的部分武器具有范围伤害，因此在使用时经常会误伤队友。"
-				""
-				"你可以通过制作朋友标签，右键你想视为友军的单位，这样武器就不会对他们造成伤害。"
-			]
-			id: "1559C4568476B95C"
-			rewards: [{
-				count: 2
-				id: "28DA0E75454D98D6"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "保护我的朋友！"
-			tasks: [{
-				id: "0864DE0FDB2EB2E0"
-				item: "weaponmaster:taglockkit"
-				type: "item"
-			}]
-			title: "朋友标识"
-			x: -1.75d
-			y: 3.75d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["4B92B6F9C9EDC46E"]
@@ -269,8 +251,8 @@
 				type: "item"
 			}]
 			title: "宽剑"
-			x: 2.25d
-			y: 1.25d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4B92B6F9C9EDC46E"]
@@ -349,8 +331,8 @@
 				type: "item"
 			}]
 			title: "刺剑"
-			x: 2.25d
-			y: 2.75d
+			x: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["4B92B6F9C9EDC46E"]
@@ -431,8 +413,8 @@
 				type: "item"
 			}]
 			title: "镰刀"
-			x: 2.25d
-			y: 4.25d
+			x: 5.25d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4B92B6F9C9EDC46E"]
@@ -511,8 +493,8 @@
 				type: "item"
 			}]
 			title: "戟（长柄武器）"
-			x: 2.25d
-			y: 5.75d
+			x: 1.25d
+			y: 7.25d
 		}
 	]
 	title: "武器大师：陪伴一生的伙伴"

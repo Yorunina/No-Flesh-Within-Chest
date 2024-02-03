@@ -1,0 +1,113 @@
+{
+    "size": "large",
+    "color": "#9400D3",
+    "leash_range": 64,
+    "allow_discarding": true,
+    
+    "waves": [
+      {
+        "entities": [
+            {
+                "entity": "minecraft:giant"
+            }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 4.0   
+            },
+            {
+                "attribute": "irons_spellbooks:spell_resist",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 0.9
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 600,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "minecraft:giant"
+            }
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 4.0   
+            },
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 30
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 600,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "minecraft:giant",
+                "nbt": "{ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 4,Duration: 72000,ShowParticles: 0b}]}"
+            }
+
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 1.0   
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 600,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "minecraft:giant",
+                "nbt": "{ActiveEffects:[{\"forge:id\":\"minecraft:resistance\",Amplifier: 3,Duration: 72000,ShowParticles: 0b}]}"
+            }
+
+
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 2.0   
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 600,
+        "setup_time": 200
+      }
+    ],
+    "rewards": [
+        {
+            "type": "command",
+            "command": "/curios add trinkets @p 1",
+            "desc": "增加一个饰品栏位"
+        }
+    ],
+    "failures": [
+      {
+        "type": "gateways:explosion",
+        "strength": 4,
+        "fire": true,
+        "block_damage": true
+      }
+    ],
+    "completion_xp": 1000,
+    "spawn_range": 5
+  }
+  

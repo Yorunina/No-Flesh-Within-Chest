@@ -1,0 +1,31 @@
+{
+  "text": "kentro.txt",
+  "title": "  肯式龙",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:kentrosaurus",
+      "x": 90,
+      "y": 105,
+      "page" : 0,
+      "scale": 0.7,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:kentrosaurus",
+      "x": 290,
+      "y": 160,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 0.35,
+      "offset_x": 10,
+      "offset_y": 9,
+      "hover_text": "肯式龙"
+    }
+  ]
+}

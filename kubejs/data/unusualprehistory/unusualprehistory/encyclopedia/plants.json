@@ -1,0 +1,23 @@
+{
+  "title": "  史前植物",
+  "text": "root_plant.txt",
+  "pictures": [
+    {
+      "page": 0,
+      "picture_location": "unusualprehistory:textures/block/horsetail.png",
+      "x": 70,
+      "y": 28,
+      "xSize": 44,
+      "ySize": 44
+    }
+  ],
+  "plant_index": [
+    {
+      "page": 0,
+      "xLocation": 210,
+      "yLocation": 0,
+      "columns": 5,
+      "rows": 5
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "text": "nelumbites.txt",
+  "title": "  似莲",
+  "page_to_go": "unusualprehistory:plants",
+  "plant_button":[
+    {
+      "plant": "unusualprehistory:nelumbites",
+      "x": 290,
+      "y": 80,
+      "page" : 0,
+      "scale": 1.2,
+      "plant_scale": 1.1,
+      "offset_x": -5,
+      "offset_y": -8,
+      "hover_text": "似莲"
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:nelumbites",
+      "x": 90,
+      "y": 80,
+      "page" : 0,
+      "scale": 1.5,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ]
+}

@@ -37,6 +37,20 @@
         },
         {
           "type": "item",
+          "name": "lightmanscurrency:coin_gold",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 16
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
           "name": "minecraft:diamond",
           "weight": 3,
           "functions": [
@@ -79,7 +93,7 @@
         },
         {
           "type": "item",
-          "name": "nameless_trinkets:mysterious_trinket",
+          "name": "kubejs:mysterious_trinket",
           "weight": 5,
           "functions": [
             {
@@ -163,7 +177,7 @@
         },
         {
           "type": "item",
-          "name": "majobroom:majo_hat",
+          "name": "majobroom:majo_cloth",
           "weight": 3,
           "functions": [
             {

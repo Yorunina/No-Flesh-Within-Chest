@@ -1,0 +1,27 @@
+{
+    "key": "dark_iron_ingot",
+    "category": "metal",
+    "primary": 5,
+    "secondary": 4,
+    "tertiary": 3.2,
+    "durability": 360,
+    "integrityCost": 2,
+    "integrityGain": 5,
+    "magicCapacity": 120,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 6,
+    "tints": {
+        "glyph": "768b98",
+        "texture": "768b98"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [ "graveyard:dark_iron_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:gold"
+    }
+}

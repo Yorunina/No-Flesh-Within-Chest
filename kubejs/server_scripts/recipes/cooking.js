@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(new CookingRecipe(Item.of('minecraft:paper'), [Item.of('minecraft:sugar'), Item.of('minecraft:ice')], Item.of('kubejs:ice_candy').withCount(4)).setCookingtime(6 * 20))
 
-    registerCustomRecipe(new CookingRecipe(Item.of('minecraft:paper'), [Item.of('minecraft:sugar'), Item.of('minecraft:water_bucket')], Item.of('kubejs:water_candy').withCount(4)).setCookingtime(6 * 20))
+    registerCustomRecipe(new CookingRecipe(Item.of('minecraft:paper'), [Item.of('minecraft:sugar'), Item.of('minecraft:clay_ball')], Item.of('kubejs:water_candy').withCount(4)).setCookingtime(6 * 20))
 
     registerCustomRecipe(new CookingRecipe(Item.of('minecraft:paper'), [Item.of('minecraft:sugar'), Item.of('minecraft:blaze_powder')], Item.of('kubejs:fire_candy').withCount(4)).setCookingtime(6 * 20))
 

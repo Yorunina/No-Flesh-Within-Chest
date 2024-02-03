@@ -1,0 +1,96 @@
+{
+  "parent": "root.json",
+  "text": "tutorial.txt",
+  "title": "  复生序章",
+  "linked_page_buttons": [
+  ],
+  "item_renders": [
+    {
+      "item" : "unusualprehistory:stone_tar_fossil",
+      "x": 25,
+      "y": 25,
+      "page" : 0,
+      "scale": 1.2
+    },
+    {
+      "item" : "unusualprehistory:deepslate_opal_ore",
+      "x": 55,
+      "y": 25,
+      "page" : 0,
+      "scale": 1.2
+    },
+    {
+      "item" : "unusualprehistory:plant_fossil",
+      "x": 85,
+      "y": 25,
+      "page" : 0,
+      "scale": 1.2
+    },
+    {
+      "item" : "unusualprehistory:stone_amber_ore",
+      "x": 115,
+      "y": 25,
+      "page" : 0,
+      "scale": 1.2
+    },
+    {
+      "item" : "unusualprehistory:deepslate_fossil",
+      "x": 40,
+      "y": 45,
+      "page" : 0,
+      "scale": 1.2
+    },
+    {
+      "item" : "unusualprehistory:stone_fossil",
+      "x": 70,
+      "y": 45,
+      "page" : 0,
+      "scale": 1.2
+    },
+    {
+      "item" : "unusualprehistory:petrified_wood",
+      "x": 100,
+      "y": 45,
+      "page" : 0,
+      "scale": 1.2
+    }
+  ],
+  "recipes": [
+    {
+      "recipe": "unusualprehistory:analyzer",
+      "shapeless": false,
+      "x": 218,
+      "y": 28,
+      "page": 0,
+      "scale": 1.2
+    },
+    {
+      "recipe": "unusualprehistory:cultivator",
+      "shapeless": false,
+      "x": 18,
+      "y": 25,
+      "page": 1,
+      "scale": 1.2
+    },
+    {
+      "recipe": "unusualprehistory:dna_fridge",
+      "shapeless": false,
+      "x": 218,
+      "y": 28,
+      "page": 1,
+      "scale": 1.2
+    },
+    {
+      "recipe": "unusualprehistory:incubator",
+      "shapeless": false,
+      "x": 18,
+      "y": 25,
+      "page": 2,
+      "scale": 1.2
+    }
+  ],
+  "tabula_renders": [
+  ],
+  "entity_renders": [
+  ]
+}

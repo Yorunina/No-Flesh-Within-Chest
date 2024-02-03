@@ -1,0 +1,31 @@
+{
+  "armorSetName": "镀金下界合金",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "bygonenether:gilded_netherite_helmet"
+  },
+  "chest": {
+    "itemKey": "bygonenether:gilded_netherite_chestplate"
+  },
+  "legs": {
+    "itemKey": "bygonenether:gilded_netherite_leggings"
+  },
+  "boots": {
+    "itemKey": "bygonenether:gilded_netherite_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "对黄金的贪婪稍微改变了它的性质……"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "goety:gold_touched",
+      "value": 4.0,
+      "interactionType": "attack",
+      "interactionDuration": 1200,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

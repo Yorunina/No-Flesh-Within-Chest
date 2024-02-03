@@ -1,0 +1,57 @@
+{
+  "title": "  霸王龙",
+  "text": "rex.txt",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:rex",
+      "x": 290,
+      "y": 120,
+      "page" : 1,
+      "scale": 1.2,
+      "entity_scale": 0.18,
+      "offset_x": 12,
+      "offset_y": 13,
+      "hover_text": "霸王龙"
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:rex",
+      "x": 90,
+      "y": 110,
+      "page" : 0,
+      "scale": 0.4,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "recipes": [
+    {
+      "recipe": "unusualprehistory:adorned_staff",
+      "shapeless": false,
+      "x": 18,
+      "y": 40,
+      "page": 1,
+      "scale": 1.2
+    },
+    {
+      "recipe": "unusualprehistory:rex_head",
+      "shapeless": false,
+      "x": 218,
+      "y": 20,
+      "page": 1,
+      "scale": 1.0
+    },
+    {
+      "recipe": "unusualprehistory:rex_boombox",
+      "shapeless": false,
+      "x": 218,
+      "y": 105,
+      "page": 1,
+      "scale": 1.0
+    }
+  ]
+}

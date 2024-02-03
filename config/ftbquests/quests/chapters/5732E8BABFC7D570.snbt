@@ -11,6 +11,18 @@
 		}
 	}
 	id: "5732E8BABFC7D570"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 24.3d
+		hover: [ ]
+		image: "kubejs:textures/task/goety_background.png"
+		rotation: 0.0d
+		width: 20.0d
+		x: 1.5d
+		y: 5.25d
+	}]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
@@ -43,7 +55,7 @@
 				type: "item"
 			}]
 			title: "黑魔法之始"
-			x: 0.0d
+			x: -1.25d
 			y: 0.0d
 		}
 		{
@@ -72,8 +84,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: -1.25d
+			y: 7.25d
 		}
 		{
 			dependencies: ["38E0930B64874596"]
@@ -101,8 +113,8 @@
 				}
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: -1.25d
+			y: 10.25d
 		}
 		{
 			dependencies: ["38E0930B64874596"]
@@ -119,8 +131,8 @@
 				item: "goety:cursed_infuser"
 				type: "item"
 			}]
-			x: -1.75d
-			y: 1.5d
+			x: -3.75d
+			y: 7.25d
 		}
 		{
 			dependencies: ["2E3C5A01C7C079C0"]
@@ -166,8 +178,8 @@
 				}
 			]
 			title: "举行仪式"
-			x: 0.0d
-			y: 4.5d
+			x: 3.75d
+			y: 10.25d
 		}
 		{
 			dependencies: ["249B296A3CB17779"]
@@ -178,7 +190,7 @@
 				""
 				"灵魂方舟具有&2100000点灵魂能量上限&r。如若你需要使用灵魂方舟中的灵魂能量以魔法仪式，则你需要制作&6连接宝石&r将其绑定到你所拥有的灵魂方舟，将其放置在对应的诅咒之笼里，即可让魔法仪式使用灵魂方舟内的能量。"
 				""
-				"如果你的灵魂方舟内有超过10000点灵魂能量，在你死亡签的那一刻，你会被传送到灵魂方舟所在的位置。"
+				"如果你的灵魂方舟内有超过10000点灵魂能量，在你死亡前的那一刻，你会被传送到灵魂方舟所在的位置。"
 			]
 			icon: "goety:arca"
 			id: "247AED1D908E67BD"
@@ -201,8 +213,8 @@
 					type: "item"
 				}
 			]
-			x: 1.75d
-			y: 4.5d
+			x: 6.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["39A1A046832960CC"]
@@ -230,7 +242,7 @@
 				type: "item"
 			}]
 			title: "女巫酿造师"
-			x: 1.75d
+			x: 3.5d
 			y: 0.0d
 		}
 		{
@@ -256,7 +268,7 @@
 				item: "goety:witch_cauldron"
 				type: "item"
 			}]
-			x: 3.75d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
@@ -313,8 +325,8 @@
 				}
 			]
 			title: "法术聚晶"
-			x: -1.75d
-			y: 4.5d
+			x: 3.75d
+			y: 11.5d
 		}
 		{
 			dependencies: ["4717C67580F37824"]
@@ -336,7 +348,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 1.5d
+			y: 11.75d
 		}
 		{
 			dependencies: ["249B296A3CB17779"]
@@ -350,8 +362,8 @@
 				type: "checkmark"
 			}]
 			title: "下界仪式"
-			x: 0.0d
-			y: 6.25d
+			x: 3.75d
+			y: 7.25d
 		}
 		{
 			dependencies: ["247AED1D908E67BD"]
@@ -376,8 +388,8 @@
 				item: "goety:soul_absorber"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 4.5d
+			x: 8.25d
+			y: 10.25d
 		}
 		{
 			dependencies: ["39A1A046832960CC"]
@@ -393,7 +405,7 @@
 				item: "goety:grimoire_of_grudges"
 				type: "item"
 			}]
-			x: -1.75d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -415,8 +427,8 @@
 				item: "goety:sculk_devourer"
 				type: "item"
 			}]
-			x: 1.75d
-			y: 3.0d
+			x: -2.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["58D4C38764206571"]
@@ -437,8 +449,8 @@
 				item: "goety:sculk_converter"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 3.0d
+			x: -2.5d
+			y: 11.75d
 		}
 		{
 			dependencies: ["074F0A4966CAA5DE"]
@@ -459,8 +471,8 @@
 				item: "goety:sculk_grower"
 				type: "item"
 			}]
-			x: 5.75d
-			y: 3.0d
+			x: -2.5d
+			y: 13.25d
 		}
 		{
 			dependencies: ["2E3C5A01C7C079C0"]
@@ -477,8 +489,8 @@
 				item: "goety:soul_candlestick"
 				type: "item"
 			}]
-			x: -1.75d
-			y: 3.0d
+			x: -1.25d
+			y: 11.75d
 		}
 		{
 			dependencies: ["48CA5C5BE42B6D3C"]
@@ -517,8 +529,8 @@
 				}
 			]
 			title: "一些卷轴与故事"
-			x: 0.0d
-			y: 8.0d
+			x: 6.5d
+			y: 7.25d
 		}
 		{
 			dependencies: ["7768DA1835EA65B6"]
@@ -540,8 +552,8 @@
 				item: "goety:dark_scroll"
 				type: "item"
 			}]
-			x: -1.75d
-			y: 8.0d
+			x: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["2C66968C7259F120"]
@@ -559,8 +571,8 @@
 				item: "goety:necro_brazier"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 3.0d
+			x: -1.25d
+			y: 13.25d
 		}
 		{
 			dependencies: ["7768DA1835EA65B6"]
@@ -588,8 +600,8 @@
 				type: "item"
 			}]
 			title: "面对使徒"
-			x: 0.0d
-			y: 10.0d
+			x: 8.25d
+			y: 7.25d
 		}
 		{
 			dependencies: ["537E1732782ABF04"]
@@ -614,8 +626,8 @@
 				type: "advancement"
 			}]
 			title: "下界之影"
-			x: -1.75d
-			y: 10.0d
+			x: 8.25d
+			y: 6.0d
 		}
 		{
 			dependencies: ["537E1732782ABF04"]
@@ -649,8 +661,8 @@
 				item: "goety:undeath_potion"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 12.0d
+			x: 10.0d
+			y: 7.25d
 		}
 		{
 			dependencies: ["020F32F2C7347F32"]
@@ -671,8 +683,8 @@
 				item: "kubejs:holy_potion"
 				type: "item"
 			}]
-			x: -1.75d
-			y: 12.0d
+			x: 10.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3CB4A421BFE6A3BC"]
@@ -714,8 +726,8 @@
 				}
 			]
 			title: "开始酿造！"
-			x: 5.75d
-			y: 0.0d
+			x: 6.5d
+			y: 3.25d
 		}
 	]
 	title: "诡厄巫法：潜藏在黑魔法的力量"

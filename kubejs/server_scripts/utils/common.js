@@ -1,5 +1,5 @@
 /**
-* 获取某个半径内的实体，自动排除玩家
+* 获取某个半径内的实体
 * @param {Internal.Level} level
 * @param {Vec3} pos
 * @param {Number} radius
@@ -10,7 +10,7 @@ function getEntitiesWithinRadius(level, pos, radius) {
     let entityAABBList = level.getEntitiesWithin(area)
     let entityList = []
     entityAABBList.forEach(entity => {
-        if (entity.distanceToSqr(pos) <= radius && !entity.isPlayer()) {
+        if (entity.position() && entity.position().distanceTo(pos) <= radius) {
             entityList.push(entity)
         }
     })

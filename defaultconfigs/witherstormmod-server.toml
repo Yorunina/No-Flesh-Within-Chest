@@ -1,0 +1,195 @@
+
+#Server options
+[server]
+	#DEFAULT=false. Toggle to enable/disable Wither Storm chunk loading when no players are online. Reload Type: NONE
+	shouldChunkLoadWhenNoPlayers = false
+	#DEFAULT=true. If the target is stationary for a specific amount of time, the Wither Storm will begin to move towards it at a faster rate. Toggle to enable/disable this feature. Reload Type: NONE
+	shouldAccelerateWhenTargetStopped = true
+	#DEFAULT=8. If the player remains in a radius of chunks specified by this value for a specific amount of time, the Wither Storm will begin to move towards the player at a faster rate. Reload Type: WORLD
+	#Range: 0 ~ 16
+	targetStationaryChunkRadius = 8
+	#DEFAULT=4. The chance for the Wither Storm to choose a player instead of another entity, out of 10. Reload Type: NONE
+	#Range: 0 ~ 10
+	playerPickupChance = 4
+	#DEFAULT=1.0. Specifies a modifier value of the evolution rate attribute. The higher the value, the longer it takes for the Wither Storm to make a complete evolution (from phases 0 to 7), and vice versa. Cannot be lower than 0. Reload Type: NONE
+	#Range: 0.01 ~ 32.0
+	evolutionAttributeModifier = 1.0
+	#DEFAULT=30. Specifies the amount of time in minutes that the Wither Storm's ultimate target must be stationary in order for it to accelerate. Reload Type: WORLD
+	#Range: 1 ~ 120
+	targetStationaryMinutes = 30
+	#DEFAULT=10. Specifies the amount of time in minutes that the Wither Storm's ultimate target has begun to run away in order to slow back down again. Reload Type: NONE
+	#Range: 1 ~ 90
+	targetRunawayMinutes = 10
+	#DEFAULT=50. Specifies the invulnerability time when the Wither Storm has been summoned, in seconds. When invulnerable, the Wither Storm doesn't move and can't be attacked. Reload Type: NONE
+	#Range: 1 ~ 320
+	invulnerabilityTime = 50
+	#DEFAULT=0.4. Specifies a modifier value of Target Stationary Flying Speed attribute. The higher the value, the faster the Wither Storm will go when its ultimate target is stationary. Reload Type: WORLD
+	#Range: 0.01 ~ 1.0
+	targetStationaryFlyingSpeed = 0.4
+	#DEFAULT=0.02. Specifies a modifier value of Slow Flying Speed attribute. The higher the value, the faster the Wither Storm will go when it's ultimate target is not stationary. Reload Type: WORLD
+	#Range: 0.01 ~ 1.0
+	slowFlyingSpeed = 0.02
+	#DEFAULT=true. Specifies if the Wither Storm should use the phase as a multiplier when calculating the time in ticks it takes for it to start accelerating, when its ultimate target is stationary. Reload Type: NONE
+	usePhaseAsDistanceMultiplier = true
+	#DEFAULT=1.0. Specifies if the Wither Storm should use this value as a multiplier when calculating the time in ticks it takes for it to start accelerating, when its ultimate target is stationary. Reload Type: NONE
+	#Range: 0.1 ~ 24.0
+	distanceMultiplier = 1.0
+	#DEFAULT=true. Specifies if the Wither Storm should accelerate when it evolves into the next phase.. Reload Type: NONE
+	accelerateOnPhaseChange = true
+	#DEFAULT=true. Specifies if the Wither Storm should count the times its ultimate target leaves the stationary chunk radius. After a specified amount of attempts has been reached, the Wither Storm will accelerate to its Target Stationary Speed. Reload Type: NONE
+	targetRunawayAttempts = true
+	#DEFAULT=2. Specifies the required time, in minutes, the Wither Storms ultimate target must be stationary in order to be able to count a runaway attempt when it tries to leave the stationary chunk radius. Reload Type: NONE
+	#Range: 1 ~ 20
+	targetRunawayAttemptMinutes = 2
+	#DEFAULT=5. Specifies the amount of runaway attempts made by the Wither Storms ultimate target that must be met for it to accelerate to its Target Stationary Speed. Reload Type: NONE
+	#Range: 1 ~ 32
+	targetRunawayAttemptsRequired = 5
+	#DEFAULT=16. Specifies the required time that must pass (in minutes) in order to decrease the runaway attempt amount. This timer only counts if the Wither Storms ultimate target remains in the stationary chunk radius. Reload Type: NONE
+	#Range: 1 ~ 48
+	minutesTillRunawayAttemptDiminish = 16
+	#DEFAULT=true. Specifies when the Wither Storm is done chasing its ultimate target if it should become 'distracted' and go to a random nearby area. Reload Type: NONE
+	targettingDistractionsEnabled = true
+	#DEFAULT=25. Specifies the time in minutes that the Wither Storm should be distracted for, plus some random modifying and more. Reload Type: NONE
+	#Range: 1 ~ 25
+	distractionTimeMinutes = 25
+	#DEFAULT=1000. Distractions will not occur if the Wither Storm's ultimate target is outside the radius determined by this value + its target range. Although, if the ultimate target is inside the radius, but then leaves, a distraction can then later occur. Reload Type: NONE
+	#Range: 100 ~ 3000
+	maximumDistractionDistance = 1000
+	#DEFAULT=50. Distractions will not occur IMMEDIATELY if the Wither Storm's ultimate target is INSIDE the radius determined by this value + its target range. If the target is inside this radius, the Wither Storm will wait before becoming distracted, to see if the target is outside the radius. If not, a distraction will not occur. Set to 0 to disable. Reload Type: NONE
+	#Range: 10 ~ 500
+	minimumDistractionDistance = 50
+	#DEFAULT=true. Distractions may or may not occur if the conditions are met/unmet based off of a random chance. Toggle to enable/disable. Reload Type: NONE
+	randomDistractionChances = true
+	#DEFAULT=1. Specifies the search radius multiplier for when searching for a random location to go to. Reload Type: NONE
+	#Range: 1 ~ 8
+	searchableRangeMultiplier = 1
+	#DEFAULT=2. For when the Wither Storm needs to wait to become distracted, this value (in minutes) will specifiy the wait time, plus a random modifier. Reload Type: NONE
+	#Range: 1 ~ 20
+	distractionWaitTime = 2
+	#DEFAULT=true. Specifies if Block Clusters should remove non-important items in its path. NOTE: Disabling can cause major lag. Reload Type: NONE
+	clustersRemoveItems = true
+	#DEFAULT=false. If true, the hitbox of the Wither Storm and Wither Storm Segment's will be shrunk vertically to one block. Enable if facing major server lag in the bigger Wither Storm phases. Reload Type: WORLD
+	squashHitbox = false
+	#DEFAULT=20. Alters the interval (in ticks) of picking up block clusters for the hunchback phases (phase 0 - 3). NOTE: This value changes the evolution speed of the Wither Storm significantly. Reload Type: NONE
+	#Range: 10 ~ 80
+	hunchbackClusterPickupInterval = 20
+	#DEFAULT=40. Alters the interval (in ticks) of picking up block clusters for the destroyer phases (phase 4 - 5). NOTE: This value changes the evolution speed of the Wither Storm significantly. Reload Type: NONE
+	#Range: 10 ~ 80
+	clusterPickupInterval = 40
+	#DEFAULT=40. Alters the interval (in ticks) of picking up block clusters for the devourer phases (phase 6+). NOTE: This value changes the evolution speed of the Wither Storm significantly. Reload Type: NONE
+	#Range: 10 ~ 80
+	devourerClusterPickupInterval = 40
+	#DEFAULT=75. Specifies the height the Wither Storm will fly at during phase 4 and up. Reload Type: NONE
+	#Range: 10 ~ 150
+	flyingHeight = 75
+	#DEFAULT=6. If the Wither Storm's ultimate target has a command block tool and the Wither Storm is at phase 7, a timer specified by this value (in minutes) + random will countdown until the hole will automatically appear. Reload Type: NONE
+	#Range: 1 ~ 30
+	tillShouldShowHole = 6
+	#DEFAULT=NEAREST. Specifies the targeting type the Wither Storm should use to determine it's ultimate target. Reload Type: NONE
+	#Allowed Values: NEAREST, FARTHEST, GROUP, NONE
+	ultimateTargetingType = "NEAREST"
+	#DEFAULT=0.1. Specifies the rotation speed of the Wither Storm. Reload Type: NONE
+	#Range: 0.1 ~ 1.0
+	rotationSpeed = 0.1
+	#DEFAULT=true. Specifies if the Wither Storm's tractor beams can pull in multiple mobs at once that interesect the beam. Reload Type: NONE
+	canPickupMobClusters = true
+	#DEFAULT=true. Specifies if the Wither Storm should regenerate its health and be melee attackable. Reload Type: NONE
+	witherStormInvulnerability = true
+
+	#Wither sickness
+	[server."wither sickness"]
+		#DEFAULT=true. Specifies if mobs should be able to receive wither sickness. Reload Type: WORLD
+		witherSicknessEnabled = false
+		#DEFAULT=true. Specifies if mobs should convert to sickened mobs once they die from wither sickness. Reload Type: NONE
+		sickenedMobConversions = true
+		#DEFAULT=true. Specifies if entities who are reinfected over a short period of time should receive wither sickness with a greater strength. Reload Type: NONE
+		increaseAmplifier = true
+		#DEFAULT=6. After a mob has been targetted by the Wither Storm a set maximum of times, the mob will become infected. Reload Type: WORLD
+		#Range: 1 ~ 40
+		requiredContacts = 6
+		#DEFAULT=600. Specifies the amount of time in seconds high immunity mobs (players) must be near the Wither Storm in order to to begin infection. Reload Type: WORLD
+		#Range: 12 ~ 1200
+		requiredProximitySeconds = 600
+		#DEFAULT=720. Specifies the amount of time in seconds high immunity mobs (players) must be infected in order to be applied the wither sickness effect. Reload Type: WORLD
+		#Range: 12 ~ 1200
+		applicationDelay = 720
+		#DEFAULT=480. Specifies the delay, in seconds, before high immunity mobs (players) are cured of wither sickness. Reload Type: WORLD
+		#Range: 12 ~ 1200
+		cureDelay = 480
+		#DEFAULT=360. Specifies the amount of time in seconds that low immunity mobs must be near the Wither Storm in order to begin infection. Reload Type: WORLD
+		#Range: 12 ~ 1200
+		lowImmuneRequiredProximitySeconds = 360
+		#DEFAULT=410. Specifies the amount of time in seconds low immunity mobs must be infected in order to be applied the wither sickness effect. Reload Type: WORLD
+		#Range: 12 ~ 1200
+		lowImmuneApplicationDelay = 410
+		#DEFAULT=480. Specifies the delay, in seconds, before low immunity mobs are cured of wither sickness. Reload Type: WORLD
+		#Range: 12 ~ 1200
+		lowImmuneCureDelay = 480
+		#DEFAULT=180. High immunity mobs (players) will be assigned a random proximity seconds modifier that will change the proximity seconds time. This value will set the maximum potential limit for that modifier, in seconds. Reload Type: NONE
+		#Range: 12 ~ 1200
+		proximitySecondsModifierMax = 180
+		#DEFAULT=300. High immunity mobs (players) will be assigned a random application delay modifier that will change the application delay. This value will set the maximum potential limit for that modifier, in seconds. Reload Type: NONE
+		#Range: 12 ~ 1200
+		applicationDelayModifierMax = 300
+		#DEFAULT=180. High immunity mobs (players) will be assigned a random cure delay modifier that will change the cure delay. This value will set the maximum potential limit for that modifier, in seconds. Reload Type: NONE
+		#Range: 12 ~ 1200
+		cureDelayModifierMax = 180
+		#DEFAULT=180. Low immunity mobs will be assigned a random proximity seconds delay modifier that will change the proximity seconds time. This value will set the maximum potential limit for that modifier, in seconds. Reload Type: NONE
+		#Range: 12 ~ 1200
+		lowImmuneProximityModifierMax = 180
+		#DEFAULT=140. Low immunity mobs will be assigned a random application delay modifier that will change the proximity seconds time. This value will set the maximum potential limit for that modifier, in seconds. Reload Type: NONE
+		#Range: 12 ~ 1200
+		lowImmuneApplicationModifierMax = 140
+		#DEFAULT=180. Low immunity mobs will be assigned a random cure delay modifier that will change the cure delay time. This value will set the maximum potential limit for that modifier, in seconds. Reload Type: NONE
+		#Range: 12 ~ 1200
+		lowImmuneCureDelayModifierMax = 180
+		#DEFAULT=true. Specifies if Wither Sickness should be removed after a player respawns. Reload Type: NONE
+		keepSicknessAfterRespawn = true
+
+	#Formidibomb
+	[server.formidibomb]
+		#DEFAULT=12000. Specifies the fuse in ticks that count down to the formidibomb's explosion. The fuse is set when the block is crafted. Reload Type: NONE
+		#Range: 1 ~ 12000
+		craftFuseTicks = 12000
+		#DEFAULT=1200. If the formidibomb is manually set on fire the fuse tick count will be set to this value, if the original fuse is greater than this value. Reload Type: NONE
+		#Range: 1 ~ 12000
+		catchFireFuseTicks = 1200
+		#DEFAULT=true. Specifies if after a set amount of time the formidibomb item should drop out of whatever inventory is holding it and should spawn as the entity. Reload Type: NONE
+		shouldDropFromInventory = true
+		#DEFAULT=4. Specifies the interval for when the formidibomb will drop out of its inventory (if enabled). This value divides the crafted fuse ticks to get the interval (e.x. 12000 / 4 = 3000). Reload Type: NONE
+		#Range: 1 ~ 8
+		dropInterval = 4
+		#DEFAULT=true. Lowers the resistance of blocks in the path of the explosion, effectively increasing the strength of the explosion which allows for obsidian, etc. to be destroyed. Reload Type: NONE
+		lowerBlockResistance = true
+
+	#Playing dead
+	[server."playing dead"]
+		#DEFAULT=true. Specifies if the Wither Storm should automatically revive if not found after a period of time. Reload Type: NONE
+		revivalTimer = true
+		#DEFAULT=60. Specifies when (in minutes) the Wither Storm will automatically revive when playing dead. Reload Type: NONE
+		#Range: 1 ~ 120
+		revivalTimeMinutes = 60
+		#DEFAULT=3. Specifies the time (in minutes) after being revived that the Wither Storm should ignore players. Reload Type: NONE
+		#Range: 1 ~ 40
+		revivalPlayerProtection = 3
+
+	#Withered Symbiont
+	[server."withered symbiont"]
+		#DEFAULT=true. Specifies if the Wither Storm can summon the Withered Symbiont. Reload Type: NONE
+		canSummonSmybiont = true
+		#DEFAULT=60. Specifies the minimum interval (+random) in seconds that the Wither Storm should check for Withered Symbiont spawn conditions. Reload Type: NONE
+		#Range: 1 ~ 240
+		minimumSpawnCheckInterval = 60
+		#DEFAULT=10. Specifies the delay in minutes (+random) that the Wither Storm will be able to summon a Withered Symbiont. Reload Type: NONE
+		#Range: 1 ~ 20
+		witherStormSummingDelay = 10
+		#DEFAULT=5. Specifies the time in minutes (+random) that the players who killed a Withered Symbiont should be ignored by the Wither Storm for. Reload Type: NONE
+		#Range: 1 ~ 10
+		playerInvulnerableTime = 5
+		#DEFAULT=10. Specifies the delay in minutes (+random) that the Wither Storm should be able summon a Withered Symbiont for the player it summoned one for. Reload Type: NONE
+		#Range: 1 ~ 60
+		playerSummoningDelay = 10
+		#DEFAULT=40. If a player kills a Withered Symbiont, their sumoning delay will be increased to this value in minutes (+random). Reload Type: NONE
+		#Range: 1 ~ 60
+		playerSummoningDelayOnKill = 40
+

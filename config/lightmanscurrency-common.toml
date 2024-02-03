@@ -51,11 +51,11 @@
 	#Note: Any changes to villagers requires a full reboot to be applied due to how Minecraft/Forge registers trades.
 	[common.villagers]
 		#Whether the wandering trader will have additional trades that allow you to buy misc items with money.
-		addCustomWanderingTrades = true
+		addCustomWanderingTrades = false
 		#Whether the banker villager profession will have any registered trades. The banker sells Lightman's Currency items for coins.
-		addBanker = true
+		addBanker = false
 		#Whether the cashier villager profession will have any registered trades.. The cashier sells an amalgamation of vanilla traders products for coins.
-		addCashier = true
+		addCashier = false
 
 		#Settings Related to other Villagers
 		[common.villagers.other_traders]

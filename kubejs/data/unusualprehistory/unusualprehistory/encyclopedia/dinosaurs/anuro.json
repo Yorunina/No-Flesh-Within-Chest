@@ -1,0 +1,31 @@
+{
+  "text": "anuro.txt",
+  "title": "  蛙嘴龙",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:anuro",
+      "x": 90,
+      "y": 90,
+      "page" : 0,
+      "scale": 1.2,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:anuro",
+      "x": 260,
+      "y": 40,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 1,
+      "offset_x": 0,
+      "offset_y": -8,
+      "hover_text": "蛙嘴龙"
+    }
+  ]
+}

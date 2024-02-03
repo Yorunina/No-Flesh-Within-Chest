@@ -1,0 +1,41 @@
+{
+  "text": "scau.txt",
+  "title": "  古肺鱼",
+  "page_to_go": "unusualprehistory:dinosaurs",
+  "recipes": [
+    {
+      "recipe": "unusualprehistory:golden_scau",
+      "shapeless": false,
+      "x": 218,
+      "y": 60,
+      "page": 0,
+      "scale": 1.2
+    }
+  ],
+  "entity_renders": [
+    {
+      "entity": "unusualprehistory:scau",
+      "x": 90,
+      "y": 85,
+      "page" : 0,
+      "scale": 1.8,
+      "rot_x": 30,
+      "rot_y": 225,
+      "rot_z": 0,
+      "follow_cursor": false
+    }
+  ],
+  "entity_button":[
+    {
+      "entity": "unusualprehistory:scau",
+      "x": 290,
+      "y": 80,
+      "page" : 0,
+      "scale": 1.2,
+      "entity_scale": 1.1,
+      "offset_x": -2,
+      "offset_y": -9,
+      "hover_text": "古肺鱼"
+    }
+  ]
+}

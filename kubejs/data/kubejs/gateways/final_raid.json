@@ -1,6 +1,8 @@
 {
     "size": "large",
     "color": "#483D8B",
+    "leash_range": 64,
+    "allow_discarding": true,
     "waves": [
       {
         "entities": [
@@ -1350,30 +1352,25 @@
       {
         "type": "gateways:loot_table",
         "loot_table": "minecraft:chests/village",
-        "rolls": 80,
+        "rolls": 30,
         "desc": "村庄战利品"
       },
       {
         "type": "gateways:loot_table",
         "loot_table": "dimdungeons:chests/chestloot_4",
-        "rolls": 15,
+        "rolls": 25,
         "desc": "高级战利品"
       }
     ],
     "failures": [
       {
         "type": "gateways:explosion",
-        "strength": 10,
+        "strength": 6,
         "fire": true,
         "block_damage": true
-      },
-      {
-        "type": "command",
-        "command": "/kill @p",
-        "desc": "即效性死亡"
       }
     ],
-    "completion_xp": 50000,
-    "spawn_range": 8
+    "completion_xp": 15000,
+    "spawn_range": 5
   }
   

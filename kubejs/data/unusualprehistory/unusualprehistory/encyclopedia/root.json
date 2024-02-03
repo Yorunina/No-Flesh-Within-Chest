@@ -1,0 +1,62 @@
+{
+  "title": "  史前百科全书",
+  "text": "root.txt",
+  "pictures": [
+    {
+      "page": 0,
+      "picture_location": "unusualprehistory:textures/item/ammonite_shell.png",
+      "x": 120,
+      "y": 28,
+      "xSize": 50,
+      "ySize": 50
+    },
+    {
+      "page": 0,
+      "picture_location": "unusualprehistory:textures/gui/book/title.png",
+      "x": 200,
+      "y": 0,
+      "xSize": 190,
+      "ySize": 64
+    },
+    {
+      "page": 0,
+      "picture_location": "unusualprehistory:textures/gui/book/writer_sign.png",
+      "x": 280,
+      "y": 145,
+      "xSize": 101,
+      "ySize": 39
+    }
+  ],
+  "entity_index": [
+    {
+      "page": 0,
+      "xLocation": 210,
+      "yLocation": 10,
+      "columns": 5,
+      "rows": 5
+    }
+  ],
+  "linked_page_buttons": [
+    {
+      "linked_page": "unusualprehistory:tutorial",
+      "text": "如何复活生物",
+      "x": 295,
+      "y": 63,
+      "page": 0
+    },
+    {
+      "linked_page": "unusualprehistory:plants",
+      "text": "史前植物类",
+      "x": 295,
+      "y": 93,
+      "page": 0
+    },
+    {
+      "linked_page": "unusualprehistory:dinosaurs",
+      "text": "史前动物类",
+      "x": 295,
+      "y": 123,
+      "page": 0
+    }
+  ]
+}

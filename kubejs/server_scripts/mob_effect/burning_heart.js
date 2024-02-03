@@ -18,7 +18,7 @@ function burningHeartEntityHurtByPlayer(event, data) {
         let flaringHeartAmplifier = flaringHeartEffect.getAmplifier();
         let flaringHeartDuration = flaringHeartEffect.getDuration();
         if (flaringHeartDuration <= 20 * 5) {
-            player.server.runCommandSilent(`title ${player.name.getString()} actionbar {"text": "§4心火状态: §7${flaringHeartDuration} / 100  §3倍率: §e${flaringHeartAmplifier * 1.0 + 1.5}倍"}`);
+            player.setStatusMessage(`§4心火状态: §7${flaringHeartDuration} / 100  §3倍率: §e${flaringHeartAmplifier * 1.0 + 1.5}倍`);
             event.amount = event.amount * (flaringHeartAmplifier * 1.0 + 1.5);
             return;
         }

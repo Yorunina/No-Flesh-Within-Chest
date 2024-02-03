@@ -563,7 +563,7 @@
 		catfishSpawnRolls = 2
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		flyingFishSpawnWeight = 8
+		flyingFishSpawnWeight = 3
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		flyingFishSpawnRolls = 0
