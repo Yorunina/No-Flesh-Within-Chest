@@ -90,7 +90,6 @@ const ChallengeWares = [
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:slime_gate_large"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:witch_gate_large"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:zombie_gate_large"}')], 3),
-    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:creeper_gate_large"}')], 3)
 
 ]
 

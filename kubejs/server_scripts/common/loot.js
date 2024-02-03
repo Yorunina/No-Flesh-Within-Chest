@@ -21,7 +21,7 @@ LootJS.modifiers(event => {
                 LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.1)),
             )
     }
-    
+
     bossTypeList.forEach(entityId => {
         addBossLoot(entityId)
     })
@@ -37,6 +37,12 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('bosses_of_mass_destruction:void_blossom')
         .addLoot('kubejs:secret_of_bloom')
         .addLoot('kubejs:flower_heart');
+    event.addEntityLootModifier('bosses_of_mass_destruction:gauntlet')
+        .apply(ctx => {
+            if (ctx.player) {
+                ctx.player.give(Item.of('kubejs:demon_eyeball'))
+            }
+        })
     event.addEntityLootModifier('minecraft:slime')
         .addLoot(LootEntry.of('kubejs:mini_slime').when(c => c.matchEquip('mainhand', 'minecraft:glass_bottle')));
 
@@ -53,10 +59,11 @@ LootJS.modifiers(event => {
                 (ctx.entity.hasEffect('kubejs:glare_of_god') ||
                     ctx.entity.hasEffect('kubejs:gaze_of_god') ||
                     ctx.entity.hasEffect('kubejs:glimpse_of_god'))) {
-                ctx.addLoot(Item.of('kubejs:god_consciousness', { mobType: ctx.entity.getType() }))
+                if (ctx.player) {
+                    ctx.player.give(Item.of('kubejs:god_consciousness', { mobType: ctx.entity.getType() }))
+                }
             }
         })
-
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['minecraft:ancient_city'], false)
@@ -64,6 +71,7 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('kubejs:artist_wand').when((c) => c.randomChance(0.1)))
 
     event.addLootTypeModifier(LootType.CHEST)
+        .removeLoot('@nameless_trinkets')
         .anyStructure(['#minecraft:village'], false)
         .addLoot(LootEntry.of('biomancy:healing_additive').when((c) => c.randomChance(0.25)))
         .addLoot(LootEntry.of('biomancy:breeding_stimulant').when((c) => c.randomChance(0.02)))

@@ -72,7 +72,7 @@ const organCharmNbtMap = {
     'kubejs:blade_of_heart': { type: 'bear', bearTask: { minDamage: 10, bearAmount: 150, counter: 0 }, targetOrgan: 'kubejs:heart_of_blade' },
     'kubejs:heart_of_blade': { type: 'damage', damageTask: { minDamage: 15, damageAmount: 3000, counter: 0, type: "melee" }, targetOrgan: 'kubejs:blade_of_heart' },
 
-    'kubejs:stomach_diamond': { type: 'diet', dietTask: { minHunger: 1, foodTypeAmount: 13, foodTypeList: [] }, targetOrgan: 'kubejs:greedy_stomach' },
+    'kubejs:stomach_diamond': { type: 'diet', dietTask: { minHunger: 4, foodTypeAmount: 30, foodTypeList: [] }, targetOrgan: 'kubejs:king_of_stomach' },
 
     'kubejs:stomach_tumor': { type: 'mining', miningTask: { targetblock: ['minecraft:diamond_block', 'minecraft:gold_block', 'minecraft:iron_block', 'minecraft:copper_block'], counter: 0, consume: true, miningAmount: 32 }, targetOrgan: 'kubejs:desire_of_midas' },
 

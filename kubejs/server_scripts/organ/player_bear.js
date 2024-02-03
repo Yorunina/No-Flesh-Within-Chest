@@ -70,4 +70,9 @@ const organPlayerBearOnlyStrategies = {
             event.source.actual.potionEffects.add('goety:snow_skin', 20 * 10)
         }
     },
+    'kubejs:mosquito_repellent': function (event, organ, data) {
+        if (event.source?.actual?.type == 'alexsmobs:crimson_mosquito') {
+            event.source.actual.kill()
+        }
+    },
 };

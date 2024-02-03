@@ -193,9 +193,9 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:netherite_muscle': function (event, organ, data) {
         let entity = event.entity
-        let entityList = getEntitiesWithinRadius(entity.getLevel(), entity.position(), 3)
+        let entityList = getLivingWithinRadius(entity.getLevel(), entity.position(), 3)
         entityList.forEach(e => {
-            if (e.isLiving() && !e.isPlayer() && e.uuid != entity.uuid) {
+            if (!e.isPlayer() && e.stringUuid != entity.stringUuid) {
                 e.attack(event.amount)
             }
         })

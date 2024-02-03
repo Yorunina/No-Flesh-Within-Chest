@@ -483,14 +483,18 @@
 					type: "item"
 				}
 				{
-					id: "0D7AF2932E525B2A"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
 					count: 8
 					id: "01D94F7B86154DE8"
 					item: "kubejs:eye_of_fortress"
+					type: "item"
+				}
+				{
+					id: "50873EF2BEBBE29B"
+					item: {
+						Count: 1b
+						id: "kubejs:mosquito_repellent"
+						tag: { }
+					}
 					type: "item"
 				}
 			]
@@ -508,9 +512,9 @@
 		{
 			dependencies: ["51FA796A91E94C4D"]
 			description: [
-				"寻找各种结构的时候，你往往要根据各种生成规则来进行排查。但在Mod众多的情况下，自然生成变得极其复杂且难以捉摸，此时，你可能就需要使用&2自然指南针&r或&2探险指南针&r来辅助对于群系或结构的寻找。"
+				"寻找各种生态群系的时候，你往往要根据各种生成规则来进行排查。但在Mod众多的情况下，自然生成变得极其复杂且难以捉摸，此时，你可能就需要使用&2自然指南针&r来辅助对于群系或结构的寻找。"
 				""
-				"通过右键指南针，你可以使用其搜索框来定向的搜索对应的群系或结构。"
+				"通过右键指南针，你可以使用其搜索框来定向的搜索对应的群系。"
 			]
 			icon: {
 				Count: 1b
@@ -529,26 +533,15 @@
 				type: "item"
 			}]
 			subtitle: "指向你所需要的"
-			tasks: [
-				{
-					id: "6B95171F482E713B"
-					item: {
-						Count: 1b
-						id: "naturescompass:naturescompass"
-						tag: { }
-					}
-					type: "item"
+			tasks: [{
+				id: "6B95171F482E713B"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
 				}
-				{
-					id: "4218C63920D650EB"
-					item: {
-						Count: 1b
-						id: "explorerscompass:explorerscompass"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "指南针"
 			x: 9.75d
 			y: 2.25d
@@ -1097,7 +1090,7 @@
 			description: [
 				"在这个世界上，仍旧存在着旧世界的灾变之力。在某些特定的建筑结构内，你会遭遇拥有&4灾变之力&r的特殊怪物。"
 				""
-				"拥有&4灾变之力&r的怪物在攻击命中你时，会在一段时间内&2禁止方块放置、物品使用、以及任何的攻击行为&r。同时，灾变之力也赋予了这些怪物&6每秒1%&r的生命恢复能力。"
+				"拥有&4灾变之力&r的怪物在攻击命中你时，会在一段时间内&2禁止方块放置、物品使用、以及任何的攻击行为&r。"
 			]
 			icon: "cataclysm:altar_of_fire"
 			id: "22F081213B71190E"
@@ -1113,7 +1106,7 @@
 		}
 		{
 			dependencies: ["22F081213B71190E"]
-			description: ["可以通过灾变本身提供的&6各种眼睛&r来寻找其生成的建筑。但由于某些造价过高且机器容易损坏，因此并不推荐利用这种眼睛来寻找建筑。"]
+			description: ["可以通过灾变本身提供的&6各种眼睛&r来寻找其生成的建筑。"]
 			id: "54D9CCA0E085E647"
 			rewards: [{
 				id: "5C23AD1FF738A81F"
@@ -1281,7 +1274,7 @@
 		{
 			dependencies: ["5067AA0335B2B396"]
 			description: [
-				"按下&6组队键(默认[)&r打开组队界面，邀请你的朋友进入你的队伍！"
+				"按下&6组队键(默认[键)&r打开组队界面，邀请你的朋友进入你的队伍！"
 				""
 				"在同一队伍中将不会受到友军伤害，这对多人的旅行用处巨大！"
 			]

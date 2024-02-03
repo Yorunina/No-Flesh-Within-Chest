@@ -26,7 +26,7 @@ ItemEvents.foodEaten(event => {
  */
 const organFoodEatenStrategies = {
     'kubejs:greedy_stomach': function (event, organ) {
-        event.player.giveExperiencePoints(10)
+        event.player.giveExperiencePoints(30)
     },
 };
 

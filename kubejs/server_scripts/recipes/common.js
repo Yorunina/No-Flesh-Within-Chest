@@ -96,14 +96,14 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:explosion_proof_jacket'])
     event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:ethereal_wings'])
     event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:creeper_sense'])
+    event.shapeless('kubejs:mosquito_repellent', ['irons_spellbooks:magic_cloth', 'chestcavity:cooked_alien_organ_meat'])
     
     event.shapeless('chestcavity:appendix', [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
         .modifyResult((grid, stack) => {
             for (let i = 0; i <= 9; i++) {
                 let organ = grid.get(i)
                 if (organ && organ.hasNBT() && organ.nbt.contains('chestcavity:organ_compatibility')) {
-                    organ.nbt.remove('chestcavity:organ_compatibility')
-                    return organ;
+                    return Item.of(organ.id);
                 }
             }
             return null;

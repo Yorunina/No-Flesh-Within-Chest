@@ -94,7 +94,7 @@ StartupEvents.registry('item', event => {
     event.create('god_bless_full_necklace').texture('kubejs:item/god_bless_full_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
 
     event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
-    event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1)
+    event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1).fireResistant()
     event.create('god_agreement').texture('kubejs:item/god_agreement').maxStackSize(1)
 
     event.create('flora_wand').texture('kubejs:item/flora_wand')

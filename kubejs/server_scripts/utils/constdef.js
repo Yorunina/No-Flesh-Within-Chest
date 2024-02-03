@@ -1,3 +1,4 @@
+const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
 const resourceCount = 'resourceCount'
 const resourceCountMax = 'resourceCountMax'
 const defaultResourceMax = 100

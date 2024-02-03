@@ -715,28 +715,6 @@
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
-			description: ["从利维亚桑（利维坦）的胸腔中获得"]
-			id: "4FE34232B6E5B893"
-			rewards: [{
-				id: "403C9797AB3BAB1B"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "额外的护甲韧性"
-			tasks: [{
-				id: "5A705833F909154A"
-				item: {
-					Count: 1b
-					id: "kubejs:leviathan_rib"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -6.75d
-			y: 9.5d
-		}
-		{
-			dependencies: ["6662469DC72EA384"]
 			description: [
 				"从&2冷血杀手&r的胸腔中获得，能够给予弱小的敌人强大的反弹伤害。"
 				""
@@ -1004,6 +982,11 @@
 		{
 			dependencies: ["6662469DC72EA384"]
 			description: ["从利维亚桑（利维坦）的胸腔中获得"]
+			icon: {
+				Count: 1b
+				id: "kubejs:leviathan_spine"
+				tag: { }
+			}
 			id: "034A6F5A590F4CF5"
 			rewards: [{
 				id: "1B21CC741965C672"
@@ -1011,15 +994,26 @@
 				type: "item"
 			}]
 			subtitle: "提供游泳效率"
-			tasks: [{
-				id: "22870C4045AF8154"
-				item: {
-					Count: 1b
-					id: "kubejs:leviathan_spine"
-					tag: { }
+			tasks: [
+				{
+					id: "22870C4045AF8154"
+					item: {
+						Count: 1b
+						id: "kubejs:leviathan_spine"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "684439BAB9FCFB86"
+					item: {
+						Count: 1b
+						id: "kubejs:leviathan_rib"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			x: -7.75d
 			y: 9.5d
 		}
@@ -2397,6 +2391,58 @@
 			}]
 			x: 2.25d
 			y: 12.5d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			description: [
+				"&3T3胃&r在器官容器在中&6进化&r获得。能够根据胸腔内的总和饥饿度和饱和度来给予玩家生命值和攻击力的固定提升。"
+				""
+				"重复菜品带来的提升有限，使用更丰富的菜品属性提升会更高。"
+			]
+			id: "56BD2840AD4B9C68"
+			rewards: [{
+				id: "39A57E16F730EBB2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它好饿，它从没有这么饿过"
+			tasks: [{
+				id: "212C9B389338024C"
+				item: {
+					Count: 1b
+					id: "kubejs:king_of_stomach"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.75d
+			y: 21.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"在&c监守者&r的胸腔中获得，能够通过使用主动技能按键释放音爆攻击。"
+				""
+				"音爆波及的敌人越多，其冷却时间越短。"
+			]
+			id: "7A054EC9B9091345"
+			rewards: [{
+				id: "537ABB3CFEABA68D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它在怒吼. . .从它的核心中散发出诡异的声波"
+			tasks: [{
+				id: "45618761569DDA6F"
+				item: {
+					Count: 1b
+					id: "kubejs:warden_core"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.75d
+			y: 9.5d
 		}
 	]
 	title: "胸腔：器官收集指南"
