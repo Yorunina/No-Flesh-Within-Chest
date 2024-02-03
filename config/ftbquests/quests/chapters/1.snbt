@@ -252,53 +252,15 @@
 				""
 				"但并不是所有器官都会为你提供&2正面效果&r，某些器官——尤其是某些具有特殊效果的器官，往往会有着为负数的基本属性。"
 				""
-				"请注意！类如&2健康、神经效率、解毒效率&r等属性会影响到玩家是否能够正常存活！在摘除相关器官的时候请一定做好&c应急准备&r！防止陷入&c无限死亡&r的循环！"
-				""
-				"{@pagebreak}"
-				"但在添加器官的时候需要注意，不属于你的器官将会使你陷入&c器官排异&r的苦难之中。"
-				""
-				"消除器官排异的方法有很多种，其中使用&2治愈性原液&r是最为经济的方案之一。副手持治愈性原液，主手持不兼容的器官，即可使其消除器官所属，进而解决器官排异的问题。"
-				""
-				"或者，你可以在合成台里，通过器官和原液合成解除排异。(这往往用于一些可以食用的器官)"
+				"请注意！类如&2健康、神经效率、解毒效率&r等属性会影响到玩家是否能够正常存活！在摘除相关器官的时候请一定做好&4应急准备&r！防止陷入&4无限死亡&r的循环！"
 			]
 			icon: "chestcavity:heart"
 			id: "6069FC5CA00481CE"
-			rewards: [
-				{
-					id: "02FFBC5A74481DDF"
-					item: "chestcavity:heart"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "7CD3471551081AE6"
-					item: "biomancy:healing_additive"
-					type: "item"
-				}
-				{
-					id: "783C0CA0E2FDDBFB"
-					item: {
-						Count: 1b
-						id: "wares:delivery_agreement"
-						tag: {
-							buyerAddress: "{\"color\":\"#333333\",\"text\":\"\"}"
-							buyerName: "{\"color\":\"#7f8584\",\"text\":\"黑市酿造师\"}"
-							id: "potion"
-							message: "{\"color\":\"#333333\",\"text\":\"我这里. . .有无穷尽的治愈原液。\\n不过价格嘛. . .\"}"
-							paymentItems: [{
-								Count: 1
-								id: "biomancy:healing_additive"
-							}]
-							requestedItems: [{
-								Count: 8
-								id: "lightmanscurrency:coin_gold"
-							}]
-							title: "{\"color\":\"#922706\",\"text\":\"无限疗愈\"}"
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "02FFBC5A74481DDF"
+				item: "chestcavity:heart"
+				type: "item"
+			}]
 			subtitle: "尝试向自己的胸腔里添加新的器官"
 			tasks: [{
 				id: "020624CBE3D724FC"
@@ -780,7 +742,7 @@
 				}
 				{
 					id: "11CE9C63C34BD241"
-					item: "kubejs:mysterious_trinket"
+					item: "nameless_trinkets:mysterious_trinket"
 					type: "item"
 				}
 			]
@@ -919,7 +881,7 @@
 		{
 			dependencies: ["5E8F821F42C92E8A"]
 			description: [
-				"随着你的基地规模逐渐扩大，箱子的数量也会急剧变多，此时，你急需一个类如AE、RS的Mod来&2统一管理你的存储容器&r。"
+				"随着你的基底规模逐渐扩大，箱子的数量也会急剧变多，此时，你急需一个类如AE、RS的Mod来&2统一管理你的存储容器&r。"
 				""
 				"这个时候，你便可以使用&2Tom的简易存储&r来解决问题。Tom的简易存储可以方便的整合周围的容器，并且提供一个统一的接口用于玩家互动。"
 				""
@@ -987,8 +949,6 @@
 				"通过解析化石，我们可以了解到更多关于&6古代生物&r的知识。开启它们胸腔，也许我们能够获得更有价值的物品！"
 				""
 				"同时，在古代，我们也可以了解到一种名为&6书龙&r的特殊生物，这对更有效的获取附魔有极大的帮助。"
-				""
-				"&7WIP&r"
 			]
 			icon: "unusualprehistory:amber_fossil"
 			id: "2100FE65C252D712"
@@ -1179,7 +1139,7 @@
 				""
 				"答案也很简单——通过Wares的&6凭证买卖系统&r。"
 				""
-				"你可以在某些&2地牢箱子&r里找到Wares的交易凭证（往往出现在村庄箱子中），其中包含了各种类型的交易。你可以通过在村庄中放置交货台，填充纸盒后，手动或者等待对应职业的村民自动的进行交易。"
+				"你可以在某些&2地牢箱子&r里找到Wares的交易凭证（往往出现在村庄箱子中），其中包含了各种类型的交易。你可以通过在村庄中防止交货台，填充纸盒后，手动或者等待对应职业的村民自动的进行交易。"
 				""
 				"你可以通过本任务奖励的凭证，购买前期有大用处的&c归魂亡铃&r。这能够使你返回上一次死亡地点。"
 			]
@@ -1279,27 +1239,56 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["5067AA0335B2B396"]
+			dependencies: ["639C1EDF7CAB7739"]
 			description: [
-				"按下&6组队键(默认[)&r打开组队界面，邀请你的朋友进入你的队伍！"
+				"在拥有了任务获得的金币后，第一个疑问便是如何消费这些金币。"
 				""
-				"在同一队伍中将不会受到友军伤害，这对多人的旅行用处巨大！"
+				"答案也很简单——通过Wares的&6凭证买卖系统&r。"
+				""
+				"你可以在某些&2地牢箱子&r里找到Wares的交易凭证（往往出现在村庄箱子中），其中包含了各种类型的交易。你可以通过在村庄中防止交货台，填充纸盒后，手动或者等待对应职业的村民自动的进行交易。"
+				""
+				"你可以通过本任务奖励的凭证，购买前期有大用处的&c归魂亡铃&r。这能够使你返回上一次死亡地点。"
 			]
-			icon: {
-				Count: 1b
-				id: "kubejs:love_between_lava_and_ice"
-				tag: { }
-			}
-			id: "4B547FE8ACF6EF37"
-			subtitle: "组成团队一同出征！"
-			tasks: [{
-				id: "4657C57D8683ADA2"
-				title: "我已了解"
-				type: "checkmark"
+			icon: "wares:delivery_table"
+			id: "433272D518D73A92"
+			rewards: [{
+				id: "513DEC55660790E5"
+				item: {
+					Count: 1b
+					id: "wares:delivery_agreement"
+					tag: {
+						experience: 0.0d
+						id: "organ_1"
+						message: "{ \"color\": \"#33333\", \"text\": \"或许你会需要. . .这个?\\n不要害怕，这已经被取出很久了. . .\" }"
+						ordered: 1.0d
+						paymentItems: [{
+							Count: 1b
+							id: "kubejs:ring_for_home"
+						}]
+						requestedItems: [{
+							Count: 1b
+							id: "lightmanscurrency:coin_gold"
+						}]
+						title: "{ \"color\": \"#33333\", \"text\": \"黑市商人\" }"
+					}
+				}
+				type: "item"
 			}]
-			title: "邀请你的朋友！"
-			x: 3.75d
-			y: 10.25d
+			subtitle: "消费你的金币"
+			tasks: [
+				{
+					id: "7245191763611BBC"
+					item: "wares:delivery_table"
+					type: "item"
+				}
+				{
+					id: "2FF5E1294EE684FC"
+					item: "wares:cardboard_box"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 4.0d
 		}
 	]
 	title: "章节1：如常"

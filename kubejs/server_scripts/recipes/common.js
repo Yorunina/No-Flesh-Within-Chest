@@ -9,8 +9,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'lightmanscurrency:coinmint' })
     event.remove({ output: 'irons_spellbooks:dev_staff' })
     event.remove({ output: 'goety:warped_wartful_egg' })
-    event.remove({ output: 'gateways:gate_pearl' })
-
+    
     event.shaped('minecraft:end_portal_frame', [
         ['hexerei:selenite_shard', 'hexerei:wax_blend', 'hexerei:selenite_shard'],
         ['minecraft:end_stone', 'minecraft:end_crystal', 'minecraft:end_stone'],
@@ -36,8 +35,6 @@ ServerEvents.recipes(event => {
     ])
 
     event.shapeless('summoningrituals:altar', ['minecraft:wither_skeleton_skull', '#hexerei:candles', '#hexerei:candles', '#hexerei:candles', 'createaddition:electrum_sheet', 'minecraft:lectern'])
-
-    event.shapeless('kubejs:disenchantment_paper', ['minecraft:enchanted_book', 'alexsmobs:mysterious_worm', 'goety:unholy_blood'])
 
     event.shaped('irons_spellbooks:copper_spell_book', [
         ['kubejs:stardust_fragment', 'kubejs:stardust_fragment', 'kubejs:stardust_fragment'],
@@ -93,23 +90,6 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:eye_of_village', ['minecraft:ender_pearl', 'minecraft:emerald'])
     event.shapeless('kubejs:eye_of_dnl', ['minecraft:ender_pearl', 'minecraft:gold_ingot'])
     event.shapeless('kubejs:eye_of_fortress', ['minecraft:ender_pearl', 'minecraft:magma_cream'])
-    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:explosion_proof_jacket'])
-    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:ethereal_wings'])
-    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:creeper_sense'])
-    
-    event.shapeless('chestcavity:appendix', [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
-        .modifyResult((grid, stack) => {
-            for (let i = 0; i <= 9; i++) {
-                let organ = grid.get(i)
-                if (organ && organ.hasNBT() && organ.nbt.contains('chestcavity:organ_compatibility')) {
-                    organ.nbt.remove('chestcavity:organ_compatibility')
-                    return organ;
-                }
-            }
-            return null;
-        });
-
-
 
     event.shapeless('kubejs:lost_paradise', ['kubejs:paradise_regained', 'kubejs:god_agreement'])
 
@@ -122,12 +102,10 @@ ServerEvents.recipes(event => {
         ['lightmanscurrency:coin_gold', '#forge:gems/diamond', 'lightmanscurrency:coin_gold'],
         ['lightmanscurrency:coin_gold', '', 'lightmanscurrency:coin_gold'],
         ['lightmanscurrency:coin_gold', 'lightmanscurrency:coin_gold', 'lightmanscurrency:coin_gold']])
-
     event.shaped('irons_spellbooks:silver_ring', [
         ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot'],
         ['kubejs:silver_ingot', '', 'kubejs:silver_ingot'],
         ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot']])
-
     event.shaped('kubejs:color_palette', [
         ['create:iron_sheet', 'create:iron_sheet', 'create:iron_sheet'],
         ['createaddition:electrum_sheet', 'create:clipboard', 'createaddition:electrum_sheet'],
@@ -138,7 +116,7 @@ ServerEvents.recipes(event => {
         ['', 'hexerei:selenite_shard', ''],
         ['hexerei:moon_dust', 'nameless_trinkets:moon_stone', 'hexerei:moon_dust']])
 
-    event.shaped('kubejs:flora_wand', [
+    event.shaped('kubejs:flora_wand_basic', [
         ['bosses_of_mass_destruction:void_thorn', 'bosses_of_mass_destruction:crystal_fruit', 'bosses_of_mass_destruction:void_thorn'],
         ['', 'minecraft:stick', ''],
         ['', 'minecraft:stick', '']])
@@ -147,12 +125,10 @@ ServerEvents.recipes(event => {
         ['minecraft:stick', 'irons_spellbooks:holy_rune', 'minecraft:stick'],
         ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
         ['', '#minecraft:saplings', '']])
-
     event.shaped('kubejs:ice_wooden_wand', [
         ['minecraft:stick', 'irons_spellbooks:ice_rune', 'minecraft:stick'],
         ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
         ['', '#minecraft:saplings', '']])
-
     event.shaped('kubejs:nature_wooden_wand', [
         ['minecraft:stick', 'irons_spellbooks:nature_rune', 'minecraft:stick'],
         ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
@@ -163,16 +139,13 @@ ServerEvents.recipes(event => {
         ['', 'biomancy:bone_fragments', ''],
         ['biomancy:bone_fragments', 'alexsmobs:skelewag_sword', 'biomancy:bone_fragments']])
 
-    event.shaped('kubejs:artist_wand', [
-        ['', '', 'goety:unholy_blood'],
-        ['createaddition:electrum_wire', 'minecraft:white_wool', ''],
-        ['minecraft:stick', 'createaddition:electrum_wire', '']])
+    event.shaped('kubejs:painting_brush', [
+        ['', 'minecraft:white_wool', ''],
+        ['', 'minecraft:stick', ''],
+        ['', 'minecraft:stick', '']])
 
     event.smelting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
     event.blasting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
-
-    event.smelting('kubejs:silver_ingot', 'kubejs:raw_silver', '5.0')
-    event.blasting('kubejs:silver_ingot', 'kubejs:raw_silver', '5.0')
 
     event.smelting('kubejs:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
     event.blasting('kubejs:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')

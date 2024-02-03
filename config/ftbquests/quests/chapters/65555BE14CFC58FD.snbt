@@ -23,27 +23,16 @@
 	quests: [
 		{
 			dependencies: ["72D090FF4C44DAAD"]
-			description: [
-				"&6制作团队：GoCampingTeam ( 译名：露营组 ) &r"
-				""
-				"{\"text\":\"点击前往B站主页\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://space.bilibili.com/3493263256324592\"}}"
-				""
-				"{\"text\":\"点击前往团队介绍页\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.mcmod.cn/author/31248.html\"}}"
-				""
-				"{\"text\":\"该项目Git地址\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Yorunina/No-Flesh-Within-Chest\"}}"
-				""
-				"{\"text\":\"联系我们！\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://kook.top/3IFPA5\"}}"
-			]
+			description: ["&2制作团队：GoCamping！（译名：去露营！）&r"]
 			icon: "minecraft:campfire"
 			id: "0E3B5BC6A471679E"
-			shape: "rsquare"
 			subtitle: "制作团队：GoCamping！"
 			tasks: [{
 				id: "517BC679DC3C0E6C"
 				title: "制作团队"
 				type: "checkmark"
 			}]
-			x: -1.25d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -65,14 +54,13 @@
 				tag: { }
 			}
 			id: "64EA255C062BB895"
-			shape: "rsquare"
 			subtitle: "外部鸣谢"
 			tasks: [{
 				id: "1B62C7838335B033"
 				title: "额外鸣谢"
 				type: "checkmark"
 			}]
-			x: -3.75d
+			x: -2.5d
 			y: 0.0d
 		}
 		{
@@ -172,7 +160,6 @@
 				""
 				"{\"text\":\"点击前往Git查看进度\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Yorunina/No-Flesh-Within-Chest\"}}"
 			]
-			hide_dependent_lines: true
 			id: "5D4966C4D48F6E5E"
 			shape: "rsquare"
 			subtitle: "整合包的扩展是无限的，但短期内，可以将其视为完成"
@@ -184,87 +171,6 @@
 			title: "长期迭代目标：100%"
 			x: 1.25d
 			y: 1.75d
-		}
-		{
-			dependencies: ["72D090FF4C44DAAD"]
-			description: [
-				"中文版本中，该整合包的名称为脆骨症，其恰好对应了现实中存在的一种病——&6成骨不全症&r&7(osteogenesis imperfecta)&r。"
-				""
-				"这是一种非常罕见的遗传性骨疾病，发病率约为&23/100,000&r。具有此病的患者根据其疾病分型不同，症状表现也有所不同，轻者可能仅仅是日常中&c经常发生骨折&r，重者则可能轻易&c残废&r甚至无法生活具有&c死亡&r的风险。"
-				""
-				"由于该疾病是一种先天遗传疾病，没有任何的预防措施——甚至部分会在母亲子宫内或分娩时死亡。在发现该疾病后患者也仅仅能够通过通过一些安全主动运动来增加骨量、肌肉量以保证日常的独立生活，但并无完全根治的方法。根据致病基因的不同，患者可能服用包括二膦酸盐、雌激素、降钙素、维生素D3等药物进行治疗。"
-				""
-				"目前，关于该疾病的&6干细胞治疗&r的疗法较为领先，但目前也仅仅是停留在研究阶段，短期内无法应用于临床。"
-				""
-				"本任务希望各位玩家在游玩的同时，也能关注到这类&2罕见病人群&r。通过力所能及的方式来减少这些患者的痛苦与负担。"
-				"{@pagebreak}"
-				"{\"text\":\"如你需要了解更多关于此病的信息，可以点此跳转Wiki\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://zh.wikipedia.org/wiki/%E6%88%90%E9%AA%A8%E4%B8%8D%E5%85%A8%E7%97%87\"}}"
-				""
-				"{\"text\":\"如果你有意捐赠，可直接联系China-Dolls Center for Rare Disorders(CCRD) 瓷娃娃罕见病关爱中心，点此跳转主页。\",\"color\":\"gold\",\"BOLD\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"http://chinadolls.org.cn/\"}}"
-				""
-				"GoCampingTeam对各位玩家能够浏览至此感到由衷的感谢。"
-			]
-			icon: "irons_spellbooks:frozen_bone"
-			id: "4B490AD5A08F9EB0"
-			rewards: [{
-				id: "50ED9DFF5A80BFC8"
-				item: {
-					Count: 1b
-					id: "kubejs:hard_bone"
-					tag: { }
-				}
-				type: "item"
-			}]
-			shape: "rsquare"
-			subtitle: "脆骨症又指什么"
-			tasks: [{
-				id: "1A346A0654B7301B"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "一段故事"
-			x: 1.25d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5D4966C4D48F6E5E"]
-			icon: "kubejs:sponsor_badge"
-			id: "16112F2E4A2F8B3C"
-			subtitle: "第一位赞助人！感谢！"
-			tasks: [{
-				id: "69D69646955DEDE0"
-				item: "kubejs:sponsor_badge"
-				type: "item"
-			}]
-			title: "白子翎羽"
-			x: -1.25d
-			y: 3.5d
-		}
-		{
-			dependencies: ["5D4966C4D48F6E5E"]
-			id: "37BF78CED63FC2DA"
-			subtitle: "第二位赞助人！不愿意透露姓名！"
-			tasks: [{
-				id: "6CEE217B384012BA"
-				item: "kubejs:sponsor_badge"
-				type: "item"
-			}]
-			title: "爱发电用户_kSCc"
-			x: -2.25d
-			y: 4.5d
-		}
-		{
-			dependencies: ["5D4966C4D48F6E5E"]
-			id: "3D8902783ABF246B"
-			subtitle: "第三位赞助人！还帮助了测试定位问题！"
-			tasks: [{
-				id: "03065D2DF653D533"
-				item: "kubejs:sponsor_badge"
-				type: "item"
-			}]
-			title: "这是我家猫"
-			x: -0.25d
-			y: 4.5d
 		}
 	]
 	title: "制作人名单"

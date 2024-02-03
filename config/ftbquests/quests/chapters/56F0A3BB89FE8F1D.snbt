@@ -80,19 +80,29 @@
 			icon: "dimdungeons:item_portal_key"
 			id: "77647256571F2ED0"
 			rewards: [{
-				command: "/capsule giveLinked dim_portal_basic.nbt @p"
-				icon: {
+				id: "661412D528E130F1"
+				item: {
 					Count: 1b
 					id: "capsule:capsule"
 					tag: {
-						color: 13421772
-						size: 3
-						state: 0
+						activetimer: {
+							starttime: 5053
+						}
+						canRotate: 0b
+						color: 7105644
+						display: {
+							color: 14714914
+						}
+						label: "Dim Portal Basic"
+						mirror: "NONE"
+						rotation: "NONE"
+						size: 7
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_dim_portal_basic-9"
+						upgraded: 0
 					}
 				}
-				id: "294DCE2AD9203B11"
-				title: "基础维度传送门"
-				type: "command"
+				type: "item"
 			}]
 			subtitle: "可以反复搬运的维度地牢传送门"
 			tasks: [{
@@ -130,19 +140,29 @@
 			}
 			id: "7BA6B38A77C6A18E"
 			rewards: [{
-				command: "/capsule giveLinked dim_portal_advanced.nbt @p"
-				icon: {
+				id: "64095E7A96446164"
+				item: {
 					Count: 1b
 					id: "capsule:capsule"
 					tag: {
-						color: 65522
+						activetimer: {
+							starttime: 4666
+						}
+						canRotate: 0b
+						color: 7105644
+						display: {
+							color: 6196919
+						}
+						label: "Dim Portal Advanced"
+						mirror: "NONE"
+						rotation: "NONE"
 						size: 7
-						state: 0
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_dim_portal_advanced-8"
+						upgraded: 0
 					}
 				}
-				id: "34CED94945BC9FEC"
-				title: "高级维度传送门"
-				type: "command"
+				type: "item"
 			}]
 			subtitle: "可以反复搬运的维度地牢传送门"
 			tasks: [{
@@ -162,19 +182,29 @@
 			icon: "waystones:waystone"
 			id: "4648F3EE70D1996F"
 			rewards: [{
-				command: "/capsule giveLinked waystone_station.nbt @p"
-				icon: {
+				id: "7B1C8893FB7B6B91"
+				item: {
 					Count: 1b
 					id: "capsule:capsule"
 					tag: {
-						color: 65522
+						activetimer: {
+							starttime: 1376
+						}
+						canRotate: 0b
+						color: 9819623
+						display: {
+							color: 9819623
+						}
+						label: "Waystone Station"
+						mirror: "NONE"
+						rotation: "NONE"
 						size: 7
-						state: 0
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_waystone_station-2"
+						upgraded: 0
 					}
 				}
-				id: "79B81031B9D7086C"
-				title: "传送石碑站点"
-				type: "command"
+				type: "item"
 			}]
 			subtitle: "可以随身携带的石碑站点"
 			tasks: [{
@@ -193,19 +223,24 @@
 			icon: "irons_spellbooks:arcane_anvil"
 			id: "5CB1ADFB92A1BB22"
 			rewards: [{
-				command: "/capsule giveLinked iron_spell_workshop.nbt @p"
-				icon: {
+				id: "2E7F7A28D7B00FEF"
+				item: {
 					Count: 1b
 					id: "capsule:capsule"
 					tag: {
-						color: 65522
-						size: 7
-						state: 0
+						canRotate: 0b
+						color: 14714914
+						display: {
+							color: 5544791
+						}
+						label: "Iron Spell Workshop"
+						size: 5
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_iron_spell_workshop-12"
+						upgraded: 0
 					}
 				}
-				id: "61409016C4DC8DD2"
-				title: "魔法工作站"
-				type: "command"
+				type: "item"
 			}]
 			subtitle: "一个完整的Iron的魔法工作站"
 			tasks: [{
@@ -224,19 +259,29 @@
 			icon: "tetra:forged_workbench"
 			id: "73F6923DCE383C5D"
 			rewards: [{
-				command: "/capsule giveLinked tetra_workshop.nbt @p"
-				icon: {
+				id: "2893721521F6F29D"
+				item: {
 					Count: 1b
 					id: "capsule:capsule"
 					tag: {
-						color: 65522
-						size: 7
-						state: 0
+						activetimer: {
+							starttime: 1882
+						}
+						canRotate: 0b
+						color: 5544791
+						display: {
+							color: 7105644
+						}
+						label: "Tetra Workshop"
+						mirror: "NONE"
+						rotation: "NONE"
+						size: 9
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_tetra_workshop-3"
+						upgraded: 0
 					}
 				}
-				id: "6609A7F5986FAE36"
-				title: "锻造工作站"
-				type: "command"
+				type: "item"
 			}]
 			subtitle: "一个包含锻造锤的Tetra工作站"
 			tasks: [{
@@ -256,19 +301,29 @@
 			icon: "toms_storage:ts.inventory_connector"
 			id: "4717E22823792074"
 			rewards: [{
-				command: "/capsule giveLinked simple_storage.nbt @p"
-				icon: {
+				id: "58780E8CBEACE597"
+				item: {
 					Count: 1b
 					id: "capsule:capsule"
 					tag: {
-						color: 65522
-						size: 7
-						state: 0
+						activetimer: {
+							starttime: 2674
+						}
+						canRotate: 0b
+						color: 13421772
+						display: {
+							color: 14714914
+						}
+						label: "Simple Storage"
+						mirror: "NONE"
+						rotation: "NONE"
+						size: 9
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_simple_storage-5"
+						upgraded: 0
 					}
 				}
-				id: "4BE9C15992EC70F1"
-				title: "存储站雏形"
-				type: "command"
+				type: "item"
 			}]
 			subtitle: "一个待扩展的存储站雏形"
 			tasks: [{
@@ -288,19 +343,29 @@
 			icon: "farmersdelight:stove"
 			id: "2D616B58186CB82A"
 			rewards: [{
-				command: "/capsule giveLinked farmer_delight_kitchen.nbt @p"
-				icon: {
+				id: "55187A33A9C733C8"
+				item: {
 					Count: 1b
 					id: "capsule:capsule"
 					tag: {
-						color: 65522
+						activetimer: {
+							starttime: 5437
+						}
+						canRotate: 0b
+						color: 14714914
+						display: {
+							color: 13421772
+						}
+						label: "Farmer Delight Kitchen"
+						mirror: "NONE"
+						rotation: "NONE"
 						size: 7
-						state: 0
+						state: 2
+						structureName: "c-yorunina-config_capsule_rewards_farmer_delight_kitchen-10"
+						upgraded: 0
 					}
 				}
-				id: "74F0C843AF02284B"
-				title: "农夫厨房"
-				type: "command"
+				type: "item"
 			}]
 			subtitle: "农夫乐事厨房"
 			tasks: [{
