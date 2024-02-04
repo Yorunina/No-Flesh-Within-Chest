@@ -1,5 +1,5 @@
 {
-  "armorSetName": "»ÃÒí",
+  "armorSetName": "ï¿½ï¿½ï¿½ï¿½",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:phantom_helmet"
@@ -15,15 +15,15 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "»¯ÉíÖÂÃü¶øÓÖ´àÈõµÄÁÔÊÖ£¬ÈçÓÄÓ°°ã²»¿É×½Ãþ"
+    "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ã²»ï¿½ï¿½×½ï¿½ï¿½"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "minecraft:generic.attack_damage",
       "modifierUUID": "619EECDC-08B9-436B-B0FD-7F7EEBD48B32",
-      "description": "+50% ¹¥»÷ÉËº¦",
-      "value": 0.5,
+      "description": "+20% ï¿½ï¿½ï¿½ï¿½ï¿½Ëºï¿½",
+      "value": 0.2,
       "attributeOperation": 1
     },
     {
@@ -31,7 +31,7 @@
       "name": "minecraft:generic.max_health",
       "modifierUUID": "460C5B0C-4B7E-4CA7-BB8D-3A2052658326",
       "attributeOperation": 2,
-      "description": "-20% ÑªÁ¿ÉÏÏÞ",
+      "description": "-20% Ñªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",
       "value": -0.2
     },
     {

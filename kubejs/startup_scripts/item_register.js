@@ -73,7 +73,7 @@ StartupEvents.registry('item', event => {
             if (level.isClientSide()) return itemstack
             if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
                 let friend = Utils.server.getPlayer(itemstack.nbt.friendName)
-                if (friend && friend.isAlive()) {
+                if (friend && friend.isLiving()) {
                     entity.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, 0, 0)
                     entity.addItemCooldown(itemstack, 20 * 10)
                 } else {

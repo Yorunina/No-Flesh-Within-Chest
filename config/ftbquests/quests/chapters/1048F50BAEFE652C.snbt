@@ -720,6 +720,11 @@
 				""
 				"可以将其放置在器官容器中进化为心之剑。"
 			]
+			icon: {
+				Count: 1b
+				id: "kubejs:heart_of_blade"
+				tag: { }
+			}
 			id: "6A617A9DCFEB9F9F"
 			rewards: [{
 				id: "50B147575C892569"
@@ -727,15 +732,26 @@
 				type: "item"
 			}]
 			subtitle: "反甲"
-			tasks: [{
-				id: "61FD79848FE6A4E4"
-				item: {
-					Count: 1b
-					id: "kubejs:heart_of_blade"
-					tag: { }
+			tasks: [
+				{
+					id: "61FD79848FE6A4E4"
+					item: {
+						Count: 1b
+						id: "kubejs:heart_of_blade"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "1F20460DF372E0F4"
+					item: {
+						Count: 1b
+						id: "kubejs:blade_of_heart"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			x: -1.75d
 			y: 8.5d
 		}
@@ -782,32 +798,6 @@
 			}]
 			x: -2.75d
 			y: 8.5d
-		}
-		{
-			dependencies: ["6662469DC72EA384"]
-			description: [
-				"通过&6剑之心&r在&2器官容器中进化&r获得，能够针对武器大师的宽刃剑提供稳定的增伤。"
-				""
-				"可以将其放置在器官容器中重新进化成为剑之心。"
-			]
-			id: "427CC07512FED0EE"
-			rewards: [{
-				id: "7515844110424DAD"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "心剑出鞘！"
-			tasks: [{
-				id: "434606B7D1398F12"
-				item: {
-					Count: 1b
-					id: "kubejs:blade_of_heart"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -5.75d
-			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2442,6 +2432,32 @@
 				type: "item"
 			}]
 			x: -6.75d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"在&c永冻领主&r的胸腔中获得。"
+				""
+				"受到攻击后，攻击者会被附加雪肤效果，会如同雪傀儡一样遭受类如流水等伤害，并且在脚底生成雪片。"
+			]
+			id: "01F1485270864C19"
+			rewards: [{
+				id: "2A5608318AD0A44B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它很冷，你也很冷"
+			tasks: [{
+				id: "0618C275CE7F5983"
+				item: {
+					Count: 1b
+					id: "kubejs:freezing_intestine"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.75d
 			y: 9.5d
 		}
 	]

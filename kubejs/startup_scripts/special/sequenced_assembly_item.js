@@ -1,7 +1,7 @@
 StartupEvents.registry('item', event => {
     event.create('kubejs:incomplete_lung_template', 'create:sequenced_assembly').texture('kubejs:item/organs/template/lung_template')
     event.create('kubejs:incomplete_muscle_template', 'create:sequenced_assembly').texture('kubejs:item/organs/template/muscle_template')
-    event.create('kubejs:incomplete_heart_template', 'create:sequenced_assembly').texture('kubejs:item/organs/template/lung_template')
+    event.create('kubejs:incomplete_heart_template', 'create:sequenced_assembly').texture('kubejs:item/organs/template/heart_template')
     event.create('kubejs:incomplete_intestine_template', 'create:sequenced_assembly').texture('kubejs:item/organs/template/intestine_template')
     event.create('kubejs:incomplete_rib_template', 'create:sequenced_assembly').texture('kubejs:item/organs/template/rib_template')
     event.create('kubejs:incomplete_spine_template', 'create:sequenced_assembly').texture('kubejs:item/organs/template/spine_template')

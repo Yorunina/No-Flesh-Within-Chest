@@ -10,6 +10,13 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'irons_spellbooks:dev_staff' })
     event.remove({ output: 'goety:warped_wartful_egg' })
     event.remove({ output: 'gateways:gate_pearl' })
+    event.remove({ output: 'cataclysm:meat_shredder' })
+    
+    event.shaped('cataclysm:meat_shredder', [
+        ['', 'minecraft:nether_star', 'goety:philosophers_stone'],
+        ['', 'cataclysm:witherite_ingot', 'minecraft:nether_star'],
+        ['cataclysm:witherite_ingot', '', '']
+    ])
 
     event.shaped('minecraft:end_portal_frame', [
         ['hexerei:selenite_shard', 'hexerei:wax_blend', 'hexerei:selenite_shard'],
