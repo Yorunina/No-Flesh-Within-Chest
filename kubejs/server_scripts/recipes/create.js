@@ -167,11 +167,11 @@ ServerEvents.recipes(event => {
 		Item.of('kubejs:compressed_oxygen_implant').withChance(70.0),
 		Item.of('create:copper_sheet').withChance(30.0)
 	], Item.of('create:fluid_tank').strongNBT(), [
-		event.recipes.createDeploying('create:fluid_tank', ['create:fluid_tank', 'chestcavity:gas_bladder']),
-		event.recipes.createDeploying('create:fluid_tank', ['create:fluid_tank', 'createaddition:electrum_sheet']),
-		event.recipes.createDeploying('create:fluid_tank', ['create:fluid_tank', 'create:iron_sheet']),
-		event.recipes.createDeploying('create:fluid_tank', ['create:fluid_tank', 'createaddition:zinc_sheet'])
-	]).transitionalItem('create:fluid_tank').loops(3)
+		event.recipes.createDeploying('kubejs:incomplete_compressed_oxygen_implant', ['kubejs:incomplete_compressed_oxygen_implant', 'chestcavity:gas_bladder']),
+		event.recipes.createDeploying('kubejs:incomplete_compressed_oxygen_implant', ['kubejs:incomplete_compressed_oxygen_implant', 'createaddition:electrum_sheet']),
+		event.recipes.createDeploying('kubejs:incomplete_compressed_oxygen_implant', ['kubejs:incomplete_compressed_oxygen_implant', 'create:iron_sheet']),
+		event.recipes.createDeploying('kubejs:incomplete_compressed_oxygen_implant', ['kubejs:incomplete_compressed_oxygen_implant', 'createaddition:zinc_sheet'])
+	]).transitionalItem('kubejs:incomplete_compressed_oxygen_implant').loops(3)
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:glass_wand').withChance(85.0),
