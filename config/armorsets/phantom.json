@@ -42,7 +42,7 @@
     },
     {
       "type": "effect",
-      "name": "irons_spellbooks:true_invisibility",
+      "name": "minecraft:invisibility",
       "value": 0.0,
       "interactionType": "self",
       "interactionDuration": 300,
