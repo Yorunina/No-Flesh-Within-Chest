@@ -15,9 +15,31 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "你的身体变得透明"
+    "化身致命而又脆弱的猎手，如幽影般不可捉摸"
   ],
   "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "obscure_api:critical_hit",
+      "modifierUUID": "13D905DD-074D-4A8D-863A-C1F10726C88C",
+      "description": "+20% 暴击概率",
+      "value": 0.2
+    },
+    {
+      "type": "attribute",
+      "name": "obscure_api:critical_damage",
+      "modifierUUID": "619EECDC-08B9-436B-B0FD-7F7EEBD48B32",
+      "description": "+50% 暴击伤害",
+      "value": 0.5
+    },
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "modifierUUID": "460C5B0C-4B7E-4CA7-BB8D-3A2052658326",
+      "attributeOperation": 2,
+      "description": "-30% 血量上限",
+      "value": -0.3
+    },
     {
       "type": "effect",
       "name": "minecraft:invisibility",

@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "标记敌人后，你的箭矢将追踪敌人，但同时也让你变得更像骷髅……"
+    "你的箭矢将更加锐利而灵动，但同时也让你变得更像骷髅……"
   ],
   "fullSetBonuses": [
     {
@@ -32,7 +32,16 @@
       "name": "goety:arrowmantic",
       "value": 4.0,
       "interactionType": "attack",
-      "interactionDuration": 3000,
+      "interactionDuration": 600,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    },
+    {
+      "type": "effect",
+      "name": "kubejs:arrow_damage_boost",
+      "value": 1.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
       "hideBonusDescription": false,
       "onlyImmuneToNewEffects": false
     }
