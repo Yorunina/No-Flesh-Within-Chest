@@ -177,6 +177,9 @@ ServerEvents.recipes(event => {
 
     event.smelting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
     event.blasting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
+    
+    event.smelting('kubejs:silver_ingot', 'kubejs:raw_silver', '5.0')
+    event.blasting('kubejs:silver_ingot', 'kubejs:raw_silver', '5.0')
 
     event.smelting('kubejs:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
     event.blasting('kubejs:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
