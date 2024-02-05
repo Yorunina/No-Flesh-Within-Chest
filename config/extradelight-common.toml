@@ -10,5 +10,5 @@
 	shouldMintSpread = true
 	#How fast should mint spread? (Higher number = Slower)
 	#Range: 1 ~ 100
-	mintSpreadRate = 30
+	mintSpreadRate = 100
 
