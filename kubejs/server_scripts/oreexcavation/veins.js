@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
     .id("kubejs:drilling_netherite");
 
     event.recipes.createoreexcavation
-    .drilling([Item.of('irons_spellbooks:arcane_salvage').withChance(0.3), Item.of('irons_spellbooks:arcane_essence').withChance(0.8), Item.of('irons_spellbooks:cinder_essence').withChance(0.5)], '{"text": "奥术残骸矿"}', 1, 4000)
+    .drilling([Item.of('irons_spellbooks:arcane_debris').withChance(0.3), Item.of('irons_spellbooks:arcane_essence').withChance(0.8), Item.of('irons_spellbooks:cinder_essence').withChance(0.5)], '{"text": "奥术残骸矿"}', 1, 4000)
     .drill('createoreexcavation:netherite_drill')
     .alwaysInfinite()
     .stress(2048)
