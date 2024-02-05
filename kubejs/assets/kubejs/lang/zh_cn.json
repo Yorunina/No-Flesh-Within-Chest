@@ -194,6 +194,8 @@
     "item.kubejs.fire_candy": "火糖果",
     "item.kubejs.wind_candy": "风糖果",
     "item.kubejs.raw_silver": "粗银",
+    "block.kubejs.silver_block":"银块",
+    "block.kubejs.raw_silver_block":"粗银块",
     "item.kubejs.scrap": "废料",
     "item.kubejs.common_mineral_cluster": "常见矿簇",
     "item.kubejs.rare_mineral_cluster": "稀有矿簇",

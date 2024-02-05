@@ -187,4 +187,18 @@ ServerEvents.recipes(event => {
     event.shaped('kubejs:doppelganger', [
         ['', 'nameless_trinkets:reverse_card', ''],
         ['minecraft:totem_of_undying', 'meetyourfight:phantoplasm', 'minecraft:totem_of_undying']])
+
+    event.shaped('kubejs:silver_block', [
+        ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot'],
+        ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot'],
+        ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot']])
+
+    event.shaped('kubejs:raw_silver_block', [
+        ['kubejs:raw_silver', 'kubejs:raw_silver', 'kubejs:raw_silver'],
+        ['kubejs:raw_silver', 'kubejs:raw_silver', 'kubejs:raw_silver'],
+        ['kubejs:raw_silver', 'kubejs:raw_silver', 'kubejs:raw_silver']])
+
+    event.shapeless('9x kubejs:silver_ingot', ['kubejs:silver_block'])
+    event.shapeless('9x kubejs:raw_silver', ['kubejs:raw_silver_block'])
+
 })
