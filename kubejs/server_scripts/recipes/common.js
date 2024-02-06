@@ -10,6 +10,13 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'irons_spellbooks:dev_staff' })
     event.remove({ output: 'goety:warped_wartful_egg' })
     event.remove({ output: 'gateways:gate_pearl' })
+    event.remove({ output: 'cataclysm:meat_shredder' })
+    
+    event.shaped('cataclysm:meat_shredder', [
+        ['', 'minecraft:nether_star', 'goety:philosophers_stone'],
+        ['', 'cataclysm:witherite_ingot', 'minecraft:nether_star'],
+        ['cataclysm:witherite_ingot', '', '']
+    ])
 
     event.shaped('minecraft:end_portal_frame', [
         ['hexerei:selenite_shard', 'hexerei:wax_blend', 'hexerei:selenite_shard'],
@@ -93,6 +100,23 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:eye_of_village', ['minecraft:ender_pearl', 'minecraft:emerald'])
     event.shapeless('kubejs:eye_of_dnl', ['minecraft:ender_pearl', 'minecraft:gold_ingot'])
     event.shapeless('kubejs:eye_of_fortress', ['minecraft:ender_pearl', 'minecraft:magma_cream'])
+    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:explosion_proof_jacket'])
+    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:ethereal_wings'])
+    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:creeper_sense'])
+    event.shapeless('kubejs:mosquito_repellent', ['irons_spellbooks:magic_cloth', 'chestcavity:cooked_alien_organ_meat'])
+    
+    event.shapeless('chestcavity:appendix', [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
+        .modifyResult((grid, stack) => {
+            for (let i = 0; i <= 9; i++) {
+                let organ = grid.get(i)
+                if (organ && organ.hasNBT() && organ.nbt.contains('chestcavity:organ_compatibility')) {
+                    return Item.of(organ.id);
+                }
+            }
+            return null;
+        });
+
+
 
     event.shapeless('kubejs:lost_paradise', ['kubejs:paradise_regained', 'kubejs:god_agreement'])
 

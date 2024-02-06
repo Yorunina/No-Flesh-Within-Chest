@@ -73,7 +73,7 @@ StartupEvents.registry('item', event => {
             if (level.isClientSide()) return itemstack
             if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
                 let friend = Utils.server.getPlayer(itemstack.nbt.friendName)
-                if (friend && friend.isAlive()) {
+                if (friend && friend.isLiving()) {
                     entity.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, 0, 0)
                     entity.addItemCooldown(itemstack, 20 * 10)
                 } else {
@@ -94,7 +94,7 @@ StartupEvents.registry('item', event => {
     event.create('god_bless_full_necklace').texture('kubejs:item/god_bless_full_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
 
     event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
-    event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1)
+    event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1).fireResistant()
     event.create('god_agreement').texture('kubejs:item/god_agreement').maxStackSize(1)
 
     event.create('flora_wand').texture('kubejs:item/flora_wand')
@@ -201,10 +201,11 @@ StartupEvents.registry('item', event => {
 
 
     // 随机基本器官
-    event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').tag('kubejs:organ').tag('itemborders:iron')
+    event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').maxStackSize(1).tag('kubejs:organ').tag('itemborders:iron')
 
     event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
-
+    event.create('kubejs:mysterious_trinket').texture('kubejs:item/mysterious_trinket').maxStackSize(64)
+    
     event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
         .useAnimation('bow')
         .use((level, player, hand) => {

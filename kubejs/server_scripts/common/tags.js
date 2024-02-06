@@ -10,7 +10,6 @@ ServerEvents.tags('item', event => {
     'irons_spellbooks:villager_spell_book', 'irons_spellbooks:blood_staff', 'irons_spellbooks:evoker_spell_book'])
 
   event.add('curios:body', ['supplementaries:quiver'])
-  event.add('kubejs:anti_rejection', ['biomancy:healing_additive'])
 
   event.add('kubejs:lung', 'chestcavity:lung')
   event.add('kubejs:lung', 'chestcavity:rotten_lung')

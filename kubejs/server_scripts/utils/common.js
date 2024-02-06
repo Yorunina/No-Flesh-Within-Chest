@@ -5,12 +5,12 @@
 * @param {Number} radius
 * @returns {Array<Internal.Entity>}
 */
-function getEntitiesWithinRadius(level, pos, radius) {
+function getLivingWithinRadius(level, pos, radius) {
     let area = new AABB.of(pos.x() - radius, pos.y() - radius, pos.z() - radius, pos.x() + radius, pos.y() + radius, pos.z() + radius)
     let entityAABBList = level.getEntitiesWithin(area)
     let entityList = []
     entityAABBList.forEach(entity => {
-        if (entity.position() && entity.position().distanceTo(pos) <= radius) {
+        if (entity.position() && entity.isLiving() && entity.position().distanceTo(pos) <= radius) {
             entityList.push(entity)
         }
     })

@@ -31,7 +31,7 @@ const curiosHurtStrategies = {
     'kubejs:friend_to_the_end': function (event, curios, slot, item, data) {
         if (item.hasNBT() && item.nbt.friendName) {
             let friend = Utils.server.getPlayer(item.nbt.friendName)
-            if (friend && friend.isAlive()) {
+            if (friend && friend.isLiving()) {
                 event.entity.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, 0, 0)
                 curios.setStackInSlot(slot, Item.of('irons_spellbooks:silver_ring'));
                 event.entity.setHealth(1)

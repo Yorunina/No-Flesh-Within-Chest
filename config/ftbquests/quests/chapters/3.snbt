@@ -113,7 +113,6 @@
 					type: "item"
 				}
 			]
-			secret: true
 			shape: "hexagon"
 			subtitle: "在这个世界上，似乎存在有难以知晓的秘密"
 			tasks: [
@@ -427,6 +426,7 @@
 			shape: "hexagon"
 			subtitle: "脆弱诅咒使得装备耐久的消耗极快"
 			tasks: [{
+				consume_items: true
 				id: "10F2231D0810E3A5"
 				item: "kubejs:god_consciousness"
 				match_nbt: false
@@ -480,17 +480,19 @@
 			icon: "minecraft:pufferfish"
 			id: "476F46AA31957457"
 			rewards: [{
-				auto: "invisible"
+				auto: "enabled"
 				icon: "minecraft:pufferfish_bucket"
 				id: "1CC75E0C5C6CF1C6"
 				ignore_reward_blocking: true
-				stage: ""
+				remove: true
+				stage: "curse_mining_fatigue"
 				title: "拔除:疲倦恶咒"
 				type: "gamestage"
 			}]
 			shape: "hexagon"
 			subtitle: "疲倦恶咒使得你无时无刻被疲劳所影响"
 			tasks: [{
+				consume_items: true
 				id: "33E92295A8E87CBE"
 				item: "kubejs:god_consciousness"
 				title: "任意神意碎片"
@@ -518,7 +520,9 @@
 						gateway: "kubejs:boss_rush"
 					}
 				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "挑战Boss Rush！"
 			x: -1.75d

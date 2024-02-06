@@ -93,7 +93,7 @@
         },
         {
           "type": "item",
-          "name": "nameless_trinkets:mysterious_trinket",
+          "name": "kubejs:mysterious_trinket",
           "weight": 5,
           "functions": [
             {

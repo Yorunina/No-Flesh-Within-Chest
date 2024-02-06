@@ -715,33 +715,16 @@
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
-			description: ["从利维亚桑（利维坦）的胸腔中获得"]
-			id: "4FE34232B6E5B893"
-			rewards: [{
-				id: "403C9797AB3BAB1B"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "额外的护甲韧性"
-			tasks: [{
-				id: "5A705833F909154A"
-				item: {
-					Count: 1b
-					id: "kubejs:leviathan_rib"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -6.75d
-			y: 9.5d
-		}
-		{
-			dependencies: ["6662469DC72EA384"]
 			description: [
 				"从&2冷血杀手&r的胸腔中获得，能够给予弱小的敌人强大的反弹伤害。"
 				""
 				"可以将其放置在器官容器中进化为心之剑。"
 			]
+			icon: {
+				Count: 1b
+				id: "kubejs:heart_of_blade"
+				tag: { }
+			}
 			id: "6A617A9DCFEB9F9F"
 			rewards: [{
 				id: "50B147575C892569"
@@ -749,15 +732,26 @@
 				type: "item"
 			}]
 			subtitle: "反甲"
-			tasks: [{
-				id: "61FD79848FE6A4E4"
-				item: {
-					Count: 1b
-					id: "kubejs:heart_of_blade"
-					tag: { }
+			tasks: [
+				{
+					id: "61FD79848FE6A4E4"
+					item: {
+						Count: 1b
+						id: "kubejs:heart_of_blade"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "1F20460DF372E0F4"
+					item: {
+						Count: 1b
+						id: "kubejs:blade_of_heart"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			x: -1.75d
 			y: 8.5d
 		}
@@ -804,32 +798,6 @@
 			}]
 			x: -2.75d
 			y: 8.5d
-		}
-		{
-			dependencies: ["6662469DC72EA384"]
-			description: [
-				"通过&6剑之心&r在&2器官容器中进化&r获得，能够针对武器大师的宽刃剑提供稳定的增伤。"
-				""
-				"可以将其放置在器官容器中重新进化成为剑之心。"
-			]
-			id: "427CC07512FED0EE"
-			rewards: [{
-				id: "7515844110424DAD"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "心剑出鞘！"
-			tasks: [{
-				id: "434606B7D1398F12"
-				item: {
-					Count: 1b
-					id: "kubejs:blade_of_heart"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -5.75d
-			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1004,6 +972,11 @@
 		{
 			dependencies: ["6662469DC72EA384"]
 			description: ["从利维亚桑（利维坦）的胸腔中获得"]
+			icon: {
+				Count: 1b
+				id: "kubejs:leviathan_spine"
+				tag: { }
+			}
 			id: "034A6F5A590F4CF5"
 			rewards: [{
 				id: "1B21CC741965C672"
@@ -1011,15 +984,26 @@
 				type: "item"
 			}]
 			subtitle: "提供游泳效率"
-			tasks: [{
-				id: "22870C4045AF8154"
-				item: {
-					Count: 1b
-					id: "kubejs:leviathan_spine"
-					tag: { }
+			tasks: [
+				{
+					id: "22870C4045AF8154"
+					item: {
+						Count: 1b
+						id: "kubejs:leviathan_spine"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "684439BAB9FCFB86"
+					item: {
+						Count: 1b
+						id: "kubejs:leviathan_rib"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			x: -7.75d
 			y: 9.5d
 		}
@@ -1911,6 +1895,11 @@
 				"在该状态下进食，即可将该饥饿Buff转变为一个较为强力的正面效果。"
 			]
 			id: "49CD243E381398F3"
+			rewards: [{
+				id: "63673F4B0E704931"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "或许. . .它一直都活着"
 			tasks: [{
 				id: "052EAE4978FAEEBC"
@@ -2293,6 +2282,8 @@
 				"被&c不洁之血&r污染的蠕虫，能够在你手持附魔物品时，按下主动按键，消除上面的一个诅咒附魔。"
 				""
 				"代价是你将会获得少量&5扭曲值&r。该技能冷却时间600s。"
+				""
+				"为了获得神秘蠕虫，你需要将将&c绯红孑孓&r放入&2衣壳体&r中。"
 			]
 			id: "33DC3C993B5E5DA4"
 			rewards: [{
@@ -2312,6 +2303,162 @@
 			}]
 			x: 15.5d
 			y: 17.5d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: [
+				"&c玫瑰&r系列以激活后提供的大量属性为主要核心。"
+				""
+				"玫瑰石英心脏便是其中的关键部件之一。"
+			]
+			id: "20385C663BC4CBAD"
+			rewards: [{
+				id: "77CC3E3AE7144A69"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它称自己为玫瑰，于是便成为玫瑰"
+			tasks: [{
+				id: "03A1A43A388E670E"
+				item: {
+					Count: 1b
+					id: "kubejs:rose_quartz_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.25d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: [
+				"&c玫瑰石英&r的白板器官之一。"
+				""
+				"能够提供少许的解毒效率，其意义在于配合玫瑰石英系列其他的种类激活器官。"
+			]
+			id: "4609B0E23FB50956"
+			rewards: [{
+				id: "6433A046712A54DB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我成玫瑰，它成玫瑰"
+			tasks: [{
+				id: "3F1D67A9F318E86F"
+				item: {
+					Count: 1b
+					id: "kubejs:rose_quartz_liver"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.25d
+			y: 12.5d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: [
+				"&c玫瑰石英&r的白板器官之一。"
+				""
+				"能够提供少许的力量，其意义在于配合玫瑰石英系列其他的种类激活器官。"
+			]
+			id: "5704DDF15A4710BF"
+			rewards: [{
+				id: "369205CE27AF7D37"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我成就玫瑰，而那玫瑰也欲成就我"
+			tasks: [{
+				id: "689E1EB7F97DED09"
+				item: {
+					Count: 1b
+					id: "kubejs:rose_quartz_muscle"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.25d
+			y: 12.5d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			description: [
+				"&3T3胃&r在器官容器在中&6进化&r获得。能够根据胸腔内的总和饥饿度和饱和度来给予玩家生命值和攻击力的固定提升。"
+				""
+				"重复菜品带来的提升有限，使用更丰富的菜品属性提升会更高。"
+			]
+			id: "56BD2840AD4B9C68"
+			rewards: [{
+				id: "39A57E16F730EBB2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它好饿，它从没有这么饿过"
+			tasks: [{
+				id: "212C9B389338024C"
+				item: {
+					Count: 1b
+					id: "kubejs:king_of_stomach"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.75d
+			y: 21.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"在&c监守者&r的胸腔中获得，能够通过使用主动技能按键释放音爆攻击。"
+				""
+				"音爆波及的敌人越多，其冷却时间越短。"
+			]
+			id: "7A054EC9B9091345"
+			rewards: [{
+				id: "537ABB3CFEABA68D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它在怒吼. . .从它的核心中散发出诡异的声波"
+			tasks: [{
+				id: "45618761569DDA6F"
+				item: {
+					Count: 1b
+					id: "kubejs:warden_core"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.75d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"在&c永冻领主&r的胸腔中获得。"
+				""
+				"受到攻击后，攻击者会被附加雪肤效果，会如同雪傀儡一样遭受类如流水等伤害，并且在脚底生成雪片。"
+			]
+			id: "01F1485270864C19"
+			rewards: [{
+				id: "2A5608318AD0A44B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它很冷，你也很冷"
+			tasks: [{
+				id: "0618C275CE7F5983"
+				item: {
+					Count: 1b
+					id: "kubejs:freezing_intestine"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.75d
+			y: 9.5d
 		}
 	]
 	title: "胸腔：器官收集指南"

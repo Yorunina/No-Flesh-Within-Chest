@@ -1,0 +1,80 @@
+{
+  "defaultChestCavity": [
+      {
+          "item": "kubejs:sculk_pieces",
+          "position": 0
+      },
+      {
+          "item": "kubejs:warden_muscle",
+          "position": 1
+      },
+      {
+          "item": "kubejs:warden_rib",
+          "position": 2
+      },
+      {
+          "item": "kubejs:sculk_soul",
+          "position": 4
+      },
+      {
+          "item": "kubejs:warden_rib",
+          "position": 6
+      },
+      {
+          "item": "kubejs:warden_muscle",
+          "position": 7
+      },
+      {
+          "item": "kubejs:sculk_pieces",
+          "position": 8
+      },
+      {
+          "item": "kubejs:warden_muscle",
+          "position": 10
+      },
+      {
+          "item": "kubejs:warden_rib",
+          "position": 11
+      },
+      {
+          "item": "kubejs:sculk_pieces",
+          "position": 12
+      },
+      {
+          "item": "kubejs:warden_core",
+          "position": 13
+      },
+      {
+          "item": "kubejs:sculk_pieces",
+          "position": 14
+      },
+      {
+          "item": "kubejs:warden_rib",
+          "position": 15
+      },
+      {
+          "item": "kubejs:warden_muscle",
+          "position": 16
+      },
+      {
+          "item": "kubejs:sculk_pieces",
+          "position": 18
+      },
+      {
+          "item": "kubejs:warden_muscle",
+          "position": 20
+      },
+      {
+          "item": "kubejs:warden_muscle",
+          "position": 22
+      },
+      {
+          "item": "kubejs:warden_muscle",
+          "position": 24
+      },
+      {
+          "item": "kubejs:sculk_pieces",
+          "position": 26
+      }
+  ]
+}

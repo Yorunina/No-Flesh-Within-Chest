@@ -65,6 +65,14 @@ const organPlayerBearOnlyStrategies = {
             updateResourceCount(event.entity, count - Math.floor(event.amount))
         }
     },
+    'kubejs:freezing_intestine': function (event, organ, data) {
+        if (event.source.actual && event.source.actual.isLiving()) {
+            event.source.actual.potionEffects.add('goety:snow_skin', 20 * 10)
+        }
+    },
+    'kubejs:mosquito_repellent': function (event, organ, data) {
+        if (event.source?.actual?.type == 'alexsmobs:crimson_mosquito') {
+            event.source.actual.kill()
+        }
+    },
 };
-
-

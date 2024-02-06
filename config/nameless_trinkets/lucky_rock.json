@@ -1,6 +1,6 @@
 {
   "config": {
-    "percentageOfObtaining": 2,
+    "percentageOfObtaining": 4,
     "blockList": [
       "minecraft:coal",
       "minecraft:diamond",

@@ -17,9 +17,11 @@ BioForgingRecipe.prototype = {
     },
 }
 
-ServerEvents.recipes(event => {
+ServerEvents.highPriorityData(event => {
     function registerCustomRecipe(recipeModel) {
-        event.custom(recipeModel)
+        let id = recipeModel.result.id.toString()
+        let item = id.split(':')[1]
+        event.addJson(`kubejs:recipes/bio_forging/${item}.json`, recipeModel)
     }
 
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 8, 'item': 'biomancy:flesh_bits' }, { 'count': 4, 'item': 'biomancy:tough_fibers' }, { 'count': 4, 'item': 'biomancy:elastic_fibers' }], Item.of('kubejs:heart_template')).setNutrientsCost(32).setTab('biomancy:weapons'))
@@ -56,4 +58,5 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'kubejs:appendix_template' }, { 'count': 1, 'item': 'nameless_trinkets:lucky_rock' }, { 'count': 1, 'item': 'meetyourfight:velvet_fortune' }], Item.of('kubejs:lucky_appendix')).setNutrientsCost(40).setTab('biomancy:weapons'))
 
-})
+    registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'kubejs:stomach_template' }, { 'count': 1, 'item': 'kubejs:greed_shard' }], Item.of('kubejs:greedy_stomach')).setNutrientsCost(40).setTab('biomancy:weapons'))
+});

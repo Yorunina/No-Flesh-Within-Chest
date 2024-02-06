@@ -6,6 +6,6 @@
 		"Dynamic TileEntity Lighting" = true
 		"Only Update On Position Change" = true
 		#Allowed Values: OFF, SLOW, FAST, REALTIME
-		"Quality Mode (OFF, SLOW, FAST, REALTIME)" = "FAST"
+		"Quality Mode (OFF, SLOW, FAST, REALTIME)" = "REALTIME"
 		"Dynamic Entity Lighting" = true
 

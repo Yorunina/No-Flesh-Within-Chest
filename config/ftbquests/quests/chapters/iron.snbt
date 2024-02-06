@@ -592,17 +592,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "3D3A1D04124A408D"
-				item: {
-					Count: 1b
-					id: "irons_spellbooks:rotten_spell_book"
-					tag: {
-						ISB_spellbook: {
-							spellSlots: 3
-							spells: [ ]
-						}
-					}
-				}
+				id: "13D10D77D6663578"
+				item: "irons_spellbooks:ruined_book"
 				type: "item"
 			}]
 			x: -2.25d

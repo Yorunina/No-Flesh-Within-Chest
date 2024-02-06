@@ -243,11 +243,7 @@
 				{
 					count: 5
 					id: "0F999BC21146C6CB"
-					item: {
-						Count: 1
-						id: "numismaticoverhaul:bronze_coin"
-						tag: { }
-					}
+					item: "lightmanscurrency:coin_gold"
 					type: "item"
 				}
 			]
