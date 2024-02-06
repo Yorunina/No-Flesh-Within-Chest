@@ -8,8 +8,9 @@ function Organ(itemID) {
     this.ctrlTextLines = []
     this.altTextLines = []
     this.maxStackSize = 1
+    this.neededTags = []
 }
-
+ 
 Organ.prototype = {
     // 注册常规效果
     addScore: function (score, value) {
@@ -23,12 +24,15 @@ Organ.prototype = {
                 break;
             case 'shift':
                 this.shiftTextLines.push(textLines);
+                
                 break;
             case 'ctrl':
                 this.ctrlTextLines.push(textLines);
+                this.neededTags.push('chestcavity:active')
                 break;
             case 'alt':
                 this.altTextLines.push(textLines);
+                this.neededTags.push('chestcavity:special')
                 break;
         }
         return this
