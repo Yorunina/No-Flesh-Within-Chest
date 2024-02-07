@@ -1,0 +1,27 @@
+{
+    "key": "alex_raccoon_tail",
+    "category": "fibre",
+    "primary": 4.8,
+    "secondary": 1,
+    "tertiary": 3,
+    "durability": 420,
+    "integrityCost": 1,
+    "integrityGain": 3,
+    "magicCapacity": 68,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "adadad",
+        "texture": "adadad"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "alexsmobs:raccoon_tail" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:wood"
+    }
+}

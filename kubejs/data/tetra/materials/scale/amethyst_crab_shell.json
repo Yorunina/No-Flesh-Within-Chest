@@ -1,0 +1,29 @@
+{
+    "key": "cata_amethyst_crab_shell",
+    "category": "scale",
+    "primary": 5.5,
+    "secondary": 1.2,
+    "tertiary": 1.6,
+    "durability": 316,
+    "integrityCost": 1,
+    "integrityGain": 5,
+    "magicCapacity": 145,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "e8c5e6",
+        "texture": "e8c5e6"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [
+            "cataclysm:amethyst_crab_shell"
+        ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:stone"
+    }
+}

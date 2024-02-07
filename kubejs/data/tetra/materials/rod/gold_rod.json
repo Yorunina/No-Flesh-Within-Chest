@@ -1,0 +1,27 @@
+{
+  "key": "gold_rod",
+  "category": "misc",
+  "primary": "2.7",
+  "secondary": "2.3",
+  "tertiary": "1.2",
+  "durability": "114",
+  "integrityCost": "2",
+  "integrityGain": "4",
+  "magicCapacity": "168",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "tints": {
+    "glyph": "949494",
+    "texture": "949494"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [ "createaddition:gold_rod" ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:iron"
+  }
+}

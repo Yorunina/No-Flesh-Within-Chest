@@ -1,0 +1,27 @@
+{
+  "key": "copper_rod",
+  "category": "misc",
+  "primary": "3.6",
+  "secondary": "2.2",
+  "tertiary": "1.8",
+  "durability": "384",
+  "integrityCost": "2",
+  "integrityGain": "4",
+  "magicCapacity": "84",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "tints": {
+    "glyph": "949494",
+    "texture": "949494"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [ "createaddition:copper_rod" ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:iron"
+  }
+}

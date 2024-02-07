@@ -1,0 +1,27 @@
+{
+  "key": "iron_rod",
+  "category": "misc",
+  "primary": "4",
+  "secondary": "2.5",
+  "tertiary": "2",
+  "durability": "454",
+  "integrityCost": "2",
+  "integrityGain": "5",
+  "magicCapacity": "80",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "tints": {
+    "glyph": "949494",
+    "texture": "949494"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [ "createaddition:iron_rod" ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:iron"
+  }
+}

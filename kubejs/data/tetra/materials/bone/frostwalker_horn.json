@@ -1,0 +1,27 @@
+{
+    "key": "alex_froststalker_horn",
+    "category": "bone",
+    "primary": 6.6,
+    "secondary": 2.22,
+    "tertiary": 4,
+    "durability": 155,
+    "integrityCost": 1,
+    "integrityGain": 5,
+    "magicCapacity": 120,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 5,
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": [
+        "bone",
+        "crude"
+    ],
+    "material": {
+        "items": [ "alexsmobs:froststalker_horn" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:wood"
+    }
+}

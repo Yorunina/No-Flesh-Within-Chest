@@ -1,0 +1,27 @@
+{
+    "key": "alex_bison_fur_fabric",
+    "category": "fabric",
+    "primary": 1,
+    "secondary": 1,
+    "tertiary": 5,
+    "durability": 210,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 56,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "9d7649",
+        "texture": "a16840"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "alexsmobs:bison_fur" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:wood"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "key": "alex_crocodile_scute",
+    "category": "scale",
+    "primary": 3.2,
+    "secondary": 2.2,
+    "tertiary": 3,
+    "durability": 180,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 110,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "669900",
+        "texture": "669900"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "alexsmobs:crocodile_scute" ]
+    },
+    "effects" : {
+        "stun": [ 5, 2 ]
+	},
+    "requiredTools": {
+        "cut": "minecraft:gold"
+    }
+}

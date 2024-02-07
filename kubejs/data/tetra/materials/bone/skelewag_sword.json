@@ -1,0 +1,27 @@
+{
+    "key": "alex_skelewag_sword",
+    "category": "bone",
+    "primary": 4.2,
+    "secondary": 0.3,
+    "tertiary": 5,
+    "durability": 156,
+    "integrityCost": 1,
+    "integrityGain": 5,
+    "magicCapacity": 126,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 5,
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": [
+        "bone",
+        "crude"
+    ],
+    "material": {
+        "items": [ "alexsmobs:skelewag_sword" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:wood"
+    }
+}

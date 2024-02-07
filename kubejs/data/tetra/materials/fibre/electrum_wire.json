@@ -1,0 +1,32 @@
+{
+  "key": "electrum_wire",
+  "category": "fibre",
+  "primary": "4",
+  "secondary": "3.5",
+  "tertiary": "2.8",
+  "durability": "98",
+  "integrityCost": "1",
+  "integrityGain": "5",
+  "magicCapacity": "148",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "effects": {
+    "stabilizing": 10
+  },
+  "tints": {
+    "glyph": "e39f53",
+    "texture": "e39f53"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [
+      "createaddition:electrum_wire"
+    ]
+  },
+  "requiredTools": {
+    "cut": "minecraft:iron"
+  }
+}

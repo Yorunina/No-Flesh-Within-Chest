@@ -1,0 +1,30 @@
+{
+    "key": "cata_void_stone",
+    "category": "stone",
+    "primary": 7.1,
+    "secondary": 4.9,
+    "tertiary": 0,
+    "durability": 1522,
+    "integrityCost": 2,
+    "integrityGain": 4,
+    "magicCapacity": 121,
+    "toolLevel": "minecraft:diamond",
+    "toolEfficiency": 9.5,
+    "tints": {
+        "glyph": "370f65",
+        "texture": "370f65"
+    },
+    "textures": [
+        "grainy",
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [
+            "cataclysm:void_stone"
+        ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:diamond"
+    }
+}

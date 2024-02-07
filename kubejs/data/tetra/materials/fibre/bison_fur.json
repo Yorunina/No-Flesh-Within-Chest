@@ -1,0 +1,29 @@
+{
+  "key": "alex_bison_fur_fibre",
+  "category": "fibre",
+  "primary": "1.5",
+  "secondary": "1.4",
+  "tertiary": "4",
+  "durability": "236",
+  "integrityCost": "1",
+  "integrityGain": "4",
+  "magicCapacity": "128",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "tints": {
+    "glyph": "3c2c24",
+    "texture": "3c2c24"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [
+      "alexsmobs:bison_fur"
+    ]
+  },
+  "requiredTools": {
+    "cut": "minecraft:stone"
+  }
+}

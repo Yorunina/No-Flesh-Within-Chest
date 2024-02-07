@@ -1,0 +1,27 @@
+{
+    "key": "alex_bone_serpent_tooth",
+    "category": "bone",
+    "primary": 7.6,
+    "secondary": 2.7,
+    "tertiary": 2,
+    "durability":325,
+    "integrityCost": 1,
+    "integrityGain": 5,
+    "magicCapacity": 130,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 6,
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": [
+        "bone",
+        "crude"
+    ],
+    "material": {
+        "items": [ "alexsmobs:bone_serpent_tooth" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:wood"
+    }
+}
