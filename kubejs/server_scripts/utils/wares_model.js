@@ -81,6 +81,7 @@ const ChallengeWares = [
     new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:boss_rush"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:final_raid"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:element_revelry"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_diamond').withCount(1)], [Item.of('gateways:gate_pearl', '{gateway:"kubejs:curios_of_god"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway:"gateways:magma_cube_gate_large"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:blaze_gate_large"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:enderman_gate_large"}')], 3),
@@ -90,6 +91,7 @@ const ChallengeWares = [
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:slime_gate_large"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:witch_gate_large"}')], 3),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:zombie_gate_large"}')], 3),
+    new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(5)], [Item.of('gateways:gate_pearl', '{gateway: "gateways:creeper_gate_large"}')], 3)
 
 ]
 

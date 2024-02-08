@@ -1,0 +1,29 @@
+{
+  "key": "gold_wire",
+  "category": "fibre",
+  "primary": "4.6",
+  "secondary": "1.9",
+  "tertiary": "2.2",
+  "durability": "45",
+  "integrityCost": "1",
+  "integrityGain": "5",
+  "magicCapacity": "184",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "tints": {
+    "glyph": "9fadaf",
+    "texture": "9fadaf"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [
+      "createaddition:gold_wire"
+    ]
+  },
+  "requiredTools": {
+    "cut": "minecraft:iron"
+  }
+}

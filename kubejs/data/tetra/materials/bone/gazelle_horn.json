@@ -1,0 +1,27 @@
+{
+    "key": "alex_gazelle_horn",
+    "category": "bone",
+    "primary": 5.1,
+    "secondary": 2.1,
+    "tertiary": 4.5,
+    "durability": 128,
+    "integrityCost": 1,
+    "integrityGain": 5,
+    "magicCapacity": 106,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 4.5,
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": [
+        "bone",
+        "crude"
+    ],
+    "material": {
+        "items": [ "alexsmobs:gazelle_horn" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:wood"
+    }
+}

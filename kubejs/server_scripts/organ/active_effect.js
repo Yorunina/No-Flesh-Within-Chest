@@ -152,6 +152,7 @@ const organActiveStrategies = {
     },
     'kubejs:holy_eyeball': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.05)
+        attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.2)
     },
     'kubejs:hamimelon_organ': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);

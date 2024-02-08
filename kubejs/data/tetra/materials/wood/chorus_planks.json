@@ -1,0 +1,29 @@
+{
+    "key": "cata_chorus_planks",
+    "category": "wood",
+    "primary": 4.8,
+    "secondary": 3.1,
+    "tertiary": 4.5,
+    "durability": 379,
+    "integrityCost": 2,
+    "integrityGain": 5,
+    "magicCapacity": 105,
+    "toolLevel": "minecraft:gold",
+    "toolEfficiency": 4.2,
+    "tints": {
+        "glyph": "543854",
+        "texture": "543854"
+    },
+    "textures": [
+        "crude",
+        "wooden"
+    ],
+    "material": {
+        "items": [
+            "cataclysm:chorus_planks"
+        ]
+    },
+    "requiredTools": {
+        "axe_dig": "minecraft:iron"
+    }
+}

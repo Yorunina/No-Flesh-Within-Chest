@@ -1,0 +1,30 @@
+{
+    "key": "cata_abyssal_sacrifice",
+    "hidden": true,
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 256,
+    "integrityCost": 1,
+    "integrityGain": 0,
+    "magicCapacity": 0,
+    "toolLevel": 0,
+    "toolEfficiency": 5,
+"attributes":{"forge:reach_distance":1,
+              "forge:attack_range":1},
+    "effects": {
+        "bleeding": 2,
+        "reaching":[15,0.5],
+        "criticalStrike": 25        
+    },
+    "tints": {
+        "glyph": "441494",
+        "texture": "441494"
+    },
+    "textures": [
+        "default"
+    ],
+    "experienceCost": 10,
+    "material":{"items":["cataclysm:abyssal_sacrifice"]}
+}

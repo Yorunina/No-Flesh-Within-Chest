@@ -1,0 +1,27 @@
+{
+  "key": "electrum_rod",
+  "category": "misc",
+  "primary": "3.2",
+  "secondary": "2.4",
+  "tertiary": "2",
+  "durability": "264",
+  "integrityCost": "2",
+  "integrityGain": "6",
+  "magicCapacity": "215",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "tints": {
+    "glyph": "949494",
+    "texture": "949494"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [ "createaddition:electrum_rod" ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:iron"
+  }
+}

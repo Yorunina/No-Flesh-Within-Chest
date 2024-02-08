@@ -1,0 +1,29 @@
+{
+  "key": "copper_wire",
+  "category": "fibre",
+  "primary": "4.3",
+  "secondary": "3.2",
+  "tertiary": "2.5",
+  "durability": "145",
+  "integrityCost": "1",
+  "integrityGain": "5",
+  "magicCapacity": "78",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "tints": {
+    "glyph": "b26449",
+    "texture": "b26449"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [
+      "createaddition:copper_wire"
+    ]
+  },
+  "requiredTools": {
+    "cut": "minecraft:iron"
+  }
+}

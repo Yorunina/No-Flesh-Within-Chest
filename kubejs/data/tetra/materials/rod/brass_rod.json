@@ -1,0 +1,27 @@
+{
+  "key": "brass_rod",
+  "category": "misc",
+  "primary": "3.8",
+  "secondary": "2.8",
+  "tertiary": "2.2",
+  "durability": "480",
+  "integrityCost": "2",
+  "integrityGain": "6",
+  "magicCapacity": "98",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "tints": {
+    "glyph": "949494",
+    "texture": "949494"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [ "createaddition:brass_rod" ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:iron"
+  }
+}

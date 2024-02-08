@@ -1,0 +1,27 @@
+{
+    "key": "alex_elastic_tendon",
+    "category": "fibre",
+    "primary": 5.1,
+    "secondary": 1.6,
+    "tertiary": 4,
+    "durability": 996,
+    "integrityCost": 2,
+    "integrityGain": 6,
+    "magicCapacity": 94,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "edf3c4",
+        "texture": "edf3c4"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "alexsmobs:elastic_tendon" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:wood"
+    }
+}

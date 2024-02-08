@@ -1,0 +1,35 @@
+{
+  "key": "iron_wire",
+  "category": "fibre",
+  "primary": "3.1",
+  "secondary": "1.5",
+  "tertiary": "0.5",
+  "durability": "272",
+  "integrityCost": "1",
+  "integrityGain": "5",
+  "magicCapacity": "36",
+  "toolLevel": "0",
+  "toolEfficiency": "0",
+  "tints": {
+    "glyph": "1c1c1e",
+    "texture": "1c1c1e"
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [
+      "createaddition:iron_wire"
+    ]
+  },
+  "requiredTools": {
+    "cut": "minecraft:iron"
+  },
+  "conditions":[
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ]
+}

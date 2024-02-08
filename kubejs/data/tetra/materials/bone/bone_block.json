@@ -1,0 +1,27 @@
+{
+    "key": "bone_block",
+    "category": "bone",
+    "primary": 5.4,
+    "secondary": 1.8,
+    "tertiary": 5,
+    "durability": 165,
+    "integrityCost": 1,
+    "integrityGain": 5,
+    "magicCapacity": 122,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 5,
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": [
+        "bone",
+        "crude"
+    ],
+    "material": {
+        "items": [ "minecraft:bone_block" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:wood"
+    }
+}

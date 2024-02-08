@@ -1,0 +1,29 @@
+{
+  "key": "alex_cachalot_whale_tooth",
+  "category": "bone",
+  "primary": "6.1",
+  "secondary": "3.4",
+  "tertiary": "2",
+  "durability": "525",
+  "integrityCost": "2",
+  "integrityGain": "6",
+  "magicCapacity": "130",
+  "toolLevel": "minecraft:iron",
+  "toolEfficiency": "8",
+  "tints": {
+    "glyph": "e4cdad",
+    "texture": "e4cdad"
+  },
+  "textures": [
+    "bone",
+    "crude"
+  ],
+  "material": {
+    "items": [
+      "alexsmobs:cachalot_whale_tooth"
+    ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:iron"
+  }
+}

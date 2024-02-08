@@ -1,0 +1,30 @@
+{
+    "key": "alex_rocky_shell",
+    "category": "scale",
+    "primary": 5.8,
+    "secondary": 5.4,
+    "tertiary": 0,
+    "durability": 590,
+    "integrityCost": 3,
+    "integrityGain": 1,
+    "magicCapacity": 105,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "6e2d0c",
+        "texture": "6e2d0c"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "alexsmobs:rocky_shell" ]
+    },
+    "effects" : {
+        "stun": [ 5, 2 ]
+	},
+    "requiredTools": {
+        "cut": "minecraft:gold"
+    }
+}

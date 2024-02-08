@@ -1,0 +1,29 @@
+{
+  "key": "alex_void_worm_mandible",
+  "category": "bone",
+  "primary": "7.6",
+  "secondary": "1.8",
+  "tertiary": "2.5",
+  "durability": "1068",
+  "integrityCost": "2",
+  "integrityGain": "8",
+  "magicCapacity": "278",
+  "toolLevel": "minecraft:netherite",
+  "toolEfficiency": "9",
+  "tints": {
+    "glyph": "343c6c",
+    "texture": "343c6c"
+  },
+  "textures": [
+    "bone",
+    "crude"
+  ],
+  "material": {
+    "items": [
+      "alexsmobs:void_worm_mandible"
+    ]
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:iron"
+  }
+}

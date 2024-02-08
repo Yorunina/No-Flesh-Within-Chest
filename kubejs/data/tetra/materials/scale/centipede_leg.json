@@ -1,0 +1,30 @@
+{
+    "key": "alex_centipede_leg",
+    "category": "scale",
+    "primary": 3.8,
+    "secondary": 2.1,
+    "tertiary": 1,
+    "durability": 116,
+    "integrityCost": 1,
+    "integrityGain": 3,
+    "magicCapacity": 148,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "ff6666",
+        "texture": "ff6666"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "alexsmobs:centipede_leg" ]
+    },
+    "effects" : {
+        "stun": [ 5, 2 ]
+	},
+    "requiredTools": {
+        "cut": "minecraft:gold"
+    }
+}

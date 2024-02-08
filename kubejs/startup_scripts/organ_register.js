@@ -936,6 +936,8 @@ StartupEvents.registry('item', event => {
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
+        .addScore('strength', 1)
+        .addScore('defense', 1)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.nether_star_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.nether_star_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.nether_star_shard.3" })])
         .build())
         .texture('kubejs:item/organs/shard/nether_star_shard')
@@ -943,7 +945,10 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:sloth_shard')
-        .addScore('fire_resistant', 0.5)
+        .addScore('health', 3.5)
+        .addScore('speed', -3)
+        .addScore('defense', 3)
+        .addScore('metabolism', -1.5)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sloth_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.sloth_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.sloth_shard.3" })])
         .build())
         .texture('kubejs:item/organs/shard/sloth_shard')
@@ -951,7 +956,10 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:wrath_shard')
-        .addScore('fire_resistant', 0.5)
+        .addScore('strength', 3)
+        .addScore('nerves', -1.5)
+        .addScore('defense', -2)
+        .addScore('launching', 4.0)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.wrath_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.wrath_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.wrath_shard.3" })])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.wrath_shard.4" }), Text.gold({ "translate": "kubejs.tooltips.wrath_shard.5" }), Text.gray({ "translate": "kubejs.tooltips.wrath_shard.6" })])
         .build())
@@ -960,7 +968,10 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:envy_shard')
-        .addScore('fire_resistant', 0.5)
+        .addScore('filtration', -1.5)
+        .addScore('breath_recovery', 2)
+        .addScore('endurance', -2.5)
+        .addScore('speed', 2)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.envy_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.envy_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.envy_shard.3" })])
         .build())
         .texture('kubejs:item/organs/shard/envy_shard')
@@ -968,7 +979,10 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:gluttony_shard')
-        .addScore('fire_resistant', 0.5)
+        .addScore('health', -2.5)
+        .addScore('digestion', 3)
+        .addScore('nutrition', 2)
+        .addScore('speed', -1.5)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.gluttony_shard.1" })])
         .build())
         .texture('kubejs:item/organs/shard/gluttony_shard')
@@ -976,7 +990,10 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:greed_shard')
-        .addScore('fire_resistant', 0.5)
+        .addScore('luck', 5)
+        .addScore('knockback_resistant', -2.5)
+        .addScore('impact_resistant', -2.5)
+        .addScore('fire_resistant', -1.5)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.greed_shard.1" })])
         .build())
         .texture('kubejs:item/organs/shard/greed_shard')
@@ -984,7 +1001,10 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:loot_entity_only');
 
     registerOrgan(new Organ('kubejs:lust_shard')
-        .addScore('fire_resistant', 0.5)
+        .addScore('nerves', 2.5)
+        .addScore('buff_purging', 2)
+        .addScore('endurance', -2.5)
+        .addScore('health', -1)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.lust_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.lust_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.lust_shard.3" })])
         .build())
         .texture('kubejs:item/organs/shard/lust_shard')
@@ -992,7 +1012,10 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:pride_shard')
-        .addScore('fire_resistant', 0.5)
+        .addScore('arrow_dodging', 1)
+        .addScore('dragon_breath', 1)
+        .addScore('defense', -2.5)
+        .addScore('detoxification', 3.5)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pride_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.pride_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.pride_shard.3" })])
         .build())
         .texture('kubejs:item/organs/shard/pride_shard')

@@ -1,0 +1,31 @@
+{
+  "key": "witherite_ingot",
+  "category": "metal",
+  "primary": "7.2",
+  "secondary": "2.8",
+  "tertiary": "3.5",
+  "durability": "1865",
+  "integrityCost": "2",
+  "integrityGain": "8",
+  "magicCapacity": "115",
+  "toolLevel": "minecraft:netherite",
+  "toolEfficiency": "9",
+  "tints": {
+    "glyph": "000000",
+    "texture": "8F897B"
+  },
+  "textures": [
+    "metal"
+  ],
+  "material": {
+    "items": [
+      "cataclysm:witherite_ingot"
+    ]
+  },
+  "improvements": {
+    "workable": 10
+  },
+  "requiredTools": {
+    "hammer_dig": "minecraft:netherite"
+  }
+}
