@@ -6,7 +6,15 @@ StartupEvents.registry('item', event => {
      */
     function registerOrgan(organ) {
         global.ORGAN_LIST.push(organ)
-        return event.create(organ.itemID).maxStackSize(organ.maxStackSize).tag('kubejs:organ')
+        let builder = event.create(organ.itemID).maxStackSize(organ.maxStackSize).tag('kubejs:organ')
+        /**
+         * 含有激活效果的会带上标签#chestcavity:active
+         * 含有特殊效果的会带上标签#chestcavity:special
+         */
+        organ.neededTags.forEach(tag=>{
+            builder.tag(tag)
+        })
+        return builder
     }
 
     /**

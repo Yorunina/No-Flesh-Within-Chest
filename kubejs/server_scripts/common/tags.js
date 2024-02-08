@@ -27,3 +27,16 @@ ServerEvents.tags('item', event => {
   
   event.add('kubejs:is_cookie_block',['extradelight:chocolate_chip_cookie_block_item','extradelight:gingerbread_cookie_block_item','extradelight:sweet_berry_cookie_block_item','extradelight:apple_cookie_block_item','extradelight:sugar_cookie_block_item','extradelight:pumpkin_cookie_block_item','extradelight:honey_cookie_block_item','extradelight:glow_berry_cookie_block_item'])
 })
+ServerEvents.tags("item", (tags) => {
+  /**
+   * 根据score对器官进行分类
+   * 例如含有 chestcavity:metabolism 即 新陈代谢效率 的器官
+   * 将会添加上 #chestcavity:metabolism 标签
+   */
+global.ORGAN_LIST.forEach((organ) => {
+  organ.organScores.forEach((score) => {
+    tags.add(score["id"], organ.itemID);
+  });
+});
+
+});
