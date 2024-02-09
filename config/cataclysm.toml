@@ -17,7 +17,7 @@
 
 [Weapon]
 	#Armor Infinity Durability(on/off)
-	"Armor Infinity Durability(on/off)" = true
+	"Armor Infinity Durability(on/off)" = false
 	#Bulwark of the Flame's Cooldown
 	#Range: 0 ~ 1000000
 	BulwarkOfTheFlameCooldown = 80
