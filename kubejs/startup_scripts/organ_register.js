@@ -454,6 +454,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:holy_eyeball')
         .addScore('filtration', -0.5)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.holy_eyeball.1" }), Text.yellow({ "translate": "kubejs.tooltips.holy_eyeball.2" }), Text.yellow({ "translate": "kubejs.tooltips.holy_eyeball.3" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.holy_eyeball.1" }), Text.yellow({ "translate": "kubejs.tooltips.holy_eyeball.4" }), Text.yellow({ "translate": "kubejs.tooltips.holy_eyeball.5" })])
         .build())
         .texture('kubejs:item/organs/others/holy_eyeball')
         .tag('kubejs:muscle')
