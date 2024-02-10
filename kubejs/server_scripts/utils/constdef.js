@@ -37,7 +37,6 @@ const bossTypeList = [
     'cataclysm:the_harbinger',
     'cataclysm:the_leviathan',
     'cataclysm:ancient_remnant',
-    'cataclysm:modern_remnant',
     'bosses_of_mass_destruction:void_blossom',
     'bosses_of_mass_destruction:lich',
     'bosses_of_mass_destruction:gauntlet',
@@ -48,6 +47,9 @@ const bossTypeList = [
     'meetyourfight:dame_fortuna',
     'invasioncodered:gashslit',
     'irons_spellbooks:dead_king_corpse',
+    "goety:apostle",
+    "goety:vizier",
+    "graveyard:lich",
 ]
 
 const bossesOfMassDestructionBossTypeList = [

@@ -22,6 +22,7 @@
     "somebosses:rib_golem",
     "witherstormmod:wither_storm_segment",
     "witherstormmod:withered_symbiont",
-    "witherstormmod:wither_storm"
+    "witherstormmod:wither_storm",
+    "graveyard:lich"
   ]
 }
