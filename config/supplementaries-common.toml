@@ -545,7 +545,7 @@
 
 	[tweaks.placeable_books]
 		#Allow books and enchanted books to be placed on the ground
-		enabled = true
+		enabled = false
 		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
 		#Range: 0.0 ~ 5.0
 		book_power = 1.0

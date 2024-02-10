@@ -79,6 +79,70 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('kubejs:god_bless_full_necklace', (item, advanced, text) => {
         text.add(Text.gold({ "translate": "kubejs.tooltips.god_bless_full_necklace.1" }));
     })
+
+    tooltip.addAdvanced('somebosses:illegal_beacon', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.illegal_beacon.1" }));
+    })
+    tooltip.addAdvanced('somebosses:rusty_sword_relic', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.rusty_sword_relic.1" }));
+    })
+    tooltip.addAdvanced('somebosses:monochrome_mask', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.monochrome_mask.1" }));
+    })
+    tooltip.addAdvanced('somebosses:gilded_dynamite', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.gilded_dynamite.1" }));
+    })
+    tooltip.addAdvanced('somebosses:burning_volcanic_rock', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.burning_volcanic_rock.1" }));
+    })
+    tooltip.addAdvanced('somebosses:vampire_bait', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.vampire_bait.1" }));
+    })
+    tooltip.addAdvanced('somebosses:slab_of_command', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.slab_of_command.1" }));
+    })
+    tooltip.addAdvanced('somebosses:bone_of_curse', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.bone_of_curse.1" }));
+    })
+    tooltip.addAdvanced('somebosses:cactus_relic', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.cactus_relic.1" }));
+    })
+    tooltip.addAdvanced('somebosses:prismarine_eye', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.prismarine_eye.1" }));
+    })
+    tooltip.addAdvanced('somebosses:disgusting_pendant', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.disgusting_pendant.1" }));
+    })
+    tooltip.addAdvanced('somebosses:necromancy_staff', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.necromancy_staff.1" }));
+    })
+    tooltip.addAdvanced('somebosses:one_eyed_wrait_in_a_bottle', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.one_eyed_wrait_in_a_bottle.1" }));
+    })
+    tooltip.addAdvanced('somebosses:token_of_the_ninja', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.token_of_the_ninja.1" }));
+    })
+    tooltip.addAdvanced('somebosses:cursed_spring_water', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.cursed_spring_water.1" }));
+    })
+    tooltip.addAdvanced('somebosses:chaos_insignia', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.chaos_insignia.1" }));
+    })
+    tooltip.addAdvanced('somebosses:dark_magic_gauntlet', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.dark_magic_gauntlet.1" }));
+    })
+    tooltip.addAdvanced('somebosses:frozen_shield_plate', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.frozen_shield_plate.1" }));
+    })
+    tooltip.addAdvanced('somebosses:ice_lantern', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.ice_lantern.1" }));
+    })
+    tooltip.addAdvanced('somebosses:furnace_torch', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.furnace_torch.1" }));
+    })
+    tooltip.addAdvanced('somebosses:power_generator_core', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.power_generator_core.1" }));
+    })
     
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1

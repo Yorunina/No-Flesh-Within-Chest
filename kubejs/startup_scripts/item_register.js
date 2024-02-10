@@ -33,7 +33,7 @@ StartupEvents.registry('item', event => {
     event.create('scrap').texture('kubejs:item/scrap')
     event.create('fire_gem').texture('kubejs:item/fire_gem')
     event.create('silver_ingot').texture('kubejs:item/silver_ingot')
-
+    event.create('raw_silver').texture('kubejs:item/raw_silver')
 
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
     event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')

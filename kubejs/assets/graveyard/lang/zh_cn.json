@@ -240,10 +240,12 @@
   "entity.graveyard.lich": "骸骨巫王",
   "entity.graveyard.ghouling": "食尸鬼仆从",
  
-  "biome.graveyard.haunted_forest": "闹鬼森林",
-  "biome.graveyard.haunted_lakes": "亡灵湖泊",
-  "biome.graveyard.eroded_haunted_forest": "侵蚀中的闹鬼森林",
-  "biome.graveyard.ancient_dead_coral_reef": "远古死珊瑚礁",
+  "biome.graveyard_biomes.haunted_forest": "闹鬼森林",
+  "biome.graveyard_biomes.haunted_lakes": "亡灵湖泊",
+  "biome.graveyard_biomes.eroded_haunted_forest": "侵蚀中的闹鬼森林",
+  "biome.graveyard_biomes.ancient_dead_coral_reef": "远古死珊瑚礁",
+  "biome.graveyard_biomes.deep_dark_forest": "深暗森林",
+
  
   "itemGroup.graveyard_group": "墓园",
   "gravestone.edit": "编辑墓碑",
