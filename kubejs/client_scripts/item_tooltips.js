@@ -1,10 +1,6 @@
 ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('kubejs:active_pill', (item, advanced, text) => {
-        if (tooltip.shift) {
-            addForTextLines(text, [[Text.red({ "translate": "kubejs.tooltips.active_pill.4" })], [Text.red({ "translate": "kubejs.tooltips.active_pill.5" })]], 1);
-        } else {
-            addForTextLines(text, [[Text.gold({ "translate": "kubejs.tooltips.active_pill.1" }), Text.aqua({ "translate": "kubejs.tooltips.active_pill.2" })], [Text.gray({ "translate": "kubejs.tooltips.active_pill.3" })]], 1);
-        }
+        addForTextLines(text, [[Text.gold({ "translate": "kubejs.tooltips.active_pill.1" }), Text.aqua({ "translate": "kubejs.tooltips.active_pill.2" })], [Text.gray({ "translate": "kubejs.tooltips.active_pill.3" })]], 1);
     })
 
     tooltip.addAdvanced('kubejs:ceremonial_knife', (item, advanced, text) => {

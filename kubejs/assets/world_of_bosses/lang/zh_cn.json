@@ -120,7 +120,7 @@
   "advancements.prismarine_adv.descr": "杀死海晶监视者",
   "entity.somebosses.swrodfang": "刀刃",
   "entity.somebosses.magmapangg": "Magmapansmall",
-  "item.somebosses.volcanium_spawn_egg": "火神生成蛋",
+  "item.somebosses.volcanium_spawn_egg": "火山生成蛋",
   "subtitles.elec_skill": "",
   "item.somebosses.ender_ordnance_armor_chestplate": "末影军械胸甲",
   "item.somebosses.necromancy_staff": "死灵法杖",
@@ -183,5 +183,23 @@
   "advancements.hand_head_adv.descr": "杀死掌首巨怪",
   "item.somebosses.frozen_shield_plate": "寒冰巨盾",
   "advancements.monoeyed_adv.title": "万圣节已经结束嘞",
-  "entity.somebosses.lightninghand": "闪电快手"
+  "entity.somebosses.lightninghand": "闪电快手",
+  "entity.somebosses.dark_mask":"暗黑面具",
+  "entity.somebosses.knight_garent":"最初的骑士",
+  "entity.somebosses.electric_head":"电磁脉冲头",
+  "entity.somebosses.man_of_water":"水人",
+  "item.somebosses.dark_mask_spawn_egg":"暗黑面具刷怪蛋",
+  "item.somebosses.knight_garent_spawn_egg":"最初的骑士刷怪蛋",
+  "item.somebosses.electric_head_spawn_egg":"电磁脉冲头刷怪蛋",
+  "item.somebosses.man_of_water_spawn_egg":"水人刷怪蛋",
+  "item.somebosses.power_generator_core":"发电机核心",
+  "item.somebosses.volcanic_launcher":"火山发射器",
+  "item.somebosses.demonscurse":"恶魔的诅咒",
+  "item.somebosses.cursed_spring_water":"受诅的泉水",
+  "item.somebosses.chaos_insignia":"混沌徽章",
+  "item.somebosses.life_melter":"生命熔解者",
+  "item.somebosses.monochrome_mask":"黑白面具",
+  "item.somebosses.reign_of_cold":"冰霜统治者",
+  "item.somebosses.ancient_spell_book":"远古魔典"
+  
 }
