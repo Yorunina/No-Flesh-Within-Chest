@@ -569,6 +569,10 @@
       {
         "entities": [
             {
+                "entity": "alexsmobs:warped_mosco",
+                "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
+            },
+            {
                 "entity": "alexsmobs:crimson_mosquito",
                 "nbt": "{Glowing: 1b, ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 2,Duration: 72000,ShowParticles: 0b}]}"
             },

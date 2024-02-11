@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:revolution_relay')
-	], 'create:iron_sheet', [
+	], 'createaddition:zinc_sheet', [
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:redstone']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:repeater']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:redstone_torch']),
