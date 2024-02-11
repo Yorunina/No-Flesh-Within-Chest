@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         .id('kubejs:ritual_greed_shard')
         .input('lootr:trophy')
         .input('nameless_trinkets:four_leaf_clover')
-        .input('lightmanscurrency:coinblock_emerald')
+        .input('3x lightmanscurrency:coinblock_emerald')
         .input('goety:philosophers_stone')
         .input('kubejs:nether_star_shard')
         .itemOutput('kubejs:greed_shard')

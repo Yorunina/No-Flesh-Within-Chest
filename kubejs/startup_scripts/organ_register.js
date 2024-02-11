@@ -1013,9 +1013,9 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:pride_shard')
-        .addScore('arrow_dodging', 1)
-        .addScore('dragon_breath', 1)
-        .addScore('defense', -2.5)
+        .addScore('crystalsynthesis', 1.5)
+        .addScore('dragon_breath', 2)
+        .addScore('defense', -3.5)
         .addScore('detoxification', 3.5)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.pride_shard.1" }), Text.gold({ "translate": "kubejs.tooltips.pride_shard.2" }), Text.gray({ "translate": "kubejs.tooltips.pride_shard.3" })])
         .build())
