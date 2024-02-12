@@ -14,6 +14,30 @@
     "continue": true
   },
   {
+    "mob": [
+    "meetyourfight:bellringer",
+    "meetyourfight:rosalyne",
+    "meetyourfight:swampjaw",
+    "meetyourfight:dame_fortuna"
+    ],
+    "result": "allow",
+    "potion": "kubejs:power_of_fight,144000,0",
+    "onjoin": true,
+    "continue": true
+  },
+  {
+    "mob": [
+    "bosses_of_mass_destruction:void_blossom",
+    "bosses_of_mass_destruction:lich",
+    "bosses_of_mass_destruction:gauntlet",
+    "bosses_of_mass_destruction:obsidilith"
+    ],
+    "result": "allow",
+    "potion": "kubejs:power_of_destruction,144000,0",
+    "onjoin": true,
+    "continue": true
+  },
+  {
     "dimension": "kubejs:lost_memory",
     "onjoin": true,
     "hostile": true,

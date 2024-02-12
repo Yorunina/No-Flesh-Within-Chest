@@ -53,6 +53,8 @@ global.playerHurt = event => {
     curiosPlayerHurtByOthers(event, data)
     vulnerableEntityHurt(event, data)
     powerOfCitadelPlayerHurtByOthers(event, data)
+    powerOfFightPlayerHurtByOthers(event, data)
+    powerOfDestructionPlayerHurtByOthers(event, data)
     organCharmPlayerHurtByOthers(event, data)
 
     if (data.returnDamage != 0 && event.source.actual) {

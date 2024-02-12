@@ -126,6 +126,14 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .color(Color.DARK_RED)
 
+    event.create('power_of_fight')
+        .beneficial()
+        .color(Color.DARK_RED)
+    
+    event.create('power_of_destruction')
+        .beneficial()
+        .color(Color.DARK_RED)
+
     event.create('arrow_damage_boost')
         .beneficial()
         .color(Color.RED)

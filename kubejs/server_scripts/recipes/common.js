@@ -201,4 +201,9 @@ ServerEvents.recipes(event => {
     event.shapeless('9x kubejs:silver_ingot', ['kubejs:silver_block'])
     event.shapeless('9x kubejs:raw_silver', ['kubejs:raw_silver_block'])
 
+    event.shaped('kubejs:bunny_hoppers', [
+        ['minecraft:rabbit_hide', '', 'minecraft:rabbit_hide'],
+        ['minecraft:rabbit_hide', '', 'minecraft:rabbit_hide'],
+        ['minecraft:rabbit_foot', '', 'minecraft:rabbit_foot']])
+
 })
