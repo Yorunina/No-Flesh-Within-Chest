@@ -1,0 +1,32 @@
+{
+    "key": "relic_metal_ingot",
+    "category": "metal",
+    "primary": 8.8,
+    "secondary": 3.3,
+    "tertiary": 3.9,
+    "durability": 2258,
+    "integrityCost": 2,
+    "integrityGain": 8,
+    "magicCapacity": 166,
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": 10,
+    "tints": {
+      "glyph": "8B2323",
+      "texture": "8B2323"
+    },
+    "textures": [
+        "heavy",
+        "metal"
+    ],
+    "material": {
+      "items": [
+        "kubejs:relic_metal_ingot"
+      ]
+    },
+    "effects": {
+        "earthbind": 1
+    },
+    "requiredTools": {
+      "hammer_dig": "minecraft:netherite"
+    }
+  }

@@ -23,5 +23,6 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:incomplete_lava_life_cycle_system', 'create:sequenced_assembly').texture('kubejs:item/organs/machine/lava_life_cycle_system')
     event.create('kubejs:incomplete_revolution_steam_engine', 'create:sequenced_assembly').texture('kubejs:item/organs/machine/revolution_steam_engine')
     event.create('kubejs:incomplete_compressed_oxygen_implant', 'create:sequenced_assembly').texture('kubejs:item/organs/machine/compressed_oxygen_implant')
+    event.create('kubejs:incomplete_relic_metal_ingot', 'create:sequenced_assembly').texture('kubejs:item/relic_metal_ingot')
 
 })
