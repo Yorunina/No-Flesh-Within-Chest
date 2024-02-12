@@ -18,7 +18,7 @@ function powerOfDestructionPlayerHurtByOthers(event, data) {
              entity.potionEffects.add('minecraft:strength', 20 * 8, (amplifier + 1))
              event.amount = event.amount + Math.floor(player.getMaxHealth()*0.5*(amplifier+1))
          }
-         else if(0 < player.getArmorValue() < 20)
+         else if(player.getArmorValue() < 20 && player.getArmorValue() > 0)
          {
             let amplifier = entity.getEffect('kubejs:power_of_destruction').getAmplifier()
             player.potionEffects.add('goety:busted', 20 * 8, (amplifier + 1))

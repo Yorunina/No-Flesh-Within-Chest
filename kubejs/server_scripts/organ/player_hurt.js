@@ -85,6 +85,26 @@ const organPlayerDamageOnlyStrategies = {
             event.entity.potionEffects.add('kubejs:executed', 20 * 5, 2)
         }
     },
+    'kubejs:bloody_bone_arrow': function (event, organ, data) {
+        let player = event.source.player
+        let item = player.mainHandItem
+        if (event.source.type != 'arrow') return
+        if (item?.id == 'tetra:modular_bow' && item.nbt && item.nbt.contains('bow/long_stave_material')) {
+            let dx = event.entity.getX() - player.getX()
+            let dy = event.entity.getY() - player.getY()
+            let dz = event.entity.getZ() - player.getZ()
+            let distance = Math.floor(Math.sqrt(dx * dx + dy * dy + dz * dz))
+        
+            if(distance < 10 && distance >= 0)
+            {
+              event.amount = event.amount/(10 - distance)
+            }
+            else if(distance >= 10)
+            {
+              event.amount = event.amount * ((10+distance)/(30+distance)) * 3.0
+            }
+          }
+    },
     'kubejs:heavy_hammer_muscle': function (event, organ, data) {
         let player = event.source.player
         if (event.source.type != 'player') {

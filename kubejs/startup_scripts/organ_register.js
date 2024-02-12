@@ -740,6 +740,20 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only')
         .tag('kubejs:relics');
 
+    registerOrgan(new Organ('kubejs:bloody_bone_arrow')
+        .addScore('strength', 2.25)
+        .addScore('health', -0.75)
+        .addScore('speed', -1.25)
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bloody_bone_arrow.1" }), Text.red({ "translate": "kubejs.tooltips.bloody_bone_arrow.2" }), Text.gray({ "translate": "kubejs.tooltips.bloody_bone_arrow.3" }), Text.gold({ "translate": "kubejs.tooltips.bloody_bone_arrow.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bloody_bone_arrow.5" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bloody_bone_arrow.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.bloody_bone_arrow.7" })])
+        .build())
+        .texture('kubejs:item/organs/relics/bloody_bone_arrow')
+        .tag('kubejs:rib')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+
     registerOrgan(new Organ('kubejs:heavy_hammer_muscle')
         .addScore('strength', 1.5)
         .addScore('swim_speed', -1)
