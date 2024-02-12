@@ -277,8 +277,8 @@ ServerEvents.recipes(event => {
 	event.recipes.create.crushing([Item.of('4x hexerei:selenite_shard'), Item.of('hexerei:selenite_shard').withChance(0.8)], 'hexerei:selenite_cluster').processingTime(100)
 
 	event.recipes.create.sequenced_assembly([
-		Item.of('kubejs:relic_metal_ingot').withChance(85.0),
-		Item.of('tetra:metal_scrap').withChance(15.0)
+		Item.of('kubejs:relic_metal_ingot').withChance(80.0),
+		Item.of('tetra:metal_scrap').withChance(20.0)
 	], 'art_of_forging:forged_steel_ingot', [
 		event.recipes.createDeploying('kubejs:incomplete_relic_metal_ingot', ['kubejs:incomplete_relic_metal_ingot', 'kubejs:relic_metal_plate']),
 		event.recipes.createPressing('kubejs:incomplete_relic_metal_ingot', 'kubejs:incomplete_relic_metal_ingot'),
@@ -286,5 +286,5 @@ ServerEvents.recipes(event => {
 		event.recipes.createPressing('kubejs:incomplete_relic_metal_ingot', 'kubejs:incomplete_relic_metal_ingot'),
 		event.recipes.createDeploying('kubejs:incomplete_relic_metal_ingot', ['kubejs:incomplete_relic_metal_ingot', 'kubejs:relic_metal_plate']),
 		event.recipes.createCutting('kubejs:incomplete_relic_metal_ingot', 'kubejs:incomplete_relic_metal_ingot')
-	]).transitionalItem('kubejs:incomplete_relic_metal_ingot').loops(4)
+	]).transitionalItem('kubejs:incomplete_relic_metal_ingot').loops(5)
 })
