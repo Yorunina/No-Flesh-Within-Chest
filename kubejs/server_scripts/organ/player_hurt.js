@@ -95,13 +95,13 @@ const organPlayerDamageOnlyStrategies = {
             let dz = event.entity.getZ() - player.getZ()
             let distance = Math.floor(Math.sqrt(dx * dx + dy * dy + dz * dz))
         
-            if(distance < 10 && distance >= 0)
+            if(distance <= 30 && distance >= 0)
             {
-              event.amount = event.amount * distance / 10
+              event.amount = event.amount * distance / 10.0
             }
-            else if(distance >= 10)
+            else if(distance > 30)
             {
-              event.amount = event.amount * ((1+distance)/(23+distance)) * 3.0
+              event.amount = event.amount * 3.0
             }
           }
     },
