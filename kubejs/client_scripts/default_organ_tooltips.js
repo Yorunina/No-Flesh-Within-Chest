@@ -43,7 +43,7 @@ ItemEvents.tooltip((tooltip) => {
                 organData.allKeys.forEach(key => {
                     let value = organData[key]
                     let typeName = global.SCORE_MAP[key]
-                    text.add(lineNum, [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.organ_score.1" }), Text.yellow(String(value)), Text.gray({ "translate": "kubejs.tooltips.organ_score.1" }), Text.yellow(typeName)]);
+                    text.add(lineNum, [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.organ_score.1" }), Text.yellow(String(value)), Text.gray({ "translate": "kubejs.tooltips.organ_score.2" }), Text.yellow(typeName)]);
                     lineNum++
                 })
                 break;
