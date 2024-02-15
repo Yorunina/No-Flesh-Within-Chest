@@ -1,0 +1,80 @@
+{
+    "itemGroup.geodes.more_geodes": "更多晶洞",
+
+    "block.geodes.emerald_geode": "绿宝石晶洞方块",
+    "block.geodes.budding_emerald": "绿宝石母岩",
+    "block.geodes.emerald_cluster": "绿宝石晶簇",
+    "block.geodes.large_emerald_bud": "大型绿宝石晶芽",
+    "block.geodes.medium_emerald_bud": "中型绿宝石晶芽",
+    "block.geodes.small_emerald_bud": "小型绿宝石晶芽",
+
+    "block.geodes.lapis_crystal_block": "青金石晶洞方块",
+    "block.geodes.budding_lapis": "青金石母岩",
+    "block.geodes.lapis_cluster": "青金石晶簇",
+    "block.geodes.large_lapis_bud": "大型青金石晶芽",
+    "block.geodes.medium_lapis_bud": "中型青金石晶芽",
+    "block.geodes.small_lapis_bud": "小型青金石晶芽",
+
+    "block.geodes.pyrite": "黄铁矿",
+    "item.geodes.pyrite_chunk": "黄铁矿块",
+    "block.geodes.pyrite_slab": "黄铁矿台阶",
+    "block.geodes.pyrite_stairs": "黄铁矿楼梯",
+    "block.geodes.pyrite_wall": "黄铁矿墙",
+
+    "block.geodes.calcite_slab": "方解石台阶",
+    "block.geodes.calcite_stairs": "方解石楼梯",
+    "block.geodes.calcite_wall": "方解石墙",
+
+    "item.geodes.emerald_shard": "绿宝石碎片",
+
+    "block.geodes.quartz_geode": "石英晶洞方块",
+    "block.geodes.budding_quartz": "石英母岩",
+    "block.geodes.quartz_cluster": "石英晶簇",
+    "block.geodes.large_quartz_bud": "大型石英晶芽",
+    "block.geodes.medium_quartz_bud": "中型绿宝石晶芽",
+    "block.geodes.small_quartz_bud": "小型绿宝石晶芽",
+
+    "block.geodes.diamond_geode": "钻石晶洞方块",
+    "block.geodes.diamond_cluster": "钻石晶簇",
+
+    "block.geodes.echo_block": "回响晶块",
+    "block.geodes.budding_echo_block": "回响晶体母岩",
+    "block.geodes.echo_cluster": "回响晶簇",
+    "block.geodes.large_echo_bud": "大型回响晶芽",
+    "block.geodes.medium_echo_bud": "中型回响晶芽",
+    "block.geodes.small_echo_bud": "小型回响晶芽",
+
+    "block.geodes.gypsum_crystal_block": "石膏晶块",
+    "block.geodes.budding_gypsum": "石膏母岩",
+    "block.geodes.gypsum_rose": "石膏玫瑰",
+    "block.geodes.large_gypsum_bud": "大型石膏晶芽",
+    "block.geodes.medium_gypsum_bud": "中型石膏晶芽",
+    "block.geodes.small_gypsum_bud": "小型石膏晶芽",
+
+    "item.geodes.gypsum_shard": "石膏碎片",
+
+    "block.geodes.echo_locator": "回声定位器",
+    "block.geodes.emerald_crystal_echo_locator": "绿宝石晶体回声定位器",
+    "block.geodes.quartz_crystal_echo_locator": "石英晶体回声定位器",
+    "block.geodes.amethyst_crystal_echo_locator": "紫水晶晶体回声定位器",
+    "block.geodes.diamond_crystal_echo_locator": "钻石晶体回声定位器",
+    "block.geodes.echo_crystal_echo_locator": "回响晶体回声定位器",
+    
+    "block.geodes.gabbro": "辉长岩",
+    
+    "advancement.geodes.adventure.outrageous.title": "真正离谱的东西是宝石！",
+    "advancement.geodes.adventure.outrageous.description": "收集绿宝石晶洞方块和钻石晶洞方块",
+    "advancement.geodes.adventure.use_echo_locator.title": "这儿有回声吗？",
+    "advancement.geodes.adventure.use_echo_locator.description": "使用回声定位器",
+    "advancement.geodes.nether.barter_fools_gold.title": "欺骗我一次",
+    "advancement.geodes.nether.barter_fools_gold.description": "尝试用黄铁矿来蒙骗猪灵",
+    
+    "subtitles.block.geodes.echo_locator.resonate": "水晶：共鸣",
+    "subtitles.block.geodes.echo_locator.use": "回声定位器：嗡鸣",
+    "subtitles.block.geodes.echo_block.chime": "回声：回响",
+    "subtitles.block.geodes.emerald_geode.chime": "绿宝石：叮铃",
+    "subtitles.block.geodes.quartz_geode.chime": "石英：叮铃",
+    "subtitles.block.geodes.diamond_geode.chime": "钻石：叮铃",
+    "subtitles.block.geodes.lapis_crystal_block.chime": "青金石：叮铃",
+    "subtitles.block.geodes.gypsum_crystal_block.chime": "石膏：叮铃"
+}

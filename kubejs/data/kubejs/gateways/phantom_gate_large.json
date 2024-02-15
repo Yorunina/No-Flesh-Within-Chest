@@ -1,0 +1,306 @@
+{
+    "size": "large",
+    "color": "#CDCDB4",
+    "leash_range": 64,
+    "allow_discarding": true,
+    "waves": [{
+            "entities": [{
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+				{
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                }
+            ],
+            "rewards": [{
+                "type": "entity_loot",
+                "entity": "minecraft:phantom",
+                "rolls": 20
+            }],
+            "max_wave_time": 750,
+            "setup_time": 150
+        },
+        {
+            "entities": [{
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+				{
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                }
+            ],
+            "modifiers": [{
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.33
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "ADDITION",
+                    "value": 2.5
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.33
+                },
+                {
+                    "attribute": "generic.knockback_resistance",
+                    "operation": "ADDITION",
+                    "value": 0.05
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.05
+                }
+            ],
+            "rewards": [{
+                "type": "entity_loot",
+                "entity": "minecraft:phantom",
+                "rolls": 30
+            }],
+            "max_wave_time": 750,
+            "setup_time": 150
+        },
+        {
+            "entities": [{
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+				{
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                }
+            ],
+            "modifiers": [{
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.66
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "ADDITION",
+                    "value": 4
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.5
+                },
+                {
+                    "attribute": "generic.knockback_resistance",
+                    "operation": "ADDITION",
+                    "value": 0.10
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.10
+                }
+            ],
+            "rewards": [{
+                "type": "entity_loot",
+                "entity": "minecraft:phantom",
+                "rolls": 40
+            }],
+            "max_wave_time": 750,
+            "setup_time": 150
+        },
+        {
+            "entities": [{
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+				{
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                }
+            ],
+            "modifiers": [{
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.85
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "ADDITION",
+                    "value": 5
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.66
+                },
+                {
+                    "attribute": "generic.knockback_resistance",
+                    "operation": "ADDITION",
+                    "value": 0.15
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.15
+                }
+            ],
+            "rewards": [{
+                "type": "entity_loot",
+                "entity": "minecraft:phantom",
+                "rolls": 50
+            }],
+            "max_wave_time": 750,
+            "setup_time": 150
+        },
+        {
+            "entities": [{
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+				{
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                },
+                {
+                    "entity": "minecraft:phantom"
+                }
+            ],
+            "modifiers": [{
+                    "attribute": "generic.max_health",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 1.25
+                },
+                {
+                    "attribute": "generic.armor",
+                    "operation": "ADDITION",
+                    "value": 6
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.85
+                },
+                {
+                    "attribute": "generic.knockback_resistance",
+                    "operation": "ADDITION",
+                    "value": 0.20
+                },
+                {
+                    "attribute": "generic.movement_speed",
+                    "operation": "MULTIPLY_TOTAL",
+                    "value": 0.20
+                }
+            ],
+            "rewards": [{
+                "type": "entity_loot",
+                "entity": "minecraft:phantom",
+                "rolls": 60
+            }],
+            "max_wave_time": 750,
+            "setup_time": 150
+        }
+    ],
+    "rewards": [{
+        "type": "entity_loot",
+        "entity": "minecraft:phantom",
+        "rolls": 120
+    },
+	{
+		"type": "stack",
+		"stack": {
+			"item": "minecraft:nether_star"
+		}
+	}],
+    "completion_xp": 1250,
+	"spawn_range": 9
+}

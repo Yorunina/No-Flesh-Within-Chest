@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:revolution_relay')
-	], 'create:iron_sheet', [
+	], 'createaddition:zinc_sheet', [
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:redstone']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:repeater']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:redstone_torch']),
@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.crushing([Item.of('2x kubejs:silver_ingot'), Item.of('3x createoreexcavation:raw_redstone').withChance(0.3), Item.of('2x createoreexcavation:raw_emerald').withChance(0.2), Item.of('2x createoreexcavation:raw_diamond').withChance(0.1), Item.of('minecraft:netherite_scrap').withChance(0.08)], 'kubejs:rare_mineral_cluster').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('minecraft:netherite_scrap'), Item.of('5x minecraft:blaze_powder').withChance(0.5), Item.of('5x create:powdered_obsidian').withChance(0.4), Item.of('5x minecraft:glowstone_dust').withChance(0.45), Item.of('8x minecraft:quartz').withChance(0.6), Item.of('kubejs:nether_star_shard').withChance(0.02)], 'minecraft:nether_star').processingTime(300)
+	event.recipes.create.crushing([Item.of('2x minecraft:netherite_scrap'), Item.of('5x minecraft:blaze_powder').withChance(0.5), Item.of('5x create:powdered_obsidian').withChance(0.4), Item.of('5x minecraft:glowstone_dust').withChance(0.45), Item.of('8x minecraft:quartz').withChance(0.6), Item.of('kubejs:nether_star_shard').withChance(0.1)], 'minecraft:nether_star').processingTime(300)
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:rose_quartz_muscle').withChance(80.0),
@@ -253,5 +253,38 @@ ServerEvents.recipes(event => {
 		event.recipes.createCutting('minecraft:cookie', 'minecraft:cookie')
 	]).transitionalItem('minecraft:cookie').loops(1)
 
-	
+	event.recipes.create.crushing([Item.of('2x minecraft:emerald'), Item.of('minecraft:emerald').withChance(0.5)], 'geodes:emerald_crystal_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x minecraft:emerald'), Item.of('minecraft:emerald').withChance(0.8)], 'geodes:emerald_cluster').processingTime(100)
+
+	event.recipes.create.crushing([Item.of('2x minecraft:lapis_lazuli'), Item.of('minecraft:lapis_lazuli').withChance(0.5)], 'geodes:lapis_crystal_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x minecraft:lapis_lazuli'), Item.of('minecraft:lapis_lazuli').withChance(0.8)], 'geodes:lapis_cluster').processingTime(100)
+
+	event.recipes.create.crushing([Item.of('3x geodes:pyrite_chunk'), Item.of('geodes:pyrite_chunk').withChance(0.8)], 'geodes:pyrite').processingTime(100)
+
+	event.recipes.create.crushing([Item.of('2x minecraft:quartz'), Item.of('minecraft:quartz').withChance(0.5)], 'geodes:quartz_crystal_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x minecraft:quartz'), Item.of('minecraft:quartz').withChance(0.8)], 'geodes:quartz_cluster').processingTime(100)
+
+	event.recipes.create.crushing([Item.of('2x minecraft:diamond'), Item.of('minecraft:diamond').withChance(0.5)], 'geodes:diamond_crystal_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x minecraft:diamond'), Item.of('minecraft:diamond').withChance(0.8)], 'geodes:diamond_cluster').processingTime(100)
+
+	event.recipes.create.crushing([Item.of('2x minecraft:echo_shard'), Item.of('minecraft:echo_shard').withChance(0.5)], 'geodes:echo_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x minecraft:echo_shard'), Item.of('minecraft:echo_shard').withChance(0.8)], 'geodes:echo_cluster').processingTime(100)
+
+	event.recipes.create.crushing([Item.of('2x geodes:gypsum_shard'), Item.of('geodes:gypsum_shard').withChance(0.5)], 'geodes:gypsum_crystal_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x geodes:gypsum_shard'), Item.of('geodes:gypsum_shard').withChance(0.8)], 'geodes:gypsum_rose').processingTime(100)
+
+	event.recipes.create.crushing([Item.of('2x hexerei:selenite_shard'), Item.of('hexerei:selenite_shard').withChance(0.5)], 'hexerei:selenite_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x hexerei:selenite_shard'), Item.of('hexerei:selenite_shard').withChance(0.8)], 'hexerei:selenite_cluster').processingTime(100)
+
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:relic_metal_ingot').withChance(80.0),
+		Item.of('tetra:metal_scrap').withChance(20.0)
+	], 'art_of_forging:forged_steel_ingot', [
+		event.recipes.createDeploying('kubejs:incomplete_relic_metal_ingot', ['kubejs:incomplete_relic_metal_ingot', 'kubejs:relic_metal_plate']),
+		event.recipes.createPressing('kubejs:incomplete_relic_metal_ingot', 'kubejs:incomplete_relic_metal_ingot'),
+		event.recipes.createDeploying('kubejs:incomplete_relic_metal_ingot', ['kubejs:incomplete_relic_metal_ingot', 'kubejs:relic_metal_plate']),
+		event.recipes.createPressing('kubejs:incomplete_relic_metal_ingot', 'kubejs:incomplete_relic_metal_ingot'),
+		event.recipes.createDeploying('kubejs:incomplete_relic_metal_ingot', ['kubejs:incomplete_relic_metal_ingot', 'kubejs:relic_metal_plate']),
+		event.recipes.createCutting('kubejs:incomplete_relic_metal_ingot', 'kubejs:incomplete_relic_metal_ingot')
+	]).transitionalItem('kubejs:incomplete_relic_metal_ingot').loops(5)
 })

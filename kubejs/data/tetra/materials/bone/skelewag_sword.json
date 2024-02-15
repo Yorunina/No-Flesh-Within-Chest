@@ -19,7 +19,8 @@
         "crude"
     ],
     "material": {
-        "items": [ "alexsmobs:skelewag_sword" ]
+        "items": [ "alexsmobs:skelewag_sword" ],
+        "count": 0.5
     },
     "requiredTools": {
         "hammer_dig": "minecraft:wood"

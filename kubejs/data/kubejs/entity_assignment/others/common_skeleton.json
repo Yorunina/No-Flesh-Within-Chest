@@ -11,7 +11,10 @@
         "goety:skull_lord",
         "irons_spellbooks:necromancer",
         "goety:border_wraith",
-        "goety:wraith"
+        "goety:wraith",
+        "graveyard:skeleton_creeper",
+        "graveyard:reaper",
+        "graveyard:revenant"
     ]
   }
   

@@ -33,6 +33,8 @@ StartupEvents.registry('item', event => {
     event.create('scrap').texture('kubejs:item/scrap')
     event.create('fire_gem').texture('kubejs:item/fire_gem')
     event.create('silver_ingot').texture('kubejs:item/silver_ingot')
+    event.create('raw_silver').texture('kubejs:item/raw_silver')
+    event.create('relic_metal_ingot').texture('kubejs:item/relic_metal_ingot')
 
 
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
@@ -89,6 +91,8 @@ StartupEvents.registry('item', event => {
 
     event.create('empty_organ_charm').texture('kubejs:item/empty_organ_charm').maxStackSize(1).tag('curios:charm')
     event.create('organ_charm').texture('kubejs:item/organ_charm').maxStackSize(1).tag('curios:charm')
+    event.create('bunny_hoppers').texture('kubejs:item/bunny_hoppers').maxStackSize(1).tag('curios:feet')
+
 
     event.create('god_bless_empty_necklace').texture('kubejs:item/god_bless_empty_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
     event.create('god_bless_full_necklace').texture('kubejs:item/god_bless_full_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')

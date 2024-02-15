@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(new MixingCauldronRecipe(
         [Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar')],
-        Item.of('kubejs:scrap')).setFluid('minecraft:water', 20).setFluidOutput('kubejs:syrup'))
+        Item.of('kubejs:scrap')).setFluid('minecraft:water', 500).setFluidOutput('kubejs:syrup'))
 
     registerCustomRecipe(new MixingCauldronRecipe(
         [Ingredient.of('kubejs:magic_muscle'), Ingredient.of('minecraft:enchanted_book'), Ingredient.of('waystones:warp_dust'), Ingredient.of('waystones:warp_dust'), Ingredient.of('#forge:dusts/glowstone'), Ingredient.of('#forge:dusts/glowstone'), Ingredient.of('irons_spellbooks:arcane_essence'), Ingredient.of('irons_spellbooks:arcane_essence')],
@@ -59,9 +59,13 @@ ServerEvents.recipes(event => {
         
     registerCustomRecipe(new MixingCauldronRecipe(
         [Ingredient.of('biomancy:cleansing_serum'), Ingredient.of('biomancy:cleansing_serum'), Ingredient.of('goety:soul_heal_focus'), Ingredient.of('goety:soul_heal_focus'), Ingredient.of('minecraft:enchanted_golden_apple'), Ingredient.of('goety:philosophers_stone'), Ingredient.of('hexerei:mindful_trance_blend'), Ingredient.of('kubejs:long_lasting_pill')],
-        Item.of('kubejs:long_lasting_pill_gold').withCount(1)).setFluid('minecraft:water', 1000).addHeatRequirement())
+        Item.of('kubejs:long_lasting_pill_gold').withCount(1)).setFluid('hexerei:quicksilver_fluid', 500).addHeatRequirement())
         
     registerCustomRecipe(new MixingCauldronRecipe(
         [Ingredient.of('kubejs:cream'), Ingredient.of('kubejs:cream'), Ingredient.of('kubejs:cream'), Ingredient.of('kubejs:cream'), Ingredient.of('kubejs:cream'), Ingredient.of('kubejs:cream'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar')],
         Item.of('extradelight:cheese').withCount(2)).setFluid('minecraft:water', 1000).setFluidOutput('kubejs:cream').addHeatRequirement())
+
+    registerCustomRecipe(new MixingCauldronRecipe(
+        [Ingredient.of('minecraft:redstone_block'), Ingredient.of('minecraft:redstone_block'), Ingredient.of('minecraft:redstone_block'), Ingredient.of('minecraft:redstone_block'), Ingredient.of('minecraft:redstone_block'), Ingredient.of('minecraft:redstone_block'), Ingredient.of('kubejs:lime_powder'), Ingredient.of('kubejs:lime_powder')],
+        Item.of('create:scoria').withCount(8)).setFluid('minecraft:lava', 1000).setFluidOutput('hexerei:quicksilver_fluid').addHeatRequirement())
 })
