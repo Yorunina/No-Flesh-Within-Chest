@@ -25,6 +25,7 @@ global.playerDamage = event => {
     vampiricEntityHurtByPlayer(event, data)
     // commonEntityHurtByPlayer(event, data)
     pardonOfGodEntityHurtByPlayer(event, data)
+    powerOfWorldEntityHurtByPlayer(event, data)
     vulnerableEntityHurt(event, data)
     organCharmEntityHurtByPlayer(event, data)
     if (data.returnDamage != 0) {
@@ -55,6 +56,7 @@ global.playerHurt = event => {
     powerOfCitadelPlayerHurtByOthers(event, data)
     powerOfFightPlayerHurtByOthers(event, data)
     powerOfDestructionPlayerHurtByOthers(event, data)
+    powerOfWorldPlayerHurtByOthers(event, data)
     organCharmPlayerHurtByOthers(event, data)
 
     if (data.returnDamage != 0 && event.source.actual) {

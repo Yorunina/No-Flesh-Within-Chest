@@ -38,6 +38,36 @@
     "continue": true
   },
   {
+    "mob": [
+    "somebosses:aesegull",
+    "somebosses:prismarine_watcher",
+    "somebosses:froverlord",
+    "somebosses:volcanium",
+    "somebosses:merciless_assasin",
+    "somebosses:dark_mask",
+    "somebosses:knight_garent",
+    "somebosses:vulcan",
+    "somebosses:ancient_wizard",
+    "somebosses:man_of_water",
+    "somebosses:flaming_berserker",
+    "somebosses:electric_head",
+    "somebosses:frost_magma",
+    "somebosses:stone_guard",
+    "somebosses:crimson_vampire",
+    "somebosses:skeleton_demon",
+    "somebosses:mono_eyed_skeleton",
+    "somebosses:hand_head",
+    "somebosses:ender_ordnance",
+    "somebosses:nameless_one",
+    "somebosses:sand_giant",
+    "somebosses:rib_golem"
+    ],
+    "result": "allow",
+    "potion": "kubejs:power_of_world,144000,0",
+    "onjoin": true,
+    "continue": true
+  },
+  {
     "dimension": "kubejs:lost_memory",
     "onjoin": true,
     "hostile": true,
