@@ -93,13 +93,6 @@ function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
  * @type {Object<string,function(Internal.Player, organ, Map):void>}
  */
 const organActiveStrategies = {
-    'kubejs:health_appendix': function (player, organ, attributeMap) {
-        let typeMap = getPlayerChestCavityTypeMap(player);
-        if (typeMap.has('kubejs:appendix')) {
-            let value = typeMap.get('kubejs:appendix').length * 1
-            attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
-        }
-    },
     'kubejs:rose_quartz_heart': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player);
         if (typeMap.has('kubejs:machine')) {
@@ -332,17 +325,17 @@ const organActiveOnlyStrategies = {
                     let staturation = foodPro.getSaturationModifier() * nutrition
                     if (!onlySet.has(organ.id)) {
                         healthUp = healthUp + nutrition / 2
-                        attackUp = attackUp + staturation / 3
+                        attackUp = attackUp + staturation / 4
                         onlySet.add(organ.id)
                         if (foodPro.getEffects().length) {
                             manaUp = manaUp + foodPro.getEffects().length * 20
                         }
                     }
-                    healthUp = healthUp + nutrition / 4
-                    attackUp = attackUp + staturation / 5
+                    healthUp = healthUp + nutrition / 8
+                    attackUp = attackUp + staturation / 10
                 } else {
-                    healthUp = healthUp - 1
-                    attackUp = attackUp - 0.2
+                    healthUp = healthUp - 2
+                    attackUp = attackUp - 0.5
                 }
             }
         })

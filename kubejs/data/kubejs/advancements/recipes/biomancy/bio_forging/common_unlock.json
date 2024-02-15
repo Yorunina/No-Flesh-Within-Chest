@@ -37,7 +37,6 @@
             "kubejs:bio_forging/platelet_dispatcher",
             "kubejs:bio_forging/holy_eyeball",
             "kubejs:bio_forging/stomach_tumor",
-            "kubejs:bio_forging/lucky_appendix",
             "kubejs:bio_forging/greedy_stomach"
         ]
     }

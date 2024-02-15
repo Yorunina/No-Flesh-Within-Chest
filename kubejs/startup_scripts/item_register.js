@@ -21,7 +21,7 @@ StartupEvents.registry('item', event => {
     event.create('lucky_cookie').texture('kubejs:item/organs/food/lucky_cookie').food(food => {
         food.hunger(1).saturation(1).alwaysEdible().eaten(event => {
             event.server.runCommandSilent(`/title ${event.player.name.getString()} title {"text":"${randomGet(luckyCookieSentence)}"}`)
-            if (Math.random() < 0.03) {
+            if (Math.random() < 0.01) {
                 event.player.give(Item.of('kubejs:lucky_cookie_organ'))
             }
         })
@@ -33,7 +33,6 @@ StartupEvents.registry('item', event => {
     event.create('scrap').texture('kubejs:item/scrap')
     event.create('fire_gem').texture('kubejs:item/fire_gem')
     event.create('silver_ingot').texture('kubejs:item/silver_ingot')
-    event.create('raw_silver').texture('kubejs:item/raw_silver')
     event.create('relic_metal_ingot').texture('kubejs:item/relic_metal_ingot')
 
 
@@ -98,6 +97,7 @@ StartupEvents.registry('item', event => {
     event.create('god_bless_full_necklace').texture('kubejs:item/god_bless_full_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
 
     event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
+    event.create('raw_silver').texture('kubejs:item/raw_silver').maxStackSize(64)
     event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1).fireResistant()
     event.create('god_agreement').texture('kubejs:item/god_agreement').maxStackSize(1)
 

@@ -7,7 +7,7 @@
 #Mint
 [mint_spread]
 	#Should mint spread?
-	shouldMintSpread = true
+	shouldMintSpread = false
 	#How fast should mint spread? (Higher number = Slower)
 	#Range: 1 ~ 100
 	mintSpreadRate = 100

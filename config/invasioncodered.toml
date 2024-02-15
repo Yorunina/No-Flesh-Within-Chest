@@ -1,7 +1,7 @@
 
 [Settings]
 	#enable gashslit spawning in raid
-	gashslitInRaid = true
+	gashslitInRaid = false
 	#chance for gashslit appearing in raid
 	gashslitSpawnChance = 29.0
 

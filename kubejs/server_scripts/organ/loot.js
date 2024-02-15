@@ -118,16 +118,21 @@ const chestLootOnlyStrategies = {
         event.removeLoot(ItemFilter.ALWAYS_TRUE)
     },
     'kubejs:d8': function (event, organ) {
-        if (Math.random() < 0.2) {
+        if (Math.random() < 0.1) {
             return
         }
         let player = event.player
         let item = Item.of('kubejs:random_tumor', { organData: {} })
-        let amount = Math.floor(Math.random() * 5 + 1)
+        let amount = Math.floor(Math.sqrt(Math.random() * 17) + 1)
         for (let i = 0; i < amount; i++) {
             let attri = randomGet(tumorAttriBute)
             let attriName = attri.name
-            let attriValue = Math.min(attri.muti * Math.floor(Math.random() * 13 - 4) / 8 * Math.max(Math.floor(player.getLuck() / 4) + 1, 1), attri.max)
+            // 扩散系数，用于控制属性的扩散范围(-1/2, 1/2)
+            let diffusivity = Math.floor((Math.random() * 17 - 8)) / 16
+            // 幸运系数，用于控制幸运对于属性的影响，开方下降趋势
+            let luckElement = Math.floor(Math.sqrt(Math.max(player.getLuck(), 1)))
+            // 实际属性 = 属性系数 * 扩散系数 * 幸运系数；例100幸运的最高属性为 1 * 1/2 * 
+            let attriValue = Math.min(attri.muti * diffusivity * luckElement, attri.max)
             item.nbt.organData.put(attriName, attriValue)
         }
         event.addLoot(item)

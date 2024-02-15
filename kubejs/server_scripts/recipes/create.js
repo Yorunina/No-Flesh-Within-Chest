@@ -118,17 +118,17 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:revolution_relay')
-	], 'createaddition:zinc_sheet', [
-		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:redstone']),
+	], 'create:iron_sheet', [
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:repeater']),
+		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:redstone']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_relay', 'minecraft:redstone_torch']),
 	]).transitionalItem('kubejs:incomplete_revolution_relay').loops(5)
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:revolution_delay')
 	], 'create:iron_sheet', [
-		event.recipes.createDeploying('kubejs:incomplete_revolution_delay', ['kubejs:incomplete_revolution_delay', 'minecraft:redstone']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_delay', 'minecraft:comparator']),
+		event.recipes.createDeploying('kubejs:incomplete_revolution_delay', ['kubejs:incomplete_revolution_delay', 'minecraft:redstone']),
 		event.recipes.createDeploying('kubejs:incomplete_revolution_relay', ['kubejs:incomplete_revolution_delay', 'minecraft:redstone_torch']),
 	]).transitionalItem('kubejs:incomplete_revolution_delay').loops(5)
 

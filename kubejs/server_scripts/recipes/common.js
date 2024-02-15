@@ -11,7 +11,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'goety:warped_wartful_egg' })
     event.remove({ output: 'gateways:gate_pearl' })
     event.remove({ output: 'cataclysm:meat_shredder' })
-    
+
     event.shaped('cataclysm:meat_shredder', [
         ['', 'minecraft:nether_star', 'goety:philosophers_stone'],
         ['', 'cataclysm:witherite_ingot', 'minecraft:nether_star'],
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:ethereal_wings'])
     event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:creeper_sense'])
     event.shapeless('kubejs:mosquito_repellent', ['irons_spellbooks:magic_cloth', 'chestcavity:cooked_alien_organ_meat'])
-    
+
     event.shapeless('chestcavity:appendix', [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
         .modifyResult((grid, stack) => {
             for (let i = 0; i <= 9; i++) {
@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
 
     event.smelting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
     event.blasting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
-    
+
     event.smelting('kubejs:silver_ingot', 'kubejs:raw_silver', '5.0')
     event.blasting('kubejs:silver_ingot', 'kubejs:raw_silver', '5.0')
 

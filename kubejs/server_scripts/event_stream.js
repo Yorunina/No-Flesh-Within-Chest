@@ -28,6 +28,8 @@ global.playerDamage = event => {
     powerOfWorldEntityHurtByPlayer(event, data)
     vulnerableEntityHurt(event, data)
     organCharmEntityHurtByPlayer(event, data)
+    spikedCarapaceEntityHurtByPlayer(event, data)
+    hardShellEntityHurtByPlayer(event, data)
     if (data.returnDamage != 0) {
         player.attack(data.returnDamage)
     }
@@ -58,6 +60,7 @@ global.playerHurt = event => {
     powerOfDestructionPlayerHurtByOthers(event, data)
     powerOfWorldPlayerHurtByOthers(event, data)
     organCharmPlayerHurtByOthers(event, data)
+    fightForDeathPlayerHurtByOthers(event, data)
 
     if (data.returnDamage != 0 && event.source.actual) {
         event.source.actual.attack(data.returnDamage)

@@ -38,10 +38,6 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:silver_ingot').withCount(4)))
 
     registerCustomRecipe(new MixingCauldronRecipe(
-        [Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone'), Ingredient.of('kubejs:lucky_appendix'), Ingredient.of('minecraft:redstone'), Ingredient.of('minecraft:redstone')],
-        Item.of('kubejs:health_appendix')))
-
-    registerCustomRecipe(new MixingCauldronRecipe(
         [Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar')],
         Item.of('kubejs:scrap')).setFluid('minecraft:water', 500).setFluidOutput('kubejs:syrup'))
 

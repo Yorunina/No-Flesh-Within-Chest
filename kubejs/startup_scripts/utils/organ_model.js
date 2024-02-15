@@ -8,9 +8,8 @@ function Organ(itemID) {
     this.ctrlTextLines = []
     this.altTextLines = []
     this.maxStackSize = 1
-    this.neededTags = []
 }
- 
+
 Organ.prototype = {
     // 注册常规效果
     addScore: function (score, value) {
@@ -24,15 +23,12 @@ Organ.prototype = {
                 break;
             case 'shift':
                 this.shiftTextLines.push(textLines);
-                
                 break;
             case 'ctrl':
                 this.ctrlTextLines.push(textLines);
-                this.neededTags.push('chestcavity:active')
                 break;
             case 'alt':
                 this.altTextLines.push(textLines);
-                this.neededTags.push('chestcavity:special')
                 break;
         }
         return this
@@ -68,11 +64,4 @@ function convertScoreToTextLine(organ, score) {
     let typeName = global.SCORE_MAP[score.id]
     let stack = organ.maxStackSize
     return [LEADING_SYMBOL, Text.gray('每 '), Text.yellow(String(stack)), Text.gray(' 个该器官提供 '), Text.yellow(String(value)), Text.gray(' 点'), Text.yellow(typeName)]
-}
-
-const IRON_OVERLAY = 'kubejs:item/overlay/iron_overlay'
-const GOLD_OVERLAY = 'kubejs:item/overlay/gold_overlay'
-const DIAMOND_OVERLAY = 'kubejs:item/overlay/diamond_overlay'
-function modelOverlay(texture, overlay) {
-    return { "parent": "minecraft:item/generated", "textures": { "layer0": texture, "layer1": overlay }}
 }

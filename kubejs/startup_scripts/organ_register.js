@@ -7,34 +7,18 @@ StartupEvents.registry('item', event => {
     function registerOrgan(organ) {
         global.ORGAN_LIST.push(organ)
         let builder = event.create(organ.itemID).maxStackSize(organ.maxStackSize).tag('kubejs:organ')
-        /**
-         * 含有激活效果的会带上标签#chestcavity:active
-         * 含有特殊效果的会带上标签#chestcavity:special
-         */
-        organ.neededTags.forEach(tag=>{
-            builder.tag(tag)
-        })
+        if (organ.ctrlTextLines.length > 0) {
+            builder.tag('chestcavity:active')
+        }
+        if (organ.altTextLines.length > 0) {
+            builder.tag('chestcavity:special')
+        }
         return builder
     }
 
     /**
      * 器官注册
      */
-    registerOrgan(new Organ('kubejs:health_appendix')
-        .addScore('luck', 0.5)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.health_appendix.1" }), Text.yellow({ "translate": "kubejs.tooltips.health_appendix.2" }), Text.gray({ "translate": "kubejs.tooltips.health_appendix.3" }), Text.yellow(1), Text.gray({ "translate": "kubejs.tooltips.health_appendix.4" }), Text.yellow({ "translate": "kubejs.tooltips.health_appendix.5" })])
-        .build())
-        .texture('kubejs:item/organs/common/appendix')
-        .tag('kubejs:appendix')
-        .tag('kubejs:active');
-
-    // 幸运阑尾
-    registerOrgan(new Organ('kubejs:lucky_appendix')
-        .addScore('luck', 3)
-        .build())
-        .texture('kubejs:item/organs/others/lucky_appendix')
-        .tag('kubejs:appendix');
-
     // 贪婪之胃
     registerOrgan(new Organ('kubejs:greedy_stomach')
         .addScore('digestion', 0.5)
@@ -741,9 +725,9 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:bloody_bone_arrow')
-        .addScore('strength', 2.25)
-        .addScore('health', -0.75)
-        .addScore('speed', -1.25)
+        .addScore('strength', 1.5)
+        .addScore('health', -0.5)
+        .addScore('speed', -1.0)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bloody_bone_arrow.1" }), Text.red({ "translate": "kubejs.tooltips.bloody_bone_arrow.2" }), Text.gray({ "translate": "kubejs.tooltips.bloody_bone_arrow.3" }), Text.gold({ "translate": "kubejs.tooltips.bloody_bone_arrow.4" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bloody_bone_arrow.5" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.bloody_bone_arrow.6" })])
@@ -948,6 +932,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/sculk_soul')
         .tag('kubejs:relics');
+    
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
@@ -1152,7 +1137,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:food');
 
     registerOrgan(new Organ('kubejs:lucky_cookie_organ')
-        .addScore('luck', 3)
+        .addScore('luck', 2.5)
+        .addScore('speed', -0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.lucky_cookie_organ.1" })])
         .build())
         .food(food => { food.hunger(2).saturation(2) })
@@ -1161,23 +1147,23 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:food');
 
     registerOrgan(new Organ('kubejs:cream_cookie_heart')
-        .addScore('health', 1.5)
+        .addScore('health', 1.75)
         .addScore('defense', -1)
         .addScore('luck', 1.5)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.1" }), Text.gold({ "translate": "kubejs.tooltips.cream_cookie_heart.2" }), Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.3" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.4" }), Text.gold({ "translate": "kubejs.tooltips.cream_cookie_heart.5" }), Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.6" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.cream_cookie_heart.7" })])
         .build())
-        .food(food => { food.hunger(8).saturation(0.5) })
+        .food(food => { food.hunger(8).saturation(1) })
         .texture('kubejs:item/organs/food/cream_cookie_heart')
         .tag('itemborders:gold')
         .tag('kubejs:food')
         .tag('kubejs:eat_effect_only');
 
     registerOrgan(new Organ('kubejs:mini_slime')
-        .addScore('defense', -0.5)
-        .addScore('endurance', 1.5)
-        .addScore('luck', 1)
+        .addScore('defense', -0.25)
+        .addScore('endurance', 1.75)
+        .addScore('luck', 1.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.mini_slime.1" })])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mini_slime.2" })])
         .build())
