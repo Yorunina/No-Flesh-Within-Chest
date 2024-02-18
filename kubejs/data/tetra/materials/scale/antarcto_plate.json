@@ -1,0 +1,30 @@
+{
+    "key": "unusual_antarcto_plate",
+    "category": "scale",
+    "primary": 6.4,
+    "secondary":5.7,
+    "tertiary": 2.1,
+    "durability": 676,
+    "integrityCost": 3,
+    "integrityGain": 2,
+    "magicCapacity": 311,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "attributes":{
+        "irons_spellbooks:spell_resist":0.3
+    },
+    "tints": {
+        "glyph": "EEE9E9",
+        "texture": "EEE9E9"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "unusualprehistory:antarcto_plate" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:iron"
+    }
+}

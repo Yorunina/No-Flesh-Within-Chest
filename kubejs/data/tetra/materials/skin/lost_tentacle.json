@@ -1,0 +1,32 @@
+{
+    "key": "alex_lost_tentacle",
+    "category": "skin",
+    "primary": "1.6",
+    "secondary": "2.7",
+    "tertiary": "4.8",
+    "durability": "81",
+    "integrityCost": "1",
+    "integrityGain": "4",
+    "magicCapacity": "154",
+    "toolLevel": "0",
+    "toolEfficiency": "0",
+    "tints": {
+      "glyph": "FF4500",
+      "texture": "FF4500"
+    },
+    "textures": [
+      "crude",
+      "default"
+    ],
+    "material": {
+      "items": [
+        "alexsmobs:lost_tentacle"
+      ]
+    },
+    "effects" : {
+      "power": 5
+    },
+    "requiredTools": {
+      "cut": "minecraft:stone"
+    }
+  }

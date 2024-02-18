@@ -1,0 +1,30 @@
+{
+    "key": "creator_mix",
+    "category": "misc",
+    "primary": 0.8,
+    "secondary": 4.3,
+    "tertiary": 3.8,
+    "durability": 145,
+    "integrityCost": 2,
+    "integrityGain": 3,
+    "magicCapacity": 169,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "8B0000",
+        "texture": "8B0000"
+      },
+    "effects" : {
+        "intuit": 3
+      },
+    "textures": [
+        "crude",
+        "default"
+      ],
+    "material": {
+        "items": [ "biomancy:creator_mix" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

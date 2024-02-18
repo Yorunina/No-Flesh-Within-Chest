@@ -3,7 +3,7 @@
     "category": "scale",
     "primary": 5.8,
     "secondary": 5.4,
-    "tertiary": 0,
+    "tertiary": 0.5,
     "durability": 590,
     "integrityCost": 3,
     "integrityGain": 1,
@@ -22,7 +22,7 @@
         "items": [ "alexsmobs:rocky_shell" ]
     },
     "effects" : {
-        "stun": [ 5, 2 ]
+        "stun": [ 10, 2 ]
 	},
     "requiredTools": {
         "cut": "minecraft:gold"

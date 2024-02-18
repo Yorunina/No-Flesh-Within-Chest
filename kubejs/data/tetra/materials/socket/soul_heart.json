@@ -1,0 +1,27 @@
+{
+    "key": "alex_soul_heart",
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 43,
+    "integrityCost": 2,
+    "integrityGain": 0,
+    "magicCapacity": 168,
+    "toolLevel": 0,
+    "toolEfficiency": 1,
+    "attributes":{
+      "irons_spellbooks:summon_damage":0.8},
+    "tints": {
+      "glyph": "00B2EE",
+      "texture": "00B2EE"
+    },
+    "textures": [
+      "default"
+    ],
+    "improvements" : {
+      "destabilized/haunted": 8
+    },
+    "experienceCost": 20,
+    "material":{"items":["alexsmobs:soul_heart"]}
+  }

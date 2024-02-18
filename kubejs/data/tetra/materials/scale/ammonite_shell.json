@@ -1,0 +1,30 @@
+{
+    "key": "unusual_ammonite_shell",
+    "category": "scale",
+    "primary": 3.3,
+    "secondary":2.7,
+    "tertiary": 1.3,
+    "durability": 336,
+    "integrityCost": 2,
+    "integrityGain": 2,
+    "magicCapacity": 188,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "attributes":{
+        "forge:swim_speed":0.2
+    },
+    "tints": {
+        "glyph": "8B5A00",
+        "texture": "8B5A00"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "unusualprehistory:ammonite_shell" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:gold"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "key": "alex_tarantula_hawk_wing",
+    "category": "fibre",
+    "primary": "1.4",
+    "secondary": "2.6",
+    "tertiary": "1.9",
+    "durability": "143",
+    "integrityCost": "1",
+    "integrityGain": "4",
+    "magicCapacity": "99",
+    "toolLevel": "0",
+    "toolEfficiency": "0",
+    "attributes":{
+        "minecraft:generic.attack_speed":0.5
+    },
+    "tints": {
+      "glyph": "CD3700",
+      "texture": "CD3700"
+    },
+    "textures": [
+      "crude",
+      "default"
+    ],
+    "material": {
+      "items": [
+        "alexsmobs:tarantula_hawk_wing"
+      ]
+    },
+    "requiredTools": {
+      "cut": "minecraft:stone"
+    }
+  }

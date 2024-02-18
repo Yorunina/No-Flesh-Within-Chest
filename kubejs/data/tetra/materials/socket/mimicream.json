@@ -1,0 +1,26 @@
+{
+    "key": "alex_mimicream",
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 10,
+    "integrityCost": 2,
+    "integrityGain": 1,
+    "magicCapacity": 286,
+    "toolLevel": 0,
+    "toolEfficiency": 3,
+    "tints": {
+      "glyph": "5D478B",
+      "texture": "5D478B"
+    },
+    "textures": [
+      "default"
+    ],
+    "effects" : {
+      "mending": 1,
+      "manaRepair": 3
+    },
+    "experienceCost": 30,
+    "material":{"items":["alexsmobs:mimicream"]}
+  }

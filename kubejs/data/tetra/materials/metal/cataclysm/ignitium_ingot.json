@@ -11,7 +11,8 @@
   "toolLevel": "minecraft:netherite",
   "toolEfficiency": "8.8",
   "effects": {
-    "stabilizing": 1
+    "stabilizing": 1,
+    "fiery": 5
   },
   "tints": {
     "glyph": "ebf1f5",

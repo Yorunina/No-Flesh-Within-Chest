@@ -21,6 +21,9 @@
   "material": {
     "items": [ "createaddition:electrum_rod" ]
   },
+  "effects": {
+    "stabilizing": 5
+  },
   "requiredTools": {
     "hammer_dig": "minecraft:iron"
   }

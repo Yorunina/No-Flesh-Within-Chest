@@ -1,0 +1,32 @@
+{
+    "key": "alex_cockroach_wing",
+    "category": "fibre",
+    "primary": "1.3",
+    "secondary": "2.1",
+    "tertiary": "1.6",
+    "durability": "85",
+    "integrityCost": "1",
+    "integrityGain": "4",
+    "magicCapacity": "36",
+    "toolLevel": "0",
+    "toolEfficiency": "0",
+    "attributes":{
+        "minecraft:generic.attack_speed":0.2
+    },
+    "tints": {
+      "glyph": "8B7E66",
+      "texture": "8B7E66"
+    },
+    "textures": [
+      "crude",
+      "default"
+    ],
+    "material": {
+      "items": [
+        "alexsmobs:cockroach_wing"
+      ]
+    },
+    "requiredTools": {
+      "cut": "minecraft:stone"
+    }
+  }

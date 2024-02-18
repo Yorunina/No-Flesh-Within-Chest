@@ -1,0 +1,30 @@
+{
+    "key": "unusual_austro_feather",
+    "category": "fabric",
+    "primary": 1,
+    "secondary": 1,
+    "tertiary": 1.8,
+    "durability": 180,
+    "integrityCost": 2,
+    "integrityGain": 4,
+    "magicCapacity": 160,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "attributes":{
+        "obscure_api:dodge":0.2
+    },
+    "tints": {
+        "glyph": "EE3B3B",
+        "texture": "EE3B3B"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": ["unusualprehistory:austro_feather"]
+    },
+    "requiredTools": {
+        "cut": "minecraft:stone"
+    }
+}

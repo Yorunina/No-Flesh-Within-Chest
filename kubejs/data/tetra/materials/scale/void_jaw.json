@@ -1,0 +1,30 @@
+{
+    "key": "cata_void_jaw",
+    "category": "scale",
+    "primary": 1.6,
+    "secondary": 3.5,
+    "tertiary": 5.1,
+    "durability": 33,
+    "integrityCost": 1,
+    "integrityGain": 3,
+    "magicCapacity": 243,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "9400D3",
+        "texture": "9400D3"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "cataclysm:void_jaw" ]
+    },
+    "effects" : {
+        "enderReverb": 0.2
+	},
+    "requiredTools": {
+        "cut": "minecraft:gold"
+    }
+}

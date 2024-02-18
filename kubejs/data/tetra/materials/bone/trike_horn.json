@@ -1,0 +1,27 @@
+{
+    "key": "unusual_trike_horn",
+    "category": "bone",
+    "primary": 7.1,
+    "secondary": 3.5,
+    "tertiary": 4.6,
+    "durability": 534,
+    "integrityCost": 2,
+    "integrityGain": 8,
+    "magicCapacity": 315,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 5,
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": [
+        "bone",
+        "crude"
+    ],
+    "material": {
+        "items": [ "unusualprehistory:trike_horn" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:wood"
+    }
+}

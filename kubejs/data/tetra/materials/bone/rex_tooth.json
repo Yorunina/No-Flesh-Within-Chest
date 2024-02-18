@@ -1,0 +1,28 @@
+{
+    "key": "unusual_rex_tooth",
+    "category": "bone",
+    "primary": 6.4,
+    "secondary": 2.1,
+    "tertiary": 3.9,
+    "durability": 360,
+    "integrityCost": 2,
+    "integrityGain": 8,
+    "magicCapacity": 257,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 5,
+    "effects": {
+        "bleeding": 2
+    },
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": ["bone", "crude"],
+  
+    "material": {
+      "items": ["unusualprehistory:rex_tooth"]
+    },
+    "requiredTools": {
+      "hammer_dig": "minecraft:stone"
+    }
+  }

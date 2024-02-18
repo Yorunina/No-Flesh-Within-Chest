@@ -22,7 +22,7 @@
         "items": [ "alexsmobs:crocodile_scute" ]
     },
     "effects" : {
-        "stun": [ 5, 2 ]
+        "crushing": 3
 	},
     "requiredTools": {
         "cut": "minecraft:gold"

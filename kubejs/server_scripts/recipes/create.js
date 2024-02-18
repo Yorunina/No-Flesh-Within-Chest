@@ -287,4 +287,6 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_relic_metal_ingot', ['kubejs:incomplete_relic_metal_ingot', 'kubejs:relic_metal_plate']),
 		event.recipes.createCutting('kubejs:incomplete_relic_metal_ingot', 'kubejs:incomplete_relic_metal_ingot')
 	]).transitionalItem('kubejs:incomplete_relic_metal_ingot').loops(5)
+
+	event.recipes.create.sandpaper_polishing('kubejs:polished_amber', 'unusualprehistory:amber_shard')
 })
