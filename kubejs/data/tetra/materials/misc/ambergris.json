@@ -15,10 +15,10 @@
         "texture": "E0FFFF"
       },
     "attributes":{
-        "irons_spellbooks:max_mana":150,
-        "irons_spellbooks:mana_regen":0.3,
-        "irons_spellbooks:cast_time_reduction":0.3,
-        "irons_spellbooks:cooldown_reduction":0.3
+        "**irons_spellbooks:max_mana":150,
+        "**irons_spellbooks:mana_regen":0.3,
+        "**irons_spellbooks:cast_time_reduction":0.3,
+        "**irons_spellbooks:cooldown_reduction":0.3
     },
     "effects" : {
         "manaRepair": 3

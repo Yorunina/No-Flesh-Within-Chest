@@ -1,0 +1,71 @@
+{
+  "armorSetName": "高位唤魔者",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "irons_spellbooks:archevoker_helmet"
+  },
+  "chest": {
+    "itemKey": "irons_spellbooks:archevoker_chestplate"
+  },
+  "legs": {
+    "itemKey": "irons_spellbooks:archevoker_leggings"
+  },
+  "boots": {
+    "itemKey": "irons_spellbooks:archevoker_boots"
+  },
+  "mainHand": {
+    "itemKey": "irons_spellbooks:magehunter",
+    "mixAndMatch": [
+      "goety:fanged_dagger"
+    ]
+  },
+  "offHand": {
+    "itemKey": "irons_spellbooks:magehunter",
+    "mixAndMatch": [
+      "goety:fanged_dagger"
+    ]
+  },
+  "additionalSetPieces": [{
+    "itemKey": "irons_spellbooks:evoker_spell_book",
+    "mixAndMatch": [
+      "nameless_trinkets:fate_emerald"
+    ]
+  }],
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "你已经是一位出色的高位唤魔者了"
+  ],
+  "partialBonusRequiredAmount": 5,
+  "partialSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:evocation_spell_power",
+      "modifierUUID": "822B1387-D48E-4D12-ABEA-0D49819CA035",
+      "description": "+50% 唤魔魔法伤害",
+      "value": 0.5
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:evocation_magic_resist",
+      "modifierUUID": "222A8A30-83E0-45DB-9ECA-96E559230DEE",
+      "description": "+50% 唤魔魔法抵抗",
+      "value": 0.5
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:evocation_spell_power",
+      "modifierUUID": "DFFF6348-D9BF-47E1-8A15-E772CB10B894",
+      "description": "+80% 唤魔魔法伤害",
+      "value": 0.8
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:evocation_magic_resist",
+      "modifierUUID": "FF8BAC45-2663-42FB-8248-8AE8118D2A6E",
+      "description": "+80% 唤魔魔法抵抗",
+      "value": 0.8
+    }
+  ]
+}

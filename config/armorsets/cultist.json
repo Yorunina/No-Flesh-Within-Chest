@@ -1,0 +1,71 @@
+{
+  "armorSetName": "ÑªÐÈ½ÌÍ½",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "irons_spellbooks:cultist_helmet"
+  },
+  "chest": {
+    "itemKey": "irons_spellbooks:cultist_chestplate"
+  },
+  "legs": {
+    "itemKey": "irons_spellbooks:cultist_leggings"
+  },
+  "boots": {
+    "itemKey": "irons_spellbooks:cultist_boots"
+  },
+  "mainHand": {
+    "itemKey": "biomancy:ravenous_claws",
+    "mixAndMatch": [
+      "alexsmobs:hemolymph_blaster"
+    ]
+  },
+  "offHand": {
+    "itemKey": "biomancy:ravenous_claws",
+    "mixAndMatch": [
+      "alexsmobs:hemolymph_blaster"
+    ]
+  },
+  "additionalSetPieces": [{
+    "itemKey": "irons_spellbooks:blood_staff",
+    "mixAndMatch": [
+      "nameless_trinkets:vampire_blood"
+    ]
+  }],
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "ÄãÒÑ¾­ÊÇÒ»Î»³öÉ«µÄÑªÐÈ½ÌÍ½ÁË"
+  ],
+  "partialBonusRequiredAmount": 5,
+  "partialSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:blood_spell_power",
+      "modifierUUID": "5D1E6173-E24E-4B21-BE37-1E1B61A434AA",
+      "description": "+50% ÏÊÑªÄ§·¨ÉËº¦",
+      "value": 0.5
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:blood_magic_resist",
+      "modifierUUID": "1829099D-64D1-45A3-A5E7-E51383AA46EA",
+      "description": "+50% ÏÊÑªÄ§·¨µÖ¿¹",
+      "value": 0.5
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:blood_spell_power",
+      "modifierUUID": "E878A02D-757C-48EC-ABFE-97589A42CCE1",
+      "description": "+80% ÏÊÑªÄ§·¨ÉËº¦",
+      "value": 0.8
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:blood_magic_resist",
+      "modifierUUID": "477DEF9E-FD19-43A4-AE00-85A749B9F22B",
+      "description": "+80% ÏÊÑªÄ§·¨µÖ¿¹",
+      "value": 0.8
+    }
+  ]
+}

@@ -11,7 +11,7 @@
     "toolLevel": 0,
     "toolEfficiency": 0,
     "attributes":{
-        "irons_spellbooks:fire_magic_resist":0.8
+        "**irons_spellbooks:fire_magic_resist":0.8
     },
     "effects": {
         "unbreaking": 1

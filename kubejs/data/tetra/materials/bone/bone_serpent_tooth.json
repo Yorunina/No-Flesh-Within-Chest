@@ -11,8 +11,8 @@
     "toolLevel": "minecraft:stone",
     "toolEfficiency": 6,
     "attributes":{
-        "irons_spellbooks:fire_spell_power":0.2,
-        "irons_spellbooks:fire_spell_resist":0.2
+        "**irons_spellbooks:fire_spell_power":0.2,
+        "**irons_spellbooks:fire_magic_resist":0.2
     },
     "tints": {
         "glyph": "bone_glyph",

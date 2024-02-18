@@ -1,0 +1,35 @@
+{
+  "key": "irons_dragonskin",
+  "category": "skin",
+  "primary": 3.5,
+  "secondary": 1.8,
+  "tertiary": 7.1,
+  "durability": 370,
+  "integrityCost": 2,
+  "integrityGain": 6,
+  "magicCapacity": 266,
+  "toolLevel": 0,
+  "toolEfficiency": 0,
+  "tints": {
+    "glyph": "000080",
+    "texture": "000080"
+  },
+  "effects": {
+    "irons_spellbooks:mana_siphon": 225
+  },
+  "attributes": {
+    "**irons_spellbooks:ender_spell_power": 0.15
+  },
+  "textures": [
+    "crude",
+    "default"
+  ],
+  "material": {
+    "items": [
+      "irons_spellbooks:dragonskin"
+    ]
+  },
+  "requiredTools": {
+    "cut": "minecraft:iron"
+  }
+}

@@ -11,7 +11,7 @@
     "toolLevel": 0,
     "toolEfficiency": 1,
     "attributes":{
-      "irons_spellbooks:summon_damage":0.8},
+      "**irons_spellbooks:summon_damage":0.8},
     "tints": {
       "glyph": "00B2EE",
       "texture": "00B2EE"

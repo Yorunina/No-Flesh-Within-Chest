@@ -1,0 +1,30 @@
+{
+  "key": "irons_ender_upgrade_orb",
+  "hidden": false,
+  "category": "socket",
+  "primary": 0,
+  "secondary": 0,
+  "tertiary": 0,
+  "durability": 0,
+  "integrityCost": -3,
+  "integrityGain": 0,
+  "magicCapacity": 0,
+  "toolLevel": 0,
+  "toolEfficiency": 0,
+  "tints": {
+    "glyph": "dd3fff",
+    "texture": "dd3fff"
+  },
+  "textures": [
+    "perk_glow_0",
+    "perk_sided_0"
+  ],
+  "material": {
+    "items": [
+      "irons_spellbooks:ender_upgrade_orb"
+    ]
+  },
+  "attributes": {
+    "**irons_spellbooks:ender_spell_power": 0.3
+  }
+}

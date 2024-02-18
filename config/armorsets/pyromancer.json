@@ -1,0 +1,75 @@
+{
+  "armorSetName": "炽焰术士",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "irons_spellbooks:pyromancer_helmet"
+  },
+  "chest": {
+    "itemKey": "irons_spellbooks:pyromancer_chestplate"
+  },
+  "legs": {
+    "itemKey": "irons_spellbooks:pyromancer_leggings"
+  },
+  "boots": {
+    "itemKey": "irons_spellbooks:pyromancer_boots"
+  },
+  "mainHand": {
+    "itemKey": "somebosses:vulcan_sword",
+    "mixAndMatch": [
+      "somebosses:frost_magma_gauntlet",
+      "cataclysm:the_incinerator",
+      "iceandfire:dragonbone_sword_fire"
+    ]
+  },
+  "offHand": {
+    "itemKey": "somebosses:vulcan_sword",
+    "mixAndMatch": [
+      "somebosses:frost_magma_gauntlet",
+      "cataclysm:the_incinerator",
+      "iceandfire:dragonbone_sword_fire"
+    ]
+  },
+  "additionalSetPieces": [{
+    "itemKey": "irons_spellbooks:blaze_spell_book",
+    "mixAndMatch": [
+      "nameless_trinkets:blaze_nucleus"
+    ]
+  }],
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "你已经是一位出色的炽焰术士了"
+  ],
+  "partialBonusRequiredAmount": 5,
+  "partialSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:fire_spell_power",
+      "modifierUUID": "D5B6C3EE-E9F5-449F-93E0-9022BB09C7BD",
+      "description": "+50% 炽焰魔法伤害",
+      "value": 0.5
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:fire_magic_resist",
+      "modifierUUID": "081B0303-EA4B-4558-AE1F-6BE0CEF38DEA",
+      "description": "+50% 炽焰魔法抵抗",
+      "value": 0.5
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:fire_spell_power",
+      "modifierUUID": "4FF25B73-6122-4167-A0B2-1DA51D4ED84A",
+      "description": "+80% 炽焰魔法伤害",
+      "value": 0.8
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:fire_magic_resist",
+      "modifierUUID": "B4CA0FEC-D611-4C6F-B2A9-69B2FBF83CCD",
+      "description": "+80% 炽焰魔法抵抗",
+      "value": 0.8
+    }
+  ]
+}

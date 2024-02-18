@@ -1,0 +1,73 @@
+{
+  "armorSetName": "瘟疫术士",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "irons_spellbooks:plagued_helmet"
+  },
+  "chest": {
+    "itemKey": "irons_spellbooks:plagued_chestplate"
+  },
+  "legs": {
+    "itemKey": "irons_spellbooks:plagued_leggings"
+  },
+  "boots": {
+    "itemKey": "irons_spellbooks:plagued_boots"
+  },
+  "mainHand": {
+    "itemKey": "goety:hunters_bow",
+    "mixAndMatch": [
+      "kubejs:flora_wand",
+      "kubejs:nature_wooden_wand"
+    ]
+  },
+  "offHand": {
+    "itemKey": "goety:hunters_bow",
+    "mixAndMatch": [
+      "kubejs:flora_wand",
+      "kubejs:nature_wooden_wand"
+    ]
+  },
+  "additionalSetPieces": [{
+    "itemKey": "irons_spellbooks:druidic_spell_book",
+    "mixAndMatch": [
+      "nameless_trinkets:puffer_fish_liver"
+    ]
+  }],
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "你已经是一位出色的瘟疫术士了"
+  ],
+  "partialBonusRequiredAmount": 5,
+  "partialSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:nature_spell_power",
+      "modifierUUID": "C0829012-2CFC-48E0-9B26-25657BEE2AC6",
+      "description": "+50% 自然魔法伤害",
+      "value": 0.5
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:nature_magic_resist",
+      "modifierUUID": "0A668E7C-8426-4021-B790-6A0C25099544",
+      "description": "+50% 自然魔法抵抗",
+      "value": 0.5
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:nature_spell_power",
+      "modifierUUID": "2E865446-F3DE-431C-BE4C-BC62BB7E12DF",
+      "description": "+80% 自然魔法伤害",
+      "value": 0.8
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:nature_magic_resist",
+      "modifierUUID": "AF632BD2-7110-45C5-BAA0-E8C72376E520",
+      "description": "+80% 自然魔法抵抗",
+      "value": 0.8
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "armorSetName": "雷霆术士",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "irons_spellbooks:electromancer_helmet"
+  },
+  "chest": {
+    "itemKey": "irons_spellbooks:electromancer_chestplate"
+  },
+  "legs": {
+    "itemKey": "irons_spellbooks:electromancer_leggings"
+  },
+  "boots": {
+    "itemKey": "irons_spellbooks:electromancer_boots"
+  },
+  "mainHand": {
+    "itemKey": "goety:storm_staff",
+    "mixAndMatch": [
+      "iceandfire:dragonbone_sword_lightning"
+    ]
+  },
+  "offHand": {
+    "itemKey": "goety:storm_staff",
+    "mixAndMatch": [
+      "iceandfire:dragonbone_sword_lightning"
+    ]
+  },
+  "additionalSetPieces": [{
+    "itemKey": "nameless_trinkets:pocket_lightning_rod"
+  }],
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "你已经是一位出色的雷霆术士了"
+  ],
+  "partialBonusRequiredAmount": 5,
+  "partialSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:lightning_spell_power",
+      "modifierUUID": "09C699D7-2F5F-41E2-BDA2-BEB6B7CE4696",
+      "description": "+50% 雷霆魔法伤害",
+      "value": 0.5
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:lightning_magic_resist",
+      "modifierUUID": "2BA95D51-AF4C-4F2A-B681-CF6AFEF75CD0",
+      "description": "+50% 雷霆魔法抵抗",
+      "value": 0.5
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:lightning_spell_power",
+      "modifierUUID": "468F4CA4-C0CC-48CC-A5EF-051767DF729A",
+      "description": "+80% 雷霆魔法伤害",
+      "value": 0.8
+    },
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:lightning_magic_resist",
+      "modifierUUID": "99E4C464-47E9-47D9-9A0D-C183EB999F3C",
+      "description": "+80% 雷霆魔法抵抗",
+      "value": 0.8
+    }
+  ]
+}
