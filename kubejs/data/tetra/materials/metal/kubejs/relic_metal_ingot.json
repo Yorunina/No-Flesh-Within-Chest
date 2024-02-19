@@ -1,15 +1,15 @@
 {
     "key": "relic_metal_ingot",
     "category": "metal",
-    "primary": 6.5,
-    "secondary": 2.6,
-    "tertiary": 3.4,
-    "durability": 1449,
+    "primary": 8.1,
+    "secondary": 2.1,
+    "tertiary": 3.1,
+    "durability": 2110,
     "integrityCost": 2,
     "integrityGain": 8,
-    "magicCapacity": 153,
+    "magicCapacity": 113,
     "toolLevel": "minecraft:netherite",
-    "toolEfficiency": 8.8,
+    "toolEfficiency": 7.5,
     "tints": {
       "glyph": "8B2323",
       "texture": "8B2323"

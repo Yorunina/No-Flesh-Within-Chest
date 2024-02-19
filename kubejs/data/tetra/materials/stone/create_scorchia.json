@@ -1,0 +1,24 @@
+{
+  "key" : "create_scorchia",
+  "category" : "stone",
+  "primary" : 4,
+  "secondary" : 3,
+  "tertiary" : 0.0,
+  "durability" : 180,
+  "integrityCost" : 1,
+  "integrityGain" : 4,
+  "magicCapacity" : 90,
+  "toolLevel" : "minecraft:stone",
+  "toolEfficiency" : 4.5,
+  "tints" : {
+    "glyph" : "2d2f35",
+    "texture" : "2d2f35"
+  },
+  "textures" : [ "grainy", "crude", "default" ],
+  "material" : {
+    "items" : [ "create:scorchia" ]
+  },
+  "requiredTools" : {
+    "hammer_dig" : "minecraft:wood"
+  }
+}

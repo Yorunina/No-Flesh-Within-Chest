@@ -1,15 +1,15 @@
 {
   "key": "ignitium_ingot",
   "category": "metal",
-  "primary": "6.7",
+  "primary": "7.8",
   "secondary": "2.7",
-  "tertiary": "3.1",
-  "durability": "1548",
+  "tertiary": "4.1",
+  "durability": "1889",
   "integrityCost": "2",
   "integrityGain": "8",
   "magicCapacity": "160",
   "toolLevel": "minecraft:netherite",
-  "toolEfficiency": "8.3",
+  "toolEfficiency": "9.5",
   "effects": {
     "stabilizing": 1,
     "fiery": 5

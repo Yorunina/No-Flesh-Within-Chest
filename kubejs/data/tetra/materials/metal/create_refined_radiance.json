@@ -1,0 +1,27 @@
+{
+  "key" : "create_refined_radiance",
+  "category" : "metal",
+  "primary" : 5.8,
+  "secondary" : 2.8,
+  "tertiary" : 3.5,
+  "durability" : 876,
+  "integrityCost" : 2,
+  "integrityGain" : 6,
+  "magicCapacity" : 124,
+  "toolLevel" : "minecraft:diamond",
+  "toolEfficiency" : 7.0,
+  "tints" : {
+    "glyph" : "ffffff",
+    "texture" : "c8ceff"
+  },
+  "textures" : [ "metal", "default" ],
+  "material" : {
+    "items" : [ "create:refined_radiance" ]
+  },
+  "effects" : {
+    "stabilizing" : 8
+  },
+  "requiredTools" : {
+    "hammer_dig" : "minecraft:iron"
+  }
+}
