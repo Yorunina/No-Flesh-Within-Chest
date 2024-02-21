@@ -1,0 +1,36 @@
+{
+    "key": "alex_ambergris",
+    "category": "misc",
+    "primary": 0.4,
+    "secondary": 6.5,
+    "tertiary": 0.5,
+    "durability": 376,
+    "integrityCost": 4,
+    "integrityGain": 1,
+    "magicCapacity": 669,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "E0FFFF",
+        "texture": "E0FFFF"
+      },
+    "attributes":{
+        "**irons_spellbooks:max_mana":150,
+        "**irons_spellbooks:mana_regen":0.3,
+        "**irons_spellbooks:cast_time_reduction":0.3,
+        "**irons_spellbooks:cooldown_reduction":0.3
+    },
+    "effects" : {
+        "manaRepair": 3
+      },
+    "textures": [
+        "crude",
+        "default"
+      ],
+    "material": {
+        "items": [ "alexsmobs:ambergris" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

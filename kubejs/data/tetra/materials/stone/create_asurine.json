@@ -1,0 +1,24 @@
+{
+  "key" : "create_asurine",
+  "category" : "stone",
+  "primary" : 3.5,
+  "secondary" : 3,
+  "tertiary" : 0.0,
+  "durability" : 131,
+  "integrityCost" : 1,
+  "integrityGain" : 4,
+  "magicCapacity" : 90,
+  "toolLevel" : "minecraft:stone",
+  "toolEfficiency" : 4.0,
+  "tints" : {
+    "glyph" : "4c5c7c",
+    "texture" : "4c5c7c"
+  },
+  "textures" : [ "grainy", "crude", "default" ],
+  "material" : {
+    "items" : [ "create:asurine" ]
+  },
+  "requiredTools" : {
+    "hammer_dig" : "minecraft:wood"
+  }
+}

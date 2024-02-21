@@ -1,0 +1,24 @@
+{
+  "key" : "create_limestone",
+  "category" : "stone",
+  "primary" : 4.2,
+  "secondary" : 3.5,
+  "tertiary" : 0.0,
+  "durability" : 100,
+  "integrityCost" : 1,
+  "integrityGain" : 4,
+  "magicCapacity" : 90,
+  "toolLevel" : "minecraft:stone",
+  "toolEfficiency" : 4.0,
+  "tints" : {
+    "glyph" : "908b77",
+    "texture" : "908b77"
+  },
+  "textures" : [ "grainy", "crude", "default" ],
+  "material" : {
+    "items" : [ "create:limestone" ]
+  },
+  "requiredTools" : {
+    "hammer_dig" : "minecraft:wood"
+  }
+}

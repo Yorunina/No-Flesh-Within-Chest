@@ -1,0 +1,32 @@
+{
+    "key": "cata_monstrous_horn",
+    "category": "bone",
+    "primary": "7.5",
+    "secondary": "3.2",
+    "tertiary": "2.8",
+    "durability": "754",
+    "integrityCost": "2",
+    "integrityGain": "8",
+    "magicCapacity": "50",
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": "9",
+    "effects": {
+        "fierySelf": 0.8   
+    },
+    "tints": {
+      "glyph": "8B0000",
+      "texture": "8B0000"
+    },
+    "textures": [
+      "bone",
+      "crude"
+    ],
+    "material": {
+      "items": [
+        "cataclysm:monstrous_horn"
+      ]
+    },
+    "requiredTools": {
+      "hammer_dig": "minecraft:iron"
+    }
+  }

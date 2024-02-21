@@ -1,0 +1,30 @@
+{
+    "key": "alex_roadrunner_feather",
+    "category": "fabric",
+    "primary": 1,
+    "secondary": 1,
+    "tertiary": 1.2,
+    "durability": 90,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 150,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "attributes":{
+        "minecraft:generic.movement_speed":0.1
+    },
+    "tints": {
+        "glyph": "6B8E23",
+        "texture": "6B8E23"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": ["alexsmobs:roadrunner_feather"]
+    },
+    "requiredTools": {
+        "cut": "minecraft:stone"
+    }
+}

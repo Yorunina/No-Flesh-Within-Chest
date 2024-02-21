@@ -1,0 +1,30 @@
+{
+    "key": "alex_spiked_scute",
+    "category": "scale",
+    "primary": 3.1,
+    "secondary": 2.3,
+    "tertiary": 4.3,
+    "durability": 195,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 60,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "8B5A2B",
+        "texture": "8B5A2B"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "effects" : {
+        "crushing": 4
+	},
+    "material": {
+        "items": [ "alexsmobs:spiked_scute" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:gold"
+    }
+}

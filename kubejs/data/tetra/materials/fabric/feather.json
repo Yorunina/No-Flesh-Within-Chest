@@ -1,0 +1,27 @@
+{
+    "key": "feather",
+    "category": "fabric",
+    "primary": 1,
+    "secondary": 1,
+    "tertiary": 1.2,
+    "durability": 80,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 100,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "ffffff",
+        "texture": "dddddd"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": ["minecraft:feather"]
+    },
+    "requiredTools": {
+        "cut": "minecraft:stone"
+    }
+}

@@ -20,6 +20,8 @@ ServerEvents.recipes(event => {
 	event.recipes.create.compacting('kubejs:huge_stomach', ['kubejs:stomach_template', 'biomancy:ageing_serum']).superheated()
 	event.recipes.create.compacting('kubejs:huge_kidney', ['kubejs:kidney_template', 'biomancy:ageing_serum']).superheated()
 	event.recipes.create.compacting('kubejs:huge_liver', ['kubejs:liver_template', 'biomancy:ageing_serum']).superheated()
+	
+	event.recipes.create.mixing('create:chromatic_compound', [Fluid.of('hexerei:quicksilver_fluid').withAmount(1000),'iceandfire:ghost_ingot', '8x iceandfire:pixie_dust','16x minecraft:brown_dye','16x minecraft:magenta_dye','16x minecraft:light_blue_dye','16x minecraft:orange_dye','16x minecraft:cyan_dye','16x minecraft:light_gray_dye','16x minecraft:lime_dye']).superheated()
 
 	event.recipes.create.mechanical_crafting('kubejs:revolution_gear', [
 		' SSS ',
@@ -285,4 +287,6 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_relic_metal_ingot', ['kubejs:incomplete_relic_metal_ingot', 'kubejs:relic_metal_plate']),
 		event.recipes.createCutting('kubejs:incomplete_relic_metal_ingot', 'kubejs:incomplete_relic_metal_ingot')
 	]).transitionalItem('kubejs:incomplete_relic_metal_ingot').loops(5)
+
+	event.recipes.create.sandpaper_polishing('kubejs:polished_amber', 'unusualprehistory:amber_shard')
 })

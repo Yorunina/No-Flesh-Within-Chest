@@ -1,15 +1,15 @@
 {
-    "key": "bone_block",
+    "key": "alex_moose_antler",
     "category": "bone",
-    "primary": 5.4,
-    "secondary": 1.8,
-    "tertiary": 5,
-    "durability": 165,
+    "primary": 6.8,
+    "secondary": 3.0,
+    "tertiary": 4.2,
+    "durability": 229,
     "integrityCost": 1,
-    "integrityGain": 5,
-    "magicCapacity": 122,
+    "integrityGain": 4,
+    "magicCapacity": 75,
     "toolLevel": "minecraft:stone",
-    "toolEfficiency": 5,
+    "toolEfficiency": 4,
     "tints": {
         "glyph": "bone_glyph",
         "texture": "bone"
@@ -19,7 +19,7 @@
         "crude"
     ],
     "material": {
-        "items": [ "minecraft:bone_block" ]
+        "items": [ "alexsmobs:moose_antler" ]
     },
     "requiredTools": {
         "hammer_dig": "minecraft:wood"

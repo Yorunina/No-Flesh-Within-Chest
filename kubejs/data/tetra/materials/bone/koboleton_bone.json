@@ -14,6 +14,9 @@
     "glyph": "4c442c",
     "texture": "4c442c"
   },
+  "effects": {
+    "jab": 10
+  },
   "textures": [
     "bone",
     "crude"

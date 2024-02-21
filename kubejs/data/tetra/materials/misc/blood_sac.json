@@ -1,0 +1,31 @@
+{
+    "key": "alex_blood_sac",
+    "category": "misc",
+    "primary": 0.5,
+    "secondary": 1.5,
+    "tertiary": 2.6,
+    "durability": 88,
+    "integrityCost": 2,
+    "integrityGain": 1,
+    "magicCapacity": 279,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "FF0000",
+        "texture": "FF0000"
+      },
+    "effects" : {
+        "speed": 5,
+        "backstab": 2
+      },
+    "textures": [
+        "crude",
+        "default"
+      ],
+    "material": {
+        "items": [ "alexsmobs:blood_sac" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

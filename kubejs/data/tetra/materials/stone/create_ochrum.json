@@ -1,0 +1,24 @@
+{
+  "key" : "create_ochrum",
+  "category" : "stone",
+  "primary" : 3.5,
+  "secondary" : 2.5,
+  "tertiary" : 0.0,
+  "durability" : 90,
+  "integrityCost" : 1,
+  "integrityGain" : 4,
+  "magicCapacity" : 90,
+  "toolLevel" : "minecraft:stone",
+  "toolEfficiency" : 4.0,
+  "tints" : {
+    "glyph" : "a68858",
+    "texture" : "a68858"
+  },
+  "textures" : [ "grainy", "crude", "default" ],
+  "material" : {
+    "items" : [ "create:ochrum" ]
+  },
+  "requiredTools" : {
+    "hammer_dig" : "minecraft:wood"
+  }
+}

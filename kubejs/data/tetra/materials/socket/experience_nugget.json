@@ -1,6 +1,5 @@
 {
-  "key":"gold_nugget",
-  "hidden":true,
+  "key":"experience_nugget",
   "category":"socket",
   "primary":0,
   "secondary":0,
@@ -8,19 +7,19 @@
   "durability":8,
   "integrityCost":1,
   "integrityGain":0,
-  "magicCapacity":80,
+  "magicCapacity":140,
   "toolLevel":0,
-  "toolEfficiency":0,
+  "toolEfficiency":2,
   "effects": {
     "stabilizing": 15
   },
   "tints":{
-    "glyph":"fdef53",
-    "texture":"fdef53"
+    "glyph":"3CB371",
+    "texture":"3CB371"
   },
   "textures":["default"],
-  "experienceCost":1,
+  "experienceCost":10,
   "material":{
-    "items":["minecraft:gold_nugget"]
+    "items":["create:experience_nugget"]
   }
 }

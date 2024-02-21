@@ -1,0 +1,27 @@
+{
+    "key": "opalescent_pearl",
+    "category": "gem",
+    "primary": 6.5,
+    "secondary": 2.0,
+    "tertiary": 0,
+    "durability": 616,
+    "integrityCost": 2,
+    "integrityGain": 2,
+    "magicCapacity": 210,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 7,
+    "tints": {
+        "glyph": "FFF5EE",
+        "texture": "FFF5EE"
+    },
+    "textures": [
+        "shiny",
+        "crude"
+    ],
+    "material": {
+        "items": [ "unusualprehistory:opalescent_pearl" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}
