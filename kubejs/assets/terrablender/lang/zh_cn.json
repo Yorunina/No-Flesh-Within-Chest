@@ -1,0 +1,4 @@
+{
+    "commands.terrablender.biomeparams.failed": "无法确定参数。",
+    "commands.terrablender.biomeparams.success": "位于位置 %s %s %s 的参数为：%s"
+}

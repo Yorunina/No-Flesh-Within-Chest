@@ -9,7 +9,7 @@
   "integrityGain": "8",
   "magicCapacity": "160",
   "toolLevel": "minecraft:netherite",
-  "toolEfficiency": "9.5",
+  "toolEfficiency": "9",
   "effects": {
     "stabilizing": 1,
     "fiery": 5
