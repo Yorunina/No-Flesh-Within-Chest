@@ -2,6 +2,8 @@
 barehandRetrieve = true
 #Percentage modifiers stack exponentially
 exponentialStat = false
+#Make mobs aggro to iron golem automatically aggro to modular golems
+doEnemyAggro = true
 
 [modifiers]
 	#Percentage damage reflection per level of thorn

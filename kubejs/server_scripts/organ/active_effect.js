@@ -175,6 +175,10 @@ const organActiveStrategies = {
         let maxCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
         player.persistentData.putInt(resourceCountMax, maxCount + 100)
     },
+    'kubejs:vulcan_furnace': function (player, organ, attributeMap) {
+        let maxCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
+        player.persistentData.putInt(resourceCountMax, maxCount + 100)
+    },
     'kubejs:aesegull_rib_right': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
         let pos = organ.Slot
@@ -256,6 +260,32 @@ const organActiveStrategies = {
         if (typeMap.has('kubejs:magic')) {
             let value = typeMap.get('kubejs:magic').length * 30
             attributeMapValueAddition(attributeMap, global.MAX_MANA, value)
+        }
+    },
+    'kubejs:chicken_kidney': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.Slot
+        let opPos = getOppoPos(pos)
+        if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:chicken_kidney') {
+            attributeMapValueAddition(attributeMap, global.LUCK, 3)
+        }
+    },
+    'kubejs:chicken_lung': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.Slot
+        let opPos = getOppoPos(pos)
+        let chickenStripCounter = 0
+        fourDirectionList.forEach(direction => {
+            let currentPos = lookPos(direction, pos)
+            if (posMap.has(currentPos) && posMap.get(currentPos).id == 'kubejs:chicken_strip') {
+                chickenStripCounter++
+            }
+        })
+        if (chickenStripCounter < 2) {
+            return
+        }
+        if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:chicken_lung') {
+            attributeMapValueAddition(attributeMap, global.LUCK_MULTI_BASE, 0.1)
         }
     },
 };
@@ -342,6 +372,13 @@ const organActiveOnlyStrategies = {
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, Math.floor(healthUp))
         attributeMapValueAddition(attributeMap, global.ATTACK_UP, attackUp)
         attributeMapValueAddition(attributeMap, global.MAX_MANA, Math.floor(manaUp))
+    },
+    'kubejs:chicken_heart': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player);
+        if (typeMap.has('kubejs:food')) {
+            let value = typeMap.get('kubejs:food').length
+            attributeMapValueAddition(attributeMap, global.LUCK, value)
+        }
     },
 }
 

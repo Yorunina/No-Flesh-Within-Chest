@@ -30,6 +30,8 @@ global.PENETRATION = { key: 'obscure_api:penetration', name: 'kubejsPenetration'
 global.SUMMON_DAMAGE = { key: 'irons_spellbooks:summon_damage', name: 'kubejsSummonDamage', operation: 'addition' }
 global.BLOOD_SPELL_DAMAGE = { key: 'irons_spellbooks:blood_spell_power', name: 'kubejsBloodSpellDamage', operation: 'addition' }
 global.HOLY_SPELL_DAMAGE = { key: 'irons_spellbooks:holy_spell_power', name: 'kubejsHolySpellDamage', operation: 'addition' }
+global.LUCK = { key: 'minecraft:generic.luck', name: 'kubejsLuck', operation: 'addition' }
+global.LUCK_MULTI_BASE = { key: 'minecraft:generic.luck', name: 'kubejsLuckMultiBase', operation: 'multiply_base' }
 
 global.ATTRIBUTE_MAP = {
     'kubejsAttackDamage': global.ATTACK_UP,
@@ -57,6 +59,8 @@ global.ATTRIBUTE_MAP = {
     'kubejsSummonDamage': global.SUMMON_DAMAGE,
     'kubejsBloodSpellDamage': global.BLOOD_SPELL_DAMAGE,
     'kubejsHolySpellDamage': global.HOLY_SPELL_DAMAGE,
+    'kubejsLuck': global.LUCK,
+    'kubejsLuckMultiBase': global.LUCK_MULTI_BASE,
 }
 
 global.TYPE_MAP = {

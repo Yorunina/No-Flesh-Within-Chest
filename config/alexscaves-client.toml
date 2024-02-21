@@ -1,0 +1,31 @@
+
+[visuals]
+	#whether to shake the screen from tremorsaurus stomping, nuclear explosions, etc.
+	screen_shaking = true
+	#true if some block models, like uranium ore or abyssmarine bricks render as fullbright. May increase load time, no gameplay performance impact.
+	emissive_block_models = true
+	#whether to make the screen flash white during nuclear explosions.
+	nuclear_bomb_flash = true
+	#true if some biomes, such as primordial caves, have ambient light that makes the biome easier to see in.
+	biome_ambient_light = true
+	#true if some biomes, such as toxic caves, apply a color to ambient light. May conflict with shaders.
+	biome_ambient_light_coloring = true
+	#true if some biomes, such as primordial caves, have an always well-lit sky when in them. May conflict with shaders.
+	biome_sky_overrides = true
+	#true if some biomes, such as abyssal chasm, have an thicker water fog to them. May conflict with shaders.
+	biome_sky_fog_overrides = true
+	#true if ambersol block renders with rays of light emerging from it.
+	ambersol_shines = true
+	#true if irradiated effect makes mobs glow. May conflict with shaders.
+	radiation_glow_effect = true
+	#determines how far to the left the subterranodon flight indicator renders on the screen when mounted. Negative numbers will render it on the right. 
+	#Range: -12000 ~ 12000
+	subterranodon_indicator_x = 22
+	#determines how far from bottom the subterranodon flight indicator renders on the screen when mounted.
+	#Range: -12000 ~ 12000
+	subterranodon_indicator_y = 6
+
+[audio]
+	#whether nuclear explosions briefly muffle other sounds.
+	nuclear_bomb_muffles_sounds = true
+

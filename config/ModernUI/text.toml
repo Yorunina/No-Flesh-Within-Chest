@@ -35,11 +35,12 @@
 	#This does not affect text rendering in GUI.
 	#This option only applies to TrueType fonts.
 	useTextShadersInWorld = true
-	#For DEFAULT_FONT and UNIFORM_FONT, should we keep some bitmap providers of them?
+	#For "minecraft:default" font, should we keep some bitmap providers of them?
 	#Ignore All: Equivalent to Force Unicode Font.
 	#Keep ASCII: Include minecraft:font/ascii.png, minecraft:font/accented.png, minecraft:font/nonlatin_european.png
-	#Keep Other: Include providers in minecraft:font/default.json other than Keep ASCII and Unicode font.
+	#Keep Other: Include providers other than ASCII and Unicode font.
 	#Keep All: Include all except Unicode font.
+	#The default value depends on OS language and region.
 	#Allowed Values: IGNORE_ALL, KEEP_ASCII, KEEP_OTHER, KEEP_ALL
 	defaultFontBehavior = "KEEP_ALL"
 	#Whether to use text component object as hash key to lookup in layout cache.
@@ -47,8 +48,8 @@
 	#you can disable this option for compatibility, but this will decrease performance a bit.
 	#Modern UI will use another cache strategy if this is disabled.
 	useComponentCache = true
-	#Allow text layout to be computed from non-main threads.
-	#Otherwise, block on current thread.
+	#Allow text layout to be computed from background threads, which may lead to inconsistency issues.
+	#Otherwise, block the current thread and wait for main thread.
 	allowAsyncLayout = true
 	#See CSS line-break property, https://developer.mozilla.org/en-US/docs/Web/CSS/line-break
 	#Allowed Values: AUTO, LOOSE, NORMAL, STRICT

@@ -1,0 +1,74 @@
+
+[generation]
+	#Average radius (in blocks) of an Alex's Caves cave biome.
+	#Range: 10.0 ~ 1.7976931348623157E308
+	cave_biome_mean_width = 300.0
+	#Average separation (in blocks) between each Alex's Caves cave biome.
+	#Range: > 50
+	cave_biome_mean_separation = 900
+	#How irregularly shaped Alex's Caves cave biomes can generate. 0 = all biomes nearly circular. 1 = biomes completely squiggly in shape.
+	#Range: 0.0 ~ 1.0
+	cave_biome_width_randomness = 0.15
+	#Average spacing in between Alex's Caves cave biomes. 0 = all biomes nearly perfectly equidistant. 1 = biomes completely randomly spread out, sometimes next to eachother.
+	#Range: 0.0 ~ 1.0
+	cave_biome_spacing_randomness = 0.45
+	#Whether to warn users when a server starts if an incompatible generation mod is detected.
+	warn_generation_incompatibility = true
+
+[mob-behavior]
+	#How long (in game ticks) it takes for a nucleeper to explode.
+	#Range: > 20
+	nucleeper_fuse_time = 300
+	#Whether the Watcher can take control of the camera.
+	watcher_possession = true
+
+[block-behavior]
+	#How long (in game ticks) it usually takes for an amber monolith to spawn an animal.
+	#Range: > 1000
+	amber_monolith_mean_time = 32000
+	#True if the Nuclear Furnace only uses 'Blasting' recipes, false to use all smelting recipes.
+	nuclear_furnace_blasting_only = true
+
+[item-behavior]
+	#How far away for cave biomes the Cave Map will search for.
+	#Range: > 6400
+	cave_map_search_distance = 10000
+	#The maximum explosion resistance that a block can have to be destroyed by a nuclear explosion. Set to zero to disable all nuclear explosion block breaking.
+	#Range: > 0
+	nuke_max_block_explosion_resistance = 1000
+	#The scale of nuclear bomb destruction. multiply this by 16 to get the radius of a nuclear bomb explosion.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	nuclear_explosion_size_modifier = 3.0
+	#Whether the Totem of Possession can be applied to players.
+	totem_of_possession_works_on_players = true
+	#The amount of time (in ticks) it takes to charge up the Cloak of Darkness ability.
+	#Range: > 20
+	darkness_cloak_charge_time = 1000
+	#The amount of time (in ticks) that players can fly with the Cloak of Darkness ability.
+	#Range: > 20
+	darkness_cloak_fly_time = 200
+
+[vanilla-changes]
+	#percent chance of bastion having a cave tablet for magnetic caves in its loot table:
+	#Range: 0.0 ~ 1.0
+	magnetic_tablet_loot_chance = 0.45
+	#percent chance of suspicious sand having a cave tablet for primordial caves in its loot table:
+	#Range: 0.0 ~ 1.0
+	primordial_tablet_loot_chance = 0.15
+	#percent chance of jungle temple having a cave tablet for toxic caves in its loot table:
+	#Range: 0.0 ~ 1.0
+	toxic_tablet_loot_chance = 0.5
+	#percent chance of underwater ruins having a cave tablet for abyssal chasm in its loot table:
+	#Range: 0.0 ~ 1.0
+	abyssal_tablet_loot_chance = 0.4
+	#percent chance of mansion having a cave tablet for forlorn hollows in its loot table:
+	#Range: 0.0 ~ 1.0
+	forlorn_tablet_loot_chance = 0.75
+	#percent chance of abandoned mineshaft chests having a map to a nearby underground mineshaft in their loot table:
+	#Range: 0.0 ~ 1.0
+	cabin_map_loot_chance = 0.15
+	#Whether the Cartographer Villagers can sell maps to Underground Cabins.
+	cartographers_sell_cabin_maps = true
+	#Whether the Wandering Traders can sell maps to Underground Cabins.
+	wandering_traders_sell_cabin_maps = true
+

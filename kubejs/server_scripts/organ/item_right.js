@@ -101,12 +101,12 @@ const organRightClickedOnlyStrategies = {
         if (player.hasEffect('kubejs:burning_heart')) {
             let effect = player.getEffect('kubejs:burning_heart')
             player.removeEffect('kubejs:burning_heart')
-            player.potionEffects.add('kubejs:flaring_heart', effect.getDuration() + 20 * 10, effect.getAmplifier())
+            player.potionEffects.add('kubejs:flaring_heart', effect.getDuration() + 20 * 5, effect.getAmplifier())
             updateResourceCount(player, count + (effect.getAmplifier() + 1) * 50)
         } else if (player.hasEffect('kubejs:flaring_heart')) {
             let effect = player.getEffect('kubejs:flaring_heart')
             player.removeEffect('kubejs:flaring_heart')
-            player.potionEffects.add('kubejs:burning_heart', effect.getDuration() + 20 * 10, effect.getAmplifier())
+            player.potionEffects.add('kubejs:burning_heart', effect.getDuration() + 20 * 5, effect.getAmplifier())
             updateResourceCount(player, count + (effect.getAmplifier() + 1) * 50)
         } else {
             updateResourceCount(player, count + 25)

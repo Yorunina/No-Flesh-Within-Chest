@@ -1,0 +1,254 @@
+
+[General]
+	#Certain Items repair themselves using Soul Energy, Default: true
+	soulRepair = true
+	#How much Souls is consumed when crafting with Totem, Default: 1
+	#Range: > 0
+	craftSouls = 1
+	#Amount of Souls needed to repair certain Equipments per second, Default: 5
+	#Range: > 1
+	itemsRepairSouls = 5
+	#Fire Spawn Cage are enabled, Default: true
+	fireSpawnCage = true
+
+[Curios]
+	#Show gloves in first person, Default: true
+	firstPersonGloves = true
+	#Amount of Souls needed to use Spiteful Belt functionality, Default: 5
+	#Range: > 1
+	spitefulBeltUseAmount = 5
+	#The total amount of Rotten Flesh a Pendant of Hunger can hold, Default: 1024
+	#Range: > 1
+	pendantOfHungerLimit = 1024
+	#How much Charges the Sea Amulet needs to consume to function, Default: 1
+	#Range: > 1
+	seaAmuletChargeConsume = 1
+	#The total amount of Charges a Sea Amulet can hold, Default: 256
+	#Range: > 1
+	seaAmuletMax = 256
+
+	[Curios.Robes]
+		#Show Hoods when wearing certain robes ie, Illusive Robes, Default: true
+		showRobeHoods = true
+		#Render Capes on certain Robes, Default: true
+		windRobeCape = true
+		#How much Soul Energy is taken per second when wearer is falling slowly, Default: 1
+		#Range: > 1
+		windRobeSouls = 1
+		#How much magic resistance Witches Robes provides by percent, Default: 85
+		#Range: 0 ~ 100
+		witchRobeResistance = 85
+		#How much explosive resistance Warlock Robes provides by percent, Default: 85
+		#Range: 0 ~ 100
+		warlockRobeResistance = 85
+		#How much frost resistance Frost Robes provides by percent, Default: 85
+		#Range: 0 ~ 100
+		frostRobeResistance = 85
+		#Whether wearing both Necro Cape and Crown will cause Undead mobs to be neutral, Default: true
+		necroSetUndeadNeutral = true
+		#Whether wearing both Nameless Cape and Crown will cause Undead mobs to be neutral, Default: true
+		namelessSetUndeadNeutral = true
+
+["Tools & Weapons"]
+
+	["Tools & Weapons".Staffs]
+		#How much base damage Ominous Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		ominousStaffDamage = 4.0
+		#How much base damage Necro Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		necroStaffDamage = 4.0
+		#How much base damage Wind Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		windStaffDamage = 4.0
+		#How much base damage Storm Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		stormStaffDamage = 4.0
+		#How much base damage Nameless Staffs deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		namelessStaffDamage = 6.0
+
+	["Tools & Weapons".Scythes]
+		#Amount of Soul Energy Dark Scythe gives when hitting mob(s), Default: 1
+		#Range: > 1
+		darkScytheSouls = 1
+		#Scythe Slashes from Death Scythe breaks blocks that regular Scythes easily breaks, Default: true
+		scytheSlashBreaks = true
+		#How much base damage Scythes deals, the damage added depends on material the scythe is made off (ie. Iron = 2.0), Default: 4.5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		scytheBaseDamage = 4.5
+		#How fast it takes to fully swing a Scythe with item offhand and not wearing Grave Gloves. The lower the number the slower it takes to recharge, Default: 0.6
+		#Range: 0.0 ~ 1.7976931348623157E308
+		scytheAttackSpeed = 0.6
+		#How much damage Death Scythe deals, the configured number is added to Scythe Base Damage, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		deathScytheDamage = 4.0
+		#How many uses before Death Scythe breaks, Default: 444
+		#Range: > 1
+		deathScytheDurability = 444
+		#Define the Enchantability for Death Scythe, higher number the better, Default: 22
+		#Range: > 1
+		deathScytheEnchantability = 22
+
+	["Tools & Weapons"."Dark Tools"]
+		#How much damage Dark Tools deals, the configured number is added to Tool Base Damage, Default: 3.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		darkToolsDamage = 3.0
+		#How fast Dark Tools mines, the higher the better, Default: 8.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		darkToolsBreakSpeed = 8.0
+		#How many uses before Dark Tools breaks, Default: 166
+		#Range: > 1
+		darkToolsDurability = 166
+		#Define the Enchantability for Dark Tools, higher number the better, Default: 20
+		#Range: > 1
+		darkToolsEnchantability = 20
+		#Define the Mining Level for Dark Tools, example, 3 = Diamond, 4 = Netherite, Default: 4
+		#Range: > 0
+		darkToolsMiningLevel = 4
+
+	["Tools & Weapons"."Special Tools"]
+		#How much damage Special Tools deals, the configured number is added to Tool Base Damage, Default: 3.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		specialToolsDamage = 3.0
+		#How fast Special Tools mines, the higher the better, Default: 8.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		specialToolsBreakSpeed = 8.0
+		#How many uses before a Special Tool breaks, Default: 1280
+		#Range: > 1
+		specialToolsDurability = 1280
+		#How many uses before a Hunter's Bow breaks, Default: 133
+		#Range: > 1
+		huntersBowDurability = 133
+		#Define the Enchantability for Special Tools, higher number the better, Default: 22
+		#Range: > 1
+		specialToolsEnchantability = 22
+		#Define the Mining Level for Special Tools, example, 3 = Diamond, 4 = Netherite, Default: 3
+		#Range: > 0
+		specialToolsMiningLevel = 3
+
+	["Tools & Weapons".Misc]
+		#How much damage Philosopher's Mace deals, Default: 9.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		philosophersMaceDamage = 9.0
+		#How many uses before the Philosopher's Mace breaks, Default: 128
+		#Range: > 1
+		philosophersMaceDurability = 128
+		#Define the Enchantability for Philosopher's Mace, higher number the better, Default: 20
+		#Range: > 1
+		philosophersMaceEnchantability = 20
+
+[Armor]
+
+	[Armor."Cursed Knight Armor"]
+		#Define the Durability Multiplier for the armor, higher number the better, Default: 15
+		#Range: > 1
+		cursedKnightDurability = 15
+		#Define the Enchantability for the armor, higher number the better, Default: 15
+		#Range: > 1
+		cursedKnightEnchantability = 15
+		#Define the toughness for each armor piece, Default: 0.5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cursedKnightToughness = 0.5
+		#Define how much knockback resistance each armor piece provides, Default: 0.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cursedKnightKnockResist = 0.0
+
+		[Armor."Cursed Knight Armor"."Armor Points"]
+			#Define how much armor points wearing the Boots provides, Default: 2
+			#Range: > 1
+			cursedKnightFeet = 2
+			#Define how much armor points wearing the Leggings provides, Default: 5
+			#Range: > 1
+			cursedKnightLegs = 5
+			#Define how much armor points wearing the Chestplate provides, Default: 6
+			#Range: > 1
+			cursedKnightChest = 6
+			#Define how much armor points wearing the Helmet provides, Default: 2
+			#Range: > 1
+			cursedKnightHead = 2
+
+	[Armor."Cursed Paladin Armor"]
+		#Define the Durability Multiplier for the armor, higher number the better, Default: 30
+		#Range: > 1
+		cursedPaladinDurability = 30
+		#Define the Enchantability for the armor, higher number the better, Default: 20
+		#Range: > 1
+		cursedPaladinEnchantability = 20
+		#Define the toughness for each armor piece, Default: 1.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cursedPaladinToughness = 1.0
+		#Define how much knockback resistance each armor piece provides, Default: 0.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		cursedPaladinKnockResist = 0.0
+
+		[Armor."Cursed Paladin Armor"."Armor Points"]
+			#Define how much armor points wearing the Boots provides, Default: 3
+			#Range: > 1
+			cursedPaladinFeet = 3
+			#Define how much armor points wearing the Leggings provides, Default: 6
+			#Range: > 1
+			cursedPaladinLegs = 6
+			#Define how much armor points wearing the Chestplate provides, Default: 7
+			#Range: > 1
+			cursedPaladinChest = 7
+			#Define how much armor points wearing the Helmet provides, Default: 3
+			#Range: > 1
+			cursedPaladinHead = 3
+
+	[Armor."Black Iron Armor"]
+		#Define the Durability Multiplier for the armor, higher number the better, Default: 15
+		#Range: > 1
+		blackIronDurability = 30
+		#Define the Enchantability for the armor, higher number the better, Default: 15
+		#Range: > 1
+		blackIronEnchantability = 15
+		#Define the toughness for each armor piece, Default: 2.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		blackIronToughness = 2.0
+		#Define how much knockback resistance each armor piece provides, Default: 0.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		blackIronKnockResist = 0.0
+
+		[Armor."Black Iron Armor"."Armor Points"]
+			#Define how much armor points wearing the Boots provides, Default: 2
+			#Range: > 1
+			blackIronFeet = 2
+			#Define how much armor points wearing the Leggings provides, Default: 5
+			#Range: > 1
+			blackIronLegs = 5
+			#Define how much armor points wearing the Chestplate provides, Default: 6
+			#Range: > 1
+			blackIronChest = 6
+			#Define how much armor points wearing the Helmet provides, Default: 2
+			#Range: > 1
+			blackIronHead = 2
+
+	[Armor."Dark Armor"]
+		#Define the Durability Multiplier for the armor, higher number the better, Default: 15
+		#Range: > 1
+		darkArmorDurability = 15
+		#Define the Enchantability for the armor, higher number the better, Default: 20
+		#Range: > 1
+		darkArmorEnchantability = 20
+		#Define the toughness for each armor piece, Default: 2.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		darkArmorToughness = 2.0
+		#Define how much knockback resistance each armor piece provides, Default: 0.3
+		#Range: 0.0 ~ 1.7976931348623157E308
+		darkArmorKnockResist = 0.3
+
+		[Armor."Dark Armor"."Armor Points"]
+			#Define how much armor points wearing the Boots provides, Default: 3
+			#Range: > 1
+			darkArmorFeet = 3
+			#Define how much armor points wearing the Leggings provides, Default: 6
+			#Range: > 1
+			darkArmorLegs = 6
+			#Define how much armor points wearing the Chestplate provides, Default: 8
+			#Range: > 1
+			darkArmorChest = 8
+			#Define how much armor points wearing the Helmet provides, Default: 3
+			#Range: > 1
+			darkArmorHead = 3
+

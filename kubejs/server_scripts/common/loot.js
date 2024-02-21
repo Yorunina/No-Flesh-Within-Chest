@@ -17,8 +17,8 @@ LootJS.modifiers(event => {
             )
             .addAlternativesLoot(
                 LootEntry.of('lightmanscurrency:coin_gold').when((c) => c.randomChance(0.5)),
-                LootEntry.of('lightmanscurrency:coin_emerald').when((c) => c.randomChance(0.3)),
-                LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.1)),
+                LootEntry.of('lightmanscurrency:coin_emerald').when((c) => c.randomChance(0.1)),
+                LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.05)),
             )
     }
 

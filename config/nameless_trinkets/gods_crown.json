@@ -4,7 +4,7 @@
     "percentageExtraSpeed": 30.0,
     "percentageExtraAttackSpeed": 30.0,
     "percentageExtraAttackKnockback": 30.0,
-    "percentageExtraMaxHealth": 30.0,
+    "percentageExtraMaxHealth": 0,
     "isEnable": true
   }
 }

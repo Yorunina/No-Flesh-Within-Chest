@@ -1,0 +1,259 @@
+#Notification Settings
+[notifications]
+	#The maximum number of notifications each player and/or machine can have before old entries are deleted.
+	#Lower if you encounter packet size problems.
+	#Range: 0 -> 2147483647
+	limit=500
+	
+#Machine Protection Settings
+[machine_protection]
+	#Whether illegally broken traders (such as being replaced with /setblock, or modded machines that break blocks) will safely eject their block/contents into a temporary storage area for the owner to collect safely.
+	#If disabled, illegally broken traders will throw their items on the ground, and can thus be griefed by modded machines.
+	safeEjection=true
+	
+#Coin Mint Settings
+[coin_mint]
+	#Whether or not Coin Mint recipes of mintType "MINT" will function.
+	#Defaults to the built-in recipes that turn resources into coins.
+	canMint=false
+	
+	#Whether or not Coin Mint recipes of mintType "MELT" will function.
+	#Defaults to the built-in recipes that turn coins back into resources.
+	canMelt=false
+	
+	#Default number of ticks it takes to process a Coin Mint recipe.
+	#Does not apply to Coin Mint recipes with a defined "duration" input.
+	#Range: 1 -> 72000
+	defaultMintDuration=100
+	
+	#Default Recipes
+	[coin_mint.recipes]
+		#Minting
+		[coin_mint.recipes.mint]
+			#Whether recipes of mintType "MINT" with an output of copper coins will function.
+			copper=true
+			
+			#Whether recipes of mintType "MINT" with an output of iron coins will function.
+			iron=true
+			
+			#Whether recipes of mintType "MINT" with an output of gold coins will function.
+			gold=true
+			
+			#Whether recipes of mintType "MINT" with an output of emerald coins will function.
+			emerald=true
+			
+			#Whether recipes of mintType "MINT" with an output of diamond coins will function.
+			diamond=true
+			
+			#Whether recipes of mintType "MINT" with an output of netherite coins will function.
+			netherite=true
+			
+		#Melting
+		[coin_mint.recipes.melt]
+			#Whether recipes of mintType "MELT" with an output of copper ingots will function.
+			copper=true
+			
+			#Whether recipes of mintType "MELT" with an output of iron ingots will function.
+			iron=true
+			
+			#Whether recipes of mintType "MELT" with an output of gold ingots will function.
+			gold=true
+			
+			#Whether recipes of mintType "MELT" with an output of emeralds will function.
+			emerald=true
+			
+			#Whether recipes of mintType "MELT" with an output of diamonds will function.
+			diamond=true
+			
+			#Whether recipes of mintType "MELT" with an output of netherite ingots will function.
+			netherite=true
+			
+#Wallet Settings
+[wallet]
+	#The lowest level wallet capable of exchanging coins.
+	#0-Copper Wallet; 1-Iron Wallet; 2-Gold Wallet; 3-Emerald Wallet; 4-Diamond Wallet; 5-Netherite Wallet; 6-No Wallet
+	#Range: 0 -> 6
+	exchangeLevel=1
+	
+	#The lowest level wallet capable of automatically collecting coins while equipped.
+	#0-Copper Wallet; 1-Iron Wallet; 2-Gold Wallet; 3-Emerald Wallet; 4-Diamond Wallet; 5-Netherite Wallet; 6-No Wallet
+	#Range: 0 -> 6
+	pickupLevel=2
+	
+	#The lowest level wallet capable of allowing transfers to/from your bank account.
+	#0-Copper Wallet; 1-Iron Wallet; 2-Gold Wallet; 3-Emerald Wallet; 4-Diamond Wallet; 5-Netherite Wallet; 6-No Wallet
+	#Range: 0 -> 6
+	bankLevel=5
+	
+#Upgrade Settings
+[upgrades]
+	#Item Capacity Upgrade
+	[upgrades.item_capacity]
+		#The amount of item storage added by the first Item Capacity Upgrade (Iron)
+		#Range: 1 -> 1728
+		itemCapacity1=192
+		
+		#The amount of item storage added by the first Item Capacity Upgrade (Gold)
+		#Range: 2 -> 1728
+		itemCapacity2=384
+		
+		#The amount of item storage added by the first Item Capacity Upgrade (Diamond)
+		#Range: 3 -> 1728
+		itemCapacity3=576
+		
+	#Money Chest Magnet Upgrade
+	[upgrades.money_chest_magnet]
+		#The radius (in meters) of the Money Chest Magnet Upgrade (Copper)'s coin collection.
+		#Range: 1 -> 50
+		radius1=4
+		
+		#The radius (in meters) of the Money Chest Magnet Upgrade (Iron)'s coin collection.
+		#Range: 2 -> 50
+		radius2=6
+		
+		#The radius (in meters) of the Money Chest Magnet Upgrade (Gold)'s coin collection.
+		#Range: 3 -> 50
+		radius3=8
+		
+		#The radius (in meters) of the Money Chest Magnet Upgrade (Emerald)'s coin collection.
+		#Range: 4 -> 50
+		radius4=10
+		
+#Enchantment Settings
+[enchantments]
+	#The cost required to repair a single item durability point with the Money Mending enchantment.
+	moneyMendingRepairCost="coin;1-lightmanscurrency:coin_copper"
+	
+	#The coin collection radius of the Coin Magnet I enchantment.
+	#Range: 1 -> 50
+	coinMagnetBaseRange=5
+	
+	#The increase in the coin collection radius added by each additional level of the Coin Magnet enchantment.
+	#Range: 1 -> 50
+	coinMagnetLeveledRange=2
+	
+#Auction House Settings
+[auction_house]
+	#Whether the Auction House will be automatically generated and accessible.
+	#If disabled after players have interacted with it, items & money in the auction house cannot be accessed until re-enabled.
+	#If disabled, it is highly recommended that you also disable the 'crafting.allowAuctionStandCrafting' option in the common config.
+	enabled=true
+	
+	#Whether the Auction House will appear in the trading terminal.
+	#If false, you will only be able to access the Auction House from an Auction Stand.
+	visibleOnTerminal=true
+	
+	#The minimum number of days an auction can have its duration set to.
+	#If given a 0 day minimum, the minimum auction duration will be 1 hour.
+	#Range: 0 -> 2147483647
+	minimumDuration=0
+	
+	#The maxumim number of day an auction can have its duration set to.
+	#Range: 1 -> 2147483647
+	maximumDuration=30
+	
+#Network Terminal Settings
+[terminal]
+	#Whether Traders with no defined Custom Name will be sorted to the bottom of the Trader list on the Network Terminal.
+	sortUnnamedTradersToBottom=false
+	
+#Player <-> Player Trading Options
+[player_trading]
+	#The maximum distance allowed between players in order for a player trade to persist.
+	#-1 will always allow trading regardless of dimension.
+	#0 will allow infinite distance but require that both players be in the same dimension.
+	#Range: -1.0 -> 1.7976931348623157E308
+	maxPlayerDistance=-1.0
+	
+#Tax Settings
+[taxes]
+	#Whether Tax Collectors can only be activated by an Admin in LC Admin Mode.
+	#Will not prevent players from crafting, placing, or configuring Tax Collectors.
+	adminOnlyActivation=false
+	
+	#The maximum tax rate (in %) a Tax Collector is allowed to enforce.
+	#Note: The sum of multiple tax collectors rates can still exceed this number.
+	#If a machine reaches a total tax rate of 100% it will forcible prevent all monetary interactions until this is resolved.
+	#Range: 1 -> 99
+	maxTaxRate=25
+	
+	#The maximum radius of a Tax Collectors area in meters.
+	#Range: 16 -> 2147483647
+	maxRadius=256
+	
+	#The maximum height of a Tax Collectors area in meters.
+	#Range: 8 -> 2147483647
+	maxHeight=64
+	
+	#The maximum vertical offset of a Tax Collectors area in meters.
+	#Note: Vertical offset can be negative, so this will also enforce the lowest value.
+	#Range: 4 -> 2147483647
+	maxVertOffset=32
+	
+#Chocolate Coin Settings
+[chocolate_coins]
+	#Whether the Chocolate Coins will give players custom potion and/or healing effects on consumption.
+	chocolateEffects=true
+	
+#Mod Compat Options
+[compat]
+	#Claim Purchasing Settings for FTB Chunks & Flan
+	[compat.claim_purchasing]
+		#Whether the '/lcclaims buy claim' command will be accessible to players.
+		allowClaimPurchase=false
+		
+		#The price per claim chunk purchased.
+		claimPrice="coin;1-lightmanscurrency:coin_gold"
+		
+		#The maximum number of extra claim chunks allowed to be purchased with this command.
+		#Note: This count includes extra claim chunks given to the player/team via normal FTB Chunks methods as well (if applicable).
+		#Range: 1 -> 2147483647
+		maxClaimCount=1000000
+		
+		#Whether the `/lcclaims buy forceload` command will be accessible to players.
+		allowForceloadPurchase=false
+		
+		#The price per forceload chunk purchased.
+		forceloadPrice="coin;1-lightmanscurrency:coin_netherite"
+		
+		#The maximum number of extra forceload chunks allowed to be purchased with this command.
+		#Note: This count includes extra forceload chunks given to the player/team via normal FTB Chunks methods as well (if applicable).
+		#Range: 1 -> 2147483647
+		maxForceloadCount=100
+		
+		#Flan Settings
+		[compat.claim_purchasing.flan]
+			#Blocks that will be added with each 'claim' purchased
+			#Range: 1 -> 64
+			blocksPerChunk=64
+			
+	#Lightman's Discord Compat Settings.
+	[compat.ldi]
+		#The channel where users can run the currency commands and where currency related announcements will be made.
+		channel="000000000000000000"
+		
+		#Prefix for currency commands.
+		prefix="!"
+		
+		#Whether the !search command should limit its search results to only Network Traders, or if it should list all traders.
+		limitSearchToNetwork=true
+		
+		#Currency Bot Notification Options
+		[compat.ldi.notifications]
+			#Whether a notification will appear in the currency bot channel when a Network Trader is created.
+			#Notification will have a 60 second delay to allow them time to customize the traders name, etc.
+			networkTraderBuilt=true
+			
+			#Whether a notification will appear in the currency bot channel when a player starts an auction.
+			auctionCreated=true
+			
+			#Whether a notification will appear in the currency bot channel when a Persistent Auction is created automatically.
+			#Requires that auction house creation notifications also be enabled.
+			auctionPersistentCreations=true
+			
+			#Whether a notification will appear in the currency bot channel when an Auction is cancelled in the Auction House.
+			auctionCancelled=false
+			
+			#Whether a notification will appear in the currency bot channel when an Auction is completed and had a bidder.
+			auctionWon=true
+			

@@ -2,7 +2,7 @@
 #Useful when you want to keep custom item name, etc.
 KeepNBTWhenOpeningAgreement = true
 #Wandering Trader will sell Sealed Delivery Agreements.
-WanderingTraderSellsAgreements = true
+WanderingTraderSellsAgreements = false
 
 [Delivery]
 	#Time in ticks that deliveries take. Agreement can override this value. Default: 200 ticks (10 seconds)

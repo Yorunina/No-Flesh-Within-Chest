@@ -5,13 +5,18 @@ NetworkEvents.dataReceived('ogran_key_pressed', event => {
     let coolDowns = player.getCooldowns()
     let typeMap = getPlayerChestCavityTypeMap(player);
     let onlySet = new Set()
-    if (typeMap.has('kubejs:key_pressed_only')) {
-        typeMap.get('kubejs:key_pressed_only').forEach(organ => {
-            if (!onlySet.has(organ.id) && !coolDowns.isOnCooldown(Item.of(organ.id))) {
+    if (typeMap.has('kubejs:key_pressed')) {
+        let organList = typeMap.get('kubejs:key_pressed')
+        for (let i = 0; i < organList.length; i++) {
+            let organ = organList[i]
+            if (!onlySet.has(organ.id)) {
                 onlySet.add(organ.id)
-                organPlayerKeyPressedOnlyStrategies[organ.id](event, organ)
+                if (!coolDowns.isOnCooldown(Item.of(organ.id))) {
+                    organPlayerKeyPressedOnlyStrategies[organ.id](event, organ)
+                    break
+                }
             }
-        })
+        }
     }
 })
 
@@ -98,5 +103,14 @@ const organPlayerKeyPressedOnlyStrategies = {
             })
         }
     },
-    
+    'kubejs:amethyst_magic_core': function (event, organ) {
+        let player = event.player
+        let magicData = getPlayerMagicData(player)
+        let manaCost = magicData.getMana()
+        let level = Math.max(Math.sqrt(manaCost), 1) + 4
+        let result = $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('irons_spellbooks', 'magic_arrow')).attemptInitiateCast(Item.of('air'), level, player.level, player, $CastSource.NONE, false)
+
+        magicData.setMana(0)
+        player.addItemCooldown('kubejs:amethyst_magic_core', 20 * 15)
+    },
 };

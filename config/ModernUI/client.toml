@@ -39,7 +39,7 @@
 [tooltip]
 	#Whether to enable Modern UI rounded tooltip style, or back to vanilla style.
 	enable = false
-	#Whether to use rounded tooltip shapes, or to use rectangular shapes.
+	#Whether to use rounded tooltip shapes, or to use vanilla style.
 	roundedShape = true
 	#True to center the tooltip title if rendering an item's tooltip.
 	#Following lines are not affected by this option.
@@ -67,6 +67,10 @@
 	#The duration of tooltip alpha animation in milliseconds. (0 = OFF)
 	#Range: 0 ~ 800
 	animationDuration = 0
+	#The shadow radius of tooltip, in GUI Scale Independent Pixels.
+	#Only works for values >= 2 and rounded corners. No impact on performance.
+	#Range: 0.0 ~ 32.0
+	shadowRadius = 10.0
 
 #General Config
 [general]
@@ -134,12 +138,15 @@
 	#The first font family to use. See fallbackFontFamilyList
 	firstFontFamily = "Source Han Sans CN Medium"
 	#A set of fallback font families to determine the typeface to use.
-	#TrueType & OpenType are supported. Each element can be one of the following two cases.
-	#1) Font family English name that registered to Modern UI, for instance: Segoe UI
-	#2) File path for external fonts on your PC, for instance: /usr/shared/fonts/x.otf
-	#Fonts under 'modernui:font' in resource packs and OS builtin fonts will be registered.
-	#Using bitmap fonts should consider other text settings, default glyph size should be 16x.
-	#This list is only read once when the game is loaded, or reloaded via in-game GUI.
+	#The order is first > fallbacks. TrueType & OpenType are supported.
+	#Each element can be one of the following two cases:
+	#1) Name of registered font family, for instance: Segoe UI
+	#2) Path of font files on your PC, for instance: /usr/shared/fonts/x.otf
+	#Registered font families include:
+	#1) OS builtin fonts.
+	#2) Font files in '/resourcepacks' directory.
+	#3) Font files under 'modernui:font' in resource packs.
+	#This is only read once when the game is loaded, you can reload via in-game GUI.
 	fallbackFontFamilyList = ["Noto Sans", "Segoe UI", "San Francisco", "Open Sans", "SimHei", "STHeiti", "Segoe UI Variable", "mui-i18n-compat"]
 	#Whether to use Google Noto Color Emoji, otherwise grayscale emoji (faster).
 	#See Unicode 15.0 specification for details on how this affects text layout.

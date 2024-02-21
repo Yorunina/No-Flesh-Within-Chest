@@ -1,8 +1,5 @@
 #determine whether or not loot generated is the same for all players using the provided seed, or randomised per player
 randomise_seed = true
-#the maximum age for containers; entries above this age will be discarded [default: 180 * 20, 3 minutes]
-#Range: > 0
-maximum_age = 3600
 #skip unloaded block entities that are eligible for conversion, set to false to potentially resolve issues with containers that aren't being converted [default: true]
 skip_unloaded = true
 #whether or not mineshaft chest minecarts should be converted to standard loot chests
@@ -74,4 +71,17 @@ refresh_dimensions = []
 refresh_structures = []
 #overriding refresh_loot_tables, refresh_modids and refresh_dimensions: all chests will refresh after being opened for the first time
 refresh_all = false
+#the maximum age for containers; entries above this age will be discarded [default: 180 * 20, 3 minutes]
+#Range: > 0
+max_age = 6000
+#if true, no chests will be converted
+disable = false
+#list of dimensions by modid that loot chests should not be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
+#othermod"])
+modid_dimension_blacklist = []
+#list of dimensions by modid that loot chest should be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
+#othermod"])
+modid_dimension_whitelist = []
+#when true, custom inventories will act like trapped chests when opened
+trapped_custom = false
 

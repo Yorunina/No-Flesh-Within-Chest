@@ -81,7 +81,7 @@ const organPlayerTickOnlyStrategies = {
         if (player.hasEffect('minecraft:strength')) {
             amplifier = player.getEffect('minecraft:strength').getAmplifier()
         }
-        player.potionEffects.add('minecraft:strength', 6 * 20, Math.min(amplifier + 1, 4))
+        player.potionEffects.add('minecraft:strength', 8 * 20, Math.min(amplifier + 1, 4))
     },
     'kubejs:mini_vampire': function (event, organ) {
         let player = event.player
@@ -93,6 +93,17 @@ const organPlayerTickOnlyStrategies = {
             player.potionEffects.add('kubejs:vampiric', 20 * 3, 1)
         } else if (health < maxHealth * 0.3) {
             player.potionEffects.add('kubejs:vampiric', 20 * 3, 0)
+        }
+    },
+    'kubejs:vulcan_furnace': function (event, organ) {
+        let player = event.player
+        let count = player.persistentData.getInt(resourceCount)
+        if (player.hasEffect('kubejs:burning_heart')) {
+            let duration = player.getEffect('kubejs:burning_heart').getDuration()
+            updateResourceCount(player, count + Math.floor(duration / 20))
+        } else if (player.hasEffect('kubejs:flaring_heart')) {
+            let amplifier = player.getEffect('kubejs:flaring_heart').getAmplifier()
+            updateResourceCount(player, count + (amplifier + 1) * 20)
         }
     },
 };
