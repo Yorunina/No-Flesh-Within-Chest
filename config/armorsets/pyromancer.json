@@ -17,6 +17,7 @@
     "itemKey": "somebosses:vulcan_sword",
     "mixAndMatch": [
       "somebosses:frost_magma_gauntlet",
+      "irons_spellbooks:blaze_spell_book",
       "cataclysm:the_incinerator",
       "iceandfire:dragonbone_sword_fire"
     ]
@@ -25,15 +26,13 @@
     "itemKey": "somebosses:vulcan_sword",
     "mixAndMatch": [
       "somebosses:frost_magma_gauntlet",
+      "irons_spellbooks:blaze_spell_book",
       "cataclysm:the_incinerator",
       "iceandfire:dragonbone_sword_fire"
     ]
   },
   "additionalSetPieces": [{
-    "itemKey": "irons_spellbooks:blaze_spell_book",
-    "mixAndMatch": [
-      "nameless_trinkets:blaze_nucleus"
-    ]
+    "itemKey": "nameless_trinkets:blaze_nucleus"
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
@@ -45,15 +44,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:fire_spell_power",
       "modifierUUID": "D5B6C3EE-E9F5-449F-93E0-9022BB09C7BD",
-      "description": "+50% ³ãÑæÄ§·¨ÉËº¦",
-      "value": 0.5
+      "description": "+60% ³ãÑæÄ§·¨ÉËº¦",
+      "value": 0.6
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:fire_magic_resist",
       "modifierUUID": "081B0303-EA4B-4558-AE1F-6BE0CEF38DEA",
-      "description": "+50% ³ãÑæÄ§·¨µÖ¿¹",
-      "value": 0.5
+      "description": "+60% ³ãÑæÄ§·¨µÖ¿¹",
+      "value": 0.6
     }
   ],
   "fullSetBonuses": [
@@ -61,15 +60,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:fire_spell_power",
       "modifierUUID": "4FF25B73-6122-4167-A0B2-1DA51D4ED84A",
-      "description": "+80% ³ãÑæÄ§·¨ÉËº¦",
-      "value": 0.8
+      "description": "+90% ³ãÑæÄ§·¨ÉËº¦",
+      "value": 0.9
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:fire_magic_resist",
       "modifierUUID": "B4CA0FEC-D611-4C6F-B2A9-69B2FBF83CCD",
-      "description": "+80% ³ãÑæÄ§·¨µÖ¿¹",
-      "value": 0.8
+      "description": "+90% ³ãÑæÄ§·¨µÖ¿¹",
+      "value": 0.9
     }
   ]
 }

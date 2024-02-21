@@ -14,22 +14,19 @@
     "itemKey": "irons_spellbooks:priest_boots"
   },
   "mainHand": {
-    "itemKey": "kubejs:holy_wooden_wand",
+    "itemKey": "irons_spellbooks:villager_spell_book",
     "mixAndMatch": [
       "iceandfire:ghost_sword"
     ]
   },
   "offHand": {
-    "itemKey": "kubejs:holy_wooden_wand",
+    "itemKey": "irons_spellbooks:villager_spell_book",
     "mixAndMatch": [
       "iceandfire:ghost_sword"
     ]
   },
   "additionalSetPieces": [{
-    "itemKey": "irons_spellbooks:villager_spell_book",
-    "mixAndMatch": [
-      "nameless_trinkets:wooden_stick"
-    ]
+    "itemKey": "nameless_trinkets:wooden_stick"
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
@@ -41,15 +38,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:holy_spell_power",
       "modifierUUID": "8262FE40-1D59-441C-9A4A-756A0CD47BFF",
-      "description": "+50% ÉñÊ¥Ä§·¨ÉËº¦",
-      "value": 0.5
+      "description": "+60% ÉñÊ¥Ä§·¨ÉËº¦",
+      "value": 0.6
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:holy_magic_resist",
       "modifierUUID": "9F606165-4FEB-429C-ACBE-4E394EFAFA62",
-      "description": "+50% ÉñÊ¥Ä§·¨µÖ¿¹",
-      "value": 0.5
+      "description": "+60% ÉñÊ¥Ä§·¨µÖ¿¹",
+      "value": 0.6
     }
   ],
   "fullSetBonuses": [
@@ -57,15 +54,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:holy_spell_power",
       "modifierUUID": "BCB1A236-97EC-46DC-B950-E834E62F1DB0",
-      "description": "+80% ÉñÊ¥Ä§·¨ÉËº¦",
-      "value": 0.8
+      "description": "+90% ÉñÊ¥Ä§·¨ÉËº¦",
+      "value": 0.9
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:holy_magic_resist",
       "modifierUUID": "EFECC048-14E6-49CC-AC82-CDABDC7FB70B",
-      "description": "+80% ÉñÊ¥Ä§·¨µÖ¿¹",
-      "value": 0.8
+      "description": "+90% ÉñÊ¥Ä§·¨µÖ¿¹",
+      "value": 0.9
     }
   ]
 }

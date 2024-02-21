@@ -18,7 +18,6 @@
     "mixAndMatch": [
       "somebosses:frost_magma_gauntlet",
       "goety:frozen_blade",
-      "kubejs:ice_wooden_wand",
       "iceandfire:dragonbone_sword_ice"
     ]
   },
@@ -27,7 +26,6 @@
     "mixAndMatch": [
       "somebosses:frost_magma_gauntlet",
       "goety:frozen_blade",
-      "kubejs:ice_wooden_wand",
       "iceandfire:dragonbone_sword_ice"
     ]
   },
@@ -44,15 +42,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:ice_spell_power",
       "modifierUUID": "D9DEF341-7FC8-4D4B-9872-3B41C1758DC1",
-      "description": "+50% ±ùËªÄ§·¨ÉËº¦",
-      "value": 0.5
+      "description": "+60% ±ùËªÄ§·¨ÉËº¦",
+      "value": 0.6
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:ice_magic_resist",
       "modifierUUID": "0670DC48-6132-4569-97B5-342911047B65",
-      "description": "+50% ±ùËªÄ§·¨µÖ¿¹",
-      "value": 0.5
+      "description": "+60% ±ùËªÄ§·¨µÖ¿¹",
+      "value": 0.6
     }
   ],
   "fullSetBonuses": [
@@ -60,15 +58,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:ice_spell_power",
       "modifierUUID": "9DA8E9CB-12D3-40E3-B72C-98506B81C7B3",
-      "description": "+80% ±ùËªÄ§·¨ÉËº¦",
-      "value": 0.8
+      "description": "+90% ±ùËªÄ§·¨ÉËº¦",
+      "value": 0.9
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:ice_magic_resist",
       "modifierUUID": "D178E996-BD7E-4309-AF13-240239F5222F",
-      "description": "+80% ±ùËªÄ§·¨µÖ¿¹",
-      "value": 0.8
+      "description": "+90% ±ùËªÄ§·¨µÖ¿¹",
+      "value": 0.9
     }
   ]
 }

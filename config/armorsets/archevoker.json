@@ -16,20 +16,19 @@
   "mainHand": {
     "itemKey": "irons_spellbooks:magehunter",
     "mixAndMatch": [
+      "irons_spellbooks:evoker_spell_book",
       "goety:fanged_dagger"
     ]
   },
   "offHand": {
     "itemKey": "irons_spellbooks:magehunter",
     "mixAndMatch": [
+      "irons_spellbooks:evoker_spell_book",
       "goety:fanged_dagger"
     ]
   },
   "additionalSetPieces": [{
-    "itemKey": "irons_spellbooks:evoker_spell_book",
-    "mixAndMatch": [
-      "nameless_trinkets:fate_emerald"
-    ]
+    "itemKey": "nameless_trinkets:broken_ankh"
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
@@ -41,15 +40,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:evocation_spell_power",
       "modifierUUID": "822B1387-D48E-4D12-ABEA-0D49819CA035",
-      "description": "+50% »½Ä§Ä§·¨ÉËº¦",
-      "value": 0.5
+      "description": "+60% »½Ä§Ä§·¨ÉËº¦",
+      "value": 0.6
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:evocation_magic_resist",
       "modifierUUID": "222A8A30-83E0-45DB-9ECA-96E559230DEE",
-      "description": "+50% »½Ä§Ä§·¨µÖ¿¹",
-      "value": 0.5
+      "description": "+60% »½Ä§Ä§·¨µÖ¿¹",
+      "value": 0.6
     }
   ],
   "fullSetBonuses": [
@@ -57,15 +56,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:evocation_spell_power",
       "modifierUUID": "DFFF6348-D9BF-47E1-8A15-E772CB10B894",
-      "description": "+80% »½Ä§Ä§·¨ÉËº¦",
-      "value": 0.8
+      "description": "+90% »½Ä§Ä§·¨ÉËº¦",
+      "value": 0.9
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:evocation_magic_resist",
       "modifierUUID": "FF8BAC45-2663-42FB-8248-8AE8118D2A6E",
-      "description": "+80% »½Ä§Ä§·¨µÖ¿¹",
-      "value": 0.8
+      "description": "+90% »½Ä§Ä§·¨µÖ¿¹",
+      "value": 0.9
     }
   ]
 }

@@ -17,6 +17,7 @@
     "itemKey": "somebosses:ender_ordnance_sword",
     "mixAndMatch": [
       "cataclysm:void_assault_shoulder_weapon",
+      "irons_spellbooks:dragonskin_spell_book",
       "cataclysm:void_forge"
     ]
   },
@@ -24,14 +25,12 @@
     "itemKey": "somebosses:ender_ordnance_sword",
     "mixAndMatch": [
       "cataclysm:void_assault_shoulder_weapon",
+      "irons_spellbooks:dragonskin_spell_book",
       "cataclysm:void_forge"
     ]
   },
   "additionalSetPieces": [{
-    "itemKey": "irons_spellbooks:dragonskin_spell_book",
-    "mixAndMatch": [
-      "nameless_trinkets:dragons_eye"
-    ]
+    "itemKey": "nameless_trinkets:dragons_eye"
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
@@ -43,15 +42,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:ender_spell_power",
       "modifierUUID": "024C1E6E-478D-4180-8720-27F0266E8C9B",
-      "description": "+50% Ä©Ó°Ä§·¨ÉËº¦",
-      "value": 0.5
+      "description": "+60% Ä©Ó°Ä§·¨ÉËº¦",
+      "value": 0.6
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:ender_magic_resist",
       "modifierUUID": "46A04A43-2B8A-46F4-B2F3-FE96FE6D82AF",
-      "description": "+50% Ä©Ó°Ä§·¨µÖ¿¹",
-      "value": 0.5
+      "description": "+60% Ä©Ó°Ä§·¨µÖ¿¹",
+      "value": 0.6
     }
   ],
   "fullSetBonuses": [
@@ -59,15 +58,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:ender_spell_power",
       "modifierUUID": "3FC2F1A9-09A1-4BF6-8AA4-6F28AE28502F",
-      "description": "+80% Ä©Ó°Ä§·¨ÉËº¦",
-      "value": 0.8
+      "description": "+90% Ä©Ó°Ä§·¨ÉËº¦",
+      "value": 0.9
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:ender_magic_resist",
       "modifierUUID": "9C5BB35D-A726-4C87-8267-55ED142BE2F7",
-      "description": "+80% Ä©Ó°Ä§·¨µÖ¿¹",
-      "value": 0.8
+      "description": "+90% Ä©Ó°Ä§·¨µÖ¿¹",
+      "value": 0.9
     }
   ]
 }
