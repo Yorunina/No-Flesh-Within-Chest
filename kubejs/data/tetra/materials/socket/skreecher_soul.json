@@ -1,0 +1,26 @@
+{
+    "key": "alex_skreecher_soul",
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 31,
+    "integrityCost": 3,
+    "integrityGain": 0,
+    "magicCapacity": 121,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+      "glyph": "104E8B",
+      "texture": "104E8B"
+    },
+    "textures": [
+      "default"
+    ],
+    "effects" : {
+      "spread": 6,
+      "multishot": [8,15]
+    },
+    "experienceCost": 20,
+    "material":{"items":["alexsmobs:skreecher_soul"]}
+  }

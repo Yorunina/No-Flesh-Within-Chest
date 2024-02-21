@@ -10,6 +10,9 @@
     "magicCapacity": 126,
     "toolLevel": "minecraft:stone",
     "toolEfficiency": 5,
+    "effects": {
+        "throwable": 8  
+    },
     "tints": {
         "glyph": "bone_glyph",
         "texture": "bone"

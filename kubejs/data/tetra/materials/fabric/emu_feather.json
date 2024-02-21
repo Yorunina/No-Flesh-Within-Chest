@@ -1,0 +1,30 @@
+{
+    "key": "alex_emu_feather",
+    "category": "fabric",
+    "primary": 1,
+    "secondary": 1,
+    "tertiary": 1.5,
+    "durability": 110,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 120,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "attributes":{
+        "obscure_api:dodge":0.1
+    },
+    "tints": {
+        "glyph": "8B8378",
+        "texture": "8B8378"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": ["alexsmobs:emu_feather"]
+    },
+    "requiredTools": {
+        "cut": "minecraft:stone"
+    }
+}

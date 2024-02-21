@@ -678,7 +678,7 @@
 		MinRarity = "UNCOMMON"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 300.0
+		CooldownInSeconds = 150.0
 
 	[Spells."irons_spellbooks:blood_slash"]
 		Enabled = true
@@ -748,7 +748,7 @@
 		MinRarity = "COMMON"
 		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 120.0
+		CooldownInSeconds = 300.0
 
 	[Spells."irons_spellbooks:devour"]
 		Enabled = true

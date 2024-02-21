@@ -2,7 +2,7 @@
     "key": "alex_froststalker_horn",
     "category": "bone",
     "primary": 6.6,
-    "secondary": 2.22,
+    "secondary": 2.2,
     "tertiary": 4,
     "durability": 155,
     "integrityCost": 1,
@@ -10,6 +10,10 @@
     "magicCapacity": 120,
     "toolLevel": "minecraft:stone",
     "toolEfficiency": 5,
+    "attributes":{
+        "**irons_spellbooks:ice_spell_power":0.2,
+        "**irons_spellbooks:ice_magic_resist":0.2
+    },
     "tints": {
         "glyph": "bone_glyph",
         "texture": "bone"

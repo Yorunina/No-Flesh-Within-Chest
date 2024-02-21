@@ -1,0 +1,30 @@
+{
+    "key": "unusual_majunga_scute",
+    "category": "scale",
+    "primary": 6.7,
+    "secondary":5.5,
+    "tertiary": 1.8,
+    "durability": 668,
+    "integrityCost": 3,
+    "integrityGain": 2,
+    "magicCapacity": 214,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects":{
+        "truesweepingStrike": 5
+    },
+    "tints": {
+        "glyph": "228B22",
+        "texture": "228B22"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "unusualprehistory:majunga_scute" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:iron"
+    }
+}

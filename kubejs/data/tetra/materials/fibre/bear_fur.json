@@ -22,6 +22,6 @@
         "items": [ "alexsmobs:bear_fur" ]
     },
     "requiredTools": {
-        "cut": "minecraft:wood"
+        "cut": "minecraft:stone"
     }
 }

@@ -1,0 +1,27 @@
+{
+    "key": "alex_fish_bones",
+    "category": "bone",
+    "primary": 2.8,
+    "secondary": 2.4,
+    "tertiary": 1.6,
+    "durability": 40,
+    "integrityCost": 1,
+    "integrityGain": 2,
+    "magicCapacity": 30,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 2,
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": [
+        "bone",
+        "crude"
+    ],
+    "material": {
+        "items": [ "alexsmobs:fish_bones" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:wood"
+    }
+}

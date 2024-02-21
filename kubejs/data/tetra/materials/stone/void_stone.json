@@ -4,7 +4,7 @@
     "primary": 7.1,
     "secondary": 4.9,
     "tertiary": 0,
-    "durability": 1522,
+    "durability": 935,
     "integrityCost": 2,
     "integrityGain": 4,
     "magicCapacity": 121,
@@ -24,6 +24,9 @@
             "cataclysm:void_stone"
         ]
     },
+    "effects" : {
+        "enderReverb": 0.5
+	},
     "requiredTools": {
         "hammer_dig": "minecraft:diamond"
     }

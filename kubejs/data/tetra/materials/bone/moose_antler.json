@@ -1,0 +1,27 @@
+{
+    "key": "alex_moose_antler",
+    "category": "bone",
+    "primary": 6.8,
+    "secondary": 3.0,
+    "tertiary": 4.2,
+    "durability": 229,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 75,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 4,
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": [
+        "bone",
+        "crude"
+    ],
+    "material": {
+        "items": [ "alexsmobs:moose_antler" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:wood"
+    }
+}

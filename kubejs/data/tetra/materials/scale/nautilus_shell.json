@@ -1,0 +1,30 @@
+{
+    "key": "nautilus_shell",
+    "category": "scale",
+    "primary": 3.2,
+    "secondary":2.6,
+    "tertiary": 1.2,
+    "durability": 314,
+    "integrityCost": 1,
+    "integrityGain": 2,
+    "magicCapacity": 58,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "attributes":{
+        "forge:swim_speed":0.1
+    },
+    "tints": {
+        "glyph": "EEE8AA",
+        "texture": "EEE8AA"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "minecraft:nautilus_shell" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:stone"
+    }
+}

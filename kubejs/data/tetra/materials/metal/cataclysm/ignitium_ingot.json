@@ -1,17 +1,18 @@
 {
   "key": "ignitium_ingot",
   "category": "metal",
-  "primary": "8.2",
-  "secondary": "3.6",
-  "tertiary": "3.8",
-  "durability": "2160",
+  "primary": "7.8",
+  "secondary": "2.7",
+  "tertiary": "4.1",
+  "durability": "1889",
   "integrityCost": "2",
   "integrityGain": "8",
-  "magicCapacity": "180",
+  "magicCapacity": "160",
   "toolLevel": "minecraft:netherite",
-  "toolEfficiency": "8.8",
+  "toolEfficiency": "9.5",
   "effects": {
-    "stabilizing": 1
+    "stabilizing": 1,
+    "fiery": 5
   },
   "tints": {
     "glyph": "ebf1f5",
@@ -30,12 +31,6 @@
     "workable": 1
   },
   "requiredTools": {
-    "hammer_dig": "minecraft:netherite"
-  },
-  "conditions":[
-    {
-      "type": "forge:mod_loaded",
-      "modid": "cataclysm"
-    }
-  ]
+    "hammer_dig": "minecraft:iron"
+  }
 }

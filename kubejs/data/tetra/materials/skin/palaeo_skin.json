@@ -1,0 +1,32 @@
+{
+    "key": "unusual_palaeo_skin",
+    "category": "skin",
+    "primary": "2.4",
+    "secondary": "1.2",
+    "tertiary": "3.8",
+    "durability": "255",
+    "integrityCost": "2",
+    "integrityGain": "4",
+    "magicCapacity": "197",
+    "toolLevel": "0",
+    "toolEfficiency": "0",
+    "tints": {
+      "glyph": "CDC1C5",
+      "texture": "CDC1C5"
+    },
+    "textures": [
+      "crude",
+      "default"
+    ],
+    "material": {
+      "items": [
+        "unusualprehistory:palaeo_skin"
+      ]
+    },
+    "effects" : {
+      "velocity": 15
+    },
+    "requiredTools": {
+      "cut": "minecraft:iron"
+    }
+  }

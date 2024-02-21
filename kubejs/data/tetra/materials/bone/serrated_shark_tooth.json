@@ -1,0 +1,28 @@
+{
+    "key": "alex_serrated_shark_tooth",
+    "category": "bone",
+    "primary": 7.2,
+    "secondary": 2.8,
+    "tertiary": 3.6,
+    "durability": 180,
+    "integrityCost": 2,
+    "integrityGain": 5,
+    "magicCapacity": 160,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 5,
+    "effects": {
+        "bleeding": 1
+    },
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": ["bone", "crude"],
+  
+    "material": {
+      "items": ["alexsmobs:serrated_shark_tooth"]
+    },
+    "requiredTools": {
+      "hammer_dig": "minecraft:stone"
+    }
+  }

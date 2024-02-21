@@ -1,0 +1,30 @@
+{
+    "key": "living_flesh",
+    "category": "misc",
+    "primary": 0.5,
+    "secondary": 3.8,
+    "tertiary": 3.4,
+    "durability": 107,
+    "integrityCost": 1,
+    "integrityGain": 2,
+    "magicCapacity": 105,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "8B1C62",
+        "texture": "8B1C62"
+      },
+    "effects" : {
+        "intuit": 2
+      },
+    "textures": [
+        "crude",
+        "default"
+      ],
+    "material": {
+        "items": [ "biomancy:living_flesh" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

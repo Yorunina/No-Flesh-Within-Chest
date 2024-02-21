@@ -1,0 +1,33 @@
+{
+    "key": "alex_rattlesnake_rattle",
+    "category": "skin",
+    "primary": "2.3",
+    "secondary": "0.8",
+    "tertiary": "1.7",
+    "durability": "116",
+    "integrityCost": "1",
+    "integrityGain": "4",
+    "magicCapacity": "118",
+    "toolLevel": "0",
+    "toolEfficiency": "0",
+    "tints": {
+      "glyph": "8B5742",
+      "texture": "8B5742"
+    },
+    "textures": [
+      "crude",
+      "default"
+    ],
+    "material": {
+      "items": [
+        "alexsmobs:rattlesnake_rattle"
+      ]
+    },
+    "effects" : {
+      "focus": 15,
+      "focusEcho": 1
+    },
+    "requiredTools": {
+      "cut": "minecraft:stone"
+    }
+  }

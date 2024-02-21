@@ -1,0 +1,32 @@
+{
+    "key": "alex_mosquito_proboscis",
+    "category": "fibre",
+    "primary": "1.1",
+    "secondary": "0.9",
+    "tertiary": "4.4",
+    "durability": "32",
+    "integrityCost": "1",
+    "integrityGain": "4",
+    "magicCapacity": "169",
+    "toolLevel": "0",
+    "toolEfficiency": "0",
+    "effects": {
+        "bleeding": 5
+    },
+    "tints": {
+      "glyph": "3c2c24",
+      "texture": "3c2c24"
+    },
+    "textures": [
+      "crude",
+      "default"
+    ],
+    "material": {
+      "items": [
+        "alexsmobs:mosquito_proboscis"
+      ]
+    },
+    "requiredTools": {
+      "cut": "minecraft:stone"
+    }
+  }

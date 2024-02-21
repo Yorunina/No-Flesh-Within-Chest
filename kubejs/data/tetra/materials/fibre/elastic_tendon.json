@@ -21,6 +21,9 @@
     "material": {
         "items": [ "alexsmobs:elastic_tendon" ]
     },
+    "effects" : {
+        "ricochet": 5
+	},
     "requiredTools": {
         "cut": "minecraft:wood"
     }

@@ -1,0 +1,29 @@
+{
+  "armorSetName": "惊悚南瓜",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "irons_spellbooks:pumpkin_helmet"
+  },
+  "chest": {
+    "itemKey": "irons_spellbooks:pumpkin_chestplate"
+  },
+  "legs": {
+    "itemKey": "irons_spellbooks:pumpkin_leggings"
+  },
+  "boots": {
+    "itemKey": "irons_spellbooks:pumpkin_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "这个世界的造物起源于南瓜……"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:summon_damage",
+      "modifierUUID": "272DC9C4-BCB2-47CA-9837-FEADB02DFCDC",
+      "description": "+80% 召唤物伤害",
+      "value": 0.8
+    }
+  ]
+}

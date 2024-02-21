@@ -23,6 +23,9 @@
       "alexsmobs:shed_snake_skin"
     ]
   },
+  "effects" : {
+    "velocity": 10
+  },
   "requiredTools": {
     "cut": "minecraft:stone"
   }

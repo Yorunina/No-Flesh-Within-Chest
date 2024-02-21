@@ -1,0 +1,27 @@
+{
+    "key": "polished_amber",
+    "category": "gem",
+    "primary": 5.5,
+    "secondary": 2.6,
+    "tertiary": 0,
+    "durability": 635,
+    "integrityCost": 2,
+    "integrityGain": 2,
+    "magicCapacity": 60,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 6,
+    "tints": {
+        "glyph": "CD950C",
+        "texture": "CD950C"
+    },
+    "textures": [
+        "shiny",
+        "crude"
+    ],
+    "material": {
+        "items": [ "kubejs:polished_amber" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:stone"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "key": "unusual_insulator",
+    "category": "fabric",
+    "primary": 1,
+    "secondary": 1,
+    "tertiary": 7.5,
+    "durability": 450,
+    "integrityCost": 2,
+    "integrityGain": 4,
+    "magicCapacity": 10,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "attributes":{
+        "**irons_spellbooks:fire_magic_resist":0.8
+    },
+    "effects": {
+        "unbreaking": 1
+    },
+    "tints": {
+        "glyph": "F0FFFF",
+        "texture": "F0FFFF"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "unusualprehistory:insulator" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:iron"
+    }
+}

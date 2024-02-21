@@ -1,0 +1,24 @@
+{
+  "key" : "create_andesite_alloy",
+  "category" : "metal",
+  "primary" : 5.3,
+  "secondary" : 3.7,
+  "tertiary" : 0.8,
+  "durability" : 198,
+  "integrityCost" : 2,
+  "integrityGain" : 4,
+  "magicCapacity" : 96,
+  "toolLevel" : "minecraft:iron",
+  "toolEfficiency" : 5.5,
+  "tints" : {
+    "glyph" : "928f97",
+    "texture" : "928f97"
+  },
+  "textures" : [ "metal", "default" ],
+  "material" : {
+    "items" : [ "create:andesite_alloy" ]
+  },
+  "requiredTools" : {
+    "hammer_dig" : "minecraft:wood"
+  }
+}

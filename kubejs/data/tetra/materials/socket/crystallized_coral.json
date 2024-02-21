@@ -1,0 +1,26 @@
+{
+    "key": "cata_crystallized_coral",
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 218,
+    "integrityCost": 2,
+    "integrityGain": 0,
+    "magicCapacity": 164,
+    "toolLevel": 0,
+    "toolEfficiency": 3,
+    "attributes":{
+        "irons_spellbooks:max_mana":100,
+        "irons_spellbooks:mana_regen":0.1
+    },
+    "tints": {
+        "glyph": "D1EEEE",
+        "texture": "D1EEEE"
+    },
+    "textures": [
+        "default"
+    ],
+    "experienceCost": 25,
+    "material":{"items":["cataclysm:crystallized_coral"]}
+}

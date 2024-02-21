@@ -22,6 +22,9 @@
     "material": {
         "items": [ "alexsmobs:straddlite" ]
     },
+    "effects" : {
+        "punch": 1
+	},
     "requiredTools": {
         "hammer_dig": "minecraft:diamond"
     }
