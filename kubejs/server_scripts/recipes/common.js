@@ -145,25 +145,6 @@ ServerEvents.recipes(event => {
         ['', 'hexerei:selenite_shard', ''],
         ['hexerei:moon_dust', 'nameless_trinkets:moon_stone', 'hexerei:moon_dust']])
 
-    event.shaped('kubejs:flora_wand', [
-        ['bosses_of_mass_destruction:void_thorn', 'bosses_of_mass_destruction:crystal_fruit', 'bosses_of_mass_destruction:void_thorn'],
-        ['', 'minecraft:stick', ''],
-        ['', 'minecraft:stick', '']])
-
-    event.shaped('kubejs:holy_wooden_wand', [
-        ['minecraft:stick', 'irons_spellbooks:holy_rune', 'minecraft:stick'],
-        ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
-        ['', '#minecraft:saplings', '']])
-
-    event.shaped('kubejs:ice_wooden_wand', [
-        ['minecraft:stick', 'irons_spellbooks:ice_rune', 'minecraft:stick'],
-        ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
-        ['', '#minecraft:saplings', '']])
-
-    event.shaped('kubejs:nature_wooden_wand', [
-        ['minecraft:stick', 'irons_spellbooks:nature_rune', 'minecraft:stick'],
-        ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
-        ['', '#minecraft:saplings', '']])
 
     event.shaped('kubejs:ceremonial_knife', [
         ['', 'iceandfire:silver_ingot', ''],

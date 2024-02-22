@@ -99,27 +99,6 @@ StartupEvents.registry('item', event => {
     event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1).fireResistant()
     event.create('god_agreement').texture('kubejs:item/god_agreement').maxStackSize(1)
 
-    event.create('flora_wand').texture('kubejs:item/flora_wand')
-        .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellWeaponBoost', 3, 'addition')
-        .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', -0.5, 'addition')
-        .rarity('epic')
-
-    event.create('holy_wooden_wand').texture('kubejs:item/holy_wooden_wand')
-        .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:holy_spell_power', 'kubejsHolySpellWeaponBoost', 0.3, 'addition')
-        .rarity('rare')
-
-    event.create('ice_wooden_wand').texture('kubejs:item/ice_wooden_wand')
-        .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:ice_spell_power', 'kubejsIceSpellWeaponBoost', 0.3, 'addition')
-        .rarity('rare')
-
-    event.create('nature_wooden_wand').texture('kubejs:item/nature_wooden_wand')
-        .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellWeaponBoost', 0.3, 'addition')
-        .rarity('rare')
-
     event.create('candy_canes_wand').texture('kubejs:item/candy_canes_wand')
         .maxStackSize(1)
         .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', 0.1, 'addition')
