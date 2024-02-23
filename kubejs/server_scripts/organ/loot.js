@@ -124,8 +124,9 @@ const chestLootOnlyStrategies = {
         let player = event.player
         let item = Item.of('kubejs:random_tumor', { organData: {} })
         let amount = Math.floor(Math.sqrt(Math.random() * 17) + 1)
+        let shuffledAttributes = getShuffledList(tumorAttriBute)
         for (let i = 0; i < amount; i++) {
-            let attri = randomGet(tumorAttriBute)
+            let attri = shuffledAttributes[i]
             let attriName = attri.name
             // 扩散系数，用于控制属性的扩散范围(-1/2, 1/2)
             let diffusivity = Math.floor((Math.random() * 17 - 8)) / 16
