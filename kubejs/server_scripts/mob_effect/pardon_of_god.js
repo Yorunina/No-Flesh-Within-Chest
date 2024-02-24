@@ -15,7 +15,7 @@ function pardonOfGodEntityHurtByPlayer(event, data) {
             break;
         case 'arrow':
             if (entity.hasEffect('kubejs:pardon_of_god_projectile')) {
-                pardonOfGodLevelEffect(event, data, entity.getEffect('kubejs:pardon_of_god_projectile')?.getAmplifier())
+                pardonOfGodLevelEffect(event, data, entity.getEffect('kubejs:pardon_of_god_projectile').getAmplifier())
             }
             break;
         case 'irons_spellbooks':
