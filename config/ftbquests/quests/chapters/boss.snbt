@@ -1,0 +1,936 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "boss"
+	group: "4F4F4EA8CE67985B"
+	icon: "somebosses:dark_magic_gauntlet"
+	id: "1D958E2F7D239737"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_2.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 5.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 9.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 12.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 15.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 16.5d
+			y: 8.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 16.5d
+			y: 5.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 16.5d
+			y: 12.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 16.5d
+			y: 15.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&d《世界BOSS》模组&r提供了&d21个BOSS&r，可以通过两种方式召唤："
+				""
+				""
+				"1. 通过&6交货协议&r获取BOSS召唤物直接召唤"
+				""
+				"2. 向&6召唤祭坛&r中放入特定的物品召唤"
+				"(可以通过&e在JEI中右键召唤召唤祭坛&r，或&e将鼠标悬停于背包中的召唤祭坛按U键&r查看用途来查看&e召唤配方&r。)"
+			]
+			icon: "summoningrituals:altar"
+			id: "68EFDD765396B87D"
+			tasks: [{
+				id: "7B86EB34E9717A46"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "世界BOSS"
+			x: -4.25d
+			y: 4.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			id: "1102363C412CD193"
+			tasks: [{
+				id: "629A895A3CE691EF"
+				item: "somebosses:furnace_torch"
+				type: "item"
+			}]
+			x: -3.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "7AA225CFD6F6BBA8"
+			tasks: [{
+				id: "3160511F8EE8A99B"
+				item: "somebosses:rusty_sword_relic"
+				type: "item"
+			}]
+			x: -2.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "3F743349368C7471"
+			tasks: [{
+				id: "7C04F5F88E91532C"
+				item: "somebosses:token_of_the_ninja"
+				type: "item"
+			}]
+			x: -1.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "63D8444AA3929FF8"
+			tasks: [{
+				id: "38FCE8C2264B0871"
+				item: "somebosses:frozen_shield_plate"
+				type: "item"
+			}]
+			x: -0.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:gilded_dynamite"
+			id: "3AB7F8C482DD8089"
+			tasks: [{
+				id: "46F66165938CF637"
+				item: "somebosses:frozen_shield_plate"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "38AC8A74FA810D8B"
+			tasks: [{
+				id: "4924DB8730823E52"
+				item: "somebosses:disgusting_pendant"
+				type: "item"
+			}]
+			x: 1.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "61968EC65ACE7240"
+			tasks: [{
+				id: "38EEF6E3519438C3"
+				item: "somebosses:cactus_relic"
+				type: "item"
+			}]
+			x: 2.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "3075B2CEE684B68F"
+			tasks: [{
+				id: "5765E4091F579C3A"
+				item: "somebosses:illegal_beacon"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "2FA35E059E71C850"
+			tasks: [{
+				id: "6BE60D24D4D390A0"
+				item: "somebosses:one_eyed_wrait_in_a_bottle"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "230A2973CBD947A7"
+			tasks: [{
+				id: "57B6FF534EDCE7D2"
+				item: "somebosses:vampire_bait"
+				type: "item"
+			}]
+			x: 5.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "35A35A62C6E9C71C"
+			tasks: [{
+				id: "26883123B5C51F33"
+				item: "somebosses:prismarine_eye"
+				type: "item"
+			}]
+			x: 6.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "6BD52270D760EA85"
+			tasks: [{
+				id: "03B76F0429A1FDA7"
+				item: "somebosses:burning_volcanic_rock"
+				type: "item"
+			}]
+			x: 7.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "7BBF4518E64E4ACC"
+			tasks: [{
+				id: "180837BFB5F98940"
+				item: "somebosses:necromancy_staff"
+				type: "item"
+			}]
+			x: -3.25d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "2696A6262EDDF11F"
+			tasks: [{
+				id: "4E9EAE1C4AF5FA40"
+				item: "somebosses:dark_magic_gauntlet"
+				type: "item"
+			}]
+			x: -2.25d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "778FDD035CA42B56"
+			tasks: [{
+				id: "439ABFC63EFA537E"
+				item: "somebosses:ice_lantern"
+				type: "item"
+			}]
+			x: -1.25d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "497F39A113B0BF24"
+			tasks: [{
+				id: "395C49CFFB0BFDB0"
+				item: "somebosses:bone_of_curse"
+				type: "item"
+			}]
+			x: -0.25d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "3030197A175A4697"
+			tasks: [{
+				id: "2C75419FE7189115"
+				item: "somebosses:slab_of_command"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "08D6D0CBC20DCA86"
+			tasks: [{
+				id: "6A9771BAC08C1D02"
+				item: "somebosses:power_generator_core"
+				type: "item"
+			}]
+			x: 1.75d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "1D7F0AE5B73BDFFE"
+			tasks: [{
+				id: "46701B3A5FAEF821"
+				item: "somebosses:cursed_spring_water"
+				type: "item"
+			}]
+			x: 2.75d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "46BE04772520FAA8"
+			tasks: [{
+				id: "10C89A7FF785DD44"
+				item: "somebosses:monochrome_mask"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			id: "1340BDC2F17339E1"
+			tasks: [{
+				id: "65FF3942C18E3AB7"
+				item: "somebosses:chaos_insignia"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 6.25d
+		}
+		{
+			description: [
+				"&d《Bosses of Mass Destruction》模组&r提供了&d4个BOSS&r，他们生成在不同的结构中，需要玩家去寻找。"
+				""
+				"有的BOSS为玩家提供了寻找的方法，请到&e具体BOSS页面&r查看。"
+				""
+				"当击杀了BOSS之后，玩家可以通过使用&d硫磺花蜜&r重置该结构以&e重新挑战BOSS&r。（&e硫磺花蜜可合成获得&r）"
+			]
+			icon: "bosses_of_mass_destruction:brimstone_nectar"
+			id: "638AFA1A16525BB9"
+			tasks: [{
+				id: "629F60AE6E85DED9"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "BOMD"
+			x: -4.25d
+			y: 8.25d
+		}
+		{
+			dependencies: ["638AFA1A16525BB9"]
+			description: [
+				"&dB0SS黑曜巨石柱&r在&d末地&r的&e稀有结构&r出现。"
+				""
+				"召唤方法是在结构顶端的&6黑曜石祭坛&r上放一颗&6末影之眼&r，然后稍等片刻。"
+				""
+				"击败后会在原本的祭坛处生成一根黑曜石柱子，并在顶面的中间生成一个包含奖励的潜影盒。"
+			]
+			hide_dependency_lines: true
+			id: "0334639B0C126A8D"
+			subtitle: "末地浮空城中的秘密"
+			tasks: [{
+				icon: "bosses_of_mass_destruction:obsidian_heart"
+				id: "5682BA653D3D36BB"
+				structure: "bosses_of_mass_destruction:obsidilith_arena"
+				title: "发现黑曜巨石柱的踪迹"
+				type: "structure"
+			}]
+			x: -0.25d
+			y: 9.25d
+		}
+		{
+			dependencies: ["638AFA1A16525BB9"]
+			description: [
+				"在&d下界熔岩湖&r上找到的稀有结构，通过&e挖掘破坏中心结构—&r&6远古雕刻黑石&r才能召唤。"
+				""
+				"只有攻击其眼球才能造成伤害。"
+			]
+			hide_dependency_lines: true
+			id: "61C0C761B09A0584"
+			subtitle: "下界中的恶魔"
+			tasks: [{
+				icon: "bosses_of_mass_destruction:blazing_eye"
+				id: "2151AADAB2CB3027"
+				structure: "bosses_of_mass_destruction:gauntlet_arena"
+				title: "发现下界铁掌的踪迹"
+				type: "structure"
+			}]
+			title: "发现下界铁掌的踪迹"
+			x: -1.25d
+			y: 9.25d
+		}
+		{
+			dependencies: ["638AFA1A16525BB9"]
+			description: [
+				"&e击杀亡灵生物&r随机掉落&6灵魂之星&r，手持灵魂之星&e右键&r，可以指引你找到位于&d寒冷群系中的高塔&r。"
+				""
+				"在高塔内的其中一层，可以在四方找到4个&6雕文石头祭坛&r，在各个祭坛中放入&6灵魂之星&r，即可召唤&dBOSS暗夜巫妖&r。"
+			]
+			hide_dependency_lines: true
+			id: "2040133CCC7EBE4F"
+			subtitle: "灵魂之星指引着你"
+			tasks: [{
+				icon: "bosses_of_mass_destruction:ancient_anima"
+				id: "328A01F205747676"
+				structure: "bosses_of_mass_destruction:lich_tower"
+				title: "发现暗夜巫妖的踪迹"
+				type: "structure"
+			}]
+			title: "寻找暗夜巫妖的踪迹"
+			x: -2.25d
+			y: 9.25d
+		}
+		{
+			dependencies: ["638AFA1A16525BB9"]
+			description: [
+				"通过&6铃兰&r和&6紫水晶碎片&r合成&6虚空百合&r，将其种在地上，虚空百合会散发出&e花粉&r指引你寻找&d虚空之花的洞穴&r。"
+				""
+				"虚空之花的洞穴生成在&e主世界底部接近基岩层的地方&r。"
+			]
+			hide_dependency_lines: true
+			id: "147CD351C2BC325E"
+			subtitle: "随着花粉前往地下"
+			tasks: [{
+				icon: "bosses_of_mass_destruction:void_thorn"
+				id: "3D0F8B6D5DBB3286"
+				structure: "bosses_of_mass_destruction:void_blossom"
+				title: "发现虚空之花的踪迹"
+				type: "structure"
+			}]
+			title: "寻找虚空之花的踪迹"
+			x: -3.25d
+			y: 9.25d
+		}
+		{
+			description: [
+				"&d《迎战（Meet Your Fight）》模组&r提供了&d4个Boss&r，每个BOSS都有独立的战利品，它们可以合成装备，例如有用的饰品或很酷的武器和工具。"
+				""
+				"这些BOSS接到&e召唤&r才会前来，你需要&d按配方合成制作&r合适的&e召唤物品&r并&e手持长按右键以召唤&r。"
+			]
+			icon: "meetyourfight:haunted_bell"
+			id: "7729DBC45AEF7D17"
+			tasks: [{
+				id: "2FCE1457A8EC99AF"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "迎战"
+			x: -4.25d
+			y: 11.25d
+		}
+		{
+			dependencies: ["7729DBC45AEF7D17"]
+			hide_dependency_lines: true
+			id: "0B6E24F5105C5DE2"
+			tasks: [{
+				id: "7B90C604D7FFF286"
+				item: "meetyourfight:dusk_key"
+				type: "item"
+			}]
+			x: -3.25d
+			y: 12.25d
+		}
+		{
+			dependencies: ["7729DBC45AEF7D17"]
+			hide_dependency_lines: true
+			id: "4643F8D77E474B9B"
+			tasks: [{
+				id: "265FF021C45EBF9C"
+				item: "meetyourfight:haunted_bell"
+				type: "item"
+			}]
+			x: -2.25d
+			y: 12.25d
+		}
+		{
+			dependencies: ["7729DBC45AEF7D17"]
+			hide_dependency_lines: true
+			id: "5E53B369B6F8610E"
+			tasks: [{
+				id: "113A047DE5D55947"
+				item: "meetyourfight:fossil_bait"
+				type: "item"
+			}]
+			x: -1.25d
+			y: 12.25d
+		}
+		{
+			dependencies: ["7729DBC45AEF7D17"]
+			hide_dependency_lines: true
+			id: "59C699B6973BBF18"
+			tasks: [{
+				id: "22DD3D3D40626EE1"
+				item: "meetyourfight:devils_ante"
+				type: "item"
+			}]
+			x: -0.25d
+			y: 12.25d
+		}
+		{
+			description: [
+				"&d《灾变（L_Ender's Cataclysm）》模组&r是一个增加了困难的地牢、具有挑战性的Boss和强大装备的模组。"
+				""
+				"目前，本模组添加了&d6个精细的Boss&r和&e5个小Boss&r，&d每个Boss都位于自己独有的结构&r，拥有独特技能，并且产出具有特殊能力的战利品。"
+				""
+				"本模组为玩家&e提供了寻找这些结构的方法&r，请去&e具体BOSS页面&r查看。"
+			]
+			icon: "cataclysm:the_incinerator"
+			id: "7C958A8AFC0EADC6"
+			tasks: [{
+				id: "5A0563FD4344CC21"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "灾变"
+			x: -4.25d
+			y: 14.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"&d远古工厂&r深埋于&e地下深处&r，这里已多年无人造访。在远古工厂的核心区域，古文明的造物先驱者正在那儿沉睡着。"
+				""
+				"可用&6机械之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r将&6下界之星&r放入&d先驱者&r体内"
+			]
+			hide_dependency_lines: true
+			id: "3878A673CAAC5661"
+			subtitle: "先驱者"
+			tasks: [{
+				id: "6CE0E9211CBD546D"
+				item: "cataclysm:mech_eye"
+				type: "item"
+			}]
+			title: "寻找远古工厂"
+			x: -3.25d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"位于&d下界&r的&d烈焰竞技场&r是&d焰魔&r的栖居之所，虽然已经废弃多年，但其间的烈焰从未熄灭。"
+				""
+				"可用&6火焰之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r击杀&d烈焰竞技场&r中的&6燃魂&r，100%掉落&6炽燃余烬&r，手持此物品&e右击&r&6烈焰祭坛&r放入即可召唤。"
+			]
+			hide_dependency_lines: true
+			id: "03005FB0984AFCEF"
+			subtitle: "焰魔"
+			tasks: [{
+				id: "159DD68E2A7DC5F3"
+				item: "cataclysm:flame_eye"
+				type: "item"
+			}]
+			title: "寻找烈焰竞技场"
+			x: -2.25d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"&d废弃堡垒&r是一个生成于&d末地外岛&r的建筑，一共分为4层，这里是&d末影守卫&r的迷宫堡垒。"
+				""
+				"进入建筑后，迎面而来的是一个有着些许虚空石堆和虚空灌注末地石砖的庭院，可以从中间的大门进入建筑内部的迷宫。"
+				""
+				"可用&6虚空之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r在第三、四层的&eBOSS房&r中，向前&e靠近&r中央的生成方块，Boss便会出现并与你战斗。"
+			]
+			hide_dependency_lines: true
+			id: "0F897A2DA9514E5D"
+			subtitle: "末影守卫"
+			tasks: [{
+				id: "129ACF4E25F69FC6"
+				item: "cataclysm:void_eye"
+				type: "item"
+			}]
+			title: "寻找废弃堡垒"
+			x: -1.25d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"&d灵魂锻造厂&r是一座矗立于&e下界熔岩海&r上的黑石锻造厂，这里浓烟滚滚，其间沉睡着一只可怕的巨兽。"
+				""
+				"可用&6恶兽之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r在&d灵魂锻造厂&r的&e灵魂火堆&r中自然生成一个。"
+				""
+				"&8（Tips：该结构中存在一处需要按钮激活的隐藏房间，里面宝物众多，去寻找吧！）&r"
+			]
+			hide_dependency_lines: true
+			id: "7804C70BA041A413"
+			subtitle: "巨兽"
+			tasks: [{
+				id: "4B3B97B5D040840C"
+				item: "cataclysm:monstrous_eye"
+				type: "item"
+			}]
+			title: "寻找灵魂锻造厂"
+			x: -0.25d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"&e深海类群系的海面上&r会出现的昔日辉煌的建筑技巧极其高超的古代遗址，但在未知因素的影响下，如今它已是一座沉没的满是深渊灵的恐怖之城，在其间用古老的仪式便能够召唤渊薮之种——&d利维坦&r。"
+				""
+				"可用&6深渊之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r合成&6深渊祭品&r，放入&d沉没之城&r中的&6深渊祭坛&r。"
+			]
+			hide_dependency_lines: true
+			id: "2CD71AD199802E1A"
+			subtitle: "利维坦"
+			tasks: [{
+				id: "0FC6DE280E71E942"
+				item: "cataclysm:abyss_eye"
+				type: "item"
+			}]
+			title: "寻找沉没之城"
+			x: 0.75d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"&d诅咒金字塔&r是位于&d沙漠&r中的巨型金字塔。"
+				""
+				"可以用&6沙漠之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r在金字塔顶端的四个房间中寻找到与原版沙子一模一样的&6“Suspicious Sand”（可疑的沙子）&r。"
+				""
+				"手持合成制作的&6“Brush”（刷子）&r右键清理&6可疑的沙子&r，得到&6沙漠项链&r。"
+				""
+				"手持&6沙漠项链&r&e右键&r金字塔底部的&d远古遗魂&r激活BOSS。"
+			]
+			hide_dependency_lines: true
+			id: "4C2CAC391B06FAA8"
+			subtitle: "远古遗魂"
+			tasks: [{
+				id: "583B940032B99BEF"
+				item: "cataclysm:desert_eye"
+				type: "item"
+			}]
+			title: "寻找诅咒金字塔"
+			x: 1.75d
+			y: 15.5d
+		}
+		{
+			description: [
+				"&d《诡厄巫法》&r是一个旨在通过添加大量新功能来增强原版游戏体验的魔法模组，具体在FTB的MOD教学分栏查看。"
+				""
+				"本模组提供了&d2个BOSS&r。"
+			]
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "goety:black_book"
+				}
+			}
+			id: "4E21EC992472D80A"
+			tasks: [{
+				id: "18B3FACB9F5F9641"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "诡厄巫法"
+			x: 10.5d
+			y: 4.25d
+		}
+		{
+			dependencies: ["4E21EC992472D80A"]
+			description: [
+				"在&d林地府邸&r中使用&6黑暗卷轴&r会召唤出灾厄宰相。"
+				""
+				"&7（黑暗卷轴可以通过原版物品合成获得）&r"
+			]
+			hide_dependency_lines: true
+			id: "21A1453792744E6A"
+			tasks: [{
+				id: "59894E78E254799E"
+				item: "goety:soul_ruby"
+				type: "item"
+			}]
+			title: "灾厄宰相/维齐尔"
+			x: 11.5d
+			y: 5.25d
+		}
+		{
+			dependencies: ["4E21EC992472D80A"]
+			description: [
+				"通过举行&d《诡厄巫法》&r中的&d安息仪式&r召唤&6使徒&r。"
+				""
+				"具体请查看&d《诡厄巫法》&r的说明书—&6“The Black Book”&r。"
+			]
+			hide_dependency_lines: true
+			id: "2FC7BD983537C21F"
+			tasks: [{
+				id: "4A8DC9897AA42647"
+				item: "goety:unholy_blood"
+				type: "item"
+			}]
+			title: "使徒"
+			x: 12.5d
+			y: 5.25d
+		}
+		{
+			dependencies: ["161684844085FEDE"]
+			description: [
+				"&6死王之尸&r生成在&d地下墓穴&r的boss房中，点击会在原地生成BOSS&d死者之王&r。"
+				""
+				"可以使用&2归途指南针&r来定位&d地下墓穴&r。"
+				""
+				"具体请查看FTB中关于&dIron的魔法书&r的内容。"
+			]
+			hide_dependency_lines: true
+			id: "3770EDC8E8A38EFF"
+			tasks: [{
+				id: "54F00DCDEE3602E7"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:blood_staff"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 5
+							spells: [
+								{
+									level: 6
+									sid: "irons_spellbooks:wither_skull"
+									slot: 0
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:ray_of_siphoning"
+									slot: 1
+								}
+								{
+									level: 3
+									sid: "irons_spellbooks:blood_step"
+									slot: 2
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:blood_slash"
+									slot: 3
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:blaze_storm"
+									slot: 4
+								}
+							]
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "死者之王"
+			x: 11.5d
+			y: 8.5d
+		}
+		{
+			description: [
+				"&d《Iron's Spells 'n Spellbooks》模组&r是一款受经典RPG游戏启发的魔法Mod，具体在FTB的MOD教学分栏查看。"
+				""
+				""
+				"本模组提供了&d1个BOSS&r。"
+			]
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:diamond_spell_book"
+				tag: {
+					ISB_spellbook: {
+						spellSlots: 8
+						spells: [ ]
+					}
+				}
+			}
+			id: "161684844085FEDE"
+			tasks: [{
+				id: "1EEFD29371FAA6CF"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "Iron的魔法书"
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			description: [
+				"&d《墓园（The Graveyard）》&r模组为Minecraft添加了恐怖的结构，生物和方块，来让你的游戏体验更刺激更具有挑战性。"
+				""
+				"本模组提供了&d1个BOSS&r。"
+			]
+			icon: "minecraft:skeleton_skull"
+			id: "27AD335AE6A41756"
+			tasks: [{
+				id: "1022EC8ED7DAD231"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "墓园"
+			x: 10.5d
+			y: 10.75d
+		}
+		{
+			dependencies: ["27AD335AE6A41756"]
+			description: [
+				"&d巫妖监狱&r自然生成在&d海洋生物群系&r里的&e天空&r中，是一座&e巨型浮岛结构&r。岛上包含召唤巫妖的祭坛结构和一个巨大的骨头结构，骨头结构的下面有一个讲台，放着关于本结构来源和相关故事情节的书本。"
+				""
+				"&dBOSS激活方式：&r想要生成&d巫妖&r，必须在&e夜晚&r依次将上、中、下共3块&6不祥的骨杖残片&r依次从左至右放置于&e祭坛前&r的&e碎裂深石中心&r，然后将&6血瓶&r倒在祭坛中央的&6祭坛&r方块上。"
+				""
+				"&7埋藏着不祥的骨杖残片的遗迹，生成于森林群系，分为旧哨塔、血祀坑和破败营地三个变种，分别包含不同位置的骨杖残片。&r"
+			]
+			hide_dependency_lines: true
+			icon: "graveyard:black_bone_staff"
+			id: "6B51398807F1CA21"
+			subtitle: "巫妖"
+			tasks: [{
+				icon: "minecraft:skeleton_skull"
+				id: "112E0D31625622B8"
+				structure: "graveyard:lich_prison"
+				title: "发现巫妖监狱"
+				type: "structure"
+			}]
+			title: "发现巫妖监狱"
+			x: 11.5d
+			y: 11.75d
+		}
+		{
+			description: [
+				"通过交货协议可以获得的物品，右击放置于地上可以打开传送门。"
+				""
+				"怪物会分波数生成，请注意在规定时间内击杀每一波的所有怪物。"
+				""
+				"其中&d最终袭击珍珠&r的&e最后一波&r会生成&d1个BOSS&r。"
+			]
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "kubejs:final_raid"
+				}
+			}
+			id: "6CD0560928FBA29B"
+			tasks: [{
+				id: "5E3828982980413A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "永恒之门"
+			x: 10.5d
+			y: 13.75d
+		}
+		{
+			dependencies: ["6CD0560928FBA29B"]
+			description: ["&7他曾是掠夺者的帝王，他率领的掠夺袭击从不失败，直到某位至高无上的存在将他囚禁在另一个世界......&r"]
+			hide_dependency_lines: true
+			icon: "lightmanscurrency:coin_gold"
+			id: "48AEAB844E3AC9F6"
+			tasks: [{
+				id: "68CFA540CA3F5F13"
+				item: {
+					Count: 1b
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "kubejs:final_raid"
+					}
+				}
+				type: "item"
+			}]
+			title: "裂刃帝王"
+			x: 11.5d
+			y: 14.75d
+		}
+	]
+	title: "挑战：BOSS搜寻指南"
+}

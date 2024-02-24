@@ -218,4 +218,10 @@ const organPlayerDamageOnlyStrategies = {
         let potionList = ['minecraft:slowness', 'minecraft:poison', 'cataclysm:abyssal_burn', 'minecraft:weakness', 'minecraft:wither', 'tetra:stun', 'tetra:bleeding', 'goety:cursed']
         event.entity.potionEffects.add(randomGet(potionList), 20 * 4, 0)
     },
+    'kubejs:origin_knight_core': function (event, organ, data) {
+        let player = event.source.player
+        if (player.absorptionAmount > 0) {
+            event.amount = event.amount + player.absorptionAmount / 2
+        }
+    },
 };

@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "iron"
-	group: "0241B51B931E1ED2"
+	group: "1B2D143C21AF2AF5"
 	icon: {
 		Count: 1b
 		id: "irons_spellbooks:diamond_spell_book"
@@ -27,7 +27,7 @@
 		x: -0.5d
 		y: -3.0d
 	}]
-	order_index: 5
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{

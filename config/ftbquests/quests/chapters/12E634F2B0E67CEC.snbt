@@ -1,0 +1,141 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "12E634F2B0E67CEC"
+	group: "1B2D143C21AF2AF5"
+	icon: {
+		Count: 1b
+		id: "iceandfire:dragon_skull_fire"
+		tag: {
+			DragonAge: 75
+			Stage: 4
+		}
+	}
+	id: "12E634F2B0E67CEC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&d冰火传说（Ice and Fire）&r是一款以&e龙&r为核心、以&e神秘生物&r为主题的&d奇幻冒险模组&r。"
+				""
+				"在游戏中，玩家将会遇见来自神话传说的种种神异生灵，并通过收集&6手稿&r和编纂&6《异兽手记》&r来获取有关生物的知识，从而学会利用它们的弱点打败它们，收集它们身上的珍贵材料并制成装备，搜刮它们巢穴中的财宝，甚至于把它们中较为友善的那些驯养为&e宠物&r和&e坐骑&r。"
+				""
+				"模组中的生物不但有着精良的模型和材质，还有着流畅的动画和精妙的AI，无论是观感还是战斗体验都出类拔萃、独树一帜。"
+			]
+			icon: {
+				Count: 1b
+				id: "iceandfire:dragon_skull_fire"
+				tag: {
+					DragonAge: 75
+					Stage: 4
+				}
+			}
+			id: "6B5863E924157192"
+			subtitle: "写下属于你自己的传说"
+			tasks: [{
+				id: "719A72B5AB245612"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "引言：凡人居住之所，必有传说流淌"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			description: ["你可以在龙的巢穴、独眼巨人巢穴、地牢等处寻找到记录各种古老传闻的手稿，这是你追寻传说的开始。"]
+			id: "7778D15946A71E0B"
+			rewards: [{
+				id: "796BD9F63AC4F679"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "千年前的笔迹"
+			tasks: [{
+				id: "2D3DC42722CC4533"
+				item: "iceandfire:manuscript"
+				type: "item"
+			}]
+			title: "遗失的传闻"
+			x: 1.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7778D15946A71E0B"]
+			description: [
+				"随着身上的&6手稿&r越来越多，你明白需要一个便于整理、携带手稿的工具。"
+				""
+				"这本笔记将指引你在一个个奇幻传说中探索，虽然它现在只有简介的少量知识，但你可以&e不断收集手稿来完善它&r。"
+			]
+			id: "7E5AA678EF577F75"
+			rewards: [{
+				count: 5
+				id: "0C019010443614A3"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "记录自己的传说"
+			tasks: [{
+				id: "438581BF5BB93FBB"
+				item: {
+					Count: 1b
+					id: "iceandfire:bestiary"
+					tag: {
+						Pages: [I;0]
+					}
+				}
+				type: "item"
+			}]
+			title: "探索的指引：记载怪兽的书籍"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7E5AA678EF577F75"]
+			description: [
+				"你需要一个书桌以便于将收集的&6手稿&r&e誊抄记录&r到&6异兽手记&r中。"
+				""
+				"通过放置&6异兽手记&r和&6手稿&r来进行研究，可以向交互界面右侧给出的三个可选条目中选择一个，&e添加在异兽笔记中&r。"
+				""
+				"&a注：每研究一次增加的均为新信息，且当全部研究完成后同本书不可再进行研究。&r"
+			]
+			id: "0E45B26DA6370700"
+			rewards: [{
+				id: "5DC5351C24228EF4"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "将手稿记录于手记中"
+			tasks: [{
+				id: "563D8EFE9B5FC54B"
+				item: "iceandfire:lectern"
+				type: "item"
+			}]
+			title: "誊写书桌"
+			x: 4.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E45B26DA6370700"]
+			description: [
+				"至此，&d《冰火传说（Ice and Fire）》&r模组的介绍和引导就结束了。"
+				""
+				"本模组拥有&e极其详细的引导说明书&r-&6异兽手记&r，随着手记的完善，你会了解该模组所有的内容。"
+				""
+				"现在，冒险家，轮到你用冰与火的巨椽，写下属于你自己的传说。"
+			]
+			icon: "iceandfire:dragon_stick"
+			id: "5055B24982E2E5B4"
+			subtitle: "凡人因智慧 以比肩神明"
+			tasks: [{
+				id: "463B0BE2F9594292"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "传说由自己谱写"
+			x: 5.5d
+			y: 0.0d
+		}
+	]
+	title: "冰火传说：有关龙的传说"
+}

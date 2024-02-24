@@ -956,6 +956,17 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:key_pressed')
         .tag('kubejs:heart')
         .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:origin_knight_core')
+        .addScore('nerves', -0.5)
+        .addScore('defense', 2)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.origin_knight_core.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.origin_knight_core.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/origin_knight_core')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:heart')
+        .tag('kubejs:relics');
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
