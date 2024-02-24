@@ -27,6 +27,6 @@ ServerEvents.tags('item', event => {
   event.add('kubejs:is_cookie_block', ['extradelight:chocolate_chip_cookie_block_item', 'extradelight:gingerbread_cookie_block_item', 'extradelight:sweet_berry_cookie_block_item', 'extradelight:apple_cookie_block_item', 'extradelight:sugar_cookie_block_item', 'extradelight:pumpkin_cookie_block_item', 'extradelight:honey_cookie_block_item', 'extradelight:glow_berry_cookie_block_item'])
   event.add('forge:bones/dragon', ['iceandfire:dragonbone'])
   event.add('forge:bones/wither', ['iceandfire:witherbone'])
-  event.add('biomancy:cannot_be_eaten_by_cradle',['weaponmaster:wm_broadswordlarge','weaponmaster:wm_broadsword','weaponmaster:wm_rapier','weaponmaster:wm_rapierlarge'])
+  event.add('biomancy:cannot_be_eaten_by_cradle', ['weaponmaster:wm_broadswordlarge', 'weaponmaster:wm_broadsword', 'weaponmaster:wm_rapier', 'weaponmaster:wm_rapierlarge'])
 
 })

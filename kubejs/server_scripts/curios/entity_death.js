@@ -4,11 +4,11 @@ EntityEvents.death(event => {
     if (!event.source.player) { return }
 
     const api = new $CuriosApi();
-    const curios = api
-        .getCuriosHelper()
-        .getEquippedCurios(player)
-        .resolve()
-        .get();
+    let optionalCurios = api.getCuriosHelper().getEquippedCurios(player)
+    if (!optionalCurios.isPresent()) {
+        return
+    }
+    let curios = optionalCurios.resolve().get()
 
     for (let slot = 0; slot < curios.getSlots(); slot++) {
         let item = curios.getStackInSlot(slot);

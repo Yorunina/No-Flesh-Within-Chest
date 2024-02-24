@@ -1,3 +1,6 @@
+const $ChestCavityEntity = Java.loadClass("net.tigereye.chestcavity.interfaces.ChestCavityEntity");
+const $ChestCavityUtil = Java.loadClass("net.tigereye.chestcavity.util.ChestCavityUtil")
+
 /**
 * 获取某个半径内的实体
 * @param {Internal.Level} level
@@ -15,4 +18,21 @@ function getLivingWithinRadius(level, pos, radius) {
         }
     })
     return entityList
+}
+
+/**
+* 获取某个单位胸腔页面
+* @param {Internal.Player} player
+* @param {Internal.Entity} target
+* @returns {Array<I>}
+*/
+function generateChestCavity(target) {
+    let targetEntity = $ChestCavityEntity.of(target)
+    if (!targetEntity.isPresent()) {
+        return
+    }
+    let targetInstance = targetEntity.get().getChestCavityInstance()
+    if (target.isAlive()) {
+        return $ChestCavityUtil.openChestCavity(targetInstance)
+    }
 }

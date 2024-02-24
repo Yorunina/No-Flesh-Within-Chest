@@ -3,14 +3,13 @@ PlayerEvents.tick(event => {
     if (!event.player) { return }
 
     const api = new $CuriosApi();
-    const curios = api
-        .getCuriosHelper()
-        .getEquippedCurios(player)
-        .resolve()
-        .get();
+    let optionalCurios = api.getCuriosHelper().getEquippedCurios(player)
+    if (!optionalCurios.isPresent()) {
+        return
+    }
+    let curios = optionalCurios.resolve().get()
 
-    if (event.player.age % (20*15) === 0)
-    {
+    if (event.player.age % 20 == 0) {
         for (let slot = 0; slot < curios.getSlots(); slot++) {
             let item = curios.getStackInSlot(slot);
             if (curiosEquippedStrategies[item.id]) {
@@ -22,10 +21,9 @@ PlayerEvents.tick(event => {
 
 const curiosEquippedStrategies = {
     'kubejs:bunny_hoppers': function (event, curios, slot, item) {
-        if (!event.player) {
+        if (!event.player || event.player.age % 80 != 0) {
             return
         }
-        event.player.potionEffects.add('minecraft:jump_boost', 20 * 30, 1)
-
+        event.player.potionEffects.add('minecraft:jump_boost', 20 * 5, 1, false, false)
     },
 }

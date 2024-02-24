@@ -45,7 +45,7 @@ const ritualsCompleteStrategies = {
             bossEntity.modifyAttribute('minecraft:generic.max_health', 'godBlessSummonHealthBoost', 1, 'multiply_total')
             bossEntity.modifyAttribute('minecraft:generic.attack_damage', 'godBlessSummonAttackBoost', 0.5, 'multiply_total')
             bossEntity.heal(bossEntity.maxHealth)
-            bossEntity.potionEffects.add('kubejs:glimpse_of_god', 20 * 3600, 0)
+            bossEntity.potionEffects.add('kubejs:glimpse_of_god', 20 * 3600, 0, false, false)
             bossEntity.spawn()
         }
     }

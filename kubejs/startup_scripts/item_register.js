@@ -95,7 +95,6 @@ StartupEvents.registry('item', event => {
     event.create('god_bless_empty_necklace').texture('kubejs:item/god_bless_empty_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
     event.create('god_bless_full_necklace').texture('kubejs:item/god_bless_full_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
 
-    event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
     event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1).fireResistant()
     event.create('god_agreement').texture('kubejs:item/god_agreement').maxStackSize(1)
 
@@ -186,7 +185,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
     event.create('kubejs:mysterious_trinket').texture('kubejs:item/mysterious_trinket').maxStackSize(64)
-    
+
     event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
         .useAnimation('bow')
         .use((level, player, hand) => {
@@ -196,7 +195,12 @@ StartupEvents.registry('item', event => {
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
             let nbt = { organSocres: {} }
-            $ChestCavityEntity.of(entity).get().getChestCavityInstance().getOrganScores().forEach((key, value) => {
+            let ray = entity.rayTrace(4, true)
+            let target = entity
+            if (ray.entity && ray.entity.isLiving()) {
+                target = ray.entity
+            }
+            target.getChestCavityInstance().getOrganScores().forEach((key, value) => {
                 nbt.organSocres[key] = value
             })
             entity.give(Item.of('kubejs:glass_vial', nbt))

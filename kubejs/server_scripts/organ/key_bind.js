@@ -108,9 +108,23 @@ const organPlayerKeyPressedOnlyStrategies = {
         let magicData = getPlayerMagicData(player)
         let manaCost = magicData.getMana()
         let level = Math.max(Math.sqrt(manaCost), 1) + 4
-        let result = $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('irons_spellbooks', 'magic_arrow')).attemptInitiateCast(Item.of('air'), level, player.level, player, $CastSource.NONE, false)
-
+        $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('irons_spellbooks', 'magic_arrow')).attemptInitiateCast(Item.of('air'), level, player.level, player, $CastSource.NONE, false)
         magicData.setMana(0)
         player.addItemCooldown('kubejs:amethyst_magic_core', 20 * 15)
+    },
+    'kubejs:dragon_blood_heart': function (event, organ) {
+        let player = event.player
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        let amplifier = 0
+        let duration = player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'nerves')) * 20 * 2
+        if (typeMap.has('kubejs:dragon')) {
+            let onlySet = new Set()
+            typeMap.get('kubejs:dragon').forEach(organ => {
+                onlySet.add(organ.id)
+            })
+            amplifier = onlySet.size - 1
+        }
+        player.addItemCooldown('kubejs:dragon_blood_heart', 20 * 180)
+        player.potionEffects.add('kubejs:dragon_power', Math.max(Math.floor(duration), 0), amplifier, false, false)
     },
 };

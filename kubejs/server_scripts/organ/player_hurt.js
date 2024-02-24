@@ -61,7 +61,7 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:color_palette': function (event, organ, data) {
         let player = event.source.player
-        if (player.getMainHandItem() != 'kubejs:artist_wand') {
+        if (player.getMainHandItem() != 'kubejs:artist_wand' && player.getOffHandItem() != 'kubejs:artist_wand') {
             return
         }
         if (event.source.type == 'irons_spellbooks.firebolt' || event.source.type == 'irons_spellbooks.icicle' || event.source.type == 'irons_spellbooks.poison_arrow') {

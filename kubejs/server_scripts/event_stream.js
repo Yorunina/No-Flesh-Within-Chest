@@ -56,6 +56,7 @@ global.playerHurt = event => {
     vulnerableEntityHurt(event, data)
     organCharmPlayerHurtByOthers(event, data)
     fightForDeathPlayerHurtByOthers(event, data)
+    dragonPowerPlayerHurtByOthers(event, data)
 
     if (data.returnDamage != 0 && event.source.actual) {
         event.source.actual.attack(data.returnDamage)

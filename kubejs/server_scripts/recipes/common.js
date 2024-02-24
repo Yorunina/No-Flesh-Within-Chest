@@ -164,9 +164,4 @@ ServerEvents.recipes(event => {
         ['', 'nameless_trinkets:reverse_card', ''],
         ['minecraft:totem_of_undying', 'meetyourfight:phantoplasm', 'minecraft:totem_of_undying']])
 
-    event.shaped('kubejs:bunny_hoppers', [
-        ['minecraft:rabbit_hide', '', 'minecraft:rabbit_hide'],
-        ['minecraft:rabbit_hide', '', 'minecraft:rabbit_hide'],
-        ['minecraft:rabbit_foot', '', 'minecraft:rabbit_foot']])
-
 })

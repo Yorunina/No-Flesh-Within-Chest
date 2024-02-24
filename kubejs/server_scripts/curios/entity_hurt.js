@@ -10,11 +10,12 @@ function curiosPlayerHurtByOthers(event, data) {
     let player = event.entity;
 
     const api = new $CuriosApi();
-    const curios = api
-        .getCuriosHelper()
-        .getEquippedCurios(player)
-        .resolve()
-        .get();
+    let optionalCurios = api.getCuriosHelper().getEquippedCurios(player)
+    // LazyOptional
+    if (!optionalCurios.isPresent()) {
+        return
+    }
+    let curios = optionalCurios.resolve().get()
 
     for (let slot = 0; slot < curios.getSlots(); slot++) {
         if (player.getHealth() - event.amount <= 4) {
