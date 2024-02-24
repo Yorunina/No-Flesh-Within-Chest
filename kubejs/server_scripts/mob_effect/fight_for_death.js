@@ -19,7 +19,7 @@ function fightForDeathPlayerHurtByOthers(event, data) {
         if (currectLevel > 10) {
             player.kill()
         } else {
-            player.potionEffects.add('kubejs:declaration_of_death', 20 * 10, currectLevel - 1)
+            player.potionEffects.add('kubejs:declaration_of_death', 20 * 10, currectLevel - 1, false, false)
         }
     }
 }

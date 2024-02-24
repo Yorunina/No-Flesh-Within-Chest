@@ -7,7 +7,7 @@ function godPardonEffectIncr(entity) {
     if (entity.hasEffect(effectType)) {
         amplifier = entity.getEffect(effectType).getAmplifier() + 1
     }
-    entity.potionEffects.add(effectType, 1200 * 20, amplifier)
+    entity.potionEffects.add(effectType, 1200 * 20, amplifier, false, false)
 }
 
 StartupEvents.registry('mob_effect', event => {
@@ -57,7 +57,7 @@ StartupEvents.registry('mob_effect', event => {
                         }
                     })
                     entity.removeEffect('kubejs:glimpse_of_god')
-                    entity.potionEffects.add('kubejs:gaze_of_god', 3600 * 20, 0)
+                    entity.potionEffects.add('kubejs:gaze_of_god', 3600 * 20, 0, false, false)
                     godPardonEffectIncr(entity)
                 }
             }
@@ -77,7 +77,7 @@ StartupEvents.registry('mob_effect', event => {
                         }
                     })
                     entity.removeEffect('kubejs:gaze_of_god')
-                    entity.potionEffects.add('kubejs:glare_of_god', 180 * 20, 0)
+                    entity.potionEffects.add('kubejs:glare_of_god', 180 * 20, 0, false, false)
                     godPardonEffectIncr(entity)
                 }
             }
@@ -97,7 +97,7 @@ StartupEvents.registry('mob_effect', event => {
                         }
                     })
                     entity.removeEffect('kubejs:glare_of_god')
-                    entity.potionEffects.add('kubejs:glimpse_of_god', 3600 * 20, 0)
+                    entity.potionEffects.add('kubejs:glimpse_of_god', 3600 * 20, 0, false, false)
                     entity.setHealth(entity.getMaxHealth())
                     godPardonEffectIncr(entity)
                 }
@@ -122,22 +122,6 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .color(Color.PINK_DYE)
 
-    event.create('power_of_citadel')
-        .beneficial()
-        .color(Color.DARK_RED)
-
-    event.create('power_of_fight')
-        .beneficial()
-        .color(Color.DARK_RED)
-    
-    event.create('power_of_destruction')
-        .beneficial()
-        .color(Color.DARK_RED)
-
-    event.create('power_of_world')
-        .beneficial()
-        .color(Color.DARK_RED)
-
     event.create('arrow_damage_boost')
         .beneficial()
         .color(Color.RED)
@@ -157,4 +141,8 @@ StartupEvents.registry('mob_effect', event => {
     event.create('spiked_carapace')
         .beneficial()
         .color(Color.BLACK)
+
+    event.create('dragon_power')
+        .beneficial()
+        .color(Color.DARK_PURPLE)
 })

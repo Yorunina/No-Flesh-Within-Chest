@@ -54,6 +54,7 @@
 			"#C90000" = ["$itemborders:red"]
 			"#B500A0" = ["$kubejs:warp"]
 			"#FFA6FF" = ["$kubejs:candy"]
+			"#E854E8" = ["$kubejs:dragon"]
 			green = ["$itemborders:green"]
 			blue = ["$itemborders:blue"]
 			dark_purple = ["$itemborders:dark_purple"]

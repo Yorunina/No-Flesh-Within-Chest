@@ -82,7 +82,7 @@
 			rewards: [{
 				count: 8
 				id: "1E8E446A5F45EA6B"
-				item: "storagedrawers:oak_full_drawers_1"
+				item: "functionalstorage:oak_1"
 				type: "item"
 			}]
 			subtitle: "操作存储网络"
@@ -100,7 +100,7 @@
 			id: "06CFAD62C6DC65CA"
 			rewards: [{
 				id: "0BE186401EC124A1"
-				item: "storagedrawers:controller"
+				item: "functionalstorage:storage_controller"
 				type: "item"
 			}]
 			subtitle: "获得升级"

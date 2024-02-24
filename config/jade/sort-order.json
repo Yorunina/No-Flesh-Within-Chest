@@ -81,8 +81,5 @@
   "jade:registry_name": null,
   "jade:mod_name": null,
   "jade:distance": null,
-  "jade:block_face": null,
-  "fluiddrawerslegacy:controller": null,
-  "fluiddrawerslegacy:controller_slave": null,
-  "fluiddrawerslegacy:fluiddrawer": null
+  "jade:block_face": null
 }

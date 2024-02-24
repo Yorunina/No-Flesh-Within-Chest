@@ -1,7 +1,7 @@
 
 ["Herb Jar Settings"]
 	#Disabling allows jars to hold any item
-	jars_only_hold_herbs = true
+	jars_only_hold_herbs = false
 
 ["Sage Burning Plate Settings"]
 	#Range of the Sage Burning Plate, setting to 0 will disable completely

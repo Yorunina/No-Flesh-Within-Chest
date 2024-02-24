@@ -12,6 +12,10 @@
 			drownedServantTexture = true
 			#If Husk Servants have custom textures, Default: true
 			huskServantTexture = true
+			#If Frozen Zombie Servants have custom textures, Default: true
+			frozenZombieServantTexture = true
+			#If Jungle Zombie Servants have custom textures, Default: true
+			jungleZombieServantTexture = true
 
 		[Textures."Summoned Mobs"."Skeleton Servants"]
 			#If Skeleton Servants have custom textures, Default: true
@@ -20,6 +24,10 @@
 			strayServantTexture = true
 			#If Vanguard Servants have custom textures, Default: true
 			vanguardServantTexture = true
+			#If Mossy Skeleton Servants have custom textures, Default: true
+			mossySkeletonServantTexture = true
+			#If Sunken Skeleton Servants have custom textures, Default: true
+			sunkenSkeletonServantTexture = true
 
 		[Textures."Summoned Mobs"."Wraith Servants"]
 			#If Wraith Servants have custom textures, Default: true

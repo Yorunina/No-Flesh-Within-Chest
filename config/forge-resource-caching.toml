@@ -1,0 +1,10 @@
+# Set this to true to force the caching of mod resources to happen on the main thread.
+indexModPackCachesOnThread = false
+# Set this to true to force the caching of vanilla resources to happen on the main thread.
+indexVanillaPackCachesOnThread = false
+# This TOML configuration file controls the resource caching system which is used before the mod loading environment starts.
+# This file is read by the Forge boot loader, and is not used by the game itself.
+#
+# Set this to false to disable the resource cache. This will cause the game to scan the resource packs everytime it needs a list of resources.
+cacheResources = true
+

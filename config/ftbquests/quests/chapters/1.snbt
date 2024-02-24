@@ -820,7 +820,7 @@
 				""
 				"后续也可以采用Tom's的简易存储来接入抽屉，免去物品搬运的问题。"
 			]
-			icon: "storagedrawers:oak_full_drawers_1"
+			icon: "functionalstorage:birch_1"
 			id: "5E8F821F42C92E8A"
 			rewards: [{
 				count: 5
@@ -834,15 +834,15 @@
 			}]
 			subtitle: "储存大量的同种类物品"
 			tasks: [{
-				id: "258D2089515F93C9"
+				id: "6914A456D7A680E5"
 				item: {
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "storagedrawers:drawers"
+						value: "functionalstorage:drawer"
 					}
 				}
-				title: "Any #storagedrawers:drawers"
+				title: "Any #functionalstorage:drawer"
 				type: "item"
 			}]
 			title: "储物抽屉"

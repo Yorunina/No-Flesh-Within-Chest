@@ -25,7 +25,6 @@ global.playerDamage = event => {
     vampiricEntityHurtByPlayer(event, data)
     // commonEntityHurtByPlayer(event, data)
     pardonOfGodEntityHurtByPlayer(event, data)
-    powerOfWorldEntityHurtByPlayer(event, data)
     vulnerableEntityHurt(event, data)
     organCharmEntityHurtByPlayer(event, data)
     spikedCarapaceEntityHurtByPlayer(event, data)
@@ -55,12 +54,9 @@ global.playerHurt = event => {
     curseOfFragilityPlayerHurtByOthers(event, data)
     curiosPlayerHurtByOthers(event, data)
     vulnerableEntityHurt(event, data)
-    powerOfCitadelPlayerHurtByOthers(event, data)
-    powerOfFightPlayerHurtByOthers(event, data)
-    powerOfDestructionPlayerHurtByOthers(event, data)
-    powerOfWorldPlayerHurtByOthers(event, data)
     organCharmPlayerHurtByOthers(event, data)
     fightForDeathPlayerHurtByOthers(event, data)
+    dragonPowerPlayerHurtByOthers(event, data)
 
     if (data.returnDamage != 0 && event.source.actual) {
         event.source.actual.attack(data.returnDamage)

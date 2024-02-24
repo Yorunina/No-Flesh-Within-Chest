@@ -32,7 +32,6 @@ StartupEvents.registry('item', event => {
 
     event.create('scrap').texture('kubejs:item/scrap')
     event.create('fire_gem').texture('kubejs:item/fire_gem')
-    event.create('silver_ingot').texture('kubejs:item/silver_ingot')
     event.create('relic_metal_ingot').texture('kubejs:item/relic_metal_ingot')
     event.create('polished_amber').texture('kubejs:item/polished_amber')
 
@@ -96,31 +95,8 @@ StartupEvents.registry('item', event => {
     event.create('god_bless_empty_necklace').texture('kubejs:item/god_bless_empty_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
     event.create('god_bless_full_necklace').texture('kubejs:item/god_bless_full_necklace').maxStackSize(1).tag('curios:necklace').tag('itemborders:gold')
 
-    event.create('leaflet').texture('kubejs:item/leaflet').maxStackSize(1)
-    event.create('raw_silver').texture('kubejs:item/raw_silver').maxStackSize(64)
     event.create('god_consciousness').texture('kubejs:item/god_consciousness').maxStackSize(1).fireResistant()
     event.create('god_agreement').texture('kubejs:item/god_agreement').maxStackSize(1)
-
-    event.create('flora_wand').texture('kubejs:item/flora_wand')
-        .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellWeaponBoost', 3, 'addition')
-        .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', -0.5, 'addition')
-        .rarity('epic')
-
-    event.create('holy_wooden_wand').texture('kubejs:item/holy_wooden_wand')
-        .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:holy_spell_power', 'kubejsHolySpellWeaponBoost', 0.3, 'addition')
-        .rarity('rare')
-
-    event.create('ice_wooden_wand').texture('kubejs:item/ice_wooden_wand')
-        .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:ice_spell_power', 'kubejsIceSpellWeaponBoost', 0.3, 'addition')
-        .rarity('rare')
-
-    event.create('nature_wooden_wand').texture('kubejs:item/nature_wooden_wand')
-        .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:nature_spell_power', 'kubejsNatureSpellWeaponBoost', 0.3, 'addition')
-        .rarity('rare')
 
     event.create('candy_canes_wand').texture('kubejs:item/candy_canes_wand')
         .maxStackSize(1)
@@ -209,7 +185,7 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
     event.create('kubejs:mysterious_trinket').texture('kubejs:item/mysterious_trinket').maxStackSize(64)
-    
+
     event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
         .useAnimation('bow')
         .use((level, player, hand) => {
@@ -219,7 +195,12 @@ StartupEvents.registry('item', event => {
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
             let nbt = { organSocres: {} }
-            $ChestCavityEntity.of(entity).get().getChestCavityInstance().getOrganScores().forEach((key, value) => {
+            let ray = entity.rayTrace(4, true)
+            let target = entity
+            if (ray.entity && ray.entity.isLiving()) {
+                target = ray.entity
+            }
+            target.getChestCavityInstance().getOrganScores().forEach((key, value) => {
                 nbt.organSocres[key] = value
             })
             entity.give(Item.of('kubejs:glass_vial', nbt))

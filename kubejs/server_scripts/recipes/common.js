@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:eye_of_dnl', ['minecraft:ender_pearl', 'minecraft:gold_ingot'])
     event.shapeless('kubejs:eye_of_fortress', ['minecraft:ender_pearl', 'minecraft:magma_cream'])
     event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:explosion_proof_jacket'])
-    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:ethereal_wings'])
+    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:four_leaf_clover'])
     event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:creeper_sense'])
     event.shapeless('kubejs:mosquito_repellent', ['irons_spellbooks:magic_cloth', 'chestcavity:cooked_alien_organ_meat'])
 
@@ -131,9 +131,9 @@ ServerEvents.recipes(event => {
         ['lightmanscurrency:coin_gold', 'lightmanscurrency:coin_gold', 'lightmanscurrency:coin_gold']])
 
     event.shaped('irons_spellbooks:silver_ring', [
-        ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot'],
-        ['kubejs:silver_ingot', '', 'kubejs:silver_ingot'],
-        ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot']])
+        ['iceandfire:silver_ingot', 'iceandfire:silver_ingot', 'iceandfire:silver_ingot'],
+        ['iceandfire:silver_ingot', '', 'iceandfire:silver_ingot'],
+        ['iceandfire:silver_ingot', 'iceandfire:silver_ingot', 'iceandfire:silver_ingot']])
 
     event.shaped('kubejs:color_palette', [
         ['create:iron_sheet', 'create:iron_sheet', 'create:iron_sheet'],
@@ -145,28 +145,9 @@ ServerEvents.recipes(event => {
         ['', 'hexerei:selenite_shard', ''],
         ['hexerei:moon_dust', 'nameless_trinkets:moon_stone', 'hexerei:moon_dust']])
 
-    event.shaped('kubejs:flora_wand', [
-        ['bosses_of_mass_destruction:void_thorn', 'bosses_of_mass_destruction:crystal_fruit', 'bosses_of_mass_destruction:void_thorn'],
-        ['', 'minecraft:stick', ''],
-        ['', 'minecraft:stick', '']])
-
-    event.shaped('kubejs:holy_wooden_wand', [
-        ['minecraft:stick', 'irons_spellbooks:holy_rune', 'minecraft:stick'],
-        ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
-        ['', '#minecraft:saplings', '']])
-
-    event.shaped('kubejs:ice_wooden_wand', [
-        ['minecraft:stick', 'irons_spellbooks:ice_rune', 'minecraft:stick'],
-        ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
-        ['', '#minecraft:saplings', '']])
-
-    event.shaped('kubejs:nature_wooden_wand', [
-        ['minecraft:stick', 'irons_spellbooks:nature_rune', 'minecraft:stick'],
-        ['#minecraft:logs', 'minecraft:stick', '#minecraft:logs'],
-        ['', '#minecraft:saplings', '']])
 
     event.shaped('kubejs:ceremonial_knife', [
-        ['', 'kubejs:silver_ingot', ''],
+        ['', 'iceandfire:silver_ingot', ''],
         ['', 'biomancy:bone_fragments', ''],
         ['biomancy:bone_fragments', 'alexsmobs:skelewag_sword', 'biomancy:bone_fragments']])
 
@@ -178,32 +159,9 @@ ServerEvents.recipes(event => {
     event.smelting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
     event.blasting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
 
-    event.smelting('kubejs:silver_ingot', 'kubejs:raw_silver', '5.0')
-    event.blasting('kubejs:silver_ingot', 'kubejs:raw_silver', '5.0')
-
-    event.smelting('kubejs:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
-    event.blasting('kubejs:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
 
     event.shaped('kubejs:doppelganger', [
         ['', 'nameless_trinkets:reverse_card', ''],
         ['minecraft:totem_of_undying', 'meetyourfight:phantoplasm', 'minecraft:totem_of_undying']])
-
-    event.shaped('kubejs:silver_block', [
-        ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot'],
-        ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot'],
-        ['kubejs:silver_ingot', 'kubejs:silver_ingot', 'kubejs:silver_ingot']])
-
-    event.shaped('kubejs:raw_silver_block', [
-        ['kubejs:raw_silver', 'kubejs:raw_silver', 'kubejs:raw_silver'],
-        ['kubejs:raw_silver', 'kubejs:raw_silver', 'kubejs:raw_silver'],
-        ['kubejs:raw_silver', 'kubejs:raw_silver', 'kubejs:raw_silver']])
-
-    event.shapeless('9x kubejs:silver_ingot', ['kubejs:silver_block'])
-    event.shapeless('9x kubejs:raw_silver', ['kubejs:raw_silver_block'])
-
-    event.shaped('kubejs:bunny_hoppers', [
-        ['minecraft:rabbit_hide', '', 'minecraft:rabbit_hide'],
-        ['minecraft:rabbit_hide', '', 'minecraft:rabbit_hide'],
-        ['minecraft:rabbit_foot', '', 'minecraft:rabbit_foot']])
 
 })

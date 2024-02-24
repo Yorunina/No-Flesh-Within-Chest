@@ -85,20 +85,20 @@ const worldOfBossTypeList = [
 
 
 const tumorAttriBute = [
-    { name: 'chestcavity:filtration', multi: 1, max: 5 },
-    { name: 'chestcavity:breath_recovery', multi: 0.5, max: 5 },
-    { name: 'chestcavity:nutrition', multi: 1, max: 5 },
+    { name: 'chestcavity:filtration', multi: 1, max: 3 },
+    { name: 'chestcavity:breath_recovery', multi: 0.5, max: 3 },
+    { name: 'chestcavity:nutrition', multi: 1, max: 3 },
     { name: 'chestcavity:nerves', multi: 0.5, max: 5 },
-    { name: 'chestcavity:strength', multi: 1, max: 10 },
+    { name: 'chestcavity:strength', multi: 0.5, max: 10 },
     { name: 'chestcavity:health', multi: 0.5, max: 5 },
-    { name: 'chestcavity:breath_capacity', multi: 0.5, max: 10 },
-    { name: 'chestcavity:detoxification', multi: 1, max: 5 },
-    { name: 'chestcavity:speed', multi: 0.25, max: 10 },
-    { name: 'chestcavity:endurance', multi: 1, max: 10 },
+    { name: 'chestcavity:breath_capacity', multi: 0.5, max: 3 },
+    { name: 'chestcavity:detoxification', multi: 1, max: 3 },
+    { name: 'chestcavity:speed', multi: 0.5, max: 5 },
+    { name: 'chestcavity:endurance', multi: 1, max: 3 },
     { name: 'chestcavity:luck', multi: 0.5, max: 3 },
-    { name: 'chestcavity:defense', multi: 0.25, max: 5 },
-    { name: 'chestcavity:digestion', multi: 1, max: 5 },
-    { name: 'chestcavity:metabolism', multi: 1, max: 5 },
+    { name: 'chestcavity:defense', multi: 0.5, max: 5 },
+    { name: 'chestcavity:digestion', multi: 1, max: 3 },
+    { name: 'chestcavity:metabolism', multi: 1, max: 3 },
     { name: 'chestcavity:fire_resistant', multi: 0.5, max: 3 },
     { name: 'chestcavity:knockback_resistant', multi: 0.5, max: 3 },
     { name: 'chestcavity:water_breath', multi: 0.5, max: 3 },
@@ -129,5 +129,5 @@ const curseEnchantList = [
     'minecraft:binding_curse',
 ]
 
-const trinketList = ['nameless_trinkets:reforger', 'nameless_trinkets:true_heart_of_the_sea', 'nameless_trinkets:dragons_eye', 'nameless_trinkets:spider_legs', 'nameless_trinkets:sleeping_pills', 'nameless_trinkets:moon_stone', 'nameless_trinkets:nelumbo', 'nameless_trinkets:four_leaf_clover', 'nameless_trinkets:dark_nelumbo', 'nameless_trinkets:super_magnet', 'nameless_trinkets:rage_mind', 'nameless_trinkets:puffer_fish_liver', 'nameless_trinkets:lucky_rock', 'nameless_trinkets:vampire_blood', 'nameless_trinkets:speed_force', 'nameless_trinkets:tick', 'nameless_trinkets:ghast_eye', 'nameless_trinkets:cracked_crown', 'nameless_trinkets:blindfold', 'nameless_trinkets:ice_cube', 'nameless_trinkets:blaze_nucleus', 'nameless_trinkets:wooden_stick', 'nameless_trinkets:tear_of_the_sea', 'nameless_trinkets:gods_crown', 'nameless_trinkets:fertilizer', 'nameless_trinkets:sigil_of_baphomet', 'nameless_trinkets:gills', 'nameless_trinkets:amphibious_hands', 'nameless_trinkets:fragile_cloud', 'nameless_trinkets:light_gloves', 'nameless_trinkets:fate_emerald', 'nameless_trinkets:scarab_amulet', 'nameless_trinkets:miners_soul', 'nameless_trinkets:pocket_lightning_rod', 'nameless_trinkets:fractured_nullstone', 'nameless_trinkets:electric_paddle', 'nameless_trinkets:reverse_card', 'nameless_trinkets:missing_page', 'nameless_trinkets:broken_magnet', 'nameless_trinkets:experience_magnet', 'nameless_trinkets:broken_ankh', 'nameless_trinkets:experience_battery', 'nameless_trinkets:what_magnet', 'nameless_trinkets:callus']
+const trinketList = ['nameless_trinkets:reforger', 'nameless_trinkets:true_heart_of_the_sea', 'nameless_trinkets:dragons_eye', 'nameless_trinkets:spider_legs', 'nameless_trinkets:sleeping_pills', 'nameless_trinkets:moon_stone', 'nameless_trinkets:nelumbo', 'nameless_trinkets:dark_nelumbo', 'nameless_trinkets:super_magnet', 'nameless_trinkets:rage_mind', 'nameless_trinkets:puffer_fish_liver', 'nameless_trinkets:lucky_rock', 'nameless_trinkets:vampire_blood', 'nameless_trinkets:speed_force', 'nameless_trinkets:tick', 'nameless_trinkets:ghast_eye', 'nameless_trinkets:cracked_crown', 'nameless_trinkets:ethereal_wings', 'nameless_trinkets:blindfold', 'nameless_trinkets:ice_cube', 'nameless_trinkets:blaze_nucleus', 'nameless_trinkets:wooden_stick', 'nameless_trinkets:tear_of_the_sea', 'nameless_trinkets:gods_crown', 'nameless_trinkets:fertilizer', 'nameless_trinkets:sigil_of_baphomet', 'nameless_trinkets:gills', 'nameless_trinkets:amphibious_hands', 'nameless_trinkets:fragile_cloud', 'nameless_trinkets:light_gloves', 'nameless_trinkets:fate_emerald', 'nameless_trinkets:scarab_amulet', 'nameless_trinkets:miners_soul', 'nameless_trinkets:pocket_lightning_rod', 'nameless_trinkets:fractured_nullstone', 'nameless_trinkets:electric_paddle', 'nameless_trinkets:reverse_card', 'nameless_trinkets:missing_page', 'nameless_trinkets:broken_magnet', 'nameless_trinkets:experience_magnet', 'nameless_trinkets:broken_ankh', 'nameless_trinkets:experience_battery', 'nameless_trinkets:what_magnet', 'nameless_trinkets:callus']
 

@@ -37,7 +37,7 @@ function sweetDreamPlayerHurtByOthers(event, data) {
         }
         let duration = Math.floor(sweetDreamPotion.getDuration() - damage * 20 * 2 / (amplifier + 1));
         player.removeEffect('kubejs:sweet_dream')
-        player.potionEffects.add('kubejs:sweet_dream', Math.min(duration, 600 * 20), amplifier);
+        player.potionEffects.add('kubejs:sweet_dream', Math.min(duration, 600 * 20), amplifier, false, false);
         event.amount = 0
         return;
     }
@@ -54,6 +54,6 @@ function sweetDreamPlayerHurtByOthers(event, data) {
         if (itemMap.has('kubejs:magic_spine')) {
             amplifierMulti += Math.floor(itemMap.get('kubejs:magic_spine').length / 2)
         }
-        player.potionEffects.add('kubejs:sweet_dream', 20 * 10 * durationMulti, amplifierMulti);
+        player.potionEffects.add('kubejs:sweet_dream', 20 * 10 * durationMulti, amplifierMulti, false, false);
     }
 }

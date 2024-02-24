@@ -21,6 +21,9 @@
 			#How much damage Zombified Piglin Servants deals, Default: 5.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			zombifiedPiglinServantDamage = 5.0
+			#How much natural armor points Zombified Piglin Servants have, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			zombifiedPiglinServantArmor = 2.0
 
 		[Attributes.Cultists."Zombified Piglin Brute Servant"]
 			#How much Max Health Zombified Piglin Brute Servants have, Default: 50.0
@@ -29,6 +32,9 @@
 			#How much damage Zombified Piglin Brute Servants deals, Default: 7.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			zombifiedPiglinBruteServantDamage = 7.0
+			#How much natural armor points Zombified Piglin Brute Servants have, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			zombifiedPiglinBruteServantArmor = 2.0
 
 	[Attributes.Illagers]
 		#How much Max Health Conquillager have, Default: 24.0
@@ -102,18 +108,21 @@
 	[Attributes."Summoned Mobs"]
 
 		[Attributes."Summoned Mobs"."Zombie Servant"]
-			#How much Max Health Zombie Servants and variants have, Default: 20.0
+			#How much Max Health Zombie Servants have, Default: 20.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			zombieServantHealth = 20.0
-			#How much damage Zombie Servants and variants deals, Default: 3.0
+			#How much damage Zombie Servants deals, Default: 3.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			zombieServantDamage = 3.0
+			#How much natural armor points Zombie Servants have, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			zombieServantArmor = 2.0
 
 		[Attributes."Summoned Mobs"."Skeleton Servant"]
-			#How much Max Health Skeleton Servants and variants have, Default: 20.0
+			#How much Max Health Skeleton Servants have, Default: 20.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			skeletonServantHealth = 20.0
-			#How much damage Skeleton Servants and variants deals, Default: 3.0
+			#How much damage Skeleton Servants deals, Default: 2.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			skeletonServantDamage = 3.0
 
@@ -143,6 +152,9 @@
 			#How much damage Zombie Vindicators deals, Default: 5.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			zombieVindicatorDamage = 5.0
+			#How much natural armor points Zombie Vindicators have, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			zombieVindicatorArmor = 2.0
 
 		[Attributes."Summoned Mobs".Vex]
 			#How much Max Health Summoned Vexes have, Default: 14.0
@@ -181,6 +193,74 @@
 			#How much damage Haunts deals, Default: 2.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			hauntDamage = 2.0
+
+		[Attributes."Summoned Mobs"."Husk Servant"]
+			#How much Max Health Husk Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			huskServantHealth = 20.0
+			#How much natural armor points Husk Servants have, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			huskServantArmor = 2.0
+			#How much damage Husk Servants deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			huskServantDamage = 3.0
+
+		[Attributes."Summoned Mobs"."Drowned Servant"]
+			#How much Max Health Drowned Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			drownedServantHealth = 20.0
+			#How much natural armor points Drowned Servants have, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			drownedServantArmor = 2.0
+			#How much damage Drowned Servants deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			drownedServantDamage = 3.0
+
+		[Attributes."Summoned Mobs"."Frozen Zombie Servant"]
+			#How much Max Health Frozen Zombie Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			frozenZombieServantHealth = 20.0
+			#How much natural armor points Frozen Zombie Servants have, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			frozenZombieServantArmor = 2.0
+			#How much damage Frozen Zombie Servants deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			frozenZombieServantDamage = 3.0
+
+		[Attributes."Summoned Mobs"."Jungle Zombie Servant"]
+			#How much Max Health Jungle Zombie Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			jungleZombieServantHealth = 20.0
+			#How much natural armor points Jungle Zombie Servants have, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			jungleZombieServantArmor = 2.0
+			#How much damage Jungle Zombie Servants deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			jungleZombieServantDamage = 3.0
+
+		[Attributes."Summoned Mobs"."Stray Servant"]
+			#How much Max Health Stray Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			strayServantHealth = 20.0
+			#How much damage Stray Servants deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			strayServantDamage = 2.0
+
+		[Attributes."Summoned Mobs"."Mossy Skeleton Servant"]
+			#How much Max Health Mossy Skeleton Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			mossySkeletonServantHealth = 20.0
+			#How much damage Mossy Skeleton Servants deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			mossySkeletonServantDamage = 2.0
+
+		[Attributes."Summoned Mobs"."Sunken Skeleton Servant"]
+			#How much Max Health Sunken Skeleton Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			sunkenSkeletonServantHealth = 20.0
+			#How much damage Sunken Skeleton Servants deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			sunkenSkeletonServantDamage = 2.0
 
 	[Attributes.Mini-Bosses]
 

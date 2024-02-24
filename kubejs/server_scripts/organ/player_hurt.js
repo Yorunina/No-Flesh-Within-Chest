@@ -61,13 +61,10 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:color_palette': function (event, organ, data) {
         let player = event.source.player
-        if (player.getMainHandItem() != 'kubejs:artist_wand') {
+        if (player.getMainHandItem() != 'kubejs:artist_wand' && player.getOffHandItem() != 'kubejs:artist_wand') {
             return
         }
-
-        if (event.source.type == 'irons_spellbooks.firebolt'
-            || event.source.type == 'irons_spellbooks.icicle'
-            || event.source.type == 'irons_spellbooks.poison_arrow') {
+        if (event.source.type == 'irons_spellbooks.firebolt' || event.source.type == 'irons_spellbooks.icicle' || event.source.type == 'irons_spellbooks.poison_arrow') {
             let amplify = 30
             if (player.hasEffect('kubejs:colorful')) {
                 amplify = 20
@@ -170,7 +167,7 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:lava_life_cycle_system': function (event, organ, data) {
         let player = event.source.player
         let count = player.persistentData.getInt(resourceCount)
-        let damageBonus = Math.floor(count / 20)
+        let damageBonus = Math.floor(count / 10)
         if (damageBonus > 0) {
             event.amount = event.amount + damageBonus
             updateResourceCount(player, count - damageBonus)
@@ -184,7 +181,7 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:the_third_eye': function (event, organ, data) {
         if (event.source.type != 'arrow') return
-        event.entity.invulnerableTime = event.entity.invulnerableTime / 2
+        event.entity.invulnerableTime = event.entity.invulnerableTime * 3 / 4
         event.amount = event.amount * 0.75
     },
     'kubejs:enery_bottle_max': function (event, organ, data) {

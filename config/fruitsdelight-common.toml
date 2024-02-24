@@ -15,4 +15,16 @@ rageEffectRange = 24
 healEffectRange = 6
 #Enable cauldron jam and jello recipe
 enableCauldronRecipe = true
+#Chance for peach to grow per random tick
+#Range: 0.0 ~ 1.0
+peachGrowChance = 0.1
+#Chance for peach to grow fruit when stop flowering
+#Range: 0.0 ~ 1.0
+peachFruitChance = 0.3
+#Chance for peach to decay when fruiting
+#Range: 0.0 ~ 1.0
+peachDecayChance = 0.1
+#Effect application range for Alienating effect
+#Range: 0 ~ 64
+alienatingEffectRange = 12
 

@@ -62,13 +62,13 @@ ServerEvents.tags('item', event => {
     ])
 
     event.add('kubejs:is_cookie', [
-        'minecraft:cookie',
         'extradelight:apple_cookie',
         'extradelight:gingerbread_cookie',
         'extradelight:glow_berry_cookie',
         'extradelight:sugar_cookie',
         'extradelight:pumpkin_cookie',
         'farmersdelight:honey_cookie',
+        'minecraft:cookie',
         'farmersdelight:sweet_berry_cookie',
         'extradelight:sugar_cookie_steve',
         'extradelight:sugar_cookie_alex',
