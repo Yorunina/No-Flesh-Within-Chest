@@ -39,7 +39,7 @@ const organPlayerTickStrategies = {
             updateResourceCount(player, count - 1)
         }
     },
-};
+}
 
 /**
  * 玩家Tick秒级唯一策略
@@ -49,7 +49,7 @@ const organPlayerTickStrategies = {
 const organPlayerTickOnlyStrategies = {
     'kubejs:platelet_dispatcher': function (event, organ) {
         let player = event.player
-        if (player.health != player.maxHealth && player.health > player.maxHealth * 0.75) {
+        if (player.health >= player.maxHealth * 0.75 && player.health < player.maxHealth) {
             player.heal(1)
         }
     },
@@ -81,18 +81,13 @@ const organPlayerTickOnlyStrategies = {
         if (player.hasEffect('minecraft:strength')) {
             amplifier = player.getEffect('minecraft:strength').getAmplifier()
         }
-        player.potionEffects.add('minecraft:strength', 6 * 20, Math.min(amplifier + 1, 4))
+        player.potionEffects.add('minecraft:strength', 20 * 6, clamp(1, amplifier + 1, 4))
     },
     'kubejs:mini_vampire': function (event, organ) {
         let player = event.player
-        let maxHealth = player.getMaxHealth()
-        let health = player.getHealth()
-        if (health < maxHealth * 0.1) {
-            player.potionEffects.add('kubejs:vampiric', 20 * 3, 2)
-        } else if (health < maxHealth * 0.2) {
-            player.potionEffects.add('kubejs:vampiric', 20 * 3, 1)
-        } else if (health < maxHealth * 0.3) {
-            player.potionEffects.add('kubejs:vampiric', 20 * 3, 0)
+        let healthPrecent = player.getHealth() / player.getMaxHealth()
+        if (healthPrecent <= 0.3) {
+            player.potionEffects.add('kubejs:vampiric', 20 * 3, Math.floor(3 - healthPrecent * 10))
         }
     },
-};
+}

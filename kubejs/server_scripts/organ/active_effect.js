@@ -114,12 +114,12 @@ const organActiveStrategies = {
     'kubejs:love_between_lava_and_ice': function (player, organ, attributeMap) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (itemMap.has('minecraft:blue_ice')) {
-            let iceMuti = itemMap.get('minecraft:blue_ice').length * 0.1
-            attributeMapValueAddition(attributeMap, global.ICE_SPELL_POWER, iceMuti)
+            let iceMulti = itemMap.get('minecraft:blue_ice').length * 0.1
+            attributeMapValueAddition(attributeMap, global.ICE_SPELL_POWER, iceMulti)
         }
         if (itemMap.has('minecraft:magma_block')) {
-            let fireMuti = itemMap.get('minecraft:magma_block').length * 0.1
-            attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMuti)
+            let fireMulti = itemMap.get('minecraft:magma_block').length * 0.1
+            attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMulti)
         }
     },
     'kubejs:stomach_tumor': function (player, organ, attributeMap) {

@@ -8,10 +8,11 @@
 function vulnerableEntityHurt(event, data) {
     let entity = event.entity;
     if (entity.hasEffect('kubejs:vulnerable')) {
-        let vulnerableEffect = entity.getEffect('kubejs:vulnerable')
-        let amplifier = vulnerableEffect.getAmplifier();
+        let amplifier = entity
+            .getEffect('kubejs:vulnerable')
+            .getAmplifier() + 1;
         // 有效等级最高为5
-        event.amount = event.amount * (amplifier * 0.1 + 1.1)
+        event.amount *= 1.0 + clamp(0.0, amplifier * 0.1, 0.5)
         return;
     }
 }

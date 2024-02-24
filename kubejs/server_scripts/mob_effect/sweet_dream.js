@@ -19,14 +19,15 @@
  */
 function sweetDreamPlayerHurtByOthers(event, data) {
     let player = event.entity;
+    let itemMap = getPlayerChestCavityItemMap(player);
     if (player.hasEffect('kubejs:sweet_dream')) {
-        let itemMap = getPlayerChestCavityItemMap(player);
         if (!itemMap.has('kubejs:candy_heart')) {
             return;
         }
         let sweetDreamPotion = player.getEffect('kubejs:sweet_dream')
         let damage = event.amount;
-        if (sweetDreamPotion.getDuration() * (sweetDreamPotion.getAmplifier() + 1) < damage * 20) {
+        let amplifier = sweetDreamPotion.getAmplifier();
+        if (sweetDreamPotion.getDuration() * (amplifier + 1) < damage * 20) {
             player.removeEffect('kubejs:sweet_dream');
             if (itemMap.has('kubejs:candy_pancreas')) {
                 player.potionEffects.add('minecraft:absorption', 20 * 30, 4);
@@ -34,30 +35,25 @@ function sweetDreamPlayerHurtByOthers(event, data) {
             event.amount = 0
             return;
         }
-        let duration = Math.floor(sweetDreamPotion.getDuration() - damage * 20 * 2 / (sweetDreamPotion.getAmplifier() + 1));
-        duration = Math.min(duration, 600 * 20)
-        let amplifier = sweetDreamPotion.getAmplifier();
+        let duration = Math.floor(sweetDreamPotion.getDuration() - damage * 20 * 2 / (amplifier + 1));
         player.removeEffect('kubejs:sweet_dream')
-        player.potionEffects.add('kubejs:sweet_dream', duration, amplifier);
+        player.potionEffects.add('kubejs:sweet_dream', Math.min(duration, 600 * 20), amplifier);
         event.amount = 0
         return;
     }
 
     if (event.amount >= 10 && !player.hasEffect('kubejs:sweet_dream')) {
-        let itemMap = getPlayerChestCavityItemMap(player);
         if (!itemMap.has('kubejs:magic_hippocampus')) {
             return;
         }
-        let durationMuti = 1;
-        let amplifierMuti = 0;
+        let durationMulti = 1;
+        let amplifierMulti = 0;
         if (itemMap.has('kubejs:magic_muscle')) {
-            durationMuti = durationMuti + itemMap.get('kubejs:magic_muscle').length
+            durationMulti += itemMap.get('kubejs:magic_muscle').length
         }
         if (itemMap.has('kubejs:magic_spine')) {
-            amplifierMuti = amplifierMuti + Math.floor(itemMap.get('kubejs:magic_spine').length / 2)
+            amplifierMulti += Math.floor(itemMap.get('kubejs:magic_spine').length / 2)
         }
-        if (!player.hasEffect('kubejs:sweet_dream')) {
-            player.potionEffects.add('kubejs:sweet_dream', 20 * 10 * durationMuti, amplifierMuti);
-        }
+        player.potionEffects.add('kubejs:sweet_dream', 20 * 10 * durationMulti, amplifierMulti);
     }
 }

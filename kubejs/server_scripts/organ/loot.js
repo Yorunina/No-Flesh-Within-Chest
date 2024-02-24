@@ -133,7 +133,7 @@ const chestLootOnlyStrategies = {
             // 幸运系数，用于控制幸运对于属性的影响，开方下降趋势
             let luckElement = Math.floor(Math.sqrt(Math.max(player.getLuck(), 1)))
             // 实际属性 = 属性系数 * 扩散系数 * 幸运系数；例100幸运的最高属性为 1 * 1/2 * 10
-            let attriValue = Math.min(attri.muti * diffusivity * luckElement, attri.max)
+            let attriValue = Math.min(attri.multi * diffusivity * luckElement, attri.max)
             item.nbt.organData.put(attriName, attriValue)
         }
         event.addLoot(item)

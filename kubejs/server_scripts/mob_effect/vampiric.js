@@ -9,10 +9,11 @@ function vampiricEntityHurtByPlayer(event, data) {
     let damageSourcePlayer = event.source.player;
     if (damageSourcePlayer.hasEffect('kubejs:vampiric')) {
         let damage = event.amount;
-        let vampiricEffect = damageSourcePlayer.getEffect('kubejs:vampiric')
-        let amplifier = vampiricEffect.getAmplifier();
+        let amplifier = damageSourcePlayer
+            .getEffect('kubejs:vampiric')
+            .getAmplifier() + 1;
         // 有效等级最高为5
-        let vampiricRate = 0.2 + Math.min(amplifier * 0.2, 0.8);
+        let vampiricRate = clamp(0.2, amplifier * 0.2, 1.0);
         damageSourcePlayer.heal(Math.floor(vampiricRate * damage));
         return;
     }

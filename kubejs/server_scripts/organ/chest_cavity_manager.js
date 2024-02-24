@@ -167,11 +167,7 @@ function getPlayerChestCavityTypeMap(player) {
  */
 
 function checkPlayerHasChestCavityMap(player) {
-    let uuid = String(player.getUuid());
-    if (playerChestCavityHashMap.has(uuid)) {
-        return true;
-    }
-    return false;
+    return playerChestCavityHashMap.has(String(player.getUuid()));
 }
 
 const fourDirectionList = ['up', 'down', 'left', 'right']

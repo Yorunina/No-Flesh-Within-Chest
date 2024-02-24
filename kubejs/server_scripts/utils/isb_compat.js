@@ -17,3 +17,5 @@ function getShuffledList(list) {
     }
     return list;
 }
+
+const clamp = (min, value, max) => Math.max(Math.min(value, max), min)
