@@ -7,18 +7,18 @@
  */
 function pardonOfGodEntityHurtByPlayer(event, data) {
     let entity = event.entity
-    switch (true) {
-        case (event.source.getType() == 'player'):
+    switch (event.source.getType().slice(0, 16)) {
+        case 'player':
             if (entity.hasEffect('kubejs:pardon_of_god_melee')) {
                 pardonOfGodLevelEffect(event, data, entity.getEffect('kubejs:pardon_of_god_melee').getAmplifier())
             }
             break;
-        case (event.source.getType() == 'arrow'):
+        case 'arrow':
             if (entity.hasEffect('kubejs:pardon_of_god_projectile')) {
-                pardonOfGodLevelEffect(event, data, entity.getEffect('kubejs:pardon_of_god_projectile').getAmplifier())
+                pardonOfGodLevelEffect(event, data, entity.getEffect('kubejs:pardon_of_god_projectile')?.getAmplifier())
             }
             break;
-        case (event.source.getType().startsWith('irons_spellbooks')):
+        case 'irons_spellbooks':
             if (entity.hasEffect('kubejs:pardon_of_god_magic')) {
                 pardonOfGodLevelEffect(event, data, entity.getEffect('kubejs:pardon_of_god_magic').getAmplifier())
             }
@@ -35,23 +35,11 @@ function pardonOfGodEntityHurtByPlayer(event, data) {
  * @param {number} amplifier 
  */
 function pardonOfGodLevelEffect(event, data, amplifier) {
-    switch (amplifier) {
-        case 0:
-            event.amount = 0
-            break;
-        case 1:
-            event.entity.heal(event.amount)
-            event.amount = 0
-            break;
-        case 2:
-            event.entity.heal(event.amount)
-            data.returnDamage = data.returnDamage + event.amount
-            event.amount = 0
-            break;
-        default:
-            event.entity.heal(event.amount)
-            data.returnDamage = data.returnDamage + event.amount
-            event.amount = 0
-            break;
+    if (amplifier > 0) {
+        event.entity.heal(event.amount)
+        if(amplifier > 1) {
+            data.returnDamage += event.amount
+        }
     }
+    event.amount = 0
 }

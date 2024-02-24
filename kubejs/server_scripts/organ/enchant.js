@@ -61,11 +61,10 @@ const organPlayerEnchantOnlyStrategies = {
         slotList.forEach(slot => {
             let enchantSlot = event.get(slot)
             let allLevel = 0
-            enchantSlot.addEnchantment(randomGet(curseEnchantList), 0)
-            enchantSlot.addEnchantment(randomGet(curseEnchantList), 0)
-            enchantSlot.addEnchantment(randomGet(curseEnchantList), 0)
-            enchantSlot.addEnchantment(randomGet(curseEnchantList), 0)
-            enchantSlot.addEnchantment(randomGet(curseEnchantList), 0)
+            let shuffledCurseList = getShuffledList(curseEnchantList)
+            for(let i = 0; i < 5; i++) {
+                enchantSlot.addEnchantment(shuffledCurseList[i], 0)
+            }
             let enchantList = enchantSlot.getEnchantmentIds()
             let targetEnchant = randomGet(enchantList)
             enchantSlot.forEachEnchantments((enchantment, level) => {

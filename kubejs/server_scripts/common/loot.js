@@ -6,19 +6,19 @@ LootJS.modifiers(event => {
                 LootEntry.of('kubejs:mysterious_trinket').when((c) => c.randomChance(0.8)),
             )
             .addAlternativesLoot(
-                LootEntry.of('simplehats:hatbag_common').when((c) => c.randomChance(0.3)),
-                LootEntry.of('simplehats:hatbag_uncommon').when((c) => c.randomChance(0.3)),
-                LootEntry.of('simplehats:hatbag_rare').when((c) => c.randomChance(0.3)),
-                LootEntry.of('simplehats:hatbag_epic').when((c) => c.randomChance(0.2)),
-                LootEntry.of('simplehats:hatbag_summer').when((c) => c.randomChance(0.2)),
-                LootEntry.of('simplehats:hatbag_easter').when((c) => c.randomChance(0.2)),
-                LootEntry.of('simplehats:hatbag_festive').when((c) => c.randomChance(0.2)),
-                LootEntry.of('simplehats:hatbag_halloween').when((c) => c.randomChance(0.2)),
+                LootEntry.of('simplehats:hatbag_common').when((c) => c.randomChance(0.3)), //0.3 => 0.3
+                LootEntry.of('simplehats:hatbag_uncommon').when((c) => c.randomChance(0.2857)), //0.21 => 0.2
+                LootEntry.of('simplehats:hatbag_rare').when((c) => c.randomChance(0.2999)), //0.147 => 0.15
+                LootEntry.of('simplehats:hatbag_epic').when((c) => c.randomChance(0.2143)), //0.0686 => 0.075
+                LootEntry.of('simplehats:hatbag_summer').when((c) => c.randomChance(0.1818)), //0.0549 => 0.05
+                LootEntry.of('simplehats:hatbag_easter').when((c) => c.randomChance(0.2222)), //0.0439 => 0.05
+                LootEntry.of('simplehats:hatbag_festive').when((c) => c.randomChance(0.2857)), //0.0351 => 0.05
+                LootEntry.of('simplehats:hatbag_halloween').when((c) => c.randomChance(0.3999)), //0.0281 => 0.05
             )
             .addAlternativesLoot(
-                LootEntry.of('lightmanscurrency:coin_gold').when((c) => c.randomChance(0.5)),
-                LootEntry.of('lightmanscurrency:coin_emerald').when((c) => c.randomChance(0.3)),
-                LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.1)),
+                LootEntry.of('lightmanscurrency:coin_gold').when((c) => c.randomChance(0.5)), //0.5
+                LootEntry.of('lightmanscurrency:coin_emerald').when((c) => c.randomChance(0.4)), //0.15 => 0.2
+                LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.25)), //0.035 => 0.075
             )
     }
 

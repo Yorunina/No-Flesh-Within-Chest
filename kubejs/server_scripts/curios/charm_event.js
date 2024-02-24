@@ -1,9 +1,9 @@
 // 
 // 击杀任务
 EntityEvents.death(event => {
-    let entity = event.entity;
-    let player = event.source.player;
-    if (!player) { return }
+    let entity = event.entity
+    let player = event.source.player
+    if (!player) return
     let curiosItem = getCuriosItem(player, 'kubejs:organ_charm')
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'kill') {
         if (curiosItem.nbt.status == 1) {
@@ -27,9 +27,9 @@ EntityEvents.death(event => {
 
 // 饮食任务
 ItemEvents.foodEaten(event => {
-    let player = event.player;
-    if (!player) return;
-    let food = event.item;
+    let player = event.player
+    if (!player) return
+    let food = event.item
     let curiosItem = getCuriosItem(player, 'kubejs:organ_charm')
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'diet') {
         if (curiosItem.nbt.status == 1) {
@@ -51,9 +51,9 @@ ItemEvents.foodEaten(event => {
 
 //挖掘任务
 BlockEvents.broken(event => {
-    let player = event.player;
-    if (!player) return;
-    let targetblock = event.block;
+    let player = event.player
+    if (!player) return
+    let targetblock = event.block
     let curiosItem = getCuriosItem(player, 'kubejs:organ_charm')
     if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'mining') {
         if (curiosItem.nbt.status == 1) {
@@ -64,13 +64,11 @@ BlockEvents.broken(event => {
                 return
             }
         }
-        
         curiosItem.nbt.miningTask.counter++
         if (curiosItem.nbt.miningTask?.counter >= curiosItem.nbt.miningTask?.miningAmount) {
             curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
             curiosItem.nbt.status = 1
         }
-
         if (curiosItem.nbt.miningTask.consume) {
             targetblock.set('minecraft:air')
             event.cancel()
@@ -94,7 +92,7 @@ function organCharmPlayerHurtByOthers(event, data) {
         if (event.amount < curiosItem.nbt.bearTask?.minDamage) {
             return
         }
-        curiosItem.nbt.bearTask.counter = curiosItem.nbt.bearTask.counter + event.amount
+        curiosItem.nbt.bearTask.counter += event.amount
         if (curiosItem.nbt.bearTask?.counter >= curiosItem.nbt.bearTask?.bearAmount) {
             curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
             curiosItem.nbt.status = 1
@@ -121,14 +119,14 @@ function organCharmEntityHurtByPlayer(event, data) {
         }
         if (curiosItem.nbt.damageTask?.type) {
             let type = 'other'
-            switch (true) {
-                case (event.source.getType() == 'player'):
+            switch (event.source.getType().slice(0, 16)) {
+                case 'player':
                     type = 'melee'
                     break;
-                case (event.source.getType() == 'arrow'):
+                case 'arrow':
                     type = 'projectile'
                     break;
-                case (event.source.getType().startsWith('irons_spellbooks')):
+                case 'irons_spellbooks':
                     type = 'magic'
                     break;
                 default:
@@ -138,7 +136,7 @@ function organCharmEntityHurtByPlayer(event, data) {
                 return
             }
         }
-        curiosItem.nbt.damageTask.counter = curiosItem.nbt.damageTask.counter + event.amount
+        curiosItem.nbt.damageTask.counter += event.amount
         if (curiosItem.nbt.damageTask?.counter >= curiosItem.nbt.damageTask?.damageAmount) {
             curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
             curiosItem.nbt.status = 1
@@ -148,8 +146,11 @@ function organCharmEntityHurtByPlayer(event, data) {
 }
 
 
-function getCuriosItem(player, itemId) {
-    let slotResult = new $CuriosApi().getCuriosHelper().findEquippedCurio(Item.of(itemId), player);
+function getCuriosItem (player, itemId) {
+    let slotResult = new $CuriosApi()
+        .getCuriosHelper()
+        .findEquippedCurio(Item.of(itemId), player)
+
     if (slotResult.isPresent()) {
         return slotResult.get().getRight()
     }

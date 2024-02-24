@@ -41,11 +41,7 @@ global.updatePlayerActiveStatus = player => {
  */
 
 function getPlayerAttributeMap(player) {
-    let uuid = String(player.getUuid());
-    if (playerAttributeMap.has(uuid)) {
-        return playerAttributeMap.get(uuid);
-    }
-    return new Map();
+    return playerAttributeMap.get(String(player.getUuid())) ?? new Map()
 }
 
 /**

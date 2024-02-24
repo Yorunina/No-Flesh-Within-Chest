@@ -14,14 +14,13 @@ function powerOfWorldPlayerHurtByOthers(event, data) {
         player.potionEffects.add('minecraft:weakness', 20 * 10 * (amplifier + 1), (amplifier + 1))
         entity.potionEffects.add('minecraft:resistance', 30 , 4)
     }
-    
 }
 
-// priority: 6
 /**
  * 领域之力
  * @param {Internal.LivingHurtEvent} event 
  * @param {EntityHurtCustomModel} data 
+ * @returns
  */
 function powerOfWorldEntityHurtByPlayer(event, data) {
     let player = event.source.player;
@@ -29,12 +28,10 @@ function powerOfWorldEntityHurtByPlayer(event, data) {
     if (!(entity.isLiving() && entity.hasEffect('kubejs:power_of_world') && event.source.type == 'player')) {
         return
     }
-    if (player.hasEffect('minecraft:weakness') 
-    && entity.hasEffect('kubejs:power_of_world') 
-    && entity.hasEffect('minecraft:resistance') 
-    && entity.getEffect('minecraft:resistance').getAmplifier() == 4)
-    {
-        data.returnDamage = Math.min(event.amount * 0.5 , player.getMaxHealth() * 1.5 )
-        event.amount = 0
+    if (player.hasEffect('minecraft:weakness') && entity.hasEffect('kubejs:power_of_world')) {
+        if (entity.hasEffect('minecraft:resistance') && entity.getEffect('minecraft:resistance').getAmplifier() == 4) {
+            data.returnDamage = Math.min(event.amount * 0.5 , player.getMaxHealth() * 1.5)
+            event.amount = 0
+        }
     }
 }
