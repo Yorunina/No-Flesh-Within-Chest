@@ -87,7 +87,7 @@ const worldOfBossTypeList = [
 
 const tumorAttriBute = [
     { name: 'chestcavity:filtration', multi: 1, max: 3 },
-    { name: 'chestcavity:breath_recovery', multi: 0.5, max: 3 },
+    { name: 'chestcavity:breath_recovery', multi: 1, max: 3 },
     { name: 'chestcavity:nutrition', multi: 1, max: 3 },
     { name: 'chestcavity:nerves', multi: 0.5, max: 5 },
     { name: 'chestcavity:strength', multi: 0.5, max: 10 },
@@ -96,7 +96,7 @@ const tumorAttriBute = [
     { name: 'chestcavity:detoxification', multi: 1, max: 3 },
     { name: 'chestcavity:speed', multi: 0.5, max: 5 },
     { name: 'chestcavity:endurance', multi: 1, max: 3 },
-    { name: 'chestcavity:luck', multi: 0.5, max: 3 },
+    { name: 'chestcavity:luck', multi: 0.5, max: 4 },
     { name: 'chestcavity:defense', multi: 0.5, max: 5 },
     { name: 'chestcavity:digestion', multi: 1, max: 3 },
     { name: 'chestcavity:metabolism', multi: 1, max: 3 },

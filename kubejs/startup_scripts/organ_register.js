@@ -534,6 +534,18 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only')
         .tag('itemborders:diamond');
 
+    registerOrgan(new Organ('kubejs:prismarine_crown')
+        .addScore('swim_speed', 2)
+        .addScore('water_breath', 2)
+        .addScore('luck', 1.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.prismarine_crown.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.prismarine_crown.2" })])
+        .build())
+        .texture('kubejs:item/organs/legends/prismarine_crown')
+        .tag('kubejs:legends')
+        .tag('kubejs:active_only')
+        .tag('itemborders:diamond');
+
     registerOrgan(new Organ('kubejs:illithids')
         .addScore('health', -0.5)
         .addScore('nerves', 1.75)
@@ -586,6 +598,7 @@ StartupEvents.registry('item', event => {
         .addScore('endurance', 0.25)
         .addScore('digestion', 0.125)
         .addScore('metabolism', 0.125)
+        .addScore('breath_capacity', 0.125)
         .addScore('speed', 0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.relic_metal_plate.1" })])
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.relic_metal_plate.2" })])
@@ -969,12 +982,22 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:fish_in_chest')
-        .addScore('defense', -0.5)
+        .addScore('health', 0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.fish_in_chest.1" })])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.fish_in_chest.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.fish_in_chest.3" })])
         .build())
         .texture('kubejs:item/organs/relics/fish_in_chest')
         .tag('kubejs:active_only')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:broken_prismarine_crown')
+        .addScore('glowing', 1)
+        .addScore('water_breath', 2)
+        .addScore('swim_speed', 2)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.broken_prismarine_crown.1" })])
+        .build())
+        .texture('kubejs:item/organs/relics/broken_prismarine_crown')
         .tag('kubejs:relics');
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
@@ -1280,7 +1303,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:food');
 
     registerOrgan(new Organ('kubejs:chicken_strip')
-        .addScore('luck', 1)
+        .addScore('luck', 0.5)
         .addScore('strength', 1.5)
         .build())
         .food(food => { food.hunger(4).saturation(1) })

@@ -107,6 +107,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
 				"&d《世界BOSS》模组&r提供了&d21个BOSS&r，可以通过两种方式召唤："
 				""
@@ -131,48 +132,84 @@
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
 			hide_dependent_lines: true
+			icon: "somebosses:furnace_torch"
 			id: "1102363C412CD193"
-			tasks: [{
-				id: "629A895A3CE691EF"
-				item: "somebosses:furnace_torch"
+			rewards: [{
+				id: "4ADAE1FE667FB3EE"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:flaming_berserker"
+				icon: "somebosses:furnace_torch"
+				id: "50715CBDF1EB9744"
+				type: "kill"
+				value: 1L
+			}]
+			title: "烈焰狂战士"
 			x: -3.25d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:rusty_sword_relic"
 			id: "7AA225CFD6F6BBA8"
-			tasks: [{
-				id: "3160511F8EE8A99B"
-				item: "somebosses:rusty_sword_relic"
+			rewards: [{
+				id: "64F5B2DFB0EC7547"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:ancient_wizard"
+				icon: "somebosses:rusty_sword_relic"
+				id: "5E0A9FF724BA1550"
+				type: "kill"
+				value: 1L
+			}]
+			title: "远古巫师"
 			x: -2.25d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:token_of_the_ninja"
 			id: "3F743349368C7471"
-			tasks: [{
-				id: "7C04F5F88E91532C"
-				item: "somebosses:token_of_the_ninja"
+			rewards: [{
+				id: "13C26E66608F75A3"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:merciless_assasin"
+				icon: "somebosses:token_of_the_ninja"
+				id: "52DCCF460ED4A7AC"
+				type: "kill"
+				value: 1L
+			}]
+			title: "冷血杀手"
 			x: -1.25d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:frozen_shield_plate"
 			id: "63D8444AA3929FF8"
-			tasks: [{
-				id: "38FCE8C2264B0871"
-				item: "somebosses:frozen_shield_plate"
+			rewards: [{
+				id: "4C3BA9A8DFAE10BD"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:froverlord"
+				icon: "somebosses:frozen_shield_plate"
+				id: "69B7E0CB804B21C1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "永冻领主"
 			x: -0.25d
 			y: 5.25d
 		}
@@ -181,207 +218,360 @@
 			hide_dependency_lines: true
 			icon: "somebosses:gilded_dynamite"
 			id: "3AB7F8C482DD8089"
-			tasks: [{
-				id: "46F66165938CF637"
-				item: "somebosses:frozen_shield_plate"
+			rewards: [{
+				id: "544BCBC2A66F8CC4"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:vulcan"
+				icon: "somebosses:gilded_dynamite"
+				id: "1B560DD1BDD2C474"
+				type: "kill"
+				value: 1L
+			}]
+			title: "火神"
 			x: 0.75d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:disgusting_pendant"
 			id: "38AC8A74FA810D8B"
-			tasks: [{
-				id: "4924DB8730823E52"
-				item: "somebosses:disgusting_pendant"
+			rewards: [{
+				id: "596BF39114567089"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:ender_ordnance"
+				icon: "somebosses:disgusting_pendant"
+				id: "3815A80B52886D00"
+				type: "kill"
+				value: 1L
+			}]
+			title: "末影军械"
 			x: 1.75d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:cactus_relic"
 			id: "61968EC65ACE7240"
-			tasks: [{
-				id: "38EEF6E3519438C3"
-				item: "somebosses:cactus_relic"
+			rewards: [{
+				id: "05C8D640DD78ED62"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:sand_giant"
+				icon: "somebosses:cactus_relic"
+				id: "32D786742A29FE95"
+				type: "kill"
+				value: 1L
+			}]
+			title: "聚沙巨魔"
 			x: 2.75d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:illegal_beacon"
 			id: "3075B2CEE684B68F"
-			tasks: [{
-				id: "5765E4091F579C3A"
-				item: "somebosses:illegal_beacon"
+			rewards: [{
+				id: "633BAE92D8BE4C31"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:aesegull"
+				icon: "somebosses:illegal_beacon"
+				id: "60473F608F6D0ED7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "立场欺诈者"
 			x: 3.75d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:one_eyed_wrait_in_a_bottle"
 			id: "2FA35E059E71C850"
-			tasks: [{
-				id: "6BE60D24D4D390A0"
-				item: "somebosses:one_eyed_wrait_in_a_bottle"
+			rewards: [{
+				id: "204BA8482812BBAF"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:mono_eyed_skeleton"
+				icon: "somebosses:one_eyed_wrait_in_a_bottle"
+				id: "642CC2B34BF5EA6D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "独眼骷髅"
 			x: 4.75d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:vampire_bait"
 			id: "230A2973CBD947A7"
-			tasks: [{
-				id: "57B6FF534EDCE7D2"
-				item: "somebosses:vampire_bait"
+			rewards: [{
+				id: "0557DD550D4BBF8C"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:crimson_vampire"
+				icon: "somebosses:vampire_bait"
+				id: "31A61EA9AF129F99"
+				type: "kill"
+				value: 1L
+			}]
+			title: "吸血鬼恶魔"
 			x: 5.75d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:prismarine_eye"
 			id: "35A35A62C6E9C71C"
-			tasks: [{
-				id: "26883123B5C51F33"
-				item: "somebosses:prismarine_eye"
+			rewards: [{
+				id: "5BEF044FCFD4CCFC"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:prismarine_watcher"
+				icon: "somebosses:prismarine_eye"
+				id: "197E6493BDE45735"
+				type: "kill"
+				value: 1L
+			}]
+			title: "海晶监视者"
 			x: 6.75d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:burning_volcanic_rock"
 			id: "6BD52270D760EA85"
-			tasks: [{
-				id: "03B76F0429A1FDA7"
-				item: "somebosses:burning_volcanic_rock"
+			rewards: [{
+				id: "1406E729F12B5DFE"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "goety:volcano"
+				icon: "somebosses:burning_volcanic_rock"
+				id: "4BD74DE255841BC2"
+				type: "kill"
+				value: 1L
+			}]
+			title: "火山"
 			x: 7.75d
 			y: 5.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:necromancy_staff"
 			id: "7BBF4518E64E4ACC"
-			tasks: [{
-				id: "180837BFB5F98940"
-				item: "somebosses:necromancy_staff"
+			rewards: [{
+				id: "2C8F875AFF3524EF"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:nameless_one"
+				icon: "somebosses:necromancy_staff"
+				id: "42C80A1D9ACB5F9C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "无名者"
 			x: -3.25d
 			y: 6.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:dark_magic_gauntlet"
 			id: "2696A6262EDDF11F"
-			tasks: [{
-				id: "4E9EAE1C4AF5FA40"
-				item: "somebosses:dark_magic_gauntlet"
+			rewards: [{
+				id: "49B9DAB9331B4DF8"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:hand_head"
+				icon: "somebosses:dark_magic_gauntlet"
+				id: "6893108FD479E03A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "掌手巨怪"
 			x: -2.25d
 			y: 6.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:ice_lantern"
 			id: "778FDD035CA42B56"
-			tasks: [{
-				id: "439ABFC63EFA537E"
-				item: "somebosses:ice_lantern"
+			rewards: [{
+				id: "20035B030A364ED5"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:frost_magma"
+				icon: "somebosses:ice_lantern"
+				id: "7B93A9698C4ABB05"
+				type: "kill"
+				value: 1L
+			}]
+			title: "霜冻岩浆怪"
 			x: -1.25d
 			y: 6.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:bone_of_curse"
 			id: "497F39A113B0BF24"
-			tasks: [{
-				id: "395C49CFFB0BFDB0"
-				item: "somebosses:bone_of_curse"
+			rewards: [{
+				id: "6212D7BD15A3025A"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:skeleton_demon"
+				icon: "somebosses:bone_of_curse"
+				id: "34FDD847724C203F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "骷髅恶魔"
 			x: -0.25d
 			y: 6.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:slab_of_command"
 			id: "3030197A175A4697"
-			tasks: [{
-				id: "2C75419FE7189115"
-				item: "somebosses:slab_of_command"
+			rewards: [{
+				id: "540A74176A2CF510"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:stone_guard"
+				icon: "somebosses:slab_of_command"
+				id: "79EFBE304F1254CB"
+				type: "kill"
+				value: 1L
+			}]
+			title: "岩之守卫"
 			x: 0.75d
 			y: 6.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:power_generator_core"
 			id: "08D6D0CBC20DCA86"
-			tasks: [{
-				id: "6A9771BAC08C1D02"
-				item: "somebosses:power_generator_core"
+			rewards: [{
+				id: "382CB431FFF1F1A3"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:electric_head"
+				icon: "somebosses:power_generator_core"
+				id: "56DD978A79AD6073"
+				type: "kill"
+				value: 1L
+			}]
+			title: "电磁脉冲头"
 			x: 1.75d
 			y: 6.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:cursed_spring_water"
 			id: "1D7F0AE5B73BDFFE"
-			tasks: [{
-				id: "46701B3A5FAEF821"
-				item: "somebosses:cursed_spring_water"
+			rewards: [{
+				id: "36B9FFD1443AED0D"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:man_of_water"
+				icon: "somebosses:cursed_spring_water"
+				id: "68566DE8DFC3E82E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "水人"
 			x: 2.75d
 			y: 6.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:monochrome_mask"
 			id: "46BE04772520FAA8"
-			tasks: [{
-				id: "10C89A7FF785DD44"
-				item: "somebosses:monochrome_mask"
+			rewards: [{
+				id: "0113135759EB7408"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:dark_mask"
+				icon: "somebosses:monochrome_mask"
+				id: "1B2377F66F966BC8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "暗黑面具"
 			x: 3.75d
 			y: 6.25d
 		}
 		{
 			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
+			icon: "somebosses:chaos_insignia"
 			id: "1340BDC2F17339E1"
-			tasks: [{
-				id: "65FF3942C18E3AB7"
-				item: "somebosses:chaos_insignia"
+			rewards: [{
+				id: "4E442C55F8855AA8"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			tasks: [{
+				entity: "somebosses:knight_garent"
+				icon: "somebosses:chaos_insignia"
+				id: "2C4C603A3B098D7B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "最初的骑士"
 			x: 4.75d
 			y: 6.25d
 		}
 		{
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
 				"&d《Bosses of Mass Destruction》模组&r提供了&d4个BOSS&r，他们生成在不同的结构中，需要玩家去寻找。"
 				""
@@ -411,6 +601,11 @@
 			]
 			hide_dependency_lines: true
 			id: "0334639B0C126A8D"
+			rewards: [{
+				id: "361E3C2D5DA03BDB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "末地浮空城中的秘密"
 			tasks: [{
 				icon: "bosses_of_mass_destruction:obsidian_heart"
@@ -431,6 +626,11 @@
 			]
 			hide_dependency_lines: true
 			id: "61C0C761B09A0584"
+			rewards: [{
+				id: "4C2E32484BC29818"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "下界中的恶魔"
 			tasks: [{
 				icon: "bosses_of_mass_destruction:blazing_eye"
@@ -452,6 +652,11 @@
 			]
 			hide_dependency_lines: true
 			id: "2040133CCC7EBE4F"
+			rewards: [{
+				id: "0104AB526955454E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "灵魂之星指引着你"
 			tasks: [{
 				icon: "bosses_of_mass_destruction:ancient_anima"
@@ -473,6 +678,11 @@
 			]
 			hide_dependency_lines: true
 			id: "147CD351C2BC325E"
+			rewards: [{
+				id: "139BC074ABFBB065"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "随着花粉前往地下"
 			tasks: [{
 				icon: "bosses_of_mass_destruction:void_thorn"
@@ -486,6 +696,7 @@
 			y: 9.25d
 		}
 		{
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
 				"&d《迎战（Meet Your Fight）》模组&r提供了&d4个Boss&r，每个BOSS都有独立的战利品，它们可以合成装备，例如有用的饰品或很酷的武器和工具。"
 				""
@@ -506,6 +717,11 @@
 			dependencies: ["7729DBC45AEF7D17"]
 			hide_dependency_lines: true
 			id: "0B6E24F5105C5DE2"
+			rewards: [{
+				id: "18A9BB3035DEAF81"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7B90C604D7FFF286"
 				item: "meetyourfight:dusk_key"
@@ -518,6 +734,11 @@
 			dependencies: ["7729DBC45AEF7D17"]
 			hide_dependency_lines: true
 			id: "4643F8D77E474B9B"
+			rewards: [{
+				id: "22893403C2B4A2E9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "265FF021C45EBF9C"
 				item: "meetyourfight:haunted_bell"
@@ -530,6 +751,11 @@
 			dependencies: ["7729DBC45AEF7D17"]
 			hide_dependency_lines: true
 			id: "5E53B369B6F8610E"
+			rewards: [{
+				id: "5025C54B55A92A03"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "113A047DE5D55947"
 				item: "meetyourfight:fossil_bait"
@@ -542,6 +768,11 @@
 			dependencies: ["7729DBC45AEF7D17"]
 			hide_dependency_lines: true
 			id: "59C699B6973BBF18"
+			rewards: [{
+				id: "312EF6953D36E427"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "22DD3D3D40626EE1"
 				item: "meetyourfight:devils_ante"
@@ -551,6 +782,7 @@
 			y: 12.25d
 		}
 		{
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
 				"&d《灾变（L_Ender's Cataclysm）》模组&r是一个增加了困难的地牢、具有挑战性的Boss和强大装备的模组。"
 				""
@@ -580,6 +812,11 @@
 			]
 			hide_dependency_lines: true
 			id: "3878A673CAAC5661"
+			rewards: [{
+				id: "054C2CAFBEBF7A21"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "先驱者"
 			tasks: [{
 				id: "6CE0E9211CBD546D"
@@ -601,6 +838,11 @@
 			]
 			hide_dependency_lines: true
 			id: "03005FB0984AFCEF"
+			rewards: [{
+				id: "482AA01B3A302F5D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "焰魔"
 			tasks: [{
 				id: "159DD68E2A7DC5F3"
@@ -624,6 +866,11 @@
 			]
 			hide_dependency_lines: true
 			id: "0F897A2DA9514E5D"
+			rewards: [{
+				id: "74FADBA41EA864F4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "末影守卫"
 			tasks: [{
 				id: "129ACF4E25F69FC6"
@@ -647,6 +894,11 @@
 			]
 			hide_dependency_lines: true
 			id: "7804C70BA041A413"
+			rewards: [{
+				id: "43D130E13C50CFA3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "巨兽"
 			tasks: [{
 				id: "4B3B97B5D040840C"
@@ -668,6 +920,11 @@
 			]
 			hide_dependency_lines: true
 			id: "2CD71AD199802E1A"
+			rewards: [{
+				id: "075A311E229088E4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "利维坦"
 			tasks: [{
 				id: "0FC6DE280E71E942"
@@ -693,6 +950,11 @@
 			]
 			hide_dependency_lines: true
 			id: "4C2CAC391B06FAA8"
+			rewards: [{
+				id: "681F61F0440E688C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "远古遗魂"
 			tasks: [{
 				id: "583B940032B99BEF"
@@ -704,6 +966,7 @@
 			y: 15.5d
 		}
 		{
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
 				"&d《诡厄巫法》&r是一个旨在通过添加大量新功能来增强原版游戏体验的魔法模组，具体在FTB的MOD教学分栏查看。"
 				""
@@ -735,6 +998,11 @@
 			]
 			hide_dependency_lines: true
 			id: "21A1453792744E6A"
+			rewards: [{
+				id: "64C35F6EBB30661B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "59894E78E254799E"
 				item: "goety:soul_ruby"
@@ -753,6 +1021,11 @@
 			]
 			hide_dependency_lines: true
 			id: "2FC7BD983537C21F"
+			rewards: [{
+				id: "36FA891268FCA72E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4A8DC9897AA42647"
 				item: "goety:unholy_blood"
@@ -773,6 +1046,11 @@
 			]
 			hide_dependency_lines: true
 			id: "3770EDC8E8A38EFF"
+			rewards: [{
+				id: "7C23703B836F0D50"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "54F00DCDEE3602E7"
 				item: {
@@ -818,6 +1096,7 @@
 			y: 8.5d
 		}
 		{
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
 				"&d《Iron's Spells 'n Spellbooks》模组&r是一款受经典RPG游戏启发的魔法Mod，具体在FTB的MOD教学分栏查看。"
 				""
@@ -845,6 +1124,7 @@
 			y: 7.5d
 		}
 		{
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
 				"&d《墓园（The Graveyard）》&r模组为Minecraft添加了恐怖的结构，生物和方块，来让你的游戏体验更刺激更具有挑战性。"
 				""
@@ -873,6 +1153,11 @@
 			hide_dependency_lines: true
 			icon: "graveyard:black_bone_staff"
 			id: "6B51398807F1CA21"
+			rewards: [{
+				id: "659002635C610E7D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "巫妖"
 			tasks: [{
 				icon: "minecraft:skeleton_skull"
@@ -886,6 +1171,7 @@
 			y: 11.75d
 		}
 		{
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
 				"通过交货协议可以获得的物品，右击放置于地上可以打开传送门。"
 				""
@@ -914,18 +1200,19 @@
 			dependencies: ["6CD0560928FBA29B"]
 			description: ["&7他曾是掠夺者的帝王，他率领的掠夺袭击从不失败，直到某位至高无上的存在将他囚禁在另一个世界......&r"]
 			hide_dependency_lines: true
-			icon: "lightmanscurrency:coin_gold"
+			icon: "art_of_forging:ancient_blade"
 			id: "48AEAB844E3AC9F6"
-			tasks: [{
-				id: "68CFA540CA3F5F13"
-				item: {
-					Count: 1b
-					id: "gateways:gate_pearl"
-					tag: {
-						gateway: "kubejs:final_raid"
-					}
-				}
+			rewards: [{
+				id: "02E4F5958B10E2E7"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
+			}]
+			tasks: [{
+				entity: "invasioncodered:gashslit"
+				icon: "art_of_forging:ancient_blade"
+				id: "2E1F30B90A7EE461"
+				type: "kill"
+				value: 1L
 			}]
 			title: "裂刃帝王"
 			x: 11.5d

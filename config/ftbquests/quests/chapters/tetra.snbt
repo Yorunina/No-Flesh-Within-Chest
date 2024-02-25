@@ -1299,6 +1299,7 @@
 				"{image:kubejs:textures/task/tetra_3.png width:192 height:108 align:1}"
 			]
 			hide_dependency_lines: true
+			icon: "tetra:forged_workbench"
 			id: "18C215BF94AC8C3F"
 			rewards: [{
 				id: "309E4D043AF5AADF"
