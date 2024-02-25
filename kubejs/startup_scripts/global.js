@@ -97,6 +97,7 @@ global.TYPE_MAP = {
     'kubejs:warp': Text.darkPurple({ "translate": "kubejs.tooltips.warp" }),
     'kubejs:prehistory': Text.of({ "translate": "kubejs.tooltips.prehistory" }).color('#d6d124'),
     'kubejs:dragon': Text.of({ "translate": "kubejs.tooltips.dragon" }).color('#bc00bc'),
+    'kubejs:fantasy': Text.of({ "translate": "kubejs.tooltips.fantasy" }).color('#cd9b9b'),
 }
 
 

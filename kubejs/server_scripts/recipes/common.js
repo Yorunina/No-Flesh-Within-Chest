@@ -166,7 +166,6 @@ ServerEvents.recipes(event => {
     event.smelting('iceandfire:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
     event.blasting('iceandfire:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
 
-
     event.shaped('kubejs:doppelganger', [
         ['', 'nameless_trinkets:reverse_card', ''],
         ['minecraft:totem_of_undying', 'meetyourfight:phantoplasm', 'minecraft:totem_of_undying']])
