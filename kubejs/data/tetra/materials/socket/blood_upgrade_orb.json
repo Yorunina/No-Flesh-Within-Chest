@@ -24,6 +24,7 @@
       "irons_spellbooks:blood_upgrade_orb"
     ]
   },
+  "experienceCost": 20,
   "attributes": {
     "**irons_spellbooks:blood_spell_power": 0.3
   }

@@ -1393,6 +1393,7 @@
     "tetra.stats.stun.tooltip_short": "攻击有几率使目标眩晕",
     "tetra.stats.suspend": "悬浮",
     "tetra.stats.suspend.tooltip": "射出的投射物有 §e100%%§r 初始速度加快，并且在从满弓拉出时忽略重力",
+    "tetra.stats.suspend.tooltip_short": "射出的投射物初始速度加快，并且在从满弓拉出时忽略重力",
     "tetra.stats.sweeping": "横扫之刃",
     "tetra.stats.sweeping.efficiency": "横扫区域",
     "tetra.stats.sweeping.efficiency.tooltip": "增加扫击半径§e%s§r个方块",

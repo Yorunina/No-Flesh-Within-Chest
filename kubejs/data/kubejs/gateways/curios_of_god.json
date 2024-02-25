@@ -21,7 +21,7 @@
             {
                 "attribute": "irons_spellbooks:spell_resist",    
                 "operation": "MULTIPLY_BASE",    
-                "value": 0.95
+                "value": 0.98
             }
         ],
         "rewards": [],
@@ -44,7 +44,7 @@
             {
                 "attribute": "generic.armor",    
                 "operation": "ADDITION",    
-                "value": 80
+                "value": 120
             }
         ],
         "rewards": [],

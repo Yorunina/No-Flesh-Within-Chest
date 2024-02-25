@@ -24,6 +24,7 @@
       "irons_spellbooks:cooldown_upgrade_orb"
     ]
   },
+  "experienceCost": 40,
   "attributes": {
     "**irons_spellbooks:cooldown_reduction": 0.75
   }

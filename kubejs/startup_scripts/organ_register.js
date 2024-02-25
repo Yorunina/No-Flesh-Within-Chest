@@ -1287,6 +1287,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/food/chicken_strip')
         .tag('itemborders:gold')
         .tag('kubejs:food');
+
     // alex
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 

@@ -24,6 +24,7 @@
       "irons_spellbooks:arcane_upgrade_orb"
     ]
   },
+  "experienceCost": 20,
   "attributes": {
     "irons_spellbooks:max_mana": 200
   }

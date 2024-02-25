@@ -163,9 +163,17 @@ ServerEvents.recipes(event => {
     event.smelting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
     event.blasting('minecraft:iron_ingot', 'kubejs:common_mineral_cluster', '5.0')
 
+    event.smelting('iceandfire:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
+    event.blasting('iceandfire:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
+
 
     event.shaped('kubejs:doppelganger', [
         ['', 'nameless_trinkets:reverse_card', ''],
         ['minecraft:totem_of_undying', 'meetyourfight:phantoplasm', 'minecraft:totem_of_undying']])
+
+    event.shaped('kubejs:bunny_hoppers', [
+        ['minecraft:rabbit_hide', 'nameless_trinkets:unknown_fragment', 'minecraft:rabbit_hide'],
+        ['minecraft:rabbit_hide', '', 'minecraft:rabbit_hide'],
+        ['minecraft:rabbit_foot', '', 'minecraft:rabbit_foot']])
 
 })

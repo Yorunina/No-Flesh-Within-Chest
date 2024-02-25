@@ -24,7 +24,7 @@
       ]
     },
     "effects" : {
-      "power": 5
+      "suspend": 2
     },
     "requiredTools": {
       "cut": "minecraft:stone"

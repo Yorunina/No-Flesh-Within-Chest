@@ -37,5 +37,9 @@ JEIEvents.information(event => {
     event.addItem('kubejs:mini_slime', Text.black({ "translate": "kubejs.jei.mini_slime.1" }))
     event.addItem('kubejs:sand_bone', Text.black({ "translate": "kubejs.jei.sand_bone.1" }))
     event.addItem('kubejs:bloody_bone_arrow', Text.black({ "translate": "kubejs.jei.bloody_bone_arrow.1" }))
+    event.addItem('kubejs:vulcan_furnace', Text.black({ "translate": "kubejs.jei.vulcan_furnace.1" }))
+    event.addItem('kubejs:amethyst_magic_core', Text.black({ "translate": "kubejs.jei.amethyst_magic_core.1" }))
+    event.addItem('kubejs:origin_knight_core', Text.black({ "translate": "kubejs.jei.origin_knight_core.1" }))
+    event.addItem('kubejs:fish_in_chest', Text.black({ "translate": "kubejs.jei.fish_in_chest.1" }))
 
 })
