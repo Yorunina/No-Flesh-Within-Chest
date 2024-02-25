@@ -24,11 +24,11 @@
 			dev: false
 			height: 4.467948717948718d
 			hover: [ ]
-			image: "kubejs:textures/task/collection_2.png"
+			image: "kubejs:textures/task/collection_1.png"
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 8.75d
+			y: 23.75d
 		}
 		{
 			click: ""
@@ -40,7 +40,7 @@
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 12.75d
+			y: 14.75d
 		}
 		{
 			click: ""
@@ -52,7 +52,7 @@
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 15.75d
+			y: 17.75d
 		}
 		{
 			click: ""
@@ -64,19 +64,7 @@
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 18.75d
-		}
-		{
-			click: ""
-			corner: false
-			dev: false
-			height: 4.467948717948718d
-			hover: [ ]
-			image: "kubejs:textures/task/collection_1.png"
-			rotation: 0.0d
-			width: 17.0d
-			x: -2.75d
-			y: 21.75d
+			y: 20.75d
 		}
 		{
 			click: ""
@@ -149,6 +137,18 @@
 			width: 17.0d
 			x: 12.5d
 			y: 17.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 5.884615384615385d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_6.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: -2.75d
+			y: 10.0d
 		}
 	]
 	order_index: 1
@@ -275,7 +275,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -295,7 +295,7 @@
 			}]
 			title: "Boss遗物器官"
 			x: -8.75d
-			y: 7.5d
+			y: 8.25d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -635,7 +635,7 @@
 			}]
 			title: "进化器官"
 			x: -8.75d
-			y: 14.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["437705D28D92B135"]
@@ -664,7 +664,7 @@
 			}]
 			title: "模板器官进化"
 			x: -6.75d
-			y: 15.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["437705D28D92B135"]
@@ -691,7 +691,7 @@
 			}]
 			title: "伸缩臂"
 			x: -7.75d
-			y: 15.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -711,14 +711,14 @@
 			}]
 			title: "碎片"
 			x: -8.75d
-			y: 17.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
 			description: [
 				"从&2冷血杀手&r的胸腔中获得，能够给予弱小的敌人强大的反弹伤害。"
 				""
-				"可以将其放置在器官容器中进化为心之剑。"
+				"可以将其放置在器官容器中进化为&6心之剑&r。"
 			]
 			icon: {
 				Count: 1b
@@ -753,7 +753,7 @@
 				}
 			]
 			x: -1.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -775,7 +775,7 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -797,7 +797,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -814,7 +814,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -831,7 +831,7 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -853,7 +853,7 @@
 				type: "item"
 			}]
 			x: 1.25d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -875,7 +875,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -901,7 +901,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -923,7 +923,7 @@
 				type: "item"
 			}]
 			x: 3.25d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -945,7 +945,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -967,7 +967,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1005,7 +1005,7 @@
 				}
 			]
 			x: -7.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["24E73A64F055728A"]
@@ -1051,7 +1051,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1071,7 +1071,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1091,7 +1091,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1111,7 +1111,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1131,7 +1131,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1151,7 +1151,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1171,7 +1171,7 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1191,7 +1191,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1213,7 +1213,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1235,7 +1235,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1257,7 +1257,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1279,7 +1279,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -1295,7 +1295,7 @@
 			}]
 			title: "食物器官"
 			x: -8.75d
-			y: 20.5d
+			y: 22.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1317,7 +1317,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1339,7 +1339,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -1387,7 +1387,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -1533,7 +1533,7 @@
 			}]
 			title: "机械"
 			x: -8.75d
-			y: 11.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1555,7 +1555,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1577,7 +1577,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1599,7 +1599,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1621,7 +1621,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1643,7 +1643,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1669,7 +1669,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1695,7 +1695,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1721,7 +1721,7 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1747,7 +1747,7 @@
 				type: "item"
 			}]
 			x: 1.25d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1769,7 +1769,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1794,7 +1794,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1815,7 +1815,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1841,7 +1841,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1863,7 +1863,7 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1885,7 +1885,7 @@
 				type: "item"
 			}]
 			x: 3.25d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1911,7 +1911,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -2328,7 +2328,7 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -2354,7 +2354,7 @@
 				type: "item"
 			}]
 			x: 1.25d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -2380,7 +2380,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -2406,7 +2406,7 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2432,7 +2432,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2458,7 +2458,129 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 9.5d
+			y: 10.25d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			description: [
+				"小型动物的器官刚好适合用于制作炸鸡套餐。"
+				""
+				"通过炸鸡套餐在胸腔里的摆放，你可以实现一个幸运最大化的方案。"
+			]
+			icon: {
+				Count: 1b
+				id: "kubejs:chicken_strip"
+				tag: { }
+			}
+			id: "494CC4D745FB4B92"
+			rewards: [{
+				count: 4
+				id: "03374923FA9C0A51"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "幸运炸鸡！"
+			tasks: [
+				{
+					id: "41855308F7541D3D"
+					item: {
+						Count: 1b
+						id: "kubejs:chicken_heart"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0687142B2327A43B"
+					item: {
+						Count: 1b
+						id: "kubejs:chicken_kidney"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "40DE11B32767A562"
+					item: {
+						Count: 1b
+						id: "kubejs:chicken_lung"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "76315CF02807B8A7"
+					item: {
+						Count: 1b
+						id: "kubejs:chicken_strip"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "麦乐鸡套餐！"
+			x: -0.75d
+			y: 23.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			id: "0A9C7FE4A4E11D23"
+			tasks: [{
+				id: "3D78F57AB00EFCFF"
+				item: {
+					Count: 1b
+					id: "kubejs:bloody_bone_arrow"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			id: "0F9C204D570E1601"
+			tasks: [{
+				id: "6BEB4CDE60A33C76"
+				item: {
+					Count: 1b
+					id: "kubejs:amethyst_magic_core"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			id: "209ECD988658572E"
+			tasks: [{
+				id: "0F962208EB06DF56"
+				item: {
+					Count: 1b
+					id: "kubejs:vulcan_furnace"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			id: "3DEFAC7D9ECACE04"
+			tasks: [{
+				id: "4844783204781FA7"
+				item: {
+					Count: 1b
+					id: "kubejs:origin_knight_core"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.75d
+			y: 11.25d
 		}
 	]
 	title: "胸腔：器官收集指南"

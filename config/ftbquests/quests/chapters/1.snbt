@@ -937,8 +937,8 @@
 				type: "item"
 			}]
 			title: "简易、存储、整合"
-			x: 12.75d
-			y: 3.75d
+			x: 11.75d
+			y: 2.5d
 		}
 		{
 			dependencies: ["523490881F8317C7"]
@@ -1293,6 +1293,147 @@
 			title: "邀请你的朋友！"
 			x: 3.75d
 			y: 10.25d
+		}
+		{
+			dependencies: ["3FF06F6F309FAEC3"]
+			description: [
+				"在世界的各处，存在有各类幻想中存在的生物，我们一般将其称为&6幻想种&r。其包含了独眼巨人、女妖乃至各种各样的龙。"
+				""
+				"在这些地方，你可以寻找到记录各种古老传闻的手稿，这是你追寻传说的开始。"
+			]
+			id: "7778D15946A71E0B"
+			rewards: [{
+				id: "796BD9F63AC4F679"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "千年前的笔迹"
+			tasks: [{
+				id: "2D3DC42722CC4533"
+				item: "iceandfire:manuscript"
+				type: "item"
+			}]
+			title: "遗失的传闻"
+			x: 7.75d
+			y: -0.25d
+		}
+		{
+			dependencies: ["7778D15946A71E0B"]
+			description: [
+				"随着身上的&6手稿&r越来越多，你明白需要一个便于整理、携带手稿的工具。"
+				""
+				"这本笔记将指引你在一个个奇幻传说中探索，虽然它现在只有简介的少量知识，但你可以&e不断收集手稿来完善它&r。"
+				""
+				"几乎你所需要的所有知识都可以在该笔记中得到解释。"
+			]
+			id: "7E5AA678EF577F75"
+			rewards: [
+				{
+					count: 5
+					id: "0C019010443614A3"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4F065AB4DA982AE7"
+					item: "iceandfire:manuscript"
+					type: "item"
+				}
+			]
+			subtitle: "记录自己的传说"
+			tasks: [{
+				id: "438581BF5BB93FBB"
+				item: {
+					Count: 1b
+					id: "iceandfire:bestiary"
+					tag: {
+						Pages: [I;0]
+					}
+				}
+				type: "item"
+			}]
+			title: "探索的指引：记载怪兽的书籍"
+			x: 9.25d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7E5AA678EF577F75"]
+			description: [
+				"你需要一个书桌以便于将收集的&6手稿&r&e誊抄记录&r到&6异兽手记&r中。"
+				""
+				"通过放置&6异兽手记&r和&6手稿&r来进行研究，可以向交互界面右侧给出的三个可选条目中选择一个，&e添加在异兽笔记中&r。"
+				""
+				"&a注：每研究一次增加的均为新信息，且当全部研究完成后同本书不可再进行研究。&r"
+			]
+			id: "0E45B26DA6370700"
+			rewards: [{
+				id: "5DC5351C24228EF4"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "将手稿记录于手记中"
+			tasks: [{
+				id: "563D8EFE9B5FC54B"
+				item: "iceandfire:lectern"
+				type: "item"
+			}]
+			title: "誊写书桌"
+			x: 11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5E8F821F42C92E8A"]
+			description: ["无论是在使用Tom的存储时，还是日常建造，都可能遇到单位存储空间中存储容量不够的问题。使用&2更高级的金属桶&r，可以让你获得更多的存储选择，同时也非常适合用于堆叠构造你的Tom储存仓库。"]
+			id: "51AE35F0C335ACA6"
+			rewards: [
+				{
+					id: "7F29952537133103"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "342B02AFCB492694"
+					item: "metalbarrels:diamond_barrel"
+					type: "item"
+				}
+			]
+			subtitle: "超级仓库的基石"
+			tasks: [{
+				id: "0EB4C8F35A46DB09"
+				item: "metalbarrels:iron_barrel"
+				type: "item"
+			}]
+			title: "更多桶！"
+			x: 12.75d
+			y: 3.75d
+		}
+		{
+			dependencies: ["0E45B26DA6370700"]
+			description: [
+				"在击杀各种各样的巨龙之后，通过使用玻璃瓶或者空手右击龙的巨大尸体，便可获得各种各样的&6稀有材料&r。其中一个最重要的用途就是制作不同的&6龙息熔炉&r。"
+				""
+				"在异兽笔记中解锁配方之后，你可以看到具体的建造方案以及需求材料。为了驱动它，你需要将一头对应种类的龙置于该多方块结构附近，并且使其&2靠近于焰孔位置&r。"
+				""
+				"在龙进行吐息时，熔炉便被驱动，材料得以被锻造。"
+			]
+			id: "10C28C06F3FF2C57"
+			rewards: [{
+				count: 4
+				id: "5B10F62CC8E3D540"
+				item: "iceandfire:lightning_dragon_blood"
+				type: "item"
+			}]
+			subtitle: "冰火交融的最终目标"
+			tasks: [{
+				id: "50B3B6569FB0FA4F"
+				item: "iceandfire:dragonforge_lightning_core_disabled"
+				type: "item"
+			}]
+			title: "龙与锻炉"
+			x: 12.5d
+			y: 0.25d
 		}
 	]
 	title: "章节1：如常"

@@ -3,12 +3,12 @@
 		"eternalNighttime": true,
 		"experienceDrop": 1500,
 		"idleHealingPerTick": 0.20000000298023224,
-		"health": 300.0,
+		"health": 600.0,
 		"missile": {
 			"mobEffectId": "minecraft:slowness",
-			"mobEffectDuration": 100,
+			"mobEffectDuration": 200,
 			"mobEffectAmplifier": 2,
-			"damage": 9.0
+			"damage": 10.0
 		},
 		"comet": {
 			"explosionStrength": 4.0
@@ -35,8 +35,8 @@
 		}
 	},
 	"obsidilithConfig": {
-		"health": 300.0,
-		"armor": 14.0,
+		"health": 1000.0,
+		"armor": 15.0,
 		"attack": 16.0,
 		"idleHealingPerTick": 0.5,
 		"experienceDrop": 1000,
@@ -44,8 +44,8 @@
 		"anvilAttackExplosionStrength": 4.0
 	},
 	"gauntletConfig": {
-		"health": 250.0,
-		"armor": 8.0,
+		"health": 500.0,
+		"armor": 10.0,
 		"attack": 16.0,
 		"idleHealingPerTick": 0.5,
 		"experienceDrop": 1000,
@@ -54,10 +54,10 @@
 		"normalPunchExplosionMultiplier": 1.5
 	},
 	"voidBlossomConfig": {
-		"health": 350.0,
-		"armor": 4.0,
+		"health": 600.0,
+		"armor": 5.0,
 		"attack": 12.0,
-		"idleHealingPerTick": 0.5,
+		"idleHealingPerTick": 1.0,
 		"experienceDrop": 1000
 	},
 	"generalConfig": {

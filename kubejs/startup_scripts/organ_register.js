@@ -967,6 +967,15 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only')
         .tag('kubejs:heart')
         .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:fish_in_chest')
+        .addScore('defense', -0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.fish_in_chest.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.fish_in_chest.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/fish_in_chest')
+        .tag('kubejs:active_only')
+        .tag('kubejs:relics');
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
@@ -1238,7 +1247,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:chicken_heart')
         .addScore('health', 1.75)
-        .addTextLines('ctrl', [Text.gray({ "translate": "kubejs.tooltips.chicken_heart.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.chicken_heart.1" })])
         .build())
         .food(food => { food.hunger(8).saturation(1) })
         .texture('kubejs:item/organs/food/chicken_heart')
@@ -1249,7 +1258,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:chicken_kidney')
         .addScore('detoxification', 1.75)
-        .addTextLines('ctrl', [Text.gray({ "translate": "kubejs.tooltips.chicken_kidney.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.chicken_kidney.1" })])
         .build())
         .food(food => { food.hunger(6).saturation(1) })
         .texture('kubejs:item/organs/food/chicken_kidney')
@@ -1261,7 +1270,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:chicken_lung')
         .addScore('breath_recovery', 1.5)
         .addScore('breath_capacity', 1.5)
-        .addTextLines('ctrl', [Text.gray({ "translate": "kubejs.tooltips.chicken_lung.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.chicken_lung.1" })])
         .build())
         .food(food => { food.hunger(6).saturation(1) })
         .texture('kubejs:item/organs/food/chicken_lung')

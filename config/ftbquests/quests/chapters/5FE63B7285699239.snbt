@@ -17,7 +17,7 @@
 		x: 3.75d
 		y: 2.5d
 	}]
-	order_index: 3
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -653,8 +653,8 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "1A499F67D5C70388"
-				item: "nameless_trinkets:four_leaf_clover"
+				id: "44F008AE5A2AE605"
+				item: "nameless_trinkets:ethereal_wings"
 				type: "item"
 			}]
 			x: 4.5d

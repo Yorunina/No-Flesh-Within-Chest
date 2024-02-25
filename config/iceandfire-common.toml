@@ -63,10 +63,10 @@
 		"Dragon Flute Distance" = 4
 		#Max dragon health. Health is scaled to this
 		#Range: 1.0 ~ 100000.0
-		"Dragon Health" = 10000.0
+		"Dragon Health" = 2500.0
 		#Max dragon attack damage. Attack Damage is scaled to this
 		#Range: 1 ~ 10000
-		"Dragon Attack Damage" = 60
+		"Dragon Attack Damage" = 32
 		#Damage dealt from a successful fire breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 		#Range: 0.0 ~ 10000.0
 		"Dragon Attack Damage(Fire breath)" = 10.0

@@ -50,11 +50,11 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('extradelight:candy_cane_red_block'), Item.of('extradelight:candy_cane_green_block'), Item.of('extradelight:candy_cane_blue_block')], Item.of('kubejs:candy_canes_wand').withCount(1)).setCookingtime(60 * 20))
 
-    registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_heart'), Item.of('extradelight:breading_misanplas')], Item.of('kubejs:chicken_heart')).setCookingtime(60 * 20))
+    registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_heart'), Item.of('extradelight:breading_misanplas'), Item.of('meetyourfight:velvet_fortune')], Item.of('kubejs:chicken_heart')).setCookingtime(60 * 20))
 
-    registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_kidney'), Item.of('extradelight:breading_misanplas')], Item.of('kubejs:chicken_kidney')).setCookingtime(60 * 20))
+    registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_kidney'), Item.of('extradelight:breading_misanplas'), Item.of('meetyourfight:velvet_fortune')], Item.of('kubejs:chicken_kidney')).setCookingtime(60 * 20))
 
-    registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_lung'), Item.of('extradelight:breading_misanplas')], Item.of('kubejs:chicken_lung')).setCookingtime(60 * 20))
+    registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_lung'), Item.of('extradelight:breading_misanplas'), Item.of('meetyourfight:velvet_fortune')], Item.of('kubejs:chicken_lung')).setCookingtime(60 * 20))
 
-    registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_muscle'), Item.of('extradelight:breading_misanplas')], Item.of('kubejs:chicken_strip')).setCookingtime(60 * 20))
+    registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_muscle'), Item.of('extradelight:breading_misanplas'), Item.of('meetyourfight:velvet_fortune')], Item.of('kubejs:chicken_strip')).setCookingtime(60 * 20))
 })

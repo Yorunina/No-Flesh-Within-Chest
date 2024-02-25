@@ -167,8 +167,7 @@ function getPlayerChestCavityTypeMap(player) {
  */
 
 function checkPlayerHasChestCavityMap(player) {
-    let uuid = String(player.getUuid());
-    if (playerChestCavityHashMap.has(uuid)) {
+    if (playerChestCavityHashMap.has(String(player.getUuid()))) {
         return true;
     }
     return false;

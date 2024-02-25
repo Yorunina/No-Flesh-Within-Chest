@@ -1,4 +1,5 @@
 const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
+const $Float = Java.loadClass('java.lang.Float')
 const resourceCount = 'resourceCount'
 const resourceCountMax = 'resourceCountMax'
 const defaultResourceMax = 100
@@ -85,23 +86,23 @@ const worldOfBossTypeList = [
 
 
 const tumorAttriBute = [
-    { name: 'chestcavity:filtration', muti: 1, max: 3 },
-    { name: 'chestcavity:breath_recovery', muti: 0.5, max: 3 },
-    { name: 'chestcavity:nutrition', muti: 1, max: 3 },
-    { name: 'chestcavity:nerves', muti: 0.5, max: 5 },
-    { name: 'chestcavity:strength', muti: 0.5, max: 10 },
-    { name: 'chestcavity:health', muti: 0.5, max: 5 },
-    { name: 'chestcavity:breath_capacity', muti: 0.5, max: 3 },
-    { name: 'chestcavity:detoxification', muti: 1, max: 3 },
-    { name: 'chestcavity:speed', muti: 0.5, max: 5 },
-    { name: 'chestcavity:endurance', muti: 1, max: 3 },
-    { name: 'chestcavity:luck', muti: 0.5, max: 3 },
-    { name: 'chestcavity:defense', muti: 0.5, max: 5 },
-    { name: 'chestcavity:digestion', muti: 1, max: 3 },
-    { name: 'chestcavity:metabolism', muti: 1, max: 3 },
-    { name: 'chestcavity:fire_resistant', muti: 0.5, max: 3 },
-    { name: 'chestcavity:knockback_resistant', muti: 0.5, max: 3 },
-    { name: 'chestcavity:water_breath', muti: 0.5, max: 3 },
+    { name: 'chestcavity:filtration', multi: 1, max: 3 },
+    { name: 'chestcavity:breath_recovery', multi: 0.5, max: 3 },
+    { name: 'chestcavity:nutrition', multi: 1, max: 3 },
+    { name: 'chestcavity:nerves', multi: 0.5, max: 5 },
+    { name: 'chestcavity:strength', multi: 0.5, max: 10 },
+    { name: 'chestcavity:health', multi: 0.5, max: 5 },
+    { name: 'chestcavity:breath_capacity', multi: 0.5, max: 3 },
+    { name: 'chestcavity:detoxification', multi: 1, max: 3 },
+    { name: 'chestcavity:speed', multi: 0.5, max: 5 },
+    { name: 'chestcavity:endurance', multi: 1, max: 3 },
+    { name: 'chestcavity:luck', multi: 0.5, max: 3 },
+    { name: 'chestcavity:defense', multi: 0.5, max: 5 },
+    { name: 'chestcavity:digestion', multi: 1, max: 3 },
+    { name: 'chestcavity:metabolism', multi: 1, max: 3 },
+    { name: 'chestcavity:fire_resistant', multi: 0.5, max: 3 },
+    { name: 'chestcavity:knockback_resistant', multi: 0.5, max: 3 },
+    { name: 'chestcavity:water_breath', multi: 0.5, max: 3 },
 ]
 
 const curseEnchantList = [

@@ -48,16 +48,16 @@ function sweetDreamPlayerHurtByOthers(event, data) {
         if (!itemMap.has('kubejs:magic_hippocampus')) {
             return;
         }
-        let durationMuti = 1;
-        let amplifierMuti = 0;
+        let durationMulti = 1;
+        let amplifierMulti = 0;
         if (itemMap.has('kubejs:magic_muscle')) {
-            durationMuti = durationMuti + itemMap.get('kubejs:magic_muscle').length
+            durationMulti = durationMulti + itemMap.get('kubejs:magic_muscle').length
         }
         if (itemMap.has('kubejs:magic_spine')) {
-            amplifierMuti = amplifierMuti + Math.floor(itemMap.get('kubejs:magic_spine').length / 2)
+            amplifierMulti = amplifierMulti + Math.floor(itemMap.get('kubejs:magic_spine').length / 2)
         }
         if (!player.hasEffect('kubejs:sweet_dream')) {
-            player.potionEffects.add('kubejs:sweet_dream', 20 * 10 * durationMuti, amplifierMuti, false, false);
+            player.potionEffects.add('kubejs:sweet_dream', 20 * 10 * durationMulti, amplifierMulti, false, false);
         }
     }
 }

@@ -21,7 +21,7 @@
 		x: -4.25d
 		y: 0.75d
 	}]
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -806,19 +806,21 @@
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
+			description: ["锯肉锯造成的高频伤害无视无敌帧，且能够接收到部分固定增伤效果的影响，在进行高频输出时是极其强大的存在。"]
 			id: "074222359B275BC9"
 			rewards: [{
 				id: "74EAB5D984111E1D"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "最强高频武器"
 			tasks: [{
 				id: "6EA2E719266D75A1"
 				item: "cataclysm:meat_shredder"
 				type: "item"
 			}]
-			x: 0.25d
-			y: 2.75d
+			x: -5.25d
+			y: -2.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -888,7 +890,7 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 3.75d
+			y: 2.75d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -1020,7 +1022,117 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 4.75d
+			y: 3.75d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "5AABA140367845F4"
+			rewards: [{
+				id: "418B0CF86D2F8EE7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0EAB44FEBEFFD970"
+				item: {
+					Count: 1b
+					id: "iceandfire:dread_queen_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -3.25d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "736F4DFF64142658"
+			rewards: [{
+				id: "3D24F4EC776656F8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "253F89415CEC2C3B"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_lightning_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -0.25d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "5076300B79520FF5"
+			rewards: [{
+				id: "2C38A9BCA83FBF71"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3437ABA752FE8DF5"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_fire_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.25d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "3435AB4E79E504E7"
+			rewards: [{
+				id: "756C730938D66A41"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C69226E594D1E26"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_ice_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -1.25d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "2075B6F78E680884"
+			rewards: [{
+				id: "049946F8D1AC2872"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5DC455E1E9ABC4D6"
+				item: {
+					Count: 1b
+					id: "iceandfire:tide_trident"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.25d
 		}
 	]
 	title: "武器：男人的浪漫"

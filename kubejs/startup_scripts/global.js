@@ -2,8 +2,8 @@ Platform.mods.kubejs.name = 'No Flesh Within Chest'
 global.ORGAN_LIST = [];
 
 global.OPERATION_ADD = 'addition'
-global.OPERATION_MUTI_TOTAL = 'multiply_total'
-global.OPERATION_MUTI_BASE = 'multiply_base'
+global.OPERATION_MULTI_TOTAL = 'multiply_total'
+global.OPERATION_MULTI_BASE = 'multiply_base'
 
 global.HEALTH_UP = { key: 'minecraft:generic.max_health', name: 'kubejsMaxHealth', operation: 'addition' }
 global.ATTACK_UP = { key: 'minecraft:generic.attack_damage', name: 'kubejsAttackDamage', operation: 'addition' }

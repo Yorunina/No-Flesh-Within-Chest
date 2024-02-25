@@ -94,7 +94,7 @@ const organPlayerDamageOnlyStrategies = {
             if (distance <= 20 && distance >= 0) {
                 event.amount = event.amount * (1 - ((distance - 20) * (distance - 20) / 400))
             } else if (distance > 20) {
-                event.amount = event.amount * (1 + ((distance - 20) * (distance - 20) / 400))
+                event.amount = event.amount * Math.min((1 + ((distance - 20) * (distance - 20) / 400)), 5)
             }
         }
     },

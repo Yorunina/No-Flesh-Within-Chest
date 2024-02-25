@@ -95,11 +95,13 @@ const organPlayerKeyPressedOnlyStrategies = {
     'kubejs:genesis': function (event, organ) {
         let player = event.player
         if (!player.isCreative()) {
-            event.server.runCommandSilent(`/gamemode creative @p`)
+            player.setGameMode('creative')
             player.potionEffects.add('minecraft:glowing', 20 * 10)
             player.addItemCooldown('kubejs:genesis', 20 * 600)
             event.server.scheduleInTicks(20 * 10, ctx => {
-                event.server.runCommandSilent(`/gamemode survival @p`)
+                // event.server.runCommandSilent(`/gamemode survival @p`)
+                player.setGameMode('survival')
+                player.closeMenu()
             })
         }
     },
