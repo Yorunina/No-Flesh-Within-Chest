@@ -186,7 +186,7 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
     event.create('kubejs:mysterious_trinket').texture('kubejs:item/mysterious_trinket').maxStackSize(64)
     event.create('kubejs:chicken_flavor_powder').texture('kubejs:item/chicken_flavor_powder').maxStackSize(64)
-    
+
     event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
         .useAnimation('bow')
         .use((level, player, hand) => {
@@ -276,5 +276,9 @@ StartupEvents.registry('item', event => {
             }
             return itemstack
         })
+
+    event.create('safe_chest_opener').texture('kubejs:item/safe_chest_opener')
+        .maxStackSize(1)
+        .tooltip(Text.gray({ "translate": "kubejs.tooltips.safe_chest_opener.1" }))
 })
 

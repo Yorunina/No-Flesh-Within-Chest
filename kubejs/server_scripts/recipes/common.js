@@ -185,4 +185,5 @@ ServerEvents.recipes(event => {
         ['create:wrench', 'wares:cardboard_box', '#forge:tools/knives'],
         ['kubejs:relic_metal_plate', 'chestcavity:chest_opener', 'kubejs:relic_metal_plate']])
 
+    event.shapeless('kubejs:safe_chest_opener', ['chestcavity:chest_opener', '#forge:dyes/cyan'])
 })
