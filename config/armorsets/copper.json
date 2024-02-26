@@ -5,7 +5,10 @@
     "itemKey": "extraarmor:copper_helmet"
   },
   "chest": {
-    "itemKey": "extraarmor:copper_chestplate"
+    "itemKey": "extraarmor:copper_chestplate",
+    "mixAndMatch": [
+      "create:copper_backtank"
+    ]
   },
   "legs": {
     "itemKey": "extraarmor:copper_leggings"
