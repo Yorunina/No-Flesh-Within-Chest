@@ -76,7 +76,7 @@ const entityLootOnlyStrategies = {
         event.addLoot('lightmanscurrency:coin_copper')
     },
     'kubejs:infinity_force': function (event, organ) {
-        if (Math.random() < Math.max(0.05 * event.killerEntity.getLuck(), 0.05)) {
+        if (Math.random() > Math.max(0.03 * event.killerEntity.getLuck(), 0.03)) {
             return
         }
         if (bossTypeList.some(ele => ele == event.entity.getType())) {

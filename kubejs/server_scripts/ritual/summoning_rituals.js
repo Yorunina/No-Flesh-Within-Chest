@@ -462,13 +462,12 @@ ServerEvents.recipes(event => {
         .altar('kubejs:ritual_catalyst')
         .id('kubejs:star_light_enhance_isb')
         .input('irons_spellbooks:mana_ring')
-        .input('2x hexerei:selenite_shard')
+        .input('hexerei:selenite_shard')
         .input('8x hexerei:moon_dust')
         .input('8x minecraft:amethyst_shard')
         .input('8x minecraft:glow_ink_sac')
         .itemOutput('kubejs:stardust_fragment')
         .dayTime('night')
-        .weather('thunder')
         .recipeTime(200);
 
     // 神恩Boss

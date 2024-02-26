@@ -84,7 +84,7 @@
 		#Range: 1 ~ 100
 		minGroupSizeGhoul = 2
 		#Range: 1 ~ 100
-		maxGroupSizeGhoul = 5
+		maxGroupSizeGhoul = 8
 		canBurnInSunlight = true
 		canBeWithered = true
 
@@ -95,7 +95,7 @@
 		#Range: 1 ~ 100
 		minGroupSizeRevenant = 5
 		#Range: 1 ~ 100
-		maxGroupSizeRevenant = 8
+		maxGroupSizeRevenant = 10
 		canBurnInSunlight = true
 		canBeWithered = true
 
@@ -106,7 +106,7 @@
 		#Range: 1 ~ 100
 		minGroupSizeReaper = 2
 		#Range: 1 ~ 100
-		maxGroupSizeGhoul = 3
+		maxGroupSizeGhoul = 5
 		canBurnInSunlight = true
 		canBeWithered = true
 

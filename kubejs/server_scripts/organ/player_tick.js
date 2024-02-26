@@ -1,10 +1,7 @@
 // priority: 10
 PlayerEvents.tick(event => {
     let player = event.player
-
-    if (event.player.age % 20 != 0) {
-        return
-    }
+    if (player.age % 20 != 0) return
     let typeMap = getPlayerChestCavityTypeMap(player);
     if (typeMap.has('kubejs:player_tick')) {
         typeMap.get('kubejs:player_tick').forEach(organ => {

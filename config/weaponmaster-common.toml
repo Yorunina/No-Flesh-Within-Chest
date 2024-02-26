@@ -8,10 +8,10 @@
 	keepOnDeath = true
 	#Base Damage of sword weapons.
 	#Range: > 1
-	swordDamageMin = 7
+	swordDamageMin = 8
 	#Max Damage of sword weapons.
 	#Range: > 1
-	swordDamageMax = 24
+	swordDamageMax = 25
 	#Base Attack Speed of sword weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	swordSpeedMin = 1.6
@@ -23,13 +23,13 @@
 	swordDurabilityMin = 250
 	#Max Durability of sword weapons.
 	#Range: > 1
-	swordDurabilityMax = 800
+	swordDurabilityMax = 1000
 	#Base Damage of rapier weapons.
 	#Range: > 1
 	rapierDamageMin = 7
 	#Max Damage of rapier weapons.
 	#Range: > 1
-	rapierDamageMax = 18
+	rapierDamageMax = 21
 	#Base Attack Speed of rapier weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	rapierSpeedMin = 1.8
@@ -41,13 +41,13 @@
 	rapierDurabilityMin = 300
 	#Max Durability of rapier weapons.
 	#Range: > 1
-	rapierDurabilityMax = 1000
+	rapierDurabilityMax = 1200
 	#Base Damage of scythe weapons.
 	#Range: > 1
 	scytheDamageMin = 9
 	#Max Damage of scythe weapons.
 	#Range: > 1
-	scytheDamageMax = 22
+	scytheDamageMax = 20
 	#Base Attack Speed of scythe weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	scytheSpeedMin = 0.8
@@ -59,13 +59,13 @@
 	scytheDurabilityMin = 250
 	#Max Durability of scythe weapons.
 	#Range: > 1
-	scytheDurabilityMax = 800
+	scytheDurabilityMax = 900
 	#Base Damage of polearm weapons.
 	#Range: > 1
 	polearmDamageMin = 9
 	#Max Damage of polearm weapons.
 	#Range: > 1
-	polearmDamageMax = 28
+	polearmDamageMax = 30
 	#Base Attack Speed of polearm weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	polearmSpeedMin = 0.8
@@ -77,5 +77,5 @@
 	polearmDurabilityMin = 200
 	#Max Durability of polearm weapons.
 	#Range: > 1
-	polearmDurabilityMax = 600
+	polearmDurabilityMax = 900
 

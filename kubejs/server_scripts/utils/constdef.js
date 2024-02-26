@@ -7,6 +7,7 @@ const warpCount = 'warpCount'
 const warpCountMax = 'warpCountMax'
 const defaultWarpMax = 100
 
+const theDarkestTime = 'the_darkest_time'
 const organActive = 'organActive'
 
 const bossTypeList = [
