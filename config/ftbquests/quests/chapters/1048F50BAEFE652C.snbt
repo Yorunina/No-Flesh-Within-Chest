@@ -2524,7 +2524,18 @@
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
+			description: [
+				"带血骨剑在&c沼泽巨颌怪&r的胸腔中可以获得。"
+				""
+				"其在胸腔中时，根据长弓射出的弓箭击中时的双方距离进行伤害结算。在距离低于20时，伤害会&c平方下降&r；而在距离高于20时，伤害会&6平方上升&r。最高提高5倍伤害。"
+			]
 			id: "0A9C7FE4A4E11D23"
+			rewards: [{
+				id: "1B393E241E049C92"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "鲜血直流. . .但它却从未悔改"
 			tasks: [{
 				id: "3D78F57AB00EFCFF"
 				item: {
@@ -2539,7 +2550,18 @@
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
+			description: [
+				"紫水晶魔力核心在击败&d黑曜石巨柱&r的时候会掉落。"
+				""
+				"将其装备在胸腔中，使用主动按键（默认X）会消耗当前所有的法力值来释放&6超限法术:魔法箭&r。超限等级随着消耗法力值的数量而提高。"
+			]
 			id: "0F9C204D570E1601"
+			rewards: [{
+				id: "59C0991598FC8020"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它时刻准备着破碎"
 			tasks: [{
 				id: "6BEB4CDE60A33C76"
 				item: {
@@ -2554,7 +2576,18 @@
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
+			description: [
+				"奥林匹斯熔炉可以在&c火神&r的胸腔中获得。"
+				""
+				"在启用&c熔火/心火&r状态时，其会源源不断的提供大量资源点数。资源点数的提供数量取决于两个buff的剩余时长/效果等级。"
+			]
 			id: "209ECD988658572E"
+			rewards: [{
+				id: "678E1C3F4F18279B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它一直都在燃烧，它也在等待你的燃烧"
 			tasks: [{
 				id: "0F962208EB06DF56"
 				item: {
@@ -2570,6 +2603,11 @@
 		{
 			dependencies: ["6662469DC72EA384"]
 			id: "3DEFAC7D9ECACE04"
+			rewards: [{
+				id: "55EEA4D07289184A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "4844783204781FA7"
 				item: {
@@ -2581,6 +2619,46 @@
 			}]
 			x: -4.75d
 			y: 11.25d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			id: "6CFD4B15BBC3AE7D"
+			rewards: [{
+				id: "7439EBFFF0DAA91B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B2B32A7AB75FDAD"
+				item: {
+					Count: 1b
+					id: "kubejs:broken_prismarine_crown"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			id: "0127B35736599543"
+			rewards: [{
+				id: "709281020A0D9529"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3379B7D27A69CE09"
+				item: {
+					Count: 1b
+					id: "kubejs:prismarine_crown"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 17.5d
 		}
 	]
 	title: "胸腔：器官收集指南"
