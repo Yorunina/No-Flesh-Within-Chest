@@ -1,0 +1,40 @@
+{
+  "criteria": {
+    "TickTrigger": {
+      "trigger": "minecraft:tick"
+    },
+    "Inventory": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {}
+          }
+        ],
+        "items": [
+          {
+            "items": [
+              "alexsmobs:animal_dictionary"
+            ]
+          },
+          {
+            "items": [
+              "weaponmaster:tutorialbook"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "Inventory",
+      "TickTrigger"
+    ]
+  ],
+  "rewards": {
+    "function": "kubejs:item/ftbquest/questbook"
+  }
+}

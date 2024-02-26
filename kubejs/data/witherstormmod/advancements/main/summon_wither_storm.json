@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "title": {
+      "translate": "advancements.witherstormmod.main.summon_wither_storm.title"
+    },
+    "description": {
+      "translate": "advancements.witherstormmod.main.summon_wither_storm.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "witherstormmod:main/root",
+  "criteria": {
+    "summoned_wither_storm": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "dimension": "kubejs:lost_memory"
+              }
+            }
+          }
+        ],
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "witherstormmod:wither_storm",
+              "location": {
+                "dimension": "kubejs:lost_memory"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "summoned_wither_storm"
+    ]
+  ]
+}
