@@ -175,4 +175,14 @@ ServerEvents.recipes(event => {
         ['minecraft:rabbit_hide', '', 'minecraft:rabbit_hide'],
         ['minecraft:rabbit_foot', '', 'minecraft:rabbit_foot']])
 
+    event.shaped('kubejs:prismarine_crown', [
+        ['', 'iceandfire:siren_tear', ''],
+        ['', 'kubejs:broken_prismarine_crown', ''],
+        ['', 'goety:soul_emerald', '']])
+
+    event.shaped(Item.of('kubejs:operation_box', '{inventory:[{Count:1b,Slot:0b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:8b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:18b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:26b,id:"kubejs:relic_metal_plate",tag:{}}]}'), [
+        ['kubejs:relic_metal_plate', '#forge:shears', 'kubejs:relic_metal_plate'],
+        ['create:wrench', 'wares:cardboard_box', '#forge:tools/knives'],
+        ['kubejs:relic_metal_plate', 'chestcavity:chest_opener', 'kubejs:relic_metal_plate']])
+
 })

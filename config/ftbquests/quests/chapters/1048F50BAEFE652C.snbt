@@ -2602,12 +2602,18 @@
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
+			description: [
+				"原始骑士核心能够在&c最初的骑士&r的胸腔中发现。"
+				""
+				"其能够将你的额外临时生命转换成伤害。"
+			]
 			id: "3DEFAC7D9ECACE04"
 			rewards: [{
 				id: "55EEA4D07289184A"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "他还活着，他在等待一个人"
 			tasks: [{
 				id: "4844783204781FA7"
 				item: {
@@ -2622,12 +2628,18 @@
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
+			description: [
+				"破碎的海晶王冠可以在&c海晶监视者&r的胸腔中发现。"
+				""
+				"能够被修复成&6海晶王冠&r。"
+			]
 			id: "6CFD4B15BBC3AE7D"
 			rewards: [{
 				id: "7439EBFFF0DAA91B"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "破碎的皇冠正是昔日权利的证明"
 			tasks: [{
 				id: "7B2B32A7AB75FDAD"
 				item: {
@@ -2642,12 +2654,18 @@
 		}
 		{
 			dependencies: ["3910C8340AB4ECE9"]
+			description: [
+				"通过修复&6破碎的海晶王冠&r获得。"
+				""
+				"能够让你为负数的胸腔属性变为1。"
+			]
 			id: "0127B35736599543"
 			rewards: [{
 				id: "709281020A0D9529"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "神灵降世"
 			tasks: [{
 				id: "3379B7D27A69CE09"
 				item: {

@@ -185,7 +185,8 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
     event.create('kubejs:mysterious_trinket').texture('kubejs:item/mysterious_trinket').maxStackSize(64)
-
+    event.create('kubejs:chicken_flavor_powder').texture('kubejs:item/chicken_flavor_powder').maxStackSize(64)
+    
     event.create('blood_extractor').texture('kubejs:item/blood_extractor').maxStackSize(1)
         .useAnimation('bow')
         .use((level, player, hand) => {
@@ -228,7 +229,7 @@ StartupEvents.registry('item', event => {
         .rarity('epic')
         .useAnimation('drink')
         .use((level, player, hand) => {
-            
+
             return true;
         })
         .useDuration(itemStack => 20)
@@ -253,22 +254,25 @@ StartupEvents.registry('item', event => {
             entity.setStatusMessage(`你感到一股寒意涌上. . .远古时代的悲剧将会重新上演。`)
             return;
         })
-    
+
     event.create('operation_box').texture('kubejs:item/operation_box').maxStackSize(1)
         .useAnimation('bow')
         .use((level, player, hand) => {
             return true;
         })
-        .useDuration(itemStack => 60)
+        .useDuration(itemStack => 20)
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
             if (!entity.isPlayer()) return itemstack
-            let oriInv = entity?.nbt?.ChestCavity?.Inventory
+            let instance = entity.getChestCavityInstance()
+            let oriInv = instance.inventory.getTags()
             let replaceInv = itemstack?.nbt?.inventory
+            if (!replaceInv) {
+                replaceInv = []
+            }
             if (oriInv && replaceInv) {
-                entity.nbt.ChestCavity.Inventory = replaceInv
-                itemstack.nbt.inventory = oriInv
-                $ChestCavityUtil.evaluateChestCavity(entity.getChestCavityInstance())
+                instance.inventory.readTags(replaceInv)
+                itemstack.setNbt({ inventory: oriInv })
             }
             return itemstack
         })
