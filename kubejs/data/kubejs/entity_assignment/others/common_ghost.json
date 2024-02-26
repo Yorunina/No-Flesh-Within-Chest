@@ -1,0 +1,12 @@
+{
+    "chestcavity": "kubejs:types/others/common_ghost.json",
+    "entities": [
+        "iceandfire:ghost",
+        "goety:border_wraith",
+        "goety:wraith",
+        "graveyard:reaper",
+        "graveyard:revenant",
+        "graveyard:wraith"
+    ]
+  }
+  

@@ -37,6 +37,8 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('bosses_of_mass_destruction:void_blossom')
         .addLoot('kubejs:secret_of_bloom')
         .addLoot('kubejs:flower_heart');
+    event.addEntityLootModifier('bosses_of_mass_destruction:obsidilith')
+        .addLoot('kubejs:amethyst_magic_core');
     event.addEntityLootModifier('bosses_of_mass_destruction:gauntlet')
         .apply(ctx => {
             if (ctx.player) {

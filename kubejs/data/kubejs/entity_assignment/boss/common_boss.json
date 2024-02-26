@@ -1,7 +1,6 @@
 {
   "chestcavity": "kubejs:types/boss/common_boss.json",
   "entities": [
-    "somebosses:prismarine_watcher",
     "somebosses:volcanium",
     "somebosses:dark_mask",
     "somebosses:ancient_wizard",

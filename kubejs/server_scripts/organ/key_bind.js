@@ -114,6 +114,45 @@ const organPlayerKeyPressedOnlyStrategies = {
         magicData.setMana(0)
         player.addItemCooldown('kubejs:amethyst_magic_core', 20 * 15)
     },
+    'kubejs:ice_dragon_bead': function (event, organ) {
+        let player = event.player
+        let magicData = getPlayerMagicData(player)
+        let manaCost = magicData.getMana()
+        let level = Math.max(2 * Math.sqrt(player.getMaxHealth()), 1)
+        $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('irons_spellbooks', 'cone_of_cold')).attemptInitiateCast(Item.of('air'), level, player.level, player, $CastSource.NONE, false)
+        magicData.setMana( Math.max( (manaCost - 500), 0 ) )
+        if(manaCost < 500)
+        {
+            player.setHealth( Math.max( (player.getHealth() - (500 - manaCost)*0.5 ) , 1 ) )
+        }
+        player.addItemCooldown('kubejs:ice_dragon_bead', 20 * 30)
+    },
+    'kubejs:fire_dragon_bead': function (event, organ) {
+        let player = event.player
+        let magicData = getPlayerMagicData(player)
+        let manaCost = magicData.getMana()
+        let level = Math.max(2 * Math.sqrt(player.getMaxHealth()), 1)
+        $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('irons_spellbooks', 'fire_breath')).attemptInitiateCast(Item.of('air'), level, player.level, player, $CastSource.NONE, false)
+        magicData.setMana( Math.max( (manaCost - 500), 0 ) )
+        if(manaCost < 500)
+        {
+            player.setHealth( Math.max( (player.getHealth() - (500 - manaCost)*0.5 ) , 1 ) )
+        }
+        player.addItemCooldown('kubejs:fire_dragon_bead', 20 * 30)
+    },
+    'kubejs:lightning_dragon_bead': function (event, organ) {
+        let player = event.player
+        let magicData = getPlayerMagicData(player)
+        let manaCost = magicData.getMana()
+        let level = Math.max(2 * Math.sqrt(player.getMaxHealth()), 1)
+        $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('irons_spellbooks', 'electrocute')).attemptInitiateCast(Item.of('air'), level, player.level, player, $CastSource.NONE, false)
+        magicData.setMana( Math.max( (manaCost - 500), 0 ) )
+        if(manaCost < 500)
+        {
+            player.setHealth( Math.max( (player.getHealth() - (500 - manaCost)*0.5 ) , 1 ) )
+        }
+        player.addItemCooldown('kubejs:lightning_dragon_bead', 20 * 30)
+    },
     'kubejs:dragon_blood_heart': function (event, organ) {
         let player = event.player
         let typeMap = getPlayerChestCavityTypeMap(player)

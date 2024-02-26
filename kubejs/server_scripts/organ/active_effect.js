@@ -10,6 +10,7 @@ global.updatePlayerActiveStatus = player => {
     let typeMap = getPlayerChestCavityTypeMap(player);
     let uuid = String(player.getUuid());
     let attributeMap = new Map();
+    $ChestCavityUtil.evaluateChestCavity(player.getChestCavityInstance())
     player.persistentData.putInt(resourceCountMax, defaultResourceMax)
     // 激活状态根据Tag区分并遍历可以用于激活的器官方法
     if (typeMap.has('kubejs:active')) {
@@ -145,7 +146,7 @@ const organActiveStrategies = {
     },
     'kubejs:holy_eyeball': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.05)
-        attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.2)
+        attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.3)
     },
     'kubejs:hamimelon_organ': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
@@ -281,7 +282,7 @@ const organActiveStrategies = {
                 chickenStripCounter++
             }
         })
-        if (chickenStripCounter < 2) {
+        if (chickenStripCounter < 3) {
             return
         }
         if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:chicken_lung') {
@@ -380,12 +381,20 @@ const organActiveOnlyStrategies = {
             attributeMapValueAddition(attributeMap, global.LUCK, value)
         }
     },
-    'kubejs:fish_in_chest': function (player, organ, attributeMap) {
+    'kubejs:prismarine_crown': function (player, organ, attributeMap) {
         let playerChestInstance = player.getChestCavityInstance()
         playerChestInstance.organScores.forEach((key, value) => {
             if (value < 0) {
                 playerChestInstance.organScores.put(key, new $Float(1))
             }
+        })
+    },
+    'kubejs:fish_in_chest': function (player, organ, attributeMap) {
+        let playerChestInstance = player.getChestCavityInstance()
+        let itemCount = playerChestInstance.inventory.getAllItems().size()
+        let amplifier = 27 / itemCount - 1
+        playerChestInstance.organScores.forEach((key, value) => {
+            playerChestInstance.organScores.put(key, new $Float(value * amplifier))
         })
     },
 }

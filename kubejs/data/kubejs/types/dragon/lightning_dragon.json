@@ -1,0 +1,31 @@
+{
+    "defaultChestCavity": [
+      {"item": "kubejs:lightning_dragon_muscle","position": 0},
+      {"item": "kubejs:lightning_dragon_rib","position": 1},
+      {"item": "kubejs:lightning_dragon_appendix","position": 2},
+      {"item": "kubejs:lightning_dragon_lung","position": 3},
+      {"item": "kubejs:lightning_dragon_heart","position": 4},
+      {"item": "kubejs:lightning_dragon_lung","position": 5},
+      {"item": "kubejs:lightning_dragon_bead","position": 6},
+      {"item": "kubejs:lightning_dragon_rib","position": 7},
+      {"item": "kubejs:lightning_dragon_muscle","position": 8},
+      {"item": "kubejs:lightning_dragon_muscle","position": 9},
+      {"item": "kubejs:lightning_dragon_rib","position": 10},
+      {"item": "kubejs:lightning_dragon_spleen","position": 11},
+      {"item": "kubejs:lightning_dragon_kidney","position": 12},
+      {"item": "kubejs:lightning_dragon_spine","position": 13},
+      {"item": "kubejs:lightning_dragon_kidney","position": 14},
+      {"item": "kubejs:lightning_dragon_liver","position": 15},
+      {"item": "kubejs:lightning_dragon_rib","position": 16},
+      {"item": "kubejs:lightning_dragon_muscle","position": 17},
+      {"item": "kubejs:lightning_dragon_muscle","position": 18},
+      {"item": "kubejs:lightning_dragon_muscle","position": 19},
+      {"item": "kubejs:lightning_dragon_intestine","position": 20},
+      {"item": "kubejs:lightning_dragon_intestine","position": 21},
+      {"item": "kubejs:lightning_dragon_stomach","position": 22},
+      {"item": "kubejs:lightning_dragon_intestine","position": 23},
+      {"item": "kubejs:lightning_dragon_intestine","position": 24},
+      {"item": "kubejs:lightning_dragon_muscle","position": 25},
+      {"item": "kubejs:lightning_dragon_muscle","position": 26}
+    ]
+  }
