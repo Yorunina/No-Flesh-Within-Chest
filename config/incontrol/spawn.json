@@ -1,5 +1,14 @@
 [
   {
+    "onjoin": true,
+    "gamestage": "the_darkest_time",
+    "result": "allow",
+    "healthmultiply": 20,
+    "damagemultiply": 5,
+    "speedmultiply": 1.5,
+    "continue": true
+  },
+  {
     "dimension": "kubejs:lost_memory",
     "onjoin": true,
     "hostile": true,

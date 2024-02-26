@@ -181,7 +181,7 @@ StartupEvents.registry('item', event => {
 
 
     // 随机基本器官
-    event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').maxStackSize(1).tag('kubejs:organ').tag('itemborders:iron')
+    event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').maxStackSize(1).tag('kubejs:organ').tag('kubejs:infected').tag('itemborders:iron')
 
     event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
     event.create('kubejs:mysterious_trinket').texture('kubejs:item/mysterious_trinket').maxStackSize(64)
@@ -224,10 +224,11 @@ StartupEvents.registry('item', event => {
             return itemstack;
         })
 
-    event.create('kubejs:holy_potion').texture('kubejs:item/holy_potion').maxStackSize(1)
+    event.create('holy_potion').texture('kubejs:item/holy_potion').maxStackSize(1)
         .rarity('epic')
-        .useAnimation('eat')
+        .useAnimation('drink')
         .use((level, player, hand) => {
+            
             return true;
         })
         .useDuration(itemStack => 20)
@@ -235,6 +236,41 @@ StartupEvents.registry('item', event => {
             if (level.isClientSide()) return itemstack
             entity.runCommandSilent(`/lichdom revoke ${entity.name.getString()}`)
             return;
+        })
+
+    event.create('darkest_potion').texture('kubejs:item/holy_potion').maxStackSize(1)
+        .rarity('epic')
+        .useAnimation('drink')
+        .use((level, player, hand) => {
+            if (player.stages.has('darkest_time')) return false
+            return true;
+        })
+        .useDuration(itemStack => 20)
+        .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
+            if (!entity.isPlayer()) return itemstack
+            entity.stages.add('darkest_time')
+            entity.setStatusMessage(`你感到一股寒意涌上. . .远古时代的悲剧将会重新上演。`)
+            return;
+        })
+    
+    event.create('operation_box').texture('kubejs:item/operation_box').maxStackSize(1)
+        .useAnimation('bow')
+        .use((level, player, hand) => {
+            return true;
+        })
+        .useDuration(itemStack => 60)
+        .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
+            if (!entity.isPlayer()) return itemstack
+            let oriInv = entity?.nbt?.ChestCavity?.Inventory
+            let replaceInv = itemstack?.nbt?.inventory
+            if (oriInv && replaceInv) {
+                entity.nbt.ChestCavity.Inventory = replaceInv
+                itemstack.nbt.inventory = oriInv
+                $ChestCavityUtil.evaluateChestCavity(entity.getChestCavityInstance())
+            }
+            return itemstack
         })
 })
 

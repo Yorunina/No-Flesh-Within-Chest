@@ -304,20 +304,20 @@
 		[Attributes.Bosses.Apostle]
 			#How much Max Health Apostles have, Default: 320.0
 			#Range: 100.0 ~ 1.7976931348623157E308
-			apostleHealth = 420.0
+			apostleHealth = 640.0
 			#How much natural Armor Points Apostles have, Default: 12.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			apostleArmor = 12.0
+			apostleArmor = 16.0
 			#How much natural Toughness Points Apostles have, Default: 6.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			apostleToughness = 6.0
+			apostleToughness = 10.0
 			#The maximum amount of damage an Apostle can attain per hit, Default: 20
 			#Range: > 1
 			apostleDamageCap = 20
 			#Multiplies Apostle's Bow damage, Default: 4
 			#Range: > 2
-			apostleBowDamage = 4
+			apostleBowDamage = 12
 			#Set Apostle's spell damage (ie, Fire Tornadoes, Fire Blasts, Roars), Default: 6.0
 			#Range: 6.0 ~ 1.7976931348623157E308
-			apostleMagicDamage = 6.0
+			apostleMagicDamage = 18.0
 

@@ -150,9 +150,9 @@
 		MaxLevel = 8
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "COMMON"
-		ManaCostMultiplier = 3.0
+		ManaCostMultiplier = 1.0
 		SpellPowerMultiplier = 1.0
-		CooldownInSeconds = 300.0
+		CooldownInSeconds = 60.0
 
 	[Spells."irons_spellbooks:spider_aspect"]
 		Enabled = true
