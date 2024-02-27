@@ -29,3 +29,15 @@ ItemEvents.rightClicked('kubejs:mysterious_trinket', event => {
     event.item.shrink(1)
     event.player.give(randomGet(trinketList))
 })
+
+ItemEvents.rightClicked('kubejs:safe_chest_opener', event => {
+    let player = event.player
+    let ray = player.rayTrace(5, true)
+    if (ray.entity && ray.entity.isLiving()) {
+        let target = ray.entity
+        if ($CCItems.CHEST_OPENER.isPresent()) {
+            $CCItems.CHEST_OPENER.get().openChestCavity(player, target, false)
+            player.swing()
+        }
+    }
+})
