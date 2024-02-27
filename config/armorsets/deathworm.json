@@ -1,0 +1,53 @@
+{
+  "armorSetName": "À¿Õˆ»‰≥Ê",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "iceandfire:deathworm_white_helmet",
+    "mixAndMatch": [
+      "iceandfire:deathworm_yellow_helmet",
+      "iceandfire:deathworm_red_helmet"
+    ]
+  },
+  "chest": {
+    "itemKey": "iceandfire:deathworm_white_chestplate",
+    "mixAndMatch": [
+      "iceandfire:deathworm_yellow_chestplate",
+      "iceandfire:deathworm_red_chestplate"
+    ]
+  },
+  "legs": {
+    "itemKey": "iceandfire:deathworm_white_leggings",
+    "mixAndMatch": [
+      "iceandfire:deathworm_yellow_leggings",
+      "iceandfire:deathworm_red_leggings"
+    ]
+  },
+  "boots": {
+    "itemKey": "iceandfire:deathworm_white_boots",
+    "mixAndMatch": [
+      "iceandfire:deathworm_yellow_boots",
+      "iceandfire:deathworm_red_boots"
+    ]
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "…≥◊”∏≥”Ëƒ„Ãÿ ‚µƒ¡¶¡ø°≠°≠"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "minecraft:haste",
+      "value": 3.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false,
+      "conditions": [
+        {
+          "type": "onblock",
+          "extra": "minecraft:sand"
+        }
+      ]
+    }
+  ]
+}

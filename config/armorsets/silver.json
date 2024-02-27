@@ -1,0 +1,38 @@
+{
+  "armorSetName": "银",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "iceandfire:armor_silver_metal_helmet"
+  },
+  "chest": {
+    "itemKey": "iceandfire:armor_silver_metal_chestplate"
+  },
+  "legs": {
+    "itemKey": "iceandfire:armor_silver_metal_leggings"
+  },
+  "boots": {
+    "itemKey": "iceandfire:armor_silver_metal_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "神圣之力震退邪灵！"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:holy_spell_power",
+      "modifierUUID": "94E03BBF-44E2-4311-95D2-BF74777762CE",
+      "description": "+40% 神圣系魔法伤害",
+      "value": 0.4
+    },
+    {
+      "type": "effect",
+      "name": "goety:repulsive",
+      "value": 2.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}
