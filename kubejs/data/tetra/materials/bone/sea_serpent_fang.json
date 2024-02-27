@@ -1,0 +1,28 @@
+{
+    "key": "iaf_sea_serpent_fang",
+    "category": "bone",
+    "primary": 6.8,
+    "secondary": 1.8,
+    "tertiary": 2.7,
+    "durability": 518,
+    "integrityCost": 2,
+    "integrityGain": 8,
+    "magicCapacity": 80,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 6,
+    "effects": {
+        "art_of_forging:conquering": [15,3]
+    },
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": ["bone", "crude"],
+  
+    "material": {
+      "items": ["iceandfire:sea_serpent_fang"]
+    },
+    "requiredTools": {
+      "hammer_dig": "minecraft:iron"
+    }
+  }

@@ -1,0 +1,27 @@
+{
+    "key": "iaf_dread_shard",
+    "category": "reagent",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 0,
+    "integrityCost": 1,
+    "integrityGain": 1,
+    "magicCapacity": 0,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "1C1C1C",
+        "texture": "1C1C1C"
+    },
+    "textures": [
+        "default"
+    ],
+    "effects": {
+        "art_of_forging:decaying": [ 2, 8 ]
+    },
+    "material": {
+        "items": [ "iceandfire:dread_shard" ]
+    },
+    "experienceCost": 30
+}

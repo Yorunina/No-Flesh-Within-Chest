@@ -1,0 +1,28 @@
+{
+    "key": "iaf_troll_tusk",
+    "category": "bone",
+    "primary": 5.3,
+    "secondary": 2.9,
+    "tertiary": 1.5,
+    "durability": 198,
+    "integrityCost": 2,
+    "integrityGain": 8,
+    "magicCapacity": 45,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 4,
+    "effects": {
+        "stun": [30,1]
+    },
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": ["bone", "crude"],
+  
+    "material": {
+      "items": ["iceandfire:troll_tusk"]
+    },
+    "requiredTools": {
+      "hammer_dig": "minecraft:stone"
+    }
+  }
