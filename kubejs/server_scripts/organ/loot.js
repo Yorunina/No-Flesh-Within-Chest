@@ -123,7 +123,7 @@ const chestLootOnlyStrategies = {
         }
         let player = event.player
         let item = Item.of('kubejs:random_tumor', { organData: {} })
-        let amount = Math.floor(Math.sqrt(Math.random() * 17) + 1)
+        let amount = Math.floor(Math.sqrt(Math.floor(Math.random() * 15 + 1)))
         for (let i = 0; i < amount; i++) {
             let attri = randomGet(tumorAttriBute)
             let attriName = attri.name
@@ -135,6 +135,7 @@ const chestLootOnlyStrategies = {
             let attriValue = Math.min(attri.multi * diffusivity * luckElement, attri.max)
             item.nbt.organData.put(attriName, attriValue)
         }
+        item.nbt.organData.put('chestcavity:health', -0.5)
         event.addLoot(item)
     },
 }

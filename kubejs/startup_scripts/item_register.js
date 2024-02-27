@@ -274,6 +274,13 @@ StartupEvents.registry('item', event => {
                 instance.inventory.readTags(replaceInv)
                 itemstack.setNbt({ inventory: oriInv })
             }
+            global.initChestCavityIntoMap(entity, true)
+            if (entity.getChestCavityInstance().inventory.hasAnyMatching(item => {
+                return pillList.some(ele => ele == item.id.toString())
+            })) {
+                global.updatePlayerActiveStatus(entity)
+                entity.persistentData.putInt(organActive, 1)
+            }
             return itemstack
         })
 
