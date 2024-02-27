@@ -1,0 +1,32 @@
+{
+    "key": "iaf_myrmex_stinger",
+    "category": "fibre",
+    "primary": "1.1",
+    "secondary": "0.8",
+    "tertiary": "3.8",
+    "durability": "46",
+    "integrityCost": "1",
+    "integrityGain": "4",
+    "magicCapacity": "166",
+    "toolLevel": "0",
+    "toolEfficiency": "0",
+    "effects": {
+        "arthropod": 15
+    },
+    "tints": {
+      "glyph": "006400",
+      "texture": "006400"
+    },
+    "textures": [
+      "crude",
+      "default"
+    ],
+    "material": {
+      "items": [
+        "iceandfire:myrmex_stinger"
+      ]
+    },
+    "requiredTools": {
+      "cut": "minecraft:stone"
+    }
+  }

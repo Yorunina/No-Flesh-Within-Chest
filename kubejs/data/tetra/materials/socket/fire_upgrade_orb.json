@@ -6,7 +6,7 @@
   "secondary": 0,
   "tertiary": 0,
   "durability": 0,
-  "integrityCost": -3,
+  "integrityCost": 3,
   "integrityGain": 0,
   "magicCapacity": 0,
   "toolLevel": 0,

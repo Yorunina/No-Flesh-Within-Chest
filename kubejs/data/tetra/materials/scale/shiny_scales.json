@@ -1,0 +1,30 @@
+{
+    "key": "iaf_shiny_scales",
+    "category": "scale",
+    "primary": 5.6,
+    "secondary": 4.1,
+    "tertiary": 2.5,
+    "durability": 322,
+    "integrityCost": 1,
+    "integrityGain": 3,
+    "magicCapacity": 331,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "00BFFF",
+        "texture": "00BFFF"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "iceandfire:shiny_scales" ]
+    },
+    "effects" : {
+        "art_of_forging:arcane_protection": 36
+	},
+    "requiredTools": {
+        "cut": "minecraft:iron"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "key": "iaf_cockatrice_eye",
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 42,
+    "integrityCost": 2,
+    "integrityGain": 0,
+    "magicCapacity": 450,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {
+        "art_of_forging:disorienting": [5,8]   
+    },
+    "tints": {
+        "glyph": "363636",
+        "texture": "363636"
+    },
+    "textures": [
+        "default"
+    ],
+    "experienceCost": 25,
+    "material":{"items":["iceandfire:cockatrice_eye"]}
+}

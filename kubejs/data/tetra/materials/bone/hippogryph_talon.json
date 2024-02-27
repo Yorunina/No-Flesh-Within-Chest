@@ -1,0 +1,28 @@
+{
+    "key": "iaf_hippogryph_talon",
+    "category": "bone",
+    "primary": 7.3,
+    "secondary": 2.7,
+    "tertiary": 1.8,
+    "durability": 478,
+    "integrityCost": 2,
+    "integrityGain": 8,
+    "magicCapacity": 287,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 6,
+    "effects": {
+        "shieldbreaker": 3
+    },
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": ["bone", "crude"],
+  
+    "material": {
+      "items": ["iceandfire:hippogryph_talon"]
+    },
+    "requiredTools": {
+      "hammer_dig": "minecraft:iron"
+    }
+  }

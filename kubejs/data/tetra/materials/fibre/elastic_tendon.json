@@ -25,6 +25,6 @@
         "ricochet": 5
 	},
     "requiredTools": {
-        "cut": "minecraft:wood"
+        "cut": "minecraft:iron"
     }
 }

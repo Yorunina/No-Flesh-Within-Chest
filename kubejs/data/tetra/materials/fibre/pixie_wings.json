@@ -1,0 +1,32 @@
+{
+    "key": "iaf_pixie_wings",
+    "category": "fibre",
+    "primary": "1.1",
+    "secondary": "1.6",
+    "tertiary": "1.8",
+    "durability": "96",
+    "integrityCost": "2",
+    "integrityGain": "6",
+    "magicCapacity": "466",
+    "toolLevel": "0",
+    "toolEfficiency": "0",
+    "effects": {
+        "art_of_forging:esoteric_edge": 75
+    },
+    "tints": {
+      "glyph": "DB7093",
+      "texture": "DB7093"
+    },
+    "textures": [
+      "crude",
+      "default"
+    ],
+    "material": {
+      "items": [
+        "iceandfire:pixie_wings"
+      ]
+    },
+    "requiredTools": {
+      "cut": "minecraft:stone"
+    }
+  }

@@ -1,0 +1,30 @@
+{
+    "key": "iaf_amphithere_feather",
+    "category": "fabric",
+    "primary": 1,
+    "secondary": 0.6,
+    "tertiary": 3.4,
+    "durability": 135,
+    "integrityCost": 2,
+    "integrityGain": 6,
+    "magicCapacity": 332,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {
+        "armorPenetration": 15
+    },
+    "tints": {
+        "glyph": "228B22",
+        "texture": "228B22"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "iceandfire:amphithere_feather" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:stone"
+    }
+}

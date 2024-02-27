@@ -28,5 +28,7 @@ ServerEvents.tags('item', event => {
   event.add('forge:bones/dragon', ['iceandfire:dragonbone'])
   event.add('forge:bones/wither', ['iceandfire:witherbone'])
   event.add('biomancy:cannot_be_eaten_by_cradle', ['weaponmaster:wm_broadswordlarge', 'weaponmaster:wm_broadsword', 'weaponmaster:wm_rapier', 'weaponmaster:wm_rapierlarge'])
+  event.add('iceandfire:scales/myrmex', ['iceandfire:myrmex_jungle_chitin', 'iceandfire:myrmex_desert_chitin'])
+  event.add('iceandfire:scales/deathworm', ['iceandfire:deathworm_chitin_white', 'iceandfire:deathworm_chitin_red', 'iceandfire:deathworm_chitin_yellow'])
 
 })
