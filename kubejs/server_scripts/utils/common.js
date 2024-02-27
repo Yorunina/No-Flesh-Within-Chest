@@ -20,20 +20,3 @@ function getLivingWithinRadius(level, pos, radius) {
     })
     return entityList
 }
-
-/**
-* 获取某个单位胸腔页面
-* @param {Internal.Player} player
-* @param {Internal.Entity} target
-* @returns {Array<I>}
-*/
-function generateChestCavity(target) {
-    let targetEntity = $ChestCavityEntity.of(target)
-    if (!targetEntity.isPresent()) {
-        return
-    }
-    let targetInstance = targetEntity.get().getChestCavityInstance()
-    if (target.isAlive()) {
-        return $ChestCavityUtil.openChestCavity(targetInstance)
-    }
-}

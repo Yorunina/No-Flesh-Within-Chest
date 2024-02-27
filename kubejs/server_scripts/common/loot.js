@@ -54,6 +54,28 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('minecraft:witch')
         .addLoot(LootEntry.of('kubejs:magic_spine').when((c) => c.randomChance(0.05)));
 
+    event.addEntityLootModifier("minecraft:villager")
+        .apply(ctx => {
+            if (Math.random() < 0.08) {
+                ctx.addLoot(getRandomPotionWares())
+            }
+            if (Math.random() < 0.01) {
+                ctx.addLoot(getRandomChallengeWares())
+            }
+            if (Math.random() < 0.01) {
+                ctx.addLoot(getRandomEggWares())
+            }
+            if (Math.random() < 0.04) {
+                ctx.addLoot(getRandomSpecialWares())
+            }
+            if (Math.random() < 0.01) {
+                ctx.addLoot(getRandomOrganWares())
+            }
+            if (Math.random() < 0.05) {
+                ctx.addLoot(getRandomOreWares())
+            }
+        })
+
     event.addLootTypeModifier(LootType.ENTITY)
         .removeLoot('@simplehats')
         .apply(ctx => {
@@ -64,6 +86,15 @@ LootJS.modifiers(event => {
                 if (ctx.player) {
                     ctx.player.give(Item.of('kubejs:god_consciousness', { mobType: ctx.entity.getType() }))
                 }
+            }
+        })
+        .apply(ctx => {
+            let entity = ctx.entity
+            if (!entity.isLiving()) return
+            let source = ctx.damageSource
+            if (entity.hasEffect('kubejs:fragility') || (entity.hasEffect('minecraft:weakness') && source.type == 'create.mechanical_saw')) {
+                let lootList = entity.getChestCavityInstance().inventory.getAllItems()
+                ctx.addLoot(lootList)
             }
         })
 
