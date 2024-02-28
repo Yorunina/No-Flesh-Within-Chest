@@ -45,9 +45,17 @@ debugLevel=0
 		
 #Event Settings
 [events]
+	#Whether advancements will give players chocolate coins as a reward for playing during the event.
+	#Note: Disabling will disable the entire `/lcadmin events reward` command used by the functions to give the reward.
+	advancementRewards=true
+	
 	#Whether the Chocolate Event Coins will be added to the coin data.
 	#Note: Disabling will not remove any Chocolate Coin items that already exist.
 	chocolate=true
+	
+	#Whether the Chocolate Event Coins will replace a small portion of the default coin loot drops during the event.
+	#See "chocolateRate" to customize the replacement rate
+	chocolateDrops=true
 	
 	#The percentage of Chocolate Coins being dropped instead of normal coins while an event is active.
 	#Range: 0.0 -> 1.0

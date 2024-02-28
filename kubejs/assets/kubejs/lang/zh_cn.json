@@ -1,4 +1,5 @@
-{
+{    
+    "itemGroup.kubejs.organs": "额外器官",
     "key.categories.kubejs": "kubejs",
     "key.kubejs.organ_skill": "器官技能按键",
     "item.kubejs.greedy_stomach": "贪婪之胃",
@@ -331,6 +332,7 @@
     "effect.kubejs.vulnerable": "易伤",
     "effect.kubejs.arrow_damage_boost": "箭矢伤害提升",
     "effect.kubejs.dragon_power": "龙化",
+    "effect.kubejs.colorful": "色彩",
     "travelerstitles.kubejs.lost_memory": "回忆之地",
     "kubejs.msg.tamagotchi.1": "Tamagotchi饿了！Tamagotchi想吃饭！",
     "kubejs.msg.tamagotchi.2": "Tamagotchi吃饱了！Tamagotchi很开心！",

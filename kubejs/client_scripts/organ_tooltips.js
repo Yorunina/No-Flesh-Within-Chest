@@ -92,4 +92,24 @@ ItemEvents.tooltip((tooltip) => {
             text.add(lineNum++, [LEADING_SYMBOL, Text.yellow(global.SCORE_MAP[key]), Text.white(' : '), Text.white(item.nbt.organSocres[key])])
         })
     })
+
+    tooltip.addAdvanced('kubejs:random_tumor', (item, advanced, text) => {
+        let lineNum = 1
+        let tagList = item.getTags().toArray()
+        let typeLine = []
+        for (let i = 0; i < tagList.length; i++) {
+            let tag = tagList[i].location()
+            if (tag.getNamespace() != 'kubejs') {
+                continue
+            }
+            tag = String(tag)
+            if (!global.TYPE_MAP[tag]) {
+                continue
+            }
+            typeLine.push(global.TYPE_MAP[tag], ' ')
+        }
+        if (typeLine.length > 0) {
+            text.add(lineNum++, [LEADING_SYMBOL, Text.join(typeLine)])
+        }
+    })
 });
