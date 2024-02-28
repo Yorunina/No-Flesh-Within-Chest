@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
         ['cataclysm:witherite_ingot', '', '']
     ])
 
-    event.shaped('minecraft:end_portal_frame', [
+    event.shaped('dimdungeons:block_key_charger', [
         ['hexerei:selenite_shard', 'hexerei:wax_blend', 'hexerei:selenite_shard'],
         ['minecraft:end_stone', 'minecraft:end_crystal', 'minecraft:end_stone'],
         ['#forge:obsidian', '#forge:obsidian', '#forge:obsidian']
@@ -61,20 +61,16 @@ ServerEvents.recipes(event => {
             return stack;
         });
 
-    /**
-     * @deprecated
-     * 平衡性问题，超限法术将会由器官施法完全代理，下版本完全删除该配方
-     */
-    // event.shaped('irons_spellbooks:scroll', [
-    //     ['kubejs:stardust_fragment', 'kubejs:stardust_fragment', 'kubejs:stardust_fragment'],
-    //     ['kubejs:stardust_fragment', 'irons_spellbooks:scroll', 'kubejs:stardust_fragment'],
-    //     ['kubejs:stardust_fragment', 'kubejs:stardust_fragment', 'kubejs:stardust_fragment']])
-    //     .modifyResult((grid, stack) => {
-    //         let spellBook = grid.find('irons_spellbooks:scroll', 0)
-    //         spellBook.nbt.ISB_spell.putInt('level', spellBook.nbt.ISB_spell.getInt('level') + 1)
-    //         stack = spellBook
-    //         return stack;
-    //     });
+    event.shaped('irons_spellbooks:scroll', [
+        ['kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment'],
+        ['kubejs:dark_stardust_fragment', 'irons_spellbooks:scroll', 'kubejs:dark_stardust_fragment'],
+        ['kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment']])
+        .modifyResult((grid, stack) => {
+            let spellBook = grid.find('irons_spellbooks:scroll', 0)
+            spellBook.nbt.ISB_spell.putInt('level', spellBook.nbt.ISB_spell.getInt('level') + 1)
+            stack = spellBook
+            return stack;
+        });
 
     event.shapeless('kubejs:paradise_regained', ['kubejs:god_consciousness', 'kubejs:god_consciousness', 'kubejs:god_consciousness'])
         .modifyResult((grid, stack) => {

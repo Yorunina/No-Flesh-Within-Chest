@@ -21,169 +21,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["040207B33E2FEBFF"]
-			description: [
-				"最先推荐的，则是能够让你骑着扫帚飞行的&6魔法巫师&r。"
-				""
-				"核心原因是因为后续部分配方需要使用混合锅进行制作，因此推荐优先进行发展。"
-				""
-				"魔法巫师的线路并不长，更多的是用于增添沉浸感而产生的一些可选的发展内容，因此大可不必担心。"
-				""
-				"不过，为了制作后面召唤Boss的&6召唤祭坛&r，或许你需要一些为&6魔法使特制的蜡烛&r"
-				""
-				"将暗影之书放置在书坛上，慢慢阅读吧！"
-			]
-			icon: "irons_spellbooks:alchemist_cauldron"
-			id: "00E3E147FC750C90"
-			rewards: [
-				{
-					id: "69A47379C6E0551E"
-					item: {
-						Count: 1b
-						id: "hexerei:book_of_shadows"
-						tag: {
-							bookmarks: { }
-							chapter: 0
-							opened: 0b
-							page: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0AB96012391DCB55"
-					item: "hexerei:book_of_shadows_altar"
-					type: "item"
-				}
-			]
-			shape: "circle"
-			subtitle: "咒术？魔法？还是科学？"
-			tasks: [{
-				id: "3342C5E8A28DC165"
-				title: "探寻魔法的秘密"
-				type: "checkmark"
-			}]
-			title: "探寻魔法的秘密"
-			x: 2.75d
-			y: 9.25d
-		}
-		{
-			dependencies: ["7F0C1FA54DD6E9BC"]
-			description: [
-				"当你能够自由使用他人的器官之后，各种各样的高级器官就变成了你的新目标。"
-				""
-				"你可以在&5收集：胸腔收集指南&r章节中，了解到当前已经加入的各种高级器官以及其相关系列的效果。"
-				""
-				"在制作高级器官的过程中，你会发现两个奇怪的属性："
-				""
-				"1.&2激活属性(ctrl)&r：当拥有该器官的情况下，吃下激活药即可以获得额外的属性。"
-				""
-				"2.&2特殊效果(alt)&r：当拥有该器官的情况下，在特定条件下可以触发特殊效果，如前期的矿物肺就是含有特殊效果的器官。"
-				""
-				"为了能够稳定触发激活属性，因此你需要&2批量生产激活胶囊&r。"
-			]
-			icon: "kubejs:active_pill"
-			id: "658FEA8E308D741C"
-			rewards: [{
-				id: "042CB92A1CFDA391"
-				item: "kubejs:active_pill"
-				type: "item"
-			}]
-			subtitle: "部分器官的必要成分"
-			tasks: [{
-				id: "04459F4683BD414F"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "激活药丸"
-			x: 3.25d
-			y: 4.0d
-		}
-		{
-			dependencies: ["27AE075BC0F4376A"]
-			description: [
-				"到现在，你应该发现了——绝大多数生物身上直接取得的器官是无法使用的。"
-				""
-				"当你装备其他生物的器官时，会因为&2排异反应&r，而在一定的时间间隔后受到排异反应的伤害。"
-				""
-				"为了解决排异反应，你有三种解决方法："
-				""
-				"1.使用&6O-阴性附魔&r给器官附魔，使其排异反应消失，2级甚至可以防止器官缺失导致的症状。"
-				""
-				"2.使用抗排异药物，比如&6治愈性原液&r来解除器官的绑定。"
-				""
-				"3.直接放弃使用低级器官，换用制作而成的&6高级器官&r。"
-				""
-				"&2对于现在而言，使用治愈性原液是最经济且有效的方案。&r"
-			]
-			icon: "biomancy:healing_additive"
-			id: "7F0C1FA54DD6E9BC"
-			rewards: [
-				{
-					id: "4423AE850CC5D15B"
-					item: "biomancy:healing_additive"
-					type: "item"
-				}
-				{
-					id: "3B5B97406D293CA5"
-					item: {
-						Count: 1b
-						id: "minecraft:enchanted_book"
-						tag: {
-							StoredEnchantments: [{
-								id: "chestcavity:o_negative"
-								lvl: 2s
-							}]
-						}
-					}
-					type: "item"
-				}
-				{
-					advancement: "minecraft:story/root"
-					criterion: ""
-					id: "77DAC91B48E0F443"
-					type: "advancement"
-				}
-			]
-			subtitle: "让你能够自如使用野生怪物的器官"
-			tasks: [{
-				id: "50F3304F77E735FF"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "器官抗排异"
-			x: 4.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["7F0C1FA54DD6E9BC"]
-			description: [
-				"召唤祭坛主要用于召唤生物的场景——当然这并不意味着它仅可以召唤生物，实际上也可以用于一些&6特殊配方&r的加工，获得一些&2物品&r的乃至&2效果类&r的奖励。"
-				""
-				"召唤仪式在后续的旅程中会被反复使用，如果你在&2寻找并击杀某些boss&r的话，在寻找之前，不妨查看一下祭坛的配方，或许会有更简单的方法。"
-			]
-			id: "49BD99DDA8F8454A"
-			rewards: [{
-				id: "0DD6F90701F5DBCC"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "召唤祭坛将会指引你新的道路"
-			tasks: [{
-				id: "3B5DBF68920C4ED0"
-				item: "summoningrituals:altar"
-				type: "item"
-			}]
-			title: "召唤你想要的"
-			x: 5.25d
-			y: 3.75d
-		}
-		{
-			dependencies: ["49BD99DDA8F8454A"]
+			dependencies: ["03B3A54BEDB85320"]
 			description: [
 				"到这里为止，本整合包内绝大部分的Mod内容都已经&2完成了引入&r，本条任务线的在整合包内的“任务”也算&d大功告成&r了。"
 				""
@@ -200,604 +38,7 @@
 				type: "checkmark"
 			}]
 			x: 7.0d
-			y: 2.75d
-		}
-		{
-			dependencies: ["49BD99DDA8F8454A"]
-			description: [
-				"在本整合包中，所有的召唤仪式，都要以&6仪式催化剂&r作为结尾，放置在召唤祭坛上，以开启一场召唤仪式。"
-				""
-				"因此，在制作召唤催化剂的时候可以考虑&2一次制作较多的量&r，以满足长期的召唤仪式的需求。"
-			]
-			id: "2E04900BA7E16DF0"
-			rewards: [{
-				id: "6AC6FB9DC22CD220"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "一切召唤仪式的基础"
-			tasks: [{
-				id: "0A9E7D934E060F6E"
-				item: "kubejs:ritual_catalyst"
-				type: "item"
-			}]
-			x: 4.25d
-			y: 2.5d
-		}
-		{
-			dependencies: ["658FEA8E308D741C"]
-			description: [
-				"由于激活效果的器官非常广泛的存在，每次修改后都复用一次激活药明显不够经济。"
-				""
-				"因此，你可以在确定需要激活状态的情况下，制作&6长效性药丸&r。长效性药丸能够在你每次修改器官之后&2自动的触发激活状态&r。"
-				""
-				"但值得注意的是，并不是所有器官的激活效果都是正面，并且长效药丸本身并不是一个有正面效果的器官。"
-				""
-				"在后续，你可以通过进一步的加工来扭转这种有害性。"
-			]
-			id: "50D70D990312BC70"
-			rewards: [{
-				id: "476ED982F630080F"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "自动激活装置"
-			tasks: [{
-				id: "16FB24D333511B3C"
-				item: "kubejs:long_lasting_pill"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["36D9ACF35A9BD9FA"]
-			description: [
-				"随着能力的不断增长，你发现大部分的特殊器官和激活器官都有着相当劣质的基本面板，并且绝大多数并不能在后续的制作中进行改造。"
-				""
-				"为此，你需要不断提高其他器官的质量。使用&6器官容器&r，可以将任意的器官装入其中，&2少部分器官会显现成长任务&r。"
-				""
-				"将该饰品装备在饰品栏，完成对应任务后，承装在器官容器中的器官便会发生变化，此时通过合成取出后，就可以获得更高级的器官。"
-			]
-			id: "52C54E42818F03EB"
-			rewards: [{
-				id: "1C2DCD63D9AEE80B"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "装载未来"
-			tasks: [{
-				id: "0108F3FD5779C18B"
-				item: "kubejs:empty_organ_charm"
-				type: "item"
-			}]
-			title: "器官容器"
-			x: 7.0d
-			y: 9.25d
-		}
-		{
-			dependencies: ["50D70D990312BC70"]
-			description: ["在经过处理后，长效化药物可以被&2完全无害&r——尽管相对于其他的器官来说提供的属性并不多，但其能够提供的方便程度也是其他器官所难以比拟的。"]
-			id: "6E7491F86379BEAC"
-			rewards: [{
-				id: "7A26A00DECB193D1"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "无害药物"
-			tasks: [{
-				id: "3226602CB5D6A05D"
-				item: "kubejs:long_lasting_pill_gold"
-				type: "item"
-			}]
-			x: 0.75d
-			y: 4.0d
-		}
-		{
-			dependencies: ["7F0C1FA54DD6E9BC"]
-			description: [
-				"很快，在主世界的探索就不能满足你的所有欲望——周边的遗迹已然被探索干净，而过远的地区前去又非常麻烦。"
-				""
-				"此时，你便可以通过在家制作&6维度地牢之门&r前往地牢进行探险！维度地牢的探险难度不高，但其中各个场景各有乐趣所在。并且，其中的奖励箱往往具有着比主世界奖励箱更有用的物品！"
-			]
-			icon: "dimdungeons:block_portal_keyhole"
-			id: "03B3A54BEDB85320"
-			rewards: [
-				{
-					count: 3
-					id: "6E85D0F5766263AA"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "5DAB0B997ABFE91E"
-					item: {
-						Count: 1b
-						id: "patchouli:guide_book"
-						tag: {
-							"patchouli:book": "dimdungeons:guide_book"
-						}
-					}
-					type: "item"
-				}
-			]
-			subtitle: "探索新世界！"
-			tasks: [{
-				id: "36876EE03DBD2CD6"
-				item: "dimdungeons:item_portal_key"
-				type: "item"
-			}]
-			title: "维度地牢"
-			x: 0.75d
-			y: 5.5d
-		}
-		{
-			dependencies: ["040207B33E2FEBFF"]
-			description: [
-				"为了进一步发展&6器官艺术&r，你需要一个高效且稳定的器官来源。血肉重铸的&d肉块&r便能满足你的这一系列要求。"
-				""
-				"肉块是一个非常高效的器官来源，他能够为你提供一系列的&d模板器官&r。模板器官的用途非常广泛，包括将其放置在器官容器中可以最高升级为T3级别器官，或者使用模板器官制作大量的高级器官。"
-				""
-				"为了发展血肉重铸，你需要获得一些&6尖牙或者尖爪&r，来制作&6血肉温床&r。"
-				""
-				"{@pagebreak}"
-				""
-				"关于尖牙和尖爪之类的物品如何获得，可以通过在搜索栏里面查看对应物品，按下&6Ctrl&r键即可看到对应掉落的生物列表。"
-				""
-				"例如，上文提到的尖牙便可以从狼、猫等生物身上获取。"
-			]
-			id: "1884740B0724DE70"
-			rewards: [{
-				count: 3
-				id: "33A06E290DBAC70E"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "为了重铸你的血肉，你需要它们的血肉"
-			tasks: [{
-				id: "1489BEDE37A5D2E2"
-				item: {
-					Count: 1b
-					id: "biomancy:despoil_sickle"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "收割血肉"
-			x: 9.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["1884740B0724DE70"]
-			description: [
-				"为了培育肉块，你需要向血肉温床内投入&2生肉&r以及使用&2治疗药水&r。温床侧面的眼睛完全发亮时，就意味着可以生产肉块了。"
-				""
-				"肉块存在三个类型，每个类型都存在饥饿和普通版本的区别。如果肉块是饥饿版本的，它会无差别的攻击任何生物。但无论是哪一种，在其血量较低时，都可以使用开胸器打开它的胸腔并且完全取出它的&d模板器官&r，这在后面会非常有用！"
-				""
-				"同时，杀死肉块也可以获得&d鲜活肉块&r，这是后面会广泛用到的一种原材料。"
-			]
-			id: "145730691E558B78"
-			rewards: [{
-				count: 5
-				id: "40B7C1A7CB7E8D46"
-				item: "biomancy:living_flesh"
-				type: "item"
-			}]
-			subtitle: "培养肉块的温床"
-			tasks: [{
-				id: "3091B792DF78ADC6"
-				item: "biomancy:primordial_cradle"
-				type: "item"
-			}]
-			title: "建设血肉温床"
-			x: 8.5d
-			y: 7.5d
-		}
-		{
-			dependencies: ["145730691E558B78"]
-			description: [
-				"制作分解器，可以将食物分解成具有更高能量的&2营养物质&r。"
-				""
-				"为了启动分解器，你需要将一部分&6肉类&r放在左侧以提供初始能源。在分解器运行之后，你就可以将营养物质作为燃料，自给自足。"
-			]
-			id: "16D415FC4B0BFB12"
-			rewards: [{
-				count: 32
-				id: "386EBD35C5CD2CC9"
-				item: "biomancy:nutrient_paste"
-				type: "item"
-			}]
-			subtitle: "分解物质，获得物质"
-			tasks: [{
-				id: "67FCCBF084C52B14"
-				item: "biomancy:decomposer"
-				type: "item"
-			}]
-			title: "批量获得生物燃料"
-			x: 9.75d
-			y: 8.5d
-		}
-		{
-			dependencies: ["145730691E558B78"]
-			description: [
-				"通过生物锻炉，你可以制作一些奇特的装置——比如后文提到的&6活体酿造台&r，是生产抗排异药物的重要手段。"
-				""
-				"除此之外，生物锻炉也可以&2直接生产模板器官&r，这种方式生产出来的模板器官并不会有对应的实体所属，因此也&2不会产生排异反应&r，非常适合拿来作为临时填充。"
-				""
-				"生物锻炉也需要营养物质进行驱动。"
-				""
-				"&7同时，其也被广泛用于血肉重铸基础材料的制作，以免去满地找\"牙\"的困难&r"
-			]
-			id: "5F271CD6AAEC88FC"
-			rewards: [{
-				count: 3
-				id: "58518C490DB0DC05"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "铸造红肉身"
-			tasks: [{
-				id: "4695DAB1C60EDB3E"
-				item: "biomancy:bio_forge"
-				type: "item"
-			}]
-			title: "重锻身心"
-			x: 7.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["5F271CD6AAEC88FC"]
-			description: [
-				"活体酿造台可以用于一系列特殊药水的酿造。其中，就包含了一个对于本整合尤为重要的物品，即&6治愈性原液&r。"
-				""
-				"通过将治愈性原液置于副手，未进行抗排异的器官置于主手，即可进行抗排异。抗排异后，器官的所属将会被清空。这是一种相当经济的方案，相对于另一种附魔方案来说。"
-			]
-			id: "27AE075BC0F4376A"
-			rewards: [{
-				count: 3
-				id: "2168BCD8BEC227B2"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "通过活体酿造，可以制作原本无法想象的产物"
-			tasks: [{
-				id: "302069DE8B31E580"
-				item: "biomancy:bio_lab"
-				type: "item"
-			}]
-			title: "酿造传奇之物"
-			x: 5.25d
-			y: 7.5d
-		}
-		{
-			dependencies: ["5F271CD6AAEC88FC"]
-			description: [
-				"模板器官广泛的用于各种器官配方之中。"
-				""
-				"同时，模板器官可以放入器官容器中，向上进化成为更强大的高级器官，提供更多的基础属性。最高可以升级到T3。"
-			]
-			id: "36D9ACF35A9BD9FA"
-			rewards: [{
-				id: "44D54010BE3AE3BC"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "器官之源"
-			tasks: [{
-				id: "53C335208C07990D"
-				item: {
-					Count: 1b
-					id: "kubejs:heart_template"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "模板器官"
-			x: 8.25d
-			y: 9.25d
-		}
-		{
-			dependencies: ["27AE075BC0F4376A"]
-			description: [
-				"通过生物锻炉，你可以制作&6活体注射器&r，向生物的体内注入药剂。"
-				""
-				"其最主要的用途之一是向玩家身体内注入能够提供无限叠加额外生命值的&6伤痛反应原液&r，以及向各种动物注射成长、繁育药剂。"
-				""
-				"但总体而言，其用途有限，玩家可以根据自己的情况自行决定是否制作。"
-			]
-			id: "360F386989316928"
-			rewards: [{
-				id: "577CCFF891B011A7"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "注入你想要的"
-			tasks: [{
-				id: "374E3731D1E7ED65"
-				item: {
-					Count: 1b
-					id: "biomancy:injector"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "活体注射"
-			x: 4.0d
-			y: 8.5d
-		}
-		{
-			dependencies: ["360F386989316928"]
-			description: [
-				"贪婪之爪拥有着极高的攻击速度，并且在攻击时概率会造成额外的&4流血&r效果。"
-				""
-				"但是，为了使用它，你需要&2喂食它一定的食物以回复耐久&r(肉类食物放置在物品上右键)。同时为了启用它的激活状态，获得更强的能力，你需要&2击败怪物&r为其积攒&4血液&r。"
-				""
-				"当血液积攒之后，即可开启激活状态，在激活状态下每次攻击会消耗一点血液。"
-			]
-			id: "73C9E246535AACD4"
-			rewards: [{
-				id: "3645B502D910A3E3"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "它时刻保持贪婪 . . .饥渴. . ."
-			tasks: [{
-				id: "411A42BD7A137F4E"
-				item: {
-					Count: 1b
-					id: "biomancy:ravenous_claws"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "贪婪之爪"
-			x: 4.0d
-			y: 7.0d
-		}
-		{
-			dependencies: ["5F271CD6AAEC88FC"]
-			description: ["区别于普通的箱子，血肉箱&6仅允许&r它的主人打开。"]
-			id: "5BCBCDB936D06219"
-			rewards: [{
-				id: "270D241C6AD3AD75"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "它认定了你作为主人"
-			tasks: [{
-				id: "0D1877EC8E40C462"
-				item: "biomancy:fleshkin_chest"
-				type: "item"
-			}]
-			title: "血肉箱"
-			x: 5.75d
-			y: 9.25d
-		}
-		{
-			dependencies: ["03B3A54BEDB85320"]
-			description: [
-				"为了激活维度地牢的钥匙，你需要寻找&6末地传送门&r框架用于激活。"
-				""
-				"手持空白维度钥匙右键空白&2末地传送门框架的黑色空穴部分&r，维度钥匙便会被激活，并且赋予一些特殊的属性。"
-				""
-				"通过将钥匙放置在基础维度地牢传送门中央上方的&6传送门基石&r中即可开启前往维度地牢的路。"
-			]
-			id: "4264FBF118BE08EA"
-			rewards: [{
-				id: "6C1107835A5473E2"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "在家也能激活钥匙！"
-			tasks: [{
-				id: "2A0ACA77DB5077DF"
-				item: "minecraft:end_portal_frame"
-				type: "item"
-			}]
-			title: "制作末地传送门"
-			x: -0.25d
-			y: 6.5d
-		}
-		{
-			dependencies: ["03B3A54BEDB85320"]
-			description: [
-				"在基础地牢的冒险箱子中，偶然间你会遇到名为&2高级传送门&r钥匙的物品。"
-				""
-				"高级传送门钥匙能够用于开启&6高级传送门&r，前往高级副本。在高级副本中，箱子的掉落物将会变得更加丰富，并且，能够遇到超越常规附魔等级上限的附魔书！"
-			]
-			icon: "dimdungeons:block_portal_crown"
-			id: "45AB5B1831B0AACF"
-			rewards: [{
-				id: "005036E6044961EE"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "前往高级地牢！"
-			tasks: [{
-				id: "2CD10F473BCB56A1"
-				item: {
-					Count: 1b
-					id: "dimdungeons:item_portal_key"
-					tag: {
-						built: 0b
-						dest_x: 6
-						dest_z: 0
-						dungeon_type: "ADVANCED"
-						key_activated: 1b
-						name_part_1: 11
-						name_part_2: 0
-						name_type: 3
-						theme: 0
-					}
-				}
-				match_nbt: false
-				title: "高级钥匙"
-				type: "item"
-			}]
-			title: "高级维度地牢"
-			x: -0.25d
-			y: 4.5d
-		}
-		{
-			dependencies: ["03B3A54BEDB85320"]
-			description: [
-				"通过制作个人维度钥匙，&2你可以前往属于你的口袋维度&r。在这个维度，你可以通过对传送门使用各种道具，编辑允许进入的玩家列表。"
-				""
-				"手持下文道具在口袋维度内对着传送门方块右键，就可以触发对应的效果。"
-				""
-				"&6书&r：查看现有的访客列表"
-				"&6白色染料&r：切换为白名单模式"
-				"&6黑色染料&r：切换为黑名单模式"
-				"&6纸&r：通过铁砧命名纸张，将其名称编辑为你想要添加到访客列表中的玩家名称，你就可以向传送门添加新的访客。"
-				"&6砂轮&r：可以清空当前的访客列表。"
-				""
-				"私人维度往往用于放置一些私人物品——或者仅仅作为一个超平坦的地形使用。"
-			]
-			id: "5255A65B18FE588A"
-			rewards: [{
-				id: "474C5603581AF6D5"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "拥有你的口袋空间！"
-			tasks: [{
-				id: "53C3F084DD6F041A"
-				item: "dimdungeons:item_blank_build_key"
-				type: "item"
-			}]
-			title: "前往个人维度"
-			x: -1.75d
-			y: 5.5d
-		}
-		{
-			dependencies: ["4264FBF118BE08EA"]
-			description: [
-				"如果你获得了&6传送大厅钥匙&r，那么你可以通过传送门去往一个极其独特的地牢，这个地牢中不包含任何的怪物，仅仅是一个&2包含多个传送门的大厅&r。"
-				""
-				"你可以在不同的传送门口拾取对应的传送钥匙。然后返回世界中，在不同的位置设置维度传送门，并且将对应的钥匙插入。这样，不同的传送门就可以前往相同的传送大厅。"
-				""
-				"这意味着你可以做一个多维度、多位置的&6中转站&r！"
-			]
-			id: "055755574AC4697C"
-			rewards: [{
-				id: "2EE671725DCF58A6"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "偶尔，你会得到一些特殊钥匙"
-			tasks: [{
-				id: "794A75FE1032AE76"
-				item: "dimdungeons:item_blank_teleporter_key"
-				type: "item"
-			}]
-			title: "传送大厅？！"
-			x: -1.75d
-			y: 6.5d
-		}
-		{
-			dependencies: ["45AB5B1831B0AACF"]
-			description: [
-				"为了更好的探索地牢，你可以使用这两样道具——秘密之钟和归途明珠。"
-				""
-				"&6秘密之钟&r可以用于探测房间内是否包含隐藏的箱子，如果有，则会发出8个音符的响声。"
-				""
-				"&6归途明珠&r则是用于快速的返回地牢的入口处。"
-			]
-			icon: "dimdungeons:item_secret_bell"
-			id: "738F8D1CEDC020F1"
-			rewards: [{
-				id: "65B0A76807157940"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "成为掌控地牢之人"
-			tasks: [
-				{
-					id: "33343BF20AC4B52E"
-					item: "dimdungeons:item_secret_bell"
-					type: "item"
-				}
-				{
-					id: "1B3FB946CEE7C187"
-					item: "dimdungeons:item_homeward_pearl"
-					type: "item"
-				}
-			]
-			title: "地牢探险家"
-			x: -1.75d
-			y: 4.5d
+			y: 3.25d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]
@@ -864,230 +105,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["00E3E147FC750C90"]
-			description: [
-				"魔法作为一种极其强大的能力，广泛的存在在这片大陆上。"
-				""
-				"为了后续面对更加困难的敌人，选择魔法作为你的第一攻击方式或许是一个不错的选择。"
-				""
-				"相对于魔法巫师中提供的各种&6魔法小玩意&r，Iron的魔法书更偏向于看得见摸得着的&6各类法术&r。"
-				""
-				"同时，也只有Iron的魔法书中的魔法攻击被本整合包&2认定为魔法种类的攻击伤害&r，这对后续击败某些Boss具有重要的意义。"
-			]
-			icon: {
-				Count: 1b
-				id: "irons_spellbooks:diamond_spell_book"
-				tag: {
-					ISB_spellbook: {
-						spellSlots: 8
-						spells: [ ]
-					}
-				}
-			}
-			id: "77ED5164610655DB"
-			shape: "rsquare"
-			subtitle: "或许，魔法才是这个世界的正统？"
-			tasks: [{
-				id: "597BFB93174B30AA"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "Iron的魔法书"
-			x: 1.75d
-			y: 8.0d
-		}
-		{
-			dependencies: ["00E3E147FC750C90"]
-			description: [
-				"区别于炼金锅，混合锅仅仅用于生产一些&6魔法素材&r，比如说后续会用到的Iron的魔法书的普通墨水，或者某些魔法相关的器官，亦或是银锭的相关制作。"
-				""
-				"炼金锅的使用非常简单，只需要在确定配方之后，右键打开界面逐个添加素材即可。"
-			]
-			icon: "hexerei:mixing_cauldron"
-			id: "3319CFE2739EE21B"
-			rewards: [{
-				id: "51EB5D46666FD0C5"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "学习使用混合锅"
-			tasks: [{
-				id: "08DAB9DDF17F3E7D"
-				item: "hexerei:mixing_cauldron"
-				type: "item"
-			}]
-			title: "混合锅"
-			x: 4.25d
-			y: 10.0d
-		}
-		{
-			dependencies: ["3319CFE2739EE21B"]
-			description: [
-				"有些时候，你需要研磨一些物质。比如为了获得魔法使的乌鸦，你便需要使用研钵来获取&6混合种子&r。"
-				""
-				"乌鸦是一个非常有趣的伙伴——当然，你需要区分那些笨乌鸦和聪明乌鸦。&2只有魔法巫师模组的乌鸦才能够对混合种子和你的指令感兴趣&r。"
-				""
-				"在用混合种子喂食之后，乌鸦或许就会变成你的伙伴。潜行右键你便可以对乌鸦进行发号施令。"
-			]
-			id: "4C2F1E3735C11A57"
-			rewards: [{
-				id: "08D8BD1FDE253620"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "研磨与乌鸦"
-			tasks: [{
-				id: "7E810232011CFE20"
-				item: "hexerei:pestle_and_mortar"
-				type: "item"
-			}]
-			title: "研磨你所得"
-			x: 5.75d
-			y: 10.5d
-		}
-		{
-			dependencies: ["4C2F1E3735C11A57"]
-			description: [
-				"魔法巫师中添加了一套用于巫师装备的服装。在完全装备时会触发特殊的装备效果。"
-				""
-				"其中，所涉及到的魔法伤害并&2不包含Iron的魔法书所造成的伤害&r。其所指的魔法伤害均为原版范围内所涉及到的魔法伤害，如部分药水伤害。"
-				""
-				"除此之外，由于魔法巫师的后续内容仍在开发，因此该套服装并无其他作用。"
-			]
-			id: "047C9E4849F763F4"
-			rewards: [{
-				id: "283FF574FBCB3BF8"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "魔法套装. . .但仅限装饰！"
-			tasks: [{
-				id: "7B31FD7B9FBD0F29"
-				item: {
-					Count: 1b
-					id: "hexerei:witch_helmet"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "魔法巫师套装"
-			x: 6.5d
-			y: 11.75d
-		}
-		{
-			dependencies: ["4C2F1E3735C11A57"]
-			description: [
-				"乌鸦能够跟很多魔法巫师中的道具联动，比如乌鸦可以将作物收割并且自动放置到配置好的药草罐中，或者乌鸦可以拿起战锤，对周围的敌人进行攻击。"
-				""
-				"推荐玩家制作一根乌鸦笛子，以方便对乌鸦进行操作。"
-			]
-			id: "1846534694DA7AB7"
-			rewards: [{
-				id: "0CBE519C07874F52"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "飞吧！飞的比我还要高！"
-			tasks: [{
-				id: "1D68F2F560B68730"
-				item: {
-					Count: 1b
-					id: "hexerei:crow_flute"
-					tag: {
-						commandMode: 0
-						commandSelected: 0
-						crowList: [{
-							ID: 45340
-							UUID: [I;
-								942098387
-								-351584077
-								-1533472751
-								-472604788
-							]
-						}]
-						dyeColor1: -1
-						dyeColor2: -1
-						helpCommandSelected: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "乌鸦的妙用"
-			x: 5.25d
-			y: 11.75d
-		}
-		{
-			dependencies: ["3319CFE2739EE21B"]
-			description: [
-				"为了后续召唤祭坛的制作，你需要一些魔法巫师的蜡烛。"
-				""
-				"而为了制作蜡烛，你需要寻找到潜藏在&2沼泽和丛林&r群系下的&6月光石洞穴&r。"
-				""
-				"而为了寻找沼泽和丛林群系，或许你用的上&6探测棒&r. . .当然，指南针也是一个不错的选择。"
-				""
-				"如果始终无法找到月光石洞穴，则可以在&2维度地牢的宝箱&r中偶尔发现&6月光石母岩&r，或许可以解决燃眉之急。"
-			]
-			icon: "hexerei:candle"
-			id: "37688C3843A20232"
-			rewards: [{
-				count: 3
-				id: "5A5946C5F6F9C0C2"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "前往沼泽或者丛林寻找月光石"
-			tasks: [{
-				id: "77CBFCC9F3C5917C"
-				item: "hexerei:selenite_shard"
-				type: "item"
-			}]
-			title: "蜡烛、沼泽与月光石"
-			x: 2.75d
-			y: 10.5d
-		}
-		{
-			dependencies: ["3319CFE2739EE21B"]
-			description: [
-				"魔法巫师的另一重要内容则是魔法扫帚，通过制作各种扫帚，你可以轻松地去往各种地方探险。"
-				""
-				"扫帚&2允许使用类如挎包、挂件等物品进行装饰和升级&r。相比于魔女的扫帚而言，其具有着更高的&6DIY价值&r。"
-				""
-				"当然，就使用价值来说，如果你认为魔法巫师的扫帚使用过于冗杂，则可以尝试制作魔女的扫帚。"
-			]
-			icon: {
-				Count: 1b
-				id: "hexerei:mahogany_broom"
-				tag: { }
-			}
-			id: "7AAEA01D27277498"
-			rewards: [{
-				id: "3CE66056F389FA4D"
-				item: {
-					Count: 1b
-					id: "hexerei:broom_keychain"
-					tag: {
-						Items: [{
-							Count: 1b
-							Slot: 0b
-							id: "kubejs:full_mark"
-						}]
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "我也要飞起来了！"
-			tasks: [{
-				id: "148750957282E55F"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "魔法与飞行扫帚"
-			x: 4.0d
-			y: 11.25d
-		}
-		{
 			dependencies: ["0DCDFAD4C3288FCD"]
 			description: ["击败神意BossRush后，使用最终掉落的&b恩准&r，即可将复乐园升级为&4失乐园&r。"]
 			id: "31943A7BAB8816B5"
@@ -1137,26 +154,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1884740B0724DE70"]
-			icon: {
-				Count: 1b
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "goety:black_book"
-				}
-			}
-			id: "7F14FD199500DEA0"
-			shape: "rsquare"
-			tasks: [{
-				id: "00EB4C16061BDB00"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "亡灵与灵魂魔法"
-			x: 8.5d
-			y: 3.75d
-		}
-		{
 			dependencies: ["0DCDFAD4C3288FCD"]
 			description: [
 				"除了神意挑战之外，仍存在有名为&6元素狂欢&r、&6boss rush&r等挑战之门内容。"
@@ -1186,6 +183,308 @@
 			title: "最终袭击"
 			x: 7.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["03B3A54BEDB85320"]
+			description: [
+				"通过制作个人维度钥匙，&2你可以前往属于你的口袋维度&r。在这个维度，你可以通过对传送门使用各种道具，编辑允许进入的玩家列表。"
+				""
+				"手持下文道具在口袋维度内对着传送门方块右键，就可以触发对应的效果。"
+				""
+				"&6书&r：查看现有的访客列表"
+				"&6白色染料&r：切换为白名单模式"
+				"&6黑色染料&r：切换为黑名单模式"
+				"&6纸&r：通过铁砧命名纸张，将其名称编辑为你想要添加到访客列表中的玩家名称，你就可以向传送门添加新的访客。"
+				"&6砂轮&r：可以清空当前的访客列表。"
+				""
+				"私人维度往往用于放置一些私人物品——或者仅仅作为一个超平坦的地形使用。"
+			]
+			id: "5255A65B18FE588A"
+			rewards: [{
+				id: "474C5603581AF6D5"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "拥有你的口袋空间！"
+			tasks: [{
+				id: "53C3F084DD6F041A"
+				item: "dimdungeons:item_blank_build_key"
+				type: "item"
+			}]
+			title: "前往个人维度"
+			x: 5.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["03B3A54BEDB85320"]
+			description: [
+				"为了更好的探索地牢，你可以使用这两样道具——秘密之钟和归途明珠。"
+				""
+				"&6秘密之钟&r可以用于探测房间内是否包含隐藏的箱子，如果有，则会发出8个音符的响声。&7（秘密之钟可以从次元地牢内的特殊宝箱开出，特殊宝箱常在有陷阱与谜题的房间内）"
+				"&r"
+				"&6归途明珠&r则是用于快速的返回地牢的入口处。"
+			]
+			icon: "dimdungeons:item_secret_bell"
+			id: "738F8D1CEDC020F1"
+			rewards: [{
+				id: "65B0A76807157940"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "成为掌控地牢之人"
+			tasks: [
+				{
+					id: "33343BF20AC4B52E"
+					item: "dimdungeons:item_secret_bell"
+					type: "item"
+				}
+				{
+					id: "1B3FB946CEE7C187"
+					item: "dimdungeons:item_homeward_pearl"
+					type: "item"
+				}
+			]
+			title: "地牢探险家"
+			x: 8.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["03B3A54BEDB85320"]
+			description: [
+				"在基础地牢的冒险箱子中，偶然间你会遇到名为&2高级传送门&r钥匙的物品。"
+				""
+				"高级传送门钥匙能够用于开启&6高级传送门&r，前往高级副本。在高级副本中，箱子的掉落物将会变得更加丰富，并且，能够遇到超越常规附魔等级上限的附魔书！"
+				""
+				"激活高级钥匙需要&d高级传送门&r，搭建方法是在&6传送门基石&r两侧放上&6维度皇冠座&r，且&2在两侧石柱尖顶挂上白色或紫色的旗帜&r。&7（如下图所示；维度皇冠座在地牢宝箱中获得）"
+				"&r"
+				"{image:kubejs:textures/task/dimensiona_3.png width:160 height:80 align:1}"
+			]
+			icon: "dimdungeons:block_portal_crown"
+			id: "45AB5B1831B0AACF"
+			rewards: [{
+				id: "005036E6044961EE"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "前往高级地牢！"
+			tasks: [{
+				id: "2CD10F473BCB56A1"
+				item: {
+					Count: 1b
+					id: "dimdungeons:item_portal_key"
+					tag: {
+						built: 0b
+						dest_x: 6
+						dest_z: 0
+						dungeon_type: "ADVANCED"
+						key_activated: 1b
+						name_part_1: 11
+						name_part_2: 0
+						name_type: 3
+						theme: 0
+					}
+				}
+				match_nbt: false
+				title: "高级钥匙"
+				type: "item"
+			}]
+			title: "高级维度地牢"
+			x: 5.25d
+			y: 3.25d
+		}
+		{
+			dependencies: ["4452DA9A1D3D80A0"]
+			description: [
+				"一个基础的传送门包括9个&6石砖&r、2个&6镀金传送门方块&r、1个&6传送门基石&r构成，这些都可以通过工作台合成获得。"
+				""
+				"&7虽然该模组的教学书并没有完全汉化，但是关于传送门部分的介绍是已汉化的，还请适当阅读教学书。&r"
+				""
+				"{image:kubejs:textures/task/dimensiona_2.png width:160 height:80 align:1}"
+				""
+				""
+				"{@pagebreak}"
+				"手持空白传送门钥匙&e右键&r&6末地传送门框架&r的中心位置（如图红框所示），得到一把随机的新传送门钥匙，将该钥匙放入&6传送门基石&r中，即可开启传送门。"
+				""
+				"&7（传送门开启可能存在卡顿和延迟，请耐心等待）&r"
+				""
+				"{image:kubejs:textures/task/dimensiona_1.png width:100 height:100 align:1}"
+			]
+			icon: "dimdungeons:block_portal_keyhole"
+			id: "03B3A54BEDB85320"
+			rewards: [
+				{
+					count: 3
+					id: "6E85D0F5766263AA"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_iron"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "5DAB0B997ABFE91E"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "dimdungeons:guide_book"
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "新世界的大门"
+			tasks: [{
+				id: "36876EE03DBD2CD6"
+				item: "dimdungeons:item_portal_key"
+				type: "item"
+			}]
+			title: "维度地牢"
+			x: 7.0d
+			y: 5.25d
+		}
+		{
+			dependencies: ["4452DA9A1D3D80A0"]
+			description: [
+				"你可以按照配方制作自己的钥匙刻字台，它也有着类似于末地传送门一样的激活钥匙的功能，这样就可以在家激活传送门钥匙了。"
+				""
+				"&7（月光石生成在丛林和沼泽地底下的月光石晶洞中）&r"
+			]
+			id: "4264FBF118BE08EA"
+			rewards: [{
+				id: "6C1107835A5473E2"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "在家也能激活钥匙！"
+			tasks: [{
+				id: "0378C5A5729CEBDB"
+				item: "dimdungeons:block_key_charger"
+				type: "item"
+			}]
+			title: "制作钥匙刻字台！"
+			x: 8.75d
+			y: 7.25d
+		}
+		{
+			dependencies: ["45AB5B1831B0AACF"]
+			description: [
+				"如果你获得了&6传送大厅钥匙&r，那么你可以通过传送门去往一个极其独特的地牢，这个地牢中不包含任何的怪物，仅仅是一个&2包含多个传送门的大厅&r。"
+				""
+				"你可以在不同的传送门口拾取对应的传送钥匙。然后返回世界中，在不同的位置设置维度传送门，并且将对应的钥匙插入。这样，不同的传送门就可以前往相同的传送大厅。"
+				""
+				"这意味着你可以做一个多维度、多位置的&6中转站&r！"
+			]
+			id: "055755574AC4697C"
+			rewards: [{
+				id: "2EE671725DCF58A6"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "偶尔，你会得到一些特殊钥匙"
+			tasks: [{
+				id: "794A75FE1032AE76"
+				item: "dimdungeons:item_blank_teleporter_key"
+				type: "item"
+			}]
+			title: "传送大厅？！"
+			x: 5.25d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2EBB4C697D81D42A"]
+			description: [
+				"在这个世界上，仍旧存在着旧世界的灾变之力。在某些特定的建筑结构内，你会遭遇拥有&4灾变之力&r的特殊怪物。"
+				""
+				"拥有&4灾变之力&r的怪物在攻击命中你时，会在一段时间内&2禁止方块放置、物品使用、以及任何的攻击行为&r。"
+			]
+			icon: "cataclysm:altar_of_fire"
+			id: "22F081213B71190E"
+			subtitle: "在世界的角落里. . ."
+			tasks: [{
+				id: "16F82F5206B69D49"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "灾变"
+			x: 8.75d
+			y: 3.25d
+		}
+		{
+			dependencies: ["22F081213B71190E"]
+			description: ["可以通过灾变本身提供的&6各种眼睛&r来寻找其生成的建筑。"]
+			id: "54D9CCA0E085E647"
+			rewards: [{
+				id: "5C23AD1FF738A81F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "寻找灾变建筑"
+			tasks: [{
+				id: "4B64AB81FF9995BC"
+				item: "cataclysm:mech_eye"
+				type: "item"
+			}]
+			title: "寻找灾变之源"
+			x: 10.5d
+			y: 3.25d
+		}
+		{
+			dependencies: ["15A36D9385499A77"]
+			description: [
+				"很快，在主世界的探索就不能满足你的所有欲望——周边的遗迹已然被探索干净，而过远的地区前去又非常麻烦。"
+				""
+				"此时，你便可以通过在家制作&6维度地牢之门&r前往地牢进行探险！维度地牢的探险难度不高，但其中各个场景各有乐趣所在。并且，其中的奖励箱往往具有着比主世界奖励箱更有用的物品！"
+			]
+			id: "4452DA9A1D3D80A0"
+			rewards: [
+				{
+					id: "4C1AB80049C082EB"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "dimdungeons:guide_book"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5DF8378BB6EF11A6"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+			]
+			subtitle: "探索新世界"
+			tasks: [{
+				id: "0C77FA41D567BA94"
+				item: "dimdungeons:item_portal_key"
+				type: "item"
+			}]
+			title: "维度地牢"
+			x: 7.0d
+			y: 8.5d
 		}
 	]
 	title: "章节2：觉醒"

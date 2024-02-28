@@ -330,7 +330,7 @@ const organActiveOnlyStrategies = {
     },
     'kubejs:infinity_force': function (player, organ, attributeMap) {
         if (organ.tag?.forgeTimes) {
-            let value = organ.tag.forgeTimes * 2
+            let value = organ.tag.forgeTimes * 1
             attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
         }
     },

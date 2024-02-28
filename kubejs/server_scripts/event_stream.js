@@ -29,7 +29,6 @@ global.playerDamage = event => {
     organCharmEntityHurtByPlayer(event, data)
     spikedCarapaceEntityHurtByPlayer(event, data)
     hardShellEntityHurtByPlayer(event, data)
-    theDarkestTimeEntityHurtByPlayer(event, data)
     if (data.returnDamage != 0) {
         player.attack(data.returnDamage)
     }
@@ -58,7 +57,6 @@ global.playerHurt = event => {
     organCharmPlayerHurtByOthers(event, data)
     fightForDeathPlayerHurtByOthers(event, data)
     dragonPowerPlayerHurtByOthers(event, data)
-    theDarkestTimePlayerHurtByOthers(event, data)
 
     if (data.returnDamage != 0 && event.source.actual) {
         event.source.actual.attack(data.returnDamage)

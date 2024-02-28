@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: true
 	default_quest_shape: ""
 	filename: "iron"
-	group: "1B2D143C21AF2AF5"
+	group: "0BA6B2DC983B31FC"
 	icon: {
 		Count: 1b
 		id: "irons_spellbooks:diamond_spell_book"
@@ -27,7 +27,7 @@
 		x: -0.5d
 		y: -3.0d
 	}]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -36,6 +36,8 @@
 				"想成为一个强大的魔法师并不是终日宅在家里研究，而是踏遍世界各地寻找魔法的踪迹。这意味着你或许需要一个趁手的交通工具来帮助你更方便的周游世界。"
 				""
 				"&2魔法巫师&r模组中的扫帚是一个不错的选择，它不仅能用来飞行赶路，还允许你对它进行改造。为扫帚装载不同类型的背包、替换扫帚头、增加装饰等等，都会极大方便你的旅途。"
+				""
+				"当然，如果你觉得过于麻烦，也可以制作更为廉价的&6“魔女的扫帚”&r。"
 			]
 			hide_dependency_lines: false
 			icon: {
@@ -77,6 +79,11 @@
 						id: "hexerei:willow_broom"
 						tag: { }
 					}
+					type: "item"
+				}
+				{
+					id: "5FB9CE6A6B957B4C"
+					item: "majobroom:broom_item"
 					type: "item"
 				}
 			]
@@ -1758,11 +1765,15 @@
 			y: -10.75d
 		}
 		{
-			dependencies: ["77ED5164610655DB"]
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
-				"&2Iron的魔法书&r是一款受经典 RPG 游戏启发的魔法模组，旨在将经典的施法流程引入游戏当中。"
+				"&d《Iron的魔法书》&r是一款受经典 RPG 游戏启发的魔法模组，旨在将经典的施法流程引入游戏当中。"
 				""
 				"你可以通过与危险的巫师战斗、突袭大量自然生成的建筑、深入地下城、收集资源和寻找强大的魔法物品来获得使用魔法的力量。"
+				""
+				"&d《Iron的魔法书》&r中的魔法更偏向于看得见摸得着的&6各类法术&r。"
+				""
+				"同时，也&c只有《Iron的魔法书》中的魔法攻击被本整合包认定为魔法种类的攻击伤害&r，这对后续击败某些Boss具有重要的意义。"
 			]
 			icon: {
 				Count: 1b
@@ -2651,6 +2662,21 @@
 			title: "发现牧师塔"
 			x: -7.25d
 			y: -11.75d
+		}
+		{
+			dependencies: ["17889F915BEB2F91"]
+			description: ["使用&6召唤祭坛&r可以制作的一种奇特材料，可以通过合成给任意魔法书升级&e添加新的槽位&r。"]
+			hide_dependency_lines: false
+			id: "36B8E915CAACBDC1"
+			subtitle: "来自天空的馈赠"
+			tasks: [{
+				id: "4D6484BB980FFBAD"
+				item: "kubejs:stardust_fragment"
+				type: "item"
+			}]
+			title: "更多的魔法槽位"
+			x: -1.0d
+			y: -9.75d
 		}
 	]
 	title: "Iron的魔法书：魔法与第一原则"

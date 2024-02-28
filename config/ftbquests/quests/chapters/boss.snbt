@@ -102,6 +102,30 @@
 			x: 16.5d
 			y: 15.0d
 		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 18.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 22.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -588,7 +612,7 @@
 			}]
 			title: "BOMD"
 			x: -4.25d
-			y: 8.25d
+			y: 11.25d
 		}
 		{
 			dependencies: ["638AFA1A16525BB9"]
@@ -615,7 +639,7 @@
 				type: "structure"
 			}]
 			x: -0.25d
-			y: 9.25d
+			y: 12.25d
 		}
 		{
 			dependencies: ["638AFA1A16525BB9"]
@@ -641,7 +665,7 @@
 			}]
 			title: "发现下界铁掌的踪迹"
 			x: -1.25d
-			y: 9.25d
+			y: 12.25d
 		}
 		{
 			dependencies: ["638AFA1A16525BB9"]
@@ -667,7 +691,7 @@
 			}]
 			title: "寻找暗夜巫妖的踪迹"
 			x: -2.25d
-			y: 9.25d
+			y: 12.25d
 		}
 		{
 			dependencies: ["638AFA1A16525BB9"]
@@ -693,7 +717,7 @@
 			}]
 			title: "寻找虚空之花的踪迹"
 			x: -3.25d
-			y: 9.25d
+			y: 12.25d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -711,7 +735,7 @@
 			}]
 			title: "迎战"
 			x: -4.25d
-			y: 11.25d
+			y: 8.25d
 		}
 		{
 			dependencies: ["7729DBC45AEF7D17"]
@@ -728,7 +752,7 @@
 				type: "item"
 			}]
 			x: -3.25d
-			y: 12.25d
+			y: 9.25d
 		}
 		{
 			dependencies: ["7729DBC45AEF7D17"]
@@ -745,7 +769,7 @@
 				type: "item"
 			}]
 			x: -2.25d
-			y: 12.25d
+			y: 9.25d
 		}
 		{
 			dependencies: ["7729DBC45AEF7D17"]
@@ -762,7 +786,7 @@
 				type: "item"
 			}]
 			x: -1.25d
-			y: 12.25d
+			y: 9.25d
 		}
 		{
 			dependencies: ["7729DBC45AEF7D17"]
@@ -779,7 +803,7 @@
 				type: "item"
 			}]
 			x: -0.25d
-			y: 12.25d
+			y: 9.25d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -1217,6 +1241,80 @@
 			title: "裂刃帝王"
 			x: 11.5d
 			y: 14.75d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			icon: "minecraft:grass_block"
+			id: "06BA15D2F337E2C6"
+			tasks: [{
+				id: "0234C61C3F9E6FA6"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "我的世界原版"
+			x: -4.25d
+			y: 17.5d
+		}
+		{
+			dependencies: ["06BA15D2F337E2C6"]
+			hide_dependency_lines: true
+			icon: "minecraft:sculk_shrieker"
+			id: "2D66B5749F9D7846"
+			rewards: [{
+				id: "1113F7B21BB07CFA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: {
+					Count: 1b
+					id: "kubejs:warden_core"
+					tag: { }
+				}
+				id: "54B2C0992C8C149D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "监守者"
+			x: -3.25d
+			y: 18.5d
+		}
+		{
+			dependencies: ["6269CC520129B2A2"]
+			description: [
+				"虚空蠕虫生活在&e末地&r下方的虚空中，向虚空中投入&3神秘蠕虫&r可以将其引出。"
+				""
+				"&8对虚空蠕虫最有效的攻击方式，便是直接攻击它的头部。&r"
+			]
+			hide_dependency_lines: true
+			id: "08869259102FF427"
+			rewards: [{
+				id: "2BC33966C39BAD43"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08B30DF4477D1844"
+				item: "alexsmobs:mysterious_worm"
+				type: "item"
+			}]
+			x: -3.25d
+			y: 21.75d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [""]
+			icon: "alexsmobs:animal_dictionary"
+			id: "6269CC520129B2A2"
+			tasks: [{
+				id: "292EF0BD0B82B736"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "Alex生物"
+			x: -4.25d
+			y: 20.75d
 		}
 	]
 	title: "挑战：BOSS搜寻指南"

@@ -20,6 +20,16 @@ LootJS.modifiers(event => {
                 LootEntry.of('lightmanscurrency:coin_emerald').when((c) => c.randomChance(0.1)),
                 LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.05)),
             )
+            .apply(ctx => {
+                let player = ctx.player
+                if (!player) return
+                let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
+                if (!diffStage) return
+                let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
+                if (diffLevelNum >= 4) {
+                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min((diffLevelNum - 3) * 0.2, 1))))
+                }
+            })
     }
 
     bossTypeList.forEach(entityId => {
@@ -82,8 +92,8 @@ LootJS.modifiers(event => {
             let entity = ctx.entity
             if (entity.isLiving() &&
                 (entity.hasEffect('kubejs:glare_of_god') ||
-                entity.hasEffect('kubejs:gaze_of_god') ||
-                entity.hasEffect('kubejs:glimpse_of_god'))) {
+                    entity.hasEffect('kubejs:gaze_of_god') ||
+                    entity.hasEffect('kubejs:glimpse_of_god'))) {
                 if (ctx.player) {
                     ctx.player.give(Item.of('kubejs:god_consciousness', { mobType: ctx.entity.getType() }))
                 }
@@ -134,6 +144,22 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('kubejs:redstone_furnace').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('kubejs:ritual_catalyst').when((c) => c.randomChance(0.1)))
         .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.01)))
+
+    event.addLootTypeModifier(LootType.FISHING)
+        .apply(ctx => {
+            let player = ctx.player;
+            if (!player) return;
+            if (player.stages.has('flos_magic_stage_2') && ctx.level.isRaining() &&
+                event.level.isNight() && Math.random() < 0.1) {
+                ctx.server.scheduleInTicks(20 * 1, (callback) => {
+                    ctx.level.runCommandSilent('/weather clear');
+                    ctx.player.stages.remove('flos_magic_stage_2')
+                    ctx.player.stages.add('flos_magic_stage_3')
+                })
+                return
+            }
+        })
+
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['#kubejs:graveyard'], false)

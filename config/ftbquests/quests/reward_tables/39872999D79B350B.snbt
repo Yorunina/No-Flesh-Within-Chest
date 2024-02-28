@@ -8,7 +8,7 @@
 	}
 	id: "39872999D79B350B"
 	loot_size: 1
-	order_index: 4
+	order_index: 3
 	rewards: [
 		{
 			auto: "invisible"

@@ -445,27 +445,6 @@
 				""
 				"修理的本质是&e对各个部件的修复&r，因此修复会用到&e多种材料&r，请在&d修理界面左下角的修复轮次&r中查看。"
 			]
-			icon: {
-				Count: 1b
-				id: "tetra:scroll_rolled"
-				tag: {
-					BlockEntityTag: {
-						data: [{
-							effects: ["tetra:gem_expertise"]
-							glyphs: [
-								14
-								13
-								14
-								15
-							]
-							intricate: 0b
-							key: "gem_expertise"
-							material: 0
-							ribbon: "2bffee"
-						}]
-					}
-				}
-			}
 			id: "5BA7E809A7B3037B"
 			rewards: [{
 				count: 10
@@ -498,27 +477,6 @@
 				""
 				"无脑使用高级材料并不能让你的工具变得更加强大，&e合理的搭配更为重要&r。"
 			]
-			icon: {
-				Count: 1b
-				id: "tetra:scroll_rolled"
-				tag: {
-					BlockEntityTag: {
-						data: [{
-							effects: ["tetra:cut_efficiency"]
-							glyphs: [
-								4
-								0
-								3
-								5
-							]
-							intricate: 0b
-							key: "cut_efficiency"
-							material: 0
-							ribbon: "6666ff"
-						}]
-					}
-				}
-			}
 			id: "47A7AEEFD24F1D7A"
 			rewards: [{
 				count: 10
@@ -551,27 +509,6 @@
 				""
 				"每个部件可以被视为独立的个体，对不同部件可以分别进行&e附魔&r或者对该项部件进行&e再改造&r。"
 			]
-			icon: {
-				Count: 1b
-				id: "tetra:scroll_rolled"
-				tag: {
-					BlockEntityTag: {
-						data: [{
-							effects: ["tetra:scale_expertise"]
-							glyphs: [
-								6
-								7
-								6
-								8
-							]
-							intricate: 0b
-							key: "scale_expertise"
-							material: 0
-							ribbon: "75a03e"
-						}]
-					}
-				}
-			}
 			id: "6F6EA56EB887392B"
 			rewards: [{
 				count: 10
@@ -605,27 +542,6 @@
 				""
 				"当头部区两个部件&e均为钻石镐头部件&r，该工具才会等同于&e原版钻石镐的挖掘等级&r。"
 			]
-			icon: {
-				Count: 1b
-				id: "tetra:scroll_rolled"
-				tag: {
-					BlockEntityTag: {
-						data: [{
-							effects: ["tetra:bone_expertise"]
-							glyphs: [
-								12
-								14
-								12
-								14
-							]
-							intricate: 0b
-							key: "bone_expertise"
-							material: 0
-							ribbon: "fff193"
-						}]
-					}
-				}
-			}
 			id: "56C75C9FAD3CEC66"
 			rewards: [{
 				count: 10
@@ -717,27 +633,6 @@
 				""
 				"每一级&a稳固&r可以为工具&e提供额外的完整度&r。"
 			]
-			icon: {
-				Count: 1b
-				id: "tetra:scroll_rolled"
-				tag: {
-					BlockEntityTag: {
-						data: [{
-							effects: ["tetra:fabric_expertise"]
-							glyphs: [
-								5
-								3
-								6
-								4
-							]
-							intricate: 0b
-							key: "fabric_expertise"
-							material: 0
-							ribbon: "ff3333"
-						}]
-					}
-				}
-			}
 			id: "48BD60FBFEC2896A"
 			subtitle: "解除对名词的疑惑"
 			tasks: [{
@@ -768,27 +663,6 @@
 				""
 				"诅咒可以使用青金石和经验来驱散"
 			]
-			icon: {
-				Count: 1b
-				id: "tetra:scroll_rolled"
-				tag: {
-					BlockEntityTag: {
-						data: [{
-							effects: ["tetra:skin_expertise"]
-							glyphs: [
-								0
-								1
-								1
-								1
-							]
-							intricate: 0b
-							key: "skin_expertise"
-							material: 0
-							ribbon: "bf6930"
-						}]
-					}
-				}
-			}
 			id: "0326579D60162FF6"
 			rewards: [{
 				count: 10
@@ -842,27 +716,25 @@
 			y: 26.0d
 		}
 		{
-			dependencies: ["4632D20D50741511"]
+			dependencies: ["312A09022249980F"]
 			description: [
-				"&6加工台&r加工的零件和属性受到&6图纸&r影响。"
+				"&6加工台&r加工的零件和属性受到&6卷轴&r影响。"
 				""
-				"有些图纸可以&e解锁&r工具&e新的改装部件种类&r。"
+				"将卷轴&e放置在加工台周围3×3的区域，便可以使其作用于加工台。"
 				""
-				"有些图纸&e放置在加工台周围&r可以让被制作出的部件&e获得轻微属性提升&r，"
+				"卷轴的获得方式："
 				""
-				"有些图纸可以使工具&e获得技能特效&r。"
+				"&6黄色专论卷轴&r：村庄&e村民交易&r"
 				""
-				"{@pagebreak}"
-				"图纸的获得方式："
+				"&6蓝色刀剑工艺卷轴&r：主世界各种&e地牢遗迹&r中获得"
 				""
-				"&6黄色专论图纸&r：村庄&e村民交易&r"
+				"&6战争利器卷轴&r：与&e猪灵交易&r获得"
 				""
-				"&6蓝色刀剑工艺图纸&r：主世界各种&e地牢遗迹&r中获得"
+				"&6镀金卷轴&r：&e下界遗迹&r中搜索获得"
 				""
-				"&6战争利器图纸&r：与&e猪灵交易&r获得"
-				""
-				"&6镀金图纸&r：&e下界遗迹&r中搜索获得"
+				"&6部分卷轴&r可以合成获得"
 			]
+			hide_dependency_lines: false
 			icon: {
 				Count: 1b
 				id: "tetra:scroll_rolled"
@@ -893,7 +765,7 @@
 			}]
 			title: "卷轴计划"
 			x: -1.25d
-			y: 18.25d
+			y: 18.0d
 		}
 		{
 			dependencies: ["674E912F6FFC7F67"]
@@ -1239,7 +1111,7 @@
 				type: "advancement"
 			}]
 			title: "遗迹中的百宝箱"
-			x: -0.25d
+			x: 0.25d
 			y: 24.5d
 		}
 		{
@@ -1266,7 +1138,7 @@
 				type: "advancement"
 			}]
 			title: "锻造锤的动力源"
-			x: 1.25d
+			x: 1.75d
 			y: 24.5d
 		}
 		{
@@ -1285,7 +1157,7 @@
 				type: "item"
 			}]
 			title: "更多的锻造等级"
-			x: 2.25d
+			x: 2.75d
 			y: 24.5d
 		}
 		{
@@ -1372,7 +1244,7 @@
 				item: "tetra:planar_stabilizer"
 				type: "item"
 			}]
-			x: 3.25d
+			x: 3.75d
 			y: 24.5d
 		}
 		{
@@ -1389,7 +1261,7 @@
 				item: "tetra:lubricant_dispenser"
 				type: "item"
 			}]
-			x: 5.25d
+			x: 5.75d
 			y: 24.5d
 		}
 		{
@@ -1408,7 +1280,7 @@
 				item: "tetra:vent_plate"
 				type: "item"
 			}]
-			x: 4.25d
+			x: 4.75d
 			y: 24.5d
 		}
 		{
@@ -1466,6 +1338,1263 @@
 			title: "发现特殊遗迹：地核提取基地"
 			x: -1.25d
 			y: 27.5d
+		}
+		{
+			dependencies: ["35E219B64C68FB53"]
+			description: [
+				"寻找各种生态群系的时候，你往往要根据各种生成规则来进行排查。但在Mod众多的情况下，自然生成变得极其复杂且难以捉摸，此时，你可能就需要使用&2自然指南针&r来辅助对于群系或结构的寻找。"
+				""
+				"通过右键指南针，你可以使用其搜索框来定向的搜索对应的群系。"
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1b
+				id: "naturescompass:naturescompass"
+				tag: { }
+			}
+			id: "37897967041E6CBB"
+			rewards: [{
+				id: "1CA2BD719C14AF46"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "指向你所需要的"
+			tasks: [{
+				id: "7EF56E6086EA3533"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "指南针"
+			x: -1.25d
+			y: 24.5d
+		}
+		{
+			dependencies: ["615C6A1DA6AEA1A4"]
+			description: [
+				"Tetra的附属——&6《锻造之艺》&r中增加了&9《Alex生物》&r的联动。"
+				""
+				"因为涉及到的Alex&9虚空蠕虫&r没有翻译，这里简单提一下："
+				""
+				"虚空蠕虫生活在&e末地&r下方的虚空中，向虚空中投入&3神秘蠕虫&r可以将其引出。"
+				""
+				"&8对虚空蠕虫最有效的攻击方式，便是直接攻击它的头部。&r"
+			]
+			hide_dependency_lines: true
+			icon: "alexsmobs:void_worm_mandible"
+			id: "64B168E393C5948F"
+			tasks: [{
+				id: "52E29EA2B1D14BE4"
+				item: "alexsmobs:mysterious_worm"
+				type: "item"
+			}]
+			x: -2.25d
+			y: 18.0d
+		}
+		{
+			dependencies: ["615C6A1DA6AEA1A4"]
+			id: "067FBDC89CB52166"
+			rewards: [{
+				id: "78FA9D95ACB17CAD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "59DC30D2690715E4"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:gem_expertise"]
+									glyphs: [
+										14
+										13
+										14
+										15
+									]
+									intricate: 0b
+									key: "gem_expertise"
+									material: 0
+									ribbon: "2bffee"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26D9F38B934B2264"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:metal_expertise"]
+									glyphs: [
+										4
+										6
+										6
+										5
+									]
+									intricate: 0b
+									key: "metal_expertise"
+									material: 0
+									ribbon: "ffffff"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A3CF30AF0EF5098"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:wood_expertise"]
+									glyphs: [
+										2
+										1
+										2
+										1
+									]
+									intricate: 0b
+									key: "wood_expertise"
+									material: 0
+									ribbon: "bf934b"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5675D1661E06A3A0"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:stone_expertise"]
+									glyphs: [2]
+									intricate: 0b
+									key: "stone_expertise"
+									material: 0
+									ribbon: "9a9a9a"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1223CE0EDD884056"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:fibre_expertise"]
+									glyphs: [
+										5
+										10
+										11
+										4
+									]
+									intricate: 0b
+									key: "fibre_expertise"
+									material: 0
+									ribbon: "a88054"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BC7C41CAD9C2188"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:skin_expertise"]
+									glyphs: [
+										0
+										1
+										1
+										1
+									]
+									intricate: 0b
+									key: "skin_expertise"
+									material: 0
+									ribbon: "bf6930"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B28EB7C316879D8"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:bone_expertise"]
+									glyphs: [
+										12
+										14
+										12
+										14
+									]
+									intricate: 0b
+									key: "bone_expertise"
+									material: 0
+									ribbon: "fff193"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3B2620B2714FC51B"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:fabric_expertise"]
+									glyphs: [
+										5
+										3
+										6
+										4
+									]
+									intricate: 0b
+									key: "fabric_expertise"
+									material: 0
+									ribbon: "ff3333"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "27598F12E54043AE"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:scale_expertise"]
+									glyphs: [
+										6
+										7
+										6
+										8
+									]
+									intricate: 0b
+									key: "scale_expertise"
+									material: 0
+									ribbon: "75a03e"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "卷轴图鉴（一）"
+			x: -3.25d
+			y: 16.0d
+		}
+		{
+			dependencies: ["615C6A1DA6AEA1A4"]
+			id: "09F6CD9B6C21C62A"
+			rewards: [{
+				id: "4EEA2FDA132792CF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0BD2125C8FF72D22"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:hammer_efficiency"]
+									glyphs: [
+										6
+										7
+										6
+										11
+									]
+									intricate: 0b
+									key: "hammer_efficiency"
+									material: 0
+									ribbon: "ff6666"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13508A85F80EB628"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:axe_efficiency"]
+									glyphs: [
+										0
+										1
+										3
+										3
+									]
+									intricate: 0b
+									key: "axe_efficiency"
+									material: 0
+									ribbon: "66ff66"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0254615577339280"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									effects: ["tetra:cut_efficiency"]
+									glyphs: [
+										4
+										0
+										3
+										5
+									]
+									intricate: 0b
+									key: "cut_efficiency"
+									material: 0
+									ribbon: "6666ff"
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "卷轴图鉴（二）"
+			x: -2.25d
+			y: 16.0d
+		}
+		{
+			dependencies: ["615C6A1DA6AEA1A4"]
+			id: "171DCA044736B211"
+			rewards: [{
+				id: "712843D5B56BB13B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1AB5456EEBF925C4"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									glyphs: [
+										3
+										2
+										2
+										1
+									]
+									intricate: 0b
+									key: "sword/sturdy_guard"
+									material: 1
+									ribbon: "bcb8b5"
+									schematics: ["tetra:sword/sturdy_guard"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "08DD874650830868"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									glyphs: [
+										4
+										1
+										0
+										5
+									]
+									intricate: 0b
+									key: "sword/throwing_knife"
+									material: 1
+									ribbon: "b8ced9"
+									schematics: ["tetra:sword/throwing_knife"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D5B23248F25316B"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									glyphs: [
+										8
+										9
+										10
+										5
+									]
+									intricate: 0b
+									key: "sword/howling"
+									material: 1
+									ribbon: "faf396"
+									schematics: ["tetra:sword/howling"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "卷轴图鉴（三）"
+			x: -1.25d
+			y: 16.0d
+		}
+		{
+			dependencies: ["615C6A1DA6AEA1A4"]
+			id: "2E65173380E2A751"
+			rewards: [{
+				id: "57C4F8089BB6B867"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "160F3DF650A9EA8E"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "warforge"
+									glyphs: [
+										5
+										10
+										8
+										9
+									]
+									intricate: 0b
+									key: "warforge/axe"
+									material: 2
+									ribbon: "b35973"
+									schematics: ["tetra:warforge/axe"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "76F7B14892902448"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "warforge"
+									glyphs: [
+										9
+										8
+										11
+										10
+									]
+									intricate: 0b
+									key: "warforge/hammer"
+									material: 2
+									ribbon: "3d4299"
+									schematics: ["tetra:warforge/hammer"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "11BD588FB76271D6"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "warforge"
+									glyphs: [
+										6
+										11
+										8
+										7
+									]
+									intricate: 0b
+									key: "warforge/pickaxe"
+									material: 2
+									ribbon: "508cb3"
+									schematics: ["tetra:warforge/pickaxe"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77C79F2EA7FB3093"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "warforge"
+									glyphs: [
+										11
+										5
+										8
+										9
+									]
+									intricate: 0b
+									key: "warforge/butt"
+									material: 2
+									ribbon: "b33636"
+									schematics: ["tetra:warforge/butt"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20466B8C087AF591"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "warforge"
+									glyphs: [
+										8
+										10
+										5
+										11
+									]
+									intricate: 0b
+									key: "warforge/claw"
+									material: 2
+									ribbon: "1d262f"
+									schematics: ["tetra:warforge/claw"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7ED5F0F02D53AFE2"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "warforge"
+									glyphs: [
+										10
+										7
+										9
+										5
+									]
+									intricate: 0b
+									key: "warforge/hoe"
+									material: 2
+									ribbon: "93b350"
+									schematics: ["tetra:warforge/hoe"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "26B116DB09B70990"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "warforge"
+									glyphs: [
+										5
+										9
+										6
+										10
+									]
+									intricate: 0b
+									key: "warforge/sickle"
+									material: 2
+									ribbon: "d99e4c"
+									schematics: ["tetra:warforge/sickle"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BB218480783ED74"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "warforge"
+									glyphs: [
+										6
+										7
+										11
+										7
+									]
+									intricate: 0b
+									key: "warforge/adze"
+									material: 2
+									ribbon: "8559b3"
+									schematics: ["tetra:warforge/adze"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "卷轴图鉴（四）"
+			x: -3.25d
+			y: 17.0d
+		}
+		{
+			dependencies: ["615C6A1DA6AEA1A4"]
+			id: "5C4107D56B8FC9BD"
+			rewards: [{
+				id: "240A89795AE2AEDB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "35E2AC05C9CE0741"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									glyphs: [
+										15
+										14
+										15
+										15
+									]
+									intricate: 1b
+									key: "hone/gild_1"
+									material: 2
+									ribbon: "c9ae69"
+									schematics: ["tetra:hone/gild_1"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6300D0CB68CF260B"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									glyphs: [
+										15
+										14
+										13
+										15
+									]
+									intricate: 1b
+									key: "hone/gild_2"
+									material: 2
+									ribbon: "d4b057"
+									schematics: [
+										"tetra:hone/gild_1"
+										"tetra:hone/gild_2"
+									]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0FF4B172441D012D"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									glyphs: [
+										13
+										14
+										14
+										15
+									]
+									intricate: 1b
+									key: "hone/gild_3"
+									material: 2
+									ribbon: "deb243"
+									schematics: [
+										"tetra:hone/gild_1"
+										"tetra:hone/gild_2"
+										"tetra:hone/gild_3"
+									]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "54EB7434C54CCDBD"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									glyphs: [
+										12
+										13
+										14
+										13
+									]
+									intricate: 1b
+									key: "hone/gild_4"
+									material: 2
+									ribbon: "e8b32c"
+									schematics: [
+										"tetra:hone/gild_1"
+										"tetra:hone/gild_2"
+										"tetra:hone/gild_3"
+										"tetra:hone/gild_4"
+									]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "32D522EFA1267730"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									glyphs: [
+										12
+										12
+										12
+										12
+									]
+									intricate: 1b
+									key: "hone/gild_5"
+									material: 2
+									ribbon: "f2b313"
+									schematics: [
+										"tetra:hone/gild_1"
+										"tetra:hone/gild_2"
+										"tetra:hone/gild_3"
+										"tetra:hone/gild_4"
+										"tetra:hone/gild_5"
+									]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "卷轴图鉴（五）"
+			x: -2.25d
+			y: 17.0d
+		}
+		{
+			dependencies: ["615C6A1DA6AEA1A4"]
+			id: "5311D7868466906C"
+			rewards: [{
+				id: "23B6772AC3606753"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5080F70972F8E172"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "art_of_forging"
+									glyphs: [
+										6
+										15
+										4
+										7
+									]
+									intricate: 0b
+									key: "tetra/flamberge_blade"
+									material: 2
+									ribbon: "ff9612"
+									schematics: ["tetra:sword/flamberge_blade"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "46748828DDDA3158"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "art_of_forging"
+									glyphs: [
+										8
+										1
+										4
+										5
+									]
+									intricate: 0b
+									key: "single/head/halberd_head/halberd_head"
+									material: 1
+									ribbon: "444aff"
+									schematics: ["tetra:single/head/halberd_head/halberd_head"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "61FD528F7D82E6E9"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "art_of_forging"
+									glyphs: [
+										0
+										1
+										9
+										4
+									]
+									intricate: 0b
+									key: "sword/key_guard"
+									material: 1
+									ribbon: "fae409"
+									schematics: ["tetra:sword/key_guard"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59DE05F463089BE9"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "art_of_forging"
+									glyphs: [
+										9
+										3
+										6
+										2
+									]
+									intricate: 0b
+									key: "single/head/mace_head/mace_head"
+									material: 1
+									ribbon: "560060"
+									schematics: ["tetra:single/head/mace_head/mace_head"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5BEC833033A08AAE"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "art_of_forging"
+									glyphs: [
+										8
+										7
+										9
+										2
+									]
+									intricate: 0b
+									key: "tetra/crucible_blade"
+									material: 2
+									ribbon: "ff1e00"
+									schematics: ["tetra:sword/crucible_blade"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D934466A88F7020"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "art_of_forging"
+									glyphs: [
+										8
+										1
+										9
+										5
+									]
+									intricate: 0b
+									key: "bow/stave/dreadnought_stave"
+									material: 1
+									ribbon: "f3b31f"
+									schematics: [
+										"tetra:bow/stave/dreadnought_stave"
+										"tetra:bow/stave/dreadnought_cross_stave"
+									]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "011B5C7B382B04B0"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "art_of_forging"
+									glyphs: [
+										5
+										10
+										13
+										2
+									]
+									intricate: 0b
+									key: "sword/katana/katana_blade"
+									material: 2
+									ribbon: "dbff10"
+									schematics: [
+										"tetra:sword/katana/katana_blade"
+										"tetra:sword/tsuba_guard"
+									]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7FB343A23E74AD96"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "art_of_forging"
+									glyphs: [
+										15
+										13
+										12
+										14
+									]
+									intricate: 0b
+									key: "bow/string/compound_string"
+									material: 1
+									ribbon: "19e588"
+									schematics: [
+										"tetra:bow/string/compound_string"
+										"tetra:crossbow/string/compound_cross_string"
+									]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "68BEC7E7BDBCBD66"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "art_of_forging"
+									glyphs: [
+										1
+										15
+										12
+										8
+									]
+									intricate: 0b
+									key: "utilize/hammer"
+									material: 2
+									ribbon: "fa97e9"
+									schematics: ["tetra:utilize/hammer"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "706894F9181E4523"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "otherworldly"
+									glyphs: [
+										6
+										7
+										13
+										15
+									]
+									intricate: 0b
+									key: "sword/katana/murasama_blade"
+									material: 2
+									ribbon: "c52323"
+									schematics: ["tetra:sword/katana/murasama_blade"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "卷轴图鉴（六）"
+			x: -1.25d
+			y: 17.0d
+		}
+		{
+			dependencies: ["615C6A1DA6AEA1A4"]
+			id: "1B3243E248E0467C"
+			rewards: [{
+				id: "1437A5F7DF76A0B9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "574958639D451353"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "true_crucible"
+									glyphs: [
+										8
+										7
+										9
+										2
+									]
+									intricate: 1b
+									key: "sword/crucible/architects_crucible_blade"
+									material: 2
+									ribbon: "ff0042"
+									schematics: [
+										"tetra:sword/crucible_blade"
+										"tetra:sword/crucible/architects_crucible_blade"
+									]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FD1CC2922312154"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "art_of_forging"
+									glyphs: [
+										3
+										5
+										6
+										9
+									]
+									intricate: 0b
+									key: "sword/tonal_blade"
+									material: 1
+									ribbon: "daf7a6"
+									schematics: ["tetra:sword/tonal_blade"]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7BA3D72D27922CF1"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "otherworldly"
+									glyphs: [
+										7
+										8
+										14
+										13
+									]
+									intricate: 1b
+									key: "sword/thousand_cold_nights"
+									material: 2
+									ribbon: "5c7c80"
+									schematics: [
+										"tetra:sword/katana/murasama_blade"
+										"tetra:sword/thousand_cold_nights"
+									]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "73A1585788F4CCB6"
+					item: {
+						Count: 1b
+						id: "tetra:scroll_rolled"
+						tag: {
+							BlockEntityTag: {
+								data: [{
+									details: "otherworldly"
+									glyphs: [
+										1
+										15
+										2
+										13
+									]
+									intricate: 0b
+									key: "tetra/rending_scissor_complete"
+									material: 2
+									ribbon: "e32182"
+									schematics: [
+										"tetra:sword/scissor_blade_left"
+										"tetra:sword/scissor_blade_right"
+										"tetra:sword/rending_scissor_complete"
+									]
+								}]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "卷轴图鉴（七）"
+			x: -3.25d
+			y: 18.0d
 		}
 	]
 	title: "Tetra：模块化与工具"

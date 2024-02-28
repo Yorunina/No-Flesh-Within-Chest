@@ -7,6 +7,7 @@ StartupEvents.registry('item', event => {
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
     event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
     event.create('stardust_fragment').texture('kubejs:item/stardust_fragment')
+    event.create('dark_stardust_fragment').texture('kubejs:item/dark_stardust_fragment')
     event.create('exclamation_mark').texture('kubejs:item/exclamation_mark')
     event.create('full_mark').texture('kubejs:item/full_mark')
     event.create('ritual_catalyst').texture('kubejs:item/ritual_catalyst')
@@ -59,7 +60,6 @@ StartupEvents.registry('item', event => {
     }).tag('supplementaries:cookies').maxStackSize(64)
 
     event.create('ceremonial_knife').texture('kubejs:item/ceremonial_knife').maxStackSize(1)
-        
         .useAnimation('bow')
         .useDuration(itemStack => 40)
         .use((level, player, hand) => {
@@ -75,7 +75,6 @@ StartupEvents.registry('item', event => {
 
 
     event.create('friend_to_the_end').texture('kubejs:item/friend_to_the_end').maxStackSize(1)
-        
         .tag('curios:ring')
         .useAnimation('bow')
         .useDuration(itemStack => 40)
@@ -87,7 +86,12 @@ StartupEvents.registry('item', event => {
             if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
                 let friend = Utils.server.getPlayer(itemstack.nbt.friendName)
                 if (friend && friend.isLiving()) {
-                    entity.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, 0, 0)
+                    let targetDim = friend.level.getDimension()
+                    if (targetDim == 'dimdungeons:build_dimension') {
+                        entity.tell('无法传送，目标维度不可用。')
+                        return itemstack;
+                    }
+                    entity.teleportTo(targetDim, friend.x, friend.y, friend.z, 0, 0)
                     entity.addItemCooldown(itemstack, 20 * 10)
                 } else {
                     entity.tell('无法传送，对方可能不在线/处于死亡状态。')
@@ -101,7 +105,6 @@ StartupEvents.registry('item', event => {
         })
 
     event.create('candy_canes_wand').texture('kubejs:item/candy_canes_wand')
-        
         .maxStackSize(1)
         .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', 0.1, 'addition')
         .rarity('epic')
@@ -119,7 +122,6 @@ StartupEvents.registry('item', event => {
         })
 
     event.create('rapier_wand', 'sword').tier('diamond').attackDamageBaseline(4.0).attackDamageBonus(2.5).speedBaseline(-1.5).speed(6.5).maxDamage(980).maxStackSize(1)
-        
         .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', 0.1, 'addition')
         .rarity('epic')
         .useAnimation('bow')
@@ -135,7 +137,6 @@ StartupEvents.registry('item', event => {
         })
 
     event.create('artist_wand', 'sword').tier('diamond').attackDamageBaseline(2.0).attackDamageBonus(3.0).speedBaseline(-3.0).speed(4.0).maxDamage(1680).maxStackSize(1)
-        
         .rarity('epic')
         .useAnimation('bow')
         .use((level, player, hand) => {
@@ -234,22 +235,6 @@ StartupEvents.registry('item', event => {
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
             entity.runCommandSilent(`/lichdom revoke ${entity.name.getString()}`)
-            return;
-        })
-
-    event.create('darkest_potion').texture('kubejs:item/holy_potion').maxStackSize(1)
-        .rarity('epic')
-        .useAnimation('drink')
-        .use((level, player, hand) => {
-            if (player.stages.has('darkest_time')) return false
-            return true;
-        })
-        .useDuration(itemStack => 20)
-        .finishUsing((itemstack, level, entity) => {
-            if (level.isClientSide()) return itemstack
-            if (!entity.isPlayer()) return itemstack
-            entity.stages.add('darkest_time')
-            entity.setStatusMessage(`你感到一股寒意涌上. . .远古时代的悲剧将会重新上演。`)
             return;
         })
 
