@@ -178,7 +178,7 @@ ServerEvents.recipes(event => {
     event.shaped('kubejs:prismarine_crown', [
         ['', 'iceandfire:siren_tear', ''],
         ['', 'kubejs:broken_prismarine_crown', ''],
-        ['', 'goety:soul_emerald', '']])
+        ['', 'goety:soul_ruby', '']])
 
     event.shaped(Item.of('kubejs:operation_box', '{inventory:[{Count:1b,Slot:0b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:8b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:18b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:26b,id:"kubejs:relic_metal_plate",tag:{}}]}'), [
         ['kubejs:relic_metal_plate', '#forge:shears', 'kubejs:relic_metal_plate'],
