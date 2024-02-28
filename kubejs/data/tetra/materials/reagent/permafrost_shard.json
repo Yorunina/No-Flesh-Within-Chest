@@ -1,0 +1,27 @@
+{
+    "key": "irons_permafrost_shard",
+    "category": "reagent",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 0,
+    "integrityCost": 1,
+    "integrityGain": 1,
+    "magicCapacity": 0,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "00EEEE",
+        "texture": "00EEEE"
+    },
+    "textures": [
+        "default"
+    ],
+    "effects": {
+        "irons_spellbooks:freeze": 8
+    },
+    "material": {
+        "items": [ "irons_spellbooks:permafrost_shard" ]
+    },
+    "experienceCost": 30
+}

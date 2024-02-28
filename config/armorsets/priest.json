@@ -14,19 +14,22 @@
     "itemKey": "irons_spellbooks:priest_boots"
   },
   "mainHand": {
-    "itemKey": "irons_spellbooks:villager_spell_book",
+    "itemKey": "goety:nameless_staff",
     "mixAndMatch": [
       "iceandfire:ghost_sword"
     ]
   },
   "offHand": {
-    "itemKey": "irons_spellbooks:villager_spell_book",
+    "itemKey": "goety:nameless_staff",
     "mixAndMatch": [
       "iceandfire:ghost_sword"
     ]
   },
   "additionalSetPieces": [{
-    "itemKey": "nameless_trinkets:wooden_stick"
+    "itemKey": "nameless_trinkets:wooden_stick",
+    "mixAndMatch": [
+    "irons_spellbooks:villager_spell_book"
+    ]
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [

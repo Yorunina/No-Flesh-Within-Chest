@@ -38,16 +38,16 @@
       "type": "attribute",
       "name": "irons_spellbooks:spell_power",
       "modifierUUID": "0739B456-FC1B-4BA5-81B0-E2B509A1C5F1",
-      "description": "-60% 法术伤害",
-      "value": -0.6
+      "description": "-70% 法术伤害",
+      "value": -0.7
     },
     {
       "type": "attribute",
       "name": "minecraft:generic.attack_damage",
       "modifierUUID": "4A95C392-73D7-4402-86F3-AF25FE53BA29",
       "attributeOperation": 2,
-      "description": "+30% 近战伤害",
-      "value": 0.3
+      "description": "+40% 近战伤害",
+      "value": 0.4
     }
   ]
 }
