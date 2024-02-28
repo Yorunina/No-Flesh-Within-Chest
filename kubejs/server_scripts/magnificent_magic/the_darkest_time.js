@@ -18,9 +18,16 @@ function theDarkestTimeEntityHurtByPlayer(event, data) {
     let player = event.source.player
     if (!player.stages.has(theDarkestTime)) return
     let entity = event.entity
-    let typeStatus = player.persistentData.get(darkestDamageTypeStatus)
-    let random = Math.random()
-    let oriAmount = event.amount
+
+    let lastHurtTime = player.lastHurtByMobTimestamp
+    let curTime = player.age
+    switch (true) {
+        case ((curTime - lastHurtTime) < 10):
+            entity.amount = 0
+            break;
+        default:
+            break;
+    }
 }
 
 

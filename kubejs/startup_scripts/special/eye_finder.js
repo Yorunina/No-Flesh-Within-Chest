@@ -6,6 +6,7 @@ const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
 
 StartupEvents.registry('item', event => {
   event.create('eye_of_fortress')
+    .group("kubejs.item")
     .texture('kubejs:item/eye_of_fortress')
     .use((level, player, interactionHand) => {
       return eyeFinder(level, player, interactionHand, 'kubejs:fortress_locator');
@@ -13,6 +14,7 @@ StartupEvents.registry('item', event => {
     .fireResistant();
 
   event.create('eye_of_dnl')
+    .group("kubejs.item")
     .texture('kubejs:item/eye_of_dnl')
     .use((level, player, interactionHand) => {
       return eyeFinder(level, player, interactionHand, 'dnl:all_structure');
@@ -20,6 +22,7 @@ StartupEvents.registry('item', event => {
     .fireResistant();
 
   event.create('eye_of_village')
+    .group("kubejs.item")
     .texture('kubejs:item/eye_of_village')
     .use((level, player, interactionHand) => {
       return eyeFinder(level, player, interactionHand, 'minecraft:village');
