@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
 
     event.shaped('cataclysm:meat_shredder', [
         ['', 'minecraft:nether_star', 'goety:philosophers_stone'],
-        ['', 'cataclysm:witherite_ingot', 'minecraft:nether_star'],
+        ['', 'witherstormmod:withered_nether_star', 'minecraft:nether_star'],
         ['cataclysm:witherite_ingot', '', '']
     ])
 

@@ -110,7 +110,7 @@ LootJS.modifiers(event => {
             if (Math.random() < 0.12) {
                 ctx.addLoot(getRandomPotionWares())
             }
-            if (Math.random() < 0.03) {
+            if (Math.random() < 0.05) {
                 ctx.addLoot(getRandomChallengeWares())
             }
             if (Math.random() < 0.02) {
@@ -122,7 +122,7 @@ LootJS.modifiers(event => {
             if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomOrganWares())
             }
-            if (Math.random() < 0.1) {
+            if (Math.random() < 0.07) {
                 ctx.addLoot(getRandomOreWares())
             }
         })
