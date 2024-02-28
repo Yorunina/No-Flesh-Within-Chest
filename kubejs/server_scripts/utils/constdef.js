@@ -6,9 +6,10 @@ const defaultResourceMax = 100
 const warpCount = 'warpCount'
 const warpCountMax = 'warpCountMax'
 const defaultWarpMax = 100
-
 const theDarkestTime = 'the_darkest_time'
 const organActive = 'organActive'
+const darkestDamageTypeStatus = 'darkestDamageTypeStatus'
+const darkestDamageSpeStatus = 'darkestDamageSpeStatus'
 
 const bossTypeList = [
     'somebosses:aesegull',
@@ -90,14 +91,13 @@ const tumorAttriBute = [
     { name: 'chestcavity:filtration', multi: 1, max: 3 },
     { name: 'chestcavity:breath_recovery', multi: 1, max: 3 },
     { name: 'chestcavity:nutrition', multi: 1, max: 3 },
-    { name: 'chestcavity:nerves', multi: 0.5, max: 5 },
-    { name: 'chestcavity:strength', multi: 0.5, max: 10 },
-    { name: 'chestcavity:health', multi: 0.5, max: 5 },
+    { name: 'chestcavity:nerves', multi: 1, max: 5 },
+    { name: 'chestcavity:strength', multi: 1, max: 10 },
     { name: 'chestcavity:breath_capacity', multi: 0.5, max: 3 },
     { name: 'chestcavity:detoxification', multi: 1, max: 3 },
     { name: 'chestcavity:speed', multi: 0.5, max: 5 },
     { name: 'chestcavity:endurance', multi: 1, max: 3 },
-    { name: 'chestcavity:luck', multi: 0.5, max: 4 },
+    { name: 'chestcavity:luck', multi: 0.5, max: 5 },
     { name: 'chestcavity:defense', multi: 0.5, max: 5 },
     { name: 'chestcavity:digestion', multi: 1, max: 3 },
     { name: 'chestcavity:metabolism', multi: 1, max: 3 },

@@ -79,22 +79,14 @@ LootJS.modifiers(event => {
     event.addLootTypeModifier(LootType.ENTITY)
         .removeLoot('@simplehats')
         .apply(ctx => {
-            if (ctx.entity.isLiving() &&
-                (ctx.entity.hasEffect('kubejs:glare_of_god') ||
-                    ctx.entity.hasEffect('kubejs:gaze_of_god') ||
-                    ctx.entity.hasEffect('kubejs:glimpse_of_god'))) {
+            let entity = ctx.entity
+            if (entity.isLiving() &&
+                (entity.hasEffect('kubejs:glare_of_god') ||
+                entity.hasEffect('kubejs:gaze_of_god') ||
+                entity.hasEffect('kubejs:glimpse_of_god'))) {
                 if (ctx.player) {
                     ctx.player.give(Item.of('kubejs:god_consciousness', { mobType: ctx.entity.getType() }))
                 }
-            }
-        })
-        .apply(ctx => {
-            let entity = ctx.entity
-            if (!entity.isLiving()) return
-            let source = ctx.damageSource
-            if (entity.hasEffect('kubejs:fragility') || (entity.hasEffect('minecraft:weakness') && source.type == 'create.mechanical_saw')) {
-                let lootList = entity.getChestCavityInstance().inventory.getAllItems()
-                ctx.addLoot(lootList)
             }
         })
 
@@ -140,12 +132,8 @@ LootJS.modifiers(event => {
         .anyDimension(['minecraft:the_nether'])
         .addLoot(LootEntry.of('kubejs:the_third_eye').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('kubejs:redstone_furnace').when((c) => c.randomChance(0.02)))
-
-
-    event.addLootTypeModifier(LootType.CHEST)
-        .anyStructure(['#dnl:all_structure'], false)
         .addLoot(LootEntry.of('kubejs:ritual_catalyst').when((c) => c.randomChance(0.1)))
-        .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.01)))
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['#kubejs:graveyard'], false)
