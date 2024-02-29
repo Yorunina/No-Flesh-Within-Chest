@@ -27,7 +27,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["50CE3ADF8E4D6426"]
+			dependencies: ["17F34DB341F48836"]
 			description: [
 				"&d《诡厄巫法（Goety）》&r是一个&b魔法&r模组，旨在通过添加大量新功能来增强《我的世界》游戏体验，包括生物、结构和利用奥术力量的方法。召唤各种仆从，击退新的危险，发现世界的秘密、传说、宝藏。"
 				""

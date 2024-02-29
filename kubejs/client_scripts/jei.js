@@ -42,5 +42,6 @@ JEIEvents.information(event => {
     event.addItem('kubejs:origin_knight_core', Text.black({ "translate": "kubejs.jei.origin_knight_core.1" }))
     event.addItem('kubejs:fish_in_chest', Text.black({ "translate": "kubejs.jei.fish_in_chest.1" }))
     event.addItem('kubejs:broken_prismarine_crown', Text.black({ "translate": "kubejs.jei.broken_prismarine_crown.1" }))
-
+    event.addItem('kubejs:plastic_heart', Text.black({ "translate": "kubejs.jei.plastic_heart.1" }))
 })
+

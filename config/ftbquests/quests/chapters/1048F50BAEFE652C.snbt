@@ -150,6 +150,18 @@
 			x: -2.75d
 			y: 10.0d
 		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 12.5d
+			y: 20.75d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
@@ -2677,6 +2689,183 @@
 			}]
 			x: 16.5d
 			y: 17.5d
+		}
+		{
+			dependencies: ["575ADA02AEE66047"]
+			description: [
+				"来源于&b冰龙&r体内的强大器官，是冰龙力量的源泉。"
+				""
+				"提供&d结晶&r效果，使得末影水晶也可以为你充能。"
+				""
+				"你可以通过消耗法力值释放&b主动技能——超限：刺骨寒风&r。使用者的&e最大生命值&r越多，其&e超限等级&r越高。"
+				""
+				"如果你是龙，也好。"
+			]
+			id: "5784F57C0810747F"
+			rewards: [{
+				id: "68975D76407EFF17"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "你可曾听见……凛冽寒风"
+			tasks: [{
+				id: "7C95771351B964E1"
+				item: {
+					Count: 1b
+					id: "kubejs:ice_dragon_bead"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["575ADA02AEE66047"]
+			description: [
+				"来源于&4火龙&r体内的强大器官，是火龙力量的源泉。"
+				""
+				"提供&d结晶&r效果，使得末影水晶也可以为你充能。"
+				""
+				"你可以通过消耗法力值释放&4主动技能——超限：火焰吐息&r。使用者的&e最大生命值&r越多，其&e超限等级&r越高。"
+				""
+				"如果你是龙，也好。"
+			]
+			id: "7AA8D25C679C5531"
+			rewards: [{
+				id: "4AEA942C351C274B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "烈焰啊，焚尽一切！"
+			tasks: [{
+				id: "114923DFFBB40689"
+				item: {
+					Count: 1b
+					id: "kubejs:fire_dragon_bead"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["575ADA02AEE66047"]
+			description: [
+				"来源于&5电龙&r体内的强大器官，是电龙力量的源泉。"
+				""
+				"提供&d结晶&r效果，使得末影水晶也可以为你充能。"
+				""
+				"你可以通过消耗法力值释放&5主动技能——超限：电刑&r。使用者的&e最大生命值&r越多，其&e超限等级&r越高。"
+				""
+				"如果你是龙，也好。"
+			]
+			id: "51B95DC783E4F9D6"
+			rewards: [{
+				id: "5B00FF6DFE39FF72"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我以雷霆，击碎黑暗"
+			tasks: [{
+				id: "394E2D3D632B27A6"
+				item: {
+					Count: 1b
+					id: "kubejs:lightning_dragon_bead"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"当巨龙生命垂危之际，你可以打开它们的胸腔，并从中夺取&e龙之器官&r。"
+				""
+				"不同种类的巨龙，其器官的属性也并不相同："
+				"&4火龙器官&r会为你提供无与伦比的&4力量&r；"
+				"&b冰龙器官&r会为你提供坚不可摧的&b防御&r；"
+				"&5电龙器官&r会为你提供风驰电掣的&5速度&r。"
+				""
+				"在巨龙体内，你还可以找到它们强大力量的核心——&e巨龙宝玉&r。"
+			]
+			icon: {
+				Count: 1b
+				id: "iceandfire:dragon_skull_fire"
+				tag: {
+					DragonAge: 75
+					Stage: 4
+				}
+			}
+			id: "575ADA02AEE66047"
+			shape: "rsquare"
+			subtitle: "来源于巨龙体内的强大力量"
+			tasks: [{
+				id: "6C1E41C836C7813A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "龙之器官"
+			x: 6.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["575ADA02AEE66047"]
+			description: [
+				"&c龙血器官&r拥有强大的基础属性，由&eT3器官&r在&e龙钢锻炉&r中沐浴任意龙血而来。"
+				""
+				"其中&c龙血心脏&r会给予你&c主动技能——龙化&r。在龙化状态下，龙类器官会给予你减伤效果，在减伤溢出时会将伤害转化为额外生命。"
+				""
+				"神经效率影响龙化状态的持续时间，龙类器官种类影响龙化状态的效果。"
+			]
+			icon: {
+				Count: 1b
+				id: "kubejs:dragon_blood_heart"
+				tag: { }
+			}
+			id: "4E5E0F7CE3150DCF"
+			rewards: [{
+				id: "0BB2C1D411983AF5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "沐浴了龙血的器官宛若新生"
+			tasks: [{
+				id: "02417E9496B389CA"
+				item: {
+					Count: 1b
+					id: "kubejs:dragon_blood_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "龙血器官"
+			x: 10.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"塑封心在&c远古巫师&r的胸腔中可以获得。"
+				""
+				"塑封心能够提高所有用器官释放出的&b超限法术&r的等级，在超限法术为核心的构筑之中用处广泛。"
+			]
+			id: "445067B21A9D25A9"
+			subtitle: "它依旧在跳动着"
+			tasks: [{
+				id: "189552414B4F2355"
+				item: {
+					Count: 1b
+					id: "kubejs:plastic_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.75d
+			y: 11.25d
 		}
 	]
 	title: "胸腔：器官收集指南"

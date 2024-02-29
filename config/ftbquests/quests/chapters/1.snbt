@@ -105,7 +105,7 @@
 			}]
 			title: "第一棵树"
 			x: 6.0d
-			y: 18.25d
+			y: 17.25d
 		}
 		{
 			dependencies: ["040207B33E2FEBFF"]
@@ -142,7 +142,7 @@
 			}]
 			title: "完美的开始"
 			x: 6.0d
-			y: 14.0d
+			y: 11.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -156,6 +156,8 @@
 				"同时，你也可以对着其他生物右键以打开他们的胸膛——但请注意，开胸是需要对方&2血量足够低&r才可以，并不代表任何生物一开始就可以被你开胸！"
 				""
 				"请不要随意更改你胸腔内的器官，后果自负！"
+				""
+				"你可以用&6开胸器&r和&3青色染料&r合成制作一个''&d安全开胸器&r''，&2它仅能开启其他生物的胸腔&r。"
 			]
 			id: "50CE3ADF8E4D6426"
 			rewards: [{
@@ -176,7 +178,7 @@
 			}]
 			title: "了解自我"
 			x: 6.0d
-			y: 9.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["6069FC5CA00481CE"]
@@ -209,7 +211,7 @@
 			}]
 			title: "矿石肺"
 			x: 2.5d
-			y: 10.75d
+			y: 5.0d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -275,7 +277,7 @@
 			}]
 			title: "重定义自己的内在"
 			x: 4.0d
-			y: 9.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["6069FC5CA00481CE"]
@@ -325,7 +327,7 @@
 			}]
 			title: "基础属性词条解释"
 			x: 2.5d
-			y: 9.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["0721AF9D7D5E4A7C"]
@@ -355,19 +357,16 @@
 			}]
 			title: "足够多的铁"
 			x: 6.0d
-			y: 10.75d
+			y: 7.5d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
-				"本整合包提供两种&d成长型武器&r，一般来说我们推荐你选择其中一个陪你一起变强。&b做出你的选择，然后在FTB任务左侧选择对应的模组介绍去深入体验吧！&r"
+				"本整合包提供两种&d成长型武器&r，&b在FTB任务左侧选择对应的模组介绍去深入体验吧！&r"
 				""
 				"&d-《Tetra》以及其附属：&r该模组允许你使用&e不同类型的材料&r更换&e武器和工具的配件&r，从而做出适合自己的武器。&7&m新时代匠魂&r&r"
 				""
 				"&d-《武器大师》：&r该模组提供风格迥异的&e4种不同类型的武器&r，武器有自身等级的概念，随着你的使用去解锁更加强大特殊能力。"
-				""
-				"&7如何选择：Tetra在游玩过程中相较武器大师会比较繁琐和复杂，如果你不想在武器的升级上花费更多的精力，推荐先尝试武器大师。淡然，两个模组同时体验，根据具体时期来选择谁作为主武器也是十分推荐的。"
-				"&r"
 			]
 			icon: {
 				Count: 1b
@@ -418,7 +417,7 @@
 			}]
 			title: "Tetra与工具"
 			x: 5.0d
-			y: 7.25d
+			y: 0.75d
 		}
 		{
 			dependencies: [
@@ -471,7 +470,7 @@
 			}]
 			title: "前往下界"
 			x: 6.0d
-			y: 5.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["51FA796A91E94C4D"]
@@ -501,68 +500,17 @@
 				type: "item"
 			}]
 			title: "下界堡垒与烈焰人"
-			x: 8.75d
-			y: 5.5d
-		}
-		{
-			dependencies: ["6FB9DA46381FBCB6"]
-			description: ["为了前往末地，你需要获取一定数量的末影珍珠，用于开启前往末地的大门。"]
-			id: "2311CA3EEABF0250"
-			rewards: [{
-				count: 5
-				id: "0136B712C04F49E9"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "前往末地的必需品"
-			tasks: [{
-				id: "355748BEB59386AF"
-				item: "minecraft:ender_pearl"
-				type: "item"
-			}]
-			title: "与末影人相遇"
 			x: 6.0d
-			y: 0.25d
-		}
-		{
-			dependencies: ["2311CA3EEABF0250"]
-			description: ["进入末地时，Minecraft原版的游戏体验便到达了尾声——但是对于本整合来说，到达末地只是一个小小的里程碑。在这个世界上仍旧存在着大量的&5不可思议&r等待着你去探索。"]
-			icon: "minecraft:end_portal_frame"
-			id: "1D8929E0CE7CE0AB"
-			rewards: [{
-				id: "2AF64ED78935D661"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "很快，你的Minecraft原版体验就接近尾声"
-			tasks: [{
-				dimension: "minecraft:the_end"
-				id: "2AF9850C10D5391F"
-				type: "dimension"
-			}]
-			title: "前往末地"
-			x: 6.0d
-			y: -1.75d
+			y: -4.0d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
-				"本整合包提供两种&d成长型武器&r，一般来说我们推荐你选择其中一个陪你一起变强。&b做出你的选择，然后在FTB任务左侧选择对应的模组介绍去深入体验吧！&r"
+				"本整合包提供两种&d成长型武器&r，&b在FTB任务左侧选择对应的模组介绍去深入体验吧！&r"
 				""
 				"&d-《Tetra》以及其附属：&r该模组允许你使用&e不同类型的材料&r更换&e武器和工具的配件&r，从而做出适合自己的武器。&7&m新时代匠魂&r&r"
 				""
 				"&d-《武器大师》：&r该模组提供风格迥异的&e4种不同类型的武器&r，武器有自身等级的概念，随着你的使用去解锁更加强大特殊能力。"
-				""
-				"&7如何选择：Tetra在游玩过程中相较武器大师会比较繁琐和复杂，如果你不想在武器的升级上花费更多的精力，推荐先尝试武器大师。淡然，两个模组同时体验，根据具体时期来选择谁作为主武器也是十分推荐的。"
-				"&r"
 			]
 			icon: "weaponmaster:workstation"
 			id: "4C370F7BB4E56798"
@@ -592,7 +540,7 @@
 			}]
 			title: "成为武器大师"
 			x: 7.0d
-			y: 7.25d
+			y: 0.75d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -630,7 +578,7 @@
 			}]
 			title: "机械动力？人工动力！"
 			x: 7.75d
-			y: 10.75d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -638,6 +586,8 @@
 				"在背包界面的&2饰品栏&r内（点击人物右上的按钮打开），可以将&2灯笼挂载在腰上&r。以提供随时的动态光源效果。"
 				""
 				"除此之外，饰品栏内可以装备大量能够高效提高你的能力的饰品，为了寻找更多有用的饰品，你可以制作&5神秘饰品&r以随机获得饰品。"
+				""
+				"&3如果你打开神秘饰品以后，在背包中没有看到饰品，可能是自动装备到了饰品栏中。&r"
 			]
 			icon: "minecraft:lantern"
 			id: "636CE66FFE0F6A51"
@@ -666,7 +616,7 @@
 			}]
 			title: "将光源挂在腰上"
 			x: 4.0d
-			y: 10.75d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -705,67 +655,7 @@
 			}]
 			title: "储物抽屉"
 			x: 7.75d
-			y: 11.75d
-		}
-		{
-			dependencies: ["1D8929E0CE7CE0AB"]
-			description: ["作为原版的最终boss，击败它仍旧具有着非常特殊的意义。"]
-			icon: "minecraft:dragon_head"
-			id: "15A36D9385499A77"
-			rewards: [{
-				count: 5
-				id: "68E182F2D59A4C2B"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "收官之作！"
-			tasks: [{
-				entity: "minecraft:ender_dragon"
-				icon: "minecraft:dragon_egg"
-				id: "7F3DBDA404445DC7"
-				type: "kill"
-				value: 1L
-			}]
-			title: "击败末影龙！"
-			x: 6.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["1D8929E0CE7CE0AB"]
-			description: [
-				"如果周围的末地船已经被完全搜刮完毕了，你可以使用幻翼膜和香蕉蛞蝓的黏液&2自行制作鞘翅&r。"
-				""
-				"香蕉蛞蝓只会出现在寒冷的原始松木针叶林群系。"
-			]
-			id: "7936F1A8DE4AF2E8"
-			rewards: [{
-				id: "443AEBF90B9CD82C"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "前往末地城，你可以寻得鞘翅"
-			tasks: [{
-				id: "4EC33C7DB69FF161"
-				item: {
-					Count: 1b
-					id: "minecraft:elytra"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "追寻鞘翅"
-			x: 8.25d
-			y: -1.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -797,7 +687,7 @@
 			}]
 			title: "简易、存储、整合"
 			x: 8.75d
-			y: 10.75d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3FED9C9227FC9CD5"]
@@ -829,7 +719,7 @@
 			}]
 			title: "和朋友一起远征"
 			x: 4.0d
-			y: 18.25d
+			y: 17.25d
 		}
 		{
 			dependencies: ["2DD73A2CCC0054D8"]
@@ -856,7 +746,7 @@
 			}]
 			title: "查看资源槽"
 			x: 1.0d
-			y: 10.75d
+			y: 5.0d
 		}
 		{
 			dependencies: ["040207B33E2FEBFF"]
@@ -882,7 +772,7 @@
 				type: "item"
 			}]
 			x: 7.75d
-			y: 15.5d
+			y: 13.25d
 		}
 		{
 			dependencies: ["5BC3743958DA4B16"]
@@ -904,7 +794,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 9.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -923,7 +813,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 7.25d
+			y: 0.25d
 		}
 		{
 			dependencies: ["040207B33E2FEBFF"]
@@ -985,7 +875,7 @@
 				}
 			]
 			x: 4.0d
-			y: 16.5d
+			y: 14.25d
 		}
 		{
 			dependencies: ["3FED9C9227FC9CD5"]
@@ -1029,7 +919,7 @@
 			}]
 			title: "你需要一些补给"
 			x: 6.0d
-			y: 16.5d
+			y: 14.25d
 		}
 		{
 			dependencies: ["040207B33E2FEBFF"]
@@ -1052,7 +942,7 @@
 			}]
 			title: "背包的升级"
 			x: 7.75d
-			y: 16.5d
+			y: 14.25d
 		}
 		{
 			dependencies: ["5067AA0335B2B396"]
@@ -1075,7 +965,7 @@
 			}]
 			title: "邀请你的朋友！"
 			x: 1.5d
-			y: 18.25d
+			y: 17.25d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
@@ -1103,7 +993,7 @@
 			}]
 			title: "更多桶！"
 			x: 8.75d
-			y: 11.75d
+			y: 8.5d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -1145,7 +1035,7 @@
 			}]
 			title: "收割血肉"
 			x: 8.75d
-			y: 9.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["1884740B0724DE70"]
@@ -1175,7 +1065,7 @@
 			}]
 			title: "建设血肉温床"
 			x: 10.5d
-			y: 9.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["145730691E558B78"]
@@ -1199,7 +1089,7 @@
 			}]
 			title: "血肉材料获取"
 			x: 10.5d
-			y: 10.75d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5F271CD6AAEC88FC"]
@@ -1230,7 +1120,7 @@
 			}]
 			title: "模板器官"
 			x: 12.25d
-			y: 10.75d
+			y: 5.0d
 		}
 		{
 			dependencies: ["145730691E558B78"]
@@ -1261,7 +1151,7 @@
 			}]
 			title: "重锻身心"
 			x: 12.25d
-			y: 9.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["36D9ACF35A9BD9FA"]
@@ -1290,7 +1180,7 @@
 			}]
 			title: "器官容器"
 			x: 12.25d
-			y: 12.5d
+			y: 6.75d
 		}
 		{
 			dependencies: ["5F271CD6AAEC88FC"]
@@ -1318,7 +1208,7 @@
 			}]
 			title: "酿造传奇之物"
 			x: 14.0d
-			y: 9.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["27AE075BC0F4376A"]
@@ -1355,7 +1245,7 @@
 			}]
 			title: "活体注射"
 			x: 14.0d
-			y: 10.75d
+			y: 5.0d
 		}
 		{
 			dependencies: ["360F386989316928"]
@@ -1388,7 +1278,7 @@
 			}]
 			title: "贪婪之爪"
 			x: 14.0d
-			y: 12.5d
+			y: 6.75d
 		}
 		{
 			dependencies: ["27AE075BC0F4376A"]
@@ -1444,7 +1334,7 @@
 			}]
 			title: "器官抗排异"
 			x: 15.75d
-			y: 9.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["7F0C1FA54DD6E9BC"]
@@ -1476,7 +1366,7 @@
 			}]
 			title: "激活药丸"
 			x: 15.75d
-			y: 10.75d
+			y: 5.0d
 		}
 		{
 			dependencies: ["658FEA8E308D741C"]
@@ -1506,7 +1396,7 @@
 				type: "item"
 			}]
 			x: 15.75d
-			y: 12.5d
+			y: 6.75d
 		}
 		{
 			dependencies: ["50D70D990312BC70"]
@@ -1528,12 +1418,18 @@
 				type: "item"
 			}]
 			x: 15.75d
-			y: 14.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["7198C447D928AEEC"]
 			description: ["&2手持玻璃管长按右键&r，则可以在消息框中看到属性的对应信息，&e鼠标放在对应的属性名称上&r还可以看到对应属性的描述文本。"]
 			id: "70F7BE40B3C7BBAB"
+			rewards: [{
+				count: 2
+				id: "38E0CF248BA7D2C4"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "可视化面板"
 			tasks: [{
 				id: "58B4DEA9CF17BB1C"
@@ -1548,290 +1444,7 @@
 			}]
 			title: "更详细的属性面板"
 			x: -0.5d
-			y: 9.0d
-		}
-		{
-			dependencies: ["00E3E147FC750C90"]
-			description: [
-				"虽然本整合包做了关于《魔法巫师》模组的引导，但还请多多阅读它&c极&r&b其&r&d炫&r&e酷&r的教学书——暗影之书。"
-				""
-				"好了，现在我们需要制作一个&6混合锅&r，这相当于魔法巫师模组的工作台。"
-				""
-				"再次提醒，对于这种不熟悉的“工作台”，推荐&e鼠标悬浮&r在物品上，按&eU键（展示用途）&r，再在该界面上方切换到展示合成配方，你可以&2清晰的看到它能制作的各种物品以及配方&r。&7（如下图所示）"
-				"&r{image:kubejs:textures/task/hexerei_1.png width:120 height:100 align:1}"
-				""
-				"{@pagebreak}"
-				"一些小提示："
-				""
-				"1. 混合锅虽然有交互界面，但是给混合锅&2加水&r是需要拿水桶&2直接倒入&r内部的。"
-				""
-				"2. 部分合成配方需要在混合锅&e下方&r放置&6热源方块&r，热源方块推荐&e营火&r或者&e岩浆&r，更多热源方块请在上一页的&2“展示合成配方”&r处查看。"
-				""
-				"3. 你可以在混合锅的交互界面中放入物品，也可以直接站在锅边&2将物品丢入&r锅中。"
-			]
-			id: "5B62D052AA6FF2D3"
-			rewards: [{
-				id: "077E1F89F281FD85"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "巫师的宝物"
-			tasks: [{
-				id: "5343118C1A6F92EB"
-				item: "hexerei:mixing_cauldron"
-				type: "item"
-			}]
-			x: 9.75d
-			y: 2.25d
-		}
-		{
-			dependencies: ["5B62D052AA6FF2D3"]
-			description: [
-				"&6蘸注器&r是一个用处有限的装置，但是我们需要用它来制作魔法巫师模组的&6蜡烛&r。&2（鼠标悬停于蘸注器上按Shift查看详细介绍）"
-				"&r"
-				"那么请按照配方做出蘸注器吧！"
-				""
-				"制作结束以后，如果你想把混合锅中的岩浆倒出，需要将鼠标移至流体容器处，会弹出一个伸缩窗口，点击即可。&7（如下图所示）&r"
-				""
-				"{image:kubejs:textures/task/hexerei_2.png width:100 height:60 align:1}"
-			]
-			id: "5DD1124BDBF1D5EC"
-			rewards: [{
-				count: 2
-				id: "5C85989EF8D5705C"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			subtitle: "混合锅DLC"
-			tasks: [{
-				id: "7B63C80FB38C48CE"
-				item: "hexerei:candle_dipper"
-				type: "item"
-			}]
-			title: "更精密的装置"
-			x: 11.25d
-			y: 2.25d
-		}
-		{
-			dependencies: ["5DD1124BDBF1D5EC"]
-			description: [
-				"首先你需要通过击杀牛、猪、羊来获取动物油脂。"
-				""
-				"集齐8个动物油脂以后，将其放在装满水的混合锅中，获得油脂液。"
-				""
-				"手持蘸注器蹲下右击混合锅，将其摆放在混合锅上，确认锅中有油脂液，手持线右击蘸注器，即可开始蘸注蜡烛。"
-				""
-				"一个蘸注器可同时蘸注最多三根蜡烛。"
-				""
-				"&7若混合锅中的液体为药水，蘸注在其中的蜡烛可获得相应的药水效果。蜡烛点燃后即可在一定范围内享受此药水效果。&r"
-			]
-			id: "17612117FFCB6D00"
-			rewards: [{
-				count: 2
-				id: "606BAC53708BAC2B"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			tasks: [{
-				id: "5F5EA69CBB141D86"
-				item: "hexerei:candle"
-				type: "item"
-			}]
-			title: "为召唤祭坛而准备"
-			x: 12.75d
-			y: 2.25d
-		}
-		{
-			dependencies: ["766CACCF2C6C4E14"]
-			description: [
-				"&7召唤祭坛除了需要魔法巫师模组的配合，还需要一点点机械动力的内容。因为机械动力内容较多，还请移步FTB的机械动力专栏中查看。"
-				""
-				"&r召唤祭坛主要用于召唤生物的场景——当然这并不意味着它仅可以召唤生物，实际上也可以用于一些&6特殊配方&r的加工，获得一些&2物品&r的乃至&2效果类&r的奖励。"
-				""
-				"召唤仪式在后续的旅程中会被反复使用，如果你在&2寻找并击杀某些boss&r的话，在寻找之前，不妨查看一下祭坛的配方，或许会有更简单的方法。"
-			]
-			id: "49BD99DDA8F8454A"
-			rewards: [{
-				id: "0DD6F90701F5DBCC"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "召唤祭坛将会指引你新的道路"
-			tasks: [{
-				id: "3B5DBF68920C4ED0"
-				item: "summoningrituals:altar"
-				type: "item"
-			}]
-			title: "召唤你想要的"
-			x: 15.5d
-			y: 0.75d
-		}
-		{
-			dependencies: ["49BD99DDA8F8454A"]
-			description: [
-				"在本整合包中，所有的召唤仪式，都要以&6仪式催化剂&r作为结尾，放置在召唤祭坛上，以开启一场召唤仪式。"
-				""
-				"因此，在制作召唤催化剂的时候可以考虑&2一次制作较多的量&r，以满足长期的召唤仪式的需求。"
-			]
-			id: "2E04900BA7E16DF0"
-			rewards: [{
-				id: "6AC6FB9DC22CD220"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "一切召唤仪式的基础"
-			tasks: [{
-				id: "0A9E7D934E060F6E"
-				item: "kubejs:ritual_catalyst"
-				type: "item"
-			}]
-			x: 17.0d
-			y: 0.75d
-		}
-		{
-			dependencies: ["6FB9DA46381FBCB6"]
-			description: [
-				"你需要通过游玩&d《魔法巫师（Hexerei）》模组&r来制作整合包较为&e核心&r的物品——&6召唤祭坛&r。&7（召唤祭坛的制作还需要一部分机械动力的内容）"
-				""
-				"&r&2——你可以通过召唤祭坛来制作一些物品、器官，也可以用来召唤来自《世界BOSS》模组的21个BOSS。&r"
-				""
-				"总之，因为一些后续一些配方依赖于魔法巫师的&6混合锅&r，我们推荐你优先发展该模组。"
-				""
-				"魔法巫师的&e线路并不长&r，更多的是用于增添沉浸感而产生的一些&e可选的发展内容&r，因此大可不必担心。而且魔法巫师也可以为你的探索旅途提供不小的便利。&7（谁会不喜欢可以飞行的扫帚呢？）&r"
-				""
-				"将&d暗影之书&r放置在书坛上，慢慢阅读吧！"
-			]
-			icon: {
-				Count: 1b
-				id: "hexerei:book_of_shadows"
-				tag: {
-					bookmarks: { }
-					chapter: 0
-					opened: 0b
-					page: 0
-				}
-			}
-			id: "00E3E147FC750C90"
-			rewards: [
-				{
-					id: "69A47379C6E0551E"
-					item: {
-						Count: 1b
-						id: "hexerei:book_of_shadows"
-						tag: {
-							bookmarks: { }
-							chapter: 0
-							opened: 0b
-							page: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "0AB96012391DCB55"
-					item: "hexerei:book_of_shadows_altar"
-					type: "item"
-				}
-			]
-			shape: "circle"
-			subtitle: "咒术？魔法？还是科学？"
-			tasks: [{
-				id: "3342C5E8A28DC165"
-				title: "探寻魔法的秘密"
-				type: "checkmark"
-			}]
-			title: "探寻魔法的秘密"
-			x: 8.25d
-			y: 2.25d
-		}
-		{
-			dependencies: ["5B62D052AA6FF2D3"]
-			description: [
-				"魔法巫师的另一重要内容则是魔法扫帚，有&6柳木扫帚&r、&6桃花心木扫帚&r等，你可以轻松地去往各种地方探险。"
-				""
-				"扫帚&2允许使用类如挎包、挂件等物品进行装饰和升级&r。具有&6DIY价值&r。"
-				""
-				"当然，就使用价值来说，如果你认为魔法巫师的扫帚使用过于冗杂，则可以尝试制作&6“魔女的扫帚”&r。&7（通过JEI搜索其合成配方）&r"
-				""
-				"&7桃花心木生成在丛林，柳树生成在沼泽，另外，本模组的一些基础资源推荐去看暗影之书里的“各种建筑”章节，在结构中寻找。&r"
-			]
-			icon: {
-				Count: 1b
-				id: "hexerei:mahogany_broom"
-				tag: { }
-			}
-			id: "7AAEA01D27277498"
-			rewards: [{
-				id: "3CE66056F389FA4D"
-				item: {
-					Count: 1b
-					id: "hexerei:broom_keychain"
-					tag: {
-						Items: [{
-							Count: 1b
-							Slot: 0b
-							id: "kubejs:full_mark"
-						}]
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "我也要飞起来了！"
-			tasks: [{
-				id: "390FA83F430207D7"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "魔法与飞行扫帚"
-			x: 9.75d
-			y: 0.75d
-		}
-		{
-			dependencies: ["6FB9DA46381FBCB6"]
-			description: [
-				"&d《Bosses of Mass Destruction》模组&r提供了&d4个BOSS&r，他们生成在不同的结构中，需要玩家去寻找。"
-				""
-				"有的BOSS为玩家提供了寻找的方法，请到&e具体BOSS页面&r查看。"
-				""
-				"当击杀了BOSS之后，玩家可以通过使用&d硫磺花蜜&r重置该结构以&e重新挑战BOSS&r。（&e硫磺花蜜可合成获得&r）"
-			]
-			hide_dependency_lines: true
-			icon: "bosses_of_mass_destruction:brimstone_nectar"
-			id: "0779F9E4FD2E0EA0"
-			tasks: [{
-				id: "6884E3C73795E24D"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "BODM"
-			x: 3.0d
-			y: 2.25d
-		}
-		{
-			dependencies: ["6FB9DA46381FBCB6"]
-			description: [
-				"&d《迎战（Meet Your Fight）》模组&r提供了&d4个Boss&r，每个BOSS都有独立的战利品，它们可以合成装备，例如有用的饰品或很酷的武器和工具。"
-				""
-				"这些BOSS接到&e召唤&r才会前来，你需要&d按配方合成制作&r合适的&e召唤物品&r并&e手持长按右键以召唤&r。"
-			]
-			icon: "meetyourfight:haunted_bell"
-			id: "6C5EDA1DE6024879"
-			tasks: [{
-				id: "45EFD3D48C383CCE"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "迎战"
-			x: 4.0d
-			y: 2.25d
+			y: 3.25d
 		}
 		{
 			dependencies: ["5F271CD6AAEC88FC"]
@@ -1855,7 +1468,7 @@
 			}]
 			title: "更优质的能源"
 			x: 12.25d
-			y: 7.5d
+			y: 1.75d
 		}
 		{
 			dependencies: ["7F0C1FA54DD6E9BC"]
@@ -1866,6 +1479,12 @@
 			]
 			icon: "biomancy:primordial_core"
 			id: "3BAEC954173FF2A3"
+			rewards: [{
+				count: 5
+				id: "6E51D03657171684"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "教学结束"
 			tasks: [{
 				id: "7BF5C93B82AE9C82"
@@ -1874,7 +1493,7 @@
 			}]
 			title: "血肉重铸：自由探索"
 			x: 17.5d
-			y: 9.0d
+			y: 3.25d
 		}
 		{
 			dependencies: [
@@ -1884,7 +1503,7 @@
 			description: [
 				"1.我们可以在下图&c红框&r中所指示的位置看到一个物品来自哪一个模组。"
 				"&7－－如图中物品来自模组《Nameless Trinkets》&r"
-				"{image:kubejs:textures/task/jei_1.png width:160 height:65 align:1}"
+				"{image:kubejs:textures/task/jei_1.png width:110 height:47 align:1}"
 				""
 				""
 				"2.如果你想知道一个模组都有什么物品，可以按&eE键&r打开背包，在&e右下角的JEI搜索框&r中输入&e“@+模组名”&r，如&e“@Nameless”&r来搜索上一个图中的模组。&7（一般名字有多个单词的模组只需要打第一个单词）&r"
@@ -1893,11 +1512,16 @@
 				"{@pagebreak}"
 				"3.通常我们会在JEI搜索框中直接搜索物品的名字，然后&e左键点击&r来查询物品如何制作（或者将鼠标悬停在物品处按&eR－展示配方&r）。"
 				"而将鼠标悬停于物品上按&eU键（展示用途）&r，则可以查看它能做什么，当该物品具有合成功能时，会显示它支持的全部配方。（&7如下图，鼠标悬停在图1的红色处按U键，因为召唤祭坛提供了其他物品的合成方式，所以显示了它提供的配方&r）"
-				"{image:kubejs:textures/task/jei_3.png width:130 height:65 align:1}"
-				"{image:kubejs:textures/task/jei_4.png width:105 height:100 align:1}"
+				"{image:kubejs:textures/task/jei_3.png width:130 height:68 align:1}"
+				"{image:kubejs:textures/task/jei_4.png width:105 height:99 align:1}"
 			]
 			icon: "minecraft:writable_book"
 			id: "55A4D2A38D0297E8"
+			rewards: [{
+				id: "2F0F6E4BA49B55C1"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "一些快速上手MOD的方法"
 			tasks: [{
 				id: "1B37BAC762FD8D2F"
@@ -1906,76 +1530,7 @@
 			}]
 			title: "如果你是整合包新手"
 			x: 7.75d
-			y: 18.25d
-		}
-		{
-			dependencies: ["51FA796A91E94C4D"]
-			description: [
-				"本整合包提供了不少BOSS战斗，他们来自不同模组，难度也有高低，你可以在FTB任务左侧的&cBOSS图鉴&r中找到他们。"
-				""
-				"本整合包并不强制你什么时候要去打某个BOSS，不过是时候提醒一下——或许你有足够的能力去挑战一下他们了！"
-			]
-			id: "6FB9DA46381FBCB6"
-			subtitle: "更多的战斗等待着你"
-			tasks: [{
-				id: "2D52694444FD1BEE"
-				item: "minecraft:creeper_head"
-				type: "item"
-			}]
-			title: "更多的挑战"
-			x: 6.0d
-			y: 2.25d
-		}
-		{
-			dependencies: ["49BD99DDA8F8454A"]
-			description: [
-				"&d《世界BOSS》模组&r提供了&d21个BOSS&r，可以通过两种方式召唤："
-				""
-				""
-				"1. 通过&6交货协议&r获取BOSS召唤物直接召唤"
-				""
-				"2. 向&6召唤祭坛&r中放入特定的物品召唤"
-				"(可以通过&e在JEI中右键召唤召唤祭坛&r，或&e将鼠标悬停于背包中的召唤祭坛按U键&r查看用途来查看&e召唤配方&r。)"
-				""
-				"更多内容请移步&cFTB左侧的BOSS图鉴&r。"
-			]
-			icon: "summoningrituals:altar"
-			id: "3F1ED49F7451CD1E"
-			tasks: [{
-				id: "5E1643CC3F198152"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "世界BOSS"
-			x: 15.5d
-			y: -0.75d
-		}
-		{
-			dependencies: ["17612117FFCB6D00"]
-			description: [
-				"关于&d《魔法巫师（Hexerei）》模组&r的相关引导，我们以制作出主线必需的“蜡烛”就结束了，后续该模组的内容不会强制玩家游玩。"
-				""
-				"当然该模组提供的内容不仅仅只有这些，你可以通过在JEI搜索框输入&d“&n@Hexerei&r”&r来查看该模组的全部物品，以更好的游玩该模组。"
-				""
-				"另外，该模组的教学书——暗影之书详细的介绍了该模组的一些内容，也推荐阅读以辅助游玩本模组。"
-			]
-			icon: {
-				Count: 1b
-				id: "hexerei:witch_helmet"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "766CACCF2C6C4E14"
-			subtitle: "教学结束"
-			tasks: [{
-				id: "34D4B3EE92412B8C"
-				title: "我已知晓"
-				type: "checkmark"
-			}]
-			title: "暗影之书：自由探索"
-			x: 14.25d
-			y: 2.25d
+			y: 17.25d
 		}
 		{
 			dependencies: ["6069FC5CA00481CE"]
@@ -2013,12 +1568,12 @@
 			}]
 			title: "寻找Alex生物"
 			x: 2.5d
-			y: 7.25d
+			y: 1.5d
 		}
 		{
 			dependencies: ["523490881F8317C7"]
 			description: [
-				"在海边垂钓时，偶尔你会遇上一些奇特而美丽的小生物，它们被称作为&5搏鱼&r。"
+				"在沼泽中，你会遇上一些奇特而美丽的小生物，它们被称作为&5搏鱼&r。"
 				""
 				"搏鱼生性好斗，如果和同类所处在同一片区域，会互相争斗直到一方死亡。"
 				""
@@ -2046,8 +1601,8 @@
 				type: "item"
 			}]
 			title: "斗鱼能手"
-			x: 2.5d
-			y: 5.5d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["040207B33E2FEBFF"]
@@ -2132,18 +1687,16 @@
 			]
 			title: "钱包的升级"
 			x: 8.75d
-			y: 16.5d
+			y: 14.25d
 		}
 		{
 			dependencies: ["74F1E7C9FB0D08A1"]
 			description: [
 				"&7交货协议除了通过探索宝箱获取，也可以通过以下途径获取："
 				"&r"
-				"&41. 击杀村民。&r"
+				"&41.击杀村民。&r"
 				""
-				"&32. 手持绿宝石块右键村民与其进行交易。"
-				""
-				"&r"
+				"&32.和银行家进行交易（银行家转职由ATM机提供）&r"
 			]
 			icon: "wares:delivery_agreement"
 			id: "00DAC886DEE844AD"
@@ -2154,8 +1707,8 @@
 					type: "item"
 				}
 				{
-					id: "4B0AD5568456137D"
-					item: "moblassos:golden_lasso"
+					id: "1F95DB059914A301"
+					item: "moblassos:emerald_lasso"
 					type: "item"
 				}
 			]
@@ -2167,7 +1720,7 @@
 			}]
 			title: "大富翁"
 			x: 1.5d
-			y: 16.5d
+			y: 14.25d
 		}
 		{
 			dependencies: ["0721AF9D7D5E4A7C"]
@@ -2179,20 +1732,28 @@
 				"该模组的更多零碎小物件可通过在JEI中搜索“&d@Waystones&r”查看。"
 			]
 			id: "6A394E28378C67C8"
-			rewards: [{
-				count: 3
-				id: "0DA21E22449B40BF"
-				item: "waystones:return_scroll"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "0DA21E22449B40BF"
+					item: "waystones:return_scroll"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "37782791E37E53BC"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "18D6723C0ACE4719"
 				item: "waystones:waystone"
 				type: "item"
 			}]
 			title: "指路石"
-			x: 4.0d
-			y: 14.0d
+			x: 7.75d
+			y: 11.25d
 		}
 		{
 			dependencies: ["6A394E28378C67C8"]
@@ -2206,14 +1767,269 @@
 				"&8可以传送物品&r"
 			]
 			id: "77F87E258991B1A7"
+			rewards: [{
+				count: 5
+				id: "231C070C2D46587F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "廉价的传送装置"
 			tasks: [{
 				id: "7B016FC80DBDC428"
 				item: "waystones:warp_plate"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 14.0d
+			x: 10.5d
+			y: 11.25d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: ["整合包添加了一些&5魔法模组&r，如果你对成为一位魔法师感兴趣，可以在&eFTB界面左侧的&r&b魔法分类&r中找到它们的引导说明。"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:diamond_spell_book"
+				tag: {
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "17F34DB341F48836"
+			rewards: [{
+				id: "09753DDA68C78D0B"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "探索世界的真实"
+			tasks: [{
+				id: "1B9CE6710438EEB7"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "流传于世的魔法"
+			x: 6.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["28A03FA0404404DA"]
+			description: ["你可以在龙的巢穴、独眼巨人巢穴、地牢等处寻找到记录各种古老传闻的手稿，这是你追寻传说的开始。"]
+			icon: "iceandfire:manuscript"
+			id: "390E59D77E2AC74A"
+			rewards: [
+				{
+					id: "76A8BC2139460119"
+					item: "iceandfire:manuscript"
+					type: "item"
+				}
+				{
+					id: "13823426EB28218A"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+			]
+			subtitle: "千年前的笔迹"
+			tasks: [{
+				id: "0616D5DDE0A710C2"
+				item: "iceandfire:manuscript"
+				type: "item"
+			}]
+			title: "遗失的传闻"
+			x: 1.25d
+			y: 12.75d
+		}
+		{
+			dependencies: ["390E59D77E2AC74A"]
+			description: [
+				"随着身上的&6手稿&r越来越多，你明白需要一个便于整理、携带手稿的工具。"
+				""
+				"这本笔记将指引你在一个个奇幻传说中探索，虽然它现在只有简介的少量知识，但你可以&e不断收集手稿来完善它&r。"
+			]
+			id: "7966D774681B9FC1"
+			rewards: [{
+				count: 2
+				id: "7014E451BC8CB0B3"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "记录自己的传说"
+			tasks: [{
+				id: "06AC29AD3B2BBDD4"
+				item: {
+					Count: 1b
+					id: "iceandfire:bestiary"
+					tag: {
+						Pages: [I;0]
+					}
+				}
+				type: "item"
+			}]
+			title: "探索的指引：记载怪兽的手册"
+			x: 0.5d
+			y: 11.25d
+		}
+		{
+			dependencies: ["7966D774681B9FC1"]
+			description: [
+				"你需要一个书桌以便于将收集的&6手稿&r&e誊抄记录&r到&6异兽手记&r中。"
+				""
+				"通过放置&6异兽手记&r和&6手稿&r来进行研究，可以向交互界面右侧给出的三个可选条目中选择一个，&e添加在异兽笔记中&r。"
+				""
+				"&a注：每研究一次增加的均为新信息，且当全部研究完成后同本书不可再进行研究。&r"
+			]
+			id: "60FA450E74D398EA"
+			rewards: [{
+				count: 2
+				id: "04345BA8D5343DB4"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "将手稿记录于手记中"
+			tasks: [{
+				id: "0D42B7561AA5F217"
+				item: "iceandfire:lectern"
+				type: "item"
+			}]
+			title: "誊写书桌"
+			x: 1.25d
+			y: 9.75d
+		}
+		{
+			dependencies: ["06AF74C1CDA2E18A"]
+			description: [
+				"&d《冰火传说》&r是一款以&e龙&r为核心、以&e神秘生物&r为主题的&d奇幻冒险模组&r。"
+				""
+				"在游戏中，玩家将会遇见来自神话传说的种种神异生灵，并通过收集&6手稿&r和编纂&6《异兽手记》&r来获取有关生物的知识，从而学会利用它们的弱点打败它们，收集它们身上的珍贵材料并制成装备，搜刮它们巢穴中的财宝，甚至于把它们中较为友善的那些驯养为&e宠物&r和&e坐骑&r。"
+				""
+				"模组中的生物不但有着精良的模型和材质，还有着流畅的动画和精妙的AI，无论是观感还是战斗体验都出类拔萃、独树一帜。"
+			]
+			icon: {
+				Count: 1b
+				id: "iceandfire:dragon_skull_fire"
+				tag: {
+					DragonAge: 75
+					Stage: 4
+				}
+			}
+			id: "28A03FA0404404DA"
+			rewards: [{
+				id: "73D4161941FC5D99"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "写下属于你自己的传说"
+			tasks: [{
+				id: "2D93EEA58973F48D"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "引言：凡人居住之所，必有传说流淌"
+			x: 3.0d
+			y: 12.75d
+		}
+		{
+			dependencies: ["0721AF9D7D5E4A7C"]
+			description: [
+				"&b现在，你的主世界并不单调。&r"
+				""
+				"本整合包在世界加入了&e许多新的元素&r，包含&d《冰火传说》&r在内的众多模组为你的冒险带来了全新的体验。"
+			]
+			icon: "minecraft:campfire"
+			id: "06AF74C1CDA2E18A"
+			rewards: [{
+				id: "1A48936E2D990564"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "奇幻的世界"
+			tasks: [{
+				id: "03717290ABBFDA2E"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "不一样的世界"
+			x: 4.0d
+			y: 11.25d
+		}
+		{
+			dependencies: ["60FA450E74D398EA"]
+			description: [
+				"至此，&d《冰火传说（Ice and Fire）》&r模组的介绍和引导就结束了。"
+				""
+				"本模组拥有&e极其详细的引导说明书&r-&6异兽手记&r，随着手记的完善，你会了解该模组所有的内容。"
+				""
+				"现在，冒险家，轮到你用冰与火的巨椽，写下属于你自己的传说。"
+			]
+			icon: "iceandfire:dragon_stick"
+			id: "27821A1650B5B6C9"
+			rewards: [{
+				count: 5
+				id: "2B76F185285AC853"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "凡人因智慧 以比肩神明"
+			tasks: [{
+				id: "1953C281E2E1A192"
+				title: "传说由自己谱写"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 9.75d
+		}
+		{
+			dependencies: ["70F7BE40B3C7BBAB"]
+			description: [
+				"通过几种工具和遗物金属板的组合，你可以制作出&6手术盒&r，用于快捷的替换你的胸腔内容。"
+				""
+				"默认情况下，通过合成获得的手术盒中会包含四个遗物金属板来保证你在术后的健康。"
+			]
+			id: "486909D9F577A497"
+			rewards: [{
+				id: "63F0AFDE607FBED3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "快捷的替换你的胸腔内容"
+			tasks: [{
+				id: "02E85F3C5517E030"
+				item: {
+					Count: 1b
+					id: "kubejs:operation_box"
+					tag: {
+						inventory: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -2.25d
+			y: 3.25d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"在战斗过程中尝试打开其他生物的胸腔是一个非常危险的工作——尤其是你很有可能会打开你自己的胸腔。"
+				""
+				"使用&6安全开胸器&r，其无法开启自己的胸腔，仅能开启其他生物的胸腔，能够大大降低在战斗中开胸的风险。"
+			]
+			hide_dependency_lines: true
+			id: "4C42E21080F0D342"
+			rewards: [{
+				id: "66F2928AC918DA71"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "不要打开自己！"
+			tasks: [{
+				id: "0B14DACC892864BD"
+				item: "kubejs:safe_chest_opener"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 5.0d
 		}
 	]
 	title: "章节1：如常"

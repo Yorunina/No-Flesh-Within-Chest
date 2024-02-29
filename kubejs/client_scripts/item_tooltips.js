@@ -151,6 +151,7 @@ ItemEvents.tooltip((tooltip) => {
         text.add(Text.gray({ "translate": "kubejs.tooltips.power_generator_core.1" }));
     })
     
+
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {
         let lineNum = 1
         if (item.nbt?.organ?.id) {

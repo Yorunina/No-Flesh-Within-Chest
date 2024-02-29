@@ -24,19 +24,19 @@
 		{
 			dependencies: ["0861DDE9767A3E9D"]
 			description: [
-				"关于机械动力，该整合包的引导思路为："
+				"关于机械动力，该整合包的&e引导思路&r为："
 				""
-				"1. 发现有物品需要机械动力去制作"
-				"            ↓"
-				"2. JEI中查找需要的机械动力方块，并一步一步制作出这些方块"
-				"            ↓"
-				"3. 涉及到机械构筑部分请一定要“按W键思索”"
+				"&31.发现有物品需要机械动力去制作&r"
+				"         &3↓&r"
+				"&32.JEI中查找需要的机械动力方块，并一步一步制作出这些方块&r"
+				"         &3↓&r"
+				"&33.涉及到机械构筑部分请一定要“按W键思索”&r"
 				""
-				"只要可以做到这样，那该整合包机械动力的部分就已经足够用了。"
+				"只要可以做到这样，那该整合包机械动力的部分就已经足够用了。&4（该整合包不需要做任何自动化也可以正常游玩）&r"
 				""
-				"&c涉及到机械构筑部分请一定要“按W键思索”！！！&r"
-				"&c涉及到机械构筑部分请一定要“按W键思索”！！！&r"
-				"&c涉及到机械构筑部分请一定要“按W键思索”！！！&r"
+				"&c涉及到机械构筑部分请一定要“按W键思索”！！&r"
+				"&c涉及到机械构筑部分请一定要“按W键思索”！！&r"
+				"&c涉及到机械构筑部分请一定要“按W键思索”！！&r"
 				""
 				"{image:kubejs:textures/task/create_2.png width:70 height:50 align:1}"
 			]
@@ -73,22 +73,15 @@
 			hide_dependent_lines: true
 			icon: "create:cart_assembler"
 			id: "10A1552945CF569F"
-			rewards: [
-				{
-					id: "49A9BD3EE97EA2C0"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					type: "item"
+			rewards: [{
+				id: "49A9BD3EE97EA2C0"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_iron"
+					tag: { }
 				}
-				{
-					id: "17578422EEC13AEA"
-					item: "create:wrench"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			subtitle: "挖矿自动化"
 			tasks: [
 				{
@@ -275,16 +268,23 @@
 			hide_dependent_lines: true
 			icon: "create:mechanical_press"
 			id: "1112F6121BC5A1E5"
-			rewards: [{
-				count: 3
-				id: "6FD0B745E9EA9D96"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
+			rewards: [
+				{
+					count: 3
+					id: "6FD0B745E9EA9D96"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_iron"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "59E5912C784B0BD4"
+					item: "create:wrench"
+					type: "item"
+				}
+			]
 			subtitle: "制作更多材料"
 			tasks: [{
 				id: "66321679712B0464"
@@ -674,11 +674,10 @@
 			dependencies: ["3A98FA709F0DEA42"]
 			dependency_requirement: "all_started"
 			description: [
-				"机械动力配备了名为&6思索&r的教学模式。你可以在某些机器和物品上发现它的痕迹。"
+				"再次重新介绍一下，机械动力配备了名为&6思索&r的教学模式。你可以在某些机器和物品上发现它的痕迹。"
 				""
 				"按照提示将&2鼠标放在物品上长按[w]&r，你便可以看到一个非常详细的&2互动式讲解&r。在绝大多数情况下，你的问题会通过思索得到解决。"
 				""
-				"如果还没有解决——请不要担心，本整合的&6胶囊示例&r或许在最后关头能帮助到你。"
 				"{image:kubejs:textures/task/create_1.png width:80 height:45 align:1}"
 			]
 			icon: {
@@ -981,17 +980,25 @@
 				}
 			}
 			id: "6E7B608B774A9A72"
-			rewards: [{
-				id: "521DA50B5AF38CD5"
-				item: {
-					Count: 1b
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "modulargolems:golem_guide"
+			rewards: [
+				{
+					id: "521DA50B5AF38CD5"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "modulargolems:golem_guide"
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 2
+					id: "59599659EA3D1340"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+			]
 			size: 1.5d
 			subtitle: "召唤傀儡辅助战斗"
 			tasks: [{

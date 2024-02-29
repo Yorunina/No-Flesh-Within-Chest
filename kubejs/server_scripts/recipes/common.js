@@ -3,8 +3,6 @@ ServerEvents.recipes(event => {
     event.remove({ mod: 'somebosses' })
     event.remove({ output: 'supplementaries:candy' })
     event.remove({ output: 'moblassos:hostile_lasso' })
-    event.remove({ output: 'majobroom:majo_hat' })
-    event.remove({ output: 'majobroom:majo_cloth' })
     event.remove({ output: 'morebows:ender_bow' })
     event.remove({ output: 'lightmanscurrency:coinmint' })
     event.remove({ output: 'irons_spellbooks:dev_staff' })

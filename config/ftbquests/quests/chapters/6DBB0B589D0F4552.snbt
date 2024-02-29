@@ -893,7 +893,7 @@
 				}
 				type: "item"
 			}]
-			x: -2.75d
+			x: -1.75d
 			y: 5.5d
 		}
 		{
@@ -915,7 +915,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -0.75d
 			y: 5.5d
 		}
 		{
@@ -937,7 +937,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -0.75d
 			y: 6.5d
 		}
 		{
@@ -959,7 +959,7 @@
 				}
 				type: "item"
 			}]
-			x: -0.75d
+			x: 0.25d
 			y: 6.5d
 		}
 		{
@@ -981,7 +981,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -0.75d
 			y: 7.5d
 		}
 		{
@@ -1003,7 +1003,7 @@
 				}
 				type: "item"
 			}]
-			x: -1.75d
+			x: -0.75d
 			y: 8.5d
 		}
 		{
@@ -1092,7 +1092,271 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 2.75d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "79FAED4CA278611F"
+			rewards: [{
+				id: "27EE682C3E9CC028"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BE00824FFCFD141"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_ice_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.75d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "163834905BAECBCB"
+			rewards: [{
+				id: "67E0C05F420419D9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32A20DDC35D0F5B2"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_ice_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "5FAE35F421143330"
+			rewards: [{
+				id: "5BF3820D9918160A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5D34C295FB32D5AD"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_ice_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.75d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "54515950F62FD18C"
+			rewards: [{
+				id: "2ECDD0B8145654AF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7AD7695A517CEFB3"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_ice_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.75d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "1D10312B329ADB83"
+			rewards: [{
+				id: "1B4770C29B1480E1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3AAB8CA62932FEB0"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_lightning_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.75d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "6616475531C71FAB"
+			rewards: [{
+				id: "6C3EA06FB0599F1C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5AE7D8A990603B59"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_lightning_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "595E490A35AF0DA0"
+			rewards: [{
+				id: "137392CE0749D5A9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7C1EF91CCD35600D"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_lightning_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.75d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "3CC7487243A1240B"
+			rewards: [{
+				id: "50186F39CC346978"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "031987BC53021542"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_lightning_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.75d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "35927A879876CDC1"
+			rewards: [{
+				id: "56B4E083A309BEEC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "365F61B60529F5CA"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_fire_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.75d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "32FBABD921163138"
+			rewards: [{
+				id: "555B029F81D55DF9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3ACB5AFBABDF90BF"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_fire_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "435DBD8B3AFD0336"
+			rewards: [{
+				id: "6FC173DF6C6ADDA6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "698A0319B72CF14B"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_fire_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.75d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			id: "1EB36EA0E49950CA"
+			rewards: [{
+				id: "3A3F2D21919970D5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4FD4853AAD8F9C83"
+				item: {
+					Count: 1b
+					id: "iceandfire:dragonsteel_fire_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.75d
+			y: 6.5d
 		}
 	]
 	title: "盔甲：寒光四射的收藏品"

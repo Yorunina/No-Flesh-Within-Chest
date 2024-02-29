@@ -624,6 +624,7 @@
 				"击败后会在原本的祭坛处生成一根黑曜石柱子，并在顶面的中间生成一个包含奖励的潜影盒。"
 			]
 			hide_dependency_lines: true
+			icon: "bosses_of_mass_destruction:obsidian_heart"
 			id: "0334639B0C126A8D"
 			rewards: [{
 				id: "361E3C2D5DA03BDB"
@@ -632,11 +633,11 @@
 			}]
 			subtitle: "末地浮空城中的秘密"
 			tasks: [{
+				entity: "goety:obsidian_monolith"
 				icon: "bosses_of_mass_destruction:obsidian_heart"
-				id: "5682BA653D3D36BB"
-				structure: "bosses_of_mass_destruction:obsidilith_arena"
-				title: "发现黑曜巨石柱的踪迹"
-				type: "structure"
+				id: "748C2EDCD6C350AB"
+				type: "kill"
+				value: 1L
 			}]
 			x: -0.25d
 			y: 12.25d
@@ -649,6 +650,7 @@
 				"只有攻击其眼球才能造成伤害。"
 			]
 			hide_dependency_lines: true
+			icon: "bosses_of_mass_destruction:blazing_eye"
 			id: "61C0C761B09A0584"
 			rewards: [{
 				id: "4C2E32484BC29818"
@@ -657,11 +659,11 @@
 			}]
 			subtitle: "下界中的恶魔"
 			tasks: [{
+				entity: "bosses_of_mass_destruction:gauntlet"
 				icon: "bosses_of_mass_destruction:blazing_eye"
-				id: "2151AADAB2CB3027"
-				structure: "bosses_of_mass_destruction:gauntlet_arena"
-				title: "发现下界铁掌的踪迹"
-				type: "structure"
+				id: "42B1503E8F714D09"
+				type: "kill"
+				value: 1L
 			}]
 			title: "发现下界铁掌的踪迹"
 			x: -1.25d
@@ -675,6 +677,7 @@
 				"在高塔内的其中一层，可以在四方找到4个&6雕文石头祭坛&r，在各个祭坛中放入&6灵魂之星&r，即可召唤&dBOSS暗夜巫妖&r。"
 			]
 			hide_dependency_lines: true
+			icon: "bosses_of_mass_destruction:ancient_anima"
 			id: "2040133CCC7EBE4F"
 			rewards: [{
 				id: "0104AB526955454E"
@@ -683,11 +686,11 @@
 			}]
 			subtitle: "灵魂之星指引着你"
 			tasks: [{
+				entity: "bosses_of_mass_destruction:lich"
 				icon: "bosses_of_mass_destruction:ancient_anima"
-				id: "328A01F205747676"
-				structure: "bosses_of_mass_destruction:lich_tower"
-				title: "发现暗夜巫妖的踪迹"
-				type: "structure"
+				id: "7FC89E3816CD0244"
+				type: "kill"
+				value: 1L
 			}]
 			title: "寻找暗夜巫妖的踪迹"
 			x: -2.25d
@@ -701,6 +704,7 @@
 				"虚空之花的洞穴生成在&e主世界底部接近基岩层的地方&r。"
 			]
 			hide_dependency_lines: true
+			icon: "bosses_of_mass_destruction:void_thorn"
 			id: "147CD351C2BC325E"
 			rewards: [{
 				id: "139BC074ABFBB065"
@@ -709,11 +713,11 @@
 			}]
 			subtitle: "随着花粉前往地下"
 			tasks: [{
+				entity: "bosses_of_mass_destruction:void_blossom"
 				icon: "bosses_of_mass_destruction:void_thorn"
-				id: "3D0F8B6D5DBB3286"
-				structure: "bosses_of_mass_destruction:void_blossom"
-				title: "发现虚空之花的踪迹"
-				type: "structure"
+				id: "1260A4EA8998C574"
+				type: "kill"
+				value: 1L
 			}]
 			title: "寻找虚空之花的踪迹"
 			x: -3.25d
@@ -740,68 +744,108 @@
 		{
 			dependencies: ["7729DBC45AEF7D17"]
 			hide_dependency_lines: true
+			icon: "meetyourfight:dusk_key"
 			id: "0B6E24F5105C5DE2"
 			rewards: [{
 				id: "18A9BB3035DEAF81"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			tasks: [{
-				id: "7B90C604D7FFF286"
-				item: "meetyourfight:dusk_key"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "12F2FCF51E24602F"
+					item: "meetyourfight:dusk_key"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:rosalyne"
+					icon: "meetyourfight:dusk_key"
+					id: "7FC23750DD88E511"
+					type: "kill"
+					value: 1L
+				}
+			]
 			x: -3.25d
 			y: 9.25d
 		}
 		{
 			dependencies: ["7729DBC45AEF7D17"]
 			hide_dependency_lines: true
+			icon: "meetyourfight:haunted_bell"
 			id: "4643F8D77E474B9B"
 			rewards: [{
 				id: "22893403C2B4A2E9"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			tasks: [{
-				id: "265FF021C45EBF9C"
-				item: "meetyourfight:haunted_bell"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "265FF021C45EBF9C"
+					item: "meetyourfight:haunted_bell"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:bellringer"
+					icon: "meetyourfight:haunted_bell"
+					id: "0F103E09BF1D81E5"
+					type: "kill"
+					value: 1L
+				}
+			]
 			x: -2.25d
 			y: 9.25d
 		}
 		{
 			dependencies: ["7729DBC45AEF7D17"]
 			hide_dependency_lines: true
+			icon: "meetyourfight:fossil_bait"
 			id: "5E53B369B6F8610E"
 			rewards: [{
 				id: "5025C54B55A92A03"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			tasks: [{
-				id: "113A047DE5D55947"
-				item: "meetyourfight:fossil_bait"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "113A047DE5D55947"
+					item: "meetyourfight:fossil_bait"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:swampjaw"
+					icon: "meetyourfight:fossil_bait"
+					id: "3A3A695465028604"
+					type: "kill"
+					value: 1L
+				}
+			]
 			x: -1.25d
 			y: 9.25d
 		}
 		{
 			dependencies: ["7729DBC45AEF7D17"]
 			hide_dependency_lines: true
+			icon: "meetyourfight:devils_ante"
 			id: "59C699B6973BBF18"
 			rewards: [{
 				id: "312EF6953D36E427"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			tasks: [{
-				id: "22DD3D3D40626EE1"
-				item: "meetyourfight:devils_ante"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "22DD3D3D40626EE1"
+					item: "meetyourfight:devils_ante"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:dame_fortuna"
+					icon: "meetyourfight:devils_ante"
+					id: "25F08A9BC632F1D8"
+					type: "kill"
+					value: 1L
+				}
+			]
 			x: -0.25d
 			y: 9.25d
 		}
@@ -835,6 +879,7 @@
 				"&dBOSS激活方式：&r将&6下界之星&r放入&d先驱者&r体内"
 			]
 			hide_dependency_lines: true
+			icon: "cataclysm:mech_eye"
 			id: "3878A673CAAC5661"
 			rewards: [{
 				id: "054C2CAFBEBF7A21"
@@ -842,11 +887,20 @@
 				type: "item"
 			}]
 			subtitle: "先驱者"
-			tasks: [{
-				id: "6CE0E9211CBD546D"
-				item: "cataclysm:mech_eye"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6CE0E9211CBD546D"
+					item: "cataclysm:mech_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:the_harbinger"
+					icon: "cataclysm:mech_eye"
+					id: "4BD820A2FAE8C624"
+					type: "kill"
+					value: 1L
+				}
+			]
 			title: "寻找远古工厂"
 			x: -3.25d
 			y: 15.5d
@@ -861,6 +915,7 @@
 				"&dBOSS激活方式：&r击杀&d烈焰竞技场&r中的&6燃魂&r，100%掉落&6炽燃余烬&r，手持此物品&e右击&r&6烈焰祭坛&r放入即可召唤。"
 			]
 			hide_dependency_lines: true
+			icon: "cataclysm:flame_eye"
 			id: "03005FB0984AFCEF"
 			rewards: [{
 				id: "482AA01B3A302F5D"
@@ -868,11 +923,20 @@
 				type: "item"
 			}]
 			subtitle: "焰魔"
-			tasks: [{
-				id: "159DD68E2A7DC5F3"
-				item: "cataclysm:flame_eye"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "159DD68E2A7DC5F3"
+					item: "cataclysm:flame_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:ignis"
+					icon: "cataclysm:flame_eye"
+					id: "4C7148353566043D"
+					type: "kill"
+					value: 1L
+				}
+			]
 			title: "寻找烈焰竞技场"
 			x: -2.25d
 			y: 15.5d
@@ -889,6 +953,7 @@
 				"&dBOSS激活方式：&r在第三、四层的&eBOSS房&r中，向前&e靠近&r中央的生成方块，Boss便会出现并与你战斗。"
 			]
 			hide_dependency_lines: true
+			icon: "cataclysm:void_eye"
 			id: "0F897A2DA9514E5D"
 			rewards: [{
 				id: "74FADBA41EA864F4"
@@ -896,11 +961,20 @@
 				type: "item"
 			}]
 			subtitle: "末影守卫"
-			tasks: [{
-				id: "129ACF4E25F69FC6"
-				item: "cataclysm:void_eye"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "129ACF4E25F69FC6"
+					item: "cataclysm:void_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:ender_guardian"
+					icon: "cataclysm:void_eye"
+					id: "48DBCF922C1E690C"
+					type: "kill"
+					value: 1L
+				}
+			]
 			title: "寻找废弃堡垒"
 			x: -1.25d
 			y: 15.5d
@@ -917,6 +991,7 @@
 				"&8（Tips：该结构中存在一处需要按钮激活的隐藏房间，里面宝物众多，去寻找吧！）&r"
 			]
 			hide_dependency_lines: true
+			icon: "cataclysm:monstrous_eye"
 			id: "7804C70BA041A413"
 			rewards: [{
 				id: "43D130E13C50CFA3"
@@ -924,11 +999,20 @@
 				type: "item"
 			}]
 			subtitle: "巨兽"
-			tasks: [{
-				id: "4B3B97B5D040840C"
-				item: "cataclysm:monstrous_eye"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4B3B97B5D040840C"
+					item: "cataclysm:monstrous_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					icon: "cataclysm:monstrous_eye"
+					id: "3E9371D50F7B7484"
+					type: "kill"
+					value: 1L
+				}
+			]
 			title: "寻找灵魂锻造厂"
 			x: -0.25d
 			y: 15.5d
@@ -943,6 +1027,7 @@
 				"&dBOSS激活方式：&r合成&6深渊祭品&r，放入&d沉没之城&r中的&6深渊祭坛&r。"
 			]
 			hide_dependency_lines: true
+			icon: "cataclysm:abyss_eye"
 			id: "2CD71AD199802E1A"
 			rewards: [{
 				id: "075A311E229088E4"
@@ -950,11 +1035,20 @@
 				type: "item"
 			}]
 			subtitle: "利维坦"
-			tasks: [{
-				id: "0FC6DE280E71E942"
-				item: "cataclysm:abyss_eye"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0FC6DE280E71E942"
+					item: "cataclysm:abyss_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:the_leviathan"
+					icon: "cataclysm:abyss_eye"
+					id: "783228E7780EAEFC"
+					type: "kill"
+					value: 1L
+				}
+			]
 			title: "寻找沉没之城"
 			x: 0.75d
 			y: 15.5d
@@ -973,6 +1067,7 @@
 				"手持&6沙漠项链&r&e右键&r金字塔底部的&d远古遗魂&r激活BOSS。"
 			]
 			hide_dependency_lines: true
+			icon: "cataclysm:desert_eye"
 			id: "4C2CAC391B06FAA8"
 			rewards: [{
 				id: "681F61F0440E688C"
@@ -980,11 +1075,20 @@
 				type: "item"
 			}]
 			subtitle: "远古遗魂"
-			tasks: [{
-				id: "583B940032B99BEF"
-				item: "cataclysm:desert_eye"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "583B940032B99BEF"
+					item: "cataclysm:desert_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:ancient_remnant"
+					icon: "cataclysm:desert_eye"
+					id: "226F3D20FEB28494"
+					type: "kill"
+					value: 1L
+				}
+			]
 			title: "寻找诅咒金字塔"
 			x: 1.75d
 			y: 15.5d
@@ -1170,9 +1274,14 @@
 			description: [
 				"&d巫妖监狱&r自然生成在&d海洋生物群系&r里的&e天空&r中，是一座&e巨型浮岛结构&r。岛上包含召唤巫妖的祭坛结构和一个巨大的骨头结构，骨头结构的下面有一个讲台，放着关于本结构来源和相关故事情节的书本。"
 				""
-				"&dBOSS激活方式：&r想要生成&d巫妖&r，必须在&e夜晚&r依次将上、中、下共3块&6不祥的骨杖残片&r依次从左至右放置于&e祭坛前&r的&e碎裂深石中心&r，然后将&6血瓶&r倒在祭坛中央的&6祭坛&r方块上。"
+				"{@pagebreak}"
+				"&dBOSS激活方式：&r想要生成&d巫妖&r，必须在&e夜晚&r依次将上、中、下共3块&6不祥的骨杖残片&r依次从左至右放置于&e祭坛前&r的&e碎裂深石中心&r，然后将&c血瓶&r倒在祭坛中央的&6祭坛&r方块上。"
 				""
-				"&7埋藏着不祥的骨杖残片的遗迹，生成于森林群系，分为旧哨塔、血祀坑和破败营地三个变种，分别包含不同位置的骨杖残片。&r"
+				"&7埋藏着不祥的骨杖残片的遗迹，生成于森林群系，分为旧哨塔、血祀坑和破败营地三个变种，分别包含不同位置的骨杖残片。（不同位置是指头部、躯干、尾部，通过图片即可分辨）&r"
+				"{@pagebreak}"
+				"&c血瓶&r的获取方式："
+				""
+				"你需要用三个骨头合成一把&6骨匕首&r，副手持&6空玻璃瓶&r时杀死村民可以填充空玻璃瓶，将玻璃瓶变为血瓶，需要填充8次。"
 			]
 			hide_dependency_lines: true
 			icon: "graveyard:black_bone_staff"
@@ -1183,13 +1292,22 @@
 				type: "item"
 			}]
 			subtitle: "巫妖"
-			tasks: [{
-				icon: "minecraft:skeleton_skull"
-				id: "112E0D31625622B8"
-				structure: "graveyard:lich_prison"
-				title: "发现巫妖监狱"
-				type: "structure"
-			}]
+			tasks: [
+				{
+					icon: "minecraft:skeleton_skull"
+					id: "112E0D31625622B8"
+					structure: "graveyard:lich_prison"
+					title: "发现巫妖监狱"
+					type: "structure"
+				}
+				{
+					entity: "graveyard:lich"
+					icon: "graveyard:upper_bone_staff"
+					id: "6C1141D1F62E14B1"
+					type: "kill"
+					value: 1L
+				}
+			]
 			title: "发现巫妖监狱"
 			x: 11.5d
 			y: 11.75d
@@ -1294,11 +1412,18 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			tasks: [{
-				id: "08B30DF4477D1844"
-				item: "alexsmobs:mysterious_worm"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "08B30DF4477D1844"
+					item: "alexsmobs:mysterious_worm"
+					type: "item"
+				}
+				{
+					id: "476DA02DDC3FBC53"
+					item: "alexsmobs:void_worm_eye"
+					type: "item"
+				}
+			]
 			x: -3.25d
 			y: 21.75d
 		}

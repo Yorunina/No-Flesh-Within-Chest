@@ -118,7 +118,7 @@ const chestLootOnlyStrategies = {
         event.removeLoot(ItemFilter.ALWAYS_TRUE)
     },
     'kubejs:d8': function (event, organ) {
-        if (Math.random() < 0.2) {
+        if (Math.random() < 0.3) {
             return
         }
         let player = event.player

@@ -76,7 +76,7 @@
 				"原版工具只要经过&6加工台&r改造一次，就能变成Tetra装备，使其附带上Tetra模组的属性。"
 				""
 				"{@pagebreak}"
-				"{image:kubejs:textures/task/tetra_1.png width:160 height:90 align:1}"
+				"{image:kubejs:textures/task/tetra_1.png width:180 height:100 align:1}"
 				""
 				"以上图为例，Tetra的加工台面板分为："
 				""
@@ -115,6 +115,7 @@
 				""
 				"手持全息球&e右键&r可以投射专用界面查看&e工具种类、部件以及材料的属性&r。"
 				""
+				"&3如果你之前在别的存档中获取过全息球，可能会因为进度检测的BUG无法获得系统自动给予的全息球。&r&c请前往下方的任务中获取新的全息球。&r"
 				"{@pagebreak}"
 				"全息球也拥有着两个&e升级槽位&r，在后续可以对其进行&e加装末影之眼&r的改造升级用于在&d地下寻找远古锻造遗迹&r。"
 				""
@@ -132,6 +133,7 @@
 				}
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "全息球的大用途"
 			tasks: [{
 				consume_items: false
@@ -169,13 +171,8 @@
 			icon: "witherstormmod:command_block_pickaxe"
 			id: "6DCBC9E0C68FCAB4"
 			rewards: [{
-				count: 10
-				id: "36CD261291BB4560"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
+				id: "6BDFC618DC2F0E48"
+				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
 			subtitle: "定制属于你自己的工具"
@@ -269,6 +266,11 @@
 			hide_dependency_lines: false
 			icon: "witherstormmod:command_block_sword"
 			id: "7E7580FC10C7CB80"
+			rewards: [{
+				id: "0C159F9217B99977"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "定制属于你自己的武器"
 			tasks: [{
 				id: "6420FB47095E5FBE"
@@ -408,13 +410,9 @@
 			}
 			id: "3B9FE77A184BAFBC"
 			rewards: [{
-				count: 10
-				id: "47B3B2D4F2798679"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
+				count: 2
+				id: "4B8401F626DE850F"
+				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
 			subtitle: "方便生活的一种选择"
@@ -447,13 +445,8 @@
 			]
 			id: "5BA7E809A7B3037B"
 			rewards: [{
-				count: 10
-				id: "678A30C0C845692D"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
+				id: "3922CD1D0436EEED"
+				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
 			subtitle: "再使用"
@@ -463,8 +456,8 @@
 				type: "checkmark"
 			}]
 			title: "如何修理工具"
-			x: -2.25d
-			y: 21.75d
+			x: -1.25d
+			y: 22.75d
 		}
 		{
 			dependencies: ["312A09022249980F"]
@@ -479,13 +472,8 @@
 			]
 			id: "47A7AEEFD24F1D7A"
 			rewards: [{
-				count: 10
-				id: "6CD37FAFE6F68DE6"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
+				id: "4E5A51FF9BB20304"
+				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
 			subtitle: "定制部件"
@@ -511,13 +499,8 @@
 			]
 			id: "6F6EA56EB887392B"
 			rewards: [{
-				count: 10
-				id: "17F36C066E19C62B"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
+				id: "07DD8167FBB671A0"
+				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
 			subtitle: "让其变得更强"
@@ -544,13 +527,8 @@
 			]
 			id: "56C75C9FAD3CEC66"
 			rewards: [{
-				count: 10
-				id: "55C235C3DAB17160"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
+				id: "54C886646E87D6C8"
+				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
 			subtitle: "多效但未必专精"
@@ -560,16 +538,19 @@
 				type: "checkmark"
 			}]
 			title: "双头工具的等级"
-			x: -1.25d
-			y: 22.75d
+			x: -2.25d
+			y: 21.75d
 		}
 		{
 			dependencies: ["4632D20D50741511"]
 			description: [
 				"&d锻造遗迹&r是Tetra唯一添加的自然生成结构。其中会包含tetra的&6锻造锤&r以及各种特殊物品。"
 				""
-				"锻造遗迹分为两种，一种是普通的锻造遗迹，另一种则是包含地核提取器的锻造遗迹。"
+				"锻造遗迹分为两种，一种是&6普通的锻造遗迹&r，另一种则是&c包含地核提取器的锻造遗迹&r。"
 				""
+				"你可能需要带走遗迹内的一些装置和方块，但请留意，只有附魔&b精准采集&r的&6锤子&r才能完整带走他们。"
+				""
+				"{@pagebreak}"
 				"这些遗迹在&e所有群系&r都能生成，大多数生成在&e深板岩层&r。经过测试大部分遗迹会在&e繁茂洞穴&r附近生成，而繁茂洞穴多数生成在&e云杉林、丛林&r地下，所以推荐在这两种地形寻找遗迹。"
 			]
 			hide_dependency_lines: false
@@ -590,11 +571,11 @@
 			]
 			subtitle: "更高超的改造技巧"
 			tasks: [{
-				icon: "tetra:forged_workbench"
-				id: "6F5A901BE92FE038"
-				structure: "tetra:regular_ruin"
-				title: "发现普通锻造遗迹"
-				type: "structure"
+				advancement: "tetra:spelunking/ancient_ruins"
+				criterion: ""
+				id: "6966D5E9CC42536C"
+				title: "踏入锻造遗迹"
+				type: "advancement"
 			}]
 			title: "寻找远古锻造遗迹"
 			x: -1.25d
@@ -634,6 +615,11 @@
 				"每一级&a稳固&r可以为工具&e提供额外的完整度&r。"
 			]
 			id: "48BD60FBFEC2896A"
+			rewards: [{
+				id: "714D7A94A0CA67CB"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "解除对名词的疑惑"
 			tasks: [{
 				id: "5B07B4A7545C89A9"
@@ -665,13 +651,8 @@
 			]
 			id: "0326579D60162FF6"
 			rewards: [{
-				count: 10
-				id: "764E56650986C0BA"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
+				id: "58260BA7D19BD428"
+				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
 			subtitle: "工具的魔法"
@@ -757,6 +738,11 @@
 				}
 			}
 			id: "615C6A1DA6AEA1A4"
+			rewards: [{
+				id: "6D704884866EEBA8"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "将他们展开"
 			tasks: [{
 				id: "6489B4B2522076B5"
@@ -802,6 +788,11 @@
 				}
 			}
 			id: "72DE02C58750DFA9"
+			rewards: [{
+				id: "32397277F9C616CE"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			shape: "rsquare"
 			subtitle: "辅助改造的工具"
 			tasks: [
@@ -858,7 +849,7 @@
 				""
 				"&e就像下图这样&r，如此操作你就获得一把属于三级的铁锤了！"
 				""
-				"{image:kubejs:textures/task/tetra_2.png width:130 height:90 align:1}"
+				"{image:kubejs:textures/task/tetra_2.png width:160 height:101 align:1}"
 			]
 			hide_dependency_lines: false
 			icon: {
@@ -956,7 +947,7 @@
 			}
 			id: "0324A0217FD048DF"
 			rewards: [{
-				id: "0D3D893C77B32739"
+				id: "358FB8AD3453FDD5"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
@@ -994,7 +985,7 @@
 			}
 			id: "218618254BAD5391"
 			rewards: [{
-				id: "23492FEEF0E064E5"
+				id: "0AC600BAF6710E35"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
@@ -1011,9 +1002,9 @@
 		}
 		{
 			can_repeat: true
-			dependencies: ["4632D20D50741511"]
+			dependencies: ["72DE02C58750DFA9"]
 			description: ["如果你不小心丢失了全息球，在探索Tetra的遗迹之前，只能付出一点点代价获取一个新的了。"]
-			hide_dependency_lines: false
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "tetra:holo"
@@ -1049,7 +1040,10 @@
 			}]
 			subtitle: "这回要小心保存哦"
 			tasks: [{
-				id: "4981C958618B7728"
+				consume_items: true
+				count: 3L
+				disable_toast: true
+				id: "2B8813A2F4F6043C"
 				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
@@ -1087,10 +1081,7 @@
 			y: 19.5d
 		}
 		{
-			dependencies: [
-				"35E219B64C68FB53"
-				"220A105A1594F550"
-			]
+			dependencies: ["35E219B64C68FB53"]
 			dependency_requirement: "one_completed"
 			description: [
 				"在遗迹中你会发现&6锻造板条箱&r和&6锻造容器&r。"
@@ -1103,6 +1094,11 @@
 			]
 			hide_dependency_lines: true
 			id: "4162CE0B91DD7618"
+			rewards: [{
+				id: "7496D64C70145CB1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				advancement: "tetra:spelunking/containers"
 				criterion: ""
@@ -1123,6 +1119,12 @@
 			]
 			hide_dependency_lines: false
 			id: "32832120541D04F5"
+			rewards: [{
+				count: 3
+				id: "2F2C1B1ED6E0AD2C"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "热力单元"
 			tasks: [{
 				advancement: "tetra:spelunking/find_cell"
@@ -1150,6 +1152,12 @@
 			]
 			hide_dependency_lines: true
 			id: "4ABB90F2D8E0635E"
+			rewards: [{
+				count: 3
+				id: "332322D44DFE293E"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			subtitle: "不安全的燃烧室"
 			tasks: [{
 				id: "0782A8779A7BE325"
@@ -1161,13 +1169,12 @@
 			y: 24.5d
 		}
 		{
-			dependencies: [
-				"35E219B64C68FB53"
-				"220A105A1594F550"
-			]
+			dependencies: ["35E219B64C68FB53"]
 			dependency_requirement: "one_completed"
 			description: [
 				"一个&e完整的锻造锤&r由&6锻造锤&r和&6锻造加工台&r构成，他们都会生成在&d锻造遗迹&r中，你需要找到并带回他们。"
+				""
+				"注意，只有附魔&b精准采集&r的&6锤子&r才能完整带走他们。"
 				"{image:kubejs:textures/task/tetra_3.png width:192 height:108 align:1}"
 			]
 			hide_dependency_lines: true
@@ -1178,6 +1185,7 @@
 				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "一个更高级的“锤子”"
 			tasks: [
 				{
@@ -1202,13 +1210,13 @@
 				"&r"
 				"锻造锤正常工作需要在侧面安装2个&6热力单元&r（正方形口）及2个&e插件&r（长方形口），并在下方空一格处放置一个&6锻造加工台&r。"
 				""
-				"{image:kubejs:textures/task/tetra_4.png width:192 height:108 align:1}"
+				"{image:kubejs:textures/task/tetra_4.png width:192 height:102 align:1}"
 				""
 				"{@pagebreak}"
 				""
 				"锻造锤工作完毕后会有几率出现故障卡住，需要持有&e4级或以上的锤子&r，&e右击&r锻造锤头部下沿进行修复。"
 				""
-				"{image:kubejs:textures/task/tetra_5.png width:190 height:100 align:1}"
+				"{image:kubejs:textures/task/tetra_5.png width:190 height:107 align:1}"
 			]
 			hide_dependency_lines: false
 			id: "26164F1BD1D98A74"
@@ -1239,6 +1247,12 @@
 			]
 			hide_dependency_lines: true
 			id: "07C45CBBE954D541"
+			rewards: [{
+				count: 3
+				id: "2437C300B9956886"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "06A6B7C992106BED"
 				item: "tetra:planar_stabilizer"
@@ -1256,6 +1270,12 @@
 			]
 			hide_dependency_lines: true
 			id: "5325963A2FC77573"
+			rewards: [{
+				count: 3
+				id: "75D7229C7428DC6C"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "71AF4FF77A47A091"
 				item: "tetra:lubricant_dispenser"
@@ -1275,6 +1295,12 @@
 			]
 			hide_dependency_lines: true
 			id: "084A541B2D70B595"
+			rewards: [{
+				count: 3
+				id: "543EA665ED4436B0"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6E70CAFB548B3353"
 				item: "tetra:vent_plate"
@@ -1284,11 +1310,11 @@
 			y: 24.5d
 		}
 		{
-			dependencies: ["220A105A1594F550"]
+			dependencies: ["35E219B64C68FB53"]
 			description: [
 				"装载于锻造锤的&e热力单元&r是会耗尽的，如果你不想让它变成一次性用品，就需要一个&e充能装置&r。"
 				""
-				"{image:kubejs:textures/task/tetra_6.png width:150 height:95 align:1}"
+				"{image:kubejs:textures/task/tetra_6.png width:150 height:102 align:1}"
 				""
 				"如图所示，我们需要&6提取管道&r、&6地核提取器&r、&6传输单元&r组合成一个&e充能装置&r。"
 				""
@@ -1296,8 +1322,14 @@
 				""
 				"需要注意的是&6传输单元&r必须放在&6地核提取器&r的&e突出面&r，以及在&6传输单元&r&e上方&r放置&6热力单元&r后，需要用&e锤子&r将&6传输单元&r的开关&e敲至中央以启动充能&r。"
 			]
-			hide_dependency_lines: false
+			hide_dependency_lines: true
 			id: "76BEE3F046554382"
+			rewards: [{
+				id: "2C21E23B468B23FD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			shape: "rsquare"
 			subtitle: "热力单元充能装置"
 			tasks: [{
 				advancement: "tetra:spelunking/refill_cell"
@@ -1311,42 +1343,12 @@
 		}
 		{
 			dependencies: ["4632D20D50741511"]
-			description: ["对于&d锻造遗迹&r的介绍请查看该任务&e上方&r的&d“寻找远古锻造遗迹”任务&r。"]
-			hide_dependency_lines: false
-			id: "220A105A1594F550"
-			rewards: [
-				{
-					count: 2
-					id: "06C6CEA142C9F89B"
-					item: "tetra:forged_beam"
-					type: "item"
-				}
-				{
-					id: "4C10F080121A2BBF"
-					item: "lightmanscurrency:coin_iron"
-					type: "item"
-				}
-			]
-			subtitle: "含有地核提取装置的遗迹"
-			tasks: [{
-				icon: "tetra:forged_workbench"
-				id: "7E0C2A382F79A4D9"
-				structure: "tetra:extractor_ruin"
-				title: "发现地核提取遗迹"
-				type: "structure"
-			}]
-			title: "发现特殊遗迹：地核提取基地"
-			x: -1.25d
-			y: 27.5d
-		}
-		{
-			dependencies: ["35E219B64C68FB53"]
 			description: [
 				"寻找各种生态群系的时候，你往往要根据各种生成规则来进行排查。但在Mod众多的情况下，自然生成变得极其复杂且难以捉摸，此时，你可能就需要使用&2自然指南针&r来辅助对于群系或结构的寻找。"
 				""
 				"通过右键指南针，你可以使用其搜索框来定向的搜索对应的群系。"
 			]
-			hide_dependency_lines: false
+			hide_dependency_lines: true
 			icon: {
 				Count: 1b
 				id: "naturescompass:naturescompass"
@@ -1369,8 +1371,8 @@
 				type: "checkmark"
 			}]
 			title: "指南针"
-			x: -1.25d
-			y: 24.5d
+			x: -2.25d
+			y: 27.5d
 		}
 		{
 			dependencies: ["615C6A1DA6AEA1A4"]
@@ -1386,6 +1388,11 @@
 			hide_dependency_lines: true
 			icon: "alexsmobs:void_worm_mandible"
 			id: "64B168E393C5948F"
+			rewards: [{
+				id: "68AADEF0BB899229"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			tasks: [{
 				id: "52E29EA2B1D14BE4"
 				item: "alexsmobs:mysterious_worm"
