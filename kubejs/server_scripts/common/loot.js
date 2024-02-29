@@ -64,6 +64,8 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('minecraft:witch')
         .addLoot(LootEntry.of('kubejs:magic_spine').when((c) => c.randomChance(0.05)));
 
+    event.addEntityLootModifier('iceandfire:gorgon')
+        .removeLoot('iceandfire:gorgon_head');
     event.addEntityLootModifier("minecraft:villager")
         .apply(ctx => {
             if (Math.random() < 0.08) {
