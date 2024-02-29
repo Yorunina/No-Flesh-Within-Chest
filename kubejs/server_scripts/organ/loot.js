@@ -123,7 +123,7 @@ const chestLootOnlyStrategies = {
         }
         let player = event.player
         let item = Item.of('kubejs:random_tumor', { organData: {} })
-        let amount = Math.floor(Math.sqrt(Math.floor(Math.random() * 15 + 1)))
+        let amount = Math.floor(Math.random() * 4 + 1)
         for (let i = 0; i < amount; i++) {
             let attri = randomGet(tumorAttriBute)
             let attriName = attri.name
