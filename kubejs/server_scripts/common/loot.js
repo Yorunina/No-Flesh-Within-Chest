@@ -27,7 +27,7 @@ LootJS.modifiers(event => {
                 if (!diffStage) return
                 let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
                 if (diffLevelNum >= 4) {
-                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min((diffLevelNum - 3) * 0.05, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(0.2)))
                 }
             })
     }
@@ -86,7 +86,7 @@ LootJS.modifiers(event => {
             }
         })
 
-   
+
 
     event.addLootTypeModifier(LootType.ENTITY)
         .removeLoot('@simplehats')

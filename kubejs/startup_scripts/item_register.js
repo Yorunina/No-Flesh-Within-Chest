@@ -269,6 +269,5 @@ StartupEvents.registry('item', event => {
 
     event.create('safe_chest_opener').texture('kubejs:item/safe_chest_opener')
         .maxStackSize(1)
-        .tooltip(Text.gray({ "translate": "kubejs.tooltips.safe_chest_opener.1" }))
 })
 

@@ -99,7 +99,6 @@ const organPlayerKeyPressedOnlyStrategies = {
             player.potionEffects.add('minecraft:glowing', 20 * 10)
             player.addItemCooldown('kubejs:genesis', 20 * 600)
             event.server.scheduleInTicks(20 * 10, ctx => {
-                // event.server.runCommandSilent(`/gamemode survival @p`)
                 player.setGameMode('survival')
                 player.closeMenu()
             })

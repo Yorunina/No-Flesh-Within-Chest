@@ -9,7 +9,7 @@ MoreJSEvents.villagerTrades((event) => {
         .villagerExperience(1.0)
         .priceMultiplier(1.0)
 
-    event.addTrade("lightmanscurrency:banker", 2, [TradeItem.of("minecraft:emerald", 24, 36),TradeItem.of("minecraft:diamond", 4, 16) ], getRandomEggWares())
+    event.addTrade("lightmanscurrency:banker", 2, [TradeItem.of("minecraft:emerald", 24, 36), TradeItem.of("minecraft:diamond", 4, 16)], getRandomEggWares())
         .maxUses(16)
         .villagerExperience(3.0)
         .priceMultiplier(1.2)
@@ -24,9 +24,9 @@ MoreJSEvents.villagerTrades((event) => {
         .villagerExperience(5.0)
         .priceMultiplier(1.6)
 
-    event.addTrade("lightmanscurrency:banker", 5, [ TradeItem.of("minecraft:emerald", 48, 64), TradeItem.of("minecraft:nether_star", 1, 2)], getRandomChallengeWares())
+    event.addTrade("lightmanscurrency:banker", 5, [TradeItem.of("minecraft:emerald", 48, 64), TradeItem.of("minecraft:nether_star", 1, 2)], getRandomChallengeWares())
         .maxUses(4)
         .villagerExperience(8.0)
         .priceMultiplier(1.8)
-    
+
 });

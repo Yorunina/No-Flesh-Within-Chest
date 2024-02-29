@@ -73,6 +73,13 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('kubejs:stardust_fragment', (item, advanced, text) => {
         text.add(Text.gold({ "translate": "kubejs.tooltips.stardust_fragment.1" }));
     })
+    tooltip.addAdvanced('kubejs:dark_stardust_fragment', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.dark_stardust_fragment.1" }));
+        text.add(Text.gold({ "translate": "kubejs.tooltips.dark_stardust_fragment.2" }));
+    })
+    tooltip.addAdvanced('kubejs:safe_chest_opener', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.safe_chest_opener.1" }));
+    })
     tooltip.addAdvanced('kubejs:god_bless_empty_necklace', (item, advanced, text) => {
         text.add(Text.gray({ "translate": "kubejs.tooltips.god_bless_empty_necklace.1" }));
     })
