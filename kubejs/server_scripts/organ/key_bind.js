@@ -108,8 +108,8 @@ const organPlayerKeyPressedOnlyStrategies = {
         let player = event.player
         let magicData = getPlayerMagicData(player)
         let manaCost = magicData.getMana()
-        let level = Math.max(Math.sqrt(manaCost), 1) + 4
-        $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('irons_spellbooks', 'magic_arrow')).attemptInitiateCast(Item.of('air'), level, player.level, player, $CastSource.NONE, false)
+        let amplifier = Math.max(Math.sqrt(manaCost), 1) + 4
+        overLimitSpellCast(new ResourceLocation('irons_spellbooks', 'magic_arrow'), amplifier, player, false)
         magicData.setMana(0)
         player.addItemCooldown('kubejs:amethyst_magic_core', 20 * 15)
     },
@@ -117,8 +117,8 @@ const organPlayerKeyPressedOnlyStrategies = {
         let player = event.player
         let magicData = getPlayerMagicData(player)
         let manaCost = magicData.getMana()
-        let level = Math.max(2 * Math.sqrt(player.getMaxHealth()), 1)
-        $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('irons_spellbooks', 'cone_of_cold')).attemptInitiateCast(Item.of('air'), level, player.level, player, $CastSource.NONE, false)
+        let amplifier = Math.max(2 * Math.sqrt(player.getMaxHealth()), 1)
+        overLimitSpellCast(new ResourceLocation('irons_spellbooks', 'cone_of_cold'), amplifier, player, false)
         magicData.setMana(Math.max((manaCost - 500), 0))
         if (manaCost < 500) {
             player.setHealth(Math.max((player.getHealth() - (500 - manaCost) * 0.5), 1))
@@ -129,8 +129,8 @@ const organPlayerKeyPressedOnlyStrategies = {
         let player = event.player
         let magicData = getPlayerMagicData(player)
         let manaCost = magicData.getMana()
-        let level = Math.max(2 * Math.sqrt(player.getMaxHealth()), 1)
-        $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('irons_spellbooks', 'fire_breath')).attemptInitiateCast(Item.of('air'), level, player.level, player, $CastSource.NONE, false)
+        let amplifier = Math.max(2 * Math.sqrt(player.getMaxHealth()), 1)
+        overLimitSpellCast(new ResourceLocation('irons_spellbooks', 'fire_breath'), amplifier, player, false)
         magicData.setMana(Math.max((manaCost - 500), 0))
         if (manaCost < 500) {
             player.setHealth(Math.max((player.getHealth() - (500 - manaCost) * 0.5), 1))
@@ -141,8 +141,8 @@ const organPlayerKeyPressedOnlyStrategies = {
         let player = event.player
         let magicData = getPlayerMagicData(player)
         let manaCost = magicData.getMana()
-        let level = Math.max(2 * Math.sqrt(player.getMaxHealth()), 1)
-        $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](new ResourceLocation('irons_spellbooks', 'electrocute')).attemptInitiateCast(Item.of('air'), level, player.level, player, $CastSource.NONE, false)
+        let amplifier = Math.max(2 * Math.sqrt(player.getMaxHealth()), 1)
+        overLimitSpellCast(new ResourceLocation('irons_spellbooks', 'electrocute'), amplifier, player, false)
         magicData.setMana(Math.max((manaCost - 500), 0))
         if (manaCost < 500) {
             player.setHealth(Math.max((player.getHealth() - (500 - manaCost) * 0.5), 1))
