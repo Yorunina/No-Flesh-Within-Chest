@@ -17,9 +17,19 @@ LootJS.modifiers(event => {
             )
             .addAlternativesLoot(
                 LootEntry.of('lightmanscurrency:coin_gold').when((c) => c.randomChance(0.5)),
-                LootEntry.of('lightmanscurrency:coin_emerald').when((c) => c.randomChance(0.3)),
-                LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.1)),
+                LootEntry.of('lightmanscurrency:coin_emerald').when((c) => c.randomChance(0.1)),
+                LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.05)),
             )
+            .apply(ctx => {
+                let player = ctx.player
+                if (!player) return
+                let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
+                if (!diffStage) return
+                let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
+                if (diffLevelNum >= 4) {
+                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(0.2)))
+                }
+            })
     }
 
     bossTypeList.forEach(entityId => {
@@ -37,6 +47,8 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('bosses_of_mass_destruction:void_blossom')
         .addLoot('kubejs:secret_of_bloom')
         .addLoot('kubejs:flower_heart');
+    event.addEntityLootModifier('bosses_of_mass_destruction:obsidilith')
+        .addLoot('kubejs:amethyst_magic_core');
     event.addEntityLootModifier('bosses_of_mass_destruction:gauntlet')
         .apply(ctx => {
             if (ctx.player) {
@@ -52,13 +64,40 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('minecraft:witch')
         .addLoot(LootEntry.of('kubejs:magic_spine').when((c) => c.randomChance(0.05)));
 
+    event.addEntityLootModifier('iceandfire:gorgon')
+        .removeLoot('iceandfire:gorgon_head');
+    event.addEntityLootModifier("minecraft:villager")
+        .apply(ctx => {
+            if (Math.random() < 0.08) {
+                ctx.addLoot(getRandomPotionWares())
+            }
+            if (Math.random() < 0.01) {
+                ctx.addLoot(getRandomChallengeWares())
+            }
+            if (Math.random() < 0.01) {
+                ctx.addLoot(getRandomEggWares())
+            }
+            if (Math.random() < 0.04) {
+                ctx.addLoot(getRandomSpecialWares())
+            }
+            if (Math.random() < 0.01) {
+                ctx.addLoot(getRandomOrganWares())
+            }
+            if (Math.random() < 0.05) {
+                ctx.addLoot(getRandomOreWares())
+            }
+        })
+
+
+
     event.addLootTypeModifier(LootType.ENTITY)
         .removeLoot('@simplehats')
         .apply(ctx => {
-            if (ctx.entity.isLiving() &&
-                (ctx.entity.hasEffect('kubejs:glare_of_god') ||
-                    ctx.entity.hasEffect('kubejs:gaze_of_god') ||
-                    ctx.entity.hasEffect('kubejs:glimpse_of_god'))) {
+            let entity = ctx.entity
+            if (entity.isLiving() &&
+                (entity.hasEffect('kubejs:glare_of_god') ||
+                    entity.hasEffect('kubejs:gaze_of_god') ||
+                    entity.hasEffect('kubejs:glimpse_of_god'))) {
                 if (ctx.player) {
                     ctx.player.give(Item.of('kubejs:god_consciousness', { mobType: ctx.entity.getType() }))
                 }
@@ -85,7 +124,7 @@ LootJS.modifiers(event => {
             if (Math.random() < 0.12) {
                 ctx.addLoot(getRandomPotionWares())
             }
-            if (Math.random() < 0.03) {
+            if (Math.random() < 0.05) {
                 ctx.addLoot(getRandomChallengeWares())
             }
             if (Math.random() < 0.02) {
@@ -97,7 +136,7 @@ LootJS.modifiers(event => {
             if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomOrganWares())
             }
-            if (Math.random() < 0.1) {
+            if (Math.random() < 0.07) {
                 ctx.addLoot(getRandomOreWares())
             }
         })
@@ -107,12 +146,24 @@ LootJS.modifiers(event => {
         .anyDimension(['minecraft:the_nether'])
         .addLoot(LootEntry.of('kubejs:the_third_eye').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('kubejs:redstone_furnace').when((c) => c.randomChance(0.02)))
-
-
-    event.addLootTypeModifier(LootType.CHEST)
-        .anyStructure(['#dnl:all_structure'], false)
         .addLoot(LootEntry.of('kubejs:ritual_catalyst').when((c) => c.randomChance(0.1)))
-        .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.01)))
+
+    event.addLootTypeModifier(LootType.FISHING)
+        .apply(ctx => {
+            let player = ctx.player;
+            if (!player) return;
+            if (player.stages.has('flos_magic_stage_2') && ctx.level.isRaining() &&
+                event.level.isNight() && Math.random() < 0.1) {
+                ctx.server.scheduleInTicks(20 * 1, (callback) => {
+                    ctx.level.runCommandSilent('/weather clear');
+                    ctx.player.stages.remove('flos_magic_stage_2')
+                    ctx.player.stages.add('flos_magic_stage_3')
+                })
+                return
+            }
+        })
+
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['#kubejs:graveyard'], false)

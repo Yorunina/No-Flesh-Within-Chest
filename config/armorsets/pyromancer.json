@@ -17,7 +17,6 @@
     "itemKey": "somebosses:vulcan_sword",
     "mixAndMatch": [
       "somebosses:frost_magma_gauntlet",
-      "irons_spellbooks:blaze_spell_book",
       "cataclysm:the_incinerator",
       "iceandfire:dragonbone_sword_fire"
     ]
@@ -26,13 +25,15 @@
     "itemKey": "somebosses:vulcan_sword",
     "mixAndMatch": [
       "somebosses:frost_magma_gauntlet",
-      "irons_spellbooks:blaze_spell_book",
       "cataclysm:the_incinerator",
       "iceandfire:dragonbone_sword_fire"
     ]
   },
   "additionalSetPieces": [{
-    "itemKey": "nameless_trinkets:blaze_nucleus"
+    "itemKey": "nameless_trinkets:blaze_nucleus",
+    "mixAndMatch": [
+      "irons_spellbooks:blaze_spell_book"
+    ]
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [

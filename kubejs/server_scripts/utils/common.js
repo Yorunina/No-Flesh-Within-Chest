@@ -1,3 +1,7 @@
+const $ChestCavityEntity = Java.loadClass("net.tigereye.chestcavity.interfaces.ChestCavityEntity");
+const $ChestCavityUtil = Java.loadClass("net.tigereye.chestcavity.util.ChestCavityUtil")
+const $CCItems = Java.loadClass("net.tigereye.chestcavity.registration.CCItems")
+
 /**
 * 获取某个半径内的实体
 * @param {Internal.Level} level

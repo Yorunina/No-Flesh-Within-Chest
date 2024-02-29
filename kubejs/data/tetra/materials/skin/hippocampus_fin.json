@@ -1,0 +1,32 @@
+{
+    "key": "iaf_hippocampus_fin",
+    "category": "skin",
+    "primary": "3.8",
+    "secondary": "5.1",
+    "tertiary": "3.4",
+    "durability": "188",
+    "integrityCost": "2",
+    "integrityGain": "2",
+    "magicCapacity": "344",
+    "toolLevel": "0",
+    "toolEfficiency": "0",
+    "tints": {
+      "glyph": "009ACD",
+      "texture": "009ACD"
+    },
+    "textures": [
+      "crude",
+      "default"
+    ],
+    "material": {
+      "items": [
+        "iceandfire:hippocampus_fin"
+      ]
+    },
+    "effects" : {
+      "art_of_forging:stormcaller": [2,15]
+    },
+    "requiredTools": {
+      "cut": "minecraft:iron"
+    }
+  }

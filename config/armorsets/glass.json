@@ -1,5 +1,5 @@
 {
-  "armorSetName": "²£Á§",
+  "armorSetName": "ç»ç’ƒ",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:glass_helmet"
@@ -13,12 +13,9 @@
   "boots": {
     "itemKey": "extraarmor:glass_boots"
   },
-  "mainHand": {
-    "itemKey": "kubejs:glass_wand"
-  },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "ÄÜ¹»Ç¿»¯¹¥»÷ÄÜÁ¦£¬µ«ÑªÁ¿»á´ó·ùÏÂ½µ"
+    "èƒ½å¤Ÿå¼ºåŒ–æ”»å‡»èƒ½åŠ›ï¼Œä½†è¡€é‡ä¼šå¤§å¹…ä¸‹é™"
   ],
   "partialBonusRequiredAmount": 3,
   "partialSetBonuses": [
@@ -27,7 +24,7 @@
       "name": "minecraft:generic.attack_damage",
       "modifierUUID": "74F82A79-9CBE-4DC8-AC0C-CABF4128C0C1",
       "attributeOperation": 2,
-      "description": "+20% ¹¥»÷Á¦",
+      "description": "+20% æ”»å‡»åŠ›",
       "value": 0.2
     },
     {
@@ -35,7 +32,7 @@
       "name": "minecraft:generic.max_health",
       "modifierUUID": "B85D09CA-F32D-4DA4-AA01-C6C65143926B",
       "attributeOperation": 2,
-      "description": "-50% ÑªÁ¿ÉÏÏŞ",
+      "description": "-50% è¡€é‡ä¸Šé™",
       "value": -0.5
     }
   ],
@@ -45,7 +42,7 @@
       "name": "minecraft:generic.attack_damage",
       "modifierUUID": "77D6C025-090B-4D55-8148-F875D90A6D48",
       "attributeOperation": 2,
-      "description": "+50% ¹¥»÷Á¦",
+      "description": "+50% æ”»å‡»åŠ›",
       "value": 0.5
     },
     {
@@ -53,7 +50,7 @@
       "name": "minecraft:generic.max_health",
       "modifierUUID": "14DC5AD8-C4CB-46F7-A83A-162E057C965F",
       "attributeOperation": 2,
-      "description": "-50% ÑªÁ¿ÉÏÏŞ",
+      "description": "-50% è¡€é‡ä¸Šé™",
       "value": -0.5
     }
   ]

@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "tom"
-	group: "0241B51B931E1ED2"
+	group: "0F9EA9FA28C88D03"
 	icon: "toms_storage:ts.inventory_connector"
 	id: "05ADC2E0A7649AC7"
 	images: [{
@@ -17,7 +17,7 @@
 		x: 6.25d
 		y: -0.25d
 	}]
-	order_index: 3
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -82,7 +82,7 @@
 			rewards: [{
 				count: 8
 				id: "1E8E446A5F45EA6B"
-				item: "storagedrawers:oak_full_drawers_1"
+				item: "functionalstorage:oak_1"
 				type: "item"
 			}]
 			subtitle: "操作存储网络"
@@ -100,7 +100,7 @@
 			id: "06CFAD62C6DC65CA"
 			rewards: [{
 				id: "0BE186401EC124A1"
-				item: "storagedrawers:controller"
+				item: "functionalstorage:storage_controller"
 				type: "item"
 			}]
 			subtitle: "获得升级"
@@ -144,7 +144,7 @@
 				"图中描绘的则是一个常见场景：其中中心为&6存储代理器&r，其&2指向了右侧红框箱子&r；同时通过手持钻石右键代理器的左侧，使得左侧蓝框箱子作为&6样板容器&r存在在这个体系中。"
 				""
 				"{@pagebreak}"
-				"{image:kubejs:textures/task/tom_2.png width:160 height:72 align:1}"
+				"{image:kubejs:textures/task/tom_2.png width:160 height:75 align:1}"
 				""
 				"图中为蓝框箱子的摆放内容，通过设置其中物品的摆放，&2存储代理器便可控制右侧的容器&r，使之容器极限为模板箱子设置的内容。"
 				""
@@ -157,7 +157,7 @@
 				""
 				"例如，如果左侧和右侧放置的都是熔炉，尽管你在输入槽内设置了物品，但由于&2熔炉仅能从顶部输入&r，因此物品也只能流入到燃料槽。"
 				""
-				"{image:kubejs:textures/task/tom_3.png width:160 height:72 align:1}"
+				"{image:kubejs:textures/task/tom_3.png width:160 height:75 align:1}"
 				""
 				"{@pagebreak}"
 				"除此之外，通过铁砧对箱子等物品按照k-v格式命名，可以定义容器的部分属性。"

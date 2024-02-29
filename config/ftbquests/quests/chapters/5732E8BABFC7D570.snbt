@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "5732E8BABFC7D570"
-	group: "0241B51B931E1ED2"
+	group: "0BA6B2DC983B31FC"
 	icon: {
 		Count: 1b
 		id: "patchouli:guide_book"
@@ -23,11 +23,17 @@
 		x: 1.5d
 		y: 5.25d
 	}]
-	order_index: 4
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7F14FD199500DEA0"]
+			dependencies: ["17F34DB341F48836"]
+			description: [
+				"&d《诡厄巫法（Goety）》&r是一个&b魔法&r模组，旨在通过添加大量新功能来增强《我的世界》游戏体验，包括生物、结构和利用奥术力量的方法。召唤各种仆从，击退新的危险，发现世界的秘密、传说、宝藏。"
+				""
+				"&7－－很久以来，你一直对灾厄村民的邪恶魔法感到好奇，尤其是唤魔者。是什么激发了他们的魔力？除了提供一种欺骗死亡的方法之外，他们的图腾还能做什么？一个人如何完成这样的壮举？"
+				"&r"
+			]
 			icon: {
 				Count: 1b
 				id: "patchouli:guide_book"
@@ -37,14 +43,7 @@
 			}
 			id: "39A1A046832960CC"
 			rewards: [{
-				id: "55D814267E1F66D8"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			shape: "rsquare"
-			subtitle: "我们对它们的力量知之甚少"
-			tasks: [{
-				id: "21408700D8FA9177"
+				id: "25C36F05EB7EC240"
 				item: {
 					Count: 1b
 					id: "patchouli:guide_book"
@@ -53,6 +52,13 @@
 					}
 				}
 				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "我们对它们的力量知之甚少"
+			tasks: [{
+				id: "2576554D1A4F255C"
+				title: "我已了解"
+				type: "checkmark"
 			}]
 			title: "黑魔法之始"
 			x: -1.25d

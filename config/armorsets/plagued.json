@@ -16,17 +16,20 @@
   "mainHand": {
     "itemKey": "goety:hunters_bow",
     "mixAndMatch": [
-      "irons_spellbooks:druidic_spell_book"
+      "somebosses:cactus_weapon"
     ]
   },
   "offHand": {
     "itemKey": "goety:hunters_bow",
     "mixAndMatch": [
-      "irons_spellbooks:druidic_spell_book"
+      "somebosses:cactus_weapon"
     ]
   },
   "additionalSetPieces": [{
-    "itemKey":"nameless_trinkets:puffer_fish_liver"
+    "itemKey":"nameless_trinkets:puffer_fish_liver",
+    "mixAndMatch": [
+    "irons_spellbooks:druidic_spell_book"
+    ]
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [

@@ -46,13 +46,13 @@
 			click: ""
 			corner: false
 			dev: false
-			height: 27.460317460317462d
+			height: 45.767195767195766d
 			hover: [ ]
 			image: "kubejs:textures/task/chapter1_1.png"
 			rotation: 0.0d
-			width: 15.0d
-			x: 6.5d
-			y: 2.75d
+			width: 25.0d
+			x: 6.75d
+			y: 9.75d
 		}
 	]
 	order_index: 0
@@ -104,43 +104,11 @@
 				type: "item"
 			}]
 			title: "第一棵树"
-			x: 6.75d
-			y: 10.25d
+			x: 6.0d
+			y: 17.25d
 		}
 		{
-			dependencies: ["3FED9C9227FC9CD5"]
-			description: [
-				"看起来你已经获得了第一枚钱币。"
-				""
-				"你可以使用&6钱包&r，便利的管理你的所有金钱！"
-				""
-				"货币可以用于&2玩家交易、购买蓝图、以及后面会出现的wares打包交易&r。"
-				""
-				"千万保存好你的钱！"
-			]
-			icon: "lightmanscurrency:coin_iron"
-			id: "17F501A9B3D8B5BA"
-			rewards: [{
-				id: "64871BE653D21106"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:wallet_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "通货与价值"
-			tasks: [{
-				id: "4E3AC135912E6C00"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			title: "钱币"
-			x: 8.25d
-			y: 9.25d
-		}
-		{
-			dependencies: ["3FED9C9227FC9CD5"]
+			dependencies: ["040207B33E2FEBFF"]
 			description: [
 				"当你获得石镐的时候，往往意味着要开始千篇一律的挖矿过程。"
 				""
@@ -173,11 +141,11 @@
 				type: "item"
 			}]
 			title: "完美的开始"
-			x: 6.75d
-			y: 8.0d
+			x: 6.0d
+			y: 11.25d
 		}
 		{
-			dependencies: ["0721AF9D7D5E4A7C"]
+			dependencies: ["3E9DD0B78886A183"]
 			description: [
 				"在这个脆弱的世界里，似乎一切生物都变得与众不同了，你找到了一种在这个世界存活下去的新的方式——&2破开胸膛，取出心脏&r！"
 				""
@@ -188,6 +156,8 @@
 				"同时，你也可以对着其他生物右键以打开他们的胸膛——但请注意，开胸是需要对方&2血量足够低&r才可以，并不代表任何生物一开始就可以被你开胸！"
 				""
 				"请不要随意更改你胸腔内的器官，后果自负！"
+				""
+				"你可以用&6开胸器&r和&3青色染料&r合成制作一个''&d安全开胸器&r''，&2它仅能开启其他生物的胸腔&r。"
 			]
 			id: "50CE3ADF8E4D6426"
 			rewards: [{
@@ -207,8 +177,8 @@
 				type: "item"
 			}]
 			title: "了解自我"
-			x: 6.75d
-			y: 5.25d
+			x: 6.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["6069FC5CA00481CE"]
@@ -240,8 +210,8 @@
 				type: "item"
 			}]
 			title: "矿石肺"
-			x: 3.75d
-			y: 3.25d
+			x: 2.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
@@ -257,7 +227,7 @@
 				"{@pagebreak}"
 				"但在添加器官的时候需要注意，不属于你的器官将会使你陷入&c器官排异&r的苦难之中。"
 				""
-				"消除器官排异的方法有很多种，其中使用&2治愈性原液&r是最为经济的方案之一。副手持治愈性原液，主手持不兼容的器官，即可使其消除器官所属，进而解决器官排异的问题。"
+				"消除器官排异的方法有很多种，其中使用&6治愈性原液&r是最为经济的方案之一。副手持治愈性原液，主手持不兼容的器官，即可使其消除器官所属，进而解决器官排异的问题。"
 				""
 				"或者，你可以在合成台里，通过器官和原液合成解除排异。(这往往用于一些可以食用的器官)"
 			]
@@ -306,40 +276,29 @@
 				type: "checkmark"
 			}]
 			title: "重定义自己的内在"
-			x: 5.25d
-			y: 4.25d
+			x: 4.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["6069FC5CA00481CE"]
 			description: [
-				"&2血液过滤效率&r：影响身体对毒素的解毒效率，过低的血液过滤效率会导致中毒。"
+				"&a健康：&r影响&e生命值上限&r，在负数时会不停掉血。"
+				"&a力量：&r影响你的&e攻击伤害&r和&e移动速度&r。"
+				"&a速度：&r影响你的&e移动速度&r。"
+				"&a防御：&r减少受到的伤害。"
+				"&a神经效率：&r影响你的&e挖掘速度&r和&e移动速度&r，负数的神经效率会让你无法移动。"
 				""
-				"&2呼吸效率&r：影响气泡的恢复效率，过低的呼吸效率将导致无时无刻的窒息。"
+				"&b呼吸效率：&r影响你&e氧气值的恢复速度&r。"
+				"&b肺活量：&r影响&e氧气值的上限&r，过低的肺活量剧烈运动时会消耗氧气值。"
 				""
-				"&2肺活量&r：影响你的气泡上限，即可以在水下憋气的时间。"
+				"&6耐力：&r影响饱食度和饥饿值的&e消耗速度&r。"
+				"&6消化效率：&r影响获得的&e饥饿值数量&r。"
+				"&6营养获取效率：&r影响食物的&e饱和度&r。"
+				"&6新陈代谢效率：&r影响消耗饥饿值来&e回复生命的速度&r。"
 				""
-				"&2营养获取效率&r：越高的营养获取效率将会使你在更少的食物中获取更多的饱和度。"
-				""
-				"&2消化效率&r：越高的消化效率将会使你从更少的食物中获得更多的饥饿值（更容易吃饱）。"
-				""
-				"&2健康&r：影响你的生命值上限，过低的健康将会导致你的死亡！"
-				""
-				"&2神经效率&r：越高的神经效率意味着越高的攻击速度和挖掘速度，过低的神经效率将会导致无法移动。"
-				""
-				""
-				"{@pagebreak}"
-				""
-				"&2力量&r：影响你的攻击伤害。"
-				""
-				"&2速度&r：影响你的移动速度。"
-				""
-				"&2耐力&r：影响饥饿值的损失速度。"
-				""
-				"&2新陈代谢效率&r：影响通过饥饿值回复生命值的速度。"
-				""
-				"&2防御&r：影响你的抗性。"
-				""
-				"&2幸运&r：影响你的幸运，间接影响部分器官的效果。"
+				"&d血液过滤效率：&r没有足够的血液过滤效率就会中毒。"
+				"&d解毒效率：&r影响负面效果对自己的持续时间。"
+				"&d幸运：&r影响战利品表，以及部分技能效果。"
 			]
 			icon: "chestcavity:golem_cable"
 			id: "5BC3743958DA4B16"
@@ -366,12 +325,12 @@
 				title: "我已了解"
 				type: "checkmark"
 			}]
-			title: "属性的定义"
-			x: 3.75d
-			y: 4.25d
+			title: "基础属性词条解释"
+			x: 2.5d
+			y: 3.25d
 		}
 		{
-			dependencies: ["50CE3ADF8E4D6426"]
+			dependencies: ["0721AF9D7D5E4A7C"]
 			description: [
 				"虽然本整合包并不要求玩家收集大量的资源用于无意义的堆料工作，但基本的资源仍旧是需要玩家积累出来的。"
 				""
@@ -397,17 +356,17 @@
 				type: "item"
 			}]
 			title: "足够多的铁"
-			x: 8.25d
-			y: 3.75d
+			x: 6.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["0721AF9D7D5E4A7C"]
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
-				"Tetra是一款新兴的工具类Mod，其允许玩家使用名为&2加工台&r的工具台，对各种工具进行改装和升级，以期达到预期的效果。"
+				"本整合包提供两种&d成长型武器&r，&b在FTB任务左侧选择对应的模组介绍去深入体验吧！&r"
 				""
-				"为了开启你的Tetra之旅，你需要先制作一个锤子。虽然任务检测的是木锤，但实际上石锤仍旧可以正常的完成任务。"
+				"&d-《Tetra》以及其附属：&r该模组允许你使用&e不同类型的材料&r更换&e武器和工具的配件&r，从而做出适合自己的武器。&7&m新时代匠魂&r&r"
 				""
-				"如果你足够了解本Mod，则可以通过选择&5快捷模式&r，直接&2获得所有后续任务线的奖励&r；或者，你可以选择解锁Tetra的任务页，随着任务一点点完成Tetra探索之旅。"
+				"&d-《武器大师》：&r该模组提供风格迥异的&e4种不同类型的武器&r，武器有自身等级的概念，随着你的使用去解锁更加强大特殊能力。"
 			]
 			icon: {
 				Count: 1b
@@ -457,11 +416,15 @@
 				weak_nbt_match: true
 			}]
 			title: "Tetra与工具"
-			x: 5.25d
-			y: 7.0d
+			x: 5.0d
+			y: 0.75d
 		}
 		{
-			dependencies: ["3E9DD0B78886A183"]
+			dependencies: [
+				"538FC6DDC204DBFA"
+				"4C370F7BB4E56798"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"下界是在所有游玩历程中都需要探索的一个维度，其包含了大量的新生物以及前往末地必须要探索的&2下界要塞&r。"
 				""
@@ -506,45 +469,8 @@
 				type: "dimension"
 			}]
 			title: "前往下界"
-			x: 8.25d
-			y: 2.25d
-		}
-		{
-			dependencies: ["51FA796A91E94C4D"]
-			description: [
-				"寻找各种生态群系的时候，你往往要根据各种生成规则来进行排查。但在Mod众多的情况下，自然生成变得极其复杂且难以捉摸，此时，你可能就需要使用&2自然指南针&r来辅助对于群系或结构的寻找。"
-				""
-				"通过右键指南针，你可以使用其搜索框来定向的搜索对应的群系。"
-			]
-			icon: {
-				Count: 1b
-				id: "naturescompass:naturescompass"
-				tag: { }
-			}
-			id: "37897967041E6CBB"
-			rewards: [{
-				count: 5
-				id: "547AB928E06DB438"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "指向你所需要的"
-			tasks: [{
-				id: "6B95171F482E713B"
-				item: {
-					Count: 1b
-					id: "naturescompass:naturescompass"
-					tag: { }
-				}
-				type: "item"
-			}]
-			title: "指南针"
-			x: 9.75d
-			y: 2.25d
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["51FA796A91E94C4D"]
@@ -575,70 +501,16 @@
 			}]
 			title: "下界堡垒与烈焰人"
 			x: 6.0d
-			y: 1.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["3FF06F6F309FAEC3"]
-			description: ["为了前往末地，你需要获取一定数量的末影珍珠，用于开启前往末地的大门。"]
-			id: "2311CA3EEABF0250"
-			rewards: [
-				{
-					count: 5
-					id: "0136B712C04F49E9"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					count: 8
-					id: "2028D9298D45F604"
-					item: "kubejs:eye_of_dnl"
-					type: "item"
-				}
-			]
-			subtitle: "前往末地的必需品"
-			tasks: [{
-				id: "355748BEB59386AF"
-				item: "minecraft:ender_pearl"
-				type: "item"
-			}]
-			title: "与末影人相遇"
-			x: 6.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["2311CA3EEABF0250"]
-			description: ["进入末地时，Minecraft原版的游戏体验便到达了尾声——但是对于本整合来说，到达末地只是一个小小的里程碑。在这个世界上仍旧存在着大量的&5不可思议&r等待着你去探索。"]
-			icon: "minecraft:end_portal_frame"
-			id: "1D8929E0CE7CE0AB"
-			rewards: [{
-				id: "2AF64ED78935D661"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "很快，你的Minecraft原版体验就接近尾声"
-			tasks: [{
-				dimension: "minecraft:the_end"
-				id: "2AF9850C10D5391F"
-				type: "dimension"
-			}]
-			title: "前往末地"
-			x: 6.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["51FA796A91E94C4D"]
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
-				"倘若你还在纠结于使用什么武器，不妨试试&5武器大师&r中的几款独特武器。"
+				"本整合包提供两种&d成长型武器&r，&b在FTB任务左侧选择对应的模组介绍去深入体验吧！&r"
 				""
-				"为了能够正确的保养和升级武器，首先你需要一款&2武器工作台&r。"
+				"&d-《Tetra》以及其附属：&r该模组允许你使用&e不同类型的材料&r更换&e武器和工具的配件&r，从而做出适合自己的武器。&7&m新时代匠魂&r&r"
+				""
+				"&d-《武器大师》：&r该模组提供风格迥异的&e4种不同类型的武器&r，武器有自身等级的概念，随着你的使用去解锁更加强大特殊能力。"
 			]
 			icon: "weaponmaster:workstation"
 			id: "4C370F7BB4E56798"
@@ -667,28 +539,23 @@
 				type: "item"
 			}]
 			title: "成为武器大师"
-			x: 6.75d
-			y: 2.25d
+			x: 7.0d
+			y: 0.75d
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
 			description: [
-				"&2机械动力&r会为你带来什么："
+				"&d《机械动力（Create）》&r会为你带来什么："
 				""
-				"1.一些比较方便的机器，可以大量自动的获取一些自然资源。"
+				"1.一些比较方便的机器，可以大量&e自动获取&r一些自然资源。"
 				""
 				"2.一些比较炫酷的机器，可以非常酷炫的完成某些没啥意义的功能。"
 				""
-				"3.某些流程必须机械动力的机器完成。"
+				"3.某些流程&e必须&r机械动力的机器完成。"
 				""
-				"考虑到部分玩家完全不会/不想搞明白机械动力的具体内容，本整合包的设计上也并没有过于倾向于自动化。排除掉几个挑战性质的器官外，机械动力也是&2选择性的一环&r。"
+				"&2考虑到部分玩家完全不会/不想搞明白机械动力的具体内容，本整合包的设计上也并没有过于倾向于自动化。&r排除掉几个挑战性质的器官外，机械动力也是&e选择性的一环&r。"
 				""
-				"因此，你完全没必要为了机械动力而精进某些东西，仅需要跟着教程，一步一步完成即可。在这个过程中，你可能突然&6领悟&r某些机器的用法——但就算没有领悟也没关系，可以完全通过人工的方式来获取整合中所需要的资源。"
-				""
-				""
-				"{@pagebreak}"
-				""
-				"如果你又菜又爱玩，则可以考虑用&2钱币&r购买商店页面里的&2胶囊&r，快捷的部署我们提前预设好的机器。"
+				"因此，&c你完全没必要为了机械动力而精进某些东西，仅需要在FTB左侧的&r&b机械动力专栏&r&c中，跟着教程，一步一步完成即可。&r"
 			]
 			icon: "create:wrench"
 			id: "0861DDE9767A3E9D"
@@ -710,53 +577,17 @@
 				type: "item"
 			}]
 			title: "机械动力？人工动力！"
-			x: 9.75d
-			y: 3.75d
+			x: 7.75d
+			y: 7.5d
 		}
 		{
-			dependencies: ["50CE3ADF8E4D6426"]
-			description: [
-				"你会注意到，本整合包如同其他的各类冒险包、水槽包一样，添加了&2Alex生物&r用以丰富世界——但仅仅是这样吗？"
-				""
-				"所有的生物都具有着其独特的&5器官&r，保证他们在世界上的正常生活和繁衍，而我们——玩家，自然也可以从动物的身上学习到他们的特点并加以运用。"
-				""
-				"通过寻找不同的生物，摘取他们身上的器官并进行加工，玩家以变得更强。后期大量的高级器官都是基于这些生物的低级器官变化加工而成。"
-			]
-			icon: "alexsmobs:lobster_bucket"
-			id: "523490881F8317C7"
-			rewards: [
-				{
-					count: 5
-					id: "6A7406D6BBB8960E"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:coin_iron"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					id: "524661C46CD6AAD1"
-					item: "alexsmobs:animal_dictionary"
-					type: "item"
-				}
-			]
-			subtitle: "新鲜的器官来源"
-			tasks: [{
-				id: "76CE109C8B7FF8CD"
-				title: "寻找Alex生物"
-				type: "checkmark"
-			}]
-			title: "寻找Alex生物"
-			x: 5.25d
-			y: 5.25d
-		}
-		{
-			dependencies: ["0721AF9D7D5E4A7C"]
+			dependencies: ["3E9DD0B78886A183"]
 			description: [
 				"在背包界面的&2饰品栏&r内（点击人物右上的按钮打开），可以将&2灯笼挂载在腰上&r。以提供随时的动态光源效果。"
 				""
 				"除此之外，饰品栏内可以装备大量能够高效提高你的能力的饰品，为了寻找更多有用的饰品，你可以制作&5神秘饰品&r以随机获得饰品。"
+				""
+				"&3如果你打开神秘饰品以后，在背包中没有看到饰品，可能是自动装备到了饰品栏中。&r"
 			]
 			icon: "minecraft:lantern"
 			id: "636CE66FFE0F6A51"
@@ -784,35 +615,11 @@
 				type: "item"
 			}]
 			title: "将光源挂在腰上"
-			x: 3.75d
-			y: 8.0d
+			x: 4.0d
+			y: 7.5d
 		}
 		{
-			dependencies: ["2311CA3EEABF0250"]
-			description: ["除了要塞之眼之外，你也可以使用&2地牢加载之眼&r来搜索地牢加载之时的建筑。"]
-			id: "6B7FD39A8093248D"
-			rewards: [{
-				count: 5
-				id: "5C94F0AEA4B05C08"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "虚空之花定位器"
-			tasks: [{
-				id: "5B7A2B7500F6B914"
-				item: "kubejs:eye_of_dnl"
-				type: "item"
-			}]
-			title: "特殊的眼睛"
-			x: 4.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["0861DDE9767A3E9D"]
+			dependencies: ["3E9DD0B78886A183"]
 			description: [
 				"在游戏中会经常遇到存储大量同种物品的情况。这时候就可以考虑使用&2储物抽屉&r进行批量的物品存储。"
 				""
@@ -820,7 +627,8 @@
 				""
 				"后续也可以采用Tom's的简易存储来接入抽屉，免去物品搬运的问题。"
 			]
-			icon: "storagedrawers:oak_full_drawers_1"
+			hide_dependency_lines: true
+			icon: "functionalstorage:birch_1"
 			id: "5E8F821F42C92E8A"
 			rewards: [{
 				count: 5
@@ -834,83 +642,23 @@
 			}]
 			subtitle: "储存大量的同种类物品"
 			tasks: [{
-				id: "258D2089515F93C9"
+				id: "6914A456D7A680E5"
 				item: {
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "storagedrawers:drawers"
+						value: "functionalstorage:drawer"
 					}
 				}
-				title: "Any #storagedrawers:drawers"
+				title: "Any #functionalstorage:drawer"
 				type: "item"
 			}]
 			title: "储物抽屉"
-			x: 11.25d
-			y: 3.75d
-		}
-		{
-			dependencies: ["1D8929E0CE7CE0AB"]
-			description: ["作为原版的最终boss，击败它仍旧具有着非常特殊的意义。"]
-			icon: "minecraft:dragon_head"
-			id: "15A36D9385499A77"
-			rewards: [{
-				count: 5
-				id: "68E182F2D59A4C2B"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "收官之作！"
-			tasks: [{
-				entity: "minecraft:ender_dragon"
-				icon: "minecraft:dragon_egg"
-				id: "7F3DBDA404445DC7"
-				type: "kill"
-				value: 1L
-			}]
-			title: "击败末影龙！"
-			x: 4.5d
-			y: -6.0d
-		}
-		{
-			dependencies: ["1D8929E0CE7CE0AB"]
-			description: [
-				"如果周围的末地船已经被完全搜刮完毕了，你可以使用幻翼膜和香蕉蛞蝓的黏液&2自行制作鞘翅&r。"
-				""
-				"香蕉蛞蝓只会出现在寒冷的原始松木针叶林群系。"
-			]
-			id: "7936F1A8DE4AF2E8"
-			rewards: [{
-				id: "443AEBF90B9CD82C"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
-				}
-				type: "item"
-			}]
-			subtitle: "前往末地城，你可以寻得鞘翅"
-			tasks: [{
-				id: "4EC33C7DB69FF161"
-				item: {
-					Count: 1b
-					id: "minecraft:elytra"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "追寻鞘翅"
 			x: 7.75d
-			y: -6.0d
+			y: 8.5d
 		}
 		{
-			dependencies: ["5E8F821F42C92E8A"]
+			dependencies: ["3E9DD0B78886A183"]
 			description: [
 				"随着你的基地规模逐渐扩大，箱子的数量也会急剧变多，此时，你急需一个类如AE、RS的Mod来&2统一管理你的存储容器&r。"
 				""
@@ -918,6 +666,7 @@
 				""
 				"它不仅简单易用，最重要的是，它完全不耗电！"
 			]
+			hide_dependency_lines: true
 			id: "26FE76DDA11E0026"
 			rewards: [{
 				count: 5
@@ -937,76 +686,8 @@
 				type: "item"
 			}]
 			title: "简易、存储、整合"
-			x: 12.75d
-			y: 3.75d
-		}
-		{
-			dependencies: ["523490881F8317C7"]
-			description: [
-				"在海边垂钓时，偶尔你会遇上一些奇特而美丽的小生物，它们被称作为&5搏鱼&r。"
-				""
-				"搏鱼生性好斗，如果和同类所处在同一片区域，会互相争斗直到一方死亡。"
-				""
-				"因此，在泛泛大陆之上，存在着一种名为&6搏鱼决斗&r的娱乐形式，双方使用自己的搏鱼进行互斗。"
-				""
-				"而在如此脆弱不堪的世界里，你可以&2为搏鱼进行器官改造&r，进而在决斗中获取到巨大的优势。"
-			]
-			id: "02BDED7D337512CD"
-			rewards: [
-				{
-					id: "1AE5EAB766BA6059"
-					item: "bettas:betta_fish_bucket"
-					type: "item"
-				}
-				{
-					id: "5C5674BF5DCCE43E"
-					item: "moblassos:aqua_lasso"
-					type: "item"
-				}
-			]
-			subtitle: "生性好斗的水下生物"
-			tasks: [{
-				id: "18A7A72907F6D36C"
-				item: "bettas:betta_fish"
-				type: "item"
-			}]
-			title: "斗鱼能手"
-			x: 3.75d
-			y: 5.25d
-		}
-		{
-			dependencies: ["3FF06F6F309FAEC3"]
-			description: [
-				"通过解析化石，我们可以了解到更多关于&6古代生物&r的知识。开启它们胸腔，也许我们能够获得更有价值的物品！"
-				""
-				"同时，在古代，我们也可以了解到一种名为&6书龙&r的特殊生物，这对更有效的获取附魔有极大的帮助。"
-				""
-				"&7WIP&r"
-			]
-			icon: "unusualprehistory:amber_fossil"
-			id: "2100FE65C252D712"
-			rewards: [{
-				id: "652A9C30F257854B"
-				item: "unusualprehistory:encyclopedia"
-				type: "item"
-			}]
-			shape: "rsquare"
-			subtitle: "为了古代生物，化石是必须原料！"
-			tasks: [{
-				id: "148E1180E9A5C847"
-				item: {
-					Count: 1b
-					id: "itemfilters:tag"
-					tag: {
-						value: "unusualprehistory:fossils"
-					}
-				}
-				title: "任意种类化石"
-				type: "item"
-			}]
-			title: "书龙、化石、考古"
-			x: 4.5d
-			y: 1.0d
+			x: 8.75d
+			y: 7.5d
 		}
 		{
 			dependencies: ["3FED9C9227FC9CD5"]
@@ -1037,8 +718,8 @@
 				type: "item"
 			}]
 			title: "和朋友一起远征"
-			x: 5.25d
-			y: 10.25d
+			x: 4.0d
+			y: 17.25d
 		}
 		{
 			dependencies: ["2DD73A2CCC0054D8"]
@@ -1064,64 +745,34 @@
 				type: "item"
 			}]
 			title: "查看资源槽"
-			x: 2.25d
-			y: 3.25d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["17F501A9B3D8B5BA"]
+			dependencies: ["040207B33E2FEBFF"]
 			description: ["有些时候我们需要将货币进行转换，此时，ATM成为了必要的物品。"]
+			hide_dependency_lines: true
 			id: "639C1EDF7CAB7739"
-			rewards: [{
-				id: "74420D25E189E767"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "74420D25E189E767"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "1739312BE9B293BF"
+					item: "lightmanscurrency:portable_atm"
+					type: "item"
+				}
+			]
 			subtitle: "为了自由兑换货币"
 			tasks: [{
 				id: "3AB5F96A995E7216"
 				item: "lightmanscurrency:atm"
 				type: "item"
 			}]
-			x: 9.75d
-			y: 8.25d
-		}
-		{
-			dependencies: ["2311CA3EEABF0250"]
-			description: [
-				"在这个世界上，仍旧存在着旧世界的灾变之力。在某些特定的建筑结构内，你会遭遇拥有&4灾变之力&r的特殊怪物。"
-				""
-				"拥有&4灾变之力&r的怪物在攻击命中你时，会在一段时间内&2禁止方块放置、物品使用、以及任何的攻击行为&r。"
-			]
-			icon: "cataclysm:altar_of_fire"
-			id: "22F081213B71190E"
-			subtitle: "在世界的角落里. . ."
-			tasks: [{
-				id: "16F82F5206B69D49"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "灾变"
 			x: 7.75d
-			y: -4.0d
-		}
-		{
-			dependencies: ["22F081213B71190E"]
-			description: ["可以通过灾变本身提供的&6各种眼睛&r来寻找其生成的建筑。"]
-			id: "54D9CCA0E085E647"
-			rewards: [{
-				id: "5C23AD1FF738A81F"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "寻找灾变建筑"
-			tasks: [{
-				id: "4B64AB81FF9995BC"
-				item: "cataclysm:mech_eye"
-				type: "item"
-			}]
-			title: "寻找灾变之源"
-			x: 9.5d
-			y: -5.0d
+			y: 13.25d
 		}
 		{
 			dependencies: ["5BC3743958DA4B16"]
@@ -1129,8 +780,6 @@
 				"如果你对当前的基础属性总和感到迷惑，不妨使用&6血清提取器&r扎自己一下！"
 				""
 				"&2长按右键后&r，血清提取器会生成包含你属性信息的&6血清玻璃管&r，可以清晰地看到自己现有的基础属性。"
-				""
-				"&2手持玻璃管长按右键&r，则可以在消息框中看到属性的对应信息，鼠标放在对应的属性名称上还可以看到对应属性的描述文本。"
 			]
 			id: "7198C447D928AEEC"
 			rewards: [{
@@ -1144,12 +793,13 @@
 				item: "kubejs:blood_extractor"
 				type: "item"
 			}]
-			x: 2.25d
-			y: 4.25d
+			x: 1.0d
+			y: 3.25d
 		}
 		{
-			dependencies: ["538FC6DDC204DBFA"]
+			dependencies: ["50CE3ADF8E4D6426"]
 			description: ["制作一个&6训练假人&r——或者一堆训练假人，以便在后续的工作中方便的查看因为你武器/器官变化所带来的战斗收益。"]
+			hide_dependency_lines: true
 			id: "6A16E11C6C020F12"
 			rewards: [{
 				id: "3AB2755B40522592"
@@ -1162,20 +812,30 @@
 				item: "dummmmmmy:target_dummy"
 				type: "item"
 			}]
-			x: 3.75d
-			y: 7.0d
+			x: 6.0d
+			y: 0.25d
 		}
 		{
-			dependencies: ["639C1EDF7CAB7739"]
+			dependencies: ["040207B33E2FEBFF"]
 			description: [
-				"在拥有了任务获得的金币后，第一个疑问便是如何消费这些金币。"
+				"在拥有了任务获得的金币后，第一个疑问便是如何消费这些金币。答案也很简单——通过Wares的&6凭证买卖系统&r。"
 				""
-				"答案也很简单——通过Wares的&6凭证买卖系统&r。"
+				"你可以在某些地牢箱子里找到Wares的&6交易协议&r（&e往往出现在村庄箱子中&r），其中包含了各种类型的交易。"
 				""
-				"你可以在某些&2地牢箱子&r里找到Wares的交易凭证（往往出现在村庄箱子中），其中包含了各种类型的交易。你可以通过在村庄中放置交货台，填充纸盒后，手动或者等待对应职业的村民自动的进行交易。"
+				"1. 通过&6交货台&r，便可以完成交货协议。（交货台中，上方放&2交货协议&r，左侧放&e提交的物品&r，下方放&6纸板盒&r）"
 				""
-				"你可以通过本任务奖励的凭证，购买前期有大用处的&c归魂亡铃&r。这能够使你返回上一次死亡地点。"
+				"2. &6交货台&r同样可以作为&2村民的工作站&r，提供新的村民职业：&ePackager&r。"
+				""
+				"{@pagebreak}"
+				"一些详细的解释："
+				""
+				"1. Packager会自动包装并交付包裹，不过他在一天之内不会一直进行工作；"
+				""
+				"2. Packager通过交付包裹来获得经验并提升职业等级，更高的职业等级可以让他一次交付的包裹数量越多；"
+				""
+				"3. 玩家也可以自己手动交易包裹，但交付周期更长且一次只能交付一个。"
 			]
+			hide_dependency_lines: false
 			icon: "wares:delivery_table"
 			id: "74F1E7C9FB0D08A1"
 			rewards: [{
@@ -1214,26 +874,39 @@
 					type: "item"
 				}
 			]
-			x: 11.25d
-			y: 7.25d
+			x: 4.0d
+			y: 14.25d
 		}
 		{
-			dependencies: ["0721AF9D7D5E4A7C"]
+			dependencies: ["3FED9C9227FC9CD5"]
 			description: [
-				"当你有了一些铁之后，就可以开始考虑步入&2各种Mod&r的殿堂了。"
+				"看起来你已经获得了第一枚钱币。"
 				""
-				"这些Mod往往会给你带来很多的便利，并且并不需要你付出过多的努力。"
+				"你可以使用&6钱包&r，便利的管理你的所有金钱！"
 				""
-				"因此请多多尝试！"
+				"目前整合包&e获取金币&r的途径有完成&2FTB任务&r和&2击败BOSS图鉴中的BOSS&r，&e消费货币&r的途径仅有&2交货协议&r。"
+				""
+				"千万保存好你的钱！"
 			]
-			icon: "sophisticatedbackpacks:backpack"
+			icon: "lightmanscurrency:coin_iron"
 			id: "040207B33E2FEBFF"
-			rewards: [{
-				id: "29EB90ADA285930A"
-				item: "sophisticatedbackpacks:backpack"
-				type: "item"
-			}]
-			subtitle: "制作一些超出常理的东西！"
+			rewards: [
+				{
+					id: "29EB90ADA285930A"
+					item: "sophisticatedbackpacks:backpack"
+					type: "item"
+				}
+				{
+					id: "46D835209BB2D91C"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:wallet_iron"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			subtitle: "整装待发"
 			tasks: [{
 				consume_items: true
 				id: "377272B3F01FA298"
@@ -1244,9 +917,9 @@
 				}
 				type: "item"
 			}]
-			title: "开启探索之旅！"
-			x: 8.25d
-			y: 7.0d
+			title: "你需要一些补给"
+			x: 6.0d
+			y: 14.25d
 		}
 		{
 			dependencies: ["040207B33E2FEBFF"]
@@ -1267,9 +940,9 @@
 				item: "sophisticatedbackpacks:upgrade_base"
 				type: "item"
 			}]
-			title: "背包升级"
-			x: 9.75d
-			y: 6.0d
+			title: "背包的升级"
+			x: 7.75d
+			y: 14.25d
 		}
 		{
 			dependencies: ["5067AA0335B2B396"]
@@ -1291,8 +964,1072 @@
 				type: "checkmark"
 			}]
 			title: "邀请你的朋友！"
-			x: 3.75d
-			y: 10.25d
+			x: 1.5d
+			y: 17.25d
+		}
+		{
+			dependencies: ["3E9DD0B78886A183"]
+			description: ["无论是在使用Tom的存储时，还是日常建造，都可能遇到单位存储空间中存储容量不够的问题。使用&2更高级的金属桶&r，可以让你获得更多的存储选择，同时也非常适合用于堆叠构造你的Tom储存仓库。"]
+			hide_dependency_lines: true
+			id: "51AE35F0C335ACA6"
+			rewards: [
+				{
+					id: "7F29952537133103"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "342B02AFCB492694"
+					item: "metalbarrels:diamond_barrel"
+					type: "item"
+				}
+			]
+			subtitle: "超级仓库的基石"
+			tasks: [{
+				id: "0EB4C8F35A46DB09"
+				item: "metalbarrels:iron_barrel"
+				type: "item"
+			}]
+			title: "更多桶！"
+			x: 8.75d
+			y: 8.5d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"为了进一步发展&6器官艺术&r，你需要一个高效且稳定的器官来源。血肉重铸的&d肉块&r便能满足你的这一系列要求。"
+				""
+				"肉块是一个非常高效的器官来源，他能够为你提供一系列的&d模板器官&r。模板器官的用途非常广泛，包括将其放置在器官容器中可以最高升级为T3级别器官，或者使用模板器官制作大量的高级器官。"
+				""
+				"为了发展血肉重铸，你需要获得一些&6尖锐利爪&r或者&6尖锐利齿&r，来制作&6血肉温床&r。"
+				""
+				"{@pagebreak}"
+				""
+				"关于尖锐利爪、利齿之类的物品如何获得，可以通过在&e背包界面右下角的搜索框&r搜索到对应物品，按下&6Ctrl&r键即可看到对应掉落的生物列表。"
+				""
+				"&7例如，上文提到的尖锐利齿便可以从狼、猫等生物身上获取。&r"
+			]
+			id: "1884740B0724DE70"
+			rewards: [{
+				count: 3
+				id: "33A06E290DBAC70E"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_iron"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "为了重铸你的血肉，你需要它们的血肉"
+			tasks: [{
+				id: "1489BEDE37A5D2E2"
+				item: {
+					Count: 1b
+					id: "biomancy:despoil_sickle"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "收割血肉"
+			x: 8.75d
+			y: 3.25d
+		}
+		{
+			dependencies: ["1884740B0724DE70"]
+			description: [
+				"&d肉块&r是《血肉重铸》模组的开始，为了培育肉块，你需要向&6血肉温床&r内投入&e一些生肉&r以及使用&6治疗药水&r。&d温床侧面的眼睛完全发亮时&r，就意味着可以生产肉块了。"
+				""
+				"无论是哪种肉块，都可以使用&6开胸器&r打开它的胸腔并且取出它的&d模板器官&r，这在后面会非常有用！"
+				""
+				"同时，杀死肉块也可以获得&d鲜活肉块&r，这是后面会广泛用到的一种&e原材料&r。"
+				""
+				"&4请注意，手持物品时不小心右键到血肉温床，物品会被吞掉并且不可取回。所以推荐让血肉温床远离你的生活区！！！！！！&r"
+				""
+				"&8肉块存在多种类型，它们的性格不同，有的会主动攻击周围的生物，但这对你来说并不重要。&r"
+			]
+			id: "145730691E558B78"
+			rewards: [{
+				count: 5
+				id: "40B7C1A7CB7E8D46"
+				item: "biomancy:living_flesh"
+				type: "item"
+			}]
+			subtitle: "培养肉块的温床"
+			tasks: [{
+				id: "3091B792DF78ADC6"
+				item: "biomancy:primordial_cradle"
+				type: "item"
+			}]
+			title: "建设血肉温床"
+			x: 10.5d
+			y: 3.25d
+		}
+		{
+			dependencies: ["145730691E558B78"]
+			description: [
+				"制作&6分解器&r，可以将某些物品分解成特殊的&e原材料&r，为该模组与整合包添加的部分物品提供&e合成材料&r。"
+				""
+				"为了启动&6分解器&r，你需要在&e左侧格子&r放入&e食物&r以提供&e初始能源&r。"
+			]
+			id: "16D415FC4B0BFB12"
+			rewards: [{
+				count: 32
+				id: "156ED0966D9CE0F5"
+				item: "minecraft:rotten_flesh"
+				type: "item"
+			}]
+			subtitle: "分解物质，获得物质"
+			tasks: [{
+				id: "67FCCBF084C52B14"
+				item: "biomancy:decomposer"
+				type: "item"
+			}]
+			title: "血肉材料获取"
+			x: 10.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5F271CD6AAEC88FC"]
+			description: [
+				"模板器官广泛的用于各种器官配方之中。"
+				""
+				"同时，模板器官可以放入器官容器中，向上进化成为更强大的高级器官，提供更多的基础属性。最高可以升级到T3。"
+			]
+			id: "36D9ACF35A9BD9FA"
+			rewards: [{
+				id: "44D54010BE3AE3BC"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "器官之源"
+			tasks: [{
+				id: "53C335208C07990D"
+				item: {
+					Count: 1b
+					id: "kubejs:heart_template"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "模板器官"
+			x: 12.25d
+			y: 5.0d
+		}
+		{
+			dependencies: ["145730691E558B78"]
+			description: [
+				"通过生物锻炉，你可以制作一些奇特的装置——比如后文提到的&6活体酿造台&r，是生产抗排异药物的重要手段。"
+				""
+				"除此之外，生物锻炉也可以&2直接生产模板器官&r，这种方式生产出来的模板器官并不会有对应的实体所属，因此也&2不会产生排异反应&r，非常适合拿来作为临时填充。"
+				""
+				""
+				"&7同时，其也被广泛用于血肉重铸基础材料的制作，以免去满地找\"牙\"的困难&r"
+			]
+			id: "5F271CD6AAEC88FC"
+			rewards: [{
+				count: 3
+				id: "58518C490DB0DC05"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_iron"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "血肉重铸工作台"
+			tasks: [{
+				id: "4695DAB1C60EDB3E"
+				item: "biomancy:bio_forge"
+				type: "item"
+			}]
+			title: "重锻身心"
+			x: 12.25d
+			y: 3.25d
+		}
+		{
+			dependencies: ["36D9ACF35A9BD9FA"]
+			description: [
+				"随着能力的不断增长，你发现大部分的特殊器官和激活器官都有着相当劣质的基本面板，并且绝大多数并不能在后续的制作中进行改造。"
+				""
+				"为此，你需要不断提高其他器官的质量。使用&6器官容器&r，可以将任意的器官装入其中，&2少部分器官会显现成长任务&r。"
+				""
+				"将该饰品装备在饰品栏，完成对应任务后，承装在器官容器中的器官便会发生变化，此时通过合成取出后，就可以获得更高级的器官。"
+			]
+			id: "52C54E42818F03EB"
+			rewards: [{
+				id: "1C2DCD63D9AEE80B"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "装载未来"
+			tasks: [{
+				id: "0108F3FD5779C18B"
+				item: "kubejs:empty_organ_charm"
+				type: "item"
+			}]
+			title: "器官容器"
+			x: 12.25d
+			y: 6.75d
+		}
+		{
+			dependencies: ["5F271CD6AAEC88FC"]
+			description: [
+				"活体酿造台可以用于一系列特殊药水的酿造。其中，就包含了一个对于本整合尤为重要的物品，即&6治愈性原液&r。"
+				""
+				"通过将治愈性原液置于副手，未进行抗排异的器官置于主手，即可进行抗排异。抗排异后，器官的所属将会被清空。这是一种相当经济的方案，相对于另一种附魔方案来说。"
+			]
+			id: "27AE075BC0F4376A"
+			rewards: [{
+				count: 3
+				id: "2168BCD8BEC227B2"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_iron"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "通过活体酿造，可以制作原本无法想象的产物"
+			tasks: [{
+				id: "302069DE8B31E580"
+				item: "biomancy:bio_lab"
+				type: "item"
+			}]
+			title: "酿造传奇之物"
+			x: 14.0d
+			y: 3.25d
+		}
+		{
+			dependencies: ["27AE075BC0F4376A"]
+			description: [
+				"通过生物锻炉，你可以制作&6活体注射器&r，向生物的体内注入药剂。"
+				""
+				"其最主要的用途之一是向玩家身体内注入能够提供多次叠加额外生命值的&6伤痛反应原液&r，以及向各种动物注射成长、繁育药剂。"
+				""
+				"但总体而言，其用途有限，玩家可以根据自己的情况自行决定是否制作。"
+				""
+				"&7如果想查询都有哪些药剂可以注入，请在JEI界面输入''@Biomancy''。（请去FTB简介界面复习如何快速上手MOD）&r"
+			]
+			id: "360F386989316928"
+			rewards: [{
+				id: "577CCFF891B011A7"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "注入你想要的"
+			tasks: [{
+				id: "374E3731D1E7ED65"
+				item: {
+					Count: 1b
+					id: "biomancy:injector"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "活体注射"
+			x: 14.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["360F386989316928"]
+			description: [
+				"贪婪之爪拥有着极高的攻击速度，并且在攻击时概率会造成额外的&4流血&r效果。"
+				""
+				"但是，为了使用它，你需要&2喂食它一定的食物以回复耐久&r(肉类食物放置在物品上右键)。同时为了启用它的激活状态，获得更强的能力，你需要&2击败怪物&r为其积攒&4血液&r。"
+				""
+				"当血液积攒之后，即可开启激活状态，在激活状态下每次攻击会消耗一点血液。"
+			]
+			id: "73C9E246535AACD4"
+			rewards: [{
+				id: "3645B502D910A3E3"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "它时刻保持贪婪 . . .饥渴. . ."
+			tasks: [{
+				id: "411A42BD7A137F4E"
+				item: {
+					Count: 1b
+					id: "biomancy:ravenous_claws"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "贪婪之爪"
+			x: 14.0d
+			y: 6.75d
+		}
+		{
+			dependencies: ["27AE075BC0F4376A"]
+			description: [
+				"到现在，你应该发现了——绝大多数生物身上直接取得的器官是无法使用的。"
+				""
+				"当你装备其他生物的器官时，会因为&2排异反应&r，而在一定的时间间隔后受到排异反应的伤害。"
+				""
+				"为了解决排异反应，你有三种解决方法："
+				""
+				"1.使用&6O-阴性附魔&r给器官附魔，使其排异反应消失，2级甚至可以防止器官缺失导致的症状。"
+				""
+				"2.使用抗排异药物，比如&6治愈性原液&r来解除器官的绑定。"
+				""
+				"3.直接放弃使用低级器官，换用制作而成的&6高级器官&r。"
+				""
+				"&2对于现在而言，使用治愈性原液是最经济且有效的方案。&r"
+			]
+			icon: "biomancy:healing_additive"
+			id: "7F0C1FA54DD6E9BC"
+			rewards: [
+				{
+					id: "4423AE850CC5D15B"
+					item: "biomancy:healing_additive"
+					type: "item"
+				}
+				{
+					id: "3B5B97406D293CA5"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "chestcavity:o_negative"
+								lvl: 2s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					advancement: "minecraft:story/root"
+					criterion: ""
+					id: "77DAC91B48E0F443"
+					type: "advancement"
+				}
+			]
+			subtitle: "让你能够自如使用野生怪物的器官"
+			tasks: [{
+				id: "50F3304F77E735FF"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "器官抗排异"
+			x: 15.75d
+			y: 3.25d
+		}
+		{
+			dependencies: ["7F0C1FA54DD6E9BC"]
+			description: [
+				"当你能够自由使用他人的器官之后，各种各样的高级器官就变成了你的新目标。"
+				""
+				"你可以在&5收集：胸腔收集指南&r章节中，了解到当前已经加入的各种高级器官以及其相关系列的效果。"
+				""
+				"在制作高级器官的过程中，你会发现两个奇怪的属性："
+				""
+				"1.&2激活属性(ctrl)&r：当拥有该器官的情况下，吃下激活药即可以获得额外的属性。"
+				""
+				"2.&2特殊效果(alt)&r：当拥有该器官的情况下，在特定条件下可以触发特殊效果，如前期的矿物肺就是含有特殊效果的器官。"
+				""
+				"为了能够稳定触发激活属性，因此你需要&2批量生产激活胶囊&r。"
+			]
+			icon: "kubejs:active_pill"
+			id: "658FEA8E308D741C"
+			rewards: [{
+				id: "042CB92A1CFDA391"
+				item: "kubejs:active_pill"
+				type: "item"
+			}]
+			subtitle: "部分器官的必要成分"
+			tasks: [{
+				id: "04459F4683BD414F"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "激活药丸"
+			x: 15.75d
+			y: 5.0d
+		}
+		{
+			dependencies: ["658FEA8E308D741C"]
+			description: [
+				"由于激活效果的器官非常广泛的存在，每次修改后都复用一次激活药明显不够经济。"
+				""
+				"因此，你可以在确定需要激活状态的情况下，制作&6长效性药丸&r。长效性药丸能够在你每次修改器官之后&2自动的触发激活状态&r。"
+				""
+				"但值得注意的是，并不是所有器官的激活效果都是正面，并且长效药丸本身并不是一个有正面效果的器官。"
+				""
+				"在后续，你可以通过进一步的加工来扭转这种有害性。"
+			]
+			id: "50D70D990312BC70"
+			rewards: [{
+				id: "476ED982F630080F"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "自动激活装置"
+			tasks: [{
+				id: "16FB24D333511B3C"
+				item: "kubejs:long_lasting_pill"
+				type: "item"
+			}]
+			x: 15.75d
+			y: 6.75d
+		}
+		{
+			dependencies: ["50D70D990312BC70"]
+			description: ["在经过处理后，长效化药物可以被&2完全无害&r——尽管相对于其他的器官来说提供的属性并不多，但其能够提供的方便程度也是其他器官所难以比拟的。"]
+			id: "6E7491F86379BEAC"
+			rewards: [{
+				id: "7A26A00DECB193D1"
+				item: {
+					Count: 1b
+					id: "lightmanscurrency:coin_gold"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "无害药物"
+			tasks: [{
+				id: "3226602CB5D6A05D"
+				item: "kubejs:long_lasting_pill_gold"
+				type: "item"
+			}]
+			x: 15.75d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7198C447D928AEEC"]
+			description: ["&2手持玻璃管长按右键&r，则可以在消息框中看到属性的对应信息，&e鼠标放在对应的属性名称上&r还可以看到对应属性的描述文本。"]
+			id: "70F7BE40B3C7BBAB"
+			rewards: [{
+				count: 2
+				id: "38E0CF248BA7D2C4"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "可视化面板"
+			tasks: [{
+				id: "58B4DEA9CF17BB1C"
+				item: {
+					Count: 1b
+					id: "kubejs:glass_vial"
+					tag: {
+						organSocres: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "更详细的属性面板"
+			x: -0.5d
+			y: 3.25d
+		}
+		{
+			dependencies: ["5F271CD6AAEC88FC"]
+			description: [
+				"现在你可以借助&6生物锻炉&r制作&d消化器&r，获取更优质的燃料——&e营养物质&r。"
+				""
+				"当然，消化器也需要先放入一部分食物以提供&e运行能源&r。"
+			]
+			id: "189AE9F605414118"
+			rewards: [{
+				count: 32
+				id: "37AA77F0DE8132B0"
+				item: "biomancy:nutrient_paste"
+				type: "item"
+			}]
+			subtitle: "实用营养物质"
+			tasks: [{
+				id: "5CD4644B343C2D17"
+				item: "biomancy:digester"
+				type: "item"
+			}]
+			title: "更优质的能源"
+			x: 12.25d
+			y: 1.75d
+		}
+		{
+			dependencies: ["7F0C1FA54DD6E9BC"]
+			description: [
+				"&d《血肉重铸（Biomancy）》模组&r的相关引导就到此结束了。"
+				""
+				"当然该模组提供的内容不仅仅只有这些，你可以通过在JEI搜索框输入&d“&n@Biomancy&r”&r来查看该模组的全部物品，以更好的游玩该模组。"
+			]
+			icon: "biomancy:primordial_core"
+			id: "3BAEC954173FF2A3"
+			rewards: [{
+				count: 5
+				id: "6E51D03657171684"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "教学结束"
+			tasks: [{
+				id: "7BF5C93B82AE9C82"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "血肉重铸：自由探索"
+			x: 17.5d
+			y: 3.25d
+		}
+		{
+			dependencies: [
+				"72D090FF4C44DAAD"
+				"3FED9C9227FC9CD5"
+			]
+			description: [
+				"1.我们可以在下图&c红框&r中所指示的位置看到一个物品来自哪一个模组。"
+				"&7－－如图中物品来自模组《Nameless Trinkets》&r"
+				"{image:kubejs:textures/task/jei_1.png width:110 height:47 align:1}"
+				""
+				""
+				"2.如果你想知道一个模组都有什么物品，可以按&eE键&r打开背包，在&e右下角的JEI搜索框&r中输入&e“@+模组名”&r，如&e“@Nameless”&r来搜索上一个图中的模组。&7（一般名字有多个单词的模组只需要打第一个单词）&r"
+				"{image:kubejs:textures/task/jei_2.png width:160 height:15 align:1}"
+				""
+				"{@pagebreak}"
+				"3.通常我们会在JEI搜索框中直接搜索物品的名字，然后&e左键点击&r来查询物品如何制作（或者将鼠标悬停在物品处按&eR－展示配方&r）。"
+				"而将鼠标悬停于物品上按&eU键（展示用途）&r，则可以查看它能做什么，当该物品具有合成功能时，会显示它支持的全部配方。（&7如下图，鼠标悬停在图1的红色处按U键，因为召唤祭坛提供了其他物品的合成方式，所以显示了它提供的配方&r）"
+				"{image:kubejs:textures/task/jei_3.png width:130 height:68 align:1}"
+				"{image:kubejs:textures/task/jei_4.png width:105 height:99 align:1}"
+			]
+			icon: "minecraft:writable_book"
+			id: "55A4D2A38D0297E8"
+			rewards: [{
+				id: "2F0F6E4BA49B55C1"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "一些快速上手MOD的方法"
+			tasks: [{
+				id: "1B37BAC762FD8D2F"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "如果你是整合包新手"
+			x: 7.75d
+			y: 17.25d
+		}
+		{
+			dependencies: ["6069FC5CA00481CE"]
+			description: [
+				"你会注意到，本整合包如同其他的各类冒险包、水槽包一样，添加了&2Alex生物&r用以丰富世界——但仅仅是这样吗？"
+				""
+				"所有的生物都具有着其独特的&5器官&r，保证他们在世界上的正常生活和繁衍，而我们——玩家，自然也可以从动物的身上学习到他们的特点并加以运用。"
+				""
+				"通过寻找不同的生物，摘取他们身上的器官并进行加工，玩家以变得更强。后期大量的高级器官都是基于这些生物的低级器官变化加工而成。"
+			]
+			icon: "alexsmobs:lobster_bucket"
+			id: "523490881F8317C7"
+			rewards: [
+				{
+					count: 5
+					id: "6A7406D6BBB8960E"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_iron"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "524661C46CD6AAD1"
+					item: "alexsmobs:animal_dictionary"
+					type: "item"
+				}
+			]
+			subtitle: "新鲜的器官来源"
+			tasks: [{
+				id: "76CE109C8B7FF8CD"
+				title: "寻找Alex生物"
+				type: "checkmark"
+			}]
+			title: "寻找Alex生物"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["523490881F8317C7"]
+			description: [
+				"在沼泽中，你会遇上一些奇特而美丽的小生物，它们被称作为&5搏鱼&r。"
+				""
+				"搏鱼生性好斗，如果和同类所处在同一片区域，会互相争斗直到一方死亡。"
+				""
+				"因此，在泛泛大陆之上，存在着一种名为&6搏鱼决斗&r的娱乐形式，双方使用自己的搏鱼进行互斗。"
+				""
+				"而在如此脆弱不堪的世界里，你可以&2为搏鱼进行器官改造&r，进而在决斗中获取到巨大的优势。"
+			]
+			id: "02BDED7D337512CD"
+			rewards: [
+				{
+					id: "1AE5EAB766BA6059"
+					item: "bettas:betta_fish_bucket"
+					type: "item"
+				}
+				{
+					id: "5C5674BF5DCCE43E"
+					item: "moblassos:aqua_lasso"
+					type: "item"
+				}
+			]
+			subtitle: "生性好斗的水下生物"
+			tasks: [{
+				id: "18A7A72907F6D36C"
+				item: "bettas:betta_fish"
+				type: "item"
+			}]
+			title: "斗鱼能手"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["040207B33E2FEBFF"]
+			description: ["你可以升级你的钱包，以获得更多的功能。"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "lightmanscurrency:wallet_netherite"
+				tag: {
+					AutoConvert: 1b
+				}
+			}
+			id: "44F1FB9DEBED0763"
+			rewards: [{
+				id: "60B98358787560DA"
+				item: "lightmanscurrency:coin_emerald"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "66911BA191D4B840"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:wallet_copper"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1A5F5C3E979DC6C2"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:wallet_iron"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "64B211ADD1FF3E26"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:wallet_gold"
+						tag: {
+							AutoConvert: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0AFFF675BC4BD4DF"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:wallet_emerald"
+						tag: {
+							AutoConvert: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C54A994CAD013A5"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:wallet_diamond"
+						tag: {
+							AutoConvert: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FAAFFC25AD94BE0"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:wallet_netherite"
+						tag: {
+							AutoConvert: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "钱包的升级"
+			x: 8.75d
+			y: 14.25d
+		}
+		{
+			dependencies: ["74F1E7C9FB0D08A1"]
+			description: [
+				"&7交货协议除了通过探索宝箱获取，也可以通过以下途径获取："
+				"&r"
+				"&41.击杀村民。&r"
+				""
+				"&32.和银行家进行交易（银行家转职由ATM机提供）&r"
+			]
+			icon: "wares:delivery_agreement"
+			id: "00DAC886DEE844AD"
+			rewards: [
+				{
+					id: "7C8E517079F9FCAF"
+					item: "moblassos:contract"
+					type: "item"
+				}
+				{
+					id: "1F95DB059914A301"
+					item: "moblassos:emerald_lasso"
+					type: "item"
+				}
+			]
+			subtitle: "人性的抉择"
+			tasks: [{
+				id: "092177F9C4F95804"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "大富翁"
+			x: 1.5d
+			y: 14.25d
+		}
+		{
+			dependencies: ["0721AF9D7D5E4A7C"]
+			description: [
+				"整合包提供了&d《传送石碑/指路石（Waystones）》模组&r，免去了玩家长途跋涉的烦恼。"
+				""
+				"玩家可通过瞬移卷轴、传送石等回到传送石碑。"
+				""
+				"该模组的更多零碎小物件可通过在JEI中搜索“&d@Waystones&r”查看。"
+			]
+			id: "6A394E28378C67C8"
+			rewards: [
+				{
+					count: 3
+					id: "0DA21E22449B40BF"
+					item: "waystones:return_scroll"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "37782791E37E53BC"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "18D6723C0ACE4719"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			title: "指路石"
+			x: 7.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["6A394E28378C67C8"]
+			description: [
+				"当玩家放置传送石盘后，在其中会合成调谐燧石，该燧石将于当前的传送石盘进行绑定。"
+				""
+				"将其中的调谐燧石和另一个传送石盘中的调谐燧石进行互换，两个传送石盘将互相绑定。"
+				""
+				"当实体站在上面20tick后，将进行石盘间的传送，传送后在进行位移操作前不会再次触发传送。"
+				""
+				"&8可以传送物品&r"
+			]
+			id: "77F87E258991B1A7"
+			rewards: [{
+				count: 5
+				id: "231C070C2D46587F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "廉价的传送装置"
+			tasks: [{
+				id: "7B016FC80DBDC428"
+				item: "waystones:warp_plate"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 11.25d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: ["整合包添加了一些&5魔法模组&r，如果你对成为一位魔法师感兴趣，可以在&eFTB界面左侧的&r&b魔法分类&r中找到它们的引导说明。"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:diamond_spell_book"
+				tag: {
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 10
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "17F34DB341F48836"
+			rewards: [{
+				id: "09753DDA68C78D0B"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "探索世界的真实"
+			tasks: [{
+				id: "1B9CE6710438EEB7"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "流传于世的魔法"
+			x: 6.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["28A03FA0404404DA"]
+			description: ["你可以在龙的巢穴、独眼巨人巢穴、地牢等处寻找到记录各种古老传闻的手稿，这是你追寻传说的开始。"]
+			icon: "iceandfire:manuscript"
+			id: "390E59D77E2AC74A"
+			rewards: [
+				{
+					id: "76A8BC2139460119"
+					item: "iceandfire:manuscript"
+					type: "item"
+				}
+				{
+					id: "13823426EB28218A"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+			]
+			subtitle: "千年前的笔迹"
+			tasks: [{
+				id: "0616D5DDE0A710C2"
+				item: "iceandfire:manuscript"
+				type: "item"
+			}]
+			title: "遗失的传闻"
+			x: 1.25d
+			y: 12.75d
+		}
+		{
+			dependencies: ["390E59D77E2AC74A"]
+			description: [
+				"随着身上的&6手稿&r越来越多，你明白需要一个便于整理、携带手稿的工具。"
+				""
+				"这本笔记将指引你在一个个奇幻传说中探索，虽然它现在只有简介的少量知识，但你可以&e不断收集手稿来完善它&r。"
+			]
+			id: "7966D774681B9FC1"
+			rewards: [{
+				count: 2
+				id: "7014E451BC8CB0B3"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "记录自己的传说"
+			tasks: [{
+				id: "06AC29AD3B2BBDD4"
+				item: {
+					Count: 1b
+					id: "iceandfire:bestiary"
+					tag: {
+						Pages: [I;0]
+					}
+				}
+				type: "item"
+			}]
+			title: "探索的指引：记载怪兽的手册"
+			x: 0.5d
+			y: 11.25d
+		}
+		{
+			dependencies: ["7966D774681B9FC1"]
+			description: [
+				"你需要一个书桌以便于将收集的&6手稿&r&e誊抄记录&r到&6异兽手记&r中。"
+				""
+				"通过放置&6异兽手记&r和&6手稿&r来进行研究，可以向交互界面右侧给出的三个可选条目中选择一个，&e添加在异兽笔记中&r。"
+				""
+				"&a注：每研究一次增加的均为新信息，且当全部研究完成后同本书不可再进行研究。&r"
+			]
+			id: "60FA450E74D398EA"
+			rewards: [{
+				count: 2
+				id: "04345BA8D5343DB4"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "将手稿记录于手记中"
+			tasks: [{
+				id: "0D42B7561AA5F217"
+				item: "iceandfire:lectern"
+				type: "item"
+			}]
+			title: "誊写书桌"
+			x: 1.25d
+			y: 9.75d
+		}
+		{
+			dependencies: ["06AF74C1CDA2E18A"]
+			description: [
+				"&d《冰火传说》&r是一款以&e龙&r为核心、以&e神秘生物&r为主题的&d奇幻冒险模组&r。"
+				""
+				"在游戏中，玩家将会遇见来自神话传说的种种神异生灵，并通过收集&6手稿&r和编纂&6《异兽手记》&r来获取有关生物的知识，从而学会利用它们的弱点打败它们，收集它们身上的珍贵材料并制成装备，搜刮它们巢穴中的财宝，甚至于把它们中较为友善的那些驯养为&e宠物&r和&e坐骑&r。"
+				""
+				"模组中的生物不但有着精良的模型和材质，还有着流畅的动画和精妙的AI，无论是观感还是战斗体验都出类拔萃、独树一帜。"
+			]
+			icon: {
+				Count: 1b
+				id: "iceandfire:dragon_skull_fire"
+				tag: {
+					DragonAge: 75
+					Stage: 4
+				}
+			}
+			id: "28A03FA0404404DA"
+			rewards: [{
+				id: "73D4161941FC5D99"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "写下属于你自己的传说"
+			tasks: [{
+				id: "2D93EEA58973F48D"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "引言：凡人居住之所，必有传说流淌"
+			x: 3.0d
+			y: 12.75d
+		}
+		{
+			dependencies: ["0721AF9D7D5E4A7C"]
+			description: [
+				"&b现在，你的主世界并不单调。&r"
+				""
+				"本整合包在世界加入了&e许多新的元素&r，包含&d《冰火传说》&r在内的众多模组为你的冒险带来了全新的体验。"
+			]
+			icon: "minecraft:campfire"
+			id: "06AF74C1CDA2E18A"
+			rewards: [{
+				id: "1A48936E2D990564"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "奇幻的世界"
+			tasks: [{
+				id: "03717290ABBFDA2E"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "不一样的世界"
+			x: 4.0d
+			y: 11.25d
+		}
+		{
+			dependencies: ["60FA450E74D398EA"]
+			description: [
+				"至此，&d《冰火传说（Ice and Fire）》&r模组的介绍和引导就结束了。"
+				""
+				"本模组拥有&e极其详细的引导说明书&r-&6异兽手记&r，随着手记的完善，你会了解该模组所有的内容。"
+				""
+				"现在，冒险家，轮到你用冰与火的巨椽，写下属于你自己的传说。"
+			]
+			icon: "iceandfire:dragon_stick"
+			id: "27821A1650B5B6C9"
+			rewards: [{
+				count: 5
+				id: "2B76F185285AC853"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "凡人因智慧 以比肩神明"
+			tasks: [{
+				id: "1953C281E2E1A192"
+				title: "传说由自己谱写"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 9.75d
+		}
+		{
+			dependencies: ["70F7BE40B3C7BBAB"]
+			description: [
+				"通过几种工具和遗物金属板的组合，你可以制作出&6手术盒&r，用于快捷的替换你的胸腔内容。"
+				""
+				"默认情况下，通过合成获得的手术盒中会包含四个遗物金属板来保证你在术后的健康。"
+			]
+			id: "486909D9F577A497"
+			rewards: [{
+				id: "63F0AFDE607FBED3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "快捷的替换你的胸腔内容"
+			tasks: [{
+				id: "02E85F3C5517E030"
+				item: {
+					Count: 1b
+					id: "kubejs:operation_box"
+					tag: {
+						inventory: [ ]
+					}
+				}
+				type: "item"
+			}]
+			x: -2.25d
+			y: 3.25d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"在战斗过程中尝试打开其他生物的胸腔是一个非常危险的工作——尤其是你很有可能会打开你自己的胸腔。"
+				""
+				"使用&6安全开胸器&r，其无法开启自己的胸腔，仅能开启其他生物的胸腔，能够大大降低在战斗中开胸的风险。"
+			]
+			hide_dependency_lines: true
+			id: "4C42E21080F0D342"
+			rewards: [{
+				id: "66F2928AC918DA71"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "不要打开自己！"
+			tasks: [{
+				id: "0B14DACC892864BD"
+				item: "kubejs:safe_chest_opener"
+				type: "item"
+			}]
+			x: 4.75d
+			y: 5.0d
 		}
 	]
 	title: "章节1：如常"

@@ -1,0 +1,5 @@
+{
+    "chestcavity": "kubejs:types/boss/knight_garent.json",
+    "entities": ["somebosses:knight_garent"]
+  }
+  

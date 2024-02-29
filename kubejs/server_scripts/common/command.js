@@ -29,4 +29,27 @@ ServerEvents.commandRegistry(event => {
             )
     )
 
+    event.register(
+        Commands.literal('nfwc')
+            .requires(src => src.hasPermission(2))
+            .then(Commands.literal('difficult')
+                .then(Commands.argument('player', Arguments.PLAYER.create(event))
+                    .then(Commands.argument('arg1', Arguments.INTEGER.create(event))
+                        .executes(ctx => {
+                            let diffLevelNum = Arguments.INTEGER.getResult(ctx, 'arg1');
+                            let player = ctx.source.server.getPlayer(Arguments.PLAYER.getResult(ctx, 'player'))
+
+                            let oriDiffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
+                            if (oriDiffStage) {
+                                player.stages.remove(oriDiffStage)
+                            }
+                            player.stages.add('difficult_level_' + diffLevelNum)
+                            return 1
+                        }
+                        )
+                    )
+                )
+            )
+    )
+
 })

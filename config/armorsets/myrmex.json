@@ -1,0 +1,52 @@
+{
+  "armorSetName": "恐蚁",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "iceandfire:myrmex_desert_helmet",
+    "mixAndMatch": [
+      "iceandfire:myrmex_jungle_helmet"
+    ]
+  },
+  "chest": {
+    "itemKey": "iceandfire:myrmex_desert_chestplate",
+    "mixAndMatch": [
+      "iceandfire:myrmex_jungle_chestplate"
+    ]
+  },
+  "legs": {
+    "itemKey": "iceandfire:myrmex_desert_leggings",
+    "mixAndMatch": [
+      "iceandfire:myrmex_jungle_leggings"
+    ]
+  },
+  "boots": {
+    "itemKey": "iceandfire:myrmex_desert_boots",
+    "mixAndMatch": [
+      "iceandfire:myrmex_jungle_boots"
+    ]
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "虽然像只蚂蚁了，但还不是蚂蚁"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "goety:climbing",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    },
+    {
+      "type": "effect",
+      "name": "minecraft:poison",
+      "value": 3.0,
+      "interactionType": "attack",
+      "interactionDuration": 100,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

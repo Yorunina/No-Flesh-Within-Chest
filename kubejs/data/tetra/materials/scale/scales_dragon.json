@@ -1,0 +1,30 @@
+{
+    "key": "iaf_scales_dragon",
+    "category": "scale",
+    "primary": 6.9,
+    "secondary": 3.6,
+    "tertiary": 4.8,
+    "durability": 678,
+    "integrityCost": 2,
+    "integrityGain": 3,
+    "magicCapacity": 211,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "9C9C9C",
+        "texture": "9C9C9C"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "tag": "iceandfire:scales/dragon"
+    },
+    "effects" : {
+        "art_of_forging:hubris": 45
+	},
+    "requiredTools": {
+        "cut": "minecraft:iron"
+    }
+}

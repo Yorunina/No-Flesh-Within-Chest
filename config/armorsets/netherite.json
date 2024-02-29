@@ -2,20 +2,19 @@
   "armorSetName": "下界合金",
   "performanceMode": true,
   "head": {
-    "itemKey": "minecraft:netherite_helmet",
-    "mustBeEmpty": false
+    "itemKey": "minecraft:netherite_helmet"
   },
   "chest": {
     "itemKey": "minecraft:netherite_chestplate",
-    "mustBeEmpty": false
+    "mixAndMatch": [
+      "create:netherite_backtank"
+    ]
   },
   "legs": {
-    "itemKey": "minecraft:netherite_leggings",
-    "mustBeEmpty": false
+    "itemKey": "minecraft:netherite_leggings"
   },
   "boots": {
-    "itemKey": "minecraft:netherite_boots",
-    "mustBeEmpty": false
+    "itemKey": "minecraft:netherite_boots"
   },
   "partialBonusRequiredAmount": 2,
   "partialSetBonuses": [

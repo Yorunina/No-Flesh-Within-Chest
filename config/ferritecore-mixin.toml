@@ -1,7 +1,7 @@
 #Use a slightly more compact, but also slightly slower representation for block states
 compactFastMap = false
 #Replace objects used to detect multi-threaded access to chunks by a much smaller field. This option is disabled by default due to very rare and very hard-to-reproduce crashes, use at your own risk!
-useSmallThreadingDetector = false
+useSmallThreadingDetector = true
 #Cache the predicate instances used in multipart models
 cacheMultipartPredicates = true
 #Do not create a new MultipartBakedModel instance for each block state using the same multipartmodel. Requires cacheMultipartPredicates to be enabled

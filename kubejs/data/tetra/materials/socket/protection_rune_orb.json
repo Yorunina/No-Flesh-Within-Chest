@@ -1,0 +1,31 @@
+{
+  "key": "irons_protection_upgrade_orb",
+  "hidden": false,
+  "category": "socket",
+  "primary": 0,
+  "secondary": 0,
+  "tertiary": 0,
+  "durability": 0,
+  "integrityCost": 3,
+  "integrityGain": 0,
+  "magicCapacity": 0,
+  "toolLevel": 0,
+  "toolEfficiency": 0,
+  "tints": {
+    "glyph": "fffdca",
+    "texture": "fffdca"
+  },
+  "textures": [
+    "perk_glow_0",
+    "perk_sided_0"
+  ],
+  "material": {
+    "items": [
+      "irons_spellbooks:protection_upgrade_orb"
+    ]
+  },
+  "experienceCost": 20,
+  "attributes": {
+    "**irons_spellbooks:spell_resist": 0.5
+  }
+}

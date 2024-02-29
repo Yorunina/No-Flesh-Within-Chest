@@ -1,0 +1,31 @@
+{
+    "key": "iaf_stymphalian_bird_feather",
+    "category": "fabric",
+    "primary": 2.8,
+    "secondary": 1,
+    "tertiary": 1.8,
+    "durability": 660,
+    "integrityCost": 2,
+    "integrityGain": 6,
+    "magicCapacity": 187,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {
+        "throwable": 3,
+        "velocity": 6 
+    },
+    "tints": {
+        "glyph": "8B4513",
+        "texture": "8B4513"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "items": [ "iceandfire:stymphalian_bird_feather" ]
+    },
+    "requiredTools": {
+        "cut": "minecraft:iron"
+    }
+}

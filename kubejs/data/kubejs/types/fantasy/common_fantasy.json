@@ -1,0 +1,31 @@
+{
+    "defaultChestCavity": [
+      {"item": "kubejs:fantasy_muscle","position": 0},
+      {"item": "kubejs:fantasy_rib","position": 1},
+      {"item": "kubejs:fantasy_appendix","position": 2},
+      {"item": "kubejs:fantasy_lung","position": 3},
+      {"item": "kubejs:fantasy_heart","position": 4},
+      {"item": "kubejs:fantasy_lung","position": 5},
+  
+      {"item": "kubejs:fantasy_rib","position": 7},
+      {"item": "kubejs:fantasy_muscle","position": 8},
+      {"item": "kubejs:fantasy_muscle","position": 9},
+      {"item": "kubejs:fantasy_rib","position": 10},
+      {"item": "kubejs:fantasy_spleen","position": 11},
+      {"item": "kubejs:fantasy_kidney","position": 12},
+      {"item": "kubejs:fantasy_spine","position": 13},
+      {"item": "kubejs:fantasy_kidney","position": 14},
+      {"item": "kubejs:fantasy_liver","position": 15},
+      {"item": "kubejs:fantasy_rib","position": 16},
+      {"item": "kubejs:fantasy_muscle","position": 17},
+      {"item": "kubejs:fantasy_muscle","position": 18},
+      {"item": "kubejs:fantasy_muscle","position": 19},
+      {"item": "kubejs:fantasy_intestine","position": 20},
+      {"item": "kubejs:fantasy_intestine","position": 21},
+      {"item": "kubejs:fantasy_stomach","position": 22},
+      {"item": "kubejs:fantasy_intestine","position": 23},
+      {"item": "kubejs:fantasy_intestine","position": 24},
+      {"item": "kubejs:fantasy_muscle","position": 25},
+      {"item": "kubejs:fantasy_muscle","position": 26}
+    ]
+  }

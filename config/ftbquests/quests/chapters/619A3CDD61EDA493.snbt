@@ -63,68 +63,52 @@
 			y: 2.5d
 		}
 		{
+			can_repeat: true
 			dependencies: ["0C769BB94D282CC6"]
 			description: [
-				"由于本整合的发布较为&2匆忙&r(很惭愧，为了流量)，对于&5额外难度&r的设计也仅仅是只有一小部分。"
+				"基准难度是一组&2难度综合选项&r，包括了血量倍数、伤害倍数、护甲倍数等多个选项，其与后面的难度&2相互独立&r。"
 				""
-				"在&2后续的更新&r中，会逐渐为各位带来更多的难度选项，并且逐步丰富游戏内容。"
+				"较高的基准难度下，部分怪物会掉落额外的掉落物。"
 				""
-				"请注意，难度并不区分高下，部分难度选项可能从某种角度上降低了游戏难度。"
+				"对于常规玩家，使用&6难度1&r即可。对于有某些特殊伤害追求的玩家，则是推荐&6难度4&r，用于获取某些特殊的稀有掉落物品。"
+				""
+				"并不推荐玩家&2盲目的攀比伤害&r，本整合仅仅是提供了一个特殊的玩法，并非在对比各模组/各整合的强度。"
+				""
+				"本整合从设计角度来说，能够允许一个没有经过任何计算、任何提前了解整合包内容的玩家&2舒适&r的完成所有游戏内容。"
+				""
+				"基准难度的具体设置如后表所示。"
+				"{@pagebreak}"
+				"1：正常血量、正常攻击、正常护甲"
+				"2：2 x 血量、正常攻击、正常护甲"
+				"3：3 x 血量、正常攻击、正常护甲"
+				"4：5 x 血量、1.5 x 攻击、正常护甲 &6（稀有掉落）&r"
+				"5：10 x 血量、1.5 x 攻击、正常护甲"
+				"6：20 x 血量、2 x 攻击、1.5 x 护甲"
+				"7：30 x 血量、3 x 攻击、1.5 x 正常护甲"
+				"8：50 x 血量、4 x 攻击、2 x 护甲"
+				"9：100 x 血量、5 x 攻击、2 x 护甲&4（不推荐）&r"
+				"10：300 x 血量、6 x 攻击、2.5 x 护甲"
+				"11：500 x 血量、7 x 攻击、2.5 x 护甲"
+				"12：1000 x 血量、8 x 攻击、3 x 护甲"
 			]
 			icon: "kubejs:secret_of_origin"
 			id: "1CBCFF5EB305F9CD"
-			shape: "rsquare"
-			subtitle: "正在制作中"
-			tasks: [{
-				id: "18751C8315E9B424"
-				title: "WIP"
-				type: "checkmark"
-			}]
-			title: "正在开发中. . ."
-			x: -5.75d
-			y: 1.5d
-		}
-		{
-			can_repeat: true
-			dependencies: ["0C769BB94D282CC6"]
-			icon: "hexerei:blood_bottle"
-			id: "1BC925EA72F56311"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "5A0CC10F5B3F2B31"
+				id: "2160155A996FC741"
 				table_id: 8291824144453249534L
 				type: "choice"
 			}]
-			subtitle: "追求更肉的怪物？可以。"
+			shape: "rsquare"
+			subtitle: "基准难度即是预设的难度层次"
 			tasks: [{
-				id: "4BE3CB917D3E168A"
-				title: "血量乘数"
+				id: "18751C8315E9B424"
+				title: "我已了解"
 				type: "checkmark"
 			}]
-			x: -2.0d
-			y: 2.5d
-		}
-		{
-			can_repeat: true
-			dependencies: ["0C769BB94D282CC6"]
-			icon: "hexerei:blood_sigil"
-			id: "059ADB7B9BDD1D1D"
-			rewards: [{
-				exclude_from_claim_all: true
-				icon: "hexerei:blood_sigil"
-				id: "7B0916EAE2C375C6"
-				table_id: 6572847824199434371L
-				type: "choice"
-			}]
-			subtitle: "追求更痛的伤害？没问题"
-			tasks: [{
-				id: "2E00AF27DDC89766"
-				title: "伤害乘数"
-				type: "checkmark"
-			}]
-			title: "伤害乘数"
-			x: -0.75d
-			y: 2.5d
+			title: "基准难度"
+			x: -5.75d
+			y: 1.5d
 		}
 		{
 			can_repeat: true
@@ -155,7 +139,7 @@
 				type: "checkmark"
 			}]
 			title: "怪物总将携带护甲？"
-			x: 0.5d
+			x: -2.0d
 			y: 2.5d
 		}
 	]

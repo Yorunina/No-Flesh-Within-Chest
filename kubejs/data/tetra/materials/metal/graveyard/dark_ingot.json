@@ -1,0 +1,27 @@
+{
+    "key": "dark_ingot",
+    "category": "metal",
+    "primary": 7.2,
+    "secondary": 4.3,
+    "tertiary": 2.8,
+    "durability": 2205,
+    "integrityCost": 1,
+    "integrityGain": 7,
+    "magicCapacity": 150,
+    "toolLevel": "minecraft:netherite",
+    "toolEfficiency": 9.5,
+    "tints": {
+        "glyph": "2c2c2d",
+        "texture": "2c2c2d"
+    },
+    "textures": [
+        "metal",
+        "default"
+    ],
+    "material": {
+        "items": [ "goety:dark_ingot" ]
+    },
+    "requiredTools": {
+        "hammer_dig": "minecraft:iron"
+      }
+}

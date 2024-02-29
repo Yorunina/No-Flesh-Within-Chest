@@ -11,7 +11,7 @@ const playerChestCavityTypeMap = new Map();
  */
 PlayerEvents.loggedIn((event) => {
     initAllBar(event.player)
-    initChestCavityIntoMap(event.player, false);
+    global.initChestCavityIntoMap(event.player, false)
     if (event.player.persistentData.contains(organActive) &&
         event.player.persistentData.getInt(organActive) == 1) {
         global.updatePlayerActiveStatus(event.player)
@@ -43,7 +43,7 @@ PlayerEvents.inventoryClosed((event) => {
     if (player.mainHandItem != 'chestcavity:chest_opener' && player.offHandItem != 'chestcavity:chest_opener') {
         return;
     }
-    initChestCavityIntoMap(player, true);
+    global.initChestCavityIntoMap(player, true)
     let itemMap = getPlayerChestCavityItemMap(player)
     if (itemMap.has('kubejs:long_lasting_pill') || itemMap.has('kubejs:long_lasting_pill_gold')) {
         global.updatePlayerActiveStatus(event.player)
@@ -58,7 +58,8 @@ PlayerEvents.inventoryClosed((event) => {
  * @param {Boolean} removeFlag 
  * @returns 
  */
-function initChestCavityIntoMap(player, removeFlag) {
+
+global.initChestCavityIntoMap = (player, removeFlag) => {
     let playerNbt = player.getNbt();
     let chestInventory = playerNbt.ChestCavity.Inventory;
     let newHash = chestInventory.hashCode();
@@ -126,7 +127,7 @@ function getPlayerChestCavityPosMap(player) {
     if (playerChestCavityPosMap.has(uuid)) {
         return playerChestCavityPosMap.get(uuid);
     }
-    initChestCavityIntoMap(player);
+    global.initChestCavityIntoMap(player)
     return playerChestCavityPosMap.get(uuid) ?? new Map();
 }
 
@@ -141,7 +142,7 @@ function getPlayerChestCavityItemMap(player) {
     if (playerChestCavityItemMap.has(uuid)) {
         return playerChestCavityItemMap.get(uuid);
     }
-    initChestCavityIntoMap(player);
+    global.initChestCavityIntoMap(player)
     return playerChestCavityItemMap.get(uuid) ?? new Map();
 }
 
@@ -156,7 +157,7 @@ function getPlayerChestCavityTypeMap(player) {
     if (playerChestCavityTypeMap.has(uuid)) {
         return playerChestCavityTypeMap.get(uuid);
     }
-    initChestCavityIntoMap(player);
+    global.initChestCavityIntoMap(player)
     return playerChestCavityTypeMap.get(uuid) ?? new Map();
 }
 
@@ -167,8 +168,7 @@ function getPlayerChestCavityTypeMap(player) {
  */
 
 function checkPlayerHasChestCavityMap(player) {
-    let uuid = String(player.getUuid());
-    if (playerChestCavityHashMap.has(uuid)) {
+    if (playerChestCavityHashMap.has(String(player.getUuid()))) {
         return true;
     }
     return false;

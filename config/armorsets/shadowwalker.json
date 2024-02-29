@@ -17,20 +17,23 @@
     "itemKey": "somebosses:ender_ordnance_sword",
     "mixAndMatch": [
       "cataclysm:void_assault_shoulder_weapon",
-      "irons_spellbooks:dragonskin_spell_book",
-      "cataclysm:void_forge"
+      "cataclysm:void_forge",
+      "irons_spellbooks:hither_thither_wand"
     ]
   },
   "offHand": {
     "itemKey": "somebosses:ender_ordnance_sword",
     "mixAndMatch": [
       "cataclysm:void_assault_shoulder_weapon",
-      "irons_spellbooks:dragonskin_spell_book",
-      "cataclysm:void_forge"
+      "cataclysm:void_forge",
+      "irons_spellbooks:hither_thither_wand"
     ]
   },
   "additionalSetPieces": [{
-    "itemKey": "nameless_trinkets:dragons_eye"
+    "itemKey": "nameless_trinkets:dragons_eye",
+    "mixAndMatch": [
+      "irons_spellbooks:dragonskin_spell_book"
+    ]
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [

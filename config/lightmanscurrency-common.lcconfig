@@ -1,0 +1,218 @@
+#Level of debug messages to be shown in the logs.
+#0-All debug messages. 1-Warnings/Errors only. 2-Errors only. 3-No debug messages.
+#Note: All debug messages will still be sent debug.log regardless of settings.
+#Range: 0 -> 3
+debugLevel=0
+
+#Crafting Settings
+#/reload required for any changes made to take effect.
+[crafting]
+	#Whether Network Traders can be crafted.
+	#Disabling will not remove any existing Network Traders from the world, nor prevent their use.
+	#Disabling does NOT disable the recipes of Network Upgrades or the Trading Terminals.
+	canCraftNetworkTrader=true
+	
+	#Whether Trader Interface blocks can be crafted.
+	#Disabling will not remove any existing Trader Interfaces from the world, nor prevent their use.
+	canCraftTraderInterface=true
+	
+	#Whether Auction Stand blocks can be crafted.
+	#Disabling will not remove any existing Auction Stands from the world, nor prevent their use.
+	canCraftAuctionStand=true
+	
+	#Whether Tax Blocks can be crafted.
+	#Disabling will not remove any existing Tax Blocks from the world, nor prevent their use.
+	canCraftTaxCollector=true
+	
+	#Money Chest Crafting
+	[crafting.money_chest]
+		#Whether the Money Chest can be crafted.
+		#Disabling will not remove any existing Money Chests from the world, nor prevent their use.
+		#Disabling does NOT disable the recipes of Money Chest Upgrades.
+		canCraftCoinChest=true
+		
+		#Whether the Money Chest Exchange Upgrade can be crafted.
+		#Disabling will not remove any existing Money Chest Exchange Upgrades from the world, nor prevent their use.
+		canCraftExchangeUpgrade=true
+		
+		#Whether the Money Chest Magnet Upgrades can be crafted.
+		#Disabling will not remove any existing Money Chest Magnet Upgrades from the world, nor prevent their use.
+		canCraftMagnetUpgrade=true
+		
+		#Whether the Money Chest Security Upgrades can be crafted.
+		#Disabling will not remove any existing Money Chest Security Upgrades from the world, nor prevent their use.
+		canCraftSecurityUpgrade=true
+		
+#Event Settings
+[events]
+	#Whether advancements will give players chocolate coins as a reward for playing during the event.
+	#Note: Disabling will disable the entire `/lcadmin events reward` command used by the functions to give the reward.
+	advancementRewards=true
+	
+	#Whether the Chocolate Event Coins will be added to the coin data.
+	#Note: Disabling will not remove any Chocolate Coin items that already exist.
+	chocolate=true
+	
+	#Whether the Chocolate Event Coins will replace a small portion of the default coin loot drops during the event.
+	#See "chocolateRate" to customize the replacement rate
+	chocolateDrops=true
+	
+	#The percentage of Chocolate Coins being dropped instead of normal coins while an event is active.
+	#Range: 0.0 -> 1.0
+	chocolateRate=0.1
+	
+#Villager Related Settings
+#Note: Any changes to villagers requires a full reboot to be applied due to how Minecraft/Forge registers trades.
+[villagers]
+	#Whether the wandering trader will have additional trades that allow you to buy misc items with money.
+	addCustomWanderingTrades=false
+	
+	#Whether the banker villager profession will have any registered trades. The banker sells Lightman's Currency items for coins.
+	addBanker=false
+	
+	#Whether the cashier villager profession will have any registered trades.. The cashier sells an amalgamation of vanilla traders products for coins.
+	addCashier=false
+	
+	#Villager Trade Modification
+	#Note: Changes made only apply to newly generated trades. Villagers with trades already defined will not be changed.
+	[villagers.modification]
+		#Whether vanilla villagers should have the Emeralds from their trades replaced with coins.
+		changeVanillaTrades=false
+		
+		#Whether villagers added by other mods should have the Emeralds from their trades replaced with coins.
+		changeModdedTrades=false
+		
+		#Whether the wandering trader should have the emeralds from their trades replaced with the default replacement coin.
+		changeWanderingTrades=false
+		
+		#The default coin to replace a trades emeralds with.
+		defaultReplacementCoin=lightmanscurrency:coin_emerald
+		
+		#List of replacement coin overrides.
+		#Each entry must be formatted as follows: "mod:some_trader_type-lightmanscurrency:some_coin"
+		#Every trader not on this list will use the default trader coin defined above.
+		replacementCoinOverrides=["minecraft:butcher-lightmanscurrency:coin_iron","minecraft:cartographer-lightmanscurrency:coin_iron","minecraft:farmer-lightmanscurrency:coin_iron","minecraft:fisherman-lightmanscurrency:coin_iron","minecraft:fletcher-lightmanscurrency:coin_copper","minecraft:leatherworker-lightmanscurrency:coin_iron","minecraft:mason-lightmanscurrency:coin_iron","minecraft:shepherd-lightmanscurrency:coin_iron"]
+		
+#Loot Options
+[loot]
+	#T1 loot item.
+	#Leave blank ("") to not spawn T1 loot.
+	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":1, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
+	lootItemT1=lightmanscurrency:coin_copper
+	
+	#T2 loot item.
+	#Leave blank ("") to not spawn T2 loot.
+	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":2, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
+	lootItemT2=lightmanscurrency:coin_iron
+	
+	#T3 loot item.
+	#Leave blank ("") to not spawn T3 loot.
+	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":3, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
+	lootItemT3=lightmanscurrency:coin_gold
+	
+	#T4 loot item.
+	#Leave blank ("") to not spawn T4 loot.
+	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":4, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
+	lootItemT4=lightmanscurrency:coin_emerald
+	
+	#T5 loot item.
+	#Leave blank ("") to not spawn T5 loot.
+	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":5, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
+	lootItemT5=lightmanscurrency:coin_diamond
+	
+	#T6 loot item.
+	#Leave blank ("") to not spawn T6 loot.
+	#Applies to loot table loot type "lightmanscurrency:configured_item" with "tier":6, which is used in all "lightmanscurrency:loot_addons" loot tables configured below.
+	lootItemT6=lightmanscurrency:coin_netherite
+	
+	#Entity Loot Settings.
+	[loot.entities]
+		#Whether coins can be dropped by entities.
+		enabled=false
+		
+		#Whether coins can be dropped by entities that were spawned by the vanilla spawner.
+		allowSpawnedDrops=false
+		
+		#Whether modded machines that emulate player behaviour can trigger coin drops from entities.
+		#Set to false to help prevent autmated coin farming.
+		allowFakePlayerDrops=false
+		
+		#Entity Drop Lists. Accepts the following inputs:
+		#Entity IDs. e.g. "minecraft:cow"
+		#Entity Tags. e.g. "#minecraft:skeletons"
+		#Every entity provided by a mod. e.g. "minecraft:*"
+		#Note: If an entity meets multiple criteria, it will drop the lowest tier loot that matches (starting with normal T1 -> T6 then boss T1 -> T6)
+		[loot.entities.lists]
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier1" loot table.
+			#Requires a player kill to trigger coin drops.
+			T1=["minecraft:slime","minecraft:silverfish","alexsmobs:cosmic_cod","alexsmobs:fly","alexsmobs:raccoon","alexsmobs:stradpole"]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier2" loot table.
+			#Requires a player kill to trigger coin drops.
+			T2=["minecraft:zombie","minecraft:skeleton","minecraft:creeper","minecraft:spider","minecraft:cave_spider","minecraft:husk","minecraft:stray","minecraft:magma_cube","minecraft:zombie_villager","minecraft:drowned","alexsmobs:bone_serpent","alexsmobs:anaconda","alexsmobs:froststalker","alexsmobs:rattlesnake","alexsmobs:rockey_roller","alexsmobs:skreecher","alexsmobs:soul_vulture","alexsmobs:tarantula_hawk"]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier3" loot table.
+			#Requires a player kill to trigger coin drops.
+			T3=["minecraft:guardian","minecraft:elder_guardian","minecraft:phantom","minecraft:blaze","minecraft:ghast","minecraft:witch","minecraft:hoglin","minecraft:piglin_brute","minecraft:piglin","minecraft:zombified_piglin","alexsmobs:crimson_mosquito","alexsmobs:dropbear","alexsmobs:guster","alexsmobs:skelewag","alexsmobs:tusklin"]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier4" loot table.
+			#Requires a player kill to trigger coin drops.
+			T4=["minecraft:enderman","minecraft:evoker","minecraft:vindicator","minecraft:pillager","minecraft:ravager","minecraft:shulker","alexsmobs:enderiophage","alexsmobs:farseer","alexsmobs:murmur","alexsmobs:straddler"]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier5" loot table.
+			#Requires a player kill to trigger coin drops.
+			T5=["minecraft:wither_skeleton"]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier6" loot table.
+			#Requires a player kill to trigger coin drops.
+			T6=["alexsmobs:mimicube"]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier1" loot table.
+			#Does NOT require a player kill to trigger coin drops.
+			BossT1=[]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier2" loot table.
+			#Does NOT require a player kill to trigger coin drops.
+			BossT2=[]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier3" loot table.
+			#Does NOT require a player kill to trigger coin drops.
+			BossT3=[]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier4" loot table.
+			#Does NOT require a player kill to trigger coin drops.
+			BossT4=["minecraft:warden"]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier5" loot table.
+			#Does NOT require a player kill to trigger coin drops.
+			BossT5=["minecraft:ender_dragon"]
+			
+			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier6" loot table.
+			#Does NOT require a player kill to trigger coin drops.
+			BossT6=["minecraft:wither","alexsmobs:void_worm"]
+			
+	#Chest Loot Settings
+	[loot.chests]
+		#Whether coins can spawn in chests.
+		enabled=false
+		
+		#Chest Spawn Lists
+		[loot.chests.lists]
+			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier1" loot table.
+			T1=["minecraft:chests/underwater_ruin_small","minecraft:chests/underwater_ruin_big"]
+			
+			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier2" loot table.
+			T2=[]
+			
+			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier3" loot table.
+			T3=["minecraft:chests/jungle_temple","minecraft:chests/nether_bridge","minecraft:chests/simple_dungeon","minecraft:chests/ruined_portal"]
+			
+			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier4" loot table.
+			T4=["minecraft:chests/stronghold_crossing","minecraft:chests/stronghold_corridor","minecraft:chests/stronghold_library","minecraft:chests/ancient_city"]
+			
+			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier5" loot table.
+			T5=["minecraft:chests/buried_treasure","minecraft:chests/bastion_hoglin_stable","minecraft:chests/bastion_bridge","minecraft:chests/bastion_other","minecraft:chests/bastion_treasure","minecraft:chests/end_city_treasure"]
+			
+			#List of Loot Tables that will also spawn loot from the "lightmanscurrency:loot_addons/chest/tier6" loot table.
+			T6=[]
+			

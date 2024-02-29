@@ -1,0 +1,79 @@
+#Quality Settings
+[quality]
+	#Maximum number of items each Item Trader can renderBG (per-trade) as stock. Lower to decrease client-lag in trader-rich areas.
+	#Setting to 0 will disable item rendering entirely, so use with caution.
+	#Range: 0 -> 2147483647
+	itemTraderRenderLimit=2147483647
+	
+#Time Formatting Settings
+[time]
+	#How Notification Timestamps are displayed.
+	#Follows SimpleDateFormat formatting: https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
+	timeFormatting="MM/dd/yy hh:mmaa"
+	
+#Wallet Slot Settings
+[wallet_slot]
+	#The position that the wallet slot will be placed at in the players inventory.
+	slot=76,43
+	
+	#The position that the wallet slot will be placed at in the players creative inventory.
+	creativeSlot=126,19
+	
+	#The offset that the wallet button should be placed at relative to the wallet slot position.
+	button=8,-10
+	
+#Wallet Overlay Settings
+[wallet_hud]
+	#Whether an overlay should be drawn on your HUD displaying your wallets current money amount.
+	enabled=true
+	
+	#The corner of the screen that the overlay should be drawn on.
+	#Options: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	displayCorner=BOTTOM_LEFT
+	
+	#The position offset from the defined corner.
+	displayOffset=5,-5
+	
+	#Whether the wallets contents should be displayed as a coin item, or as value text.
+	#Options: ITEMS_WIDE, ITEMS_NARROW, TEXT
+	displayType=ITEMS_WIDE
+	
+#Inventory Button Settings
+[inventory_buttons]
+	#The position that the notification & team manager buttons will be placed at in the players inventory.
+	button=152,3
+	
+	#The position that the notification & team manager buttons will be placed at in the players creative inventory.
+	buttonCreative=171,3
+	
+#Chest Button Settings
+[chest_buttons]
+	#Whether the 'Move Coins into Wallet' button will appear in the top-right corner of the Chest Screen if there are coins in the chest that can be collected.
+	enabled=true
+	
+	#Whether the 'Move Coins into Wallet' button should collect coins from a side-chain.
+	#By default these would be the coin pile and coin block variants of the coins.
+	allowSideChainCollection=false
+	
+#Notification Settings
+[notification]
+	#Whether notifications should be posted in your chat when you receive them.
+	notificationsInChat=true
+	
+#Slot Machine Animation Settings
+[slot_machine]
+	#The number of Minecraft ticks the slot machine animation will last.
+	#Note: 20 ticks = 1 second
+	#Must be at least 20 ticks (1s) for coding reasons.
+	#Range: 20 -> 1200
+	animationDuration=100
+	
+	#The number of Minecraft ticks the slot machine will pause before repeating the animation.
+	#Range: 0 -> 1200
+	animationRestDuration=20
+	
+#Sound Settings
+[sounds]
+	#Whether Money Mending should make a noise when triggered.
+	moneyMendingClink=true
+	

@@ -1,0 +1,32 @@
+{
+    "key": "iaf_deathworm_tounge",
+    "category": "fibre",
+    "primary": "3.0",
+    "secondary": "2.1",
+    "tertiary": "4.8",
+    "durability": "546",
+    "integrityCost": "2",
+    "integrityGain": "6",
+    "magicCapacity": "155",
+    "toolLevel": "0",
+    "toolEfficiency": "0",
+    "effects": {
+        "art_of_forging:feasting": 2
+    },
+    "tints": {
+      "glyph": "CD5555",
+      "texture": "CD5555"
+    },
+    "textures": [
+      "crude",
+      "default"
+    ],
+    "material": {
+      "items": [
+        "iceandfire:deathworm_tounge"
+      ]
+    },
+    "requiredTools": {
+      "cut": "minecraft:iron"
+    }
+  }

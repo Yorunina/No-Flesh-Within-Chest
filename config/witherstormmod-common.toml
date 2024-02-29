@@ -14,5 +14,5 @@
 	#DEFAULT=true. Specifies if players should not be able to dismount a tentacle entity. Disable if facing compatibility issues. Reload Type: NONE
 	playerCannotDismountTentacles = true
 	#DEFAULT=true. Specifies if custom AI behavior should be injected into certain entities (such as mobs running away from the Wither Storm). Disable if facing compatibility issues. Reload Type: WORLD
-	injectCustomAiBehavior = true
+	injectCustomAiBehavior = false
 

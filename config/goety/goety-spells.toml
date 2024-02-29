@@ -461,7 +461,7 @@
 		#Lightning Spell Cost, Default: 16
 		#Range: > 0
 		lightningCost = 16
-		#Time to cast Lightning Spell, Default: 60
+		#Time to cast Lightning Spell, Default: 0
 		#Range: 0 ~ 72000
 		lightningTime = 60
 		#Lightning Spell Cooldown, Default: 100
@@ -595,6 +595,47 @@
 		#How much base damage Corrupted Beam Spell deals per tick, Default: 1.0
 		#Range: 0.0 ~ 1.7976931348623157E308
 		corruptedBeamDamage = 1.0
+
+	[Spells."Eruption Spell"]
+		#Eruption Spell Cost, Default: 32
+		#Range: > 0
+		eruptionCost = 32
+		#Time to cast Eruption Spell, Default: 60
+		#Range: 0 ~ 72000
+		eruptionTime = 60
+		#Eruption Spell Cooldown, Default: 100
+		#Range: > 0
+		eruptionCoolDown = 100
+		#How much base damage Pyroclasts deal when directly hitting a mob, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		pyroclastDamage = 6.0
+		#Enable Pyroclast projectile griefing, Default: true
+		pyroclastGriefing = true
+
+	[Spells."End Walker Spell"]
+		#End Walk Spell Cost, Default: 8
+		#Range: > 0
+		endWalkCost = 8
+		#Time to cast End Walk Spell, Default: 60
+		#Range: 0 ~ 72000
+		endWalkDuration = 60
+		#End Walk Spell Cooldown, Default: 200
+		#Range: > 0
+		endWalkCoolDown = 200
+		#How long the effect is applied from the spell, Default: 200
+		#Range: > 0
+		endWalkEffectDuration = 200
+
+	[Spells."Telekinesis Spell"]
+		#Telekinesis Spell Cost, Default: 4
+		#Range: > 0
+		telekinesisCost = 4
+		#The highest maximum health an entity can possess to be affected by Telekinesis spell, Default: 100
+		#Range: > 1
+		telekinesisMaxHealth = 100
+		#Add mobs that Telekinesis Spell don't work on. 
+		#To do so, enter the namespace ID of the mob, like "minecraft:zombie, minecraft:skeleton".
+		telekinesisBlackList = []
 
 ["Servant Limits"]
 	#Number of Skeleton/Vanguard/Necromancer Servants that can exist around the player without instantly dying, Default: 32

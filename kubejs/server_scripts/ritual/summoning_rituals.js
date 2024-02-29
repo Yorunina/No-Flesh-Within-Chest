@@ -468,7 +468,7 @@ ServerEvents.recipes(event => {
         .input('8x minecraft:glow_ink_sac')
         .itemOutput('kubejs:stardust_fragment')
         .dayTime('night')
-        .recipeTime(60);
+        .recipeTime(200);
 
     // 神恩Boss
     event.recipes.summoningrituals

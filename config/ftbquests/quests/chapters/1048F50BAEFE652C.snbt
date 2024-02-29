@@ -24,11 +24,11 @@
 			dev: false
 			height: 4.467948717948718d
 			hover: [ ]
-			image: "kubejs:textures/task/collection_2.png"
+			image: "kubejs:textures/task/collection_1.png"
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 8.75d
+			y: 23.75d
 		}
 		{
 			click: ""
@@ -40,7 +40,7 @@
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 12.75d
+			y: 14.75d
 		}
 		{
 			click: ""
@@ -52,7 +52,7 @@
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 15.75d
+			y: 17.75d
 		}
 		{
 			click: ""
@@ -64,19 +64,7 @@
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 18.75d
-		}
-		{
-			click: ""
-			corner: false
-			dev: false
-			height: 4.467948717948718d
-			hover: [ ]
-			image: "kubejs:textures/task/collection_1.png"
-			rotation: 0.0d
-			width: 17.0d
-			x: -2.75d
-			y: 21.75d
+			y: 20.75d
 		}
 		{
 			click: ""
@@ -150,8 +138,32 @@
 			x: 12.5d
 			y: 17.75d
 		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 5.884615384615385d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_6.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: -2.75d
+			y: 10.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 12.5d
+			y: 20.75d
+		}
 	]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -275,7 +287,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -295,7 +307,7 @@
 			}]
 			title: "Boss遗物器官"
 			x: -8.75d
-			y: 7.5d
+			y: 8.25d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
@@ -635,7 +647,7 @@
 			}]
 			title: "进化器官"
 			x: -8.75d
-			y: 14.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["437705D28D92B135"]
@@ -664,7 +676,7 @@
 			}]
 			title: "模板器官进化"
 			x: -6.75d
-			y: 15.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["437705D28D92B135"]
@@ -691,7 +703,7 @@
 			}]
 			title: "伸缩臂"
 			x: -7.75d
-			y: 15.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -711,14 +723,14 @@
 			}]
 			title: "碎片"
 			x: -8.75d
-			y: 17.5d
+			y: 19.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
 			description: [
 				"从&2冷血杀手&r的胸腔中获得，能够给予弱小的敌人强大的反弹伤害。"
 				""
-				"可以将其放置在器官容器中进化为心之剑。"
+				"可以将其放置在器官容器中进化为&6心之剑&r。"
 			]
 			icon: {
 				Count: 1b
@@ -753,7 +765,7 @@
 				}
 			]
 			x: -1.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -775,7 +787,7 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -797,7 +809,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -814,7 +826,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -831,7 +843,7 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -853,7 +865,7 @@
 				type: "item"
 			}]
 			x: 1.25d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -875,7 +887,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -901,7 +913,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -923,7 +935,7 @@
 				type: "item"
 			}]
 			x: 3.25d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -945,7 +957,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -967,7 +979,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1005,7 +1017,7 @@
 				}
 			]
 			x: -7.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["24E73A64F055728A"]
@@ -1051,7 +1063,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1071,7 +1083,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1091,7 +1103,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1111,7 +1123,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1131,7 +1143,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1151,7 +1163,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1171,7 +1183,7 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1191,7 +1203,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 18.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1213,7 +1225,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1235,7 +1247,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1257,7 +1269,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1279,7 +1291,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -1295,7 +1307,7 @@
 			}]
 			title: "食物器官"
 			x: -8.75d
-			y: 20.5d
+			y: 22.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1317,7 +1329,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1339,7 +1351,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -1387,7 +1399,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -1533,7 +1545,7 @@
 			}]
 			title: "机械"
 			x: -8.75d
-			y: 11.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1555,7 +1567,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1577,7 +1589,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1599,7 +1611,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1621,7 +1633,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1643,7 +1655,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1669,7 +1681,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1695,7 +1707,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1721,7 +1733,7 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1747,7 +1759,7 @@
 				type: "item"
 			}]
 			x: 1.25d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1769,7 +1781,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1794,7 +1806,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1815,7 +1827,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 8.5d
+			y: 9.25d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1841,7 +1853,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1863,7 +1875,7 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1885,7 +1897,7 @@
 				type: "item"
 			}]
 			x: 3.25d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1911,7 +1923,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -2328,7 +2340,7 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -2354,7 +2366,7 @@
 				type: "item"
 			}]
 			x: 1.25d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -2380,7 +2392,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 12.5d
+			y: 14.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -2406,7 +2418,7 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 21.5d
+			y: 23.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2432,7 +2444,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 9.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2458,7 +2470,402 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 9.5d
+			y: 10.25d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			description: [
+				"小型动物的器官刚好适合用于制作炸鸡套餐。"
+				""
+				"通过炸鸡套餐在胸腔里的摆放，你可以实现一个幸运最大化的方案。"
+			]
+			icon: {
+				Count: 1b
+				id: "kubejs:chicken_strip"
+				tag: { }
+			}
+			id: "494CC4D745FB4B92"
+			rewards: [{
+				count: 4
+				id: "03374923FA9C0A51"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "幸运炸鸡！"
+			tasks: [
+				{
+					id: "41855308F7541D3D"
+					item: {
+						Count: 1b
+						id: "kubejs:chicken_heart"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "0687142B2327A43B"
+					item: {
+						Count: 1b
+						id: "kubejs:chicken_kidney"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "40DE11B32767A562"
+					item: {
+						Count: 1b
+						id: "kubejs:chicken_lung"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "76315CF02807B8A7"
+					item: {
+						Count: 1b
+						id: "kubejs:chicken_strip"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "麦乐鸡套餐！"
+			x: -0.75d
+			y: 23.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"带血骨剑在&c沼泽巨颌怪&r的胸腔中可以获得。"
+				""
+				"其在胸腔中时，根据长弓射出的弓箭击中时的双方距离进行伤害结算。在距离低于20时，伤害会&c平方下降&r；而在距离高于20时，伤害会&6平方上升&r。最高提高5倍伤害。"
+			]
+			id: "0A9C7FE4A4E11D23"
+			rewards: [{
+				id: "1B393E241E049C92"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "鲜血直流. . .但它却从未悔改"
+			tasks: [{
+				id: "3D78F57AB00EFCFF"
+				item: {
+					Count: 1b
+					id: "kubejs:bloody_bone_arrow"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"紫水晶魔力核心在击败&d黑曜石巨柱&r的时候会掉落。"
+				""
+				"将其装备在胸腔中，使用主动按键（默认X）会消耗当前所有的法力值来释放&6超限法术:魔法箭&r。超限等级随着消耗法力值的数量而提高。"
+			]
+			id: "0F9C204D570E1601"
+			rewards: [{
+				id: "59C0991598FC8020"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它时刻准备着破碎"
+			tasks: [{
+				id: "6BEB4CDE60A33C76"
+				item: {
+					Count: 1b
+					id: "kubejs:amethyst_magic_core"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"奥林匹斯熔炉可以在&c火神&r的胸腔中获得。"
+				""
+				"在启用&c熔火/心火&r状态时，其会源源不断的提供大量资源点数。资源点数的提供数量取决于两个buff的剩余时长/效果等级。"
+			]
+			id: "209ECD988658572E"
+			rewards: [{
+				id: "678E1C3F4F18279B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它一直都在燃烧，它也在等待你的燃烧"
+			tasks: [{
+				id: "0F962208EB06DF56"
+				item: {
+					Count: 1b
+					id: "kubejs:vulcan_furnace"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"原始骑士核心能够在&c最初的骑士&r的胸腔中发现。"
+				""
+				"其能够将你的额外临时生命转换成伤害。"
+			]
+			id: "3DEFAC7D9ECACE04"
+			rewards: [{
+				id: "55EEA4D07289184A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "他还活着，他在等待一个人"
+			tasks: [{
+				id: "4844783204781FA7"
+				item: {
+					Count: 1b
+					id: "kubejs:origin_knight_core"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"破碎的海晶王冠可以在&c海晶监视者&r的胸腔中发现。"
+				""
+				"能够被修复成&6海晶王冠&r。"
+			]
+			id: "6CFD4B15BBC3AE7D"
+			rewards: [{
+				id: "7439EBFFF0DAA91B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "破碎的皇冠正是昔日权利的证明"
+			tasks: [{
+				id: "7B2B32A7AB75FDAD"
+				item: {
+					Count: 1b
+					id: "kubejs:broken_prismarine_crown"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.75d
+			y: 11.25d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: [
+				"通过修复&6破碎的海晶王冠&r获得。"
+				""
+				"能够让你为负数的胸腔属性变为1。"
+			]
+			id: "0127B35736599543"
+			rewards: [{
+				id: "709281020A0D9529"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "神灵降世"
+			tasks: [{
+				id: "3379B7D27A69CE09"
+				item: {
+					Count: 1b
+					id: "kubejs:prismarine_crown"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["575ADA02AEE66047"]
+			description: [
+				"来源于&b冰龙&r体内的强大器官，是冰龙力量的源泉。"
+				""
+				"提供&d结晶&r效果，使得末影水晶也可以为你充能。"
+				""
+				"你可以通过消耗法力值释放&b主动技能——超限：刺骨寒风&r。使用者的&e最大生命值&r越多，其&e超限等级&r越高。"
+				""
+				"如果你是龙，也好。"
+			]
+			id: "5784F57C0810747F"
+			rewards: [{
+				id: "68975D76407EFF17"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "你可曾听见……凛冽寒风"
+			tasks: [{
+				id: "7C95771351B964E1"
+				item: {
+					Count: 1b
+					id: "kubejs:ice_dragon_bead"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["575ADA02AEE66047"]
+			description: [
+				"来源于&4火龙&r体内的强大器官，是火龙力量的源泉。"
+				""
+				"提供&d结晶&r效果，使得末影水晶也可以为你充能。"
+				""
+				"你可以通过消耗法力值释放&4主动技能——超限：火焰吐息&r。使用者的&e最大生命值&r越多，其&e超限等级&r越高。"
+				""
+				"如果你是龙，也好。"
+			]
+			id: "7AA8D25C679C5531"
+			rewards: [{
+				id: "4AEA942C351C274B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "烈焰啊，焚尽一切！"
+			tasks: [{
+				id: "114923DFFBB40689"
+				item: {
+					Count: 1b
+					id: "kubejs:fire_dragon_bead"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["575ADA02AEE66047"]
+			description: [
+				"来源于&5电龙&r体内的强大器官，是电龙力量的源泉。"
+				""
+				"提供&d结晶&r效果，使得末影水晶也可以为你充能。"
+				""
+				"你可以通过消耗法力值释放&5主动技能——超限：电刑&r。使用者的&e最大生命值&r越多，其&e超限等级&r越高。"
+				""
+				"如果你是龙，也好。"
+			]
+			id: "51B95DC783E4F9D6"
+			rewards: [{
+				id: "5B00FF6DFE39FF72"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我以雷霆，击碎黑暗"
+			tasks: [{
+				id: "394E2D3D632B27A6"
+				item: {
+					Count: 1b
+					id: "kubejs:lightning_dragon_bead"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"当巨龙生命垂危之际，你可以打开它们的胸腔，并从中夺取&e龙之器官&r。"
+				""
+				"不同种类的巨龙，其器官的属性也并不相同："
+				"&4火龙器官&r会为你提供无与伦比的&4力量&r；"
+				"&b冰龙器官&r会为你提供坚不可摧的&b防御&r；"
+				"&5电龙器官&r会为你提供风驰电掣的&5速度&r。"
+				""
+				"在巨龙体内，你还可以找到它们强大力量的核心——&e巨龙宝玉&r。"
+			]
+			icon: {
+				Count: 1b
+				id: "iceandfire:dragon_skull_fire"
+				tag: {
+					DragonAge: 75
+					Stage: 4
+				}
+			}
+			id: "575ADA02AEE66047"
+			shape: "rsquare"
+			subtitle: "来源于巨龙体内的强大力量"
+			tasks: [{
+				id: "6C1E41C836C7813A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "龙之器官"
+			x: 6.5d
+			y: 19.5d
+		}
+		{
+			dependencies: ["575ADA02AEE66047"]
+			description: [
+				"&c龙血器官&r拥有强大的基础属性，由&eT3器官&r在&e龙钢锻炉&r中沐浴任意龙血而来。"
+				""
+				"其中&c龙血心脏&r会给予你&c主动技能——龙化&r。在龙化状态下，龙类器官会给予你减伤效果，在减伤溢出时会将伤害转化为额外生命。"
+				""
+				"神经效率影响龙化状态的持续时间，龙类器官种类影响龙化状态的效果。"
+			]
+			icon: {
+				Count: 1b
+				id: "kubejs:dragon_blood_heart"
+				tag: { }
+			}
+			id: "4E5E0F7CE3150DCF"
+			rewards: [{
+				id: "0BB2C1D411983AF5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "沐浴了龙血的器官宛若新生"
+			tasks: [{
+				id: "02417E9496B389CA"
+				item: {
+					Count: 1b
+					id: "kubejs:dragon_blood_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "龙血器官"
+			x: 10.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"塑封心在&c远古巫师&r的胸腔中可以获得。"
+				""
+				"塑封心能够提高所有用器官释放出的&b超限法术&r的等级，在超限法术为核心的构筑之中用处广泛。"
+			]
+			id: "445067B21A9D25A9"
+			subtitle: "它依旧在跳动着"
+			tasks: [{
+				id: "189552414B4F2355"
+				item: {
+					Count: 1b
+					id: "kubejs:plastic_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.75d
+			y: 11.25d
 		}
 	]
 	title: "胸腔：器官收集指南"

@@ -13,22 +13,20 @@
   "boots": {
     "itemKey": "irons_spellbooks:wandering_magician_boots"
   },
-  "mainHand": {
-    "itemKey": "irons_spellbooks:copper_spell_book",
-    "mixAndMatch": [
-      "irons_spellbooks:rotten_spell_book",
-      "irons_spellbooks:iron_spell_book",
-      "irons_spellbooks:gold_spell_book"
-    ]
-  },
   "offHand": {
+    "itemKey": "irons_spellbooks:graybeard_staff",
+    "mixAndMatch": [
+    "irons_spellbooks:artificer_cane"
+    ]
+  },
+  "additionalSetPieces": [{
     "itemKey": "irons_spellbooks:copper_spell_book",
     "mixAndMatch": [
       "irons_spellbooks:rotten_spell_book",
       "irons_spellbooks:iron_spell_book",
       "irons_spellbooks:gold_spell_book"
     ]
-  },
+  }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
     "若你一直安于现状……"
@@ -38,15 +36,15 @@
       "type": "attribute",
       "name": "irons_spellbooks:spell_power",
       "modifierUUID": "5F77C592-205D-4365-A7A1-C5A21E306C9D",
-      "description": "+60% 魔法伤害",
-      "value": 0.6
+      "description": "+70% 魔法伤害",
+      "value": 0.7
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:spell_resist",
       "modifierUUID": "24EC5DED-6C10-4E59-B7DA-E6611B98B987",
-      "description": "+60% 魔法抵抗",
-      "value": 0.6
+      "description": "+70% 魔法抵抗",
+      "value": 0.7
     }
   ]
 }

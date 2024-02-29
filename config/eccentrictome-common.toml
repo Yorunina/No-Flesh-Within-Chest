@@ -1,0 +1,20 @@
+
+#Common configuration settings
+[common]
+	#Allow all items to be added
+	allitems = false
+	#Disable overlay previewing tome conversion
+	disable_overlay = false
+	#Whitelisted items
+	items = ["tconstruct:materials_and_you", "tconstruct:puny_smelting", "tconstruct:mighty_smelting", "tconstruct:fantastic_foundry", "tconstruct:tinkers_gadgetry", "integrateddynamics:on_the_dynamics_of_integration", "evilcraft:origins_of_darkness", "cookingforblockheads:no_filter_edition", "alexsmobs:animal_dictionary", "occultism:dictionary_of_spirits", "theoneprobe:probenote", "compactmachines:personal_shrinking_device", "draconicevolution:info_tablet", "iceandfire:bestiary", "rootsclassic:runic_tablet", "enigmaticlegacy:the_acknowledgment", "ad_astra:astrodux"]
+	#Whitelisted names
+	names = ["book", "tome", "lexicon", "nomicon", "manual", "knowledge", "pedia", "compendium", "guide", "codex", "journal", "enchiridion", "grimoire"]
+	#Mod aliases
+	aliases = ["mythicbotany=botania", "integratedtunnels=integrateddynamics", "integratedterminals=integrateddynamics", "integratedcrafting=integrateddynamics", "rftoolsbuilder=rftoolsbase", "rftoolscontrol=rftoolsbase", "rftoolsdim=rftoolsbase", "rftoolspower=rftoolsbase", "rftoolsstorage=rftoolsbase", "rftoolsutility=rftoolsbase", "rftoolspower=rftoolsbase", "deepresonance=rftoolsbase", "xnet=rftoolsbase", "mysticalaggraditions=mysticalagriculture"]
+	#Blacklisted mods
+	exclude = []
+	#Blacklisted items
+	exclude_items = ["apotheosis:boots_tome", "apotheosis:bow_tome", "apotheosis:chestplate_tome", "apotheosis:fishing_tome", "apotheosis:helmet_tome", "apotheosis:leggings_tome", "apotheosis:other_tome", "apotheosis:pickaxe_tome", "apotheosis:scrap_tome", "apotheosis:weapon_tome", "ars_nouveau:annotated_codex", "blue_skies:blue_journal", "darkutils:book_galactic", "darkutils:book_runelic", "darkutils:book_restore", "darkutils:tome_enchanting", "darkutils:tome_illager", "darkutils:tome_pigpen", "darkutils:tome_runelic", "darkutils:tome_sga", "darkutils:tome_shadows", "minecolonies:ancienttome", "minecraft:book", "minecraft:enchanted_book", "occultism:book_of_binding_afrit", "occultism:book_of_binding_bound_afrit", "occultism:book_of_binding_bound_djinni", "occultism:book_of_binding_bound_foliot", "occultism:book_of_binding_bound_marid", "occultism:book_of_binding_djinni", "occultism:book_of_binding_foliot", "occultism:book_of_binding_marid", "occultism:book_of_calling_djinni_manage_machine", "occultism:book_of_calling_foliot_cleaner", "occultism:book_of_calling_foliot_lumberjack", "occultism:book_of_calling_foliot_transport_items", "projecte:tome", "quark:ancient_tome", "tombstone:book_of_disenchantment", "tombstone:book_of_recycling", "tombstone:book_of_repairing", "tombstone:book_of_magic_impregnation"]
+	#Whitelisted item tags
+	include_item_tags = []
+

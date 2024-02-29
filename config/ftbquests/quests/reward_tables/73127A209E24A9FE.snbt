@@ -1,39 +1,81 @@
 {
-	icon: "hexerei:blood_bottle"
+	icon: "kubejs:secret_of_origin"
 	id: "73127A209E24A9FE"
 	loot_size: 1
 	order_index: 2
 	rewards: [
 		{
-			command: "/nfwc stages @p {removeStages:[setting_monster_health_bonus_2, setting_monster_health_bonus_3,setting_monster_health_bonus_5,setting_monster_health_bonus_10]}"
-			icon: "hexerei:blood_bottle"
-			title: "血量乘数 1x"
+			command: "/nfwc difficult @p 1"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：1"
 			type: "command"
 		}
 		{
-			command: "/nfwc stages @p {addStages:[setting_monster_health_bonus_2], removeStages:[setting_monster_health_bonus_3,setting_monster_health_bonus_5,setting_monster_health_bonus_10]}"
-			icon: "hexerei:blood_bottle"
-			title: "血量乘数 2x"
+			command: "/nfwc difficult @p 2"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：2"
 			type: "command"
 		}
 		{
-			command: "/nfwc stages @p {addStages:[setting_monster_health_bonus_3], removeStages:[setting_monster_health_bonus_2,setting_monster_health_bonus_5,setting_monster_health_bonus_10]}"
-			icon: "hexerei:blood_bottle"
-			title: "血量乘数 3x"
+			command: "/nfwc difficult @p 3"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：3"
 			type: "command"
 		}
 		{
-			command: "/nfwc stages @p {addStages:[setting_monster_health_bonus_5], removeStages:[setting_monster_health_bonus_2,setting_monster_health_bonus_3,setting_monster_health_bonus_10]}"
-			icon: "hexerei:blood_bottle"
-			title: "血量乘数 5x"
+			command: "/nfwc difficult @p 4"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：4"
 			type: "command"
 		}
 		{
-			command: "/nfwc stages @p {addStages:[setting_monster_health_bonus_10], removeStages:[setting_monster_health_bonus_2,setting_monster_health_bonus_3,setting_monster_health_bonus_5]}"
-			icon: "hexerei:blood_bottle"
-			title: "血量乘数 10x"
+			command: "/nfwc difficult @p 5"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：5"
+			type: "command"
+		}
+		{
+			command: "/nfwc difficult @p 6"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：6"
+			type: "command"
+		}
+		{
+			command: "/nfwc difficult @p 7"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：7"
+			type: "command"
+		}
+		{
+			command: "/nfwc difficult @p 8"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：8"
+			type: "command"
+		}
+		{
+			command: "/nfwc difficult @p 9"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：9"
+			type: "command"
+		}
+		{
+			command: "/nfwc difficult @p 10"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：10"
+			type: "command"
+		}
+		{
+			command: "/nfwc difficult @p 11"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：11"
+			type: "command"
+		}
+		{
+			command: "/nfwc difficult @p 12"
+			icon: "kubejs:secret_of_origin"
+			title: "基准难度：12"
 			type: "command"
 		}
 	]
-	title: "血量乘数"
+	title: "基准难度"
 }

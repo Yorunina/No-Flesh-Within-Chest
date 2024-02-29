@@ -1,7 +1,7 @@
 {
   "key" : "iceandfire_ice_dragonsteel",
   "category" : "metal",
-  "primary" : 7.5,
+  "primary" : 8.5,
   "secondary" : 3.1,
   "tertiary" : 3.5,
   "durability" : 1640,
@@ -19,6 +19,6 @@
     "items" : [ "iceandfire:dragonsteel_ice_ingot" ]
   },
   "requiredTools" : {
-    "hammer_dig" : "minecraft:iron"
+    "hammer_dig" : "minecraft:diamond"
   }
 }

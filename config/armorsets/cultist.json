@@ -28,7 +28,10 @@
     ]
   },
   "additionalSetPieces": [{
-    "itemKey": "nameless_trinkets:vampire_blood"
+    "itemKey": "nameless_trinkets:vampire_blood",
+    "mixAndMatch": [
+    "irons_spellbooks:necronomicon_spell_book"
+    ]
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [

@@ -1,0 +1,53 @@
+{
+  "armorSetName": "食人妖",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "iceandfire:mountain_troll_leather_helmet",
+    "mixAndMatch": [
+      "iceandfire:frost_troll_leather_helmet",
+      "iceandfire:forest_troll_leather_helmet"
+    ]
+  },
+  "chest": {
+    "itemKey": "iceandfire:mountain_troll_leather_chestplate",
+    "mixAndMatch": [
+      "iceandfire:frost_troll_leather_chestplate",
+      "iceandfire:forest_troll_leather_chestplate"
+    ]
+  },
+  "legs": {
+    "itemKey": "iceandfire:mountain_troll_leather_leggings",
+    "mixAndMatch": [
+      "iceandfire:frost_troll_leather_leggings",
+      "iceandfire:forest_troll_leather_leggings"
+    ]
+  },
+  "boots": {
+    "itemKey": "iceandfire:mountain_troll_leather_boots",
+    "mixAndMatch": [
+      "iceandfire:frost_troll_leather_boots",
+      "iceandfire:forest_troll_leather_boots"
+    ]
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "穿上它让你脑子有点不灵光……"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "irons_spellbooks:spell_power",
+      "modifierUUID": "0739B456-FC1B-4BA5-81B0-E2B509A1C5F1",
+      "description": "-70% 法术伤害",
+      "value": -0.7
+    },
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.attack_damage",
+      "modifierUUID": "4A95C392-73D7-4402-86F3-AF25FE53BA29",
+      "attributeOperation": 2,
+      "description": "+40% 近战伤害",
+      "value": 0.4
+    }
+  ]
+}

@@ -23,6 +23,20 @@
         },
         {
           "type": "item",
+          "name": "kubejs:chicken_flavor_powder",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
           "name": "kubejs:god_bless_empty_necklace",
           "weight": 10,
           "functions": [

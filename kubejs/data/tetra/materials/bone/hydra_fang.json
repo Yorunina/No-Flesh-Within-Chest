@@ -1,0 +1,28 @@
+{
+    "key": "iaf_hydra_fang",
+    "category": "bone",
+    "primary": 5.8,
+    "secondary": 1.8,
+    "tertiary": 1.6,
+    "durability": 163,
+    "integrityCost": 2,
+    "integrityGain": 8,
+    "magicCapacity": 376,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 5,
+    "effects": {
+      "art_of_forging:carnage": [1,8]
+    },
+    "tints": {
+        "glyph": "bone_glyph",
+        "texture": "bone"
+    },
+    "textures": ["bone", "crude"],
+  
+    "material": {
+      "items": ["iceandfire:hydra_fang"]
+    },
+    "requiredTools": {
+      "hammer_dig": "minecraft:stone"
+    }
+  }

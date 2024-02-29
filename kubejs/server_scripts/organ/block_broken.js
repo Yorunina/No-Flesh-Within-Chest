@@ -64,8 +64,8 @@ const organBlockBrokenOnlyStrategies = {
         }
         if (count >= 64 && Math.random() <= 0.03) {
             let luck = Math.max(player.getLuck(), 1)
-            if (luck > 5) {
-                player.give(Item.of('kubejs:rare_mineral_cluster').withCount(Math.max(Math.floor(5 - 30 / luck), 1) * itemMap.get('kubejs:ore_lung').length))
+            if (luck > 10) {
+                player.give(Item.of('kubejs:rare_mineral_cluster').withCount(Math.max(Math.floor(5 - 50 / luck), 1) * itemMap.get('kubejs:ore_lung').length))
             }
             player.give(Item.of('kubejs:common_mineral_cluster').withCount(Math.max(Math.floor(5 - 5 / luck), 1) * itemMap.get('kubejs:ore_lung').length))
             count = count - 64
@@ -83,9 +83,6 @@ const organBlockBrokenOnlyStrategies = {
             event.block.set('minecraft:air')
             updateResourceCount(player, count - 100)
             event.cancel()
-        }
-        if (count > 500 && Math.random() < 0.01) { 
-
         }
     },
 }

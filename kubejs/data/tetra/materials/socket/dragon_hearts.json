@@ -1,0 +1,27 @@
+{
+    "key": "iaf_dragon_hearts",
+    "category": "socket",
+    "primary": 0,
+    "secondary": 0,
+    "tertiary": 0,
+    "durability": 135,
+    "integrityCost": 3,
+    "integrityGain": 0,
+    "magicCapacity": 355,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "effects": {
+        "art_of_forging:resolve": [3,5]   
+    },
+    "tints": {
+      "glyph": "9C9C9C",
+      "texture": "9C9C9C"
+    },
+    "textures": [
+      "default"
+    ],
+    "experienceCost": 50,
+    "material": {
+        "tag": "iceandfire:dragon_hearts"
+    }
+  }

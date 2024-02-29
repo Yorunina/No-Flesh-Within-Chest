@@ -11,7 +11,7 @@
     "toolLevel": "minecraft:stone",
     "toolEfficiency": 5,
     "effects": {
-        "throwable": 8  
+        "throwable": 5  
     },
     "tints": {
         "glyph": "bone_glyph",

@@ -16,12 +16,12 @@
             {
                 "attribute": "generic.max_health",    
                 "operation": "MULTIPLY_BASE",    
-                "value": 7.0   
+                "value": 9.0   
             },
             {
                 "attribute": "irons_spellbooks:spell_resist",    
                 "operation": "MULTIPLY_BASE",    
-                "value": 0.95
+                "value": 0.98
             }
         ],
         "rewards": [],
@@ -39,12 +39,12 @@
             {
                 "attribute": "generic.max_health",    
                 "operation": "MULTIPLY_BASE",    
-                "value": 7.0   
+                "value": 9.0   
             },
             {
                 "attribute": "generic.armor",    
                 "operation": "ADDITION",    
-                "value": 80
+                "value": 120
             }
         ],
         "rewards": [],
@@ -64,7 +64,7 @@
             {
                 "attribute": "generic.max_health",    
                 "operation": "MULTIPLY_BASE",    
-                "value": 3.0   
+                "value": 7.0   
             }
         ],
         "rewards": [],
@@ -84,7 +84,7 @@
             {
                 "attribute": "generic.max_health",    
                 "operation": "MULTIPLY_BASE",    
-                "value": 5.0   
+                "value": 7.0   
             }
         ],
         "rewards": [],

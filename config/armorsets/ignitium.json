@@ -1,0 +1,34 @@
+{
+  "armorSetName": "ÌÚÑ×",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "cataclysm:ignitium_helmet"
+  },
+  "chest": {
+    "itemKey": "cataclysm:ignitium_chestplate",
+    "mixAndMatch": [
+      "cataclysm:ignitium_elytra_chestplate"
+    ]
+  },
+  "legs": {
+    "itemKey": "cataclysm:ignitium_leggings"
+  },
+  "boots": {
+    "itemKey": "cataclysm:ignitium_boots"
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "´ÍÓèÄãµÄµÐÈËÑ×Ö®³Í½ä"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "effect",
+      "name": "goety:burn_hex",
+      "value": 0.0,
+      "interactionType": "attack",
+      "interactionDuration": 600,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

@@ -2,8 +2,8 @@ Platform.mods.kubejs.name = 'No Flesh Within Chest'
 global.ORGAN_LIST = [];
 
 global.OPERATION_ADD = 'addition'
-global.OPERATION_MUTI_TOTAL = 'multiply_total'
-global.OPERATION_MUTI_BASE = 'multiply_base'
+global.OPERATION_MULTI_TOTAL = 'multiply_total'
+global.OPERATION_MULTI_BASE = 'multiply_base'
 
 global.HEALTH_UP = { key: 'minecraft:generic.max_health', name: 'kubejsMaxHealth', operation: 'addition' }
 global.ATTACK_UP = { key: 'minecraft:generic.attack_damage', name: 'kubejsAttackDamage', operation: 'addition' }
@@ -30,6 +30,8 @@ global.PENETRATION = { key: 'obscure_api:penetration', name: 'kubejsPenetration'
 global.SUMMON_DAMAGE = { key: 'irons_spellbooks:summon_damage', name: 'kubejsSummonDamage', operation: 'addition' }
 global.BLOOD_SPELL_DAMAGE = { key: 'irons_spellbooks:blood_spell_power', name: 'kubejsBloodSpellDamage', operation: 'addition' }
 global.HOLY_SPELL_DAMAGE = { key: 'irons_spellbooks:holy_spell_power', name: 'kubejsHolySpellDamage', operation: 'addition' }
+global.LUCK = { key: 'minecraft:generic.luck', name: 'kubejsLuck', operation: 'addition' }
+global.LUCK_MULTI_BASE = { key: 'minecraft:generic.luck', name: 'kubejsLuckMultiBase', operation: 'multiply_base' }
 
 global.ATTRIBUTE_MAP = {
     'kubejsAttackDamage': global.ATTACK_UP,
@@ -57,6 +59,8 @@ global.ATTRIBUTE_MAP = {
     'kubejsSummonDamage': global.SUMMON_DAMAGE,
     'kubejsBloodSpellDamage': global.BLOOD_SPELL_DAMAGE,
     'kubejsHolySpellDamage': global.HOLY_SPELL_DAMAGE,
+    'kubejsLuck': global.LUCK,
+    'kubejsLuckMultiBase': global.LUCK_MULTI_BASE,
 }
 
 global.TYPE_MAP = {
@@ -92,6 +96,10 @@ global.TYPE_MAP = {
     'kubejs:huge': Text.of({ "translate": "kubejs.tooltips.huge" }).color('#a900fd'),
     'kubejs:warp': Text.darkPurple({ "translate": "kubejs.tooltips.warp" }),
     'kubejs:prehistory': Text.of({ "translate": "kubejs.tooltips.prehistory" }).color('#d6d124'),
+    'kubejs:dragon': Text.of({ "translate": "kubejs.tooltips.dragon" }).color('#bc00bc'),
+    'kubejs:void': Text.of({ "translate": "kubejs.tooltips.void" }).color('#c2bec2'),
+    'kubejs:fantasy': Text.of({ "translate": "kubejs.tooltips.fantasy" }).color('#cd9b9b'),
+    'kubejs:infected': Text.of({ "translate": "kubejs.tooltips.infected" }).color('#00ba03'),
 }
 
 
@@ -147,6 +155,7 @@ global.SCORE_MAP = {
     'chestcavity:arrow_dodging': { "translate": "kubejs.chestcavity.arrow_dodging" },
     'chestcavity:impact_resistant': { "translate": "kubejs.chestcavity.impact_resistant" },
     'chestcavity:rotgut': { "translate": "kubejs.chestcavity.rotgut" },
+    'chestcavity:ease_of_access': { "translate": "kubejs.chestcavity.ease_of_access" },
 }
 
 global.SCORE_HOVER_MAP = {
@@ -200,4 +209,5 @@ global.SCORE_HOVER_MAP = {
     'chestcavity:arrow_dodging': { "translate": "kubejs.chestcavity.hover.arrow_dodging" },
     'chestcavity:impact_resistant': { "translate": "kubejs.chestcavity.hover.impact_resistant" },
     'chestcavity:rotgut': { "translate": "kubejs.chestcavity.hover.rotgut" },
+    'chestcavity:ease_of_access': { "translate": "kubejs.chestcavity.hover.ease_of_access" },
 }

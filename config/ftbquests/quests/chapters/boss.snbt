@@ -1,0 +1,1446 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "boss"
+	group: "4F4F4EA8CE67985B"
+	icon: "somebosses:dark_magic_gauntlet"
+	id: "1D958E2F7D239737"
+	images: [
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_2.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 5.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 9.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 12.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 15.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 16.5d
+			y: 8.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 16.5d
+			y: 5.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 16.5d
+			y: 12.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 16.5d
+			y: 15.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 18.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 1.75d
+			y: 22.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"&d《世界BOSS》模组&r提供了&d21个BOSS&r，可以通过两种方式召唤："
+				""
+				""
+				"1. 通过&6交货协议&r获取BOSS召唤物直接召唤"
+				""
+				"2. 向&6召唤祭坛&r中放入特定的物品召唤"
+				"(可以通过&e在JEI中右键召唤召唤祭坛&r，或&e将鼠标悬停于背包中的召唤祭坛按U键&r查看用途来查看&e召唤配方&r。)"
+			]
+			icon: "summoningrituals:altar"
+			id: "68EFDD765396B87D"
+			tasks: [{
+				id: "7B86EB34E9717A46"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "世界BOSS"
+			x: -4.25d
+			y: 4.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: "somebosses:furnace_torch"
+			id: "1102363C412CD193"
+			rewards: [{
+				id: "4ADAE1FE667FB3EE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:flaming_berserker"
+				icon: "somebosses:furnace_torch"
+				id: "50715CBDF1EB9744"
+				type: "kill"
+				value: 1L
+			}]
+			title: "烈焰狂战士"
+			x: -3.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:rusty_sword_relic"
+			id: "7AA225CFD6F6BBA8"
+			rewards: [{
+				id: "64F5B2DFB0EC7547"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:ancient_wizard"
+				icon: "somebosses:rusty_sword_relic"
+				id: "5E0A9FF724BA1550"
+				type: "kill"
+				value: 1L
+			}]
+			title: "远古巫师"
+			x: -2.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:token_of_the_ninja"
+			id: "3F743349368C7471"
+			rewards: [{
+				id: "13C26E66608F75A3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:merciless_assasin"
+				icon: "somebosses:token_of_the_ninja"
+				id: "52DCCF460ED4A7AC"
+				type: "kill"
+				value: 1L
+			}]
+			title: "冷血杀手"
+			x: -1.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:frozen_shield_plate"
+			id: "63D8444AA3929FF8"
+			rewards: [{
+				id: "4C3BA9A8DFAE10BD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:froverlord"
+				icon: "somebosses:frozen_shield_plate"
+				id: "69B7E0CB804B21C1"
+				type: "kill"
+				value: 1L
+			}]
+			title: "永冻领主"
+			x: -0.25d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:gilded_dynamite"
+			id: "3AB7F8C482DD8089"
+			rewards: [{
+				id: "544BCBC2A66F8CC4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:vulcan"
+				icon: "somebosses:gilded_dynamite"
+				id: "1B560DD1BDD2C474"
+				type: "kill"
+				value: 1L
+			}]
+			title: "火神"
+			x: 0.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:disgusting_pendant"
+			id: "38AC8A74FA810D8B"
+			rewards: [{
+				id: "596BF39114567089"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:ender_ordnance"
+				icon: "somebosses:disgusting_pendant"
+				id: "3815A80B52886D00"
+				type: "kill"
+				value: 1L
+			}]
+			title: "末影军械"
+			x: 1.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:cactus_relic"
+			id: "61968EC65ACE7240"
+			rewards: [{
+				id: "05C8D640DD78ED62"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:sand_giant"
+				icon: "somebosses:cactus_relic"
+				id: "32D786742A29FE95"
+				type: "kill"
+				value: 1L
+			}]
+			title: "聚沙巨魔"
+			x: 2.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:illegal_beacon"
+			id: "3075B2CEE684B68F"
+			rewards: [{
+				id: "633BAE92D8BE4C31"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:aesegull"
+				icon: "somebosses:illegal_beacon"
+				id: "60473F608F6D0ED7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "立场欺诈者"
+			x: 3.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:one_eyed_wrait_in_a_bottle"
+			id: "2FA35E059E71C850"
+			rewards: [{
+				id: "204BA8482812BBAF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:mono_eyed_skeleton"
+				icon: "somebosses:one_eyed_wrait_in_a_bottle"
+				id: "642CC2B34BF5EA6D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "独眼骷髅"
+			x: 4.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:vampire_bait"
+			id: "230A2973CBD947A7"
+			rewards: [{
+				id: "0557DD550D4BBF8C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:crimson_vampire"
+				icon: "somebosses:vampire_bait"
+				id: "31A61EA9AF129F99"
+				type: "kill"
+				value: 1L
+			}]
+			title: "吸血鬼恶魔"
+			x: 5.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:prismarine_eye"
+			id: "35A35A62C6E9C71C"
+			rewards: [{
+				id: "5BEF044FCFD4CCFC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:prismarine_watcher"
+				icon: "somebosses:prismarine_eye"
+				id: "197E6493BDE45735"
+				type: "kill"
+				value: 1L
+			}]
+			title: "海晶监视者"
+			x: 6.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:burning_volcanic_rock"
+			id: "6BD52270D760EA85"
+			rewards: [{
+				id: "1406E729F12B5DFE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "goety:volcano"
+				icon: "somebosses:burning_volcanic_rock"
+				id: "4BD74DE255841BC2"
+				type: "kill"
+				value: 1L
+			}]
+			title: "火山"
+			x: 7.75d
+			y: 5.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:necromancy_staff"
+			id: "7BBF4518E64E4ACC"
+			rewards: [{
+				id: "2C8F875AFF3524EF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:nameless_one"
+				icon: "somebosses:necromancy_staff"
+				id: "42C80A1D9ACB5F9C"
+				type: "kill"
+				value: 1L
+			}]
+			title: "无名者"
+			x: -3.25d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:dark_magic_gauntlet"
+			id: "2696A6262EDDF11F"
+			rewards: [{
+				id: "49B9DAB9331B4DF8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:hand_head"
+				icon: "somebosses:dark_magic_gauntlet"
+				id: "6893108FD479E03A"
+				type: "kill"
+				value: 1L
+			}]
+			title: "掌手巨怪"
+			x: -2.25d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:ice_lantern"
+			id: "778FDD035CA42B56"
+			rewards: [{
+				id: "20035B030A364ED5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:frost_magma"
+				icon: "somebosses:ice_lantern"
+				id: "7B93A9698C4ABB05"
+				type: "kill"
+				value: 1L
+			}]
+			title: "霜冻岩浆怪"
+			x: -1.25d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:bone_of_curse"
+			id: "497F39A113B0BF24"
+			rewards: [{
+				id: "6212D7BD15A3025A"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:skeleton_demon"
+				icon: "somebosses:bone_of_curse"
+				id: "34FDD847724C203F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "骷髅恶魔"
+			x: -0.25d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:slab_of_command"
+			id: "3030197A175A4697"
+			rewards: [{
+				id: "540A74176A2CF510"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:stone_guard"
+				icon: "somebosses:slab_of_command"
+				id: "79EFBE304F1254CB"
+				type: "kill"
+				value: 1L
+			}]
+			title: "岩之守卫"
+			x: 0.75d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:power_generator_core"
+			id: "08D6D0CBC20DCA86"
+			rewards: [{
+				id: "382CB431FFF1F1A3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:electric_head"
+				icon: "somebosses:power_generator_core"
+				id: "56DD978A79AD6073"
+				type: "kill"
+				value: 1L
+			}]
+			title: "电磁脉冲头"
+			x: 1.75d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:cursed_spring_water"
+			id: "1D7F0AE5B73BDFFE"
+			rewards: [{
+				id: "36B9FFD1443AED0D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:man_of_water"
+				icon: "somebosses:cursed_spring_water"
+				id: "68566DE8DFC3E82E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "水人"
+			x: 2.75d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:monochrome_mask"
+			id: "46BE04772520FAA8"
+			rewards: [{
+				id: "0113135759EB7408"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:dark_mask"
+				icon: "somebosses:monochrome_mask"
+				id: "1B2377F66F966BC8"
+				type: "kill"
+				value: 1L
+			}]
+			title: "暗黑面具"
+			x: 3.75d
+			y: 6.25d
+		}
+		{
+			dependencies: ["68EFDD765396B87D"]
+			hide_dependency_lines: true
+			icon: "somebosses:chaos_insignia"
+			id: "1340BDC2F17339E1"
+			rewards: [{
+				id: "4E442C55F8855AA8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "somebosses:knight_garent"
+				icon: "somebosses:chaos_insignia"
+				id: "2C4C603A3B098D7B"
+				type: "kill"
+				value: 1L
+			}]
+			title: "最初的骑士"
+			x: 4.75d
+			y: 6.25d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"&d《Bosses of Mass Destruction》模组&r提供了&d4个BOSS&r，他们生成在不同的结构中，需要玩家去寻找。"
+				""
+				"有的BOSS为玩家提供了寻找的方法，请到&e具体BOSS页面&r查看。"
+				""
+				"当击杀了BOSS之后，玩家可以通过使用&d硫磺花蜜&r重置该结构以&e重新挑战BOSS&r。（&e硫磺花蜜可合成获得&r）"
+			]
+			icon: "bosses_of_mass_destruction:brimstone_nectar"
+			id: "638AFA1A16525BB9"
+			tasks: [{
+				id: "629F60AE6E85DED9"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "BOMD"
+			x: -4.25d
+			y: 11.25d
+		}
+		{
+			dependencies: ["638AFA1A16525BB9"]
+			description: [
+				"&dB0SS黑曜巨石柱&r在&d末地&r的&e稀有结构&r出现。"
+				""
+				"召唤方法是在结构顶端的&6黑曜石祭坛&r上放一颗&6末影之眼&r，然后稍等片刻。"
+				""
+				"击败后会在原本的祭坛处生成一根黑曜石柱子，并在顶面的中间生成一个包含奖励的潜影盒。"
+			]
+			hide_dependency_lines: true
+			icon: "bosses_of_mass_destruction:obsidian_heart"
+			id: "0334639B0C126A8D"
+			rewards: [{
+				id: "361E3C2D5DA03BDB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "末地浮空城中的秘密"
+			tasks: [{
+				entity: "goety:obsidian_monolith"
+				icon: "bosses_of_mass_destruction:obsidian_heart"
+				id: "748C2EDCD6C350AB"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.25d
+			y: 12.25d
+		}
+		{
+			dependencies: ["638AFA1A16525BB9"]
+			description: [
+				"在&d下界熔岩湖&r上找到的稀有结构，通过&e挖掘破坏中心结构—&r&6远古雕刻黑石&r才能召唤。"
+				""
+				"只有攻击其眼球才能造成伤害。"
+			]
+			hide_dependency_lines: true
+			icon: "bosses_of_mass_destruction:blazing_eye"
+			id: "61C0C761B09A0584"
+			rewards: [{
+				id: "4C2E32484BC29818"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "下界中的恶魔"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:gauntlet"
+				icon: "bosses_of_mass_destruction:blazing_eye"
+				id: "42B1503E8F714D09"
+				type: "kill"
+				value: 1L
+			}]
+			title: "发现下界铁掌的踪迹"
+			x: -1.25d
+			y: 12.25d
+		}
+		{
+			dependencies: ["638AFA1A16525BB9"]
+			description: [
+				"&e击杀亡灵生物&r随机掉落&6灵魂之星&r，手持灵魂之星&e右键&r，可以指引你找到位于&d寒冷群系中的高塔&r。"
+				""
+				"在高塔内的其中一层，可以在四方找到4个&6雕文石头祭坛&r，在各个祭坛中放入&6灵魂之星&r，即可召唤&dBOSS暗夜巫妖&r。"
+			]
+			hide_dependency_lines: true
+			icon: "bosses_of_mass_destruction:ancient_anima"
+			id: "2040133CCC7EBE4F"
+			rewards: [{
+				id: "0104AB526955454E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "灵魂之星指引着你"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:lich"
+				icon: "bosses_of_mass_destruction:ancient_anima"
+				id: "7FC89E3816CD0244"
+				type: "kill"
+				value: 1L
+			}]
+			title: "寻找暗夜巫妖的踪迹"
+			x: -2.25d
+			y: 12.25d
+		}
+		{
+			dependencies: ["638AFA1A16525BB9"]
+			description: [
+				"通过&6铃兰&r和&6紫水晶碎片&r合成&6虚空百合&r，将其种在地上，虚空百合会散发出&e花粉&r指引你寻找&d虚空之花的洞穴&r。"
+				""
+				"虚空之花的洞穴生成在&e主世界底部接近基岩层的地方&r。"
+			]
+			hide_dependency_lines: true
+			icon: "bosses_of_mass_destruction:void_thorn"
+			id: "147CD351C2BC325E"
+			rewards: [{
+				id: "139BC074ABFBB065"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "随着花粉前往地下"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:void_blossom"
+				icon: "bosses_of_mass_destruction:void_thorn"
+				id: "1260A4EA8998C574"
+				type: "kill"
+				value: 1L
+			}]
+			title: "寻找虚空之花的踪迹"
+			x: -3.25d
+			y: 12.25d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"&d《迎战（Meet Your Fight）》模组&r提供了&d4个Boss&r，每个BOSS都有独立的战利品，它们可以合成装备，例如有用的饰品或很酷的武器和工具。"
+				""
+				"这些BOSS接到&e召唤&r才会前来，你需要&d按配方合成制作&r合适的&e召唤物品&r并&e手持长按右键以召唤&r。"
+			]
+			icon: "meetyourfight:haunted_bell"
+			id: "7729DBC45AEF7D17"
+			tasks: [{
+				id: "2FCE1457A8EC99AF"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "迎战"
+			x: -4.25d
+			y: 8.25d
+		}
+		{
+			dependencies: ["7729DBC45AEF7D17"]
+			hide_dependency_lines: true
+			icon: "meetyourfight:dusk_key"
+			id: "0B6E24F5105C5DE2"
+			rewards: [{
+				id: "18A9BB3035DEAF81"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "12F2FCF51E24602F"
+					item: "meetyourfight:dusk_key"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:rosalyne"
+					icon: "meetyourfight:dusk_key"
+					id: "7FC23750DD88E511"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: -3.25d
+			y: 9.25d
+		}
+		{
+			dependencies: ["7729DBC45AEF7D17"]
+			hide_dependency_lines: true
+			icon: "meetyourfight:haunted_bell"
+			id: "4643F8D77E474B9B"
+			rewards: [{
+				id: "22893403C2B4A2E9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "265FF021C45EBF9C"
+					item: "meetyourfight:haunted_bell"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:bellringer"
+					icon: "meetyourfight:haunted_bell"
+					id: "0F103E09BF1D81E5"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: -2.25d
+			y: 9.25d
+		}
+		{
+			dependencies: ["7729DBC45AEF7D17"]
+			hide_dependency_lines: true
+			icon: "meetyourfight:fossil_bait"
+			id: "5E53B369B6F8610E"
+			rewards: [{
+				id: "5025C54B55A92A03"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "113A047DE5D55947"
+					item: "meetyourfight:fossil_bait"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:swampjaw"
+					icon: "meetyourfight:fossil_bait"
+					id: "3A3A695465028604"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: -1.25d
+			y: 9.25d
+		}
+		{
+			dependencies: ["7729DBC45AEF7D17"]
+			hide_dependency_lines: true
+			icon: "meetyourfight:devils_ante"
+			id: "59C699B6973BBF18"
+			rewards: [{
+				id: "312EF6953D36E427"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "22DD3D3D40626EE1"
+					item: "meetyourfight:devils_ante"
+					type: "item"
+				}
+				{
+					entity: "meetyourfight:dame_fortuna"
+					icon: "meetyourfight:devils_ante"
+					id: "25F08A9BC632F1D8"
+					type: "kill"
+					value: 1L
+				}
+			]
+			x: -0.25d
+			y: 9.25d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"&d《灾变（L_Ender's Cataclysm）》模组&r是一个增加了困难的地牢、具有挑战性的Boss和强大装备的模组。"
+				""
+				"目前，本模组添加了&d6个精细的Boss&r和&e5个小Boss&r，&d每个Boss都位于自己独有的结构&r，拥有独特技能，并且产出具有特殊能力的战利品。"
+				""
+				"本模组为玩家&e提供了寻找这些结构的方法&r，请去&e具体BOSS页面&r查看。"
+			]
+			icon: "cataclysm:the_incinerator"
+			id: "7C958A8AFC0EADC6"
+			tasks: [{
+				id: "5A0563FD4344CC21"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "灾变"
+			x: -4.25d
+			y: 14.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"&d远古工厂&r深埋于&e地下深处&r，这里已多年无人造访。在远古工厂的核心区域，古文明的造物先驱者正在那儿沉睡着。"
+				""
+				"可用&6机械之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r将&6下界之星&r放入&d先驱者&r体内"
+			]
+			hide_dependency_lines: true
+			icon: "cataclysm:mech_eye"
+			id: "3878A673CAAC5661"
+			rewards: [{
+				id: "054C2CAFBEBF7A21"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "先驱者"
+			tasks: [
+				{
+					id: "6CE0E9211CBD546D"
+					item: "cataclysm:mech_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:the_harbinger"
+					icon: "cataclysm:mech_eye"
+					id: "4BD820A2FAE8C624"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "寻找远古工厂"
+			x: -3.25d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"位于&d下界&r的&d烈焰竞技场&r是&d焰魔&r的栖居之所，虽然已经废弃多年，但其间的烈焰从未熄灭。"
+				""
+				"可用&6火焰之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r击杀&d烈焰竞技场&r中的&6燃魂&r，100%掉落&6炽燃余烬&r，手持此物品&e右击&r&6烈焰祭坛&r放入即可召唤。"
+			]
+			hide_dependency_lines: true
+			icon: "cataclysm:flame_eye"
+			id: "03005FB0984AFCEF"
+			rewards: [{
+				id: "482AA01B3A302F5D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "焰魔"
+			tasks: [
+				{
+					id: "159DD68E2A7DC5F3"
+					item: "cataclysm:flame_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:ignis"
+					icon: "cataclysm:flame_eye"
+					id: "4C7148353566043D"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "寻找烈焰竞技场"
+			x: -2.25d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"&d废弃堡垒&r是一个生成于&d末地外岛&r的建筑，一共分为4层，这里是&d末影守卫&r的迷宫堡垒。"
+				""
+				"进入建筑后，迎面而来的是一个有着些许虚空石堆和虚空灌注末地石砖的庭院，可以从中间的大门进入建筑内部的迷宫。"
+				""
+				"可用&6虚空之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r在第三、四层的&eBOSS房&r中，向前&e靠近&r中央的生成方块，Boss便会出现并与你战斗。"
+			]
+			hide_dependency_lines: true
+			icon: "cataclysm:void_eye"
+			id: "0F897A2DA9514E5D"
+			rewards: [{
+				id: "74FADBA41EA864F4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "末影守卫"
+			tasks: [
+				{
+					id: "129ACF4E25F69FC6"
+					item: "cataclysm:void_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:ender_guardian"
+					icon: "cataclysm:void_eye"
+					id: "48DBCF922C1E690C"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "寻找废弃堡垒"
+			x: -1.25d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"&d灵魂锻造厂&r是一座矗立于&e下界熔岩海&r上的黑石锻造厂，这里浓烟滚滚，其间沉睡着一只可怕的巨兽。"
+				""
+				"可用&6恶兽之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r在&d灵魂锻造厂&r的&e灵魂火堆&r中自然生成一个。"
+				""
+				"&8（Tips：该结构中存在一处需要按钮激活的隐藏房间，里面宝物众多，去寻找吧！）&r"
+			]
+			hide_dependency_lines: true
+			icon: "cataclysm:monstrous_eye"
+			id: "7804C70BA041A413"
+			rewards: [{
+				id: "43D130E13C50CFA3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "巨兽"
+			tasks: [
+				{
+					id: "4B3B97B5D040840C"
+					item: "cataclysm:monstrous_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:netherite_monstrosity"
+					icon: "cataclysm:monstrous_eye"
+					id: "3E9371D50F7B7484"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "寻找灵魂锻造厂"
+			x: -0.25d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"&e深海类群系的海面上&r会出现的昔日辉煌的建筑技巧极其高超的古代遗址，但在未知因素的影响下，如今它已是一座沉没的满是深渊灵的恐怖之城，在其间用古老的仪式便能够召唤渊薮之种——&d利维坦&r。"
+				""
+				"可用&6深渊之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r合成&6深渊祭品&r，放入&d沉没之城&r中的&6深渊祭坛&r。"
+			]
+			hide_dependency_lines: true
+			icon: "cataclysm:abyss_eye"
+			id: "2CD71AD199802E1A"
+			rewards: [{
+				id: "075A311E229088E4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "利维坦"
+			tasks: [
+				{
+					id: "0FC6DE280E71E942"
+					item: "cataclysm:abyss_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:the_leviathan"
+					icon: "cataclysm:abyss_eye"
+					id: "783228E7780EAEFC"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "寻找沉没之城"
+			x: 0.75d
+			y: 15.5d
+		}
+		{
+			dependencies: ["7C958A8AFC0EADC6"]
+			description: [
+				"&d诅咒金字塔&r是位于&d沙漠&r中的巨型金字塔。"
+				""
+				"可以用&6沙漠之眼&r寻找。"
+				""
+				"&dBOSS激活方式：&r在金字塔顶端的四个房间中寻找到与原版沙子一模一样的&6“Suspicious Sand”（可疑的沙子）&r。"
+				""
+				"手持合成制作的&6“Brush”（刷子）&r右键清理&6可疑的沙子&r，得到&6沙漠项链&r。"
+				""
+				"手持&6沙漠项链&r&e右键&r金字塔底部的&d远古遗魂&r激活BOSS。"
+			]
+			hide_dependency_lines: true
+			icon: "cataclysm:desert_eye"
+			id: "4C2CAC391B06FAA8"
+			rewards: [{
+				id: "681F61F0440E688C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远古遗魂"
+			tasks: [
+				{
+					id: "583B940032B99BEF"
+					item: "cataclysm:desert_eye"
+					type: "item"
+				}
+				{
+					entity: "cataclysm:ancient_remnant"
+					icon: "cataclysm:desert_eye"
+					id: "226F3D20FEB28494"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "寻找诅咒金字塔"
+			x: 1.75d
+			y: 15.5d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"&d《诡厄巫法》&r是一个旨在通过添加大量新功能来增强原版游戏体验的魔法模组，具体在FTB的MOD教学分栏查看。"
+				""
+				"本模组提供了&d2个BOSS&r。"
+			]
+			icon: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "goety:black_book"
+				}
+			}
+			id: "4E21EC992472D80A"
+			tasks: [{
+				id: "18B3FACB9F5F9641"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "诡厄巫法"
+			x: 10.5d
+			y: 4.25d
+		}
+		{
+			dependencies: ["4E21EC992472D80A"]
+			description: [
+				"在&d林地府邸&r中使用&6黑暗卷轴&r会召唤出灾厄宰相。"
+				""
+				"&7（黑暗卷轴可以通过原版物品合成获得）&r"
+			]
+			hide_dependency_lines: true
+			id: "21A1453792744E6A"
+			rewards: [{
+				id: "64C35F6EBB30661B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "59894E78E254799E"
+				item: "goety:soul_ruby"
+				type: "item"
+			}]
+			title: "灾厄宰相/维齐尔"
+			x: 11.5d
+			y: 5.25d
+		}
+		{
+			dependencies: ["4E21EC992472D80A"]
+			description: [
+				"通过举行&d《诡厄巫法》&r中的&d安息仪式&r召唤&6使徒&r。"
+				""
+				"具体请查看&d《诡厄巫法》&r的说明书—&6“The Black Book”&r。"
+			]
+			hide_dependency_lines: true
+			id: "2FC7BD983537C21F"
+			rewards: [{
+				id: "36FA891268FCA72E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4A8DC9897AA42647"
+				item: "goety:unholy_blood"
+				type: "item"
+			}]
+			title: "使徒"
+			x: 12.5d
+			y: 5.25d
+		}
+		{
+			dependencies: ["161684844085FEDE"]
+			description: [
+				"&6死王之尸&r生成在&d地下墓穴&r的boss房中，点击会在原地生成BOSS&d死者之王&r。"
+				""
+				"可以使用&2归途指南针&r来定位&d地下墓穴&r。"
+				""
+				"具体请查看FTB中关于&dIron的魔法书&r的内容。"
+			]
+			hide_dependency_lines: true
+			id: "3770EDC8E8A38EFF"
+			rewards: [{
+				id: "7C23703B836F0D50"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "54F00DCDEE3602E7"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:blood_staff"
+					tag: {
+						ISB_spellbook: {
+							spellSlots: 5
+							spells: [
+								{
+									level: 6
+									sid: "irons_spellbooks:wither_skull"
+									slot: 0
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:ray_of_siphoning"
+									slot: 1
+								}
+								{
+									level: 3
+									sid: "irons_spellbooks:blood_step"
+									slot: 2
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:blood_slash"
+									slot: 3
+								}
+								{
+									level: 6
+									sid: "irons_spellbooks:blaze_storm"
+									slot: 4
+								}
+							]
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "死者之王"
+			x: 11.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"&d《Iron's Spells 'n Spellbooks》模组&r是一款受经典RPG游戏启发的魔法Mod，具体在FTB的MOD教学分栏查看。"
+				""
+				""
+				"本模组提供了&d1个BOSS&r。"
+			]
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:diamond_spell_book"
+				tag: {
+					ISB_spellbook: {
+						spellSlots: 8
+						spells: [ ]
+					}
+				}
+			}
+			id: "161684844085FEDE"
+			tasks: [{
+				id: "1EEFD29371FAA6CF"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "Iron的魔法书"
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"&d《墓园（The Graveyard）》&r模组为Minecraft添加了恐怖的结构，生物和方块，来让你的游戏体验更刺激更具有挑战性。"
+				""
+				"本模组提供了&d1个BOSS&r。"
+			]
+			icon: "minecraft:skeleton_skull"
+			id: "27AD335AE6A41756"
+			tasks: [{
+				id: "1022EC8ED7DAD231"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "墓园"
+			x: 10.5d
+			y: 10.75d
+		}
+		{
+			dependencies: ["27AD335AE6A41756"]
+			description: [
+				"&d巫妖监狱&r自然生成在&d海洋生物群系&r里的&e天空&r中，是一座&e巨型浮岛结构&r。岛上包含召唤巫妖的祭坛结构和一个巨大的骨头结构，骨头结构的下面有一个讲台，放着关于本结构来源和相关故事情节的书本。"
+				""
+				"{@pagebreak}"
+				"&dBOSS激活方式：&r想要生成&d巫妖&r，必须在&e夜晚&r依次将上、中、下共3块&6不祥的骨杖残片&r依次从左至右放置于&e祭坛前&r的&e碎裂深石中心&r，然后将&c血瓶&r倒在祭坛中央的&6祭坛&r方块上。"
+				""
+				"&7埋藏着不祥的骨杖残片的遗迹，生成于森林群系，分为旧哨塔、血祀坑和破败营地三个变种，分别包含不同位置的骨杖残片。（不同位置是指头部、躯干、尾部，通过图片即可分辨）&r"
+				"{@pagebreak}"
+				"&c血瓶&r的获取方式："
+				""
+				"你需要用三个骨头合成一把&6骨匕首&r，副手持&6空玻璃瓶&r时杀死村民可以填充空玻璃瓶，将玻璃瓶变为血瓶，需要填充8次。"
+			]
+			hide_dependency_lines: true
+			icon: "graveyard:black_bone_staff"
+			id: "6B51398807F1CA21"
+			rewards: [{
+				id: "659002635C610E7D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "巫妖"
+			tasks: [
+				{
+					icon: "minecraft:skeleton_skull"
+					id: "112E0D31625622B8"
+					structure: "graveyard:lich_prison"
+					title: "发现巫妖监狱"
+					type: "structure"
+				}
+				{
+					entity: "graveyard:lich"
+					icon: "graveyard:upper_bone_staff"
+					id: "6C1141D1F62E14B1"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "发现巫妖监狱"
+			x: 11.5d
+			y: 11.75d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [
+				"通过交货协议可以获得的物品，右击放置于地上可以打开传送门。"
+				""
+				"怪物会分波数生成，请注意在规定时间内击杀每一波的所有怪物。"
+				""
+				"其中&d最终袭击珍珠&r的&e最后一波&r会生成&d1个BOSS&r。"
+			]
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "kubejs:final_raid"
+				}
+			}
+			id: "6CD0560928FBA29B"
+			tasks: [{
+				id: "5E3828982980413A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "永恒之门"
+			x: 10.5d
+			y: 13.75d
+		}
+		{
+			dependencies: ["6CD0560928FBA29B"]
+			description: ["&7他曾是掠夺者的帝王，他率领的掠夺袭击从不失败，直到某位至高无上的存在将他囚禁在另一个世界......&r"]
+			hide_dependency_lines: true
+			icon: "art_of_forging:ancient_blade"
+			id: "48AEAB844E3AC9F6"
+			rewards: [{
+				id: "02E4F5958B10E2E7"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "invasioncodered:gashslit"
+				icon: "art_of_forging:ancient_blade"
+				id: "2E1F30B90A7EE461"
+				type: "kill"
+				value: 1L
+			}]
+			title: "裂刃帝王"
+			x: 11.5d
+			y: 14.75d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			icon: "minecraft:grass_block"
+			id: "06BA15D2F337E2C6"
+			tasks: [{
+				id: "0234C61C3F9E6FA6"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "我的世界原版"
+			x: -4.25d
+			y: 17.5d
+		}
+		{
+			dependencies: ["06BA15D2F337E2C6"]
+			hide_dependency_lines: true
+			icon: "minecraft:sculk_shrieker"
+			id: "2D66B5749F9D7846"
+			rewards: [{
+				id: "1113F7B21BB07CFA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: {
+					Count: 1b
+					id: "kubejs:warden_core"
+					tag: { }
+				}
+				id: "54B2C0992C8C149D"
+				type: "kill"
+				value: 1L
+			}]
+			title: "监守者"
+			x: -3.25d
+			y: 18.5d
+		}
+		{
+			dependencies: ["6269CC520129B2A2"]
+			description: [
+				"虚空蠕虫生活在&e末地&r下方的虚空中，向虚空中投入&3神秘蠕虫&r可以将其引出。"
+				""
+				"&8对虚空蠕虫最有效的攻击方式，便是直接攻击它的头部。&r"
+			]
+			hide_dependency_lines: true
+			id: "08869259102FF427"
+			rewards: [{
+				id: "2BC33966C39BAD43"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "08B30DF4477D1844"
+					item: "alexsmobs:mysterious_worm"
+					type: "item"
+				}
+				{
+					id: "476DA02DDC3FBC53"
+					item: "alexsmobs:void_worm_eye"
+					type: "item"
+				}
+			]
+			x: -3.25d
+			y: 21.75d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			description: [""]
+			icon: "alexsmobs:animal_dictionary"
+			id: "6269CC520129B2A2"
+			tasks: [{
+				id: "292EF0BD0B82B736"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "Alex生物"
+			x: -4.25d
+			y: 20.75d
+		}
+	]
+	title: "挑战：BOSS搜寻指南"
+}

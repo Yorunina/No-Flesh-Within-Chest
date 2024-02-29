@@ -32,11 +32,6 @@ ServerEvents.recipes(event => {
     function registerCustomRecipe(recipeModel) {
         event.custom(recipeModel)
     }
-
-    registerCustomRecipe(new MixingCauldronRecipe(
-        [Ingredient.of('#forge:ingots/gold'), Ingredient.of('#forge:ingots/gold'), Ingredient.of('#bookwyrms:scale'), Ingredient.of('minecraft:redstone'), Ingredient.of('hexerei:dried_sage'), Ingredient.of('hexerei:dried_sage'), Ingredient.of('hexerei:dried_mandrake_flowers'), Ingredient.of('hexerei:dried_mandrake_flowers')],
-        Item.of('kubejs:silver_ingot').withCount(4)))
-
     registerCustomRecipe(new MixingCauldronRecipe(
         [Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar'), Ingredient.of('minecraft:sugar')],
         Item.of('kubejs:scrap')).setFluid('minecraft:water', 500).setFluidOutput('kubejs:syrup'))

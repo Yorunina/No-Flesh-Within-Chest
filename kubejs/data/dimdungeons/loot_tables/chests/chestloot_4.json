@@ -23,6 +23,20 @@
         },
         {
           "type": "item",
+          "name": "kubejs:chicken_flavor_powder",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
           "name": "geodes:budding_echo_block",
           "weight": 3,
           "functions": [

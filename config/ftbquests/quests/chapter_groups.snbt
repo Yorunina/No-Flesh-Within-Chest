@@ -2,7 +2,9 @@
 	chapter_groups: [
 		{ id: "2358ECA720E3F23E", title: "关于本包" }
 		{ id: "4E02CBDD9D86D249", title: "主线：本我、自我、超我" }
-		{ id: "0241B51B931E1ED2", title: "教学：如何使用某Mod" }
+		{ id: "0F9EA9FA28C88D03", title: "机械：生活更便利的基准" }
+		{ id: "0241B51B931E1ED2", title: "武器：让手里的伙计更加顺手" }
+		{ id: "0BA6B2DC983B31FC", title: "魔法: 探索世界的真实" }
 		{ id: "4F4F4EA8CE67985B", title: "收集：并非无意义的努力" }
 	]
 }

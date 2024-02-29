@@ -18,7 +18,8 @@
     "mixAndMatch": [
       "somebosses:frost_magma_gauntlet",
       "goety:frozen_blade",
-      "iceandfire:dragonbone_sword_ice"
+      "iceandfire:dragonbone_sword_ice",
+      "irons_spellbooks:ice_staff"
     ]
   },
   "offHand": {
@@ -26,7 +27,8 @@
     "mixAndMatch": [
       "somebosses:frost_magma_gauntlet",
       "goety:frozen_blade",
-      "iceandfire:dragonbone_sword_ice"
+      "iceandfire:dragonbone_sword_ice",
+      "irons_spellbooks:ice_staff"
     ]
   },
   "additionalSetPieces": [{

@@ -10,6 +10,7 @@ global.updatePlayerActiveStatus = player => {
     let typeMap = getPlayerChestCavityTypeMap(player);
     let uuid = String(player.getUuid());
     let attributeMap = new Map();
+    $ChestCavityUtil.evaluateChestCavity(player.getChestCavityInstance())
     player.persistentData.putInt(resourceCountMax, defaultResourceMax)
     // 激活状态根据Tag区分并遍历可以用于激活的器官方法
     if (typeMap.has('kubejs:active')) {
@@ -118,12 +119,12 @@ const organActiveStrategies = {
     'kubejs:love_between_lava_and_ice': function (player, organ, attributeMap) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (itemMap.has('minecraft:blue_ice')) {
-            let iceMuti = itemMap.get('minecraft:blue_ice').length * 0.1
-            attributeMapValueAddition(attributeMap, global.ICE_SPELL_POWER, iceMuti)
+            let iceMulti = itemMap.get('minecraft:blue_ice').length * 0.1
+            attributeMapValueAddition(attributeMap, global.ICE_SPELL_POWER, iceMulti)
         }
         if (itemMap.has('minecraft:magma_block')) {
-            let fireMuti = itemMap.get('minecraft:magma_block').length * 0.1
-            attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMuti)
+            let fireMulti = itemMap.get('minecraft:magma_block').length * 0.1
+            attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMulti)
         }
     },
     'kubejs:stomach_tumor': function (player, organ, attributeMap) {
@@ -145,7 +146,7 @@ const organActiveStrategies = {
     },
     'kubejs:holy_eyeball': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.05)
-        attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.2)
+        attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.3)
     },
     'kubejs:hamimelon_organ': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
@@ -175,6 +176,10 @@ const organActiveStrategies = {
         let maxCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
         player.persistentData.putInt(resourceCountMax, maxCount + 100)
     },
+    'kubejs:vulcan_furnace': function (player, organ, attributeMap) {
+        let maxCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
+        player.persistentData.putInt(resourceCountMax, maxCount + 100)
+    },
     'kubejs:aesegull_rib_right': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
         let pos = organ.Slot
@@ -194,7 +199,7 @@ const organActiveStrategies = {
         }
     },
     'kubejs:blood_moon_wand': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.3)
+        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.4)
     },
     'kubejs:huge_lung': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
@@ -258,6 +263,32 @@ const organActiveStrategies = {
             attributeMapValueAddition(attributeMap, global.MAX_MANA, value)
         }
     },
+    'kubejs:chicken_kidney': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.Slot
+        let opPos = getOppoPos(pos)
+        if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:chicken_kidney') {
+            attributeMapValueAddition(attributeMap, global.LUCK, 3)
+        }
+    },
+    'kubejs:chicken_lung': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.Slot
+        let opPos = getOppoPos(pos)
+        let chickenStripCounter = 0
+        fourDirectionList.forEach(direction => {
+            let currentPos = lookPos(direction, pos)
+            if (posMap.has(currentPos) && posMap.get(currentPos).id == 'kubejs:chicken_strip') {
+                chickenStripCounter++
+            }
+        })
+        if (chickenStripCounter < 3) {
+            return
+        }
+        if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:chicken_lung') {
+            attributeMapValueAddition(attributeMap, global.LUCK_MULTI_BASE, 0.1)
+        }
+    },
 };
 
 /**
@@ -299,7 +330,7 @@ const organActiveOnlyStrategies = {
     },
     'kubejs:infinity_force': function (player, organ, attributeMap) {
         if (organ.tag?.forgeTimes) {
-            let value = organ.tag.forgeTimes * 2
+            let value = organ.tag.forgeTimes * 1
             attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
         }
     },
@@ -342,6 +373,29 @@ const organActiveOnlyStrategies = {
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, Math.floor(healthUp))
         attributeMapValueAddition(attributeMap, global.ATTACK_UP, attackUp)
         attributeMapValueAddition(attributeMap, global.MAX_MANA, Math.floor(manaUp))
+    },
+    'kubejs:chicken_heart': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player);
+        if (typeMap.has('kubejs:food')) {
+            let value = typeMap.get('kubejs:food').length
+            attributeMapValueAddition(attributeMap, global.LUCK, value)
+        }
+    },
+    'kubejs:prismarine_crown': function (player, organ, attributeMap) {
+        let playerChestInstance = player.getChestCavityInstance()
+        playerChestInstance.organScores.forEach((key, value) => {
+            if (value < 0) {
+                playerChestInstance.organScores.put(key, new $Float(1))
+            }
+        })
+    },
+    'kubejs:fish_in_chest': function (player, organ, attributeMap) {
+        let playerChestInstance = player.getChestCavityInstance()
+        let itemCount = playerChestInstance.inventory.getAllItems().size()
+        let amplifier = 27 / itemCount - 1
+        playerChestInstance.organScores.forEach((key, value) => {
+            playerChestInstance.organScores.put(key, new $Float(value * amplifier))
+        })
     },
 }
 
