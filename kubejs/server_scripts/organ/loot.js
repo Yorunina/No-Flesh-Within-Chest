@@ -9,7 +9,7 @@ LootJS.modifiers(event => {
                 return
             }
             let player = event.killerEntity
-            let typeMap = getPlayerChestCavityTypeMap(player)
+            let typeMap = getLootPlayerTypeMap(player)
             if (typeMap.has('kubejs:loot_entity')) {
                 typeMap.get('kubejs:loot_entity').forEach(organ => {
                     if (entityLootStrategies[organ.id]) {
@@ -34,7 +34,8 @@ LootJS.modifiers(event => {
         .apply(event => {
             let player = event.player
             if (!player) { return }
-            let typeMap = getPlayerChestCavityTypeMap(player)
+            player.tell(1)
+            let typeMap = getLootPlayerTypeMap(player)
             if (typeMap.has('kubejs:loot_chest')) {
                 typeMap.get('kubejs:loot_chest').forEach(organ => {
                     if (chestLootStrategies[organ.id]) {
@@ -43,7 +44,7 @@ LootJS.modifiers(event => {
                 })
             }
             let lootOrganSet = new Set()
-            if (typeMap.has('kubejs:loot_chest_only')) {
+            if (typeMap.has('kubejs:loot_chest_only')) {        
                 typeMap.get('kubejs:loot_chest_only').forEach(organ => {
                     if (!lootOrganSet.has(organ.id)) {
                         lootOrganSet.add(organ.id)
@@ -55,6 +56,21 @@ LootJS.modifiers(event => {
             }
         });
 })
+
+/**
+ * 获取玩家器官类型表
+ * @param {Internal.Player} player 
+ * @returns {Map}
+ */
+
+function getLootPlayerTypeMap(player) {
+    let uuid = String(player.getUuid());
+    if (playerChestCavityTypeMap.has(uuid)) {
+        return playerChestCavityTypeMap.get(uuid);
+    }
+    initChestCavityIntoMap(player)
+    return playerChestCavityTypeMap.get(uuid) ?? new Map();
+}
 
 /**
  * 器官实体掉落策略

@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 1
 
 const playerChestCavityHashMap = new Map();
 const playerChestCavityPosMap = new Map();
@@ -60,8 +60,7 @@ PlayerEvents.inventoryClosed((event) => {
  */
 
 global.initChestCavityIntoMap = (player, removeFlag) => {
-    let playerNbt = player.getNbt();
-    let chestInventory = playerNbt.ChestCavity.Inventory;
+    let chestInventory = player.getChestCavityInstance().inventory.tags
     let newHash = chestInventory.hashCode();
     let uuid = String(player.getUuid());
     if (playerChestCavityHashMap.has(uuid)) {
@@ -212,4 +211,68 @@ function getOppoPos(pos) {
 
 global.getPlayerChestCavityItemMap = player => {
     return getPlayerChestCavityItemMap(player)
+}
+
+
+/**
+ * 将玩家信息插入到器官表中（初始化器官表
+ * @param {Internal.Player} player 
+ * @param {Boolean} removeFlag 
+ * @returns 
+ */
+
+function initChestCavityIntoMap(player, removeFlag) {
+    let chestInventory = player.getChestCavityInstance().inventory.tags
+    let newHash = chestInventory.hashCode();
+    let uuid = String(player.getUuid());
+    if (playerChestCavityHashMap.has(uuid)) {
+        let oldHash = playerChestCavityHashMap.get(uuid);
+        if (oldHash == newHash) {
+            return;
+        }
+    }
+    let chestInventoryPosMap = new Map();
+    let chestInventoryItemMap = new Map();
+    let chestInventoryTypeMap = new Map();
+
+    // 遍历器官并初始化玩家Map
+    for (let i = 0; i < chestInventory.length; i++) {
+        let organ = chestInventory[i];
+        chestInventoryPosMap.set(organ.getInt('Slot'), organ);
+        let itemId = String(organ.getString('id'));
+        if (chestInventoryItemMap.has(itemId)) {
+            let itemList = chestInventoryItemMap.get(itemId);
+            itemList.push(organ);
+            chestInventoryItemMap.set(itemId, itemList);
+        } else {
+            chestInventoryItemMap.set(itemId, [organ]);
+        }
+        let tagList = Item.of(itemId).getTags().toArray();
+        for (let i = 0; i < tagList.length; i++) {
+            let tag = tagList[i].location()
+            if (tag.getNamespace() != 'kubejs') {
+                continue
+            }
+            tag = String(tag)
+            if (chestInventoryTypeMap.has(tag)) {
+                let itemList = chestInventoryTypeMap.get(tag);
+                itemList.push(organ);
+                chestInventoryTypeMap.set(tag, itemList);
+            } else {
+                chestInventoryTypeMap.set(tag, [organ]);
+            }
+        }
+    }
+    // 将常用信息map载入到内存中，提高性能
+    playerChestCavityPosMap.set(uuid, chestInventoryPosMap);
+    playerChestCavityItemMap.set(uuid, chestInventoryItemMap);
+    playerChestCavityTypeMap.set(uuid, chestInventoryTypeMap);
+    playerChestCavityHashMap.set(uuid, newHash);
+    if (removeFlag) {
+        player.persistentData.putInt(organActive, 0)
+        player.potionEffects.add('kubejs:magic_forbiden', 20 * 20)
+        player.potionEffects.add('minecraft:slowness', 20 * 30)
+        clearAllActivedModify(player)
+    }
+    return;
 }

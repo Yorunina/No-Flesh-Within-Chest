@@ -14,7 +14,7 @@ function dragonPowerPlayerHurtByOthers(event, data) {
     let amplify = dragonPowerEffect.getAmplifier()
     if (amplify < 5) {
         event.amount = event.amount * (0.8 - amplify * 0.2)
-    } else {
+    } else if (player.absorptionAmount < player.maxHealth * 2) {
         player.absorptionAmount = player.absorptionAmount + event.amount * (amplify - 4) * 0.2
         event.amount = 0
     }

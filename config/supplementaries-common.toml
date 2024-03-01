@@ -127,7 +127,7 @@
 		simple_safes = false
 
 	[functional.sack]
-		enabled = true
+		enabled = false
 		#Penalize the player with slowness effect when carrying too many sacks
 		sack_penalty = true
 		#Maximum number of sacks after which the overencumbered effect will be applied. Each multiple of this number will increase the effect strength by one

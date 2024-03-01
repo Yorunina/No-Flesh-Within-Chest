@@ -24,7 +24,7 @@
         {
           "type": "item",
           "name": "kubejs:chicken_flavor_powder",
-          "weight": 2,
+          "weight": 3,
           "functions": [
             {
               "function": "set_count",

@@ -152,7 +152,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         let player = event.player
         let typeMap = getPlayerChestCavityTypeMap(player)
         let amplifier = 0
-        let duration = player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'nerves')) * 20 * 2
+        let duration = player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'nerves')) * 20
         if (typeMap.has('kubejs:dragon')) {
             let onlySet = new Set()
             typeMap.get('kubejs:dragon').forEach(organ => {

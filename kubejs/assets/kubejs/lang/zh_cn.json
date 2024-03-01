@@ -265,6 +265,7 @@
     "item.kubejs.water_candy": "水糖果",
     "item.kubejs.fire_candy": "火糖果",
     "item.kubejs.wind_candy": "风糖果",
+    "item.kubejs.chicken_flavor_powder": "麦乐鸡粉",
     "block.irons_spellbooks.blood_cauldron":"盛血的炼药锅",
     "item.irons_spellbooks.eldritch_manuscript": "巫术学派手稿",
     "item.irons_spellbooks.eldritch_manuscript_desc": "右键打开以学习巫术学派的法术",
@@ -854,7 +855,7 @@
     "kubejs.tooltips.void": "虚空",
     "kubejs.tooltips.safe_chest_opener.1": "仅能开启其他生物胸腔",
     "kubejs.tooltips.isb_spell_book.1": "星月强化法术槽+2",
-    "kubejs.tooltips.isb_spell_book.2": "已超越法术极限",
+    "kubejs.tooltips.isb_spell_book.2": "已抵达深邃强化极限",
     "kubejs.tooltips.active_pill.1": "能够激发一部分高级器官的",
     "kubejs.tooltips.active_pill.2": "激活效果",
     "kubejs.tooltips.active_pill.3": "每次修改器官排列时需要重新激活",
@@ -1396,7 +1397,7 @@
     "kubejs.tooltips.king_of_stomach.5": "如果不是食物，反而会降低属性",
     "kubejs.tooltips.chicken_heart.1": "激活时每有一个食物类器官，获得1点幸运",
     "kubejs.tooltips.chicken_kidney.1": "激活时如果在对称位置具有肾形麦乐鸡，则会获得3点幸运",
-    "kubejs.tooltips.chicken_lung.1": "激活时如果在对称位置具有肺形麦乐鸡，且在该器官四方向上具有至少3个麦乐鸡条，给予0.1幸运乘数",
+    "kubejs.tooltips.chicken_lung.1": "激活时如果在对称位置具有肺形麦乐鸡，且在该器官临近四方向上具有至少3个麦乐鸡条，给予0.1幸运乘数",
     "kubejs.tooltips.lung_template.1": "从无名肉块中取出的器官",
     "kubejs.tooltips.muscle_template.1": "从无名肉块中取出的器官",
     "kubejs.tooltips.heart_template.1": "从无名肉块中取出的器官",
@@ -1421,5 +1422,6 @@
     "kubejs.tooltips.huge_appendix.1": "激活时如果不能形成2x2的相同器官块，会降低5生命值上限",
     "kubejs.tooltips.dragon_blood_heart.1": "使用主动技能按键获得龙化状态",
     "kubejs.tooltips.dragon_blood_heart.2": "在龙化状态下，龙类器官会给予你减伤，在减伤溢出时会将伤害转换成额外生命",
-    "kubejs.tooltips.dragon_blood_heart.3": "神经效率影响龙化状态的持续时间，龙类器官种类影响龙化效果"
+    "kubejs.tooltips.dragon_blood_heart.3": "神经效率影响龙化状态的持续时间，龙类器官种类影响龙化效果",
+    "kubejs.tooltips.dragon_blood_heart.4": "额外生命值最多为生命值上限*2"
 }

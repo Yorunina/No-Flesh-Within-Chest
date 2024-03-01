@@ -50,11 +50,11 @@ ServerEvents.recipes(event => {
         ['kubejs:stardust_fragment', 'kubejs:stardust_fragment', 'kubejs:stardust_fragment']])
         .modifyResult((grid, stack) => {
             let spellBook = grid.find('#kubejs:isb_spell_book', 0)
-            if (spellBook.nbt.ISB_spellbook.getInt('starLightEnhance') == 1) {
-                return null;
+            if (!spellBook.nbt?.ISB_Spells || spellBook.nbt.ISB_Spells.getInt('starLightEnhance') == 1) {
+                return;
             }
-            spellBook.nbt.ISB_spellbook.putInt('spellSlots', spellBook.nbt.ISB_spellbook.getInt('spellSlots') + 2)
-            spellBook.nbt.ISB_spellbook.putInt('starLightEnhance', 1)
+            spellBook.nbt.ISB_Spells.putInt('maxSpells', spellBook.nbt.ISB_Spells.getInt('maxSpells') + 2)
+            spellBook.nbt.ISB_Spells.putInt('starLightEnhance', 1)
             stack = spellBook
             return stack;
         });
@@ -64,9 +64,17 @@ ServerEvents.recipes(event => {
         ['kubejs:dark_stardust_fragment', 'irons_spellbooks:scroll', 'kubejs:dark_stardust_fragment'],
         ['kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment']])
         .modifyResult((grid, stack) => {
-            let spellBook = grid.find('irons_spellbooks:scroll', 0)
-            spellBook.nbt.ISB_spell.putInt('level', spellBook.nbt.ISB_spell.getInt('level') + 1)
-            stack = spellBook
+            let scroll = grid.find('irons_spellbooks:scroll', 0)
+            if (!scroll.nbt?.ISB_Spells?.data || !scroll.nbt.ISB_Spells.data[0]) {
+                return;
+            }
+            let starLightLevel = scroll.nbt.ISB_Spells.getInt('starLightEnhance') ? scroll.nbt.ISB_Spells.getInt('starLightEnhance') : 0
+            if (starLightLevel > 9) {
+                return;
+            }
+            scroll.nbt.ISB_Spells.data[0].putInt('level', scroll.nbt.ISB_Spells.data[0].getInt('level') + 1)
+            scroll.nbt.ISB_Spells.putInt('starLightEnhance', starLightLevel + 1)
+            stack = scroll
             return stack;
         });
 
@@ -79,7 +87,7 @@ ServerEvents.recipes(event => {
                 stack = Item.of('kubejs:paradise_regained')
                 return stack;
             }
-            return null;
+            return;
         });
 
     event.shapeless('kubejs:infinity_force', ['kubejs:infinity_force', 'kubejs:infinity_force'])
@@ -91,7 +99,7 @@ ServerEvents.recipes(event => {
                 stack = Item.of('kubejs:infinity_force', { forgeTimes: forgeTimes + 1 })
                 return stack;
             }
-            return null;
+            return;
         });
 
     event.shapeless('kubejs:lucky_cookie', ['minecraft:paper', 'minecraft:cookie'])
@@ -101,6 +109,7 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:explosion_proof_jacket'])
     event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:four_leaf_clover'])
     event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:creeper_sense'])
+    event.shapeless('kubejs:mysterious_trinket', ['nameless_trinkets:broken_ankh'])
     event.shapeless('kubejs:mosquito_repellent', ['irons_spellbooks:magic_cloth', 'chestcavity:cooked_alien_organ_meat'])
 
     event.shapeless('chestcavity:appendix', [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
@@ -111,7 +120,7 @@ ServerEvents.recipes(event => {
                     return Item.of(organ.id);
                 }
             }
-            return null;
+            return;
         });
 
 
