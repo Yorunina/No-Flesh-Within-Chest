@@ -262,6 +262,19 @@
 			#Range: 1.0 ~ 1.7976931348623157E308
 			sunkenSkeletonServantDamage = 2.0
 
+		[Attributes."Summoned Mobs"."Bound Evoker"]
+			#How much Max Health Bound Evokers have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			boundEvokerHealth = 24.0
+
+		[Attributes."Summoned Mobs"."Squall Golem"]
+			#How much Max Health Redstone Golems have, Default: 88.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			squallGolemHealth = 88.0
+			#How much damage Redstone Golems deals, Default: 16.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			squallGolemDamage = 16.0
+
 	[Attributes.Mini-Bosses]
 
 		[Attributes.Mini-Bosses.Crone]

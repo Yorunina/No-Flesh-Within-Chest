@@ -164,6 +164,12 @@
 	#Save Effects Soul Cost, Default: 50
 	#Range: > 1
 	saveEffectsCost = 50
+	#Corpse Eater Soul Cost, Default: 100
+	#Range: > 1
+	corpseEaterCost = 100
+	#Fortunate Soul Cost, Default: 50
+	#Range: > 1
+	fortunateCost = 100
 
 [Curable]
 	#Whether Nyctophobia is curable via Milk or Wartful Egg, Default: false

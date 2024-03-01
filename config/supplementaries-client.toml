@@ -169,10 +169,14 @@
 	paintings_tooltip = true
 	#Wearing mob heads will apply post processing
 	mob_head_shaders = true
-	#Needs the server config with same name on. If on here it will ignore the server one and keep vanilla colors
-	tinted_blocks_on_maps = true
-	#Colors tall grass same color as grass
-	tall_grass_color = true
+
+	[tweaks.tinted_maps]
+		#Needs the server config with same name on. If on here it will ignore the server one and keep vanilla colors
+		enabled = true
+		#Colors tall grass same color as grass
+		tall_grass_color = true
+		#Disable color caching. Can affect map update time
+		accurate_colors = false
 
 [items]
 

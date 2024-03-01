@@ -10,8 +10,12 @@
 	gold_trapdoor = true
 	lock_block = true
 	dispenser_minecart = true
-	crystal_display = true
 	relayer = true
+
+	[redstone.crystal_display]
+		enabled = true
+		#Makes it so when a crystal display is receiving at 10 or more power and it has another display to its right, it will connect to it forming a 2 wide display. Disable to have more control over them
+		display_carry_over = true
 
 	[redstone.speaker_block]
 		enabled = true
@@ -65,6 +69,8 @@
 		enabled = true
 		#can rotate entities standing on it?
 		rotate_entities = true
+		#Allows turn table (and wrenches) to shuffle inventories when they turn them horizontally
+		shuffle_inventories = true
 
 	[redstone.pulley_block]
 		enabled = true

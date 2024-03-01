@@ -425,9 +425,9 @@
 		#Time to cast Updraft Spell, Default: 0
 		#Range: 0 ~ 72000
 		updraftTime = 0
-		#Updraft Spell Cooldown, Default: 20
+		#Updraft Spell Cooldown, Default: 60
 		#Range: > 0
-		updraftCoolDown = 20
+		updraftCoolDown = 60
 		#How much base damage Updraft Blasts deals, Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		updraftBlastDamage = 5.0
@@ -439,9 +439,9 @@
 		#Time to cast Wind Blast Spell, Default: 0
 		#Range: 0 ~ 72000
 		windBlastTime = 0
-		#Wind Blast Spell Cooldown, Default: 20
+		#Wind Blast Spell Cooldown, Default: 60
 		#Range: > 0
-		windBlastCoolDown = 20
+		windBlastCoolDown = 60
 
 	[Spells."Thunderbolt Spell"]
 		#Thunderbolt Spell Cost, Default: 8
@@ -637,6 +637,17 @@
 		#To do so, enter the namespace ID of the mob, like "minecraft:zombie, minecraft:skeleton".
 		telekinesisBlackList = []
 
+	[Spells."Monsoon Spell"]
+		#Monsoon Spell Cost, Default: 8
+		#Range: > 0
+		monsoonCost = 8
+		#Time to cast Monsoon Spell, Default: 40
+		#Range: 0 ~ 72000
+		monsoonTime = 40
+		#Monsoon Spell Cooldown, Default: 100
+		#Range: > 0
+		monsoonCoolDown = 100
+
 ["Servant Limits"]
 	#Number of Skeleton/Vanguard/Necromancer Servants that can exist around the player without instantly dying, Default: 32
 	#Range: > 1
@@ -647,6 +658,9 @@
 	#Total number of Grave Golems a player can summon, Default: 2
 	#Range: > 0
 	graveGolemLimit = 2
+	#Number of Bound Evoker Servants that can exist around the player without instantly dying, Default: 32
+	#Range: > 1
+	boundIllagerLimit = 32
 
 [Enchantments]
 	#Soul Eater Maximum Enchantment Level, Default: 5

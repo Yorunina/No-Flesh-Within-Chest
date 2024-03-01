@@ -45,6 +45,12 @@
 			#If Redstone Golems show cracks when damaged sufficiently, Default: false
 			redstoneGolemCrack = false
 
+		[Textures."Summoned Mobs"."Slime Servants"]
+			#If Slime Servants have custom textures, Default: true
+			slimeServantTexture = true
+			#If Magma Cube Servants have custom textures, Default: true
+			magmaCubeServantTexture = true
+
 [Servants]
 	#Whether creating a Redstone Golem causes the mold to change blocks, Default: true
 	redstoneGolemMold = true
@@ -61,6 +67,9 @@
 	#How many seconds it takes before Ravager can manually roar again, Default: 10
 	#Range: > 0
 	ravagerRoarCooldown = 10
+	#Maximum size Slime and Magma Cube Servants can obtain through Slime/Magma Block, Default: 4
+	#Range: > 1
+	maxSlimeSize = 4
 
 	[Servants."Undead Servants"]
 		#Whether Undead Servants can teleport to Players, Default: false
@@ -81,6 +90,10 @@
 		#Chance that a zombie (or subclass) servant is summoned as a baby, Default: 0.05
 		#Range: 0.0 ~ 1.0
 		zombieServantBabyChance = 0.05
+		#Whether Undead Servants burn in Sunlight if not wearing helmet, Default: true
+		undeadServantSunlightBurn = true
+		#Whether Undead Servants' helmet take damage when in Sunlight. Only takes effect if undeadServantSunlightBurn is enabled, Default: true
+		undeadServantSunlightHelmet = true
 
 [Illagers]
 	#Whether Illague Effect can spread from non Conquillagers that has the effect, Default: true
@@ -152,6 +165,8 @@
 	tallSkullDrop = true
 	#Whether Wraiths should teleport towards their targets if they can't see them instead of just teleporting away when they're near them, Default: true
 	wraithAggressiveTeleport = true
+	#Whether undead mobs in the Crypts remain hostile even if players wear Necro Set, Default: true
+	hostileCryptUndead = true
 
 	[Misc.Apostle]
 		#Nether Meteors deals environmental damage. WARNING: Causes lots of lag. Default: false

@@ -6,5 +6,5 @@
 	#(Buyer info can also be seen by hovering over the Wax Seal)
 	AgreementScreenAppendBuyerInfo = true
 	#Show infinity symbol in infinite agreements (do not have 'ordered' specified)
-	AgreementScreenInfinitySymbol = false
+	AgreementScreenInfinitySymbol = true
 
