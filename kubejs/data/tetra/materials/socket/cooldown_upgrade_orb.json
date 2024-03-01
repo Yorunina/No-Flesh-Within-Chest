@@ -6,7 +6,7 @@
   "secondary": 0,
   "tertiary": 0,
   "durability": 0,
-  "integrityCost": 4,
+  "integrityCost": 6,
   "integrityGain": 0,
   "magicCapacity": 0,
   "toolLevel": 0,
@@ -24,8 +24,8 @@
       "irons_spellbooks:cooldown_upgrade_orb"
     ]
   },
-  "experienceCost": 40,
+  "experienceCost": 60,
   "attributes": {
-    "**irons_spellbooks:cooldown_reduction": 0.75
+    "**irons_spellbooks:cooldown_reduction": 0.3
   }
 }

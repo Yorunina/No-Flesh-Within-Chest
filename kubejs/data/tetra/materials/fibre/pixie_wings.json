@@ -5,13 +5,13 @@
     "secondary": "1.6",
     "tertiary": "1.8",
     "durability": "96",
-    "integrityCost": "2",
-    "integrityGain": "4",
+    "integrityCost": "4",
+    "integrityGain": "1",
     "magicCapacity": "416",
     "toolLevel": "0",
     "toolEfficiency": "0",
     "effects": {
-        "art_of_forging:esoteric_edge": 70
+        "art_of_forging:esoteric_edge": 50
     },
     "tints": {
       "glyph": "DB7093",
