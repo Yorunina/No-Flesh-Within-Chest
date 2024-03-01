@@ -1,5 +1,5 @@
 {
-  "armorSetName": "海晶碎片",
+  "armorSetName": "\u6d77\u6676\u788e\u7247",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:prismarine_shard_helmet"
@@ -15,14 +15,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "海底神殿稍微认可了你一些……"
+    "\u6d77\u5e95\u795e\u6bbf\u7a0d\u5fae\u8ba4\u53ef\u4e86\u4f60\u4e00\u4e9b\u2026\u2026"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "forge:swim_speed",
       "modifierUUID": "D86F6230-A725-4385-94F6-A9BB7E101AF3",
-      "description": "+30% 游泳速度",
+      "description": "+30% \u6e38\u6cf3\u901f\u5ea6",
       "value": 0.3,
       "attributeOperation": 1
     },

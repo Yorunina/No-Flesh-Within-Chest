@@ -1,5 +1,5 @@
 {
-  "armorSetName": "南瓜",
+  "armorSetName": "\u5357\u74dc",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:pumpkin_helmet"
@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "你感到无比滋润……"
+    "\u4f60\u611f\u5230\u65e0\u6bd4\u6ecb\u6da6\u2026\u2026"
   ],
   "fullSetBonuses": [
     {

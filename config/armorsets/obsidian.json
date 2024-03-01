@@ -1,5 +1,5 @@
 {
-  "armorSetName": "黑曜石",
+  "armorSetName": "\u9ed1\u66dc\u77f3",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:obsidian_helmet"
@@ -15,15 +15,15 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "适用于高烈度的战斗"
+    "\u9002\u7528\u4e8e\u9ad8\u70c8\u5ea6\u7684\u6218\u6597"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "minecraft:generic.armor_toughness",
       "modifierUUID": "B5F41798-DB59-4DC5-B085-EB4F13D44C4B",
-      "description": "+12 盔甲韧性",
-      "value": 12.0
+      "description": "+15 \u76d4\u7532\u97e7\u6027",
+      "value": 15.0
     }
   ]
 }

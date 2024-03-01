@@ -1,5 +1,5 @@
 {
-  "armorSetName": "绿宝石",
+  "armorSetName": "\u7eff\u5b9d\u77f3",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:emerald_helmet"
@@ -15,14 +15,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "村民更加待见你，且更加幸运"
+    "\u6751\u6c11\u66f4\u52a0\u5f85\u89c1\u4f60\uff0c\u4e14\u66f4\u52a0\u5e78\u8fd0"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "minecraft:generic.luck",
       "modifierUUID": "4633B7D9-B7AD-4C36-8322-F4DDF48CF42B",
-      "description": "+2 幸运",
+      "description": "+2 \u5e78\u8fd0",
       "value": 2.0
     },
     {

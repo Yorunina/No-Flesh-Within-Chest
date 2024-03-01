@@ -1,5 +1,5 @@
 {
-  "armorSetName": "幽魂",
+  "armorSetName": "\u5e7d\u9b42",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:ghost_helmet"
@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "灵魂之力环绕周身，反哺你并诅咒你的敌人"
+    "\u7075\u9b42\u4e4b\u529b\u73af\u7ed5\u5468\u8eab\uff0c\u53cd\u54fa\u4f60\u5e76\u8bc5\u5492\u4f60\u7684\u654c\u4eba"
   ],
   "fullSetBonuses": [
     {

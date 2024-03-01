@@ -1,5 +1,5 @@
 {
-  "armorSetName": "ÌÚÑ×",
+  "armorSetName": "\u817e\u708e",
   "performanceMode": true,
   "head": {
     "itemKey": "cataclysm:ignitium_helmet"
@@ -18,7 +18,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "´ÍÓèÄãµÄµĞÈËÑ×Ö®³Í½ä"
+    "\u8d50\u4e88\u4f60\u7684\u654c\u4eba\u708e\u4e4b\u60e9\u6212"
   ],
   "fullSetBonuses": [
     {

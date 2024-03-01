@@ -1,5 +1,5 @@
 {
-  "armorSetName": "萤石",
+  "armorSetName": "\u8424\u77f3",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:glowstone_helmet"
@@ -15,14 +15,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "一切都在闪耀，而圣光将会剥夺敌人的视野"
+    "\u4e00\u5207\u90fd\u5728\u95ea\u8000\uff0c\u800c\u5723\u5149\u5c06\u4f1a\u5265\u593a\u654c\u4eba\u7684\u89c6\u91ce"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:holy_spell_power",
       "modifierUUID": "B96248C5-07B3-4BAA-8E40-3553B5878B3E",
-      "description": "+15% 神圣系魔法伤害",
+      "description": "+15% \u795e\u5723\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.15
     },
     {

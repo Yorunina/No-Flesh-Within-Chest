@@ -1,5 +1,5 @@
 {
-  "armorSetName": "绯红木",
+  "armorSetName": "\u7eef\u7ea2\u6728",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:crimson_wood_helmet"
@@ -15,21 +15,21 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "能够略微强化鲜血和自然系魔法的威力，并赋予再生效果"
+    "\u80fd\u591f\u7565\u5fae\u5f3a\u5316\u9c9c\u8840\u548c\u81ea\u7136\u7cfb\u9b54\u6cd5\u7684\u5a01\u529b\uff0c\u5e76\u8d4b\u4e88\u518d\u751f\u6548\u679c"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:nature_spell_power",
       "modifierUUID": "CCC472FA-8DF7-41F6-BFBC-04D3160EBAE6",
-      "description": "+20% 自然系魔法伤害",
+      "description": "+20% \u81ea\u7136\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.2
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:blood_spell_power",
       "modifierUUID": "5A34EF48-E01C-4902-89EC-BC8AF30DDFAD",
-      "description": "+20% 鲜血系魔法伤害",
+      "description": "+20% \u9c9c\u8840\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.2
     },
     {

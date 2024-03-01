@@ -1,5 +1,5 @@
 {
-  "armorSetName": "雪",
+  "armorSetName": "\u96ea",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:snow_helmet"
@@ -15,14 +15,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "寒气拒人于千里之外，但也使你向着某种生物转化……"
+    "\u5bd2\u6c14\u62d2\u4eba\u4e8e\u5343\u91cc\u4e4b\u5916\uff0c\u4f46\u4e5f\u4f7f\u4f60\u5411\u7740\u67d0\u79cd\u751f\u7269\u8f6c\u5316\u2026\u2026"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:ice_spell_power",
       "modifierUUID": "6F85CF47-C81E-4A63-A9C6-59118CD1146E",
-      "description": "+30% 寒冰系魔法伤害",
+      "description": "+30% \u5bd2\u51b0\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.3
     },
     {

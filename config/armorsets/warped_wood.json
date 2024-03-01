@@ -1,5 +1,5 @@
 {
-  "armorSetName": "诡异木",
+  "armorSetName": "\u8be1\u5f02\u6728",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:warped_wood_helmet"
@@ -15,21 +15,21 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "能够略微强化末影和自然系魔法的威力，并赋予再生效果"
+    "\u80fd\u591f\u7565\u5fae\u5f3a\u5316\u672b\u5f71\u548c\u81ea\u7136\u7cfb\u9b54\u6cd5\u7684\u5a01\u529b\uff0c\u5e76\u8d4b\u4e88\u518d\u751f\u6548\u679c"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:nature_spell_power",
       "modifierUUID": "B96248C5-07B3-4BAA-8E40-3553B5878B3E",
-      "description": "+20% 自然系魔法伤害",
+      "description": "+20% \u81ea\u7136\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.2
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:ender_spell_power",
       "modifierUUID": "D21456A5-58C4-478C-A61A-94A7340E572F",
-      "description": "+20% 末影系魔法伤害",
+      "description": "+20% \u672b\u5f71\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.2
     },
     {

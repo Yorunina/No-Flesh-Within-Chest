@@ -1,5 +1,5 @@
 {
-  "armorSetName": "熔岩",
+  "armorSetName": "\u7194\u5ca9",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:molten_helmet"
@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "无时无刻不在放出强烈的火焰气息，并能亲和岩浆"
+    "\u65e0\u65f6\u65e0\u523b\u4e0d\u5728\u653e\u51fa\u5f3a\u70c8\u7684\u706b\u7130\u6c14\u606f\uff0c\u5e76\u80fd\u4eb2\u548c\u5ca9\u6d46"
   ],
   "fullSetBonuses": [
     {

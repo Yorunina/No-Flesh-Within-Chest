@@ -1,5 +1,5 @@
 {
-  "armorSetName": "末影",
+  "armorSetName": "\u672b\u5f71",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:ender_helmet"
@@ -15,14 +15,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "能够极大幅度强化末影系魔法的威力，但同时也让你变得更像末影人……"
+    "\u80fd\u591f\u6781\u5927\u5e45\u5ea6\u5f3a\u5316\u672b\u5f71\u7cfb\u9b54\u6cd5\u7684\u5a01\u529b\uff0c\u4f46\u540c\u65f6\u4e5f\u8ba9\u4f60\u53d8\u5f97\u66f4\u50cf\u672b\u5f71\u4eba\u2026\u2026"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:ender_spell_power",
       "modifierUUID": "8C55B2E4-964C-41C1-B671-680CD54B91DD",
-      "description": "+60% 末影系魔法伤害",
+      "description": "+60% \u672b\u5f71\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.6
     },
     {

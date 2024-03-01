@@ -833,7 +833,7 @@
 				""
 				"2. Packager通过交付包裹来获得经验并提升职业等级，更高的职业等级可以让他一次交付的包裹数量越多；"
 				""
-				"3. 玩家也可以自己手动交易包裹，但交付周期更长且一次只能交付一个。"
+				"3. Packager是交付包裹必需的帮手，玩家不能手动交付包裹。"
 			]
 			hide_dependency_lines: false
 			icon: "wares:delivery_table"

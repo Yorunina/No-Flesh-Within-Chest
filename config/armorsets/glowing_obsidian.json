@@ -1,5 +1,5 @@
 {
-  "armorSetName": "荧光黑曜石",
+  "armorSetName": "\u8367\u5149\u9ed1\u66dc\u77f3",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:glowing_obsidian_helmet"
@@ -15,21 +15,21 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "兼具了萤石与黑曜石材质的部分优势"
+    "\u517c\u5177\u4e86\u8424\u77f3\u4e0e\u9ed1\u66dc\u77f3\u6750\u8d28\u7684\u90e8\u5206\u4f18\u52bf"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:holy_spell_power",
       "modifierUUID": "43B442C7-9395-490F-B4B5-20EF29F05C39",
-      "description": "+15% 神圣系魔法伤害",
+      "description": "+15% \u795e\u5723\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.15
     },
     {
       "type": "attribute",
       "name": "minecraft:generic.armor_toughness",
       "modifierUUID": "BCF21A19-05FD-4A8A-85E8-48855D8B128C",
-      "description": "+8 盔甲韧性",
+      "description": "+8 \u76d4\u7532\u97e7\u6027",
       "value": 8.0
     },
     {

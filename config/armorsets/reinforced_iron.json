@@ -1,5 +1,5 @@
 {
-  "armorSetName": "强化铁",
+  "armorSetName": "\u5f3a\u5316\u94c1",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:reinforced_iron_helmet"
@@ -15,14 +15,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "比钢铁更加不可撼动"
+    "\u6bd4\u94a2\u94c1\u66f4\u52a0\u4e0d\u53ef\u64bc\u52a8"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "minecraft:generic.knockback_resistance",
       "modifierUUID": "5D30D24A-C92D-48A8-AA97-655FCF284353",
-      "description": "+1 击退抗性",
+      "description": "+1 \u51fb\u9000\u6297\u6027",
       "value": 1.0
     },
     {

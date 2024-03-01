@@ -1,5 +1,5 @@
 {
-  "armorSetName": "瘟疫术士",
+  "armorSetName": "\u761f\u75ab\u672f\u58eb",
   "performanceMode": true,
   "head": {
     "itemKey": "irons_spellbooks:plagued_helmet"
@@ -33,7 +33,7 @@
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "你已经是一位出色的瘟疫术士了"
+    "\u4f60\u5df2\u7ecf\u662f\u4e00\u4f4d\u51fa\u8272\u7684\u761f\u75ab\u672f\u58eb\u4e86"
   ],
   "partialBonusRequiredAmount": 5,
   "partialSetBonuses": [
@@ -41,14 +41,14 @@
       "type": "attribute",
       "name": "irons_spellbooks:nature_spell_power",
       "modifierUUID": "C0829012-2CFC-48E0-9B26-25657BEE2AC6",
-      "description": "+60% 自然魔法伤害",
+      "description": "+60% \u81ea\u7136\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.6
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:nature_magic_resist",
       "modifierUUID": "0A668E7C-8426-4021-B790-6A0C25099544",
-      "description": "+60% 自然魔法抵抗",
+      "description": "+60% \u81ea\u7136\u9b54\u6cd5\u62b5\u6297",
       "value": 0.6
     }
   ],
@@ -57,14 +57,14 @@
       "type": "attribute",
       "name": "irons_spellbooks:nature_spell_power",
       "modifierUUID": "2E865446-F3DE-431C-BE4C-BC62BB7E12DF",
-      "description": "+90% 自然魔法伤害",
+      "description": "+90% \u81ea\u7136\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.9
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:nature_magic_resist",
       "modifierUUID": "AF632BD2-7110-45C5-BAA0-E8C72376E520",
-      "description": "+90% 自然魔法抵抗",
+      "description": "+90% \u81ea\u7136\u9b54\u6cd5\u62b5\u6297",
       "value": 0.9
     }
   ]
