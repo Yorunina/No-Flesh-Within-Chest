@@ -1423,5 +1423,5 @@
     "kubejs.tooltips.dragon_blood_heart.1": "使用主动技能按键获得龙化状态",
     "kubejs.tooltips.dragon_blood_heart.2": "在龙化状态下，龙类器官会给予你减伤，在减伤溢出时会将伤害转换成额外生命",
     "kubejs.tooltips.dragon_blood_heart.3": "神经效率影响龙化状态的持续时间，龙类器官种类影响龙化效果",
-    "kubejs.tooltips.dragon_blood_heart.4": "额外生命值最多为生命值上限*2"
+    "kubejs.tooltips.dragon_blood_heart.4": "额外生命值最多为生命值上限*3"
 }
