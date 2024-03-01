@@ -1,6 +1,6 @@
 {
     "key": "alex_mosquito_proboscis",
-    "category": "fibre",
+    "category": "misc",
     "primary": "1.1",
     "secondary": "0.9",
     "tertiary": "4.4",
@@ -11,7 +11,10 @@
     "toolLevel": "0",
     "toolEfficiency": "0",
     "effects": {
-        "bleeding": 5
+        "bleeding": 3
+    },
+    "improvements": {
+      "hollow": 0
     },
     "tints": {
       "glyph": "3c2c24",

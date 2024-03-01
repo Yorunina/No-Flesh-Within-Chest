@@ -10,6 +10,49 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'gateways:gate_pearl' })
     event.remove({ output: 'cataclysm:meat_shredder' })
 
+    event.remove({ output: 'extraarmor:copper_helmet' })
+    event.remove({ output: 'extraarmor:copper_chestplate' })
+    event.remove({ output: 'extraarmor:copper_leggings' })
+    event.remove({ output: 'extraarmor:copper_boots' })
+
+    event.shaped(Item.of('extraarmor:copper_helmet',1), [
+        'LOL',
+        'L L'
+    ],
+    {
+        L: 'minecraft:copper_ingot',
+        O: 'minecraft:raw_copper'
+    })
+
+    event.shaped(Item.of('extraarmor:copper_chestplate',1), [
+        'L L',
+        'LOL',
+        'LLL'
+    ],
+    {
+        L: 'minecraft:copper_ingot',
+        O: 'minecraft:raw_copper'
+    })
+
+    event.shaped(Item.of('extraarmor:copper_leggings',1), [
+        'LOL',
+        'L L',
+        'L L'
+    ],
+    {
+        L: 'minecraft:copper_ingot',
+        O: 'minecraft:raw_copper'
+    })
+
+    event.shaped(Item.of('extraarmor:copper_boots',1), [
+        'O O',
+        'L L'
+    ],
+    {
+        L: 'minecraft:copper_ingot',
+        O: 'minecraft:raw_copper'
+    })
+
     event.shaped('cataclysm:meat_shredder', [
         ['', 'minecraft:nether_star', 'goety:philosophers_stone'],
         ['', 'witherstormmod:withered_nether_star', 'minecraft:nether_star'],
@@ -159,6 +202,9 @@ ServerEvents.recipes(event => {
 
     event.smelting('iceandfire:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
     event.blasting('iceandfire:silver_ingot', 'kubejs:rare_mineral_cluster', '10.0')
+
+    event.smelting('iceandfire:silver_ingot', 'create:crushed_raw_silver', '0.1')
+    event.blasting('iceandfire:silver_ingot', 'create:crushed_raw_silver', '0.1')
 
     event.shaped('kubejs:doppelganger', [
         ['', 'nameless_trinkets:reverse_card', ''],
