@@ -29,7 +29,7 @@
       "interactionDuration": 300,
       "hideBonusDescription": false,
       "onlyImmuneToNewEffects": false
-    }
+    },
     {
       "type": "effect",
       "name": "goety:charged",
