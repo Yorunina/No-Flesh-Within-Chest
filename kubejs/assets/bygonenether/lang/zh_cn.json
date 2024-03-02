@@ -1,0 +1,17 @@
+{
+    "advancements.bygonenether.rescue_piglin_prisoner.description": "拯救一个猪灵囚犯",
+    "advancements.bygonenether.rescue_piglin_prisoner.title": "拯救猪灵囚犯",
+    "block.bygonenether.cracked_withered_blackstone_vertical_slab": "破裂的枯萎黑石垂直半砖",
+    "block.bygonenether.netherite_bell": "下界合金铃铛",
+    "block.bygonenether.warped_nether_brick_vertical_slab": "诡异下界砖垂直半砖",
+    "block.bygonenether.withered_blackstone_vertical_slab": "枯萎黑石垂直半砖",
+    "item.bygonenether.cracked_withered_blackstone_vertical_slab": "破裂的枯萎黑石垂直半砖",
+    "item.bygonenether.crushed_withered_debris": "碎烬凋零碎片",
+    "item.bygonenether.gilded_netherite_shield": "镀金下界合金盾牌",
+    "item.bygonenether.netherite_bell": "下界合金铃铛",
+    "item.bygonenether.netherite_scrap_ingot": "下界合金锭",
+    "item.bygonenether.netherite_scrap_nugget": "下界合金碎片",
+    "item.bygonenether.warped_nether_brick_vertical_slab": "诡异下界砖垂直半砖",
+    "item.bygonenether.withered_blackstone_vertical_slab": "枯萎黑石垂直半砖",
+    "itemGroup.bygonenethertab": "远古下界"
+}
