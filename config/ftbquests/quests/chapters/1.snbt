@@ -1623,15 +1623,6 @@
 			}]
 			tasks: [
 				{
-					id: "66911BA191D4B840"
-					item: {
-						Count: 1b
-						id: "lightmanscurrency:wallet_copper"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
 					id: "1A5F5C3E979DC6C2"
 					item: {
 						Count: 1b

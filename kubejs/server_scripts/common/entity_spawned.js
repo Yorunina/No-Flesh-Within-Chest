@@ -29,7 +29,7 @@ EntityEvents.spawned(event => {
     let entityName = entity.type
     if (!player) return
     if (!entity.isLiving() || !(entity.isMonster() || entityName.startsWith('iceandfire'))) return
-
+    if (entity.persistentData.contains('diffLevel')) return
     let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
     if (!diffStage) return
     let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
@@ -47,6 +47,7 @@ EntityEvents.spawned(event => {
     if (diffLevel.toughnessMulti != 0 && entity.attributes.hasAttribute('minecraft:generic.armor_toughness')) {
         entity.setAttributeBaseValue('minecraft:generic.armor_toughness', entity.getAttribute('minecraft:generic.armor_toughness').getValue() * diffLevel.toughnessMulti)
     }
+    entity.persistentData.putInt('diffLevel', diffLevelNum)
 })
 
 

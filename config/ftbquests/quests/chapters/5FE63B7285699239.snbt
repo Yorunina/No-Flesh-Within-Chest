@@ -113,7 +113,7 @@
 				item: "nameless_trinkets:cracked_crown"
 				type: "item"
 			}]
-			x: 0.75d
+			x: -1.75d
 			y: 3.75d
 		}
 		{
@@ -194,22 +194,6 @@
 				type: "item"
 			}]
 			x: 0.75d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6E502CA178ED4148"]
-			id: "5A5BBBE15B718FD0"
-			rewards: [{
-				id: "75C501F7E6E39A97"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			tasks: [{
-				id: "20ED5A03D8C10F97"
-				item: "nameless_trinkets:broken_ankh"
-				type: "item"
-			}]
-			x: 4.5d
 			y: 0.0d
 		}
 		{
@@ -641,8 +625,8 @@
 				item: "nameless_trinkets:fate_emerald"
 				type: "item"
 			}]
-			x: -1.75d
-			y: 3.75d
+			x: 4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -723,6 +707,22 @@
 			title: "无名饰品"
 			x: -2.75d
 			y: -2.25d
+		}
+		{
+			dependencies: ["6E502CA178ED4148"]
+			id: "5736E43FE8089027"
+			rewards: [{
+				id: "46A0EB4D9E608D7D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D979CF92274742E"
+				item: "kubejs:bunny_hoppers"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 3.75d
 		}
 	]
 	title: "饰品：偶尔获得的小奖励"
