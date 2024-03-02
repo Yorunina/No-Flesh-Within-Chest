@@ -289,4 +289,6 @@ ServerEvents.recipes(event => {
 	]).transitionalItem('kubejs:incomplete_relic_metal_ingot').loops(5)
 
 	event.recipes.create.sandpaper_polishing('kubejs:polished_amber', 'unusualprehistory:amber_shard')
+
+	event.recipes.create.splashing(['9x iceandfire:silver_nugget', Item.of('minecraft:glowstone_dust').withChance(0.3)], 'create:crushed_raw_silver')
 })

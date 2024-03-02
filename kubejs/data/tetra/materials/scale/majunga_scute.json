@@ -11,7 +11,7 @@
     "toolLevel": 0,
     "toolEfficiency": 0,
     "effects":{
-        "truesweepingStrike": 5
+        "bashing": [2,2]
     },
     "tints": {
         "glyph": "228B22",

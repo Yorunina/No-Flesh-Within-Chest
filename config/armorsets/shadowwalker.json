@@ -1,5 +1,5 @@
 {
-  "armorSetName": "暗影行者",
+  "armorSetName": "\u6697\u5f71\u884c\u8005",
   "performanceMode": true,
   "head": {
     "itemKey": "irons_spellbooks:shadowwalker_helmet"
@@ -37,7 +37,7 @@
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "你已经是一位出色的暗影行者了"
+    "\u4f60\u5df2\u7ecf\u662f\u4e00\u4f4d\u51fa\u8272\u7684\u6697\u5f71\u884c\u8005\u4e86"
   ],
   "partialBonusRequiredAmount": 5,
   "partialSetBonuses": [
@@ -45,14 +45,14 @@
       "type": "attribute",
       "name": "irons_spellbooks:ender_spell_power",
       "modifierUUID": "024C1E6E-478D-4180-8720-27F0266E8C9B",
-      "description": "+60% 末影魔法伤害",
+      "description": "+60% \u672b\u5f71\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.6
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:ender_magic_resist",
       "modifierUUID": "46A04A43-2B8A-46F4-B2F3-FE96FE6D82AF",
-      "description": "+60% 末影魔法抵抗",
+      "description": "+60% \u672b\u5f71\u9b54\u6cd5\u62b5\u6297",
       "value": 0.6
     }
   ],
@@ -61,14 +61,14 @@
       "type": "attribute",
       "name": "irons_spellbooks:ender_spell_power",
       "modifierUUID": "3FC2F1A9-09A1-4BF6-8AA4-6F28AE28502F",
-      "description": "+90% 末影魔法伤害",
+      "description": "+90% \u672b\u5f71\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.9
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:ender_magic_resist",
       "modifierUUID": "9C5BB35D-A726-4C87-8267-55ED142BE2F7",
-      "description": "+90% 末影魔法抵抗",
+      "description": "+90% \u672b\u5f71\u9b54\u6cd5\u62b5\u6297",
       "value": 0.9
     }
   ]

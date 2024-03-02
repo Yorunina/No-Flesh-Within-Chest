@@ -1,5 +1,5 @@
 {
-  "armorSetName": "幻翼",
+  "armorSetName": "\u5e7b\u7ffc",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:phantom_helmet"
@@ -15,21 +15,21 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "化身致命而又脆弱的猎手，如幽影般不可捉摸"
+    "\u5316\u8eab\u81f4\u547d\u800c\u53c8\u8106\u5f31\u7684\u730e\u624b\uff0c\u5982\u5e7d\u5f71\u822c\u4e0d\u53ef\u6349\u6478"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "obscure_api:critical_hit",
       "modifierUUID": "13D905DD-074D-4A8D-863A-C1F10726C88C",
-      "description": "+20% 暴击概率",
+      "description": "+20% \u66b4\u51fb\u6982\u7387",
       "value": 0.2
     },
     {
       "type": "attribute",
       "name": "obscure_api:critical_damage",
       "modifierUUID": "619EECDC-08B9-436B-B0FD-7F7EEBD48B32",
-      "description": "+50% 暴击伤害",
+      "description": "+50% \u66b4\u51fb\u4f24\u5bb3",
       "value": 0.5
     },
     {
@@ -37,8 +37,8 @@
       "name": "minecraft:generic.max_health",
       "modifierUUID": "460C5B0C-4B7E-4CA7-BB8D-3A2052658326",
       "attributeOperation": 2,
-      "description": "-30% 血量上限",
-      "value": -0.3
+      "description": "-40% \u8840\u91cf\u4e0a\u9650",
+      "value": -0.4
     },
     {
       "type": "effect",

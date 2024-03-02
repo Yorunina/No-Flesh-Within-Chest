@@ -1,5 +1,5 @@
 {
-  "armorSetName": "西瓜",
+  "armorSetName": "\u897f\u74dc",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:melon_helmet"
@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "你感到格外的舒适……"
+    "\u4f60\u611f\u5230\u683c\u5916\u7684\u8212\u9002\u2026\u2026"
   ],
   "fullSetBonuses": [
     {

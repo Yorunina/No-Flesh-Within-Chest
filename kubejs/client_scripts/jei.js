@@ -43,5 +43,6 @@ JEIEvents.information(event => {
     event.addItem('kubejs:fish_in_chest', Text.black({ "translate": "kubejs.jei.fish_in_chest.1" }))
     event.addItem('kubejs:broken_prismarine_crown', Text.black({ "translate": "kubejs.jei.broken_prismarine_crown.1" }))
     event.addItem('kubejs:plastic_heart', Text.black({ "translate": "kubejs.jei.plastic_heart.1" }))
+    event.addItem('kubejs:chicken_flavor_powder', Text.black({ "translate": "kubejs.jei.chicken_flavor_powder.1" }))
 })
 

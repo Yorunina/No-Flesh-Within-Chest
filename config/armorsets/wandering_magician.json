@@ -1,5 +1,5 @@
 {
-  "armorSetName": "流浪法师",
+  "armorSetName": "\u6d41\u6d6a\u6cd5\u5e08",
   "performanceMode": true,
   "head": {
     "itemKey": "irons_spellbooks:wandering_magician_helmet"
@@ -29,21 +29,21 @@
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "若你一直安于现状……"
+    "\u82e5\u4f60\u4e00\u76f4\u5b89\u4e8e\u73b0\u72b6\u2026\u2026"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:spell_power",
       "modifierUUID": "5F77C592-205D-4365-A7A1-C5A21E306C9D",
-      "description": "+70% 魔法伤害",
+      "description": "+70% \u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.7
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:spell_resist",
       "modifierUUID": "24EC5DED-6C10-4E59-B7DA-E6611B98B987",
-      "description": "+70% 魔法抵抗",
+      "description": "+70% \u9b54\u6cd5\u62b5\u6297",
       "value": 0.7
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "armorSetName": "黏液",
+  "armorSetName": "\u9ecf\u6db2",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:slime_helmet"
@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "站在黏液块上，然后一飞冲天！"
+    "\u7ad9\u5728\u9ecf\u6db2\u5757\u4e0a\uff0c\u7136\u540e\u4e00\u98de\u51b2\u5929\uff01"
   ],
   "partialBonusRequiredAmount": 3,
   "partialSetBonuses": [

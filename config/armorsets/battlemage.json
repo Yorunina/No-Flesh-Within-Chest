@@ -1,5 +1,5 @@
 {
-  "armorSetName": "战斗法师",
+  "armorSetName": "\u6218\u6597\u6cd5\u5e08",
   "performanceMode": true,
   "head": {
     "itemKey": "irons_spellbooks:netherite_mage_helmet"
@@ -15,21 +15,21 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "战斗，爽！"
+    "\u6218\u6597\uff0c\u723d\uff01"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:spell_power",
       "modifierUUID": "ACD758CE-46E5-48B8-9216-323BA35D596E",
-      "description": "+30% 法术伤害",
+      "description": "+30% \u6cd5\u672f\u4f24\u5bb3",
       "value": 0.3
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:spell_resist",
       "modifierUUID": "D8F4AD59-FF89-42F4-84CF-E251C96FB52E",
-      "description": "+50% 法术抵抗",
+      "description": "+50% \u6cd5\u672f\u62b5\u6297",
       "value": 0.5
     },
     {
@@ -37,7 +37,7 @@
       "name": "minecraft:generic.attack_damage",
       "modifierUUID": "EBA9FBC3-4F3F-4A03-98D7-4C67C23AEACE",
       "attributeOperation": 2,
-      "description": "+30% 近战伤害",
+      "description": "+30% \u8fd1\u6218\u4f24\u5bb3",
       "value": 0.3
     }
   ]

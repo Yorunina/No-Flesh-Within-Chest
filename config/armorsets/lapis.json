@@ -1,5 +1,5 @@
 {
-  "armorSetName": "青金石",
+  "armorSetName": "\u9752\u91d1\u77f3",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:lapis_helmet"
@@ -15,14 +15,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "这种材质能够存储魔力，带来经验收益并用多余的经验修复自身"
+    "\u8fd9\u79cd\u6750\u8d28\u80fd\u591f\u5b58\u50a8\u9b54\u529b\uff0c\u5e26\u6765\u7ecf\u9a8c\u6536\u76ca\u5e76\u7528\u591a\u4f59\u7684\u7ecf\u9a8c\u4fee\u590d\u81ea\u8eab"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:max_mana",
       "modifierUUID": "7871BDAE-578C-4AA7-940F-BD69BDB832C2",
-      "description": "+200 法术上限",
+      "description": "+200 \u6cd5\u672f\u4e0a\u9650",
       "value": 200
     },
     {

@@ -1,5 +1,5 @@
 {
-  "armorSetName": "木",
+  "armorSetName": "\u6728",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:oak_wood_helmet",
@@ -51,14 +51,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "能够略微强化自然系魔法的威力，并赋予再生效果"
+    "\u80fd\u591f\u7565\u5fae\u5f3a\u5316\u81ea\u7136\u7cfb\u9b54\u6cd5\u7684\u5a01\u529b\uff0c\u5e76\u8d4b\u4e88\u518d\u751f\u6548\u679c"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:nature_spell_power",
       "modifierUUID": "BC4E02C7-37F6-4318-9763-738E90E5E271",
-      "description": "+20% 自然系魔法伤害",
+      "description": "+20% \u81ea\u7136\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.2
     },
     {

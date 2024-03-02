@@ -1,5 +1,5 @@
 {
-  "armorSetName": "末影幽魂",
+  "armorSetName": "\u672b\u5f71\u5e7d\u9b42",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:enderghost_helmet"
@@ -15,14 +15,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "兼具了末影与幽魂材质的部分优势"
+    "\u517c\u5177\u4e86\u672b\u5f71\u4e0e\u5e7d\u9b42\u6750\u8d28\u7684\u90e8\u5206\u4f18\u52bf"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:ender_spell_power",
       "modifierUUID": "10ED4F46-7C7E-4617-9042-CBB43704DD3B",
-      "description": "+50% 末影系魔法伤害",
+      "description": "+50% \u672b\u5f71\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.5
     },
     {

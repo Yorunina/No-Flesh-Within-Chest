@@ -1,5 +1,5 @@
 {
-  "armorSetName": "高位唤魔者",
+  "armorSetName": "\u9ad8\u4f4d\u5524\u9b54\u8005",
   "performanceMode": true,
   "head": {
     "itemKey": "irons_spellbooks:archevoker_helmet"
@@ -28,11 +28,11 @@
     ]
   },
   "additionalSetPieces": [{
-    "itemKey": "nameless_trinkets:broken_ankh"
+    "itemKey": "nameless_trinkets:sigil_of_baphomet"
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "你已经是一位出色的高位唤魔者了"
+    "\u4f60\u5df2\u7ecf\u662f\u4e00\u4f4d\u51fa\u8272\u7684\u9ad8\u4f4d\u5524\u9b54\u8005\u4e86"
   ],
   "partialBonusRequiredAmount": 5,
   "partialSetBonuses": [
@@ -40,14 +40,14 @@
       "type": "attribute",
       "name": "irons_spellbooks:evocation_spell_power",
       "modifierUUID": "822B1387-D48E-4D12-ABEA-0D49819CA035",
-      "description": "+60% 唤魔魔法伤害",
+      "description": "+60% \u5524\u9b54\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.6
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:evocation_magic_resist",
       "modifierUUID": "222A8A30-83E0-45DB-9ECA-96E559230DEE",
-      "description": "+60% 唤魔魔法抵抗",
+      "description": "+60% \u5524\u9b54\u9b54\u6cd5\u62b5\u6297",
       "value": 0.6
     }
   ],
@@ -56,14 +56,14 @@
       "type": "attribute",
       "name": "irons_spellbooks:evocation_spell_power",
       "modifierUUID": "DFFF6348-D9BF-47E1-8A15-E772CB10B894",
-      "description": "+90% 唤魔魔法伤害",
+      "description": "+90% \u5524\u9b54\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.9
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:evocation_magic_resist",
       "modifierUUID": "FF8BAC45-2663-42FB-8248-8AE8118D2A6E",
-      "description": "+90% 唤魔魔法抵抗",
+      "description": "+90% \u5524\u9b54\u9b54\u6cd5\u62b5\u6297",
       "value": 0.9
     }
   ]

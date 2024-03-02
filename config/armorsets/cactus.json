@@ -1,5 +1,5 @@
 {
-  "armorSetName": "仙人掌",
+  "armorSetName": "\u4ed9\u4eba\u638c",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:cactus_helmet"
@@ -18,7 +18,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "获得仙人掌一般的生命力，并且能得心应手地使用仙人掌攻击"
+    "\u83b7\u5f97\u4ed9\u4eba\u638c\u4e00\u822c\u7684\u751f\u547d\u529b\uff0c\u5e76\u4e14\u80fd\u5f97\u5fc3\u5e94\u624b\u5730\u4f7f\u7528\u4ed9\u4eba\u638c\u653b\u51fb"
   ],
   "partialBonusRequiredAmount": 3,
   "partialSetBonuses": [
@@ -38,7 +38,7 @@
       "name": "minecraft:generic.attack_speed",
       "modifierUUID": "B7361DFA-B930-449F-9CE4-009FCFAFBABF",
       "attributeOperation": 2,
-      "description": "+30% 攻击速度",
+      "description": "+30% \u653b\u51fb\u901f\u5ea6",
       "value": 0.3
     },
     {

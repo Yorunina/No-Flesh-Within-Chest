@@ -1,5 +1,5 @@
 {
-  "armorSetName": "恐蚁",
+  "armorSetName": "\u6050\u8681",
   "performanceMode": true,
   "head": {
     "itemKey": "iceandfire:myrmex_desert_helmet",
@@ -27,7 +27,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "虽然像只蚂蚁了，但还不是蚂蚁"
+    "\u867d\u7136\u50cf\u53ea\u8682\u8681\u4e86\uff0c\u4f46\u8fd8\u4e0d\u662f\u8682\u8681"
   ],
   "fullSetBonuses": [
     {

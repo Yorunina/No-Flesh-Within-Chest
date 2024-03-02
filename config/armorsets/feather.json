@@ -1,5 +1,5 @@
 {
-  "armorSetName": "ÓğÃ«",
+  "armorSetName": "\u7fbd\u6bdb",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:feather_helmet"
@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "Äã¸Ğ¾õÇáÈçºèÃ«¡­¡­"
+    "\u4f60\u611f\u89c9\u8f7b\u5982\u9e3f\u6bdb\u2026\u2026"
   ],
   "fullSetBonuses": [
     {

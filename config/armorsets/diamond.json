@@ -1,5 +1,5 @@
 {
-  "armorSetName": "×êÊ¯",
+  "armorSetName": "\u94bb\u77f3",
   "performanceMode": true,
   "head": {
     "itemKey": "minecraft:diamond_helmet",
@@ -23,7 +23,7 @@
       "name": "minecraft:generic.max_health",
       "value": 4.0,
       "modifierUUID": "d5a7dc88-9405-4398-b1e5-250b4c6dd218",
-      "description": "+4 ÉúÃüÖµ",
+      "description": "+4 \u751f\u547d\u503c",
       "attributeOperation": 0,
       "interactionType": "self",
       "interactionDuration": 300,

@@ -1,5 +1,5 @@
 {
-  "armorSetName": "蜜脾",
+  "armorSetName": "\u871c\u813e",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:honeycomb_helmet"
@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "不知怎的，你对昆虫有了隐隐的血脉压制"
+    "\u4e0d\u77e5\u600e\u7684\uff0c\u4f60\u5bf9\u6606\u866b\u6709\u4e86\u9690\u9690\u7684\u8840\u8109\u538b\u5236"
   ],
   "fullSetBonuses": [
     {

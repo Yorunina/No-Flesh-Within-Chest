@@ -1,5 +1,5 @@
 {
-  "armorSetName": "回响",
+  "armorSetName": "\u56de\u54cd",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:echo_shard_helmet"
@@ -15,14 +15,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "利用深渊的力量保护自己，并赠予敌人来自黑暗的恐惧"
+    "\u5229\u7528\u6df1\u6e0a\u7684\u529b\u91cf\u4fdd\u62a4\u81ea\u5df1\uff0c\u5e76\u8d60\u4e88\u654c\u4eba\u6765\u81ea\u9ed1\u6697\u7684\u6050\u60e7"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:spell_resist",
       "modifierUUID": "006FF68F-CFDE-410E-876A-EB75E0FED708",
-      "description": "+25% 法术抵抗",
+      "description": "+25% \u6cd5\u672f\u62b5\u6297",
       "value": 0.25
     },
     {

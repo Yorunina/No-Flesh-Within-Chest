@@ -1,5 +1,5 @@
 {
-  "armorSetName": "铜",
+  "armorSetName": "\u94dc",
   "performanceMode": true,
   "head": {
     "itemKey": "iceandfire:armor_copper_metal_helmet"
@@ -18,7 +18,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "电能在流动……"
+    "\u7535\u80fd\u5728\u6d41\u52a8\u2026\u2026"
   ],
   "fullSetBonuses": [
     {
@@ -29,14 +29,7 @@
       "interactionDuration": 300,
       "hideBonusDescription": false,
       "onlyImmuneToNewEffects": false
-    },
-    {
-      "type": "attribute",
-      "name": "irons_spellbooks:lightning_spell_power",
-      "modifierUUID": "F3D4B0C7-2C9B-42E3-8110-6B3DE914D051",
-      "description": "+30% 雷电系魔法伤害",
-      "value": 0.3
-    },
+    }
     {
       "type": "effect",
       "name": "goety:charged",
@@ -55,7 +48,7 @@
       "type": "attribute",
       "name": "irons_spellbooks:lightning_spell_power",
       "modifierUUID": "7CC2D4C1-953F-4DC6-A589-510FCE4142BF",
-      "description": "+60% 雷电系魔法伤害 when in rain",
+      "description": "+60% \u96f7\u7535\u7cfb\u9b54\u6cd5\u4f24\u5bb3 when in rain",
       "value": 0.6,
       "conditions": [
         {

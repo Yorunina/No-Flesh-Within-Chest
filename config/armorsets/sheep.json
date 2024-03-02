@@ -1,5 +1,5 @@
 {
-  "armorSetName": "ÄâÑò",
+  "armorSetName": "\u62df\u7f8a",
   "performanceMode": true,
   "head": {
     "itemKey": "iceandfire:sheep_helmet"
@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "ÕâÊÇÄ³ÖÖ¶ñÈ¤Î¶Âğ£¿¡­¡­"
+    "\u8fd9\u662f\u67d0\u79cd\u6076\u8da3\u5473\u5417\uff1f\u2026\u2026"
   ],
   "fullSetBonuses": [
     {

@@ -1,5 +1,5 @@
 {
-  "armorSetName": "死亡蠕虫",
+  "armorSetName": "\u6b7b\u4ea1\u8815\u866b",
   "performanceMode": true,
   "head": {
     "itemKey": "iceandfire:deathworm_white_helmet",
@@ -31,7 +31,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "沙子赋予你特殊的力量……"
+    "\u6c99\u5b50\u8d4b\u4e88\u4f60\u7279\u6b8a\u7684\u529b\u91cf\u2026\u2026"
   ],
   "fullSetBonuses": [
     {

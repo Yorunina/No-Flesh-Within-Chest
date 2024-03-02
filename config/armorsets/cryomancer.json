@@ -1,5 +1,5 @@
 {
-  "armorSetName": "冰霜术士",
+  "armorSetName": "\u51b0\u971c\u672f\u58eb",
   "performanceMode": true,
   "head": {
     "itemKey": "irons_spellbooks:cryomancer_helmet"
@@ -36,7 +36,7 @@
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "你已经是一位出色的冰霜术士了"
+    "\u4f60\u5df2\u7ecf\u662f\u4e00\u4f4d\u51fa\u8272\u7684\u51b0\u971c\u672f\u58eb\u4e86"
   ],
   "partialBonusRequiredAmount": 5,
   "partialSetBonuses": [
@@ -44,14 +44,14 @@
       "type": "attribute",
       "name": "irons_spellbooks:ice_spell_power",
       "modifierUUID": "D9DEF341-7FC8-4D4B-9872-3B41C1758DC1",
-      "description": "+60% 冰霜魔法伤害",
+      "description": "+60% \u51b0\u971c\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.6
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:ice_magic_resist",
       "modifierUUID": "0670DC48-6132-4569-97B5-342911047B65",
-      "description": "+60% 冰霜魔法抵抗",
+      "description": "+60% \u51b0\u971c\u9b54\u6cd5\u62b5\u6297",
       "value": 0.6
     }
   ],
@@ -60,14 +60,14 @@
       "type": "attribute",
       "name": "irons_spellbooks:ice_spell_power",
       "modifierUUID": "9DA8E9CB-12D3-40E3-B72C-98506B81C7B3",
-      "description": "+90% 冰霜魔法伤害",
+      "description": "+90% \u51b0\u971c\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.9
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:ice_magic_resist",
       "modifierUUID": "D178E996-BD7E-4309-AF13-240239F5222F",
-      "description": "+90% 冰霜魔法抵抗",
+      "description": "+90% \u51b0\u971c\u9b54\u6cd5\u62b5\u6297",
       "value": 0.9
     }
   ]

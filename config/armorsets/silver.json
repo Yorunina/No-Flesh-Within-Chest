@@ -1,5 +1,5 @@
 {
-  "armorSetName": "银",
+  "armorSetName": "\u94f6",
   "performanceMode": true,
   "head": {
     "itemKey": "iceandfire:armor_silver_metal_helmet"
@@ -15,14 +15,14 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "神圣之力震退邪灵！"
+    "\u795e\u5723\u4e4b\u529b\u9707\u9000\u90aa\u7075\uff01"
   ],
   "fullSetBonuses": [
     {
       "type": "attribute",
       "name": "irons_spellbooks:holy_spell_power",
       "modifierUUID": "94E03BBF-44E2-4311-95D2-BF74777762CE",
-      "description": "+40% 神圣系魔法伤害",
+      "description": "+40% \u795e\u5723\u7cfb\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.4
     },
     {

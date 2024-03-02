@@ -1112,6 +1112,7 @@
     "tetra.stats.bashing.efficiency": "晕眩持续时间",
     "tetra.stats.bashing.level": "猛击击退",
     "tetra.stats.bashing.tooltip": "按下右键可以对实体进行重击。重击实体将使其后退，眩晕并造成§e100%%§r的物品伤害\n \n§7击退系数：§e%s§r\n§7眩晕持续时间：§e%s§7秒",
+    "tetra.stats.bashing.tooltip_short": "按下右键可以对实体进行重击。重击实体将使其后退，眩晕并造成伤害",
     "tetra.stats.bleeding": "流血",
     "tetra.stats.bleeding.tooltip": "击中实体有30%%的几率使其流血，造成§e%s§r点伤害，持续2秒，对亡灵无效",
     "tetra.stats.bleeding.tooltip_short": "击中实体有几率使其流血，对亡灵无效",

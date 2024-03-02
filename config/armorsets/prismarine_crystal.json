@@ -1,5 +1,5 @@
 {
-  "armorSetName": "海晶砂粒",
+  "armorSetName": "\u6d77\u6676\u7802\u7c92",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:prismarine_crystal_helmet"
@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "这种材质让你备受海洋生物的喜爱"
+    "\u8fd9\u79cd\u6750\u8d28\u8ba9\u4f60\u5907\u53d7\u6d77\u6d0b\u751f\u7269\u7684\u559c\u7231"
   ],
   "fullSetBonuses": [
     {

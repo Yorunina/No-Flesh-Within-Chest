@@ -1,5 +1,5 @@
 {
-  "armorSetName": "炽焰术士",
+  "armorSetName": "\u70bd\u7130\u672f\u58eb",
   "performanceMode": true,
   "head": {
     "itemKey": "irons_spellbooks:pyromancer_helmet"
@@ -37,7 +37,7 @@
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "你已经是一位出色的炽焰术士了"
+    "\u4f60\u5df2\u7ecf\u662f\u4e00\u4f4d\u51fa\u8272\u7684\u70bd\u7130\u672f\u58eb\u4e86"
   ],
   "partialBonusRequiredAmount": 5,
   "partialSetBonuses": [
@@ -45,14 +45,14 @@
       "type": "attribute",
       "name": "irons_spellbooks:fire_spell_power",
       "modifierUUID": "D5B6C3EE-E9F5-449F-93E0-9022BB09C7BD",
-      "description": "+60% 炽焰魔法伤害",
+      "description": "+60% \u70bd\u7130\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.6
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:fire_magic_resist",
       "modifierUUID": "081B0303-EA4B-4558-AE1F-6BE0CEF38DEA",
-      "description": "+60% 炽焰魔法抵抗",
+      "description": "+60% \u70bd\u7130\u9b54\u6cd5\u62b5\u6297",
       "value": 0.6
     }
   ],
@@ -61,14 +61,14 @@
       "type": "attribute",
       "name": "irons_spellbooks:fire_spell_power",
       "modifierUUID": "4FF25B73-6122-4167-A0B2-1DA51D4ED84A",
-      "description": "+90% 炽焰魔法伤害",
+      "description": "+90% \u70bd\u7130\u9b54\u6cd5\u4f24\u5bb3",
       "value": 0.9
     },
     {
       "type": "attribute",
       "name": "irons_spellbooks:fire_magic_resist",
       "modifierUUID": "B4CA0FEC-D611-4C6F-B2A9-69B2FBF83CCD",
-      "description": "+90% 炽焰魔法抵抗",
+      "description": "+90% \u70bd\u7130\u9b54\u6cd5\u62b5\u6297",
       "value": 0.9
     }
   ]

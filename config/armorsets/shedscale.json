@@ -1,5 +1,5 @@
 {
-  "armorSetName": "澜光",
+  "armorSetName": "\u6f9c\u5149",
   "performanceMode": true,
   "head": {
     "itemKey": "unusualprehistory:shedscale_helmet"
@@ -15,7 +15,7 @@
   },
   "hideGeneratedTooltip": false,
   "customTooltips": [
-    "使你成为水中最勇猛的战士"
+    "\u4f7f\u4f60\u6210\u4e3a\u6c34\u4e2d\u6700\u52c7\u731b\u7684\u6218\u58eb"
   ],
   "fullSetBonuses": [
     {
