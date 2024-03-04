@@ -77,6 +77,14 @@ ItemEvents.tooltip((tooltip) => {
         text.add(Text.gray({ "translate": "kubejs.tooltips.dark_stardust_fragment.1" }));
         text.add(Text.gold({ "translate": "kubejs.tooltips.dark_stardust_fragment.2" }));
     })
+    tooltip.addAdvanced('kubejs:unbreakable_core', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.unbreakable_core.1" }));
+        text.add(Text.gold({ "translate": "kubejs.tooltips.unbreakable_core.2" }));
+    })
+    tooltip.addAdvanced('kubejs:disenchantment_book', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.disenchantment_book.1" }));
+        text.add(Text.gold({ "translate": "kubejs.tooltips.disenchantment_book.2" }));
+    })
     tooltip.addAdvanced('kubejs:safe_chest_opener', (item, advanced, text) => {
         text.add(Text.gray({ "translate": "kubejs.tooltips.safe_chest_opener.1" }));
     })

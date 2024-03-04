@@ -1,0 +1,110 @@
+{
+  "armorSetName": "\u9f99\u9cde",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "iceandfire:armor_red_helmet",
+    "mixAndMatch": [
+      "iceandfire:armor_bronze_helmet",
+      "iceandfire:armor_green_helmet",
+      "iceandfire:armor_gray_helmet",
+      "iceandfire:armor_blue_helmet",
+      "iceandfire:armor_white_helmet",
+      "iceandfire:armor_sapphire_helmet",
+      "iceandfire:armor_silver_helmet",
+      "iceandfire:armor_electric_helmet",
+      "iceandfire:armor_amythest_helmet",
+      "iceandfire:armor_copper_helmet",
+      "iceandfire:armor_black_helmet"
+    ]
+  },
+  "chest": {
+    "itemKey": "iceandfire:armor_red_chestplate",
+    "mixAndMatch": [
+      "iceandfire:armor_bronze_chestplate",
+      "iceandfire:armor_green_chestplate",
+      "iceandfire:armor_gray_chestplate",
+      "iceandfire:armor_blue_chestplate",
+      "iceandfire:armor_white_chestplate",
+      "iceandfire:armor_sapphire_chestplate",
+      "iceandfire:armor_silver_chestplate",
+      "iceandfire:armor_electric_chestplate",
+      "iceandfire:armor_amythest_chestplate",
+      "iceandfire:armor_copper_chestplate",
+      "iceandfire:armor_black_chestplate"
+    ]
+  },
+  "legs": {
+    "itemKey": "iceandfire:armor_red_leggings",
+    "mixAndMatch": [
+      "iceandfire:armor_bronze_leggings",
+      "iceandfire:armor_green_leggings",
+      "iceandfire:armor_gray_leggings",
+      "iceandfire:armor_blue_leggings",
+      "iceandfire:armor_white_leggings",
+      "iceandfire:armor_sapphire_leggings",
+      "iceandfire:armor_silver_leggings",
+      "iceandfire:armor_electric_leggings",
+      "iceandfire:armor_amythest_leggings",
+      "iceandfire:armor_copper_leggings",
+      "iceandfire:armor_black_leggings"
+    ]
+  },
+  "boots": {
+    "itemKey": "iceandfire:armor_red_boots",
+    "mixAndMatch": [
+      "iceandfire:armor_bronze_boots",
+      "iceandfire:armor_green_boots",
+      "iceandfire:armor_gray_boots",
+      "iceandfire:armor_blue_boots",
+      "iceandfire:armor_white_boots",
+      "iceandfire:armor_sapphire_boots",
+      "iceandfire:armor_silver_boots",
+      "iceandfire:armor_electric_boots",
+      "iceandfire:armor_amythest_boots",
+      "iceandfire:armor_copper_boots",
+      "iceandfire:armor_black_boots"
+    ]
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "\u867d\u7136\u53d6\u5f97\u4e86\u5de8\u9f99\u4e4b\u529b\uff0c\u4f46\u603b\u611f\u89c9\u5fae\u5999\u5730\u5f31\u6c34\u2026\u2026"
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.attack_knockback",
+      "modifierUUID": "2671E907-8A92-45FE-BF5B-E289F5CAD755",
+      "description": "+2 \u51fb\u9000",
+      "value": 2.0
+    },
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.max_health",
+      "modifierUUID": "D39F0D6A-912E-4817-B749-AA566E72E5C2",
+      "attributeOperation": 1,
+      "description": "+20% \u6700\u5927\u751f\u547d\u503c",
+      "value": 0.2
+    },
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.movement_speed",
+      "modifierUUID": "2284E1AB-FFB7-4172-8120-50E74848A059",
+      "attributeOperation": 2,
+      "description": "-50% \u79fb\u52a8\u901f\u5ea6 in water",
+      "value": -0.5,
+      "conditions": [
+        {
+          "type": "inWater"
+        }
+      ]
+    },
+    {
+      "type": "attribute",
+      "name": "forge:swim_speed",
+      "modifierUUID": "0B6C3F10-3B57-49C6-A183-0C455135F11E",
+      "attributeOperation": 2,
+      "description": "-50% \u6e38\u6cf3\u901f\u5ea6 in water",
+      "value": -0.5
+    }
+  ]
+}

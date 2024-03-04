@@ -1121,6 +1121,7 @@
     "tetra.stats.blocking_duration.tooltip": "按住右键最多可以阻挡进来的攻击和弹射物§e%s§r秒",
     "tetra.stats.blocking_reflect": "反弹",
     "tetra.stats.blocking_reflect.tooltip": "阻挡近战攻击有§e%s§r的几率对攻击者造成§e%s§r的伤害并应用命中效果",
+    "tetra.stats.blocking_reflect.tooltip_short": "阻挡近战攻击有几率对攻击者造成伤害并应用命中效果",
     "tetra.stats.blocking.efficiency": "格挡冷却时间",
     "tetra.stats.blocking.level": "阻挡持续时间",
     "tetra.stats.blocking.tooltip": "按住右键将阻挡进来的攻击和弹射物",

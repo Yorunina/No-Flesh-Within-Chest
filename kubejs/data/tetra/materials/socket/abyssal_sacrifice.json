@@ -5,7 +5,7 @@
     "secondary": 0,
     "tertiary": 0,
     "durability": 136,
-    "integrityCost": 3,
+    "integrityCost": 4,
     "integrityGain": 0,
     "magicCapacity": 300,
     "toolLevel": 0,
@@ -15,9 +15,9 @@
         "forge:attack_range":1
     },
     "effects": {
-        "bleeding": 2,
-        "reaching":[15,0.5],
-        "criticalStrike": 25        
+        "bleeding": 1,
+        "reaching": 1,
+        "criticalStrike": 15        
     },
     "tints": {
         "glyph": "441494",
@@ -26,6 +26,6 @@
     "textures": [
         "default"
     ],
-    "experienceCost": 30,
+    "experienceCost": 50,
     "material":{"items":["cataclysm:abyssal_sacrifice"]}
 }

@@ -13,28 +13,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -46,28 +51,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -79,28 +89,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -112,28 +127,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -145,28 +165,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -178,28 +203,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -211,28 +241,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -244,28 +279,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -277,28 +317,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -310,28 +355,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -343,28 +393,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -376,28 +431,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -409,28 +469,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -442,28 +507,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -475,28 +545,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -508,28 +583,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -541,28 +621,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -574,28 +659,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -607,28 +697,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -640,28 +735,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -673,28 +773,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -706,28 +811,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -739,28 +849,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -772,28 +887,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     },
     {
@@ -805,28 +925,33 @@
       ],
       "modifiers": [
         {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
             "attribute": "generic.armor",    
             "operation": "MULTIPLY_BASE",    
-            "value": 0.5         
+            "value": 1.6         
         },
         {
             "attribute": "generic.attack_damage",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.2    
+            "value": 3.2         
         },
         {
             "attribute": "generic.max_health",    
             "operation": "MULTIPLY_BASE",    
-            "value": 1.8     
+            "value": 3.0     
         },
         {
             "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 0.6 
+            "operation": "ADDITION",    
+            "value": 0.8 
         }
     ],
       "rewards": [],
-      "max_wave_time": 1200,
+      "max_wave_time": 600,
       "setup_time": 200
     }
   ],

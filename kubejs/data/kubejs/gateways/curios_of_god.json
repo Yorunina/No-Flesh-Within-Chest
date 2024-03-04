@@ -10,22 +10,21 @@
             {
                 "entity": "minecraft:giant"
             }
-
         ],
         "modifiers": [
             {
                 "attribute": "generic.max_health",    
                 "operation": "MULTIPLY_BASE",    
-                "value": 9.0   
+                "value": 14.0   
             },
             {
                 "attribute": "irons_spellbooks:spell_resist",    
-                "operation": "MULTIPLY_BASE",    
-                "value": 0.98
+                "operation": "ADDITION",    
+                "value": 3.0
             }
         ],
         "rewards": [],
-        "max_wave_time": 600,
+        "max_wave_time": 400,
         "setup_time": 200
       },
       {
@@ -33,6 +32,48 @@
             {
                 "entity": "minecraft:giant"
             }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 14.0   
+            },
+            {
+                "attribute": "generic.armor",    
+                "operation": "ADDITION",    
+                "value": 150
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 400,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "minecraft:giant",
+                "nbt": "{ActiveEffects:[{\"forge:id\":\"minecraft:instant_health\",Amplifier: 2,Duration: 1600,ShowParticles: 0b}]}"
+            }
+        ],
+        "modifiers": [
+            {
+                "attribute": "generic.max_health",    
+                "operation": "MULTIPLY_BASE",    
+                "value": 9.0   
+            }
+        ],
+        "rewards": [],
+        "max_wave_time": 400,
+        "setup_time": 200
+      },
+      {
+        "entities": [
+            {
+                "entity": "minecraft:giant",
+                "nbt": "{ActiveEffects:[{\"forge:id\":\"irons_spellbooks:oakskin\",Amplifier: 8,Duration: 72000,ShowParticles: 0b},{\"forge:id\":\"minecraft:resistance\",Amplifier: 3,Duration: 72000,ShowParticles: 0b}]}"
+            }
+
 
         ],
         "modifiers": [
@@ -40,55 +81,10 @@
                 "attribute": "generic.max_health",    
                 "operation": "MULTIPLY_BASE",    
                 "value": 9.0   
-            },
-            {
-                "attribute": "generic.armor",    
-                "operation": "ADDITION",    
-                "value": 120
             }
         ],
         "rewards": [],
-        "max_wave_time": 600,
-        "setup_time": 200
-      },
-      {
-        "entities": [
-            {
-                "entity": "minecraft:giant",
-                "nbt": "{ActiveEffects:[{\"forge:id\":\"minecraft:regeneration\",Amplifier: 4,Duration: 72000,ShowParticles: 0b}]}"
-            }
-
-
-        ],
-        "modifiers": [
-            {
-                "attribute": "generic.max_health",    
-                "operation": "MULTIPLY_BASE",    
-                "value": 7.0   
-            }
-        ],
-        "rewards": [],
-        "max_wave_time": 600,
-        "setup_time": 200
-      },
-      {
-        "entities": [
-            {
-                "entity": "minecraft:giant",
-                "nbt": "{ActiveEffects:[{\"forge:id\":\"minecraft:resistance\",Amplifier: 3,Duration: 72000,ShowParticles: 0b}]}"
-            }
-
-
-        ],
-        "modifiers": [
-            {
-                "attribute": "generic.max_health",    
-                "operation": "MULTIPLY_BASE",    
-                "value": 7.0   
-            }
-        ],
-        "rewards": [],
-        "max_wave_time": 600,
+        "max_wave_time": 400,
         "setup_time": 200
       }
     ],

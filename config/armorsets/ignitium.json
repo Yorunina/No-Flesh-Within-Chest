@@ -29,6 +29,15 @@
       "interactionDuration": 600,
       "hideBonusDescription": false,
       "onlyImmuneToNewEffects": false
+    },
+    {
+      "type": "effect",
+      "name": "goety:flammable",
+      "value": 3.0,
+      "interactionType": "attack",
+      "interactionDuration": 600,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
     }
   ]
 }
