@@ -34,7 +34,6 @@ LootJS.modifiers(event => {
         .apply(event => {
             let player = event.player
             if (!player) { return }
-            player.tell(1)
             let typeMap = getLootPlayerTypeMap(player)
             if (typeMap.has('kubejs:loot_chest')) {
                 typeMap.get('kubejs:loot_chest').forEach(organ => {
