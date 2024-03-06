@@ -110,7 +110,7 @@
 	#List of items that cannot be put in a Transmuting Table.
 	transmutationBlacklist = ["minecraft:beacon"]
 	#True if transmutation tables should not have the ability to pick up new items to transmute, and only give options from the loot tables.
-	limitTransmutingToLootTables = false
+	limitTransmutingToLootTables = true
 	#True if transmutation tables can explode when broken.
 	transmutingTableExplodes = true
 	#The experience, in levels, that each transmutation of a stack takes in the transmuting table.

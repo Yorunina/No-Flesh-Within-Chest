@@ -9,8 +9,7 @@ function championPlayerHurtByOthers(event, data) {
     if (!entity || !entity.isLiving()) return
     if (!entity.persistentData.contains('champion')) return
     let typeList = entity.persistentData.get('champion')
-    let player = event.entity
-
+    
     typeList.forEach(type => {
         let typeName = type.getAsString()
         if (typeName in championPlayerBearStrategies) {
