@@ -12,7 +12,7 @@
 // 		.onCast(ctx => global.unlimited_infinity(ctx))       // Calls global.bloodfed when the spell is casted
 // })
 
-// global.bloodfed = (/** @type {Internal.CustomSpell$CastContext} */ ctx) => {
+// global.unlimited_infinity = (/** @type {Internal.CustomSpell$CastContext} */ ctx) => {
 // 	let /** @type {Internal.ServerPlayer} */ player = ctx.entity
 // 	if ((player.getFoodData().getFoodLevel() * (ctx.getSpellLevel() / 2)) < 2
 // 	|| !ctx.entity.isPlayer()) return

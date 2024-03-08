@@ -36,7 +36,7 @@ EntityEvents.spawned(event => {
     let diffLevel = difficultLevelDef[diffLevelNum - 1]
     if (diffLevel.healthMulti != 0 && entity.attributes.hasAttribute('minecraft:generic.max_health')) {
         entity.setAttributeBaseValue('minecraft:generic.max_health', entity.getAttribute('minecraft:generic.max_health').getValue() * diffLevel.healthMulti)
-        entity.heal(entity.getMaxHealth())
+        entity.setHealth(entity.getMaxHealth())
     }
     if (diffLevel.attackMulti != 0 && entity.attributes.hasAttribute('minecraft:generic.attack_damage')) {
         entity.setAttributeBaseValue('minecraft:generic.attack_damage', entity.getAttribute('minecraft:generic.attack_damage').getValue() * diffLevel.attackMulti)
