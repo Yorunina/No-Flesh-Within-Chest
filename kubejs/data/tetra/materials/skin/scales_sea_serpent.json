@@ -1,0 +1,30 @@
+{
+    "key": "iaf_scales_sea_serpent_skin",
+    "category": "skin",
+    "primary": 4.5,
+    "secondary": 4.2,
+    "tertiary": 2.4,
+    "durability": 313,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 226,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "9C9C9C",
+        "texture": "9C9C9C"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "tag": "iceandfire:scales/sea_serpent"
+    },
+    "effects" : {
+        "art_of_forging:vengeance": [15,5]
+	},
+    "requiredTools": {
+        "cut": "minecraft:iron"
+    }
+}
