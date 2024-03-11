@@ -52,18 +52,4 @@ const championPlayerBearStrategies = {
             })
         }
     },
-    'purify': function (event, data) {
-        let player = event.entity
-        let beneficialEffects = []
-        player.potionEffects.active.forEach(ctx => {
-            if(ctx.effect.isBeneficial()) {
-                beneficialEffects.push(ctx.effect)
-            }
-        })
-        if (beneficialEffects.length > 0) {
-            beneficialEffects.forEach(effect => {
-                player.removeEffect(effect)
-            })
-        }
-    },
 };

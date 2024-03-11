@@ -10,5 +10,3 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', ev
         global.playerHurt(event);
     }
 })
-
-

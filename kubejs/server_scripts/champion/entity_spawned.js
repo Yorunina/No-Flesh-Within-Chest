@@ -4,6 +4,7 @@ EntityEvents.spawned(event => {
     */
     let entity = event.entity
     if (!entity || !entity.isLiving() || !entity.isMonster()) return
+    if (Math.random() > 0.05) return
     let randomChampionType = randomGet(championTypeMap)
     entity.persistentData.put('champion', [randomChampionType.type])
     entity.setCustomName([randomChampionType.name, Text.gray('精英')])
