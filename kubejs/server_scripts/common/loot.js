@@ -154,7 +154,7 @@ LootJS.modifiers(event => {
             let player = ctx.player;
             if (!player) return;
             if (player.stages.has('flos_magic_stage_2') && ctx.level.isRaining() &&
-                event.level.isNight() && Math.random() < 0.1) {
+                ctx.level.isNight() && Math.random() < 0.5) {
                 ctx.server.scheduleInTicks(20 * 1, (callback) => {
                     ctx.level.runCommandSilent('/weather clear');
                     ctx.player.stages.remove('flos_magic_stage_2')

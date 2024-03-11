@@ -36,7 +36,7 @@ EntityEvents.spawned(event => {
     let diffLevel = difficultLevelDef[diffLevelNum - 1]
     if (diffLevel.healthMulti != 0 && entity.attributes.hasAttribute('minecraft:generic.max_health')) {
         entity.setAttributeBaseValue('minecraft:generic.max_health', entity.getAttribute('minecraft:generic.max_health').getValue() * diffLevel.healthMulti)
-        entity.heal(entity.getMaxHealth())
+        entity.setHealth(entity.getMaxHealth())
     }
     if (diffLevel.attackMulti != 0 && entity.attributes.hasAttribute('minecraft:generic.attack_damage')) {
         entity.setAttributeBaseValue('minecraft:generic.attack_damage', entity.getAttribute('minecraft:generic.attack_damage').getValue() * diffLevel.attackMulti)
@@ -51,17 +51,3 @@ EntityEvents.spawned(event => {
 })
 
 
-const difficultLevelDef = [
-    { healthMulti: 1, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },
-    { healthMulti: 2, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },
-    { healthMulti: 3, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },
-    { healthMulti: 5, attackMulti: 1.5, armorMulti: 1, toughnessMulti: 1 },
-    { healthMulti: 10, attackMulti: 1.5, armorMulti: 1, toughnessMulti: 1 },
-    { healthMulti: 20, attackMulti: 2, armorMulti: 1.5, toughnessMulti: 1.5 },
-    { healthMulti: 30, attackMulti: 3, armorMulti: 1.5, toughnessMulti: 1.5 },
-    { healthMulti: 50, attackMulti: 4, armorMulti: 2, toughnessMulti: 2 },
-    { healthMulti: 100, attackMulti: 5, armorMulti: 2, toughnessMulti: 2 },
-    { healthMulti: 300, attackMulti: 6, armorMulti: 2.5, toughnessMulti: 2.5 },
-    { healthMulti: 500, attackMulti: 7, armorMulti: 2.5, toughnessMulti: 2.5 },
-    { healthMulti: 1000, attackMulti: 8, armorMulti: 3, toughnessMulti: 3 },
-]

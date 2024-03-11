@@ -354,10 +354,10 @@ const organActiveOnlyStrategies = {
                 if (foodPro) {
                     let nutrition = foodPro.getNutrition()
                     let staturation = foodPro.getSaturationModifier() * nutrition
-                    if (!onlySet.has(organ.id)) {
+                    if (!onlySet.has(value.id)) {
                         healthUp = healthUp + nutrition / 2
                         attackUp = attackUp + staturation / 4
-                        onlySet.add(organ.id)
+                        onlySet.add(value.id)
                         if (foodPro.getEffects().length) {
                             manaUp = manaUp + foodPro.getEffects().length * 20
                         }
