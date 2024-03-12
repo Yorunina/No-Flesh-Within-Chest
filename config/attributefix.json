@@ -646,7 +646,7 @@
       },
       "max": {
         "default": 1024,
-        "value": 1000000
+        "value": 100000000
       }
     },
     "irons_spellbooks:mana_regen": {
