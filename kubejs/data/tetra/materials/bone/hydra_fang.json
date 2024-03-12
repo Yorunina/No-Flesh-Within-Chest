@@ -10,6 +10,9 @@
     "magicCapacity": 376,
     "toolLevel": "minecraft:stone",
     "toolEfficiency": 5,
+    "attributes":{
+        "**irons_spellbooks:nature_spell_power": 0.3
+    },
     "effects": {
       "art_of_forging:goliath_slayer": 20
     },
