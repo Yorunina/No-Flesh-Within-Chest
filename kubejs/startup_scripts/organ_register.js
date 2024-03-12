@@ -192,6 +192,17 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:iron')
         .tag('kubejs:machine');
 
+    registerOrgan(new Organ('kubejs:lowlight_vision')
+        .addScore('nerves', -0.25)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.lowlight_vision.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.lowlight_vision.2" })])
+        .build())
+        .texture('kubejs:item/organs/machine/lowlight_vision')
+        .tag('itemborders:iron')
+        .tag('kubejs:resource')
+        .tag('kubejs:key_pressed')
+        .tag('kubejs:machine');
+
     registerOrgan(new Organ('kubejs:platelet_dispatcher')
         .addScore('metabolism', 3)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.1" })])
@@ -706,6 +717,21 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/flower_heart')
         .tag('kubejs:heart')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:wither_and_fall')
+        .addScore('health', -1.25)
+        .addScore('photosynthesis', 1)
+        .addScore('defense', -2.5)
+        .addScore('nerves', 1.75)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.wither_and_fall.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.wither_and_fall.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.wither_and_fall.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.wither_and_fall.4" })])
+        .build())
+        .texture('kubejs:item/organs/relics/wither_and_fall')
+        .tag('kubejs:heart')
+        .tag('kubejs:key_pressed')
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:aesegull_rib_left')

@@ -103,6 +103,26 @@ const organPlayerKeyPressedOnlyStrategies = {
             })
         }
     },
+    'kubejs:lowlight_vision': function (event, organ) {
+        let player = event.player
+        let count = player.persistentData.getInt(resourceCount)
+        if (count > 60) {
+            player.potionEffects.add('minecraft:night_vision', 20 * 240, 0)
+            updateResourceCount(player, count - 60)
+            player.addItemCooldown('kubejs:lowlight_vision', 20 * 180)
+        }
+    },
+    'kubejs:wither_and_fall': function (event, organ) {
+        let player = event.player
+        player.setHealth(1)
+        if (player.getMaxHealth() < 20) {
+            player.absorptionAmount = Math.floor((20 - player.getMaxHealth()) * 2.5)
+        }
+        else {
+            player.giveExperiencePoints(Math.floor(player.getMaxHealth() - 10))
+        }
+        player.addItemCooldown('kubejs:wither_and_fall', 20 * 150)
+    },
     'kubejs:amethyst_magic_core': function (event, organ) {
         let player = event.player
         let magicData = getPlayerMagicData(player)
