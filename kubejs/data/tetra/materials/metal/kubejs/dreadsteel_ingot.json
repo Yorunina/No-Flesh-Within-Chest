@@ -1,0 +1,33 @@
+{
+    "key" : "dreadsteel_ingot",
+    "category" : "metal",
+    "primary" : 9.2,
+    "secondary" : 5.1,
+    "tertiary" : 3.9,
+    "durability" : 2240,
+    "integrityCost" : 8,
+    "integrityGain" : 2,
+    "magicCapacity" : 10,
+    "toolLevel" : "minecraft:netherite",
+    "toolEfficiency" : 9,
+    "tints" : {
+      "glyph" : "000080",
+      "texture" : "000080"
+    },
+    "attributes": {
+        "**irons_spellbooks:fire_spell_power": 0.2,
+        "**irons_spellbooks:ice_spell_power": 0.2,
+        "**irons_spellbooks:lightning_spell_power": 0.2,
+        "minecraft:generic.attack_speed": -0.6
+    },
+    "effects": {
+      "blocking_reflect": [30,30]
+        },
+    "textures" : [ "metal", "default" ],
+    "material" : {
+      "items" : [ "kubejs:dreadsteel_ingot" ]
+    },
+    "requiredTools" : {
+      "hammer_dig" : "minecraft:diamond"
+    }
+  }

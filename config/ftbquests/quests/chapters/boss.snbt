@@ -633,7 +633,7 @@
 			}]
 			subtitle: "末地浮空城中的秘密"
 			tasks: [{
-				entity: "goety:obsidian_monolith"
+				entity: "bosses_of_mass_destruction:obsidilith"
 				icon: "bosses_of_mass_destruction:obsidian_heart"
 				id: "748C2EDCD6C350AB"
 				type: "kill"

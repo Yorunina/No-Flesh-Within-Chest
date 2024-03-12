@@ -24,7 +24,7 @@
       ]
     },
     "effects" : {
-      "quickStrike": 6
+      "quickStrike": 4
     },
     "requiredTools": {
       "cut": "minecraft:stone"

@@ -1,0 +1,89 @@
+{
+  "armorSetName": "\u9f99\u94a2",
+  "performanceMode": true,
+  "head": {
+    "itemKey": "iceandfire:dragonsteel_fire_helmet",
+    "mixAndMatch": [
+      "iceandfire:dragonsteel_ice_helmet",
+      "iceandfire:dragonsteel_lightning_helmet"
+    ]
+  },
+  "chest": {
+    "itemKey": "iceandfire:dragonsteel_fire_chestplate",
+    "mixAndMatch": [
+      "iceandfire:dragonsteel_ice_chestplate",
+      "iceandfire:dragonsteel_lightning_chestplate"
+    ]
+  },
+  "legs": {
+    "itemKey": "iceandfire:dragonsteel_fire_leggings",
+    "mixAndMatch": [
+      "iceandfire:dragonsteel_ice_leggings",
+      "iceandfire:dragonsteel_lightning_leggings"
+    ]
+  },
+  "boots": {
+    "itemKey": "iceandfire:dragonsteel_fire_boots",
+    "mixAndMatch": [
+      "iceandfire:dragonsteel_ice_boots",
+      "iceandfire:dragonsteel_lightning_boots"
+    ]
+  },
+  "mainHand": {
+    "itemKey": "iceandfire:dragonsteel_fire_sword",
+    "mixAndMatch": [
+      "iceandfire:dragonsteel_ice_sword",
+      "iceandfire:dragonsteel_lightning_sword"
+    ]
+  },
+  "hideGeneratedTooltip": false,
+  "customTooltips": [
+    "\u67d0\u79cd\u610f\u4e49\u4e0a\uff0c\u8fd9\u5957\u88c5\u5907\u6709\u70b9\u8d85\u91cd\u4e86\u2026\u2026"
+  ],
+  "partialBonusRequiredAmount": 4,
+  "partialSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.knockback_resistance",
+      "modifierUUID": "78A85175-34E3-4C33-AB96-1390C321A6EA",
+      "description": "+0.5 \u51fb\u9000\u6297\u6027",
+      "value": 0.5
+    },
+    {
+      "type": "effect",
+      "name": "goety:plunge",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ],
+  "fullSetBonuses": [
+    {
+      "type": "attribute",
+      "name": "minecraft:generic.knockback_resistance",
+      "modifierUUID": "66AFC83D-35DD-4E6D-956F-835440AF26B8",
+      "description": "+1 \u51fb\u9000\u6297\u6027",
+      "value": 1.0
+    },
+    {
+      "type": "effect",
+      "name": "goety:plunge",
+      "value": 0.0,
+      "interactionType": "self",
+      "interactionDuration": 300,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    },
+    {
+      "type": "effect",
+      "name": "cataclysm:bone_fracture",
+      "value": 4.0,
+      "interactionType": "attack",
+      "interactionDuration": 600,
+      "hideBonusDescription": false,
+      "onlyImmuneToNewEffects": false
+    }
+  ]
+}

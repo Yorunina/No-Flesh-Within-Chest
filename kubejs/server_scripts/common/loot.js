@@ -27,7 +27,27 @@ LootJS.modifiers(event => {
                 if (!diffStage) return
                 let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
                 if (diffLevelNum >= 4) {
-                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(0.2)))
+                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.05, 1))))
+                }
+            })
+            .apply(ctx => {
+                let player = ctx.player
+                if (!player) return
+                let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
+                if (!diffStage) return
+                let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
+                if (diffLevelNum >= 6) {
+                    ctx.addLoot(LootEntry.of('kubejs:unbreakable_core').when((c) => c.randomChance(Math.min((diffLevelNum - 4) * 0.05, 1))))
+                }
+            })
+            .apply(ctx => {
+                let player = ctx.player
+                if (!player) return
+                let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
+                if (!diffStage) return
+                let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
+                if (diffLevelNum >= 6) {
+                    ctx.addLoot(LootEntry.of('kubejs:disenchantment_book').when((c) => c.randomChance(Math.min((diffLevelNum - 4) * 0.05, 1))))
                 }
             })
     }
@@ -49,6 +69,8 @@ LootJS.modifiers(event => {
         .addLoot('kubejs:flower_heart');
     event.addEntityLootModifier('bosses_of_mass_destruction:obsidilith')
         .addLoot('kubejs:amethyst_magic_core');
+    event.addEntityLootModifier('bosses_of_mass_destruction:lich')
+        .addLoot('kubejs:bad_ink');
     event.addEntityLootModifier('bosses_of_mass_destruction:gauntlet')
         .apply(ctx => {
             if (ctx.player) {

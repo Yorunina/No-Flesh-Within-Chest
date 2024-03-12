@@ -16,19 +16,20 @@
   "mainHand": {
     "itemKey": "irons_spellbooks:magehunter",
     "mixAndMatch": [
-      "irons_spellbooks:evoker_spell_book",
       "goety:fanged_dagger"
     ]
   },
   "offHand": {
     "itemKey": "irons_spellbooks:magehunter",
     "mixAndMatch": [
-      "irons_spellbooks:evoker_spell_book",
       "goety:fanged_dagger"
     ]
   },
   "additionalSetPieces": [{
-    "itemKey": "nameless_trinkets:sigil_of_baphomet"
+    "itemKey": "nameless_trinkets:sigil_of_baphomet",
+    "mixAndMatch": [
+      "irons_spellbooks:evoker_spell_book"
+    ]
   }],
   "hideGeneratedTooltip": false,
   "customTooltips": [

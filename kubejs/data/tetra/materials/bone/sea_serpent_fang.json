@@ -11,7 +11,7 @@
     "toolLevel": "minecraft:iron",
     "toolEfficiency": 6,
     "effects": {
-        "art_of_forging:conquering": [15,3]
+        "art_of_forging:conquering": [4,8]
     },
     "tints": {
         "glyph": "bone_glyph",

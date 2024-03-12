@@ -74,19 +74,27 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:executioner_blade_pieces': function (event, organ, data) {
         let player = event.source.player
-        let item = player.mainHandItem
+
+        let mainitem = player.mainHandItem
+        let offitem = player.offHandItem
         if (event.source.type != 'player') {
             return
         }
-        if (item?.id == 'tetra:modular_sword' && item.nbt && item.nbt.contains('sword/executioner_blade_material')) {
+        if ((mainitem?.id == 'tetra:modular_sword' && mainitem.nbt && mainitem.nbt.contains('sword/executioner_blade_material'))
+            || (offitem?.id == 'tetra:modular_sword' && offitem.nbt && offitem.nbt.contains('sword/executioner_blade_material'))) {
+
             event.entity.potionEffects.add('kubejs:executed', 20 * 5, 2)
         }
     },
     'kubejs:bloody_bone_arrow': function (event, organ, data) {
         if (event.source.type != 'arrow') return
         let player = event.source.player
-        let item = player.mainHandItem
-        if (item?.id == 'tetra:modular_bow' && item.nbt && item.nbt.contains('bow/long_stave_material')) {
+
+        let mainitem = player.mainHandItem
+        let offitem = player.offHandItem
+        if ((mainitem?.id == 'tetra:modular_bow' && mainitem.nbt && mainitem.nbt.contains('bow/long_stave_material'))
+            || (offitem?.id == 'tetra:modular_bow' && offitem.nbt && offitem.nbt.contains('bow/long_stave_material'))) {
+
             let dx = event.entity.getX() - player.getX()
             let dy = event.entity.getY() - player.getY()
             let dz = event.entity.getZ() - player.getZ()

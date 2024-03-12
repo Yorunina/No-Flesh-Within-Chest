@@ -22,8 +22,9 @@
       "type": "attribute",
       "name": "minecraft:generic.luck",
       "modifierUUID": "4633B7D9-B7AD-4C36-8322-F4DDF48CF42B",
-      "description": "+2 \u5e78\u8fd0",
-      "value": 2.0
+      "attributeOperation": 1,
+      "description": "+10% \u5e78\u8fd0",
+      "value": 0.1
     },
     {
       "type": "effect",

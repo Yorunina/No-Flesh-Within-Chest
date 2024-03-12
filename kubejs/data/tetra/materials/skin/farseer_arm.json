@@ -5,7 +5,7 @@
     "secondary": "5.9",
     "tertiary": "1.1",
     "durability": "36",
-    "integrityCost": "2",
+    "integrityCost": "3",
     "integrityGain": "1",
     "magicCapacity": "311",
     "toolLevel": "0",
@@ -24,7 +24,7 @@
       ]
     },
     "effects" : {
-      "reaching": 3
+      "reaching": 2
     },
     "attributes":{
         "forge:attack_range":2

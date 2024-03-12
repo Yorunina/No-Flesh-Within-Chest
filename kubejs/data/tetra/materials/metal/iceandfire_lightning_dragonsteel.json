@@ -1,18 +1,22 @@
 {
   "key" : "iceandfire_lightning_dragonsteel",
   "category" : "metal",
-  "primary" : 8.5,
+  "primary" : 8.8,
   "secondary" : 3.1,
   "tertiary" : 3.5,
   "durability" : 1640,
   "integrityCost" : 2,
-  "integrityGain" : 8,
+  "integrityGain" : 6,
   "magicCapacity" : 270,
   "toolLevel" : "minecraft:netherite",
-  "toolEfficiency" : 8.8,
+  "toolEfficiency" : 8.4,
   "tints" : {
     "glyph" : "856fb5",
     "texture" : "856fb5"
+  },
+  "effects": {
+    "art_of_forging:stormcaller": [3,20],
+    "art_of_forging:cavalry": 20
   },
   "textures" : [ "metal", "default" ],
   "material" : {

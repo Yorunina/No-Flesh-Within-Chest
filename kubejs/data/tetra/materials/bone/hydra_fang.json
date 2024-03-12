@@ -11,7 +11,7 @@
     "toolLevel": "minecraft:stone",
     "toolEfficiency": 5,
     "effects": {
-      "art_of_forging:carnage": [1,8]
+      "art_of_forging:goliath_slayer": 20
     },
     "tints": {
         "glyph": "bone_glyph",
