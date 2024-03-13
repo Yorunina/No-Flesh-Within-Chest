@@ -103,4 +103,37 @@ const championPlayerBearStrategies = {
             player.potionEffects.add('goety:nyctophobia', 20 * 8, 3, false, false)
         }
     },
+    'smash': function (event, data) {
+        let player = event.entity
+        if (player.getHealth() <= Math.ceil(player.getMaxHealth() * 0.1)) {
+            player.kill()
+        }
+        else {
+            player.setHealth(player.getHealth() - Math.ceil(player.getMaxHealth() * 0.1))
+        }
+        event.amount = 0
+    },
+    'grudge': function (event, data) {
+        let player = event.entity
+        if (Math.random() < 0.15) {
+            let equipval = Math.ceil((Math.random() * 4))
+            let curseval = Math.ceil((Math.random() * curseEnchantList.length))
+            switch (equipval) {
+                case 1:
+                    player.setHeadArmorItem(player.getHeadArmorItem().enchant(curseEnchantList[curseval-1], 1))
+                    break;
+                case 2:
+                    player.setChestArmorItem(player.getChestArmorItem().enchant(curseEnchantList[curseval-1], 1))
+                    break;
+                case 3:
+                    player.setLegsArmorItem(player.getLegsArmorItem().enchant(curseEnchantList[curseval-1], 1))
+                    break;
+                case 4:
+                    player.setFeetArmorItem(player.getFeetArmorItem().enchant(curseEnchantList[curseval-1], 1))
+                    break;
+                default:
+                    break;
+            }
+        }
+    },
 };

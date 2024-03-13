@@ -72,5 +72,35 @@ const championTypeMap = [
         type: 'exhausted',
         name: Text.aqua('封魔'),
         desc: Text.gray('攻击时会赋予玩家魔力空虚效果')
+    },
+    {
+        type: 'consecration',
+        name: Text.red('圣化'),
+        desc: Text.gray('若非着火状态或不在火中，获得大幅度减伤')
+    },
+    {
+        type: 'smash',
+        name: Text.red('粉碎'),
+        desc: Text.gray('取消攻击伤害，但是每次造成最大生命值10%的真实伤害')
+    },
+    {
+        type: 'grudge',
+        name: Text.red('咒怨'),
+        desc: Text.gray('攻击时有15%概率为装备加上随机诅咒附魔')
+    },
+    {
+        type: 'fate',
+        name: Text.red('命运'),
+        desc: Text.gray('每次受到近战致死攻击有50%概率免疫此伤害并恢复到20%最大生命值')
+    },
+    {
+        type: 'parry',
+        name: Text.red('招架'),
+        desc: Text.gray('每次受到弹射物伤害有50%几率免疫此伤害')
+    },
+    {
+        type: 'reverse',
+        name: Text.red('反转'),
+        desc: Text.gray('每次受到魔法伤害有50%概率转化为治疗')
     }
 ]
