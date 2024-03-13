@@ -67,8 +67,9 @@ const organPlayerKeyPressedOnlyStrategies = {
         let damageSource = new DamageSource.sonicBoom(player)
         let vec3Nor = player.getLookAngle().normalize()
         let counter = 0
+        let getlevel = player.getXpLevel()
         if (ray.entity && ray.entity.isLiving()) {
-            ray.entity.attack(damageSource, 30)
+            ray.entity.attack(damageSource, 30 + Math.min(getlevel, 100))
             ray.entity.invulnerableTime = 0
             counter++
         }
@@ -83,7 +84,7 @@ const organPlayerKeyPressedOnlyStrategies = {
                 entityInRadius.forEach(e => {
                     if (!e.isPlayer()) {
                         counter++
-                        e.attack(damageSource, 10)
+                        e.attack(damageSource, 10 + Math.min(getlevel * 0.5, 50))
                         e.invulnerableTime = 0
                     }
                 })

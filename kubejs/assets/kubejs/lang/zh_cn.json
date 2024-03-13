@@ -1150,7 +1150,7 @@
     "kubejs.tooltips.ring_for_home.2": "进食饥饿值大于等于10的食物将会使你传送到上一次死亡地点。",
     "kubejs.tooltips.void_worm_stomach.1": "它一直都很饿",
     "kubejs.tooltips.warden_core.1": "轻叩即引万丈声",
-    "kubejs.tooltips.warden_core.2": "使用主动按键可在对应方向唤起24m的监守者音爆",
+    "kubejs.tooltips.warden_core.2": "使用主动按键可在对应方向唤起监守者音爆，玩家经验等级给予额外伤害加成",
     "kubejs.tooltips.warden_core.3": "对途径的每个目标造成多段音爆伤害，对指向目标产生额外伤害",
     "kubejs.tooltips.warden_core.4": "冷却60s，该音爆每击中一次敌人冷却降低2s",
     "kubejs.tooltips.vulcan_furnace.1": "此刻它处在权利的最高点",
