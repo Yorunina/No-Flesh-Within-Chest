@@ -203,6 +203,20 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:key_pressed')
         .tag('kubejs:machine');
 
+    registerOrgan(new Organ('kubejs:jet_propeller')
+        .addScore('speed', 2.5)
+        .addScore('breath_recovery', -1.75)
+        .addScore('defense', 0.25)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.jet_propeller.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.jet_propeller.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.jet_propeller.3" })])
+        .build())
+        .texture('kubejs:item/organs/machine/jet_propeller')
+        .tag('itemborders:iron')
+        .tag('kubejs:resource')
+        .tag('kubejs:key_pressed')
+        .tag('kubejs:machine');
+
     registerOrgan(new Organ('kubejs:platelet_dispatcher')
         .addScore('metabolism', 3)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.1" })])
@@ -222,6 +236,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/machine/machine_clockwork')
         .tag('kubejs:player_tick')
+        .tag('kubejs:resource')
         .tag('kubejs:machine')
         .tag('itemborders:gold');
 
@@ -235,6 +250,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/machine/lava_life_cycle_system')
         .tag('kubejs:damage_only')
         .tag('kubejs:machine')
+        .tag('kubejs:resource')
         .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:tamagotchi')
@@ -263,6 +279,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only')
         .tag('kubejs:kidney')
         .tag('kubejs:rose')
+        .tag('kubejs:resource')
         .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:revolution_steam_engine')
@@ -275,6 +292,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/machine/revolution_steam_engine')
         .tag('kubejs:rclick_only')
         .tag('kubejs:revolution')
+        .tag('kubejs:resource')
         .tag('kubejs:machine')
         .tag('itemborders:diamond');
     // 糖果心与魔法使系列物品
@@ -455,6 +473,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/resource/redstone_furnace')
         .tag('kubejs:active')
         .tag('kubejs:heart')
+        .tag('kubejs:resource')
         .tag('itemborders:red')
         .tag('kubejs:rclick_only');
 
@@ -909,6 +928,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/harbinger_lung')
         .tag('kubejs:machine')
+        .tag('kubejs:resource')
         .tag('kubejs:bear_only')
         .tag('kubejs:relics');
 
@@ -996,6 +1016,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/relics/vulcan_furnace')
         .tag('kubejs:player_tick_only')
         .tag('kubejs:active')
+        .tag('kubejs:resource')
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:amethyst_magic_core')

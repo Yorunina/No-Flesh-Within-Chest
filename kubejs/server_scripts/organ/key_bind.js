@@ -113,6 +113,21 @@ const organPlayerKeyPressedOnlyStrategies = {
             player.addItemCooldown('kubejs:lowlight_vision', 20 * 180)
         }
     },
+    'kubejs:jet_propeller': function (event, organ) {
+        let player = event.player
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        let count = player.persistentData.getInt(resourceCount)
+        let value = 1
+        if (typeMap.has('kubejs:resource')) {
+            value = typeMap.get('kubejs:resource').length
+        }
+        let consume = 30 + 20 * value
+        if (count > consume) {
+            player.potionEffects.add('minecraft:speed', 20 * (value + 2), Math.min(8, Math.floor(value * 0.5)))
+            updateResourceCount(player, count - consume)
+            player.addItemCooldown('kubejs:jet_propeller', 20 * Math.max(15, 95 - value * 5))
+        }
+    },
     'kubejs:wither_and_fall': function (event, organ) {
         let player = event.player
         player.setHealth(1)
