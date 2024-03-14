@@ -21,6 +21,7 @@ JEIEvents.information(event => {
     event.addItem('kubejs:redstone_chipset', Text.black({ "translate": "kubejs.jei.redstone_chipset.1" }))
     event.addItem('kubejs:ore_lung', Text.black({ "translate": "kubejs.jei.ore_lung.1" }))
     event.addItem('kubejs:flower_heart', Text.black({ "translate": "kubejs.jei.flower_heart.1" }))
+    event.addItem('kubejs:wither_and_fall', Text.black({ "translate": "kubejs.jei.wither_and_fall.1" }))
     event.addItem('kubejs:demon_eyeball', Text.black({ "translate": "kubejs.jei.demon_eyeball.1" }))
     event.addItem('kubejs:parasitic_elf', Text.black({ "translate": "kubejs.jei.parasitic_elf.1" }))
     event.addItem('kubejs:diamond_bottle', Text.black({ "translate": "kubejs.jei.diamond_bottle.1" }))

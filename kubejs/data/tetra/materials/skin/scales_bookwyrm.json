@@ -1,0 +1,30 @@
+{
+    "key": "scales_bookwyrm_skin",
+    "category": "skin",
+    "primary": 3.1,
+    "secondary": 2.1,
+    "tertiary": 2.6,
+    "durability": 113,
+    "integrityCost": 1,
+    "integrityGain": 4,
+    "magicCapacity": 311,
+    "toolLevel": 0,
+    "toolEfficiency": 0,
+    "tints": {
+        "glyph": "9C9C9C",
+        "texture": "9C9C9C"
+    },
+    "textures": [
+        "crude",
+        "default"
+    ],
+    "material": {
+        "tag": "bookwyrms:scale"
+    },
+    "effects" : {
+        "intuit": 1
+	},
+    "requiredTools": {
+        "cut": "minecraft:stone"
+    }
+}

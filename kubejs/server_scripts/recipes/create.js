@@ -9,19 +9,19 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.sandpaper_polishing('kubejs:revolution_cable', 'chestcavity:golem_cable')
 
-	event.recipes.create.compacting('kubejs:huge_lung', ['kubejs:lung_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_appendix', ['kubejs:appendix_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_muscle', ['kubejs:muscle_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_heart', ['kubejs:heart_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_intestine', ['kubejs:intestine_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_rib', ['kubejs:rib_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_spine', ['kubejs:spine_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_spleen', ['kubejs:spleen_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_stomach', ['kubejs:stomach_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_kidney', ['kubejs:kidney_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_liver', ['kubejs:liver_template', 'biomancy:ageing_serum']).superheated()
-	
-	event.recipes.create.mixing('create:chromatic_compound', [Fluid.of('hexerei:quicksilver_fluid').withAmount(1000),'iceandfire:ghost_ingot', '8x iceandfire:pixie_dust','16x minecraft:brown_dye','16x minecraft:magenta_dye','16x minecraft:light_blue_dye','16x minecraft:orange_dye','16x minecraft:cyan_dye','16x minecraft:light_gray_dye','16x minecraft:lime_dye']).superheated()
+	event.recipes.create.compacting('kubejs:huge_lung', ['kubejs:lung_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_appendix', ['kubejs:appendix_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_muscle', ['kubejs:muscle_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_heart', ['kubejs:heart_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_intestine', ['kubejs:intestine_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_rib', ['kubejs:rib_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_spine', ['kubejs:spine_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_spleen', ['kubejs:spleen_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_stomach', ['kubejs:stomach_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_kidney', ['kubejs:kidney_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_liver', ['kubejs:liver_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+
+	event.recipes.create.mixing('create:chromatic_compound', [Fluid.of('hexerei:quicksilver_fluid').withAmount(1000), 'iceandfire:ghost_ingot', '8x iceandfire:pixie_dust', '16x minecraft:brown_dye', '16x minecraft:magenta_dye', '16x minecraft:light_blue_dye', '16x minecraft:orange_dye', '16x minecraft:cyan_dye', '16x minecraft:light_gray_dye', '16x minecraft:lime_dye']).superheated()
 
 	event.recipes.create.mechanical_crafting('kubejs:revolution_gear', [
 		' SSS ',
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
 		E: 'minecraft:netherite_ingot',
 	})
 
-	
+
 
 	event.recipes.create.mechanical_crafting('kubejs:machine_clockwork', [
 		'     A ',

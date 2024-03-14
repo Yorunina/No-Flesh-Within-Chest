@@ -199,7 +199,7 @@ const organActiveStrategies = {
         }
     },
     'kubejs:blood_moon_wand': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.4)
+        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.3)
     },
     'kubejs:huge_lung': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
