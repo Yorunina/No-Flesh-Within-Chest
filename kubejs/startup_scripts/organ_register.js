@@ -413,7 +413,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:blood_moon_wand')
         .addScore('nerves', 1.25)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blood_moon_wand.1" }), Text.yellow(0.4), Text.yellow({ "translate": "kubejs.tooltips.blood_moon_wand.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blood_moon_wand.1" }), Text.yellow(0.3), Text.yellow({ "translate": "kubejs.tooltips.blood_moon_wand.2" })])
         .build())
         .texture('kubejs:item/organs/magic/blood_moon_wand')
         .modifyAttribute('irons_spellbooks:blood_spell_power', 'kubejsBloodSpellPowerWeaponBoost', 0.3, 'addition')
