@@ -78,7 +78,7 @@ const organPlayerTickOnlyStrategies = {
         if (player.hasEffect('minecraft:strength')) {
             amplifier = player.getEffect('minecraft:strength').getAmplifier()
         }
-        player.potionEffects.add('minecraft:strength', 8 * 20, Math.min(amplifier + 1, 4))
+        player.potionEffects.add('minecraft:strength', 8 * 20, Math.min(amplifier + 1, 7))
     },
     'kubejs:mini_vampire': function (event, organ) {
         let player = event.player

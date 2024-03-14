@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
         ['biomancy:bone_fragments', 'alexsmobs:skelewag_sword', 'biomancy:bone_fragments']])
 
     event.shaped('kubejs:artist_wand', [
-        ['', '', 'goety:unholy_blood'],
+        ['', '', Item.of('graveyard:vial_of_blood', '{Blood:0.8000001f}').strongNBT()],
         ['createaddition:electrum_wire', 'minecraft:white_wool', ''],
         ['minecraft:stick', 'createaddition:electrum_wire', '']])
 

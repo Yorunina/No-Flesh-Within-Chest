@@ -182,8 +182,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:machine');
 
     registerOrgan(new Organ('kubejs:compressed_oxygen_implant')
-        .addScore('filtration', -1)
-        .addScore('speed', -1)
+        .addScore('filtration', -0.75)
+        .addScore('speed', -0.5)
         .addScore('breath_recovery', 5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.compressed_oxygen_implant.1" })])
         .build())
@@ -546,8 +546,8 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:the_third_eye')
-        .addScore('nerves', 1)
-        .addScore('luck', -1)
+        .addScore('nerves', 0.5)
+        .addScore('luck', -1.5)
         .addScore('crystalsynthesis', 0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.the_third_eye.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.the_third_eye.2" })])
@@ -1168,8 +1168,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:lamellar_armor_piece')
-        .addScore('defense', 2.25)
-        .addScore('speed', -1)
+        .addScore('defense', 2.75)
+        .addScore('speed', -1.25)
         .build())
         .texture('kubejs:item/organs/machine/lamellar_armor_piece')
         .tag('itemborders:iron')

@@ -191,11 +191,10 @@ function getRandomSpecialWares() {
 }
 function getRandomOrganWares() {
     let task = randomGet(OrganWares)
-    return new Wares('special').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('器官商人', '#d15492').setMessage('这是一些. . .肉制品。\n我们保存的相当完好，保证随取随用。', '#33333').setOrdered(task.ordered).build()
+    return new Wares('organ').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('器官商人', '#d15492').setMessage('这是一些. . .肉制品。\n我们保存的相当完好，保证随取随用。', '#33333').setOrdered(task.ordered).build()
 }
 function getRandomOreWares() {
     let task = randomGet(OreWares)
-    return new Wares('special').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('矿石商人', '#33333').setMessage('你好，我这里有些矿物。\n或许这对你有用。', '#33333').setOrdered(task.ordered).build()
+    return new Wares('ore').setPaymentItems(task.paymentItems).setRequestedItems(task.requestedItems).setTitle('矿石商人', '#33333').setMessage('你好，我这里有些矿物。\n或许这对你有用。', '#33333').setOrdered(task.ordered).build()
 }
-
 

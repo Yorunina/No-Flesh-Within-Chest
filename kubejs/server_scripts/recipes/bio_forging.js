@@ -44,7 +44,7 @@ ServerEvents.highPriorityData(event => {
 
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 8, 'item': 'biomancy:flesh_bits' }, { 'count': 4, 'item': 'biomancy:tough_fibers' }, { 'count': 4, 'item': 'biomancy:elastic_fibers' }], Item.of('kubejs:liver_template')).setNutrientsCost(32).setTab('biomancy:weapons'))
 
-    registerCustomRecipe(new BioForgingRecipe([{ 'count': 8, 'item': 'biomancy:bone_fragments' }, { 'count': 1, 'item': 'meetyourfight:slicers_dice' }, { 'count': 4, 'item': 'biomancy:mob_marrow' }], Item.of('kubejs:d8')).setNutrientsCost(32).setTab('biomancy:weapons'))
+    registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'nameless_trinkets:lucky_rock' }, { 'count': 1, 'item': 'meetyourfight:slicers_dice' }, { 'count': 4, 'item': 'biomancy:withered_mob_marrow' }], Item.of('kubejs:d8')).setNutrientsCost(32).setTab('biomancy:weapons'))
 
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 4, 'item': 'biomancy:flesh_bits' }, { 'count': 2, 'item': 'biomancy:elastic_fibers' }], Item.of('kubejs:appendix_template')).setNutrientsCost(32).setTab('biomancy:weapons'))
 
