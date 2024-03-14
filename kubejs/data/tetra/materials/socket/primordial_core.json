@@ -5,7 +5,7 @@
     "secondary": 0,
     "tertiary": 0,
     "durability": 80,
-    "integrityCost": 2,
+    "integrityCost": 8,
     "integrityGain": 0,
     "magicCapacity": 160,
     "toolLevel": 0,
@@ -23,6 +23,6 @@
     "textures": [
         "default"
     ],
-    "experienceCost": 20,
+    "experienceCost": 50,
     "material":{"items":["biomancy:primordial_core"]}
 }

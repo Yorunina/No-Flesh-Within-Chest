@@ -1320,7 +1320,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:food');
 
     registerOrgan(new Organ('kubejs:chicken_kidney')
-        .addScore('detoxification', 1.75)
+        .addScore('detoxification', 0.5)
+        .addScore('filtration', 1.75)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.chicken_kidney.1" })])
         .build())
         .food(food => { food.hunger(6).saturation(1) })
