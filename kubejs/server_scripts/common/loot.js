@@ -27,27 +27,9 @@ LootJS.modifiers(event => {
                 if (!diffStage) return
                 let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
                 if (diffLevelNum >= 4) {
-                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.05, 1))))
-                }
-            })
-            .apply(ctx => {
-                let player = ctx.player
-                if (!player) return
-                let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
-                if (!diffStage) return
-                let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
-                if (diffLevelNum >= 6) {
-                    ctx.addLoot(LootEntry.of('kubejs:unbreakable_core').when((c) => c.randomChance(Math.min((diffLevelNum - 4) * 0.05, 1))))
-                }
-            })
-            .apply(ctx => {
-                let player = ctx.player
-                if (!player) return
-                let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
-                if (!diffStage) return
-                let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
-                if (diffLevelNum >= 6) {
-                    ctx.addLoot(LootEntry.of('kubejs:disenchantment_book').when((c) => c.randomChance(Math.min((diffLevelNum - 4) * 0.05, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.08, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:unbreakable_core').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.02, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:disenchantment_book').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.02, 1))))
                 }
             })
     }

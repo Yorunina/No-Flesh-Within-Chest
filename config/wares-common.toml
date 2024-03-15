@@ -7,7 +7,7 @@ WanderingTraderSellsAgreements = false
 [Delivery]
 	#Time in ticks that deliveries take. Agreement can override this value. Default: 200 ticks (10 seconds)
 	#Range: > 1
-	DefaultDeliveryTime = 400
+	DefaultDeliveryTime = 1200
 	#Each delivery requires (and consumes) a packaging. ('wares:delivery_boxes' tag)
 	#A slot for boxes will be added to delivery table. Default: true
 	DeliveriesRequireBoxes = true
@@ -22,7 +22,7 @@ WanderingTraderSellsAgreements = false
 		#Packager worker is required for Delivery Table to work.
 		#For a Packager to be considered a 'worker' he should have current table as a 'job_site' and have 'last_worked_at_poi' less than 40 seconds ago.
 		#Default: true
-		PackagerRequiredForDelivery = true
+		PackagerRequiredForDelivery = false
 		#Packager should have 'last_worked_at_poi' less than 40 seconds ago to be considered a worker.
 		#Requires 'PackagerRequiredForDelivery'. Default: true
 		PackagerShouldHaveWorkedRecently = true

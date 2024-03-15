@@ -195,8 +195,10 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:the_third_eye': function (event, organ, data) {
         if (event.source.type != 'arrow') return
-        event.entity.invulnerableTime = event.entity.invulnerableTime * 1 / 2
-        event.amount = event.amount * 0.25
+        if (event.entity.activeEffects.size() >= 5) {
+            event.entity.invulnerableTime = event.entity.invulnerableTime * 1 / 2
+            event.amount = event.amount * 0.5
+        }  
     },
     'kubejs:enery_bottle_max': function (event, organ, data) {
         let player = event.source.player
