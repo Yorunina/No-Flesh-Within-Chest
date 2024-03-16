@@ -773,6 +773,32 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active')
         .tag('kubejs:relics');
 
+    registerOrgan(new Organ('kubejs:mockery')
+        .addScore('nerves', -0.75)
+        .addScore('strength', 1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.mockery.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mockery.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mockery.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mockery.4" })])
+        .build())
+        .texture('kubejs:item/organs/relics/mockery')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:active')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:sarcasm')
+        .addScore('nerves', -0.75)
+        .addScore('defense', 1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.sarcasm.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sarcasm.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sarcasm.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sarcasm.4" })])
+        .build())
+        .texture('kubejs:item/organs/relics/sarcasm')
+        .tag('kubejs:bear_only')
+        .tag('kubejs:active')
+        .tag('kubejs:relics');
+
     registerOrgan(new Organ('kubejs:forbidden_fruit')
         .addScore('detoxification', 1.75)
         .addScore('health', 0.25)

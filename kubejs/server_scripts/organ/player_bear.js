@@ -75,4 +75,11 @@ const organPlayerBearOnlyStrategies = {
             event.source.actual.kill()
         }
     },
+    'kubejs:sarcasm': function (event, organ, data) {
+        let player = event.entity
+        let luckval = player.attributes.getValue('minecraft:generic.luck')
+        if (luckval <= 0) return
+        let randomval = Math.random() * Math.max(3 - luckval / 50, 1)
+        event.amount = event.amount * randomval
+    },
 };

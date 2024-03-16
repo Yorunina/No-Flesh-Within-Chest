@@ -232,4 +232,11 @@ const organPlayerDamageOnlyStrategies = {
             event.amount = event.amount + player.absorptionAmount / 2
         }
     },
+    'kubejs:mockery': function (event, organ, data) {
+        let player = event.source.player
+        let luckval = player.getLuck()
+        if (luckval <= 0) return
+        let randomval = Math.random() * Math.min(1 + luckval / 50, 3)
+        event.amount = event.amount * randomval
+    },
 };

@@ -32,6 +32,8 @@ global.BLOOD_SPELL_DAMAGE = { key: 'irons_spellbooks:blood_spell_power', name: '
 global.HOLY_SPELL_DAMAGE = { key: 'irons_spellbooks:holy_spell_power', name: 'kubejsHolySpellDamage', operation: 'addition' }
 global.LUCK = { key: 'minecraft:generic.luck', name: 'kubejsLuck', operation: 'addition' }
 global.LUCK_MULTI_BASE = { key: 'minecraft:generic.luck', name: 'kubejsLuckMultiBase', operation: 'multiply_base' }
+global.ATTACK_UP_MULTI_BASE = { key: 'minecraft:generic.attack_damage', name: 'kubejsAttackDamageMultiBase', operation: 'multiply_base' }
+global.ARMOR_MULTI_BASE = { key: 'minecraft:generic.armor', name: 'kubejsArmorMultiBase', operation: 'multiply_base' }
 
 global.ATTRIBUTE_MAP = {
     'kubejsAttackDamage': global.ATTACK_UP,
@@ -61,6 +63,8 @@ global.ATTRIBUTE_MAP = {
     'kubejsHolySpellDamage': global.HOLY_SPELL_DAMAGE,
     'kubejsLuck': global.LUCK,
     'kubejsLuckMultiBase': global.LUCK_MULTI_BASE,
+    'kubejsAttackDamageMultiBase': global.ATTACK_UP_MULTI_BASE,
+    'kubejsArmorMultiBase': global.ARMOR_MULTI_BASE
 }
 
 global.TYPE_MAP = {
@@ -142,7 +146,7 @@ global.SCORE_MAP = {
     'chestcavity:crystalsynthesis': { "translate": "kubejs.chestcavity.crystalsynthesis" },
     'chestcavity:rot_digestion': { "translate": "kubejs.chestcavity.rot_digestion" },
     'chestcavity:rot_nutrition': { "translate": "kubejs.chestcavity.rot_nutrition" },
-    
+
     'chestcavity:forceful_spit': { "translate": "kubejs.chestcavity.forceful_spit" },
     'chestcavity:silk': { "translate": "kubejs.chestcavity.silk" },
     'chestcavity:venomous': { "translate": "kubejs.chestcavity.venomous" },

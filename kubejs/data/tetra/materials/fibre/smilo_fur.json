@@ -5,8 +5,8 @@
     "secondary": "2.1",
     "tertiary": "5.5",
     "durability": "543",
-    "integrityCost": "2",
-    "integrityGain": "4",
+    "integrityCost": "4",
+    "integrityGain": "2",
     "magicCapacity": "311",
     "toolLevel": "0",
     "toolEfficiency": "0",
@@ -24,7 +24,7 @@
       ]
     },
     "effects" : {
-      "quickStrike": 3
+      "quickStrike": 2
     },
     "requiredTools": {
       "cut": "minecraft:stone"

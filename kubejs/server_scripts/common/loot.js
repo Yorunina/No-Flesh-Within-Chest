@@ -90,22 +90,22 @@ LootJS.modifiers(event => {
         .removeLoot('iceandfire:gorgon_head');
     event.addEntityLootModifier("minecraft:villager")
         .apply(ctx => {
-            if (Math.random() < 0.08) {
+            if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomPotionWares())
             }
-            if (Math.random() < 0.01) {
+            if (Math.random() < 0.005) {
                 ctx.addLoot(getRandomChallengeWares())
             }
-            if (Math.random() < 0.01) {
+            if (Math.random() < 0.012) {
                 ctx.addLoot(getRandomEggWares())
             }
-            if (Math.random() < 0.04) {
+            if (Math.random() < 0.018) {
                 ctx.addLoot(getRandomSpecialWares())
             }
-            if (Math.random() < 0.01) {
+            if (Math.random() < 0.008) {
                 ctx.addLoot(getRandomOrganWares())
             }
-            if (Math.random() < 0.05) {
+            if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomOreWares())
             }
         })

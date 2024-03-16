@@ -198,6 +198,22 @@ const organActiveStrategies = {
             attributeMapValueAddition(attributeMap, global.ARMOR_TOUGHNESS, 3)
         }
     },
+    'kubejs:mockery': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.Slot
+        let opPos = getOppoPos(pos)
+        if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:sarcasm') {
+            attributeMapValueAddition(attributeMap, global.ATTACK_UP_MULTI_BASE, 0.05)
+        }
+    },
+    'kubejs:sarcasm': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.Slot
+        let opPos = getOppoPos(pos)
+        if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:mockery') {
+            attributeMapValueAddition(attributeMap, global.ARMOR_MULTI_BASE, 0.1)
+        }
+    },
     'kubejs:blood_moon_wand': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.3)
     },
