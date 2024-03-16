@@ -239,7 +239,6 @@ const organPlayerDamageOnlyStrategies = {
         if (!isPlayerOnFire(player)) {
             return
         }
-        player.tell(player.maxHealth - player.health)
         event.amount = event.amount + player.maxHealth - player.health
     },
 };
