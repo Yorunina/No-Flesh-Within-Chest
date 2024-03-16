@@ -17,3 +17,10 @@ BlockEvents.rightClicked('minecraft:diamond_block', event => {
         event.player.give(Item.of('kubejs:diamond_bottle'))
     }
 })
+
+
+BlockEvents.rightClicked(event => {
+    if (event.item.getMod() == 'somebosses' && event.hand == 'off_hand') {
+        event.item.shrink(1)
+    }
+})

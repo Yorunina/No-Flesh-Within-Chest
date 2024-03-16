@@ -71,10 +71,10 @@ const organPlayerTickOnlyStrategies = {
         if (player.age % 40 != 0) {
             return
         }
-        if (!player.isOnFire()) {
+        if (!isPlayerOnFire(player)) {
             return
         }
-        let amplifier = 0
+        let amplifier = -1
         if (player.hasEffect('minecraft:strength')) {
             amplifier = player.getEffect('minecraft:strength').getAmplifier()
         }

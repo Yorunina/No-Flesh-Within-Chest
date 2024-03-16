@@ -400,7 +400,6 @@ const organActiveOnlyStrategies = {
 }
 
 
-
 function checkBox22OrganSame(posMap, organ) {
     let pos = organ.Slot
     for (let i = 0; i < box22DirectionList.length; i++) {

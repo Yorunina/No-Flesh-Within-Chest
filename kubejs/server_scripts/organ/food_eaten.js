@@ -82,6 +82,34 @@ const organFoodEatenOnlyStrategies = {
             }
         }
     },
-
+    'kubejs:origin_of_tumor': function (event, organ) {
+        let player = event.player
+        let item = event.item
+        if (!item.hasTag('kubejs:infected')) {
+            return
+        }
+        let instance = player.getChestCavityInstance()
+        let tumorList = getPlayerChestCavityItemMap(player).get('kubejs:random_tumor')
+        if (tumorList.length <= 0) {
+            return
+        }
+        let organTumor = randomGet(tumorList)
+        let index = organTumor.getInt('Slot')
+        let tumor = instance.inventory.getItem(index)
+        if (index > 0 && item.hasNBT() && tumor.hasNBT()) {
+            let itemData = item.nbt.organData
+            let organData = tumor.nbt.organData
+            itemData.allKeys.forEach(key => {
+                if (itemData[key] > 0 && organData.contains(key)) {
+                    organData[key] = Math.max(itemData[key], organData[key])
+                }
+            })
+            tumor.nbt.put('organData', organData)
+            global.initChestCavityIntoMap(player, false)
+            if (player.persistentData.contains(organActive) &&
+                player.persistentData.getInt(organActive) == 1) {
+                global.updatePlayerActiveStatus(player)
+            }
+        }
+    },
 };
-

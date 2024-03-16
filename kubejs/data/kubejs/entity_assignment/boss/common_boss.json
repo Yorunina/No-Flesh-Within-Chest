@@ -1,9 +1,7 @@
 {
   "chestcavity": "kubejs:types/boss/common_boss.json",
   "entities": [
-    "somebosses:volcanium",
     "somebosses:dark_mask",
-    "somebosses:flaming_berserker",
     "somebosses:crimson_vampire",
     "somebosses:nameless_one",
     "somebosses:hand_head",

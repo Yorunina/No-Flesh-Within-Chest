@@ -44,5 +44,8 @@ JEIEvents.information(event => {
     event.addItem('kubejs:broken_prismarine_crown', Text.black({ "translate": "kubejs.jei.broken_prismarine_crown.1" }))
     event.addItem('kubejs:plastic_heart', Text.black({ "translate": "kubejs.jei.plastic_heart.1" }))
     event.addItem('kubejs:chicken_flavor_powder', Text.black({ "translate": "kubejs.jei.chicken_flavor_powder.1" }))
+    event.addItem('kubejs:origin_of_tumor', Text.black({ "translate": "kubejs.jei.origin_of_tumor.1" }))
+    event.addItem('kubejs:immortal_volcanic_rock', Text.black({ "translate": "kubejs.jei.immortal_volcanic_rock.1" }))
+    event.addItem('kubejs:frenzy_blast_furance', Text.black({ "translate": "kubejs.jei.frenzy_blast_furance.1" }))
 })
 

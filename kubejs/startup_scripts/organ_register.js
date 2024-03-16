@@ -1013,6 +1013,27 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/broken_prismarine_crown')
         .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:immortal_volcanic_rock')
+        .addScore('hydroallergenic', 3)
+        .addScore('swim_speed', -1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.immortal_volcanic_rock.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.immortal_volcanic_rock.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/immortal_volcanic_rock')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:frenzy_blast_furance')
+        .addScore('hydrophobia', 1)
+        .addScore('endurance', 1.25)
+        .addScore('digestion', 0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.frenzy_blast_furance.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.frenzy_blast_furance.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/frenzy_blast_furance')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+    
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
@@ -1325,6 +1346,15 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold')
         .tag('kubejs:food');
 
+    registerOrgan(new Organ('kubejs:origin_of_tumor')
+        .addScore('luck', 2.0)
+        .addTextLines('default', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.2" })])
+        .build())
+        .texture('kubejs:item/organs/infected/origin_of_tumor')
+        .tag('itemborders:diamond')
+        .tag('kubejs:eat_effect_only')
+        .tag('kubejs:infected');
 
     // alex
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');

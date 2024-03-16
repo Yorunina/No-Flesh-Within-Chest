@@ -234,4 +234,12 @@ const organPlayerDamageOnlyStrategies = {
             event.amount = event.amount + player.absorptionAmount / 2
         }
     },
+    'kubejs:frenzy_blast_furance': function (event, organ, data) {
+        let player = event.source.player
+        if (!isPlayerOnFire(player)) {
+            return
+        }
+        player.tell(player.maxHealth - player.health)
+        event.amount = event.amount + player.maxHealth - player.health
+    },
 };

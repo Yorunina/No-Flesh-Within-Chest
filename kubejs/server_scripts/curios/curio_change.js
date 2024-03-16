@@ -11,6 +11,6 @@ global.curioChange = event => {
             return
         }
         let curios = optionalCurios.resolve().get().getStackInSlot(event.getSlotIndex())
-        player.tell(event.getTo())
+        // player.tell(event.getTo())
     }
 }
