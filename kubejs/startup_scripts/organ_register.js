@@ -753,6 +753,19 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:key_pressed')
         .tag('kubejs:relics');
 
+    registerOrgan(new Organ('kubejs:melty_blood')
+        .addScore('health', -1.25)
+        .addScore('strength', 1.5)
+        .addScore('speed', 1.75)
+        .addScore('nerves', -2.25)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.melty_blood.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.melty_blood.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.melty_blood.3" })])
+        .build())
+        .texture('kubejs:item/organs/relics/melty_blood')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+
     registerOrgan(new Organ('kubejs:aesegull_rib_left')
         .addScore('defense', 1.75)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.aesegull_rib_left.1" })])
