@@ -26,6 +26,6 @@
   },
   "experienceCost": 20,
   "attributes": {
-    "**irons_spellbooks:ender_spell_power": 0.3
+    "irons_spellbooks:ender_spell_power": 0.3
   }
 }

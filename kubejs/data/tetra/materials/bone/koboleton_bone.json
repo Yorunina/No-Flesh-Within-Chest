@@ -5,7 +5,7 @@
   "secondary": "2.5",
   "tertiary": "4",
   "durability": "210",
-  "integrityCost": "1",
+  "integrityCost": "3",
   "integrityGain": "6",
   "magicCapacity": "175",
   "toolLevel": "minecraft:iron",
@@ -15,7 +15,7 @@
     "texture": "4c442c"
   },
   "effects": {
-    "jab": 10
+    "jab": 20
   },
   "textures": [
     "bone",

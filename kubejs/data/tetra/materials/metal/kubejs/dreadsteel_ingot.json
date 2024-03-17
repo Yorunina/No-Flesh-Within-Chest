@@ -15,10 +15,10 @@
     "texture": "000080"
   },
   "attributes": {
-    "**irons_spellbooks:fire_spell_power": 0.2,
-    "**irons_spellbooks:ice_spell_power": 0.2,
-    "**irons_spellbooks:lightning_spell_power": 0.2,
-    "generic.attack_speed": -0.6
+    "irons_spellbooks:fire_spell_power": 0.2,
+    "irons_spellbooks:ice_spell_power": 0.2,
+    "irons_spellbooks:lightning_spell_power": 0.2,
+    "*generic.attack_speed": -0.6
   },
   "effects": {
     "blocking_reflect": [

@@ -1,0 +1,32 @@
+{
+    "key": "bamboo_planks",
+    "category": "wood",
+    "primary": 3.5,
+    "secondary": 1.1,
+    "tertiary": 7.7,
+    "durability": 60,
+    "integrityCost": 2,
+    "integrityGain": 4,
+    "magicCapacity": 40,
+    "toolLevel": "minecraft:gold",
+    "toolEfficiency": 3,
+    "tints": {
+        "glyph": "699022",
+        "texture": "5e8a24"
+    },
+    "textures": [
+        "crude",
+        "wooden"
+    ],
+    "improvements": {
+        "hollow": 0
+    },
+    "material": {
+        "items": [
+            "minecraft:bamboo"
+        ]
+    },
+    "requiredTools": {
+        "axe_dig": "minecraft:stone"
+    }
+}

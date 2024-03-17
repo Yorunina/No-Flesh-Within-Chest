@@ -1,0 +1,32 @@
+{
+    "key": "dreadwood_planks",
+    "category": "wood",
+    "primary": 4.1,
+    "secondary": 1.4,
+    "tertiary": 8.2,
+    "durability": 217,
+    "integrityCost": 2,
+    "integrityGain": 4,
+    "magicCapacity": 225,
+    "toolLevel": "minecraft:gold",
+    "toolEfficiency": 5.5,
+    "tints": {
+        "glyph": "2F4F4F",
+        "texture": "2F4F4F"
+    },
+    "textures": [
+        "crude",
+        "wooden"
+    ],
+    "effects": {
+        "art_of_forging:decaying": [ 1, 8 ]
+    },
+    "material": {
+        "items": [
+            "iceandfire:dreadwood_planks"
+        ]
+    },
+    "requiredTools": {
+        "axe_dig": "minecraft:iron"
+    }
+}

@@ -11,7 +11,7 @@
     "toolLevel": 0,
     "toolEfficiency": 0,
     "attributes":{
-        "**irons_spellbooks:spell_resist":0.3
+        "irons_spellbooks:spell_resist":0.3
     },
     "tints": {
         "glyph": "EEE9E9",

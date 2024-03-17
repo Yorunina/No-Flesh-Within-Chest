@@ -18,8 +18,8 @@
       "default"
     ],
     "effects" : {
-      "spread": 6,
-      "multishot": [8,15]
+      "spread": [0,80],
+      "multishot": [5,12]
     },
     "experienceCost": 20,
     "material":{"items":["alexsmobs:skreecher_soul"]}
