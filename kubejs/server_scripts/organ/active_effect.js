@@ -413,6 +413,10 @@ const organActiveOnlyStrategies = {
             playerChestInstance.organScores.put(key, new $Float(value * amplifier))
         })
     },
+    'kubejs:aegis': function (player, organ, attributeMap) {
+        let armorval = player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'defense')) * 0.5
+        attributeMapValueAddition(attributeMap, global.ARMOR, Math.max(0, Math.min(30, Math.floor(armorval))))
+    },
 }
 
 

@@ -217,6 +217,19 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:key_pressed')
         .tag('kubejs:machine');
 
+    registerOrgan(new Organ('kubejs:aegis')
+        .addScore('speed', -2)
+        .addScore('detoxification', -1.5)
+        .addScore('defense', 2.25)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.aegis.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.aegis.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.aegis.3" })])
+        .build())
+        .texture('kubejs:item/organs/machine/aegis')
+        .tag('itemborders:iron')
+        .tag('kubejs:active_only')
+        .tag('kubejs:machine');
+
     registerOrgan(new Organ('kubejs:platelet_dispatcher')
         .addScore('metabolism', 3)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.1" })])

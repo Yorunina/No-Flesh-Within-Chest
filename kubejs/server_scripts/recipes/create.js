@@ -88,6 +88,19 @@ ServerEvents.recipes(event => {
 		E: 'minecraft:netherite_ingot',
 	})
 
+	event.recipes.create.mechanical_crafting('kubejs:aegis', [
+		' DDDD',
+		'DDBBB',
+		'DCBAB',
+		'DDBBB',
+		' DDDD'
+	], {
+		A: Item.of('goety:iron_hide_focus', '{"Soul Cost":24}'),
+		B: 'graveyard:dark_iron_ingot',
+		C: Item.of('goety:bulwark_focus', '{"Soul Cost":100}'),
+		D: 'create:iron_sheet',
+	})
+
 
 
 	event.recipes.create.mechanical_crafting('kubejs:machine_clockwork', [
