@@ -1611,27 +1611,27 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:dragon_blood_appendix').addScore('luck', 2.5).build()).texture('kubejs:item/organs/dragon/dragon_blood_appendix').tag('kubejs:appendix').tag('kubejs:dragon');
 
     //幻想种器官
-    registerOrgan(new Organ('kubejs:fantasy_lung').addScore('breath_recovery', 1.125).addScore('breath_capacity', 1.125).addScore('endurance', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_lung').tag('kubejs:lung').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_lung').addScore('breath_recovery', 1.125).addScore('breath_capacity', 1.125).addScore('endurance', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_lung').tag('kubejs:lung').tag('kubejs:fantasy');
 
-    registerOrgan(new Organ('kubejs:fantasy_muscle').addScore('strength', 1.125).addScore('speed', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_muscle').tag('kubejs:muscle').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_muscle').addScore('strength', 1.125).addScore('speed', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_muscle').tag('kubejs:muscle').tag('kubejs:fantasy');
 
-    registerOrgan(new Organ('kubejs:fantasy_heart').addScore('health', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_heart').tag('kubejs:heart').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_heart').addScore('health', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_heart').tag('kubejs:heart').tag('kubejs:fantasy');
 
-    registerOrgan(new Organ('kubejs:fantasy_intestine').addScore('nutrition', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_intestine').tag('kubejs:intestine').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_intestine').addScore('nutrition', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_intestine').tag('kubejs:intestine').tag('kubejs:fantasy');
 
-    registerOrgan(new Organ('kubejs:fantasy_rib').addScore('defense', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_rib').tag('kubejs:rib').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_rib').addScore('defense', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_rib').tag('kubejs:rib').tag('kubejs:fantasy');
 
-    registerOrgan(new Organ('kubejs:fantasy_spine').addScore('defense', 0.5625).addScore('nerves', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_spine').tag('kubejs:spine').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_spine').addScore('defense', 0.5625).addScore('nerves', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_spine').tag('kubejs:spine').tag('kubejs:fantasy');
 
-    registerOrgan(new Organ('kubejs:fantasy_spleen').addScore('metabolism', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_spleen').tag('kubejs:spleen').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_spleen').addScore('metabolism', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_spleen').tag('kubejs:spleen').tag('kubejs:fantasy');
 
-    registerOrgan(new Organ('kubejs:fantasy_stomach').addScore('digestion', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_stomach').tag('kubejs:stomach').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_stomach').addScore('digestion', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_stomach').tag('kubejs:stomach').tag('kubejs:fantasy');
 
-    registerOrgan(new Organ('kubejs:fantasy_kidney').addScore('filtration', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_kidney').tag('kubejs:kidney').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_kidney').addScore('filtration', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_kidney').tag('kubejs:kidney').tag('kubejs:fantasy');
 
-    registerOrgan(new Organ('kubejs:fantasy_liver').addScore('detoxification', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_liver').tag('kubejs:liver').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_liver').addScore('detoxification', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_liver').tag('kubejs:liver').tag('kubejs:fantasy');
 
-    registerOrgan(new Organ('kubejs:fantasy_appendix').addScore('luck', 1.125).addScore('crystalsynthesis', 0.125).build()).texture('kubejs:item/organs/fantasy/fantasy_appendix').tag('kubejs:appendix').tag('kubejs:fantasy');
+    registerOrgan(new Organ('kubejs:fantasy_appendix').addScore('luck', 1.125).addScore('crystalsynthesis', 0.25).build()).texture('kubejs:item/organs/fantasy/fantasy_appendix').tag('kubejs:appendix').tag('kubejs:fantasy');
 
     registerOrgan(new Organ('kubejs:soul_piece')
         .addScore('buoyant', 0.5)
