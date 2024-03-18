@@ -60,7 +60,7 @@ const organPlayerBearOnlyStrategies = {
     },
     'kubejs:harbinger_lung': function (event, organ, data) {
         let count = event.entity.persistentData.getInt(resourceCount)
-        if (count >= event.amount) {
+        if (count >= event.amount / 2) {
             event.amount = event.amount / 2
             updateResourceCount(event.entity, count - Math.floor(event.amount))
         }

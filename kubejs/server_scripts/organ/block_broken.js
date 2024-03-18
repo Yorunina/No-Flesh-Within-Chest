@@ -78,9 +78,9 @@ const organBlockBrokenOnlyStrategies = {
             return
         }
         let count = player.persistentData.getInt(resourceCount);
-        if (count > 150 && Math.random() < 0.02) {
-            if (Math.random() < 0.1) {
-                event.block.popItem('lightmanscurrency:coinpile_gold')
+        if (count > 150 && Math.random() < 0.05) {
+            if (Math.random() < 0.15) {
+                event.block.popItem('lightmanscurrency:coin_gold')
                 event.block.set('minecraft:air')
             }
             else {
