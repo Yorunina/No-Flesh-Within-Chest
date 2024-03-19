@@ -97,6 +97,18 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold')
         .tag('kubejs:rose');
 
+    //玫瑰石英透析器
+    registerOrgan(new Organ('kubejs:rose_quartz_dialyzer')
+        .addScore('health', -1.75)
+        .addScore('filtration', 3.25)
+        .addScore('endurance', -1.25)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_dialyzer.1" })])
+        .build())
+        .texture('kubejs:item/organs/rose_quartz/rose_quartz_dialyzer')
+        .tag('kubejs:kidney')
+        .tag('itemborders:gold')
+        .tag('kubejs:rose');
+
     // 革命机械系列
     // 熔炉核心
     registerOrgan(new Organ('kubejs:furnace_core')
@@ -230,6 +242,19 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only')
         .tag('kubejs:machine');
 
+    registerOrgan(new Organ('kubejs:mace')
+        .addScore('strength', 2.5)
+        .addScore('knockback_resistant', 1)
+        .addScore('endurance', -3.75)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.mace.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mace.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mace.3" })])
+        .build())
+        .texture('kubejs:item/organs/machine/mace')
+        .tag('itemborders:iron')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:machine');
+
     registerOrgan(new Organ('kubejs:platelet_dispatcher')
         .addScore('metabolism', 3)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.1" })])
@@ -279,6 +304,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:player_tick_only')
         .tag('kubejs:eat_effect_only')
         .tag('kubejs:machine')
+        .tag('kubejs:rose')
         .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:enery_bottle_max')

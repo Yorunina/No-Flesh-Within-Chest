@@ -249,4 +249,11 @@ const organPlayerDamageOnlyStrategies = {
         //player.modifyAttribute('minecraft:generic.attack_speed', 'TempAttackSpeedDown', -(0.3 + luckval * 0.01), 'multiply_base')
         player.potionEffects.add('goety:stunned', 20 * Math.min(luckval * 0.2, 10), 0)
     },
+    'kubejs:mace': function (event, organ, data) {
+        let player = event.source.player
+        let fallval = player.fallDistance
+        if (fallval <= 0) return
+        let falldamagemulti = Math.min(1 + fallval * fallval * 0.0002, 3)
+        event.amount = event.amount * falldamagemulti
+    },
 };

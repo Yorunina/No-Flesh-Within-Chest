@@ -267,6 +267,7 @@ StartupEvents.registry('item', event => {
                 global.updatePlayerActiveStatus(entity)
                 entity.persistentData.putInt(organActive, 1)
             }
+            entity.tell('器官已替换')
             return itemstack
         })
 

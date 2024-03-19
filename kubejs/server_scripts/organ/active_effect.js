@@ -95,16 +95,49 @@ function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
  */
 const organActiveStrategies = {
     'kubejs:rose_quartz_heart': function (player, organ, attributeMap) {
-        let typeMap = getPlayerChestCavityTypeMap(player);
-        if (typeMap.has('kubejs:machine')) {
-            let value = typeMap.get('kubejs:machine').length * 2
-            attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
-        }
+        let typeMap = getPlayerChestCavityTypeMap(player)
 
+        let rosekind = 1
+        let roseval = 1
+        let attackval = 0
         if (typeMap.has('kubejs:rose')) {
-            let value = typeMap.get('kubejs:rose').length * 1
-            attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
+            let roseSet = new Set()
+            typeMap.get('kubejs:rose').forEach(organ => {
+                roseSet.add(organ.id)
+            })
+            rosekind = roseSet.size
         }
+        if (typeMap.has('kubejs:rose')) {
+            roseval = typeMap.get('kubejs:rose').length
+        }
+        if (roseval - rosekind <= 9) {
+            attackval = Math.ceil(rosekind + (19 - roseval + rosekind) * (roseval - rosekind) / 20)
+        }
+        else if (roseval - rosekind > 9) {
+            attackval = Math.ceil(rosekind + (roseval - rosekind + 36) / 10)
+        }
+        attributeMapValueAddition(attributeMap, global.ATTACK_UP, attackval)
+
+        let machinekind = 1
+        let machineval = 1
+        let healthval = 0
+        if (typeMap.has('kubejs:machine')) {
+            let machineSet = new Set()
+            typeMap.get('kubejs:machine').forEach(organ => {
+                machineSet.add(organ.id)
+            })
+            machinekind = machineSet.size
+        }
+        if (typeMap.has('kubejs:machine')) {
+            machineval = typeMap.get('kubejs:machine').length
+        }
+        if (machineval - machinekind <= 9) {
+            healthval = Math.ceil(machinekind + (19 - machineval + machinekind) * (machineval - machinekind) / 20)
+        }
+        else if (machineval - machinekind > 9) {
+            healthval = Math.ceil(machinekind + (machineval - machinekind + 36) / 10)
+        }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, healthval * 2)
     },
     'kubejs:revolution_cable': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player);

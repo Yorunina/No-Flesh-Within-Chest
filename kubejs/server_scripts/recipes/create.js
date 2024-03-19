@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
 		'SWBWS',
 		'SDCDS',
 		'SWEWS',
-		'SSSSS'
+		'AAAAA'
 	], {
 		B: 'create:electron_tube',
 		C: 'biomancy:creator_mix',
@@ -72,6 +72,7 @@ ServerEvents.recipes(event => {
 		E: 'createaddition:connector',
 		S: 'minecraft:pink_dye',
 		W: 'createaddition:copper_wire',
+		A: 'create:polished_rose_quartz',
 	})
 
 
@@ -101,7 +102,21 @@ ServerEvents.recipes(event => {
 		D: 'create:iron_sheet',
 	})
 
-
+	event.recipes.create.mechanical_crafting('kubejs:mace', [
+		'   A   ',
+		'BBBBBBB',
+		'CDDDDDC',
+		'BBBBBBB',
+		'   E   ',
+		'   E   ',
+		'   E   ',
+	], {
+		A: 'tetra:forged_bolt',
+		B: 'create:sturdy_sheet',
+		C: 'art_of_forging:forged_steel_ingot',
+		D: 'create:industrial_iron_block',
+		E: 'createaddition:iron_rod'
+	})
 
 	event.recipes.create.mechanical_crafting('kubejs:machine_clockwork', [
 		'     A ',
@@ -233,6 +248,16 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_heart', ['kubejs:incomplete_rose_quartz_heart', 'minecraft:rose_bush']),
 		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_heart', ['kubejs:incomplete_rose_quartz_heart', 'create:polished_rose_quartz'])
 	]).transitionalItem('kubejs:incomplete_rose_quartz_heart').loops(5)
+
+	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:rose_quartz_dialyzer').withChance(80.0),
+		Item.of('create:rose_quartz').withChance(20.0)
+	], 'kubejs:kidney_template', [
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_dialyzer', ['kubejs:incomplete_rose_quartz_dialyzer', 'biomancy:absorption_boost']),
+		event.recipes.createCutting('kubejs:incomplete_rose_quartz_dialyzer', 'kubejs:incomplete_rose_quartz_dialyzer'),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_dialyzer', ['kubejs:incomplete_rose_quartz_dialyzer', 'minecraft:rose_bush']),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_dialyzer', ['kubejs:incomplete_rose_quartz_dialyzer', 'create:polished_rose_quartz'])
+	]).transitionalItem('kubejs:incomplete_rose_quartz_dialyzer').loops(5)
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:lava_life_cycle_system').withChance(75.0),
