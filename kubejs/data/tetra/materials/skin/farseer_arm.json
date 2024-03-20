@@ -27,7 +27,7 @@
       "reaching": 2
     },
     "attributes":{
-        "forge:attack_range":2
+        "forge:attack_range":1.5
     },
     "requiredTools": {
       "cut": "minecraft:iron"

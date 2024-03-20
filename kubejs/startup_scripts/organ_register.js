@@ -533,9 +533,39 @@ StartupEvents.registry('item', event => {
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.holy_eyeball.1" }), Text.yellow({ "translate": "kubejs.tooltips.holy_eyeball.4" }), Text.yellow({ "translate": "kubejs.tooltips.holy_eyeball.5" })])
         .build())
         .texture('kubejs:item/organs/others/holy_eyeball')
+        .tag('kubejs:magic')
         .tag('kubejs:muscle')
         .tag('itemborders:gold')
         .tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:holy_grenade')
+        .addScore('glowing', 1)
+        .addScore('buff_purging', 1)
+        .addScore('explosive', 1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.holy_grenade.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.holy_grenade.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.holy_grenade.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.holy_grenade.4" })])
+        .build())
+        .texture('kubejs:item/organs/magic/holy_grenade')
+        .tag('kubejs:magic')
+        .tag('kubejs:damage_only')
+        .tag('itemborders:gold')
+        .tag('kubejs:active');
+
+    registerOrgan(new Organ('kubejs:excited_appendix')
+        .addScore('explosive', 2)
+        .addScore('creepy', 1)
+        .addScore('luck', 1.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.excited_appendix.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.excited_appendix.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.excited_appendix.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.excited_appendix.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.excited_appendix.5" })])
+        .build())
+        .texture('kubejs:item/organs/others/excited_appendix')
+        .tag('kubejs:appendix')
+        .tag('kubejs:key_pressed');
 
 
     // 传说系列
@@ -707,8 +737,8 @@ StartupEvents.registry('item', event => {
         .addScore('health', 1.5)
         .addScore('fire_resistant', 0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.1" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.2" }), Text.blue({ "translate": "kubejs.tooltips.love_between_lava_and_ice.3" }), Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.4" }), Text.yellow(0.1), Text.aqua({ "translate": "kubejs.tooltips.love_between_lava_and_ice.5" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.6" }), Text.darkRed({ "translate": "kubejs.tooltips.love_between_lava_and_ice.7" }), Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.8" }), Text.yellow(0.1), Text.red({ "translate": "kubejs.tooltips.love_between_lava_and_ice.9" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.2" }), Text.blue({ "translate": "kubejs.tooltips.love_between_lava_and_ice.3" }), Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.4" }), Text.yellow(0.15), Text.aqua({ "translate": "kubejs.tooltips.love_between_lava_and_ice.5" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.6" }), Text.darkRed({ "translate": "kubejs.tooltips.love_between_lava_and_ice.7" }), Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.8" }), Text.yellow(0.15), Text.red({ "translate": "kubejs.tooltips.love_between_lava_and_ice.9" })])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.love_between_lava_and_ice.10" })])
         .build())
         .texture('kubejs:item/organs/relics/love_between_lava_and_ice')

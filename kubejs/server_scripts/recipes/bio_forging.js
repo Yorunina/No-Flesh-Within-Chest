@@ -56,6 +56,8 @@ ServerEvents.highPriorityData(event => {
 
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'minecraft:spider_eye' }, { 'count': 1, 'item': 'kubejs:soul_piece' }, { 'count': 6, 'item': 'biomancy:exotic_compound' }], Item.of('kubejs:holy_eyeball')).setNutrientsCost(60).setTab('biomancy:weapons'))
 
+    registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'chestcavity:creeper_appendix' }, { 'count': 1, 'item': 'minecraft:creeper_head' }, { 'count': 8, 'item': 'biomancy:volatile_fluid' }, { 'count': 16, 'item': 'minecraft:gunpowder' }], Item.of('kubejs:excited_appendix')).setNutrientsCost(60).setTab('biomancy:weapons'))
+
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'kubejs:stomach_template' }, { 'count': 2, 'item': 'biomancy:enlargement_serum' }, { 'count': 16, 'item': 'biomancy:malignant_flesh_veins' }, { 'count': 8, 'item': 'biomancy:nutrient_bar' }], Item.of('kubejs:stomach_tumor')).setNutrientsCost(40).setTab('biomancy:weapons'))
 
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'kubejs:stomach_template' }, { 'count': 1, 'item': 'kubejs:greed_shard' }], Item.of('kubejs:greedy_stomach')).setNutrientsCost(40).setTab('biomancy:weapons'))

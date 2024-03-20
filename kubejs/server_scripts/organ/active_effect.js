@@ -152,11 +152,11 @@ const organActiveStrategies = {
     'kubejs:love_between_lava_and_ice': function (player, organ, attributeMap) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (itemMap.has('minecraft:blue_ice')) {
-            let iceMulti = itemMap.get('minecraft:blue_ice').length * 0.1
+            let iceMulti = itemMap.get('minecraft:blue_ice').length * 0.15
             attributeMapValueAddition(attributeMap, global.ICE_SPELL_POWER, iceMulti)
         }
         if (itemMap.has('minecraft:magma_block')) {
-            let fireMulti = itemMap.get('minecraft:magma_block').length * 0.1
+            let fireMulti = itemMap.get('minecraft:magma_block').length * 0.15
             attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMulti)
         }
     },
@@ -179,6 +179,9 @@ const organActiveStrategies = {
     },
     'kubejs:holy_eyeball': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.05)
+        attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.3)
+    },
+    'kubejs:holy_grenade': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.3)
     },
     'kubejs:hamimelon_organ': function (player, organ, attributeMap) {

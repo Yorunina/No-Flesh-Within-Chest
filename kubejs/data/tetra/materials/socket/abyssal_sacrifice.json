@@ -11,8 +11,8 @@
     "toolLevel": 0,
     "toolEfficiency": 5,
     "attributes":{
-        "forge:reach_distance":1,
-        "forge:attack_range":1
+        "forge:reach_distance":0.5,
+        "forge:attack_range":0.5
     },
     "effects": {
         "bleeding": 1,

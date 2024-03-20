@@ -139,6 +139,21 @@ const organPlayerKeyPressedOnlyStrategies = {
         }
         player.addItemCooldown('kubejs:wither_and_fall', 20 * 150)
     },
+    'kubejs:excited_appendix': function (event, organ) {
+        let player = event.player
+        let itemMap = getPlayerChestCavityItemMap(player);
+        let amplifier = Math.max(0, player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'explosive')) * 0.2)
+        let duration = Math.max(0, player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'creepy')) * 10)
+        let cooldown = 0
+        if (itemMap.has('minecraft:gunpowder')) {
+            cooldown = cooldown + itemMap.get('minecraft:gunpowder').length * 5
+        }
+        if (itemMap.has('minecraft:tnt')) {
+            cooldown = cooldown + itemMap.get('minecraft:tnt').length * 10
+        }
+        player.potionEffects.add('goety:explosive', Math.max(60, 20 * duration), Math.min(1, Math.floor(amplifier)), false, false)
+        player.addItemCooldown('kubejs:excited_appendix', Math.max(20 * 10, 20 * (120 - cooldown)))
+    },
     'kubejs:amethyst_magic_core': function (event, organ) {
         let player = event.player
         let magicData = getPlayerMagicData(player)
