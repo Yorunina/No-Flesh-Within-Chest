@@ -32,7 +32,7 @@ const championPlayerDamageStrategies = {
         let entity = event.entity
         let harmfulEffects = []
         entity.potionEffects.active.forEach(ctx => {
-            if (!ctx.effect.isBeneficial()) {
+            if (ctx.effect.CC_IsHarmful()) {
                 harmfulEffects.push(ctx.effect)
             }
         })

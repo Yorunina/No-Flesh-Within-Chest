@@ -172,7 +172,7 @@ const organPlayerDamageOnlyStrategies = {
         }
         if (Math.random() < Math.min(0.03 * event.source.player.getLuck(), 0.3)) {
             event.entity.potionEffects.map.forEach((effect, instance) => {
-                if (!effect.isBeneficial()) {
+                if (effect.CC_IsHarmful()) {
                     instance.setDuration(instance.getDuration() + 20 * 2)
                 }
             })
@@ -253,7 +253,7 @@ const organPlayerDamageOnlyStrategies = {
         let player = event.source.player
         let fallval = player.fallDistance
         if (fallval <= 0) return
-        let falldamagemulti = Math.min(1 + fallval * fallval * 0.0002, 3)
+        let falldamagemulti = Math.min(1 + fallval * fallval * 0.0002, 5)
         event.amount = event.amount * falldamagemulti
     },
     'kubejs:holy_grenade': function (event, organ, data) {
@@ -273,7 +273,7 @@ const organPlayerDamageOnlyStrategies = {
             if (Math.random() < 0.2) {
                 let beneficialEffects = []
                 entity.potionEffects.active.forEach(ctx => {
-                    if (ctx.effect.isBeneficial()) {
+                    if (ctx.effect.CC_IsBeneficial()) {
                         beneficialEffects.push(ctx.effect)
                     }
                 })

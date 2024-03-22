@@ -154,6 +154,22 @@ const organPlayerKeyPressedOnlyStrategies = {
         player.potionEffects.add('goety:explosive', Math.max(60, 20 * duration), Math.min(1, Math.floor(amplifier)), false, false)
         player.addItemCooldown('kubejs:excited_appendix', Math.max(20 * 10, 20 * (120 - cooldown)))
     },
+    'kubejs:redstone_of_aja': function (event, organ) {
+        let player = event.player
+        let harmfulEffects = []
+        player.potionEffects.active.forEach(ctx => {
+            if (ctx.effect.CC_IsHarmful()) {
+                harmfulEffects.push(ctx)
+            }
+        })
+        if (harmfulEffects.length > 0) {
+            harmfulEffects.forEach(ctx => {
+                player.removeEffect(ctx.effect)
+                player.potionEffects.add(ctx.effect, ctx.getDuration() * 0.5, ctx.getAmplifier() + 1)
+            })
+        }
+        player.addItemCooldown('kubejs:redstone_of_aja', 20 * 30)
+    },
     'kubejs:amethyst_magic_core': function (event, organ) {
         let player = event.player
         let magicData = getPlayerMagicData(player)

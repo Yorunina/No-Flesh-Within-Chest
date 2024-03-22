@@ -1172,6 +1172,40 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/broken_prismarine_crown')
         .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:immortal_volcanic_rock')
+        .addScore('hydroallergenic', 3)
+        .addScore('swim_speed', -1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.immortal_volcanic_rock.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.immortal_volcanic_rock.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/immortal_volcanic_rock')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:frenzy_blast_furance')
+        .addScore('hydrophobia', 1)
+        .addScore('endurance', 1.25)
+        .addScore('digestion', 0.5)
+        .addScore('furnace_powered', 1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.frenzy_blast_furance.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.frenzy_blast_furance.2" })])
+        .build())
+        .texture('kubejs:item/organs/relics/frenzy_blast_furance')
+        .tag('kubejs:damage_only')
+        .tag('kubejs:relics');
+
+    registerOrgan(new Organ('kubejs:redstone_of_aja')
+        .addScore('crystalsynthesis', 1.5)
+        .addScore('glowing', 1)
+        .addScore('impact_resistant', 2)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.redstone_of_aja.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_of_aja.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_of_aja.3" })])
+        .build())
+        .texture('kubejs:item/organs/relics/redstone_of_aja')
+        .tag('kubejs:key_pressed')
+        .tag('kubejs:relics');
+
     // 碎片
     registerOrgan(new Organ('kubejs:nether_star_shard')
         .addScore('fire_resistant', 0.5)
