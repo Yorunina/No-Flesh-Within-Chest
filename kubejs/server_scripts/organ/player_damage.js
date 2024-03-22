@@ -52,7 +52,20 @@ const organPlayerDamageOnlyStrategies = {
             attriMap.set(global.TEMP_ATTACK_UP.name, value)
             player.modifyAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name, value, global.TEMP_ATTACK_UP.operation);
             setPlayerAttributeMap(player, attriMap);
-            data.returnDamage = data.returnDamage + value
+
+            if (!player.hasEffect('kubejs:dragon_power')) {
+                data.returnDamage = data.returnDamage + value
+            }
+            else {
+                let dragonPowerEffect = player.getEffect('kubejs:dragon_power')
+                let amplify = dragonPowerEffect.getAmplifier()
+                if (amplify < 5) {
+                    data.returnDamage = (data.returnDamage + value) * (0.8 - amplify * 0.2)
+                } else {
+                    data.returnDamage = (data.returnDamage + value) * 0
+                }
+            }
+
         } else {
             player.removeAttribute(global.TEMP_ATTACK_UP.key, global.TEMP_ATTACK_UP.name);
             attriMap.set(global.TEMP_ATTACK_UP.name, 0);
@@ -198,7 +211,7 @@ const organPlayerDamageOnlyStrategies = {
         event.entity.invulnerableTime = event.entity.invulnerableTime * 1 / 2
         event.amount = event.amount * 0.5
     },
-    'kubejs:enery_bottle_max': function (event, organ, data) {
+    'kubejs:energy_bottle_max': function (event, organ, data) {
         let player = event.source.player
         let count = player.persistentData.getInt(resourceCount)
         let typeMap = getPlayerChestCavityTypeMap(player)

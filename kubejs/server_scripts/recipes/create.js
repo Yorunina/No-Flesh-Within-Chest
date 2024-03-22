@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
 	})
 
 
-	event.recipes.create.mechanical_crafting('kubejs:enery_bottle_max', [
+	event.recipes.create.mechanical_crafting('kubejs:energy_bottle_max', [
 		' AAA ',
 		'ABEBA',
 		'ABDBA',
