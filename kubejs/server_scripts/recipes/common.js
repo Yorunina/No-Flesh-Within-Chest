@@ -14,6 +14,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'extraarmor:copper_chestplate' })
     event.remove({ output: 'extraarmor:copper_leggings' })
     event.remove({ output: 'extraarmor:copper_boots' })
+    event.remove({ output: 'extraarmor:blacksmith_hammer' })
+    event.remove({ output: 'alexsmobs:transmutation_table' })
 
     event.shaped(Item.of('extraarmor:copper_helmet', 1), [
         'LOL',
@@ -244,6 +246,11 @@ ServerEvents.recipes(event => {
         ['kubejs:relic_metal_plate', '#forge:shears', 'kubejs:relic_metal_plate'],
         ['create:wrench', 'wares:cardboard_box', '#forge:tools/knives'],
         ['kubejs:relic_metal_plate', 'chestcavity:chest_opener', 'kubejs:relic_metal_plate']])
+
+    event.shaped('extraarmor:blacksmith_hammer', [
+        ['minecraft:iron_ingot', 'minecraft:blackstone', 'minecraft:iron_ingot'],
+        ['', 'minecraft:stick', ''],
+        ['', 'minecraft:stick', '']])
 
     event.shapeless('kubejs:safe_chest_opener', ['chestcavity:chest_opener', '#forge:dyes/cyan'])
 })

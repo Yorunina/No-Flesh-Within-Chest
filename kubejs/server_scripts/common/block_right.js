@@ -17,3 +17,7 @@ BlockEvents.rightClicked('minecraft:diamond_block', event => {
         event.player.give(Item.of('kubejs:diamond_bottle'))
     }
 })
+
+BlockEvents.rightClicked('alexsmobs:transmutation_table', event => {
+    event.block.set('minecraft:air')
+})

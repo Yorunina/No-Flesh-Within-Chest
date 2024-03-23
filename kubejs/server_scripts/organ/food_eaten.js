@@ -48,12 +48,12 @@ const organFoodEatenOnlyStrategies = {
     },
     'kubejs:cream_cookie_heart': function (event, organ) {
         if (event.item.id == 'kubejs:cream') {
-            event.player.potionEffects.add('minecraft:speed', 3600 * 20)
+            event.player.potionEffects.add('minecraft:speed', 600 * 20, 1)
             event.player.removeEffect('minecraft:strength')
             return
         }
         if (event.item.hasTag('kubejs:is_cookie')) {
-            event.player.potionEffects.add('minecraft:strength', 3600 * 20)
+            event.player.potionEffects.add('minecraft:strength', 600 * 20, 1)
             event.player.removeEffect('minecraft:speed')
             return
         }
