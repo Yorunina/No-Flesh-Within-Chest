@@ -208,8 +208,16 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:the_third_eye': function (event, organ, data) {
         if (event.source.type != 'arrow') return
-        event.entity.invulnerableTime = event.entity.invulnerableTime * 1 / 2
-        event.amount = event.amount * 0.5
+        let harmfulEffects = []
+        event.entity.potionEffects.active.forEach(ctx => {
+            if (ctx.effect.CC_IsHarmful()) {
+                harmfulEffects.push(ctx)
+            }
+        })
+        if (harmfulEffects.length >= 5) {
+            event.entity.invulnerableTime = event.entity.invulnerableTime * 1 / 2
+            event.amount = event.amount * 0.5
+        }
     },
     'kubejs:energy_bottle_max': function (event, organ, data) {
         let player = event.source.player
@@ -242,7 +250,7 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:origin_knight_core': function (event, organ, data) {
         let player = event.source.player
         if (player.absorptionAmount > 0) {
-            event.amount = event.amount + player.absorptionAmount / 2
+            event.amount = event.amount * (1 + player.absorptionAmount * 0.01)
         }
     },
     'kubejs:mockery': function (event, organ, data) {

@@ -31,7 +31,11 @@ function organPlayerHurtByOthers(event, data) {
  */
 const organPlayerBearStrategies = {
     'kubejs:red_ink': function (event, organ, data) {
-        getPlayerMagicData(event.entity).addMana(event.amount * 5)
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        if (typeMap.has('kubejs:magic')) {
+            let amount = typeMap.get('kubejs:magic').length
+            getPlayerMagicData(event.entity).addMana(event.amount * Math.floor(4.5 + amount * 0.5))
+        }
     },
 };
 

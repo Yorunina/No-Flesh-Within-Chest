@@ -157,9 +157,13 @@ const organPlayerKeyPressedOnlyStrategies = {
     'kubejs:redstone_of_aja': function (event, organ) {
         let player = event.player
         let harmfulEffects = []
+        let beneficialEffects = []
         player.potionEffects.active.forEach(ctx => {
             if (ctx.effect.CC_IsHarmful()) {
                 harmfulEffects.push(ctx)
+            }
+            else if (ctx.effect.CC_IsBeneficial()) {
+                beneficialEffects.push(ctx)
             }
         })
         if (harmfulEffects.length > 0) {
@@ -168,7 +172,15 @@ const organPlayerKeyPressedOnlyStrategies = {
                 player.potionEffects.add(ctx.effect, ctx.getDuration() * 0.5, ctx.getAmplifier() + 1)
             })
         }
-        player.addItemCooldown('kubejs:redstone_of_aja', 20 * 30)
+        if (beneficialEffects.length > 0) {
+            beneficialEffects.forEach(ctx => {
+                player.removeEffect(ctx.effect)
+                if (ctx.getAmplifier() > 0) {
+                    player.potionEffects.add(ctx.effect, ctx.getDuration() * 2, ctx.getAmplifier() - 1)
+                }
+            })
+        }
+        player.addItemCooldown('kubejs:redstone_of_aja', 20 * 90)
     },
     'kubejs:amethyst_magic_core': function (event, organ) {
         let player = event.player

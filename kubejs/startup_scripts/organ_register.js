@@ -308,8 +308,8 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:energy_bottle_max')
-        .addScore('filtration', 1.5)
-        .addScore('detoxification', 0.5)
+        .addScore('detoxification', 1.5)
+        .addScore('metabolism', 1.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.energy_bottle_max.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.energy_bottle_max.2" }), Text.darkRed({ "translate": "kubejs.tooltips.rose" }), Text.gray({ "translate": "kubejs.tooltips.energy_bottle_max.3" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.energy_bottle_max.4" }), Text.gold({ "translate": "effect.kubejs.flaring_heart" }), Text.gold('/'), Text.gold({ "translate": "effect.kubejs.burning_heart" }), Text.gray({ "translate": "kubejs.tooltips.energy_bottle_max.5" })])
@@ -317,7 +317,6 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/rose_quartz/energy_bottle_max')
         .tag('kubejs:machine')
         .tag('kubejs:damage_only')
-        .tag('kubejs:kidney')
         .tag('kubejs:rose')
         .tag('kubejs:resource')
         .tag('itemborders:diamond');
