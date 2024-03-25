@@ -11,6 +11,7 @@ JEIEvents.information(event => {
     event.addItem('kubejs:aesegull_rib_right', Text.black({ "translate": "kubejs.jei.aesegull_rib_right.1" }))
     event.addItem('kubejs:mockery', Text.black({ "translate": "kubejs.jei.mockery.1" }))
     event.addItem('kubejs:sarcasm', Text.black({ "translate": "kubejs.jei.sarcasm.1" }))
+    event.addItem('kubejs:cursed_soul', Text.black({ "translate": "kubejs.jei.cursed_soul.1" }))
     event.addItem('kubejs:executioner_blade_pieces', Text.black({ "translate": "kubejs.jei.executioner_blade_pieces.1" }))
     event.addItem('kubejs:love_between_lava_and_ice', Text.black({ "translate": "kubejs.jei.love_between_lava_and_ice.1" }))
     event.addItem('kubejs:forbidden_fruit', Text.black({ "translate": "kubejs.jei.forbidden_fruit.1" }))

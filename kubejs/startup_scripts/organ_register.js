@@ -883,6 +883,20 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active')
         .tag('kubejs:relics');
 
+    registerOrgan(new Organ('kubejs:cursed_soul')
+        .addScore('strength', -1.75)
+        .addScore('nerves', 2.25)
+        .addScore('detoxification', -1.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.cursed_soul.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cursed_soul.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cursed_soul.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cursed_soul.4" })])
+        .build())
+        .texture('kubejs:item/organs/relics/cursed_soul')
+        .tag('kubejs:bear_only')
+        .tag('kubejs:warp')
+        .tag('kubejs:relics');
+
     registerOrgan(new Organ('kubejs:forbidden_fruit')
         .addScore('detoxification', 1.75)
         .addScore('health', 0.25)

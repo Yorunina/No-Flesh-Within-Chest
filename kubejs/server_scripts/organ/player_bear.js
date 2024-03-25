@@ -86,4 +86,28 @@ const organPlayerBearOnlyStrategies = {
         let randomval = Math.random() * Math.max(3 - luckval / 50, 1)
         event.amount = event.amount * randomval
     },
+    'kubejs:cursed_soul': function (event, organ, data) {
+        let player = event.entity
+        let itemList = [player.getMainHandItem(), player.getOffHandItem(), player.getHeadArmorItem(),
+        player.getChestArmorItem(), player.getLegsArmorItem(), player.getFeetArmorItem()]
+
+        let curseType = 0
+        let curseVal = 0
+        itemList.forEach((item) => {
+            item.enchantments.forEach((name, level) => {
+                if (curseEnchantList.some(ele => ele == name)) {
+                    curseType = curseType + 1
+                    curseVal = curseVal + level
+                }
+            })
+        })
+        if (event.source.getType() == 'mob_attack' || event.source.isProjectile()) {
+            event.amount = event.amount * Math.max(0.5, (1 - curseType * 0.01 - curseVal * 0.02))
+        }
+        else {
+            event.amount = event.amount * (1 + curseType * 0.1 + curseVal * 0.1)
+        }
+        let count = player.persistentData.getInt(warpCount) ?? 0
+        updateWarpCount(player, count + 1)
+    },
 };
