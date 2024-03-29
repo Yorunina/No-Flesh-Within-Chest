@@ -56,9 +56,6 @@ const championPlayerDamageStrategies = {
         if (!(entity.isOnFire() || entity.isInLava())) {
             event.amount = event.amount * 0.1
         }
-        else {
-            event.amount = event.amount * 1.0
-        }
     },
     'fate': function (event, data) {
         let entity = event.entity

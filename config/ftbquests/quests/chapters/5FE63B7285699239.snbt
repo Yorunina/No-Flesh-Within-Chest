@@ -150,22 +150,6 @@
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
-			id: "627473F1602D9217"
-			rewards: [{
-				id: "59E09C6006F21E4C"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			tasks: [{
-				id: "31B57BBCD3294548"
-				item: "nameless_trinkets:miners_soul"
-				type: "item"
-			}]
-			x: 7.0d
-			y: -1.25d
-		}
-		{
-			dependencies: ["6E502CA178ED4148"]
 			id: "315C8B4E4C57C364"
 			rewards: [{
 				id: "3D98EF8A77B26D68"
@@ -721,8 +705,8 @@
 				item: "kubejs:bunny_hoppers"
 				type: "item"
 			}]
-			x: 0.75d
-			y: 3.75d
+			x: 7.0d
+			y: -1.25d
 		}
 	]
 	title: "饰品：偶尔获得的小奖励"

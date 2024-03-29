@@ -18,6 +18,8 @@ BlockEvents.rightClicked('minecraft:diamond_block', event => {
     }
 })
 
-BlockEvents.rightClicked('alexsmobs:transmutation_table', event => {
-    event.block.set('minecraft:air')
+BlockEvents.rightClicked(event => {
+    if (event.item.getMod() == 'somebosses' && event.hand == 'off_hand') {
+        event.item.shrink(1)
+    }
 })

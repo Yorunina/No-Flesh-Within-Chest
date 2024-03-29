@@ -20,3 +20,12 @@ function getLivingWithinRadius(level, pos, radius) {
     })
     return entityList
 }
+
+/**
+* @param {Internal.Player} player
+* @returns {Boolean}
+*/
+function isPlayerOnFire(player) {
+    let itemMap = getPlayerChestCavityItemMap(player)
+    return itemMap.has('kubejs:immortal_volcanic_rock') || player.isOnFire()
+}

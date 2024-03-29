@@ -45,7 +45,7 @@
       "name": "minecraft:generic.attack_damage",
       "modifierUUID": "77D6C025-090B-4D55-8148-F875D90A6D48",
       "attributeOperation": 2,
-      "description": "+50% \u653b\u51fb\u529b",
+      "description": "+80% \u653b\u51fb\u529b",
       "value": 0.8
     },
     {

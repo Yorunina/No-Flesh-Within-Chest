@@ -37,8 +37,8 @@
       "name": "minecraft:generic.attack_damage",
       "modifierUUID": "EBA9FBC3-4F3F-4A03-98D7-4C67C23AEACE",
       "attributeOperation": 1,
-      "description": "+20% \u8fd1\u6218\u4f24\u5bb3",
-      "value": 0.2
+      "description": "+10% \u8fd1\u6218\u4f24\u5bb3",
+      "value": 0.1
     }
   ]
 }

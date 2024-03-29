@@ -37,9 +37,20 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
     event.create('kubejs:mysterious_trinket').texture('kubejs:item/mysterious_trinket').maxStackSize(64)
     event.create('kubejs:chicken_flavor_powder').texture('kubejs:item/chicken_flavor_powder').maxStackSize(64)
-    // 随机基本器官
-    event.create('kubejs:random_tumor').texture('kubejs:item/organs/others/random_tumor').maxStackSize(1).tag('kubejs:organ').tag('kubejs:infected').tag('itemborders:iron').group("kubejs.organs")
-
+    // 无形肿瘤
+    event.create('kubejs:random_tumor')
+        .food(food => {
+            food.hunger(2).saturation(1)
+            food.effect('minecraft:poison', 20 * 15, 2, 1)
+            food.effect('minecraft:hunger', 20 * 15, 2, 1)
+            food.alwaysEdible()
+        })
+        .texture('kubejs:item/organs/infected/random_tumor')
+        .maxStackSize(1)
+        .tag('kubejs:organ')
+        .tag('kubejs:infected')
+        .tag('itemborders:iron')
+        .group("kubejs.organs")
 
     event.create('active_pill').texture('kubejs:item/active_pill').tag('kubejs:pill').food(food => {
         food
@@ -258,7 +269,11 @@ StartupEvents.registry('item', event => {
             }
             if (oriInv && replaceInv) {
                 instance.inventory.readTags(replaceInv)
-                itemstack.setNbt({ inventory: oriInv })
+                if (itemstack.hasNBT()) {
+                    itemstack.nbt.put('inventory', oriInv)
+                } else {
+                    itemstack.setNbt({ inventory: oriInv })
+                }
             }
             global.initChestCavityIntoMap(entity, true)
             if (entity.getChestCavityInstance().inventory.hasAnyMatching(item => {

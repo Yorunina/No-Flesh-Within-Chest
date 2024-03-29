@@ -28,26 +28,8 @@ LootJS.modifiers(event => {
                 let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
                 if (diffLevelNum >= 4) {
                     ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.05, 1))))
-                }
-            })
-            .apply(ctx => {
-                let player = ctx.player
-                if (!player) return
-                let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
-                if (!diffStage) return
-                let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
-                if (diffLevelNum >= 6) {
-                    ctx.addLoot(LootEntry.of('kubejs:unbreakable_core').when((c) => c.randomChance(Math.min((diffLevelNum - 4) * 0.05, 1))))
-                }
-            })
-            .apply(ctx => {
-                let player = ctx.player
-                if (!player) return
-                let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
-                if (!diffStage) return
-                let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
-                if (diffLevelNum >= 6) {
-                    ctx.addLoot(LootEntry.of('kubejs:disenchantment_book').when((c) => c.randomChance(Math.min((diffLevelNum - 4) * 0.05, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:unbreakable_core').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.02, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:disenchantment_book').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.02, 1))))
                 }
             })
     }
@@ -85,6 +67,9 @@ LootJS.modifiers(event => {
 
     event.addEntityLootModifier('minecraft:witch')
         .addLoot(LootEntry.of('kubejs:magic_spine').when((c) => c.randomChance(0.05)));
+
+    event.addEntityLootModifier(["biomancy:primordial_hungry_flesh_blob", "biomancy:primordial_flesh_blob", "biomancy:legacy_flesh_blob"])
+        .addLoot(LootEntry.of('kubejs:origin_of_tumor').when((c) => c.randomChance(0.05)))
 
     event.addEntityLootModifier('iceandfire:gorgon')
         .removeLoot('iceandfire:gorgon_head');
@@ -166,10 +151,10 @@ LootJS.modifiers(event => {
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyDimension(['minecraft:the_nether'])
-        .addLoot(LootEntry.of('kubejs:the_third_eye').when((c) => c.randomChance(0.02)))
-        .addLoot(LootEntry.of('kubejs:redstone_furnace').when((c) => c.randomChance(0.02)))
+        .addLoot(LootEntry.of('kubejs:the_third_eye').when((c) => c.randomChance(0.008)))
+        .addLoot(LootEntry.of('kubejs:redstone_furnace').when((c) => c.randomChance(0.015)))
         .addLoot(LootEntry.of('kubejs:ritual_catalyst').when((c) => c.randomChance(0.1)))
-        .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.01)))
+        .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.008)))
 
     event.addLootTypeModifier(LootType.FISHING)
         .apply(ctx => {
