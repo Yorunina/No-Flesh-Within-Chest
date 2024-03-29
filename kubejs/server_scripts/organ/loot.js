@@ -150,7 +150,7 @@ const chestLootOnlyStrategies = {
             let attriValue = Math.min(attri.multi * diffusivity * luckElement, attri.max)
             item.nbt.organData.put(attriName, attriValue)
         }
-        item.nbt.organData.put('chestcavity:health', -0.5)
+        item.nbt.organData.put('chestcavity:health', -1)
         event.addLoot(item)
     },
 }
