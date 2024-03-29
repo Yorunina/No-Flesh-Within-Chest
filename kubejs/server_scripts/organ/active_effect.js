@@ -350,13 +350,13 @@ const organActiveStrategies = {
  */
 const organActiveOnlyStrategies = {
     'kubejs:telescopic_arm': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 1)
+        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 1.5)
     },
     'kubejs:telescopic_tool_arm': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 2)
+        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 2.5)
     },
     'kubejs:telescopic_attack_arm': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.ATTACK_RANGE, 1)
+        attributeMapValueAddition(attributeMap, global.ATTACK_RANGE, 1.5)
     },
     'kubejs:nether_star_shard': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.1)
@@ -414,11 +414,11 @@ const organActiveOnlyStrategies = {
                             manaUp = manaUp + foodPro.getEffects().length * 20
                         }
                     }
-                    healthUp = healthUp + nutrition / 8
-                    attackUp = attackUp + staturation / 10
+                    healthUp = healthUp + nutrition / 12
+                    attackUp = attackUp + staturation / 16
                 } else {
-                    healthUp = healthUp - 2
-                    attackUp = attackUp - 0.5
+                    healthUp = healthUp - 3
+                    attackUp = attackUp - 1.5
                 }
             }
         })

@@ -64,7 +64,7 @@ const organFoodEatenOnlyStrategies = {
             player.removeEffect('kubejs:hungry_tamagotchi')
             player.heal(player.maxHealth)
             player.potionEffects.add('farmersdelight:nourishment', 90 * 20, 0)
-            player.potionEffects.add('weaponmaster:elixr', 15 * 20, 0)
+            player.potionEffects.add('minecraft:health_boost', 15 * 20, 2)
             player.potionEffects.add('minecraft:resistance', 90 * 20, 1)
             player.tell(Text.gray({ "translate": "kubejs.msg.tamagotchi.2" }))
             if (Math.random() < 0.2) {
