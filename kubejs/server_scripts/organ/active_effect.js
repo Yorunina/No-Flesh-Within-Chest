@@ -444,11 +444,11 @@ const organActiveOnlyStrategies = {
     'kubejs:fish_in_chest': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player);
         let playerChestInstance = player.getChestCavityInstance()
-        let itemCount = 2
+        let organCount = 2
         if (typeMap.has('kubejs:organ')) {
-            itemCount = typeMap.get('kubejs:organ').length * 1
+            organCount = typeMap.get('kubejs:organ').length * 1
         }
-        let amplifier = 27 / itemCount - 1
+        let amplifier = 27 / organCount - 1
         playerChestInstance.organScores.forEach((key, value) => {
             playerChestInstance.organScores.put(key, new $Float(value * amplifier))
         })
