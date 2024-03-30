@@ -116,7 +116,7 @@ const organActiveStrategies = {
         else if (roseval - rosekind > 9) {
             attackval = Math.ceil(rosekind + (roseval - rosekind + 36) / 10)
         }
-        attributeMapValueAddition(attributeMap, global.ATTACK_UP, Math.floor(attackval*1.5))
+        attributeMapValueAddition(attributeMap, global.ATTACK_UP, Math.floor(attackval*1.2))
 
         let machinekind = 1
         let machineval = 1
