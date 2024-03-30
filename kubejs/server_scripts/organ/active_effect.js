@@ -147,16 +147,16 @@ const organActiveStrategies = {
         }
     },
     'kubejs:magic_vision': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.2)
+        attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.15)
     },
     'kubejs:love_between_lava_and_ice': function (player, organ, attributeMap) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (itemMap.has('minecraft:blue_ice')) {
-            let iceMulti = itemMap.get('minecraft:blue_ice').length * 0.15
+            let iceMulti = itemMap.get('minecraft:blue_ice').length * 0.2
             attributeMapValueAddition(attributeMap, global.ICE_SPELL_POWER, iceMulti)
         }
         if (itemMap.has('minecraft:magma_block')) {
-            let fireMulti = itemMap.get('minecraft:magma_block').length * 0.15
+            let fireMulti = itemMap.get('minecraft:magma_block').length * 0.2
             attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMulti)
         }
     },
@@ -442,8 +442,12 @@ const organActiveOnlyStrategies = {
         })
     },
     'kubejs:fish_in_chest': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player);
         let playerChestInstance = player.getChestCavityInstance()
-        let itemCount = playerChestInstance.inventory.getAllItems().size()
+        let itemCount = 2
+        if (typeMap.has('kubejs:organ')) {
+            itemCount = typeMap.get('kubejs:organ').length * 1
+        }
         let amplifier = 27 / itemCount - 1
         playerChestInstance.organScores.forEach((key, value) => {
             playerChestInstance.organScores.put(key, new $Float(value * amplifier))
