@@ -89,9 +89,24 @@ ItemEvents.rightClicked('kubejs:safe_chest_opener', event => {
     let ray = player.rayTrace(5, true)
     if (ray.entity && ray.entity.isLiving()) {
         let target = ray.entity
-        if ($CCItems.CHEST_OPENER.isPresent()) {
-            $CCItems.CHEST_OPENER.get().openChestCavity(player, target, false)
-            player.swing()
+        if (target.type == 'iceandfire:fire_dragon'
+            || target.type == 'iceandfire:ice_dragon'
+            || target.type == 'iceandfire:lightning_dragon') {
+            let getAgeTicks = target.nbt.AgeTicks
+            let getDeathStage = target.nbt.DeathStage
+            let CurStage = ((getAgeTicks / 24000) / 5) / 2
+            if (getDeathStage + 1 < CurStage) {
+                if ($CCItems.CHEST_OPENER.isPresent()) {
+                    $CCItems.CHEST_OPENER.get().openChestCavity(player, target, false)
+                    player.swing()
+                }
+            }
+        }
+        else {
+            if ($CCItems.CHEST_OPENER.isPresent()) {
+                $CCItems.CHEST_OPENER.get().openChestCavity(player, target, false)
+                player.swing()
+            }
         }
     }
 })

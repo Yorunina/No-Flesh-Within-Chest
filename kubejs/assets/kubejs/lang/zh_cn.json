@@ -1496,7 +1496,7 @@
     "kubejs.tooltips.king_of_stomach.2": "计算胸腔内所有物品提供的饥饿值给予生命值上限",
     "kubejs.tooltips.king_of_stomach.3": "计算胸腔内所有物品提供的饱和度给予攻击力",
     "kubejs.tooltips.king_of_stomach.4": "计算胸腔内食物提供的buff数量给予魔法上限",
-    "kubejs.tooltips.king_of_stomach.5": "如果不是食物，反而会降低属性",
+    "kubejs.tooltips.king_of_stomach.5": "食物种类会提高最终收益，如果不是食物，反而会降低属性",
     "kubejs.tooltips.chicken_heart.1": "激活时每有一个食物类器官，获得1点幸运",
     "kubejs.tooltips.chicken_kidney.1": "激活时如果在对称位置具有肾形麦乐鸡，则会获得3点幸运",
     "kubejs.tooltips.chicken_lung.1": "激活时如果在对称位置具有肺形麦乐鸡，且在该器官临近四方向上具有至少3个麦乐鸡条，给予0.1幸运乘数",

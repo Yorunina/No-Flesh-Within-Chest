@@ -116,7 +116,7 @@ const organActiveStrategies = {
         else if (roseval - rosekind > 9) {
             attackval = Math.ceil(rosekind + (roseval - rosekind + 36) / 10)
         }
-        attributeMapValueAddition(attributeMap, global.ATTACK_UP, attackval)
+        attributeMapValueAddition(attributeMap, global.ATTACK_UP, Math.floor(attackval*1.5))
 
         let machinekind = 1
         let machineval = 1
@@ -137,7 +137,7 @@ const organActiveStrategies = {
         else if (machineval - machinekind > 9) {
             healthval = Math.ceil(machinekind + (machineval - machinekind + 36) / 10)
         }
-        attributeMapValueAddition(attributeMap, global.HEALTH_UP, healthval * 2)
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, Math.floor(healthval * 2.5))
     },
     'kubejs:revolution_cable': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player);
