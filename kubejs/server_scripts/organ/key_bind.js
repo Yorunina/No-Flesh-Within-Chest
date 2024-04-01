@@ -250,4 +250,31 @@ const organPlayerKeyPressedOnlyStrategies = {
         }
         player.addItemCooldown('kubejs:sunbird_crystals', 20 * 90)
     },
+    'kubejs:enderiophage_heart': function (event, organ) {
+        let player = event.player
+        let particle = Utils.particleOptions(`dust 1 0 1 1`)
+        let ray = player.rayTrace(32, true)
+        if (ray.entity && ray.entity.isLiving()) {
+            ray.entity.potionEffects.add('alexsmobs:ender_flu', 20 * 5, 0, false, false)
+            player.addItemCooldown('kubejs:enderiophage_heart', 20 * 120)
+            event.level.spawnParticles(particle, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
+        }
+    },
+    'kubejs:mimicube_heart': function (event, organ) {
+        let player = event.player
+        let a = player.getMainHandItem()
+        let particle = Utils.particleOptions(`dust 0 0 1 1`)
+        let ray = player.rayTrace(32, true)
+        if (ray.entity && ray.entity.isLiving() && ray.entity.getType() != 'minecraft:player') {
+            let entity = ray.entity
+            let itemList = [entity.getHeadArmorItem(), entity.getChestArmorItem(), entity.getLegsArmorItem(), entity.getFeetArmorItem()]
+            itemList = itemList.filter(function (item) {
+                return item != "air"
+            })
+            let res = Math.ceil((Math.random() * itemList.length))
+            player.give(itemList[res - 1])
+            player.addItemCooldown('kubejs:mimicube_heart', 20 * 600)
+            event.level.spawnParticles(particle, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
+        }
+    },
 };

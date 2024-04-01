@@ -1,0 +1,9 @@
+{
+    "defaultChestCavity": [
+      {
+        "item": "kubejs:enderiophage_heart",
+        "position": 4
+      }
+    ]
+  }
+  

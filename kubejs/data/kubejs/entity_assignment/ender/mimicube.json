@@ -1,0 +1,6 @@
+{
+    "chestcavity": "kubejs:types/ender/mimicube.json",
+    "entities": [
+      "alexsmobs:mimicube"
+    ]
+  }

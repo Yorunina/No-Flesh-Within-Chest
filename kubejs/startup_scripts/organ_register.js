@@ -1556,6 +1556,32 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:key_pressed')
         .tag('kubejs:damage_only');
 
+    registerOrgan(new Organ('kubejs:enderiophage_heart')
+        .addScore('hydrophobia', 1)
+        .addScore('health', 0.5)
+        .addScore('metabolism', 1.25)
+        .addTextLines('default', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.enderiophage_heart.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.enderiophage_heart.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.enderiophage_heart.3" })])
+        .build())
+        .texture('kubejs:item/organs/alex/enderiophage_heart')
+        .tag('itemborders:gold')
+        .tag('kubejs:key_pressed')
+        .tag('kubejs:heart');
+
+    registerOrgan(new Organ('kubejs:mimicube_heart')
+        .addScore('digestion', -1)
+        .addScore('health', 0.75)
+        .addScore('luck', 0.5)
+        .addTextLines('default', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mimicube_heart.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mimicube_heart.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mimicube_heart.3" })])
+        .build())
+        .texture('kubejs:item/organs/alex/mimicube_heart')
+        .tag('itemborders:gold')
+        .tag('kubejs:key_pressed')
+        .tag('kubejs:heart');
+
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 
     registerOrgan(new Organ('kubejs:warped_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/alex/warped_spine').tag('kubejs:spine');
