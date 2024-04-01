@@ -417,8 +417,8 @@ const organActiveOnlyStrategies = {
                     healthUp = healthUp + nutrition / 12
                     attackUp = attackUp + staturation / 16
                 } else {
-                    healthUp = healthUp - 3
-                    attackUp = attackUp - 1.5
+                    healthUp = healthUp - 4
+                    attackUp = attackUp - 2
                 }
             }
         })

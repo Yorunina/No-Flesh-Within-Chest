@@ -242,4 +242,12 @@ const organPlayerKeyPressedOnlyStrategies = {
         player.addItemCooldown('kubejs:dragon_blood_heart', 20 * 180)
         player.potionEffects.add('kubejs:dragon_power', Math.max(Math.floor(duration), 0), amplifier, false, false)
     },
+    'kubejs:sunbird_crystals': function (event, organ) {
+        let player = event.player
+        player.potionEffects.add('alexsmobs:sunbird_blessing', 20 * 90, 0, false, false)
+        if (player.hasEffect('alexsmobs:sunbird_curse')) {
+            player.removeEffect('alexsmobs:sunbird_curse')
+        }
+        player.addItemCooldown('kubejs:sunbird_crystals', 20 * 90)
+    },
 };

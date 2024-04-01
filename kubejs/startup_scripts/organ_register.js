@@ -263,6 +263,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/machine/platelet_dispatcher')
         .tag('kubejs:player_tick_only')
         .tag('kubejs:machine')
+        .tag('kubejs:spleen')
         .tag('itemborders:gold');
 
     registerOrgan(new Organ('kubejs:machine_clockwork')
@@ -1543,6 +1544,18 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:infected');
 
     // alex
+    registerOrgan(new Organ('kubejs:sunbird_crystals')
+        .addScore('luck', 1.75)
+        .addScore('buoyant', 0.75)
+        .addTextLines('default', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sunbird_crystals.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sunbird_crystals.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sunbird_crystals.3" })])
+        .build())
+        .texture('kubejs:item/organs/alex/sunbird_crystals')
+        .tag('itemborders:gold')
+        .tag('kubejs:key_pressed')
+        .tag('kubejs:damage_only');
+
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 
     registerOrgan(new Organ('kubejs:warped_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/alex/warped_spine').tag('kubejs:spine');

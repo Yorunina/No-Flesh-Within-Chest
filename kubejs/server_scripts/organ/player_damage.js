@@ -314,4 +314,12 @@ const organPlayerDamageOnlyStrategies = {
         }
         event.amount = event.amount + player.maxHealth - player.health
     },
+    'kubejs:sunbird_crystals': function (event, organ, data) {
+        let player = event.source.player
+        let entity = event.entity
+        if (entity.isUndead()) {
+            entity.setSecondsOnFire(10)
+            entity.potionEffects.add('goety:flammable', 20 * 10, 1)
+        }
+    },
 };
