@@ -272,7 +272,11 @@ const organPlayerKeyPressedOnlyStrategies = {
                 return item != "air"
             })
             let res = Math.ceil((Math.random() * itemList.length))
-            player.give(itemList[res - 1])
+            let getitem = itemList[res - 1]
+            if (getitem.enchanted) {
+                getitem.nbt.remove("Enchantments")
+            }
+            player.give(getitem)
             player.addItemCooldown('kubejs:mimicube_heart', 20 * 600)
             event.level.spawnParticles(particle, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
         }

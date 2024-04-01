@@ -1213,7 +1213,7 @@
     "kubejs.tooltips.enderiophage_heart.3": "该技能冷却120s",
     "kubejs.tooltips.mimicube_heart.1": "特殊的复制能力，然而取出后特性发生了某些变化……",
     "kubejs.tooltips.mimicube_heart.2": "在32格内，使用主动技能按键随机复制某个生物的一件盔甲到物品栏",
-    "kubejs.tooltips.mimicube_heart.3": "不可复制玩家的盔甲，该技能冷却600s",
+    "kubejs.tooltips.mimicube_heart.3": "复制的盔甲无附魔且不可复制玩家的盔甲，该技能冷却600s",
     "kubejs.tooltips.immortal_volcanic_rock.1": "你正在燃烧？",
     "kubejs.tooltips.immortal_volcanic_rock.2": "判定时，你总会被认为处在燃烧状态",
     "kubejs.tooltips.frenzy_blast_furance.1": "狂热的血液摧毁着双方的身体",
