@@ -43,7 +43,7 @@ LootJS.modifiers(event => {
                 })
             }
             let lootOrganSet = new Set()
-            if (typeMap.has('kubejs:loot_chest_only')) {        
+            if (typeMap.has('kubejs:loot_chest_only')) {
                 typeMap.get('kubejs:loot_chest_only').forEach(organ => {
                     if (!lootOrganSet.has(organ.id)) {
                         lootOrganSet.add(organ.id)
@@ -88,7 +88,19 @@ const entityLootStrategies = {
  */
 const entityLootOnlyStrategies = {
     'kubejs:greed_shard': function (event, organ) {
-        event.addLoot('lightmanscurrency:coin_copper')
+        let player = event.player
+        let itemMap = getPlayerChestCavityItemMap(player)
+        if (itemMap.has('kubejs:wrath_shard')
+            && itemMap.has('kubejs:sloth_shard')
+            && itemMap.has('kubejs:envy_shard')
+            && itemMap.has('kubejs:gluttony_shard')
+            && itemMap.has('kubejs:greed_shard')
+            && itemMap.has('kubejs:lust_shard')
+            && itemMap.has('kubejs:pride_shard')) {
+            event.addLoot('3x lightmanscurrency:coin_copper')
+        } else {
+            event.addLoot('lightmanscurrency:coin_copper')
+        }
     },
     'kubejs:infinity_force': function (event, organ) {
         if (Math.random() > Math.max(0.03 * event.killerEntity.getLuck(), 0.03)) {

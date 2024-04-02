@@ -272,14 +272,6 @@ const organPlayerKeyPressedOnlyStrategies = {
             })
             let res = Math.ceil((Math.random() * itemList.length))
             player.give(itemList[res - 1])
-            //测试发现获取移除附魔nbt的装备时会导致生物身上的装备附魔被一并移除，暂未查明原因，故先注释掉
-            /*
-            let getitem = itemList[res - 1]
-            if (getitem.enchanted) {
-                getitem.nbt.remove('Enchantments')
-            }
-            player.give(getitem)
-            */
             player.addItemCooldown('kubejs:mimicube_heart', 20 * 600)
             event.level.spawnParticles(particle, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
         }
