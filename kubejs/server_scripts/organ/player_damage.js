@@ -194,7 +194,7 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:lava_life_cycle_system': function (event, organ, data) {
         let player = event.source.player
         let count = player.persistentData.getInt(resourceCount)
-        let damageBonus = Math.floor(count / 10)
+        let damageBonus = Math.floor(count / 5)
         if (damageBonus > 0) {
             event.amount = event.amount + damageBonus
             updateResourceCount(player, count - damageBonus)
@@ -274,7 +274,7 @@ const organPlayerDamageOnlyStrategies = {
         let player = event.source.player
         let fallval = player.fallDistance
         if (fallval <= 0) return
-        let falldamagemulti = Math.min(1 + fallval * fallval * 0.0002, 5)
+        let falldamagemulti = Math.min(1 + fallval * fallval * 0.0001, 5)
         event.amount = event.amount * falldamagemulti
     },
     'kubejs:holy_grenade': function (event, organ, data) {
@@ -312,7 +312,7 @@ const organPlayerDamageOnlyStrategies = {
         if (!isPlayerOnFire(player)) {
             return
         }
-        event.amount = event.amount + player.maxHealth - player.health
+        event.amount = event.amount * (3 - player.health / player.maxHealth)
     },
     'kubejs:sunbird_crystals': function (event, organ, data) {
         let player = event.source.player

@@ -256,7 +256,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         let ray = player.rayTrace(32, true)
         if (ray.entity && ray.entity.isLiving()) {
             ray.entity.potionEffects.add('alexsmobs:ender_flu', 20 * 5, 0, false, false)
-            player.addItemCooldown('kubejs:enderiophage_heart', 20 * 120)
+            player.addItemCooldown('kubejs:enderiophage_heart', 20 * 45)
             event.level.spawnParticles(particle, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
         }
     },
