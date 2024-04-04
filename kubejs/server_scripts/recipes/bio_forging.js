@@ -60,5 +60,5 @@ ServerEvents.highPriorityData(event => {
 
     registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'kubejs:stomach_template' }, { 'count': 2, 'item': 'biomancy:enlargement_serum' }, { 'count': 16, 'item': 'biomancy:malignant_flesh_veins' }, { 'count': 8, 'item': 'biomancy:nutrient_bar' }], Item.of('kubejs:stomach_tumor')).setNutrientsCost(40).setTab('biomancy:weapons'))
 
-    registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'kubejs:stomach_template' }, { 'count': 1, 'item': 'kubejs:greed_shard' }], Item.of('kubejs:greedy_stomach')).setNutrientsCost(40).setTab('biomancy:weapons'))
+    registerCustomRecipe(new BioForgingRecipe([{ 'count': 1, 'item': 'kubejs:stomach_template' }, { 'count': 4, 'item': 'lightmanscurrency:coinpile_gold' }, { 'count': 16, 'item': 'create:experience_block' }], Item.of('kubejs:greedy_stomach')).setNutrientsCost(40).setTab('biomancy:weapons'))
 });

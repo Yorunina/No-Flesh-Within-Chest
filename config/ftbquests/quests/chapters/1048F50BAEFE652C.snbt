@@ -15,6 +15,42 @@
 			image: "kubejs:textures/task/collection_1.png"
 			rotation: 0.0d
 			width: 17.0d
+			x: 12.5d
+			y: 23.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: 12.5d
+			y: 26.75d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: -2.75d
+			y: 29.5d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_1.png"
+			rotation: 0.0d
+			width: 17.0d
 			x: -2.75d
 			y: 5.75d
 		}
@@ -28,7 +64,19 @@
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 23.75d
+			y: 23.0d
+		}
+		{
+			click: ""
+			corner: false
+			dev: false
+			height: 4.467948717948718d
+			hover: [ ]
+			image: "kubejs:textures/task/collection_2.png"
+			rotation: 0.0d
+			width: 17.0d
+			x: -2.75d
+			y: 15.5d
 		}
 		{
 			click: ""
@@ -40,7 +88,7 @@
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 14.75d
+			y: 19.5d
 		}
 		{
 			click: ""
@@ -52,19 +100,7 @@
 			rotation: 0.0d
 			width: 17.0d
 			x: -2.75d
-			y: 17.75d
-		}
-		{
-			click: ""
-			corner: false
-			dev: false
-			height: 4.467948717948718d
-			hover: [ ]
-			image: "kubejs:textures/task/collection_1.png"
-			rotation: 0.0d
-			width: 17.0d
-			x: -2.75d
-			y: 20.75d
+			y: 26.25d
 		}
 		{
 			click: ""
@@ -142,12 +178,12 @@
 			click: ""
 			corner: false
 			dev: false
-			height: 5.884615384615385d
+			height: 7.3d
 			hover: [ ]
-			image: "kubejs:textures/task/collection_6.png"
+			image: "kubejs:textures/task/collection_7.png"
 			rotation: 0.0d
 			width: 17.0d
-			x: -2.75d
+			x: -2.5d
 			y: 10.0d
 		}
 		{
@@ -287,7 +323,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -307,12 +343,12 @@
 			}]
 			title: "Boss遗物器官"
 			x: -8.75d
-			y: 8.25d
+			y: 7.75d
 		}
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
 			description: [
-				"&5糖果胰&r能够在&d甜蜜之梦&r效果因为受伤抵消消失时，给予你&6伤害吸收 Ⅴ&r 效果。"
+				"&5糖果胰&r能够在&d甜蜜之梦&r效果因为受伤抵消消失时，给予你&6伤害吸收 Ⅴ&r 和&6生命提升 Ⅴ&r效果。"
 				""
 				"这往往会为你争取到宝贵的生存时间。"
 				""
@@ -384,7 +420,7 @@
 		{
 			dependencies: ["795DE8D8EF4D3A01"]
 			description: [
-				"&5魔法海马体&r在受到&610&r点及其以上伤害时会根据其他器官的拥有情况，获得对应的&d甜蜜之梦&r效果。"
+				"&5魔法海马体&r在受到&610&r点及其以上伤害时会根据其他器官的拥有情况，获得对应的&d甜蜜之梦&r效果。每次触发该效果时，都会有&65s&r冷却时间。"
 				""
 				"&5仪式匕首&r刚好能够满足10点伤害的阈值，同时又能为你恢复一定量的魔法值。"
 			]
@@ -512,7 +548,7 @@
 			description: [
 				"革命系列的&6核心器官&r，通过消耗煤炭来获得临时的效果增益。"
 				""
-				"&c熔火效果&r每有一级，将会提供额外&63&r点的固定攻击伤害加成。"
+				"&c熔火效果&r每有一级，将会提供额外&64&r点的固定攻击伤害加成。"
 			]
 			id: "55C12BA0AF6395BA"
 			rewards: [{
@@ -647,7 +683,7 @@
 			}]
 			title: "进化器官"
 			x: -8.75d
-			y: 16.5d
+			y: 18.25d
 		}
 		{
 			dependencies: ["437705D28D92B135"]
@@ -676,7 +712,7 @@
 			}]
 			title: "模板器官进化"
 			x: -6.75d
-			y: 17.5d
+			y: 19.25d
 		}
 		{
 			dependencies: ["437705D28D92B135"]
@@ -703,14 +739,14 @@
 			}]
 			title: "伸缩臂"
 			x: -7.75d
-			y: 17.5d
+			y: 19.25d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
 			description: [
 				"碎片系列器官以&4七宗罪&r为契机，如果将其&6收集完全&r，或许可以触发意想不到的效果. . ."
 				""
-				"&7但是，现在，它们还在沉睡. . .&r"
+				"&7现在，它们已不再沉睡. . .&r"
 			]
 			icon: "minecraft:amethyst_shard"
 			id: "235753780EE3782C"
@@ -723,7 +759,7 @@
 			}]
 			title: "碎片"
 			x: -8.75d
-			y: 19.5d
+			y: 21.75d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -765,7 +801,7 @@
 				}
 			]
 			x: -1.75d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -787,7 +823,7 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -809,7 +845,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -826,7 +862,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -843,7 +879,7 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -865,7 +901,7 @@
 				type: "item"
 			}]
 			x: 1.25d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -887,7 +923,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -913,7 +949,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -935,7 +971,7 @@
 				type: "item"
 			}]
 			x: 3.25d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -957,7 +993,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -979,7 +1015,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1017,7 +1053,7 @@
 				}
 			]
 			x: -7.75d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["24E73A64F055728A"]
@@ -1063,7 +1099,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 20.5d
+			y: 22.75d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1083,7 +1119,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 20.5d
+			y: 22.75d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1103,7 +1139,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 20.5d
+			y: 22.75d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1123,7 +1159,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 20.5d
+			y: 22.75d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1143,7 +1179,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 20.5d
+			y: 22.75d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1163,7 +1199,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 20.5d
+			y: 22.75d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1183,7 +1219,7 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 20.5d
+			y: 22.75d
 		}
 		{
 			dependencies: ["235753780EE3782C"]
@@ -1203,7 +1239,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 20.5d
+			y: 22.75d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1225,7 +1261,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 23.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1247,7 +1283,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 23.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1269,7 +1305,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 23.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -1291,7 +1327,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 23.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -1307,7 +1343,7 @@
 			}]
 			title: "食物器官"
 			x: -8.75d
-			y: 22.5d
+			y: 25.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1329,7 +1365,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1351,7 +1387,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7CFE03E2610EA31B"]
@@ -1399,7 +1435,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 23.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -1428,7 +1464,7 @@
 			description: [
 				"由&2胃瘤&r在器官容器中&2进化&r获得。"
 				""
-				"能够在激活后稳定的提供100的&2资源点数上限&r，并且在资源点数累积到150以上时，每次挖掘有2%的概率触发&6点石成金&r，使掉落物强制转换成为金块，并损失100资源点。"
+				"能够在激活后稳定的提供100的&2资源点数上限&r，并且在资源点数累积到150以上时，每次挖掘有5%的概率触发&6点石成金&r，使掉落物强制转换成为金块，或小概率转化为金币，并损失150资源点。"
 			]
 			id: "77AA2FDAEE799E7A"
 			rewards: [{
@@ -1545,7 +1581,7 @@
 			}]
 			title: "机械"
 			x: -8.75d
-			y: 13.5d
+			y: 14.25d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1567,7 +1603,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1589,7 +1625,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1611,7 +1647,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1633,7 +1669,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1655,7 +1691,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1681,7 +1717,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1707,14 +1743,14 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
 			description: [
 				"在&c焰魔&r的胸腔中获得。"
 				""
-				"玩家在着火状态下会逐渐累积&2最高为5级的力量效果&r，能够造成相当可观额外输出。但需要注意力量的持续时间极短，而判定时间间隔为2s，因此很容导致buff断续。"
+				"玩家在着火状态下会逐渐累积&2最高为8级的力量效果&r，能够造成相当可观额外输出。但需要注意力量的持续时间极短，而判定时间间隔为2s，因此很容导致buff断续。"
 			]
 			id: "271802F527EBA289"
 			rewards: [{
@@ -1733,7 +1769,7 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1759,7 +1795,7 @@
 				type: "item"
 			}]
 			x: 1.25d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1781,7 +1817,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1806,7 +1842,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1827,14 +1863,14 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 9.25d
+			y: 8.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
 			description: [
 				"通过器官容器进化&6二重身&r获得。"
 				""
-				"能够在&2生命值低于30%的时候给予玩家吸血效果&r，20%的时候效果变化为2级，10%的时候变化为3级。"
+				"能够在&2生命值低于50%的时候给予玩家吸血效果&r，30%的时候效果变化为2级，20%的时候变化为3级。"
 			]
 			id: "54066B06BF4DCAD7"
 			rewards: [{
@@ -1853,7 +1889,7 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 23.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1869,13 +1905,13 @@
 				id: "20B01C7DD0952A2C"
 				item: {
 					Count: 1b
-					id: "kubejs:enery_bottle_max"
+					id: "kubejs:energy_bottle_max"
 					tag: { }
 				}
 				type: "item"
 			}]
 			x: -1.75d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -1897,7 +1933,7 @@
 				type: "item"
 			}]
 			x: 3.25d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -1923,7 +1959,7 @@
 				type: "item"
 			}]
 			x: -0.75d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["6794388AA5357126"]
@@ -2022,7 +2058,7 @@
 		}
 		{
 			dependencies: ["7FF071C02D97C693"]
-			description: ["根据受伤值回复法力，在某些&6受伤流派&r的构筑中可能有所帮助。"]
+			description: ["根据受伤值回复法力，受伤回复的法力值和魔法器官数量挂钩，在某些&6受伤流派&r的构筑中可能有所帮助。"]
 			id: "2765573B3F088673"
 			rewards: [{
 				id: "6CC1DE3D63A2A651"
@@ -2340,7 +2376,7 @@
 				type: "item"
 			}]
 			x: 0.25d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -2366,7 +2402,7 @@
 				type: "item"
 			}]
 			x: 1.25d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["4F074296A3A9D918"]
@@ -2392,7 +2428,7 @@
 				type: "item"
 			}]
 			x: 2.25d
-			y: 14.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -2418,12 +2454,12 @@
 				type: "item"
 			}]
 			x: -1.75d
-			y: 23.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
 			description: [
-				"在&c监守者&r的胸腔中获得，能够通过使用主动技能按键释放音爆攻击。"
+				"在&c监守者&r的胸腔中获得，能够通过使用主动技能按键释放音爆攻击。玩家的经验等级会为音爆攻击提供更多伤害。"
 				""
 				"音爆波及的敌人越多，其冷却时间越短。"
 			]
@@ -2444,7 +2480,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2470,7 +2506,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 10.25d
+			y: 9.5d
 		}
 		{
 			dependencies: ["309791281FE1F06A"]
@@ -2532,7 +2568,7 @@
 			]
 			title: "麦乐鸡套餐！"
 			x: -0.75d
-			y: 23.5d
+			y: 26.0d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2558,7 +2594,7 @@
 				type: "item"
 			}]
 			x: -6.75d
-			y: 11.25d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2584,7 +2620,7 @@
 				type: "item"
 			}]
 			x: -7.75d
-			y: 11.25d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2610,7 +2646,7 @@
 				type: "item"
 			}]
 			x: -5.75d
-			y: 11.25d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2636,7 +2672,7 @@
 				type: "item"
 			}]
 			x: -4.75d
-			y: 11.25d
+			y: 10.5d
 		}
 		{
 			dependencies: ["6662469DC72EA384"]
@@ -2662,7 +2698,7 @@
 				type: "item"
 			}]
 			x: -3.75d
-			y: 11.25d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3910C8340AB4ECE9"]
@@ -2854,6 +2890,11 @@
 				"塑封心能够提高所有用器官释放出的&b超限法术&r的等级，在超限法术为核心的构筑之中用处广泛。"
 			]
 			id: "445067B21A9D25A9"
+			rewards: [{
+				id: "364F7BD63EECD010"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
 			subtitle: "它依旧在跳动着"
 			tasks: [{
 				id: "189552414B4F2355"
@@ -2865,7 +2906,722 @@
 				type: "item"
 			}]
 			x: -2.75d
-			y: 11.25d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"千咒之魂在&c使徒&r的胸腔中可以获得。"
+				""
+				"根据自身装备的诅咒附魔数量和等级减免&e近战和弹射物伤害&r，最多减免&650%&r伤害。"
+				""
+				"作为代价，大幅度增加玩家自己受到的&e其他类型伤害&r，并在受击时增加&5扭曲值&r"
+			]
+			id: "57F8576015302D03"
+			rewards: [{
+				id: "51C9425FEF13B3F6"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "以恶意偏转刀刃与箭锋"
+			tasks: [{
+				id: "4A665ADCA4387524"
+				item: {
+					Count: 1b
+					id: "kubejs:cursed_soul"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -1.75d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"胸中鱼缸在&c水人&r的胸腔中可以获得。"
+				""
+				"可以根据胸中器官的&e数量&r倍增所有器官的基础属性，器官越多，倍率越低；器官越少，倍率越高。"
+				""
+				"需要注意的是，一切&b“物品”&r不视作&4“器官”&r，因此使得一些特殊的流派构建成为可能。"
+			]
+			id: "4F158B7BE4B8ED42"
+			rewards: [{
+				id: "6DC275E755E1F423"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "“鱼”需要广阔的空间，但也需要特殊的点缀"
+			tasks: [{
+				id: "4D39D6D138800422"
+				item: {
+					Count: 1b
+					id: "kubejs:fish_in_chest"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.75d
+			y: 10.5d
+		}
+		{
+			dependencies: ["7FF071C02D97C693"]
+			description: ["激活后提高&b5%暴击概率&r和&e30%神圣法术强度&r。"]
+			id: "2DDE82092A265AD9"
+			rewards: [{
+				id: "12B95770A8AE1C73"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "神圣的血肉散发出某种违和感"
+			tasks: [{
+				id: "5AE0EBB3B258B85E"
+				item: {
+					Count: 1b
+					id: "kubejs:holy_eyeball"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"从&6曦鹤&r胸腔中取出的器官。"
+				""
+				"释放主动技能，给予自身&b曦鹤之佑效果&r并移除自身&b曦鹤之咒效果&r。"
+				""
+				"攻击&e亡灵生物&r时，&c点燃&r该生物并增加其受到的&c燃烧伤害&r。"
+			]
+			id: "0ADE78497C79553D"
+			rewards: [{
+				id: "17E4FAD24050C738"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "仙气飘飘"
+			tasks: [{
+				id: "01D06926CAD06A28"
+				item: {
+					Count: 1b
+					id: "kubejs:sunbird_crystals"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"从&6末影噬菌体&r胸腔中取出的器官。"
+				""
+				"释放主动技能，给予目标生物&b末影流感效果&r。"
+				""
+				"可用于更方便地克隆末影噬菌体，或者单纯作为某种输出手段。"
+			]
+			id: "1F6C73B5DA08138B"
+			rewards: [{
+				id: "5D5D5E0024D7DF67"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "破胸而出"
+			tasks: [{
+				id: "4390C334267414F4"
+				item: {
+					Count: 1b
+					id: "kubejs:enderiophage_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"从&6复刻怪&r胸腔中取出的器官。"
+				""
+				"用于复制目标生物穿戴的任意一件盔甲。"
+				""
+				"出于某种原因，无法复制玩家的盔甲。"
+			]
+			id: "194FD5835A8A175C"
+			rewards: [{
+				id: "4B7EDE311C471310"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "模仿学习？"
+			tasks: [{
+				id: "15B1DA3DDD51C45B"
+				item: {
+					Count: 1b
+					id: "kubejs:mimicube_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["7FF071C02D97C693"]
+			description: [
+				"激活后提高&e30%神圣法术强度&r。"
+				""
+				"攻击&4亡灵生物&r时，有&b20%概率&r&6清除其所有增益效果&r并&6造成1.5倍伤害&r。"
+				""
+				"每次攻击有小概率引发一次&4敌我不分的爆炸&r。"
+				""
+				"&7事实上，总感觉其用途不仅如此……&r"
+			]
+			id: "06FDC4035045E6EE"
+			rewards: [{
+				id: "2492B746604DD290"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "圣·阿提拉高高举起了它"
+			tasks: [{
+				id: "287252EFFD68B80B"
+				item: {
+					Count: 1b
+					id: "kubejs:holy_grenade"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["4EDC05BC7B3BB700"]
+			description: [
+				"释放主动技能，给予自身&b一触即发效果&r。"
+				""
+				"胸腔内器官的&e怪异属性&r总和提供效果的&b持续时间&r，&e爆炸属性&r总和提供效果的&b等级&r。"
+				""
+				"若胸腔内存在&e火药或TNT&r，每一格该物品提供额外的&b技能冷却时间&r。"
+			]
+			id: "7978787EA7DA5F9D"
+			rewards: [{
+				id: "122C5A466D4E223C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "艺术就是爆炸！"
+			tasks: [{
+				id: "5E798E01E9D2BE3D"
+				item: {
+					Count: 1b
+					id: "kubejs:excited_appendix"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.75d
+			y: 29.25d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: [
+				"&c玫瑰石英&r的白板器官之一。"
+				""
+				"能够提供大量的的血液过滤效率，其意义在于配合玫瑰石英系列其他的种类激活器官。"
+			]
+			id: "7E589F9002AC7D92"
+			rewards: [{
+				id: "6F83AEC801ECC4EB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "分割健康与污浊的屏障"
+			tasks: [{
+				id: "0DA5A4968165DE74"
+				item: {
+					Count: 1b
+					id: "kubejs:rose_quartz_dialyzer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.25d
+			y: 15.0d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: [
+				"根据下落的高度提升&e攻击伤害&r，下落高度越高收益越大，最高能达到&e5倍伤害&r。"
+				""
+				"对于只存在于未来的某件武器的致敬。"
+			]
+			id: "3FAAA0CA520EC4E5"
+			rewards: [{
+				id: "1B954C1ADACD18C8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "跃下，一击贯彻天灵"
+			tasks: [{
+				id: "63D2F20257E16E1C"
+				item: {
+					Count: 1b
+					id: "kubejs:mace"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.75d
+			y: 16.0d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: ["激活后根据所有器官的&b防御属性&r总和增加&6护甲值&r，每2点防御属性增加1点护甲值，最多增加&630点&r护甲值。"]
+			id: "4D64258340E3F762"
+			rewards: [{
+				id: "5F2F87D9DCDFF341"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "防御立场生成"
+			tasks: [{
+				id: "1BF81189953BD97C"
+				item: {
+					Count: 1b
+					id: "kubejs:aegis"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.75d
+			y: 16.0d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: ["释放主动技能，消耗&b60资源点数&r获得&6240s&r夜视效果。"]
+			id: "01437DF1F8978DC2"
+			rewards: [{
+				id: "5BDDB5C2E9AE1674"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "通上电了！"
+			tasks: [{
+				id: "46B505C586A668F0"
+				item: {
+					Count: 1b
+					id: "kubejs:lowlight_vision"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.75d
+			y: 16.0d
+		}
+		{
+			dependencies: ["4F074296A3A9D918"]
+			description: [
+				"释放主动技能，消耗&6资源点数&r获得短时间的&b加速效果&r。"
+				""
+				"胸腔内&6资源类器官&r越多，速度效果的&b持续时间越长&r，&b等级越高&r，&b技能冷却时间越短&r，但同时&c消耗的资源点数也越多&r。"
+				""
+				"除了用于日常探索，也可以在战斗中发挥奇效。"
+			]
+			id: "2B03695632E3D7A2"
+			rewards: [{
+				id: "793C05A2687BA68D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "加速过弯！"
+			tasks: [{
+				id: "1DB752C87475FCFF"
+				item: {
+					Count: 1b
+					id: "kubejs:jet_propeller"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.75d
+			y: 16.0d
+		}
+		{
+			dependencies: ["10A83C18E396D17E"]
+			description: [
+				"击杀原初肉块有&b5%&r概率掉落。"
+				""
+				"胸腔内存在&6肿瘤之源&r时，吃下无形肿瘤可以将该无形肿瘤的&b优势属性&r转移到胸腔的随意一枚无形肿瘤上。"
+				""
+				"转移的条件为：胸腔内的无形肿瘤存在与吃下的无形肿瘤&e相同类型的属性&r，且该属性最终取两个瘤子的相同该属性的&e最大值&r。"
+			]
+			id: "1B8E16CB19BDDCF9"
+			rewards: [{
+				id: "0D371E7521C97EF0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "吞噬，进化"
+			tasks: [{
+				id: "43FDF21F36371350"
+				item: {
+					Count: 1b
+					id: "kubejs:origin_of_tumor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 23.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"艾哲红石在&c吸血鬼恶魔&r的胸腔中可以获得。"
+				""
+				"释放主动技能可以将自身所有&e负面效果&r持续时间缩短至一半，但是&4效果等级提升一级&r；"
+				"同时将自身所有&e正面效果&r持续时间翻倍，但是&4效果等级降低一级&r，不满一级的效果会直接消失。"
+				""
+				"在特殊情况下可以避免一些致命的负面效果，或者延长一些重要的正面效果。"
+			]
+			id: "2481E5444AB2CA1E"
+			rewards: [{
+				id: "62154A41719028C2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "纯净的宝石，却受到吸血鬼的青睐"
+			tasks: [{
+				id: "6CDEE920D731103B"
+				item: {
+					Count: 1b
+					id: "kubejs:redstone_of_aja"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.25d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"凋落之末在&c薄暮之锋，罗莎琳&r的胸腔中可以获得。"
+				""
+				"释放主动技能将血量降低至&41&r，若最大生命值&e低于20&r，会根据最大生命值与20的差值的2.5倍&6增加伤害吸收值&r；若&e高于20&r，则根据与20的差值&6增加经验值&r。"
+				""
+				"可以用于将血量转化为临时生命，或是单纯的作为获取经验值的手段。"
+			]
+			id: "490143EF6C3179F8"
+			rewards: [{
+				id: "4B28F83F3230B99F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "置死地而后生，或是普通的绽放"
+			tasks: [{
+				id: "3C92BB5E6CDF86CC"
+				item: {
+					Count: 1b
+					id: "kubejs:wither_and_fall"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.25d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"黑白面具的左残片，可以在&c暗黑面具&r的胸腔里获得。"
+				""
+				"对称激活后提供&6护甲值&r的同时，根据&b幸运值&r将&6受到的伤害值&r分布到一定范围内。"
+			]
+			id: "0BB7BB1CF9441A8E"
+			rewards: [{
+				id: "6285D515AAD279F1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "讥讽的是敌人，或是自己？"
+			tasks: [{
+				id: "18C6AAEAC37947B2"
+				item: {
+					Count: 1b
+					id: "kubejs:sarcasm"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.25d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"黑白面具的右残片，可以在&c暗黑面具&r的胸腔里获得。"
+				""
+				"对称激活后提供&6伤害值&r的同时，根据&b幸运值&r将&6造成的伤害值&r分布到一定范围内。"
+			]
+			id: "58F43033EED45D69"
+			rewards: [{
+				id: "70468339DF56D4A9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "嘲弄的是自身，或是他人？"
+			tasks: [{
+				id: "59B60BF9C2F3B40B"
+				item: {
+					Count: 1b
+					id: "kubejs:mockery"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 3.25d
+			y: 10.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"断桥残血在&c裂刃帝王&r的胸腔中可以获得。"
+				""
+				"根据&b幸运值&r造成高额伤害，幸运越高&e造成伤害的几率&r和&e伤害的倍率&r越高。"
+				""
+				"造成高额伤害的同时也会&4禁锢玩家的行动&r一段时间，幸运越高&4禁锢的时间&r同样越高。"
+			]
+			id: "0EA781613AEACEDF"
+			rewards: [{
+				id: "068CB473614C23AF"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "渴血之刃，亦觊觎着主人的鲜血"
+			tasks: [{
+				id: "6B1617F53964C445"
+				item: {
+					Count: 1b
+					id: "kubejs:melty_blood"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -7.75d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"烈焰高炉在&c烈焰狂战士&r的胸腔中可以获得。"
+				""
+				"若自身处于&6燃烧状态&r，根据自身&4损失的血量&r占最大生命值的比例增加造成的伤害，最多增加&4200%&r。"
+			]
+			id: "49CFA9DBC6DCF03E"
+			rewards: [{
+				id: "29FD066B644A8AA1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "火焰使血液沸腾"
+			tasks: [{
+				id: "710BDD22397573A7"
+				item: {
+					Count: 1b
+					id: "kubejs:frenzy_blast_furance"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.75d
+			y: 11.5d
+		}
+		{
+			dependencies: ["6662469DC72EA384"]
+			description: [
+				"不灭火山岩在&c火山&r的胸腔中可以获得。"
+				""
+				"判定时玩家视为处于&6燃烧状态&r，无需借助原版的着火机制。"
+				""
+				"可以更方便地触发某些火焰类器官的特殊效果。"
+			]
+			id: "74BC328468CC0C1C"
+			rewards: [{
+				id: "3A4558E5B04EF4F8"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "无需借助火焰，你自己便在燃烧"
+			tasks: [{
+				id: "4A8EB0920E9C7946"
+				item: {
+					Count: 1b
+					id: "kubejs:immortal_volcanic_rock"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.75d
+			y: 11.5d
+		}
+		{
+			dependencies: ["4EDC05BC7B3BB700"]
+			description: ["吃下食物后，每一个贪婪之胃都会给予玩家30点&b经验值&r。"]
+			id: "404A0458EEA1C22D"
+			rewards: [{
+				id: "359D381EBD304B44"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "贪欲永远无法满足……"
+			tasks: [{
+				id: "73AFAA7DC1D3A3DB"
+				item: {
+					Count: 1b
+					id: "kubejs:greedy_stomach"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -6.75d
+			y: 29.25d
+		}
+		{
+			dependencies: ["4EDC05BC7B3BB700"]
+			description: ["激活后，若一个胃瘤周围8格存在至少&b3个&r胃瘤，额外提供&68点&r最大生命值上限。"]
+			id: "5221CD9AE43CA777"
+			rewards: [{
+				id: "18F4CA47BD62A1B5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "看起来有点胀气？"
+			tasks: [{
+				id: "5468CF17D04A059D"
+				item: {
+					Count: 1b
+					id: "kubejs:stomach_tumor"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.75d
+			y: 29.25d
+		}
+		{
+			dependencies: ["4EDC05BC7B3BB700"]
+			description: ["胸腔内存在该器官时，玩家可以精准采集玻璃类方块。"]
+			id: "37A85E9B0DDFFDCA"
+			rewards: [{
+				id: "30B698CD8B0A45AB"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "精细的切割手段"
+			tasks: [{
+				id: "25E1726256AAD7BC"
+				item: {
+					Count: 1b
+					id: "kubejs:silk_for_cutting"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -4.75d
+			y: 29.25d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"&6感染器官&r是一种特殊的血肉器官，目前体系构建以无形肿瘤为主。"
+				""
+				"搜索战利品箱时获得的&e怪异血肉&r，经过筛选与融合，就能提供&6强大&r、同时&4禁忌&r的力量……"
+			]
+			icon: "biomancy:creator_mix"
+			id: "10A83C18E396D17E"
+			shape: "rsquare"
+			subtitle: "源于血肉，融于血肉"
+			tasks: [{
+				id: "49C365F849143F81"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "感染器官"
+			x: 6.5d
+			y: 22.5d
+		}
+		{
+			dependencies: ["10A83C18E396D17E"]
+			description: [
+				"当胸腔内存在D8时，从战利品箱子中获取的谜之血肉结构。"
+				""
+				"玩家&b幸运值&r越高，获取的无形肿瘤的&6属性方差&r越大，且幸运的&b收益&r会随着幸运值升高而逐渐减小。"
+				""
+				"高属性的无形肿瘤将是极好的器官补位，用于提供大量白值属性。"
+			]
+			id: "1AECC8F5579C0728"
+			rewards: [{
+				id: "68C36D4DF7FBC051"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "“沙里淘金”"
+			tasks: [{
+				id: "4BF3EFB83DF42779"
+				item: "kubejs:random_tumor"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 23.5d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"&6Alex生物器官&r是可以从Alex's Mobs模组生物胸腔中取出的器官。"
+				""
+				"这些器官足够特殊，某些特殊效果也具有强力的辅助效果。"
+				""
+				"抱着收集的心态去尝试获取，说不定会有意外惊喜呢。"
+			]
+			icon: "alexsmobs:void_worm_eye"
+			id: "07080DC68B62B221"
+			shape: "rsquare"
+			subtitle: "多彩的生态，多变的功能"
+			tasks: [{
+				id: "79F94302BD12DF63"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "Alex生物器官"
+			x: 6.5d
+			y: 25.5d
+		}
+		{
+			dependencies: ["6794388AA5357126"]
+			description: [
+				"&6杂项特殊器官&r是那些未归类于某个体系，但是有特殊效果的器官。"
+				""
+				"器官效果往往偏向辅助效果，但是同样存在其运用的场景，只待一时发掘……"
+			]
+			icon: "minecraft:experience_bottle"
+			id: "4EDC05BC7B3BB700"
+			shape: "rsquare"
+			subtitle: "虽然无奇，亦可一用"
+			tasks: [{
+				id: "6BE46B32C69C6AE3"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "杂项特殊器官"
+			x: -8.75d
+			y: 28.25d
 		}
 	]
 	title: "胸腔：器官收集指南"

@@ -701,7 +701,7 @@
 		#Allowed Values: COMMON, UNCOMMON, RARE, EPIC, LEGENDARY
 		MinRarity = "RARE"
 		ManaCostMultiplier = 6.0
-		SpellPowerMultiplier = 0.5
+		SpellPowerMultiplier = 0.3
 		CooldownInSeconds = 300.0
 
 	[Spells."irons_spellbooks:ray_of_siphoning"]

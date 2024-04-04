@@ -1320,7 +1320,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:stomach_tumor')
         .addScore('endurance', 0.5)
         .addScore('digestion', 1)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.stomach_tumor.1" }), Text.gold(3), Text.gray({ "translate": "kubejs.tooltips.stomach_tumor.2" }), Text.gold(6), Text.gray({ "translate": "kubejs.tooltips.stomach_tumor.3" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.stomach_tumor.1" }), Text.gold(3), Text.gray({ "translate": "kubejs.tooltips.stomach_tumor.2" }), Text.gold(8), Text.gray({ "translate": "kubejs.tooltips.stomach_tumor.3" })])
         .build())
         .texture('kubejs:item/organs/others/stomach_tumor')
         .tag('kubejs:stomach')

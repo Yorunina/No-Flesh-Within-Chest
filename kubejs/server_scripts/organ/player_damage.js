@@ -312,7 +312,7 @@ const organPlayerDamageOnlyStrategies = {
         if (!isPlayerOnFire(player)) {
             return
         }
-        event.amount = event.amount * (3 - player.health / player.maxHealth)
+        event.amount = event.amount * (3 - 2 * player.health / player.maxHealth)
     },
     'kubejs:sunbird_crystals': function (event, organ, data) {
         let player = event.source.player

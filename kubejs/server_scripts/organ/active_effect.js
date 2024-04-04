@@ -171,7 +171,7 @@ const organActiveStrategies = {
             }
         })
         if (count > 2) {
-            attributeMapValueAddition(attributeMap, global.HEALTH_UP, 6)
+            attributeMapValueAddition(attributeMap, global.HEALTH_UP, 8)
         }
     },
     'kubejs:leviathan_rib': function (player, organ, attributeMap) {
