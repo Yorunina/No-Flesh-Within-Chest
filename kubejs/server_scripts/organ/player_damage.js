@@ -44,7 +44,8 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:infinity_beats': function (event, organ, data) {
         let player = event.source.player;
         let attriMap = getPlayerAttributeMap(player);
-        if (!player.hasItemInSlot('mainhand') && !player.hasItemInSlot('offhand')) {
+        let itemMap = getPlayerChestCavityItemMap(player);
+        if (itemMap.has('kubejs:infinity_beats') && !player.hasItemInSlot('mainhand') && !player.hasItemInSlot('offhand')) {
             let value = 4;
             if (attriMap.has(global.TEMP_ATTACK_UP.name)) {
                 value = value + attriMap.get(global.TEMP_ATTACK_UP.name)
