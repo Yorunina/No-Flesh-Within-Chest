@@ -24,7 +24,7 @@
       ]
     },
     "effects" : {
-      "focus": 15,
+      "focus": 6,
       "focusEcho": 1
     },
     "requiredTools": {

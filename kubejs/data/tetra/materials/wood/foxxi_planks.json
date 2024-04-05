@@ -1,0 +1,32 @@
+{
+    "key": "foxxi_planks",
+    "category": "wood",
+    "primary": 3.2,
+    "secondary": 1.3,
+    "tertiary": 8.1,
+    "durability": 166,
+    "integrityCost": 1,
+    "integrityGain": 5,
+    "magicCapacity": 185,
+    "toolLevel": "minecraft:stone",
+    "toolEfficiency": 5,
+    "tints": {
+        "glyph": "A52A2A",
+        "texture": "A52A2A"
+    },
+    "textures": [
+        "crude",
+        "wooden"
+    ],
+    "attributes":{
+        "tetra:draw_strength": 6
+    },
+    "material": {
+        "items": [
+            "unusualprehistory:foxxi_planks"
+        ]
+    },
+    "requiredTools": {
+        "axe_dig": "minecraft:stone"
+    }
+}

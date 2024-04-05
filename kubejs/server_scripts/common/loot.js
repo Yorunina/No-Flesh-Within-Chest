@@ -27,7 +27,7 @@ LootJS.modifiers(event => {
                 if (!diffStage) return
                 let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
                 if (diffLevelNum >= 4) {
-                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.08, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.05, 1))))
                     ctx.addLoot(LootEntry.of('kubejs:unbreakable_core').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.02, 1))))
                     ctx.addLoot(LootEntry.of('kubejs:disenchantment_book').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.02, 1))))
                 }
@@ -68,7 +68,6 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('minecraft:witch')
         .addLoot(LootEntry.of('kubejs:magic_spine').when((c) => c.randomChance(0.05)));
 
-
     event.addEntityLootModifier(["biomancy:primordial_hungry_flesh_blob", "biomancy:primordial_flesh_blob", "biomancy:legacy_flesh_blob"])
         .addLoot(LootEntry.of('kubejs:origin_of_tumor').when((c) => c.randomChance(0.05)))
 
@@ -76,22 +75,22 @@ LootJS.modifiers(event => {
         .removeLoot('iceandfire:gorgon_head');
     event.addEntityLootModifier("minecraft:villager")
         .apply(ctx => {
-            if (Math.random() < 0.08) {
+            if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomPotionWares())
             }
-            if (Math.random() < 0.01) {
+            if (Math.random() < 0.005) {
                 ctx.addLoot(getRandomChallengeWares())
             }
-            if (Math.random() < 0.01) {
+            if (Math.random() < 0.012) {
                 ctx.addLoot(getRandomEggWares())
             }
-            if (Math.random() < 0.04) {
+            if (Math.random() < 0.018) {
                 ctx.addLoot(getRandomSpecialWares())
             }
-            if (Math.random() < 0.01) {
+            if (Math.random() < 0.008) {
                 ctx.addLoot(getRandomOrganWares())
             }
-            if (Math.random() < 0.05) {
+            if (Math.random() < 0.03) {
                 ctx.addLoot(getRandomOreWares())
             }
         })

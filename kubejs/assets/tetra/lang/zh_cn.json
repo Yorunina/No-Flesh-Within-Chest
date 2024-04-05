@@ -1466,6 +1466,7 @@
     "tetra.stats.workable.tooltip": "磨砺该物品需要花费§e%s§r较少的时间",
     "tetra.stats.zoom": "缩放",
     "tetra.stats.zoom.tooltip": "在蹲下时放大 §e%sx§r 视野",
+    "tetra.stats.zoom.tooltip_short": "在蹲下时放大视野",
     "tetra.synergy.double/adze_axe": "刨切鹤嘴锄",
     "tetra.synergy.double/adze_pickaxe": "挑选鹤嘴锄",
     "tetra.synergy.double/axe_axe": "巨斧",

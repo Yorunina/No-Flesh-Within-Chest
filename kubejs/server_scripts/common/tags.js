@@ -30,5 +30,11 @@ ServerEvents.tags('item', event => {
   event.add('biomancy:cannot_be_eaten_by_cradle', ['weaponmaster:wm_broadswordlarge', 'weaponmaster:wm_broadsword', 'weaponmaster:wm_rapier', 'weaponmaster:wm_rapierlarge'])
   event.add('iceandfire:scales/myrmex', ['iceandfire:myrmex_jungle_chitin', 'iceandfire:myrmex_desert_chitin'])
   event.add('iceandfire:scales/deathworm', ['iceandfire:deathworm_chitin_white', 'iceandfire:deathworm_chitin_red', 'iceandfire:deathworm_chitin_yellow'])
+  event.add('iceandfire:dragon_food_meat', ['minecraft:rabbit', 'minecraft:cooked_rabbit', 'chestcavity:raw_butchered_meat', 'chestcavity:cooked_butchered_meat', 'chestcavity:raw_man_meat', 'chestcavity:cooked_man_meat', 'alexsmobs:kangaroo_meat', 'alexsmobs:cooked_kangaroo_meat', 'unusualprehistory:cooked_coty', 'unusualprehistory:raw_coty', 'unusualprehistory:cooked_mammoth', 'unusualprehistory:raw_mammoth', 'bookwyrms:book_wyrm_cooked', 'bookwyrms:book_wyrm_raw', 'unusualprehistory:cooked_stetha', 'unusualprehistory:raw_stetha', 'unusualprehistory:cooked_austro', 'unusualprehistory:raw_austro', 'unusualprehistory:raw_scau', 'unusualprehistory:cooked_scau', 'alexsmobs:cooked_catfish', 'alexsmobs:raw_catfish', 'minecraft:cod', 'minecraft:cooked_cod', 'minecraft:cooked_salmon', 'minecraft:salmon'])
 
+  const baseorgan = event.get('chestcavity:salvageable').getObjectIds()
+  baseorgan.forEach(organ => {
+    event.add('kubejs:organ', organ)
+  })
+  
 })

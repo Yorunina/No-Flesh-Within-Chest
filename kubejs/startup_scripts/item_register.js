@@ -52,7 +52,6 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:iron')
         .group("kubejs.organs")
 
-
     event.create('active_pill').texture('kubejs:item/active_pill').tag('kubejs:pill').food(food => {
         food
             .hunger(1)
@@ -284,6 +283,7 @@ StartupEvents.registry('item', event => {
                 global.updatePlayerActiveStatus(entity)
                 entity.persistentData.putInt(organActive, 1)
             }
+            entity.tell('器官已替换')
             return itemstack
         })
 

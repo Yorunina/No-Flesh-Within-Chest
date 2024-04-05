@@ -13,6 +13,9 @@
   "boots": {
     "itemKey": "extraarmor:glass_boots"
   },
+  "offHand": {
+    "itemKey": "kubejs:glass_wand"
+  },
   "hideGeneratedTooltip": false,
   "customTooltips": [
     "\u80fd\u591f\u5f3a\u5316\u653b\u51fb\u80fd\u529b\uff0c\u4f46\u8840\u91cf\u4f1a\u5927\u5e45\u4e0b\u964d"
@@ -42,8 +45,8 @@
       "name": "minecraft:generic.attack_damage",
       "modifierUUID": "77D6C025-090B-4D55-8148-F875D90A6D48",
       "attributeOperation": 2,
-      "description": "+50% \u653b\u51fb\u529b",
-      "value": 0.5
+      "description": "+80% \u653b\u51fb\u529b",
+      "value": 0.8
     },
     {
       "type": "attribute",

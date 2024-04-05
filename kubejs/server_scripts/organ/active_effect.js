@@ -95,16 +95,49 @@ function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
  */
 const organActiveStrategies = {
     'kubejs:rose_quartz_heart': function (player, organ, attributeMap) {
-        let typeMap = getPlayerChestCavityTypeMap(player);
-        if (typeMap.has('kubejs:machine')) {
-            let value = typeMap.get('kubejs:machine').length * 2
-            attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
-        }
+        let typeMap = getPlayerChestCavityTypeMap(player)
 
+        let rosekind = 1
+        let roseval = 1
+        let attackval = 0
         if (typeMap.has('kubejs:rose')) {
-            let value = typeMap.get('kubejs:rose').length * 1
-            attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
+            let roseSet = new Set()
+            typeMap.get('kubejs:rose').forEach(organ => {
+                roseSet.add(organ.id)
+            })
+            rosekind = roseSet.size
         }
+        if (typeMap.has('kubejs:rose')) {
+            roseval = typeMap.get('kubejs:rose').length
+        }
+        if (roseval - rosekind <= 9) {
+            attackval = Math.ceil(rosekind + (19 - roseval + rosekind) * (roseval - rosekind) / 20)
+        }
+        else if (roseval - rosekind > 9) {
+            attackval = Math.ceil(rosekind + (roseval - rosekind + 36) / 10)
+        }
+        attributeMapValueAddition(attributeMap, global.ATTACK_UP, Math.floor(attackval * 1.2))
+
+        let machinekind = 1
+        let machineval = 1
+        let healthval = 0
+        if (typeMap.has('kubejs:machine')) {
+            let machineSet = new Set()
+            typeMap.get('kubejs:machine').forEach(organ => {
+                machineSet.add(organ.id)
+            })
+            machinekind = machineSet.size
+        }
+        if (typeMap.has('kubejs:machine')) {
+            machineval = typeMap.get('kubejs:machine').length
+        }
+        if (machineval - machinekind <= 9) {
+            healthval = Math.ceil(machinekind + (19 - machineval + machinekind) * (machineval - machinekind) / 20)
+        }
+        else if (machineval - machinekind > 9) {
+            healthval = Math.ceil(machinekind + (machineval - machinekind + 36) / 10)
+        }
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, Math.floor(healthval * 2.5))
     },
     'kubejs:revolution_cable': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player);
@@ -114,16 +147,16 @@ const organActiveStrategies = {
         }
     },
     'kubejs:magic_vision': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.2)
+        attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.15)
     },
     'kubejs:love_between_lava_and_ice': function (player, organ, attributeMap) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (itemMap.has('minecraft:blue_ice')) {
-            let iceMulti = itemMap.get('minecraft:blue_ice').length * 0.1
+            let iceMulti = itemMap.get('minecraft:blue_ice').length * 0.2
             attributeMapValueAddition(attributeMap, global.ICE_SPELL_POWER, iceMulti)
         }
         if (itemMap.has('minecraft:magma_block')) {
-            let fireMulti = itemMap.get('minecraft:magma_block').length * 0.1
+            let fireMulti = itemMap.get('minecraft:magma_block').length * 0.2
             attributeMapValueAddition(attributeMap, global.FIRE_SPELL_POWER, fireMulti)
         }
     },
@@ -138,7 +171,7 @@ const organActiveStrategies = {
             }
         })
         if (count > 2) {
-            attributeMapValueAddition(attributeMap, global.HEALTH_UP, 6)
+            attributeMapValueAddition(attributeMap, global.HEALTH_UP, 8)
         }
     },
     'kubejs:leviathan_rib': function (player, organ, attributeMap) {
@@ -146,6 +179,9 @@ const organActiveStrategies = {
     },
     'kubejs:holy_eyeball': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.05)
+        attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.3)
+    },
+    'kubejs:holy_grenade': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.3)
     },
     'kubejs:hamimelon_organ': function (player, organ, attributeMap) {
@@ -198,8 +234,24 @@ const organActiveStrategies = {
             attributeMapValueAddition(attributeMap, global.ARMOR_TOUGHNESS, 3)
         }
     },
+    'kubejs:mockery': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.Slot
+        let opPos = getOppoPos(pos)
+        if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:sarcasm') {
+            attributeMapValueAddition(attributeMap, global.ATTACK_UP_MULTI_BASE, 0.05)
+        }
+    },
+    'kubejs:sarcasm': function (player, organ, attributeMap) {
+        let posMap = getPlayerChestCavityPosMap(player);
+        let pos = organ.Slot
+        let opPos = getOppoPos(pos)
+        if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:mockery') {
+            attributeMapValueAddition(attributeMap, global.ARMOR_MULTI_BASE, 0.1)
+        }
+    },
     'kubejs:blood_moon_wand': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.4)
+        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.3)
     },
     'kubejs:huge_lung': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player);
@@ -298,35 +350,65 @@ const organActiveStrategies = {
  */
 const organActiveOnlyStrategies = {
     'kubejs:telescopic_arm': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 1)
+        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 1.5)
     },
     'kubejs:telescopic_tool_arm': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 2)
+        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 2.5)
     },
     'kubejs:telescopic_attack_arm': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.ATTACK_RANGE, 1)
+        attributeMapValueAddition(attributeMap, global.ATTACK_RANGE, 1.5)
     },
     'kubejs:nether_star_shard': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.1)
     },
     'kubejs:wrath_shard': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, -0.8)
-        attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 3)
+        if (checkSevenSins(player, organ)) {
+            attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, -0.5)
+            attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 3.5)
+        } else {
+            attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, -0.8)
+            attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 3)
+        }
     },
     'kubejs:sloth_shard': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.KNOCKBACK_RESISTANCE, 0.8)
+        if (checkSevenSins(player, organ)) {
+            attributeMapValueAddition(attributeMap, global.KNOCKBACK_RESISTANCE, 0.9)
+            attributeMapValueAddition(attributeMap, global.ARMOR_TOUGHNESS, 15)
+        } else {
+            attributeMapValueAddition(attributeMap, global.KNOCKBACK_RESISTANCE, 0.8)
+        }
     },
     'kubejs:envy_shard': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 1)
+        if (checkSevenSins(player, organ)) {
+            attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 1.5)
+            attributeMapValueAddition(attributeMap, global.ATTACK_UP_MULTI_BASE, 0.25)
+        } else {
+            attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 1)
+        }
     },
     'kubejs:gluttony_shard': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.REGENERATION, 0.5)
+        if (checkSevenSins(player, organ)) {
+            attributeMapValueAddition(attributeMap, global.REGENERATION, 0.8)
+            attributeMapValueAddition(attributeMap, global.HEALTH_UP, 30)
+        } else {
+            attributeMapValueAddition(attributeMap, global.REGENERATION, 0.5)
+        }
     },
     'kubejs:lust_shard': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.MAX_MANA, 100)
+        if (checkSevenSins(player, organ)) {
+            attributeMapValueAddition(attributeMap, global.MAX_MANA, 200)
+            attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.5)
+        } else {
+            attributeMapValueAddition(attributeMap, global.MAX_MANA, 100)
+        }
     },
     'kubejs:pride_shard': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.SUMMON_DAMAGE, 0.3)
+        if (checkSevenSins(player, organ)) {
+            attributeMapValueAddition(attributeMap, global.SUMMON_DAMAGE, 0.5)
+            attributeMapValueAddition(attributeMap, global.MANA_REGEN, 0.5)
+        } else {
+            attributeMapValueAddition(attributeMap, global.SUMMON_DAMAGE, 0.3)
+        }
     },
     'kubejs:infinity_force': function (player, organ, attributeMap) {
         if (organ.tag?.forgeTimes) {
@@ -362,11 +444,11 @@ const organActiveOnlyStrategies = {
                             manaUp = manaUp + foodPro.getEffects().length * 20
                         }
                     }
-                    healthUp = healthUp + nutrition / 8
-                    attackUp = attackUp + staturation / 10
+                    healthUp = healthUp + nutrition / 12
+                    attackUp = attackUp + staturation / 16
                 } else {
-                    healthUp = healthUp - 2
-                    attackUp = attackUp - 0.5
+                    healthUp = healthUp - 4
+                    attackUp = attackUp - 2
                 }
             }
         })
@@ -390,12 +472,20 @@ const organActiveOnlyStrategies = {
         })
     },
     'kubejs:fish_in_chest': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player);
         let playerChestInstance = player.getChestCavityInstance()
-        let itemCount = playerChestInstance.inventory.getAllItems().size()
-        let amplifier = 27 / itemCount - 1
+        let organCount = 2
+        if (typeMap.has('kubejs:organ')) {
+            organCount = typeMap.get('kubejs:organ').length * 1
+        }
+        let amplifier = 27 / organCount - 1
         playerChestInstance.organScores.forEach((key, value) => {
             playerChestInstance.organScores.put(key, new $Float(value * amplifier))
         })
+    },
+    'kubejs:aegis': function (player, organ, attributeMap) {
+        let armorval = player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'defense')) * 0.5
+        attributeMapValueAddition(attributeMap, global.ARMOR, Math.max(0, Math.min(30, Math.floor(armorval))))
     },
 }
 
@@ -415,6 +505,21 @@ function checkBox22OrganSame(posMap, organ) {
         if (flag) {
             return true
         }
+    }
+    return false
+}
+
+
+function checkSevenSins(player, organ) {
+    let itemMap = getPlayerChestCavityItemMap(player)
+    if (itemMap.has('kubejs:wrath_shard')
+        && itemMap.has('kubejs:sloth_shard')
+        && itemMap.has('kubejs:envy_shard')
+        && itemMap.has('kubejs:gluttony_shard')
+        && itemMap.has('kubejs:greed_shard')
+        && itemMap.has('kubejs:lust_shard')
+        && itemMap.has('kubejs:pride_shard')) {
+        return true
     }
     return false
 }

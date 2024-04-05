@@ -9,19 +9,19 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.sandpaper_polishing('kubejs:revolution_cable', 'chestcavity:golem_cable')
 
-	event.recipes.create.compacting('kubejs:huge_lung', ['kubejs:lung_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_appendix', ['kubejs:appendix_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_muscle', ['kubejs:muscle_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_heart', ['kubejs:heart_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_intestine', ['kubejs:intestine_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_rib', ['kubejs:rib_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_spine', ['kubejs:spine_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_spleen', ['kubejs:spleen_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_stomach', ['kubejs:stomach_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_kidney', ['kubejs:kidney_template', 'biomancy:ageing_serum']).superheated()
-	event.recipes.create.compacting('kubejs:huge_liver', ['kubejs:liver_template', 'biomancy:ageing_serum']).superheated()
-	
-	event.recipes.create.mixing('create:chromatic_compound', [Fluid.of('hexerei:quicksilver_fluid').withAmount(1000),'iceandfire:ghost_ingot', '8x iceandfire:pixie_dust','16x minecraft:brown_dye','16x minecraft:magenta_dye','16x minecraft:light_blue_dye','16x minecraft:orange_dye','16x minecraft:cyan_dye','16x minecraft:light_gray_dye','16x minecraft:lime_dye']).superheated()
+	event.recipes.create.compacting('kubejs:huge_lung', ['kubejs:lung_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_appendix', ['kubejs:appendix_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_muscle', ['kubejs:muscle_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_heart', ['kubejs:heart_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_intestine', ['kubejs:intestine_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_rib', ['kubejs:rib_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_spine', ['kubejs:spine_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_spleen', ['kubejs:spleen_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_stomach', ['kubejs:stomach_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_kidney', ['kubejs:kidney_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+	event.recipes.create.compacting('kubejs:huge_liver', ['kubejs:liver_template', 'biomancy:ageing_serum', 'biomancy:enlargement_serum']).superheated()
+
+	event.recipes.create.mixing('create:chromatic_compound', [Fluid.of('hexerei:quicksilver_fluid').withAmount(1000), 'iceandfire:ghost_ingot', '8x iceandfire:pixie_dust', '16x minecraft:brown_dye', '16x minecraft:magenta_dye', '16x minecraft:light_blue_dye', '16x minecraft:orange_dye', '16x minecraft:cyan_dye', '16x minecraft:light_gray_dye', '16x minecraft:lime_dye']).superheated()
 
 	event.recipes.create.mechanical_crafting('kubejs:revolution_gear', [
 		' SSS ',
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
 		'SWBWS',
 		'SDCDS',
 		'SWEWS',
-		'SSSSS'
+		'AAAAA'
 	], {
 		B: 'create:electron_tube',
 		C: 'biomancy:creator_mix',
@@ -72,10 +72,11 @@ ServerEvents.recipes(event => {
 		E: 'createaddition:connector',
 		S: 'minecraft:pink_dye',
 		W: 'createaddition:copper_wire',
+		A: 'create:polished_rose_quartz',
 	})
 
 
-	event.recipes.create.mechanical_crafting('kubejs:enery_bottle_max', [
+	event.recipes.create.mechanical_crafting('kubejs:energy_bottle_max', [
 		' AAA ',
 		'ABEBA',
 		'ABDBA',
@@ -88,7 +89,34 @@ ServerEvents.recipes(event => {
 		E: 'minecraft:netherite_ingot',
 	})
 
-	
+	event.recipes.create.mechanical_crafting('kubejs:aegis', [
+		' DDDD',
+		'DDBBB',
+		'DCBAB',
+		'DDBBB',
+		' DDDD'
+	], {
+		A: Item.of('goety:iron_hide_focus', '{"Soul Cost":24}'),
+		B: 'graveyard:dark_iron_ingot',
+		C: Item.of('goety:bulwark_focus', '{"Soul Cost":100}'),
+		D: 'create:iron_sheet',
+	})
+
+	event.recipes.create.mechanical_crafting('kubejs:mace', [
+		'   A   ',
+		'BBBBBBB',
+		'CDDDDDC',
+		'BBBBBBB',
+		'   E   ',
+		'   E   ',
+		'   E   ',
+	], {
+		A: 'tetra:forged_bolt',
+		B: 'create:sturdy_sheet',
+		C: 'art_of_forging:forged_steel_ingot',
+		D: 'create:industrial_iron_block',
+		E: 'createaddition:iron_rod'
+	})
 
 	event.recipes.create.mechanical_crafting('kubejs:machine_clockwork', [
 		'     A ',
@@ -222,6 +250,16 @@ ServerEvents.recipes(event => {
 	]).transitionalItem('kubejs:incomplete_rose_quartz_heart').loops(5)
 
 	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:rose_quartz_dialyzer').withChance(80.0),
+		Item.of('create:rose_quartz').withChance(20.0)
+	], 'kubejs:kidney_template', [
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_dialyzer', ['kubejs:incomplete_rose_quartz_dialyzer', 'biomancy:absorption_boost']),
+		event.recipes.createCutting('kubejs:incomplete_rose_quartz_dialyzer', 'kubejs:incomplete_rose_quartz_dialyzer'),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_dialyzer', ['kubejs:incomplete_rose_quartz_dialyzer', 'minecraft:rose_bush']),
+		event.recipes.createDeploying('kubejs:incomplete_rose_quartz_dialyzer', ['kubejs:incomplete_rose_quartz_dialyzer', 'create:polished_rose_quartz'])
+	]).transitionalItem('kubejs:incomplete_rose_quartz_dialyzer').loops(5)
+
+	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:lava_life_cycle_system').withChance(75.0),
 		Item.of('chestcavity:iron_scrap').withChance(25.0)
 	], 'art_of_forging:forged_steel_ingot', [
@@ -253,28 +291,28 @@ ServerEvents.recipes(event => {
 		event.recipes.createCutting('minecraft:cookie', 'minecraft:cookie')
 	]).transitionalItem('minecraft:cookie').loops(1)
 
-	event.recipes.create.crushing([Item.of('2x minecraft:emerald'), Item.of('minecraft:emerald').withChance(0.5)], 'geodes:emerald_crystal_block').processingTime(100)
-	event.recipes.create.crushing([Item.of('4x minecraft:emerald'), Item.of('minecraft:emerald').withChance(0.8)], 'geodes:emerald_cluster').processingTime(100)
+	event.recipes.create.crushing([Item.of('minecraft:emerald'), Item.of('minecraft:emerald').withChance(0.5)], 'geodes:emerald_crystal_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x minecraft:emerald'), Item.of('minecraft:emerald').withChance(0.3)], 'geodes:emerald_cluster').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('2x minecraft:lapis_lazuli'), Item.of('minecraft:lapis_lazuli').withChance(0.5)], 'geodes:lapis_crystal_block').processingTime(100)
-	event.recipes.create.crushing([Item.of('4x minecraft:lapis_lazuli'), Item.of('minecraft:lapis_lazuli').withChance(0.8)], 'geodes:lapis_cluster').processingTime(100)
+	event.recipes.create.crushing([Item.of('minecraft:lapis_lazuli'), Item.of('minecraft:lapis_lazuli').withChance(0.5)], 'geodes:lapis_crystal_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x minecraft:lapis_lazuli'), Item.of('minecraft:lapis_lazuli').withChance(0.3)], 'geodes:lapis_cluster').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('3x geodes:pyrite_chunk'), Item.of('geodes:pyrite_chunk').withChance(0.8)], 'geodes:pyrite').processingTime(100)
+	event.recipes.create.crushing([Item.of('3x geodes:pyrite_chunk'), Item.of('geodes:pyrite_chunk').withChance(0.5)], 'geodes:pyrite').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('2x minecraft:quartz'), Item.of('minecraft:quartz').withChance(0.5)], 'geodes:quartz_crystal_block').processingTime(100)
-	event.recipes.create.crushing([Item.of('4x minecraft:quartz'), Item.of('minecraft:quartz').withChance(0.8)], 'geodes:quartz_cluster').processingTime(100)
+	event.recipes.create.crushing([Item.of('minecraft:quartz'), Item.of('minecraft:quartz').withChance(0.5)], 'geodes:quartz_crystal_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x minecraft:quartz'), Item.of('minecraft:quartz').withChance(0.3)], 'geodes:quartz_cluster').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('2x minecraft:diamond'), Item.of('minecraft:diamond').withChance(0.5)], 'geodes:diamond_crystal_block').processingTime(100)
-	event.recipes.create.crushing([Item.of('4x minecraft:diamond'), Item.of('minecraft:diamond').withChance(0.8)], 'geodes:diamond_cluster').processingTime(100)
+	event.recipes.create.crushing([Item.of('minecraft:diamond'), Item.of('minecraft:diamond').withChance(0.5)], 'geodes:diamond_crystal_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x minecraft:diamond'), Item.of('minecraft:diamond').withChance(0.3)], 'geodes:diamond_cluster').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('2x minecraft:echo_shard'), Item.of('minecraft:echo_shard').withChance(0.5)], 'geodes:echo_block').processingTime(100)
-	event.recipes.create.crushing([Item.of('4x minecraft:echo_shard'), Item.of('minecraft:echo_shard').withChance(0.8)], 'geodes:echo_cluster').processingTime(100)
+	event.recipes.create.crushing([Item.of('minecraft:echo_shard'), Item.of('minecraft:echo_shard').withChance(0.5)], 'geodes:echo_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x minecraft:echo_shard'), Item.of('minecraft:echo_shard').withChance(0.3)], 'geodes:echo_cluster').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('2x geodes:gypsum_shard'), Item.of('geodes:gypsum_shard').withChance(0.5)], 'geodes:gypsum_crystal_block').processingTime(100)
-	event.recipes.create.crushing([Item.of('4x geodes:gypsum_shard'), Item.of('geodes:gypsum_shard').withChance(0.8)], 'geodes:gypsum_rose').processingTime(100)
+	event.recipes.create.crushing([Item.of('geodes:gypsum_shard'), Item.of('geodes:gypsum_shard').withChance(0.5)], 'geodes:gypsum_crystal_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x geodes:gypsum_shard'), Item.of('geodes:gypsum_shard').withChance(0.3)], 'geodes:gypsum_rose').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('2x hexerei:selenite_shard'), Item.of('hexerei:selenite_shard').withChance(0.5)], 'hexerei:selenite_block').processingTime(100)
-	event.recipes.create.crushing([Item.of('4x hexerei:selenite_shard'), Item.of('hexerei:selenite_shard').withChance(0.8)], 'hexerei:selenite_cluster').processingTime(100)
+	event.recipes.create.crushing([Item.of('hexerei:selenite_shard'), Item.of('hexerei:selenite_shard').withChance(0.5)], 'hexerei:selenite_block').processingTime(100)
+	event.recipes.create.crushing([Item.of('4x hexerei:selenite_shard'), Item.of('hexerei:selenite_shard').withChance(0.3)], 'hexerei:selenite_cluster').processingTime(100)
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:relic_metal_ingot').withChance(80.0),

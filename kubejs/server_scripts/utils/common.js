@@ -21,7 +21,6 @@ function getLivingWithinRadius(level, pos, radius) {
     return entityList
 }
 
-
 /**
 * @param {Internal.Player} player
 * @returns {Boolean}

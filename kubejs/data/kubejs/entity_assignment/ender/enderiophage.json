@@ -1,0 +1,6 @@
+{
+    "chestcavity": "kubejs:types/ender/enderiophage.json",
+    "entities": [
+      "alexsmobs:enderiophage"
+    ]
+  }

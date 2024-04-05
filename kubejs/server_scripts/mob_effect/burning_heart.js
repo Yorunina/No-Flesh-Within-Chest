@@ -10,7 +10,7 @@ function burningHeartEntityHurtByPlayer(event, data) {
     if (player.hasEffect('kubejs:burning_heart')) {
         let burningHeartEffect = player.getEffect('kubejs:burning_heart')
         let burningHeartAmplifier = burningHeartEffect.getAmplifier();
-        event.amount = event.amount + burningHeartAmplifier * 3 + 3
+        event.amount = event.amount + burningHeartAmplifier * 4 + 4
         return;
     }
     if (player.hasEffect('kubejs:flaring_heart')) {

@@ -14,44 +14,46 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'extraarmor:copper_chestplate' })
     event.remove({ output: 'extraarmor:copper_leggings' })
     event.remove({ output: 'extraarmor:copper_boots' })
+    event.remove({ output: 'extraarmor:blacksmith_hammer' })
+    event.remove({ output: 'alexsmobs:transmutation_table' })
 
-    event.shaped(Item.of('extraarmor:copper_helmet',1), [
+    event.shaped(Item.of('extraarmor:copper_helmet', 1), [
         'LOL',
         'L L'
     ],
-    {
-        L: 'minecraft:copper_ingot',
-        O: 'minecraft:raw_copper'
-    })
+        {
+            L: 'minecraft:copper_ingot',
+            O: 'minecraft:raw_copper'
+        })
 
-    event.shaped(Item.of('extraarmor:copper_chestplate',1), [
+    event.shaped(Item.of('extraarmor:copper_chestplate', 1), [
         'L L',
         'LOL',
         'LLL'
     ],
-    {
-        L: 'minecraft:copper_ingot',
-        O: 'minecraft:raw_copper'
-    })
+        {
+            L: 'minecraft:copper_ingot',
+            O: 'minecraft:raw_copper'
+        })
 
-    event.shaped(Item.of('extraarmor:copper_leggings',1), [
+    event.shaped(Item.of('extraarmor:copper_leggings', 1), [
         'LOL',
         'L L',
         'L L'
     ],
-    {
-        L: 'minecraft:copper_ingot',
-        O: 'minecraft:raw_copper'
-    })
+        {
+            L: 'minecraft:copper_ingot',
+            O: 'minecraft:raw_copper'
+        })
 
-    event.shaped(Item.of('extraarmor:copper_boots',1), [
+    event.shaped(Item.of('extraarmor:copper_boots', 1), [
         'O O',
         'L L'
     ],
-    {
-        L: 'minecraft:copper_ingot',
-        O: 'minecraft:raw_copper'
-    })
+        {
+            L: 'minecraft:copper_ingot',
+            O: 'minecraft:raw_copper'
+        })
 
     event.shaped('cataclysm:meat_shredder', [
         ['', 'minecraft:nether_star', 'goety:philosophers_stone'],
@@ -199,7 +201,7 @@ ServerEvents.recipes(event => {
         ['biomancy:bone_fragments', 'alexsmobs:skelewag_sword', 'biomancy:bone_fragments']])
 
     event.shaped('kubejs:artist_wand', [
-        ['', '', 'goety:unholy_blood'],
+        ['', '', Item.of('graveyard:vial_of_blood', '{Blood:0.8000001f}').strongNBT()],
         ['createaddition:electrum_wire', 'minecraft:white_wool', ''],
         ['minecraft:stick', 'createaddition:electrum_wire', '']])
 
@@ -226,10 +228,25 @@ ServerEvents.recipes(event => {
         ['', 'kubejs:broken_prismarine_crown', ''],
         ['', 'goety:soul_ruby', '']])
 
+    event.shaped('kubejs:jet_propeller', [
+        ['create:iron_sheet', '', 'create:iron_sheet'],
+        ['createaddition:bioethanol_bucket', 'createaddition:small_light_connector', 'createaddition:bioethanol_bucket'],
+        ['create:sturdy_sheet', '', 'create:sturdy_sheet']])
+
+    event.shaped('kubejs:holy_grenade', [
+        ['', 'irons_spellbooks:holy_rune', ''],
+        [Item.of('goety:glow_light_focus', '{"Soul Cost":2}'), 'supplementaries:bomb_blue', Item.of('goety:glow_light_focus', '{"Soul Cost":2}')],
+        ['', 'irons_spellbooks:holy_rune', '']])
+
     event.shaped(Item.of('kubejs:operation_box', '{inventory:[{Count:1b,Slot:0b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:8b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:18b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:26b,id:"kubejs:relic_metal_plate",tag:{}}]}'), [
         ['kubejs:relic_metal_plate', '#forge:shears', 'kubejs:relic_metal_plate'],
         ['create:wrench', 'wares:cardboard_box', '#forge:tools/knives'],
         ['kubejs:relic_metal_plate', 'chestcavity:chest_opener', 'kubejs:relic_metal_plate']])
+
+    event.shaped('extraarmor:blacksmith_hammer', [
+        ['minecraft:iron_ingot', 'minecraft:blackstone', 'minecraft:iron_ingot'],
+        ['', 'minecraft:stick', ''],
+        ['', 'minecraft:stick', '']])
 
     event.shapeless('kubejs:safe_chest_opener', ['chestcavity:chest_opener', '#forge:dyes/cyan'])
 })

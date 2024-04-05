@@ -52,7 +52,7 @@
   "fullSetBonuses": [
     {
       "type": "effect",
-      "name": "minecraft:resistance",
+      "name": "minecraft:regeneration",
       "value": 0.0,
       "interactionType": "self",
       "interactionDuration": 600,
@@ -90,7 +90,7 @@
     {
       "type": "effect",
       "name": "minecraft:resistance",
-      "value": 1.0,
+      "value": 0.0,
       "interactionType": "self",
       "interactionDuration": 600,
       "hideBonusDescription": false,

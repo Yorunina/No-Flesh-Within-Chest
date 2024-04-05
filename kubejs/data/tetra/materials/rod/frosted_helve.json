@@ -22,7 +22,7 @@
         "irons_spellbooks:freeze": 5
     },
     "attributes": {
-        "**irons_spellbooks:ice_spell_power": 0.2
+        "irons_spellbooks:ice_spell_power": 0.2
     },
     "material": {
       "items": [ "irons_spellbooks:frosted_helve" ]

@@ -18,7 +18,7 @@
     "irons_spellbooks:mana_siphon": 225
   },
   "attributes": {
-    "**irons_spellbooks:ender_spell_power": 0.15
+    "irons_spellbooks:ender_spell_power": 0.15
   },
   "textures": [
     "crude",

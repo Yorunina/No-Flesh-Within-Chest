@@ -1,0 +1,32 @@
+{
+    "key": "petrified_planks",
+    "category": "wood",
+    "primary": 4.6,
+    "secondary": 3.1,
+    "tertiary": 9.7,
+    "durability": 445,
+    "integrityCost": 1,
+    "integrityGain": 6,
+    "magicCapacity": 16,
+    "toolLevel": "minecraft:iron",
+    "toolEfficiency": 7,
+    "tints": {
+        "glyph": "8B8B00",
+        "texture": "8B8B00"
+    },
+    "textures": [
+        "crude",
+        "wooden"
+    ],
+    "effects": {
+        "art_of_forging:knockback": [2,2]
+    },
+    "material": {
+        "items": [
+            "unusualprehistory:petrified_planks"
+        ]
+    },
+    "requiredTools": {
+        "axe_dig": "minecraft:iron"
+    }
+}

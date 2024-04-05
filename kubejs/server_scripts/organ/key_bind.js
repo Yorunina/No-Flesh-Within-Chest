@@ -67,8 +67,9 @@ const organPlayerKeyPressedOnlyStrategies = {
         let damageSource = new DamageSource.sonicBoom(player)
         let vec3Nor = player.getLookAngle().normalize()
         let counter = 0
+        let getlevel = player.getXpLevel()
         if (ray.entity && ray.entity.isLiving()) {
-            ray.entity.attack(damageSource, 30)
+            ray.entity.attack(damageSource, 30 + Math.min(getlevel, 100))
             ray.entity.invulnerableTime = 0
             counter++
         }
@@ -83,7 +84,7 @@ const organPlayerKeyPressedOnlyStrategies = {
                 entityInRadius.forEach(e => {
                     if (!e.isPlayer()) {
                         counter++
-                        e.attack(damageSource, 10)
+                        e.attack(damageSource, 10 + Math.min(getlevel * 0.5, 50))
                         e.invulnerableTime = 0
                     }
                 })
@@ -102,6 +103,84 @@ const organPlayerKeyPressedOnlyStrategies = {
                 player.closeMenu()
             })
         }
+    },
+    'kubejs:lowlight_vision': function (event, organ) {
+        let player = event.player
+        let count = player.persistentData.getInt(resourceCount)
+        if (count > 60) {
+            player.potionEffects.add('minecraft:night_vision', 20 * 240, 0)
+            updateResourceCount(player, count - 60)
+            player.addItemCooldown('kubejs:lowlight_vision', 20 * 180)
+        }
+    },
+    'kubejs:jet_propeller': function (event, organ) {
+        let player = event.player
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        let count = player.persistentData.getInt(resourceCount)
+        let value = 1
+        if (typeMap.has('kubejs:resource')) {
+            value = typeMap.get('kubejs:resource').length
+        }
+        let consume = 30 + 20 * value
+        if (count > consume) {
+            player.potionEffects.add('minecraft:speed', 20 * (value + 2), Math.min(8, Math.floor(value * 0.5)))
+            updateResourceCount(player, count - consume)
+            player.addItemCooldown('kubejs:jet_propeller', 20 * Math.max(15, 95 - value * 5))
+        }
+    },
+    'kubejs:wither_and_fall': function (event, organ) {
+        let player = event.player
+        player.setHealth(1)
+        if (player.getMaxHealth() < 20) {
+            player.absorptionAmount = Math.floor((20 - player.getMaxHealth()) * 2.5)
+        }
+        else {
+            player.giveExperiencePoints(Math.floor(player.getMaxHealth() - 10))
+        }
+        player.addItemCooldown('kubejs:wither_and_fall', 20 * 150)
+    },
+    'kubejs:excited_appendix': function (event, organ) {
+        let player = event.player
+        let itemMap = getPlayerChestCavityItemMap(player);
+        let amplifier = Math.max(0, player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'explosive')) * 0.2)
+        let duration = Math.max(0, player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'creepy')) * 10)
+        let cooldown = 0
+        if (itemMap.has('minecraft:gunpowder')) {
+            cooldown = cooldown + itemMap.get('minecraft:gunpowder').length * 5
+        }
+        if (itemMap.has('minecraft:tnt')) {
+            cooldown = cooldown + itemMap.get('minecraft:tnt').length * 10
+        }
+        player.potionEffects.add('goety:explosive', Math.max(60, 20 * duration), Math.min(1, Math.floor(amplifier)), false, false)
+        player.addItemCooldown('kubejs:excited_appendix', Math.max(20 * 10, 20 * (120 - cooldown)))
+    },
+    'kubejs:redstone_of_aja': function (event, organ) {
+        let player = event.player
+        let harmfulEffects = []
+        let beneficialEffects = []
+        player.potionEffects.active.forEach(ctx => {
+            if (ctx.effect.CC_IsHarmful()) {
+                harmfulEffects.push(ctx)
+            }
+            else if (ctx.effect.CC_IsBeneficial()) {
+                beneficialEffects.push(ctx)
+            }
+        })
+        if (harmfulEffects.length > 0) {
+            harmfulEffects.forEach(ctx => {
+                player.removeEffect(ctx.effect)
+                player.potionEffects.add(ctx.effect, ctx.getDuration() * 0.5, ctx.getAmplifier() + 1)
+            })
+        }
+        if (beneficialEffects.length > 0) {
+            beneficialEffects.forEach(ctx => {
+                player.removeEffect(ctx.effect)
+                if (ctx.getAmplifier() > 0) {
+                    player.potionEffects.add(ctx.effect, ctx.getDuration() * 2, ctx.getAmplifier() - 1)
+                }
+            })
+        }
+        player.addItemCooldown('kubejs:redstone_of_aja', 20 * 90)
     },
     'kubejs:amethyst_magic_core': function (event, organ) {
         let player = event.player
@@ -162,5 +241,39 @@ const organPlayerKeyPressedOnlyStrategies = {
         }
         player.addItemCooldown('kubejs:dragon_blood_heart', 20 * 180)
         player.potionEffects.add('kubejs:dragon_power', Math.max(Math.floor(duration), 0), amplifier, false, false)
+    },
+    'kubejs:sunbird_crystals': function (event, organ) {
+        let player = event.player
+        player.potionEffects.add('alexsmobs:sunbird_blessing', 20 * 90, 0, false, false)
+        if (player.hasEffect('alexsmobs:sunbird_curse')) {
+            player.removeEffect('alexsmobs:sunbird_curse')
+        }
+        player.addItemCooldown('kubejs:sunbird_crystals', 20 * 90)
+    },
+    'kubejs:enderiophage_heart': function (event, organ) {
+        let player = event.player
+        let particle = Utils.particleOptions(`dust 1 0 1 1`)
+        let ray = player.rayTrace(32, true)
+        if (ray.entity && ray.entity.isLiving()) {
+            ray.entity.potionEffects.add('alexsmobs:ender_flu', 20 * 5, 0, false, false)
+            player.addItemCooldown('kubejs:enderiophage_heart', 20 * 45)
+            event.level.spawnParticles(particle, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
+        }
+    },
+    'kubejs:mimicube_heart': function (event, organ) {
+        let player = event.player
+        let particle = Utils.particleOptions(`dust 0 0 1 1`)
+        let ray = player.rayTrace(32, true)
+        if (ray.entity && ray.entity.isLiving() && ray.entity.getType() != 'minecraft:player') {
+            let entity = ray.entity
+            let itemList = [entity.getHeadArmorItem(), entity.getChestArmorItem(), entity.getLegsArmorItem(), entity.getFeetArmorItem()]
+            itemList = itemList.filter(function (item) {
+                return item != "air"
+            })
+            let res = Math.ceil((Math.random() * itemList.length))
+            player.give(itemList[res - 1])
+            player.addItemCooldown('kubejs:mimicube_heart', 20 * 600)
+            event.level.spawnParticles(particle, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
+        }
     },
 };

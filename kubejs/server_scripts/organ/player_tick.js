@@ -78,17 +78,17 @@ const organPlayerTickOnlyStrategies = {
         if (player.hasEffect('minecraft:strength')) {
             amplifier = player.getEffect('minecraft:strength').getAmplifier()
         }
-        player.potionEffects.add('minecraft:strength', 8 * 20, Math.min(amplifier + 1, 4))
+        player.potionEffects.add('minecraft:strength', 8 * 20, Math.min(amplifier + 1, 7))
     },
     'kubejs:mini_vampire': function (event, organ) {
         let player = event.player
         let maxHealth = player.getMaxHealth()
         let health = player.getHealth()
-        if (health < maxHealth * 0.1) {
+        if (health < maxHealth * 0.2) {
             player.potionEffects.add('kubejs:vampiric', 20 * 3, 2)
-        } else if (health < maxHealth * 0.2) {
-            player.potionEffects.add('kubejs:vampiric', 20 * 3, 1)
         } else if (health < maxHealth * 0.3) {
+            player.potionEffects.add('kubejs:vampiric', 20 * 3, 1)
+        } else if (health < maxHealth * 0.5) {
             player.potionEffects.add('kubejs:vampiric', 20 * 3, 0)
         }
     },

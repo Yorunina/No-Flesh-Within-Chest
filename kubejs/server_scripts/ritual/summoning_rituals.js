@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     event.recipes.summoningrituals
         .altar('kubejs:ritual_catalyst')
         .id('kubejs:ritual_lust_shard')
-        .input('goety:unholy_blood')
+        .input('art_of_forging:sigil_of_eden')
         .input('irons_spellbooks:mana_upgrade_orb')
         .input('goety:philosophers_stone')
         .input('kubejs:nether_star_shard')

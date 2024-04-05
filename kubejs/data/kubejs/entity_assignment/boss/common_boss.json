@@ -1,16 +1,11 @@
 {
   "chestcavity": "kubejs:types/boss/common_boss.json",
   "entities": [
-    "somebosses:dark_mask",
-    "somebosses:crimson_vampire",
     "somebosses:nameless_one",
     "somebosses:hand_head",
-    "goety:apostle",
-    "goety:vizier",
-    "invasioncodered:gashslit",
-    "irons_spellbooks:dead_king",
-    "meetyourfight:rosalyne",
     "somebosses:rib_golem",
+    "goety:vizier",
+    "irons_spellbooks:dead_king",
     "witherstormmod:wither_storm_segment",
     "witherstormmod:withered_symbiont",
     "witherstormmod:wither_storm",

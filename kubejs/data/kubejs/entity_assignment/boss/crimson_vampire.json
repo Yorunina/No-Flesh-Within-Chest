@@ -1,0 +1,4 @@
+{
+    "chestcavity": "kubejs:types/boss/crimson_vampire.json",
+    "entities": ["somebosses:crimson_vampire"]
+  }

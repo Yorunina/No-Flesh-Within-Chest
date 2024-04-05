@@ -49,7 +49,7 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:long_lasting_pill').withCount(1)).setFluid('createaddition:bioethanol', 500).setFluidOutput('minecraft:water').addHeatRequirement())
         
     registerCustomRecipe(new MixingCauldronRecipe(
-        [Ingredient.of('biomancy:cleansing_serum'), Ingredient.of('biomancy:cleansing_serum'), Ingredient.of('goety:soul_heal_focus'), Ingredient.of('goety:soul_heal_focus'), Ingredient.of('minecraft:enchanted_golden_apple'), Ingredient.of('goety:philosophers_stone'), Ingredient.of('hexerei:mindful_trance_blend'), Ingredient.of('kubejs:long_lasting_pill')],
+        [Ingredient.of('biomancy:cleansing_serum'), Ingredient.of('biomancy:cleansing_serum'), Ingredient.of('goety:soul_heal_focus'), Ingredient.of('goety:soul_heal_focus'), Ingredient.of('minecraft:enchanted_golden_apple'), Ingredient.of('iceandfire:sapphire_gem'), Ingredient.of('hexerei:mindful_trance_blend'), Ingredient.of('kubejs:long_lasting_pill')],
         Item.of('kubejs:long_lasting_pill_gold').withCount(1)).setFluid('hexerei:quicksilver_fluid', 500).addHeatRequirement())
         
     registerCustomRecipe(new MixingCauldronRecipe(
