@@ -1201,6 +1201,7 @@ StartupEvents.registry('item', event => {
         .addScore('endurance', 1.25)
         .addScore('digestion', 0.5)
         .addScore('furnace_powered', 1)
+
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.frenzy_blast_furance.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.frenzy_blast_furance.2" })])
         .build())

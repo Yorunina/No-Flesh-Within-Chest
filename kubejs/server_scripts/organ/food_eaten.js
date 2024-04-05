@@ -112,6 +112,4 @@ const organFoodEatenOnlyStrategies = {
             }
         }
     },
-
 };
-

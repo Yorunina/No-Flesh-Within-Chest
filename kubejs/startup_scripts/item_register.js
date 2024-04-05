@@ -167,7 +167,7 @@ StartupEvents.registry('item', event => {
     event.create('glass_wand').texture('kubejs:item/glass_wand')
         .maxStackSize(1)
         .rarity('rare')
-        
+
 
     event.create('unholy_grail').texture('kubejs:item/unholy_grail')
         .maxStackSize(1)
@@ -274,6 +274,7 @@ StartupEvents.registry('item', event => {
                 } else {
                     itemstack.setNbt({ inventory: oriInv })
                 }
+
             }
             global.initChestCavityIntoMap(entity, true)
             if (entity.getChestCavityInstance().inventory.hasAnyMatching(item => {

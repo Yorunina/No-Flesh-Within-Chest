@@ -209,16 +209,10 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:the_third_eye': function (event, organ, data) {
         if (event.source.type != 'arrow') return
-        let harmfulEffects = []
-        event.entity.potionEffects.active.forEach(ctx => {
-            if (ctx.effect.CC_IsHarmful()) {
-                harmfulEffects.push(ctx)
-            }
-        })
-        if (harmfulEffects.length >= 5) {
+        if (event.entity.activeEffects.size() >= 5) {
             event.entity.invulnerableTime = event.entity.invulnerableTime * 1 / 2
             event.amount = event.amount * 0.5
-        }
+        }  
     },
     'kubejs:energy_bottle_max': function (event, organ, data) {
         let player = event.source.player
@@ -322,5 +316,12 @@ const organPlayerDamageOnlyStrategies = {
             entity.setSecondsOnFire(10)
             entity.potionEffects.add('goety:flammable', 20 * 10, 1)
         }
+    },
+    'kubejs:frenzy_blast_furance': function (event, organ, data) {
+        let player = event.source.player
+        if (!isPlayerOnFire(player)) {
+            return
+        }
+        event.amount = event.amount + player.maxHealth - player.health
     },
 };

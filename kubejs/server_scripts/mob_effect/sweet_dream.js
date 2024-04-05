@@ -29,7 +29,6 @@ function sweetDreamPlayerHurtByOthers(event, data) {
             player.removeEffect('kubejs:sweet_dream');
             if (itemMap.has('kubejs:candy_pancreas')) {
                 player.potionEffects.add('minecraft:absorption', 20 * 30, 4)
-                player.potionEffects.add('minecraft:health_boost', 20 * 30, 4)
             }
             event.amount = 0
             return;
