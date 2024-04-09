@@ -37,6 +37,22 @@ StartupEvents.registry('item', event => {
     event.create('kubejs:sponsor_badge').texture('kubejs:item/sponsor_badge').maxStackSize(1)
     event.create('kubejs:mysterious_trinket').texture('kubejs:item/mysterious_trinket').maxStackSize(64)
     event.create('kubejs:chicken_flavor_powder').texture('kubejs:item/chicken_flavor_powder').maxStackSize(64)
+    event.create('kubejs:zombie_brain').texture('kubejs:item/zombie_brain').food(food => {food.hunger(4).saturation(0.1).meat().alwaysEdible().effect('minecraft:hunger', 600, 0, 0.8)})
+	event.create('kubejs:purifying_bath_salts').texture('kubejs:item/purifying_bath_salts')
+	    .useAnimation('bow')
+	    .use((level, player, hand) => {return true;})
+	    .useDuration(itemStack => 20)
+	    .finishUsing((itemstack, level, entity) => {
+		    if (level.isClientSide()) return itemstack
+		    if (!entity.isPlayer()) return itemstack
+		    entity.potionEffects.add('kubejs:warpward', 12000, 0, false, false);
+		    entity.addItemCooldown('kubejs:purifying_bath_salts', 20 * 10)
+		    itemstack.shrink(1);
+		    return itemstack
+	    })
+	event.create('kubejs:sanity_checker').texture('kubejs:item/sanity_checker').maxStackSize(1)
+	event.create('kubejs:mini_silverwood').texture('kubejs:item/mini_silverwood').maxStackSize(1)
+	event.create('kubejs:silverheart_charm').texture('kubejs:item/silverheart_charm').tag('curios:extra').tag('curios:trinkets').tag('curios:charm').maxStackSize(1)
     // 无形肿瘤
     event.create('kubejs:random_tumor')
         .food(food => {
