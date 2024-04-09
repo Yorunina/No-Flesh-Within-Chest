@@ -26,4 +26,10 @@ const curiosEquippedStrategies = {
         }
         event.player.potionEffects.add('minecraft:jump_boost', 20 * 5, 1, false, false)
     },
+    'kubejs:silverheart_charm': function (event, curios, slot, item) {
+        if (!event.player || event.player.age % 80 != 0) {
+            return
+        }
+        event.player.potionEffects.add('kubejs:warpward', 20 * 10, 0, false, false)
+    },
 }
