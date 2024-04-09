@@ -114,4 +114,20 @@ const organRightClickedOnlyStrategies = {
         event.item.shrink(1)
         event.player.give(Item.of('minecraft:glass_bottle'))
     },
+    'kubejs:sanitizing_soap': function (event, organ) {
+        if (event.item != 'kubejs:purifying_bath_salts') return;
+        let player = event.player
+        if (!player.shiftKeyDown) return;
+		player.potionEffects.add('kubejs:warpward', 12000, 0, false, false);
+		player.addItemCooldown('kubejs:purifying_bath_salts', 20 * 10)
+        event.item.shrink(1)
+        let warp = player.persistentData.getInt(warpCount) ?? 0
+        if(warp<=12) return;
+        let luck = player.getLuck()
+        let opportunity = Math.max(10,100-(Math.sqrt(warp)*6)+luck)
+        if((Math.random()*100)>opportunity) return;
+        updateWarpCount(player, warp - 1)
+        Client.getInstance().gameRenderer.displayItemActivation('kubejs:sanitizing_soap')
+        player.server.entities.filterSelector(player).playSound('minecraft:entity.experience_orb.pickup')
+    },
 };
