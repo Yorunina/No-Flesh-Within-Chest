@@ -103,4 +103,10 @@ const organPlayerTickOnlyStrategies = {
             updateResourceCount(player, count + (amplifier + 1) * 20)
         }
     },
+    'kubejs:silverwood_heart': function (event, organ) {
+        if (!event.player || event.player.age % 80 != 0) {
+            return
+        }
+        event.player.potionEffects.add('kubejs:warpward', 600 , 0 , false, false)
+    },
 };
