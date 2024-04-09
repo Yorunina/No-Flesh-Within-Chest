@@ -86,12 +86,20 @@ debugLevel=0
 		changeWanderingTrades=false
 		
 		#The default coin to replace a trades emeralds with.
-		defaultReplacementCoin=lightmanscurrency:coin_emerald
+		#May seperate and define villager type specific entries by adding multiple items seperated by '-' with region
+		defaultEmeraldReplacementItem="lightmanscurrency:coin_emerald-r;minecraft:snow;lightmanscurrency:coin_chocolate_emerald"
 		
 		#List of replacement coin overrides.
-		#Each entry must be formatted as follows: "mod:some_trader_type-lightmanscurrency:some_coin"
+		#Each entry must be formatted as follows: "mod:some_profession_type-SUB_ENTRY-SUB_ENTRY-..."
+		#You may use "minecraft:wandering_trader" as a profession id to override the vanilla Wandering Trader
+		#
+		#Each sub-entry must be formatted as either of the following: "r;minecraft:villager_type;ITEM_ENTRY" to define an entry specific to an in-game region (villagers from `mincraft:snow` or `minecraft:desert` regions, etc.)
+		#with the exception of a single 'default' entry with no defined villager type/region "...-ITEM_ENTRY-..."
+		#
+		#Each item-entry is either 1 or 2 item ids (e.g. "mod:coin_item" or "mod:coin_item_1;mod:coin_item_2".
+		#When two are given, the first will replace the cost items (items the player must pay the villager) and the second will replace the result (items the player will be paid by the villager)
 		#Every trader not on this list will use the default trader coin defined above.
-		replacementCoinOverrides=["minecraft:butcher-lightmanscurrency:coin_iron","minecraft:cartographer-lightmanscurrency:coin_iron","minecraft:farmer-lightmanscurrency:coin_iron","minecraft:fisherman-lightmanscurrency:coin_iron","minecraft:fletcher-lightmanscurrency:coin_copper","minecraft:leatherworker-lightmanscurrency:coin_iron","minecraft:mason-lightmanscurrency:coin_iron","minecraft:shepherd-lightmanscurrency:coin_iron"]
+		professionEmeraldReplacementOverrides=["minecraft:cartographer-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:fletcher-lightmanscurrency:coin_iron;lightmanscurrency:coin_copper-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron;lightmanscurrency:coin_chocolate_copper","minecraft:butcher-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:farmer-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:fisherman-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:shepherd-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:mason-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron","minecraft:leatherworker-lightmanscurrency:coin_iron-r;minecraft:snow;lightmanscurrency:coin_chocolate_iron"]
 		
 #Loot Options
 [loot]

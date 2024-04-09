@@ -5,6 +5,8 @@
 	spellDamageMultiplier = 1
 	#Whether Servants change navigation modes by hitting them, put false to make them change by right-clicking on them, Default: true
 	ownerHitCommand = true
+	#Spells have their soul cost reduced or increased depending on the surroundings around the caster, Default: true
+	environmentalCost = true
 
 [Spells]
 
@@ -169,6 +171,9 @@
 		#Time to cast Feasting Spell per second, Default: 20
 		#Range: 0 ~ 72000
 		feastTime = 20
+		#How many ticks the Feasting Spell much charge before casting, Default: 0
+		#Range: > 0
+		feastChargeUp = 0
 
 	[Spells."Teeth Spell"]
 		#Teeth Spell Cost, Default: 8
@@ -268,7 +273,7 @@
 		#Ice Spike Spell Cooldown, Default: 20
 		#Range: > 0
 		iceSpikeCoolDown = 20
-		#How much base damage Ice Spike deals, Default: 4.0
+		#How much base damage Ice Spike deals, Default: 3.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		iceSpikeDamage = 4.0
 
@@ -303,6 +308,9 @@
 		fireBreathDamage = 2.0
 		#Ring of the Dragon Fire Breath deals environmental damage, Default: true
 		dragonFireGriefing = true
+		#How many ticks the Fire Breath Spell much charge before casting, Default: 0
+		#Range: > 0
+		fireBreathChargeUp = 0
 
 	[Spells."Frost Breath Spell"]
 		#Frost Breath Spell Cost per second, Default: 2
@@ -313,6 +321,9 @@
 		frostBreathDamage = 1.0
 		#Ring of the Dragon Frost Breath deals environmental damage, Default: true
 		dragonFrostGriefing = true
+		#How many ticks the Frost Breath Spell much charge before casting, Default: 0
+		#Range: > 0
+		frostBreathChargeUp = 0
 
 	[Spells."Shocking Spell"]
 		#Shocking Spell Cost per second, Default: 4
@@ -321,6 +332,9 @@
 		#How much base damage Shocking Sparks deals, Default: 2.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		shockingDamage = 2.0
+		#How many ticks the Shocking Spell much charge before casting, Default: 0
+		#Range: > 0
+		shockingChargeUp = 0
 
 	[Spells."Soul Light Spell"]
 		#Soul Light Spell Cost, Default: 1
@@ -406,6 +420,9 @@
 		#Flight Spell Cost, Default: 4
 		#Range: > 0
 		flightCost = 4
+		#How many ticks the Flight Spell much charge before casting, Default: 0
+		#Range: > 0
+		flightChargeUp = 0
 
 	[Spells."Cushion Spell"]
 		#Cushion Spell Cost, Default: 16
@@ -592,9 +609,14 @@
 		#Corruption Spell Cost, Default: 2500
 		#Range: > 0
 		corruptionCost = 2500
-		#How much base damage Corrupted Beam Spell deals per tick, Default: 1.0
+		#How much base damage Corrupted Beam Spell deals per tick, Default: 10.0
 		#Range: 0.0 ~ 1.7976931348623157E308
 		corruptedBeamDamage = 1.0
+		#How many ticks the Corruption Spell much charge before casting, Default: 0
+		#Range: > 0
+		corruptionChargeUp = 0
+		#Whether casting Corruption spell immobilizes the caster, Default: true
+		corruptionImmobile = true
 
 	[Spells."Eruption Spell"]
 		#Eruption Spell Cost, Default: 32
@@ -636,6 +658,9 @@
 		#Add mobs that Telekinesis Spell don't work on. 
 		#To do so, enter the namespace ID of the mob, like "minecraft:zombie, minecraft:skeleton".
 		telekinesisBlackList = []
+		#How many ticks the Telekinesis Spell much charge before casting, Default: 0
+		#Range: > 0
+		telekinesisChargeUp = 0
 
 	[Spells."Monsoon Spell"]
 		#Monsoon Spell Cost, Default: 8
@@ -647,6 +672,101 @@
 		#Monsoon Spell Cooldown, Default: 100
 		#Range: > 0
 		monsoonCoolDown = 100
+
+	[Spells."Ice Storm Spell"]
+		#Ice Storm Spell Cost, Default: 16
+		#Range: > 0
+		iceStormCost = 16
+		#Time to cast Ice Storm Spell, Default: 40
+		#Range: 0 ~ 72000
+		iceStormTime = 40
+		#Ice Storm Spell Cooldown, Default: 100
+		#Range: > 0
+		iceStormCoolDown = 100
+		#How much base damage Ice Storm deals, Default: 5.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		iceStormDamage = 5.0
+
+	[Spells."Swarm Spell"]
+		#Swarm Spell Cost per second, Default: 2
+		#Range: > 0
+		swarmCost = 2
+		#How many ticks the Swarm Spell much charge before casting, Default: 0
+		#Range: > 0
+		swarmChargeUp = 0
+		#How much base damage Swarm deals, Default: 2.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		swarmDamage = 2.0
+
+	[Spells."Overgrowth Spell"]
+		#Overgrowth Spell Cost, Default: 8
+		#Range: > 0
+		overgrowthCost = 8
+		#Time to cast Overgrowth Spell, Default: 0
+		#Range: 0 ~ 72000
+		overgrowthTime = 0
+		#Overgrowth Spell Cooldown, Default: 120
+		#Range: > 0
+		overgrowthCoolDown = 120
+
+	[Spells."Entangling Spell"]
+		#Entangling Spell Cost, Default: 8
+		#Range: > 0
+		entanglingCost = 8
+		#Time to cast Entangling Spell, Default: 0
+		#Range: 0 ~ 72000
+		entanglingTime = 0
+		#Entangling Spell Cooldown, Default: 400
+		#Range: > 0
+		entanglingCoolDown = 400
+
+	[Spells."Whispering Spell"]
+		#Whispering Spell Cost, Default: 16
+		#Range: > 0
+		whisperCost = 16
+		#Time to cast Whispering Spell, Default: 100
+		#Range: 0 ~ 72000
+		whisperTime = 100
+		#Whispering Spell Cooldown, Default: 1200
+		#Range: > 0
+		whisperCoolDown = 1200
+		#Whispering Spell Summon Down, Default: 300
+		#Range: 300 ~ 72000
+		whisperSummonDown = 300
+		#Number of Whisperers that can exist around the player, Default: 4
+		#Range: > 1
+		whisperLimit = 4
+
+	[Spells."Discharge Spell"]
+		#Discharge Spell Cost, Default: 40
+		#Range: > 0
+		dischargeCost = 40
+		#Time to cast Discharge Spell, Default: 0
+		#Range: 0 ~ 72000
+		dischargeTime = 0
+		#Discharge Spell Cooldown, Default: 100
+		#Range: > 0
+		dischargeCoolDown = 100
+		#How much base minimum damage Discharge Spell deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		dischargeMinDamage = 6.0
+		#How much base maximum damage Discharge Spell deals, Default: 12.0
+		#Range: 2.0 ~ 1.7976931348623157E308
+		dischargeMaxDamage = 12.0
+
+	[Spells."Tunnel Spell"]
+		#Tunnel Spell Cost, Default: 16
+		#Range: > 0
+		tunnelCost = 16
+		#Tunnel Spell Cooldown, Default: 100
+		#Range: > 0
+		tunnelCoolDown = 100
+		#The initial duration for the Tunnel lifespan in ticks, Default: 100
+		#Range: > 0
+		tunnelDefaultLifespan = 100
+		#The initial distance of the Tunnel, Default: 8
+		#Range: > 0
+		tunnelDefaultDistance = 8
 
 ["Servant Limits"]
 	#Number of Skeleton/Vanguard/Necromancer Servants that can exist around the player without instantly dying, Default: 32
@@ -669,7 +789,7 @@
 	#Wanting Maximum Enchantment Level, Default: 3
 	#Range: 1 ~ 10
 	maxWantingLevel = 3
-	#Potency Maximum Enchantment Level, Default: 5
+	#Velocity Maximum Enchantment Level, Default: 5
 	#Range: 1 ~ 10
 	maxPotencyLevel = 5
 	#Radius Maximum Enchantment Level, Default: 2

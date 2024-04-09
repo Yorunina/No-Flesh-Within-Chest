@@ -82,6 +82,30 @@
 			#Range: 1.0 ~ 1.7976931348623157E308
 			preacherHeal = 6.0
 
+		[Attributes.Illagers.Crusher]
+			#How much Max Health Crushers have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			crusherHealth = 24.0
+			#How much damage Crushers deals, Default: 10.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			crusherDamage = 10.0
+
+		[Attributes.Illagers."Storm Caster"]
+			#How much Max Health Storm Casters have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			stormCasterHealth = 24.0
+			#How much damage Storm Casters deals, Default: 5.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			stormCasterDamage = 5.0
+
+		[Attributes.Illagers.Cryologer]
+			#How much Max Health Cryologers have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			cryologerHealth = 24.0
+			#How much damage Cryologers deals, Default: 5.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			cryologerDamage = 5.0
+
 	[Attributes.General]
 
 		[Attributes.General.Wraith]
@@ -274,6 +298,35 @@
 			#How much damage Redstone Golems deals, Default: 16.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			squallGolemDamage = 16.0
+
+		[Attributes."Summoned Mobs".Whisperer]
+			#How much Max Health Whisperers have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			whispererHealth = 20.0
+			#How much damage Whisperer melee attack deals, Default: 2.5
+			#Range: 1.0 ~ 1.7976931348623157E308
+			whispererDamage = 2.5
+
+		[Attributes."Summoned Mobs".Leapleaf]
+			#How much Max Health Leapleaves have, Default: 70.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			leapleafHealth = 70.0
+			#How much damage Leapleaves deals, Default: 10.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			leapleafDamage = 10.0
+
+		[Attributes."Summoned Mobs"."Quick Growing Vine"]
+			#How much Max Health Quick Growing Vines have, Default: 10.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			quickGrowingVineHealth = 10.0
+
+		[Attributes."Summoned Mobs"."Poison-Quill Vine"]
+			#How much Max Health Poison-Quill Vines have, Default: 40.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			poisonQuillVineHealth = 40.0
+			#How much damage Poison-Quill Vines' quills deals, Default: 2.5
+			#Range: 1.0 ~ 1.7976931348623157E308
+			poisonQuillVineDamage = 2.5
 
 	[Attributes.Mini-Bosses]
 

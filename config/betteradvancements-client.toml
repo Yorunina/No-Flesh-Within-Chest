@@ -20,4 +20,5 @@ defaultDrawDirectLines = false
 defaultHideLines = false
 defaultCompletedLineColor = "#FFFFFF"
 defaultUncompletedLineColor = "#FFFFFF"
+onlyUseAboveAdvancementTabs = false
 

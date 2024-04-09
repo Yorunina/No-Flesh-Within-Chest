@@ -154,15 +154,14 @@ const organPlayerKeyPressedOnlyStrategies = {
         player.potionEffects.add('goety:explosive', Math.max(60, 20 * duration), Math.min(1, Math.floor(amplifier)), false, false)
         player.addItemCooldown('kubejs:excited_appendix', Math.max(20 * 10, 20 * (120 - cooldown)))
     },
-    'kubejs:redstone_of_aja': function (event, organ) {
+    'kubejs:blood_crystal': function (event, organ) {
         let player = event.player
         let harmfulEffects = []
         let beneficialEffects = []
         player.potionEffects.active.forEach(ctx => {
-            if (ctx.effect.CC_IsHarmful()) {
+            if (!ctx.effect.isBeneficial()) {
                 harmfulEffects.push(ctx)
-            }
-            else if (ctx.effect.CC_IsBeneficial()) {
+            } else {
                 beneficialEffects.push(ctx)
             }
         })
@@ -180,7 +179,7 @@ const organPlayerKeyPressedOnlyStrategies = {
                 }
             })
         }
-        player.addItemCooldown('kubejs:redstone_of_aja', 20 * 90)
+        player.addItemCooldown('kubejs:blood_crystal', 20 * 90)
     },
     'kubejs:amethyst_magic_core': function (event, organ) {
         let player = event.player
@@ -257,22 +256,6 @@ const organPlayerKeyPressedOnlyStrategies = {
         if (ray.entity && ray.entity.isLiving()) {
             ray.entity.potionEffects.add('alexsmobs:ender_flu', 20 * 5, 0, false, false)
             player.addItemCooldown('kubejs:enderiophage_heart', 20 * 45)
-            event.level.spawnParticles(particle, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
-        }
-    },
-    'kubejs:mimicube_heart': function (event, organ) {
-        let player = event.player
-        let particle = Utils.particleOptions(`dust 0 0 1 1`)
-        let ray = player.rayTrace(32, true)
-        if (ray.entity && ray.entity.isLiving() && ray.entity.getType() != 'minecraft:player') {
-            let entity = ray.entity
-            let itemList = [entity.getHeadArmorItem(), entity.getChestArmorItem(), entity.getLegsArmorItem(), entity.getFeetArmorItem()]
-            itemList = itemList.filter(function (item) {
-                return item != "air"
-            })
-            let res = Math.ceil((Math.random() * itemList.length))
-            player.give(itemList[res - 1])
-            player.addItemCooldown('kubejs:mimicube_heart', 20 * 600)
             event.level.spawnParticles(particle, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
         }
     },

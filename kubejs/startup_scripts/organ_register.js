@@ -76,9 +76,10 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:rose_quartz_heart')
         .addScore('health', 1.5)
         .addScore('nerves', -1)
-        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.1" }), Text.red({ "translate": "kubejs.tooltips.rose_quartz_heart.2" }), Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.3" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.4" }), Text.yellow({ "translate": "kubejs.tooltips.rose_quartz_heart.5" }), Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.6" }), Text.yellow(2.5), Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.7" }), Text.yellow({ "translate": "kubejs.tooltips.rose_quartz_heart.8" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.9" }), Text.yellow({ "translate": "kubejs.tooltips.rose_quartz_heart.10" }), Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.11" }), Text.yellow(1.2), Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.12" }), Text.yellow({ "translate": "kubejs.tooltips.rose_quartz_heart.13" })])
+        .addScore('breath_recovery', -0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.3" })])
         .build())
         .texture('kubejs:item/organs/rose_quartz/rose_quartz_heart')
         .tag('kubejs:heart')
@@ -644,9 +645,9 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.the_third_eye.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.the_third_eye.3" })])
         .build())
-        .texture('kubejs:item/organs/legends/the_third_eye')
+        .texture('kubejs:item/organs/warp/the_third_eye')
         .rarity('epic')
-        .tag('kubejs:legends')
+        .tag('kubejs:warp')
         .tag('kubejs:damage_only')
         .tag('itemborders:diamond');
 
@@ -891,7 +892,6 @@ StartupEvents.registry('item', event => {
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.cursed_soul.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cursed_soul.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cursed_soul.3" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cursed_soul.4" })])
         .build())
         .texture('kubejs:item/organs/relics/cursed_soul')
         .tag('kubejs:bear_only')
@@ -952,8 +952,8 @@ StartupEvents.registry('item', event => {
         .addScore('nerves', 1.5)
         .addScore('fire_resistant', -1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.1" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.2" }), Text.gold('2%(最大20%)'), Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.3" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.4" }), Text.gold({ "translate": "kubejs.tooltips.redstone_chipset.5" }), Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.6" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_chipset.3" })])
         .build())
         .texture('kubejs:item/organs/relics/redstone_chipset')
         .tag('kubejs:machine')
@@ -1209,15 +1209,15 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only')
         .tag('kubejs:relics');
 
-    registerOrgan(new Organ('kubejs:redstone_of_aja')
+    registerOrgan(new Organ('kubejs:blood_crystal')
         .addScore('crystalsynthesis', 1.5)
         .addScore('glowing', 1)
         .addScore('impact_resistant', 2)
-        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.redstone_of_aja.1" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_of_aja.2" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.redstone_of_aja.3" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.blood_crystal.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blood_crystal.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blood_crystal.3" })])
         .build())
-        .texture('kubejs:item/organs/relics/redstone_of_aja')
+        .texture('kubejs:item/organs/relics/blood_crystal')
         .tag('kubejs:key_pressed')
         .tag('kubejs:relics');
 
@@ -1544,7 +1544,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:origin_of_tumor')
         .addScore('luck', 2.0)
         .addTextLines('default', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.1" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.2" })])
         .build())
         .texture('kubejs:item/organs/infected/origin_of_tumor')
         .tag('itemborders:diamond')
@@ -1577,18 +1577,6 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:key_pressed')
         .tag('kubejs:heart');
 
-    registerOrgan(new Organ('kubejs:mimicube_heart')
-        .addScore('digestion', -1)
-        .addScore('health', 0.75)
-        .addScore('luck', 0.5)
-        .addTextLines('default', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mimicube_heart.1" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mimicube_heart.2" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mimicube_heart.3" })])
-        .build())
-        .texture('kubejs:item/organs/alex/mimicube_heart')
-        .tag('itemborders:gold')
-        .tag('kubejs:key_pressed')
-        .tag('kubejs:heart');
 
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 

@@ -146,4 +146,8 @@
 	lichVillagerHate = true
 	#Whether the player needs to read a Forbidden Scroll to start the Potion of Transformation ritual, Default: true
 	lichScrollRequirement = true
+	#Whether players can obtain Lichdom without commands, Default: true
+	lichEnable = true
+	#Enable Liches healing be stunted when hurt by Smite Enchantment, Default: true
+	lichSmite = true
 

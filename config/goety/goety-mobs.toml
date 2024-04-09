@@ -51,6 +51,16 @@
 			#If Magma Cube Servants have custom textures, Default: true
 			magmaCubeServantTexture = true
 
+		[Textures."Summoned Mobs"."Wild Servants"]
+			#If Quick Growing Vine servants have custom textures, Default: true
+			quickGrowingVineTexture = true
+			#If Poison-Quill Vine servants have custom textures, Default: true
+			poisonQuillVineTexture = true
+			#If Whisperer Servants have custom textures, Default: true
+			whispererTexture = true
+			#If Leapleaf Servants have custom textures, Default: true
+			leapleafTexture = true
+
 [Servants]
 	#Whether creating a Redstone Golem causes the mold to change blocks, Default: true
 	redstoneGolemMold = true
@@ -94,17 +104,36 @@
 		undeadServantSunlightBurn = true
 		#Whether Undead Servants' helmet take damage when in Sunlight. Only takes effect if undeadServantSunlightBurn is enabled, Default: true
 		undeadServantSunlightHelmet = true
+		#Whether owned Necromancers drop Soul Jars, Default: true
+		necromancerSoulJar = true
+		#Whether Necromancer's summons have limited lifespans, Default: true
+		necromancerSummonsLife = true
+
+	[Servants."Natural Servants"]
+		#Whether Natural Servants can heal if summoned while wearing Wild Robe, Default: true
+		naturalMinionHeal = true
+		#How much Soul Energy it cost per second for a Natural Servant to heal, Default: 5
+		#Range: > 0
+		naturalMinionHealCost = 5
+		#How frequent Natural Servants heal, count seconds, Default: 1
+		#Range: > 0
+		naturalMinionHealTime = 1
+		#How much Health Natural Servants heal, numerically, Default: 0.5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		naturalMinionHealAmount = 0.5
 
 [Illagers]
 	#Whether Illague Effect can spread from non Conquillagers that has the effect, Default: true
 	illagueSpread = true
 	#Whether Enviokers, Inquillagers and Conquillagers can steal Totems of Souls or Totems of Undying, Default: true
 	illagerSteal = true
+	#Whether Cryologers can summon Ice Chunks on Hard Difficulty, Default: false
+	cryologerIceChunk = false
 
 	[Illagers."Illager Assaults"]
 		#Modded Illagers Spawning based of Player's Soul Energy amount, Default: true
 		illagerAssault = true
-		#Spawn Frequency for Illagers Hunting the Player, Default: 12000
+		#How many ticks it takes for Illager Assaults to spawn, Default: 12000
 		#Range: > 0
 		illagerAssaultSpawnFreq = 12000
 		#Spawn Chance for Illagers Hunting the Player every Spawn Frequency, the lower the more likelier, Default: 5
@@ -140,6 +169,14 @@
 		armoredRavagerRaid = true
 		#Whether Warlocks appear in Raids, Default: true
 		warlockRaid = true
+		#Whether Rippers appear in Raids. They do not count as part of the Raid bar, Default: true
+		ripperRaid = true
+		#Whether Crushers appear in Raids, Default: true
+		crusherRaid = true
+		#Whether Storm Casters appear in Raids, Default: true
+		stormCasterRaid = true
+		#Whether Cryologers appear in Raids, Default: true
+		cryologerRaid = true
 
 [Villagers]
 	#Wearing a Dark Robe, along with variants, causes Villagers around the Player to have a negative Reputation unless said Player has 25 or more reputation among them, Default: false

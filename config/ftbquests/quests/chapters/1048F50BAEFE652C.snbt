@@ -3043,34 +3043,6 @@
 			y: 26.5d
 		}
 		{
-			dependencies: ["07080DC68B62B221"]
-			description: [
-				"从&6复刻怪&r胸腔中取出的器官。"
-				""
-				"用于复制目标生物穿戴的任意一件盔甲。"
-				""
-				"出于某种原因，无法复制玩家的盔甲。"
-			]
-			id: "194FD5835A8A175C"
-			rewards: [{
-				id: "4B7EDE311C471310"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "模仿学习？"
-			tasks: [{
-				id: "15B1DA3DDD51C45B"
-				item: {
-					Count: 1b
-					id: "kubejs:mimicube_heart"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 9.5d
-			y: 26.5d
-		}
-		{
 			dependencies: ["7FF071C02D97C693"]
 			description: [
 				"激活后提高&e30%神圣法术强度&r。"
@@ -3283,7 +3255,7 @@
 		{
 			dependencies: ["6662469DC72EA384"]
 			description: [
-				"艾哲红石在&c吸血鬼恶魔&r的胸腔中可以获得。"
+				"鲜血水晶在&c吸血鬼恶魔&r的胸腔中可以获得。"
 				""
 				"释放主动技能可以将自身所有&e负面效果&r持续时间缩短至一半，但是&4效果等级提升一级&r；"
 				"同时将自身所有&e正面效果&r持续时间翻倍，但是&4效果等级降低一级&r，不满一级的效果会直接消失。"
@@ -3301,7 +3273,7 @@
 				id: "6CDEE920D731103B"
 				item: {
 					Count: 1b
-					id: "kubejs:redstone_of_aja"
+					id: "kubejs:blood_crystal"
 					tag: { }
 				}
 				type: "item"

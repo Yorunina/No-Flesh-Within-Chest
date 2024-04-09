@@ -25,7 +25,7 @@ JEIEvents.information(event => {
     event.addItem('kubejs:ore_lung', Text.black({ "translate": "kubejs.jei.ore_lung.1" }))
     event.addItem('kubejs:flower_heart', Text.black({ "translate": "kubejs.jei.flower_heart.1" }))
     event.addItem('kubejs:wither_and_fall', Text.black({ "translate": "kubejs.jei.wither_and_fall.1" }))
-    event.addItem('kubejs:redstone_of_aja', Text.black({ "translate": "kubejs.jei.redstone_of_aja.1" }))
+    event.addItem('kubejs:blood_crystal', Text.black({ "translate": "kubejs.jei.blood_crystal.1" }))
     event.addItem('kubejs:melty_blood', Text.black({ "translate": "kubejs.jei.melty_blood.1" }))
     event.addItem('kubejs:demon_eyeball', Text.black({ "translate": "kubejs.jei.demon_eyeball.1" }))
     event.addItem('kubejs:parasitic_elf', Text.black({ "translate": "kubejs.jei.parasitic_elf.1" }))
@@ -55,6 +55,5 @@ JEIEvents.information(event => {
     event.addItem('kubejs:frenzy_blast_furance', Text.black({ "translate": "kubejs.jei.frenzy_blast_furance.1" }))
     event.addItem('kubejs:sunbird_crystals', Text.black({ "translate": "kubejs.jei.sunbird_crystals.1" }))
     event.addItem('kubejs:enderiophage_heart', Text.black({ "translate": "kubejs.jei.enderiophage_heart.1" }))
-    event.addItem('kubejs:mimicube_heart', Text.black({ "translate": "kubejs.jei.mimicube_heart.1" }))
 })
 

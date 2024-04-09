@@ -179,3 +179,11 @@
 	#Whether Snow Skin is curable via Milk or Wartful Egg, Default: false
 	snowSkinCurable = false
 
+["Brew Bottling"]
+	#How many times the player must bottle a brew to increase Bottling level, Default: 20
+	#Range: > 1
+	bottlingLevelReq = 20
+	#Maximum Bottling Level the player can obtain, set to 0 to disable Bottling Levels, Default: 100
+	#Range: > 0
+	maxBottlingLevel = 100
+

@@ -9,7 +9,12 @@
 [machine_protection]
 	#Whether illegally broken traders (such as being replaced with /setblock, or modded machines that break blocks) will safely eject their block/contents into a temporary storage area for the owner to collect safely.
 	#If disabled, illegally broken traders will throw their items on the ground, and can thus be griefed by modded machines.
+	#Value ignored if anarchyMode is enabled!
 	safeEjection=true
+	
+	#Whether block break protection will be disabled completely.
+	#Enable with caution as this will allow players to grief and rob other players shops and otherwise protected machinery.
+	anarchyMode=false
 	
 #Coin Mint Settings
 [coin_mint]
@@ -121,8 +126,23 @@
 		
 #Enchantment Settings
 [enchantments]
+	#The desired delay (in ticks) between Money Mending & Coin Magnet ticks. This value will be ignored in favor of 'maxTickDelay' if the server is overloaded and/or falling behind.
+	#Increase if my enchantments are causing extreme lag.
+	#Note: 20 ticks = 1s
+	#Range: 1 -> 2147483647
+	tickDelay=20
+	
+	#The maximum delay (in ticks) between Money Mending & Coin Magnet ticks.
+	#If greater than 0, will run the Money Mending & Coin Magnet ticks this frequently even if the server is falling behind.
+	#Note: 20 ticks = 1s
+	#Range: 1 -> 2147483647
+	maxTickDelay=200
+	
 	#The cost required to repair a single item durability point with the Money Mending enchantment.
 	moneyMendingRepairCost="coin;1-lightmanscurrency:coin_copper"
+	
+	#The additional cost to repair an item with Infinity applied to it.
+	moneyMendingInfinityCost="null;empty"
 	
 	#The coin collection radius of the Coin Magnet I enchantment.
 	#Range: 1 -> 50
@@ -151,6 +171,30 @@
 	#The maxumim number of day an auction can have its duration set to.
 	#Range: 1 -> 2147483647
 	maximumDuration=30
+	
+#Bank Account Settings
+[bank_accounts]
+	#The interest rate that bank accounts will earn just by existing.
+	#Setting to 0 will disable interesting and all interest-related ticks from happening.
+	#Range: 0 -> 100
+	interestRate=0
+	
+	#The number of minecraft ticks that will pass before interest is applied.
+	#Helpful Notes:
+	#1s = 20 ticks
+	#1m = 1200 ticks
+	#1h = 72000 ticks
+	#1 day = 1728000 ticks
+	#1 week = 12096000 ticks
+	#30 days = 51840000 ticks
+	#365 days = 630720000 ticks
+	#Range: 1200 -> 630720000
+	interestDelay=1728000
+	
+	#A list of upper interest limits.
+	#Example:
+	#Adding "coin;1-lightmanscurrency:coin_netherite" to this list will make it so that players will get no more than 1 netherite coin worth of interest even if they would normally get more.
+	interestUpperLimits=[]
 	
 #Network Terminal Settings
 [terminal]
@@ -197,7 +241,7 @@
 	
 #Mod Compat Options
 [compat]
-	#Claim Purchasing Settings for FTB Chunks & Flan
+	#Claim Purchasing Settings for FTB Chunks, Cadmus, & Flan
 	[compat.claim_purchasing]
 		#Whether the '/lcclaims buy claim' command will be accessible to players.
 		allowClaimPurchase=false

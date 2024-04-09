@@ -90,10 +90,9 @@ const organPlayerBearOnlyStrategies = {
         let player = event.entity
         let itemList = [player.getMainHandItem(), player.getOffHandItem(), player.getHeadArmorItem(),
         player.getChestArmorItem(), player.getLegsArmorItem(), player.getFeetArmorItem()]
-
         let curseType = 0
         let curseVal = 0
-        itemList.forEach((item) => {
+        itemList.forEach(item => {
             item.enchantments.forEach((name, level) => {
                 if (curseEnchantList.some(ele => ele == name)) {
                     curseType = curseType + 1
@@ -107,7 +106,5 @@ const organPlayerBearOnlyStrategies = {
         else {
             event.amount = event.amount * (1 + curseType * 0.1 + curseVal * 0.1)
         }
-        let count = player.persistentData.getInt(warpCount) ?? 0
-        updateWarpCount(player, count + 1)
     },
 };

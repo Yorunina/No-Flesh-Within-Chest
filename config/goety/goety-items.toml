@@ -48,6 +48,9 @@
 		necroSetUndeadNeutral = true
 		#Whether wearing both Nameless Cape and Crown will cause Undead mobs to be neutral, Default: true
 		namelessSetUndeadNeutral = true
+		#How much shock resistance Storm Robes provides by percent, Default: 85
+		#Range: 0 ~ 100
+		stormRobeResistance = 85
 
 ["Tools & Weapons"]
 
@@ -67,6 +70,12 @@
 		#How much base damage Nameless Staffs deals, Default: 6.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		namelessStaffDamage = 6.0
+		#How much base damage Frost Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		frostStaffDamage = 4.0
+		#How much base damage Wild Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		wildStaffDamage = 4.0
 
 	["Tools & Weapons".Scythes]
 		#Amount of Soul Energy Dark Scythe gives when hitting mob(s), Default: 1
@@ -137,6 +146,14 @@
 		#Define the Enchantability for Philosopher's Mace, higher number the better, Default: 20
 		#Range: > 1
 		philosophersMaceEnchantability = 20
+
+	["Tools & Weapons".Hammers]
+		#How much base damage Hammers deals, the damage added depends on material the hammer is made off (ie. Iron = 2.0), Default: 5.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		hammerBaseDamage = 5.0
+		#How fast it takes to fully swing a Hammers. The lower the number the slower it takes to recharge, Default: 0.5
+		#Range: 0.0 ~ 1.7976931348623157E308
+		hammerAttackSpeed = 0.5
 
 [Armor]
 
