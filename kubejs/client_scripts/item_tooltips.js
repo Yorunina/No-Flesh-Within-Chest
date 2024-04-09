@@ -61,6 +61,10 @@ ItemEvents.tooltip((tooltip) => {
         text.add(1, Text.gray({ "translate": "kubejs.tooltips.bunny_hoppers.1" }));
     })
 
+    tooltip.addAdvanced('kubejs:silverheart_charm', (item, advanced, text) => {
+        text.add(Text.gray({ "translate": "kubejs.tooltips.silverwood_heart.1" }));
+    })
+
     tooltip.addAdvanced('kubejs:rapier_wand', (item, advanced, text) => {
         text.add(Text.gray({ "translate": "kubejs.tooltips.rapier_wand.1" }));
     })
