@@ -249,4 +249,17 @@ ServerEvents.recipes(event => {
         ['', 'minecraft:stick', '']])
 
     event.shapeless('kubejs:safe_chest_opener', ['chestcavity:chest_opener', '#forge:dyes/cyan'])
+
+    event.shaped('kubejs:sanity_checker', [
+        'BG ',
+        'DZS',
+        'BG '
+    ],
+    {
+        B: 'create:brass_sheet',
+        G: '#forge:glass_panes',
+        Z: 'kubejs:zombie_brain',
+        S: 'create:goggles',
+        D: '#forge:dusts/diamond'
+    })
 })
