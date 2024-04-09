@@ -1924,4 +1924,24 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:lightning_dragon_appendix').addScore('luck', 1.5).addScore('speed', 0.25).build()).texture('kubejs:item/organs/dragon/lightning_dragon_appendix').tag('kubejs:appendix').tag('itemborders:diamond');
 
+    //扭曲系统
+    //祛邪肥皂
+	registerOrgan(new Organ('kubejs:sanitizing_soap')
+		.addScore('health', 1.5).addScore('luck', -0.5).addScore('nerves', -0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.sanitizing_soap.0" })])
+		.addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sanitizing_soap.1" })])
+		.addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sanitizing_soap.2" })])
+		.addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sanitizing_soap.3" })])
+		.build()).texture('kubejs:item/organs/warp/sanitizing_soap')
+		.tag('kubejs:warp').tag('kubejs:rclick_only').tag('kubejs:pancreas')
+        .tag('itemborders:diamond');
+	//银树之心
+	registerOrgan(new Organ('kubejs:silverwood_heart')
+		.addScore('health', 1.5).addScore('photosynthesis', 1).addScore('luck', 1).addScore('nerves', 0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.silverwood_heart.0" })])
+		.addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.silverwood_heart.1" })])
+		.build()).texture('kubejs:item/organs/warp/silverwood_heart')
+		.tag('kubejs:warp').tag('kubejs:player_tick_only').tag('kubejs:heart').tag('kubejs:magic')
+        .tag('itemborders:diamond');
+
 });
