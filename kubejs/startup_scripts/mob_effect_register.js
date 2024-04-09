@@ -145,4 +145,50 @@ StartupEvents.registry('mob_effect', event => {
     event.create('dragon_power')
         .beneficial()
         .color(Color.DARK_PURPLE)
+
+    event.create('eldritch_lackey')
+        .beneficial()
+        .color(Color.DARK_PURPLE)
+    
+    event.create('warpward')
+        .beneficial()
+        .color(Color.GOLD)
+
+    event.create('unnatural_hunger')
+        .harmful()
+        .color(Color.BLACK)
+        .effectTick((entity, lvl) => {
+            if (!entity || entity.level.isClientSide()||!entity.isPlayer()) return
+            let player = entity
+            let foodData = player.getFoodData()
+            foodData.addExhaustion((lvl+1)/5)
+        })
+
+    event.create('deathgaze')
+        .harmful()
+        .color(Color.BLACK)
+        .effectTick((entity, lvl) => {
+            if (!entity || entity.level.isClientSide()||!entity.isPlayer()) return
+            let player = entity
+            let ray = player.rayTrace(11, true)
+            let damageSource = new DamageSource.sonicBoom(player)
+            if (ray.entity && ray.entity.isLiving()) {
+                ray.entity.attack(damageSource, 0)
+                if(!ray.entity.hasEffect('minecraft:wither')){
+                    ray.entity.potionEffects.add('minecraft:wither', 25, lvl, false, false)
+                }else{
+                    if(ray.entity.age % 20 != 0){
+                        let duration = ray.entity.potionEffects.getDuration('minecraft:wither')
+                        ray.entity.potionEffects.add('minecraft:wither', Math.min(duration+20,1200), lvl, false, false)
+                    }
+                }
+            }
+        })
 })
+//扭曲效果治愈物品
+ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Added',event =>{
+    const { entity , effectInstance } = event
+    if(!entity.isPlayer()) return;
+    if (effectInstance.effect.descriptionId != 'effect.kubejs.unnatural_hunger' 
+    && effectInstance.effect.descriptionId != 'effect.kubejs.deathgaze') return;
+    effectInstance.setCurativeItems([])

@@ -56,5 +56,7 @@ JEIEvents.information(event => {
     event.addItem('kubejs:sunbird_crystals', Text.black({ "translate": "kubejs.jei.sunbird_crystals.1" }))
     event.addItem('kubejs:enderiophage_heart', Text.black({ "translate": "kubejs.jei.enderiophage_heart.1" }))
     event.addItem('kubejs:mimicube_heart', Text.black({ "translate": "kubejs.jei.mimicube_heart.1" }))
+    event.addItem('kubejs:zombie_brain', Text.black({ "translate": "kubejs.jei.zombie_brain.1" }))
+    event.addItem('kubejs:purifying_bath_salts', Text.black({ "translate": "kubejs.jei.purifying_bath_salts.1" }))
 })
 

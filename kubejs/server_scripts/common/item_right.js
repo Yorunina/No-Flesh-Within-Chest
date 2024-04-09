@@ -110,3 +110,12 @@ ItemEvents.rightClicked('kubejs:safe_chest_opener', event => {
         }
     }
 })
+//神智检测仪
+ItemEvents.rightClicked('luna_flesh_reforged:sanity_checker',event => {
+    let player = event.player
+    let warp = player.persistentData.getInt(warpCount) ?? 0
+    let maxWarp = player.persistentData.getInt(warpCountMax) ?? defaultWarpMax
+    let perwarp = (warp / maxWarp)*100
+    player.tell([Text.gray({ "translate": "luna_flesh_reforged.tooltips.sanity_checker.0" }), Text.red(warp), Text.yellow('/'), Text.red(maxWarp), Text.gray('('), Text.gray(perwarp), Text.gray('%)')])
+    player.addItemCooldown('luna_flesh_reforged:sanity_checker', 20 * 30)
+})
