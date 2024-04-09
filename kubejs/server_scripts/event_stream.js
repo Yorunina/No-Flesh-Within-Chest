@@ -25,6 +25,7 @@ global.playerDamage = event => {
     vampiricEntityHurtByPlayer(event, data)
     // commonEntityHurtByPlayer(event, data)
     pardonOfGodEntityHurtByPlayer(event, data)
+    EldritchLackeyEntityHurtByPlayer(event, data)
     vulnerableEntityHurt(event, data)
     organCharmEntityHurtByPlayer(event, data)
     spikedCarapaceEntityHurtByPlayer(event, data)
