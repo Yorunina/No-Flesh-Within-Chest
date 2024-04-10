@@ -4,7 +4,7 @@
 	"new slot probability" = 10
 
 ["Speed Force Particles"]
-	"Show particles?" = true
+	"Show particles?" = false
 
 ["Get fragments by destroying Trinkets?"]
 	"Get Fragments?" = true
