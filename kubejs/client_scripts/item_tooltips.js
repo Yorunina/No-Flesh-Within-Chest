@@ -70,9 +70,6 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('kubejs:unholy_grail', (item, advanced, text) => {
         text.add(Text.red({ "translate": "kubejs.tooltips.unholy_grail.1" }));
     })
-    tooltip.addAdvanced('kubejs:stardust_fragment', (item, advanced, text) => {
-        text.add(Text.gold({ "translate": "kubejs.tooltips.stardust_fragment.1" }));
-    })
     tooltip.addAdvanced('kubejs:dark_stardust_fragment', (item, advanced, text) => {
         text.add(Text.gray({ "translate": "kubejs.tooltips.dark_stardust_fragment.1" }));
         text.add(Text.gold({ "translate": "kubejs.tooltips.dark_stardust_fragment.2" }));

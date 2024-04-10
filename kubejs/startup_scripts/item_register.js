@@ -7,7 +7,6 @@ StartupEvents.registry('item', event => {
 
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
     event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
-    event.create('stardust_fragment').texture('kubejs:item/stardust_fragment')
     event.create('dark_stardust_fragment').texture('kubejs:item/dark_stardust_fragment')
     event.create('unbreakable_core').texture('kubejs:item/unbreakable_core')
     event.create('disenchantment_book').texture('kubejs:item/disenchantment_book')
@@ -242,7 +241,6 @@ StartupEvents.registry('item', event => {
         .rarity('epic')
         .useAnimation('drink')
         .use((level, player, hand) => {
-
             return true;
         })
         .useDuration(itemStack => 20)

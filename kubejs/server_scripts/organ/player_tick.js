@@ -47,7 +47,8 @@ const organPlayerTickOnlyStrategies = {
     'kubejs:platelet_dispatcher': function (event, organ) {
         let player = event.player
         if (player.health != player.maxHealth && player.health > player.maxHealth * 0.75) {
-            player.heal(1)
+            let filtration = player.chestCavityInstance.organScores.getOrDefault(new ResourceLocation('chestcavity', 'filtration'), 0)
+            player.heal(Math.min(filtration / 4, 1))
         }
     },
     'kubejs:sand_bone': function (event, organ) {
@@ -78,7 +79,7 @@ const organPlayerTickOnlyStrategies = {
         if (player.hasEffect('minecraft:strength')) {
             amplifier = player.getEffect('minecraft:strength').getAmplifier()
         }
-        player.potionEffects.add('minecraft:strength', 8 * 20, Math.min(amplifier + 1, 7))
+        player.potionEffects.add('minecraft:strength', 8 * 20, Math.min(amplifier + 1, 4))
     },
     'kubejs:mini_vampire': function (event, organ) {
         let player = event.player
@@ -102,5 +103,49 @@ const organPlayerTickOnlyStrategies = {
             let amplifier = player.getEffect('kubejs:flaring_heart').getAmplifier()
             updateResourceCount(player, count + (amplifier + 1) * 20)
         }
+    },
+    'kubejs:worm_neuron': function (event, organ) {
+        let player = event.player
+        if (player.age % 600 != 0) return
+        if (player.nbt?.ForgeCaps['goety:lichdom']?.lichdom == 1) return
+        let warp = player.persistentData.getInt(warpCount)
+        if (warp < 20) return
+        let instance = player.getChestCavityInstance()
+        // 如果该位置存在物品，则不进行生成
+        let randomIndex = Math.floor(Math.random() * 27 + 1)
+        if (instance.inventory.getItem(randomIndex) != 'minecraft:air') return
+
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        if (!typeMap.has('kubejs:organ')) return
+        
+        let organCount = typeMap.get('kubejs:organ').length * 1
+        let emptySolt = 27 - organCount
+
+        let tumor = Item.of('kubejs:random_tumor', { organData: {} })
+        let amount = Math.floor(Math.random() * 2 + 1)
+        for (let i = 0; i < amount; i++) {
+            let attri = randomGet(tumorAttriBute)
+            let attriName = attri.name
+            // 扩散系数，用于控制属性的扩散范围[-0.5, 1.5]
+            let diffusivity = Math.floor(Math.random() * 9 - 2) / 4
+            // 空格子数量放大属性
+            let amplifier = 1 / (27 - Math.max(emptySolt, 26)) + 0.01 * Math.max(instance.organScores.getOrDefault(new ResourceLocation('chestcavity', 'metabolism'), 0), 30)
+            // 实际属性 = 属性系数 * 扩散系数 * 放大属性 * 5
+            let attriValue = Math.min(attri.multi * diffusivity * amplifier * 5, attri.max)
+            tumor.nbt.organData.put(attriName, attriValue)
+        }
+        instance.inventory.setItem(randomIndex, tumor)
+        global.initChestCavityIntoMap(player, false)
+        if (player.persistentData.contains(organActive) &&
+            player.persistentData.getInt(organActive) == 1) {
+            global.updatePlayerActiveStatus(player)
+        }
+
+    },
+    'kubejs:mantis_shrimp_fist': function (event, organ) {
+        let player = event.player
+        let criticalPunchCount = player.persistentData.getInt(criticalPunch)
+        if (criticalPunchCount >= criticalPunchMaxCount) return
+        player.persistentData.putInt(criticalPunch, criticalPunchCount + 1)
     },
 };

@@ -100,9 +100,9 @@ StartupEvents.registry('item', event => {
 
     //玫瑰石英透析器
     registerOrgan(new Organ('kubejs:rose_quartz_dialyzer')
-        .addScore('health', -1.25)
-        .addScore('filtration', 3.25)
-        .addScore('endurance', -1.25)
+        .addScore('health', -0.25)
+        .addScore('filtration', 1.5)
+        .addScore('endurance', -0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_dialyzer.1" })])
         .build())
         .texture('kubejs:item/organs/rose_quartz/rose_quartz_dialyzer')
@@ -259,7 +259,8 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:platelet_dispatcher')
         .addScore('metabolism', 3)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.1" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.2" }), Text.gold({ "translate": "kubejs.tooltips.platelet_dispatcher.3" }), Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.4" }), Text.gold({ "translate": "kubejs.tooltips.platelet_dispatcher.5" }), Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.6" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.platelet_dispatcher.3" })])
         .build())
         .texture('kubejs:item/organs/machine/platelet_dispatcher')
         .tag('kubejs:player_tick_only')
@@ -1541,9 +1542,10 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold')
         .tag('kubejs:food');
 
+    // 肿瘤系列器官
     registerOrgan(new Organ('kubejs:origin_of_tumor')
         .addScore('luck', 2.0)
-        .addTextLines('default', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.1" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.2" })])
         .build())
         .texture('kubejs:item/organs/infected/origin_of_tumor')
@@ -1551,11 +1553,24 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:eat_effect_only')
         .tag('kubejs:infected');
 
+    registerOrgan(new Organ('kubejs:worm_neuron')
+        .addScore('nerves', 1.25)
+        .addScore('health', -0.5)
+        .addScore('nutrition', -2)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.worm_neuron.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.worm_neuron.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.worm_neuron.3" })])
+        .build())
+        .texture('kubejs:item/organs/infected/worm_neuron')
+        .tag('kubejs:player_tick_only')
+        .tag('kubejs:warp')
+        .tag('kubejs:infected');
+
     // alex
     registerOrgan(new Organ('kubejs:sunbird_crystals')
         .addScore('luck', 1.75)
         .addScore('buoyant', 0.75)
-        .addTextLines('default', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sunbird_crystals.1" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.sunbird_crystals.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sunbird_crystals.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.sunbird_crystals.3" })])
         .build())
@@ -1568,7 +1583,7 @@ StartupEvents.registry('item', event => {
         .addScore('hydrophobia', 1)
         .addScore('health', 0.5)
         .addScore('metabolism', 1.25)
-        .addTextLines('default', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.enderiophage_heart.1" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.enderiophage_heart.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.enderiophage_heart.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.enderiophage_heart.3" })])
         .build())
@@ -1577,6 +1592,27 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:key_pressed')
         .tag('kubejs:heart');
 
+    registerOrgan(new Organ('kubejs:whale_lung')
+        .addScore('breath_capacity', 2.5)
+        .addScore('water_breath', 1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.whale_lung.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.whale_lung.2" })])
+        .build())
+        .texture('kubejs:item/organs/alex/whale_lung')
+        .tag('kubejs:active_only')
+        .tag('itemborders:gold')
+        .tag('kubejs:lung');
+
+    registerOrgan(new Organ('kubejs:mantis_shrimp_fist')
+        .addScore('strength', 2.25)
+        .addScore('speed', -0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.mantis_shrimp_fist.1" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mantis_shrimp_fist.2" })])
+        .build())
+        .texture('kubejs:item/organs/alex/mantis_shrimp_fist')
+        .tag('kubejs:player_tick_only')
+        .tag('itemborders:gold')
+        .tag('kubejs:muscle');
 
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 

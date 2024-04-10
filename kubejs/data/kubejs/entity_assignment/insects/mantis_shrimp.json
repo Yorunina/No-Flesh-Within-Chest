@@ -1,0 +1,6 @@
+{
+    "chestcavity": "kubejs:types/insects/mantis_shrimp.json",
+    "entities": [
+        "alexsmobs:mantis_shrimp"
+    ]
+}

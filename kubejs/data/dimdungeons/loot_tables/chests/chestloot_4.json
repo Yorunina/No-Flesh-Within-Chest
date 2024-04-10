@@ -465,20 +465,6 @@
         },
         {
           "type": "item",
-          "name": "kubejs:stardust_fragment",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 1,
-                "max": 8
-              }
-            }
-          ]
-        },
-        {
-          "type": "item",
           "name": "dimdungeons:item_blank_teleporter_key",
           "weight": 4,
           "functions": [

@@ -7,6 +7,8 @@ const warpCount = 'warpCount'
 const warpCountMax = 'warpCountMax'
 const defaultWarpMax = 100
 const organActive = 'organActive'
+const criticalPunch = 'criticalPunch'
+const criticalPunchMaxCount = 10
 
 const bossTypeList = [
     'somebosses:aesegull',

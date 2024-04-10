@@ -1,0 +1,12 @@
+{
+  "ingredients": [
+    {
+      "item": "biomancy:malignant_flesh_veins"
+    }
+  ],
+  "result": {
+    "item": "kubejs:worm_neuron",
+    "count": 1
+  },
+  "time": 1200
+}

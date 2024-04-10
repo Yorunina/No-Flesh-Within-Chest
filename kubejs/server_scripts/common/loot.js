@@ -188,4 +188,7 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('goety:spent_totem').when((c) => c.randomChance(0.03)))
         .addLoot(LootEntry.of('minecraft:iron_ingot').when((c) => c.randomChance(0.3)))
         .addLoot(LootEntry.of('minecraft:gold_ingot').when((c) => c.randomChance(0.1)))
+
+    event.addBlockLootModifier()
 })
+

@@ -27,8 +27,6 @@ global.playerDamage = event => {
     pardonOfGodEntityHurtByPlayer(event, data)
     vulnerableEntityHurt(event, data)
     organCharmEntityHurtByPlayer(event, data)
-    spikedCarapaceEntityHurtByPlayer(event, data)
-    hardShellEntityHurtByPlayer(event, data)
     championEntityHurtByPlayer(event, data)
     if (data.returnDamage != 0) {
         player.attack(data.returnDamage)

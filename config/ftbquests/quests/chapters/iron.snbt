@@ -2683,21 +2683,6 @@
 			y: -11.75d
 		}
 		{
-			dependencies: ["17889F915BEB2F91"]
-			description: ["使用&6召唤祭坛&r可以制作的一种奇特材料，可以通过合成给任意魔法书升级&e添加新的槽位&r。"]
-			hide_dependency_lines: false
-			id: "36B8E915CAACBDC1"
-			subtitle: "来自天空的馈赠"
-			tasks: [{
-				id: "4D6484BB980FFBAD"
-				item: "kubejs:stardust_fragment"
-				type: "item"
-			}]
-			title: "更多的魔法槽位"
-			x: -1.0d
-			y: -9.75d
-		}
-		{
 			dependencies: ["10E0E4D042282773"]
 			description: [
 				"&d《Iron的魔法书》&r在&e新版本&r中增加的一套新装备，或许它可以使你成为一位近战法师？"

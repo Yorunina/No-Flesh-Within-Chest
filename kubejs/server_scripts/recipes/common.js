@@ -89,21 +89,6 @@ ServerEvents.recipes(event => {
 
     event.shapeless('kubejs:disenchantment_paper', ['minecraft:enchanted_book', 'alexsmobs:mysterious_worm', 'goety:unholy_blood'])
 
-    event.shaped('irons_spellbooks:copper_spell_book', [
-        ['kubejs:stardust_fragment', 'kubejs:stardust_fragment', 'kubejs:stardust_fragment'],
-        ['kubejs:stardust_fragment', '#kubejs:isb_spell_book', 'kubejs:stardust_fragment'],
-        ['kubejs:stardust_fragment', 'kubejs:stardust_fragment', 'kubejs:stardust_fragment']])
-        .modifyResult((grid, stack) => {
-            let spellBook = grid.find('#kubejs:isb_spell_book', 0)
-            if (!spellBook.nbt?.ISB_Spells || spellBook.nbt.ISB_Spells.getInt('starLightEnhance') == 1) {
-                return;
-            }
-            spellBook.nbt.ISB_Spells.putInt('maxSpells', spellBook.nbt.ISB_Spells.getInt('maxSpells') + 2)
-            spellBook.nbt.ISB_Spells.putInt('starLightEnhance', 1)
-            stack = spellBook
-            return stack;
-        });
-
     event.shaped('irons_spellbooks:scroll', [
         ['kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment'],
         ['kubejs:dark_stardust_fragment', 'irons_spellbooks:scroll', 'kubejs:dark_stardust_fragment'],
@@ -113,12 +98,11 @@ ServerEvents.recipes(event => {
             if (!scroll.nbt?.ISB_Spells?.data || !scroll.nbt.ISB_Spells.data[0]) {
                 return;
             }
-            let starLightLevel = scroll.nbt.ISB_Spells.getInt('starLightEnhance') ? scroll.nbt.ISB_Spells.getInt('starLightEnhance') : 0
-            if (starLightLevel > 9) {
-                return;
+            let curScroll = scroll.nbt.ISB_Spells.data[0].getInt('level') + 1
+            if (curScroll >= 15) {
+                return
             }
-            scroll.nbt.ISB_Spells.data[0].putInt('level', scroll.nbt.ISB_Spells.data[0].getInt('level') + 1)
-            scroll.nbt.ISB_Spells.putInt('starLightEnhance', starLightLevel + 1)
+            scroll.nbt.ISB_Spells.data[0].putInt('level', curScroll)
             stack = scroll
             return stack;
         });

@@ -307,7 +307,7 @@ const organActiveStrategies = {
         if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:chicken_lung') {
             attributeMapValueAddition(attributeMap, global.LUCK_MULTI_BASE, 0.1)
         }
-    },
+    }
 };
 
 /**
@@ -453,6 +453,11 @@ const organActiveOnlyStrategies = {
     'kubejs:aegis': function (player, organ, attributeMap) {
         let armorval = player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'defense')) * 0.5
         attributeMapValueAddition(attributeMap, global.ARMOR, Math.max(0, Math.min(30, Math.floor(armorval))))
+    },
+    'kubejs:whale_lung': function (player, organ, attributeMap) {
+        let instance = player.getChestCavityInstance()
+        let breathCapacity = instance.organScores.getOrDefault(new ResourceLocation('chestcavity', 'breath_capacity'), 0) * 1.5
+        instance.organScores.put(new ResourceLocation('chestcavity', 'breath_capacity'), new $Float(breathCapacity))
     },
 }
 

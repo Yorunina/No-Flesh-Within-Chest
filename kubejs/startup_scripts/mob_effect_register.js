@@ -134,14 +134,6 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .color(Color.BLACK)
 
-    event.create('hard_shell')
-        .beneficial()
-        .color(Color.BLACK)
-
-    event.create('spiked_carapace')
-        .beneficial()
-        .color(Color.BLACK)
-
     event.create('dragon_power')
         .beneficial()
         .color(Color.DARK_PURPLE)

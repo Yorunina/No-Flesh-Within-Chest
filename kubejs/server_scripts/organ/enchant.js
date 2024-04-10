@@ -75,7 +75,7 @@ const organPlayerEnchantOnlyStrategies = {
             enchantSlot.addEnchantment(targetEnchant, Math.max(allLevel, 1))
             enchantSlot.updateClue()
         })
-        if (Math.random() < 0.8) {
+        if (Math.random() < 0.2) {
             let count = event.player.persistentData.getInt(warpCount) ?? 0
             updateWarpCount(event.player, count + 1)
         }
