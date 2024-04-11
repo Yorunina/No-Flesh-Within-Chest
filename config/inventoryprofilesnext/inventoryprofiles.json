@@ -13,6 +13,9 @@
         "enable_inventory_editor_button": {
             "value": false
         },
+        "enable_inventory_settings_button": {
+            "value": false
+        },
         "enable_profiles_ui": {
             "value": false
         },
@@ -27,9 +30,6 @@
             "value": false
         },
         "show_sort_in_rows_button": {
-            "value": false
-        },
-        "show_move_all_button": {
             "value": false
         }
     }
