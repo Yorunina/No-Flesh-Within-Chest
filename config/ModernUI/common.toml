@@ -1,0 +1,15 @@
+
+#Developer Config
+[developer]
+	#Whether to enable developer mode.
+	enableDeveloperMode = false
+	#Range: > -2147483648
+	oneTimeEvents = 0
+
+#Auto Shutdown Config
+[autoShutdown]
+	#Enable auto-shutdown for server.
+	enable = false
+	#The time points of when server will auto-shutdown. Format: HH:mm.
+	times = ["04:00", "16:00"]
+
