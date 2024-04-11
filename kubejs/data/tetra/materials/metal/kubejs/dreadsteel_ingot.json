@@ -1,18 +1,18 @@
 {
   "key": "dreadsteel_ingot",
   "category": "metal",
-  "primary": 9.5,
-  "secondary": 5.1,
+  "primary": 9.1,
+  "secondary": 4.8,
   "tertiary": 3.9,
   "durability": 2340,
-  "integrityCost": 6,
+  "integrityCost": 3,
   "integrityGain": 2,
   "magicCapacity": 10,
   "toolLevel": "minecraft:netherite",
   "toolEfficiency": 9,
   "tints": {
-    "glyph": "000080",
-    "texture": "000080"
+    "glyph": "6c99bd",
+    "texture": "6c99bd"
   },
   "attributes": {
     "irons_spellbooks:fire_spell_power": 0.2,

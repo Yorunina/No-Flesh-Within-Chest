@@ -136,7 +136,6 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:eye_of_dnl', ['minecraft:ender_pearl', 'minecraft:gold_ingot'])
     event.shapeless('kubejs:eye_of_fortress', ['minecraft:ender_pearl', 'minecraft:magma_cream'])
     event.shapeless('kubejs:mosquito_repellent', ['irons_spellbooks:magic_cloth', 'chestcavity:cooked_alien_organ_meat'])
-    event.shapeless('kubejs:dreadsteel_ingot', ['iceandfire:dragonsteel_fire_ingot', 'iceandfire:dragonsteel_ice_ingot', 'iceandfire:dragonsteel_lightning_ingot', 'iceandfire:dread_shard'])
 
     event.shapeless('chestcavity:appendix', [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
         .modifyResult((grid, stack) => {

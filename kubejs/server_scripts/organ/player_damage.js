@@ -212,7 +212,7 @@ const organPlayerDamageOnlyStrategies = {
         if (player.persistentData.getInt(warpCount) > 20) {
             event.entity.invulnerableTime = event.entity.invulnerableTime * 1 / 2
             event.amount = event.amount * 0.5
-        }  
+        }
     },
     'kubejs:energy_bottle_max': function (event, organ, data) {
         let player = event.source.player
@@ -323,5 +323,25 @@ const organPlayerDamageOnlyStrategies = {
             return
         }
         event.amount = event.amount + player.maxHealth - player.health
+    },
+    'kubejs:tusk': function (event, organ, data) {
+        let player = event.source.player
+
+        // 限制空手
+        if (player.hasItemInSlot('mainhand') || player.hasItemInSlot('offhand')) return
+        let criticalPunchCount = player.persistentData.getInt(criticalPunch)
+        // 概率增加重拳计数器
+        if (Math.random() < 0.2) {
+            criticalPunchCount = criticalPunchCount + 1
+        }
+        // 结算
+        if (criticalPunchCount >= criticalPunchMaxCount) {
+            let amplifier = 1.5 + (criticalPunchCount - criticalPunchMaxCount) * 0.05
+            event.amount = event.amount * amplifier
+            criticalPunchCount = 0
+            player.level.playSound(null, player.getX(), player.getY(), player.getZ(), 'block.amethyst_block.break', player.getSoundSource(), 0.5, Math.max(amplifier * 0.2 + 0.1, 5))
+            player.setStatusMessage(`你打出了一记§4重拳§7`);
+        }
+        player.persistentData.putInt(criticalPunch, criticalPunchCount)
     },
 };

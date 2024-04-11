@@ -104,6 +104,8 @@ global.TYPE_MAP = {
     'kubejs:void': Text.of({ "translate": "kubejs.tooltips.void" }).color('#c2bec2'),
     'kubejs:fantasy': Text.of({ "translate": "kubejs.tooltips.fantasy" }).color('#cd9b9b'),
     'kubejs:infected': Text.of({ "translate": "kubejs.tooltips.infected" }).color('#00ba03'),
+    'kubejs:botany': Text.of({ "translate": "kubejs.tooltips.botany" }).color('#0ed400'),
+    
 }
 
 

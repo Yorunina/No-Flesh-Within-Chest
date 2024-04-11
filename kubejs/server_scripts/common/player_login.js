@@ -1,6 +1,5 @@
 PlayerEvents.loggedIn(event => {
     let player = event.player
-    // 版本迁移兼容逻辑，下版本删除
 
     event.server.scheduleInTicks(20, (callback) => {
         if (player.persistentData.getInt('firstJoin') != 1) {

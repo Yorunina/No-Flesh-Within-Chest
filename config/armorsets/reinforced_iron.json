@@ -1,5 +1,5 @@
 {
-  "armorSetName": "\u5f3a\u5316\u94c1",
+  "armorSetName": "reinforced_iron",
   "performanceMode": true,
   "head": {
     "itemKey": "extraarmor:reinforced_iron_helmet"

@@ -154,12 +154,14 @@ const chestLootOnlyStrategies = {
         for (let i = 0; i < amount; i++) {
             let attri = randomGet(tumorAttriBute)
             let attriName = attri.name
-            // 扩散系数，用于控制属性的扩散范围(-1/2, 1/2)
-            let diffusivity = Math.floor((Math.random() * 17 - 8)) / 16
+            // 扩散系数，用于控制属性的扩散范围(-1, 1)
+            let diffusivity = Math.random() + Math.random() - 1
             // 幸运系数，用于控制幸运对于属性的影响，开方下降趋势
-            let luckElement = Math.floor(Math.sqrt(Math.max(player.getLuck(), 1)))
+            let luckElement = Math.sqrt(Math.max(player.getLuck() / 2, 1))
             // 实际属性 = 属性系数 * 扩散系数 * 幸运系数；例100幸运的最高属性为 1 * 1/2 * 10
-            let attriValue = Math.min(attri.multi * diffusivity * luckElement, attri.max)
+            let attriValue = Math.min(attri.multi * Math.floor(diffusivity * luckElement * 8 + 1) / 8, attri.max)
+            // 规范数值下界
+            attriValue = Math.max(attriValue, -attri.max)
             item.nbt.organData.put(attriName, attriValue)
         }
         item.nbt.organData.put('chestcavity:health', -1)

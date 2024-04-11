@@ -36,6 +36,15 @@ const organPlayerTickStrategies = {
             updateResourceCount(player, count - 1)
         }
     },
+    'kubejs:mantis_shrimp_fist': function (event, organ) {
+        if (event.player.age % 60 != 0) {
+            return
+        }
+        let player = event.player
+        let criticalPunchCount = player.persistentData.getInt(criticalPunch)
+        if (criticalPunchCount >= criticalPunchMaxCount) return
+        player.persistentData.putInt(criticalPunch, criticalPunchCount + 1)
+    },
 };
 
 /**
@@ -117,7 +126,7 @@ const organPlayerTickOnlyStrategies = {
 
         let typeMap = getPlayerChestCavityTypeMap(player)
         if (!typeMap.has('kubejs:organ')) return
-        
+
         let organCount = typeMap.get('kubejs:organ').length * 1
         let emptySolt = 27 - organCount
 
@@ -126,26 +135,24 @@ const organPlayerTickOnlyStrategies = {
         for (let i = 0; i < amount; i++) {
             let attri = randomGet(tumorAttriBute)
             let attriName = attri.name
-            // 扩散系数，用于控制属性的扩散范围[-0.5, 1.5]
-            let diffusivity = Math.floor(Math.random() * 9 - 2) / 4
+            // 扩散系数，用于控制属性的扩散范围(-0.5, 1.5)
+            let diffusivity = Math.random() + Math.random() - 0.5
+            // 新陈代谢效率
+            let metabolism = instance.organScores.getOrDefault(new ResourceLocation('chestcavity', 'metabolism'), 0)
             // 空格子数量放大属性
-            let amplifier = 1 / (27 - Math.max(emptySolt, 26)) + 0.01 * Math.max(instance.organScores.getOrDefault(new ResourceLocation('chestcavity', 'metabolism'), 0), 30)
-            // 实际属性 = 属性系数 * 扩散系数 * 放大属性 * 5
-            let attriValue = Math.min(attri.multi * diffusivity * amplifier * 5, attri.max)
+            let amplifier = 1 / (27 - Math.min(emptySolt, 26)) + 0.01 * Math.min(metabolism, 30) + 0.25
+            // 魔法值用于修正amplifier的取值范围
+            amplifier = amplifier * 16
+            let attriValue = Math.min(attri.multi * Math.floor(diffusivity * amplifier * 8 + 1) / 8, attri.max)
+            attriValue = Math.max(attriValue, -attri.max)
             tumor.nbt.organData.put(attriName, attriValue)
         }
         instance.inventory.setItem(randomIndex, tumor)
+        player.potionEffects.add('minecraft:hunger', 5, 4)
         global.initChestCavityIntoMap(player, false)
         if (player.persistentData.contains(organActive) &&
             player.persistentData.getInt(organActive) == 1) {
             global.updatePlayerActiveStatus(player)
         }
-
-    },
-    'kubejs:mantis_shrimp_fist': function (event, organ) {
-        let player = event.player
-        let criticalPunchCount = player.persistentData.getInt(criticalPunch)
-        if (criticalPunchCount >= criticalPunchMaxCount) return
-        player.persistentData.putInt(criticalPunch, criticalPunchCount + 1)
     },
 };

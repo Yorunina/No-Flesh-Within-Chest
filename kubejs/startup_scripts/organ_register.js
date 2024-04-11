@@ -307,7 +307,6 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:player_tick_only')
         .tag('kubejs:eat_effect_only')
         .tag('kubejs:machine')
-        .tag('kubejs:rose')
         .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:energy_bottle_max')
@@ -1607,12 +1606,37 @@ StartupEvents.registry('item', event => {
         .addScore('strength', 2.25)
         .addScore('speed', -0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.mantis_shrimp_fist.1" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mantis_shrimp_fist.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mantis_shrimp_fist.2" })])
         .build())
         .texture('kubejs:item/organs/alex/mantis_shrimp_fist')
-        .tag('kubejs:player_tick_only')
+        .tag('kubejs:player_tick')
         .tag('itemborders:gold')
         .tag('kubejs:muscle');
+
+    registerOrgan(new Organ('kubejs:tusk')
+        .addScore('defense', 2)
+        .addScore('strength', 0.5)
+        .addScore('speed', -0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.tusk.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.tusk.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.tusk.3" })])
+        .build())
+        .texture('kubejs:item/organs/alex/tusk')
+        .tag('kubejs:damage_only')
+        .tag('itemborders:gold');
+
+    registerOrgan(new Organ('kubejs:viviparous_crinoidea')
+        .addScore('hydrophobia', -3)
+        .addScore('hydroallergenic', -3)
+        .addScore('strength', -0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.viviparous_crinoidea.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.viviparous_crinoidea.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.viviparous_crinoidea.3" })])
+        .build())
+        .texture('kubejs:item/organs/alex/viviparous_crinoidea')
+        .tag('kubejs:key_pressed')
+        .tag('itemborders:diamond')
+        .tag('kubejs:fantasy');
 
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 

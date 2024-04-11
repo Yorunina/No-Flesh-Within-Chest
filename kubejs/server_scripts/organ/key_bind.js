@@ -259,4 +259,29 @@ const organPlayerKeyPressedOnlyStrategies = {
             event.level.spawnParticles(particle, true, ray.entity.x, ray.entity.y + 0.5, ray.entity.z, 1, 1, 1, 100, 0.5)
         }
     },
+    'kubejs:viviparous_crinoidea': function (event, organ) {
+        let player = event.player
+        let chestInstance = player.getChestCavityInstance()
+        let organScoresValue = []
+        chestInstance.organScores.forEach((key, value) => {
+            organScoresValue.push(value)
+        })
+        organScoresValue.sort(function() {
+            return (0.5 - Math.random())
+        })
+        chestInstance.organScores.forEach((key, value) => {
+            chestInstance.organScores.put(key, new $Float(organScoresValue.pop() + 1.5))
+        })
+
+        event.server.scheduleInTicks(20 * 30, (callback) => {
+            chestInstance.containerChanged(chestInstance.inventory)
+            global.initChestCavityIntoMap(player, false)
+            if (player.persistentData.contains(organActive) &&
+                player.persistentData.getInt(organActive) == 1) {
+                global.updatePlayerActiveStatus(player)
+            }
+        })
+
+        player.addItemCooldown('kubejs:viviparous_crinoidea', 20 * 60)
+    },
 };
