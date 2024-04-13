@@ -13,14 +13,6 @@ StartupEvents.registry('item', event => {
     })
     .fireResistant();
 
-  event.create('eye_of_dnl')
-    .group("kubejs.item")
-    .texture('kubejs:item/eye_of_dnl')
-    .use((level, player, interactionHand) => {
-      return eyeFinder(level, player, interactionHand, 'dnl:all_structure');
-    })
-    .fireResistant();
-
   event.create('eye_of_village')
     .group("kubejs.item")
     .texture('kubejs:item/eye_of_village')
