@@ -105,9 +105,7 @@ const organPlayerDamageOnlyStrategies = {
         let player = event.source.player
 
         let mainitem = player.mainHandItem
-        let offitem = player.offHandItem
-        if ((mainitem?.id == 'tetra:modular_bow' && mainitem.nbt && mainitem.nbt.contains('bow/long_stave_material'))
-            || (offitem?.id == 'tetra:modular_bow' && offitem.nbt && offitem.nbt.contains('bow/long_stave_material'))) {
+        if ((mainitem?.id == 'tetra:modular_bow' && mainitem.nbt && mainitem.nbt.contains('bow/long_stave_material'))) {
 
             let dx = event.entity.getX() - player.getX()
             let dy = event.entity.getY() - player.getY()
@@ -301,13 +299,6 @@ const organPlayerDamageOnlyStrategies = {
                 event.amount = event.amount * 1.5
             }
         }
-    },
-    'kubejs:frenzy_blast_furance': function (event, organ, data) {
-        let player = event.source.player
-        if (!isPlayerOnFire(player)) {
-            return
-        }
-        event.amount = event.amount * (3 - 2 * player.health / player.maxHealth)
     },
     'kubejs:sunbird_crystals': function (event, organ, data) {
         let player = event.source.player
