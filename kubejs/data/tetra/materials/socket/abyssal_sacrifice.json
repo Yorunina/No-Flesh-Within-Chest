@@ -16,7 +16,7 @@
     },
     "effects": {
         "bleeding": 1,
-        "reaching": 1,
+        "reaching": 5,
         "criticalStrike": 20        
     },
     "tints": {

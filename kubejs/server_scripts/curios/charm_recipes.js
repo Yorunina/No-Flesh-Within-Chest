@@ -76,4 +76,6 @@ const organCharmNbtMap = {
     'kubejs:stomach_tumor': { type: 'mining', miningTask: { targetblock: ['minecraft:diamond_block', 'minecraft:gold_block', 'minecraft:iron_block', 'minecraft:copper_block'], counter: 0, consume: true, miningAmount: 32 }, targetOrgan: 'kubejs:desire_of_midas' },
 
     'kubejs:doppelganger': { type: 'diet', dietTask: { minHunger: 4, foodTypeAmount: 13, foodTypeList: [] }, targetOrgan: 'kubejs:mini_vampire' },
+
+    'kubejs:fish_in_chest': { type: 'warp', warpTask: { warpMin: 50 }, targetOrgan: 'kubejs:fish_in_warp' },
 }

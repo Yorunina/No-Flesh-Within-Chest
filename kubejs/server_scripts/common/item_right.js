@@ -27,7 +27,7 @@ ItemEvents.rightClicked('kubejs:unbreakable_core', event => {
         return
     }
     let enchantlevel = unbreakone.getEnchantmentLevel('minecraft:unbreaking')
-    if (enchantlevel < 15) {
+    if (enchantlevel < 12) {
         player.tell('不满足耐久要求！')
         return
     }

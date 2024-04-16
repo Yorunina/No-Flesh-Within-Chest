@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
 
 	event.recipes.create.crushing([Item.of('2x iceandfire:silver_ingot'), Item.of('3x createoreexcavation:raw_redstone').withChance(0.3), Item.of('2x createoreexcavation:raw_emerald').withChance(0.2), Item.of('2x createoreexcavation:raw_diamond').withChance(0.1), Item.of('minecraft:netherite_scrap').withChance(0.08)], 'kubejs:rare_mineral_cluster').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('2x minecraft:netherite_scrap'), Item.of('5x minecraft:blaze_powder').withChance(0.5), Item.of('5x create:powdered_obsidian').withChance(0.4), Item.of('5x minecraft:glowstone_dust').withChance(0.45), Item.of('8x minecraft:quartz').withChance(0.6), Item.of('kubejs:nether_star_shard').withChance(0.1)], 'minecraft:nether_star').processingTime(300)
+	event.recipes.create.crushing([Item.of('2x minecraft:netherite_scrap'), Item.of('5x minecraft:blaze_powder').withChance(0.5), Item.of('5x create:powdered_obsidian').withChance(0.4), Item.of('5x minecraft:glowstone_dust').withChance(0.45), Item.of('8x minecraft:quartz').withChance(0.6), Item.of('kubejs:nether_star_shard')], 'minecraft:nether_star').processingTime(300)
 
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:rose_quartz_muscle').withChance(80.0),

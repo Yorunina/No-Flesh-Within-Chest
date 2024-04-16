@@ -64,7 +64,7 @@ BlockEvents.broken(event => {
                 return
             }
         }
-        
+
         curiosItem.nbt.miningTask.counter++
         if (curiosItem.nbt.miningTask?.counter >= curiosItem.nbt.miningTask?.miningAmount) {
             curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
@@ -147,6 +147,26 @@ function organCharmEntityHurtByPlayer(event, data) {
     }
 }
 
+/**
+ * 扭曲值任务
+ * @param {Internal.Player} player 
+ * @param {Number} warpCount 
+ */
+global.organCharmPlayerWarpTask = (player) => {
+    let curiosItem = getCuriosItem(player, 'kubejs:organ_charm')
+    if (curiosItem?.id == 'kubejs:organ_charm' && curiosItem.nbt?.type == 'warp') {
+        let warp = player.persistentData.getInt(warpCount)
+        if (curiosItem.nbt.status == 1) {
+            return
+        }
+        if (warp < curiosItem.nbt.warpTask?.warpMin) {
+            return
+        }
+        curiosItem.nbt.organ.id = curiosItem.nbt.targetOrgan
+        curiosItem.nbt.status = 1
+        return
+    }
+}
 
 function getCuriosItem(player, itemId) {
     let slotResult = new $CuriosApi().getCuriosHelper().findEquippedCurio(Item.of(itemId), player);

@@ -88,19 +88,7 @@ const entityLootStrategies = {
  */
 const entityLootOnlyStrategies = {
     'kubejs:greed_shard': function (event, organ) {
-        let player = event.player
-        let itemMap = getPlayerChestCavityItemMap(player)
-        if (itemMap.has('kubejs:wrath_shard')
-            && itemMap.has('kubejs:sloth_shard')
-            && itemMap.has('kubejs:envy_shard')
-            && itemMap.has('kubejs:gluttony_shard')
-            && itemMap.has('kubejs:greed_shard')
-            && itemMap.has('kubejs:lust_shard')
-            && itemMap.has('kubejs:pride_shard')) {
-            event.addLoot('3x lightmanscurrency:coin_copper')
-        } else {
-            event.addLoot('lightmanscurrency:coin_copper')
-        }
+        event.addLoot('lightmanscurrency:coin_iron')
     },
     'kubejs:infinity_force': function (event, organ) {
         if (Math.random() > Math.max(0.03 * event.killerEntity.getLuck(), 0.03)) {

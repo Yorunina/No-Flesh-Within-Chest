@@ -329,53 +329,23 @@ const organActiveOnlyStrategies = {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.1)
     },
     'kubejs:wrath_shard': function (player, organ, attributeMap) {
-        if (checkSevenSins(player, organ)) {
-            attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, -0.5)
-            attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 3.5)
-        } else {
-            attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, -0.8)
-            attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 3)
-        }
+        attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, -0.5)
+        attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 3)
     },
     'kubejs:sloth_shard': function (player, organ, attributeMap) {
-        if (checkSevenSins(player, organ)) {
-            attributeMapValueAddition(attributeMap, global.KNOCKBACK_RESISTANCE, 0.9)
-            attributeMapValueAddition(attributeMap, global.ARMOR_TOUGHNESS, 15)
-        } else {
-            attributeMapValueAddition(attributeMap, global.KNOCKBACK_RESISTANCE, 0.8)
-        }
+        attributeMapValueAddition(attributeMap, global.KNOCKBACK_RESISTANCE, 0.9)
     },
     'kubejs:envy_shard': function (player, organ, attributeMap) {
-        if (checkSevenSins(player, organ)) {
-            attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 1.5)
-            attributeMapValueAddition(attributeMap, global.ATTACK_UP_MULTI_BASE, 0.25)
-        } else {
-            attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 1)
-        }
+        attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 1.2)
     },
     'kubejs:gluttony_shard': function (player, organ, attributeMap) {
-        if (checkSevenSins(player, organ)) {
-            attributeMapValueAddition(attributeMap, global.REGENERATION, 0.8)
-            attributeMapValueAddition(attributeMap, global.HEALTH_UP, 30)
-        } else {
-            attributeMapValueAddition(attributeMap, global.REGENERATION, 0.5)
-        }
+        attributeMapValueAddition(attributeMap, global.REGENERATION, 0.8)
     },
     'kubejs:lust_shard': function (player, organ, attributeMap) {
-        if (checkSevenSins(player, organ)) {
-            attributeMapValueAddition(attributeMap, global.MAX_MANA, 200)
-            attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.5)
-        } else {
-            attributeMapValueAddition(attributeMap, global.MAX_MANA, 100)
-        }
+        attributeMapValueAddition(attributeMap, global.MAX_MANA, 200)
     },
     'kubejs:pride_shard': function (player, organ, attributeMap) {
-        if (checkSevenSins(player, organ)) {
-            attributeMapValueAddition(attributeMap, global.SUMMON_DAMAGE, 0.5)
-            attributeMapValueAddition(attributeMap, global.MANA_REGEN, 0.5)
-        } else {
-            attributeMapValueAddition(attributeMap, global.SUMMON_DAMAGE, 0.3)
-        }
+        attributeMapValueAddition(attributeMap, global.SUMMON_DAMAGE, 0.5)
     },
     'kubejs:infinity_force': function (player, organ, attributeMap) {
         if (organ.tag?.forgeTimes) {
@@ -439,12 +409,16 @@ const organActiveOnlyStrategies = {
         })
     },
     'kubejs:fish_in_chest': function (player, organ, attributeMap) {
-        let typeMap = getPlayerChestCavityTypeMap(player);
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        let itemMap = getPlayerChestCavityItemMap(player)
         let playerChestInstance = player.getChestCavityInstance()
         let organCount = 2
         if (typeMap.has('kubejs:organ')) {
             organCount = typeMap.get('kubejs:organ').length * 1
         }
+        // 扭曲鱼缸不计算器官数量
+        let subCount = getFishInWarpSubCount(itemMap, typeMap)
+        organCount = Math.max(organCount - subCount, 1)
         let amplifier = 27 / organCount - 1
         playerChestInstance.organScores.forEach((key, value) => {
             playerChestInstance.organScores.put(key, new $Float(value * amplifier))
@@ -477,21 +451,6 @@ function checkBox22OrganSame(posMap, organ) {
         if (flag) {
             return true
         }
-    }
-    return false
-}
-
-
-function checkSevenSins(player, organ) {
-    let itemMap = getPlayerChestCavityItemMap(player)
-    if (itemMap.has('kubejs:wrath_shard')
-        && itemMap.has('kubejs:sloth_shard')
-        && itemMap.has('kubejs:envy_shard')
-        && itemMap.has('kubejs:gluttony_shard')
-        && itemMap.has('kubejs:greed_shard')
-        && itemMap.has('kubejs:lust_shard')
-        && itemMap.has('kubejs:pride_shard')) {
-        return true
     }
     return false
 }

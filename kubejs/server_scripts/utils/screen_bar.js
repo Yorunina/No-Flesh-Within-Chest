@@ -70,6 +70,11 @@ function updateWarpBar(player, cur, max, visible) {
     player.paint({ barBackGround: { visible: visible }, warpBarOverlay: { v0: 1 - percent, h: 101 * percent, visible: visible } })
 }
 
+/**
+ * 更新扭曲值
+ * @param {Internal.Player} player 
+ * @param {Number} count 
+ */
 function updateWarpCount(player, count) {
     let maxCount = player.persistentData.getInt(warpCountMax) ?? defaultWarpMax
     if (count > maxCount) {

@@ -45,6 +45,36 @@ const organPlayerTickStrategies = {
         if (criticalPunchCount >= criticalPunchMaxCount) return
         player.persistentData.putInt(criticalPunch, criticalPunchCount + 1)
     },
+    'kubejs:egg_of_straddler': function (event, organ) {
+        if (Math.random() > 0.05) {
+            return
+        }
+        let player = event.player
+        let level = event.level
+        let radius = 16
+        let targetEntity = null
+
+        let stradpoleEntity = event.level.createEntity('alexsmobs:stradpole')
+        stradpoleEntity.setPosition(player.x, player.y + 1, player.z)
+
+        let area = new AABB.of(player.x - radius, player.y - radius, player.z - radius, player.x + radius, player.y + radius, player.z + radius)
+        let entityAABBList = level.getEntitiesWithin(area)
+        let nearDistance = radius
+        entityAABBList.forEach(entity => {
+            if (!entity.position() || !entity.isLiving() || entity.type == 'alexsmobs:stradpole') return
+            let distance = entity.position().distanceTo(new Vec3(player.x, player.y, player.z))
+            if (distance < nearDistance && distance > 2) {
+                targetEntity = entity
+                nearDistance = distance
+            }
+        })
+        
+        if (targetEntity == null) return
+        let distance = player.distanceToEntity(targetEntity)
+        let amplifier = distance * (0.9 + 0.6 * Math.random()) * 0.05
+        stradpoleEntity.addMotion(amplifier * (targetEntity.x - player.x), amplifier * (targetEntity.y - player.y), amplifier * (targetEntity.z - player.z))
+        stradpoleEntity.spawn()
+    },
 };
 
 /**
@@ -128,8 +158,9 @@ const organPlayerTickOnlyStrategies = {
         if (!typeMap.has('kubejs:organ')) return
 
         let organCount = typeMap.get('kubejs:organ').length * 1
-        let emptySolt = 27 - organCount
-
+        // 扭曲鱼缸不计算器官数量
+        let subCount = getFishInWarpSubCount(itemMap, typeMap)
+        organCount = Math.max(organCount - subCount, 1)
         let tumor = Item.of('kubejs:random_tumor', { organData: {} })
         let amount = Math.floor(Math.random() * 2 + 1)
         for (let i = 0; i < amount; i++) {
@@ -140,9 +171,9 @@ const organPlayerTickOnlyStrategies = {
             // 新陈代谢效率
             let metabolism = instance.organScores.getOrDefault(new ResourceLocation('chestcavity', 'metabolism'), 0)
             // 空格子数量放大属性
-            let amplifier = 1 / (27 - Math.min(emptySolt, 26)) + 0.01 * Math.min(metabolism, 30) + 0.25
+            let amplifier = 1 / organCount + 0.01 * Math.min(metabolism, 30) + 0.2
             // 魔法值用于修正amplifier的取值范围
-            amplifier = amplifier * 16
+            amplifier = amplifier * 12
             let attriValue = Math.min(attri.multi * Math.floor(diffusivity * amplifier * 8 + 1) / 8, attri.max)
             attriValue = Math.max(attriValue, -attri.max)
             tumor.nbt.organData.put(attriName, attriValue)
@@ -155,4 +186,5 @@ const organPlayerTickOnlyStrategies = {
             global.updatePlayerActiveStatus(player)
         }
     },
+
 };

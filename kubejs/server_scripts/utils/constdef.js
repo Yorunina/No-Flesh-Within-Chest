@@ -91,7 +91,7 @@ const tumorAttriBute = [
     { name: 'chestcavity:breath_recovery', multi: 0.5, max: 3 },
     { name: 'chestcavity:nutrition', multi: 0.5, max: 3 },
     { name: 'chestcavity:nerves', multi: 1, max: 5 },
-    { name: 'chestcavity:strength', multi: 1, max: 10 },
+    { name: 'chestcavity:strength', multi: 1, max: 6 },
     { name: 'chestcavity:breath_capacity', multi: 0.5, max: 3 },
     { name: 'chestcavity:detoxification', multi: 0.5, max: 3 },
     { name: 'chestcavity:speed', multi: 0.5, max: 5 },

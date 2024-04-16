@@ -266,7 +266,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         chestInstance.organScores.forEach((key, value) => {
             organScoresValue.push(value)
         })
-        organScoresValue.sort(function() {
+        organScoresValue.sort(function () {
             return (0.5 - Math.random())
         })
         chestInstance.organScores.forEach((key, value) => {
@@ -284,4 +284,18 @@ const organPlayerKeyPressedOnlyStrategies = {
 
         player.addItemCooldown('kubejs:viviparous_crinoidea', 20 * 60)
     },
+    'kubejs:go_camping': function (event, organ) {
+        let player = event.player
+        updateWarpCount(player, 0)
+        player.addItemCooldown('kubejs:go_camping', 20 * 10)
+    },
+    'kubejs:nether_star_shard': function (event, organ) {
+        let player = event.player
+        let ray = player.rayTrace(32, true)
+        if (ray.entity && ray.entity.isLiving() && ray.entity.type == 'witherstormmod:wither_storm') {
+            let entity = ray.entity
+            entity.mergeNbt({ 'Phase': 5, 'ConsumedEntities': 30000000 })
+            player.addItemCooldown('kubejs:nether_star_shard', 20 * 45)
+        }
+    }
 };

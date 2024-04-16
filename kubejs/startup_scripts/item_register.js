@@ -180,6 +180,7 @@ StartupEvents.registry('item', event => {
             if (level.isClientSide()) return itemstack
             entity.playSound('entity.player.burp')
             let itemMap = global.getPlayerChestCavityItemMap(entity)
+            global.organCharmPlayerWarpTask(entity)
             if (itemMap.has('kubejs:forbidden_fruit')) {
                 entity.potionEffects.add('minecraft:regeneration', 20 * 24, 2)
                 entity.potionEffects.add('minecraft:absorption', 20 * 40, 1)

@@ -29,3 +29,4 @@ function isPlayerOnFire(player) {
     let itemMap = getPlayerChestCavityItemMap(player)
     return itemMap.has('kubejs:immortal_volcanic_rock') || player.isOnFire()
 }
+
