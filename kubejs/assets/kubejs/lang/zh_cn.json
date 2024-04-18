@@ -1,4 +1,5 @@
 {
+    "item.kubejs.slow_down_disc.desc": "Slow Down",
     "itemGroup.kubejs.organs": "额外器官",
     "key.categories.kubejs": "kubejs",
     "key.kubejs.organ_skill": "器官技能按键",
@@ -729,7 +730,7 @@
     "kubejs.jei.fire_gem.1": "击败烈焰狂战士后80%概率掉落，可以用于制作各种烈焰相关的器官",
     "kubejs.jei.magic_spine.1": "5%的概率在击败女巫后掉落",
     "kubejs.jei.magic_vision.1": "在与水人的战斗中有20%的概率掉落",
-    "kubejs.jei.origin_of_tumor.1": "肿瘤之源在击杀原初肉块时有5%概率掉落",
+    "kubejs.jei.origin_of_tumor.1": "肿瘤之源在扭曲较高时击杀肉块有10%概率掉落",
     "kubejs.jei.evolution.1": "所有被标记进化的器官，可以在未来的路途中通过各种方式进行进化。\n一部分可以通过器官护符在某些特定条件下进化。\n一部分则是可以通过各种各样的配方进行强化。\n更有一部分，只有在装备它的情况下，击杀Boss才能够得到额外的掉落物。",
     "kubejs.jei.lucky_cookie_organ.1": "食用幸运饼干时有1%概率获得",
     "kubejs.jei.unholy_grail.1": "你可以在古代城市的箱子中寻找到它",

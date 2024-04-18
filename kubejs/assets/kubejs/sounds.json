@@ -1,0 +1,11 @@
+{
+  "slow_down_song": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "kubejs:records/slow_down_song",
+        "stream": true
+      }
+    ]
+  }
+}

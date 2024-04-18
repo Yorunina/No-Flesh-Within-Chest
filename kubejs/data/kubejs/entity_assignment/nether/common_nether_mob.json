@@ -4,7 +4,6 @@
     "alexsmobs:dropbear",
     "alexsmobs:laviathan",
     "alexsmobs:soul_vulture",
-    "alexsmobs:straddler",
     "alexsmobs:stradpole",
     "alexsmobs:warped_mosco",
     "alexsmobs:warped_toad",
@@ -17,6 +16,5 @@
     "bygonenether:corpor",
     "bygonenether:wither_skeleton_knight",
     "bygonenether:wither_skeleton_horse"
-
   ]
 }

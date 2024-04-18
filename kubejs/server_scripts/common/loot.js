@@ -68,8 +68,13 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('minecraft:witch')
         .addLoot(LootEntry.of('kubejs:magic_spine').when((c) => c.randomChance(0.05)));
 
-    event.addEntityLootModifier(["biomancy:primordial_hungry_flesh_blob", "biomancy:primordial_flesh_blob", "biomancy:legacy_flesh_blob"])
-        .addLoot(LootEntry.of('kubejs:origin_of_tumor').when((c) => c.randomChance(0.05)))
+    event.addEntityLootModifier(["biomancy:flesh_blob", "biomancy:hungry_flesh_blob", "biomancy:primordial_hungry_flesh_blob", "biomancy:primordial_flesh_blob", "biomancy:legacy_flesh_blob"])
+        .apply(ctx => {
+            if (Math.random() < 0.1 && ctx.player && ctx.player.persistentData.getInt(warpCount) > 50) {
+                ctx.addLoot('kubejs:origin_of_tumor')
+            }
+        })
+
 
     event.addEntityLootModifier('iceandfire:gorgon')
         .removeLoot('iceandfire:gorgon_head');

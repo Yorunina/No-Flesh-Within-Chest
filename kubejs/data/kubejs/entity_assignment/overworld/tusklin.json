@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:types/overworld/tusklin.json",
+  "entities": [
+    "alexsmobs:tusklin"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "chestcavity": "kubejs:types/nether/straddler.json",
+  "entities": ["alexsmobs:straddler"]
+}
