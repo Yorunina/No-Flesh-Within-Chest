@@ -534,20 +534,6 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold')
         .tag('kubejs:active');
 
-    registerOrgan(new Organ('kubejs:holy_grenade')
-        .addScore('glowing', 1)
-        .addScore('buff_purging', 1)
-        .addScore('explosive', 1)
-        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.holy_grenade.1" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.holy_grenade.2" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.holy_grenade.3" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.holy_grenade.4" })])
-        .build())
-        .texture('kubejs:item/organs/magic/holy_grenade')
-        .tag('kubejs:magic')
-        .tag('kubejs:damage_only')
-        .tag('itemborders:gold')
-        .tag('kubejs:active');
 
     registerOrgan(new Organ('kubejs:excited_appendix')
         .addScore('explosive', 2)
@@ -1654,7 +1640,18 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/alex/egg_of_straddler')
         .tag('kubejs:player_tick')
         .tag('itemborders:gold');
-        
+
+    registerOrgan(new Organ('kubejs:soul_vulture_feather')
+        .addScore('buoyant', 1)
+        .addScore('speed', 1)
+        .addScore('strength', -1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.soul_vulture_feather.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.soul_vulture_feather.2" })])
+        .build())
+        .texture('kubejs:item/organs/alex/soul_vulture_feather')
+        .tag('kubejs:damage_only')
+        .tag('itemborders:gold');
+
 
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 

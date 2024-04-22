@@ -96,7 +96,6 @@
     "item.kubejs.lust_shard": "色欲碎片",
     "item.kubejs.pride_shard": "傲慢碎片",
     "item.kubejs.holy_eyeball": "神圣眼球",
-    "item.kubejs.holy_grenade": "神圣手雷",
     "item.kubejs.excited_appendix": "激发式阑尾",
     "item.kubejs.warped_heart": "扭曲心脏",
     "item.kubejs.warped_spine": "扭曲脊椎",
@@ -114,6 +113,7 @@
     "item.kubejs.whale_lung": "鲸肺",
     "item.kubejs.mantis_shrimp_fist": "螳螂虾拳",
     "item.kubejs.tusk": "獠牙",
+    "item.kubejs.soul_vulture_feather": "灵魂鹫羽毛",
     "item.kubejs.viviparous_crinoidea": "胎生百合",
     "item.kubejs.egg_of_straddler": "跨座兽的卵",
     "item.kubejs.warden_core": "监守者核心",
@@ -1216,6 +1216,8 @@
     "kubejs.tooltips.tusk.1": "牙突猛进",
     "kubejs.tooltips.tusk.2": "每次空手攻击有§620%§7概率累积§61§7重拳计数器",
     "kubejs.tooltips.tusk.3": "如果重拳计数器达到§610§7，则空手攻击会触发§4重拳一击§7",
+    "kubejs.tooltips.soul_vulture_feather.1": "灵魂归宿",
+    "kubejs.tooltips.soul_vulture_feather.2": "对方拥有的每个负面效果将会为你增加10%的伤害",
     "kubejs.tooltips.viviparous_crinoidea.1": "漩涡、混沌与生命",
     "kubejs.tooltips.viviparous_crinoidea.2": "按下主动技能按键激活，将临时打乱自身所有基础属性",
     "kubejs.tooltips.viviparous_crinoidea.3": "所有基础属性均提升§61.5§7点，持续30s",
@@ -1293,10 +1295,6 @@
     "kubejs.tooltips.holy_eyeball.3": "暴击概率",
     "kubejs.tooltips.holy_eyeball.4": "30%",
     "kubejs.tooltips.holy_eyeball.5": "神圣法术强度",
-    "kubejs.tooltips.holy_grenade.1": "主啊，请赐福于这颗手榴弹……",
-    "kubejs.tooltips.holy_grenade.2": "激活后提高30%§6神圣法术强度§7",
-    "kubejs.tooltips.holy_grenade.3": "若攻击对象是亡灵生物，每次攻击有20%概率清空其增益效果并造成150%伤害",
-    "kubejs.tooltips.holy_grenade.4": "每次攻击有5%概率引发一次不分敌我的爆炸",
     "kubejs.tooltips.excited_appendix.1": "多碰一次就会爆炸",
     "kubejs.tooltips.excited_appendix.2": "按下主动技能按键给予自身一触即发效果",
     "kubejs.tooltips.excited_appendix.3": "器官的怪异属性增加效果持续时间，爆炸属性增加效果等级，最高2级",
@@ -1600,5 +1598,6 @@
     "tooltip.translation.spacecatasb.settitle.troll": "食人妖",
     "tooltip.translation.spacecatasb.settitle.wandering_magician": "流浪法师",
     "tooltip.translation.spacecatasb.settitle.warped_wood": "诡异木",
-    "tooltip.translation.spacecatasb.settitle.wood": "木"
+    "tooltip.translation.spacecatasb.settitle.wood": "木",
+    "spell.kubejs.to_the_lost": "曲水润丰图"
 }

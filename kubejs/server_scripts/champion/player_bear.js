@@ -42,7 +42,7 @@ const championPlayerBearStrategies = {
         let player = event.entity
         let beneficialEffects = []
         player.potionEffects.active.forEach(ctx => {
-            if (ctx.effect.CC_IsBeneficial()) {
+            if (ctx.effect.isBeneficial()) {
                 beneficialEffects.push(ctx.effect)
             }
         })

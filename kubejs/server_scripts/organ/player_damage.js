@@ -270,38 +270,7 @@ const organPlayerDamageOnlyStrategies = {
         let falldamagemulti = Math.min(1 + fallval * fallval * 0.0001, 5)
         event.amount = event.amount * falldamagemulti
     },
-    'kubejs:holy_grenade': function (event, organ, data) {
-        let player = event.source.player
-        let entity = event.entity
-        if (Math.random() < 0.05) {
-            player.runCommandSilent(`/summon minecraft:tnt ${player.getX()} ${player.getY()} ${player.getZ()} {Fuse:0}`)
-        }
-        if (Math.random() < 0.005) {
-            player.runCommandSilent(`/summon minecraft:rabbit ${player.getX()} ${player.getY()} ${player.getZ()} {RabbitType:99}`)
-        }
-        if (entity.getType() == 'minecraft:rabbit' && entity.nbt.asString.includes('RabbitType:99')) {
-            entity.kill()
-            player.tell('Well, properly used...')
-        }
-        if (entity.isUndead()) {
-            if (Math.random() < 0.2) {
-                let beneficialEffects = []
-                entity.potionEffects.active.forEach(ctx => {
-                    if (ctx.effect.CC_IsBeneficial()) {
-                        beneficialEffects.push(ctx.effect)
-                    }
-                })
-                if (beneficialEffects.length > 0) {
-                    beneficialEffects.forEach(effect => {
-                        entity.removeEffect(effect)
-                    })
-                }
-                event.amount = event.amount * 1.5
-            }
-        }
-    },
     'kubejs:sunbird_crystals': function (event, organ, data) {
-        let player = event.source.player
         let entity = event.entity
         if (entity.isUndead()) {
             entity.setSecondsOnFire(10)
@@ -317,7 +286,6 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:tusk': function (event, organ, data) {
         let player = event.source.player
-
         // 限制空手
         if (player.hasItemInSlot('mainhand') || player.hasItemInSlot('offhand')) return
         let criticalPunchCount = player.persistentData.getInt(criticalPunch)
@@ -334,5 +302,15 @@ const organPlayerDamageOnlyStrategies = {
             player.setStatusMessage(`你打出了一记§4重拳§7`);
         }
         player.persistentData.putInt(criticalPunch, criticalPunchCount)
+    },
+    'kubejs:soul_vulture_feather': function (event, organ, data) {
+        let target = event.entity
+        let harmEffectNum = 0
+        target.activeEffects.forEach(ele => {
+            if (!ele.effect.isBeneficial()) {
+                harmEffectNum = harmEffectNum + 1
+            }
+        })
+        event.amount = event.amount * (1 + effectNum * 0.1)
     },
 };

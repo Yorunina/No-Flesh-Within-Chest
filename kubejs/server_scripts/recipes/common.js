@@ -215,11 +215,6 @@ ServerEvents.recipes(event => {
         ['createaddition:bioethanol_bucket', 'createaddition:small_light_connector', 'createaddition:bioethanol_bucket'],
         ['create:sturdy_sheet', '', 'create:sturdy_sheet']])
 
-    event.shaped('kubejs:holy_grenade', [
-        ['', 'irons_spellbooks:holy_rune', ''],
-        [Item.of('goety:glow_light_focus', '{"Soul Cost":2}'), 'supplementaries:bomb_blue', Item.of('goety:glow_light_focus', '{"Soul Cost":2}')],
-        ['', 'irons_spellbooks:holy_rune', '']])
-
     event.shaped(Item.of('kubejs:operation_box', '{inventory:[{Count:1b,Slot:0b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:8b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:18b,id:"kubejs:relic_metal_plate",tag:{}},{Count:1b,Slot:26b,id:"kubejs:relic_metal_plate",tag:{}}]}'), [
         ['kubejs:relic_metal_plate', '#forge:shears', 'kubejs:relic_metal_plate'],
         ['create:wrench', 'wares:cardboard_box', '#forge:tools/knives'],

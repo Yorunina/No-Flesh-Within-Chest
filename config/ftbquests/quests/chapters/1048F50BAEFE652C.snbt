@@ -3043,36 +3043,6 @@
 			y: 26.5d
 		}
 		{
-			dependencies: ["7FF071C02D97C693"]
-			description: [
-				"激活后提高&e30%神圣法术强度&r。"
-				""
-				"攻击&4亡灵生物&r时，有&b20%概率&r&6清除其所有增益效果&r并&6造成1.5倍伤害&r。"
-				""
-				"每次攻击有小概率引发一次&4敌我不分的爆炸&r。"
-				""
-				"&7事实上，总感觉其用途不仅如此……&r"
-			]
-			id: "06FDC4035045E6EE"
-			rewards: [{
-				id: "2492B746604DD290"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "圣·阿提拉高高举起了它"
-			tasks: [{
-				id: "287252EFFD68B80B"
-				item: {
-					Count: 1b
-					id: "kubejs:holy_grenade"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 11.5d
-			y: 14.5d
-		}
-		{
 			dependencies: ["4EDC05BC7B3BB700"]
 			description: [
 				"释放主动技能，给予自身&b一触即发效果&r。"
