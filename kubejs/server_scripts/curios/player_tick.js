@@ -9,7 +9,7 @@ PlayerEvents.tick(event => {
     }
     let curios = optionalCurios.resolve().get()
 
-    if (event.player.age % 20 == 0) {
+    if (event.player.age % 10 == 0) {
         for (let slot = 0; slot < curios.getSlots(); slot++) {
             let item = curios.getStackInSlot(slot);
             if (curiosEquippedStrategies[item.id]) {
@@ -26,4 +26,33 @@ const curiosEquippedStrategies = {
         }
         event.player.potionEffects.add('minecraft:jump_boost', 20 * 5, 1, false, false)
     },
+    'create:goggles': function (event, curios, slot, item) {
+        let player = event.player
+        let visible = true
+        updateResourceBar(player, visible)
+        updateWarpBar(player, visible)
+    },
 }
+
+/**
+ * @param {Internal.Player} player 
+ * @param {Boolean} visible 
+ */
+function updateResourceBar(player, visible) {
+    let cur = player.persistentData.get(resourceCount)
+    let max = player.persistentData.get(resourceCountMax)
+    let percent = cur / max
+    player.paint({ barBackGround: { visible: visible }, resourceBarOverlay: { v0: 1 - percent, h: 101 * percent, visible: visible } })
+}
+
+/**
+ * @param {Internal.Player} player 
+ * @param {Boolean} visible 
+ */
+function updateWarpBar(player, visible) {
+    let cur = player.persistentData.get(warpCount)
+    let max = player.persistentData.get(warpCountMax)
+    let percent = cur / max
+    player.paint({ barBackGround: { visible: visible }, warpBarOverlay: { v0: 1 - percent, h: 101 * percent, visible: visible } })
+}
+
