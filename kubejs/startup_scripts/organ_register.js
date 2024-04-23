@@ -1428,18 +1428,37 @@ StartupEvents.registry('item', event => {
         .addScore('speed', -0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.lucky_cookie_organ.1" })])
         .build())
-        .food(food => { food.hunger(2).saturation(2) })
+        .food(food => {
+            food.hunger(2).saturation(2).alwaysEdible().eaten(event => {
+                event.server.runCommandSilent(`/title ${event.player.name.getString()} title {"text":"${randomGet(luckyCookieSentence)}"}`)
+                if (Math.random() < 0.02) {
+                    event.player.give(Item.of('kubejs:golden_lucky_cookie_organ'))
+                }
+            })
+        })
         .texture('kubejs:item/organs/food/lucky_cookie')
         .tag('itemborders:gold')
+        .tag('kubejs:food');
+
+    registerOrgan(new Organ('kubejs:golden_lucky_cookie_organ')
+        .addScore('luck', 3)
+        .addScore('speed', 0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.golden_lucky_cookie_organ.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.golden_lucky_cookie_organ.2" })])
+        .build())
+        .food(food => { food.hunger(6).saturation(1.5) })
+        .texture('kubejs:item/organs/food/golden_lucky_cookie_organ')
+        .tag('itemborders:gold')
+        .tag('kubejs:damage_only')
         .tag('kubejs:food');
 
     registerOrgan(new Organ('kubejs:cream_cookie_heart')
         .addScore('health', 1.75)
         .addScore('defense', -1)
         .addScore('luck', 1.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.1" }), Text.gold({ "translate": "kubejs.tooltips.cream_cookie_heart.2" }), Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.3" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.4" }), Text.gold({ "translate": "kubejs.tooltips.cream_cookie_heart.5" }), Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.6" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.cream_cookie_heart.7" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cream_cookie_heart.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.cream_cookie_heart.3" })])
         .build())
         .food(food => { food.hunger(8).saturation(1) })
         .texture('kubejs:item/organs/food/cream_cookie_heart')
@@ -1538,6 +1557,7 @@ StartupEvents.registry('item', event => {
         .addScore('luck', 2.0)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.origin_of_tumor.3" })])
         .build())
         .texture('kubejs:item/organs/infected/origin_of_tumor')
         .tag('itemborders:diamond')
@@ -1551,6 +1571,7 @@ StartupEvents.registry('item', event => {
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.worm_neuron.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.worm_neuron.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.worm_neuron.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.worm_neuron.4" })])
         .build())
         .texture('kubejs:item/organs/infected/worm_neuron')
         .tag('kubejs:player_tick_only')

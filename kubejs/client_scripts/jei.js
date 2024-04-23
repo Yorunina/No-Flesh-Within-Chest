@@ -6,6 +6,7 @@ JEIEvents.information(event => {
 
     event.addItem(Ingredient.of('#kubejs:evolution'), [Text.black({ "translate": "kubejs.jei.evolution.1" })])
     event.addItem('kubejs:lucky_cookie_organ', Text.black({ "translate": "kubejs.jei.lucky_cookie_organ.1" }))
+    event.addItem('kubejs:golden_lucky_cookie_organ', Text.black({ "translate": "kubejs.jei.golden_lucky_cookie_organ.1" }))
     event.addItem('kubejs:unholy_grail', Text.black({ "translate": "kubejs.jei.unholy_grail.1" }))
     event.addItem('kubejs:aesegull_rib_left', Text.black({ "translate": "kubejs.jei.aesegull_rib_left.1" }))
     event.addItem('kubejs:aesegull_rib_right', Text.black({ "translate": "kubejs.jei.aesegull_rib_right.1" }))

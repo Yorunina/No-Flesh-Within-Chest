@@ -313,4 +313,12 @@ const organPlayerDamageOnlyStrategies = {
         })
         event.amount = event.amount * (1 + effectNum * 0.1)
     },
+    'kubejs:golden_lucky_cookie_organ': function (event, organ, data) {
+        let target = event.entity
+        if (!target.isPlayer()) return
+        let player = event.source.player
+        let amplifier = Math.floor(player.getLuck() * 0.3) - 1
+        target.potionEffects.add('minecraft:luck', 20 * 120, Math.max(amplifier, 0))
+    },
+
 };
