@@ -259,8 +259,6 @@ const organPlayerDamageOnlyStrategies = {
         if (luckval <= 0) return
         if (Math.random() > Math.min(luckval * 0.005, 0.25)) return
         event.amount = event.amount * (1 + Math.min(luckval * 0.06, 3))
-        //未实现某段时间内攻速降低逻辑，改为buff实现
-        //player.modifyAttribute('minecraft:generic.attack_speed', 'TempAttackSpeedDown', -(0.3 + luckval * 0.01), 'multiply_base')
         player.potionEffects.add('goety:stunned', 20 * Math.min(luckval * 0.1, 5), 0)
     },
     'kubejs:mace': function (event, organ, data) {
@@ -317,8 +315,7 @@ const organPlayerDamageOnlyStrategies = {
         let target = event.entity
         if (!target.isPlayer()) return
         let player = event.source.player
-        let amplifier = Math.floor(player.getLuck() * 0.3) - 1
+        let amplifier = Math.floor(player.getLuck() * 0.2) - 1
         target.potionEffects.add('minecraft:luck', 20 * 120, Math.max(amplifier, 0))
     },
-
 };

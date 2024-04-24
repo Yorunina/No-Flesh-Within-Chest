@@ -147,16 +147,13 @@ const organPlayerTickOnlyStrategies = {
         let player = event.player
         if (player.age % 600 != 0) return
         if (player.nbt?.ForgeCaps['goety:lichdom']?.lichdom == 1) return
-        let warp = player.persistentData.getInt(warpCount)
-        if (warp < 20) return
         let instance = player.getChestCavityInstance()
         // 如果该位置存在物品，则不进行生成
         let randomIndex = Math.floor(Math.random() * 27 + 1)
         if (instance.inventory.getItem(randomIndex) != 'minecraft:air') return
-
         let typeMap = getPlayerChestCavityTypeMap(player)
+        let itemMap = getPlayerChestCavityItemMap(player)
         if (!typeMap.has('kubejs:organ')) return
-
         let organCount = typeMap.get('kubejs:organ').length * 1
         // 扭曲鱼缸不计算器官数量
         let subCount = getFishInWarpSubCount(itemMap, typeMap)

@@ -1673,6 +1673,14 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only')
         .tag('itemborders:gold');
 
+    registerOrgan(new Organ('kubejs:fossil_gallbladder')
+        .addScore('strength', 2)
+        .addScore('leaping', -0.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.fossil_gallbladder.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.fossil_gallbladder.2" })])
+        .build())
+        .texture('kubejs:item/organs/alex/fossil_gallbladder')
+        .tag('itemborders:gold');
 
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 
