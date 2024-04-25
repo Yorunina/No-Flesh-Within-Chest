@@ -126,10 +126,6 @@ StartupEvents.registry('mob_effect', event => {
         .beneficial()
         .color(Color.RED)
 
-    event.create('fight_for_death')
-        .beneficial()
-        .color(Color.BLACK)
-
     event.create('declaration_of_death')
         .beneficial()
         .color(Color.BLACK)

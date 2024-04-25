@@ -1,7 +1,7 @@
 // priority: 6
 /**
  * 脆弱诅咒
- * @param {Internal.LivingHurtEvent} event 
+ * @param {Internal.LivingDamageEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */

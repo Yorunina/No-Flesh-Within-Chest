@@ -67,7 +67,7 @@ function getLootPlayerTypeMap(player) {
     if (playerChestCavityTypeMap.has(uuid)) {
         return playerChestCavityTypeMap.get(uuid);
     }
-    initChestCavityIntoMap(player)
+    initChestCavityIntoMap(player, true)
     return playerChestCavityTypeMap.get(uuid) ?? new Map();
 }
 

@@ -5,7 +5,7 @@
  */
 
 /**
- * 玩家造成伤害总线
+ * 玩家造成伤害总线，玩家造成伤害需要在护甲计算前结算
  * 1. 器官最优先判定
  * 2. 效果其次
  * 3. 武器、饰品再次
@@ -14,7 +14,7 @@
  * @param {Internal.LivingHurtEvent} event 
  * @returns 
  */
-global.playerDamage = event => {
+global.LivingHurtByPlayer = event => {
     let player = event.source.player
     if (!player) return;
     let data = new EntityHurtCustomModel()
@@ -34,16 +34,16 @@ global.playerDamage = event => {
 }
 
 /**
- * 玩家受到伤害总线
+ * 玩家受到伤害总线，玩家受到伤害需要在护甲结算后结算
  * 1. 器官最优先判定
  * 2. 效果其次
  * 3. 武器、饰品再次
  */
 /**
- * @param {Internal.LivingHurtEvent} event
+ * @param {Internal.LivingDamageEvent} event
  * @returns 
  */
-global.playerHurt = event => {
+global.LivingDamageByOthers = event => {
     let data = new EntityHurtCustomModel()
     if (!highPriorityPlayerHurtByOthers(event, data)) {
         return
@@ -54,7 +54,6 @@ global.playerHurt = event => {
     curiosPlayerHurtByOthers(event, data)
     vulnerableEntityHurt(event, data)
     organCharmPlayerHurtByOthers(event, data)
-    fightForDeathPlayerHurtByOthers(event, data)
     dragonPowerPlayerHurtByOthers(event, data)
     championPlayerHurtByOthers(event, data)
     if (data.returnDamage != 0 && event.source.actual) {

@@ -463,13 +463,13 @@ StartupEvents.registry('item', event => {
     // 资源系列
     registerOrgan(new Organ('kubejs:ore_lung')
         .addScore('health', -0.25)
-        .addScore('nerves', -0.5)
+        .addScore('nerves', -0.25)
         .addScore('breath_recovery', 1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.ore_lung.1" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ore_lung.2" }), Text.gold({ "translate": "kubejs.tooltips.ore_lung.3" }), Text.gray({ "translate": "kubejs.tooltips.ore_lung.4" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ore_lung.5" }), Text.gold({ "translate": "kubejs.tooltips.ore_lung.6" }), Text.gray({ "translate": "kubejs.tooltips.ore_lung.7" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.ore_lung.8" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.green({ "translate": "kubejs.tooltips.ore_lung.9" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ore_lung.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.ore_lung.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.red({ "translate": "kubejs.tooltips.ore_lung.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.green({ "translate": "kubejs.tooltips.ore_lung.5" })])
         .build())
         .texture('kubejs:item/organs/resource/ore_lung')
         .tag('kubejs:lung')
@@ -1680,6 +1680,16 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.fossil_gallbladder.2" })])
         .build())
         .texture('kubejs:item/organs/alex/fossil_gallbladder')
+        .tag('itemborders:gold');
+
+    registerOrgan(new Organ('kubejs:weird_paperman')
+        .addScore('health', -0.75)
+        .addScore('breath_recovery', -1.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.weird_paperman.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.weird_paperman.2" })])
+        .build())
+        .texture('kubejs:item/organs/alex/weird_paperman')
+        .tag('kubejs:bear_only')
         .tag('itemborders:gold');
 
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');

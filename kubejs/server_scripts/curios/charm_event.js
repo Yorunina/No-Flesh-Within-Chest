@@ -80,7 +80,7 @@ BlockEvents.broken(event => {
 
 /**
  * 承受伤害
- * @param {Internal.LivingHurtEvent} event 
+ * @param {Internal.LivingDamageEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */

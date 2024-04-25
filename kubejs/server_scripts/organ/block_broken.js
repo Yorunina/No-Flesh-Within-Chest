@@ -62,12 +62,12 @@ const organBlockBrokenOnlyStrategies = {
         if (player.persistentData.contains(resourceCount)) {
             count = player.persistentData.getInt(resourceCount) + count;
         }
-        if (count >= 64 && Math.random() <= 0.03) {
+        if (count >= 100 && Math.random() <= 0.03) {
             let luck = Math.max(player.getLuck(), 1)
             if (luck > 10) {
-                player.give(Item.of('kubejs:rare_mineral_cluster').withCount(Math.max(Math.floor(5 - 50 / luck), 1) * itemMap.get('kubejs:ore_lung').length))
+                player.give(Item.of('kubejs:rare_mineral_cluster').withCount(Math.max(Math.floor(4 - 40 / luck), 1) * itemMap.get('kubejs:ore_lung').length))
             }
-            player.give(Item.of('kubejs:common_mineral_cluster').withCount(Math.max(Math.floor(5 - 5 / luck), 1) * itemMap.get('kubejs:ore_lung').length))
+            player.give(Item.of('kubejs:common_mineral_cluster').withCount(Math.max(Math.floor(4 - 4 / luck), 1) * itemMap.get('kubejs:ore_lung').length))
             count = count - 64
         }
         updateResourceCount(player, count)

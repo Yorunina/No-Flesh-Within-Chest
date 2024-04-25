@@ -11,17 +11,9 @@ ServerEvents.tags('item', event => {
 
   event.add('curios:body', ['supplementaries:quiver'])
 
-  event.add('kubejs:lung', 'chestcavity:lung')
-  event.add('kubejs:lung', 'chestcavity:rotten_lung')
-  event.add('kubejs:lung', 'chestcavity:animal_lung')
-  event.add('kubejs:lung', 'chestcavity:llama_lung')
-  event.add('kubejs:lung', 'chestcavity:fireproof_lung')
-  event.add('kubejs:lung', 'chestcavity:small_animal_lung')
-  event.add('kubejs:lung', 'chestcavity:insect_lung')
-  event.add('kubejs:lung', 'chestcavity:ender_lung')
-  event.add('kubejs:lung', 'chestcavity:dragon_lung')
-  event.add('kubejs:lung', 'chestcavity:saltwater_lung')
-  event.add('kubejs:lung', 'chestcavity:gas_bladder')
+  event.add('kubejs:lung', ['chestcavity:lung', 'chestcavity:rotten_lung', 'chestcavity:animal_lung', 'chestcavity:llama_lung', 'chestcavity:fireproof_lung', 'chestcavity:small_animal_lung', 'chestcavity:insect_lung', 'chestcavity:ender_lung', 'chestcavity:dragon_lung', 'chestcavity:saltwater_lung', 'chestcavity:gas_bladder'])
+
+  event.add('kubejs:intestine', ['chestcavity:carnivore_intestine', 'chestcavity:herbivore_intestine', 'chestcavity:insect_intestine', 'chestcavity:ender_intestine', 'chestcavity:intestine', 'chestcavity:rotten_intestine', 'chestcavity:small_animal_intestine', 'chestcavity:small_carnivore_intestine', 'chestcavity:small_herbivore_intestine', 'chestcavity:animal_intestine', 'chestcavity:fireproof_intestine'])
 
   event.add('kubejs:is_cookie', ['extradelight:apple_cookie', 'extradelight:gingerbread_cookie', 'extradelight:glow_berry_cookie', 'extradelight:sugar_cookie', 'extradelight:pumpkin_cookie', 'farmersdelight:honey_cookie', 'minecraft:cookie', 'farmersdelight:sweet_berry_cookie', 'extradelight:sugar_cookie_steve', 'extradelight:sugar_cookie_alex', 'extradelight:sugar_cookie_villager', 'extradelight:sugar_cookie_emerald', 'extradelight:sugar_cookie_pickaxe', 'extradelight:sugar_cookie_diamond', 'extradelight:sugar_cookie_sword', 'extradelight:sugar_cookie_creeper'])
   event.add('kubejs:is_cookie_block', ['extradelight:chocolate_chip_cookie_block_item', 'extradelight:gingerbread_cookie_block_item', 'extradelight:sweet_berry_cookie_block_item', 'extradelight:apple_cookie_block_item', 'extradelight:sugar_cookie_block_item', 'extradelight:pumpkin_cookie_block_item', 'extradelight:honey_cookie_block_item', 'extradelight:glow_berry_cookie_block_item'])
@@ -36,5 +28,5 @@ ServerEvents.tags('item', event => {
   baseorgan.forEach(organ => {
     event.add('kubejs:organ', organ)
   })
-  
+
 })

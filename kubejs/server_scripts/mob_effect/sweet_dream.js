@@ -12,7 +12,7 @@
 
 /**
  * 甜蜜之梦承伤事件
- * @param {Internal.LivingHurtEvent} event 
+ * @param {Internal.LivingDamageEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */

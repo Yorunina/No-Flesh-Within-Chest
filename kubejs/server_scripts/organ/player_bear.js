@@ -1,7 +1,7 @@
 // priority: 10
 /**
  * 承受伤害
- * @param {Internal.LivingHurtEvent} event
+ * @param {Internal.LivingDamageEvent} event
  * @param {EntityHurtCustomModel} data
  * @returns
  */
@@ -27,7 +27,7 @@ function organPlayerHurtByOthers(event, data) {
 /**
  * 玩家承受伤害处理策略
  * @constant
- * @type {Object<string,function(Internal.LivingHurtEvent, organ, EntityHurtCustomModel):void>}
+ * @type {Object<string,function(Internal.LivingDamageEvent, organ, EntityHurtCustomModel):void>}
  */
 const organPlayerBearStrategies = {
     'kubejs:red_ink': function (event, organ, data) {
@@ -43,7 +43,7 @@ const organPlayerBearStrategies = {
 /**
  * 玩家承受伤害唯一处理策略
  * @constant
- * @type {Object<string,function(Internal.LivingHurtEvent, organ, EntityHurtCustomModel):void>}
+ * @type {Object<string,function(Internal.LivingDamageEvent, organ, EntityHurtCustomModel):void>}
  */
 const organPlayerBearOnlyStrategies = {
     'kubejs:doppelganger': function (event, organ, data) {
@@ -105,6 +105,17 @@ const organPlayerBearOnlyStrategies = {
         }
         else {
             event.amount = event.amount * (1 + curseType * 0.1 + curseVal * 0.1)
+        }
+    },
+    'kubejs:weird_paperman': function (event, organ, data) {
+        let player = event.entity
+        let oldAirSupply = player.getAirSupply()
+        if (oldAirSupply > 0) {
+            let curAirSupply = Math.max(oldAirSupply - event.amount * 50, 0)
+            let curAmount = Math.max(event.amount - oldAirSupply / 50, 0)
+            player.setAirSupply(curAirSupply)
+            event.amount = curAmount
+            return
         }
     },
 };

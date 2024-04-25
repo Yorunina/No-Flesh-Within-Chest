@@ -2,7 +2,7 @@
 const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi");
 /**
  * 玩家受伤
- * @param {Internal.LivingHurtEvent} event 
+ * @param {Internal.LivingDamageEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */

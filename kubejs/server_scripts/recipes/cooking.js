@@ -48,10 +48,12 @@ ServerEvents.recipes(event => {
 
     registerCustomRecipe(new CookingRecipe(Item.of('minecraft:bowl'), [Ingredient.of('#kubejs:lung'), Ingredient.of('#kubejs:lung'), Item.of('extradelight:cooking_oil'), Item.of('extradelight:grated_ginger')], Item.of('kubejs:mr_and_mrs_smith').withCount(1)).setCookingtime(60 * 20))
 
+    registerCustomRecipe(new CookingRecipe(Item.of(''), [Ingredient.of('#kubejs:intestine'), Ingredient.of('#forge:ginger/grated'), Ingredient.of('#forge:cooking_oil'), Ingredient.of('#forge:vinegar'), Item.of('minecraft:sugar'), Item.of('extradelight:cinnamon_bark')], Item.of('kubejs:brown_sauce_braised_intestines').withCount(1)).setCookingtime(60 * 20))
+
     registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('extradelight:candy_cane_red_block'), Item.of('extradelight:candy_cane_green_block'), Item.of('extradelight:candy_cane_blue_block')], Item.of('kubejs:candy_canes_wand').withCount(1)).setCookingtime(60 * 20))
 
     registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_heart'), Item.of('extradelight:breading_misanplas'), Item.of('meetyourfight:velvet_fortune'), Item.of('kubejs:chicken_flavor_powder')], Item.of('kubejs:chicken_heart')).setCookingtime(45 * 20))
-    
+
     registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_kidney'), Item.of('extradelight:breading_misanplas'), Item.of('meetyourfight:velvet_fortune'), Item.of('kubejs:chicken_flavor_powder')], Item.of('kubejs:chicken_kidney')).setCookingtime(45 * 20))
 
     registerCustomRecipe(new CookingRecipe(Item.of(''), [Item.of('chestcavity:small_animal_lung'), Item.of('extradelight:breading_misanplas'), Item.of('meetyourfight:velvet_fortune'), Item.of('kubejs:chicken_flavor_powder')], Item.of('kubejs:chicken_lung')).setCookingtime(45 * 20))

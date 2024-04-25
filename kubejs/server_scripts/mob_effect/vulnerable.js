@@ -1,7 +1,7 @@
 // priority: 4
 /**
  * 易伤效果
- * @param {Internal.LivingHurtEvent} event 
+ * @param {Internal.LivingDamageEvent} event 
  * @param {EntityHurtCustomModel} data 
  * @returns 
  */
