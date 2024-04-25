@@ -11,6 +11,7 @@ const playerChestCavityTypeMap = new Map();
  */
 PlayerEvents.loggedIn((event) => {
     initAllBar(event.player)
+    global.autoActive(event.player)
     global.initChestCavityIntoMap(event.player, false)
     if (event.player.persistentData.contains(organActive) &&
         event.player.persistentData.getInt(organActive) == 1) {
@@ -19,6 +20,7 @@ PlayerEvents.loggedIn((event) => {
 });
 
 PlayerEvents.respawned((event) => {
+    global.autoActive(event.player)
     if (event.player.persistentData.contains(organActive) &&
         event.player.persistentData.getInt(organActive) == 1) {
         global.updatePlayerActiveStatus(event.player)
@@ -43,6 +45,7 @@ PlayerEvents.inventoryClosed((event) => {
         return;
     }
     global.initChestCavityIntoMap(player, true)
+    global.autoActive(event.player)
     let itemMap = getPlayerChestCavityItemMap(player)
     if (itemMap.has('kubejs:long_lasting_pill') || itemMap.has('kubejs:long_lasting_pill_gold')) {
         global.updatePlayerActiveStatus(event.player)
@@ -110,6 +113,7 @@ global.initChestCavityIntoMap = (player, removeFlag) => {
         player.potionEffects.add('kubejs:magic_forbiden', 20 * 20)
         player.potionEffects.add('minecraft:slowness', 20 * 30)
         clearAllActivedModify(player)
+        clearAllAutoActivedModify(player)
     }
     return;
 }
@@ -272,6 +276,7 @@ function initChestCavityIntoMap(player, removeFlag) {
         player.potionEffects.add('kubejs:magic_forbiden', 20 * 20)
         player.potionEffects.add('minecraft:slowness', 20 * 30)
         clearAllActivedModify(player)
+        clearAllAutoActivedModify(player)
     }
     return;
 }

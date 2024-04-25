@@ -34,6 +34,18 @@ global.LUCK = { key: 'minecraft:generic.luck', name: 'kubejsLuck', operation: 'a
 global.LUCK_MULTI_BASE = { key: 'minecraft:generic.luck', name: 'kubejsLuckMultiBase', operation: 'multiply_base' }
 global.ATTACK_UP_MULTI_BASE = { key: 'minecraft:generic.attack_damage', name: 'kubejsAttackDamageMultiBase', operation: 'multiply_base' }
 global.ARMOR_MULTI_BASE = { key: 'minecraft:generic.armor', name: 'kubejsArmorMultiBase', operation: 'multiply_base' }
+global.ATTACK_UP_MULTI_BASE = { key: 'minecraft:generic.attack_damage', name: 'kubejsAttackDamageMultiBase', operation: 'multiply_base' }
+global.ARMOR_MULTI_BASE = { key: 'minecraft:generic.armor', name: 'kubejsArmorMultiBase', operation: 'multiply_base' }
+global.AUTO_HEALTH_UP = { key: 'minecraft:generic.max_health', name: 'kubejsAutoMaxHealth', operation: 'addition' }
+global.AUTO_ATTACK_UP_MULTIBASE = { key: 'minecraft:generic.attack_damage', name: 'kubejsAutoAttackDamageMultiBase', operation: 'multiply_base' }
+global.AUTO_MOVEMENT_SPEED_MULTIBASE = { key: 'minecraft:generic.movement_speed', name: 'kubejsAutoMovementSpeedMultiBase', operation: 'multiply_base' }
+global.AUTO_ATTACK_UP = { key: 'minecraft:generic.attack_damage', name: 'kubejsAutoAttackDamageAddition', operation: 'addition' }
+global.MUSCLE_THICK_ATTACK_UP = { key: 'minecraft:generic.attack_damage', name: 'kubejsMusleThickAttackDamageAddition', operation: 'addition' }
+global.MUSCLE_SPEED_ATTACK_UP = { key: 'minecraft:generic.attack_damage', name: 'kubejsMusleSpeedAttackDamageAddition', operation: 'addition' }
+global.AUTO_HEALTH_UP_MUILTITOTAL = { key: 'minecraft:generic.max_health', name: 'kubejsAutoMaxHealthMultiTotal', operation: 'multiply_total' }
+global.AUTO_ATTACK_UP_MUILTITOTAL = { key: 'minecraft:generic.attack_damage', name: 'kubejsAutoAttackDamageMultiTotal', operation: 'multiply_total' }
+global.AUTO_MOVEMENT_SPEED_MUILTITOTAL = { key: 'minecraft:generic.movement_speed', name: 'kubejsMovementSpeedMultiTotal', operation: 'multiply_total' }
+
 
 global.ATTRIBUTE_MAP = {
     'kubejsAttackDamage': global.ATTACK_UP,
@@ -64,7 +76,18 @@ global.ATTRIBUTE_MAP = {
     'kubejsLuck': global.LUCK,
     'kubejsLuckMultiBase': global.LUCK_MULTI_BASE,
     'kubejsAttackDamageMultiBase': global.ATTACK_UP_MULTI_BASE,
-    'kubejsArmorMultiBase': global.ARMOR_MULTI_BASE
+    'kubejsArmorMultiBase': global.ARMOR_MULTI_BASE,
+    'kubejsAutoMaxHealth': global.AUTO_HEALTH_UP,
+    'kubejsAutoAttackDamageMultiBase': global.AUTO_ATTACK_UP_MULTIBASE,
+    'kubejsAutoMovementSpeedMultiBase': global.AUTO_MOVEMENT_SPEED_MULTIBASE,
+    'kubejsAutoAttackDamageAddition': global.AUTO_ATTACK_UP,
+    'kubejsMusleThickAttackDamageAddition': global.MUSCLE_THICK_ATTACK_UP,
+    'kubejsMusleSpeedAttackDamageAddition': global.MUSCLE_SPEED_ATTACK_UP,
+    'kubejsAutoMaxHealthMultiTotal': global.AUTO_HEALTH_UP_MUILTITOTAL,
+    'kubejsAutoAttackDamageMultiTotal': global.AUTO_ATTACK_UP_MUILTITOTAL,
+    'kubejsMovementSpeedMultiTotal': global.AUTO_MOVEMENT_SPEED_MUILTITOTAL
+
+
 }
 
 global.TYPE_MAP = {
@@ -83,6 +106,7 @@ global.TYPE_MAP = {
     'kubejs:infinity': Text.lightPurple({ "translate": "kubejs.tooltips.infinity" }),
     'kubejs:active': Text.gold({ "translate": "kubejs.tooltips.active" }),
     'kubejs:machine': Text.gray({ "translate": "kubejs.tooltips.machine" }),
+    'kubejs:beast': Text.darkRed({ "translate": "kubejs.tooltips.beast" }),
     'kubejs:magic': Text.of({ "translate": "kubejs.tooltips.magic" }).color('#00eded'),
     'kubejs:candy': Text.of({ "translate": "kubejs.tooltips.candy" }).color('#e8a0dc'),
     'kubejs:rose': Text.darkRed({ "translate": "kubejs.tooltips.rose" }),

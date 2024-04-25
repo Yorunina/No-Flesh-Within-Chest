@@ -1,0 +1,108 @@
+{
+  "defaultChestCavity": [
+    {
+      "item": "kubejs:muscle_thick",
+      "position": 0
+    },
+    {
+      "item": "chestcavity:rib",
+      "position": 1
+    },
+    {
+      "item": "chestcavity:animal_appendix",
+      "position": 2
+    },
+    {
+      "item": "chestcavity:animal_lung",
+      "position": 3
+    },
+    {
+      "item": "chestcavity:animal_heart",
+      "position": 4
+    },
+    {
+      "item": "chestcavity:animal_lung",
+      "position": 5
+    },
+    {
+      "item": "chestcavity:rib",
+      "position": 7
+    },
+    {
+      "item": "kubejs:muscle_thick",
+      "position": 8
+    },
+    {
+      "item": "kubejs:muscle_thick",
+      "position": 9
+    },
+    {
+      "item": "chestcavity:rib",
+      "position": 10
+    },
+    {
+      "item": "chestcavity:animal_spleen",
+      "position": 11
+    },
+    {
+      "item": "chestcavity:animal_kidney",
+      "position": 12
+    },
+    {
+      "item": "chestcavity:animal_spine",
+      "position": 13
+    },
+    {
+      "item": "chestcavity:animal_kidney",
+      "position": 14
+    },
+    {
+      "item": "chestcavity:animal_liver",
+      "position": 15
+    },
+    {
+      "item": "chestcavity:rib",
+      "position": 16
+    },
+    {
+      "item": "kubejs:muscle_thick",
+      "position": 17
+    },
+    {
+      "item": "kubejs:muscle_thick",
+      "position": 18
+    },
+    {
+      "item": "kubejs:muscle_thick",
+      "position": 19
+    },
+    {
+      "item": "chestcavity:animal_intestine",
+      "position": 20
+    },
+    {
+      "item": "chestcavity:animal_intestine",
+      "position": 21
+    },
+    {
+      "item": "chestcavity:animal_stomach",
+      "position": 22
+    },
+    {
+      "item": "chestcavity:animal_intestine",
+      "position": 23
+    },
+    {
+      "item": "chestcavity:animal_intestine",
+      "position": 24
+    },
+    {
+      "item": "kubejs:muscle_thick",
+      "position": 25
+    },
+    {
+      "item": "kubejs:muscle_thick",
+      "position": 26
+    }
+  ]
+}

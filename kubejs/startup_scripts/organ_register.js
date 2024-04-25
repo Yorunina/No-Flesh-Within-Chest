@@ -1579,6 +1579,112 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:infected');
 
     // alex
+    //野兽系列
+
+    //兽王之心
+    registerOrgan(new Organ('kubejs:beast_king_heart')
+    .addScore('health', 1.0)
+    .addScore('strength', 0.25)
+    .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.beast_king_heart.1" })])
+    .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.beast_king_heart.2" })])
+    .build())
+    .texture('kubejs:item/organs/alex/beast/beast_king_heart')
+    .tag('kubejs:heart')
+    .tag('kubejs:beast')
+    .tag('kubejs:autoActive_only');
+    
+    //兽王之骨
+    registerOrgan(new Organ('kubejs:beast_king_spine')
+    .addScore('defense', 1.0)
+    .addScore('nerves', 1.0)
+    .addScore('strength', 0.25)
+    .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.beast_king_spine.1" })])
+    .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.beast_king_spine.2" })])
+    .build())
+    .texture('kubejs:item/organs/alex/beast/beast_king_spine')
+    .tag('kubejs:spine')
+    .tag('kubejs:beast')
+    .tag('kubejs:autoActive_only');
+    
+    //兽王之胃
+    registerOrgan(new Organ('kubejs:beast_king_stomach')
+    .addScore('digestion', 1.0)
+    .addScore('strength', 0.25)
+    .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.beast_king_stomach.1" })])
+    .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.beast_king_stomach.2" })])
+    .build())
+    .texture('kubejs:item/organs/alex/beast/beast_king_stomach')
+    .tag('kubejs:stomach')
+    .tag('kubejs:beast')
+    .tag('kubejs:autoActive_only');   
+        
+    //特化肌肉_粗壮型
+    registerOrgan(new Organ('kubejs:muscle_thick')
+    .addScore('health', 1.0)
+    .addScore('strength', 0.5)
+    .addScore('speed', -0.25)
+    .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.muscle_thick.1" })])
+    .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.muscle_thick.2" })])
+    .build())
+    .texture('kubejs:item/organs/alex/beast/muscle_thick')
+    .tag('kubejs:muscle')
+    .tag('kubejs:beast')
+    .tag('kubejs:autoActive_only')
+    .tag('kubejs:player_tick_only');      
+
+    //特化肌肉_敏捷型
+    registerOrgan(new Organ('kubejs:muscle_speed')
+    .addScore('health', -0.25)
+    .addScore('strength', 0.5)
+    .addScore('speed', 1.0)
+    .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.muscle_speed.1" })])
+    .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.muscle_speed.2" })])
+    .build())
+    .texture('kubejs:item/organs/alex/beast/muscle_speed')
+    .tag('kubejs:muscle')
+    .tag('kubejs:beast')
+    .tag('kubejs:autoActive_only')
+    .tag('kubejs:player_tick_only');   
+
+    //特化肌肉_力量型
+    registerOrgan(new Organ('kubejs:muscle_strength')
+    .addScore('health', -0.25)
+    .addScore('strength', 2.0)
+    .addScore('speed', -0.25)
+    .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.muscle_strength.1" })])
+    .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.muscle_strength.2" })])
+    .build())
+    .texture('kubejs:item/organs/alex/beast/muscle_strength')
+    .tag('kubejs:muscle')
+    .tag('kubejs:beast')
+    .tag('kubejs:autoActive_only')
+    .tag('kubejs:damage_only')
+
+    //均衡型肌肉
+    registerOrgan(new Organ('kubejs:muscle_balanced')
+    .addScore('strength', 0.75)
+    .addScore('speed', 0.75)
+    .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.muscle_balanced.1" })])
+    .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.muscle_balanced.2" })])
+    .build())
+    .texture('kubejs:item/organs/alex/beast/muscle_balanced')
+    .tag('kubejs:muscle')
+    .tag('kubejs:beast')
+    .tag('kubejs:autoActive_only')
+
+    //袋鼠拳
+    registerOrgan(new Organ('kubejs:kangaroo_fist')
+    .addScore('strength', 0.75)
+    .addScore('speed', 0.75)
+    .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.kangaroo_fist.1" })])
+    .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.kangaroo_fist.2" })])
+    .build())
+    .texture('kubejs:item/organs/alex/beast/kangaroo_fist')
+    .tag('kubejs:muscle')
+    .tag('kubejs:beast')
+    .tag('kubejs:key_pressed')
+    .tag('kubejs:player_tick_only')
+
     registerOrgan(new Organ('kubejs:sunbird_crystals')
         .addScore('luck', 1.75)
         .addScore('buoyant', 0.75)

@@ -183,5 +183,113 @@ const organPlayerTickOnlyStrategies = {
             global.updatePlayerActiveStatus(player)
         }
     },
+    'kubejs:muscle_thick': function (event, organ) {    
+        let player = event.player
+        let maxHealth = player.getMaxHealth()
+        let health = player.getHealth()
+        let itemMap = getPlayerChestCavityItemMap(player);
+        let attriMap = getPlayerAutoActiveAttributeMap(player);
 
+        if (itemMap.has('kubejs:muscle_thick') ) {
+            if (!(itemMap.has('kubejs:muscle_speed') || itemMap.has('kubejs:muscle_strength') )){
+                attriMap.set(global.MUSCLE_THICK_ATTACK_UP.name, (1-health/maxHealth)*5)
+                setPlayerAutoActiveAttributeMap(player,attriMap)
+                player.modifyAttribute(global.MUSCLE_THICK_ATTACK_UP.key, global.MUSCLE_THICK_ATTACK_UP.name, (1-health/maxHealth)*5, global.MUSCLE_THICK_ATTACK_UP.operation);
+            }
+            else{
+                attriMap.set(global.MUSCLE_THICK_ATTACK_UP.name, 0)
+                setPlayerAutoActiveAttributeMap(player,attriMap)
+                player.removeAttribute(global.MUSCLE_SPEED_ATTACK_UP.key, global.MUSCLE_SPEED_ATTACK_UP.name)
+            } 
+        }    
+    },
+    'kubejs:muscle_speed': function (event, organ) {    
+        let player = event.player
+        let speed = player.getSpeed()
+        let itemMap = getPlayerChestCavityItemMap(player);
+        let attriMap = getPlayerAutoActiveAttributeMap(player);
+
+        if (itemMap.has('kubejs:muscle_speed') ) {
+            if (!(itemMap.has('kubejs:muscle_thick') || itemMap.has('kubejs:muscle_strength') )){
+                attriMap.set(global.MUSCLE_SPEED_ATTACK_UP.name, speed)
+                setPlayerAutoActiveAttributeMap(player,attriMap)
+                player.modifyAttribute(global.MUSCLE_SPEED_ATTACK_UP.key, global.MUSCLE_SPEED_ATTACK_UP.name, speed, global.MUSCLE_SPEED_ATTACK_UP.operation);
+            }
+        }
+        else{
+            attriMap.set(global.MUSCLE_SPEED_ATTACK_UP.name, 0)
+            setPlayerAutoActiveAttributeMap(player,attriMap)
+            player.removeAttribute(global.MUSCLE_SPEED_ATTACK_UP.key, global.MUSCLE_SPEED_ATTACK_UP.name)
+        }     
+    },
+    'kubejs:kangaroo_fist': function (event, organ) {    
+        let player = event.player;
+        let charging = player.persistentData.getInt('kangarooFistCharging') ?? 0 ;
+        let charge = player.persistentData.getInt('kangarooFistCharge') ?? 0 ;
+
+        if (charging == 1){
+            if (player.hasItemInSlot('mainhand') || player.hasItemInSlot('offhand')) {
+                player.persistentData.putInt('kangarooFistCharge',0)
+                player.persistentData.putInt('kangarooFistCharging',0)
+                player.paint({ chargeBar: { visible: false }, chargeBarOverlay: { visible: false } })
+                return}
+            let posMap = getPlayerChestCavityPosMap(player);
+            let pos = organ.Slot;
+            let chargeSpeed = 1;
+            let chargeMax = 10;
+
+            eightDirectionList.forEach(direction => {
+                let currentPos = lookPos(direction, pos)
+                if (posMap.has(currentPos) && Item.of(posMap.get(currentPos).id).hasTag('kubejs:muscle')) {
+                    chargeSpeed += 0.25
+                }
+                if (posMap.has(currentPos) && Item.of(posMap.get(currentPos).id).hasTag('kubejs:heart')) {
+                    chargeMax += 2
+                }
+            })           
+            if (charge < chargeMax){
+                player.persistentData.putInt('kangarooFistCharge',Math.min(charge+chargeSpeed,chargeMax))
+            }
+            else{
+                player.persistentData.putInt('kangarooFistCharge',0)
+            }
+            let chargePercent = player.persistentData.getInt('kangarooFistCharge') / chargeMax ;
+            player.paint({ chargeBar: { type: 'rectangle', x: 55, y: '-$screenH/2+49', w: 101, h: 11, alignX: 'left', alignY: 'bottom', texture: 'kubejs:textures/gui/charge_bar.png', visible: 1 }, chargeBarOverlay: { type: 'rectangle', x: 56, y: '-$screenH/2+49',  w: 101* chargePercent, h: 11 , alignX: 'left', alignY: 'bottom', texture: 'kubejs:textures/gui/charge_bar_overlay.png', visible: 1 }})
+        }
+        else{
+            if (charge != 0){
+                let posMap = getPlayerChestCavityPosMap(player);
+                let pos = organ.Slot;
+                let rate = 1;
+
+                eightDirectionList.forEach(direction => {
+                    let currentPos = lookPos(direction, pos)
+                    if (posMap.has(currentPos) && Item.of(posMap.get(currentPos).id).hasTag('kubejs:beast')) {
+                        rate += 0.125
+                    }
+                })
+                let basicStrengthAttribute = player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'strength'));
+                let ray = player.rayTrace(6, true);
+                
+                if (ray.entity && ray.entity.isLiving() ) {
+                    let entity = ray.entity;
+                    let entityList = getLivingWithinRadius(entity.getLevel(), entity.position(), 3);
+                    let value = basicStrengthAttribute*charge/4*rate;
+
+                    if (value > 40){
+                        value += 20
+                    }
+                    entityList.forEach(e => {
+                        if (!e.isPlayer()) {
+                            e.attack(player,value)   
+                        }
+                    })           
+                }
+                player.paint({ chargeBar: { visible: false }, chargeBarOverlay: { visible: false } })
+                player.persistentData.putInt('kangarooFistCharge',0)
+                player.swing()
+            }
+
+        }  
+    },
 };

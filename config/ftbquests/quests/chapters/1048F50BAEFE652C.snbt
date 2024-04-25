@@ -3565,6 +3565,174 @@
 			x: -8.75d
 			y: 28.25d
 		}
+		{
+			description: [
+				"从&6老虎&r胸腔中取出的心脏。"
+				"三大兽王核心器官之一，百兽之王的心脏，能够根据你胸腔中野兽类型器官的数目，增强你的属性。"
+			]
+			id: "09C0AF72FC3B50A4"
+			rewards: [{
+				id: "405F903112A93FF4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "百兽震惶"
+			tasks: [{
+				id: "128F7B9A89AE75DB"
+				item: {
+					Count: 1b
+					id: "kubejs:beast_king_heart"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "兽王之心"
+			x: 9.5d
+			y: 26.5d
+		}
+		{
+			description: [
+				"从&6灰熊&r胸腔中取出的脊椎。"
+				"三大兽王核心器官之一，百兽之王的脊椎，能够根据你胸腔中野兽类型器官的数目，增强你的属性。"
+			]
+			id: "4A5E19F5BDC4C900"
+			rewards: [{
+				id: "6EDC5D5010ABFFBD"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "家中的主人，林中的灰熊"
+			tasks: [{
+				id: "5655FC2C9C9E8CB3"
+				item: {
+					Count: 1b
+					id: "kubejs:beast_king_spine"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 26.5d
+		}
+		{
+			description: [
+				"从&6獠牙兽&r胸腔中取出的胃袋。"
+				"三大兽王核心器官之一，百兽之王的胃袋，能够根据你胸腔中野兽类型器官的数目，增强你的属性。"
+			]
+			id: "3D71DDF66D1909C3"
+			subtitle: "头猪，二熊，三老虎"
+			tasks: [{
+				id: "6FFD7220EF2818F0"
+				item: {
+					Count: 1b
+					id: "kubejs:beast_king_stomach"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 26.5d
+		}
+		{
+			description: ["&6老虎，野牛，犀牛&r等生物的肌肉，在长期的狩猎与搏斗的过程中特化为了专精力量的形式，能提供高额伤害加成，并提供溅射伤害。"]
+			id: "081073C33FE15229"
+			rewards: [{
+				id: "78C9F9B80F4B6000"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "力量，也将臣服于我"
+			tasks: [{
+				id: "5DEED65B89F1C2F0"
+				item: {
+					Count: 1b
+					id: "kubejs:muscle_strength"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 26.5d
+		}
+		{
+			description: ["&6瞪羚，袋鼠，雪豹&r等生物的肌肉，在长年的追猎与奔逃过程中不断强化速度与爆发力，特化为纤细而平滑的肌肉纤维。根据速度提供力量，且移速越快，伤害越高。"]
+			id: "7474C1E5623BC05C"
+			rewards: [{
+				id: "3E8C34241CF0F4B0"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "我快如闪电！"
+			tasks: [{
+				id: "20B734679BF51EAF"
+				item: {
+					Count: 1b
+					id: "kubejs:muscle_speed"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 26.5d
+		}
+		{
+			description: ["&6灰熊，大象，獠牙兽&r的肌肉，这类皮糙肉厚的生物，肌肉也进化的宛如石头一般坚硬。根据生命值提供力量，并且血量越低，攻击越高。"]
+			id: "5B269F9A759F6C5E"
+			rewards: [{
+				id: "66AF455045113EA5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "见识下肥肉的价值"
+			tasks: [{
+				id: "5F0AC050EF2A81C7"
+				item: {
+					Count: 1b
+					id: "kubejs:muscle_thick"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 26.5d
+		}
+		{
+			description: ["&6袋鼠&r的手臂&4肌肉&r，按下主动能力键开始蓄力，再次按下主动能力键，根据蓄力值，打出威力不凡的轰拳。（部分器官可以加成这一技能。）"]
+			id: "70D87EB0E94F9A0C"
+			rewards: [{
+				id: "4D81D1C9D49BC313"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "吃我一拳！"
+			tasks: [{
+				id: "22147EFC0644217A"
+				item: {
+					Count: 1b
+					id: "kubejs:kangaroo_fist"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 26.5d
+		}
+		{
+			description: ["&6大猩猩，卷尾猴，狮尾狒狒&r等灵长类动物的肌肉，有相当平衡的属性，且你的属性越平衡，这块肌肉提供的效果越强（唯一）。"]
+			id: "360633347DD26F9D"
+			subtitle: "我全都要"
+			tasks: [{
+				id: "2DCDA933903B2E68"
+				item: {
+					Count: 1b
+					id: "kubejs:muscle_balanced"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 26.5d
+		}
 	]
 	title: "胸腔：器官收集指南"
 }

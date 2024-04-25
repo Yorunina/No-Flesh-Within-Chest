@@ -1,7 +1,7 @@
 {
   "defaultChestCavity": [
     {
-      "item": "chestcavity:animal_muscle",
+      "item": "kubejs:muscle_strength",
       "position": 0
     },
     {
@@ -17,7 +17,7 @@
       "position": 3
     },
     {
-      "item": "chestcavity:animal_heart",
+      "item": "kubejs:beast_king_heart",
       "position": 4
     },
     {
@@ -25,19 +25,19 @@
       "position": 5
     },
     {
-      "item": "kubejs:tusk",
+      "item": "chestcavity:rib",
       "position": 7
     },
     {
-      "item": "chestcavity:animal_muscle",
+      "item": "kubejs:muscle_strength",
       "position": 8
     },
     {
-      "item": "chestcavity:animal_muscle",
+      "item": "kubejs:muscle_strength",
       "position": 9
     },
     {
-      "item": "kubejs:tusk",
+      "item": "chestcavity:rib",
       "position": 10
     },
     {
@@ -65,15 +65,15 @@
       "position": 16
     },
     {
-      "item": "chestcavity:animal_muscle",
+      "item": "kubejs:muscle_strength",
       "position": 17
     },
     {
-      "item": "chestcavity:animal_muscle",
+      "item": "kubejs:muscle_strength",
       "position": 18
     },
     {
-      "item": "chestcavity:animal_muscle",
+      "item": "kubejs:muscle_strength",
       "position": 19
     },
     {
@@ -97,11 +97,11 @@
       "position": 24
     },
     {
-      "item": "chestcavity:animal_muscle",
+      "item": "kubejs:muscle_strength",
       "position": 25
     },
     {
-      "item": "chestcavity:animal_muscle",
+      "item": "kubejs:muscle_strength",
       "position": 26
     }
   ]
