@@ -297,5 +297,11 @@ const organPlayerKeyPressedOnlyStrategies = {
             entity.mergeNbt({ 'Phase': 5, 'ConsumedEntities': 30000000 })
             player.addItemCooldown('kubejs:nether_star_shard', 20 * 45)
         }
+    },
+    'kubejs:kangaroo_fist': function (event, organ) {
+        let player = event.player ;
+        let charging = player.persistentData.getInt('kangarooFistCharging') ?? 0 ;
+
+        player.persistentData.putInt('kangarooFistCharging',Math.floor(-charging+1.5))
     }
 };

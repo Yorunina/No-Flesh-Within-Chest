@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:types/alexsmobs/kangaroo.json",
+  "entities": [
+    "alexsmobs:kangaroo"
+  ]
+}

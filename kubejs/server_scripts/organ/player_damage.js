@@ -318,4 +318,25 @@ const organPlayerDamageOnlyStrategies = {
         let amplifier = Math.floor(player.getLuck() * 0.2) - 1
         target.potionEffects.add('minecraft:luck', 20 * 120, Math.max(amplifier, 0))
     },
+    'kubejs:muscle_strength': function (event, organ, data) {
+        let entity = event.entity;
+        let player = event.source.player;
+        let entityList = getLivingWithinRadius(entity.getLevel(), entity.position(), 3);
+        let itemMap = getPlayerChestCavityItemMap(player);
+        let basicStrengthAttribute = player.getChestCavityInstance().organScores.get(new ResourceLocation('chestcavity', 'strength'));  
+
+        if (itemMap.has('kubejs:muscle_strength')  ) {
+            if (!(itemMap.has('kubejs:muscle_thick') || itemMap.has('kubejs:muscle_speed'))){
+                let value = event.amount*Math.min(basicStrengthAttribute/20,1)
+                if (value > 40){
+                    value += 20
+                }
+                entityList.forEach(e => {
+                    if (!e.isPlayer() && e.stringUuid != entity.stringUuid) {
+                        e.attack(player,value)
+                    }
+                })
+            }
+        }
+    },
 };
