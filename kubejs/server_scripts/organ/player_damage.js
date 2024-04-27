@@ -265,7 +265,7 @@ const organPlayerDamageOnlyStrategies = {
         let player = event.source.player
         let fallval = player.fallDistance
         if (fallval <= 0) return
-        let falldamagemulti = Math.min(1 + fallval * fallval * 0.0001, 5)
+        let falldamagemulti = Math.min(1 + fallval * 0.1, 5)
         event.amount = event.amount * falldamagemulti
     },
     'kubejs:sunbird_crystals': function (event, organ, data) {

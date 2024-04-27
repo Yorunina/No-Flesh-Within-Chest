@@ -17,6 +17,8 @@ StartupEvents.registry('item', event => {
     event.create('secret_of_rain').texture('kubejs:item/secret_of_rain').tag('kubejs:secret').maxStackSize(1)
     event.create('secret_of_heart').texture('kubejs:item/secret_of_heart').tag('kubejs:secret').maxStackSize(1)
     event.create('secret_of_bloom').texture('kubejs:item/secret_of_bloom').tag('kubejs:secret').maxStackSize(1)
+    event.create('secret_of_snow').texture('kubejs:item/secret_of_snow').tag('kubejs:secret').maxStackSize(1)
+    event.create('secret_of_void').texture('kubejs:item/secret_of_void').tag('kubejs:secret').maxStackSize(1)
     event.create('lime_powder').texture('kubejs:item/lime_powder')
     event.create('empty_organ_charm').texture('kubejs:item/empty_organ_charm').maxStackSize(1).tag('curios:charm')
     event.create('organ_charm').texture('kubejs:item/organ_charm').maxStackSize(1).tag('curios:charm')

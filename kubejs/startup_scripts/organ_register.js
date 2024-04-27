@@ -63,8 +63,8 @@ StartupEvents.registry('item', event => {
     // 玫瑰石英肌束
     registerOrgan(new Organ('kubejs:rose_quartz_muscle')
         .addScore('strength', 1.5)
-        .addScore('nerves', -0.5)
-        .addScore('breath_recovery', -0.25)
+        .addScore('nerves', -0.25)
+        .addScore('hydroallergenic', -0.25)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_muscle.1" })])
         .build())
         .texture('kubejs:item/organs/rose_quartz/rose_quartz_muscle')
@@ -75,10 +75,9 @@ StartupEvents.registry('item', event => {
 
     // 玫瑰石英心脏
     registerOrgan(new Organ('kubejs:rose_quartz_heart')
-        .addScore('strength', 0.5)
-        .addScore('health', 1)
-        .addScore('nerves', -0.5)
-        .addScore('breath_recovery', -0.25)
+        .addScore('health', 1.5)
+        .addScore('nerves', -0.25)
+        .addScore('hydroallergenic', -0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.1" })])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.2" })])
         .build())
@@ -90,9 +89,9 @@ StartupEvents.registry('item', event => {
 
     // 玫瑰石英肝脏
     registerOrgan(new Organ('kubejs:rose_quartz_liver')
-        .addScore('strength', 1.5)
         .addScore('detoxification', 1.5)
         .addScore('nerves', -0.25)
+        .addScore('hydroallergenic', -0.25)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_liver.1" })])
         .build())
         .texture('kubejs:item/organs/rose_quartz/rose_quartz_liver')
@@ -103,9 +102,9 @@ StartupEvents.registry('item', event => {
 
     //玫瑰石英透析器
     registerOrgan(new Organ('kubejs:rose_quartz_dialyzer')
-        .addScore('health', -0.25)
         .addScore('filtration', 1.5)
-        .addScore('endurance', -0.5)
+        .addScore('nerves', -0.25)
+        .addScore('hydroallergenic', -0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_dialyzer.1" })])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_dialyzer.2" })])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_dialyzer.3" })])
@@ -1445,7 +1444,7 @@ StartupEvents.registry('item', event => {
         .build())
         .food(food => {
             food.hunger(2).saturation(2).alwaysEdible().eaten(event => {
-                event.server.runCommandSilent(`/title ${event.player.name.getString()} title {"text":"${randomGet(luckyCookieSentence)}"}`)
+                event.server.runCommandSilent(`/title ${event.player.name.getString()} title {"text":"§6${randomGet(luckyCookieSentence)}§7"}`)
                 if (Math.random() < 0.02) {
                     event.player.give(Item.of('kubejs:golden_lucky_cookie_organ'))
                 }

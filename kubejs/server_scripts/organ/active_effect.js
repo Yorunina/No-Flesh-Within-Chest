@@ -117,7 +117,7 @@ const organActiveStrategies = {
         if (typeMap.has('kubejs:rose')) {
             amplifier = amplifier + typeMap.get('kubejs:rose').length
         }
-        let value = amplifier * 1
+        let value = amplifier * 0.5
         attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
     },
     'kubejs:rose_quartz_liver': function (player, organ, attributeMap) {

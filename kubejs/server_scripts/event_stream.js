@@ -45,6 +45,9 @@ global.LivingHurtByPlayer = event => {
  */
 global.LivingDamageByOthers = event => {
     let data = new EntityHurtCustomModel()
+    if (!highPriorityPlayerHurtByOthers(event, data)) {
+        return
+    }
     organPlayerHurtByOthers(event, data)
     sweetDreamPlayerHurtByOthers(event, data)
     curiosPlayerHurtByOthers(event, data)
