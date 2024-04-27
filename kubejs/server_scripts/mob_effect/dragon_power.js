@@ -21,7 +21,6 @@ function dragonPowerPlayerHurtByOthers(event, data) {
         let strength = instance.organScores.getOrDefault(new ResourceLocation('chestcavity', 'strength'), 0)
         maxExtraHealth = maxExtraHealth + Math.floor(player.getMaxHealth() * strength / 4)
     }
-
     if (amplify < 5) {
         event.amount = event.amount * (0.8 - amplify * 0.2)
     } else if (player.absorptionAmount < maxExtraHealth) {

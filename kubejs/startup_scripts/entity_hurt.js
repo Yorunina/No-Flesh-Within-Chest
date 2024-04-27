@@ -6,6 +6,9 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', ev
     if (event.source.player) {
         global.LivingHurtByPlayer(event);
     }
+    if (event.entity.isPlayer()) {
+        global.LivingHurtByOthers(event);
+    }
 })
 
 

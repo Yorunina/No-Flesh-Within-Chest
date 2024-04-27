@@ -183,5 +183,9 @@ const organPlayerTickOnlyStrategies = {
             global.updatePlayerActiveStatus(player)
         }
     },
-
+    'kubejs:is_rabbit':function (event, organ) {
+        let player = event.player
+        if (player.age % 60000 != 0) return
+        $SEHelper.setRestPeriod(player, 90000)
+    }
 };

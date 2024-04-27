@@ -1,0 +1,1 @@
+const $SEHelper = Java.loadClass('com.Polarice3.Goety.utils.SEHelper')

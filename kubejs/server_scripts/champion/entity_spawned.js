@@ -9,7 +9,7 @@ EntityEvents.spawned(event => {
     if (!player) return
     let warp = player.persistentData.getInt(warpCount)
     if (warp < 20) return
-    if (Math.random() > 0.005 * warp) return
+    if (Math.random() > 0.001 * warp) return
     let randomChampionType = randomGet(championTypeMap)
     entity.persistentData.put('champion', [randomChampionType.type])
     entity.setCustomName([randomChampionType.name, Text.gray('精英')])

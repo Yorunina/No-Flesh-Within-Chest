@@ -135,10 +135,10 @@
 		illagerAssault = true
 		#How many ticks it takes for Illager Assaults to spawn, Default: 12000
 		#Range: > 0
-		illagerAssaultSpawnFreq = 12000
+		illagerAssaultSpawnFreq = 24000
 		#Spawn Chance for Illagers Hunting the Player every Spawn Frequency, the lower the more likelier, Default: 5
 		#Range: > 0
-		illagerAssaultSpawnChance = 5
+		illagerAssaultSpawnChance = 10
 		#How much Soul Energy the Player has is required for Special Illagers to spawn, Default: 2500
 		#Range: > 0
 		illagerAssaultThreshold = 2500

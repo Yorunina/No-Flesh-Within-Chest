@@ -1,5 +1,5 @@
 // priority: 10
-const playerAttributeMap = new Map();
+const playerAttributeMap = new Map()
 
 /**
  * 全局函数，用于更新玩家的激活效果状态
@@ -7,9 +7,9 @@ const playerAttributeMap = new Map();
  */
 
 global.updatePlayerActiveStatus = player => {
-    let typeMap = getPlayerChestCavityTypeMap(player);
-    let uuid = String(player.getUuid());
-    let attributeMap = new Map();
+    let typeMap = getPlayerChestCavityTypeMap(player)
+    let uuid = String(player.getUuid())
+    let attributeMap = new Map()
     $ChestCavityUtil.evaluateChestCavity(player.getChestCavityInstance())
     player.persistentData.putInt(resourceCountMax, defaultResourceMax)
     // 激活状态根据Tag区分并遍历可以用于激活的器官方法
@@ -27,9 +27,9 @@ global.updatePlayerActiveStatus = player => {
             }
         })
     }
-    playerAttributeMap.set(uuid, attributeMap);
+    playerAttributeMap.set(uuid, attributeMap)
     attributeMap.forEach((value, key, map) => {
-        player.modifyAttribute(global.ATTRIBUTE_MAP[key].key, key, value, global.ATTRIBUTE_MAP[key].operation);
+        player.modifyAttribute(global.ATTRIBUTE_MAP[key].key, key, value, global.ATTRIBUTE_MAP[key].operation)
     })
     let maxResourceCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
     updateResourceMaxCount(player, maxResourceCount)
@@ -42,11 +42,11 @@ global.updatePlayerActiveStatus = player => {
  */
 
 function getPlayerAttributeMap(player) {
-    let uuid = String(player.getUuid());
+    let uuid = String(player.getUuid())
     if (playerAttributeMap.has(uuid)) {
-        return playerAttributeMap.get(uuid);
+        return playerAttributeMap.get(uuid)
     }
-    return new Map();
+    return new Map()
 }
 
 /**
@@ -55,7 +55,7 @@ function getPlayerAttributeMap(player) {
  * @param {Map} attriMap 
  */
 function setPlayerAttributeMap(player, attriMap) {
-    let uuid = String(player.getUuid());
+    let uuid = String(player.getUuid())
     playerAttributeMap.set(uuid, attriMap)
 }
 
@@ -68,7 +68,7 @@ function setPlayerAttributeMap(player, attriMap) {
 function clearAllActivedModify(player) {
     let attributeMap = getPlayerAttributeMap(player)
     attributeMap.forEach((value, key, map) => {
-        player.removeAttribute(global.ATTRIBUTE_MAP[key].key, global.ATTRIBUTE_MAP[key].name);
+        player.removeAttribute(global.ATTRIBUTE_MAP[key].key, global.ATTRIBUTE_MAP[key].name)
     })
     player.persistentData.putInt(resourceCountMax, defaultResourceMax)
 }
@@ -95,19 +95,46 @@ function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
  */
 const organActiveStrategies = {
     'kubejs:rose_quartz_heart': function (player, organ, attributeMap) {
-        let typeMap = getPlayerChestCavityTypeMap(player);
-        if (typeMap.has('kubejs:machine')) {
-            let value = typeMap.get('kubejs:machine').length * 2
-            attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        let itemMap = getPlayerChestCavityItemMap(player)
+        let amplifier = 0
+        if (itemMap.has('kubejs:rose_quartz_dialyzer') && typeMap.has('kubejs:machine')) {
+            amplifier = amplifier + typeMap.get('kubejs:machine').length
         }
-
         if (typeMap.has('kubejs:rose')) {
-            let value = typeMap.get('kubejs:rose').length * 1
-            attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
+            amplifier = amplifier + typeMap.get('kubejs:rose').length
         }
+        let value = amplifier * 1
+        attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
+    },
+    'kubejs:rose_quartz_muscle': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        let itemMap = getPlayerChestCavityItemMap(player)
+        let amplifier = 0
+        if (itemMap.has('kubejs:rose_quartz_dialyzer') && typeMap.has('kubejs:machine')) {
+            amplifier = amplifier + typeMap.get('kubejs:machine').length
+        }
+        if (typeMap.has('kubejs:rose')) {
+            amplifier = amplifier + typeMap.get('kubejs:rose').length
+        }
+        let value = amplifier * 1
+        attributeMapValueAddition(attributeMap, global.ATTACK_UP, value)
+    },
+    'kubejs:rose_quartz_liver': function (player, organ, attributeMap) {
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        let itemMap = getPlayerChestCavityItemMap(player)
+        let amplifier = 0
+        if (itemMap.has('kubejs:rose_quartz_dialyzer') && typeMap.has('kubejs:machine')) {
+            amplifier = amplifier + typeMap.get('kubejs:machine').length
+        }
+        if (typeMap.has('kubejs:rose')) {
+            amplifier = amplifier + typeMap.get('kubejs:rose').length
+        }
+        let value = amplifier * 30
+        attributeMapValueAddition(attributeMap, global.MAX_MANA, value)
     },
     'kubejs:revolution_cable': function (player, organ, attributeMap) {
-        let typeMap = getPlayerChestCavityTypeMap(player);
+        let typeMap = getPlayerChestCavityTypeMap(player)
         if (typeMap.has('kubejs:revolution')) {
             let value = typeMap.get('kubejs:revolution').length * 1
             attributeMapValueAddition(attributeMap, global.HEALTH_UP, value)
@@ -117,7 +144,7 @@ const organActiveStrategies = {
         attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.15)
     },
     'kubejs:love_between_lava_and_ice': function (player, organ, attributeMap) {
-        let itemMap = getPlayerChestCavityItemMap(player);
+        let itemMap = getPlayerChestCavityItemMap(player)
         if (itemMap.has('minecraft:blue_ice')) {
             let iceMulti = itemMap.get('minecraft:blue_ice').length * 0.2
             attributeMapValueAddition(attributeMap, global.ICE_SPELL_POWER, iceMulti)
@@ -128,7 +155,7 @@ const organActiveStrategies = {
         }
     },
     'kubejs:stomach_tumor': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         let pos = organ.Slot
         let count = 0
         eightDirectionList.forEach(direction => {
@@ -149,7 +176,7 @@ const organActiveStrategies = {
         attributeMapValueAddition(attributeMap, global.HOLY_SPELL_DAMAGE, 0.3)
     },
     'kubejs:hamimelon_organ': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         let pos = organ.Slot
         let count = 0
         eightDirectionList.forEach(direction => {
@@ -181,7 +208,7 @@ const organActiveStrategies = {
         player.persistentData.putInt(resourceCountMax, maxCount + 100)
     },
     'kubejs:aesegull_rib_right': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         let pos = organ.Slot
         // 取对称位置坐标
         let opPos = getOppoPos(pos)
@@ -190,7 +217,7 @@ const organActiveStrategies = {
         }
     },
     'kubejs:aesegull_rib_left': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         let pos = organ.Slot
         // 取对称位置坐标
         let opPos = getOppoPos(pos)
@@ -199,7 +226,7 @@ const organActiveStrategies = {
         }
     },
     'kubejs:mockery': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         let pos = organ.Slot
         let opPos = getOppoPos(pos)
         if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:sarcasm') {
@@ -207,7 +234,7 @@ const organActiveStrategies = {
         }
     },
     'kubejs:sarcasm': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         let pos = organ.Slot
         let opPos = getOppoPos(pos)
         if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:mockery') {
@@ -218,69 +245,69 @@ const organActiveStrategies = {
         attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.3)
     },
     'kubejs:huge_lung': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
     'kubejs:huge_muscle': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
     'kubejs:huge_heart': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -10)
     },
     'kubejs:huge_intestine': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
     'kubejs:huge_rib': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
     'kubejs:huge_spine': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
     'kubejs:huge_spleen': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
     'kubejs:huge_stomach': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
     'kubejs:huge_kidney': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
     'kubejs:huge_liver': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
     'kubejs:huge_appendix': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         if (checkBox22OrganSame(posMap, organ)) { return }
         attributeMapValueAddition(attributeMap, global.HEALTH_UP, -5)
     },
     'kubejs:bad_ink': function (player, organ, attributeMap) {
-        let typeMap = getPlayerChestCavityTypeMap(player);
+        let typeMap = getPlayerChestCavityTypeMap(player)
         if (typeMap.has('kubejs:magic')) {
             let value = typeMap.get('kubejs:magic').length * 30
             attributeMapValueAddition(attributeMap, global.MAX_MANA, value)
         }
     },
     'kubejs:chicken_kidney': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         let pos = organ.Slot
         let opPos = getOppoPos(pos)
         if (posMap.has(opPos) && posMap.get(opPos).id == 'kubejs:chicken_kidney') {
@@ -288,7 +315,7 @@ const organActiveStrategies = {
         }
     },
     'kubejs:chicken_lung': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         let pos = organ.Slot
         let opPos = getOppoPos(pos)
         let chickenStripCounter = 0
@@ -351,7 +378,7 @@ const organActiveOnlyStrategies = {
         }
     },
     'kubejs:redstone_chipset': function (player, organ, attributeMap) {
-        let typeMap = getPlayerChestCavityTypeMap(player);
+        let typeMap = getPlayerChestCavityTypeMap(player)
         if (typeMap.has('kubejs:machine')) {
             let value = Math.max(typeMap.get('kubejs:machine').length * 0.02, 0.2)
             attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, value)
@@ -359,7 +386,7 @@ const organActiveOnlyStrategies = {
         attributeMapValueAddition(attributeMap, global.CRITICAL_DAMAGE, 0.3)
     },
     'kubejs:king_of_stomach': function (player, organ, attributeMap) {
-        let posMap = getPlayerChestCavityPosMap(player);
+        let posMap = getPlayerChestCavityPosMap(player)
         let healthUp = 0
         let attackUp = 0
         let manaUp = 0
@@ -391,7 +418,7 @@ const organActiveOnlyStrategies = {
         attributeMapValueAddition(attributeMap, global.MAX_MANA, Math.floor(manaUp))
     },
     'kubejs:chicken_heart': function (player, organ, attributeMap) {
-        let typeMap = getPlayerChestCavityTypeMap(player);
+        let typeMap = getPlayerChestCavityTypeMap(player)
         if (typeMap.has('kubejs:food')) {
             let value = typeMap.get('kubejs:food').length
             attributeMapValueAddition(attributeMap, global.LUCK, value)

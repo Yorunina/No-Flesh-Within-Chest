@@ -34,7 +34,7 @@ global.LivingHurtByPlayer = event => {
 }
 
 /**
- * 玩家受到伤害总线，玩家受到伤害需要在护甲结算后结算
+ * 玩家受到伤害总线，实际伤害计算节点
  * 1. 器官最优先判定
  * 2. 效果其次
  * 3. 武器、饰品再次
@@ -45,18 +45,34 @@ global.LivingHurtByPlayer = event => {
  */
 global.LivingDamageByOthers = event => {
     let data = new EntityHurtCustomModel()
-    if (!highPriorityPlayerHurtByOthers(event, data)) {
-        return
-    }
     organPlayerHurtByOthers(event, data)
     sweetDreamPlayerHurtByOthers(event, data)
-    curseOfFragilityPlayerHurtByOthers(event, data)
     curiosPlayerHurtByOthers(event, data)
-    vulnerableEntityHurt(event, data)
-    organCharmPlayerHurtByOthers(event, data)
-    dragonPowerPlayerHurtByOthers(event, data)
-    championPlayerHurtByOthers(event, data)
     if (data.returnDamage != 0 && event.source.actual) {
         event.source.actual.attack(data.returnDamage)
     }
+}
+
+
+/**
+ * 玩家受到伤害总线，伤判节点
+ * 1. 器官最优先判定
+ * 2. 效果其次
+ * 3. 武器、饰品再次
+ */
+/**
+ * @param {Internal.LivingDamageEvent} event
+ * @returns 
+ */
+global.LivingHurtByOthers = event => {
+    let data = new EntityHurtCustomModel()
+    if (!highPriorityPlayerHurtByOthers(event, data)) {
+        return
+    }
+    vulnerableEntityHurt(event, data)
+    curseOfFragilityPlayerHurtByOthers(event, data)
+    organCharmPlayerHurtByOthers(event, data)
+    // 龙化必须在实际伤害结算前结算，因为额外生命变化不被视作实际受伤
+    dragonPowerPlayerHurtByOthers(event, data)
+    championPlayerHurtByOthers(event, data)
 }
