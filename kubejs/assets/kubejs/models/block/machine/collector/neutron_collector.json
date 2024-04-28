@@ -1,0 +1,13 @@
+{
+  "render_type": "cutout",
+  "parent": "block/cube",
+  "textures": {
+    "north": "kubejs:block/machine/collector/collector_front",
+    "east": "kubejs:block/machine/collector/collector_side",
+    "south": "kubejs:block/machine/collector/collector_side",
+    "west": "kubejs:block/machine/collector/collector_side",
+    "up": "kubejs:block/machine/collector/collector_top",
+    "down": "kubejs:block/machine/collector/collector_side",
+    "particle": "kubejs:block/machine/collector/collector_top"
+  }
+}

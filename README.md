@@ -40,17 +40,14 @@ If you have any suggestions or want to report bugs related to this modpack, plea
   - [x] 实现禁忌器官
 - [ ] 模组联动器官补充
   - [x] 向大部分生物填入补位符
-  - [ ] Alex生物器官联动
+  - [x] Alex生物器官联动
   - [ ] 史前生物器官联动
-  - [ ] World of Bosses器官联动
-  - [ ] 灾变器官联动
-  - [ ] 搏鱼/傀儡等电子蛐蛐定制器官
-- [ ] 模组联动内容扩充
+  - [x] World of Bosses器官联动
+  - [x] 灾变器官联动
+- [x] 模组联动内容扩充
   - [x] L2属性显示
-  - [ ] Tetra平衡性部件材料
-  - [ ] 模块化傀儡平衡性改造
-  - [ ] 魔法类模组配方融合
-  - [ ] Create配方融合
+  - [x] Tetra平衡性部件材料
+  - [x] Create配方融合
 - [ ] 主线设计
   - [x] 三宏伟魔法之一:世界的再生产
   - [ ] 三宏伟魔法之一:田园时代
@@ -58,15 +55,15 @@ If you have any suggestions or want to report bugs related to this modpack, plea
   - [ ] 其余的宏伟魔法
   - [x] 资源值设计
   - [ ] 扭曲值设计
-  - [ ] Boss内容与主线融合
+  - [x] Boss内容与主线融合
 - [ ] 平衡性设计
   - [x] 动态难度基本思路
-  - [ ] 器官联动平衡性修改
-  - [ ] 器官属性平衡性修改
-  - [ ] 器官获取方式平衡性修改
+  - [x] 器官联动平衡性修改
+  - [x] 器官属性平衡性修改
+  - [x] 器官获取方式平衡性修改
   - [ ] Tetra平衡性修改
-  - [ ] Weapon Master平衡性修改
-  - [ ] Boss召唤条件平衡性更改
+  - [x] Weapon Master平衡性修改
+  - [x] Boss召唤条件平衡性更改
   - [ ] 增添更多动态难度选项
   - [x] 饰品属性平衡
 - [ ] UI设计

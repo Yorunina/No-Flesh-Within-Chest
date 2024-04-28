@@ -4,7 +4,9 @@ StartupEvents.registry('item', event => {
     event.create('relic_metal_ingot').texture('kubejs:item/relic_metal_ingot')
     event.create('polished_amber').texture('kubejs:item/polished_amber')
     event.create('dreadsteel_ingot').texture('kubejs:item/dreadsteel_ingot')
-
+    event.create('neutron_ingot').texture('kubejs:item/neutron_ingot')
+    event.create('neutron_nugget').texture('kubejs:item/neutron_nugget')
+    event.create('neutron_pile').texture('kubejs:item/neutron_pile')
     event.create('common_mineral_cluster').texture('kubejs:item/common_mineral_cluster')
     event.create('rare_mineral_cluster').texture('kubejs:item/rare_mineral_cluster')
     event.create('dark_stardust_fragment').texture('kubejs:item/dark_stardust_fragment')
