@@ -1,5 +1,6 @@
 StartupEvents.registry('sound_event', event => {
     event.create("kubejs:slow_down_song")
+    event.create("kubejs:pipe_fall")
   })
   
 

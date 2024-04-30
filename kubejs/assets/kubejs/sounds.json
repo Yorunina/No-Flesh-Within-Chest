@@ -7,5 +7,14 @@
         "stream": true
       }
     ]
+  },
+  "pipe_fall": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "kubejs:records/pipe_fall",
+        "stream": true
+      }
+    ]
   }
 }

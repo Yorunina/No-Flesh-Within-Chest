@@ -29,10 +29,13 @@
 		{
 			dependencies: ["17F34DB341F48836"]
 			description: [
-				"&d《诡厄巫法（Goety）》&r是一个&b魔法&r模组，旨在通过添加大量新功能来增强《我的世界》游戏体验，包括生物、结构和利用奥术力量的方法。召唤各种仆从，击退新的危险，发现世界的秘密、传说、宝藏。"
+				"&d《诡厄巫法（Goety）》&r是一个&b魔法&r模组，旨在通过添加大量新功能来增强《我的世界》游戏体验，包括生物、结构和利用奥术力量的方法。"
 				""
-				"&7－－很久以来，你一直对灾厄村民的邪恶魔法感到好奇，尤其是唤魔者。是什么激发了他们的魔力？除了提供一种欺骗死亡的方法之外，他们的图腾还能做什么？一个人如何完成这样的壮举？"
-				"&r"
+				"&2召唤各种仆从&r，&5酿造传说药水&r，&3举行各种仪式&r，&4习得灾厄魔法&r，发现世界的秘密、传说和宝藏！"
+				""
+				"该模组的&6指引书&r会随着游戏进程&2不断解锁新的条目&r，请偶尔翻阅一下&2查看新增内容&r。"
+				""
+				"&7－－很久以来，你一直对灾厄村民的邪恶魔法感到好奇，尤其是唤魔者。是什么激发了他们的魔力？除了提供一种欺骗死亡的方法之外，他们的图腾还能做什么？一个人如何完成这样的壮举？&r"
 			]
 			icon: {
 				Count: 1b
@@ -53,23 +56,31 @@
 				}
 				type: "item"
 			}]
-			shape: "rsquare"
+			shape: "octagon"
 			subtitle: "我们对它们的力量知之甚少"
 			tasks: [{
 				id: "2576554D1A4F255C"
 				title: "我已了解"
 				type: "checkmark"
 			}]
-			title: "黑魔法之始"
-			x: -1.25d
-			y: 0.0d
+			title: "灾厄魔法之始"
+			x: 1.5d
+			y: -0.25d
 		}
 		{
-			dependencies: ["39A1A046832960CC"]
+			dependencies: ["38C7544366E690D9"]
 			description: [
-				"你了解到，那些不死生物的力量来源于名为&b灵魂能量&r的潜在能源。"
+				"&6根之图腾&r是该模组初期便能获得的，用来装载和使用&b灵魂能量&r的物品。"
 				""
-				"通过将其放置在&2副手&r或者携带在饰品栏的&2护符槽位&r，&2其可以在你击杀生物的时候积累灵魂能量&r。不同生物所具有的灵魂能量有所不同，其中村民具有着相对较高的灵魂能量。"
+				"将他放入物品栏或饰品栏，便可以在你&e击杀生物&r的时候积累&b灵魂能量&r。"
+				""
+				"&6根之图腾&r最多容纳&2100点&r灵魂能量。"
+				""
+				"&7不同生物所具有的灵魂能量有所不同，其中村民具有着相对较高的灵魂能量。&r"
+				"{@pagebreak}"
+				"&6根之图腾&r可用于在&6工作台&r合成&2缠魂树苗、空法术聚晶、觉醒绿宝石、诅咒金属锭、野蛮之牙和阴影石头。&r"
+				""
+				"&7请将鼠标悬停在根之图腾上，按U键（显示用途），查看相关配方。&r"
 			]
 			id: "38E0930B64874596"
 			rewards: [{
@@ -90,15 +101,17 @@
 				}
 				type: "item"
 			}]
-			x: -1.25d
-			y: 7.25d
+			x: -3.5d
+			y: -0.25d
 		}
 		{
 			dependencies: ["38E0930B64874596"]
 			description: [
-				"当你拥有了根之图腾之后，你便可以利用其中的灵魂能量来制作一些特殊的物品——比如&a觉醒绿宝石&r。"
+				"当你拥有了&6根之图腾&r之后，你便可以利用其中的&b灵魂能量&r来制作一些特殊的物品——比如&a觉醒绿宝石&r。"
 				""
-				"通过使用觉醒绿宝石作为合成材料，你能够制造不死图腾的仿制品——&6灵魂图腾&r。其拥有着更大的灵魂存储空间，能够在后续的工作中发挥至关重要的作用。"
+				"通过使用&2觉醒绿宝石&r作为合成材料，你能够制造不死图腾的仿制品——&6灵魂图腾&r。"
+				""
+				"其拥有&e10000点灵魂能量的存储空间&r，并且能像原版不死图腾一样&e抵御一次致命伤害&r。&7（只有充满能量时才会生效，生效后会耗尽能量）&r"
 			]
 			id: "2E3C5A01C7C079C0"
 			rewards: [{
@@ -119,39 +132,55 @@
 				}
 				type: "item"
 			}]
-			x: -1.25d
-			y: 10.25d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["38E0930B64874596"]
-			description: ["将诅咒注入器放置在&6刷怪笼&r的上方，既可以将其用于制作一些诅咒配方。如阴影石头、法术聚晶、觉醒绿宝石等配方的合成。"]
+			dependencies: ["39A1A046832960CC"]
+			description: [
+				"&7虽然使用灵魂图腾制作诅咒类物品很方便，但现在你有更廉价的方法了。&r"
+				""
+				"&6诅咒注入器&r通过原版物品合成获得，需要放在&2任意生物的刷怪笼上方&r以激活使用。使用特定的物品&e右键点击&r激活的&6诅咒注入器&r，数秒后便会生成对应的诅咒注入产物。"
+				""
+				"如果诅咒注入器中心发光，说明其被激活，可正常使用。&7（如图，左侧注入器未激活，右侧则为成功激活状态）&r"
+				"{image:kubejs:textures/task/goety_2.png width:72 height:50 align:1}"
+				""
+				"{@pagebreak}"
+				"物品与诅咒注入物品之间的对应关系如下："
+				""
+				"石头以及其变种——&5阴影石头&r"
+				"1.骨块——&5野蛮之牙&r"
+				"2.紫水晶碎片——&5空法术聚晶&r"
+				"3.任意树苗——&5缠魂树苗&r"
+				"4.绿宝石——&5觉醒绿宝石&r"
+				"5.铁锭——&5诅咒金属锭&r"
+				"6.铁块——&5诅咒金属块&r"
+				"7.女巫帽/幻术师长袍/术士长袍/女巫长袍——&5与之相对应的变种服饰&r"
+			]
 			id: "4717C67580F37824"
 			rewards: [{
 				id: "2BDFA8D3D122088A"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "提取刷怪笼的能量"
+			subtitle: "成本更低的转换装置"
 			tasks: [{
 				id: "29B8FCA6003ACBCF"
 				item: "goety:cursed_infuser"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 7.25d
+			x: 1.5d
+			y: 1.75d
 		}
 		{
-			dependencies: ["2E3C5A01C7C079C0"]
+			dependencies: ["37315B135F29355E"]
 			description: [
-				"&7建议搭配书本的教程食用&r"
+				"现在你可以尝试举行仪式来获取新的力量了，你需要准备一个&6黑暗祭坛&r和数个&6祭坛基座&r。"
 				""
-				"为了获得更多的力量，你需要举行各种各样的仪式。在举行任何仪式之前，你需要进行不同的准备工作。"
+				"首先你需要一个&e拥有灵魂能量&r的&6诅咒之笼&r，再将&6黑暗祭坛&r放在&2诅咒之笼上方&r。"
 				""
-				"举行仪式的核心则是利用&6黑暗祭坛&r和&6祭坛基座&r来构建仪式场地，在满足物品和环境条件的情况下，仪式就会发生。"
-				""
-				"除此之外为了举行仪式，你需要一个&6诅咒之笼&r用于提供给祭坛灵魂能量。将黑暗祭坛放置在诅咒之笼上方，将&2蕴含灵魂力量的物品放置在诅咒之笼内&r，即可为仪式提供灵魂能量。"
-				""
-				"不同仪式所需的物品和环境不同。具体请&2参阅对应模组书籍中关于仪式部分的教程&r。具体在合成时使用某种仪式则需要参考配方表中的额外注明。"
+				"如果&6黑暗祭坛&r&2亮起绿灯&r并发出黑暗粒子，说明其被激活了，可正常使用。（如下图）"
+				"{image:kubejs:textures/task/goety_3.png width:70 height:60 align:1}"
 			]
 			icon: "goety:dark_altar"
 			id: "249B296A3CB17779"
@@ -169,34 +198,38 @@
 					type: "item"
 				}
 				{
-					id: "6BC2253F7C2E7B33"
-					item: {
-						Count: 1b
-						id: "goety:cursed_cage"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
 					id: "01A1EC83A4A67CB7"
 					item: "goety:pedestal"
 					type: "item"
 				}
 			]
 			title: "举行仪式"
-			x: 3.75d
-			y: 10.25d
+			x: 1.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["249B296A3CB17779"]
+			dependencies: ["2E3C5A01C7C079C0"]
 			description: [
-				"使用锻造仪式获取&6灵魂方舟&r。如若放置后需要破坏，请使用鼠标右键而非破坏。"
+				"&3介绍——&r"
 				""
-				"当灵魂方舟被放置时，玩家将与其绑定。此后，玩家无法通过灵魂图腾类似的方式使用灵魂能量，而是使用灵魂方舟作为灵魂能量的来源。"
+				"使用锻造仪式获取&b灵魂方舟&r。玩家可以通过&e潜行并空手右键点击&r自己的灵魂方舟，以&6回收灵魂方舟&r。&7（如果你试图徒手破坏或者用镐打碎别人的灵魂方舟，那么灵魂方舟不会掉落）&r"
 				""
-				"灵魂方舟具有&2100000点灵魂能量上限&r。如若你需要使用灵魂方舟中的灵魂能量以魔法仪式，则你需要制作&6连接宝石&r将其绑定到你所拥有的灵魂方舟，将其放置在对应的诅咒之笼里，即可让魔法仪式使用灵魂方舟内的能量。"
+				"灵魂方舟具有&2100000点&r灵魂能量上限。（可以通过潜行来勘察）"
 				""
-				"如果你的灵魂方舟内有超过10000点灵魂能量，在你死亡前的那一刻，你会被传送到灵魂方舟所在的位置。"
+				"{@pagebreak}"
+				"&3灵魂能量存储 与 灵魂饥饿——&r"
+				""
+				"当&b灵魂方舟&r被放置时，玩家将与其绑定。同时，玩家将&2无法再通过灵魂图腾使用灵魂能量，且无法激活其中的内部灵魂条&r。"
+				""
+				"如果世界上不存在&2被玩家绑定的灵魂方舟&r，玩家的灵魂能量不会消失，但玩家将受到&c灵魂饥饿&r效果。"
+				""
+				"该效果会使方舟中的&b灵魂能量&r逐渐消失，同时&e降低玩家的移动、攻击速度&r，并且使玩家&c持续受到伤害&r。"
+				""
+				"除非&2灵魂能量归零&r，或者玩家&2再次绑定&r灵魂方舟，否则效果无法移除。"
+				"{@pagebreak}"
+				"&3奥术复活——&r"
+				""
+				"如果你的灵魂方舟内有超过&210000点&r灵魂能量，在受到致命伤害时，你会被传送到&6最后放置的灵魂方舟&r所在的位置。&7（触发后会消耗掉相当于一个完整的灵魂图腾的灵魂能量）&r"
 			]
 			icon: "goety:arca"
 			id: "247AED1D908E67BD"
@@ -207,27 +240,22 @@
 				type: "item"
 			}]
 			subtitle: "远程灵魂存储"
-			tasks: [
-				{
-					id: "616E5BFB735D3F01"
-					item: "goety:arca"
-					type: "item"
-				}
-				{
-					id: "71FB35A260D17403"
-					item: "goety:soul_transfer"
-					type: "item"
-				}
-			]
-			x: 6.5d
-			y: 10.25d
+			tasks: [{
+				id: "616E5BFB735D3F01"
+				item: "goety:arca"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 1.0d
 		}
 		{
-			dependencies: ["39A1A046832960CC"]
+			dependencies: ["2C66968C7259F120"]
 			description: [
-				"女巫精酿是一系列&2极为特殊的药水&r，需要使用名为&6女巫坩埚&r的物品经过几个步骤的加工之后才能够获得。"
+				"&d药酿&r是&d《诡厄巫法（Goety）》&r中很有趣的一部分内容，可以制作&2大量的药剂&r，它们往往具有&e独特的效果&r和&e强大的功效&r，无论是在&2战斗&r还是&2日常&r中都能发挥&2巨大的作用&r。"
 				""
-				"女巫精酿的效果往往非常独特，且效用非常强大，在战斗和日常生产时往往能够提供大量的帮助。"
+				"整合包在此先赠送一本&6指导书&r，供玩家&2查阅配方&r。"
+				""
+				"当然不仅仅是这样，整合包提供了&2十分详细的流程化教程&r，玩家只需要跟着任务指导一个个做完，便可完全掌握该玩法。"
 			]
 			id: "5ECDE24F7C16B68D"
 			rewards: [{
@@ -235,6 +263,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "看起来，你或许需要一瓶精酿？"
 			tasks: [{
 				id: "4330A21FE1D41216"
@@ -248,19 +277,26 @@
 				type: "item"
 			}]
 			title: "女巫酿造师"
-			x: 3.5d
-			y: 0.0d
+			x: -0.75d
+			y: 7.25d
 		}
 		{
 			dependencies: ["5ECDE24F7C16B68D"]
 			description: [
-				"药酿便是围绕坩埚的艺术。"
+				"女巫坩埚是药酿的核心方块，但为了开始药酿，需要一些准备工作："
 				""
-				"在女巫坩埚下方放置&c营火、岩浆块&r即可被加热。在周围放置&b灵魂蜡烛&r供给灵魂能量即可开始你的酿造之旅。"
+				"1.&6热源：&r需要将&2营火、灵魂营火或岩浆块&r放置在&6女巫坩埚&r的&e下方&r，起到&e加热&r作用。"
 				""
-				"&7如果你不了解灵魂蜡烛为何，可以在本章节主线中了解到蜡烛以及诅咒之笼的用法。&r"
+				"2.&b能量源：&r你需要准备一个&6诅咒之笼&r和&6灵魂蜡烛&r放在女巫坩埚的周边，将灵魂蜡烛插在含有灵魂能量的诅咒之笼上方。"
 				""
-				"当你将坩埚装满水后，你的酿造之旅就可以开始了。"
+				"3.&9水源：&r借助&6水桶&r，将坩埚内部装上水。"
+				""
+				"&7（如有需要，请翻页查看例图）&r"
+				""
+				"{@pagebreak}"
+				"——女巫坩埚准备工作例图："
+				""
+				"{image:kubejs:textures/task/goety_6.png width:150 height:96 align:1}"
 			]
 			id: "3CB4A421BFE6A3BC"
 			rewards: [{
@@ -274,11 +310,11 @@
 				item: "goety:witch_cauldron"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.0d
+			x: -2.25d
+			y: 7.25d
 		}
 		{
-			dependencies: ["249B296A3CB17779"]
+			dependencies: ["37315B135F29355E"]
 			description: [
 				"&7请注意，灵魂魔法不会被整合包中所述的魔法伤害增强而被强化。它并不被真的视作一种魔法！&r"
 				""
@@ -332,14 +368,18 @@
 			]
 			title: "法术聚晶"
 			x: 3.75d
-			y: 11.5d
+			y: 5.0d
 		}
 		{
-			dependencies: ["4717C67580F37824"]
+			dependencies: ["37315B135F29355E"]
 			description: [
-				"右键对着刷怪笼使用，会将刷怪笼的内容保存在捕捉笼内。再次右键诅咒之笼则可以将其转化成为原本&6刷怪笼的复制品&r。"
+				"用于&6刷怪笼&r的&e迁移&r。"
 				""
-				"这对于制作刷怪场和一个方便的诅咒注入装置非常有利。"
+				"手持此物品&2右键点击&r刷怪笼，可以将刷怪笼中的生物捕捉，之后刷怪笼会被破坏。"
+				""
+				"捕捉到生物之后，手持捕捉笼&2右键点击&r&6诅咒之笼&r（诅咒之笼必须为空），生物会被放入其中，可以将&6诅咒之笼&r变为&6之前捕捉生物的刷怪笼&r。"
+				""
+				"当玩家将捕捉笼中被捕捉的生物放入诅咒之笼之后，&e捕捉笼会被消耗&r。"
 			]
 			id: "6CE6F35C7131162F"
 			rewards: [{
@@ -347,17 +387,17 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
-			subtitle: "专属刷怪笼"
+			subtitle: "占为己有"
 			tasks: [{
 				id: "4F110B3D721D0AD5"
 				item: "goety:flame_capture"
 				type: "item"
 			}]
-			x: -3.75d
-			y: 11.75d
+			x: 3.75d
+			y: 3.5d
 		}
 		{
-			dependencies: ["249B296A3CB17779"]
+			dependencies: ["593605806D412895"]
 			description: ["当你前往下界之后，即可解锁关于进阶下界仪式和专家下界仪式的相关内容。"]
 			icon: "goety:nether_brick_brazier"
 			id: "48CA5C5BE42B6D3C"
@@ -368,19 +408,19 @@
 				type: "checkmark"
 			}]
 			title: "下界仪式"
-			x: 3.75d
-			y: 7.25d
+			x: 1.5d
+			y: 10.25d
 		}
 		{
-			dependencies: ["247AED1D908E67BD"]
+			dependencies: ["7153D245425EC002"]
 			description: [
-				"将其放置在灵魂方舟上，可以让其摧毁一些物品，进而将其转换为灵魂能量。"
+				"使用&4锻造仪式&r才能制作&6灵魂吸收器&r。"
 				""
-				"● &6灵魂沙&r：25点"
-				"● &6幽匿块&r：5点"
-				"● &6幽匿尖啸体&r ：25点"
-				"● &6灵质&r ：5点"
-				"● &6不死图腾&r ：200点"
+				"需要放在&6灵魂方舟&r上，用于向灵魂方舟注入能量。&6灵魂吸收器&r可以&e吸收并摧毁&r某些物品，来增加玩家的&b灵魂能量&r。"
+				""
+				"&7如果在它上面放置一个灵魂图腾，吸收器会慢慢吞噬其能量，当灵魂能量为零时，图腾会被摧毁。&r"
+				""
+				"&7可以与其上方和侧方的漏斗交互。&r"
 			]
 			id: "12D3937844B0302D"
 			rewards: [{
@@ -394,32 +434,17 @@
 				item: "goety:soul_absorber"
 				type: "item"
 			}]
-			x: 8.25d
-			y: 10.25d
+			x: 3.75d
+			y: 1.75d
 		}
 		{
-			dependencies: ["39A1A046832960CC"]
+			dependencies: ["7153D245425EC002"]
 			description: [
-				"玩家如果使用怨恨之书攻击生物，就可以把这个生物记录在书中。"
-				""
-				"被记录的生物将总会被你的仆从视作敌对的。在面对该生物时，仆从便会进行主动攻击。"
-			]
-			id: "365F8E2E332B2E27"
-			subtitle: "记录你的仇恨"
-			tasks: [{
-				id: "13C2F7D5A111FF54"
-				item: "goety:grimoire_of_grudges"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["2E3C5A01C7C079C0"]
-			description: [
-				"如果有&2生物在周围8格范围内死亡&r，则其会释放灵魂粒子，并且将灵魂能量输送给放置该方块的玩家。"
+				"如果有&2生物在周围死亡&r，则其会释放灵魂粒子，并且将灵魂能量直接输送给放置该方块的玩家。"
 				""
 				"该方块可以被附魔&5噬魂&r和&5半径&r以提升它的性能。"
+				""
+				"&7如果主人没有灵魂图腾或灵魂方舟，那么幽匿吞噬器没有任何用处。&r"
 			]
 			id: "58D4C38764206571"
 			rewards: [{
@@ -433,16 +458,17 @@
 				item: "goety:sculk_devourer"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 10.25d
+			x: 6.5d
+			y: -0.25d
 		}
 		{
 			dependencies: ["58D4C38764206571"]
 			description: [
-				"能够将灵魂能量重新转换成幽匿块。只要将其放在&6诅咒之笼&r的下方，并且用红石激活，其就会&2将周围5半径内的方块转换成幽匿块&r。"
+				"能够将灵魂能量重新转换成幽匿块。只要将其放在&6诅咒之笼&r的下方，并且用红石激活，其就会&2将周围的方块转换成幽匿块&r。"
 				""
 				"如果说在周围放置有幽匿传递站，则会将其转换幽匿的能力扩散到传递站周围。"
 			]
+			hide_dependency_lines: true
 			id: "074F0A4966CAA5DE"
 			rewards: [{
 				id: "3E42B56B0A4D6CE4"
@@ -455,16 +481,17 @@
 				item: "goety:sculk_converter"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 11.75d
+			x: 6.5d
+			y: 2.25d
 		}
 		{
-			dependencies: ["074F0A4966CAA5DE"]
+			dependencies: ["58D4C38764206571"]
 			description: [
-				"&2利用灵魂能量用来加快作物生长的设备&r，将其放置在&6诅咒之笼&r下方能够加快周围8x4x8范围内的作物的生长。"
+				"&2利用灵魂能量用来加快作物生长的设备&r，将其放置在&6诅咒之笼&r下方能够加快周围作物的生长。"
 				""
-				"可以通过强效附魔来减少种植站在作物上催熟的时间，但消耗的灵魂量不变。"
+				"可以通过&5“强效”&r附魔来减少种植站在作物上催熟的时间，但消耗的灵魂量不变。"
 			]
+			hide_dependency_lines: true
 			id: "1AFD89518183949E"
 			rewards: [{
 				id: "58DA9692E1CB0BEB"
@@ -477,12 +504,19 @@
 				item: "goety:sculk_grower"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 13.25d
+			x: 6.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["2E3C5A01C7C079C0"]
-			description: ["灵魂蜡烛放置在诅咒之笼上方时，&2可以为某些设备提供灵魂能量&r，类如&6亡灵火炉&r或者&6女巫坩埚&r。"]
+			dependencies: ["37315B135F29355E"]
+			description: [
+				"&6灵魂蜡烛&r放置在&6诅咒之笼&r上方时，&2可以为某些设备提供灵魂能量&r，类如&6亡灵火炉&r或者&6女巫坩埚&r。"
+				""
+				"&6灵魂蜡烛&r的供能范围为&216x16x16&r的区域。"
+				""
+				"&7灵魂蜡烛成功激活后会发光，如下图。&r"
+				"{image:kubejs:textures/task/goety_5.png width:122 height:56 align:1}"
+			]
 			id: "2C66968C7259F120"
 			rewards: [{
 				id: "1F82BA5905762C2E"
@@ -495,56 +529,78 @@
 				item: "goety:soul_candlestick"
 				type: "item"
 			}]
-			x: -1.25d
-			y: 11.75d
+			x: -0.75d
+			y: 5.0d
 		}
 		{
-			dependencies: ["48CA5C5BE42B6D3C"]
-			description: ["在某些建筑的战利品箱中，你会搜集到各种不同的卷轴。通过阅读这些卷轴的内容，你能够解锁一些合成表用以获取到一些罕见的&6高级仆从&r。"]
+			dependencies: ["41FAE73E20B6D72F"]
+			description: [
+				"在某些建筑的战利品箱中，你会搜集到各种不同的卷轴。"
+				""
+				"通过阅读这些卷轴的内容，你的诡厄巫法指引书会解锁新的栏目，你可以召唤更强大的仆从。"
+				""
+				"&2解锁后，你需要在指引书中查看相关内容。&r"
+			]
+			hide_dependency_lines: true
 			icon: "goety:buried_scroll"
 			id: "7768DA1835EA65B6"
 			min_required_tasks: 1
 			rewards: [{
-				count: 3
-				id: "252291B9FC52E577"
-				item: "lightmanscurrency:coin_gold"
+				id: "460B3B7122E59138"
+				item: "lightmanscurrency:coin_diamond"
 				type: "item"
 			}]
 			subtitle: "你的战士渴望新的力量"
 			tasks: [
 				{
-					id: "1E985A5DB7048FBC"
-					item: "goety:buried_scroll"
+					id: "7B6C96B429E2E7B4"
+					item: "goety:ravaging_scroll"
 					type: "item"
 				}
 				{
-					id: "3C8D682C93AA5C34"
+					id: "5353AF6DADA054D2"
 					item: "goety:warred_scroll"
 					type: "item"
 				}
 				{
-					id: "74F01F912F24FB33"
+					id: "0A51C15B70378D13"
+					item: "goety:buried_scroll"
+					type: "item"
+				}
+				{
+					id: "08769BA49B558AB6"
 					item: "goety:haunting_scroll"
 					type: "item"
 				}
 				{
-					icon: "goety:front_scroll"
-					id: "361566675C96930F"
-					item: "goety:haunting_scroll"
+					id: "61AD96F8B7CF317F"
+					item: "goety:front_scroll"
+					type: "item"
+				}
+				{
+					id: "219150C19C9BEA1F"
+					item: "goety:mistral_scroll"
+					type: "item"
+				}
+				{
+					id: "7891F800E82E4C95"
+					item: "goety:floral_scroll"
 					type: "item"
 				}
 			]
 			title: "一些卷轴与故事"
-			x: 6.5d
-			y: 7.25d
+			x: -5.0d
+			y: 4.75d
 		}
 		{
-			dependencies: ["7768DA1835EA65B6"]
+			dependencies: ["41FAE73E20B6D72F"]
 			description: [
 				"为了获取&6灵魂红宝石&r制作一些特殊道具，你可能需要制作一个&6黑暗卷轴&r，用以召唤&4灾厄宰相&r。"
 				""
-				"在林地府邸中使用它，灾厄宰相便会出现，击败它之后将会获得灵魂红宝石。"
+				"在&2林地府邸&r中使用它，灾厄宰相便会出现，击败它之后将会获得灵魂红宝石。"
 			]
+			hide_dependency_lines: true
+			icon: "goety:soul_ruby"
 			id: "7DC6ADF38293C21B"
 			rewards: [{
 				count: 3
@@ -558,12 +614,18 @@
 				item: "goety:dark_scroll"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 6.0d
+			x: -6.0d
+			y: 4.75d
 		}
 		{
 			dependencies: ["2C66968C7259F120"]
-			description: ["只有在&6深暗之域&r中，&6亡灵火炉&r才能够正常燃烧。将其放置在具有灵魂的诅咒之笼上方，就可以驱使它制作&2更高级的金属&r。"]
+			description: [
+				"&6亡灵火炉&r需要通过&4锻造仪式&r制作。"
+				""
+				"只有在&3深暗之域&r&7（原版坚守者所在区域）&r，并且由&6灵魂蜡烛&r提供灵魂能量，&6亡灵火炉&r才能够正常燃烧。"
+				""
+				"你可以驱使它制作&2更高级的金属&r——&6黑暗金属锭&r。"
+			]
 			id: "0DFC8BCCE5CA0F08"
 			rewards: [{
 				count: 8
@@ -577,11 +639,11 @@
 				item: "goety:necro_brazier"
 				type: "item"
 			}]
-			x: -1.25d
-			y: 13.25d
+			x: -2.25d
+			y: 5.0d
 		}
 		{
-			dependencies: ["7768DA1835EA65B6"]
+			dependencies: ["48CA5C5BE42B6D3C"]
 			description: [
 				"通过举行安息仪式，你可以召唤本模组的最终单位&6使徒&r。"
 				""
@@ -606,13 +668,13 @@
 				type: "item"
 			}]
 			title: "面对使徒"
-			x: 8.25d
-			y: 7.25d
+			x: 3.75d
+			y: 10.25d
 		}
 		{
 			dependencies: ["537E1732782ABF04"]
 			description: [
-				"在下界击败使徒，则会获得一些额外的奖励，其中包含了&5禁书片段&r以及&5黑夜信标&r。"
+				"在下界击败使徒，则会获得一些额外的奖励，其中包含了&5禁书片段&r以及&5暗夜信标&r。"
 				""
 				"前者可以用于合成禁书卷轴用以解锁&6大师死灵仪式&r。后者则可以让整个世界带来&6永久的夜晚&r。"
 			]
@@ -632,8 +694,8 @@
 				type: "advancement"
 			}]
 			title: "下界之影"
-			x: 8.25d
-			y: 6.0d
+			x: 3.75d
+			y: 11.5d
 		}
 		{
 			dependencies: ["537E1732782ABF04"]
@@ -667,8 +729,8 @@
 				item: "goety:undeath_potion"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 7.25d
+			x: 6.5d
+			y: 10.25d
 		}
 		{
 			dependencies: ["020F32F2C7347F32"]
@@ -689,26 +751,22 @@
 				item: "kubejs:holy_potion"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 6.0d
+			x: 6.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["3CB4A421BFE6A3BC"]
 			description: [
 				"药酿被分为四个步骤，分别是："
-				"&2容量剂 => 催化剂 => 增强剂 => 结束"
-				"&r"
-				"为了开启一次药酿，你需要投入最基本的容量剂——&6下界疣&r。为了酿造效果更为复杂的药剂，你可以在书本中了解到其他的容量剂，类如绯红菌、砰砰疣等。他们必须&2按照顺序进行添&r加，当添加完后，你可以用鼠标指向坩埚查看当前容量上限。"
+				"&b容量剂 => 催化剂 => 增强剂 => 结束&r"
 				""
-				"其次便是添加催化剂，这&2决定了药水的效果&r。比如为了酿造砍树药剂，你则需要加入石斧作为催化剂。更多的催化剂可以在书本中看到。他们都有着常规药水难以达到的强大效果。"
+				"&b容量剂：&r决定此次制作药剂的&e容量&r。药剂的效果、持续时间、其他强化等等，都需要&2占用不同的容量&r。&4注意，后续制作步骤中，超出容量则酿药失败。&r"
 				""
-				"{@pagebreak}"
+				"&b催化剂：&r决定此次制作药剂的&e效果&r。不同的效果占用的容量不同，你可以给你的药剂&2附加多种效果&r。"
 				""
-				"最后则需要添加增强剂，他们可以改造药水的属性——如火药可以让药水变为投掷药水、红石粉可以增长持续时间等等。"
+				"&b增强剂：&r改变此次制作药剂的生效形式、持续时间、药效等级、影响区域、滞留时间等等。&7（可以跳过该阶段）&r"
 				""
-				"在完成所有工作后，使用&6坩埚巨勺&r即可让坩埚吸收周围灵魂蜡烛中的能量，完成酿造。此时便可以使用玻璃瓶进行装瓶。"
-				""
-				"如果酿造过程出现失误，通过使用&2法杖&r潜行右击来清空坩埚。或者可以将失败的药水装入玻璃瓶，以获得&4拒绝之瓶&r。"
+				"&b结束：&r如果步骤没有失误炼制成功，便可以通过手持&6坩埚巨勺&r&2右键&r&6女巫坩埚&r，来开启灵魂能量的注入，生成药水。"
 			]
 			icon: "goety:cauldron_ladle"
 			id: "24119BB18C19CC04"
@@ -719,21 +777,666 @@
 				type: "item"
 			}]
 			subtitle: "你可以在手册中学习如何酿造"
-			tasks: [
-				{
-					id: "40B361965F3C1AE6"
-					item: "minecraft:nether_wart"
-					type: "item"
-				}
-				{
-					id: "7C15922CE823DBD2"
-					item: "goety:cauldron_ladle"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "7C15922CE823DBD2"
+				item: "goety:cauldron_ladle"
+				type: "item"
+			}]
 			title: "开始酿造！"
+			x: -3.75d
+			y: 7.25d
+		}
+		{
+			dependencies: ["39A1A046832960CC"]
+			description: [
+				"在该模组中，&b灵魂能量&r是玩家首先要了解的内容。&6进行仪式&r、&6使用该模组的魔法&r、&6合成该模组特殊物品&r等等都需要消耗&b灵魂能量&r。"
+				""
+				"当满足以下&a任意一个&r条件时，玩家可以收集灵魂能量："
+				"1.物品栏或饰品栏中存在&e根之图腾&r或&e灵魂图腾&r。"
+				"2.世界中存在玩家本人放置的&e灵魂方舟&r。"
+				""
+				"当你满足条件时，屏幕的右下角会显示灵魂能量条。"
+				"{image:kubejs:textures/task/goety_1.png width:154 height:12 align:1}"
+			]
+			icon: "goety:ectoplasm"
+			id: "38C7544366E690D9"
+			rewards: [{
+				id: "12C9853EDC53B5A7"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "以灵魂为动力"
+			tasks: [{
+				id: "72B969E3C5BD98BF"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "灵魂能量"
+			x: -0.75d
+			y: -0.25d
+		}
+		{
+			dependencies: ["247AED1D908E67BD"]
+			description: [
+				"如若你需要使用&b灵魂方舟&r中的&b灵魂能量&r，则你需要手持&6连接宝石&r右键自己的&6灵魂方舟&r，完成连接。"
+				""
+				"之后，&6连接宝石&r可以作为&6灵魂图腾&r的&e替代品&r，放置在诅咒之笼中为黑暗祭坛等设备供能。"
+			]
+			icon: "goety:soul_transfer"
+			id: "5CE573DE1D1692EF"
+			rewards: [{
+				id: "24C1EED5A1AD86A1"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "远程能量传输"
+			tasks: [{
+				id: "587CB88843D51BA3"
+				item: "goety:soul_transfer"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 2.25d
+		}
+		{
+			dependencies: ["39A1A046832960CC"]
+			description: [
+				"&b灵魂能量&r通过&c击杀生物&r获得，不同的生物提供的灵魂能量不同。"
+				""
+				"当玩家杀死生物时，将会按如下优先级&6接收&r&b灵魂能量&r。"
+				""
+				"1.绑定的&6灵魂方舟&r。"
+				""
+				"2.物品栏中未充满的&6根之图腾&r或&6灵魂图腾&r。"
+			]
+			icon: "minecraft:zombie_head"
+			id: "7153D245425EC002"
+			rewards: [{
+				id: "79B01BB04849964B"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "灾厄与掠夺"
+			tasks: [{
+				id: "149E692754BBDFDC"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "灵魂能量的来源"
+			x: 3.75d
+			y: -0.25d
+		}
+		{
+			dependencies: ["58D4C38764206571"]
+			description: [
+				"如果&6幽匿转换器&r的周围有一个&6幽匿传递站&r，幽匿块会在传递站的位置扩散开。"
+				""
+				"转换器将向传递站发送粒子，以表示它连接到了哪个传递站。如果传递站被破坏了，转换器将在范围内找到一个新的传递站，或者在自己周围散播幽匿块。"
+				""
+				"转换器可以被附魔&5“强效”&r，这将增加扩散量和灵魂能量消耗。"
+			]
+			hide_dependency_lines: true
+			id: "772F03214427101A"
+			rewards: [{
+				id: "6AB6AD5693E77145"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "幽匿扩散菌毯"
+			tasks: [{
+				id: "52F218AAFF23A3FD"
+				item: "goety:sculk_relay"
+				type: "item"
+			}]
 			x: 6.5d
-			y: 3.25d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4717C67580F37824"]
+			description: [
+				"通过&2合成&r获得。"
+				""
+				"可以将&6根之图腾&r或&6灵魂图腾&r放入&6诅咒之笼&r使其&2获得灵魂能量&r。也可以将已绑定了&2灵魂方舟&r的&6连接宝石&r放入诅咒之笼，令其可以&2使用灵魂方舟中储存的灵魂能量&r。"
+				""
+				"对准诅咒之笼按住shift（潜行键）可以查看诅咒之笼内的灵魂能量。"
+				""
+				"诅咒之笼的&e主要作用&r是&2为其他消耗灵魂能量的设备供能&r。"
+			]
+			id: "37315B135F29355E"
+			rewards: [{
+				id: "024F5C436AF71F7F"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "供能装置"
+			tasks: [{
+				id: "3C15323B9D8D94AC"
+				item: {
+					Count: 1b
+					id: "goety:cursed_cage"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["41FAE73E20B6D72F"]
+			description: [
+				"在&2沼泽和针叶林生物群落&r中，你可能会发现一座&3朽坏小屋&r，屋内必定会有用于生成&c巫婆&r的&6水晶球&r。"
+				""
+				"玩家与&6水晶球&r交互即可生成&c巫婆&r，&2生成巫婆后的水晶球&r会进入&2失活状态&r，不再能召唤巫婆。"
+				""
+				"在&3朽坏小屋内&r手持&6重生锚&r右击&2失活的水晶球&r会使水晶球重新激活，让你可以&2再次挑战boss&r。"
+				"{@pagebreak}"
+				"&c如果你选择与之战斗：&r巫婆死亡必定掉落一顶&6巫婆帽&r。"
+				""
+				"&3如果你选择与之交易：&r巫婆对穿着&6女巫长袍&r和&6女巫帽/巫婆帽&r的玩家，或者对穿着&6术士长袍&r的玩家是&2中立&r的，此时你便可以与之&2交易&r。"
+			]
+			icon: "goety:crystal_ball"
+			id: "5D8CF2E090FDE611"
+			rewards: [{
+				id: "1E4656A721B375FA"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "朽坏小屋、水晶球与巫婆"
+			tasks: [{
+				icon: "goety:crystal_ball"
+				id: "4F5E409850F13291"
+				structure: "goety:blighted_shack"
+				title: "发现朽坏小屋"
+				type: "structure"
+			}]
+			title: "守序邪恶的巫师"
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["41FAE73E20B6D72F"]
+			description: [
+				"&3墓穴&r是一座巨大的&2地下结构&r。"
+				""
+				"在&3墓穴&r的&3主墓室&r会固定生成一个初始为锁定状态的&6陶瓷坛&r，当玩家试图打开它时，会产生一个&c骷髅领主&r。"
+				""
+				"击败骷髅领主，便可以打开陶瓷坛，获得&e大量的战利品&r。"
+				""
+				"在&3墓穴&r内手持&6重生锚&r右击&6陶瓷坛&r会使陶瓷坛重新回到锁定状态，让你可以&2再次挑战boss，同时其中的战利品也会刷新&r。"
+				""
+				"&7据说某些制图师可能会出售指向墓穴的地图&r"
+			]
+			hide_dependency_lines: true
+			icon: "goety:pithos"
+			id: "7EA07EB8BF06A8DC"
+			rewards: [{
+				count: 10
+				id: "580ABF67C65964B2"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "墓穴、陶瓷坛与骷髅领主"
+			tasks: [{
+				entity: "goety:skull_lord"
+				icon: "minecraft:skeleton_skull"
+				id: "7F42B61BE2228A70"
+				title: "击败骷髅领主"
+				type: "kill"
+				value: 1L
+			}]
+			title: "地下的君主"
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["41FAE73E20B6D72F"]
+			description: [
+				"&3红树林塔&r是一种会生成在&2红树林沼泽生物群落&r的建筑物，在它生成的时候，顶部一定会产生一个不会被刷新掉的&c术士&r。"
+				""
+				"同时，&3红树林塔&r的周围也会生成&c术士&r。"
+			]
+			hide_dependency_lines: true
+			icon: "goety:warlock_sash"
+			id: "1C8CC29AC5B06E94"
+			rewards: [{
+				count: 5
+				id: "62DD8C7115ACD626"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "红树林塔与术士"
+			tasks: [{
+				entity: "goety:warlock"
+				icon: "goety:warlock_sash"
+				id: "05C4B9559B0941AC"
+				title: "击败术士"
+				type: "kill"
+				value: 1L
+			}]
+			title: "狡猾难缠的术士"
+			x: -6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6C138A46249ACE82"]
+			description: [
+				"除了灾厄猎杀，本模组存在许多自然生成的结构。"
+				""
+				"这意味着这段探索灾厄魔法的行程中并不缺乏挑战，希望你做好准备。"
+				""
+				"此处仅列出一些带有特殊怪物的结构，更多其他类型的结构等待你自己去探索。"
+			]
+			icon: "goety:cursed_bars"
+			id: "41FAE73E20B6D72F"
+			rewards: [{
+				id: "3CA32C568355D154"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "灾变领地"
+			tasks: [{
+				id: "158BF51016DE358A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "更多的挑战"
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2E3C5A01C7C079C0"]
+			description: [
+				"&7当你对灾厄村民的邪恶魔法研究到一定程度之后，你终于引起了灾厄村民们真正的注意，不同于村庄袭击，一支精英灾厄小队会专门来消灭那些偷取灾厄村民魔法的异教徒。&r"
+				""
+				"当你拥有&b2500或者更多的灵魂能量&r时，&4灾厄猎杀&r便会开始。"
+				""
+				"并且玩家拥有的灵魂能量越多，猎杀队伍会越强大。"
+				""
+				"如果你需要&2预知和躲避灾厄猎杀&r，请制作&6警示护符&r提前预警，并前往&2不会生成灾厄猎杀的维度&r。"
+			]
+			icon: {
+				Count: 1b
+				id: "goety:dark_scythe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6C138A46249ACE82"
+			rewards: [{
+				id: "2E45B0396EF1C472"
+				item: "minecraft:player_head"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "更加强大的袭击"
+			tasks: [{
+				id: "76C278BA76DFB84A"
+				title: "灾厄猎杀"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["24119BB18C19CC04"]
+			description: [
+				"该任务会引导你制作一瓶&d用于砍树的药剂&r，并&2在过程中详细说明女巫药酿的细节和流程。&r"
+				""
+				"&7（请翻页查看各个步骤以及具体说明）&r"
+				"{@pagebreak}"
+				"&c——失败是成功之母·炼药失败&r"
+				""
+				"要想成功炼制药剂，就需要知道炼药失败的现象和处理方法。如果炼制失败，坩埚中的液体会变成&2病态的棕色&r，并且会&2冒出黑烟&r。"
+				""
+				"失败的药酿可以通过将其装瓶，使其变成&6拒绝之瓶&r，或者潜行右键用魔杖或木棍右键点击坩埚来去除。"
+				"{image:kubejs:textures/task/goety_7.png width:60 height:60 align:1}"
+				"{@pagebreak}"
+				"&c——第一步·容量剂&r"
+				""
+				"容量剂有很多种，并且他们&e必须按顺序加入&r，不过这次的酿药很简单，因此我们只需要&2最基础的容量剂&r——&c下界疣&r。"
+				""
+				"向处于加热状态、装满水的&6女巫坩埚&r中，&2丢入&r一个&c下界疣&r。&7（只能放入一个！）&r"
+				""
+				"如果操作正确，女巫坩埚会散发&d紫色&r的粒子特效。"
+				""
+				"{@pagebreak}"
+				"&c——第二步·催化剂&r"
+				""
+				"女巫药酿的催化剂是千奇百怪的，这次我们需要的是&6石斧&r。"
+				""
+				"将&6石斧&r丢入女巫坩埚中。"
+				""
+				"如果操作正确，女巫坩埚中的&2液体会变成浅棕色&r，并且散发&d紫色&r的粒子特效。"
+				"{@pagebreak}"
+				"&c——结束&r"
+				""
+				"因为此次我们炼制的药剂没有那么多要求，所以&2跳过了强化剂的阶段&r。&7（女巫药酿中只有强化剂阶段是可以跳过的）&r"
+				""
+				"使用&6坩埚巨勺&r右键女巫坩埚，结束此次炼药吧！使用&6玻璃瓶&r将药剂取出，&2在一棵树的旁边喝下&r，你会明白它的效果！"
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:water"
+				}
+			}
+			id: "28B168188F040792"
+			rewards: [{
+				count: 5
+				id: "13A6A8D1EFC3D7DC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "一次简单的尝试"
+			tasks: [{
+				id: "5231888AFEEE6077"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "第一瓶精酿"
+			x: -3.75d
+			y: 8.75d
+		}
+		{
+			dependencies: ["28B168188F040792"]
+			description: [
+				"&c——第一步·容量剂·说明&r"
+				""
+				"容量剂的添加有明确的&2顺序要求&r，并且他们提供的容量也是固定的。&7（下方括弧内代表提供容量数值）&r"
+				""
+				"&b下界疣(+4) → 绯红菌(+2) → 砰砰疣(+2) → 觉醒绿宝石(+2) → 浓缩绿宝石(+2) → 灵魂红宝石(+4) &r"
+				""
+				"你&2必须按照上述顺序加入容量剂&r，即如果你需要一瓶6点容量的药剂，需要先丢入一个下界疣，再丢入一个绯红菌，否则会&4酿造失败&r。"
+			]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:healing"
+				}
+			}
+			id: "6670071A9FBD1EF1"
+			subtitle: "不可打破的顺序"
+			tasks: [{
+				id: "7C6FE1220A15BBFF"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "容量剂详解"
+			x: -3.75d
+			y: 10.0d
+		}
+		{
+			dependencies: ["28B168188F040792"]
+			description: [
+				"&c——如何查看炼制药剂的信息&r"
+				""
+				"此处我们介绍一下&2如何查看炼制中的药剂信息&r。下图中的内容需要按住&2shift键&r才会显示，你可以在各个阶段，随时查看这些信息。"
+				""
+				"{image:kubejs:textures/task/goety_8.png width:100 height:93 align:1}"
+			]
+			icon: "supplementaries:hanging_sign_oak"
+			id: "41D89F8681CF24E9"
+			rewards: [{
+				id: "02A5001089130EB4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "更清晰的数据"
+			tasks: [{
+				id: "08C894DB7E3B373A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "尽在掌握"
+			x: -2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["28B168188F040792"]
+			description: [
+				"&d女巫药酿&r存在大量的&2容量剂&r、&2催化剂&r、&2强化剂&r，这些都可以在&6指引书&r中找到对应的信息。"
+				""
+				"如果你不知道可以制作什么药剂，请&2查看指引书&r。"
+				""
+				"&7注意，催化剂中的“额外容量”需要加1才是实际占用容量。&r"
+				""
+				"{image:kubejs:textures/task/goety_9.png width:100 height:83 align:1}"
+			]
+			icon: "minecraft:paper"
+			id: "2669B7A8FC8D1A59"
+			rewards: [{
+				id: "1C5FE1835CFD990E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "善用引导书"
+			tasks: [{
+				id: "1F9C6B22EE998501"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "配方查询"
+			x: -5.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"41D89F8681CF24E9"
+				"6670071A9FBD1EF1"
+				"2669B7A8FC8D1A59"
+			]
+			description: [
+				"该任务将引导你制作一种&2比较“独特”的药剂&r，希望在这个流程中你可以掌握女巫药酿的&2所有基础知识&r。"
+				""
+				"&c——准备·查询所需容量&r"
+				""
+				"此次药剂需要用到两种&c催化剂&r——&6甜菜汤&r、&6蜂巢&r。你可以在&c指引书&r中查看他们的&2效果&r和&2占用容量&r。"
+				"{@pagebreak}"
+				"&c——第一步·足够的容量剂&r"
+				""
+				"这次的药剂需要&2抛掷&r出去，所以&c强化剂阶段&r还需要加入&6火药&r。因此一共占用6点容量。&7（甜菜汤+3，蜂巢+2，火药+1）&r"
+				""
+				"因此，仅提供4点容量的下界疣已经不足以支撑药剂的炼制了，你需要按&2前文提到的顺序&r加入&6下界疣&r、&6绯红菌&r，这样便达到了&e6点容量&r。"
+				"{@pagebreak}"
+				"&c——第二步·催化剂&r"
+				""
+				"女巫药酿中，只要不超出药剂容量上限，你可以加入多种催化剂。"
+				""
+				"在检查女巫坩埚中的容量为&e0/6&r之后，加入&6甜菜汤&r和&6蜂巢&r吧！&7（没有顺序要求）&r"
+				"{@pagebreak}"
+				"&c——第三步·强化剂&r"
+				""
+				"你需要加入一个&6火药&r，使药剂变成&2喷溅型药剂&r。&7（在指引书中的强化剂页面能够查到该信息）&r"
+				"{@pagebreak}"
+				"&c——第四步·结束&r"
+				""
+				"此时如果操作无误，你便可以使用&6坩埚巨勺&r右键女巫坩埚，注入灵魂能量，拿出药剂。"
+				""
+				"&d向敌对生物抛出药剂，你会体验到女巫药酿的魅力！&r"
+			]
+			icon: {
+				Count: 1b
+				id: "goety:splash_brew"
+				tag: {
+					AreaOfEffect: 0
+					CustomBrew: 1b
+					CustomBrewEffects: [
+						{
+							Amplifier: 0b
+							BrewId: "effect.goety.bats"
+							Duration: 1
+						}
+						{
+							Amplifier: 0b
+							BrewId: "effect.goety.bees"
+							Duration: 1
+						}
+					]
+					CustomPotionColor: 11045700
+					Lingering: 0.0f
+					Quaff: 0
+					Velocity: 0.0f
+				}
+			}
+			id: "2CD6687DD15557E1"
+			rewards: [{
+				id: "47450ED3C8C608AE"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			subtitle: "你的动物朋友们"
+			tasks: [{
+				id: "2D7A88B5F2A04AB1"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "更独特的药剂"
+			x: -3.75d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2CD6687DD15557E1"]
+			description: [
+				"至此，&d女巫药酿&r的引导就结束了。"
+				""
+				"你可以尽情发挥你的想象力，制作独属于你的药剂。"
+			]
+			icon: "simplehats:zigzagwitchhat"
+			id: "31C7BBA28C80C1B4"
+			rewards: [{
+				id: "4956E618EDE08C25"
+				item: "simplehats:zigzagwitchhat"
+				type: "item"
+			}]
+			subtitle: "独属于你的药剂"
+			tasks: [{
+				id: "5DFD081D89952A1B"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "天马行空的想象力"
+			x: -1.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["2CE8C11D4D2C773F"]
+			description: [
+				"&d《诡厄巫法（Goety）》&r中包含众多聚晶，它们是你&2释放法术的根基&r。"
+				""
+				"多数聚晶需要依赖各种魔法仪式制作，但也有少数聚晶可以通过工作台合成。"
+				""
+				"请自行前往&6模组指引书&r中的&e“聚晶”类目&r中翻阅查看。"
+				"{@pagebreak}"
+				"当玩家拥有聚晶后，手持该模组的法杖，&2默认按下Z键&r&7（打开法术聚晶槽）&r，即可打开法杖的&e法术聚晶槽&r，装配已拥有的聚晶。"
+				""
+				"之后按&2右键&r即可释放法术。"
+			]
+			icon: {
+				Count: 1b
+				id: "goety:shocking_focus"
+				tag: {
+					"Soul Cost": 4
+				}
+			}
+			id: "236B608210F1F040"
+			subtitle: "研习法术"
+			tasks: [{
+				id: "34704B5EA4118E9D"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "诡异的魔法聚晶"
+			x: 3.75d
+			y: 7.25d
+		}
+		{
+			dependencies: ["236B608210F1F040"]
+			description: [
+				"当玩家把聚晶包放入饰品栏的腰带位置，或在背包中时，可用于打开玩家的聚晶包。&7（默认为C键）&r"
+				""
+				"&7默认打开腰带槽的聚晶包，若聚晶包不在腰带，则会优先打开快捷栏最左侧的聚晶包。&r"
+				""
+				"&7最后才会试图打开最靠近背包左上角的聚晶包。&r"
+				""
+				"{@pagebreak}"
+				"当玩家&2手持任意魔杖&r，且&2身上有任意聚晶/聚晶包&r时，便可以打开&e聚晶圆环&r。&7（默认为X键）&r"
+				""
+				"按住此按键时，聚晶圆环会打开，如果松开按键，聚晶圆环就会关闭。"
+				""
+				"你可以在该界面&2快速修改魔杖的聚晶配置&r，以及&2和聚晶包进行交互&r。"
+				""
+				"&7当玩家身上没有任何聚晶或聚晶包，那么聚晶圆环无法打开。&r"
+			]
+			id: "657C4EADFC5A5BD2"
+			rewards: [{
+				id: "251B3CEE55DC52BB"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "便携的聚晶交互"
+			tasks: [{
+				id: "2F18FC4136455F26"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 11
+							slot: 0
+						}
+					}
+					id: "goety:focus_bag"
+				}
+				type: "item"
+			}]
+			title: "聚晶包与聚晶圆环"
+			x: 6.5d
+			y: 7.25d
+		}
+		{
+			dependencies: ["249B296A3CB17779"]
+			description: [
+				"进行不同类型的&d魔法仪式&r，还需要在&6黑暗祭坛&r周围摆放&2种类和数量正确的特定方块&r，或需要黑暗祭坛的&2位置满足某种条件&r。"
+				""
+				"&7若黑暗祭坛的坐标为(X,Y,Z)，&r&7祭坛基座和所需方块可以摆放在(X-8,Y-8,Z-8)到(X+8,Y+8,Z+8)的立方体范围内的任意位置。（无顺序要求）&r"
+				""
+				"你可以在一个黑暗祭坛的识别范围内放置&2多种仪式所需方块&r，使该黑暗祭坛能进行多种仪式。"
+				""
+				"{@pagebreak}"
+				"当完成了某个仪式的摆放要求后，玩家需要先确认&2需要利用该仪式制作的道具的配方&r。"
+				""
+				"先手持物品右击&6祭坛基座&r放置物品（无顺序位置要求），当祭坛基座上的物品种类和数量均达标后，便可手持需要置入&6黑暗祭坛&r的物品，右击黑暗祭坛。"
+				""
+				"如果黑暗祭坛下放的诅咒之笼内灵魂能量不为0，仪式就会开始。"
+				""
+				"每种魔法仪式进行时，消耗的灵魂能量不同。请注意提前潜行注视诅咒之笼，确认其灵魂能量是否足够支撑此次仪式消耗，不然&c仪式会失败且损失道具和灵魂能量&r。"
+				"{@pagebreak}"
+				"以该图为例，此图搭建了一个&2活力仪式&r和&2锻造仪式&r的组合体。"
+				""
+				"此处举例要制作&2依赖活力仪式&r的&6饥饿核心&r，首先需要将配方中的&6腐肉&r、&6肉类&r、&6河豚&r、&6灵魂沙&r、&6野蛮之牙&r放入周边的&6祭坛基座&r&7。（如图，无摆放顺序）&r"
+				""
+				"然后将配方中的&6空法术聚晶&r放入中心的&6魔法祭坛&r即可开始仪式合成。"
+				"{image:kubejs:textures/task/goety_4.png width:100 height:79 align:1}"
+			]
+			icon: "minecraft:paper"
+			id: "593605806D412895"
+			rewards: [{
+				count: 3
+				id: "448263C72A5CC429"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "善用引导书"
+			tasks: [{
+				id: "1AE5A94B7AC7BD2E"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "仪式说明"
+			x: 1.5d
+			y: 7.25d
 		}
 	]
 	title: "诡厄巫法：潜藏在黑魔法的力量"

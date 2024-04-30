@@ -104,6 +104,10 @@ const tumorAttriBute = [
     { name: 'chestcavity:water_breath', multi: 0.5, max: 3 },
 ]
 
+const potooBeakSoundMap = {
+    'metal' : {soundEvent : 'kubejs:pipe_fall', pitch: 0.5, minimumVolume: 0.2}
+}
+
 const difficultLevelDef = [
     { healthMulti: 1, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },
     { healthMulti: 2, attackMulti: 1, armorMulti: 1, toughnessMulti: 1 },

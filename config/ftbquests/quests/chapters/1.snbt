@@ -117,14 +117,14 @@
 			id: "0721AF9D7D5E4A7C"
 			rewards: [
 				{
-					id: "5EB1FD1478739052"
-					item: "minecraft:iron_ingot"
-					type: "item"
-				}
-				{
 					count: 16
 					id: "155CD648B3A63247"
 					item: "kubejs:eye_of_village"
+					type: "item"
+				}
+				{
+					id: "1442011C48A589A6"
+					item: "lightmanscurrency:coin_iron"
 					type: "item"
 				}
 			]
@@ -349,9 +349,8 @@
 			}]
 			subtitle: "为了发展，你需要一些常见的基础物资"
 			tasks: [{
-				consume_items: false
-				count: 16L
-				id: "0E89D0774EF165ED"
+				count: 8L
+				id: "0AFD986A1E17780D"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
@@ -662,7 +661,7 @@
 			description: [
 				"随着你的基地规模逐渐扩大，箱子的数量也会急剧变多，此时，你急需一个类如AE、RS的Mod来&2统一管理你的存储容器&r。"
 				""
-				"这个时候，你便可以使用&2Tom的简易存储&r来解决问题。Tom的简易存储可以方便的整合周围的容器，并且提供一个统一的接口用于玩家互动。"
+				"这个时候，你便可以使用&d《Tom的简易存储》&r来解决问题。Tom的简易存储可以方便的整合周围的容器，并且提供一个统一的接口用于玩家互动。"
 				""
 				"它不仅简单易用，最重要的是，它完全不耗电！"
 			]
@@ -679,7 +678,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			subtitle: "Tom的简易存储入门"
+			subtitle: "《Tom的简易存储》入门"
 			tasks: [{
 				id: "0318199998D5096F"
 				item: "toms_storage:ts.inventory_connector"
@@ -1737,6 +1736,7 @@
 					type: "item"
 				}
 			]
+			subtitle: "石碑将印刻你的足迹"
 			tasks: [{
 				id: "18D6723C0ACE4719"
 				item: "waystones:waystone"
@@ -1747,7 +1747,7 @@
 			y: 11.25d
 		}
 		{
-			dependencies: ["6A394E28378C67C8"]
+			dependencies: ["0721AF9D7D5E4A7C"]
 			description: [
 				"当玩家放置传送石盘后，在其中会合成调谐燧石，该燧石将于当前的传送石盘进行绑定。"
 				""
@@ -1770,7 +1770,7 @@
 				item: "waystones:warp_plate"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 8.75d
 			y: 11.25d
 		}
 		{
@@ -2019,8 +2019,8 @@
 				item: "kubejs:safe_chest_opener"
 				type: "item"
 			}]
-			x: 4.75d
-			y: 5.0d
+			x: 5.0d
+			y: 4.5d
 		}
 	]
 	title: "章节1：如常"

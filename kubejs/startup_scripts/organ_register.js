@@ -1707,6 +1707,17 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:bear_only')
         .tag('itemborders:gold');
 
+    registerOrgan(new Organ('kubejs:potoo_beak')
+        .addScore('strength', 1.75)
+        .addScore('speed', 1.0)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.potoo_beak.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.potoo_beak.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.darkGray({ "translate": "kubejs.tooltips.potoo_beak.3" })])
+        .build())
+        .texture('kubejs:item/organs/alex/potoo_beak')
+        .tag('kubejs:key_pressed')
+        .tag('itemborders:gold');
+
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 
     registerOrgan(new Organ('kubejs:warped_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/alex/warped_spine').tag('kubejs:spine');

@@ -95,9 +95,9 @@
 			id: "2A21CFD22EBD8054"
 			subtitle: "机械、蒸汽、爱、与生命"
 			tasks: [{
-				id: "1CD36220FD49676E"
-				item: "create:wrench"
-				type: "item"
+				id: "7809BE2FCAD98331"
+				title: "我已了解"
+				type: "checkmark"
 			}]
 			title: "机械与蒸汽"
 			x: -2.25d

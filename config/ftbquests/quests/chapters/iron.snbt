@@ -363,6 +363,13 @@
 		{
 			dependencies: ["7F70A0CC05B25A91"]
 			dependency_requirement: "one_completed"
+			description: [
+				"鲜血学派的指定材料，是制作该学派卷轴、符文、装备等的重要材料。"
+				""
+				"在燃着的营火上方放置炼药锅，当生物处于炼药锅中时，每秒会受到2点伤害，并且炼药锅会有 1/2 几率增加一层血液。"
+				""
+				"手持玻璃瓶右键装有血液的炼药锅可以获取鲜血精华，每层血液可以获取一瓶鲜血精华。"
+			]
 			hide_dependency_lines: false
 			id: "6873532EB79AB6E1"
 			tasks: [{
@@ -505,12 +512,16 @@
 			y: -12.75d
 		}
 		{
-			dependencies: ["794B9227FD9A06BC"]
+			dependencies: [
+				"794B9227FD9A06BC"
+				"17889F915BEB2F91"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"是时候去下界击杀疣猪兽来获取疣猪皮了，记得多杀几只，因为还有一本法术书也需要它合成。"
 				"制作出这一本法术书代表脱离新手期，是进入中期的标志。"
 			]
-			hide_dependency_lines: false
+			hide_dependency_lines: true
 			id: "62ED518C8459FCDF"
 			rewards: [{
 				id: "0179C8C76D882D3E"
@@ -535,9 +546,13 @@
 			y: -11.75d
 		}
 		{
-			dependencies: ["17889F915BEB2F91"]
-			description: ["拥有相比于初学者日志 更高的品质和更多的法术槽位，并且不需要模组材料制作。"]
-			hide_dependency_lines: false
+			dependencies: ["49001B4F8FF6A5D9"]
+			description: [
+				"拥有相比于初学者日志 更高的品质和更多的法术槽位，并且不需要模组材料制作。"
+				""
+				"&7初学者日志与铁箍卷册完成任意一个，即可解锁后续魔法书进程任务。&r"
+			]
+			hide_dependency_lines: true
 			id: "794B9227FD9A06BC"
 			rewards: [{
 				id: "4A8545587014B543"
@@ -545,25 +560,31 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "75B4BC9FC8D62607"
+				id: "7C8D0B1F85FD8BAA"
 				item: {
 					Count: 1b
 					id: "irons_spellbooks:iron_spell_book"
 					tag: {
-						ISB_spellbook: {
-							spellSlots: 5
-							spells: [ ]
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 6
+							mustEquip: 1b
+							spellWheel: 1b
 						}
 					}
 				}
 				type: "item"
 			}]
-			x: -2.25d
-			y: -10.75d
+			x: -3.25d
+			y: -10.5d
 		}
 		{
 			dependencies: ["49001B4F8FF6A5D9"]
-			description: ["不需要模组物品作为材料合成的法术书，仅能施展最基础的法术。"]
+			description: [
+				"不需要模组物品作为材料合成的法术书，仅能施展最基础的法术。"
+				""
+				"&7初学者日志与铁箍卷册完成任意一个，即可解锁后续魔法书进程任务。&r"
+			]
 			id: "17889F915BEB2F91"
 			rewards: [{
 				count: 5
@@ -585,8 +606,8 @@
 				}
 				type: "item"
 			}]
-			x: -2.25d
-			y: -9.75d
+			x: -1.25d
+			y: -10.5d
 		}
 		{
 			dependencies: ["17889F915BEB2F91"]
@@ -660,9 +681,13 @@
 			y: -14.75d
 		}
 		{
-			dependencies: ["794B9227FD9A06BC"]
+			dependencies: [
+				"794B9227FD9A06BC"
+				"17889F915BEB2F91"
+			]
+			dependency_requirement: "one_completed"
 			description: ["虽然它拥有自然法术强度加成，但是抛开这一点，它仍然是你中期不错的选择。"]
-			hide_dependency_lines: false
+			hide_dependency_lines: true
 			id: "7B2BB14AF56EBB12"
 			rewards: [{
 				id: "61C03353199596DF"
@@ -689,7 +714,11 @@
 		}
 		{
 			dependencies: ["17889F915BEB2F91"]
-			description: ["由召唤师堡木制围墙内侧铁笼关押的&2傻子村民&r交易获得。"]
+			description: [
+				"使用&6已翻译的研究日志&r与&b牧师&r交换获得。"
+				""
+				"&7翻译研究日志需要——高位唤魔者城堡院子里被囚禁的流浪商人&r"
+			]
 			id: "58ABC08E7A88EB8F"
 			rewards: [{
 				id: "47C716E7E68DFD79"
@@ -1613,8 +1642,8 @@
 				}
 			]
 			title: "初学者饰品"
-			x: -3.5d
-			y: -9.75d
+			x: -2.25d
+			y: -9.5d
 		}
 		{
 			dependencies: ["5870336B632EEE78"]

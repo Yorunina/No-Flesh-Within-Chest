@@ -297,5 +297,16 @@ const organPlayerKeyPressedOnlyStrategies = {
             entity.mergeNbt({ 'Phase': 5, 'ConsumedEntities': 30000000 })
             player.addItemCooldown('kubejs:nether_star_shard', 20 * 45)
         }
-    }
+    },
+    'kubejs:potoo_beak': function (event, organ) {
+        let player = event.player
+        let level = event.level
+        let block = player.block.offset(0, -1, 0)
+        if (!block) return
+        let beakConfig = potooBeakSoundMap[block.material.id]
+        if (beakConfig) {
+            level.playSound(null, player.getX(), player.getY(), player.getZ(), beakConfig.soundEvent, player.getSoundSource(), beakConfig.pitch, beakConfig.minimumVolume)
+            player.addItemCooldown('kubejs:potoo_beak', 20 * 1)
+        }
+    },
 };
