@@ -497,7 +497,7 @@
 		{
 			dependencies: ["24E73A64F055728A"]
 			description: [
-				"无尽节律在你没有手持物品、没有装备胸甲时，每次攻击会额外提供2的&2临时攻击力&r加成，可&6无限叠加&r。"
+				"无尽节律在你没有手持物品、没有装备胸甲时，每次攻击会额外提供4的&2临时攻击力&r加成，可&6无限叠加&r。"
 				""
 				"代价是，&2每次攻击自身会受到等同于增加攻击力的固定伤害&r。"
 				""
@@ -3594,6 +3594,35 @@
 			title: "杂项特殊器官"
 			x: -8.75d
 			y: 28.25d
+		}
+		{
+			description: [
+				"这是一只兔子，谁会忍心伤害一只可爱的兔子呢？将它放进胸腔，你将免于灾厄猎杀事件的针对。"
+				"但是，针对你好友的灾厄猎杀仍有可能会波及到你。"
+			]
+			icon: {
+				Count: 1b
+				id: "kubejs:is_rabbit"
+				tag: { }
+			}
+			id: "3772E8A85AD5D276"
+			rewards: [{
+				id: "3ABC6E84B8433017"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这真的只是一只兔子？"
+			tasks: [{
+				id: "1AD6378FE8C6E353"
+				item: {
+					Count: 1b
+					id: "kubejs:is_rabbit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.75d
+			y: 29.25d
 		}
 	]
 	title: "胸腔：器官收集指南"

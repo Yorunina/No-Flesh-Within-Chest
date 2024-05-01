@@ -1438,6 +1438,32 @@
 			x: 1.5d
 			y: 7.25d
 		}
+		{
+			description: [
+				"就在你因为深入探索诡厄巫法的秘密而欣喜若狂时，危险也悄然来临。灾厄村民不会放过任何一个试图盗取诡厄魔法的人，一支由精英灾厄村民组成的小队已被派出，他们会猎杀任何染指了禁忌魔法之人。"
+				"当你的&4灵魂能量&r高于一个阈值时，将有概率引发一场高强度的袭击事件。"
+				"但或许有些办法能够阻止这场猎杀？"
+			]
+			icon: "goety:spent_totem"
+			id: "0EDCC4CAAA82198E"
+			rewards: [{
+				id: "191D251916C147CD"
+				item: {
+					Count: 1b
+					id: "kubejs:is_rabbit"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "万事皆有其代价"
+			tasks: [{
+				id: "7452E8CC5FFFDCFF"
+				title: "灾厄袭击"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
 	]
 	title: "诡厄巫法：潜藏在黑魔法的力量"
 }
