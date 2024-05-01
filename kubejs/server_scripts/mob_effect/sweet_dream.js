@@ -42,14 +42,14 @@ function sweetDreamPlayerHurtByOthers(event, data) {
         return;
     }
 
-    if (event.amount >= 10 && !player.hasEffect('kubejs:sweet_dream')) {
+    if (event.amount >= 5 && !player.hasEffect('kubejs:sweet_dream')) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (!itemMap.has('kubejs:magic_hippocampus') || player.cooldowns.isOnCooldown(Item.of('kubejs:magic_hippocampus'))) {
             return;
         }
         let durationMulti = 1;
         let amplifierMulti = 0;
-        player.cooldowns.addCooldown(Item.of('kubejs:magic_hippocampus'), 100)
+        player.cooldowns.addCooldown(Item.of('kubejs:magic_hippocampus'), 60)
         if (itemMap.has('kubejs:magic_muscle')) {
             durationMulti = durationMulti + itemMap.get('kubejs:magic_muscle').length
         }

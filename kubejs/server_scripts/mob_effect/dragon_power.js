@@ -26,5 +26,7 @@ function dragonPowerPlayerHurtByOthers(event, data) {
     } else if (player.absorptionAmount < maxExtraHealth) {
         player.absorptionAmount = Math.min(player.absorptionAmount + event.amount * (amplify - 4) * 0.2, maxExtraHealth)
         event.amount = 0
+    } else if (player.absorptionAmount >= maxExtraHealth) {
+        event.amount = 0
     }
 }

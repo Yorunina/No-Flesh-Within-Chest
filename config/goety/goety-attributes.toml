@@ -203,6 +203,12 @@
 			#How much damage Redstone Golems deals, Default: 20.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			redstoneGolemDamage = 20.0
+			#How much natural armor points Redstone Golems have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			redstoneGolemArmor = 0.0
+			#How much following/detection range Redstone Golems have, Default: 32.0
+			#Range: 1.0 ~ 2048.0
+			redstoneGolemFollowRange = 32.0
 
 		[Attributes."Summoned Mobs"."Grave Golem"]
 			#How much Max Health Grave Golems have, Default: 180.0
@@ -217,6 +223,18 @@
 			#How much damage Haunts deals, Default: 2.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			hauntDamage = 2.0
+			#How much natural armor points Grave Golems have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			graveGolemArmor = 0.0
+			#How much following/detection range Grave Golems have, Default: 32.0
+			#Range: 1.0 ~ 2048.0
+			graveGolemFollowRange = 32.0
+			#How much natural armor points Haunts have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			hauntArmor = 0.0
+			#How much following/detection range Haunts have, Default: 32.0
+			#Range: 1.0 ~ 2048.0
+			hauntFollowRange = 32.0
 
 		[Attributes."Summoned Mobs"."Husk Servant"]
 			#How much Max Health Husk Servants have, Default: 20.0
@@ -292,12 +310,18 @@
 			boundEvokerHealth = 24.0
 
 		[Attributes."Summoned Mobs"."Squall Golem"]
-			#How much Max Health Redstone Golems have, Default: 88.0
+			#How much Max Health Squall Golems have, Default: 88.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			squallGolemHealth = 88.0
-			#How much damage Redstone Golems deals, Default: 16.0
+			#How much damage Squall Golems deals, Default: 16.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			squallGolemDamage = 16.0
+			#How much natural armor points Squall Golems have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			squallGolemArmor = 0.0
+			#How much following/detection range Squall Golems have, Default: 32.0
+			#Range: 1.0 ~ 2048.0
+			squallGolemFollowRange = 32.0
 
 		[Attributes."Summoned Mobs".Whisperer]
 			#How much Max Health Whisperers have, Default: 20.0
@@ -327,6 +351,52 @@
 			#How much damage Poison-Quill Vines' quills deals, Default: 2.5
 			#Range: 1.0 ~ 1.7976931348623157E308
 			poisonQuillVineDamage = 2.5
+
+		[Attributes."Summoned Mobs"."Ice Golem"]
+			#How much Max Health Ice Golems have, Default: 60.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			iceGolemHealth = 60.0
+			#How much natural armor points Ice Golems have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			iceGolemArmor = 0.0
+			#How much damage Ice Golems deals, Default: 7.5
+			#Range: 1.0 ~ 1.7976931348623157E308
+			iceGolemDamage = 7.5
+			#How much following/detection range Ice Golems have, Default: 16.0
+			#Range: 1.0 ~ 2048.0
+			iceGolemFollowRange = 16.0
+
+		[Attributes."Summoned Mobs"."Redstone Monstrosity"]
+			#How much Max Health Redstone Monstrosities have, Default: 600.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			redstoneMonstrosityHealth = 600.0
+			#How much natural armor points Redstone Monstrosities have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			redstoneMonstrosityArmor = 0.0
+			#How much damage Redstone Monstrosities deals, Default: 21.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			redstoneMonstrosityDamage = 21.0
+			#How much following/detection range Redstone Monstrosities have, Default: 32.0
+			#Range: 1.0 ~ 2048.0
+			redstoneMonstrosityFollowRange = 32.0
+			#Redstone Monstrosities attack HP percent damage, Default: 0.08
+			#Range: 0.0 ~ 1.0
+			redstoneMonstrosityHPPercentDamage = 0.08
+			#The maximum amount of damage an Redstone Monstrosities can attain per hit, Default: 25.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			redstoneMonstrosityDamageCap = 25.0
+			#How much Max Health Redstone Cubes have, Default: 10.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			redstoneCubeHealth = 10.0
+			#How much natural armor points Redstone Cubes have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			redstoneCubeArmor = 0.0
+			#How much damage Redstone Cubes deals, Default: 4.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			redstoneCubeDamage = 4.0
+			#How much following/detection range Redstone Cubes have, Default: 16.0
+			#Range: 1.0 ~ 2048.0
+			redstoneCubeFollowRange = 16.0
 
 	[Attributes.Mini-Bosses]
 

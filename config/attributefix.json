@@ -187,6 +187,17 @@
         "value": 2
       }
     },
+    "kubejs:candy_spell_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "irons_spellbooks:fire_spell_power": {
       "enabled": false,
       "min": {
@@ -319,6 +330,17 @@
         "value": 10
       }
     },
+    "kubejs:magnificent_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "minecraft:zombie.spawn_reinforcements": {
       "enabled": true,
       "min": {
@@ -352,6 +374,17 @@
         "value": 1000000
       }
     },
+    "kubejs:candy_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
     "forge:swim_speed": {
       "enabled": false,
       "min": {
@@ -372,6 +405,17 @@
       "max": {
         "default": 20,
         "value": 1000000
+      }
+    },
+    "kubejs:magnificent_spell_resistance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
       }
     },
     "tetra:draw_speed": {

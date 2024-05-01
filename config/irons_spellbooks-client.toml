@@ -4,6 +4,12 @@
 	showFirstPersonArms = true
 	showFirstPersonItems = true
 
+########################################################################################################################
+###                                                                                                                   ##
+###   ATTENTION: These are client configs. For gameplay settings, go to the SERVER CONFIGS (in the world save file)   ##
+###                                                                                                                   ##
+########################################################################################################################
+#
 [UI]
 
 	[UI.ManaBar]

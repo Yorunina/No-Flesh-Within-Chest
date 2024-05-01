@@ -393,10 +393,9 @@ StartupEvents.registry('item', event => {
         .addScore('luck', 1.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.1" })])
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.2" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.3" }), Text.gold({ "translate": "kubejs.tooltips.magic_hippocampus.4" }), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.5" }), Text.of({ "translate": "kubejs.tooltips.magic_hippocampus.6" }).color('#e8a0dc'), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.7" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.8" }), Text.gold({ "translate": "kubejs.tooltips.magic_hippocampus.9" }), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.10" }), Text.aqua({ "translate": "kubejs.tooltips.magic_hippocampus.11" }), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.12" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.13" }), Text.gold({ "translate": "kubejs.tooltips.magic_hippocampus.14" }), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.15" }), Text.aqua({ "translate": "kubejs.tooltips.magic_hippocampus.16" }), Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.17" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.18" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_hippocampus.5" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_hippocampus')
         .tag('kubejs:magic')
@@ -1444,6 +1443,7 @@ StartupEvents.registry('item', event => {
         .build())
         .food(food => {
             food.hunger(2).saturation(2).alwaysEdible().eaten(event => {
+                if (!event.player) return
                 event.server.runCommandSilent(`/title ${event.player.name.getString()} title {"text":"§6${randomGet(luckyCookieSentence)}§7"}`)
                 if (Math.random() < 0.02) {
                     event.player.give(Item.of('kubejs:golden_lucky_cookie_organ'))

@@ -1,0 +1,15 @@
+StartupEvents.registry('irons_spellbooks:schools', event => {
+    event.create('magnificent')
+        .setName(Component.of('Magnificent').darkPurple())
+        .setFocus('kubejs:magnificent_focus')
+        .setPowerAttribute('kubejs:magnificent_spell_power')
+        .setResistanceAttribute('kubejs:magnificent_spell_resistance')
+        .setDefaultCastSound('minecraft:block.lodestone.break')
+
+    event.create('candy')
+        .setName(Text.of('Candy').color('#fcc2e4'))
+        .setFocus('kubejs:candy_focus')
+        .setPowerAttribute('kubejs:candy_spell_power')
+        .setResistanceAttribute('kubejs:candy_spell_resistance')
+        .setDefaultCastSound('minecraft:block.lodestone.break')
+})

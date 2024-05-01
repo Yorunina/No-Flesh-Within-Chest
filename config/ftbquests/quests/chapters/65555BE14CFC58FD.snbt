@@ -34,7 +34,11 @@
 				""
 				"{\"text\":\"联系我们！\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://kook.top/3IFPA5\"}}"
 			]
-			icon: "minecraft:campfire"
+			icon: {
+				Count: 1b
+				id: "kubejs:go_camping"
+				tag: { }
+			}
 			id: "0E3B5BC6A471679E"
 			shape: "rsquare"
 			subtitle: "制作团队：GoCamping！"
@@ -597,21 +601,32 @@
 			hide_dependency_lines: true
 			icon: "kubejs:sponsor_badge"
 			id: "1F3B70FA4B3D185D"
-			rewards: [{
-				id: "0AB571E3C6A316B2"
-				item: {
-					Count: 1b
-					id: "hexerei:broom_keychain"
-					tag: {
-						Items: [{
-							Count: 1b
-							Slot: 0b
-							id: "kubejs:sponsor_badge"
-						}]
+			rewards: [
+				{
+					id: "0AB571E3C6A316B2"
+					item: {
+						Count: 1b
+						id: "hexerei:broom_keychain"
+						tag: {
+							Items: [{
+								Count: 1b
+								Slot: 0b
+								id: "kubejs:sponsor_badge"
+							}]
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "1223237E02536E68"
+					item: {
+						Count: 1b
+						id: "kubejs:go_camping"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			secret: true
 			subtitle: "这是个隐藏任务"
 			tasks: [{

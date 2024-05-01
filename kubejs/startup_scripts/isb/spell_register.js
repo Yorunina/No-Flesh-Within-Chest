@@ -1,0 +1,27 @@
+// 宏伟魔法
+StartupEvents.registry('irons_spellbooks:spells', event => {
+    event.create('to_the_lost')
+        .setCastTime(60)
+        .setCooldownSeconds(120)
+        .setBaseManaCost(1000)
+        .setCastType('long')
+        .setSchool('kubejs:magnificent')
+        .setMinRarity('legendary')
+        .setMaxLevel(1)
+        .setFinishSound('entity.lightning_bolt.thunder')
+        .onPreCast(ctx => global.toTheLostWorldPre(ctx))
+        .onCast(ctx => global.toTheLostWorld(ctx))
+
+    event.create('endless_dream')
+        .setCastTime(20)
+        .setCooldownSeconds(400)
+        .setBaseManaCost(100)
+        .setManaCostPerLevel(50)
+        .setCastType('long')
+        .setSchool('irons_spellbooks:nature')
+        .setMinRarity('legendary')
+        .setMaxLevel(3)
+        .onPreCast(ctx => global.endlessDreamPre(ctx))
+        .onCast(ctx => global.endlessDream(ctx))
+})
+

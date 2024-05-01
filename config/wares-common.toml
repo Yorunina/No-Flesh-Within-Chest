@@ -57,3 +57,17 @@ WanderingTraderSellsAgreements = false
 	#Delivery Table advancements would be triggered on the closest player if owner is offline or table doesn't have one.
 	TriggerTableAdvancementOnNearestPlayer = true
 
+[Package]
+	#Breaking placed Package while sneaking will not unpack it, but will drop intact package as an item instead.
+	#Default: true
+	SneakPreventsUnpacking = true
+	#Package is placed as a block only when sneaking. Set to 'true' to restore old behavior.
+	#Default: false
+	PlacingRequiresSneak = false
+	#Dispensers can place Packages as blocks.
+	#Default: true
+	DispenserPlace = true
+	#Packages pushed by pistons will break and drop their contents.
+	#Default: true
+	BrokenByPistons = true
+

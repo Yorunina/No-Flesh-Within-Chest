@@ -42,7 +42,7 @@
 			vexTexture = true
 
 		[Textures."Summoned Mobs"."Redstone Golem"]
-			#If Redstone Golems show cracks when damaged sufficiently, Default: false
+			#If Redstone Golems show cracks when damaged sufficiently, Default: true
 			redstoneGolemCrack = false
 
 		[Textures."Summoned Mobs"."Slime Servants"]
@@ -78,7 +78,7 @@
 	#Range: > 0
 	ravagerRoarCooldown = 10
 	#Maximum size Slime and Magma Cube Servants can obtain through Slime/Magma Block, Default: 4
-	#Range: > 1
+	#Range: 1 ~ 127
 	maxSlimeSize = 4
 
 	[Servants."Undead Servants"]

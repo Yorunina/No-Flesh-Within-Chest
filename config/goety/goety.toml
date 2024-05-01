@@ -42,6 +42,8 @@
 	bossMusic = true
 	#Allows player movement if Focus/Brew Wheel are open, Default: true
 	wheelGuiMovement = true
+	#Players camera can shake. Default: true
+	cameraShake = true
 
 [Blocks]
 	#Add mobs that Hook Bells don't work on. 

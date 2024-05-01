@@ -461,10 +461,10 @@
 		windBlastCoolDown = 60
 
 	[Spells."Thunderbolt Spell"]
-		#Thunderbolt Spell Cost, Default: 8
+		#Thunderbolt Spell Cost, Default: 16
 		#Range: > 0
 		thunderboltCost = 8
-		#Time to cast Thunderbolt Spell, Default: 20
+		#Time to cast Thunderbolt Spell, Default: 40
 		#Range: 0 ~ 72000
 		thunderboltTime = 20
 		#Thunderbolt Spell Cooldown, Default: 0
@@ -713,7 +713,7 @@
 		#Entangling Spell Cost, Default: 8
 		#Range: > 0
 		entanglingCost = 8
-		#Time to cast Entangling Spell, Default: 0
+		#Time to cast Entangling Spell, Default: 50
 		#Range: 0 ~ 72000
 		entanglingTime = 0
 		#Entangling Spell Cooldown, Default: 400
@@ -768,6 +768,65 @@
 		#Range: > 0
 		tunnelDefaultDistance = 8
 
+	[Spells."Frost Nova Spell"]
+		#Frost Nova Spell Cost, Default: 40
+		#Range: > 0
+		frostNovaCost = 40
+		#Time to cast Frost Nova Spell, Default: 0
+		#Range: 0 ~ 72000
+		frostNovaTime = 0
+		#Frost Nova Spell Cooldown, Default: 100
+		#Range: > 0
+		frostNovaCoolDown = 100
+		#How much base minimum damage Frost Nova Spell deals, Default: 3.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		frostNovaMinDamage = 3.0
+		#How much base maximum damage Frost Nova Spell deals, Default: 6.0
+		#Range: 2.0 ~ 1.7976931348623157E308
+		frostNovaMaxDamage = 6.0
+
+	[Spells."Frostborn Spell"]
+		#Frostborn Spell Cost, Default: 24
+		#Range: > 0
+		frostbornCost = 24
+		#Time to cast Frostborn Spell, Default: 20
+		#Range: 0 ~ 72000
+		frostbornDuration = 20
+		#Frostborn Spell Cooldown, Default: 1200
+		#Range: > 0
+		frostbornCoolDown = 1200
+		#Frostborn Spell Summon Down, Default: 300
+		#Range: 300 ~ 72000
+		frostbornSummonDown = 300
+		#Number of Ice Golems that can exist around the player, Default: 2
+		#Range: > 1
+		iceGolemLimit = 2
+
+	[Spells."Grapple Spell"]
+		#Grapple Spell Cost, Default: 4
+		#Range: > 0
+		grappleCost = 4
+		#Time to cast Grapple Spell, Default: 0
+		#Range: 0 ~ 72000
+		grappleTime = 0
+		#Grapple Spell Cooldown, Default: 20
+		#Range: > 0
+		grappleCoolDown = 20
+
+	[Spells."Electro Orb Spell"]
+		#Electro Orb Spell Cost, Default: 8
+		#Range: > 0
+		electroOrbCost = 8
+		#Time to cast Electro Orb Spell, Default: 0
+		#Range: 0 ~ 72000
+		electroOrbTime = 0
+		#Electro Orb Spell Cooldown, Default: 40
+		#Range: > 0
+		electroOrbCoolDown = 40
+		#How much base damage Electro Orbs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		electroOrbDamage = 4.0
+
 ["Servant Limits"]
 	#Number of Skeleton/Vanguard/Necromancer Servants that can exist around the player without instantly dying, Default: 32
 	#Range: > 1
@@ -781,6 +840,12 @@
 	#Number of Bound Evoker Servants that can exist around the player without instantly dying, Default: 32
 	#Range: > 1
 	boundIllagerLimit = 32
+	#Total number of Redstone Monstrosities that can be summoned in total on a world, Default: 2
+	#Range: > 0
+	redstoneMonstrosityGlobalLimit = 2
+	#Total number of Redstone Monstrosities a player can summon, Default: 1
+	#Range: > 0
+	redstoneMonstrosityPlayerLimit = 1
 
 [Enchantments]
 	#Soul Eater Maximum Enchantment Level, Default: 5
