@@ -1,0 +1,6 @@
+{
+    "chestcavity": "kubejs:types/birds/potoo.json",
+    "entities": [
+      "alexsmobs:potoo"
+    ]
+  }

@@ -1,7 +1,8 @@
-const $AttributeRegistry = Java.loadClass("io.redspace.ironsspellbooks.api.registry.AttributeRegistry");
-const $MagicData = Java.loadClass("io.redspace.ironsspellbooks.api.magic.MagicData");
-const $SpellRegistry= Java.loadClass("io.redspace.ironsspellbooks.api.registry.SpellRegistry")
-const $CastSource= Java.loadClass("io.redspace.ironsspellbooks.api.spells.CastSource")
+const $AttributeRegistry = Java.loadClass("io.redspace.ironsspellbooks.api.registry.AttributeRegistry")
+const $MagicData = Java.loadClass("io.redspace.ironsspellbooks.api.magic.MagicData")
+const $SpellRegistry = Java.loadClass("io.redspace.ironsspellbooks.api.registry.SpellRegistry")
+const $CastSource = Java.loadClass("io.redspace.ironsspellbooks.api.spells.CastSource")
+const $BloodNeedle = Java.loadClass("io.redspace.ironsspellbooks.entity.spells.blood_needle.BloodNeedle")
 
 function getPlayerMagicData(player) {
     return $MagicData.getPlayerMagicData(player)

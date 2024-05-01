@@ -150,6 +150,7 @@ ServerEvents.recipes(event => {
         });
 
 
+    event.shapeless('kubejs:candy_bag', ['kubejs:candy', 'kubejs:ice_candy', 'kubejs:water_candy', 'kubejs:fire_candy', 'kubejs:wind_candy'])
 
     event.shapeless('kubejs:lost_paradise', ['kubejs:paradise_regained', 'kubejs:god_agreement'])
 

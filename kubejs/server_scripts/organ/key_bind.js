@@ -151,7 +151,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         if (itemMap.has('minecraft:tnt')) {
             cooldown = cooldown + itemMap.get('minecraft:tnt').length * 10
         }
-        player.potionEffects.add('goety:explosive', Math.max(60, 20 * duration), Math.min(1, Math.floor(amplifier)), false, false)
+        player.potionEffects.add('goety:explosive', Math.max(60, 20 * duration), Math.max(Math.min(2, Math.floor(amplifier))), 0)
         player.addItemCooldown('kubejs:excited_appendix', Math.max(20 * 10, 20 * (120 - cooldown)))
     },
     'kubejs:blood_crystal': function (event, organ) {

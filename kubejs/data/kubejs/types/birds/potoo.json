@@ -1,0 +1,113 @@
+{
+    "defaultChestCavity": [
+      {
+        "item": "kubejs:feather",
+        "position": 0
+      },
+      {
+        "item": "chestcavity:small_animal_rib",
+        "position": 1
+      },
+      {
+        "item": "chestcavity:small_animal_appendix",
+        "position": 2
+      },
+      {
+        "item": "chestcavity:small_animal_lung",
+        "position": 3
+      },
+      {
+        "item": "chestcavity:small_animal_heart",
+        "position": 4
+      },
+      {
+        "item": "chestcavity:small_animal_lung",
+        "position": 5
+      },
+      {
+        "item": "kubejs:potoo_beak",
+        "position": 6
+      },
+      {
+        "item": "chestcavity:small_animal_rib",
+        "position": 7
+      },
+      {
+        "item": "kubejs:feather",
+        "position": 8
+      },
+      {
+        "item": "kubejs:feather",
+        "position": 9
+      },
+      {
+        "item": "chestcavity:small_animal_rib",
+        "position": 10
+      },
+      {
+        "item": "chestcavity:small_animal_spleen",
+        "position": 11
+      },
+      {
+        "item": "chestcavity:small_animal_kidney",
+        "position": 12
+      },
+      {
+        "item": "chestcavity:small_animal_spine",
+        "position": 13
+      },
+      {
+        "item": "chestcavity:small_animal_kidney",
+        "position": 14
+      },
+      {
+        "item": "chestcavity:animal_liver",
+        "position": 15
+      },
+      {
+        "item": "chestcavity:small_animal_rib",
+        "position": 16
+      },
+      {
+        "item": "kubejs:feather",
+        "position": 17
+      },
+      {
+        "item": "chestcavity:small_animal_muscle",
+        "position": 18
+      },
+      {
+        "item": "chestcavity:small_animal_muscle",
+        "position": 19
+      },
+      {
+        "item": "chestcavity:small_carnivore_intestine",
+        "position": 20
+      },
+      {
+        "item": "chestcavity:small_carnivore_intestine",
+        "position": 21
+      },
+      {
+        "item": "chestcavity:small_animal_stomach",
+        "position": 22
+      },
+      {
+        "item": "chestcavity:small_carnivore_intestine",
+        "position": 23
+      },
+      {
+        "item": "chestcavity:small_carnivore_intestine",
+        "position": 24
+      },
+      {
+        "item": "chestcavity:small_animal_muscle",
+        "position": 25
+      },
+      {
+        "item": "chestcavity:small_animal_muscle",
+        "position": 26
+      }
+    ]
+  }
+  

@@ -34,6 +34,8 @@ StartupEvents.registry('item', event => {
     event.create('water_candy').texture('kubejs:item/water_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('fire_candy').texture('kubejs:item/fire_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('wind_candy').texture('kubejs:item/wind_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
+    event.create('candy_bag').texture('kubejs:item/candy_bag').tag('extradelight:candy_bowl_valid').tag('supplementaries:cookies')
+    
     event.create('starch_sausage').texture('kubejs:item/starch_sausage').food(food => { food.hunger(3).saturation(0.8).alwaysEdible() })
     event.create('cream').texture('kubejs:item/cream').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('mr_and_mrs_smith').texture('kubejs:item/mr_and_mrs_smith').food(food => {
@@ -229,7 +231,7 @@ StartupEvents.registry('item', event => {
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
             let nbt = { organSocres: {} }
-            let ray = entity.rayTrace(4, true)
+            let ray = entity.rayTrace(4, false)
             let target = entity
             if (ray.entity && ray.entity.isLiving()) {
                 target = ray.entity
@@ -293,7 +295,6 @@ StartupEvents.registry('item', event => {
                 } else {
                     itemstack.setNbt({ inventory: oriInv })
                 }
-
             }
             global.initChestCavityIntoMap(entity, true)
             if (entity.getChestCavityInstance().inventory.hasAnyMatching(item => {

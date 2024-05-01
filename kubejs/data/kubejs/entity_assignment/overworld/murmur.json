@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:types/overworld/murmur.json",
+  "entities": [
+    "alexsmobs:murmur"
+  ]
+}

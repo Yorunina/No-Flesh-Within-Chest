@@ -1698,7 +1698,7 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold');
 
     registerOrgan(new Organ('kubejs:weird_paperman')
-        .addScore('health', -1.5)
+        .addScore('health', -0.5)
         .addScore('breath_recovery', -1.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.weird_paperman.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.weird_paperman.2" })])
