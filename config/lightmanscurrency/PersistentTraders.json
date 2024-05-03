@@ -1,4 +1,31 @@
 {
-  "Traders": [],
+  "Traders": [
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "villager",
+      "Name": "村庄交易所",
+      "OwnerName": "村民",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "kubejs:random_delivery_agreement",
+            "Count": 1
+          },
+          "DisplayName": "随机交易卷轴",
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    }
+  ],
   "Auctions": []
 }

@@ -1,0 +1,15 @@
+{
+  "name": "repurposed_structures:villages/birch/houses",
+  "fallback": "repurposed_structures:villages/birch/terminators",
+  "elements": [
+    {
+      "weight": 9,
+      "element": {
+        "location": "iceandfire:villages/birch/scriber_house",
+        "processors": "repurposed_structures:villages/birch/mossify",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "broadcast_errors": true,
+  "handle_ticking_entities": true,
+  "handle_ticking_block_entities": true,
+  "handle_ticking_block_states": true,
+  "handle_ticking_item_stacks": true,
+  "handle_ticking_players": true
+}

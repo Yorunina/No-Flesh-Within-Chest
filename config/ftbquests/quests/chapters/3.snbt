@@ -311,31 +311,48 @@
 		{
 			dependencies: ["2E03433F8ED6CA99"]
 			description: [
-				"{ \"text\": \"Flos solum sub pluvia efflorescit\", \"color\": \"gold\", \"underlined\":\"true\", \"clickEvent\": { \"action\" : \"copy_to_clipboard\", \"value\" : \"Flos solum sub pluvia efflorescit\"} }\""
-				""
 				"请注意，该维度&4难度较高&r，前往前可以根据情况开启死亡不掉落或者卸下部分贵重装备。"
 				""
-				"在预期中首次前往该维度的死亡几乎是&4必定&r的结局。"
+				"你可以通过下界之星来直接制作&6宏伟魔法&r的卷轴。但在完成对应的秘密任务之前，卷轴无法正常的使用。"
 				""
-				"如果需要返回主世界，则需要咏唱该魔咒的下半句。"
-				""
-				"{ \"text\": \"Dies clarus corruent etiam petala\", \"color\": \"gold\", \"underlined\":\"true\", \"clickEvent\": { \"action\" : \"copy_to_clipboard\", \"value\" : \"Dies clarus corruent etiam petala\"} }\""
-				""
-				"&7文本可通过点击复制&r"
+				"在完成一系列任务之后（所有步骤都逐个完成后），使用魔法卷轴记载的魔法，即可在两个维度中随意穿梭。"
 			]
 			hide_dependency_lines: true
 			icon: "alexsmobs:acacia_blossom"
 			id: "789A88270498ED92"
-			rewards: [{
-				count: 5
-				id: "0A286171B2B1A138"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
+			rewards: [
+				{
+					count: 5
+					id: "0A286171B2B1A138"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_gold"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6F37C8775213206B"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "kubejs:to_the_lost"
+									index: 0
+									level: 1
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "咏唱咒语，以前往世界的回忆"
 			tasks: [{

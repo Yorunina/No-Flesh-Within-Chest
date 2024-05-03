@@ -3,14 +3,7 @@
         "timeout": 100,
         "gamestage": "curse_of_fragility",
         "dimension": "kubejs:lost_memory",
-        "potion": "kubejs:curse_of_fragility,120,0",
-        "continue": true
-    },
-    {
-        "timeout": 101,
-        "gamestage": "curse_mining_fatigue",
-        "dimension": "kubejs:lost_memory",
-        "potion": "minecraft:mining_fatigue,120,1",
+        "potion": "kubejs:curse_of_fragility,600,0",
         "continue": true
     }
 ]

@@ -66,6 +66,31 @@ function SimpleWares(requestedItems, paymentItems, ordered) {
     this.ordered = ordered
 }
 
+global.getRandomWare = () => {
+    let itemstack = getRandomOreWares()
+    let random = Math.random()
+    switch (true) {
+        case random < 0.03:
+            itemstack = getRandomEggWares()
+            break
+        case random < 0.06:
+            itemstack = getRandomOrganWares()
+            break
+        case random < 0.12:
+            itemstack = getRandomChallengeWares()
+            break
+        case random < 0.18:
+            itemstack = getRandomSpecialWares()
+            break
+        case random < 0.3:
+            itemstack = getRandomPotionWares()
+            break
+        default:
+            itemstack = getRandomOreWares()
+    }
+    return itemstack
+}
+
 const PotionWares = [
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('biomancy:healing_additive').withCount(1)], 8),
     new SimpleWares([Item.of('lightmanscurrency:coin_gold').withCount(1)], [Item.of('goety:splash_brew', '{AreaOfEffect:0,CustomBrew:1b,CustomBrewEffects:[{Amplifier:0b,BrewId:"effect.goety.chop_tree",Duration:1}],CustomPotionColor:6967847,Lingering:0.0f,Quaff:0,Velocity:0.0f}').withCount(4)], 16),

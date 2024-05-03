@@ -1053,6 +1053,8 @@
 				"并且玩家拥有的灵魂能量越多，猎杀队伍会越强大。"
 				""
 				"如果你需要&2预知和躲避灾厄猎杀&r，请制作&6警示护符&r提前预警，并前往&2不会生成灾厄猎杀的维度&r。"
+				""
+				"在本整合中，你也可以通过佩戴&2兔子&r器官，来避免灾厄猎杀选定你为袭击目标。"
 			]
 			icon: {
 				Count: 1b
@@ -1062,11 +1064,22 @@
 				}
 			}
 			id: "6C138A46249ACE82"
-			rewards: [{
-				id: "2E45B0396EF1C472"
-				item: "minecraft:player_head"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2E45B0396EF1C472"
+					item: "minecraft:player_head"
+					type: "item"
+				}
+				{
+					id: "409D85101200221A"
+					item: {
+						Count: 1b
+						id: "kubejs:is_rabbit"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			subtitle: "更加强大的袭击"
 			tasks: [{

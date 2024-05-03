@@ -1,0 +1,12 @@
+{
+  "pieces_spawn_counts": [
+    {
+      "nbt_piece_name": "iceandfire:villages/oak/scriber_house",
+      "never_spawn_more_than_this_many": 1
+    },
+    {
+      "nbt_piece_name": "iceandfire:villages/workstations/scriber",
+      "never_spawn_more_than_this_many": 1
+    }
+  ]
+}

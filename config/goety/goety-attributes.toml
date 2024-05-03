@@ -106,6 +106,14 @@
 			#Range: 1.0 ~ 1.7976931348623157E308
 			cryologerDamage = 5.0
 
+		[Attributes.Illagers.Trampler]
+			#How much Max Health Tramplers have, Default: 30.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			tramplerHealth = 30.0
+			#How much damage Tramplers deals, Default: 6.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			tramplerDamage = 6.0
+
 	[Attributes.General]
 
 		[Attributes.General.Wraith]

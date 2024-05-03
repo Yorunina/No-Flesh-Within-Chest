@@ -35,7 +35,7 @@ StartupEvents.registry('item', event => {
     event.create('fire_candy').texture('kubejs:item/fire_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('wind_candy').texture('kubejs:item/wind_candy').tag('extradelight:candy_bowl_valid').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('candy_bag').texture('kubejs:item/candy_bag').tag('extradelight:candy_bowl_valid').tag('supplementaries:cookies')
-    
+
     event.create('starch_sausage').texture('kubejs:item/starch_sausage').food(food => { food.hunger(3).saturation(0.8).alwaysEdible() })
     event.create('cream').texture('kubejs:item/cream').food(food => { food.hunger(1).saturation(1).alwaysEdible() }).tag('supplementaries:cookies')
     event.create('mr_and_mrs_smith').texture('kubejs:item/mr_and_mrs_smith').food(food => {
@@ -309,5 +309,21 @@ StartupEvents.registry('item', event => {
 
     event.create('safe_chest_opener').texture('kubejs:item/safe_chest_opener')
         .maxStackSize(1)
+
+    event.create('random_delivery_agreement').texture('kubejs:item/random_delivery_agreement')
+        .maxStackSize(16)
+        .useAnimation('bow')
+        .use((level, player, hand) => {
+            return true;
+        })
+        .useDuration(itemStack => 20)
+        .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
+            if (!entity.isPlayer()) return itemstack
+            let wares = global.getRandomWare()
+            itemstack.shrink(1)
+            entity.give(wares)
+            return itemstack
+        })
 })
 

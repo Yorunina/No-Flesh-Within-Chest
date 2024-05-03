@@ -1,0 +1,15 @@
+{
+  "name": "repurposed_structures:villages/oak/decor",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "location": "iceandfire:villages/workstations/scriber",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:legacy_single_pool_element"
+      }
+    }
+  ]
+}
