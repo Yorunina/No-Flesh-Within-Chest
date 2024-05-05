@@ -1,8 +1,0 @@
-type = panorama
-
-panorama-meta {
-  name = GoCamping Menu
-  speed = 1.0
-  fov = 85.0
-  angle = 25.0
-}

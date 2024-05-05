@@ -71,12 +71,12 @@ global.dreamOfNeedles = (ctx) => {
     let damage = 5 + dreamEffect.getDuration() / 100
     damage = damage * (1 + powerModifier)
 
-    let count = 3 + dreamEffect.getAmplifier()
-
+    // 限制数量上限，避免性能问题
+    let count = Math.min(120, 3 + dreamEffect.getAmplifier())
     let degreesPerNeedle = 360 / count
 
-    // 根据法术等级，产生新的释放环
-    let castTimes = Math.max(Math.ceil(spellLevel / 5), 1)
+    // 根据法术等级，产生新的释放环，限制上下限
+    let castTimes = Math.min(Math.max(Math.ceil(spellLevel / 5), 1), 5)
     for (let j = 1; j < castTimes + 1; j++) {
         for (let i = 0; i < count; i++) {
             let needle = new $BloodNeedle(player.level, player)
