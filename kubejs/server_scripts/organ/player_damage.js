@@ -292,13 +292,11 @@ const organPlayerDamageOnlyStrategies = {
         if (Math.random() < 0.2) {
             criticalPunchCount = criticalPunchCount + 1
         }
-        // 结算
         if (criticalPunchCount >= criticalPunchMaxCount) {
             let amplifier = 1.5 + (criticalPunchCount - criticalPunchMaxCount) * 0.05
             event.amount = event.amount * amplifier
             criticalPunchCount = 0
             player.level.playSound(null, player.getX(), player.getY(), player.getZ(), 'block.amethyst_block.break', player.getSoundSource(), 0.5, Math.max(amplifier * 0.2 + 0.1, 5))
-            player.setStatusMessage(`你打出了一记§4重拳§7`);
         }
         player.persistentData.putInt(criticalPunch, criticalPunchCount)
     },

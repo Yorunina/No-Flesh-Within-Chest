@@ -21,11 +21,11 @@ LootJS.modifiers(event => {
                 LootEntry.of('lightmanscurrency:coin_diamond').when((c) => c.randomChance(0.05)),
             )
             .apply(ctx => {
-                let player = ctx.player
-                if (!player) return
-                let diffStage = player.stages.getAll().toArray().find(ele => ele.startsWith('difficult_level_'))
-                if (!diffStage) return
-                let diffLevelNum = diffStage.match('difficult_level_(\\d+)')[1]
+                let entity = ctx.entity
+                let diffLevelNum = 1
+                if (entity.persistentData.contains('diffLevel')) {
+                    diffLevelNum = entity.persistentData.getInt('diffLevel')
+                }
                 if (diffLevelNum >= 4) {
                     ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.05, 1))))
                     ctx.addLoot(LootEntry.of('kubejs:unbreakable_core').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.02, 1))))

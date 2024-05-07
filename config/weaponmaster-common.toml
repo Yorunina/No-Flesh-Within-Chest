@@ -3,7 +3,7 @@
 [common]
 	#Max level of weapons.
 	#Range: > 1
-	maxLevel = 30
+	maxLevel = 25
 	#Should weapons remain in inventory on death.
 	keepOnDeath = true
 	#Base Damage of sword weapons.
@@ -11,7 +11,7 @@
 	swordDamageMin = 8
 	#Max Damage of sword weapons.
 	#Range: > 1
-	swordDamageMax = 25
+	swordDamageMax = 30
 	#Base Attack Speed of sword weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	swordSpeedMin = 1.6
@@ -29,7 +29,7 @@
 	rapierDamageMin = 8
 	#Max Damage of rapier weapons.
 	#Range: > 1
-	rapierDamageMax = 24
+	rapierDamageMax = 26
 	#Base Attack Speed of rapier weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	rapierSpeedMin = 1.8
@@ -47,7 +47,7 @@
 	scytheDamageMin = 9
 	#Max Damage of scythe weapons.
 	#Range: > 1
-	scytheDamageMax = 20
+	scytheDamageMax = 21
 	#Base Attack Speed of scythe weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	scytheSpeedMin = 1.0
@@ -65,7 +65,7 @@
 	polearmDamageMin = 10
 	#Max Damage of polearm weapons.
 	#Range: > 1
-	polearmDamageMax = 30
+	polearmDamageMax = 32
 	#Base Attack Speed of polearm weapons.
 	#Range: 0.0 ~ 1.7976931348623157E308
 	polearmSpeedMin = 0.8

@@ -91,3 +91,25 @@ global.dreamOfNeedles = (ctx) => {
         }
     }
 }
+
+
+/**
+ * @param {Internal.CustomSpell$CastContext} ctx 
+ * @returns 
+ */
+global.dreamOfSinging = (ctx) => {
+    /** @type {Internal.ServerPlayer} */
+    let player = ctx.entity
+    if (!player.hasEffect('kubejs:sweet_dream')) return
+    let spellLevel = ctx.getSpellLevel()
+    let dreamEffect = player.getEffect('kubejs:sweet_dream')
+    player.removeEffect('kubejs:sweet_dream')
+    player.modifyAttribute('minecraft:generic.attack_damage', 'sweetDreamAttackBoost', (dreamEffect.getAmplifier() + 1) * 10, 'addition')
+    player.modifyAttribute('minecraft:generic.attack_damage', 'sweetDreamAttackBoostMulti', spellLevel * 0.1, 'multiply_base')
+    let duration = Math.min(dreamEffect.getDuration(), 20 * 60)
+    player.potionEffects.add('minecraft:glowing', duration)
+    player.server.scheduleInTicks(duration, (callback) => {
+        player.removeAttribute('minecraft:generic.attack_damage', 'sweetDreamAttackBoost')
+        player.removeAttribute('minecraft:generic.attack_damage', 'sweetDreamAttackBoostMulti')
+    })
+}

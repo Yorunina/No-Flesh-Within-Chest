@@ -11,6 +11,8 @@
     "spell.kubejs.endless_dream.guide": "糖果法术之一，在持有甜蜜之梦的前提下，能够通过释放来提高甜蜜之梦的等级，并且略微延长持续时间",
     "spell.kubejs.dream_of_needles": "棘刺之梦",
     "spell.kubejs.dream_of_needles.guide": "糖果强化法术之一，在持有甜蜜之梦的前提下，能够通过将甜蜜之梦的等级降低，生成血刺对敌人进行攻击。血刺的生成数量取决于甜蜜之梦的等级和法术等级，伤害取决于甜蜜之梦的剩余时间。",
+    "spell.kubejs.dream_of_singing": "颂唱之梦",
+    "spell.kubejs.dream_of_singing.guide": "糖果强化法术之一，在持有甜蜜之梦的前提下，能够通过取消掉自身的甜蜜之梦效果，将其转换成为短时间内的基础属性强化。甜蜜之梦的等级决定了该强化的基础伤害加值，持续时间决定了加值的持续时间（最多60s），魔法等级决定了该法术的乘法加伤。",
     "item.kubejs.random_delivery_agreement": "随机交货协议",
     "item.kubejs.candy_bag": "糖果袋",
     "item.kubejs.greedy_stomach": "贪婪之胃",
