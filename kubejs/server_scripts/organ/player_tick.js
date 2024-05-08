@@ -161,7 +161,7 @@ const organPlayerTickOnlyStrategies = {
         let tumor = Item.of('kubejs:random_tumor', { organData: {} })
         let amount = Math.floor(Math.random() * 2 + 1)
         for (let i = 0; i < amount; i++) {
-            let attri = randomGet(tumorAttriBute)
+            let attri = randomGet(tumorAttriButeByNeuron)
             let attriName = attri.name
             // 扩散系数，用于控制属性的扩散范围(-0.5, 1.5)
             let diffusivity = Math.random() + Math.random() - 0.5

@@ -130,7 +130,7 @@
 	#Increase if my enchantments are causing extreme lag.
 	#Note: 20 ticks = 1s
 	#Range: 1 -> 2147483647
-	tickDelay=20
+	tickDelay=40
 	
 	#The maximum delay (in ticks) between Money Mending & Coin Magnet ticks.
 	#If greater than 0, will run the Money Mending & Coin Magnet ticks this frequently even if the server is falling behind.

@@ -1,5 +1,11 @@
 // priority: 10
 const playerAttributeMap = new Map()
+/**
+ * 历史背景：激活效果在历史中用于解决实际中属性变化与激活效果触发节点不同的问题
+ * 由于当前的Trick逻辑，仅会在玩家胸腔关闭的时候才会尝试更新，如果不新增激活的概念
+ * 在玩家异常操作的场景（如打开胸腔修改内容后退出游戏），则不会导致激活效果生效
+ * 为了从需求层面解决该问题，新增了激活的概念用于声明一个新的时间节点，即关闭胸腔界面后
+ */
 
 /**
  * 全局函数，用于更新玩家的激活效果状态
@@ -10,6 +16,7 @@ global.updatePlayerActiveStatus = player => {
     let typeMap = getPlayerChestCavityTypeMap(player)
     let uuid = String(player.getUuid())
     let attributeMap = new Map()
+    // 重置玩家胸腔基础属性
     $ChestCavityUtil.evaluateChestCavity(player.getChestCavityInstance())
     player.persistentData.putInt(resourceCountMax, defaultResourceMax)
     // 激活状态根据Tag区分并遍历可以用于激活的器官方法
