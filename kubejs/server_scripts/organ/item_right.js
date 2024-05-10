@@ -96,21 +96,8 @@ const organRightClickedOnlyStrategies = {
         if (event.item != Item.of('minecraft:potion', '{Potion:"minecraft:water"}')) {
             return
         }
+        revolSteamEngine(player)
         player.addItemCooldown(event.item, 20 * 20)
-        let count = player.persistentData.getInt(resourceCount)
-        if (player.hasEffect('kubejs:burning_heart')) {
-            let effect = player.getEffect('kubejs:burning_heart')
-            player.removeEffect('kubejs:burning_heart')
-            player.potionEffects.add('kubejs:flaring_heart', effect.getDuration() + 20 * 5, effect.getAmplifier(), false, false)
-            updateResourceCount(player, count + (effect.getAmplifier() + 1) * 50)
-        } else if (player.hasEffect('kubejs:flaring_heart')) {
-            let effect = player.getEffect('kubejs:flaring_heart')
-            player.removeEffect('kubejs:flaring_heart')
-            player.potionEffects.add('kubejs:burning_heart', effect.getDuration() + 20 * 5, effect.getAmplifier(), false, false)
-            updateResourceCount(player, count + (effect.getAmplifier() + 1) * 50)
-        } else {
-            updateResourceCount(player, count + 25)
-        }
         event.item.shrink(1)
         event.player.give(Item.of('minecraft:glass_bottle'))
     },

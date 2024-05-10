@@ -62,7 +62,7 @@ StartupEvents.registry('item', event => {
 
     // 玫瑰石英肌束
     registerOrgan(new Organ('kubejs:rose_quartz_muscle')
-        .addScore('strength', 1.5)
+        .addScore('strength', 1.75)
         .addScore('nerves', -0.25)
         .addScore('hydroallergenic', -0.25)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_muscle.1" })])
@@ -75,7 +75,7 @@ StartupEvents.registry('item', event => {
 
     // 玫瑰石英心脏
     registerOrgan(new Organ('kubejs:rose_quartz_heart')
-        .addScore('health', 1.5)
+        .addScore('health', 1.75)
         .addScore('nerves', -0.25)
         .addScore('hydroallergenic', -0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.1" })])
@@ -89,7 +89,7 @@ StartupEvents.registry('item', event => {
 
     // 玫瑰石英肝脏
     registerOrgan(new Organ('kubejs:rose_quartz_liver')
-        .addScore('detoxification', 1.5)
+        .addScore('detoxification', 1.75)
         .addScore('nerves', -0.25)
         .addScore('hydroallergenic', -0.25)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_liver.1" })])
@@ -102,7 +102,7 @@ StartupEvents.registry('item', event => {
 
     //玫瑰石英透析器
     registerOrgan(new Organ('kubejs:rose_quartz_dialyzer')
-        .addScore('filtration', 1.5)
+        .addScore('filtration', 1.75)
         .addScore('nerves', -0.25)
         .addScore('hydroallergenic', -0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_dialyzer.1" })])
@@ -150,6 +150,19 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold')
         .tag('kubejs:machine')
         .tag('kubejs:rclick_only');
+
+    // 革命之钟
+    registerOrgan(new Organ('kubejs:revolution_bell')
+        .addScore('metabolism', -0.5)
+        .addScore('strength', 1.75)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.revolution_bell.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_bell.2" })])
+        .build())
+        .texture('kubejs:item/organs/machine/revolution_bell')
+        .tag('kubejs:revolution')
+        .tag('itemborders:gold')
+        .tag('kubejs:player_tick_only')
+        .tag('kubejs:machine');
     // 革命线缆
     registerOrgan(new Organ('kubejs:revolution_cable')
         .addScore('nerves', 0.75)
@@ -329,7 +342,7 @@ StartupEvents.registry('item', event => {
         .addScore('fire_resistant', 1.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.revolution_steam_engine.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_steam_engine.2" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_steam_engine.3" }), Text.gold({ "translate": "effect.kubejs.flaring_heart" }), Text.gold('/'), Text.gold({ "translate": "effect.kubejs.burning_heart" }), Text.gray({ "translate": "kubejs.tooltips.revolution_steam_engine.4" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.revolution_steam_engine.3" })])
         .build())
         .texture('kubejs:item/organs/machine/revolution_steam_engine')
         .tag('kubejs:rclick_only')

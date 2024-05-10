@@ -68,7 +68,7 @@ const organPlayerTickStrategies = {
                 nearDistance = distance
             }
         })
-        
+
         if (targetEntity == null) return
         let distance = player.distanceToEntity(targetEntity)
         let amplifier = distance * (0.9 + 0.6 * Math.random()) * 0.05
@@ -183,9 +183,19 @@ const organPlayerTickOnlyStrategies = {
             global.updatePlayerActiveStatus(player)
         }
     },
-    'kubejs:is_rabbit':function (event, organ) {
+    'kubejs:is_rabbit': function (event, organ) {
         let player = event.player
         if (player.age % 60000 != 0) return
         $SEHelper.setRestPeriod(player, 90000)
-    }
+    },
+    'kubejs:revolution_bell': function (event, organ) {
+        let player = event.player
+        let itemMap = getPlayerChestCavityItemMap(player)
+        if (!itemMap.has('kubejs:revolution_steam_engine')) return
+        if (!player.hasEffect('kubejs:burning_heart')) return
+        let effect = player.getEffect('kubejs:burning_heart')
+        if (effect.getDuration() > 20 * 5 || effect.getDuration() < 20 * 4) return
+        revolSteamEngine(player)
+        player.addItemCooldown(Item.of('minecraft:potion'), 20 * 20)
+    },
 };
