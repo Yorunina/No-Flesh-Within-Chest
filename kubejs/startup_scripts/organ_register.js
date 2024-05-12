@@ -163,6 +163,22 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold')
         .tag('kubejs:player_tick_only')
         .tag('kubejs:machine');
+
+    // 烈火加压器
+    registerOrgan(new Organ('kubejs:blaze_pressurizer')
+        .addScore('endurance', 1.5)
+        .addScore('strength', 1)
+        .addScore('defense', -1)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.blaze_pressurizer.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blaze_pressurizer.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blaze_pressurizer.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blaze_pressurizer.4" })])
+        .build())
+        .texture('kubejs:item/organs/machine/blaze_pressurizer')
+        .tag('kubejs:revolution')
+        .tag('itemborders:gold')
+        .tag('kubejs:machine');
+    
     // 革命线缆
     registerOrgan(new Organ('kubejs:revolution_cable')
         .addScore('nerves', 0.75)
@@ -435,9 +451,11 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:magic_vision')
         .addScore('nerves', -0.5)
-        .addScore('metabolism', -0.5)
+        .addScore('metabolism', 1.25)
+        .addScore('luck', 1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.magic_vision.1" })])
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_vision.2" }), Text.yellow(0.15), Text.yellow({ "translate": "kubejs.tooltips.magic_vision.3" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_vision.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.magic_vision.3" })])
         .build())
         .texture('kubejs:item/organs/magic/magic_vision')
         .tag('kubejs:magic')
@@ -455,9 +473,9 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:damage_only');
 
     registerOrgan(new Organ('kubejs:red_ink')
-        .addScore('strength', -1)
-        .addScore('nutrition', 0.5)
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.red_ink.1" }), Text.gold({ "translate": "kubejs.tooltips.red_ink.2" }), Text.gray({ "translate": "kubejs.tooltips.red_ink.3" })])
+        .addScore('strength', -0.25)
+        .addScore('nutrition', 1.5)
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.red_ink.1" })])
         .build())
         .texture('kubejs:item/organs/magic/red_ink')
         .tag('itemborders:gold')
@@ -467,7 +485,7 @@ StartupEvents.registry('item', event => {
 
     registerOrgan(new Organ('kubejs:blood_moon_wand')
         .addScore('nerves', 1.25)
-        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blood_moon_wand.1" }), Text.yellow(0.3), Text.yellow({ "translate": "kubejs.tooltips.blood_moon_wand.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.blood_moon_wand.1" })])
         .build())
         .texture('kubejs:item/organs/magic/blood_moon_wand')
         .modifyAttribute('irons_spellbooks:blood_spell_power', 'kubejsBloodSpellPowerWeaponBoost', 0.3, 'addition')

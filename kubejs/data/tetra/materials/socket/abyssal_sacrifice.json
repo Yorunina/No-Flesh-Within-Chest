@@ -5,7 +5,7 @@
     "secondary": 0,
     "tertiary": 0,
     "durability": 136,
-    "integrityCost": 2,
+    "integrityCost": 3,
     "integrityGain": 0,
     "magicCapacity": 300,
     "toolLevel": 0,
@@ -16,8 +16,7 @@
     },
     "effects": {
         "bleeding": 1,
-        "reaching": 5,
-        "criticalStrike": 20        
+        "criticalStrike": [ 18, 4 ]
     },
     "tints": {
         "glyph": "441494",

@@ -124,11 +124,11 @@ const organPlayerTickOnlyStrategies = {
         let player = event.player
         let maxHealth = player.getMaxHealth()
         let health = player.getHealth()
-        if (health < maxHealth * 0.2) {
+        if (health < maxHealth * 0.1) {
             player.potionEffects.add('kubejs:vampiric', 20 * 3, 2)
-        } else if (health < maxHealth * 0.3) {
+        } else if (health < maxHealth * 0.2) {
             player.potionEffects.add('kubejs:vampiric', 20 * 3, 1)
-        } else if (health < maxHealth * 0.5) {
+        } else if (health < maxHealth * 0.3) {
             player.potionEffects.add('kubejs:vampiric', 20 * 3, 0)
         }
     },

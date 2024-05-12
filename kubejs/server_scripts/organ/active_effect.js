@@ -149,6 +149,7 @@ const organActiveStrategies = {
     },
     'kubejs:magic_vision': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.SPELL_POWER, 0.15)
+        attributeMapValueAddition(attributeMap, global.CANDY_SPELL_POWER, 0.1)
     },
     'kubejs:love_between_lava_and_ice': function (player, organ, attributeMap) {
         let itemMap = getPlayerChestCavityItemMap(player)
@@ -249,7 +250,7 @@ const organActiveStrategies = {
         }
     },
     'kubejs:blood_moon_wand': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.3)
+        attributeMapValueAddition(attributeMap, global.BLOOD_SPELL_DAMAGE, 0.2)
     },
     'kubejs:huge_lung': function (player, organ, attributeMap) {
         let posMap = getPlayerChestCavityPosMap(player)

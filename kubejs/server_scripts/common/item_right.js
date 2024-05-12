@@ -105,5 +105,4 @@ ItemEvents.rightClicked('kubejs:safe_chest_opener', event => {
         $CCItems.CHEST_OPENER.get().openChestCavity(player, target, false)
         player.swing()
     }
-
 })

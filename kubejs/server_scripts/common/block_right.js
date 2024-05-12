@@ -22,6 +22,4 @@ BlockEvents.rightClicked(event => {
     if (event.item.getMod() == 'somebosses' && event.hand == 'off_hand') {
         event.item.shrink(1)
     }
-    event.player.gameProfile.properties.removeAll("textures")
-    event.player.gameProfile.properties.put("textures", )
 })

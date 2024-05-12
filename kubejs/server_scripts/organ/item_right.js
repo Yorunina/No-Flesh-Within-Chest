@@ -36,10 +36,11 @@ const organRightClickedStrategies = {
  */
 const organRightClickedOnlyStrategies = {
     'kubejs:furnace_core': function (event, organ) {
-        if (!event.item.hasTag('minecraft:coals')) {
+        let itemMap = getPlayerChestCavityItemMap(event.player)
+        let pressurizable = itemMap.has('kubejs:blaze_pressurizer') && event.item.id == 'art_of_forging:potent_mixture'
+        if (!event.item.hasTag('minecraft:coals') && !pressurizable) {
             return
         }
-        let itemMap = getPlayerChestCavityItemMap(event.player)
         let amplifier = 0
         let duration = 20 * 20
         if (itemMap.has('kubejs:revolution_gear')) {
@@ -47,6 +48,9 @@ const organRightClickedOnlyStrategies = {
         }
         if (itemMap.has('kubejs:revolution_relay')) {
             duration = duration + itemMap.get('kubejs:revolution_relay').length * 100
+        }
+        if (pressurizable) {
+            amplifier = amplifier + 1
         }
         if (itemMap.has('kubejs:revolution_delay')) {
             duration = Math.max(duration - itemMap.get('kubejs:revolution_delay').length * 40, 20 * 8)
@@ -57,10 +61,11 @@ const organRightClickedOnlyStrategies = {
         event.item.shrink(1);
     },
     'kubejs:burning_heart': function (event, organ) {
-        if (!event.item.hasTag('minecraft:coals')) {
+        let itemMap = getPlayerChestCavityItemMap(event.player)
+        let pressurizable = itemMap.has('kubejs:blaze_pressurizer') && event.item.id == 'art_of_forging:potent_mixture'
+        if (!event.item.hasTag('minecraft:coals') && !(event.item.id == 'art_of_forging:potent_mixture' && hasPressurizer)) {
             return
         }
-        let itemMap = getPlayerChestCavityItemMap(event.player)
         let amplifier = 0
         let duration = 20 * 20
         if (itemMap.has('kubejs:revolution_gear')) {
@@ -68,6 +73,9 @@ const organRightClickedOnlyStrategies = {
         }
         if (itemMap.has('kubejs:revolution_relay')) {
             duration = duration + itemMap.get('kubejs:revolution_relay').length * 100
+        }
+        if (pressurizable) {
+            amplifier = amplifier + 1
         }
         if (itemMap.has('kubejs:revolution_delay')) {
             duration = Math.max(duration - itemMap.get('kubejs:revolution_delay').length * 60, 20 * 8)

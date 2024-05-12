@@ -5,16 +5,16 @@
     "secondary": 0,
     "tertiary": 0,
     "durability": 80,
-    "integrityCost": 8,
+    "integrityCost": 3,
     "integrityGain": 0,
     "magicCapacity": 160,
     "toolLevel": 0,
     "toolEfficiency": 3,
     "attributes":{
-        "irons_spellbooks:blood_spell_power":0.4
+        "irons_spellbooks:blood_spell_power":0.3
     },
     "effects": {
-        "skewering": [8,10]
+        "skewering": [10,6]
     },
     "tints": {
         "glyph": "EE0000",

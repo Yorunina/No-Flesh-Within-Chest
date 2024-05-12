@@ -41,6 +41,10 @@ const curiosEquippedStrategies = {
 function updateResourceBar(player, visible) {
     let cur = player.persistentData.get(resourceCount)
     let max = player.persistentData.get(resourceCountMax)
+    if (cur > max) {
+        player.persistentData.putInt(resourceCount, max)
+        cur = max
+    }
     let percent = cur / max
     player.paint({ barBackGround: { visible: visible }, resourceBarOverlay: { v0: 1 - percent, h: 101 * percent, visible: visible } })
 }
@@ -52,6 +56,10 @@ function updateResourceBar(player, visible) {
 function updateWarpBar(player, visible) {
     let cur = player.persistentData.get(warpCount)
     let max = player.persistentData.get(warpCountMax)
+    if (cur > max) {
+        player.persistentData.putInt(warpCount, max)
+        cur = max
+    }
     let percent = cur / max
     player.paint({ barBackGround: { visible: visible }, warpBarOverlay: { v0: 1 - percent, h: 101 * percent, visible: visible } })
 }

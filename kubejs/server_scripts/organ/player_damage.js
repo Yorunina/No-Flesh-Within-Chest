@@ -244,30 +244,30 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:origin_knight_core': function (event, organ, data) {
         let player = event.source.player
         if (player.absorptionAmount > 0) {
-            event.amount = event.amount * (1 + player.absorptionAmount * 0.01)
+            event.amount = event.amount + player.absorptionAmount
         }
     },
     'kubejs:mockery': function (event, organ, data) {
         let player = event.source.player
-        let luckval = player.getLuck()
-        if (luckval <= 0) return
-        let randomval = Math.random() * Math.min(1 + luckval / 50, 3)
-        event.amount = event.amount * randomval
+        let luck = player.getLuck()
+        if (luck <= 0) return
+        let random = Math.random() * Math.min(1 + luck / 50, 3)
+        event.amount = event.amount * random
     },
     'kubejs:melty_blood': function (event, organ, data) {
         let player = event.source.player
-        let luckval = player.getLuck()
-        if (luckval <= 0) return
-        if (Math.random() > Math.min(luckval * 0.005, 0.25)) return
-        event.amount = event.amount * (1 + Math.min(luckval * 0.06, 3))
-        player.potionEffects.add('goety:stunned', 20 * Math.min(luckval * 0.1, 5), 0)
+        let luck = player.getLuck()
+        if (luck <= 0) return
+        if (Math.random() > Math.min(luck * 0.005, 0.25)) return
+        event.amount = event.amount * (1 + Math.min(luck * 0.06, 3))
+        player.potionEffects.add('goety:stunned', 20 * Math.min(luck * 0.1, 5), 0)
     },
     'kubejs:mace': function (event, organ, data) {
         let player = event.source.player
-        let fallval = player.fallDistance
-        if (fallval <= 0) return
-        let falldamagemulti = Math.min(1 + fallval * 0.1, 5)
-        event.amount = event.amount * falldamagemulti
+        let fallDist = player.fallDistance
+        if (fallDist <= 0) return
+        let fallDamageMulti = Math.min(1 + fallDist * 0.1, 5)
+        event.amount = event.amount * fallDamageMulti
     },
     'kubejs:sunbird_crystals': function (event, organ, data) {
         let entity = event.entity

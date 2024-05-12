@@ -305,7 +305,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         if (!block) return
         let beakConfig = potooBeakSoundMap[block.material.id]
         if (beakConfig) {
-            level.playSound(null, player.getX(), player.getY(), player.getZ(), beakConfig.soundEvent, player.getSoundSource(), beakConfig.pitch, beakConfig.minimumVolume)
+            level.playSound(null, player.getX(), player.getY(), player.getZ(), beakConfig.soundEvent, player.getSoundSource(), beakConfig.minimumVolume, beakConfig.pitch)
             player.addItemCooldown('kubejs:potoo_beak', 20 * 1)
         }
     },

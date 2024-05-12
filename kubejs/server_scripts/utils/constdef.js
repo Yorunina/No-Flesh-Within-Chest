@@ -124,8 +124,8 @@ const tumorAttriButeByNeuron = [
 ]
 
 const potooBeakSoundMap = {
-    'metal': { soundEvent: 'kubejs:beak_metal', pitch: 0.5, minimumVolume: 0.2 },
-    'mangrove_roots': { soundEvent: 'kubejs:beak_mangrove_roots', pitch: 0.5, minimumVolume: 0.2 },
+    'metal': { soundEvent: 'kubejs:beak_metal', pitch: 1, minimumVolume: 0.5 },
+    'mangrove_roots': { soundEvent: 'kubejs:beak_mangrove_roots', pitch: 1, minimumVolume: 0.5 },
 }
 
 const difficultLevelDef = [

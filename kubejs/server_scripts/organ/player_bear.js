@@ -31,11 +31,8 @@ function organPlayerHurtByOthers(event, data) {
  */
 const organPlayerBearStrategies = {
     'kubejs:red_ink': function (event, organ, data) {
-        let typeMap = getPlayerChestCavityTypeMap(player)
-        if (typeMap.has('kubejs:magic')) {
-            let amount = typeMap.get('kubejs:magic').length
-            getPlayerMagicData(event.entity).addMana(event.amount * Math.floor(4.5 + amount * 0.5))
-        }
+        let player = event.entity
+        getPlayerMagicData(player).addMana(30)
     },
 };
 
@@ -91,20 +88,20 @@ const organPlayerBearOnlyStrategies = {
         let itemList = [player.getMainHandItem(), player.getOffHandItem(), player.getHeadArmorItem(),
         player.getChestArmorItem(), player.getLegsArmorItem(), player.getFeetArmorItem()]
         let curseType = 0
-        let curseVal = 0
+        let allCurseLevel = 0
         itemList.forEach(item => {
             item.enchantments.forEach((name, level) => {
                 if (curseEnchantList.some(ele => ele == name)) {
                     curseType = curseType + 1
-                    curseVal = curseVal + level
+                    allCurseLevel = allCurseLevel + level
                 }
             })
         })
         if (event.source.getType() == 'mob_attack' || event.source.isProjectile()) {
-            event.amount = event.amount * Math.max(0.5, (1 - curseType * 0.01 - curseVal * 0.02))
+            event.amount = event.amount * Math.max(0.5, (1 - curseType * 0.01 - allCurseLevel * 0.02))
         }
         else {
-            event.amount = event.amount * (1 + curseType * 0.1 + curseVal * 0.1)
+            event.amount = event.amount * (1 + curseType * 0.1 + allCurseLevel * 0.1)
         }
     },
     'kubejs:weird_paperman': function (event, organ, data) {

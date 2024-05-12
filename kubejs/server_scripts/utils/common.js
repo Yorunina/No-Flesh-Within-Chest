@@ -1,5 +1,6 @@
 const $ChestCavityUtil = Java.loadClass("net.tigereye.chestcavity.util.ChestCavityUtil")
 const $CCItems = Java.loadClass("net.tigereye.chestcavity.registration.CCItems")
+const $StructurePlaceSettings = Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings")
 
 /**
 * 获取某个半径内的实体
@@ -49,4 +50,23 @@ function revolSteamEngine(player) {
     } else {
         updateResourceCount(player, count + 25)
     }
+}
+
+
+/**
+ * 获取与基准方向相对的旋转
+ * @param {Internal.Direction} direction 
+ */
+function getRelativeRotation(direction) {
+    switch (direction) {
+        case Direction.DOWN || Direction.UP || Direction.EAST:
+            return 'none'
+        case Direction.NORTH:
+            return 'counterclockwise_90'
+        case Direction.WEST:
+            return 'clockwise_180'
+        case Direction.SOUTH:
+            return 'clockwise_90'
+    }
+    return 'none'
 }
