@@ -178,7 +178,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:revolution')
         .tag('itemborders:gold')
         .tag('kubejs:machine');
-    
+
     // 革命线缆
     registerOrgan(new Organ('kubejs:revolution_cable')
         .addScore('nerves', 0.75)
@@ -709,6 +709,16 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/warp/disenchantment_paper')
         .tag('kubejs:warp')
         .tag('kubejs:key_pressed');
+
+    registerOrgan(new Organ('kubejs:warp_bubble')
+        .addScore('breath_recovery', -1.5)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.warp_bubble.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.warp_bubble.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.warp_bubble.3" })])
+        .build())
+        .texture('kubejs:item/organs/warp/warp_bubble')
+        .tag('kubejs:bear_only')
+        .tag('kubejs:warp');
 
     // 扭曲器官
     registerOrgan(new Organ('kubejs:pandora_active')

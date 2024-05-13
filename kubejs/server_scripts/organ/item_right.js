@@ -50,7 +50,7 @@ const organRightClickedOnlyStrategies = {
             duration = duration + itemMap.get('kubejs:revolution_relay').length * 100
         }
         if (pressurizable) {
-            amplifier = amplifier + 1
+            amplifier = amplifier + 2
         }
         if (itemMap.has('kubejs:revolution_delay')) {
             duration = Math.max(duration - itemMap.get('kubejs:revolution_delay').length * 40, 20 * 8)
@@ -63,7 +63,7 @@ const organRightClickedOnlyStrategies = {
     'kubejs:burning_heart': function (event, organ) {
         let itemMap = getPlayerChestCavityItemMap(event.player)
         let pressurizable = itemMap.has('kubejs:blaze_pressurizer') && event.item.id == 'art_of_forging:potent_mixture'
-        if (!event.item.hasTag('minecraft:coals') && !(event.item.id == 'art_of_forging:potent_mixture' && hasPressurizer)) {
+        if (!event.item.hasTag('minecraft:coals') && !pressurizable) {
             return
         }
         let amplifier = 0
@@ -75,7 +75,7 @@ const organRightClickedOnlyStrategies = {
             duration = duration + itemMap.get('kubejs:revolution_relay').length * 100
         }
         if (pressurizable) {
-            amplifier = amplifier + 1
+            amplifier = amplifier + 2
         }
         if (itemMap.has('kubejs:revolution_delay')) {
             duration = Math.max(duration - itemMap.get('kubejs:revolution_delay').length * 60, 20 * 8)

@@ -9,7 +9,7 @@ const playerAttributeMap = new Map()
 
 /**
  * 全局函数，用于更新玩家的激活效果状态
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  */
 
 global.updatePlayerActiveStatus = player => {
@@ -44,7 +44,7 @@ global.updatePlayerActiveStatus = player => {
 
 /**
  * 获取玩家属性表
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @returns {Map}
  */
 
@@ -58,7 +58,7 @@ function getPlayerAttributeMap(player) {
 
 /**
  * 设置玩家属性表
- * @param {Internal.player} player 
+ * @param {Internal.ServerPlayer} player 
  * @param {Map} attriMap 
  */
 function setPlayerAttributeMap(player, attriMap) {
@@ -69,7 +69,7 @@ function setPlayerAttributeMap(player, attriMap) {
 
 /**
  * 清除玩家所有已经添加的属性
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @returns
  */
 function clearAllActivedModify(player) {
@@ -98,7 +98,7 @@ function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
 /**
  * 器官激活策略
  * @constant
- * @type {Object<string,function(Internal.Player, organ, Map):void>}
+ * @type {Object<string,function(Internal.ServerPlayer, organ, Map):void>}
  */
 const organActiveStrategies = {
     'kubejs:rose_quartz_heart': function (player, organ, attributeMap) {
@@ -345,7 +345,7 @@ const organActiveStrategies = {
 /**
  * 器官激活唯一策略
  * @constant
- * @type {Object<string,function(Internal.Player, organ, Map):void>}
+ * @type {Object<string,function(Internal.ServerPlayer, organ, Map):void>}
  */
 const organActiveOnlyStrategies = {
     'kubejs:telescopic_arm': function (player, organ, attributeMap) {

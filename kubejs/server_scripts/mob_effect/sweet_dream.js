@@ -17,7 +17,8 @@
  * @returns 
  */
 function sweetDreamPlayerHurtByOthers(event, data) {
-    let /** @type {Internal.Player} */ player = event.entity;
+    /** @type {Internal.ServerPlayer} */
+    let player = event.entity
     if (player.hasEffect('kubejs:sweet_dream')) {
         let itemMap = getPlayerChestCavityItemMap(player);
         if (!itemMap.has('kubejs:candy_heart')) {

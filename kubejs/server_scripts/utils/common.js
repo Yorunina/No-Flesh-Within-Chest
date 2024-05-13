@@ -22,7 +22,7 @@ function getLivingWithinRadius(level, pos, radius) {
 }
 
 /**
-* @param {Internal.Player} player
+* @param {Internal.ServerPlayer} player
 * @returns {Boolean}
 */
 function isPlayerOnFire(player) {
@@ -33,7 +33,7 @@ function isPlayerOnFire(player) {
 
 
 /**
-* @param {Internal.Player} player
+* @param {Internal.ServerPlayer} player
 */
 function revolSteamEngine(player) {
     let count = player.persistentData.getInt(resourceCount)

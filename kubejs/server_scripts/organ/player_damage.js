@@ -303,8 +303,8 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:soul_vulture_feather': function (event, organ, data) {
         let target = event.entity
         let harmEffectNum = 0
-        target.activeEffects.forEach(ele => {
-            if (!ele.effect.isBeneficial()) {
+        target.potionEffects.active.forEach(ele => {
+            if (ele.effect.CC_IsHarmful()) {
                 harmEffectNum = harmEffectNum + 1
             }
         })

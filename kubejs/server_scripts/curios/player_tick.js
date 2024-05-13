@@ -35,12 +35,12 @@ const curiosEquippedStrategies = {
 }
 
 /**
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @param {Boolean} visible 
  */
 function updateResourceBar(player, visible) {
-    let cur = player.persistentData.get(resourceCount)
-    let max = player.persistentData.get(resourceCountMax)
+    let cur = player.persistentData.getInt(resourceCount)
+    let max = player.persistentData.getInt(resourceCountMax)
     if (cur > max) {
         player.persistentData.putInt(resourceCount, max)
         cur = max
@@ -50,12 +50,12 @@ function updateResourceBar(player, visible) {
 }
 
 /**
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @param {Boolean} visible 
  */
 function updateWarpBar(player, visible) {
-    let cur = player.persistentData.get(warpCount)
-    let max = player.persistentData.get(warpCountMax)
+    let cur = player.persistentData.getInt(warpCount)
+    let max = player.persistentData.getInt(warpCountMax)
     if (cur > max) {
         player.persistentData.putInt(warpCount, max)
         cur = max

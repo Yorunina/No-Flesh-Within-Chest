@@ -53,7 +53,7 @@ PlayerEvents.inventoryClosed((event) => {
 
 /**
  * 将玩家信息插入到器官表中（初始化器官表
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @param {Boolean} removeFlag 
  * @returns 
  */
@@ -116,7 +116,7 @@ global.initChestCavityIntoMap = (player, removeFlag) => {
 
 /**
  * 获取玩家器官位置表
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @returns {Map}
  */
 
@@ -131,7 +131,7 @@ function getPlayerChestCavityPosMap(player) {
 
 /**
  * 获取玩家器官物品表
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @returns {Map}
  */
 
@@ -146,7 +146,7 @@ function getPlayerChestCavityItemMap(player) {
 
 /**
  * 获取玩家器官类型表
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @returns {Map}
  */
 
@@ -161,7 +161,7 @@ function getPlayerChestCavityTypeMap(player) {
 
 /**
  * 校验玩家是否初始化器官
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @returns {Boolean}
  */
 
@@ -215,7 +215,7 @@ global.getPlayerChestCavityItemMap = player => {
 
 /**
  * 将玩家信息插入到器官表中（初始化器官表
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @param {Boolean} removeFlag 
  * @returns 
  */

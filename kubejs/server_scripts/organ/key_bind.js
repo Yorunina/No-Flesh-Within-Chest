@@ -159,7 +159,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         let harmfulEffects = []
         let beneficialEffects = []
         player.potionEffects.active.forEach(ctx => {
-            if (!ctx.effect.isBeneficial()) {
+            if (ctx.effect.CC_IsHarmful()) {
                 harmfulEffects.push(ctx)
             } else {
                 beneficialEffects.push(ctx)

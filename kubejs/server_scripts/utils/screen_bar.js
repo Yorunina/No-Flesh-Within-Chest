@@ -45,7 +45,7 @@ function updateResourceMaxCount(player, maxCount) {
 
 /**
  * 更新扭曲值
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @param {Number} count 
  */
 function updateWarpCount(player, count) {

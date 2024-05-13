@@ -78,4 +78,5 @@ const organCharmNbtMap = {
     'kubejs:doppelganger': { type: 'diet', dietTask: { minHunger: 4, foodTypeAmount: 13, foodTypeList: [] }, targetOrgan: 'kubejs:mini_vampire' },
 
     'kubejs:fish_in_chest': { type: 'warp', warpTask: { warpMin: 50 }, targetOrgan: 'kubejs:fish_in_warp' },
+    'chestcavity:gas_bladder': { type: 'warp', warpTask: { warpMin: 30 }, targetOrgan: 'kubejs:warp_bubble' }, 
 }

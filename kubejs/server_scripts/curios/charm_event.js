@@ -149,7 +149,7 @@ function organCharmEntityHurtByPlayer(event, data) {
 
 /**
  * 扭曲值任务
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @param {Number} warpCount 
  */
 global.organCharmPlayerWarpTask = (player) => {

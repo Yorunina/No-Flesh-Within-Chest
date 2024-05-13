@@ -58,7 +58,7 @@ LootJS.modifiers(event => {
 
 /**
  * 获取玩家器官类型表
- * @param {Internal.Player} player 
+ * @param {Internal.ServerPlayer} player 
  * @returns {Map}
  */
 

@@ -115,4 +115,24 @@ const organPlayerBearOnlyStrategies = {
             return
         }
     },
+    'kubejs:warp_bubble': function (event, organ, data) {
+        /** @type {Internal.ServerPlayer} */
+        let player = event.entity
+        if (player.cooldowns.isOnCooldown('kubejs:warp_bubble')) return
+        let harmEffectInstances = []
+        player.potionEffects.active.forEach(ctx => {
+            if (ctx.effect.CC_IsHarmful()) {
+                harmEffectInstances.push(ctx)
+            }
+        })
+        let entityList = getLivingWithinRadius(player.getLevel(), new Vec3(player.x, player.y, player.z), 5)
+        entityList.forEach(e => {
+            if (!e.isPlayer()) {
+                harmEffectInstances.forEach(ctx => {
+                    e.addEffect(ctx)
+                })
+            }
+        })
+        player.addItemCooldown('kubejs:warp_bubble', 100)
+    },
 };
