@@ -73,7 +73,6 @@ global.LivingHurtByOthers = event => {
         return
     }
     vulnerableEntityHurt(event, data)
-    curseOfFragilityPlayerHurtByOthers(event, data)
     organCharmPlayerHurtByOthers(event, data)
     // 龙化必须在实际伤害结算前结算，因为额外生命变化不被视作实际受伤
     dragonPowerPlayerHurtByOthers(event, data)

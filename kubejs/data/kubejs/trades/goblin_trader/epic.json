@@ -1,0 +1,89 @@
+{
+    "replace": false,
+    "trades": [
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "geodes:budding_emerald",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 16
+            },
+            "max_trades": 8
+        },
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "geodes:budding_echo_block",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 32
+            },
+            "max_trades": 4
+        },
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "geodes:budding_quartz",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "max_trades": 16
+        },
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "geodes:budding_lapis",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "max_trades": 16
+        },
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "hexerei:budding_selenite",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 32
+            },
+            "max_trades": 4
+        },
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "minecraft:budding_amethyst",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "max_trades": 16
+        },
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "kubejs:lucky_block",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 32
+            },
+            "max_trades": 4
+        }
+    ]
+}

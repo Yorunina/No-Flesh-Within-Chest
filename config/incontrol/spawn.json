@@ -1,16 +1,5 @@
 [
   {
-    "dimension": "kubejs:lost_memory",
-    "onjoin": true,
-    "hostile": true,
-    "gamestage": "curse_monster_ability_bonus",
-    "result": "allow",
-    "healthmultiply": 5,
-    "damagemultiply": 2,
-    "speedmultiply": 1.5,
-    "continue": true
-  },
-  {
     "random": 0.5,
     "gamestage": "setting_monster_invisibility_bonus",
     "hostile": true,

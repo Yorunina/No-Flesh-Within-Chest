@@ -134,6 +134,36 @@ ServerEvents.recipes(event => {
 		E: 'create:brass_nugget'
 	})
 
+	event.recipes.create.mechanical_crafting('kubejs:revolution_bell', [
+		' AAA ',
+		'ACBCA',
+		'ABEBA',
+		'ACDCA',
+		' ADA ',
+		'  D  ',
+		'  F  ',
+	], {
+		A: '#forge:plates/brass',
+		B: '#createaddition:spools',
+		C: '#forge:rods/brass',
+		D: 'create:minecart_coupling',
+		E: 'create:clockwork_bearing',
+		F: '#minecraft:anvil'
+	})
+
+	event.recipes.create.mechanical_crafting('kubejs:blaze_pressurizer', [
+		' DDDD',
+		'DDBBB',
+		'DCBAB',
+		'DDBBB',
+		' DDDD'
+	], {
+		A: Item.of('goety:iron_hide_focus', '{"Soul Cost":24}'),
+		B: 'graveyard:dark_iron_ingot',
+		C: Item.of('goety:bulwark_focus', '{"Soul Cost":100}'),
+		D: 'create:iron_sheet',
+	})
+	
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:candy_heart')
 	], 'kubejs:heart_template', [
@@ -211,11 +241,11 @@ ServerEvents.recipes(event => {
 		event.recipes.createDeploying('kubejs:incomplete_glass_wand', ['kubejs:incomplete_glass_wand', 'biomancy:corrosive_additive'])
 	]).transitionalItem('kubejs:incomplete_glass_wand').loops(6)
 
-	event.recipes.create.crushing([Item.of('3x minecraft:raw_iron'), Item.of('2x minecraft:raw_gold').withChance(0.2), Item.of('2x minecraft:raw_copper').withChance(0.2), Item.of('2x create:raw_zinc').withChance(0.2), Item.of('2x minecraft:lapis_lazuli').withChance(0.1)], 'kubejs:common_mineral_cluster').processingTime(100)
+	event.recipes.create.crushing([Item.of('2x minecraft:raw_iron'), Item.of('minecraft:raw_gold').withChance(0.2), Item.of('minecraft:raw_copper').withChance(0.2), Item.of('create:raw_zinc').withChance(0.2), Item.of('2x minecraft:lapis_lazuli').withChance(0.1)], 'kubejs:common_mineral_cluster').processingTime(100)
 
 	event.recipes.create.crushing([Item.of('3x kubejs:lime_powder'), Item.of('2x kubejs:lime_powder').withChance(0.3)], 'create:limestone').processingTime(100)
 
-	event.recipes.create.crushing([Item.of('2x iceandfire:silver_ingot'), Item.of('3x createoreexcavation:raw_redstone').withChance(0.3), Item.of('2x createoreexcavation:raw_emerald').withChance(0.2), Item.of('2x createoreexcavation:raw_diamond').withChance(0.1), Item.of('minecraft:netherite_scrap').withChance(0.08)], 'kubejs:rare_mineral_cluster').processingTime(100)
+	event.recipes.create.crushing([Item.of('2x iceandfire:silver_ingot'), Item.of('2x createoreexcavation:raw_redstone').withChance(0.3), Item.of('2x createoreexcavation:raw_emerald').withChance(0.2), Item.of('createoreexcavation:raw_diamond').withChance(0.1), Item.of('minecraft:netherite_scrap').withChance(0.08)], 'kubejs:rare_mineral_cluster').processingTime(100)
 
 	event.recipes.create.crushing([Item.of('2x minecraft:netherite_scrap'), Item.of('5x minecraft:blaze_powder').withChance(0.5), Item.of('5x create:powdered_obsidian').withChance(0.4), Item.of('5x minecraft:glowstone_dust').withChance(0.45), Item.of('8x minecraft:quartz').withChance(0.6), Item.of('kubejs:nether_star_shard')], 'minecraft:nether_star').processingTime(300)
 

@@ -1,9 +1,2 @@
 [
-    {
-        "timeout": 100,
-        "gamestage": "curse_of_fragility",
-        "dimension": "kubejs:lost_memory",
-        "potion": "kubejs:curse_of_fragility,600,0",
-        "continue": true
-    }
 ]

@@ -60,11 +60,6 @@
 				""
 				"如今，你领悟到的则是一种被称作&6曲水润丰图&r的世界改造魔法。它的施展条件尤为苛刻，在完成之时，将会给予你&5潜入世界的记忆&r的能力。"
 				""
-				"&7(Flos solum sub pluvia efflorescit，直译为：花只在雨水中盛开)&r"
-				""
-				"&7(Dies clarus corruent etiam petala，直译为：晴朗之日花瓣仍会凋落)&r"
-				""
-				""
 				"{@pagebreak}"
 				""
 				"&6曲水润丰图&r的施展条件如下："
@@ -75,9 +70,7 @@
 				""
 				"3.雨夜垂钓时&6雨水突然停止&r"
 				""
-				"4.在满足以上条件之后，&6用对话框咏唱咒语&r"
-				""
-				"&6Flos solum sub pluvia efflorescit&r"
+				"4.在满足以上条件之后，使用卷轴释放法术"
 			]
 			icon: {
 				Count: 1b
@@ -176,7 +169,7 @@
 		{
 			dependencies: ["2EBB4C697D81D42A"]
 			description: [
-				"当你通过各种手段，使你的&5生命值上限超过50&r（不包含激活效果提供的临时生命），并且在&5下界复活时&r（使用重生锚），便会获得&d心的秘密&r。"
+				"当你通过各种手段，使你的&5生命值上限超过50&r（不包含激活效果提供的临时生命），并且在持有&5甜蜜之梦睡觉时&r，便会获得&d心的秘密&r。"
 				""
 				"手持该秘密右键便可以领略其中的奥秘。"
 				""
@@ -195,7 +188,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "心的秘密存在于无穷尽的活力与异界重生之中"
+			subtitle: "心的秘密存在于无穷尽的活力与遁入粉色幻境之中"
 			tasks: [{
 				id: "1DC4E4012DD1AD67"
 				item: "kubejs:secret_of_heart"
@@ -311,8 +304,6 @@
 		{
 			dependencies: ["2E03433F8ED6CA99"]
 			description: [
-				"请注意，该维度&4难度较高&r，前往前可以根据情况开启死亡不掉落或者卸下部分贵重装备。"
-				""
 				"你可以通过下界之星来直接制作&6宏伟魔法&r的卷轴。但在完成对应的秘密任务之前，卷轴无法正常的使用。"
 				""
 				"在完成一系列任务之后（所有步骤都逐个完成后），使用魔法卷轴记载的魔法，即可在两个维度中随意穿梭。"
@@ -413,111 +404,13 @@
 			shape: "hexagon"
 			subtitle: "凋零风暴！"
 			tasks: [{
-				id: "7F43E3AB7C03300B"
-				title: "凋零风暴！"
+				id: "61FC5F89156879A6"
+				title: "我已了解"
 				type: "checkmark"
 			}]
 			title: "发现隐秘遗迹"
 			x: 3.75d
 			y: -0.5d
-		}
-		{
-			dependencies: ["22A8C953424C8FD9"]
-			description: [
-				"通过完成神意挑战，获得任意类型的&4神意碎片&r，即可解除脆弱恶咒。"
-				""
-				"&7具体效果：永续脆弱诅咒。在拥有该效果情况下，每次遭受生物攻击，所有装备的耐久固定额外降低10点。&r"
-			]
-			icon: "modulargolems:weak"
-			id: "2D4F9016B978C543"
-			rewards: [{
-				auto: "enabled"
-				icon: "modulargolems:weak"
-				id: "1DDBEE7A35516811"
-				ignore_reward_blocking: true
-				remove: true
-				stage: "curse_of_fragility"
-				title: "拔除:脆弱恶咒"
-				type: "gamestage"
-			}]
-			shape: "hexagon"
-			subtitle: "脆弱诅咒使得装备耐久的消耗极快"
-			tasks: [{
-				consume_items: true
-				id: "10F2231D0810E3A5"
-				item: "kubejs:god_consciousness"
-				match_nbt: false
-				title: "任意神意碎片"
-				type: "item"
-			}]
-			title: "回忆诅咒:脆弱恶咒"
-			x: 5.75d
-			y: -0.5d
-		}
-		{
-			dependencies: ["22A8C953424C8FD9"]
-			description: [
-				"通过完成神意挑战，获得任意类型的&4神意碎片&r，即可解除血源恶咒。"
-				""
-				"&7具体效果：所有怪物血量x5、伤害x2、移动速度x1.5。&r&8纯粹的属性强化&r"
-			]
-			icon: "hexerei:blood_bottle"
-			id: "392AD6D4B50AECF7"
-			rewards: [{
-				auto: "enabled"
-				icon: "hexerei:blood_bottle"
-				id: "7BE0466B7FD9ECF4"
-				ignore_reward_blocking: true
-				remove: true
-				stage: "curse_monster_ability_bonus"
-				title: "拔除:血源恶咒"
-				type: "gamestage"
-			}]
-			shape: "hexagon"
-			subtitle: "血源恶咒极大的强化了怪物的能力"
-			tasks: [{
-				consume_items: true
-				id: "325C88F9535A31FF"
-				item: "kubejs:god_consciousness"
-				match_nbt: false
-				title: "任意神意碎片"
-				type: "item"
-			}]
-			title: "回忆诅咒:血源恶咒"
-			x: 1.75d
-			y: -0.5d
-		}
-		{
-			dependencies: ["22A8C953424C8FD9"]
-			description: [
-				"通过完成神意挑战，获得任意类型的&4神意碎片&r，即可解除疲倦恶咒。"
-				""
-				"&7具体效果：永续挖掘疲劳Ⅱ&r"
-			]
-			icon: "minecraft:pufferfish"
-			id: "476F46AA31957457"
-			rewards: [{
-				auto: "enabled"
-				icon: "minecraft:pufferfish_bucket"
-				id: "1CC75E0C5C6CF1C6"
-				ignore_reward_blocking: true
-				remove: true
-				stage: "curse_mining_fatigue"
-				title: "拔除:疲倦恶咒"
-				type: "gamestage"
-			}]
-			shape: "hexagon"
-			subtitle: "疲倦恶咒使得你无时无刻被疲劳所影响"
-			tasks: [{
-				consume_items: true
-				id: "33E92295A8E87CBE"
-				item: "kubejs:god_consciousness"
-				title: "任意神意碎片"
-				type: "item"
-			}]
-			title: "回忆诅咒:疲倦恶咒"
-			x: 3.75d
-			y: -2.5d
 		}
 		{
 			dependencies: ["2EBB4C697D81D42A"]

@@ -6,15 +6,13 @@ global.toTheLostWorld = (ctx) => {
     /** @type {Internal.ServerPlayer} */
     let player = ctx.entity
 
-    if (player.stages.has('flos_magic_stage_3')) {
-        player.stages.remove('flos_magic_stage_3')
-        player.stages.add('flos_magic_stage_4')
-        player.stages.add('curse_mining_fatigue')
-        player.stages.add('curse_of_fragility')
-        player.stages.add('curse_monster_ability_bonus')
+    // todo 兼容逻辑，下版本删除
+    if (player.stages.has('flos_magic_stage_4')) {
+        player.stages.remove('flos_magic_stage_4')
+        player.stages.add('flos_magic_stage_3')
     }
 
-    if (!player.stages.has('flos_magic_stage_4')) return
+    if (!player.stages.has('flos_magic_stage_3')) return
 
     if (ctx.level.getDimension() == 'kubejs:lost_memory') {
         Utils.server.scheduleInTicks(20 * 1, (callback) => {

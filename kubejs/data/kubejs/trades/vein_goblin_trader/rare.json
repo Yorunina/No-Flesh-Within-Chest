@@ -1,0 +1,41 @@
+{
+    "replace": false,
+    "trades": [
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "kubejs:the_third_eye",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 64
+            },
+            "max_trades": 2
+        },
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "kubejs:redstone_furnace",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 32
+            },
+            "max_trades": 4
+        },
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "kubejs:blaze_pressurizer",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 32
+            },
+            "max_trades": 4
+        }
+    ]
+}

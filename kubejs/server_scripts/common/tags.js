@@ -8,7 +8,7 @@ ServerEvents.tags('worldgen/structure', event => {
 ServerEvents.tags('item', event => {
   event.add('kubejs:rain_ritual', ['minecraft:apple', 'minecraft:golden_apple', 'minecraft:enchanted_golden_apple', 'create:honeyed_apple'])
 
-  event.add('kubejs:magnificent_focus', ['kubejs:lucky_cookie'])
+  event.add('kubejs:magnificent_focus', ['minecraft:nether_star'])
   event.add('kubejs:candy_focus', ['kubejs:candy_bag'])
   event.add('irons_spellbooks:school_focus', ['minecraft:nether_star', 'kubejs:candy_bag'])
 

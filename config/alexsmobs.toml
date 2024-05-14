@@ -27,7 +27,7 @@
 	#Whether bone serpents are neutral or hostile.
 	neutralBoneSerpents = false
 	#Whether mimicubes spawns should be restricted solely to the end city structure or to whatever biome is specified in their respective biome config.
-	mimicubeSpawnInEndCity = true
+	mimicubeSpawnInEndCity = false
 	#Whether mimicream can be used to duplicate items.
 	mimicreamRepair = false
 	#Blacklist for items that mimicream cannot make a copy of. Ex: "minecraft:stone_sword", "alexsmobs:blood_sprayer"
@@ -251,7 +251,7 @@
 		mooseSpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		mimicubeSpawnWeight = 40
+		mimicubeSpawnWeight = 0
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		mimicubeSpawnRolls = 0
