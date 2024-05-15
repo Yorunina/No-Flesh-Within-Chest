@@ -250,7 +250,7 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:mockery': function (event, organ, data) {
         let player = event.source.player
         let luck = player.getLuck()
-        if (luck <= 0) return
+        if (luck <= 0) luck = 0
         let random = Math.random() * Math.min(1 + luck / 50, 3)
         event.amount = event.amount * random
     },
@@ -260,7 +260,7 @@ const organPlayerDamageOnlyStrategies = {
         if (luck <= 0) return
         if (Math.random() > Math.min(luck * 0.005, 0.25)) return
         event.amount = event.amount * (1 + Math.min(luck * 0.06, 3))
-        player.potionEffects.add('goety:stunned', 20 * Math.min(luck * 0.1, 5), 0)
+        player.potionEffects.add('goety:stunned', 20, 0)
     },
     'kubejs:mace': function (event, organ, data) {
         let player = event.source.player
@@ -289,9 +289,8 @@ const organPlayerDamageOnlyStrategies = {
         if (player.hasItemInSlot('mainhand') || player.hasItemInSlot('offhand')) return
         let criticalPunchCount = player.persistentData.getInt(criticalPunch)
         // 概率增加重拳计数器
-        if (Math.random() < 0.2) {
-            criticalPunchCount = criticalPunchCount + 1
-        }
+        criticalPunchCount = criticalPunchCount + 1
+
         if (criticalPunchCount >= criticalPunchMaxCount) {
             let amplifier = 1.5 + (criticalPunchCount - criticalPunchMaxCount) * 0.05
             event.amount = event.amount * amplifier
@@ -308,11 +307,11 @@ const organPlayerDamageOnlyStrategies = {
                 harmEffectNum = harmEffectNum + 1
             }
         })
-        event.amount = event.amount * (1 + effectNum * 0.1)
+        event.amount = event.amount * (1 + harmEffectNum * 0.1)
     },
     'kubejs:golden_lucky_cookie_organ': function (event, organ, data) {
         let target = event.entity
-        if (!target.isPlayer()) return
+        // if (!target.isPlayer()) return
         let player = event.source.player
         let amplifier = Math.floor(player.getLuck() * 0.2) - 1
         target.potionEffects.add('minecraft:luck', 20 * 120, Math.max(amplifier, 0))

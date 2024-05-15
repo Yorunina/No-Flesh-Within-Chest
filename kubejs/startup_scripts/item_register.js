@@ -99,7 +99,7 @@ StartupEvents.registry('item', event => {
         })
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
-            entity.attack(10);
+            entity.attack(5);
             entity.potionEffects.add('irons_spellbooks:instant_mana', 1, 2)
             entity.addItemCooldown(itemstack, 20 * 15)
             return itemstack;
@@ -266,7 +266,7 @@ StartupEvents.registry('item', event => {
         .useDuration(itemStack => 20)
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
-            entity.runCommandSilent(`/lichdom revoke ${entity.name.getString()}`)
+            entity.server.runCommandSilent(`/lichdom revoke ${entity.name.getString()}`)
             return;
         })
 
@@ -304,7 +304,7 @@ StartupEvents.registry('item', event => {
             return itemstack
         })
 
-    event.create('safe_chest_opener').texture('kubejs:item/safe_chest_opener')
+    event.create('advanced_chest_opener').texture('kubejs:item/advanced_chest_opener')
         .maxStackSize(1)
 
     event.create('random_delivery_agreement').texture('kubejs:item/random_delivery_agreement')

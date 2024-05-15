@@ -89,7 +89,7 @@ ItemEvents.tooltip((tooltip) => {
         text.add(lineNum++, [Text.gold('血液样本信息如下：')])
 
         item.nbt.organSocres.getAllKeys().forEach(key => {
-            text.add(lineNum++, [LEADING_SYMBOL, Text.yellow(global.SCORE_MAP[key]), Text.white(' : '), Text.white(item.nbt.organSocres[key])])
+            text.add(lineNum++, [LEADING_SYMBOL, Text.yellow(global.SCORE_MAP[key]), Text.white(' : '), Text.white(item.nbt.organSocres[key].toFixed(2))])
         })
     })
 });

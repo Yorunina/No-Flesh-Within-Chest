@@ -27,7 +27,7 @@ ItemEvents.rightClicked('kubejs:unbreakable_core', event => {
         return
     }
     let enchantlevel = unbreakone.getEnchantmentLevel('minecraft:unbreaking')
-    if (enchantlevel < 12) {
+    if (enchantlevel < 8) {
         player.tell('不满足耐久要求！')
         return
     }
@@ -84,13 +84,24 @@ ItemEvents.rightClicked('kubejs:mysterious_trinket', event => {
     event.player.give(randomGet(trinketList))
 })
 
-ItemEvents.rightClicked('kubejs:safe_chest_opener', event => {
+ItemEvents.rightClicked('kubejs:advanced_chest_opener', event => {
     let player = event.player
-    let ray = player.rayTrace(5, true)
+    let teleOper = event.item.hasEnchantment('kubejs:tele_operation', 1)
+    let dist = 5
+    if (teleOper) {
+        dist = dist + 5
+    }
+    let ray = player.rayTrace(dist, false)
+    let target = player
+    let selfTag = true
+    let safeOper = event.item.hasEnchantment('kubejs:safe_operation', 1)
+    if (ray.entity && ray.entity.isAlive()) {
+        selfTag = false
+        target = ray.entity
+    } else if (safeOper) {
+        return
+    }
     
-    if (!ray.entity || !ray.entity.isLiving()) return
-
-    let target = ray.entity
     if (target.type == 'iceandfire:fire_dragon'
         || target.type == 'iceandfire:ice_dragon'
         || target.type == 'iceandfire:lightning_dragon') {
@@ -101,8 +112,29 @@ ItemEvents.rightClicked('kubejs:safe_chest_opener', event => {
             return
         }
     }
-    if ($CCItems.CHEST_OPENER.isPresent()) {
-        $CCItems.CHEST_OPENER.get().openChestCavity(player, target, false)
-        player.swing()
+
+    let painlessOper = event.item.hasEnchantment('kubejs:painless_operation', 1)
+    let creativeOper = event.item.hasEnchantment('kubejs:creative_operation', 1)
+
+
+    let invName = target.getDisplayName().getString() + "'s "
+    let optional = $ChestCavityEntity.of(target)
+    if (optional.isPresent()) {
+        let chestCavityEntity = optional.get()
+        let cc = chestCavityEntity.getChestCavityInstance()
+        if (cc.getChestCavityType().isOpenable(cc) || creativeOper || selfTag) {
+            if (!cc.getOrganScore($CCOrganScores.EASE_OF_ACCESS) > 0 && !painlessOper) {
+                target.attack(DamageSource.GENERIC, 4)
+            }
+            if (target.isAlive()) {
+                cc.ccBeingOpened = cc
+                let inv = $ChestCavityUtil.openChestCavity(cc)
+                player.getChestCavityInstance().ccBeingOpened = cc
+                player.openMenu(new $SimpleMenuProvider((i, playerInventory) => {
+                    return new $ChestCavityScreenHandler(i, playerInventory, inv)
+                }, Text.translatable(invName + "Chest Cavity")))
+            }
+        }
     }
+
 })

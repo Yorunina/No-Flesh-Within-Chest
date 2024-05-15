@@ -121,9 +121,9 @@ const organPlayerKeyPressedOnlyStrategies = {
         if (typeMap.has('kubejs:resource')) {
             value = typeMap.get('kubejs:resource').length
         }
-        let consume = 30 + 20 * value
+        let consume = 30 + 10 * value
         if (count > consume) {
-            player.potionEffects.add('minecraft:speed', 20 * (value + 2), Math.min(8, Math.floor(value * 0.5)))
+            player.potionEffects.add('minecraft:speed', 20 * (value + 5), Math.min(8, Math.floor(value * 0.5)))
             updateResourceCount(player, count - consume)
             player.addItemCooldown('kubejs:jet_propeller', 20 * Math.max(15, 95 - value * 5))
         }
@@ -137,7 +137,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         else {
             player.giveExperiencePoints(Math.floor(player.getMaxHealth() - 10))
         }
-        player.addItemCooldown('kubejs:wither_and_fall', 20 * 150)
+        player.addItemCooldown('kubejs:wither_and_fall', 20 * 90)
     },
     'kubejs:excited_appendix': function (event, organ) {
         let player = event.player
@@ -161,7 +161,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         player.potionEffects.active.forEach(ctx => {
             if (ctx.effect.CC_IsHarmful()) {
                 harmfulEffects.push(ctx)
-            } else {
+            } else if ((ctx.effect.CC_IsBeneficial())) {
                 beneficialEffects.push(ctx)
             }
         })

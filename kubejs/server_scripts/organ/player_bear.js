@@ -78,10 +78,10 @@ const organPlayerBearOnlyStrategies = {
     },
     'kubejs:sarcasm': function (event, organ, data) {
         let player = event.entity
-        let luckval = player.attributes.getValue('minecraft:generic.luck')
-        if (luckval <= 0) return
-        let randomval = Math.random() * Math.max(3 - luckval / 50, 1)
-        event.amount = event.amount * randomval
+        let luck = player.attributes.getValue('minecraft:generic.luck')
+        if (luck <= 0) luck = 0
+        let random = Math.random() * Math.max(3 - luck / 50, 1)
+        event.amount = event.amount * random
     },
     'kubejs:cursed_soul': function (event, organ, data) {
         let player = event.entity
@@ -97,8 +97,8 @@ const organPlayerBearOnlyStrategies = {
                 }
             })
         })
-        if (event.source.getType() == 'mob_attack' || event.source.isProjectile()) {
-            event.amount = event.amount * Math.max(0.5, (1 - curseType * 0.01 - allCurseLevel * 0.02))
+        if (event.source.getType() == 'mob' || event.source.isProjectile()) {
+            event.amount = event.amount * Math.max(0.5, (1 - curseType * 0.02 - allCurseLevel * 0.01))
         }
         else {
             event.amount = event.amount * (1 + curseType * 0.1 + allCurseLevel * 0.1)
@@ -106,12 +106,15 @@ const organPlayerBearOnlyStrategies = {
     },
     'kubejs:weird_paperman': function (event, organ, data) {
         let player = event.entity
+        if (player.nbt?.ForgeCaps['goety:lichdom']?.lichdom == 1) return
         let oldAirSupply = player.getAirSupply()
+        player.tell(event.amount * 50)
         if (oldAirSupply > 0) {
             let curAirSupply = Math.max(oldAirSupply - event.amount * 50, 0)
             let curAmount = Math.max(event.amount - oldAirSupply / 50, 0)
             player.setAirSupply(curAirSupply)
             event.amount = curAmount
+            player.tell(curAirSupply)
             return
         }
     },

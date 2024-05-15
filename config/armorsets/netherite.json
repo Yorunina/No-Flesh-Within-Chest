@@ -2,7 +2,10 @@
   "armorSetName": "netherite",
   "performanceMode": true,
   "head": {
-    "itemKey": "minecraft:netherite_helmet"
+    "itemKey": "minecraft:netherite_helmet",
+    "mixAndMatch": [
+      "cataclysm:monstrous_helm"
+    ]
   },
   "chest": {
     "itemKey": "minecraft:netherite_chestplate",

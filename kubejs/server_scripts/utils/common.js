@@ -1,4 +1,8 @@
 const $ChestCavityUtil = Java.loadClass("net.tigereye.chestcavity.util.ChestCavityUtil")
+const $ChestCavityEntity = Java.loadClass("net.tigereye.chestcavity.interfaces.ChestCavityEntity")
+const $CCOrganScores = Java.loadClass("net.tigereye.chestcavity.registration.CCOrganScores")
+const $SimpleMenuProvider = Java.loadClass('net.minecraft.world.SimpleMenuProvider')
+const $ChestCavityScreenHandler = Java.loadClass("net.tigereye.chestcavity.ui.ChestCavityScreenHandler")
 const $CCItems = Java.loadClass("net.tigereye.chestcavity.registration.CCItems")
 const $StructurePlaceSettings = Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings")
 

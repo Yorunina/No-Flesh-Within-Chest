@@ -861,10 +861,9 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:melty_blood')
-        .addScore('health', -1.25)
         .addScore('strength', 1.5)
-        .addScore('speed', 1.75)
-        .addScore('nerves', -2.25)
+        .addScore('speed', 1.0)
+        .addScore('nerves', -1.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.melty_blood.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.melty_blood.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.melty_blood.3" })])

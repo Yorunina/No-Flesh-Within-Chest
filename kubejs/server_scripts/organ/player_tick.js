@@ -42,7 +42,7 @@ const organPlayerTickStrategies = {
         }
         let player = event.player
         let criticalPunchCount = player.persistentData.getInt(criticalPunch)
-        if (criticalPunchCount >= criticalPunchMaxCount) return
+        if (criticalPunchCount >= 50) return
         player.persistentData.putInt(criticalPunch, criticalPunchCount + 1)
     },
     'kubejs:egg_of_straddler': function (event, organ) {
@@ -55,6 +55,7 @@ const organPlayerTickStrategies = {
         let targetEntity = null
 
         let stradpoleEntity = event.level.createEntity('alexsmobs:stradpole')
+        
         stradpoleEntity.setPosition(player.x, player.y + 1, player.z)
 
         let area = new AABB.of(player.x - radius, player.y - radius, player.z - radius, player.x + radius, player.y + radius, player.z + radius)
@@ -74,6 +75,9 @@ const organPlayerTickStrategies = {
         let amplifier = distance * (0.9 + 0.6 * Math.random()) * 0.05
         stradpoleEntity.addMotion(amplifier * (targetEntity.x - player.x), amplifier * (targetEntity.y - player.y), amplifier * (targetEntity.z - player.z))
         stradpoleEntity.spawn()
+        event.server.scheduleInTicks(20 * 30, ctx => {
+            stradpoleEntity.kill()
+        })
     },
 };
 
@@ -176,7 +180,7 @@ const organPlayerTickOnlyStrategies = {
             tumor.nbt.organData.put(attriName, attriValue)
         }
         instance.inventory.setItem(randomIndex, tumor)
-        player.potionEffects.add('minecraft:hunger', 5, 4)
+        player.potionEffects.add('minecraft:hunger', 5 * 20, 4)
         global.initChestCavityIntoMap(player, false)
         if (player.persistentData.contains(organActive) &&
             player.persistentData.getInt(organActive) == 1) {
@@ -185,8 +189,8 @@ const organPlayerTickOnlyStrategies = {
     },
     'kubejs:is_rabbit': function (event, organ) {
         let player = event.player
-        if (player.age % 60000 != 0) return
-        $SEHelper.setRestPeriod(player, 90000)
+        if (player.age % 1200 != 0) return
+        $SEHelper.setRestPeriod(player, 4800)
     },
     'kubejs:revolution_bell': function (event, organ) {
         let player = event.player

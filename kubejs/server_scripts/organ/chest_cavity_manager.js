@@ -38,9 +38,9 @@ PlayerEvents.loggedOut((event) => {
 
 // 只有当玩家手持开胸器并打开gui界面的时候才触发初始化效果
 PlayerEvents.inventoryClosed((event) => {
-    let player = event.player;
-    if (player.mainHandItem != 'chestcavity:chest_opener' && player.offHandItem != 'chestcavity:chest_opener') {
-        return;
+    let player = event.player
+    if (!player.mainHandItem.hasTag('kubejs:chest_opener') && !player.offHandItem.hasTag('kubejs:chest_opener')) {
+        return
     }
     global.initChestCavityIntoMap(player, true)
     let itemMap = getPlayerChestCavityItemMap(player)

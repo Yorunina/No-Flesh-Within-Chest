@@ -1,0 +1,14 @@
+
+[general]
+	enabled = true
+	#BEST - The best suitable fullscreen mode for the current operating system.
+	#BORDERLESS - A borderless fullscreen which sets the width and height of the window to the monitor's video mode and removing window borders.
+	#NATIVE - A native fullscreen which changes the monitor's window mode in order to apply the fullscreen. Focus loss behaviour can be manually configured using the 'focusLoss' option.
+	#Allowed Values: BEST, BORDERLESS, NATIVE
+	fullscreenMode = "BEST"
+	#DO_NOTHING - Doesn't do anything when focus on a fullscreen window is lost, the window may be always on top, depending on the operating system.
+	#MINIMIZE - Minimizes (iconify) the window when focus on a fullscreen window is lost, this is the default Minecraft behaviour.
+	#SWITCH_TO_WINDOWED - Switches to a windowed mode and leaves the fullscreen when focus on a fullscreen window is lost.
+	#Allowed Values: DO_NOTHING, MINIMIZE, SWITCH_TO_WINDOWED
+	focusLoss = "MINIMIZE"
+
