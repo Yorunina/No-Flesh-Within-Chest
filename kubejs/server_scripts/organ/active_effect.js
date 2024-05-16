@@ -103,11 +103,7 @@ function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
 const organActiveStrategies = {
     'kubejs:rose_quartz_heart': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player)
-        let itemMap = getPlayerChestCavityItemMap(player)
         let amplifier = 0
-        if (itemMap.has('kubejs:rose_quartz_dialyzer') && typeMap.has('kubejs:machine')) {
-            amplifier = amplifier + typeMap.get('kubejs:machine').length
-        }
         if (typeMap.has('kubejs:rose')) {
             amplifier = amplifier + typeMap.get('kubejs:rose').length
         }
@@ -116,11 +112,7 @@ const organActiveStrategies = {
     },
     'kubejs:rose_quartz_muscle': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player)
-        let itemMap = getPlayerChestCavityItemMap(player)
         let amplifier = 0
-        if (itemMap.has('kubejs:rose_quartz_dialyzer') && typeMap.has('kubejs:machine')) {
-            amplifier = amplifier + typeMap.get('kubejs:machine').length
-        }
         if (typeMap.has('kubejs:rose')) {
             amplifier = amplifier + typeMap.get('kubejs:rose').length
         }
@@ -129,15 +121,11 @@ const organActiveStrategies = {
     },
     'kubejs:rose_quartz_liver': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player)
-        let itemMap = getPlayerChestCavityItemMap(player)
         let amplifier = 0
-        if (itemMap.has('kubejs:rose_quartz_dialyzer') && typeMap.has('kubejs:machine')) {
-            amplifier = amplifier + typeMap.get('kubejs:machine').length
-        }
         if (typeMap.has('kubejs:rose')) {
             amplifier = amplifier + typeMap.get('kubejs:rose').length
         }
-        let value = amplifier * 25
+        let value = amplifier * 20
         attributeMapValueAddition(attributeMap, global.MAX_MANA, value)
     },
     'kubejs:revolution_cable': function (player, organ, attributeMap) {
@@ -433,12 +421,59 @@ const organActiveOnlyStrategies = {
         }
     },
     'kubejs:prismarine_crown': function (player, organ, attributeMap) {
-        let playerChestInstance = player.getChestCavityInstance()
-        playerChestInstance.organScores.forEach((key, value) => {
-            if (value < 0) {
-                playerChestInstance.organScores.put(key, new $Float(1))
+        let magicCapacity = 30
+        let typeMap = getPlayerChestCavityTypeMap(player)
+        let maxLen = 0
+        let whiteTypeMap = {'kubejs:organ': true}
+        // 取最多的一类器官
+        typeMap.forEach((value, key) => {
+            if (whiteTypeMap[key]) {
+                return
+            }
+            if (value.length > maxLen) {
+                maxLen = value.length
             }
         })
+        magicCapacity = magicCapacity - maxLen
+        let playerChestInstance = player.getChestCavityInstance()
+        let negScoreKeyList = []
+        let negSum = 0
+        playerChestInstance.organScores.forEach((key, value) => {
+            if (value < 0) {
+                negScoreKeyList.push(key)
+                negSum = negSum + value
+            }
+        })
+        let avgScoreValue = Math.min((negSum + magicCapacity) / negScoreKeyList.length, 1)
+        negScoreKeyList.forEach((key) => {
+            playerChestInstance.organScores.put(key, new $Float(avgScoreValue))
+        })
+    },
+    'kubejs:rose_quartz_dialyzer': function (player, organ, attributeMap) {
+        let chestInventory = player.getChestCavityInstance().inventory.tags
+        let chestInventoryTypeMap = getPlayerChestCavityTypeMap(player)
+        chestInventoryTypeMap.delete('kubejs:rose')
+        for (let i = 0; i < chestInventory.length; i++) {
+            let organ = chestInventory[i];
+            let itemId = String(organ.getString('id'))
+            let tagList = Item.of(itemId).getTags().toArray()
+            for (let i = 0; i < tagList.length; i++) {
+                let tag = tagList[i].location()
+                if (tag != 'kubejs:rose' && tag != 'kubejs:machine') {
+                    continue
+                }
+                tag = 'kubejs:rose'
+                if (chestInventoryTypeMap.has(tag)) {
+                    let itemList = chestInventoryTypeMap.get(tag)
+                    itemList.push(organ)
+                    chestInventoryTypeMap.set(tag, itemList)
+                } else {
+                    chestInventoryTypeMap.set(tag, [organ])
+                }
+            }
+        }
+        let uuid = String(player.getUuid())
+        playerChestCavityTypeMap.set(uuid, chestInventoryTypeMap)
     },
     'kubejs:fish_in_chest': function (player, organ, attributeMap) {
         let typeMap = getPlayerChestCavityTypeMap(player)

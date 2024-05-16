@@ -28,6 +28,8 @@
 			mossySkeletonServantTexture = true
 			#If Sunken Skeleton Servants have custom textures, Default: true
 			sunkenSkeletonServantTexture = true
+			#If Necromancer Servants have custom textures, Default: true
+			necromancerServantTexture = true
 
 		[Textures."Summoned Mobs"."Wraith Servants"]
 			#If Wraith Servants have custom textures, Default: true
@@ -80,6 +82,10 @@
 	#Maximum size Slime and Magma Cube Servants can obtain through Slime/Magma Block, Default: 4
 	#Range: 1 ~ 127
 	maxSlimeSize = 4
+	#Whether creating a Redstone Monstrosity causes the mold to change blocks, Default: true
+	redstoneMonstrosityMold = true
+	#Whether Redstone Monstrosity breaks leaves if mob griefing is enabled, Default: true
+	redstoneMonstrosityLeafBreak = true
 
 	[Servants."Undead Servants"]
 		#Whether Undead Servants can teleport to Players, Default: false

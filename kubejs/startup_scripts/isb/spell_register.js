@@ -11,6 +11,18 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setFinishSound('entity.lightning_bolt.thunder')
         .onCast(ctx => global.toTheLostWorld(ctx))
 
+    event.create('earth_without_earth')
+        .setCastTime(20 * 15)
+        .setCooldownSeconds(20 * 120)
+        .setBaseManaCost(2000)
+        .setCastType('long')
+        .setSchool('kubejs:magnificent')
+        .setMinRarity('legendary')
+        .setMaxLevel(1)
+        .setFinishSound('entity.lightning_bolt.thunder')
+        .canBeCraftedBy(() => false)
+        .onCast(ctx => global.earthWithoutEarth(ctx))
+
     event.create('endless_dream')
         .setCastTime(20)
         .setCooldownSeconds(40)

@@ -228,5 +228,5 @@ ServerEvents.recipes(event => {
         ['', 'minecraft:stick', ''],
         ['', 'minecraft:stick', '']])
 
-    event.shapeless('kubejs:advanced_chest_opener', ['chestcavity:chest_opener', '#forge:dyes/cyan'])
+    event.shapeless('kubejs:advanced_chest_opener', ['#forge:dyes/cyan', 'chestcavity:chest_opener', '#forge:dyes/cyan'])
 })

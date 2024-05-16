@@ -6,7 +6,17 @@
 
 ########################################################################################################################
 ###                                                                                                                   ##
+###                                                                                                                   ##
+###                                                                                                                   ##
+###                                                                                                                   ##
+###                                                                                                                   ##
+###                                                                                                                   ##
 ###   ATTENTION: These are client configs. For gameplay settings, go to the SERVER CONFIGS (in the world save file)   ##
+###                                                                                                                   ##
+###                                                                                                                   ##
+###                                                                                                                   ##
+###                                                                                                                   ##
+###                                                                                                                   ##
 ###                                                                                                                   ##
 ########################################################################################################################
 #
@@ -43,4 +53,7 @@
 	#By default, both fireballs are replaced with an enhanced model used by fire spells.
 	replaceGhastFireballs = true
 	replaceBlazeFireballs = true
+
+[Music]
+	enableBossMusic = true
 

@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "trades": [
+    {
+        "type": "goblintraders:basic",
+        "offer_item": {
+            "item": "minecraft:enchanted_book",
+            "nbt": "{StoredEnchantments:[{id:\"kubejs:creative_operation\",lvl:1s}]}",
+            "count": 1
+        },
+        "payment_item": {
+            "item": "witherstormmod:withered_nether_star",
+            "count": 1
+        },
+        "max_trades": 1
+    }
+  ]
+}

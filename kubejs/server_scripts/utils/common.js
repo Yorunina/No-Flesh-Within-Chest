@@ -5,6 +5,7 @@ const $SimpleMenuProvider = Java.loadClass('net.minecraft.world.SimpleMenuProvid
 const $ChestCavityScreenHandler = Java.loadClass("net.tigereye.chestcavity.ui.ChestCavityScreenHandler")
 const $CCItems = Java.loadClass("net.tigereye.chestcavity.registration.CCItems")
 const $StructurePlaceSettings = Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings")
+const $OreDataCapability = Java.loadClass('com.tom.createores.OreDataCapability')
 
 /**
 * 获取某个半径内的实体

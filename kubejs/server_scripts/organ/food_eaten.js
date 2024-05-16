@@ -67,9 +67,7 @@ const organFoodEatenOnlyStrategies = {
             player.potionEffects.add('minecraft:health_boost', 15 * 20, 2)
             player.potionEffects.add('minecraft:resistance', 90 * 20, 1)
             player.tell(Text.gray({ "translate": "kubejs.msg.tamagotchi.2" }))
-            if (Math.random() < 0.2) {
-                updateWarpCount(player, player.persistentData.getInt(warpCount) - 1)
-            }
+            updateWarpCount(player, player.persistentData.getInt(warpCount) - 1)
         }
     },
     'kubejs:ring_for_home': function (event, organ) {

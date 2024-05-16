@@ -42,7 +42,19 @@
 			  "tag": "{StoredEnchantments:[{id:\"minecraft:fire_protection\",lvl:4}]}"
 			}
 		  ]
-		},
+		},        
+		{
+			"type": "item",
+			"name": "minecraft:enchanted_book",
+			"entryName": "dimdungeons:ebook_painless_operation",
+			"weight": 2,
+			"functions": [
+			  {
+				"function": "set_nbt",
+				"tag": "{StoredEnchantments:[{id:\"kubejs:painless_operation\",lvl:1}]}"
+			  }
+			]
+		  },
         {
 		  "type": "item",
 		  "name": "minecraft:enchanted_book",

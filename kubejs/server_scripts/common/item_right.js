@@ -86,22 +86,23 @@ ItemEvents.rightClicked('kubejs:mysterious_trinket', event => {
 
 ItemEvents.rightClicked('kubejs:advanced_chest_opener', event => {
     let player = event.player
-    let teleOper = event.item.hasEnchantment('kubejs:tele_operation', 1)
-    let dist = 5
+    let teleOper = event.item.enchantments.containsKey('kubejs:tele_operation')
+    let dist = 3
     if (teleOper) {
-        dist = dist + 5
+        let teleOperLevel = event.item.getEnchantmentLevel('kubejs:tele_operation')
+        dist = Math.max(dist + teleOperLevel * 3, 18)
     }
     let ray = player.rayTrace(dist, false)
     let target = player
     let selfTag = true
-    let safeOper = event.item.hasEnchantment('kubejs:safe_operation', 1)
-    if (ray.entity && ray.entity.isAlive()) {
+    let safeOper = event.item.enchantments.containsKey('kubejs:safe_operation')
+    if (ray.entity && ray.entity.isAlive() && !ray.entity.isPlayer()) {
         selfTag = false
         target = ray.entity
     } else if (safeOper) {
         return
     }
-    
+
     if (target.type == 'iceandfire:fire_dragon'
         || target.type == 'iceandfire:ice_dragon'
         || target.type == 'iceandfire:lightning_dragon') {
@@ -113,9 +114,8 @@ ItemEvents.rightClicked('kubejs:advanced_chest_opener', event => {
         }
     }
 
-    let painlessOper = event.item.hasEnchantment('kubejs:painless_operation', 1)
-    let creativeOper = event.item.hasEnchantment('kubejs:creative_operation', 1)
-
+    let painlessOper = event.item.enchantments.containsKey('kubejs:painless_operation')
+    let creativeOper = event.item.enchantments.containsKey('kubejs:creative_operation')
 
     let invName = target.getDisplayName().getString() + "'s "
     let optional = $ChestCavityEntity.of(target)
@@ -136,5 +136,4 @@ ItemEvents.rightClicked('kubejs:advanced_chest_opener', event => {
             }
         }
     }
-
 })

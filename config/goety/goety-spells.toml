@@ -425,7 +425,7 @@
 		flightChargeUp = 0
 
 	[Spells."Cushion Spell"]
-		#Cushion Spell Cost, Default: 16
+		#Cushion Spell Cost, Default: 8
 		#Range: > 0
 		cushionCost = 16
 		#Time to cast Cushion Spell, Default: 0
@@ -826,6 +826,47 @@
 		#How much base damage Electro Orbs deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		electroOrbDamage = 4.0
+
+	[Spells."Rotation Spell"]
+		#Rotation Spell Cost, Default: 2
+		#Range: > 0
+		rotationCost = 2
+		#Rotation Spell Cooldown, Default: 0
+		#Range: > 0
+		rotationCoolDown = 0
+
+	[Spells."Scatter Spell"]
+		#Scatter Spell Cost, Default: 16
+		#Range: > 0
+		scatterCost = 16
+		#Time to cast Scatter Spell, Default: 0
+		#Range: 0 ~ 72000
+		scatterTime = 0
+		#Scatter Spell Cooldown, Default: 240
+		#Range: > 0
+		scatterCoolDown = 240
+		#How much base damage Scatter Mines deal when directly hitting a mob, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		scatterMinesDamage = 6.0
+
+	[Spells."Whirlwind Spell"]
+		#Whirlwind Spell Cost, Default: 4
+		#Range: > 0
+		whirlwindCost = 4
+		#How many ticks the Whirlwind Spell much charge before casting, Default: 0
+		#Range: > 0
+		whirlwindChargeUp = 0
+
+	[Spells."Cyclone Spell"]
+		#Cyclone Spell Cost, Default: 16
+		#Range: > 0
+		cycloneCost = 16
+		#Time to cast Cyclone Spell, Default: 0
+		#Range: 0 ~ 72000
+		cycloneTime = 0
+		#Cyclone Spell Cooldown, Default: 100
+		#Range: > 0
+		cycloneCoolDown = 100
 
 ["Servant Limits"]
 	#Number of Skeleton/Vanguard/Necromancer Servants that can exist around the player without instantly dying, Default: 32

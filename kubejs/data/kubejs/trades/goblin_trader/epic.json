@@ -84,6 +84,19 @@
                 "count": 32
             },
             "max_trades": 4
+        },
+        {
+            "type": "goblintraders:basic",
+            "offer_item": {
+                "item": "minecraft:enchanted_book",
+                "nbt": "{StoredEnchantments:[{id:\"kubejs:painless_operation\",lvl:1s}]}",
+                "count": 1
+            },
+            "payment_item": {
+                "item": "minecraft:emerald",
+                "count": 32
+            },
+            "max_trades": 2
         }
     ]
 }

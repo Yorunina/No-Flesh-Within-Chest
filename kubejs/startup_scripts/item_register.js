@@ -322,5 +322,10 @@ StartupEvents.registry('item', event => {
             entity.give(wares)
             return itemstack
         })
+
+    event.create('command_spell_book', 'irons_spells_js:spellbook')
+        .setMaxSpellSlots(15)
+        .addDefaultSpell('kubejs:earth_without_earth', 1)
+        .addDefaultAttribute('irons_spellbooks:spell_power', 'commandBookSpellPower', 0.5, 'addition')
 })
 

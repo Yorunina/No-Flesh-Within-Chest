@@ -1,13 +1,38 @@
 
-[PickupNotifier]
-	#Allowed Values: COMMON, WITHOUT_BACKGROUND
-	Style = "COMMON"
-	#Range: 0 ~ 20
-	Lifetime = 5
-	#Range: 0 ~ 1080
-	Offset = 0
-	#If false, the item's rarity color will be used
-	UseCustomColor = false
-	#Allowed Values: BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE, OBFUSCATED, BOLD, STRIKETHROUGH, UNDERLINE, ITALIC, RESET
-	CustomColor = "WHITE"
+[Display]
+	#Notification display style
+	#Allowed Values: DEFAULT, FLAT, NO_BACKGROUND
+	Style = "DEFAULT"
+	#Notification display position
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	Anchor = "BOTTOM_RIGHT"
+	#Vertical offset (in pixels) relative to the anchor
+	#Range: 0 ~ 10000
+	Offset = 3
+	#Distance (in pixels) between notifications
+	#Range: 0 ~ 10
+	Separation = 3
+	#Duration (in seconds) of notifications display
+	#Range: 1.0 ~ 20.0
+	Duration = 6.0
+	#Maximum amount of notifications displayed simultaneously
+	#Range: 1 ~ 64
+	DisplayCapacity = 12
+	#Maximum amount of queued notifications
+	#Range: 0 ~ 256
+	QueueCapacity = 24
+	#Display the total amount of the same items in your inventory
+	CountTotal = true
+
+[Filtering]
+	#Make all items blacklisted by default
+	BlacklistedByDefault = false
+	#1.19.3+ ONLY / Creative tabs whose items will be ignored
+	TabsBlacklist = ["mod_id:some_tab_id", "mod_id:other_tab_id"]
+	#Items that will be ignored
+	ItemsBlacklist = ["mod_id:some_item_id", "mod_id:other_item_id"]
+	#1.19.3+ ONLY / Creative tabs whose items will be shown (even if they are blacklisted)
+	TabsWhitelist = []
+	#Items that will be shown (even if they are blacklisted)
+	ItemsWhitelist = []
 

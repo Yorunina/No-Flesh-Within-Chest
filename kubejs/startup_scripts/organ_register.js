@@ -62,7 +62,7 @@ StartupEvents.registry('item', event => {
 
     // 玫瑰石英肌束
     registerOrgan(new Organ('kubejs:rose_quartz_muscle')
-        .addScore('strength', 1.75)
+        .addScore('strength', 1.5)
         .addScore('nerves', -0.25)
         .addScore('hydroallergenic', -0.25)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_muscle.1" })])
@@ -75,7 +75,7 @@ StartupEvents.registry('item', event => {
 
     // 玫瑰石英心脏
     registerOrgan(new Organ('kubejs:rose_quartz_heart')
-        .addScore('health', 1.75)
+        .addScore('health', 1.5)
         .addScore('nerves', -0.25)
         .addScore('hydroallergenic', -0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_heart.1" })])
@@ -89,7 +89,7 @@ StartupEvents.registry('item', event => {
 
     // 玫瑰石英肝脏
     registerOrgan(new Organ('kubejs:rose_quartz_liver')
-        .addScore('detoxification', 1.75)
+        .addScore('detoxification', 1.5)
         .addScore('nerves', -0.25)
         .addScore('hydroallergenic', -0.25)
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.rose_quartz_liver.1" })])
@@ -102,7 +102,7 @@ StartupEvents.registry('item', event => {
 
     //玫瑰石英透析器
     registerOrgan(new Organ('kubejs:rose_quartz_dialyzer')
-        .addScore('filtration', 1.75)
+        .addScore('filtration', 1.5)
         .addScore('nerves', -0.25)
         .addScore('hydroallergenic', -0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.rose_quartz_dialyzer.1" })])
@@ -113,7 +113,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:kidney')
         .tag('kubejs:machine')
         .tag('itemborders:gold')
-        .tag('kubejs:rose');
+        .tag('kubejs:rose')
+        .tag('kubejs:active_only');
 
     // 革命机械系列
     // 熔炉核心
@@ -672,6 +673,8 @@ StartupEvents.registry('item', event => {
         .addScore('luck', 1.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.prismarine_crown.1" })])
         .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.prismarine_crown.2" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.prismarine_crown.3" })])
+        .addTextLines('ctrl', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.prismarine_crown.4" })])
         .build())
         .texture('kubejs:item/organs/legends/prismarine_crown')
         .tag('kubejs:legends')
