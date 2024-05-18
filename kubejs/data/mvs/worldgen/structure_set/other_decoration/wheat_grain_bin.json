@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:other_decoration/wheat_grain_bin",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 266483984,
+
+    "spacing": 52,
+
+    "separation": 28
+  }
+}

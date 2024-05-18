@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:sunzi_gate",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 436368521,
+
+    "spacing": 108,
+
+    "separation": 40
+  }
+}

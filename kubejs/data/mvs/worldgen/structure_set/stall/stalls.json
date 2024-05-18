@@ -1,0 +1,30 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:stall/red_stall",
+      "weight": 1
+    },
+    {
+      "structure": "mvs:stall/pink_stall",
+      "weight": 1
+    },
+    {
+      "structure": "mvs:stall/orange_stall",
+      "weight": 1
+    },
+    {
+      "structure": "mvs:stall/blue_stall",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 298643200,
+
+    "spacing": 64,
+
+    "separation": 32
+  }
+}

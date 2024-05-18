@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:other_decoration/horse_campsite",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 299909574,
+
+    "spacing": 38,
+
+    "separation": 34
+  }
+}

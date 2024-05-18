@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:log_pile/spruce_log_pile",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 389653201,
+
+    "spacing": 52,
+
+    "separation": 32
+  }
+}

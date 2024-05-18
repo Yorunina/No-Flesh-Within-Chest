@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:carts/large_cart_1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 214120245,
+
+    "spacing": 102,
+
+    "separation": 40
+  }
+}

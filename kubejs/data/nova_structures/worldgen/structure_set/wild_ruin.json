@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "nova_structures:wild_ruin",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 10
+    },
+		"spacing": 32,
+		"separation": 16,
+		"salt": 75489234,
+		"type": "minecraft:random_spread"
+	}
+}

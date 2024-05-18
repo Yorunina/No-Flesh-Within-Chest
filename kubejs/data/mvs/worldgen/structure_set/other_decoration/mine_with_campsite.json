@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:other_decoration/mine_with_campsite",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 638820199,
+
+    "spacing": 96,
+
+    "separation": 31
+  }
+}

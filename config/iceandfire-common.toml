@@ -6,10 +6,10 @@
 		"Generate Dragon Skeletons" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Skeleton Chance" = 300
+		"Generate Dragon Skeleton Chance" = 600
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Cave Chance" = 180
+		"Generate Dragon Cave Chance" = 150
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
 		"Generate Dragon Roost Chance" = 360
@@ -72,10 +72,10 @@
 		"Dragon Attack Damage(Fire breath)" = 12.0
 		#Damage dealt from a successful ice breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 		#Range: 0.0 ~ 10000.0
-		"Dragon Attack Damage(Ice breath)" = 18.0
+		"Dragon Attack Damage(Ice breath)" = 15.0
 		#Damage dealt from a successful lightning breath attack. Attack Damage is scaled to by age, so a stage 5 dragon will deal 5x as much as this number
 		#Range: 0.0 ~ 10000.0
-		"Dragon Attack Damage(Lightning breath)" = 23.0
+		"Dragon Attack Damage(Lightning breath)" = 18.0
 		#Change this to slow down or speed up dragon or amphithere flight.
 		#Range: 0.0 ~ 2.0
 		"Dragon Flight Speed Modifier" = 1.0
@@ -107,10 +107,10 @@
 		"Explosive Dragon Breath" = false
 		#How many blocks away can dragons spot potential prey. Note that increasing this could cause lag.
 		#Range: 1 ~ 10000
-		"Dragon Target Search Length" = 128
+		"Dragon Target Search Length" = 64
 		#How many blocks away can dragons wander from their defined "home" position.
 		#Range: 1 ~ 10000
-		"Dragon Wander From Home Distance" = 40
+		"Dragon Wander From Home Distance" = 32
 		#Every interval of this number in ticks, dragon hunger decreases.
 		#Range: 1 ~ 10000
 		"Dragon Hunger Tick Rate" = 3000

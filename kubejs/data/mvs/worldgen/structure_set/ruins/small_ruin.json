@@ -1,0 +1,23 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:ruins/small_ruin",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 690254035,
+
+    "super_exclusion_zone": {
+      "chunk_count": 1,
+      "other_set": "#mvs:common_avoid"
+    },
+
+    "spacing": 76,
+
+    "separation": 36
+  }
+}

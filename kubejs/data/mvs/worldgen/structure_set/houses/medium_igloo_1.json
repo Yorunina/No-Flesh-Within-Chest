@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:houses/medium_igloo_1",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 746536475,
+
+    "spacing": 54,
+
+    "separation": 42
+  }
+}

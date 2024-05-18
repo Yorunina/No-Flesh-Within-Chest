@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "graveyard:small_savanna_grave",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 709787761,
+    "spacing": 48,
+    "separation": 24
+  }
+}

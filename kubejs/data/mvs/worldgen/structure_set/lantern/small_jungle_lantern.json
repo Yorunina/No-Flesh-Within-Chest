@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:lantern/small_jungle_lantern",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 100938475,
+
+    "spacing": 48,
+
+    "separation": 24
+  }
+}

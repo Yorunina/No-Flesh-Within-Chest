@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:nature/large_mushroom",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 569543265,
+
+    "spacing": 98,
+
+    "separation": 36
+  }
+}

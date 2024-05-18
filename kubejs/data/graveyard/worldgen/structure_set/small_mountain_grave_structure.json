@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "graveyard:small_mountain_grave",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 725689810,
+    "spacing": 48,
+    "separation": 24
+  }
+}

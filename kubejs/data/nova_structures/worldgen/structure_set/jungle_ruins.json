@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "nova_structures:jungle_ruins",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 10
+    },
+		"spacing": 80,
+		"separation": 12,
+		"salt": 239021,
+		"type": "minecraft:random_spread"
+	}
+}

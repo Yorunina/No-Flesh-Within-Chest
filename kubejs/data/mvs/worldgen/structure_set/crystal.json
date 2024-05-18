@@ -1,0 +1,20 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:crystal",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 469982354,
+
+    "spacing": 112,
+
+    "separation": 62,
+
+    "min_distance_from_world_origin": 800
+  }
+}

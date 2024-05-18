@@ -51,6 +51,32 @@
           }
         }
       ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "villager",
+      "Name": "村庄交易所",
+      "OwnerName": "村民",
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "kubejs:lucky_block",
+            "Count": 1
+          },
+          "DisplayName": "幸运方块",
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_gold",
+                "Amount": 5
+              }
+            ],
+            "Chain": "main",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
     }
   ],
   "Auctions": []

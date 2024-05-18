@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "graveyard:lich_prison",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 258195719,
+    "spacing": 90,
+    "separation": 60
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:small_ship",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 465693214,
+
+    "spacing": 68,
+
+    "separation": 56
+  }
+}

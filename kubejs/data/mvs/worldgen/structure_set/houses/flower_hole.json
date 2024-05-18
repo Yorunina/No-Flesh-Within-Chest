@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:houses/flower_hole",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 865741203,
+
+    "spacing": 92,
+
+    "separation": 56
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:dead_tree/birch",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 100928374,
+
+    "spacing": 56,
+
+    "separation": 48
+  }
+}

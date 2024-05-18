@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:nature/dark_oak_tree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 109878734,
+
+    "spacing": 36,
+
+    "separation": 26
+  }
+}

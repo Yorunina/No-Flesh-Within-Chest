@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:log_pile/birch_log_pile",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 464423251,
+
+    "spacing": 52,
+
+    "separation": 32
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "nova_structures:badlands_miner_outpost",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 10
+		},
+		"spacing": 90,
+		"separation": 12,
+		"salt": 783,
+		"type": "minecraft:random_spread"
+	}
+}

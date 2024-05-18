@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "nova_structures:ruin_town",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 10
+    },
+		"spacing": 60,
+		"separation": 12,
+		"salt": 39043,
+		"type": "minecraft:random_spread"
+	}
+}

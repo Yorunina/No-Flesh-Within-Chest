@@ -1,0 +1,20 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:other_decoration/stone_bee",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 713668754,
+
+    "spacing": 54,
+
+    "separation": 38,
+
+    "min_distance_from_world_origin": 250
+  }
+}

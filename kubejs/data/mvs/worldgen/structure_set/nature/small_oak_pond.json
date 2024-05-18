@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:nature/small_oak_pond",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 663549872,
+
+    "spacing": 70,
+
+    "separation": 24
+  }
+}

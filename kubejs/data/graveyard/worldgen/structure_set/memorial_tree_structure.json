@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "graveyard:memorial_tree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 529239621,
+    "spacing": 42,
+    "separation": 21
+  }
+}

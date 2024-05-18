@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:other_decoration/haystack",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 287746539,
+
+    "spacing": 32,
+
+    "separation": 14
+  }
+}

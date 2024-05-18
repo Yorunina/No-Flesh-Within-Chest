@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:well/small_tower_well",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 466628370,
+
+    "spacing": 46,
+
+    "separation": 20
+  }
+}

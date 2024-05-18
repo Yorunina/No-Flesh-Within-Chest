@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "graveyard:haunted_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 451235912,
+    "spacing": 48,
+    "separation": 18
+  }
+}

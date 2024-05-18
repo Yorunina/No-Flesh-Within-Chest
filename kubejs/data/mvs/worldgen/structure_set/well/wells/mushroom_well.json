@@ -1,0 +1,18 @@
+{
+  "structures":[
+    {
+      "structure": "mvs:well/wells/mushroom_well",
+      "weight": 1
+    }
+  ],
+  "placement": {
+
+    "type": "mvs:advanced_random_spread",
+
+    "salt": 299254325,
+
+    "spacing": 84,
+
+    "separation": 18
+  }
+}

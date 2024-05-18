@@ -65,7 +65,8 @@ global.ATTRIBUTE_MAP = {
     'kubejsLuck': global.LUCK,
     'kubejsLuckMultiBase': global.LUCK_MULTI_BASE,
     'kubejsAttackDamageMultiBase': global.ATTACK_UP_MULTI_BASE,
-    'kubejsArmorMultiBase': global.ARMOR_MULTI_BASE
+    'kubejsArmorMultiBase': global.ARMOR_MULTI_BASE,
+    'kubejsCandySpellPower': global.CANDY_SPELL_POWER,
 }
 
 global.TYPE_MAP = {

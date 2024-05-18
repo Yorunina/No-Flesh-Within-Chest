@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "graveyard:crypt",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 893183913,
+    "spacing": 48,
+    "separation": 24
+  }
+}

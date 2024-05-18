@@ -1,0 +1,18 @@
+{
+	"structures": [
+		{
+			"structure": "nova_structures:stray_fort",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 10
+    },
+		"spacing": 119,
+		"separation": 20,
+		"salt": 5004938900,
+		"type": "minecraft:random_spread"
+	}
+}
