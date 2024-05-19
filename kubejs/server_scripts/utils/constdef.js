@@ -193,3 +193,25 @@ const coeVeinList = [
     'minecraft:extracting_quicksilver',
     'minecraft:extracting_lava_overworld'
 ]
+
+const treasureDetectorTableMap = {
+    'minecraft:overworld': {
+        0: "minecraft:chests/stronghold/base",
+        10: "minecraft:chests/abandoned_mineshaft",
+        20: "minecraft:chests/desert_pyramid",
+        30: "minecraft:chests/buried_treasure",
+        40: "minecraft:chests/ancient_city",
+        50: "dungeons_arise:chests/aviary/aviary_treasure",
+        '-1': "dungeons_arise:chests/foundry/foundry_treasure"
+    },
+    'minecraft:the_nether': {
+        0: "minecraft:chests/nether_fortress/fort_inside_generic",
+        15: "minecraft:chests/bastion_bridge",
+        25: "minecraft:chests/bastion_treasure",
+        '-1': "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_treasure"
+    },
+    'minecraft:the_end': {
+        0: "minecraft:chests/end_city_treasure",
+        '-1': "minecraft:chests/end_city_treasure"
+    }
+}

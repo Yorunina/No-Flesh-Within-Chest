@@ -55,7 +55,7 @@ const organPlayerTickStrategies = {
         let targetEntity = null
 
         let stradpoleEntity = event.level.createEntity('alexsmobs:stradpole')
-        
+
         stradpoleEntity.setPosition(player.x, player.y + 1, player.z)
 
         let area = new AABB.of(player.x - radius, player.y - radius, player.z - radius, player.x + radius, player.y + radius, player.z + radius)

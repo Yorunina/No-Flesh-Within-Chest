@@ -6,6 +6,11 @@ const $ChestCavityScreenHandler = Java.loadClass("net.tigereye.chestcavity.ui.Ch
 const $CCItems = Java.loadClass("net.tigereye.chestcavity.registration.CCItems")
 const $StructurePlaceSettings = Java.loadClass("net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings")
 const $OreDataCapability = Java.loadClass('com.tom.createores.OreDataCapability')
+const $MapItemSavedData = Java.loadClass('net.minecraft.world.level.saveddata.maps.MapItemSavedData')
+const $MapItem = Java.loadClass('net.minecraft.world.item.MapItem')
+const $MapDecorationType = Java.loadClass('net.minecraft.world.level.saveddata.maps.MapDecoration$Type')
+const $ModBlocks = Java.loadClass('noobanidus.mods.lootr.init.ModBlocks')
+const $RandomizableContainerBlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity')
 
 /**
 * 获取某个半径内的实体

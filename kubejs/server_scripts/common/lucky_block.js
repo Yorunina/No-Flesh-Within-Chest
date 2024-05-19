@@ -81,6 +81,17 @@ BlockEvents.broken('kubejs:infinity_lucky_block', event => {
     event.cancel()
 })
 
+
+BlockEvents.broken('kubejs:organ_lucky_block', event => {
+    let player = event.entity
+    if (!player.isPlayer()) return
+    if (player.isShiftKeyDown()) {
+        event.block.popItemFromFace('kubejs:organ_lucky_block', player.facing.opposite)
+        return
+    }
+    event.block.popItemFromFace(getLuckyBlockRandomLoot(), player.facing.opposite)
+})
+
 /**
  * @param {Internal.BlockBrokenEventJS} event 
  * @param {String} structName 

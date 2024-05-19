@@ -1761,6 +1761,18 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:key_pressed')
         .tag('itemborders:gold');
 
+    registerOrgan(new Organ('kubejs:treasure_detector')
+        .addScore('strength', 1.75)
+        .addScore('speed', 1.0)
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.treasure_detector.1" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.treasure_detector.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.treasure_detector.3" })])
+        .build())
+        .texture('kubejs:item/organs/alex/treasure_detector')
+        .tag('kubejs:key_pressed')
+        .tag('itemborders:gold');
+
+
     registerOrgan(new Organ('kubejs:warped_heart').addScore('health', 2.0).addScore('nerves', -0.75).build()).texture('kubejs:item/organs/alex/warped_heart').tag('kubejs:heart');
 
     registerOrgan(new Organ('kubejs:warped_spine').addScore('nerves', 1.25).build()).texture('kubejs:item/organs/alex/warped_spine').tag('kubejs:spine');

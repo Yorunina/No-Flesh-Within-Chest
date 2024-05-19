@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "kubejs:block/organ_lucky_block"
+    }
+}

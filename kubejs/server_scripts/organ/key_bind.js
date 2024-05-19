@@ -61,6 +61,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         updateWarpCount(event.player, count + 5)
     },
     'kubejs:warden_core': function (event, organ) {
+        /**@type {Internal.ServerPlayer} */
         let player = event.player
         let ray = player.rayTrace(24, true)
         let distance = ray.distance
@@ -74,7 +75,7 @@ const organPlayerKeyPressedOnlyStrategies = {
             counter++
         }
         if (ray.block) {
-            distance = player.position().distanceTo(ray.block.pos)
+            distance = player.getPosition(1.0).distanceTo(ray.block.pos)
         }
         for (let i = 0; i < distance; i++) {
             let vec3 = vec3Nor.scale(i).add(player.getEyePosition())
@@ -309,4 +310,56 @@ const organPlayerKeyPressedOnlyStrategies = {
             player.addItemCooldown('kubejs:potoo_beak', 20 * 1)
         }
     },
-};
+    'kubejs:treasure_detector': function (event, organ) {
+        let level = event.level
+        let player = event.player
+        let randomPosBlock = player.block.offset((0.5 - Math.random()) * 1000, (128 - Math.random() * 32) - player.block.y, (0.5 - Math.random()) * 1000)
+
+
+        let luck = Math.max(player.getLuck(), 0)
+        let table = 'minecraft:chests/stronghold/base'
+        let dimLootMap = treasureDetectorTableMap[String(level.dimension)]
+
+        if (dimLootMap) {
+            let keys = Object.keys(dimLootMap)
+            keys.forEach((a) => parseInt(a))
+            keys = keys.sort((a, b) => {
+                return a - b
+            })
+            for (let i = 1; i < keys.length; i++) {
+                if (i + 1 >= keys.length) {
+                    table = dimLootMap['-1']
+                    break
+                }
+                if (luck < parseInt(keys[i + 1]) && luck >= parseInt(keys[i])) {
+                    table = dimLootMap[keys[i]]
+                    break
+                }
+            }
+        } else {
+            player.tell({ "translate": "kubejs.msg.treasure_detector.1" })
+            return
+        }
+        
+        for (let i = 0; i < 16; i++) {
+            if (!randomPosBlock.blockState.isAir()) {
+                if (!randomPosBlock.offset(0, -1, 0).blockState.isAir()) {
+                    randomPosBlock = randomPosBlock.offset(0, -4, 0)
+                    break
+                }
+            }
+            randomPosBlock = randomPosBlock.offset(0, -4, 0)
+        }
+        let pos = randomPosBlock.getPos()
+        player.tell(table)
+        let mapItem = $MapItem.create(level, pos.x, pos.z, 1, true, true)
+        $MapItem.renderBiomePreviewMap(level, mapItem)
+        $MapItemSavedData.addTargetDecoration(mapItem, pos, "+", $MapDecorationType.RED_X)
+        mapItem = mapItem.withName({ "translate": "map.kubejs.lost_treasure" })
+        let placementState = $ModBlocks.CHEST.get().defaultBlockState();
+        level.setBlock(pos, placementState, 2)
+        $RandomizableContainerBlockEntity.setLootTable(level, level.getRandom(), pos, table)
+        player.give(mapItem)
+        player.addItemCooldown('kubejs:treasure_detector', 20 * 10)
+    },
+}

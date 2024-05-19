@@ -68,8 +68,8 @@
           "Price": {
             "Value": [
               {
-                "Coin": "lightmanscurrency:coin_gold",
-                "Amount": 5
+                "Coin": "lightmanscurrency:coin_emerald",
+                "Amount": 3
               }
             ],
             "Chain": "main",
