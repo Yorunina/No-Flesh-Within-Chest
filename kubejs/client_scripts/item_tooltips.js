@@ -69,6 +69,7 @@ ItemEvents.tooltip((tooltip) => {
     })
     tooltip.addAdvanced('kubejs:unholy_grail', (item, advanced, text) => {
         text.add(Text.red({ "translate": "kubejs.tooltips.unholy_grail.1" }));
+        text.add(Text.darkGray({ "translate": "kubejs.tooltips.unholy_grail.2" }));
     })
     tooltip.addAdvanced('kubejs:dark_stardust_fragment', (item, advanced, text) => {
         text.add(Text.gray({ "translate": "kubejs.tooltips.dark_stardust_fragment.1" }));
@@ -162,6 +163,10 @@ ItemEvents.tooltip((tooltip) => {
 
     tooltip.addAdvanced('art_of_forging:potent_mixture', (item, advanced, text) => {
         text.add(Text.gray({ "translate": "kubejs.tooltips.potent_mixture.1" }));
+    })
+
+    tooltip.addAdvanced('witherstormmod:withered_nether_star', (item, advanced, text) => {
+        text.add(Text.darkGray({ "translate": "kubejs.tooltips.withered_nether_star.1" }));
     })
 
     tooltip.addAdvanced('kubejs:organ_charm', (item, advanced, text) => {

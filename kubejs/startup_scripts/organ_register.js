@@ -1761,14 +1761,14 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:key_pressed')
         .tag('itemborders:gold');
 
-    registerOrgan(new Organ('kubejs:treasure_detector')
+    registerOrgan(new Organ('kubejs:treasure_detector_feather')
         .addScore('strength', 1.75)
         .addScore('speed', 1.0)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.treasure_detector.1" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.treasure_detector.2" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.treasure_detector.3" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.treasure_detector_feather.2" })])
+        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.treasure_detector_feather.3" })])
         .build())
-        .texture('kubejs:item/organs/alex/treasure_detector')
+        .texture('kubejs:item/organs/alex/treasure_detector_feather')
         .tag('kubejs:key_pressed')
         .tag('itemborders:gold');
 

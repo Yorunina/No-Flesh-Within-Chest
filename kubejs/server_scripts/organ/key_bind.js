@@ -310,7 +310,7 @@ const organPlayerKeyPressedOnlyStrategies = {
             player.addItemCooldown('kubejs:potoo_beak', 20 * 1)
         }
     },
-    'kubejs:treasure_detector': function (event, organ) {
+    'kubejs:treasure_detector_feather': function (event, organ) {
         let level = event.level
         let player = event.player
         let randomPosBlock = player.block.offset((0.5 - Math.random()) * 1000, (128 - Math.random() * 32) - player.block.y, (0.5 - Math.random()) * 1000)
@@ -337,7 +337,7 @@ const organPlayerKeyPressedOnlyStrategies = {
                 }
             }
         } else {
-            player.tell({ "translate": "kubejs.msg.treasure_detector.1" })
+            player.tell({ "translate": "kubejs.msg.treasure_detector_feather.1" })
             return
         }
         
@@ -360,6 +360,6 @@ const organPlayerKeyPressedOnlyStrategies = {
         level.setBlock(pos, placementState, 2)
         $RandomizableContainerBlockEntity.setLootTable(level, level.getRandom(), pos, table)
         player.give(mapItem)
-        player.addItemCooldown('kubejs:treasure_detector', 20 * 10)
+        player.addItemCooldown('kubejs:treasure_detector_feather', 20 * 10)
     },
 }

@@ -11,7 +11,7 @@
 		traderSpawnChance = 12
 		#The amount of ticks before the trader will spawn again
 		#Range: > 0
-		traderSpawnDelay = 24000
+		traderSpawnDelay = 12000
 		#The minimum level the trader can spawn
 		#Range: -64 ~ 320
 		traderMinSpawnLevel = -64

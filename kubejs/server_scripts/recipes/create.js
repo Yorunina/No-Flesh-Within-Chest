@@ -151,29 +151,6 @@ ServerEvents.recipes(event => {
 		F: '#minecraft:anvil'
 	})
 
-	event.recipes.create.mechanical_crafting('kubejs:blaze_pressurizer', [
-		' DDDD',
-		'DDBBB',
-		'DCBAB',
-		'DDBBB',
-		' DDDD'
-	], {
-		A: Item.of('goety:iron_hide_focus', '{"Soul Cost":24}'),
-		B: 'graveyard:dark_iron_ingot',
-		C: Item.of('goety:bulwark_focus', '{"Soul Cost":100}'),
-		D: 'create:iron_sheet',
-	})
-	
-	event.recipes.create.sequenced_assembly([
-		Item.of('kubejs:candy_heart')
-	], 'kubejs:heart_template', [
-		event.recipes.createDeploying('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', 'irons_spellbooks:arcane_essence']),
-		event.recipes.createCutting('kubejs:incomplete_heart_template', 'kubejs:incomplete_heart_template'),
-		event.recipes.createDeploying('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', 'biomancy:living_flesh']),
-		event.recipes.createDeploying('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', '#forge:dyes/pink']),
-		event.recipes.create.filling('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', Fluid.of('kubejs:syrup').withAmount(500)])
-	]).transitionalItem('kubejs:incomplete_heart_template').loops(5)
-
 	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:revolution_relay')
 	], 'create:iron_sheet', [

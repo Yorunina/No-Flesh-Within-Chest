@@ -1,0 +1,6 @@
+{
+  "chestcavity": "kubejs:types/birds/seagull.json",
+  "entities": [
+    "alexsmobs:seagull"
+  ]
+}
