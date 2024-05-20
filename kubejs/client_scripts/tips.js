@@ -12,5 +12,9 @@ ClientEvents.highPriorityAssets(event => {
     registeTips('burning_heart')
     registeTips('candy_organ')
     registeTips('ceremonial_knife')
-})
 
+    // 玩家词条注册
+    for (let i = 0; i < 190; i++) {
+        registeTips(`tip_${i + 1}`)
+    }
+})

@@ -262,6 +262,12 @@
 					item: "simplehats:hatbag_epic"
 					type: "item"
 				}
+				{
+					count: 16
+					id: "34407868E643C286"
+					item: "kubejs:lucky_block"
+					type: "item"
+				}
 			]
 			shape: "hexagon"
 			subtitle: "守护我们的未来"

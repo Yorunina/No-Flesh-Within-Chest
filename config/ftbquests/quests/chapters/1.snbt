@@ -968,7 +968,11 @@
 		}
 		{
 			dependencies: ["3E9DD0B78886A183"]
-			description: ["无论是在使用Tom的存储时，还是日常建造，都可能遇到单位存储空间中存储容量不够的问题。使用&2更高级的金属桶&r，可以让你获得更多的存储选择，同时也非常适合用于堆叠构造你的Tom储存仓库。"]
+			description: [
+				"无论是在使用Tom的存储时，还是日常建造，都可能遇到单位存储空间中存储容量不够的问题。使用&2更高级的金属桶&r，可以让你获得更多的存储选择，同时也非常适合用于堆叠构造你的Tom储存仓库。"
+				""
+				"相比于使用大量的箱子或者精妙背包，使用桶能够极大的节约客户端对该区域的渲染消耗，增加你的游戏帧数！"
+			]
 			hide_dependency_lines: true
 			id: "51AE35F0C335ACA6"
 			rewards: [
@@ -1033,7 +1037,7 @@
 				type: "item"
 			}]
 			title: "收割血肉"
-			x: 8.75d
+			x: 8.0d
 			y: 3.25d
 		}
 		{
@@ -1063,7 +1067,7 @@
 				type: "item"
 			}]
 			title: "建设血肉温床"
-			x: 10.5d
+			x: 10.0d
 			y: 3.25d
 		}
 		{
@@ -1087,7 +1091,7 @@
 				type: "item"
 			}]
 			title: "血肉材料获取"
-			x: 10.5d
+			x: 10.0d
 			y: 5.0d
 		}
 		{
@@ -1118,7 +1122,7 @@
 				type: "item"
 			}]
 			title: "模板器官"
-			x: 12.25d
+			x: 11.75d
 			y: 5.0d
 		}
 		{
@@ -1149,7 +1153,7 @@
 				type: "item"
 			}]
 			title: "重锻身心"
-			x: 12.25d
+			x: 11.75d
 			y: 3.25d
 		}
 		{
@@ -1162,15 +1166,22 @@
 				"将该饰品装备在饰品栏，完成对应任务后，承装在器官容器中的器官便会发生变化，此时通过合成取出后，就可以获得更高级的器官。"
 			]
 			id: "52C54E42818F03EB"
-			rewards: [{
-				id: "1C2DCD63D9AEE80B"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
+			rewards: [
+				{
+					id: "1C2DCD63D9AEE80B"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_gold"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6FA172389A90DAFF"
+					item: "kubejs:organ_lucky_block"
+					type: "item"
+				}
+			]
 			subtitle: "装载未来"
 			tasks: [{
 				id: "0108F3FD5779C18B"
@@ -1178,7 +1189,7 @@
 				type: "item"
 			}]
 			title: "器官容器"
-			x: 12.25d
+			x: 11.75d
 			y: 6.75d
 		}
 		{
@@ -1206,7 +1217,7 @@
 				type: "item"
 			}]
 			title: "酿造传奇之物"
-			x: 14.0d
+			x: 13.5d
 			y: 3.25d
 		}
 		{
@@ -1243,7 +1254,7 @@
 				type: "item"
 			}]
 			title: "活体注射"
-			x: 14.0d
+			x: 13.5d
 			y: 5.0d
 		}
 		{
@@ -1276,7 +1287,7 @@
 				type: "item"
 			}]
 			title: "贪婪之爪"
-			x: 14.0d
+			x: 13.5d
 			y: 6.75d
 		}
 		{
@@ -1332,7 +1343,7 @@
 				type: "checkmark"
 			}]
 			title: "器官抗排异"
-			x: 15.75d
+			x: 15.25d
 			y: 3.25d
 		}
 		{
@@ -1364,7 +1375,7 @@
 				type: "checkmark"
 			}]
 			title: "激活药丸"
-			x: 15.75d
+			x: 15.25d
 			y: 5.0d
 		}
 		{
@@ -1394,29 +1405,36 @@
 				item: "kubejs:long_lasting_pill"
 				type: "item"
 			}]
-			x: 15.75d
+			x: 15.25d
 			y: 6.75d
 		}
 		{
 			dependencies: ["50D70D990312BC70"]
 			description: ["在经过处理后，长效化药物可以被&2完全无害&r——尽管相对于其他的器官来说提供的属性并不多，但其能够提供的方便程度也是其他器官所难以比拟的。"]
 			id: "6E7491F86379BEAC"
-			rewards: [{
-				id: "7A26A00DECB193D1"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
+			rewards: [
+				{
+					id: "7A26A00DECB193D1"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_gold"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "76B51B5446FF76FC"
+					item: "kubejs:organ_lucky_block"
+					type: "item"
+				}
+			]
 			subtitle: "无害药物"
 			tasks: [{
 				id: "3226602CB5D6A05D"
 				item: "kubejs:long_lasting_pill_gold"
 				type: "item"
 			}]
-			x: 15.75d
+			x: 15.25d
 			y: 8.5d
 		}
 		{
@@ -1466,7 +1484,7 @@
 				type: "item"
 			}]
 			title: "更优质的能源"
-			x: 12.25d
+			x: 11.75d
 			y: 1.75d
 		}
 		{
@@ -1491,7 +1509,7 @@
 				type: "checkmark"
 			}]
 			title: "血肉重铸：自由探索"
-			x: 17.5d
+			x: 17.0d
 			y: 3.25d
 		}
 		{
@@ -1502,7 +1520,7 @@
 			description: [
 				"1.我们可以在下图&c红框&r中所指示的位置看到一个物品来自哪一个模组。"
 				"&7－－如图中物品来自模组《Nameless Trinkets》&r"
-				"{image:kubejs:textures/task/jei_1.png width:110 height:47 align:1}"
+				"{image:kubejs:textures/task/jei_1.png width:124 height:47 align:1}"
 				""
 				""
 				"2.如果你想知道一个模组都有什么物品，可以按&eE键&r打开背包，在&e右下角的JEI搜索框&r中输入&e“@+模组名”&r，如&e“@Nameless”&r来搜索上一个图中的模组。&7（一般名字有多个单词的模组只需要打第一个单词）&r"
@@ -2002,25 +2020,38 @@
 		{
 			dependencies: ["50CE3ADF8E4D6426"]
 			description: [
-				"在战斗过程中尝试打开其他生物的胸腔是一个非常危险的工作——尤其是你很有可能会打开你自己的胸腔。"
+				"随着你对改造工程的深入，你会发现，默认的开胸器并不能够完美的满足你的各种需求。"
 				""
-				"使用&6安全开胸器&r，其无法开启自己的胸腔，仅能开启其他生物的胸腔，能够大大降低在战斗中开胸的风险。"
+				"为了应对足够多的场景，你需要制作一个&6先进开胸器&r。它可以承载一些特殊类型的附魔，用以强化其开胸的效果。"
+				""
+				"其附魔包括：&d远程手术&r、&d安全手术&r、&d无痛手术&r和&d创造手术&r四种。它们可以在村民和哥布林交易过程中被发现。"
+				""
+				"其中，创造手术是一种最为特殊的附魔，其允许玩家无视任何条件开胸。因此其交易出现的概率以及价格也最为昂贵。"
 			]
 			hide_dependency_lines: true
-			id: "4C42E21080F0D342"
+			id: "48048A7240EF1042"
 			rewards: [{
-				id: "66F2928AC918DA71"
-				item: "lightmanscurrency:coin_gold"
+				id: "46152F473784CF7D"
+				item: {
+					Count: 1b
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "kubejs:safe_operation"
+							lvl: 1s
+						}]
+					}
+				}
 				type: "item"
 			}]
-			subtitle: "不要打开自己！"
+			subtitle: "一个更优越的方法"
 			tasks: [{
-				id: "0B14DACC892864BD"
-				item: "kubejs:safe_chest_opener"
+				id: "1471A928F8BC3327"
+				item: "kubejs:advanced_chest_opener"
 				type: "item"
 			}]
-			x: 5.0d
-			y: 4.5d
+			x: 4.5d
+			y: 5.0d
 		}
 	]
 	title: "章节1：如常"

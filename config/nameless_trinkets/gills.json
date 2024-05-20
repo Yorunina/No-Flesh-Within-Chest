@@ -3,6 +3,6 @@
     "chokingDamage": 2.0,
     "blindnessWhenChoking": true,
     "airReductionSpeed": 7,
-    "isEnable": true
+    "isEnable": false
   }
 }

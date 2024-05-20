@@ -76,7 +76,9 @@ const organPlayerTickStrategies = {
         stradpoleEntity.addMotion(amplifier * (targetEntity.x - player.x), amplifier * (targetEntity.y - player.y), amplifier * (targetEntity.z - player.z))
         stradpoleEntity.spawn()
         event.server.scheduleInTicks(20 * 30, ctx => {
-            stradpoleEntity.kill()
+            if (stradpoleEntity) {
+                stradpoleEntity.remove('discarded')
+            }
         })
     },
 };

@@ -877,36 +877,6 @@
             "entity": "minecraft:witch"
           },
           {
-            "entity": "minecraft:witch"
-          },
-          {
-            "entity": "minecraft:witch"
-          },
-          {
-            "entity": "minecraft:witch"
-          },
-          {
-            "entity": "minecraft:witch"
-          },
-          {
-            "entity": "minecraft:witch"
-          },
-          {
-            "entity": "goety:warlock"
-          },
-          {
-            "entity": "goety:warlock"
-          },
-          {
-            "entity": "goety:warlock"
-          },
-          {
-            "entity": "goety:warlock"
-          },
-          {
-            "entity": "goety:warlock"
-          },
-          {
             "entity": "goety:warlock"
           },
           {
@@ -1072,21 +1042,6 @@
             "entity": "somebosses:stone_minion"
           },
           {
-            "entity": "somebosses:stone_minion"
-          },
-          {
-            "entity": "somebosses:stone_minion"
-          },
-          {
-            "entity": "somebosses:stone_minion"
-          },
-          {
-            "entity": "somebosses:stone_minion"
-          },
-          {
-            "entity": "somebosses:stone_minion"
-          },
-          {
             "entity": "minecraft:ravager"
           },
           {
@@ -1100,15 +1055,6 @@
           },
           {
             "entity": "minecraft:ravager"
-          },
-          {
-            "entity": "goety:hostile_redstone_golem"
-          },
-          {
-            "entity": "goety:hostile_redstone_golem"
-          },
-          {
-            "entity": "goety:hostile_redstone_golem"
           },
           {
             "entity": "goety:hostile_redstone_golem"
@@ -1156,36 +1102,6 @@
             "entity": "somebosses:merciless_assasin"
           },
           {
-            "entity": "minecraft:vex"
-          },
-          {
-            "entity": "minecraft:vex"
-          },
-          {
-            "entity": "minecraft:vex"
-          },
-          {
-            "entity": "minecraft:vex"
-          },
-          {
-            "entity": "minecraft:vex"
-          },
-          {
-            "entity": "minecraft:vex"
-          },
-          {
-            "entity": "minecraft:vex"
-          },
-          {
-            "entity": "minecraft:vex"
-          },
-          {
-            "entity": "minecraft:vex"
-          },
-          {
-            "entity": "minecraft:vex"
-          },
-          {
             "entity": "goety:tormentor"
           },
           {
@@ -1208,21 +1124,6 @@
           },
           {
             "entity": "goety:tormentor"
-          },
-          {
-            "entity": "goety:irk"
-          },
-          {
-            "entity": "goety:irk"
-          },
-          {
-            "entity": "goety:irk"
-          },
-          {
-            "entity": "goety:irk"
-          },
-          {
-            "entity": "goety:irk"
           },
           {
             "entity": "goety:irk"
@@ -1336,25 +1237,10 @@
             "entity": "minecraft:evoker"
           },
           {
-            "entity": "minecraft:ravager"
-          },
-          {
-            "entity": "minecraft:ravager"
-          },
-          {
             "entity": "minecraft:illusioner"
           },
           {
             "entity": "minecraft:illusioner"
-          },
-          {
-            "entity": "goety:piker"
-          },
-          {
-            "entity": "goety:piker"
-          },
-          {
-            "entity": "goety:piker"
           },
           {
             "entity": "goety:conquillager"
@@ -1382,9 +1268,6 @@
           },
           {
             "entity": "goety:inquillager"
-          },
-          {
-            "entity": "goety:hostile_redstone_golem"
           },
           {
             "entity": "goety:hostile_redstone_golem"
@@ -1437,13 +1320,13 @@
       {
         "type": "gateways:loot_table",
         "loot_table": "minecraft:chests/village",
-        "rolls": 30,
+        "rolls": 15,
         "desc": "村庄战利品"
       },
       {
         "type": "gateways:loot_table",
         "loot_table": "dimdungeons:chests/chestloot_4",
-        "rolls": 25,
+        "rolls": 10,
         "desc": "高级战利品"
       }
     ],

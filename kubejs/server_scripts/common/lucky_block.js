@@ -6,7 +6,6 @@ const LuckyBoxStructList = [
 ]
 
 const LuckyBoxMusicList = [
-    'kubejs:slow_down_song',
     'kubejs:beak_metal',
     'kubejs:beak_mangrove_roots',
 ]

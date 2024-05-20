@@ -281,7 +281,7 @@ const organPlayerDamageOnlyStrategies = {
         if (!isPlayerOnFire(player)) {
             return
         }
-        event.amount = event.amount + player.maxHealth - player.health
+        event.amount = event.amount + (player.maxHealth - player.health) * 2
     },
     'kubejs:tusk': function (event, organ, data) {
         let player = event.source.player
@@ -311,7 +311,7 @@ const organPlayerDamageOnlyStrategies = {
     },
     'kubejs:golden_lucky_cookie_organ': function (event, organ, data) {
         let target = event.entity
-        // if (!target.isPlayer()) return
+        if (!target.isPlayer()) return
         let player = event.source.player
         let amplifier = Math.floor(player.getLuck() * 0.2) - 1
         target.potionEffects.add('minecraft:luck', 20 * 120, Math.max(amplifier, 0))

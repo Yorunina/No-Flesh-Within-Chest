@@ -9,13 +9,19 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'goety:warped_wartful_egg' })
     event.remove({ output: 'gateways:gate_pearl' })
     event.remove({ output: 'cataclysm:meat_shredder' })
-
     event.remove({ output: 'extraarmor:copper_helmet' })
     event.remove({ output: 'extraarmor:copper_chestplate' })
     event.remove({ output: 'extraarmor:copper_leggings' })
     event.remove({ output: 'extraarmor:copper_boots' })
     event.remove({ output: 'extraarmor:blacksmith_hammer' })
     event.remove({ output: 'alexsmobs:transmutation_table' })
+    event.remove({ output: 'weaponmaster:workstation' })
+    event.remove({ input: 'minecraft:milk_bucket', output:'extradelight:whipped_cream'})
+
+    event.shaped('weaponmaster:workstation', [
+        ['minecraft:lectern', 'minecraft:writable_book', 'minecraft:anvil'],
+        ['minecraft:smooth_stone', '#forge:storage_blocks', 'minecraft:smooth_stone'],
+    ])
 
     event.shaped(Item.of('extraarmor:copper_helmet', 1), [
         'LOL',

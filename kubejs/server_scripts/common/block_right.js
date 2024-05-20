@@ -20,6 +20,6 @@ BlockEvents.rightClicked('minecraft:diamond_block', event => {
 
 BlockEvents.rightClicked(event => {
     if (event.item.getMod() == 'somebosses' && event.hand == 'off_hand') {
-        event.item.shrink(1)
+        event.cancel()
     }
 })

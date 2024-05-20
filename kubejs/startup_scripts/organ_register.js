@@ -1764,7 +1764,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:treasure_detector_feather')
         .addScore('strength', 1.75)
         .addScore('speed', 1.0)
-        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.treasure_detector.1" })])
+        .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.treasure_detector_feather.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.treasure_detector_feather.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.treasure_detector_feather.3" })])
         .build())

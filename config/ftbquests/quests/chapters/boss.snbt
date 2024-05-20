@@ -127,7 +127,7 @@
 			y: 22.0d
 		}
 	]
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -385,7 +385,6 @@
 			y: 5.25d
 		}
 		{
-			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
 			icon: "somebosses:burning_volcanic_rock"
 			id: "6BD52270D760EA85"
@@ -395,7 +394,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				entity: "goety:volcano"
+				entity: "somebosses:volcanium"
 				icon: "somebosses:burning_volcanic_rock"
 				id: "4BD74DE255841BC2"
 				type: "kill"
@@ -1375,6 +1374,7 @@
 		}
 		{
 			dependencies: ["06BA15D2F337E2C6"]
+			description: ["作为原版最为强大的生物，监守者据守在古代城市之中，对任何发出噪音的敌人产生巨量的伤害。"]
 			hide_dependency_lines: true
 			icon: "minecraft:sculk_shrieker"
 			id: "2D66B5749F9D7846"
@@ -1383,6 +1383,7 @@
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "曾经最为强大的灵魂"
 			tasks: [{
 				entity: "minecraft:warden"
 				icon: {

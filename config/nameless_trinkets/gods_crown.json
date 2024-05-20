@@ -1,9 +1,9 @@
 {
   "config": {
-    "percentageExtraAttack": 20.0,
-    "percentageExtraSpeed": 20.0,
-    "percentageExtraAttackSpeed": 20.0,
-    "percentageExtraAttackKnockback": 20.0,
+    "percentageExtraAttack": 30.0,
+    "percentageExtraSpeed": 30.0,
+    "percentageExtraAttackSpeed": 30.0,
+    "percentageExtraAttackKnockback": 30.0,
     "percentageExtraMaxHealth": 0,
     "isEnable": true
   }

@@ -199,7 +199,7 @@
 			y: 20.75d
 		}
 	]
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -1223,12 +1223,14 @@
 		}
 		{
 			dependencies: ["235753780EE3782C"]
+			description: ["下界之星碎片的主动能力能够使其指向的凋零风暴生长阶段直接跨越到最后一个阶段。"]
 			id: "41B89386FBDB06AE"
 			rewards: [{
 				id: "6CF03D0FB70139FD"
 				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
+			subtitle: "凋零身体的一部分"
 			tasks: [{
 				id: "516CD9AA8B9190CA"
 				item: {
@@ -2734,8 +2736,6 @@
 				"提供&d结晶&r效果，使得末影水晶也可以为你充能。"
 				""
 				"你可以通过消耗法力值释放&b主动技能——超限：刺骨寒风&r。使用者的&e最大生命值&r越多，其&e超限等级&r越高。"
-				""
-				"如果你是龙，也好。"
 			]
 			id: "5784F57C0810747F"
 			rewards: [{
@@ -2764,8 +2764,6 @@
 				"提供&d结晶&r效果，使得末影水晶也可以为你充能。"
 				""
 				"你可以通过消耗法力值释放&4主动技能——超限：火焰吐息&r。使用者的&e最大生命值&r越多，其&e超限等级&r越高。"
-				""
-				"如果你是龙，也好。"
 			]
 			id: "7AA8D25C679C5531"
 			rewards: [{
@@ -2794,8 +2792,6 @@
 				"提供&d结晶&r效果，使得末影水晶也可以为你充能。"
 				""
 				"你可以通过消耗法力值释放&5主动技能——超限：电刑&r。使用者的&e最大生命值&r越多，其&e超限等级&r越高。"
-				""
-				"如果你是龙，也好。"
 			]
 			id: "51B95DC783E4F9D6"
 			rewards: [{
@@ -2851,7 +2847,7 @@
 		{
 			dependencies: ["575ADA02AEE66047"]
 			description: [
-				"&c龙血器官&r拥有强大的基础属性，由&eT3器官&r在&e龙钢锻炉&r中沐浴任意龙血而来。"
+				"&c龙血器官&r由&e模板器官&r在&e龙钢锻炉&r中沐浴任意龙血而来。"
 				""
 				"其中&c龙血心脏&r会给予你&c主动技能——龙化&r。在龙化状态下，龙类器官会给予你减伤效果，在减伤溢出时会将伤害转化为额外生命。"
 				""
@@ -3043,36 +3039,6 @@
 			y: 26.5d
 		}
 		{
-			dependencies: ["7FF071C02D97C693"]
-			description: [
-				"激活后提高&e30%神圣法术强度&r。"
-				""
-				"攻击&4亡灵生物&r时，有&b20%概率&r&6清除其所有增益效果&r并&6造成1.5倍伤害&r。"
-				""
-				"每次攻击有小概率引发一次&4敌我不分的爆炸&r。"
-				""
-				"&7事实上，总感觉其用途不仅如此……&r"
-			]
-			id: "06FDC4035045E6EE"
-			rewards: [{
-				id: "2492B746604DD290"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			subtitle: "圣·阿提拉高高举起了它"
-			tasks: [{
-				id: "287252EFFD68B80B"
-				item: {
-					Count: 1b
-					id: "kubejs:holy_grenade"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 11.5d
-			y: 14.5d
-		}
-		{
 			dependencies: ["4EDC05BC7B3BB700"]
 			description: [
 				"释放主动技能，给予自身&b一触即发效果&r。"
@@ -3131,7 +3097,7 @@
 			description: [
 				"根据下落的高度提升&e攻击伤害&r，下落高度越高收益越大，最高能达到&e5倍伤害&r。"
 				""
-				"对于只存在于未来的某件武器的致敬。"
+				"如果你已经接触到地面，那么下落高度将会被清零。"
 			]
 			id: "3FAAA0CA520EC4E5"
 			rewards: [{
@@ -3227,7 +3193,7 @@
 		{
 			dependencies: ["10A83C18E396D17E"]
 			description: [
-				"击杀原初肉块有&b5%&r概率掉落。"
+				"扭曲值大于50时，击杀肉块有&b10%&r概率掉落。"
 				""
 				"胸腔内存在&6肿瘤之源&r时，吃下无形肿瘤可以将该无形肿瘤的&b优势属性&r转移到胸腔的随意一枚无形肿瘤上。"
 				""
@@ -3394,7 +3360,7 @@
 			description: [
 				"烈焰高炉在&c烈焰狂战士&r的胸腔中可以获得。"
 				""
-				"若自身处于&6燃烧状态&r，根据自身&4损失的血量&r占最大生命值的比例增加造成的伤害，最多增加&4200%&r。"
+				"若自身处于&6燃烧状态&r，你会额外造成等同于&c已损失生命值&r两倍的额外伤害。"
 			]
 			id: "49CFA9DBC6DCF03E"
 			rewards: [{
@@ -3624,6 +3590,438 @@
 			}]
 			x: -3.75d
 			y: 29.25d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: [
+				"扭曲泡泡通过使用&6气囊&r在器官容器中&5扭曲化&r后获得。"
+				""
+				"携带扭曲泡泡被攻击时，泡泡将会破碎，将你身上的所有&d负面效果&r扩散到一定范围的敌人上。"
+			]
+			id: "3FCCDA897459C2F7"
+			rewards: [{
+				id: "6EAEEA39770E86CE"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它濒临破碎"
+			tasks: [{
+				id: "51FF121FC385B7A1"
+				item: {
+					Count: 1b
+					id: "kubejs:warp_bubble"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 18.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["3910C8340AB4ECE9"]
+			description: [
+				"扭曲鱼缸通过将&6胸中鱼缸&r在器官容器中进行&5扭曲化&r后获得。（即在满足扭曲条件的情况下饮用不洁圣杯）"
+				""
+				"扭曲鱼缸可以在各种&2包含器官数量计算&r的器官中，忽略掉&5禁忌&r类器官的数量。"
+			]
+			id: "4F7841C5C82C20E1"
+			rewards: [{
+				id: "4E2945B56D03792C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它好像是一只章鱼？"
+			tasks: [{
+				id: "205EC3E49949F013"
+				item: {
+					Count: 1b
+					id: "kubejs:fish_in_warp"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 17.5d
+			y: 17.5d
+		}
+		{
+			dependencies: ["10A83C18E396D17E"]
+			description: [
+				"在衣壳体中，由&4恶性经脉&r转化而成。"
+				""
+				"蠕虫神经元每30s会尝试在胸腔中的任意位置产下一枚肿瘤。肿瘤的属性取决于你当前胸腔的&6空白格子数量&r和你当前的&6新陈代谢效率&r。"
+				""
+				"经由蠕虫神经元产生的肿瘤，拥有着更高的词条属性，并且&2没有负健康的负面效果&r。"
+				""
+				"巫妖的身体由于过于空虚，因此无法催生出肿瘤。"
+			]
+			id: "3380E5D6B9B1B98A"
+			rewards: [{
+				id: "09694E633733637C"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它知道你想要什么. . ."
+			tasks: [{
+				id: "155451F5B4F5867A"
+				item: {
+					Count: 1b
+					id: "kubejs:worm_neuron"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 23.5d
+		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			description: [
+				"革命之钟能够在你&c熔火&r状态仅剩5s时，&6自动激活&r胸腔里的革命蒸汽机的效果，将其扭转为心火状态。"
+				""
+				"这个过程&2不需要消耗水瓶&r，但仍旧会引发水瓶/药水进入冷却。"
+			]
+			id: "0E182B80FFCD52F4"
+			rewards: [{
+				id: "2487B546B07C684D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "蹲踞墙角，候钟声敲响"
+			tasks: [{
+				id: "065901BF7B379DDA"
+				item: {
+					Count: 1b
+					id: "kubejs:revolution_bell"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7CFE03E2610EA31B"]
+			description: [
+				"烈焰加压器允许你使用&6强效药剂&r来代替煤炭激活心火/熔火效果。并且，通过这种方式激活的心火/熔火效果具有额外&6+2&r的效果等级。"
+				""
+				"&7强效药剂通过具有纳米融合的Tetra武器击杀爬行者获得。&r"
+			]
+			id: "08F7376BC7085350"
+			rewards: [
+				{
+					id: "3E724A877DE9AF1F"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "78D401D5A87E068F"
+					item: "art_of_forging:potent_mixture"
+					type: "item"
+				}
+			]
+			subtitle: "先进的燃料代表革命的更新动力"
+			tasks: [{
+				id: "4851188C021D92C2"
+				item: {
+					Count: 1b
+					id: "kubejs:blaze_pressurizer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["4EDC05BC7B3BB700"]
+			description: [
+				"胎生百合能够在&c渊灵祭司&r的胸腔内获得。"
+				""
+				"通过按下主动按键，其会暂时性的&2打乱你胸腔内所有属性的分布&r，并且在打乱的期间内，全胸腔属性提高3点。"
+			]
+			id: "5581A7E09D101055"
+			rewards: [{
+				id: "5870AE835BBE9D81"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "漩涡、混沌与生命"
+			tasks: [{
+				id: "1A2AF00C012D784B"
+				item: {
+					Count: 1b
+					id: "kubejs:viviparous_crinoidea"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -2.75d
+			y: 29.25d
+		}
+		{
+			dependencies: ["309791281FE1F06A"]
+			description: [
+				"在&2食用幸运饼干器官&r的时候有2%的概率获得。"
+				""
+				"携带它攻击&6其他玩家&r的时候，会为其赋予等同于你幸运值20%的幸运效果。"
+			]
+			id: "005EF44B85B20755"
+			rewards: [{
+				id: "2DC1743847B106C4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "饼干点点点点点！"
+			tasks: [{
+				id: "13F7AB5E0D1FB66F"
+				item: {
+					Count: 1b
+					id: "kubejs:golden_lucky_cookie_organ"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 0.25d
+			y: 26.0d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: ["鲸肺可以从&6鲸鱼&r的胸腔中获得。激活后，会为你提高1.5倍的肺活量。"]
+			id: "7EDF95C3F9E84326"
+			rewards: [{
+				id: "54F34EBB056A7749"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它大而有力"
+			tasks: [{
+				id: "3B2EF525B56080EA"
+				item: {
+					Count: 1b
+					id: "kubejs:whale_lung"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"跨坐兽的卵可以从&6跨座兽&r的胸腔中获得。"
+				""
+				"携带跨座兽的卵时，每秒有1/20的概率会向周围最近的实体发射无伤害的跨座蝌蚪。蝌蚪在30s后会自动消亡。"
+			]
+			id: "1FC61B8E417DA5D4"
+			rewards: [{
+				id: "58B422A6D3F0A413"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "发射！"
+			tasks: [{
+				id: "6D370B17B78D62FF"
+				item: {
+					Count: 1b
+					id: "kubejs:egg_of_straddler"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"灵魂鹫羽毛能够在&c灵魂鹫&r的胸腔内获得。"
+				""
+				"灵魂鹫羽毛能够根据敌方身上拥有的&c负面效果&r数量，给予你额外的伤害加成。"
+			]
+			id: "28BC24592A1FDE16"
+			rewards: [{
+				id: "6493909A1E7AFD44"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "这是一切灵魂的归宿"
+			tasks: [{
+				id: "6DA6347357987BE9"
+				item: {
+					Count: 1b
+					id: "kubejs:soul_vulture_feather"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 11.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"獠牙能够从&6獠牙兽&r的胸腔中获得。"
+				""
+				"携带它时，使用空手攻击，能够每次积累1&6重拳计数器&r。当计数器达到10时，下一次攻击将会造成&c重拳一击&r并伴随着紫水晶破碎的音效。"
+				""
+				"当计数器超过10时，触发重拳一击时的伤害会根据溢出的计数器数量，得到额外的伤害加成。"
+			]
+			id: "6F48435C9C9E6AF5"
+			rewards: [{
+				id: "38711361A477F9F9"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "牙突猛进"
+			tasks: [{
+				id: "230A542522B4A644"
+				item: {
+					Count: 1b
+					id: "kubejs:tusk"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"螳螂虾拳能够从&6螳螂虾&r的胸腔中获得。"
+				""
+				"携带螳螂虾拳时，每3秒会使玩家获得一个重拳计数器，最高累积50点。"
+			]
+			id: "4097BCA76C47D8F0"
+			rewards: [{
+				id: "2B74C47BE1269311"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "如音速子弹！"
+			tasks: [{
+				id: "1A49C97A72E8DDE8"
+				item: {
+					Count: 1b
+					id: "kubejs:mantis_shrimp_fist"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 13.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"石化胆囊可以从&6岩磙兽&r的胸腔中获得。"
+				""
+				"携带石化胆囊时，你的&5龙化效果&r获得的额外生命值上限会受到你的&6力量属性&r的影响而提高。"
+			]
+			id: "57A39965B3A46AD3"
+			rewards: [{
+				id: "2CB8023BCC8D9EA4"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "从中流出的早就不是胆汁"
+			tasks: [{
+				id: "0F0CB1F1D07124CB"
+				item: {
+					Count: 1b
+					id: "kubejs:fossil_gallbladder"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 14.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"诡异纸人能够从&6轻语灵&r的胸腔中获得。"
+				""
+				"携带诡异纸人的情况下，你受到的攻击会优先使用你的&b气泡值&r（呼吸值）来进行抵消。"
+				""
+				"巫妖无法使用诡异纸人。"
+			]
+			id: "7734BD5D42067408"
+			rewards: [{
+				id: "5FAD84B285D498E3"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "你呼出了成片的血雾"
+			tasks: [{
+				id: "1BA7F094DB4BD1C7"
+				item: {
+					Count: 1b
+					id: "kubejs:weird_paperman"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"宝藏探测羽能够从&6海鸥&r的胸腔中获得。"
+				""
+				"使用主动按键激活，其能够生成一处&6藏宝地&r，并且给予你对应的&6藏宝图&r。藏宝地的奖励品表随着维度和你自身幸运值的影响而变化。"
+				""
+				"藏宝地的距离最远不超过1400m。"
+			]
+			id: "6E09AD98DD379844"
+			rewards: [{
+				id: "6CD8713A545C8D5E"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "海鸥的尾羽总是指向着宝藏"
+			tasks: [{
+				id: "0EF511AF0D215F36"
+				item: {
+					Count: 1b
+					id: "kubejs:treasure_detector_feather"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.5d
+			y: 26.5d
+		}
+		{
+			dependencies: ["07080DC68B62B221"]
+			description: [
+				"林鸱喙能够从&6林鸱&r的胸腔中获得。"
+				""
+				"当你站在不同材质的方块上时，按下主动技能按键，其会播放不同的音效。"
+				""
+				"目前支持的音效种类较少，但允许其他开发者轻松的添加自己的音效。"
+			]
+			id: "609D94FF3722555D"
+			rewards: [{
+				id: "749D8A966FC10A2B"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "它在模仿一些. . .奇怪的叫声？"
+			tasks: [{
+				id: "2906BAD743E453E5"
+				item: {
+					Count: 1b
+					id: "kubejs:potoo_beak"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 17.5d
+			y: 26.5d
 		}
 	]
 	title: "胸腔：器官收集指南"

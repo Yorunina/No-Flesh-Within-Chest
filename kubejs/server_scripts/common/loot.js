@@ -68,6 +68,9 @@ LootJS.modifiers(event => {
     event.addEntityLootModifier('minecraft:witch')
         .addLoot(LootEntry.of('kubejs:magic_spine').when((c) => c.randomChance(0.05)));
 
+    event.addEntityLootModifier('minecraft:rabbit')
+        .addLoot(LootEntry.of('kubejs:is_rabbit').when((c) => c.randomChance(0.02)));
+
     event.addEntityLootModifier(["biomancy:flesh_blob", "biomancy:hungry_flesh_blob", "biomancy:primordial_hungry_flesh_blob", "biomancy:primordial_flesh_blob", "biomancy:legacy_flesh_blob"])
         .apply(ctx => {
             if (Math.random() < 0.1 && ctx.player && ctx.player.persistentData.getInt(warpCount) > 50) {

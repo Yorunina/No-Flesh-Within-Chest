@@ -1,4 +1,14 @@
 ServerEvents.recipes(event => {
+	function registerCustomRecipe(recipeModel) {
+        event.custom(recipeModel)
+    }
+	function RollingRecipe(input, output) {
+		this.type = 'createaddition:rolling'
+		this.input = input
+		this.result = output
+	}
+
+
 	event.recipes.create.mixing(Fluid.of('kubejs:syrup').withAmount(50), [Fluid.water(50), 'minecraft:sugar', 'hexerei:dried_mugwort_flowers', 'hexerei:dried_belladonna_flowers']).heated()
 
 	event.recipes.create.filling('kubejs:hamimelon_organ', ['fruitsdelight:hamimelon', Fluid.of('kubejs:syrup').withAmount(1000)])
@@ -336,4 +346,6 @@ ServerEvents.recipes(event => {
 	event.recipes.create.sandpaper_polishing('kubejs:polished_amber', 'unusualprehistory:amber_shard')
 
 	event.recipes.create.splashing(['9x iceandfire:silver_nugget', Item.of('minecraft:glowstone_dust').withChance(0.3)], 'create:crushed_raw_silver')
+
+	registerCustomRecipe(new RollingRecipe(Item.of('minecraft:tinted_glass'), Item.of('biomancy:vial').withCount(3)))
 })

@@ -271,7 +271,7 @@ const organPlayerKeyPressedOnlyStrategies = {
             return (0.5 - Math.random())
         })
         chestInstance.organScores.forEach((key, value) => {
-            chestInstance.organScores.put(key, new $Float(organScoresValue.pop() + 1.5))
+            chestInstance.organScores.put(key, new $Float(organScoresValue.pop() + 3))
         })
 
         event.server.scheduleInTicks(20 * 30, (callback) => {
@@ -351,7 +351,6 @@ const organPlayerKeyPressedOnlyStrategies = {
             randomPosBlock = randomPosBlock.offset(0, -4, 0)
         }
         let pos = randomPosBlock.getPos()
-        player.tell(table)
         let mapItem = $MapItem.create(level, pos.x, pos.z, 1, true, true)
         $MapItem.renderBiomePreviewMap(level, mapItem)
         $MapItemSavedData.addTargetDecoration(mapItem, pos, "+", $MapDecorationType.RED_X)
@@ -360,6 +359,6 @@ const organPlayerKeyPressedOnlyStrategies = {
         level.setBlock(pos, placementState, 2)
         $RandomizableContainerBlockEntity.setLootTable(level, level.getRandom(), pos, table)
         player.give(mapItem)
-        player.addItemCooldown('kubejs:treasure_detector_feather', 20 * 10)
+        player.addItemCooldown('kubejs:treasure_detector_feather', 20 * 600)
     },
 }

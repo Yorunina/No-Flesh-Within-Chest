@@ -82,7 +82,6 @@ ServerEvents.recipes(event => {
     event.recipes.summoningrituals
         .altar('kubejs:ritual_catalyst')
         .id('kubejs:ritual_greed_shard')
-        .input('lootr:trophy')
         .input('nameless_trinkets:fate_emerald')
         .input('3x lightmanscurrency:coinblock_emerald')
         .input('goety:philosophers_stone')

@@ -88,16 +88,24 @@
 			dependencies: ["5EB8592EEE08BF45"]
 			description: ["击败三个不同的&6神恩Boss&r，使用三个不同灵魂类型的&4神意碎片&r，即可获得&6复乐园&r。"]
 			id: "0DCDFAD4C3288FCD"
-			rewards: [{
-				count: 3
-				id: "4F5386D4974572C8"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_gold"
-					tag: { }
+			rewards: [
+				{
+					count: 3
+					id: "4F5386D4974572C8"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_gold"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 3
+					id: "157A6DFC58E24CDF"
+					item: "kubejs:lucky_block"
+					type: "item"
+				}
+			]
 			subtitle: "乐园将重新降临"
 			tasks: [{
 				id: "646B8C1B39DCF1C0"
@@ -315,16 +323,23 @@
 			]
 			icon: "dimdungeons:block_portal_keyhole"
 			id: "03B3A54BEDB85320"
-			rewards: [{
-				count: 3
-				id: "6E85D0F5766263AA"
-				item: {
-					Count: 1b
-					id: "lightmanscurrency:coin_iron"
-					tag: { }
+			rewards: [
+				{
+					count: 3
+					id: "6E85D0F5766263AA"
+					item: {
+						Count: 1b
+						id: "lightmanscurrency:coin_iron"
+						tag: { }
+					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "53D7670BAAC410CB"
+					item: "kubejs:lucky_block"
+					type: "item"
+				}
+			]
 			subtitle: "新世界的大门"
 			tasks: [
 				{
@@ -974,6 +989,28 @@
 			}]
 			x: 2.25d
 			y: 10.5d
+		}
+		{
+			dependencies: ["03B3A54BEDB85320"]
+			description: [
+				"如果你有多余的钱币，或许可以直接在交易终端与村民交易所/其他玩家进行交易。"
+				""
+				"村民交易所是一个&6昂贵品&r的交易处，但花钱买方便不正是我们一开始所计划的吗？"
+			]
+			id: "04B034D2CF2DA900"
+			rewards: [{
+				id: "6EE1EB8484D97BBC"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "更多消费的地方！"
+			tasks: [{
+				id: "49392C421B406830"
+				item: "lightmanscurrency:terminal"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.5d
 		}
 	]
 	title: "章节2：觉醒"
