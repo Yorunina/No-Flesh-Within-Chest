@@ -1,7 +1,0 @@
-
-["First Person Rendering"]
-	#Enable to view your entire body when in first person
-	"Enable Full Body First Person" = true
-	#Enable to force the default minecraft hands when viewing your body in first person
-	"Enable Vanilla Hands" = false
-

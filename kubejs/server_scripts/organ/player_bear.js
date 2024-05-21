@@ -108,7 +108,6 @@ const organPlayerBearOnlyStrategies = {
         let player = event.entity
         if (player.nbt?.ForgeCaps['goety:lichdom']?.lichdom == 1) return
         let oldAirSupply = player.getAirSupply()
-        player.tell(event.amount * 50)
         if (oldAirSupply > 0) {
             let curAirSupply = Math.max(oldAirSupply - event.amount * 50, 0)
             let curAmount = Math.max(event.amount - oldAirSupply / 50, 0)

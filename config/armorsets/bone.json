@@ -20,15 +20,6 @@
   "fullSetBonuses": [
     {
       "type": "effect",
-      "name": "goety:sun_allergy",
-      "value": 0.0,
-      "interactionType": "self",
-      "interactionDuration": 300,
-      "hideBonusDescription": false,
-      "onlyImmuneToNewEffects": false
-    },
-    {
-      "type": "effect",
       "name": "goety:arrowmantic",
       "value": 4.0,
       "interactionType": "attack",
