@@ -71,7 +71,7 @@ global.dreamOfNeedles = (ctx) => {
     /** @type {Internal.ServerPlayer} */
     let player = ctx.entity
     if (!player.hasEffect('kubejs:sweet_dream')) return
-    let ray = player.rayTrace(32, true)
+    let ray = player.rayTrace(32, false)
     if (!ray.hit) return
 
     let dreamEffect = player.getEffect('kubejs:sweet_dream')

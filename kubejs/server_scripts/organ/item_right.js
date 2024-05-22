@@ -2,13 +2,7 @@
 ItemEvents.rightClicked(event => {
     let player = event.player;
     if (!player) return;
-
     let typeMap = getPlayerChestCavityTypeMap(player);
-    if (typeMap.has('kubejs:rclick')) {
-        typeMap.get('kubejs:rclick').forEach(organ => {
-            organRightClickedStrategies[organ.id](event, organ)
-        })
-    }
     let onlySet = new Set()
     if (typeMap.has('kubejs:rclick_only')) {
         typeMap.get('kubejs:rclick_only').forEach(organ => {
@@ -18,6 +12,12 @@ ItemEvents.rightClicked(event => {
             }
         })
     }
+    if (typeMap.has('kubejs:rclick')) {
+        typeMap.get('kubejs:rclick').forEach(organ => {
+            organRightClickedStrategies[organ.id](event, organ)
+        })
+    }
+
 })
 
 /**

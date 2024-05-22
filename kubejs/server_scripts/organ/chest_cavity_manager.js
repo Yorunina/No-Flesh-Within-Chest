@@ -46,6 +46,9 @@ PlayerEvents.inventoryClosed((event) => {
     }
     global.initChestCavityIntoMap(player, true)
     let itemMap = getPlayerChestCavityItemMap(player)
+    if (player.persistentData.contains(organActive) && player.persistentData.getInt(organActive) == 1) {
+        return
+    }
     if (itemMap.has('kubejs:long_lasting_pill') || itemMap.has('kubejs:long_lasting_pill_gold')) {
         global.updatePlayerActiveStatus(event.player)
         player.persistentData.putInt(organActive, 1)
@@ -224,31 +227,31 @@ global.getPlayerChestCavityItemMap = player => {
 
 function initChestCavityIntoMap(player, removeFlag) {
     let chestInventory = player.getChestCavityInstance().inventory.tags
-    let newHash = chestInventory.hashCode();
-    let uuid = String(player.getUuid());
+    let newHash = chestInventory.hashCode()
+    let uuid = String(player.getUuid())
     if (playerChestCavityHashMap.has(uuid)) {
-        let oldHash = playerChestCavityHashMap.get(uuid);
+        let oldHash = playerChestCavityHashMap.get(uuid)
         if (oldHash == newHash) {
             return;
         }
     }
-    let chestInventoryPosMap = new Map();
-    let chestInventoryItemMap = new Map();
-    let chestInventoryTypeMap = new Map();
+    let chestInventoryPosMap = new Map()
+    let chestInventoryItemMap = new Map()
+    let chestInventoryTypeMap = new Map()
 
     // 遍历器官并初始化玩家Map
     for (let i = 0; i < chestInventory.length; i++) {
         let organ = chestInventory[i];
-        chestInventoryPosMap.set(organ.getInt('Slot'), organ);
-        let itemId = String(organ.getString('id'));
+        chestInventoryPosMap.set(organ.getInt('Slot'), organ)
+        let itemId = String(organ.getString('id'))
         if (chestInventoryItemMap.has(itemId)) {
-            let itemList = chestInventoryItemMap.get(itemId);
+            let itemList = chestInventoryItemMap.get(itemId)
             itemList.push(organ);
-            chestInventoryItemMap.set(itemId, itemList);
+            chestInventoryItemMap.set(itemId, itemList)
         } else {
-            chestInventoryItemMap.set(itemId, [organ]);
+            chestInventoryItemMap.set(itemId, [organ])
         }
-        let tagList = Item.of(itemId).getTags().toArray();
+        let tagList = Item.of(itemId).getTags().toArray()
         for (let i = 0; i < tagList.length; i++) {
             let tag = tagList[i].location()
             if (tag.getNamespace() != 'kubejs') {
@@ -256,19 +259,19 @@ function initChestCavityIntoMap(player, removeFlag) {
             }
             tag = String(tag)
             if (chestInventoryTypeMap.has(tag)) {
-                let itemList = chestInventoryTypeMap.get(tag);
+                let itemList = chestInventoryTypeMap.get(tag)
                 itemList.push(organ);
-                chestInventoryTypeMap.set(tag, itemList);
+                chestInventoryTypeMap.set(tag, itemList)
             } else {
-                chestInventoryTypeMap.set(tag, [organ]);
+                chestInventoryTypeMap.set(tag, [organ])
             }
         }
     }
     // 将常用信息map载入到内存中，提高性能
-    playerChestCavityPosMap.set(uuid, chestInventoryPosMap);
-    playerChestCavityItemMap.set(uuid, chestInventoryItemMap);
-    playerChestCavityTypeMap.set(uuid, chestInventoryTypeMap);
-    playerChestCavityHashMap.set(uuid, newHash);
+    playerChestCavityPosMap.set(uuid, chestInventoryPosMap)
+    playerChestCavityItemMap.set(uuid, chestInventoryItemMap)
+    playerChestCavityTypeMap.set(uuid, chestInventoryTypeMap)
+    playerChestCavityHashMap.set(uuid, newHash)
     if (removeFlag) {
         player.persistentData.putInt(organActive, 0)
         player.potionEffects.add('kubejs:magic_forbiden', 20 * 20)

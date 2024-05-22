@@ -55,27 +55,16 @@ const championPlayerBearStrategies = {
     'fierce_battle': function (event, data) {
         let player = event.entity
         let entity = event.source.actual
-        let getlevel = 0
+        let amplifier = 0
         if (entity.hasEffect('minecraft:absorption')) {
-            let amplifier = entity.getEffect('minecraft:absorption').getAmplifier()
-            getlevel = Math.floor(amplifier * 0.5)
+            amplifier = entity.getEffect('minecraft:absorption').getAmplifier() + 1
         }
         player.potionEffects.add('goety:sapped', 20 * 10, 1, false, false)
-        entity.potionEffects.add('minecraft:absorption', 20 * 10, (getlevel + 1) * 2, false, false)
+        entity.potionEffects.add('minecraft:absorption', 20 * 10, amplifier, false, false)
     },
     'destruction': function (event, data) {
         let player = event.entity
-        if (player.getArmorValue() >= 20) {
-            player.potionEffects.add('goety:busted', 20 * 10, 0, false, false)
-            event.amount = event.amount + Math.floor(player.getMaxHealth() * 0.5)
-        }
-        else if (player.getArmorValue() < 20 && player.getArmorValue() > 0) {
-            player.potionEffects.add('goety:busted', 20 * 10, 1, false, false)
-            event.amount = event.amount + Math.floor(player.getMaxHealth() * 1.5)
-        }
-        else if (player.getArmorValue() <= 0) {
-            event.amount = event.amount + Math.floor(player.getMaxHealth() * 2.5)
-        }
+        player.potionEffects.add('goety:busted', 20 * 10, 0, false, false)
     },
     'awed': function (event, data) {
         let player = event.entity
@@ -98,15 +87,17 @@ const championPlayerBearStrategies = {
     },
     'grue': function (event, data) {
         let player = event.entity
-        player.potionEffects.add('minecraft:darkness', 20 * 5, 0, false, false)
+        player.potionEffects.add('goety:nyctophobia', 20 * 8, 3, false, false)
         if (!player.hasEffect('minecraft:night_vision')) {
-            player.potionEffects.add('goety:nyctophobia', 20 * 8, 3, false, false)
+            player.potionEffects.add('minecraft:darkness', 20 * 5, 0, false, false)
         }
+        /** @type {Internal.Explosion$BlockInteraction_} */
+        let a = ''
     },
     'smash': function (event, data) {
         let player = event.entity
         if (player.getHealth() <= Math.ceil(player.getMaxHealth() * 0.1)) {
-            player.kill()
+            player.setHealth(0)
         }
         else {
             player.setHealth(player.getHealth() - Math.ceil(player.getMaxHealth() * 0.1))
@@ -115,24 +106,32 @@ const championPlayerBearStrategies = {
     },
     'grudge': function (event, data) {
         let player = event.entity
-        if (Math.random() < 0.15) {
-            let equipval = Math.ceil((Math.random() * 4))
-            let curseval = Math.ceil((Math.random() * curseEnchantList.length))
-            switch (equipval) {
+        if (Math.random() < 1) {
+            let random = Math.ceil((Math.random() * grudgeCurseEnchantList.length))
+            let armor = Item.of('minecraft:air')
+            switch (Math.ceil((Math.random() * 4))) {
                 case 1:
-                    player.setHeadArmorItem(player.getHeadArmorItem().enchant(curseEnchantList[curseval-1], 1))
-                    break;
+                    armor = player.getHeadArmorItem()
+                    if (armor.id == 'minecraft:air') return
+                    player.setHeadArmorItem(armor.enchant(curseEnchantList[random - 1], 1))
+                    break
                 case 2:
-                    player.setChestArmorItem(player.getChestArmorItem().enchant(curseEnchantList[curseval-1], 1))
-                    break;
+                    armor = player.getChestArmorItem()
+                    if (armor.id == 'minecraft:air') return
+                    player.setChestArmorItem(armor.enchant(curseEnchantList[random - 1], 1))
+                    break
                 case 3:
-                    player.setLegsArmorItem(player.getLegsArmorItem().enchant(curseEnchantList[curseval-1], 1))
-                    break;
+                    armor = player.getLegsArmorItem()
+                    if (armor.id == 'minecraft:air') return
+                    player.setLegsArmorItem(armor.enchant(curseEnchantList[random - 1], 1))
+                    break
                 case 4:
-                    player.setFeetArmorItem(player.getFeetArmorItem().enchant(curseEnchantList[curseval-1], 1))
-                    break;
+                    armor = player.getFeetArmorItem()
+                    if (armor.id == 'minecraft:air') return
+                    player.setFeetArmorItem(armor.enchant(curseEnchantList[random - 1], 1))
+                    break
                 default:
-                    break;
+                    break
             }
         }
     },

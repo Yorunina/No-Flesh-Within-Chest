@@ -8,11 +8,6 @@
 function organEntityHurtByPlayer(event, data) {
     let player = event.source.player;
     let typeMap = getPlayerChestCavityTypeMap(player);
-    if (typeMap.has('kubejs:damage')) {
-        typeMap.get('kubejs:damage').forEach(organ => {
-            organPlayerDamageStrategies[organ.id](event, organ, data)
-        })
-    }
     let onlySet = new Set()
     if (typeMap.has('kubejs:damage_only')) {
         typeMap.get('kubejs:damage_only').forEach(organ => {
@@ -22,7 +17,11 @@ function organEntityHurtByPlayer(event, data) {
             }
         })
     }
-
+    if (typeMap.has('kubejs:damage')) {
+        typeMap.get('kubejs:damage').forEach(organ => {
+            organPlayerDamageStrategies[organ.id](event, organ, data)
+        })
+    }
 }
 
 /**

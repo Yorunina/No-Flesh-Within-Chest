@@ -10,13 +10,6 @@ LootJS.modifiers(event => {
             }
             let player = event.killerEntity
             let typeMap = getLootPlayerTypeMap(player)
-            if (typeMap.has('kubejs:loot_entity')) {
-                typeMap.get('kubejs:loot_entity').forEach(organ => {
-                    if (entityLootStrategies[organ.id]) {
-                        entityLootStrategies[organ.id](event, organ)
-                    }
-                })
-            }
             let lootOrganSet = new Set()
             if (typeMap.has('kubejs:loot_entity_only')) {
                 typeMap.get('kubejs:loot_entity_only').forEach(organ => {
@@ -28,6 +21,13 @@ LootJS.modifiers(event => {
                     }
                 })
             }
+            if (typeMap.has('kubejs:loot_entity')) {
+                typeMap.get('kubejs:loot_entity').forEach(organ => {
+                    if (entityLootStrategies[organ.id]) {
+                        entityLootStrategies[organ.id](event, organ)
+                    }
+                })
+            }
         });
 
     event.addLootTypeModifier(LootType.CHEST)
@@ -35,13 +35,6 @@ LootJS.modifiers(event => {
             let player = event.player
             if (!player) { return }
             let typeMap = getLootPlayerTypeMap(player)
-            if (typeMap.has('kubejs:loot_chest')) {
-                typeMap.get('kubejs:loot_chest').forEach(organ => {
-                    if (chestLootStrategies[organ.id]) {
-                        chestLootStrategies[organ.id](event, organ)
-                    }
-                })
-            }
             let lootOrganSet = new Set()
             if (typeMap.has('kubejs:loot_chest_only')) {
                 typeMap.get('kubejs:loot_chest_only').forEach(organ => {
@@ -50,6 +43,13 @@ LootJS.modifiers(event => {
                         if (chestLootOnlyStrategies[organ.id]) {
                             chestLootOnlyStrategies[organ.id](event, organ)
                         }
+                    }
+                })
+            }
+            if (typeMap.has('kubejs:loot_chest')) {
+                typeMap.get('kubejs:loot_chest').forEach(organ => {
+                    if (chestLootStrategies[organ.id]) {
+                        chestLootStrategies[organ.id](event, organ)
                     }
                 })
             }
@@ -133,7 +133,7 @@ const chestLootOnlyStrategies = {
         event.removeLoot(ItemFilter.ALWAYS_TRUE)
     },
     'kubejs:d8': function (event, organ) {
-        if (Math.random() < 0.3) {
+        if (Math.random() > 0.8) {
             return
         }
         let player = event.player

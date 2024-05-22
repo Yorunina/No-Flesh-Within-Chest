@@ -123,7 +123,7 @@ StartupEvents.registry('mob_effect', event => {
         .color(Color.RED)
 
     event.create('declaration_of_death')
-        .beneficial()
+        .harmful()
         .color(Color.BLACK)
 
     event.create('dragon_power')

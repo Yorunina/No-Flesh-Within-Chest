@@ -20,11 +20,6 @@ global.updatePlayerActiveStatus = player => {
     $ChestCavityUtil.evaluateChestCavity(player.getChestCavityInstance())
     player.persistentData.putInt(resourceCountMax, defaultResourceMax)
     // 激活状态根据Tag区分并遍历可以用于激活的器官方法
-    if (typeMap.has('kubejs:active')) {
-        typeMap.get('kubejs:active').forEach(organ => {
-            organActiveStrategies[organ.id](player, organ, attributeMap)
-        })
-    }
     let onlySet = new Set()
     if (typeMap.has('kubejs:active_only')) {
         typeMap.get('kubejs:active_only').forEach(organ => {
@@ -32,6 +27,11 @@ global.updatePlayerActiveStatus = player => {
                 onlySet.add(organ.id)
                 organActiveOnlyStrategies[organ.id](player, organ, attributeMap)
             }
+        })
+    }
+    if (typeMap.has('kubejs:active')) {
+        typeMap.get('kubejs:active').forEach(organ => {
+            organActiveStrategies[organ.id](player, organ, attributeMap)
         })
     }
     playerAttributeMap.set(uuid, attributeMap)
@@ -420,33 +420,20 @@ const organActiveOnlyStrategies = {
             attributeMapValueAddition(attributeMap, global.LUCK, value)
         }
     },
-    'kubejs:prismarine_crown': function (player, organ, attributeMap) {
-        let magicCapacity = 30
-        let typeMap = getPlayerChestCavityTypeMap(player)
-        let maxLen = 0
-        let whiteTypeMap = {'kubejs:organ': true}
-        // 取最多的一类器官
-        typeMap.forEach((value, key) => {
-            if (whiteTypeMap[key]) {
-                return
-            }
-            if (value.length > maxLen) {
-                maxLen = value.length
+    'kubejs:broken_prismarine_crown': function (player, organ, attributeMap) {
+        let playerChestInstance = player.getChestCavityInstance()
+        playerChestInstance.organScores.forEach((key, value) => {
+            if (value <= -8) {
+                playerChestInstance.organScores.put(key, new $Float(value + 10))
             }
         })
-        magicCapacity = magicCapacity - maxLen
+    },
+    'kubejs:prismarine_crown': function (player, organ, attributeMap) {
         let playerChestInstance = player.getChestCavityInstance()
-        let negScoreKeyList = []
-        let negSum = 0
         playerChestInstance.organScores.forEach((key, value) => {
             if (value < 0) {
-                negScoreKeyList.push(key)
-                negSum = negSum + value
+                playerChestInstance.organScores.put(key, new $Float(1))
             }
-        })
-        let avgScoreValue = Math.min((negSum + magicCapacity) / negScoreKeyList.length, 1)
-        negScoreKeyList.forEach((key) => {
-            playerChestInstance.organScores.put(key, new $Float(avgScoreValue))
         })
     },
     'kubejs:rose_quartz_dialyzer': function (player, organ, attributeMap) {

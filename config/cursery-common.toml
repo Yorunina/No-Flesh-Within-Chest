@@ -3,7 +3,7 @@
 	#Should enchanted books show a hint for curse magic, default:true
 	showDesc = false
 	#Add a curse id here to exclude it from beeing applied. To put multiple values seperate them by commas like this:  ["minecraft:curse", "mod:curse;"] 
-	excludedCUrses = ["minecraft:vanishing_curse", "minecraft:binding_curse"]
+	excludedCUrses = ["minecraft:vanishing_curse", "minecraft:binding_curse", "cursery:curse_explosive"]
 	#Should applying treasure enchants be excluded, default:false
 	excludeTreasure = false
 	#Base curse application chance, scales up the more enchants the item has. Default:5 %

@@ -8,11 +8,6 @@
 function organPlayerHurtByOthers(event, data) {
     let player = event.entity;
     let typeMap = getPlayerChestCavityTypeMap(player);
-    if (typeMap.has('kubejs:bear')) {
-        typeMap.get('kubejs:bear').forEach(organ => {
-            organPlayerBearStrategies[organ.id](event, organ, data)
-        })
-    }
     let onlySet = new Set()
     if (typeMap.has('kubejs:bear_only')) {
         typeMap.get('kubejs:bear_only').forEach(organ => {
@@ -20,6 +15,11 @@ function organPlayerHurtByOthers(event, data) {
                 onlySet.add(organ.id)
                 organPlayerBearOnlyStrategies[organ.id](event, organ, data)
             }
+        })
+    }
+    if (typeMap.has('kubejs:bear')) {
+        typeMap.get('kubejs:bear').forEach(organ => {
+            organPlayerBearStrategies[organ.id](event, organ, data)
         })
     }
 }
@@ -113,7 +113,6 @@ const organPlayerBearOnlyStrategies = {
             let curAmount = Math.max(event.amount - oldAirSupply / 50, 0)
             player.setAirSupply(curAirSupply)
             event.amount = curAmount
-            player.tell(curAirSupply)
             return
         }
     },

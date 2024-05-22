@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
     event.shaped('kubejs:prismarine_crown', [
         ['', 'iceandfire:siren_tear', ''],
         ['', 'kubejs:broken_prismarine_crown', ''],
-        ['', 'goety:soul_ruby', '']])
+        ['', 'witherstormmod:command_block_book', '']])
 
     event.shaped('kubejs:jet_propeller', [
         ['create:iron_sheet', '', 'create:iron_sheet'],

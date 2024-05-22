@@ -3,11 +3,6 @@ PlayerEvents.tick(event => {
     let player = event.player
     if (player.age % 20 != 0) return
     let typeMap = getPlayerChestCavityTypeMap(player);
-    if (typeMap.has('kubejs:player_tick')) {
-        typeMap.get('kubejs:player_tick').forEach(organ => {
-            organPlayerTickStrategies[organ.id](event, organ)
-        })
-    }
     let onlySet = new Set()
     if (typeMap.has('kubejs:player_tick_only')) {
         typeMap.get('kubejs:player_tick_only').forEach(organ => {
@@ -15,6 +10,11 @@ PlayerEvents.tick(event => {
                 onlySet.add(organ.id)
                 organPlayerTickOnlyStrategies[organ.id](event, organ)
             }
+        })
+    }
+    if (typeMap.has('kubejs:player_tick')) {
+        typeMap.get('kubejs:player_tick').forEach(organ => {
+            organPlayerTickStrategies[organ.id](event, organ)
         })
     }
 })

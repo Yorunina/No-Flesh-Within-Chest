@@ -154,7 +154,6 @@ const curseEnchantList = [
     'cursery:curse_poison',
     'cursery:curse_steelfeet',
     'cursery:curse_heavy_enchant',
-    'cursery:curse_explosive',
     'cursery:curse_recoil',
     'cursery:curse_stubby',
     'cursery:curse_hurtful',
@@ -166,6 +165,28 @@ const curseEnchantList = [
     "chestcavity:malpractice",
     'minecraft:vanishing_curse',
     'minecraft:binding_curse',
+]
+
+const grudgeCurseEnchantList = [
+    'cursery:curse_electrified',
+    'cursery:curse_switchy',
+    'cursery:curse_illusion',
+    'cursery:curse_undead',
+    'cursery:curse_laddering',
+    'cursery:curse_hungryhealth',
+    'cursery:curse_slowness',
+    'cursery:curse_poison',
+    'cursery:curse_steelfeet',
+    'cursery:curse_heavy_enchant',
+    'cursery:curse_recoil',
+    'cursery:curse_stubby',
+    'cursery:curse_hurtful',
+    'cursery:curse_loose',
+    'cursery:curse_weakness',
+    'cursery:curse_hungry',
+    'cursery:curse_anvil',
+    'cursery:curse_blindness',
+    "chestcavity:malpractice",
 ]
 
 const trinketList = ['nameless_trinkets:reforger', 'nameless_trinkets:true_heart_of_the_sea', 'nameless_trinkets:dragons_eye', 'nameless_trinkets:spider_legs', 'nameless_trinkets:sleeping_pills', 'nameless_trinkets:moon_stone', 'nameless_trinkets:nelumbo', 'nameless_trinkets:dark_nelumbo', 'nameless_trinkets:super_magnet', 'nameless_trinkets:rage_mind', 'nameless_trinkets:puffer_fish_liver', 'nameless_trinkets:lucky_rock', 'nameless_trinkets:vampire_blood', 'nameless_trinkets:speed_force', 'nameless_trinkets:tick', 'nameless_trinkets:ghast_eye', 'nameless_trinkets:cracked_crown', 'nameless_trinkets:ethereal_wings', 'nameless_trinkets:blindfold', 'nameless_trinkets:ice_cube', 'nameless_trinkets:blaze_nucleus', 'nameless_trinkets:wooden_stick', 'nameless_trinkets:tear_of_the_sea', 'nameless_trinkets:gods_crown', 'nameless_trinkets:fertilizer', 'nameless_trinkets:sigil_of_baphomet','nameless_trinkets:amphibious_hands', 'nameless_trinkets:fragile_cloud', 'nameless_trinkets:light_gloves', 'nameless_trinkets:fate_emerald', 'nameless_trinkets:scarab_amulet', 'nameless_trinkets:pocket_lightning_rod', 'nameless_trinkets:fractured_nullstone', 'nameless_trinkets:electric_paddle', 'nameless_trinkets:reverse_card', 'nameless_trinkets:missing_page', 'nameless_trinkets:broken_magnet', 'nameless_trinkets:experience_magnet', 'nameless_trinkets:experience_battery', 'nameless_trinkets:what_magnet', 'nameless_trinkets:callus']

@@ -3,19 +3,19 @@ const slotList = [0, 1, 2]
 MoreJSEvents.enchantmentTableChanged(event => {
     let player = event.player
     if (!player) return;
-    let typeMap = getPlayerChestCavityTypeMap(player);
-    if (typeMap.has('kubejs:enchant')) {
-        typeMap.get('kubejs:enchant').forEach(organ => {
-            organPlayerEnchantStrategies[organ.id](event, organ)
-        })
-    }
     let onlySet = new Set()
+    let typeMap = getPlayerChestCavityTypeMap(player);
     if (typeMap.has('kubejs:enchant_only')) {
         typeMap.get('kubejs:enchant_only').forEach(organ => {
             if (!onlySet.has(organ.id)) {
                 onlySet.add(organ.id)
                 organPlayerEnchantOnlyStrategies[organ.id](event, organ)
             }
+        })
+    }
+    if (typeMap.has('kubejs:enchant')) {
+        typeMap.get('kubejs:enchant').forEach(organ => {
+            organPlayerEnchantStrategies[organ.id](event, organ)
         })
     }
 })

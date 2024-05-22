@@ -188,6 +188,16 @@ ServerEvents.recipes(event => {
 	]).transitionalItem('kubejs:incomplete_stomach_template').loops(5)
 
 	event.recipes.create.sequenced_assembly([
+		Item.of('kubejs:candy_heart')
+	], 'kubejs:heart_template', [
+		event.recipes.createDeploying('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', 'irons_spellbooks:arcane_essence']),
+		event.recipes.createCutting('kubejs:incomplete_heart_template', 'kubejs:incomplete_heart_template'),
+		event.recipes.createDeploying('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', 'biomancy:living_flesh']),
+		event.recipes.createDeploying('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', '#forge:dyes/pink']),
+		event.recipes.create.filling('kubejs:incomplete_heart_template', ['kubejs:incomplete_heart_template', Fluid.of('kubejs:syrup').withAmount(500)])
+	]).transitionalItem('kubejs:incomplete_heart_template').loops(5)
+
+	event.recipes.create.sequenced_assembly([
 		Item.of('kubejs:burning_heart')
 	], 'chestcavity:blaze_core', [
 		event.recipes.createCutting('kubejs:incomplete_burning_heart', 'kubejs:incomplete_burning_heart'),

@@ -29,7 +29,7 @@ const organPlayerKeyPressedOnlyStrategies = {
     'kubejs:illithids': function (event, organ) {
         let player = event.player
         let particle = Utils.particleOptions(`dust 1 0 0 1`)
-        let ray = player.rayTrace(32, true)
+        let ray = player.rayTrace(32, false)
         if (ray.entity && ray.entity.isLiving()) {
             ray.entity.potionEffects.add('goety:wild_rage', ray.entity.maxHealth > 100 ? 20 * 10 : 20 * 60)
             player.addItemCooldown('kubejs:illithids', 20 * 60)
@@ -63,7 +63,7 @@ const organPlayerKeyPressedOnlyStrategies = {
     'kubejs:warden_core': function (event, organ) {
         /**@type {Internal.ServerPlayer} */
         let player = event.player
-        let ray = player.rayTrace(24, true)
+        let ray = player.rayTrace(24, false)
         let distance = ray.distance
         let damageSource = new DamageSource.sonicBoom(player)
         let vec3Nor = player.getLookAngle().normalize()
@@ -253,7 +253,7 @@ const organPlayerKeyPressedOnlyStrategies = {
     'kubejs:enderiophage_heart': function (event, organ) {
         let player = event.player
         let particle = Utils.particleOptions(`dust 1 0 1 1`)
-        let ray = player.rayTrace(32, true)
+        let ray = player.rayTrace(32, false)
         if (ray.entity && ray.entity.isLiving()) {
             ray.entity.potionEffects.add('alexsmobs:ender_flu', 20 * 5, 0, false, false)
             player.addItemCooldown('kubejs:enderiophage_heart', 20 * 45)
@@ -292,11 +292,22 @@ const organPlayerKeyPressedOnlyStrategies = {
     },
     'kubejs:nether_star_shard': function (event, organ) {
         let player = event.player
-        let ray = player.rayTrace(32, true)
+        let ray = player.rayTrace(32, false)
         if (ray.entity && ray.entity.isLiving() && ray.entity.type == 'witherstormmod:wither_storm') {
+            /** @type {Internal.Entity} */
             let entity = ray.entity
-            entity.mergeNbt({ 'Phase': 6, 'ConsumedEntities': 30000000 })
-            player.addItemCooldown('kubejs:nether_star_shard', 20 * 45)
+            let curPhase = entity?.nbt.getInt('Phase')
+            player.tell(curPhase)
+            switch (true) {
+                case curPhase < 5: {
+                    entity.mergeNbt({ 'Phase': curPhase + 1, 'ConsumedEntities': 30000000 })
+                    break
+                }
+                case curPhase >= 5:
+                    entity.mergeNbt({ 'Phase': 7, 'ConsumedEntities': 30000000 })
+                    break
+            }
+            player.addItemCooldown('kubejs:nether_star_shard', 20 * 10)
         }
     },
     'kubejs:potoo_beak': function (event, organ) {
@@ -340,7 +351,7 @@ const organPlayerKeyPressedOnlyStrategies = {
             player.tell({ "translate": "kubejs.msg.treasure_detector_feather.1" })
             return
         }
-        
+
         for (let i = 0; i < 16; i++) {
             if (!randomPosBlock.blockState.isAir()) {
                 if (!randomPosBlock.offset(0, -1, 0).blockState.isAir()) {

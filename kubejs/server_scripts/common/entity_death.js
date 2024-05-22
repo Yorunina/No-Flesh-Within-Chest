@@ -5,5 +5,5 @@ EntityEvents.death('minecraft:villager', event => {
     let warp = killer.persistentData.getInt(warpCount)
     if (warp > 50) return
     updateWarpCount(killer, warp + 1)
-    killer.tell(Text.darkPurple({ "translate": "kubejs.msg.village.killed.1" }))
+    killer.tell(Text.darkPurple({ "translate": "kubejs.msg.warp.1" }))
 })

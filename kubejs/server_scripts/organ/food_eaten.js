@@ -3,11 +3,6 @@ ItemEvents.foodEaten(event => {
     let player = event.player;
     if (!player) return;
     let typeMap = getPlayerChestCavityTypeMap(player);
-    if (typeMap.has('kubejs:eat_effect')) {
-        typeMap.get('kubejs:eat_effect').forEach(organ => {
-            organFoodEatenStrategies[organ.id](event, organ)
-        })
-    }
     let onlySet = new Set()
     if (typeMap.has('kubejs:eat_effect_only')) {
         typeMap.get('kubejs:eat_effect_only').forEach(organ => {
@@ -15,6 +10,11 @@ ItemEvents.foodEaten(event => {
                 onlySet.add(organ.id)
                 organFoodEatenOnlyStrategies[organ.id](event, organ)
             }
+        })
+    }
+    if (typeMap.has('kubejs:eat_effect')) {
+        typeMap.get('kubejs:eat_effect').forEach(organ => {
+            organFoodEatenStrategies[organ.id](event, organ)
         })
     }
 })

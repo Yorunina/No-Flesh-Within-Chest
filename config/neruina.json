@@ -1,5 +1,7 @@
 {
-  "broadcast_errors": true,
+  "log_level": "OPERATORS",
+  "auto_kill_ticking_entities": false,
+  "ticking_exception_threshold": 10,
   "handle_ticking_entities": true,
   "handle_ticking_block_entities": true,
   "handle_ticking_block_states": true,

@@ -2,13 +2,7 @@
 BlockEvents.broken(event => {
     let player = event.player;
     if (!player) return;
-
     let typeMap = getPlayerChestCavityTypeMap(player);
-    if (typeMap.has('kubejs:break')) {
-        typeMap.get('kubejs:break').forEach(organ => {
-            organBlockBrokenStrategies[organ.id](event, organ)
-        })
-    }
     let onlySet = new Set()
     if (typeMap.has('kubejs:break_only')) {
         typeMap.get('kubejs:break_only').forEach(organ => {
@@ -16,6 +10,11 @@ BlockEvents.broken(event => {
                 onlySet.add(organ.id)
                 organBlockBrokenOnlyStrategies[organ.id](event, organ)
             }
+        })
+    }
+    if (typeMap.has('kubejs:break')) {
+        typeMap.get('kubejs:break').forEach(organ => {
+            organBlockBrokenStrategies[organ.id](event, organ)
         })
     }
 })

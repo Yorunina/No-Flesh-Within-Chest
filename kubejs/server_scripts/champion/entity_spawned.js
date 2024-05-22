@@ -41,7 +41,7 @@ const championTypeMap = [
     {
         type: 'destruction',
         name: Text.gold('崩毁'),
-        desc: Text.gray('攻击时会赋予玩家穿孔效果，玩家护甲越低，伤害越高')
+        desc: Text.gray('攻击时会赋予玩家穿孔效果')
     },
     {
         type: 'awed',
@@ -91,7 +91,7 @@ const championTypeMap = [
     {
         type: 'grudge',
         name: Text.red('咒怨'),
-        desc: Text.gray('攻击时有15%概率为装备加上随机诅咒附魔')
+        desc: Text.gray('攻击时有5%概率为装备加上随机诅咒附魔')
     },
     {
         type: 'fate',
@@ -102,10 +102,5 @@ const championTypeMap = [
         type: 'parry',
         name: Text.red('招架'),
         desc: Text.gray('每次受到弹射物伤害有50%几率免疫此伤害')
-    },
-    {
-        type: 'reverse',
-        name: Text.red('反转'),
-        desc: Text.gray('每次受到魔法伤害有50%概率转化为治疗')
     }
 ]

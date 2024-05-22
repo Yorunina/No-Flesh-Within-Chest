@@ -1,7 +1,5 @@
 #determine whether or not loot generated is the same for all players using the provided seed, or randomised per player
 randomise_seed = true
-#skip unloaded block entities that are eligible for conversion, set to false to potentially resolve issues with containers that aren't being converted [default: true]
-skip_unloaded = true
 #whether or not mineshaft chest minecarts should be converted to standard loot chests
 convert_mineshafts = true
 #whether or not quark chests used in world generation for loot purposes should be replaced with Lootr chests
@@ -24,8 +22,6 @@ dimension_blacklist = []
 loot_table_blacklist = []
 #list of modids whose loot tables shouldn't be converted (in the format of ["modid", "other_modid"])
 loot_modid_blacklist = []
-#list of structures in which contains shouldn't be converted (in the format of ["modid:structure_name", "othermodid:other_structure_name"])
-loot_structure_blacklist = []
 #prevent the destruction of Lootr chests except while sneaking in creative mode
 disable_break = false
 #allow the destruction of Lootr chests regardless. overrides `disable_break`
@@ -71,9 +67,9 @@ refresh_dimensions = []
 refresh_structures = []
 #overriding refresh_loot_tables, refresh_modids and refresh_dimensions: all chests will refresh after being opened for the first time
 refresh_all = false
-#the maximum age for containers; entries above this age will be discarded [default: 180 * 20, 3 minutes]
+#the maximum age for containers; entries above this age will be discarded [default: 60 * 20 * 15, fifteen minutes] [note: the value 6000 will be corrected to 18000. if you wish to use 6000, please use 6001 or 5999.]
 #Range: > 0
-max_age = 6000
+max_age = 18000
 #if true, no chests will be converted
 disable = false
 #list of dimensions by modid that loot chests should not be replaced in (default: blank, allowing all modids, format e.g., ["minecraft
@@ -84,4 +80,8 @@ modid_dimension_blacklist = []
 modid_dimension_whitelist = []
 #when true, custom inventories will act like trapped chests when opened
 trapped_custom = false
+#whether or not the Elytra item frame should be converted into a standard loot chest with a guaranteed elytra
+convert_elytras = true
+#disables styling of breaking, decaying and refreshing messages sent to players
+disable_message_styles = false
 

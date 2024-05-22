@@ -158,7 +158,7 @@ ItemEvents.tooltip((tooltip) => {
     })
 
     tooltip.addAdvanced('kubejs:candy_bag', (item, advanced, text) => {
-        text.add(Text.darkRed({ "translate": "kubejs.tooltips.candy_bag.1" }));
+        text.add(Text.darkGray({ "translate": "kubejs.tooltips.candy_bag.1" }));
     })
 
     tooltip.addAdvanced('art_of_forging:potent_mixture', (item, advanced, text) => {
