@@ -84,7 +84,7 @@ global.dreamOfNeedles = (ctx) => {
     damage = damage * (1 + powerModifier)
 
     // 限制数量上限，避免性能问题
-    let count = Math.min(120, 3 + dreamEffect.getAmplifier())
+    let count = Math.min(30, 3 + dreamEffect.getAmplifier())
     let degreesPerNeedle = 360 / count
 
     // 根据法术等级，产生新的释放环，限制上下限

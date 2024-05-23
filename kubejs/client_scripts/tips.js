@@ -14,7 +14,7 @@ ClientEvents.highPriorityAssets(event => {
     registeTips('ceremonial_knife')
 
     // 玩家词条注册
-    for (let i = 0; i < 190; i++) {
+    for (let i = 0; i < 130; i++) {
         registeTips(`tip_${i + 1}`)
     }
 })

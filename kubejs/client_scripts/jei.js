@@ -69,4 +69,5 @@ JEIEvents.information(event => {
     event.addItem('kubejs:treasure_detector_feather', Text.black({ "translate": "kubejs.jei.treasure_detector_feather.1" }))
     event.addItem('kubejs:potoo_beak', Text.black({ "translate": "kubejs.jei.potoo_beak.1" }))
     event.addItem('kubejs:is_rabbit', Text.black({ "translate": "kubejs.jei.is_rabbit.1" }))
+    event.addItem('kubejs:blaze_pressurizer', Text.black({ "translate": "kubejs.jei.is_rabbit.1" }))
 })

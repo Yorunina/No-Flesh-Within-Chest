@@ -136,7 +136,7 @@ StartupEvents.registry('item', event => {
             return itemstack;
         })
 
-    event.create('candy_canes_wand').texture('kubejs:item/candy_canes_wand')
+    event.create('candy_canes_wand', 'basic').texture('kubejs:item/candy_canes_wand')
         .maxStackSize(1)
         .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', 0.1, 'addition')
         .rarity('epic')
@@ -153,7 +153,13 @@ StartupEvents.registry('item', event => {
             return itemstack;
         })
 
-    event.create('rapier_wand', 'sword').tier('diamond').attackDamageBaseline(4.0).attackDamageBonus(2.5).speedBaseline(-1.5).speed(6.5).maxDamage(980).maxStackSize(1)
+    event.create('rapier_wand', 'irons_spells_js:magic_sword').tier('diamond')
+        .attackDamageBaseline(4.0)
+        .attackDamageBonus(3.5)
+        .speedBaseline(-1.5)
+        .speed(6.5)
+        .maxDamage(980)
+        .maxStackSize(1)
         .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', 0.1, 'addition')
         .rarity('epic')
         .useAnimation('bow')
@@ -168,7 +174,14 @@ StartupEvents.registry('item', event => {
             return itemstack;
         })
 
-    event.create('artist_wand', 'sword').tier('diamond').attackDamageBaseline(2.0).attackDamageBonus(3.0).speedBaseline(-3.0).speed(4.0).maxDamage(1680).maxStackSize(1)
+    event.create('artist_wand', 'irons_spells_js:magic_sword')
+        .tier('diamond')
+        .attackDamageBaseline(2.0)
+        .attackDamageBonus(3.0)
+        .speedBaseline(-2.5)
+        .speed(4.0)
+        .maxDamage(1680)
+        .maxStackSize(1)
         .rarity('epic')
         .useAnimation('bow')
         .use((level, player, hand) => {
@@ -177,13 +190,20 @@ StartupEvents.registry('item', event => {
         .useDuration(itemStack => 20)
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
-            entity.potionEffects.add('kubejs:colorful', 20 * 10, 0)
+            entity.potionEffects.add('kubejs:colorful', 20 * 20, 0)
             entity.addItemCooldown(itemstack, 20 * 60)
             return itemstack;
         })
 
-    event.create('glass_wand').texture('kubejs:item/glass_wand')
+
+    event.create('glass_wand', 'irons_spells_js:staff').texture('kubejs:item/glass_wand')
+        .tier('diamond')
         .maxStackSize(1)
+        .attackDamageBaseline(3.0)
+        .attackDamageBonus(1.5)
+        .speedBaseline(-2.5)
+        .speed(4.0)
+        .maxDamage(123)
         .rarity('rare')
 
 

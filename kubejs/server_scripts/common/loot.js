@@ -125,6 +125,10 @@ LootJS.modifiers(event => {
         .addLoot(LootEntry.of('kubejs:artist_wand').when((c) => c.randomChance(0.1)))
 
     event.addLootTypeModifier(LootType.CHEST)
+        .anyStructure(['#tetra:forged_ruins'], false)
+        .addLoot(LootEntry.of('kubejs:compressed_oxygen_implant').when((c) => c.randomChance(0.08)))
+
+    event.addLootTypeModifier(LootType.CHEST)
         .removeLoot('@nameless_trinkets')
         .anyStructure(['#minecraft:village'], false)
         .addLoot(LootEntry.of('biomancy:healing_additive').when((c) => c.randomChance(0.25)))
@@ -161,6 +165,9 @@ LootJS.modifiers(event => {
         .anyDimension(['minecraft:the_nether'])
         .addLoot(LootEntry.of('kubejs:ritual_catalyst').when((c) => c.randomChance(0.1)))
         .addLoot(LootEntry.of('kubejs:infinity_beats').when((c) => c.randomChance(0.005)))
+        .addLoot(LootEntry.of('kubejs:redstone_furnace').when((c) => c.randomChance(0.01)))
+        .addLoot(LootEntry.of('kubejs:the_third_eye').when((c) => c.randomChance(0.003)))
+        .addLoot(LootEntry.of('kubejs:blaze_pressurizer').when((c) => c.randomChance(0.005)))
 
     event.addLootTypeModifier(LootType.FISHING)
         .apply(ctx => {
