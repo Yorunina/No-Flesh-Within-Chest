@@ -1,10 +1,4 @@
 /**
- * 使用ForgeEvent监听CurioChangeEvent事件
- */
-ForgeEvents.onEvent('top.theillusivec4.curios.api.event.CurioChangeEvent', event => {
-    global.curioChange(event);
-})
-/**
  * 使用ForgeEvent监听PlayerSleepInBedEvent事件
  */
 ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerSleepInBedEvent', event => {

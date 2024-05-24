@@ -463,13 +463,18 @@ const organActiveOnlyStrategies = {
         playerChestCavityTypeMap.set(uuid, chestInventoryTypeMap)
     },
     'kubejs:fish_in_chest': function (player, organ, attributeMap) {
-        let typeMap = getPlayerChestCavityTypeMap(player)
         let itemMap = getPlayerChestCavityItemMap(player)
+        let typeMap = getPlayerChestCavityTypeMap(player)
         let playerChestInstance = player.getChestCavityInstance()
-        let organCount = 2
-        if (typeMap.has('kubejs:organ')) {
-            organCount = typeMap.get('kubejs:organ').length * 1
-        }
+        let organCount = 0
+        player.chestCavityInstance.inventory.allItems.forEach(item => {
+            let organData = $ChestCavityUtil.lookupOrgan(item, null)
+            if (!organData.organScores.isEmpty()) {
+                organCount = organCount + 1
+                player.tell(item)
+            }
+        })
+
         // 扭曲鱼缸不计算器官数量
         let subCount = getFishInWarpSubCount(itemMap, typeMap)
         organCount = Math.max(organCount - subCount, 1)

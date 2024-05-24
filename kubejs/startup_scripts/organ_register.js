@@ -1412,7 +1412,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:evolution');
 
     registerOrgan(new Organ('kubejs:long_lasting_pill_gold')
-        .addScore('speed', 0.5)
+        .addScore('luck', 1)
+        .addScore('speed', 1)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.long_lasting_pill_gold.1" })])
         .build())
         .texture('kubejs:item/organs/others/long_lasting_pill')

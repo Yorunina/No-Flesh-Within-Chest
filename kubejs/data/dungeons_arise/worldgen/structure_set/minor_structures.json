@@ -1,0 +1,114 @@
+{
+  "structures": [
+    {
+      "structure": "dungeons_arise:abandoned_temple",
+      "weight": 2
+    },
+    {
+      "structure": "dungeons_arise:bandit_village",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:bathhouse",
+      "weight": 3
+    },
+    {
+      "structure": "dungeons_arise:ceryneian_hind",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:coliseum",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:fishing_hut",
+      "weight": 2
+    },
+    {
+      "structure": "dungeons_arise:heavenly_rider",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:heavenly_conqueror",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:illager_campsite",
+      "weight": 3
+    },
+    {
+      "structure": "dungeons_arise:illager_corsair",
+      "weight": 2
+    },
+    {
+      "structure": "dungeons_arise:illager_fort",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:illager_galley",
+      "weight": 2
+    },
+    {
+      "structure": "dungeons_arise:illager_windmill",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:jungle_tree_house",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:lighthouse",
+      "weight": 2
+    },
+    {
+      "structure": "dungeons_arise:merchant_campsite",
+      "weight": 3
+    },
+    {
+      "structure": "dungeons_arise:monastery",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:mushroom_house",
+      "weight": 2
+    },
+    {
+      "structure": "dungeons_arise:mushroom_mines",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:mushroom_village",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:scorched_mines",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:small_blimp",
+      "weight": 3
+    },
+    {
+      "structure": "dungeons_arise:wishing_well",
+      "weight": 3
+    },
+    {
+      "structure": "dungeons_arise:typhon",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:undead_pirate_ship",
+      "weight": 1
+    },
+    {
+      "structure": "dungeons_arise:greenwood_pub",
+      "weight": 2
+    }
+  ],
+  "placement": {
+    "salt": 88371663,
+    "spacing": 50,
+    "separation": 40,
+    "type": "minecraft:random_spread"
+  }
+}

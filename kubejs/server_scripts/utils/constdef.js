@@ -236,3 +236,5 @@ const treasureDetectorTableMap = {
         '-1': "minecraft:chests/end_city_treasure"
     }
 }
+
+const machineChestLootTable = ['kubejs:platelet_dispatcher', 'kubejs:lowlight_vision', 'kubejs:revolution_relay', 'kubejs:revolution_delay', 'kubejs:rose_quartz_muscle', 'kubejs:revolution_cable', 'kubejs:revolution_gear', 'kubejs:rose_quartz_dialyzer', 'kubejs:rose_quartz_liver', 'kubejs:rose_quartz_heart', 'kubejs:revolution_steam_engine', 'kubejs:lava_life_cycle_system', 'kubejs:energy_bottle_max', 'kubejs:aegis', 'kubejs:mace', 'kubejs:machine_clockwork', 'kubejs:tamagotchi', 'kubejs:jet_propeller', 'kubejs:platelet_dispatcher', 'kubejs:compressed_oxygen_implant']

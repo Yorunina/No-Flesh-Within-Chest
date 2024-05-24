@@ -67,7 +67,7 @@ ItemEvents.rightClicked('kubejs:disenchantment_book', event => {
     player.give(Item.of('minecraft:enchanted_book').enchant(enchantList[res - 1], levelList[res - 1]))
 })
 
-ItemEvents.rightClicked('nameless_trinkets:moon_stone', event => {
+ItemEvents.rightClicked('hexerei:selenite_shard', event => {
     if (event.level.isNight()
         && event.player.headArmorItem == 'irons_spellbooks:cultist_helmet'
         && event.player.chestArmorItem == 'irons_spellbooks:cultist_chestplate'

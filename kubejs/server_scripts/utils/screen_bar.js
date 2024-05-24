@@ -14,7 +14,7 @@ function initAllBar(player) {
     let resourcePercent = player.persistentData.getInt(resourceCount) / player.persistentData.getInt(resourceCountMax)
     let warpPercent = player.persistentData.getInt(warpCount) / player.persistentData.getInt(warpCountMax)
     let visible = false
-    if (checkCurios(player, 'create:goggles')) {
+    if (checkCurios(player, 'kubejs:archivist_eyeglass')) {
         visible = true
     }
     player.paint({ barBackGround: { type: 'rectangle', x: 11, y: '-$screenH/2+49', w: 22, h: 101, alignX: 'left', alignY: 'bottom', texture: 'kubejs:textures/gui/resource_bar.png', visible: visible }, resourceBarOverlay: { type: 'rectangle', x: 11, y: '-$screenH/2+49', v0: 1 - resourcePercent, v1: 1, w: 11, h: 101 * resourcePercent, alignX: 'left', alignY: 'bottom', texture: 'kubejs:textures/gui/resource_bar_overlay.png', visible: visible }, warpBarOverlay: { type: 'rectangle', x: 22, y: '-$screenH/2+49', v0: 1 - warpPercent, v1: 1, w: 11, h: 101 * warpPercent, alignX: 'left', alignY: 'bottom', texture: 'kubejs:textures/gui/warp_bar_overlay.png', visible: visible } })
@@ -74,4 +74,35 @@ function updateWarpMaxCount(player, maxCount) {
 function checkCurios(player, itemId) {
     let slotResult = new $CuriosApi().getCuriosHelper().findEquippedCurio(Item.of(itemId), player);
     return slotResult.isPresent()
+}
+
+
+/**
+ * @param {Internal.ServerPlayer} player 
+ * @param {Boolean} visible 
+ */
+function updateResourceBar(player, visible) {
+    let cur = player.persistentData.getInt(resourceCount)
+    let max = player.persistentData.getInt(resourceCountMax)
+    if (cur > max) {
+        player.persistentData.putInt(resourceCount, max)
+        cur = max
+    }
+    let percent = cur / max
+    player.paint({ barBackGround: { visible: visible }, resourceBarOverlay: { v0: 1 - percent, h: 101 * percent, visible: visible } })
+}
+
+/**
+ * @param {Internal.ServerPlayer} player 
+ * @param {Boolean} visible 
+ */
+function updateWarpBar(player, visible) {
+    let cur = player.persistentData.getInt(warpCount)
+    let max = player.persistentData.getInt(warpCountMax)
+    if (cur > max) {
+        player.persistentData.putInt(warpCount, max)
+        cur = max
+    }
+    let percent = cur / max
+    player.paint({ barBackGround: { visible: visible }, warpBarOverlay: { v0: 1 - percent, h: 101 * percent, visible: visible } })
 }

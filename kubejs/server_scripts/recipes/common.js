@@ -16,7 +16,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'extraarmor:blacksmith_hammer' })
     event.remove({ output: 'alexsmobs:transmutation_table' })
     event.remove({ output: 'weaponmaster:workstation' })
-    event.remove({ input: 'minecraft:milk_bucket', output:'extradelight:whipped_cream'})
 
     event.shaped('weaponmaster:workstation', [
         ['minecraft:lectern', 'minecraft:writable_book', 'minecraft:anvil'],
@@ -144,7 +143,7 @@ ServerEvents.recipes(event => {
 
     event.shapeless('chestcavity:sausage_skin', ['#kubejs:intestine'])
 
-    event.shapeless('chestcavity:appendix', [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
+    event.shapeless(Item.of('chestcavity:appendix').withName(Text.gray({ "translate": "kubejs.recipe.tip.1" })), [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
         .modifyResult((grid, stack) => {
             for (let i = 0; i <= 9; i++) {
                 let organ = grid.get(i)

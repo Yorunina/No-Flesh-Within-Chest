@@ -126,8 +126,9 @@ LootJS.modifiers(event => {
 
     event.addLootTypeModifier(LootType.CHEST)
         .anyStructure(['#tetra:forged_ruins'], false)
-        .addLoot(LootEntry.of('kubejs:compressed_oxygen_implant').when((c) => c.randomChance(0.08)))
-
+        .addWeightedLoot(machineChestLootTable)
+        .addWeightedLoot(machineChestLootTable)
+        
     event.addLootTypeModifier(LootType.CHEST)
         .removeLoot('@nameless_trinkets')
         .anyStructure(['#minecraft:village'], false)
