@@ -479,7 +479,7 @@
 				type: "item"
 			}]
 			x: -1.25d
-			y: -14.75d
+			y: -15.0d
 		}
 		{
 			dependencies: [
@@ -625,7 +625,7 @@
 				type: "item"
 			}]
 			x: -2.25d
-			y: -13.75d
+			y: -14.0d
 		}
 		{
 			dependencies: ["17889F915BEB2F91"]
@@ -678,7 +678,7 @@
 				type: "item"
 			}]
 			x: -3.25d
-			y: -14.75d
+			y: -15.0d
 		}
 		{
 			dependencies: [
@@ -2914,6 +2914,45 @@
 			title: "如何释放法术"
 			x: -1.0d
 			y: -7.25d
+		}
+		{
+			dependencies: ["5BCFF4453AC3F1D2"]
+			description: [
+				"使用祛魔书祛除指令附魔书的附魔后，剩下的部分便著成指令魔法书。"
+				""
+				"指令魔法书能够提供相当可观的魔法伤害加成，并且默认携带&6宏伟魔法:悬松定根图&r。"
+			]
+			id: "1394156BB4395D93"
+			rewards: [{
+				count: 2
+				id: "6BFAA513B339B001"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			subtitle: "凋零风暴的遗志之一"
+			tasks: [{
+				id: "428D141E2A3C2B0B"
+				item: {
+					Count: 1b
+					id: "kubejs:command_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "kubejs:earth_without_earth"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 15
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -13.5d
 		}
 	]
 	title: "Iron的魔法书：魔法与第一原则"

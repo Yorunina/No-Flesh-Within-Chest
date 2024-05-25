@@ -297,7 +297,6 @@ const organPlayerKeyPressedOnlyStrategies = {
             /** @type {Internal.Entity} */
             let entity = ray.entity
             let curPhase = entity?.nbt.getInt('Phase')
-            player.tell(curPhase)
             switch (true) {
                 case curPhase < 5: {
                     entity.mergeNbt({ 'Phase': curPhase + 1, 'ConsumedEntities': 30000000 })

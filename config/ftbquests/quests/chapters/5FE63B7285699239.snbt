@@ -113,8 +113,8 @@
 				item: "nameless_trinkets:cracked_crown"
 				type: "item"
 			}]
-			x: -1.75d
-			y: 3.75d
+			x: 9.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
@@ -310,22 +310,6 @@
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]
-			id: "564B7ACD0CF2A57A"
-			rewards: [{
-				id: "7AFB7AA38F6D1708"
-				item: "lightmanscurrency:coin_gold"
-				type: "item"
-			}]
-			tasks: [{
-				id: "1895EC942DD8A58F"
-				item: "nameless_trinkets:gills"
-				type: "item"
-			}]
-			x: -1.75d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6E502CA178ED4148"]
 			id: "28E705C54F0C2873"
 			rewards: [{
 				id: "4EE484F7ED720B20"
@@ -433,7 +417,7 @@
 				item: "nameless_trinkets:gods_crown"
 				type: "item"
 			}]
-			x: -0.5d
+			x: -1.75d
 			y: 3.75d
 		}
 		{
@@ -593,8 +577,8 @@
 				item: "nameless_trinkets:light_gloves"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 2.5d
+			x: -1.75d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E502CA178ED4148"]

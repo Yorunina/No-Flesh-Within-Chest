@@ -27,9 +27,9 @@ LootJS.modifiers(event => {
                     diffLevelNum = entity.persistentData.getInt('diffLevel')
                 }
                 if (diffLevelNum >= 4) {
-                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.05, 1))))
-                    ctx.addLoot(LootEntry.of('kubejs:unbreakable_core').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.02, 1))))
-                    ctx.addLoot(LootEntry.of('kubejs:disenchantment_book').when((c) => c.randomChance(Math.min((diffLevelNum - 2) * 0.02, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min(0.4, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:unbreakable_core').when((c) => c.randomChance(Math.min(0.05, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:disenchantment_book').when((c) => c.randomChance(Math.min(0.15, 1))))
                 }
             })
     }
@@ -128,7 +128,7 @@ LootJS.modifiers(event => {
         .anyStructure(['#tetra:forged_ruins'], false)
         .addWeightedLoot(machineChestLootTable)
         .addWeightedLoot(machineChestLootTable)
-        
+
     event.addLootTypeModifier(LootType.CHEST)
         .removeLoot('@nameless_trinkets')
         .anyStructure(['#minecraft:village'], false)

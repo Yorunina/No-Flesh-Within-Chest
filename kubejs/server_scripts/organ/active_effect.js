@@ -471,7 +471,6 @@ const organActiveOnlyStrategies = {
             let organData = $ChestCavityUtil.lookupOrgan(item, null)
             if (!organData.organScores.isEmpty()) {
                 organCount = organCount + 1
-                player.tell(item)
             }
         })
 

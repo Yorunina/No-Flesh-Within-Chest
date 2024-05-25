@@ -16,21 +16,21 @@ MoreJSEvents.villagerTrades((event) => {
 
     EggWares.forEach(ctx => {
         let sellitem = new Wares('egg').setPaymentItems(ctx.paymentItems).setRequestedItems(ctx.requestedItems).setTitle('宠物商人', '#33333').setMessage('咳，你也许在荒野上遇到过它吧。\n我们把它装在怪物蛋里，这对你来说很方便吧？', '#33333').setOrdered(ctx.ordered).build()
-        event.addTrade('lightmanscurrency:banker', 2, [TradeItem.of('minecraft:emerald', 24, 36), TradeItem.of('minecraft:diamond', 4, 16)], sellitem)
+        event.addTrade('lightmanscurrency:banker', 2, [TradeItem.of('minecraft:emerald', 24, 36), TradeItem.of('minecraft:diamond', 2, 4)], sellitem)
             .maxUses(16)
             .villagerExperience(6.0)
     })
 
     SpecialWares.forEach(ctx => {
         let sellitem = new Wares('special').setPaymentItems(ctx.paymentItems).setRequestedItems(ctx.requestedItems).setTitle('遗物商人', '#33333').setMessage('我们的探险队从遗迹中搜寻到了一些有趣的物品。\n我们只需要一个合理的价格。剩下的，你自己决定。', '#33333').setOrdered(ctx.ordered).build()
-        event.addTrade('lightmanscurrency:banker', 3, [TradeItem.of('minecraft:emerald', 32, 48), TradeItem.of('minecraft:diamond', 8, 24)], sellitem)
+        event.addTrade('lightmanscurrency:banker', 3, [TradeItem.of('minecraft:emerald', 32, 48), TradeItem.of('minecraft:diamond', 4, 8)], sellitem)
             .maxUses(8)
             .villagerExperience(8.0)
     })
 
     OrganWares.forEach(ctx => {
         let sellitem = new Wares('organ').setPaymentItems(ctx.paymentItems).setRequestedItems(ctx.requestedItems).setTitle('器官商人', '#d15492').setMessage('这是一些. . .肉制品。\n我们保存的相当完好，保证随取随用。', '#33333').setOrdered(ctx.ordered).build()
-        event.addTrade('lightmanscurrency:banker', 4, [TradeItem.of('minecraft:emerald', 36, 56), TradeItem.of('minecraft:diamond', 16, 32)], sellitem)
+        event.addTrade('lightmanscurrency:banker', 4, [TradeItem.of('minecraft:emerald', 36, 56), TradeItem.of('minecraft:diamond', 4, 16)], sellitem)
             .maxUses(8)
             .villagerExperience(10.0)
     })

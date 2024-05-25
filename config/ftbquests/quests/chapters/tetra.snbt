@@ -889,6 +889,8 @@
 				"以同样的方式来取得&e四级锤子&r吧！"
 				""
 				"当然，在将一把锤子放在&6加工台&r上的时候，确保你的背包/工具架里仍然有一把&e三级锤&r。"
+				""
+				"为了进一步提高你的锻造等级，接下来，你需要寻找远古锻造遗迹，获取&6锻造锤&r。"
 			]
 			hide_dependency_lines: false
 			icon: {
@@ -1169,7 +1171,10 @@
 			y: 24.5d
 		}
 		{
-			dependencies: ["35E219B64C68FB53"]
+			dependencies: [
+				"35E219B64C68FB53"
+				"79B3E0CB8757E049"
+			]
 			dependency_requirement: "one_completed"
 			description: [
 				"一个&e完整的锻造锤&r由&6锻造锤&r和&6锻造加工台&r构成，他们都会生成在&d锻造遗迹&r中，你需要找到并带回他们。"
@@ -1213,7 +1218,6 @@
 				"{image:kubejs:textures/task/tetra_4.png width:192 height:102 align:1}"
 				""
 				"{@pagebreak}"
-				""
 				"锻造锤工作完毕后会有几率出现故障卡住，需要持有&e4级或以上的锤子&r，&e右击&r锻造锤头部下沿进行修复。"
 				""
 				"{image:kubejs:textures/task/tetra_5.png width:190 height:107 align:1}"

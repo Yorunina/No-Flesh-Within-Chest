@@ -8,6 +8,8 @@
 
 如果对该整合包有任何意见 / 提交bug，欢迎您在issue区域详细的描述您的问题。如果您有二次开发的需求，也欢迎直接与我们制作团队进行沟通，我们期待与任何有想法的玩家交流。
 
+请不要针对非发布版本的内容提出issue！Main分支并不保证健全性，其包含了大量关于测试的内容！使用时请自负风险，并且在不确定的情况下请不要针对测试内容提出issue要求开发者修改！
+
 ---
 
 **No Flesh Within Chest** is a high-customization organ-themed modpack based on 1.19.2 Forge. It revolves around the ChestCavity mod and implements lots of organs beyond the original design. These organ-based features enhance the overall content and connect all-mods.
@@ -54,14 +56,14 @@ If you have any suggestions or want to report bugs related to this modpack, plea
   - [x] 神恩挑战
   - [ ] 其余的宏伟魔法
   - [x] 资源值设计
-  - [ ] 扭曲值设计
+  - [x] 扭曲值设计
   - [x] Boss内容与主线融合
 - [ ] 平衡性设计
   - [x] 动态难度基本思路
   - [x] 器官联动平衡性修改
   - [x] 器官属性平衡性修改
   - [x] 器官获取方式平衡性修改
-  - [ ] Tetra平衡性修改
+  - [x] Tetra平衡性修改
   - [x] Weapon Master平衡性修改
   - [x] Boss召唤条件平衡性更改
   - [ ] 增添更多动态难度选项

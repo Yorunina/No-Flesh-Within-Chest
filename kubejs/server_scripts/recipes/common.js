@@ -78,6 +78,12 @@ ServerEvents.recipes(event => {
         ['', 'alexsmobs:banana_slug_slime', '']
     ])
 
+    event.shaped('kubejs:archivist_eyeglass', [
+        ['', '#forge:ingots/gold', ''],
+        ['createaddition:gold_wire', '#forge:glass_panes/colorless', '#forge:ingots/gold'],
+        ['createaddition:gold_wire', '', '']
+    ])
+
     event.shaped('kubejs:silk_for_cutting', [
         ['minecraft:glass', '#forge:string', 'minecraft:glass'],
         ['#forge:string', '#forge:dusts/glowstone', '#forge:string'],

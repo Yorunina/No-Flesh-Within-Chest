@@ -385,6 +385,7 @@
 			y: 5.25d
 		}
 		{
+			dependencies: ["68EFDD765396B87D"]
 			hide_dependency_lines: true
 			icon: "somebosses:burning_volcanic_rock"
 			id: "6BD52270D760EA85"
