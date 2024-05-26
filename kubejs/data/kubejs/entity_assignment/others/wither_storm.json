@@ -1,0 +1,8 @@
+{
+    "chestcavity": "kubejs:types/others/wither_storm.json",
+    "entities": [
+        "witherstormmod:withered_symbiont",
+        "witherstormmod:wither_storm",
+        "witherstormmod:wither_storm_segment"
+    ]
+}

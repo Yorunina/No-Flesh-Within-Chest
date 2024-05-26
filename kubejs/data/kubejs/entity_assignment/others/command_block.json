@@ -1,0 +1,6 @@
+{
+    "chestcavity": "kubejs:types/others/command_block.json",
+    "entities": [
+        "witherstormmod:command_block"
+    ]
+}

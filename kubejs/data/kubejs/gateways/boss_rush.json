@@ -7,6 +7,158 @@
     {
       "entities": [
         {
+          "entity": "meetyourfight:bellringer",
+          "count": 1
+        }
+      ],
+      "modifiers": [
+        {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
+            "attribute": "generic.armor",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.6         
+        },
+        {
+            "attribute": "generic.attack_damage",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 3.2         
+        },
+        {
+            "attribute": "generic.max_health",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 3.0     
+        },
+        {
+            "attribute": "irons_spellbooks:spell_resist",    
+            "operation": "ADDITION",    
+            "value": 0.8 
+        }
+    ],
+      "rewards": [],
+      "max_wave_time": 600,
+      "setup_time": 200
+    },
+    {
+      "entities": [
+        {
+          "entity": "meetyourfight:rosalyne",
+          "count": 1
+        }
+      ],
+      "modifiers": [
+        {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
+            "attribute": "generic.armor",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.6         
+        },
+        {
+            "attribute": "generic.attack_damage",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 3.2         
+        },
+        {
+            "attribute": "generic.max_health",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 3.0     
+        },
+        {
+            "attribute": "irons_spellbooks:spell_resist",    
+            "operation": "ADDITION",    
+            "value": 0.8 
+        }
+    ],
+      "rewards": [],
+      "max_wave_time": 600,
+      "setup_time": 200
+    },
+    {
+      "entities": [
+        {
+          "entity": "meetyourfight:swampjaw",
+          "count": 1
+        }
+      ],
+      "modifiers": [
+        {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
+            "attribute": "generic.armor",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.6         
+        },
+        {
+            "attribute": "generic.attack_damage",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 3.2         
+        },
+        {
+            "attribute": "generic.max_health",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 3.0     
+        },
+        {
+            "attribute": "irons_spellbooks:spell_resist",    
+            "operation": "ADDITION",    
+            "value": 0.8 
+        }
+    ],
+      "rewards": [],
+      "max_wave_time": 600,
+      "setup_time": 200
+    },
+    {
+      "entities": [
+        {
+          "entity": "meetyourfight:dame_fortuna",
+          "count": 1
+        }
+      ],
+      "modifiers": [
+        {
+            "attribute": "generic.movement_speed",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.8         
+        },
+        {
+            "attribute": "generic.armor",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 1.6         
+        },
+        {
+            "attribute": "generic.attack_damage",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 3.2         
+        },
+        {
+            "attribute": "generic.max_health",    
+            "operation": "MULTIPLY_BASE",    
+            "value": 3.0     
+        },
+        {
+            "attribute": "irons_spellbooks:spell_resist",    
+            "operation": "ADDITION",    
+            "value": 0.8 
+        }
+    ],
+      "rewards": [],
+      "max_wave_time": 600,
+      "setup_time": 200
+    },
+    {
+      "entities": [
+        {
           "entity": "somebosses:aesegull",
           "count": 1
         }
@@ -768,158 +920,6 @@
       "entities": [
         {
           "entity": "somebosses:sand_giant",
-          "count": 1
-        }
-      ],
-      "modifiers": [
-        {
-            "attribute": "generic.movement_speed",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 1.8         
-        },
-        {
-            "attribute": "generic.armor",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 1.6         
-        },
-        {
-            "attribute": "generic.attack_damage",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 3.2         
-        },
-        {
-            "attribute": "generic.max_health",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 3.0     
-        },
-        {
-            "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "ADDITION",    
-            "value": 0.8 
-        }
-    ],
-      "rewards": [],
-      "max_wave_time": 600,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "meetyourfight:bellringer",
-          "count": 1
-        }
-      ],
-      "modifiers": [
-        {
-            "attribute": "generic.movement_speed",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 1.8         
-        },
-        {
-            "attribute": "generic.armor",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 1.6         
-        },
-        {
-            "attribute": "generic.attack_damage",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 3.2         
-        },
-        {
-            "attribute": "generic.max_health",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 3.0     
-        },
-        {
-            "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "ADDITION",    
-            "value": 0.8 
-        }
-    ],
-      "rewards": [],
-      "max_wave_time": 600,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "meetyourfight:rosalyne",
-          "count": 1
-        }
-      ],
-      "modifiers": [
-        {
-            "attribute": "generic.movement_speed",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 1.8         
-        },
-        {
-            "attribute": "generic.armor",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 1.6         
-        },
-        {
-            "attribute": "generic.attack_damage",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 3.2         
-        },
-        {
-            "attribute": "generic.max_health",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 3.0     
-        },
-        {
-            "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "ADDITION",    
-            "value": 0.8 
-        }
-    ],
-      "rewards": [],
-      "max_wave_time": 600,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "meetyourfight:swampjaw",
-          "count": 1
-        }
-      ],
-      "modifiers": [
-        {
-            "attribute": "generic.movement_speed",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 1.8         
-        },
-        {
-            "attribute": "generic.armor",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 1.6         
-        },
-        {
-            "attribute": "generic.attack_damage",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 3.2         
-        },
-        {
-            "attribute": "generic.max_health",    
-            "operation": "MULTIPLY_BASE",    
-            "value": 3.0     
-        },
-        {
-            "attribute": "irons_spellbooks:spell_resist",    
-            "operation": "ADDITION",    
-            "value": 0.8 
-        }
-    ],
-      "rewards": [],
-      "max_wave_time": 600,
-      "setup_time": 200
-    },
-    {
-      "entities": [
-        {
-          "entity": "meetyourfight:dame_fortuna",
           "count": 1
         }
       ],

@@ -1,0 +1,12 @@
+{
+    "chestcavity": "kubejs:types/others/technique_entity.json",
+    "entities": [
+        "dummmmmmy:target_dummy",
+        "minecraft:armor_stand",
+        "goety:haunted_armor_stand",
+        "irons_spellbooks:summoned_zombie",
+        "irons_spellbooks:summoned_polar_bear",
+        "irons_spellbooks:summoned_skeleton",
+        "irons_spellbooks:summoned_vex"
+    ]
+}

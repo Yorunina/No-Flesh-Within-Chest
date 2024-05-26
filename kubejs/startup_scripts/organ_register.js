@@ -759,6 +759,25 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/relic_metal_plate')
         .tag('kubejs:relics');
+        
+    registerOrgan(new Organ('kubejs:storm_metal_plate')
+        .addScore('health', 0.5)
+        .addScore('nerves', 0.5)
+        .addScore('breath_recovery', 0.5)
+        .addScore('strength', 0.5)
+        .addScore('filtration', 0.5)
+        .addScore('detoxification', 0.5)
+        .addScore('defense', 0.25)
+        .addScore('nutrition', 0.25)
+        .addScore('endurance', 0.5)
+        .addScore('digestion', 0.25)
+        .addScore('metabolism', 0.5)
+        .addScore('breath_capacity', 0.5)
+        .addScore('speed', 0.5)
+        .addTextLines('default', [Text.darkPurple({ "translate": "kubejs.tooltips.storm_metal_plate.1" })])
+        .build())
+        .texture('kubejs:item/organs/relics/storm_metal_plate')
+        .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:parasitic_elf')
         .addScore('health', 1)

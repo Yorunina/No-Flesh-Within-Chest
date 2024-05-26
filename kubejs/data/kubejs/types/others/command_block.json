@@ -1,0 +1,14 @@
+{
+  "defaultChestCavity": [
+    {"item": "kubejs:storm_metal_plate","position": 4},
+    {"item": "kubejs:storm_metal_plate","position": 12},
+    {"item": "witherstormmod:command_block_book","position": 13},
+    {"item": "kubejs:storm_metal_plate","position": 14},
+    {"item": "kubejs:storm_metal_plate","position": 22}
+  ],
+  "baseOrganScores": [
+    {"id": "chestcavity:health","value": "1"}
+  ],
+  "exceptionalOrgans": [
+  ]
+}

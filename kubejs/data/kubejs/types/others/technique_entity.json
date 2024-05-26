@@ -1,0 +1,21 @@
+{
+    "defaultChestCavity": [
+    ],
+    "baseOrganScores": [
+      {"id": "chestcavity:health","value": "1"},
+      {"id": "chestcavity:nerves","value": "1"},
+      {"id": "chestcavity:breath_recovery","value": "2"},
+      {"id": "chestcavity:strength","value": "1"},
+      {"id": "chestcavity:detoxification","value": "1"},
+      {"id": "chestcavity:filtration","value": "1"},
+      {"id": "chestcavity:defense","value": "1"},
+      {"id": "chestcavity:nutrition","value": "1"},
+      {"id": "chestcavity:endurance","value": "1"},
+      {"id": "chestcavity:digestion","value": "1"},
+      {"id": "chestcavity:metabolism","value": "1"},
+      {"id": "chestcavity:breath_capacity","value": "1"},
+      {"id": "chestcavity:speed","value": "1"}
+    ],
+    "exceptionalOrgans": [
+    ]
+  }

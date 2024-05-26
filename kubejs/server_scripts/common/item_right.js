@@ -90,7 +90,7 @@ ItemEvents.rightClicked('kubejs:advanced_chest_opener', event => {
     let dist = 5
     if (teleOper) {
         let teleOperLevel = event.item.getEnchantmentLevel('kubejs:tele_operation')
-        dist = Math.max(dist + teleOperLevel * 3, 20)
+        dist = Math.min(dist + teleOperLevel * 3, 20)
     }
     let ray = player.rayTrace(dist, false)
     let target = player
