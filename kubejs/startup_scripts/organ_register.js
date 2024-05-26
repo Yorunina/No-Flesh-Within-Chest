@@ -280,7 +280,7 @@ StartupEvents.registry('item', event => {
     registerOrgan(new Organ('kubejs:mace')
         .addScore('strength', 1.75)
         .addScore('knockback_resistant', 1)
-        .addScore('endurance', -3.5)
+        .addScore('endurance', -1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.mace.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mace.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mace.3" })])
@@ -661,7 +661,6 @@ StartupEvents.registry('item', event => {
         .addScore('crystalsynthesis', 0.25)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.the_third_eye.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.the_third_eye.2" })])
-        .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.the_third_eye.3" })])
         .build())
         .texture('kubejs:item/organs/warp/the_third_eye')
         .rarity('epic')
@@ -868,10 +867,10 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:wither_and_fall')
-        .addScore('health', -1.25)
-        .addScore('photosynthesis', 1)
-        .addScore('defense', -2.5)
-        .addScore('nerves', 1.75)
+        .addScore('health', -0.5)
+        .addScore('photosynthesis', 0.5)
+        .addScore('defense', -1.5)
+        .addScore('nerves', 1)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.wither_and_fall.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.wither_and_fall.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.wither_and_fall.3" })])
@@ -941,9 +940,9 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:relics');
 
     registerOrgan(new Organ('kubejs:cursed_soul')
-        .addScore('strength', -1.75)
-        .addScore('nerves', 2.25)
-        .addScore('detoxification', -1.5)
+        .addScore('strength', -1)
+        .addScore('nerves', 1.25)
+        .addScore('detoxification', -0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.cursed_soul.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cursed_soul.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.cursed_soul.3" })])
@@ -1407,8 +1406,8 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:active_only');
 
     registerOrgan(new Organ('kubejs:lamellar_armor_piece')
-        .addScore('defense', 2.75)
-        .addScore('speed', -1.25)
+        .addScore('defense', 2.5)
+        .addScore('speed', -1)
         .build())
         .texture('kubejs:item/organs/machine/lamellar_armor_piece')
         .tag('itemborders:iron')
@@ -1458,7 +1457,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:key_pressed');
 
     registerOrgan(new Organ('kubejs:go_camping')
-        .addScore('luck', 3)
+        .addScore('luck', 2)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.go_camping.1" })])
         .build())
         .texture('kubejs:item/organs/legends/go_camping')
@@ -1696,7 +1695,7 @@ StartupEvents.registry('item', event => {
         .tag('kubejs:lung');
 
     registerOrgan(new Organ('kubejs:mantis_shrimp_fist')
-        .addScore('strength', 2.25)
+        .addScore('strength', 2)
         .addScore('speed', -0.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.mantis_shrimp_fist.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.mantis_shrimp_fist.2" })])
@@ -1773,7 +1772,7 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold');
 
     registerOrgan(new Organ('kubejs:potoo_beak')
-        .addScore('strength', 1.75)
+        .addScore('strength', 1.25)
         .addScore('speed', 1.0)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.potoo_beak.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.potoo_beak.2" })])
@@ -1784,8 +1783,7 @@ StartupEvents.registry('item', event => {
         .tag('itemborders:gold');
 
     registerOrgan(new Organ('kubejs:treasure_detector_feather')
-        .addScore('strength', 1.75)
-        .addScore('speed', 1.0)
+        .addScore('luck', 1.5)
         .addTextLines('default', [Text.gray({ "translate": "kubejs.tooltips.treasure_detector_feather.1" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.treasure_detector_feather.2" })])
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.treasure_detector_feather.3" })])

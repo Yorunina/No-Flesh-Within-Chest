@@ -337,13 +337,13 @@ const organActiveStrategies = {
  */
 const organActiveOnlyStrategies = {
     'kubejs:telescopic_arm': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 1.5)
+        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 1)
     },
     'kubejs:telescopic_tool_arm': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 2.5)
+        attributeMapValueAddition(attributeMap, global.REACH_DISTANCE, 2)
     },
     'kubejs:telescopic_attack_arm': function (player, organ, attributeMap) {
-        attributeMapValueAddition(attributeMap, global.ATTACK_RANGE, 1.5)
+        attributeMapValueAddition(attributeMap, global.ATTACK_RANGE, 1)
     },
     'kubejs:nether_star_shard': function (player, organ, attributeMap) {
         attributeMapValueAddition(attributeMap, global.CRITICAL_HIT, 0.1)

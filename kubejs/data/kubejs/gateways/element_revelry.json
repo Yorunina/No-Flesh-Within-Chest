@@ -92,7 +92,7 @@
             }
         ],
         "rewards": [],
-        "max_wave_time": 3000,
+        "max_wave_time": 6000,
         "setup_time": 200
       },
       {
@@ -186,7 +186,7 @@
             }
         ],
         "rewards": [],
-        "max_wave_time": 3000,
+        "max_wave_time": 6000,
         "setup_time": 200
       },
       {
@@ -308,7 +308,7 @@
             }
         ],
         "rewards": [],
-        "max_wave_time": 3000,
+        "max_wave_time": 6000,
         "setup_time": 200
       },
       {
@@ -405,7 +405,7 @@
             }
         ],
         "rewards": [],
-        "max_wave_time": 3000,
+        "max_wave_time": 6000,
         "setup_time": 200
       },
       {
@@ -470,7 +470,7 @@
             }
         ],
         "rewards": [],
-        "max_wave_time": 3000,
+        "max_wave_time": 6000,
         "setup_time": 200
       },
       {
@@ -564,7 +564,7 @@
             }
         ],
         "rewards": [],
-        "max_wave_time": 3000,
+        "max_wave_time": 6000,
         "setup_time": 200
       },
       {
@@ -694,7 +694,7 @@
             }
         ],
         "rewards": [],
-        "max_wave_time": 3000,
+        "max_wave_time": 6000,
         "setup_time": 200
       }
     ],

@@ -1,10 +1,10 @@
 {
   "key": "dreadsteel_ingot",
   "category": "metal",
-  "primary": 9.1,
+  "primary": 9.4,
   "secondary": 4.8,
   "tertiary": 3.9,
-  "durability": 2340,
+  "durability": 2380,
   "integrityCost": 3,
   "integrityGain": 2,
   "magicCapacity": 10,
@@ -18,7 +18,7 @@
     "irons_spellbooks:fire_spell_power": 0.2,
     "irons_spellbooks:ice_spell_power": 0.2,
     "irons_spellbooks:lightning_spell_power": 0.2,
-    "*generic.attack_speed": -0.6
+    "*generic.attack_speed": -0.4
   },
   "effects": {
     "blocking_reflect": [

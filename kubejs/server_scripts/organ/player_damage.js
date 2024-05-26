@@ -42,9 +42,8 @@ const organPlayerDamageStrategies = {
 const organPlayerDamageOnlyStrategies = {
     'kubejs:infinity_beats': function (event, organ, data) {
         let player = event.source.player;
-        let attriMap = getPlayerAttributeMap(player);
-        let itemMap = getPlayerChestCavityItemMap(player);
-        if (itemMap.has('kubejs:infinity_beats') && !player.hasItemInSlot('mainhand') && !player.hasItemInSlot('offhand')) {
+        let attriMap = getPlayerAttributeMap(player)
+        if (!player.hasItemInSlot('mainhand') && !player.hasItemInSlot('offhand')) {
             let value = 4;
             if (attriMap.has(global.TEMP_ATTACK_UP.name)) {
                 value = value + attriMap.get(global.TEMP_ATTACK_UP.name)
@@ -179,7 +178,7 @@ const organPlayerDamageOnlyStrategies = {
     'kubejs:lava_life_cycle_system': function (event, organ, data) {
         let player = event.source.player
         let count = player.persistentData.getInt(resourceCount)
-        let damageBonus = Math.floor(count / 5)
+        let damageBonus = Math.floor(count / 10)
         if (damageBonus > 0) {
             event.amount = event.amount + damageBonus
             updateResourceCount(player, count - damageBonus)
@@ -195,8 +194,8 @@ const organPlayerDamageOnlyStrategies = {
         if (event.source.type != 'arrow') return
         let player = event.source.player
         if (player.persistentData.getInt(warpCount) >= 20) {
-            event.entity.invulnerableTime = event.entity.invulnerableTime * 1 / 2
-            event.amount = event.amount * 0.5
+            event.entity.invulnerableTime = 0
+            event.amount = event.amount * 0.75
         }
     },
     'kubejs:energy_bottle_max': function (event, organ, data) {
