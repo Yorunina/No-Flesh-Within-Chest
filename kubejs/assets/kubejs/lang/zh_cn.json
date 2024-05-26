@@ -1,6 +1,6 @@
 {
     "kubejs.gameinfo.modpack.name": "No Flesh Within Chest",
-    "item.kubejs.slow_down_disc.desc": "Slow Down",
+    "item.kubejs.faded_disc.desc": "Faded",
     "itemGroup.kubejs.organs": "额外器官",
     "key.categories.kubejs": "kubejs",
     "key.kubejs.organ_skill": "器官技能按键",

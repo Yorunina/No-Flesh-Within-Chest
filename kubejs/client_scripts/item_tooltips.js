@@ -84,7 +84,7 @@ ItemEvents.tooltip((tooltip) => {
         text.add(Text.gold({ "translate": "kubejs.tooltips.disenchantment_book.2" }));
     })
     tooltip.addAdvanced('kubejs:advanced_chest_opener', (item, advanced, text) => {
-        text.add(Text.gray({ "translate": "kubejs.tooltips.advanced_chest_opener.1" }));
+        text.add(Text.darkGray({ "translate": "kubejs.tooltips.advanced_chest_opener.1" }));
     })
     tooltip.addAdvanced('kubejs:god_bless_empty_necklace', (item, advanced, text) => {
         text.add(Text.gray({ "translate": "kubejs.tooltips.god_bless_empty_necklace.1" }));

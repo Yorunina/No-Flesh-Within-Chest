@@ -346,4 +346,3 @@ StartupEvents.registry('item', event => {
         .addDefaultSpell('kubejs:earth_without_earth', 1)
         .addDefaultAttribute('irons_spellbooks:spell_power', 'commandBookSpellPower', 0.5, 'addition')
 })
-
