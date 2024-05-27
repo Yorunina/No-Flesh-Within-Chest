@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'weaponmaster:workstation' })
 
     event.shaped('weaponmaster:workstation', [
-        ['minecraft:lectern', 'minecraft:writable_book', 'minecraft:anvil'],
+        ['minecraft:lectern', 'minecraft:writable_book', '#minecraft:anvil'],
         ['minecraft:smooth_stone', '#forge:storage_blocks', 'minecraft:smooth_stone'],
     ])
 
@@ -101,9 +101,9 @@ ServerEvents.recipes(event => {
     event.shapeless('kubejs:disenchantment_paper', ['minecraft:enchanted_book', 'alexsmobs:mysterious_worm', 'goety:unholy_blood'])
 
     event.shaped('irons_spellbooks:scroll', [
-        ['kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment'],
+        ['', 'kubejs:dark_stardust_fragment', ''],
         ['kubejs:dark_stardust_fragment', 'irons_spellbooks:scroll', 'kubejs:dark_stardust_fragment'],
-        ['kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment', 'kubejs:dark_stardust_fragment']])
+        ['', 'kubejs:dark_stardust_fragment', '']])
         .modifyResult((grid, stack) => {
             let scroll = grid.find('irons_spellbooks:scroll', 0)
             if (!scroll.nbt?.ISB_Spells?.data || !scroll.nbt.ISB_Spells.data[0]) {

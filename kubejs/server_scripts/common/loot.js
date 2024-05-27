@@ -27,9 +27,9 @@ LootJS.modifiers(event => {
                     diffLevelNum = entity.persistentData.getInt('diffLevel')
                 }
                 if (diffLevelNum >= 4) {
-                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min(0.4, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:dark_stardust_fragment').when((c) => c.randomChance(Math.min(0.8, 1))))
                     ctx.addLoot(LootEntry.of('kubejs:unbreakable_core').when((c) => c.randomChance(Math.min(0.05, 1))))
-                    ctx.addLoot(LootEntry.of('kubejs:disenchantment_book').when((c) => c.randomChance(Math.min(0.15, 1))))
+                    ctx.addLoot(LootEntry.of('kubejs:disenchantment_book').when((c) => c.randomChance(Math.min(0.2, 1))))
                 }
             })
     }

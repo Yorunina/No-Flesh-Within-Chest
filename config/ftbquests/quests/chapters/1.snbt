@@ -508,6 +508,8 @@
 				"&d-《Tetra》以及其附属：&r该模组允许你使用&e不同类型的材料&r更换&e武器和工具的配件&r，从而做出适合自己的武器。&7&m新时代匠魂&r&r"
 				""
 				"&d-《武器大师》：&r该模组提供风格迥异的&e4种不同类型的武器&r，武器有自身等级的概念，随着你的使用去解锁更加强大特殊能力。"
+				""
+				"&8如果你要拆除武器大师工作台的话，请一定要拆除它的中心部位！否则将不会有物品掉落！&r"
 			]
 			icon: "weaponmaster:workstation"
 			id: "4C370F7BB4E56798"
@@ -2050,6 +2052,27 @@
 			}]
 			x: 4.5d
 			y: 5.0d
+		}
+		{
+			dependencies: ["50CE3ADF8E4D6426"]
+			hide_dependency_lines: true
+			icon: "chestcavity:cooked_man_meat"
+			id: "61629147A528F41B"
+			invisible: true
+			rewards: [{
+				id: "35A9A4A38B0A4A7B"
+				item: "kubejs:faded_disc"
+				type: "item"
+			}]
+			subtitle: "Faded. . ."
+			tasks: [{
+				id: "2B7672880A7699CC"
+				item: "chestcavity:cooked_man_meat"
+				type: "item"
+			}]
+			title: "初次品尝"
+			x: 10.0d
+			y: 1.75d
 		}
 	]
 	title: "章节1：如常"

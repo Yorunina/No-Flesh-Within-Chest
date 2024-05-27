@@ -25,7 +25,7 @@ EntityEvents.spawned(event => {
     */
     let entity = event.entity
     if (!entity) return
-    let player = entity.getLevel().getNearestPlayer(entity, 64)
+    let player = entity.getLevel().getNearestPlayer(entity, 128)
     let entityName = entity.type
     if (!player) return
     if (!entity.isLiving() || !(entity.isMonster() || entityName.startsWith('iceandfire'))) return
