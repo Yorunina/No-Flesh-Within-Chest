@@ -469,7 +469,7 @@ const organActiveOnlyStrategies = {
         let organCount = 0
         player.chestCavityInstance.inventory.allItems.forEach(item => {
             let organData = $ChestCavityUtil.lookupOrgan(item, null)
-            if (!organData.organScores.isEmpty()) {
+            if (organData && !organData.organScores.isEmpty()) {
                 organCount = organCount + 1
             }
         })
