@@ -7,12 +7,15 @@ StartupEvents.registry('minecraft:item', event => {
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip(() => true)
             .onEquip((itemFrom, ctx, itemTo) => {
+                if (ctx.entity().level.isClientSide()) return
                 global.archivistEyeGlassOnEquip(itemFrom, ctx, itemTo)
             })
             .onUnequip((itemFrom, ctx, itemTo) => {
+                if (ctx.entity().level.isClientSide()) return
                 global.archivistEyeGlassOnUnequip(itemFrom, ctx, itemTo)
             })
             .curioTick((item, ctx) => {
+                if (ctx.entity().level.isClientSide()) return
                 global.archivistEyeGlassTick(item, ctx)
             }))
 
@@ -40,9 +43,11 @@ StartupEvents.registry('minecraft:item', event => {
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip(() => true)
             .onEquip((itemFrom, ctx, itemTo) => {
+                if (ctx.entity().level.isClientSide()) return
                 global.bunnyHoppersOnEquip(itemFrom, ctx, itemTo)
             })
             .curioTick((item, ctx) => {
+                if (ctx.entity().level.isClientSide()) return
                 global.bunnyHoppersTick(item, ctx)
             }))
 })

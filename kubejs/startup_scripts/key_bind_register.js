@@ -3,5 +3,6 @@ const $GLFWKey = Java.loadClass("org.lwjgl.glfw.GLFW");
 const $KeyMappingRegistry = Java.loadClass("dev.architectury.registry.client.keymappings.KeyMappingRegistry");
 
 global.OrganSkill = new $KeyMapping(`key.kubejs.organ_skill`, $GLFWKey.GLFW_KEY_X, 'key.categories.kubejs')
-
-$KeyMappingRegistry.register(global.OrganSkill)
+StartupEvents.init(event => {
+    $KeyMappingRegistry.register(global.OrganSkill)
+})

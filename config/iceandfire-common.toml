@@ -129,7 +129,7 @@
 	[Mobs.Pixies]
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Pixies Chance" = 60
+		"Spawn Pixies Chance" = 100
 		#size of pixie villages
 		#Range: 1 ~ 10000
 		"Pixie Village Size" = 5
@@ -139,7 +139,7 @@
 	[Mobs.Cyclops]
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Cyclops Cave Chance" = 100
+		"Spawn Cyclops Cave Chance" = 150
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
 		"Spawn Wandering Cyclops Chance" = 100
@@ -188,7 +188,7 @@
 		"Death Worms Target Monsters" = true
 		#Deathworm spawn weight. Higher = lower chance to spawn
 		#Range: 1 ~ 10000
-		"Death Worm Spawn Weight" = 30
+		"Death Worm Spawn Weight" = 60
 
 	[Mobs.Cockatrice]
 		#Maximum cockatrice health
@@ -203,7 +203,7 @@
 		"Spawn Cockatrices" = true
 		#Cockatrice spawn weight. Lower = lower chance to spawn
 		#Range: 1 ~ 10000
-		"Cockatrice Spawn Weight" = 4
+		"Cockatrice Spawn Weight" = 2
 
 	[Mobs.Stymphalians]
 		#How many blocks away can stymphalian birds spot potential prey. Note that increasing this could cause lag.
@@ -227,7 +227,7 @@
 		"Stymphalian Birds Target Animals" = false
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Stymhphalian Bird Chance" = 100
+		"Spawn Stymhphalian Bird Chance" = 120
 
 	[Mobs.Trolls]
 		#True if trolls are allowed to spawn
@@ -291,7 +291,7 @@
 	[Mobs.SeaSerpents]
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Sea Serpent Chance" = 250
+		"Spawn Sea Serpent Chance" = 500
 		#Whether or not sea serpents can break weak blocks in their way
 		"Sea Serpent Griefing" = true
 		#Default sea serpent health, this is scaled to the sea serpent's particular size
@@ -304,7 +304,7 @@
 	[Mobs.Hippocampus]
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Spawn Hippocampus Chance" = 40
+		"Spawn Hippocampus Chance" = 80
 		#Change this to slow down or speed up hippocampus swimming.
 		#Range: 0.0 ~ 2.0
 		"Hippocampus Swim Speed Modifier" = 1.0

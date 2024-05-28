@@ -9,7 +9,10 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setMinRarity('legendary')
         .setMaxLevel(1)
         .setFinishSound('entity.lightning_bolt.thunder')
-        .onCast(ctx => global.toTheLostWorld(ctx))
+        .onCast(ctx => {
+            if (ctx.level.isClientSide()) return
+            global.toTheLostWorld(ctx)
+        })
 
     event.create('earth_without_earth')
         .setCastTime(20 * 15)
@@ -21,7 +24,10 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setMaxLevel(1)
         .setFinishSound('entity.lightning_bolt.thunder')
         .canBeCraftedBy(() => false)
-        .onCast(ctx => global.earthWithoutEarth(ctx))
+        .onCast(ctx => {
+            if (ctx.level.isClientSide()) return
+            global.earthWithoutEarth(ctx)
+        })
 
     event.create('endless_dream')
         .setCastTime(20)
@@ -32,7 +38,10 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setSchool('kubejs:candy')
         .setMinRarity('common')
         .setMaxLevel(10)
-        .onCast(ctx => global.endlessDream(ctx))
+        .onCast(ctx => {
+            if (ctx.level.isClientSide()) return
+            global.endlessDream(ctx)
+        })
 
     event.create('dream_of_needles')
         .setCastTime(20)
@@ -43,7 +52,10 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setSchool('kubejs:candy')
         .setMinRarity('common')
         .setMaxLevel(10)
-        .onCast(ctx => global.dreamOfNeedles(ctx))
+        .onCast(ctx => {
+            if (ctx.level.isClientSide()) return
+            global.dreamOfNeedles(ctx)
+        })
 
     event.create('dream_of_singing')
         .setCastTime(40)
@@ -54,6 +66,9 @@ StartupEvents.registry('irons_spellbooks:spells', event => {
         .setSchool('kubejs:candy')
         .setMinRarity('common')
         .setMaxLevel(10)
-        .onCast(ctx => global.dreamOfSinging(ctx))
+        .onCast(ctx => {
+            if (ctx.level.isClientSide()) return
+            global.dreamOfSinging(ctx)
+        })
 })
 
