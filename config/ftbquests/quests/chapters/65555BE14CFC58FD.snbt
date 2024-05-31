@@ -628,7 +628,7 @@
 				}
 			]
 			secret: true
-			subtitle: "这是个隐藏任务"
+			subtitle: "第五十位到第无数位赞助者"
 			tasks: [{
 				id: "401562D1207835A9"
 				item: "minecraft:pumpkin"
@@ -637,6 +637,279 @@
 			title: "赞助者：你！"
 			x: -1.25d
 			y: 3.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "13B0430374486729"
+			subtitle: "第二十九位赞助者，感谢感谢"
+			tasks: [{
+				id: "798776F4DE8BEB0F"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "feastiful"
+			x: -3.75d
+			y: 8.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "193F0A0E8F0C1AA5"
+			subtitle: "第三十位赞助者，非常感谢"
+			tasks: [{
+				id: "2D413DAED86FE54D"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "羖Kaa"
+			x: -2.75d
+			y: 8.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "2B60839A78FB4B4D"
+			subtitle: "第三十一位赞助者，感谢！"
+			tasks: [{
+				id: "4825C06001A5C71E"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "COSXIAN"
+			x: -1.75d
+			y: 8.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "6E717EAE76FDB3CF"
+			subtitle: "第三十二位赞助者，感谢你的喜欢"
+			tasks: [{
+				id: "5D4F41D57C236E29"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "三不才才子"
+			x: -0.75d
+			y: 8.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "3572F5D966B85456"
+			subtitle: "第三十三位赞助者，大额赞助之一"
+			tasks: [{
+				id: "699936F4A7B4E442"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "HGeorin"
+			x: 0.25d
+			y: 8.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "46FA608A4EA83F2B"
+			subtitle: "第三十四位赞助者，感谢！"
+			tasks: [{
+				id: "0065269DF4354047"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "guguge"
+			x: 1.25d
+			y: 8.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "681962881310ACC6"
+			subtitle: "第三十五位赞助者，感谢你的祝福！"
+			tasks: [{
+				id: "317CC3C6188B01D7"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "Hatter"
+			x: 2.25d
+			y: 8.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "4B3BC687622FA884"
+			subtitle: "第三十六位赞助者，感谢！"
+			tasks: [{
+				id: "0BB2B6762D94F41B"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "月之咲洛璃"
+			x: -4.25d
+			y: 9.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "30D22419FB287F49"
+			subtitle: "第三十七位赞助者，大额赞助之一"
+			tasks: [{
+				id: "0FB084C877FA1D02"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "爱发电用户_jXAb"
+			x: -3.25d
+			y: 9.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "05DE0F24FA769160"
+			subtitle: "第三十八位赞助者，感谢你的支持！"
+			tasks: [{
+				id: "3523F0C58D381C1F"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "坐上"
+			x: -2.25d
+			y: 9.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "350EE0C4B49B00DE"
+			subtitle: "第三十九位赞助者，感谢你的赞助！"
+			tasks: [{
+				id: "4A4CF168AC0E62F4"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "槛花笼鹤"
+			x: -1.25d
+			y: 9.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "27C5D05F23C6E3D8"
+			subtitle: "第四十位赞助者，感谢赞助！"
+			tasks: [{
+				id: "0E1659ED35EF8446"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "大大大脑斧鸭"
+			x: -0.25d
+			y: 9.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "1A9500BEC0755110"
+			subtitle: "第四十一位赞助者，感谢赞助！"
+			tasks: [{
+				id: "172190C6519206DC"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "SuzumiOvO"
+			x: 0.75d
+			y: 9.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "14EBADABBE77D0F8"
+			subtitle: "第四十二位赞助者，大额赞助之一"
+			tasks: [{
+				id: "460000858AEF4741"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "GetSomeDarius"
+			x: 1.75d
+			y: 9.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "0539E57A62BDB01C"
+			subtitle: "第四十三位赞助者，感谢你的赞助！"
+			tasks: [{
+				id: "265FFC175A6CC5D9"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "Wax5508"
+			x: -3.75d
+			y: 10.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "24BB225C8C30B03F"
+			subtitle: "第四十四位赞助者，感谢感谢！"
+			tasks: [{
+				id: "602E76389385BCEC"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "莱伊·卡尔恩德"
+			x: -2.75d
+			y: 10.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "5960DDBAE2CF6B1B"
+			subtitle: "第四十五位赞助者，大额赞助之一"
+			tasks: [{
+				id: "6D38749041AFD141"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "一只小袋鼠"
+			x: -1.75d
+			y: 10.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "387C7A1A3E668A98"
+			subtitle: "第四十六位赞助者——目前为止收到的最大一笔，万分感谢！"
+			tasks: [{
+				id: "55C0C4D860553896"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "良辰\\&星"
+			x: -0.75d
+			y: 10.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "375460CC2ED3122E"
+			subtitle: "第四十七位赞助者，感谢支持！"
+			tasks: [{
+				id: "2C6F9BA54B0C29E3"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "leavatian"
+			x: 0.25d
+			y: 10.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "2372715C604BCD15"
+			subtitle: "第四十八位赞助者，大额赞助之一！万分感谢！"
+			tasks: [{
+				id: "3113F1C765E1D1AF"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "惑月幻星"
+			x: 1.25d
+			y: 10.75d
+		}
+		{
+			dependencies: ["5D4966C4D48F6E5E"]
+			id: "38484F8B45052BBD"
+			subtitle: "第四十九位赞助者，感谢你的赞助，感谢！"
+			tasks: [{
+				id: "5D1EC7861F6936D7"
+				item: "kubejs:sponsor_badge"
+				type: "item"
+			}]
+			title: "至高无上微笑"
+			x: 2.25d
+			y: 10.75d
 		}
 	]
 	title: "制作人名单"
