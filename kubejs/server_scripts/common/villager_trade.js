@@ -47,15 +47,4 @@ MoreJSEvents.villagerTrades((event) => {
     event.addTrade('minecraft:cleric', 3, [TradeItem.of('minecraft:emerald', 8, 16)], Item.of('kubejs:active_pill'))
     event.addTrade('minecraft:cleric', 4, [TradeItem.of('minecraft:emerald', 16, 32)], Item.of('kubejs:operation_box'))
 
-    event.addTrade('minecraft:librarian', 2,
-        VillagerUtils.createEnchantedItemTrade([TradeItem.of('minecraft:emerald', 16, 64)], Item.of('minecraft:enchanted_book'))
-            .enchantments('kubejs:tele_operation')
-            .amount(1, 5)
-            .maxUses(4))
-
-    event.addTrade('minecraft:librarian', 2,
-        VillagerUtils.createEnchantedItemTrade([TradeItem.of('minecraft:emerald', 16, 64)], Item.of('minecraft:enchanted_book'))
-            .enchantments('kubejs:safe_operation')
-            .amount(1)
-            .maxUses(4))
 })

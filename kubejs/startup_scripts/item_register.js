@@ -336,8 +336,8 @@ StartupEvents.registry('item', event => {
             if (level.isClientSide()) return itemstack
             if (!entity.isPlayer()) return itemstack
             let wares = global.getRandomWare()
-            itemstack.shrink(1)
             entity.give(wares)
+            itemstack.shrink(1)
             return itemstack
         })
 

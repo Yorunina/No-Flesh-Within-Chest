@@ -29,3 +29,5 @@
 /servers*
 /patchouli_data.json
 /hmclversion.cfg
+/config/inventoryprofilesnext/*
+!/config/inventoryprofilesnext/inventoryprofiles.json

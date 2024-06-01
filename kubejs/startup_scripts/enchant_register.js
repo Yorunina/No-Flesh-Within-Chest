@@ -6,8 +6,9 @@ StartupEvents.registry('minecraft:enchantment', event => {
             return i.id == 'kubejs:advanced_chest_opener'
         })
         .undiscoverable()
-
-    event.create('kubejs:tele_operation').minLevel(1).maxLevel(1)
+        .untradeable()
+        
+    event.create('kubejs:tele_operation').minLevel(1).maxLevel(5)
         .canEnchant((/** @type {Internal.ItemStack} */ i) => {
             return i.id == 'kubejs:advanced_chest_opener'
         })
@@ -18,6 +19,7 @@ StartupEvents.registry('minecraft:enchantment', event => {
             return i.id == 'kubejs:advanced_chest_opener'
         })
         .undiscoverable()
+        .untradeable()
 
     event.create('kubejs:safe_operation').minLevel(1).maxLevel(1)
         .canEnchant((/** @type {Internal.ItemStack} */ i) => {
