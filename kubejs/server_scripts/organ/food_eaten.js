@@ -94,7 +94,7 @@ const organFoodEatenOnlyStrategies = {
         let organTumor = randomGet(tumorList)
         let index = organTumor.getInt('Slot')
         let tumor = instance.inventory.getItem(index)
-        if (index > 0 && item.hasNBT() && tumor.hasNBT()) {
+        if (index >= 0 && item.hasNBT() && tumor.hasNBT()) {
             let itemData = item.nbt.organData
             let organData = tumor.nbt.organData
             itemData.allKeys.forEach(key => {

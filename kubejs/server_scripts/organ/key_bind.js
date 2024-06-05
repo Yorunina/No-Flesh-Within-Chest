@@ -324,12 +324,11 @@ const organPlayerKeyPressedOnlyStrategies = {
         let level = event.level
         let player = event.player
         let randomPosBlock = player.block.offset((0.5 - Math.random()) * 1000, (128 - Math.random() * 32) - player.block.y, (0.5 - Math.random()) * 1000)
-
-
+        
         let luck = Math.max(player.getLuck(), 0)
         let table = 'minecraft:chests/stronghold/base'
-        let dimLootMap = treasureDetectorTableMap[String(level.dimension)]
-
+        let dimLootMap = treasureDetectorTableMap[level.dimensionKey.location()]
+        
         if (dimLootMap) {
             let keys = Object.keys(dimLootMap)
             keys.forEach((a) => parseInt(a))

@@ -5,7 +5,10 @@
  */
 global.archivistEyeGlassOnEquip = (itemFrom, ctx, itemTo) => {
     if (!ctx.entity().isPlayer()) return
-    initAllBar(ctx.entity())
+    /** @type {Internal.ServerPlayer} */
+    let player = ctx.entity()
+    initAllBar(player)
+
 }
 
 
@@ -31,8 +34,7 @@ global.archivistEyeGlassTick = (item, ctx) => {
     if (player.age % 20 != 0) return
     if (!player.isPlayer()) return
     let visible = true
-    updateResourceBar(player, visible)
-    updateWarpBar(player, visible)
+    updateSideBar(player, visible)
 }
 
 

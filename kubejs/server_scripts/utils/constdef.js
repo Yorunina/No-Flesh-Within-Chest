@@ -217,8 +217,8 @@ const coeVeinList = [
 
 const treasureDetectorTableMap = {
     'minecraft:overworld': {
-        0: "minecraft:chests/stronghold/base",
-        5: "minecraft:chests/abandoned_mineshaft",
+        0: "minecraft:chests/abandoned_mineshaft",
+        5: "minecraft:chests/simple_dungeon",
         10: "minecraft:chests/desert_pyramid",
         15: "minecraft:chests/buried_treasure",
         20: "minecraft:chests/ancient_city",

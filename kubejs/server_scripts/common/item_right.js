@@ -103,16 +103,15 @@ ItemEvents.rightClicked('kubejs:advanced_chest_opener', event => {
         return
     }
 
-    if (target.type == 'iceandfire:fire_dragon'
-        || target.type == 'iceandfire:ice_dragon'
-        || target.type == 'iceandfire:lightning_dragon') {
+    if (target.type == 'iceandfire:fire_dragon' || target.type == 'iceandfire:ice_dragon' || target.type == 'iceandfire:lightning_dragon') {
         let getAgeTicks = target.nbt.AgeTicks
         let getDeathStage = target.nbt.DeathStage
         let curStage = ((getAgeTicks / 24000) / 5) / 2
-        if (getDeathStage + 1 >= curStage) {
-            return
-        }
+        if (getDeathStage + 1 >= curStage) return
     }
+
+    // 如果命令方块允许开胸，会导致凋零风暴无法死亡
+    if (target.type == 'witherstormmod:command_block') return
 
     let painlessOper = event.item.enchantments.containsKey('kubejs:painless_operation')
     let creativeOper = event.item.enchantments.containsKey('kubejs:creative_operation')

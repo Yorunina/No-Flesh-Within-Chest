@@ -155,7 +155,7 @@ const organPlayerTickOnlyStrategies = {
         if (player.nbt?.ForgeCaps['goety:lichdom']?.lichdom == 1) return
         let instance = player.getChestCavityInstance()
         // 如果该位置存在物品，则不进行生成
-        let randomIndex = Math.floor(Math.random() * 27 + 1)
+        let randomIndex = Math.floor(Math.random() * 27)
         if (instance.inventory.getItem(randomIndex) != 'minecraft:air') return
         let typeMap = getPlayerChestCavityTypeMap(player)
         let itemMap = getPlayerChestCavityItemMap(player)
