@@ -19,6 +19,7 @@ global.updatePlayerActiveStatus = player => {
     // 重置玩家胸腔基础属性
     $ChestCavityUtil.evaluateChestCavity(player.getChestCavityInstance())
     player.persistentData.putInt(resourceCountMax, defaultResourceMax)
+    player.persistentData.putInt(warpCountMax, defaultWarpMax)
     // 激活状态根据Tag区分并遍历可以用于激活的器官方法
     let onlySet = new Set()
     if (typeMap.has('kubejs:active_only')) {
@@ -40,6 +41,8 @@ global.updatePlayerActiveStatus = player => {
     })
     let maxResourceCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
     updateResourceMaxCount(player, maxResourceCount)
+    let maxWarpCount = player.persistentData.getInt(warpCountMax) ?? defaultWarpMax
+    updateWarpMaxCount(player, maxWarpCount)
 }
 
 /**
@@ -78,6 +81,7 @@ function clearAllActivedModify(player) {
         player.removeAttribute(global.ATTRIBUTE_MAP[key].key, global.ATTRIBUTE_MAP[key].name)
     })
     player.persistentData.putInt(resourceCountMax, defaultResourceMax)
+    player.persistentData.putInt(warpCountMax, defaultWarpMax)
 }
 
 /**
