@@ -158,7 +158,7 @@ StartupEvents.registry('item', event => {
         .speed(6.5)
         .maxDamage(980)
         .maxStackSize(1)
-        .modifyAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', 0.1, 'addition')
+        .addAdditionalAttribute('irons_spellbooks:spell_power', 'kubejsSpellPowerWeaponBoost', 0.1, 'addition')
         .rarity('epic')
         .useAnimation('bow')
         .use((level, player, hand) => {
