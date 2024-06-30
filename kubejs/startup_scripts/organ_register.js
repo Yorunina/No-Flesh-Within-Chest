@@ -418,6 +418,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/magic/plastic_heart')
         .tag('kubejs:magic')
         .tag('kubejs:heart')
+        .tag('kubejs:overmagic_only')
         .tag('itemborders:diamond');
 
     registerOrgan(new Organ('kubejs:magic_hippocampus')
@@ -1454,6 +1455,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/organs/legends/genesis')
         .tag('itemborders:diamond')
         .tag('kubejs:legends')
+        .tag('kubejs:disluckloot')
         .tag('kubejs:key_pressed');
 
     registerOrgan(new Organ('kubejs:go_camping')
