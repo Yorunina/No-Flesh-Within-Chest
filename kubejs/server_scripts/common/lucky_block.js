@@ -115,7 +115,7 @@ function placeStructInWorld(event, structName) {
 function getLuckyBlockRandomLoot() {
     let lootList = []
     lootList.push.apply(lootList, Ingredient.of('#kubejs:organ').getItemIds().filter(ctx => {
-        return ctx != 'kubejs:genesis'
+        return !Item.of(ctx).hasTag('kubejs:disluckloot')
     }))
     return randomGet(lootList)
 }
