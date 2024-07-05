@@ -149,7 +149,7 @@ ServerEvents.recipes(event => {
 
     event.shapeless('chestcavity:sausage_skin', ['#kubejs:intestine'])
 
-    event.shapeless(Item.of('chestcavity:appendix').withName(Text.gray({ "translate": "kubejs.recipe.tip.1" })), [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
+    event.shapeless(Item.of('chestcavity:appendix').withName(Text.gray(Text.translatable("kubejs.recipe.tip.1"))), [Ingredient.of(['@chestcavity', '#kubejs:organ']), 'biomancy:healing_additive'])
         .modifyResult((grid, stack) => {
             for (let i = 0; i <= 9; i++) {
                 let organ = grid.get(i)

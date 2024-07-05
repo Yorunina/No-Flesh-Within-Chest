@@ -50,23 +50,23 @@ ItemEvents.tooltip((tooltip) => {
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);
                     if (organ.shiftTextLines && organ.shiftTextLines.length != 0) {
                         text.add(lineNum++, [
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).gold(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.4" }).yellow().bold(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.5" }).gold(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).gold(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.4")).yellow().bold(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.5")).gold(),
                         ]);
                     }
                     if (organ.ctrlTextLines && organ.ctrlTextLines.length != 0) {
                         text.add(lineNum++, [
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).aqua(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.6" }).yellow().bold(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.7" }).aqua(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).aqua(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.6")).yellow().bold(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.7")).aqua(),
                         ]);
                     }
                     if (organ.altTextLines && organ.altTextLines.length != 0) {
                         text.add(lineNum++, [
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).red(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.8" }).yellow().bold(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.9" }).red(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).red(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.8")).yellow().bold(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.9")).red(),
                         ]);
                     }
             }
@@ -79,7 +79,7 @@ ItemEvents.tooltip((tooltip) => {
     })
 
     tooltip.addAdvanced('kubejs:infinity_force', (item, advanced, text) => {
-        text.add(1, [Text.gold({ "translate": "item.kubejs.infinity_force" }), Text.yellow(` +${item.nbt?.forgeTimes ? item.nbt.forgeTimes : 0}`)]);
+        text.add(1, [Text.gold(Text.translatable("item.kubejs.infinity_force")), Text.yellow(` +${item.nbt?.forgeTimes ? item.nbt.forgeTimes : 0}`)]);
     })
 
 

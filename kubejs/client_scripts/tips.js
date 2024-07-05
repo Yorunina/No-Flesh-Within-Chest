@@ -1,7 +1,7 @@
 ClientEvents.highPriorityAssets(event => {
     function registeTips(key) {
         let translateKey = `kubejs.tip.${key}`
-        event.add(new ResourceLocation(`kubejs:tips/${key}.json`), { "tip": { "translate": translateKey } })
+        event.add(new ResourceLocation(`kubejs:tips/${key}.json`), { "tip": Text.translatable(translateKey) })
     }
     registeTips('secret_hint')
     registeTips('wares_useage')

@@ -16,7 +16,7 @@ DefaultOrgan.prototype = {
         this.organScores.forEach(score => {
             let value = score.value
             let typeName = global.SCORE_MAP[score.id]
-            this.shiftTextLines.push([LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.organ_score.1" }), Text.yellow(String(value)), Text.gray({ "translate": "kubejs.tooltips.organ_score.2" }), Text.yellow(typeName)])
+            this.shiftTextLines.push([LEADING_SYMBOL, Text.gray(Text.translatable("kubejs.tooltips.organ_score.1")), Text.yellow(String(value)), Text.gray(Text.translatable("kubejs.tooltips.organ_score.2")), Text.yellow(typeName)])
         })
         return this
     },
@@ -43,7 +43,7 @@ ItemEvents.tooltip((tooltip) => {
                 organData.allKeys.forEach(key => {
                     let value = organData[key]
                     let typeName = global.SCORE_MAP[key]
-                    text.add(lineNum, [LEADING_SYMBOL, Text.gray({ "translate": "kubejs.tooltips.organ_score.1" }), Text.yellow(String(value)), Text.gray({ "translate": "kubejs.tooltips.organ_score.2" }), Text.yellow(typeName)]);
+                    text.add(lineNum, [LEADING_SYMBOL, Text.gray(Text.translatable("kubejs.tooltips.organ_score.1")), Text.yellow(String(value)), Text.gray(Text.translatable("kubejs.tooltips.organ_score.2")), Text.yellow(typeName)]);
                     lineNum++
                 })
                 break;
@@ -66,9 +66,9 @@ ItemEvents.tooltip((tooltip) => {
                     text.add(lineNum++, [LEADING_SYMBOL, Text.join(typeLine)])
                 }
                 text.add(lineNum++, [
-                    Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).gold(),
-                    Text.of({ "translate": "kubejs.tooltips.organ_score.4" }).yellow().bold(),
-                    Text.of({ "translate": "kubejs.tooltips.organ_score.5" }).gold(),
+                    Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).gold(),
+                    Text.of(Text.translatable("kubejs.tooltips.organ_score.4")).yellow().bold(),
+                    Text.of(Text.translatable("kubejs.tooltips.organ_score.5")).gold(),
                 ]);
         }
     })
@@ -113,23 +113,23 @@ ItemEvents.tooltip((tooltip) => {
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);
                     if (organ.shiftTextLines && organ.shiftTextLines.length != 0) {
                         text.add(lineNum++, [
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).gold(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.4" }).yellow().bold(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.5" }).gold(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).gold(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.4")).yellow().bold(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.5")).gold(),
                         ]);
                     }
                     if (organ.ctrlTextLines && organ.ctrlTextLines.length != 0) {
                         text.add(lineNum++, [
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).aqua(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.6" }).yellow().bold(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.7" }).aqua(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).aqua(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.6")).yellow().bold(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.7")).aqua(),
                         ]);
                     }
                     if (organ.altTextLines && organ.altTextLines.length != 0) {
                         text.add(lineNum++, [
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.3" }).red(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.8" }).yellow().bold(),
-                            Text.of({ "translate": "kubejs.tooltips.organ_score.9" }).red(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).red(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.8")).yellow().bold(),
+                            Text.of(Text.translatable("kubejs.tooltips.organ_score.9")).red(),
                         ]);
                     }
             }

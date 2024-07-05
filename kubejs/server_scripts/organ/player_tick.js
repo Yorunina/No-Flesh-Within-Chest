@@ -110,7 +110,7 @@ const organPlayerTickOnlyStrategies = {
             return
         }
         event.player.potionEffects.add('kubejs:hungry_tamagotchi', 60 * 20, 0)
-        event.player.tell(Text.gray({ "translate": "kubejs.msg.tamagotchi.1" }))
+        event.player.tell(Text.gray(Text.translatable("kubejs.msg.tamagotchi.1")))
     },
     'kubejs:embers_liver': function (event, organ) {
         let player = event.player

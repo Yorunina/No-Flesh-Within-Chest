@@ -346,7 +346,7 @@ const organPlayerKeyPressedOnlyStrategies = {
                 }
             }
         } else {
-            player.tell({ "translate": "kubejs.msg.treasure_detector_feather.1" })
+            player.tell(Text.translatable("kubejs.msg.treasure_detector_feather.1"))
             return
         }
 
@@ -363,7 +363,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         let mapItem = $MapItem.create(level, pos.x, pos.z, 1, true, true)
         $MapItem.renderBiomePreviewMap(level, mapItem)
         $MapItemSavedData.addTargetDecoration(mapItem, pos, "+", $MapDecorationType.RED_X)
-        mapItem = mapItem.withName({ "translate": "map.kubejs.lost_treasure" })
+        mapItem = mapItem.withName(Text.translatable("map.kubejs.lost_treasure"))
         let placementState = $ModBlocks.CHEST.get().defaultBlockState();
         level.setBlock(pos, placementState, 2)
         $RandomizableContainerBlockEntity.setLootTable(level, level.getRandom(), pos, table)
