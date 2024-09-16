@@ -1,3 +1,7 @@
+/**
+ * 初始化单片镜显示
+ * @param {Internal.ServerPlayer} player 
+ */
 function initAllBar(player) {
     if (!player.persistentData.contains(resourceCount)) {
         player.persistentData.putInt(resourceCount, 0)
@@ -67,12 +71,16 @@ function initAllBar(player) {
     })
     if (visible) {
         Utils.server.scheduleInTicks(100, event => {
-            player.paint({barCountText: { visible: false }})
+            player.paint({ barCountText: { visible: false } })
         })
     }
 }
 
-
+/**
+ * 更新资源值
+ * @param {Internal.ServerPlayer} player 
+ * @param {Number} count 
+ */
 function updateResourceCount(player, count) {
     let maxCount = player.persistentData.getInt(resourceCountMax) ?? defaultResourceMax
     if (count > maxCount) {
@@ -84,6 +92,11 @@ function updateResourceCount(player, count) {
     player.persistentData.putInt(resourceCount, count)
 }
 
+/**
+ * 更新资源值上限
+ * @param {Internal.ServerPlayer} player 
+ * @param {Number} count 
+ */
 function updateResourceMaxCount(player, maxCount) {
     let count = player.persistentData.getInt(resourceCount) ?? 0
     if (count > maxCount) {
@@ -111,6 +124,11 @@ function updateWarpCount(player, count) {
     player.persistentData.putInt(warpCount, count)
 }
 
+/**
+ * 更新扭曲值上限
+ * @param {Internal.ServerPlayer} player 
+ * @param {Number} count 
+ */
 function updateWarpMaxCount(player, maxCount) {
     let count = player.persistentData.getInt(warpCount) ?? 0
     if (count > maxCount) {
@@ -122,7 +140,12 @@ function updateWarpMaxCount(player, maxCount) {
 
 
 
-// 饰品栏校验
+/**
+ * 检测是否佩戴饰品
+ * @param {Internal.ServerPlayer} player 
+ * @param {Special.Item} itemId 
+ * @returns {Boolean}
+ */
 function checkCurios(player, itemId) {
     let slotResult = new $CuriosApi().getCuriosHelper().findEquippedCurio(Item.of(itemId), player);
     return slotResult.isPresent()
@@ -130,6 +153,7 @@ function checkCurios(player, itemId) {
 
 
 /**
+ * 更新单片镜显示
  * @param {Internal.ServerPlayer} player 
  * @param {Boolean} visible 
  */

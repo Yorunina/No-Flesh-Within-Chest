@@ -699,7 +699,8 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray(Text.translatable("kubejs.tooltips.fish_in_warp.2"))])
         .build())
         .texture('kubejs:item/organs/warp/fish_in_warp')
-        .tag('kubejs:warp');
+        .tag('kubejs:warp')
+        .tag('kubejs:organ_count_only');
 
     registerOrgan(new Organ('kubejs:disenchantment_paper')
         .addScore('health', -0.5)
@@ -759,7 +760,7 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/relics/relic_metal_plate')
         .tag('kubejs:relics');
-        
+
     registerOrgan(new Organ('kubejs:storm_metal_plate')
         .addScore('health', 0.5)
         .addScore('nerves', 0.5)
@@ -1251,7 +1252,8 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray(Text.translatable("kubejs.tooltips.immortal_volcanic_rock.2"))])
         .build())
         .texture('kubejs:item/organs/relics/immortal_volcanic_rock')
-        .tag('kubejs:relics');
+        .tag('kubejs:relics')
+        .tag('kubejs:on_fire_check');
 
     registerOrgan(new Organ('kubejs:frenzy_blast_furance')
         .addScore('hydrophobia', 1)
@@ -1442,7 +1444,6 @@ StartupEvents.registry('item', event => {
         .addScore('luck', 1)
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray(Text.translatable("kubejs.tooltips.d8.1"))])
         .addTextLines('alt', [LEADING_SYMBOL, Text.green(Text.translatable("kubejs.tooltips.d8.2"))])
-        
         .build())
         .texture('kubejs:item/organs/others/d8')
         .tag('itemborders:diamond')

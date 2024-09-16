@@ -93,7 +93,12 @@ function clearAllActivedModify(player) {
  */
 function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
     if (attributeMap.has(attribute.name)) {
-        modifyValue = modifyValue + attributeMap.get(attribute.name)
+        if (attribute.operation == 'multiply_total') {
+            modifyValue = modifyValue * attributeMap.get(attribute.name)
+        }
+        else {
+            modifyValue = modifyValue + attributeMap.get(attribute.name)
+        }
     }
     attributeMap.set(attribute.name, modifyValue)
 }
@@ -470,17 +475,7 @@ const organActiveOnlyStrategies = {
         let itemMap = getPlayerChestCavityItemMap(player)
         let typeMap = getPlayerChestCavityTypeMap(player)
         let playerChestInstance = player.getChestCavityInstance()
-        let organCount = 0
-        player.chestCavityInstance.inventory.allItems.forEach(item => {
-            let organData = $ChestCavityUtil.lookupOrgan(item, null)
-            if (organData && !organData.organScores.isEmpty()) {
-                organCount = organCount + 1
-            }
-        })
-
-        // 扭曲鱼缸不计算器官数量
-        let subCount = getFishInWarpSubCount(itemMap, typeMap)
-        organCount = Math.max(organCount - subCount, 1)
+        let organCount = getOrganCount(player)
         let amplifier = 27 / organCount - 1
         playerChestInstance.organScores.forEach((key, value) => {
             playerChestInstance.organScores.put(key, new $Float(value * amplifier))

@@ -113,6 +113,7 @@ ItemEvents.rightClicked('kubejs:advanced_chest_opener', event => {
     // 如果命令方块允许开胸，会导致凋零风暴无法死亡
     if (target.type == 'witherstormmod:command_block') return
 
+    player.swing()
     let painlessOper = event.item.enchantments.containsKey('kubejs:painless_operation')
     let creativeOper = event.item.enchantments.containsKey('kubejs:creative_operation')
 

@@ -1,3 +1,10 @@
+const $MysteriousItemConversionCategory = Java.loadClass('com.simibubi.create.compat.jei.category.MysteriousItemConversionCategory')
+const $ConversionRecipe = Java.loadClass('com.simibubi.create.compat.jei.ConversionRecipe')
+
+for (let i in global.organCharmNbtMap) {
+    $MysteriousItemConversionCategory.RECIPES.add($ConversionRecipe.create(i, global.organCharmNbtMap[i].targetOrgan))
+}
+
 JEIEvents.information(event => {
     event.addItem('kubejs:candy_pancreas', Text.black(Text.translatable("kubejs.jei.candy_pancreas.1")))
     event.addItem('kubejs:fire_gem', Text.black(Text.translatable("kubejs.jei.fire_gem.1")))

@@ -78,6 +78,7 @@ BlockEvents.broken('kubejs:infinity_lucky_block', event => {
             break
     }
     event.cancel()
+    event.block.set('kubejs:infinity_lucky_block')
 })
 
 
