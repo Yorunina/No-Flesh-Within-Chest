@@ -5,15 +5,32 @@ const $SpellRegistry = Java.loadClass("io.redspace.ironsspellbooks.api.registry.
 const $CastSource = Java.loadClass("io.redspace.ironsspellbooks.api.spells.CastSource")
 const $BloodNeedle = Java.loadClass("io.redspace.ironsspellbooks.entity.spells.blood_needle.BloodNeedle")
 
+/**
+ * 获取玩家魔法信息
+ * @param {Internal.ServerPlayer} player 
+ * @returns {Internal.MagicData}
+ */
 function getPlayerMagicData(player) {
     return $MagicData.getPlayerMagicData(player)
 }
 
+/**
+ * 随机获取列表元素
+ * @param {Array} list 
+ * @returns 
+ */
 function randomGet(list) {
     return list[Math.floor(Math.random() * list.length)];
 }
 
-function overLimitSpellCast(resourceLocation, amplifier, player, consume) {
+/**
+ * 处理超限施法逻辑
+ * @param {Special.Spells} spell 
+ * @param {Number} amplifier 
+ * @param {Internal.ServerPlayer} player 
+ * @param {Boolean} consume 
+ */
+function overLimitSpellCast(spell, amplifier, player, consume) {
     let typeMap = getPlayerChestCavityTypeMap(player)
     let onlySet = new Set()
     if (typeMap.has('kubejs:overmagic_only')) {
@@ -29,7 +46,7 @@ function overLimitSpellCast(resourceLocation, amplifier, player, consume) {
             amplifier = amplifier + organOverLimitMagicStrategies[organ.id](player, organ)
         })
     }
-    $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](resourceLocation).attemptInitiateCast(Item.of('air'), amplifier, player.level, player, $CastSource.NONE, consume, "main_hand")
+    $SpellRegistry["getSpell(net.minecraft.resources.ResourceLocation)"](spell).attemptInitiateCast(Item.of('air'), amplifier, player.level, player, $CastSource.NONE, consume, "main_hand")
 }
 
 /**

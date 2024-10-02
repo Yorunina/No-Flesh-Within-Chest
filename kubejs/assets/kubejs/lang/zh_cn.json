@@ -1311,7 +1311,7 @@
     "kubejs.tooltips.lightning_dragon_bead.4": "释放时法力值不足500将消耗生命值补全法力需求，不致死",
     "kubejs.tooltips.ore_lung.1": "吸入了过多灰尘，已经残破不堪",
     "kubejs.tooltips.ore_lung.2": "每次挖掘石头后，便会积累1资源点数",
-    "kubejs.tooltips.ore_lung.3": "每次触发时，有3%概率消耗100点资源点数并给予矿物",
+    "kubejs.tooltips.ore_lung.3": "每次触发时，有3%概率消耗64点资源点数并给予矿物",
     "kubejs.tooltips.ore_lung.4": "资源点积累效果唯一",
     "kubejs.tooltips.ore_lung.5": "奖励受幸运影响",
     "kubejs.tooltips.desire_of_midas.1": "激活后增加",

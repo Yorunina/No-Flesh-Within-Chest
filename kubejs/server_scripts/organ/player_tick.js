@@ -160,10 +160,7 @@ const organPlayerTickOnlyStrategies = {
         let typeMap = getPlayerChestCavityTypeMap(player)
         let itemMap = getPlayerChestCavityItemMap(player)
         if (!typeMap.has('kubejs:organ')) return
-        let organCount = typeMap.get('kubejs:organ').length * 1
-        // 扭曲鱼缸不计算器官数量
-        let subCount = getFishInWarpSubCount(itemMap, typeMap)
-        organCount = Math.max(organCount - subCount, 1)
+        let organCount = getOrganCount(player)
         let tumor = Item.of('kubejs:random_tumor', { organData: {} })
         let amount = Math.floor(Math.random() * 2 + 1)
         for (let i = 0; i < amount; i++) {

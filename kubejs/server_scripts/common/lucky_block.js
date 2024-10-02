@@ -72,12 +72,14 @@ BlockEvents.broken('kubejs:infinity_lucky_block', event => {
             randomGet(LuckyBoxSpicalEventList)(event)
             break
         case random < 1:
-            event.server.scheduleInTicks(2, ctx => {
+            event.server.scheduleInTicks(1, ctx => {
                 placeStructInWorld(event, randomGet(LuckyBoxStructList))
             })
             break
     }
-    event.cancel()
+    event.server.scheduleInTicks(1, () => {
+        event.block.set('kubejs:infinity_lucky_block')
+    })
 })
 
 
