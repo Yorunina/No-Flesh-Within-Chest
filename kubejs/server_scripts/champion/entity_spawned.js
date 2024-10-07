@@ -4,15 +4,32 @@ EntityEvents.spawned(event => {
     */
     let entity = event.entity
     if (!entity || !entity.isLiving() || !entity.isMonster()) return
-    
+
+    /** @type {String[]} */
+    let typeList = entity.persistentData.get('champion') ?? []
     let player = entity.getLevel().getNearestPlayer(entity, 64)
     if (!player) return
     let warp = player.persistentData.getInt(warpCount)
-    if (warp < 20) return
-    if (Math.random() > 0.001 * warp) return
-    let randomChampionType = randomGet(championTypeMap)
-    entity.persistentData.put('champion', [randomChampionType.type])
-    entity.setCustomName([randomChampionType.name, Text.gray('精英')])
+    while (true) {
+        if (warp < 20 || Math.random() > 0.001 * warp || typeList.length >= championTypeMap.length) break
+        let randomChampionType = randomGet(championTypeMap)
+        if (typeList.find((value, index, obj) => (value == randomChampionType.type))) continue
+        typeList.push(randomChampionType.type)
+    }
+
+    if (!typeList || typeList.length < 1) return
+    let typeNameList = []
+    typeList.forEach(type => {
+        championTypeMap.forEach(cha => {
+            if (cha.type == type) {
+                typeNameList.push(cha.name)
+                typeNameList.push(Text.gray('·'))
+            }
+        })
+    });
+    typeNameList.push(Text.gray('精英'))
+    entity.persistentData.put('champion', typeList)
+    entity.setCustomName(new Component.join(typeNameList))
     entity.setCustomNameVisible(true)
 })
 

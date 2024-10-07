@@ -152,7 +152,7 @@ const organPlayerKeyPressedOnlyStrategies = {
         if (itemMap.has('minecraft:tnt')) {
             cooldown = cooldown + itemMap.get('minecraft:tnt').length * 10
         }
-        player.potionEffects.add('goety:explosive', Math.max(60, 20 * duration), Math.max(Math.min(2, Math.floor(amplifier))), 0)
+        player.potionEffects.add('goety:explosive', Math.max(60, 20 * duration), Math.max(Math.min(2, Math.floor(amplifier))), false, false)
         player.addItemCooldown('kubejs:excited_appendix', Math.max(20 * 10, 20 * (120 - cooldown)))
     },
     'kubejs:blood_crystal': function (event, organ) {
@@ -324,11 +324,11 @@ const organPlayerKeyPressedOnlyStrategies = {
         let level = event.level
         let player = event.player
         let randomPosBlock = player.block.offset((0.5 - Math.random()) * 1000, (128 - Math.random() * 32) - player.block.y, (0.5 - Math.random()) * 1000)
-        
+
         let luck = Math.max(player.getLuck(), 0)
         let table = 'minecraft:chests/stronghold/base'
         let dimLootMap = treasureDetectorTableMap[level.dimensionKey.location()]
-        
+
         if (dimLootMap) {
             let keys = Object.keys(dimLootMap)
             keys.forEach((a) => parseInt(a))

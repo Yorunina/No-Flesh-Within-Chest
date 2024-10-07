@@ -34,8 +34,8 @@ Organ.prototype = {
         return this
     },
 
-    pseudo: function () {
-        this.pseudoOrgan = true;
+    setPseudo: function (boolean) {
+        this.pseudoOrgan = boolean
         return this
     },
 

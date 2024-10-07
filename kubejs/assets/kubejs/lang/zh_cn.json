@@ -958,6 +958,7 @@
     "kubejs.tooltips.evolution": "进化",
     "kubejs.tooltips.food": "食物",
     "kubejs.tooltips.active_only": "唯一激活",
+    "kubejs.tooltips.auto_active": "自动激活",
     "kubejs.tooltips.rclick_only": "唯一右键点击",
     "kubejs.tooltips.rclick": "右键点击",
     "kubejs.tooltips.player_tick_only": "唯一玩家刻",

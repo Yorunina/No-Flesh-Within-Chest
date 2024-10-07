@@ -313,7 +313,7 @@ StartupEvents.registry('item', event => {
             }
             global.initChestCavityIntoMap(entity, true)
             if (entity.getChestCavityInstance().inventory.hasAnyMatching(item => {
-                return pillList.some(ele => ele == item.id.toString())
+                return item.hasTag('kubejs:auto_active')
             })) {
                 global.updatePlayerActiveStatus(entity)
                 entity.persistentData.putInt(organActive, 1)

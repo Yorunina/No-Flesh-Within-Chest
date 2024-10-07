@@ -1,5 +1,6 @@
 function DefaultOrgan(itemID) {
     this.itemID = itemID
+    this.pseudoOrgan = false
     this.organScores = []
     this.defaultTextLines = []
     this.shiftTextLines = []
@@ -18,6 +19,10 @@ DefaultOrgan.prototype = {
             let typeName = global.SCORE_MAP[score.id]
             this.shiftTextLines.push([LEADING_SYMBOL, Text.gray(Text.translatable("kubejs.tooltips.organ_score.1")), Text.yellow(String(value)), Text.gray(Text.translatable("kubejs.tooltips.organ_score.2")), Text.yellow(typeName)])
         })
+        return this
+    },
+    setPseudo: function (boolean) {
+        this.pseudoOrgan = boolean
         return this
     },
 }
@@ -73,6 +78,9 @@ ItemEvents.tooltip((tooltip) => {
         }
     })
 
+    /**
+     * @param {DefaultOrgan} organ 
+     */
     function registerDefaultOrganToolTips(organ) {
         tooltip.addAdvanced(organ.itemID, (item, advanced, text) => {
             text.removeIf(e => {
@@ -111,21 +119,21 @@ ItemEvents.tooltip((tooltip) => {
                     }
 
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);
-                    if (organ.shiftTextLines && organ.shiftTextLines.length != 0) {
+                    if (organ.shiftTextLines && organ.shiftTextLines.length != 0 && !organ.pseudoOrgan) {
                         text.add(lineNum++, [
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).gold(),
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.4")).yellow().bold(),
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.5")).gold(),
                         ]);
                     }
-                    if (organ.ctrlTextLines && organ.ctrlTextLines.length != 0) {
+                    if (organ.ctrlTextLines && organ.ctrlTextLines.length != 0 && !organ.pseudoOrgan) {
                         text.add(lineNum++, [
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).aqua(),
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.6")).yellow().bold(),
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.7")).aqua(),
                         ]);
                     }
-                    if (organ.altTextLines && organ.altTextLines.length != 0) {
+                    if (organ.altTextLines && organ.altTextLines.length != 0 && !organ.pseudoOrgan) {
                         text.add(lineNum++, [
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).red(),
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.8")).yellow().bold(),
@@ -259,4 +267,25 @@ ItemEvents.tooltip((tooltip) => {
     registerDefaultOrganToolTips(new DefaultOrgan('chestcavity:small_carnivore_stomach').addScore('carnivorous_digestion', 0.75).addScore('herbivorous_digestion', 0.25).build())
     registerDefaultOrganToolTips(new DefaultOrgan('chestcavity:small_animal_spine').addScore('defense', 0.375).addScore('nerves', 0.5).build())
     registerDefaultOrganToolTips(new DefaultOrgan('chestcavity:small_carnivore_intestine').addScore('carnivorous_nutrition', 0.75).addScore('herbivorous_nutrition', 0.25).build())
+
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:beef').addScore('strength', 0.75).addScore('speed', 0.75).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:mutton').addScore('strength', 0.75).addScore('speed', 0.75).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:tnt').addScore('explosive', 1024).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:gunpowder').addScore('explosive', 192).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:rotten_flesh').addScore('strength', 0.5).addScore('speed', 0.5).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:obsidian').addScore('defense', 0.5).addScore('fire_resistant', 1).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:crying_obsidian').addScore('defense', 0.5).addScore('fire_resistant', 1).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:netherite_block').addScore('luck', 1.25).addScore('defense', 2).addScore('buoyant', -1.5).addScore('speed', -1.5).addScore('fire_resistant', 4).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:iron_block').addScore('defense', 2).addScore('buoyant', -1).addScore('speed', -1).addScore('fire_resistant', 1).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:iron_bars').addScore('defense', 1.25).addScore('buoyant', -0.5).addScore('speed', -0.25).addScore('fire_resistant', 1).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:gold_block').addScore('luck', 1.25).addScore('buoyant', -1).addScore('speed', -1).addScore('fire_resistant', 1).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:glowstone_dust').addScore('glowing', 64).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:glowstone').addScore('glowing', 128).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:emerald_block').addScore('luck', 1).addScore('buoyant', -1).addScore('speed', -1).addScore('fire_resistant', 1).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:diamond_block').addScore('luck', 1.25).addScore('defense', 2).addScore('buoyant', -1).addScore('speed', -1).addScore('fire_resistant', 1).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:bone_block').addScore('defense', 0.75).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:bone').addScore('defense', 0.5).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:blaze_rod').addScore('pyromancy', 1).addScore('hydroallergenic', 1).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:pork').addScore('strength', 0.75).addScore('speed', 0.75).setPseudo(true).build())
+    registerDefaultOrganToolTips(new DefaultOrgan('minecraft:dirt').addScore('luck', 0.037037).addScore('health', 0.037037).addScore('strength', 0.296296).addScore('speed', 0.296296).addScore('nerves', 0.037037).addScore('detoxification', 0.037037).addScore('filtration', 0.074074).addScore('breath_capacity', 0.074074).addScore('breath_recovery', 0.074074).addScore('endurance', 0.074074).addScore('metabolism', 0.037037).addScore('digestion', 0.037037).addScore('nutrition', 0.148148).addScore('defense', 0.1666666).setPseudo(true).build())
 })

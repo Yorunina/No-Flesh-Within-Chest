@@ -1430,7 +1430,8 @@ StartupEvents.registry('item', event => {
         .build())
         .texture('kubejs:item/organs/others/long_lasting_pill')
         .tag('itemborders:iron')
-        .tag('kubejs:evolution');
+        .tag('kubejs:evolution')
+        .tag('kubejs:auto_active');
 
     registerOrgan(new Organ('kubejs:long_lasting_pill_gold')
         .addScore('luck', 1)
@@ -1438,7 +1439,8 @@ StartupEvents.registry('item', event => {
         .addTextLines('alt', [LEADING_SYMBOL, Text.gray(Text.translatable("kubejs.tooltips.long_lasting_pill_gold.1"))])
         .build())
         .texture('kubejs:item/organs/others/long_lasting_pill')
-        .tag('itemborders:gold');
+        .tag('itemborders:gold')
+        .tag('kubejs:auto_active');
 
     registerOrgan(new Organ('kubejs:d8')
         .addScore('luck', 1)
