@@ -50,8 +50,10 @@ PlayerEvents.inventoryClosed((event) => {
         return
     }
     let activeFlag = false
-    global.pillList.forEach(pill => {
-        if (itemMap.has(pill)) {
+    itemMap.forEach(organ => {
+        if (player.getChestCavityInstance().inventory.hasAnyMatching(item => {
+            return item.hasTag('kubejs:auto_active')
+        })) {
             activeFlag = true
         }
     })
