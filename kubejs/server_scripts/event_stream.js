@@ -29,7 +29,7 @@ global.LivingHurtByPlayer = event => {
     organCharmEntityHurtByPlayer(event, data)
     championEntityHurtByPlayer(event, data)
     if (data.returnDamage != 0) {
-        player.attack(data.returnDamage)
+        player.attack(data.damageSource, data.returnDamage)
     }
 }
 
@@ -52,7 +52,7 @@ global.LivingDamageByOthers = event => {
     sweetDreamPlayerHurtByOthers(event, data)
     curiosPlayerHurtByOthers(event, data)
     if (data.returnDamage != 0 && event.source.actual) {
-        event.source.actual.attack(data.returnDamage)
+        event.source.actual.attack(data.damageSource, data.returnDamage)
     }
 }
 

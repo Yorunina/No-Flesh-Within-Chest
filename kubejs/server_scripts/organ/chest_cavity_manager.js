@@ -49,7 +49,13 @@ PlayerEvents.inventoryClosed((event) => {
     if (player.persistentData.contains(organActive) && player.persistentData.getInt(organActive) == 1) {
         return
     }
-    if (itemMap.has('kubejs:long_lasting_pill') || itemMap.has('kubejs:long_lasting_pill_gold')) {
+    let activeFlag = false
+    global.pillList.forEach(pill => {
+        if (itemMap.has(pill)) {
+            activeFlag = true
+        }
+    })
+    if (activeFlag) {
         global.updatePlayerActiveStatus(event.player)
         player.persistentData.putInt(organActive, 1)
     }

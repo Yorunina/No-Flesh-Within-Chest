@@ -294,3 +294,6 @@ global.organCharmNbtMap = {
     'kubejs:fish_in_chest': { type: 'warp', warpTask: { warpMin: 50 }, targetOrgan: 'kubejs:fish_in_warp' },
     'chestcavity:gas_bladder': { type: 'warp', warpTask: { warpMin: 30 }, targetOrgan: 'kubejs:warp_bubble' },
 }
+
+
+global.pillList = ['kubejs:long_lasting_pill', 'kubejs:long_lasting_pill_gold']

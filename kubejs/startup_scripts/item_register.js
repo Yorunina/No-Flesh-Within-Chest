@@ -313,7 +313,7 @@ StartupEvents.registry('item', event => {
             }
             global.initChestCavityIntoMap(entity, true)
             if (entity.getChestCavityInstance().inventory.hasAnyMatching(item => {
-                return pillList.some(ele => ele == item.id.toString())
+                return global.pillList.some(ele => ele == item.id.toString())
             })) {
                 global.updatePlayerActiveStatus(entity)
                 entity.persistentData.putInt(organActive, 1)

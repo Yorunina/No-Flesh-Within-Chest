@@ -14,11 +14,10 @@ ServerEvents.tags('item', event => {
   event.add('kubejs:candy_focus', ['kubejs:candy_bag'])
   event.add('irons_spellbooks:school_focus', ['minecraft:nether_star', 'kubejs:candy_bag'])
 
-  event.add('kubejs:isb_spell_book', ['irons_spellbooks:netherite_spell_book', 'irons_spellbooks:diamond_spell_book', 'irons_spellbooks:gold_spell_book', 'irons_spellbooks:iron_spell_book', 'irons_spellbooks:copper_spell_book', 'irons_spellbooks:rotten_spell_book', 'irons_spellbooks:blaze_spell_book', 'irons_spellbooks:dragonskin_spell_book', 'irons_spellbooks:druidic_spell_book',
-    'irons_spellbooks:villager_spell_book', 'irons_spellbooks:blood_staff', 'irons_spellbooks:evoker_spell_book'])
+  event.add('kubejs:isb_spell_book', ['irons_spellbooks:wimpy_spell_book', 'irons_spellbooks:legendary_spell_book', 'irons_spellbooks:netherite_spell_book', 'irons_spellbooks:diamond_spell_book', 'irons_spellbooks:gold_spell_book', 'irons_spellbooks:iron_spell_book', 'irons_spellbooks:copper_spell_book', 'irons_spellbooks:rotten_spell_book', 'irons_spellbooks:blaze_spell_book', 'irons_spellbooks:dragonskin_spell_book', 'irons_spellbooks:druidic_spell_book', 'irons_spellbooks:villager_spell_book', 'irons_spellbooks:blood_staff', 'irons_spellbooks:evoker_spell_book', 'irons_spellbooks:necronomicon_spell_book', 'kubejs:command_spell_book'])
 
   event.add('curios:body', ['supplementaries:quiver'])
-  
+
 
   event.add('kubejs:lung', ['chestcavity:lung', 'chestcavity:rotten_lung', 'chestcavity:animal_lung', 'chestcavity:llama_lung', 'chestcavity:fireproof_lung', 'chestcavity:small_animal_lung', 'chestcavity:insect_lung', 'chestcavity:ender_lung', 'chestcavity:dragon_lung', 'chestcavity:saltwater_lung', 'chestcavity:gas_bladder'])
 
@@ -41,12 +40,13 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:sausage', ['chestcavity:raw_sausage', 'chestcavity:sausage', 'chestcavity:raw_rich_sausage', 'chestcavity:rich_sausage', 'chestcavity:raw_mini_sausage', 'chestcavity:mini_sausage', 'chestcavity:raw_rich_mini_sausage', 'chestcavity:rich_mini_sausage', 'chestcavity:rotten_sausage', 'chestcavity:raw_toxic_sausage', 'chestcavity:toxic_sausage', 'chestcavity:raw_rich_toxic_sausage', 'chestcavity:rich_toxic_sausage', 'chestcavity:raw_human_sausage', 'chestcavity:human_sausage', 'chestcavity:raw_rich_human_sausage', 'chestcavity:rich_human_sausage', 'chestcavity:raw_alien_sausage', 'chestcavity:alien_sausage', 'chestcavity:raw_rich_alien_sausage', 'chestcavity:rich_alien_sausage', 'chestcavity:raw_dragon_sausage', 'chestcavity:dragon_sausage', 'chestcavity:raw_rich_dragon_sausage', 'chestcavity:rich_dragon_sausage', 'kubejs:brown_sauce_braised_intestines'])
 
-  event.add('forge:rabbit/ground/raw', ['minecraft:rabbit'])
-  
-
   const baseorgan = event.get('chestcavity:salvageable').getObjectIds()
   baseorgan.forEach(organ => {
     event.add('kubejs:organ', organ)
   })
 
+})
+
+ServerEvents.tags('minecraft:entity_type', event => {
+  event.add('forge:rabbit/ground/raw', ['minecraft:rabbit'])
 })

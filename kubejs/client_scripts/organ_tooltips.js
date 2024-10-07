@@ -48,21 +48,21 @@ ItemEvents.tooltip((tooltip) => {
                     }
 
                     lineNum = addForTextLines(text, organ.defaultTextLines, lineNum);
-                    if (organ.shiftTextLines && organ.shiftTextLines.length != 0) {
+                    if (organ.shiftTextLines && organ.shiftTextLines.length != 0 && !organ.pseudoOrgan) {
                         text.add(lineNum++, [
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).gold(),
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.4")).yellow().bold(),
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.5")).gold(),
                         ]);
                     }
-                    if (organ.ctrlTextLines && organ.ctrlTextLines.length != 0) {
+                    if (organ.ctrlTextLines && organ.ctrlTextLines.length != 0 && !organ.pseudoOrgan) {
                         text.add(lineNum++, [
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).aqua(),
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.6")).yellow().bold(),
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.7")).aqua(),
                         ]);
                     }
-                    if (organ.altTextLines && organ.altTextLines.length != 0) {
+                    if (organ.altTextLines && organ.altTextLines.length != 0 && !organ.pseudoOrgan) {
                         text.add(lineNum++, [
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.3")).red(),
                             Text.of(Text.translatable("kubejs.tooltips.organ_score.8")).yellow().bold(),
