@@ -94,7 +94,7 @@ function clearAllActivedModify(player) {
 function attributeMapValueAddition(attributeMap, attribute, modifyValue) {
     if (attributeMap.has(attribute.name)) {
         if (attribute.operation == 'multiply_total') {
-            modifyValue = modifyValue * attributeMap.get(attribute.name)
+            modifyValue = (1 + modifyValue) * (1 + attributeMap.get(attribute.name)) - 1
         }
         else {
             modifyValue = modifyValue + attributeMap.get(attribute.name)
@@ -337,7 +337,7 @@ const organActiveStrategies = {
             attributeMapValueAddition(attributeMap, global.LUCK_MULTI_BASE, 0.1)
         }
     }
-};
+}
 
 /**
  * 器官激活唯一策略
@@ -450,7 +450,7 @@ const organActiveOnlyStrategies = {
         let chestInventoryTypeMap = getPlayerChestCavityTypeMap(player)
         chestInventoryTypeMap.delete('kubejs:rose')
         for (let i = 0; i < chestInventory.length; i++) {
-            let organ = chestInventory[i];
+            let organ = chestInventory[i]
             let itemId = String(organ.getString('id'))
             let tagList = Item.of(itemId).getTags().toArray()
             for (let i = 0; i < tagList.length; i++) {

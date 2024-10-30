@@ -3,5 +3,6 @@
  */
 function EntityHurtCustomModel() {
     this.returnDamage = 0
+    this.damageSource = DamageSource.GENERIC
 }
 

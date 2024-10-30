@@ -22,6 +22,10 @@ ItemEvents.rightClicked('kubejs:unbreakable_core', event => {
         return
     }
     let unbreakone = player.getMainHandItem()
+    if (unbreakone?.nbt && unbreakone.nbt?.Unbreakable) {
+        player.tell('该物品已进行过不毁加持！')
+        return
+    }
     if (!unbreakone.hasEnchantment('minecraft:unbreaking', 1)) {
         player.tell('不满足耐久要求！')
         return
